@@ -1,0 +1,54 @@
+# Fiche_Simple_-_VM_Rocky_9_OpenVPN_Prerequis_Limites
+
+- **Environnement** : VM Rocky Linux 9 dédiée à OpenVPN Community Edition (serveur)
+- **OS / Version** : Rocky Linux 9; paquets openvpn et easy-rsa issus d'EPEL, version à vérifier
+- **Catégorie** : OpenVPN Community Edition / prérequis et limites
+- **Tags** : `openvpn`, `rocky9`, `vie-du-logiciel`, `prerequis-limites`
+
+---
+
+## Problème précis à résoudre
+
+Valider le cadre avant d'installer un serveur OpenVPN Community Edition : OS, réseau, PKI, périmètre.
+
+## 1. Hors-Production (Lab / Test / POC)
+
+1. Relever l'OS, le noyau et l'adresse IP de l'hôte :
+   ```bash
+   cat /etc/os-release
+   uname -r
+   ip -br address
+   ip route
+   ```
+   👉 Explication : Confirmer que l'OS est Rocky Linux 9 à jour, EPEL activable (le paquet openvpn n'est pas dans les dépôts de base : vérifier avec dnf info openvpn) et noter l'IP publique ou NATée à joindre depuis les clients.
+
+2. Contrôler l'heure et le DNS :
+   ```bash
+   timedatectl
+   resolvectl status 2>/dev/null || cat /etc/resolv.conf
+   ```
+   👉 Explication : Les certificats dépendent de l'heure : NTP synchronisé obligatoire.
+
+3. Consigner les valeurs à décider avant de continuer :
+   👉 Explication : VPN_NETWORK / VPN_NETMASK (réseau du tunnel), VPN_UDP_PORT (port UDP), SERVER_FQDN (nom public du serveur), PKI approuvée (CA hors ligne). Ces valeurs en majuscules sont à remplacer par le plan validé.
+
+## 2. Production — Contrôles
+
+Valider avec le propriétaire du service : utilisateurs, réseaux joignables, journalisation, fenêtre et accès de secours hors bande. Limites : édition Community uniquement (pas Access Server); pas de haute disponibilité ni de gestion de comptes intégrée.
+
+## 3. Production — Sécurité
+
+- La clé privée de la CA ne doit jamais résider sur le serveur VPN exposé.
+- Aucune ouverture de port avant la fin de la recette.
+
+## Validation et retour arrière
+
+- **Validation** : Le tableau de décisions (réseau, port, FQDN, PKI) est rempli et approuvé.
+- **Retour arrière** : Aucun changement n'a été fait à ce stade : rien à restaurer.
+
+## Si le problème n'est pas résolu
+
+- [Étape suivante du guide](./Fiche_Simple_-_VM_Rocky_9_OpenVPN_Installer.md)
+- [Fiche d'entrée du logiciel](../../../../Logiciels/04-Reseau-et-cybersecurite/Fiche_Logiciel_-_OpenVPN.md)
+- [OpenVPN Community — documentation officielle](https://openvpn.net/community-resources/)
+- [OpenVPN — manuel de référence 2.6](https://openvpn.net/community-resources/reference-manual-for-openvpn-2-6/)

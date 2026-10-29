@@ -1,0 +1,30 @@
+---
+title: "WireGuard"
+description: "Couvert — WireGuard natif : serveur Debian 13, Ubuntu 24.04 et Rocky Linux 9 (wireguard-tools d’EPEL, chargement du module à vérifier); client Windows 11. Le déploiement Docker est traité ailleurs. Procédures non testées sur chaque OS."
+published: true
+date: 2026-10-29T21:02:52Z
+tags: ["logiciel", "04-Reseau-et-cybersecurite", "couvert"]
+editor: markdown
+dateCreated: 2026-10-29T21:02:52Z
+dateModified: 2026-10-29T21:02:52Z
+---
+
+# 📄 WireGuard
+
+- **Catégorie** : Réseau et cybersécurité
+- **Plateforme** : Multiplateforme
+- **Produit (matrice)** : OpenVPN / WireGuard
+- **Statut dans le pack** : Couvert
+- **Tags** : `logiciel`, `04-Reseau-et-cybersecurite`, `couvert`
+
+## 📚 Couverture dans le pack
+
+Couvert — WireGuard natif : serveur Debian 13, Ubuntu 24.04 et Rocky Linux 9 (wireguard-tools d’EPEL, chargement du module à vérifier); client Windows 11. Le déploiement Docker est traité ailleurs. Procédures non testées sur chaque OS.
+
+Fiches simples du guide : [prérequis et limites](/01-fiches-simples/debian/13/vie-du-logiciel/wireguard/fiche-simple-vm-debian-13-wireguard-prerequis-limites), [installation](/01-fiches-simples/debian/13/vie-du-logiciel/wireguard/fiche-simple-vm-debian-13-wireguard-installer), [configuration](/01-fiches-simples/debian/13/vie-du-logiciel/wireguard/fiche-simple-vm-debian-13-wireguard-configurer), [sécurisation](/01-fiches-simples/debian/13/vie-du-logiciel/wireguard/fiche-simple-vm-debian-13-wireguard-securiser), [validation](/01-fiches-simples/debian/13/vie-du-logiciel/wireguard/fiche-simple-vm-debian-13-wireguard-valider), [sauvegarde/restauration](/01-fiches-simples/debian/13/vie-du-logiciel/wireguard/fiche-simple-vm-debian-13-wireguard-sauvegarder-restaurer), [mise à jour/retour arrière](/01-fiches-simples/debian/13/vie-du-logiciel/wireguard/fiche-simple-vm-debian-13-wireguard-mise-a-jour-retour-arriere)., [Ubuntu 24.04 — prérequis et limites](/01-fiches-simples/ubuntu/24-04/vie-du-logiciel/wireguard/fiche-simple-vm-ubuntu-24-04-wireguard-prerequis-limites), [Ubuntu 24.04 — installation](/01-fiches-simples/ubuntu/24-04/vie-du-logiciel/wireguard/fiche-simple-vm-ubuntu-24-04-wireguard-installer), [Ubuntu 24.04 — configuration](/01-fiches-simples/ubuntu/24-04/vie-du-logiciel/wireguard/fiche-simple-vm-ubuntu-24-04-wireguard-configurer), [Ubuntu 24.04 — sécurisation](/01-fiches-simples/ubuntu/24-04/vie-du-logiciel/wireguard/fiche-simple-vm-ubuntu-24-04-wireguard-securiser), [Ubuntu 24.04 — validation](/01-fiches-simples/ubuntu/24-04/vie-du-logiciel/wireguard/fiche-simple-vm-ubuntu-24-04-wireguard-valider), [Ubuntu 24.04 — sauvegarde/restauration](/01-fiches-simples/ubuntu/24-04/vie-du-logiciel/wireguard/fiche-simple-vm-ubuntu-24-04-wireguard-sauvegarder-restaurer), [Ubuntu 24.04 — mise à jour/retour arrière](/01-fiches-simples/ubuntu/24-04/vie-du-logiciel/wireguard/fiche-simple-vm-ubuntu-24-04-wireguard-mise-a-jour-retour-arriere), [Rocky Linux 9 — prérequis et limites](/01-fiches-simples/rocky-linux/9/vie-du-logiciel/wireguard/fiche-simple-vm-rocky-9-wireguard-prerequis-limites), [Rocky Linux 9 — installation](/01-fiches-simples/rocky-linux/9/vie-du-logiciel/wireguard/fiche-simple-vm-rocky-9-wireguard-installer), [Rocky Linux 9 — configuration](/01-fiches-simples/rocky-linux/9/vie-du-logiciel/wireguard/fiche-simple-vm-rocky-9-wireguard-configurer), [Rocky Linux 9 — sécurisation](/01-fiches-simples/rocky-linux/9/vie-du-logiciel/wireguard/fiche-simple-vm-rocky-9-wireguard-securiser), [Rocky Linux 9 — validation](/01-fiches-simples/rocky-linux/9/vie-du-logiciel/wireguard/fiche-simple-vm-rocky-9-wireguard-valider), [Rocky Linux 9 — sauvegarde/restauration](/01-fiches-simples/rocky-linux/9/vie-du-logiciel/wireguard/fiche-simple-vm-rocky-9-wireguard-sauvegarder-restaurer), [Rocky Linux 9 — mise à jour/retour arrière](/01-fiches-simples/rocky-linux/9/vie-du-logiciel/wireguard/fiche-simple-vm-rocky-9-wireguard-mise-a-jour-retour-arriere), [Windows 11 — prérequis et limites](/01-fiches-simples/windows/client-11/vie-du-logiciel/wireguard/fiche-simple-windows-client-11-wireguard-prerequis-limites), [Windows 11 — installation](/01-fiches-simples/windows/client-11/vie-du-logiciel/wireguard/fiche-simple-windows-client-11-wireguard-installer), [Windows 11 — configuration](/01-fiches-simples/windows/client-11/vie-du-logiciel/wireguard/fiche-simple-windows-client-11-wireguard-configurer), [Windows 11 — sécurisation](/01-fiches-simples/windows/client-11/vie-du-logiciel/wireguard/fiche-simple-windows-client-11-wireguard-securiser), [Windows 11 — validation](/01-fiches-simples/windows/client-11/vie-du-logiciel/wireguard/fiche-simple-windows-client-11-wireguard-valider), [Windows 11 — sauvegarde/restauration](/01-fiches-simples/windows/client-11/vie-du-logiciel/wireguard/fiche-simple-windows-client-11-wireguard-sauvegarder-restaurer), [Windows 11 — mise à jour/retour arrière](/01-fiches-simples/windows/client-11/vie-du-logiciel/wireguard/fiche-simple-windows-client-11-wireguard-mise-a-jour-retour-arriere)
+
+## 🧭 Utilisation
+
+Cette fiche est le point d'entrée du logiciel : elle indique si le pack contient une procédure et renvoie vers elle. Pour une procédure pas à pas, ouvrir le guide ou la fiche liée ci-dessus. Lorsque le statut est `Manquant`, aucune procédure dédiée n'existe encore dans le pack.
+
+Procédure pas à pas du pack : [WireGuard](/01-fiches-simples/logiciels/04-reseau-et-cybersecurite/fiche-simple-wireguard).

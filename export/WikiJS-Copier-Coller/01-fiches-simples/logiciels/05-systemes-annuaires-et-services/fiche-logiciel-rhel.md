@@ -1,0 +1,32 @@
+# 📄 RHEL
+
+- **Catégorie** : Systèmes, annuaires et services
+- **Plateforme** : Linux
+- **Produit (matrice)** : RHEL / AlmaLinux / Rocky Linux
+- **Statut dans le pack** : Partiel
+
+## 📚 Couverture dans le pack
+
+Partiel — utiliser les fiches système Rocky Linux 9 comme repère d’exploitation uniquement. Les abonnements, dépôts, support éditeur et particularités RHEL ne sont pas couverts par ces fiches.
+
+## 🧭 Utilisation
+
+Cette fiche est le point d'entrée du logiciel : elle indique si le pack contient une procédure et renvoie vers elle. Pour une procédure pas à pas, ouvrir le guide ou la fiche liée ci-dessus. Lorsque le statut est `Manquant`, aucune procédure dédiée n'existe encore dans le pack.
+
+Procédure pas à pas du pack : [RHEL](/01-fiches-simples/logiciels/05-systemes-annuaires-et-services/fiche-simple-rhel).
+
+## Fiches spécifiques du pack
+
+Ces fiches ciblent les particularités RHEL; les procédures Rocky Linux 9 ne remplacent pas une souscription ou le support Red Hat.
+
+[subscription manager](/01-fiches-simples/rocky-linux/9/vie-du-logiciel/rhel/fiche-simple-vm-rocky-9-rhel-subscription-manager), [dnf](/01-fiches-simples/rocky-linux/9/vie-du-logiciel/rhel/fiche-simple-vm-rocky-9-rhel-dnf), [insights](/01-fiches-simples/rocky-linux/9/vie-du-logiciel/rhel/fiche-simple-vm-rocky-9-rhel-insights), [selinux](/01-fiches-simples/rocky-linux/9/vie-du-logiciel/rhel/fiche-simple-vm-rocky-9-rhel-selinux).
+
+## Références de cycle de vie
+
+Fiches d’entrée et point de départ système : utiliser la série Rocky Linux 9. Elle constitue un repère de procédure, pas une affirmation d’équivalence de support ou de dépôts.
+
+- [Cycle de vie Rocky Linux 9](/01-fiches-simples/rocky-linux/9/vie-du-systeme/cycle-de-vie-50-etapes)
+- [Fiche système — mise à jour initiale Rocky 9](/01-fiches-simples/rocky-linux/9/vie-du-systeme/fiche-simple-vm-rocky-linux-9-vie-systeme-20-mise-a-jour-initiale)
+- [Fiche système — cycle de mise à jour et inventaire](/01-fiches-simples/rocky-linux/9/vie-du-systeme/fiches-par-theme/securite/fiche-simple-vm-rocky-9-securite-hardening-mises-a-jour-inventaire)
+- [Fiche d’entrée Rocky Linux](/01-fiches-simples/logiciels/05-systemes-annuaires-et-services/fiche-logiciel-rocky-linux)
+- [Rocky Linux — documentation officielle](https://docs.rockylinux.org/)

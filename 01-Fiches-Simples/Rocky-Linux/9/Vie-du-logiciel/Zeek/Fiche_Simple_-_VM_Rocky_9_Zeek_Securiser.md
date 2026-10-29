@@ -1,0 +1,55 @@
+# Fiche_Simple_-_VM_Rocky_9_Zeek_Securiser
+
+- **Environnement** : VM Rocky Linux 9 dédiée à Zeek
+- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Catégorie** : Zeek / sécurisation
+- **Tags** : `zeek`, `rocky9`, `vie-du-logiciel`, `securiser`
+
+---
+
+## Problème précis à résoudre
+
+Durcir le capteur Zeek : droits, privilèges, journaux et exposition.
+
+## 1. Hors-Production (Lab / Test / POC)
+
+1. Figer l’image par digest :
+   ```bash
+   sudo podman image inspect docker.io/zeek/zeek:lts --format "{{.Digest}}"
+   ```
+   👉 Explication : Déployer ensuite `docker.io/zeek/zeek@sha256:DIGEST_RELEVE` (à remplacer) pour éviter les changements imprévus.
+
+2. Restreindre les logs :
+   ```bash
+   sudo chmod -R o-rwx /var/lib/zeek-lab
+   sudo ls -ld /var/lib/zeek-lab/logs
+   ```
+   👉 Explication : Les journaux contiennent des métadonnées sensibles.
+
+3. Contrôler les privilèges du conteneur :
+   ```bash
+   sudo podman ps --format "{{.Names}} {{.Command}}"
+   ```
+   👉 Explication : Ne donner que NET_RAW et NET_ADMIN; ne pas utiliser `--privileged`.
+
+## 2. Production — Contrôles
+
+Revue trimestrielle des comptes, des capacités et de la rétention.
+
+## 3. Production — Sécurité
+
+- Transmettre les journaux vers un collecteur approuvé par canal chiffré (non détaillé).
+- Aucun secret en clair dans la configuration.
+- SELinux : rester en Enforcing; en cas de refus, `sudo ausearch -m avc -ts recent`.
+
+## Validation et retour arrière
+
+- **Validation** : Droits restrictifs, aucun port ouvert, privilèges minimaux.
+- **Retour arrière** : Restaurer permissions et appartenances consignées.
+
+## Si le problème n’est pas résolu
+
+- [Zeek — documentation officielle](https://docs.zeek.org/en/master/install.html)
+- [Fiche d’entrée du logiciel](../../../../Logiciels/04-Reseau-et-cybersecurite/Fiche_Logiciel_-_Zeek.md)
+- [Étape suivante du guide](./Fiche_Simple_-_VM_Rocky_9_Zeek_Valider.md)
+- [Étape précédente du guide](./Fiche_Simple_-_VM_Rocky_9_Zeek_Configurer.md)

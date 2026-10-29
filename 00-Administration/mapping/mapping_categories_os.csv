@@ -1,0 +1,201 @@
+chemin_actuel;categorie_actuelle;categorie_proposee;regle;statut
+01-Fiches-Simples/Alpine/Fiche_Simple_-_LXC_Alpine_3.19_IP_Statique.md;Alpine;Alpine-Linux;regle dossier;propose
+01-Fiches-Simples/Alpine/Fiche_Simple_-_LXC_Alpine_3.19_Reseau_Diagnostic_DNS_Routes.md;Alpine;Alpine-Linux;regle dossier;propose
+01-Fiches-Simples/Alpine/Fiche_Simple_-_LXC_Alpine_3.19_Securite_Configuration_Awall_Fir.md;Alpine;Alpine-Linux;regle dossier;propose
+01-Fiches-Simples/Alpine/Fiche_Simple_-_LXC_Alpine_3.19_Securite_OpenSSH_Cle_Et_OpenRC.md;Alpine;Alpine-Linux;regle dossier;propose
+01-Fiches-Simples/Alpine/Fiche_Simple_-_LXC_Alpine_3.19_Services_Installation_et_Configu.md;Alpine;Alpine-Linux;regle dossier;propose
+01-Fiches-Simples/Alpine/Fiche_Simple_-_LXC_Alpine_3.19_Systeme_Creer_Compte_Admin_Doas.md;Alpine;Alpine-Linux;regle dossier;propose
+01-Fiches-Simples/Alpine/Fiche_Simple_-_LXC_Alpine_3.19_Systeme_Gestion_Services_OpenRC.md;Alpine;Alpine-Linux;regle dossier;propose
+01-Fiches-Simples/Alpine/Fiche_Simple_-_LXC_Alpine_3.19_Systeme_Mise_A_Jour_Paquets_APK.md;Alpine;Alpine-Linux;regle dossier;propose
+01-Fiches-Simples/Alpine/Fiche_Simple_-_LXC_Alpine_Controle_Mise_Production.md;Alpine;Alpine-Linux;regle dossier;propose
+01-Fiches-Simples/Alpine/Fiche_Simple_-_LXC_Alpine_Installation_Creation_CT_Proxmox.md;Alpine;Alpine-Linux;regle dossier;propose
+01-Fiches-Simples/Alpine/Fiche_Simple_-_LXC_Alpine_Migrer_3.19_Version_Maintenue.md;Alpine;Alpine-Linux;regle dossier;propose
+01-Fiches-Simples/Alpine/Fiche_Simple_-_VM_Alpine_Chrony_NTP_OpenRC.md;Alpine;Alpine-Linux;regle dossier;propose
+01-Fiches-Simples/Cloud-SaaS/Fiche_Simple_-_Cloud_Datadog_Installer_Agent_Linux_Pilote.md;Cloud-SaaS;Cloud-SaaS;identique;propose
+01-Fiches-Simples/Cloud-SaaS/Fiche_Simple_-_Cloud_Dynatrace_OneAgent_Installer_Pilote_Linux.md;Cloud-SaaS;Cloud-SaaS;identique;propose
+01-Fiches-Simples/Cloud-SaaS/Fiche_Simple_-_Jira_Service_Management_Creer_Portail_ITSM.md;Cloud-SaaS;Cloud-SaaS;identique;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_Debian_13_Hashicorp_Vault_Valider_Politique.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_LXC_Debian_12_Installation_GLPI_Agent.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_LXC_Debian_13_Reseau_Modifier_Hostname_Et_Hosts.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_LXC_Debian_13_Systeme_Mise_A_Jour_Dist-Upgrade.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_13_Preparer_Migration_Paquets.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Bacula_Valider_Restauration.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Cacti_Verifier_Poller.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Creer_Utilisateur_Standard_Et_Sudo.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Depannage_Disque_Plein_100_Purge.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Disk_Agrandir_Partition_LVM.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Gestion_Groupes_Et_Permissions_POSI.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_IP_Statique_(Exemple_Canonique).md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Installation_Ansible.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Installation_OS_Premier_Demarrage.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Reseau_Diagnostique_Netcat_SS_Tcpdu.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_ReverseProxy_Installation_Nginx_Pro.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Sauvegarde_Configuration_BorgBackup.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Sauvegarde_Rclone_S3.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Securite_Certbot_SSL_Nginx.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Securite_Configuration_Fail2ban_SSH.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Services_Installation_GLPI_Serveur.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Splunk_Verifier_Service_Ingestion.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Stockage_Configuration_Partage_Samb.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Supervision_Installation_Zabbix_Age.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Supervision_Installation_Zabbix_Ser.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Systeme_Installation_Qemu_Guest_Age.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_Verifier_Scheduler_Znuny.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_12_iTop_Cron_Taches_Arriere_Plan.md;Debian;Debian-12;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Ajouter_Cible_Prometheus.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Automatisation_Configuration_Unatte.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Automatisation_Creer_Timer_Systemd.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Bareos_Valider_Restauration.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Centreon_Ajouter_Hote_Pilote.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Controle_Mise_Production.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Database_Installation_MariaDB_11.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Database_Installation_PostgreSQL_17.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Elastic_Verifier_Sante_TLS.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_GNS3_Valider_Lab_Isole.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Git_Valider_Clone_Commit.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_HauteDispo_Cluster_Keepalived_VRRP.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_IP_Statique_systemd-networkd.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Installation_Docker_Engine.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Installation_OS_Premier_Demarrage.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Installer_Agent_OCS_Inventory.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_KeePassXC_Valider_Coffre.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_NetBox_Valider_IPAM.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Observium_Ajouter_Hote_SNMPv3.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Python_Valider_Venv_Pipx.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_QGIS_Valider_Projet.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Reseau_Configuration_VLAN_8021q.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Securite_Configuration_Sudo_Chroot_.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Securite_Diagnostic_AppArmor.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Securite_NFTables_Firewall.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Securite_NFTables_Firewall_ZeroTrus.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Services_Creer_Service_Systemd_Durci.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Services_Installation_Chronyc_NTP.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Services_Installation_DHCP_KEA.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Services_Installation_DNS_BIND9.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Services_Installation_Samba_AD_DC.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Stockage_Configuration_NFS_Server_v.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Stockage_Configuration_Target_iSCSI.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Stockage_Creer_RAID1_Mdadm.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Stockage_Diagnostic_Sante_Disque_SMART.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Stockage_Installation_OpenMediaVault_8.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Stockage_Monter_Disque_UUID_Fstab.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Supervision_Installation_Rsyslog_TL.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Supervision_Prometheus_Node_Exporte.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Suricata_Valider_Capteur_IDS.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Systeme_Creation_Swapfile_LVM.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_VSCode_Valider_Installation.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Web_Installation_Nginx_PHP8.4_FPM.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Wireshark_Valider_Capture_Locale.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_Zeek_Valider_Capteur.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_draw_io_Valider_Diagramme.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Debian/Fiche_Simple_-_VM_Debian_13_phpIPAM_Valider_IPAM.md;Debian;Debian-13;version dans le nom;propose
+01-Fiches-Simples/Docker-LXC/Fiche_Simple_-_Bitwarden_Self_Hosted_Verifier_Backup_Restauration.md;Docker-LXC;Docker;regle dossier;propose
+01-Fiches-Simples/Docker-LXC/Fiche_Simple_-_Docker_Compose_Durcir_Service_NonRoot.md;Docker-LXC;Docker;regle dossier;propose
+01-Fiches-Simples/Docker-LXC/Fiche_Simple_-_Docker_Compose_Healthcheck_Secrets_Rotation_Journaux.md;Docker-LXC;Docker;regle dossier;propose
+01-Fiches-Simples/Docker-LXC/Fiche_Simple_-_Docker_Conteneur_Cloud_Deploiement_Nextcloud.md;Docker-LXC;Docker;regle dossier;propose
+01-Fiches-Simples/Docker-LXC/Fiche_Simple_-_Docker_Conteneur_Gestion_Deploiement_Traefik_Rev.md;Docker-LXC;Docker;regle dossier;propose
+01-Fiches-Simples/Docker-LXC/Fiche_Simple_-_Docker_Conteneur_VPN_Deploiement_Wireguard.md;Docker-LXC;Docker;regle dossier;propose
+01-Fiches-Simples/Docker-LXC/Fiche_Simple_-_Docker_Production_Mise_A_Jour_Rollback_Compose.md;Docker-LXC;Docker;regle dossier;propose
+01-Fiches-Simples/Docker-LXC/Fiche_Simple_-_Docker_Production_Reconstruire_Hote_Restaurer_Stacks.md;Docker-LXC;Docker;regle dossier;propose
+01-Fiches-Simples/Docker-LXC/Fiche_Simple_-_Docker_Reseau_Diagnostic_Reseaux_Compose.md;Docker-LXC;Docker;regle dossier;propose
+01-Fiches-Simples/Docker-LXC/Fiche_Simple_-_Docker_Sauvegarder_Restaurer_Volume.md;Docker-LXC;Docker;regle dossier;propose
+01-Fiches-Simples/Docker-LXC/Fiche_Simple_-_Docker_Sauvegarder_Stack_Compose_Base_Donnees.md;Docker-LXC;Docker;regle dossier;propose
+01-Fiches-Simples/Docker-LXC/Fiche_Simple_-_Docker_Snipe-IT_Importer_Actifs_CSV.md;Docker-LXC;Docker;regle dossier;propose
+01-Fiches-Simples/Docker-LXC/Fiche_Simple_-_Hote_Docker_Gestion_Deploiement_Portainer_CE.md;Docker-LXC;Docker;regle dossier;propose
+01-Fiches-Simples/Docker-LXC/Fiche_Simple_-_Hote_Docker_Installation_Engine_et_Compose.md;Docker-LXC;Docker;regle dossier;propose
+01-Fiches-Simples/Docker-LXC/Fiche_Simple_-_Hote_Docker_Maintenance_Nettoyage_Systeme_Prune.md;Docker-LXC;Docker;regle dossier;propose
+01-Fiches-Simples/Docker-LXC/Fiche_Simple_-_Hote_Docker_Securite_Activer_Mode_Rootless.md;Docker-LXC;Docker;regle dossier;propose
+01-Fiches-Simples/Proxmox/Fiche_Simple_-_TrueNAS_SCALE_25.10_Verifier_Pool_Sauvegarde.md;Proxmox;Proxmox-VE;regle dossier;propose
+01-Fiches-Simples/Proxmox/Fiche_Simple_-_VMware_ESXi_8_Configurer_Hote_Pilote.md;Proxmox;Multi-OS;a valider : hyperviseur VMware, pas Proxmox;A valider
+01-Fiches-Simples/RedHat-Rocky/Fiche_Simple_-_VM_Rocky_9_Conteneurs_Podman_Rootless_Quadlet.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-Fiches-Simples/RedHat-Rocky/Fiche_Simple_-_VM_Rocky_9_Controle_Mise_Production.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-Fiches-Simples/RedHat-Rocky/Fiche_Simple_-_VM_Rocky_9_Creer_Utilisateur_Standard_Et_Wheel.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-Fiches-Simples/RedHat-Rocky/Fiche_Simple_-_VM_Rocky_9_Installation_OS_Premier_Demarrage.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-Fiches-Simples/RedHat-Rocky/Fiche_Simple_-_VM_Rocky_9_Reseau_IP_Statique_NetworkManager_nmcli.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-Fiches-Simples/RedHat-Rocky/Fiche_Simple_-_VM_Rocky_9_Securite_Autoriser_Port_Web_SELinux_Firewalld.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-Fiches-Simples/RedHat-Rocky/Fiche_Simple_-_VM_Rocky_9_Securite_Firewalld_et_SELinux.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-Fiches-Simples/RedHat-Rocky/Fiche_Simple_-_VM_Rocky_9_Services_Configurer_Chrony_NTP.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-Fiches-Simples/RedHat-Rocky/Fiche_Simple_-_VM_Rocky_9_Services_Gestion_Paquets_DNF.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-Fiches-Simples/RedHat-Rocky/Fiche_Simple_-_VM_Rocky_9_Services_Installation_et_Configuratio.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-Fiches-Simples/RedHat-Rocky/Fiche_Simple_-_VM_Rocky_9_Stockage_Configurer_Quotas_Projet_XFS.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-Fiches-Simples/RedHat-Rocky/Fiche_Simple_-_VM_Rocky_9_Stockage_Etendre_LVM_XFS.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-Fiches-Simples/Ubuntu/Fiche_Simple_-_VM_Ubuntu_24.04_Controle_Mise_Production.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24.04 ou 26.04);propose
+01-Fiches-Simples/Ubuntu/Fiche_Simple_-_VM_Ubuntu_24.04_Graylog_Valider_Input_Syslog_Pilote.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24.04 ou 26.04);propose
+01-Fiches-Simples/Ubuntu/Fiche_Simple_-_VM_Ubuntu_24.04_Installation_OS_Premier_Demarrage.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24.04 ou 26.04);propose
+01-Fiches-Simples/Ubuntu/Fiche_Simple_-_VM_Ubuntu_24.04_LTS_Reseau_Netplan_IP_et_DNS.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24.04 ou 26.04);propose
+01-Fiches-Simples/Ubuntu/Fiche_Simple_-_VM_Ubuntu_24.04_Packet_Tracer_Valider_Simulation.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24.04 ou 26.04);propose
+01-Fiches-Simples/Ubuntu/Fiche_Simple_-_VM_Ubuntu_24.04_Reseau_Config_VLAN_Netplan.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24.04 ou 26.04);propose
+01-Fiches-Simples/Ubuntu/Fiche_Simple_-_VM_Ubuntu_24.04_Reseau_Configuration_Netplan_IP_.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24.04 ou 26.04);propose
+01-Fiches-Simples/Ubuntu/Fiche_Simple_-_VM_Ubuntu_24.04_Reseau_Diagnostic_SystemdResolved_DNS_Split.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24.04 ou 26.04);propose
+01-Fiches-Simples/Ubuntu/Fiche_Simple_-_VM_Ubuntu_24.04_Securite_Configuration_UFW_Firew.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24.04 ou 26.04);propose
+01-Fiches-Simples/Ubuntu/Fiche_Simple_-_VM_Ubuntu_24.04_Securite_Creer_Profil_AppArmor.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24.04 ou 26.04);propose
+01-Fiches-Simples/Ubuntu/Fiche_Simple_-_VM_Ubuntu_24.04_Securite_Diagnostic_AppArmor.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24.04 ou 26.04);propose
+01-Fiches-Simples/Ubuntu/Fiche_Simple_-_VM_Ubuntu_24.04_Securite_Installation_SSH_Cle_Et_UFW.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24.04 ou 26.04);propose
+01-Fiches-Simples/Ubuntu/Fiche_Simple_-_VM_Ubuntu_24.04_Systeme_Gerer_Netplan_CloudInit.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24.04 ou 26.04);propose
+01-Fiches-Simples/Ubuntu/Fiche_Simple_-_VM_Ubuntu_24.04_Systeme_Mise_A_Jour_APT_Auto.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24.04 ou 26.04);propose
+01-Fiches-Simples/Ubuntu/Fiche_Simple_-_VM_Ubuntu_26.04_Configurer_SNMPv3_ReadOnly.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24.04 ou 26.04);propose
+01-Fiches-Simples/Ubuntu/Fiche_Simple_-_VM_Ubuntu_26.04_Installation_OS_Premier_Demarrage.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24.04 ou 26.04);propose
+01-Fiches-Simples/Ubuntu/Fiche_Simple_-_VM_Ubuntu_Ceph_Verifier_Sante_Cluster.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24.04 ou 26.04);propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_10_Systeme_Activer_Bureau_A_Distance_.md;Windows;Windows-Client;version cliente;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_11_Administration_Installer_OpenSSH_Cle.md;Windows;Windows-Client;version cliente;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_11_Controle_Mise_Production.md;Windows;Windows-Client;version cliente;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_11_Creer_Compte_Local_Et_Admin.md;Windows;Windows-Client;version cliente;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_11_Installation_OS_Premier_Demarrage.md;Windows;Windows-Client;version cliente;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_11_PowerShell_Valider_Shell_Admin.md;Windows;Windows-Client;version cliente;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_11_PuTTY_Valider_SSH_HostKey.md;Windows;Windows-Client;version cliente;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_11_Reseau_Fixer_IP_et_DNS_(GUI_et_Pow.md;Windows;Windows-Client;version cliente;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_11_Reseau_IP_Statique_PowerShell.md;Windows;Windows-Client;version cliente;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_11_Restaurer_Fichiers_File_History_OneDrive.md;Windows;Windows-Client;version cliente;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_11_Sauvegarder_Fichiers_File_History.md;Windows;Windows-Client;version cliente;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_11_Securite_Activer_BitLocker_TPM.md;Windows;Windows-Client;version cliente;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_11_Systeme_Joindre_Domaine_Active_Dir.md;Windows;Windows-Client;version cliente;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_AD_Configurer_Windows_LAPS.md;Windows;Windows-Server-2022;a valider : Windows Server sans version;A valider
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_ADDS_Deverrouiller_et_Rei.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_ADDS_Joindre_ou_Sortir_Do.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Configuration_Zone_DNS_Di.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Controle_Mise_Production.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Creation_Utilisateur_et_O.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Creer_Utilisateur_Local_E.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_DHCP_Creer_Etendue_et_Res.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_DNS_Creer_Enregistrement_.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Depannage_Reinitialiser_M.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_GPO_Configuration_Strateg.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_GPO_Forcer_et_Auditer_Mis.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Gestion_Groupes_Locaux_Et.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Hyper_V_Creer_VM_Pilote.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_IP_Statique_PowerShell.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Installation_DHCP_et_Eten.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Installation_IIS_Site_Web.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Installation_OS_Premier_Demarrage.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_PRTG_Ajouter_Appareil_Pilote.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Partage_SMB_et_Permission.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Promotion_Controleur_de_D.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_RDS_Activer_Bureau_a_Dist.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_RDS_Configuration_Bureau_.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Reprise_Foret_AD_DS_Lab.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Reseau_Fixer_IP_et_DNS.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Reseau_Fixer_IP_et_DNS_(G.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Reseau_Regle_Firewall_Source_Limitee.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Sauvegarder_Restaurer_Etat_Systeme.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Stockage_Creer_Partage_SM.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022_Veeam_Job_Hyper_V_Pilote.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2022___Win_11_Joindre_Domaine_.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2025_Compatibilite_Fonctionnalites_2022.md;Windows;Windows-Server-2025;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_2025_Installation_OS_Premier_Demarrage.md;Windows;Windows-Server-2025;version dans le nom;propose
+01-Fiches-Simples/Windows/Fiche_Simple_-_VM_Windows_Server_Lansweeper_Scan_Pilote.md;Windows;Windows-Server-2022;a valider : Windows Server sans version;A valider
+01-Fiches-Simples/pfSense/Fiche_Simple_-_DMZ_Valider_Flux_Zone_Lab.md;pfSense;pfSense;identique;propose
+01-Fiches-Simples/pfSense/Fiche_Simple_-_pfSense_CE_2.9.0_Valider_Flux_Lab.md;pfSense;pfSense;identique;propose
+04-Questions-Reponses/Fiche_QA_Bash_Lecture_Et_Analyse_Script.md;;(deja en 02 ou hors mapping);inchange;propose
+04-Questions-Reponses/Fiche_QA_Depannage_Disque_Plein_Purge_APT_Journalctl.md;;(deja en 02 ou hors mapping);inchange;propose
+04-Questions-Reponses/Fiche_QA_Dockerfile_Best_Practices_Security.md;;(deja en 02 ou hors mapping);inchange;propose
+04-Questions-Reponses/Fiche_QA_SSH_ED25519_Et_Fail2ban_Security.md;;(deja en 02 ou hors mapping);inchange;propose
+04-Questions-Reponses/Fiche_QA_YAML_Docker_Compose_Lecture_Et_Validation.md;;(deja en 02 ou hors mapping);inchange;propose
+04-Questions-Reponses/Reparation_DNS_Linux_Resolution_Echec.md;;(deja en 02 ou hors mapping);inchange;propose
+04-Questions-Reponses/Reparation_Docker_Conteneur_Redemarrage_Boucle.md;;(deja en 02 ou hors mapping);inchange;propose
+04-Questions-Reponses/Reparation_Nginx_PHP_FPM_502_Bad_Gateway.md;;(deja en 02 ou hors mapping);inchange;propose
+04-Questions-Reponses/Reparation_SSH_Acces_Distant_Impossible.md;;(deja en 02 ou hors mapping);inchange;propose
+04-Questions-Reponses/Reparation_Service_Systemd_Echec_Demarrage.md;;(deja en 02 ou hors mapping);inchange;propose
+04-Questions-Reponses/Reparation_Windows_Echec_Joindre_Domaine_AD.md;;(deja en 02 ou hors mapping);inchange;propose
+05-Hardening-AIS-Cyber/Fiche_Simple_-_Docker_Hote_Securite_Daemon_Hardening_Trivy.md;;Docker;regle nom;propose
+05-Hardening-AIS-Cyber/Fiche_Simple_-_VM_Debian_13_Securite_Hardening_SSH_ED25519.md;;Debian-13;version dans le nom;propose
+05-Hardening-AIS-Cyber/Fiche_Simple_-_VM_WinSrv_2022_GPO_Security_Baseline_Hardening.md;;Windows-Server-2022;version dans le nom;propose

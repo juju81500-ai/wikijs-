@@ -1,0 +1,46 @@
+# Fiche_Simple_-_VM_Debian_13_Vie_Systeme_11_Compte_D_Administration_Delegue
+
+- **Environnement** : VM Debian 13 « trixie » (serveur)
+- **OS / Version** : Debian 13; étape 11 sur 50 de la vie du système
+- **Catégorie** : vie du système / cycle de vie
+
+---
+
+## Problème précis à résoudre
+
+Disposer d'un compte nominatif avec sudo.
+
+## 1. Hors-Production (Lab / Test / POC)
+
+1. Créer l'utilisateur et l'ajouter au groupe `sudo` (remplacer `admin01`) :
+   ```bash
+   sudo adduser admin01
+   sudo usermod -aG sudo admin01
+   id admin01
+   ```
+   👉 Explication : `adduser` demande le mot de passe à l'écran; `id` confirme l'appartenance au groupe.
+
+2. Tester depuis ce compte :
+   ```bash
+   sudo -l -U admin01
+   ```
+   👉 Explication : liste les droits sudo accordés.
+
+## 2. Production — Contrôles
+
+Un compte par administrateur, pas de compte partagé.
+
+## 3. Production — Sécurité
+
+Limiter les droits via `/etc/sudoers.d/` (étape 28).
+
+## Validation et retour arrière
+
+- **Validation** : `sudo -l` fonctionne pour le compte.
+- **Retour arrière** : restaurer le snapshot ou la sauvegarde pris avant l'étape; consigner l'écart avant de poursuivre.
+
+## Si le problème n'est pas résolu
+
+- [Vie du système : les 50 étapes, tous OS](/00-administration/vie-du-systeme)
+- [Sommaire Debian 13](/01-fiches-simples/debian/13/vie-du-systeme/sommaire-vie-du-systeme-debian-13)
+- [Documentation officielle](https://www.debian.org/doc/)

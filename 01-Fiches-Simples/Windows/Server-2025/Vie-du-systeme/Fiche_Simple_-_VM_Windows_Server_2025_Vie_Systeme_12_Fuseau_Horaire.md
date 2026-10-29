@@ -1,0 +1,52 @@
+# Fiche_Simple_-_VM_Windows_Server_2025_Vie_Systeme_12_Fuseau_Horaire
+
+- **Environnement** : Serveur Windows Server 2025
+- **OS / Version** : Windows Server 2025; étape 12 sur 50 de la vie du système
+- **Catégorie** : vie du système / cycle de vie
+- **Tags** : `windowsserver2025`, `vie-du-systeme`, `cycle-de-vie`, `etape-12`
+
+---
+
+## Problème précis à résoudre
+
+Régler le fuseau horaire pour des journaux cohérents.
+
+## 1. Hors-Production (Lab / Test / POC)
+
+1. Ouvrir **Paramètres > Heure et langue > Date et heure > Fuseau horaire** (ou `timedate.cpl`).
+   ```powershell
+   Get-TimeZone
+   Get-TimeZone -ListAvailable | Where-Object Id -like '*Romance*'
+   ```
+   👉 Explication : affiche le fuseau actuel et l'identifiant de l'Europe de l'Ouest.
+
+2. Appliquer le fuseau de Paris :
+   ```powershell
+   Set-TimeZone -Id 'Romance Standard Time'
+   ```
+   👉 Explication : `Romance Standard Time` correspond à Paris, Bruxelles, Madrid; le changement est immédiat.
+
+3. Contrôler l'heure :
+   ```powershell
+   Get-Date -Format 'yyyy-MM-dd HH:mm:ss zzz'
+   ```
+   👉 Explication : affiche l'heure locale avec le décalage UTC.
+
+## 2. Production — Contrôles
+
+Un fuseau unique pour tous les serveurs facilite la corrélation des journaux.
+
+## 3. Production — Sécurité
+
+Une heure fausse invalide Kerberos (écart maximal de 5 minutes) et les preuves d'audit.
+
+## Validation et retour arrière
+
+- **Validation** : Fuseau attendu et heure correcte.
+- **Retour arrière** : restaurer le snapshot ou la sauvegarde pris avant l'étape; consigner l'écart avant de poursuivre.
+
+## Si le problème n'est pas résolu
+
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Sommaire Windows Server 2025](./Sommaire_-_Vie_du_systeme_Windows_Server_2025.md)
+- [Documentation officielle](https://learn.microsoft.com/fr-fr/windows-server/)
