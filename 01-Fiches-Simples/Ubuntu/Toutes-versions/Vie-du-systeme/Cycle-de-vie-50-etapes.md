@@ -2,7 +2,7 @@
 
 - **Tags** : `cycle-de-vie`, `checklist`, `ubuntu`, `installation`, `production`, `verification`
 
-Cycle complet multi-OS : [Cycle de vie 50 étapes](../../../../00-Administration/Cycle_de_vie_50_etapes.md).
+Cycle complet multi-OS : [Cycle de vie 50 étapes](../../../../00-Administration/01-Gouvernance-Architecture/Cycle_de_vie_50_etapes.md).
 
 Commandes Debian/Ubuntu appliquées. Vérifier les différences entre les versions présentes dans le pack.
 

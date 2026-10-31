@@ -56,6 +56,6 @@ Un poste utilisateur reste en DHCP; l'IP fixe est réservée aux postes spéciau
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : VM Windows 11 Reseau IP Statique PowerShell](<../Vie-du-logiciel/PowerShell/Fiche_Simple_-_VM_Windows_11_Reseau_IP_Statique_PowerShell.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Windows 11](./Sommaire_-_Vie_du_systeme_Windows_11.md)
 - [Documentation officielle](https://learn.microsoft.com/fr-fr/windows/)

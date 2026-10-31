@@ -52,6 +52,6 @@ Clé privée en mode `0600`, jamais dans une sauvegarde non chiffrée.
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : LXC Alpine 3.19 Securite Certbot TLS](<../Vie-du-logiciel/Certbot/Fiche_Simple_-_LXC_Alpine_3.19_Securite_Certbot_TLS.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Alpine Linux 3.19](./Sommaire_-_Vie_du_systeme_Alpine_3.19.md)
 - [Documentation officielle](https://docs.alpinelinux.org/)

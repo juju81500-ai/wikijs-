@@ -2,7 +2,7 @@
 
 - **Tags** : `cycle-de-vie`, `checklist`, `proxmox`, `installation`, `production`, `verification`
 
-Cycle complet multi-OS : [Cycle de vie 50 étapes](<../../00-Administration/Cycle_de_vie_50_etapes.md>).
+Cycle complet multi-OS : [Cycle de vie 50 étapes](<../../00-Administration/01-Gouvernance-Architecture/Cycle_de_vie_50_etapes.md>).
 
 Proxmox VE repose sur Debian : commandes Debian appliquées. Les étapes propres à l'hyperviseur (stockage, cluster, sauvegarde PBS) restent à compléter selon la fiche.
 

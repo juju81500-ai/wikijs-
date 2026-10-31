@@ -50,6 +50,6 @@ Ne pas tester sur le service SSH sans accès de secours.
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : LXC Alpine 3.19 Securite OpenSSH Cle Et OpenRC](<../Vie-du-logiciel/OpenSSH/Fiche_Simple_-_LXC_Alpine_3.19_Securite_OpenSSH_Cle_Et_OpenRC.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Alpine Linux 3.19](./Sommaire_-_Vie_du_systeme_Alpine_3.19.md)
 - [Documentation officielle](https://docs.alpinelinux.org/)

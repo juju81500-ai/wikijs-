@@ -2,7 +2,7 @@
 
 - **Tags** : `cycle-de-vie`, `checklist`, `vmware`, `installation`, `production`, `verification`
 
-Cycle complet multi-OS : [Cycle de vie 50 étapes](<../../../00-Administration/Cycle_de_vie_50_etapes.md>).
+Cycle complet multi-OS : [Cycle de vie 50 étapes](<../../../00-Administration/01-Gouvernance-Architecture/Cycle_de_vie_50_etapes.md>).
 
 Hyperviseur ESXi propriétaire (ni Linux, ni Windows) : seules les étapes génériques sont reprises. L'installation et la configuration passent par l'outil dédié : compléter selon la fiche.
 

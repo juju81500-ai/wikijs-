@@ -49,6 +49,6 @@ Utiliser un compte de jonction délégué, pas Administrateur du domaine.
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : VM Windows Server 2022 ADDS Joindre ou Sortir Do](<../Vie-du-logiciel/Active-Directory/Fiche_Simple_-_VM_Windows_Server_2022_ADDS_Joindre_ou_Sortir_Do.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Windows Server 2022](./Sommaire_-_Vie_du_systeme_Windows_Server_2022.md)
 - [Documentation officielle](https://learn.microsoft.com/fr-fr/windows-server/)

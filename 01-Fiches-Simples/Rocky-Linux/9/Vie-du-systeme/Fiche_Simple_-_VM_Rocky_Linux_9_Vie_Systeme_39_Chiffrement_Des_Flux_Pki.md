@@ -49,6 +49,6 @@ Clé privée en mode `600`; TLS 1.2 minimum (politique crypto système).
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : VM Rocky 9 Securite Certbot TLS](<../Vie-du-logiciel/Certbot/Fiche_Simple_-_VM_Rocky_9_Securite_Certbot_TLS.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Rocky Linux 9](./Sommaire_-_Vie_du_systeme_Rocky_Linux_9.md)
 - [Documentation officielle](https://docs.rockylinux.org/)

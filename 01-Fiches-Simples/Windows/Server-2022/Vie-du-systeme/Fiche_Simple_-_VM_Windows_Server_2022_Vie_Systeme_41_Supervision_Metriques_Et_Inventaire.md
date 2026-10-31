@@ -46,6 +46,6 @@ Utiliser un compte de supervision en lecture seule.
 
 - [Fiche détaillée : VM Windows Server 2022 PRTG Installer](<../Vie-du-logiciel/PRTG/Fiche_Simple_-_VM_Windows_Server_2022_PRTG_Installer.md>)
 - [Fiche détaillée : VM Windows Server 2022 PRTG Ajouter Appareil Pilote](<../Vie-du-logiciel/PRTG/Fiche_Simple_-_VM_Windows_Server_2022_PRTG_Ajouter_Appareil_Pilote.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Windows Server 2022](./Sommaire_-_Vie_du_systeme_Windows_Server_2022.md)
 - [Documentation officielle](https://learn.microsoft.com/fr-fr/windows-server/)

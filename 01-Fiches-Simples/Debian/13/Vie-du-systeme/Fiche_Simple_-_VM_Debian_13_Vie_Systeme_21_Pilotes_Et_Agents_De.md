@@ -43,6 +43,6 @@ Mettre à jour l'agent avec le système.
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : VM Debian 13 Systeme Qemu Guest Agent](<../Vie-du-logiciel/QEMU/Fiche_Simple_-_VM_Debian_13_Systeme_Qemu_Guest_Agent.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Debian 13](./Sommaire_-_Vie_du_systeme_Debian_13.md)
 - [Documentation officielle](https://www.debian.org/doc/)

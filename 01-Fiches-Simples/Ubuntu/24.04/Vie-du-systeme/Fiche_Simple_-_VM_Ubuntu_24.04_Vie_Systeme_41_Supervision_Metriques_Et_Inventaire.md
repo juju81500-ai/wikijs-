@@ -43,6 +43,6 @@ Ne pas exposer l'exporteur à tout le réseau.
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : VM Ubuntu 24.04 Supervision Zabbix Agent2](<../Vie-du-logiciel/Zabbix/Fiche_Simple_-_VM_Ubuntu_24.04_Supervision_Zabbix_Agent2.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Ubuntu 24.04](./Sommaire_-_Vie_du_systeme_Ubuntu_24.04.md)
 - [Documentation officielle](https://documentation.ubuntu.com/server/)

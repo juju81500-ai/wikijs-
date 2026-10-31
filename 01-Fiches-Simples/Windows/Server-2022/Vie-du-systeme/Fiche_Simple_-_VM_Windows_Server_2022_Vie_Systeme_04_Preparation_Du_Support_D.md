@@ -48,6 +48,6 @@ Garder la clé sous clé après usage et l'effacer si elle contient des fichiers
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : VM Windows Server 2022 Hyper V Creer VM Pilote](<../Vie-du-logiciel/Hyper-V/Fiche_Simple_-_VM_Windows_Server_2022_Hyper_V_Creer_VM_Pilote.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Windows Server 2022](./Sommaire_-_Vie_du_systeme_Windows_Server_2022.md)
 - [Documentation officielle](https://learn.microsoft.com/fr-fr/windows-server/)

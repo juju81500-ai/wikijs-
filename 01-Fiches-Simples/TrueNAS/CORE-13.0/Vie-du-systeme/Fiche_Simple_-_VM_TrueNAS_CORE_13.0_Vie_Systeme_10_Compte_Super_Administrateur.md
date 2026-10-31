@@ -37,6 +37,6 @@ Mot de passe long et unique ; limiter les accès GUI par adresse.
 
 ## Si le problème n'est pas résolu
 
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire TrueNAS CORE 13.0](./Sommaire_-_Vie_du_systeme_TrueNAS_CORE_13.0.md)
 - [Documentation officielle](https://www.truenas.com/docs/core/)

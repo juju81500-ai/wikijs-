@@ -1,0 +1,56 @@
+# Secrets et configuration locale
+.env
+.env.*
+!.env.example
+!.env.sample
+*.pem
+*.key
+*.p12
+*.pfx
+*.kdbx
+id_rsa*
+id_ed25519*
+id_ecdsa*
+id_dsa*
+id_*
+!id_*.md
+!id_*.py
+!id_*.csv
+secrets/
+*.secret
+*.secrets
+credentials*.json
+
+# Dumps et sauvegardes
+*.sql
+*.sql.gz
+*.dump
+*.bak
+*.backup
+*.bkp
+*.tar.gz.enc
+backup/
+backups/
+dumps/
+
+# Fichiers locaux et de test
+*.local
+local/
+tmp/
+temp/
+/export/
+*.tmp
+*.swp
+*~
+*.log
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/

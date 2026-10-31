@@ -50,6 +50,6 @@ Désactiver IPv6 uniquement si la politique l'impose; sinon le configurer propre
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : VM Windows Server 2022 IP Statique PowerShell](<../Vie-du-logiciel/PowerShell/Fiche_Simple_-_VM_Windows_Server_2022_IP_Statique_PowerShell.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Windows Server 2022](./Sommaire_-_Vie_du_systeme_Windows_Server_2022.md)
 - [Documentation officielle](https://learn.microsoft.com/fr-fr/windows-server/)

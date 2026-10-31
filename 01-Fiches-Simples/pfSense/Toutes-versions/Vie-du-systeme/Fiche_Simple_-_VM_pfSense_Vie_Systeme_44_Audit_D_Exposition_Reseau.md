@@ -37,6 +37,6 @@ Ne scanner que les adresses dont on est responsable.
 
 ## Si le problème n'est pas résolu
 
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire pfSense CE](./Sommaire_-_Vie_du_systeme_pfSense.md)
 - [Documentation officielle](https://docs.netgate.com/pfsense/en/latest/)

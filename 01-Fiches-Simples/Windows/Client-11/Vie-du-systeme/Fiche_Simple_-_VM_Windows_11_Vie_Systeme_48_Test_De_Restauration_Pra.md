@@ -51,6 +51,6 @@ Restaurer dans un environnement isolé avant toute restauration en production.
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : VM Windows 11 Sysinternals Retour Arriere Limites](<../Vie-du-logiciel/Sysinternals/Fiche_Simple_-_VM_Windows_11_Sysinternals_Retour_Arriere_Limites.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Windows 11](./Sommaire_-_Vie_du_systeme_Windows_11.md)
 - [Documentation officielle](https://learn.microsoft.com/fr-fr/windows/)

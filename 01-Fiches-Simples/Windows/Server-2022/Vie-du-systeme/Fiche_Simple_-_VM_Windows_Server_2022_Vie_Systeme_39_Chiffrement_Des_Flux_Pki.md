@@ -48,6 +48,6 @@ Désactiver TLS 1.0/1.1 et protéger les clés privées (non exportables).
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : VM Windows Server 2022 IIS Installer Role Web Server](<../Vie-du-logiciel/IIS/Fiche_Simple_-_VM_Windows_Server_2022_IIS_Installer_Role_Web_Server.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Windows Server 2022](./Sommaire_-_Vie_du_systeme_Windows_Server_2022.md)
 - [Documentation officielle](https://learn.microsoft.com/fr-fr/windows-server/)

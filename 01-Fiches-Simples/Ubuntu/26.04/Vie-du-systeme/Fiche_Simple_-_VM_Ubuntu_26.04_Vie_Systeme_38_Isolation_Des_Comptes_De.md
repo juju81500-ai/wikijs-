@@ -42,6 +42,6 @@ Ne jamais donner de shell ni de sudo.
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : VM Ubuntu 26.04 LibreNMS Compte Service Code](<../Vie-du-logiciel/LibreNMS/Fiche_Simple_-_VM_Ubuntu_26.04_LibreNMS_Compte_Service_Code.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Ubuntu 26.04](./Sommaire_-_Vie_du_systeme_Ubuntu_26.04.md)
 - [Documentation officielle](https://documentation.ubuntu.com/server/)

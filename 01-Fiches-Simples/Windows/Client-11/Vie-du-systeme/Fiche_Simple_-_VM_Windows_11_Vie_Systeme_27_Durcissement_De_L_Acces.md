@@ -58,6 +58,6 @@ Pas de mot de passe seul, NLA obligatoire, comptes nominatifs, clés plutôt que
 
 - [Fiche détaillée : VM Windows 11 Administration Installer OpenSSH Cle](<../Vie-du-logiciel/OpenSSH/Fiche_Simple_-_VM_Windows_11_Administration_Installer_OpenSSH_Cle.md>)
 - [Fiche détaillée : VM Windows 11 PuTTY Valider SSH HostKey](<../Vie-du-logiciel/PuTTY/Fiche_Simple_-_VM_Windows_11_PuTTY_Valider_SSH_HostKey.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Windows 11](./Sommaire_-_Vie_du_systeme_Windows_11.md)
 - [Documentation officielle](https://learn.microsoft.com/fr-fr/windows/)

@@ -2,7 +2,7 @@
 
 - **Tags** : `cycle-de-vie`, `checklist`, `alpine`, `installation`, `production`, `verification`
 
-Cycle complet multi-OS : [Cycle de vie 50 étapes](../../../../00-Administration/Cycle_de_vie_50_etapes.md).
+Cycle complet multi-OS : [Cycle de vie 50 étapes](../../../../00-Administration/01-Gouvernance-Architecture/Cycle_de_vie_50_etapes.md).
 
 Alpine n'utilise ni apt, ni dnf, ni systemd (apk, OpenRC) : les commandes propres à Debian, RHEL ou systemd ne sont pas reprises. Adapter les étapes marquées « à compléter ».
 

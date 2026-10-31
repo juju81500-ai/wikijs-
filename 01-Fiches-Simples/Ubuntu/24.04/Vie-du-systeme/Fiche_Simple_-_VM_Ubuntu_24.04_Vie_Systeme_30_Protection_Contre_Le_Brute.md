@@ -49,6 +49,6 @@ Surveiller les faux positifs.
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : VM Ubuntu 24.04 Securite Fail2ban](<../Vie-du-logiciel/Fail2ban/Fiche_Simple_-_VM_Ubuntu_24.04_Securite_Fail2ban.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Ubuntu 24.04](./Sommaire_-_Vie_du_systeme_Ubuntu_24.04.md)
 - [Documentation officielle](https://documentation.ubuntu.com/server/)

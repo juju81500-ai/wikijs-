@@ -43,6 +43,6 @@ Pas d'interface graphique sur un serveur.
 
 ## Si le problème n'est pas résolu
 
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Rocky Linux 9](./Sommaire_-_Vie_du_systeme_Rocky_Linux_9.md)
 - [Documentation officielle](https://docs.rockylinux.org/)

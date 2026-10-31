@@ -56,6 +56,6 @@ Planifier les redémarrages hors des heures de service et prévenir l'utilisateu
 
 ## Si le problème n'est pas résolu
 
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Windows 11](./Sommaire_-_Vie_du_systeme_Windows_11.md)
 - [Documentation officielle](https://learn.microsoft.com/fr-fr/windows/)

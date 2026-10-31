@@ -34,7 +34,7 @@ Répertoire de ressources externes pour retrouver rapidement une syntaxe, compar
 | [swisskyrepo/PayloadsAllTheThings](https://github.com/swisskyrepo/PayloadsAllTheThings) | Référentiel de sécurité applicative et de tests d'intrusion, pouvant contenir des payloads et techniques d'exploitation | À consulter pour la compréhension défensive et la rédaction de règles de détection. Aucune procédure de copie/exécution de payloads ou de test contre un tiers n'est fournie dans ce pack. Les essais actifs nécessitent un lab isolé et une autorisation explicite. |
 | [peass-ng/PEASS-ng](https://github.com/peass-ng/PEASS-ng) | Outils d'audit local de configuration et de chemins de privilèges sur Linux/Windows | Le projet indique un usage pour des tests autorisés ou l'éducation. N'exécuter que sur un système possédé ou explicitement autorisé, de préférence en lab; les résultats peuvent exposer des données sensibles et signaler des faux positifs. Ne pas traiter une sortie comme preuve automatique d'exploitabilité. |
 
-Ces liens ne constituent pas une approbation d'usage offensif. Le pack conserve le périmètre défensif défini dans sa [matrice de couverture](../../00-Administration/Matrice_Couverture_Logiciels_Production_TSSR_AIS.md) : inventaire, détection, durcissement, analyse autorisée et traitement des constats.
+Ces liens ne constituent pas une approbation d'usage offensif. Le pack conserve le périmètre défensif défini dans sa [matrice de couverture](../../00-Administration/04-Referentiels-Mapping/Matrice_Couverture_Logiciels_Production_TSSR_AIS.md) : inventaire, détection, durcissement, analyse autorisée et traitement des constats.
 
 ## 4. Listes de logiciels sysadmin
 

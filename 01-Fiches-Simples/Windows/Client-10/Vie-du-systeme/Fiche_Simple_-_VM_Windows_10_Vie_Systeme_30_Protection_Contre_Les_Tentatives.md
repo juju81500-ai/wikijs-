@@ -54,6 +54,6 @@ Alerte SIEM au-delà d'un seuil d'événements 4625; la politique de verrouillag
 
 ## Si le problème n'est pas résolu
 
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Windows 10](./Sommaire_-_Vie_du_systeme_Windows_10.md)
 - [Documentation officielle](https://learn.microsoft.com/fr-fr/windows/)

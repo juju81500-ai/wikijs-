@@ -48,6 +48,6 @@ Couper le RDP quand il n'est pas nécessaire.
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : VM Windows Server 2022 RDS Activer Bureau a Dist](<../Vie-du-logiciel/Remote-Desktop-Services/Fiche_Simple_-_VM_Windows_Server_2022_RDS_Activer_Bureau_a_Dist.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Windows Server 2022](./Sommaire_-_Vie_du_systeme_Windows_Server_2022.md)
 - [Documentation officielle](https://learn.microsoft.com/fr-fr/windows-server/)

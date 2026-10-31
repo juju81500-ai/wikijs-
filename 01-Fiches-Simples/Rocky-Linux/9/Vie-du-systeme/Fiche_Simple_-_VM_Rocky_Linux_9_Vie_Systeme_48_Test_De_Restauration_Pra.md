@@ -48,6 +48,6 @@ Effacer les données de test ensuite.
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : VM Rocky 9 Sauvegarde Restic Depot](<../Vie-du-logiciel/Restic/Fiche_Simple_-_VM_Rocky_9_Sauvegarde_Restic_Depot.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Rocky Linux 9](./Sommaire_-_Vie_du_systeme_Rocky_Linux_9.md)
 - [Documentation officielle](https://docs.rockylinux.org/)

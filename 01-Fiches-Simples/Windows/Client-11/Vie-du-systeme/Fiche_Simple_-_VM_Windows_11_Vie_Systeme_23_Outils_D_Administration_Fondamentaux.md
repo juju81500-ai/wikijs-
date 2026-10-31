@@ -57,6 +57,6 @@ Installer seulement depuis des sources officielles et vérifier la signature (`G
 
 - [Fiche détaillée : VM Windows 11 PowerShell7 Installer Version Stable](<../Vie-du-logiciel/PowerShell/Fiche_Simple_-_VM_Windows_11_PowerShell7_Installer_Version_Stable.md>)
 - [Fiche détaillée : VM Windows 11 Sysinternals Telecharger Verifier](<../Vie-du-logiciel/Sysinternals/Fiche_Simple_-_VM_Windows_11_Sysinternals_Telecharger_Verifier.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Windows 11](./Sommaire_-_Vie_du_systeme_Windows_11.md)
 - [Documentation officielle](https://learn.microsoft.com/fr-fr/windows/)

@@ -1,0 +1,10 @@
+{
+  "version": 1,
+  "description": "Sources publiques de reference pour idee-incorporer-en-attente/reorganisation-fichier. Liste de controle de disponibilite uniquement : aucun contenu n'est stocke ni ingere.",
+  "sources": [
+    {"id": "kipit-nivvlem-tssr", "name": "GitHub kipit/nivvlem-TSSR", "url": "https://github.com/kipit/nivvlem-TSSR"},
+    {"id": "zentssr", "name": "ZenTSSR", "url": "https://zentssr.com/"},
+    {"id": "stephane-robert", "name": "Stephane Robert", "url": "https://www.stephane-robert.info"},
+    {"id": "jousseaume", "name": "Jousseaume", "url": "https://www.jousseaume.online/"}
+  ]
+}

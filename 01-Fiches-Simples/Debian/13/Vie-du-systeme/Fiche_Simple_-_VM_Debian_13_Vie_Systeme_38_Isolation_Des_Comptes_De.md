@@ -42,6 +42,6 @@ Ne jamais donner de shell ni de sudo.
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : VM Debian 13 Zeek Compte Service](<../Vie-du-logiciel/Zeek/Fiche_Simple_-_VM_Debian_13_Zeek_Compte_Service.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Debian 13](./Sommaire_-_Vie_du_systeme_Debian_13.md)
 - [Documentation officielle](https://www.debian.org/doc/)

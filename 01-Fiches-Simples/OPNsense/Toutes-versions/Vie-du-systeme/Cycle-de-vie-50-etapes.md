@@ -5,7 +5,7 @@
 - **Catégorie** : Installation / exploitation / vérification
 - **Tags** : `cycle-de-vie`, `opnsense`, `pare-feu`, `appliance`, `installation`, `production`, `verification`
 
-Cette checklist suit les 50 étapes du [cycle complet OPNsense](../../../../02-Fiches-Completes/OPNsense/Toutes-versions/Cycle-de-vie-50-etapes.md) et du [cycle de référence](../../../../00-Administration/Cycle_de_vie_50_etapes.md). Utiliser la documentation officielle correspondant à la version déployée.
+Cette checklist suit les 50 étapes du [cycle complet OPNsense](../../../../02-Fiches-Completes/OPNsense/Toutes-versions/Cycle-de-vie-50-etapes.md) et du [cycle de référence](../../../../00-Administration/01-Gouvernance-Architecture/Cycle_de_vie_50_etapes.md). Utiliser la documentation officielle correspondant à la version déployée.
 
 ## Périmètre et précautions
 

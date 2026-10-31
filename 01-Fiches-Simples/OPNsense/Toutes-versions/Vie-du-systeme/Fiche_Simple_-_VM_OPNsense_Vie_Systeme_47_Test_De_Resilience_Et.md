@@ -43,6 +43,6 @@ Réaliser le test hors des heures de production.
 
 - [Fiche détaillée : Appliance OPNsense CARP pfsync Tester Basculement](<../Vie-du-logiciel/CARP-pfsync-HA/Fiche_Simple_-_Appliance_OPNsense_CARP_pfsync_Tester_Basculement.md>)
 - [Fiche détaillée : Appliance OPNsense CARP pfsync Preparer Basculement](<../Vie-du-logiciel/CARP-pfsync-HA/Fiche_Simple_-_Appliance_OPNsense_CARP_pfsync_Preparer_Basculement.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire OPNsense](./Sommaire_-_Vie_du_systeme_OPNsense.md)
 - [Documentation officielle](https://docs.opnsense.org/)

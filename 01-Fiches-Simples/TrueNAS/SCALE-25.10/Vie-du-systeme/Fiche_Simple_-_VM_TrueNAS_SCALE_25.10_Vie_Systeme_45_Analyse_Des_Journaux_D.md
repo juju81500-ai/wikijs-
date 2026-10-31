@@ -49,6 +49,6 @@ Un compteur d'erreurs croissant impose le remplacement du disque.
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : TrueNAS SCALE 25.10 Supervision Alertes Pool](<../Vie-du-logiciel/Supervision/Fiche_Simple_-_TrueNAS_SCALE_25.10_Supervision_Alertes_Pool.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire TrueNAS SCALE 25.10](./Sommaire_-_Vie_du_systeme_TrueNAS_SCALE_25.10.md)
 - [Documentation officielle](https://www.truenas.com/docs/scale/)

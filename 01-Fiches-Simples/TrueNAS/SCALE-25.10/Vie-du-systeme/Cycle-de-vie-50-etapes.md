@@ -2,7 +2,7 @@
 
 - **Tags** : `cycle-de-vie`, `checklist`, `truenas`, `installation`, `production`, `verification`
 
-Cycle complet multi-OS : [Cycle de vie 50 étapes](../../../../00-Administration/Cycle_de_vie_50_etapes.md).
+Cycle complet multi-OS : [Cycle de vie 50 étapes](../../../../00-Administration/01-Gouvernance-Architecture/Cycle_de_vie_50_etapes.md).
 
 TrueNAS SCALE repose sur Debian : commandes Debian appliquées. La configuration passe surtout par l'interface web : compléter selon la fiche.
 

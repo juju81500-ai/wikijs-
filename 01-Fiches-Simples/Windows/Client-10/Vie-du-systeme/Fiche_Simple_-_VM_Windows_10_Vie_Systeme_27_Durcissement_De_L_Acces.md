@@ -56,6 +56,6 @@ Pas de mot de passe seul, NLA obligatoire, comptes nominatifs, clés plutôt que
 
 ## Si le problème n'est pas résolu
 
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Windows 10](./Sommaire_-_Vie_du_systeme_Windows_10.md)
 - [Documentation officielle](https://learn.microsoft.com/fr-fr/windows/)

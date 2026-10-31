@@ -52,6 +52,6 @@ Jamais de RDP exposé à Internet; MFA sur le bastion; NLA obligatoire.
 
 ## Si le problème n'est pas résolu
 
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Windows Server 2025](./Sommaire_-_Vie_du_systeme_Windows_Server_2025.md)
 - [Documentation officielle](https://learn.microsoft.com/fr-fr/windows-server/)

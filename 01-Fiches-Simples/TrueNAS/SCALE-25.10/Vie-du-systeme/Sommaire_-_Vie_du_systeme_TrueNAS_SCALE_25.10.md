@@ -2,7 +2,7 @@
 
 - **Tags** : `truenasscale2510`, `vie-du-systeme`, `cycle-de-vie`, `sommaire`
 
-Chaque étape ci-dessous ouvre une fiche simple avec les commandes TrueNAS SCALE 25.10 et une explication pour chaque action. Cycle commun à tous les OS : [Vie du système](../../../../00-Administration/Vie_du_systeme.md).
+Chaque étape ci-dessous ouvre une fiche simple avec les commandes TrueNAS SCALE 25.10 et une explication pour chaque action. Cycle commun à tous les OS : [Vie du système](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md).
 
 ## Phase : Préparation et prérequis (étapes 1 à 5)
 

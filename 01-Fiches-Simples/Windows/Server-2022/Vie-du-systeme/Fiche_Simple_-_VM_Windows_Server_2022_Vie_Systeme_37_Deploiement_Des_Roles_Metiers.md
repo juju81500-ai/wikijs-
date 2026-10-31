@@ -51,6 +51,6 @@ N'installer que les fonctionnalités nécessaires.
 - [Fiche détaillée : VM Windows Server 2022 ADDS DNS DHCP Ajouter DHCP](<../Vie-du-logiciel/Active-Directory/Fiche_Simple_-_VM_Windows_Server_2022_ADDS_DNS_DHCP_Ajouter_DHCP.md>)
 - [Fiche détaillée : VM Windows Server 2022 ADDS DNS DHCP Creer Nouvelle Foret](<../Vie-du-logiciel/Active-Directory/Fiche_Simple_-_VM_Windows_Server_2022_ADDS_DNS_DHCP_Creer_Nouvelle_Foret.md>)
 - [Fiche détaillée : VM Windows Server 2022 Hyper V Installer Role](<../Vie-du-logiciel/Hyper-V/Fiche_Simple_-_VM_Windows_Server_2022_Hyper_V_Installer_Role.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Windows Server 2022](./Sommaire_-_Vie_du_systeme_Windows_Server_2022.md)
 - [Documentation officielle](https://learn.microsoft.com/fr-fr/windows-server/)

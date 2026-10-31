@@ -43,6 +43,6 @@ Protéger les clés privées (`chmod 600`).
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : VM Ubuntu 26.04 Securite Certbot TLS](<../Vie-du-logiciel/Certbot/Fiche_Simple_-_VM_Ubuntu_26.04_Securite_Certbot_TLS.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Ubuntu 26.04](./Sommaire_-_Vie_du_systeme_Ubuntu_26.04.md)
 - [Documentation officielle](https://documentation.ubuntu.com/server/)

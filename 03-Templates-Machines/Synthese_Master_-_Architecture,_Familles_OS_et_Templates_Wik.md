@@ -64,7 +64,7 @@ Les fiches complètes sont rangées sous `02-Fiches-Completes/<OS>/<Type>/` avec
 - **Méthodes** : les fiches simples utilisent les modes lab/production quand ils sont pertinents; une procédure de réparation ou un guide spécifique à un produit peut adopter une structure diagnostic/correction/retour arrière.
 - **Structure des étapes** : commande exacte ou clic GUI + explication simple, claire et précise.
 - **Versions** : vérifier les notes de version et les paquets de la distribution. Debian 12/13, Ubuntu 24.04/26.04 et Windows Server 2022/2025 ne sont pas interchangeables.
-- **Contrôle automatisé** : lancer `python3 00-Administration/verify_wiki.py .`; ce contrôle est en lecture seule et ne certifie pas l'exécution réelle des procédures.
+- **Contrôle automatisé** : lancer `python3 00-Administration/03-Qualite-Tests/verify_wiki.py .`; ce contrôle est en lecture seule et ne certifie pas l'exécution réelle des procédures.
 
 ---
 

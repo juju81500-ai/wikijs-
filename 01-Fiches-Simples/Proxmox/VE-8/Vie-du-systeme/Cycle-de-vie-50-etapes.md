@@ -5,7 +5,7 @@
 - **Catégorie** : Installation / exploitation / vérification
 - **Tags** : `cycle-de-vie`, `proxmox`, `pve8`, `hyperviseur`, `installation`, `production`, `verification`
 
-Cette checklist suit les 50 étapes du [cycle complet Proxmox](../../../../02-Fiches-Completes/Proxmox/VE-8/Cycle-de-vie-50-etapes.md) et du [cycle de référence](../../../../00-Administration/Cycle_de_vie_50_etapes.md). Elle ne remplace pas la documentation Proxmox correspondant à la version installée.
+Cette checklist suit les 50 étapes du [cycle complet Proxmox](../../../../02-Fiches-Completes/Proxmox/VE-8/Cycle-de-vie-50-etapes.md) et du [cycle de référence](../../../../00-Administration/01-Gouvernance-Architecture/Cycle_de_vie_50_etapes.md). Elle ne remplace pas la documentation Proxmox correspondant à la version installée.
 
 ## Périmètre et précautions
 

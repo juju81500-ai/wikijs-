@@ -2,7 +2,7 @@
 
 - **Tags** : `cycle-de-vie`, `checklist`, `windows`, `installation`, `production`, `verification`
 
-Cycle complet multi-OS : [Cycle de vie 50 étapes](../../../../00-Administration/Cycle_de_vie_50_etapes.md).
+Cycle complet multi-OS : [Cycle de vie 50 étapes](../../../../00-Administration/01-Gouvernance-Architecture/Cycle_de_vie_50_etapes.md).
 
 Commandes Windows appliquées. Serveur et client n'ont pas les mêmes étapes (AD, DHCP, DNS et IIS sont réservés au serveur).
 

@@ -43,6 +43,6 @@ Mettre à jour l'agent avec le système.
 ## Si le problème n'est pas résolu
 
 - [Fiche détaillée : VM Debian 12 Systeme Installation Qemu Guest Age](<../Vie-du-logiciel/QEMU/Fiche_Simple_-_VM_Debian_12_Systeme_Installation_Qemu_Guest_Age.md>)
-- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/Vie_du_systeme.md)
+- [Vie du système : les 50 étapes, tous OS](../../../../00-Administration/01-Gouvernance-Architecture/Vie_du_systeme.md)
 - [Sommaire Debian 12](./Sommaire_-_Vie_du_systeme_Debian_12.md)
 - [Documentation officielle](https://www.debian.org/doc/)
