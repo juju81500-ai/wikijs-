@@ -4,6 +4,7 @@ Catalogue de ressources hébergées hors du pack. Les liens externes sont des pi
 
 ## Catalogues disponibles
 
+- [Cours théoriques](../00-Cours-Theoriques/README.md) : parcours originaux du pack et redirections vers les cours et médias d'origine.
 - [Fiches d'aide informatique](01-Aide-Memoire/Fiches-Aide-Informatique.md) : références rapides et aide-mémoire avec précautions d'exécution.
 - [Documentation officielle des logiciels](02-Documentation-Officielle/Liens-Docs-Logicielles.md) : liens éditeurs et projets, par produit et famille.
 - [Sites et communautés de référence](03-Sites-Communautes/Sites-Web.md) : portails officiels, forums, communautés et apprentissage.
@@ -12,6 +13,6 @@ Catalogue de ressources hébergées hors du pack. Les liens externes sont des pi
 
 ## Périmètre et entretien
 
-La [matrice de revue](../00-Administration/Matrice_Controle_Fiches_Completes_et_Questions_Reponses.md) reste le registre exhaustif des sources primaires citées par les guides complets. Ces catalogues fournissent des portes d'entrée et ne remplacent ni les avis versionnés, ni la validation technique des fiches.
+La [matrice de revue](../00-Administration/03-Qualite-Tests/Matrice_Controle_Fiches_Completes_et_Questions_Reponses.md) reste le registre exhaustif des sources primaires citées par les guides complets. Ces catalogues fournissent des portes d'entrée et ne remplacent ni les avis versionnés, ni la validation technique des fiches.
 
 Les URL et versions doivent être recontrôlées avant publication Wiki.js : les portails évoluent, certains flux sont des miroirs et les services tiers peuvent rediriger ou changer de périmètre.

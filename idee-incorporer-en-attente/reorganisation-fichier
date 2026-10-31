@@ -1,0 +1,36 @@
+action: Reorganisation du 00-Administration
+Mieux organiser le 00-Administration
+    - supprimer les fichiers obsolètes ou inutiles
+    - cree une structure de dossiers claire et logique dans le 00-Administration, en regroupant les fichiers par catégorie ou par projet
+    - renommer les fichiers de manière cohérente pour faciliter leur identification et leur recherche
+    - documenter la nouvelle organisation pour que tous les utilisateurs comprennent la structure et les conventions de nommage
+    - mettre en place un processus de maintenance régulière pour s'assurer que la structure reste organisée et à jour
+    - former les utilisateurs sur la nouvelle organisation et les bonnes pratiques pour garantir une utilisation cohérente et efficace
+    - mettre en place un suivi pour s'assurer que les utilisateurs respectent la nouvelle organisation et apporter des ajustements si nécessaire
+
+action: creation de fonction appele tout-en-un
+    - preparer un modèle de fiche tout-en-un décliné par OS/version, à ranger dans 01-Fiches-Simples/<OS>/<version>/Tout-en-un/<categorie>/
+    - créer une fiche distincte pour chaque OS et version ciblés ; si une même procédure concerne plusieurs OS, dupliquer la fiche dans chaque dossier OS puis adapter et vérifier les commandes pour cet OS
+    - ne pas regrouper les procédures de plusieurs OS dans une fiche tout-en-un multi-OS ; les fiches par OS peuvent garder des liens vers leurs sources communes
+    - preparer un modele de fonction tout-en-un qui pourra être utilisé pour automatiser les tâches récurrentes
+    - documentter la fonction tout-en-un pour expliquer son utilisation et les paramètres nécessaires, notamment les sites web et les données à traiter.
+    - https://github.com/kipit/nivvlem-TSSR
+    - https://zentssr.com/
+    - https://www.stephane-robert.info
+    - https://www.jousseaume.online/
+- anlalyser tout les site pour faie des fiches tout-en-un et pourquoi de nouvelle categorie est nécessaire
+- identifier les nouvelles catégories nécessaires pour organiser les fiches tout-en-un de manière cohérente
+- mettre en place un système de classification pour les fiches tout-en-un en fonction des nouvelles catégories identifiées
+- créer un guide ou une documentation expliquant le système de classification et comment l'utiliser pour organiser les fiches tout-en-un
+- former les utilisateurs sur le système de classification et les bonnes pratiques pour garantir une utilisation cohérente et efficace
+- mettre en place un suivi pour s'assurer que les utilisateurs respectent le système de classification et apporter des ajustements si nécessaire
+- relier ces fiches au fiches simples et complete existante pour assurer une cohérence et une continuité dans l'organisation des informations
+- mettre en place un processus de mise à jour régulière pour intégrer les nouvelles fiches tout-en-un et maintenir la cohérence avec les fiches existantes
+- mettre a jour avec un un tmaniere inteligeante les nouveautés du site et les intégrer dans les fiches tout-en-un existantes
+
+-reorganisation complete de tous:
+- prendre en compte que ce projet est sur github donc faut supprimer les ancienne fonctions et s'assurer que les nouvelles fonctions sont correctement intégrées et documentées
+- vérifier régulièrement les mises à jour sur github et intégrer les modifications nécessaires pour maintenir la cohérence et la qualité du projet.
+- mettre un tuto pour installation wiki-js et configuration du projet sur github, incluant les étapes pour cloner le dépôt, installer les dépendances et configurer les paramètres nécessaires.
+- donné imformation projet collaboratif et open source, en expliquant comment les contributeurs peuvent participer, soumettre des modifications et suivre l'évolution du projet.
+- les données comt de passe ou semsible pourront etre sur mon serveur de manière sécurisée, en s'assurant que seules les personnes autorisées y ont accès.
