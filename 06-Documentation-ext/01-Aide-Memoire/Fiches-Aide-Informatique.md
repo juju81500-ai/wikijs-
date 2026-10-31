@@ -42,6 +42,7 @@ Sélection de ressources pour retrouver une commande ou une syntaxe. Les exemple
 
 ## Voir aussi
 
+- [Méthodes d'installation officielles par logiciel et OS](../02-Documentation-Officielle/Methodes_Installation_Logiciels.md)
 - [Documentation officielle des logiciels](../02-Documentation-Officielle/Liens-Docs-Logicielles.md)
 - [Sites et communautés de référence](../03-Sites-Communautes/Sites-Web.md)
 - [Hub de veille CVE](../04-Veille-CVE/Hub-CVE.md)

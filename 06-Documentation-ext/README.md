@@ -6,7 +6,7 @@ Catalogue de ressources hébergées hors du pack. Les liens externes sont des pi
 
 - [Cours théoriques](../00-Cours-Theoriques/README.md) : parcours originaux du pack et redirections vers les cours et médias d'origine.
 - [Fiches d'aide informatique](01-Aide-Memoire/Fiches-Aide-Informatique.md) : références rapides et aide-mémoire avec précautions d'exécution.
-- [Documentation officielle des logiciels](02-Documentation-Officielle/Liens-Docs-Logicielles.md) : liens éditeurs et projets, par produit et famille.
+- [Documentation officielle des logiciels](02-Documentation-Officielle/Liens-Docs-Logicielles.md) : références éditeurs et projets, avec le [guide des méthodes d'installation officielles](02-Documentation-Officielle/Methodes_Installation_Logiciels.md) par OS, version et produit.
 - [Sites et communautés de référence](03-Sites-Communautes/Sites-Web.md) : portails officiels, forums, communautés et apprentissage.
 - [Hub de veille CVE](04-Veille-CVE/Hub-CVE.md) : bases CVE, avis éditeurs/distributeurs et repères de priorisation.
 - [Référentiel GitHub Sysadmin/TSSR](05-Referentiel-GitHub/Github-TSSR.md) : cheat sheets, scripts communautaires, listes d'outils, recherches et cadre d'utilisation défensive.

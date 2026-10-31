@@ -4,6 +4,9 @@ Index de sources primaires pour les logiciels présents dans le pack. La documen
 
 - **Tags** : `documentation-externe`, `documentation-officielle`, `logiciels`, `sysadmin`, `versions`
 - **Vérification des liens** : 27 octobre 2026
+- **Vérification des liens** : 31 octobre 2026
+
+Pour trouver la méthode d'installation officielle par produit, OS et version, consulter le [guide des méthodes d'installation](Methodes_Installation_Logiciels.md). Cet index conserve les liens de documentation de référence.
 
 ## Systèmes d'exploitation et plateformes
 
