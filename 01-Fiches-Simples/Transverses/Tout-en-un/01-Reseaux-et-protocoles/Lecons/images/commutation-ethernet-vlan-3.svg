@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" role="img" aria-labelledby="t d">
+<title id="t">Deux commutateurs reliés par un trunk 802.1Q avec deux VLAN</title>
+<desc id="d">Deux commutateurs SW1 et SW2 sont reliés par un lien trunk qui transporte les VLAN 10 et 20 étiquetés. Les postes en VLAN 10 sont en bleu, ceux du VLAN 20 en orange. Chaque VLAN est un domaine de diffusion distinct.</desc>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a41"/></marker><marker id="arrr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b00020"/></marker></defs>
+<rect width="800" height="480" fill="#ffffff"/>
+<rect x="60" y="170" width="220" height="90" rx="8" fill="#e8ecf1" stroke="#1b2a41" stroke-width="2"/>
+<text x="170" y="205" font-family="sans-serif" font-size="22" fill="#1b2a41" text-anchor="middle" font-weight="bold">SW1</text>
+<text x="170" y="235" font-family="sans-serif" font-size="14" fill="#1b2a41" text-anchor="middle" font-weight="normal">Gi0/1 et Gi0/2 : accès</text>
+<rect x="520" y="170" width="220" height="90" rx="8" fill="#e8ecf1" stroke="#1b2a41" stroke-width="2"/>
+<text x="630" y="205" font-family="sans-serif" font-size="22" fill="#1b2a41" text-anchor="middle" font-weight="bold">SW2</text>
+<text x="630" y="235" font-family="sans-serif" font-size="14" fill="#1b2a41" text-anchor="middle" font-weight="normal">Gi0/1 et Gi0/2 : accès</text>
+<line x1="280" y1="215" x2="520" y2="215" stroke="#5b2a86" stroke-width="8"/>
+<text x="400" y="195" font-family="sans-serif" font-size="16" fill="#5b2a86" text-anchor="middle" font-weight="bold">Trunk 802.1Q (Gi0/24)</text>
+<text x="400" y="245" font-family="sans-serif" font-size="14" fill="#5b2a86" text-anchor="middle" font-weight="normal">VLAN 10 + VLAN 20 étiquetés</text>
+<rect x="300" y="270" width="200" height="24" rx="4" fill="#ffffff" stroke="#5b2a86" stroke-width="1"/>
+<text x="400" y="288" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">VLAN natif : non étiqueté</text>
+<rect x="40" y="370" width="120" height="60" rx="8" fill="#cfe3ff" stroke="#1b2a41" stroke-width="2"/>
+<text x="100" y="397" font-family="sans-serif" font-size="18" fill="#1b2a41" text-anchor="middle" font-weight="bold">PC1</text>
+<text x="100" y="417" font-family="sans-serif" font-size="14" fill="#1b2a41" text-anchor="middle" font-weight="normal">VLAN 10</text>
+<rect x="180" y="370" width="120" height="60" rx="8" fill="#ffe0b8" stroke="#1b2a41" stroke-width="2"/>
+<text x="240" y="397" font-family="sans-serif" font-size="18" fill="#1b2a41" text-anchor="middle" font-weight="bold">PC2</text>
+<text x="240" y="417" font-family="sans-serif" font-size="14" fill="#1b2a41" text-anchor="middle" font-weight="normal">VLAN 20</text>
+<rect x="500" y="370" width="120" height="60" rx="8" fill="#cfe3ff" stroke="#1b2a41" stroke-width="2"/>
+<text x="560" y="397" font-family="sans-serif" font-size="18" fill="#1b2a41" text-anchor="middle" font-weight="bold">PC3</text>
+<text x="560" y="417" font-family="sans-serif" font-size="14" fill="#1b2a41" text-anchor="middle" font-weight="normal">VLAN 10</text>
+<rect x="640" y="370" width="120" height="60" rx="8" fill="#ffe0b8" stroke="#1b2a41" stroke-width="2"/>
+<text x="700" y="397" font-family="sans-serif" font-size="18" fill="#1b2a41" text-anchor="middle" font-weight="bold">PC4</text>
+<text x="700" y="417" font-family="sans-serif" font-size="14" fill="#1b2a41" text-anchor="middle" font-weight="normal">VLAN 20</text>
+<line x1="100" y1="370" x2="130" y2="260" stroke="#1b2a41" stroke-width="3"/>
+<line x1="240" y1="370" x2="210" y2="260" stroke="#1b2a41" stroke-width="3"/>
+<line x1="560" y1="370" x2="590" y2="260" stroke="#1b2a41" stroke-width="3"/>
+<line x1="700" y1="370" x2="670" y2="260" stroke="#1b2a41" stroke-width="3"/>
+<text x="400" y="60" font-family="sans-serif" font-size="18" fill="#1b2a41" text-anchor="middle" font-weight="bold">Un VLAN = un domaine de diffusion séparé (un sous-réseau IP par VLAN)</text>
+<text x="400" y="95" font-family="sans-serif" font-size="14" fill="#1b2a41" text-anchor="middle" font-weight="normal">PC1 et PC3 communiquent sans routeur ; PC1 et PC2 doivent passer par un routeur ou un commutateur L3.</text>
+<rect x="30" y="450" width="12" height="12" rx="8" fill="#cfe3ff" stroke="#1b2a41" stroke-width="2"/>
+<text x="50" y="461" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="start" font-weight="normal">VLAN 10</text>
+<rect x="120" y="450" width="12" height="12" rx="8" fill="#ffe0b8" stroke="#1b2a41" stroke-width="2"/>
+<text x="140" y="461" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="start" font-weight="normal">VLAN 20</text>
+</svg>

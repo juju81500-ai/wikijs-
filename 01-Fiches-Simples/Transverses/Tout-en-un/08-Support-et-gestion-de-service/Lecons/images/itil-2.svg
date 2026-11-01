@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 340" width="800" height="340" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">Incident, demande, problème et changement</title>
+<desc id="d">Quatre colonnes comparant incident, demande de service, problème et changement, avec la question typique de l&#x27;utilisateur et l&#x27;objectif de chacun.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#34495e"/></marker></defs>
+<rect width="800" height="340" fill="#ffffff"/>
+<text x="400" y="36" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="400" dy="0">Quatre types de dossiers, quatre questions</tspan></text>
+<rect x="30" y="70" width="175" height="160" rx="8" fill="#fde2e2" stroke="#9b1c1c" stroke-width="2"/>
+<text x="117" y="105" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="117" dy="0">Incident</tspan></text>
+<text x="117" y="150" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="117" dy="0">« Ça ne marche plus »</tspan></text>
+<line x1="45" y1="175" x2="190" y2="175" stroke="#34495e" stroke-width="2"/>
+<text x="117" y="205" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="117" dy="0">Rétablir le service</tspan><tspan x="117" dy="19.5">au plus vite</tspan></text>
+<rect x="220" y="70" width="175" height="160" rx="8" fill="#e1f5e6" stroke="#1e6b34" stroke-width="2"/>
+<text x="307" y="105" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="307" dy="0">Demande de service</tspan></text>
+<text x="307" y="150" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="307" dy="0">« J&#x27;ai besoin de... »</tspan></text>
+<line x1="235" y1="175" x2="380" y2="175" stroke="#34495e" stroke-width="2"/>
+<text x="307" y="205" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="307" dy="0">Fournir ce qui est</tspan><tspan x="307" dy="19.5">prévu au catalogue</tspan></text>
+<rect x="410" y="70" width="175" height="160" rx="8" fill="#fff3cd" stroke="#8a6d00" stroke-width="2"/>
+<text x="497" y="105" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="497" dy="0">Problème</tspan></text>
+<text x="497" y="150" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="497" dy="0">« Pourquoi cela revient ? »</tspan></text>
+<line x1="425" y1="175" x2="570" y2="175" stroke="#34495e" stroke-width="2"/>
+<text x="497" y="205" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="497" dy="0">Trouver et traiter</tspan><tspan x="497" dy="19.5">la cause racine</tspan></text>
+<rect x="600" y="70" width="175" height="160" rx="8" fill="#e8e4fb" stroke="#4a3a9b" stroke-width="2"/>
+<text x="687" y="105" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="687" dy="0">Changement</tspan></text>
+<text x="687" y="150" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="687" dy="0">« Je veux modifier... »</tspan></text>
+<line x1="615" y1="175" x2="760" y2="175" stroke="#34495e" stroke-width="2"/>
+<text x="687" y="205" font-size="15" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="687" dy="0">Évaluer, autoriser,</tspan><tspan x="687" dy="19.5">planifier, retour arrière</tspan></text>
+<text x="400" y="305" font-size="14" text-anchor="middle" font-weight="normal" fill="#34495e"><tspan x="400" dy="0">Un incident récurrent peut ouvrir un problème ; la correction du problème passe souvent par un changement.</tspan></text>
+<text x="400" y="270" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="400" dy="0">Incident → (si récurrent) problème → (si correction à déployer) changement</tspan></text>
+
+</svg>

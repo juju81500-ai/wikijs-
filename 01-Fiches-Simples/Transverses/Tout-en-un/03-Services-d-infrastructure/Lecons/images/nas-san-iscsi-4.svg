@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" aria-labelledby="t d">
+<title id="t">Snapshots et réplication : protéger les données à deux niveaux</title>
+<desc id="d">Un snapshot local garde un état figé à un instant donné sur le même équipement, tandis que la réplication copie les données vers un second site. Le snapshot protège d'une erreur humaine, la réplication protège d'une panne du site.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1a1a1a"/></marker></defs>
+<rect width="800" height="420" fill="#ffffff"/>
+<text x="400" y="30" text-anchor="middle" font-size="20" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Snapshot local vs réplication distante</text>
+<rect x="30" y="70" width="300" height="250" rx="8" fill="#cfe3ff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="180.0" y="190.25" text-anchor="middle" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Site principal</text>
+<text x="180.0" y="210.25" text-anchor="middle" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">volume de production</text>
+<rect x="60" y="140" width="240" height="42" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="180.0" y="165.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">snap 08:00</text>
+<rect x="60" y="195" width="240" height="42" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="180.0" y="220.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">snap 12:00</text>
+<rect x="60" y="250" width="240" height="42" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="180.0" y="275.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">snap 18:00</text>
+<rect x="470" y="70" width="300" height="250" rx="8" fill="#d4f2d4" stroke="#1a1a1a" stroke-width="2"/>
+<text x="620.0" y="190.25" text-anchor="middle" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Site de secours</text>
+<text x="620.0" y="210.25" text-anchor="middle" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">volume répliqué</text>
+<rect x="500" y="140" width="240" height="42" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="620.0" y="165.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">copie 08:00</text>
+<rect x="500" y="195" width="240" height="42" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="620.0" y="220.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">copie 12:00</text>
+<rect x="500" y="250" width="240" height="42" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="620.0" y="275.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">copie 18:00</text>
+<line x1="330" y1="195" x2="470" y2="195" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="400" y="180" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">réplication</text>
+<text x="400" y="222" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">asynchrone</text>
+<text x="400" y="350" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">RPO = perte de données acceptable (ex. 4 h) ; RTO = durée de reprise acceptable.</text>
+<text x="400" y="376" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Un snapshot n'est PAS une sauvegarde : il vit sur le même équipement.</text>
+</svg>

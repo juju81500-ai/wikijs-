@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" width="800" height="330" font-family="sans-serif">
+  <title>Cycle de vie d'un bail DHCP</title>
+  <desc>Frise chronologique d'un bail de 8 heures : obtention du bail à 0, renouvellement unicast à T1 soit 50 % (4 h), renouvellement par diffusion à T2 soit 87,5 % (7 h), expiration à 100 % (8 h) et retour à la procédure DORA.</desc>
+  <rect width="800" height="330" fill="#ffffff"/>
+  <rect x="60" y="120" width="320" height="34" fill="#c6e0b4" stroke="#375623" stroke-width="2"/>
+  <rect x="380" y="120" width="280" height="34" fill="#ffe699" stroke="#7f6000" stroke-width="2"/>
+  <rect x="660" y="120" width="80" height="34" fill="#f4b183" stroke="#843c0c" stroke-width="2"/>
+  <text x="220" y="143" font-size="14" fill="#000000" text-anchor="middle">Bail valide, usage normal</text>
+  <text x="520" y="143" font-size="14" fill="#000000" text-anchor="middle">Renouvellement tenté</text>
+  <text x="700" y="143" font-size="13" fill="#000000" text-anchor="middle">Rebind</text>
+  <g stroke="#000000" stroke-width="2">
+    <line x1="60" y1="100" x2="60" y2="175"/>
+    <line x1="380" y1="100" x2="380" y2="175"/>
+    <line x1="660" y1="100" x2="660" y2="175"/>
+    <line x1="740" y1="100" x2="740" y2="175"/>
+  </g>
+  <text x="60" y="92" font-size="14" fill="#000000" text-anchor="middle" font-weight="bold">0 h</text>
+  <text x="380" y="92" font-size="14" fill="#000000" text-anchor="middle" font-weight="bold">T1 = 4 h</text>
+  <text x="660" y="92" font-size="14" fill="#000000" text-anchor="middle" font-weight="bold">T2 = 7 h</text>
+  <text x="740" y="92" font-size="14" fill="#000000" text-anchor="middle" font-weight="bold">8 h</text>
+  <text x="60" y="198" font-size="12" fill="#000000" text-anchor="middle">DORA terminé</text>
+  <text x="380" y="198" font-size="12" fill="#000000" text-anchor="middle">REQUEST unicast</text>
+  <text x="380" y="214" font-size="12" fill="#000000" text-anchor="middle">au serveur d'origine</text>
+  <text x="660" y="198" font-size="12" fill="#000000" text-anchor="middle">REQUEST en</text>
+  <text x="660" y="214" font-size="12" fill="#000000" text-anchor="middle">diffusion</text>
+  <text x="740" y="198" font-size="12" fill="#000000" text-anchor="middle">expiration</text>
+  <text x="740" y="214" font-size="12" fill="#000000" text-anchor="middle">→ DISCOVER</text>
+  <text x="400" y="40" font-size="18" fill="#000000" text-anchor="middle" font-weight="bold">Un bail de 8 heures, vu du client</text>
+  <text x="400" y="275" font-size="13" fill="#000000" text-anchor="middle">Un ACK reçu à T1 ou T2 repart pour une durée complète. Sans réponse, l'adresse est abandonnée à 8 h.</text>
+  <text x="400" y="300" font-size="12" fill="#000000" text-anchor="middle">Valeurs par défaut usuelles : T1 = 50 % et T2 = 87,5 % de la durée du bail (RFC 2131).</text>
+</svg>

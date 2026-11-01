@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">Cycle de vie d&#x27;un ticket</title>
+<desc id="d">Cinq états en séquence : nouveau, en cours, en attente, résolu, clos, avec les deux chronomètres de SLA et la suspension pendant l&#x27;attente.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#34495e"/></marker></defs>
+<rect width="800" height="440" fill="#ffffff"/>
+<text x="400" y="34" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="400" dy="0">Cycle de vie d&#x27;un ticket</tspan></text>
+<rect x="20" y="110" width="125" height="70" rx="8" fill="#dbe9f7" stroke="#34495e" stroke-width="2"/>
+<text x="82" y="152" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="82" dy="0">Nouveau</tspan></text>
+<line x1="145" y1="145" x2="175" y2="145" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="175" y="110" width="125" height="70" rx="8" fill="#fdf1b0" stroke="#34495e" stroke-width="2"/>
+<text x="237" y="152" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="237" dy="0">En cours</tspan></text>
+<line x1="300" y1="145" x2="330" y2="145" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="330" y="110" width="125" height="70" rx="8" fill="#f9d6a5" stroke="#34495e" stroke-width="2"/>
+<text x="392" y="152" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="392" dy="0">En attente</tspan></text>
+<line x1="455" y1="145" x2="485" y2="145" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="485" y="110" width="125" height="70" rx="8" fill="#d5efc7" stroke="#34495e" stroke-width="2"/>
+<text x="547" y="152" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="547" dy="0">Résolu</tspan></text>
+<line x1="610" y1="145" x2="640" y2="145" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="640" y="110" width="125" height="70" rx="8" fill="#e5e5e5" stroke="#34495e" stroke-width="2"/>
+<text x="702" y="152" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="702" dy="0">Clos</tspan></text>
+<text x="82" y="215" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="82" dy="0">créé par l&#x27;utilisateur</tspan><tspan x="82" dy="15.600000000000001">ou par l&#x27;agent</tspan></text>
+<text x="237" y="215" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="237" dy="0">attribué à un</tspan><tspan x="237" dy="15.600000000000001">technicien</tspan></text>
+<text x="392" y="215" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="392" dy="0">attente de l&#x27;utilisateur</tspan><tspan x="392" dy="15.600000000000001">ou d&#x27;un fournisseur :</tspan><tspan x="392" dy="15.600000000000001">chronomètre suspendu</tspan></text>
+<text x="547" y="215" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="547" dy="0">solution proposée,</tspan><tspan x="547" dy="15.600000000000001">validation demandée</tspan></text>
+<text x="702" y="215" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="702" dy="0">clôture auto après</tspan><tspan x="702" dy="15.600000000000001">délai sans réponse</tspan></text>
+<rect x="30" y="300" width="740" height="60" rx="8" fill="#fff3cd" stroke="#8a6d00" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="400" y="325" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="400" dy="0">Deux chronomètres courent : temps de prise en charge (TTO) et temps de résolution (TTR)</tspan></text>
+<text x="400" y="347" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="400" dy="0">L&#x27;état « En attente » suspend le TTR ; un refus de la solution rouvre le ticket (retour à « En cours »).</tspan></text>
+<text x="400" y="410" font-size="13" text-anchor="middle" font-weight="normal" fill="#34495e"><tspan x="400" dy="0">Libellés d&#x27;états variables selon l&#x27;outil et sa configuration.</tspan></text>
+
+</svg>

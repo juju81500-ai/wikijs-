@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img" aria-labelledby="t d">
+<title id="t">Idempotence et mode simulation d&#x27;Ansible</title>
+<desc id="d">Schéma : un premier passage de playbook affiche changed lorsqu&#x27;il modifie l&#x27;hôte ; un second passage identique affiche ok sans changement ; check et diff permettent de prévoir.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a41"/></marker></defs>
+<rect width="800" height="400" fill="#f7f9fc"/>
+<text x="400" y="34" font-family="sans-serif" font-size="25" fill="#111111" text-anchor="middle" font-weight="bold">Idempotence : relancer ne change plus rien</text>
+<rect x="20" y="80" width="230" height="110" rx="8" fill="#fef9c3" stroke="#1b2a41" stroke-width="2"/>
+<text x="135.0" y="119.0" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle" font-weight="bold">1er passage</text>
+<text x="135.0" y="140.6" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">paquet absent</text>
+<text x="135.0" y="162.2" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">→ installé : changed</text>
+<rect x="285" y="80" width="230" height="110" rx="8" fill="#dcfce7" stroke="#1b2a41" stroke-width="2"/>
+<text x="400.0" y="119.0" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle" font-weight="bold">2e passage</text>
+<text x="400.0" y="140.6" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">paquet présent</text>
+<text x="400.0" y="162.2" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">→ ok : inchangé</text>
+<rect x="550" y="80" width="230" height="110" rx="8" fill="#dcfce7" stroke="#1b2a41" stroke-width="2"/>
+<text x="665.0" y="119.0" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle" font-weight="bold">3e passage</text>
+<text x="665.0" y="140.6" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">→ ok : inchangé</text>
+<text x="665.0" y="162.2" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">(état stable)</text>
+<line x1="250" y1="135" x2="285" y2="135" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<line x1="515" y1="135" x2="550" y2="135" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<rect x="20" y="230" width="760" height="140" rx="8" fill="#ffffff" stroke="#1b2a41" stroke-width="2"/>
+<text x="400" y="262" font-family="sans-serif" font-size="19" fill="#111111" text-anchor="middle" font-weight="bold">Avant d&#x27;appliquer</text>
+<text x="400" y="295" font-family="sans-serif" font-size="17" fill="#111111" text-anchor="middle">--syntax-check : le fichier est-il valide ?</text>
+<text x="400" y="322" font-family="sans-serif" font-size="17" fill="#111111" text-anchor="middle">--check : que ferait-on, sans le faire ?</text>
+<text x="400" y="349" font-family="sans-serif" font-size="17" fill="#111111" text-anchor="middle">--diff : quelles lignes changeraient ?</text>
+</svg>

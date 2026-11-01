@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="t d">
+  <title id="t">Chemin des entrées-sorties : émulation contre pilote paravirtualisé</title>
+  <desc id="d">Deux chemins entre un invité et le matériel : à gauche, un périphérique émulé qui provoque beaucoup de sorties vers l'hyperviseur ; à droite, un pilote paravirtualisé de type virtio qui échange par files partagées avec moins de sorties.</desc>
+  <rect width="800" height="400" fill="#ffffff"/>
+  <text x="400" y="30" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#111">Pilotes invités : émulation ou paravirtualisation</text>
+  <g font-family="sans-serif" font-size="15" fill="#111">
+    <text x="200" y="65" text-anchor="middle" font-weight="bold">Matériel émulé (ex. carte e1000)</text>
+    <rect x="60" y="80" width="280" height="55" fill="#cfe2f3" stroke="#1f4e79"/>
+    <text x="200" y="104" text-anchor="middle">Invité : pilote générique</text>
+    <text x="200" y="124" text-anchor="middle">nombreux accès « registre »</text>
+    <rect x="60" y="175" width="280" height="55" fill="#fff2cc" stroke="#7f6000"/>
+    <text x="200" y="199" text-anchor="middle">Hyperviseur : émulation</text>
+    <text x="200" y="219" text-anchor="middle">chaque accès = une sortie de VM</text>
+    <rect x="60" y="275" width="280" height="55" fill="#d9ead3" stroke="#274e13"/>
+    <text x="200" y="308" text-anchor="middle">Matériel réel</text>
+    <text x="200" y="360" text-anchor="middle" font-weight="bold" fill="#990000">Compatible partout, mais plus lent</text>
+    <text x="600" y="65" text-anchor="middle" font-weight="bold">Paravirtualisé (ex. virtio)</text>
+    <rect x="460" y="80" width="280" height="55" fill="#cfe2f3" stroke="#1f4e79"/>
+    <text x="600" y="104" text-anchor="middle">Invité : pilote virtio</text>
+    <text x="600" y="124" text-anchor="middle">sait qu'il est virtualisé</text>
+    <rect x="460" y="175" width="280" height="55" fill="#fff2cc" stroke="#7f6000"/>
+    <text x="600" y="199" text-anchor="middle">Hyperviseur : backend virtio</text>
+    <text x="600" y="219" text-anchor="middle">files partagées, lots de requêtes</text>
+    <rect x="460" y="275" width="280" height="55" fill="#d9ead3" stroke="#274e13"/>
+    <text x="600" y="308" text-anchor="middle">Matériel réel</text>
+    <text x="600" y="360" text-anchor="middle" font-weight="bold" fill="#274e13">Plus rapide, pilote à installer dans l'invité</text>
+  </g>
+  <g stroke="#444" stroke-width="3" fill="#444">
+    <path d="M200 135 V168 M200 230 V268 M600 135 V168 M600 230 V268" fill="none"/>
+    <polygon points="190,166 210,166 200,176"/><polygon points="190,266 210,266 200,276"/>
+    <polygon points="590,166 610,166 600,176"/><polygon points="590,266 610,266 600,276"/>
+  </g>
+</svg>

@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t d">
+  <title id="t">Pont virtuel, VLAN et lien trunk entre hôte et commutateur physique</title>
+  <desc id="d">Trois VM sont branchées sur un pont virtuel d'hôte. La VM web est dans le VLAN 10, la VM base dans le VLAN 20, la VM sauvegarde dans le VLAN 30. Le pont est relié par un lien trunk portant les VLAN 10, 20 et 30 au commutateur physique.</desc>
+  <rect width="800" height="440" fill="#ffffff"/>
+  <text x="400" y="30" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#111">Pont virtuel + VLAN : un seul câble, plusieurs réseaux</text>
+  <g font-family="sans-serif" font-size="15" fill="#111">
+    <rect x="30" y="50" width="560" height="360" rx="8" fill="#eef4fb" stroke="#1f4e79" stroke-width="2"/>
+    <text x="45" y="75" font-weight="bold">Hôte de virtualisation</text>
+    <rect x="55" y="95" width="150" height="70" fill="#cfe2f3" stroke="#1f4e79"/>
+    <text x="130" y="118" text-anchor="middle" font-weight="bold">VM web</text>
+    <text x="130" y="141" text-anchor="middle" font-size="13">VLAN 10</text><text x="130" y="158" text-anchor="middle" font-size="13">192.0.2.10</text>
+    <rect x="225" y="95" width="150" height="70" fill="#cfe2f3" stroke="#1f4e79"/>
+    <text x="300" y="118" text-anchor="middle" font-weight="bold">VM base</text>
+    <text x="300" y="141" text-anchor="middle" font-size="13">VLAN 20</text><text x="300" y="158" text-anchor="middle" font-size="13">198.51.100.10</text>
+    <rect x="395" y="95" width="170" height="70" fill="#cfe2f3" stroke="#1f4e79"/>
+    <text x="480" y="118" text-anchor="middle" font-weight="bold">VM sauvegarde</text>
+    <text x="480" y="141" text-anchor="middle" font-size="13">VLAN 30</text><text x="480" y="158" text-anchor="middle" font-size="13">203.0.113.10</text>
+    <path d="M130 165 V230 M300 165 V230 M480 165 V230" stroke="#444" stroke-width="3"/>
+    <text x="85" y="205" text-anchor="middle" font-size="13">carte virtuelle</text>
+    <rect x="55" y="230" width="510" height="60" fill="#fff2cc" stroke="#7f6000" stroke-width="2"/>
+    <text x="310" y="257" text-anchor="middle" font-weight="bold">Pont virtuel (bridge / vSwitch) compatible VLAN</text>
+    <text x="310" y="278" text-anchor="middle">étiquette (tag) 802.1Q selon le port de chaque VM</text>
+    <path d="M310 290 V330" stroke="#444" stroke-width="3"/>
+    <rect x="200" y="330" width="220" height="50" fill="#d9ead3" stroke="#274e13"/>
+    <text x="310" y="352" text-anchor="middle" font-weight="bold">Carte physique</text>
+    <text x="310" y="370" text-anchor="middle" font-size="13">(ou agrégat de cartes)</text>
+  </g>
+  <path d="M420 355 H640" stroke="#990000" stroke-width="5"/>
+  <g font-family="sans-serif" font-size="15" fill="#111">
+    <text x="530" y="345" text-anchor="middle" font-weight="bold" fill="#990000">Trunk</text>
+    <text x="530" y="385" text-anchor="middle" font-size="13">VLAN 10, 20, 30</text>
+    <rect x="640" y="300" width="130" height="110" fill="#d9ead3" stroke="#274e13" stroke-width="2"/>
+    <text x="705" y="345" text-anchor="middle" font-weight="bold">Commutateur</text>
+    <text x="705" y="365" text-anchor="middle" font-weight="bold">physique</text>
+    <text x="705" y="387" text-anchor="middle" font-size="13">port en mode trunk</text>
+  </g>
+</svg>

@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">Échéances d&#x27;un SLA</title>
+<desc id="d">Frise : ouverture du ticket, première prise en charge (TTO), résolution (TTR), avec exemples de cibles par priorité.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#34495e"/></marker></defs>
+<rect width="800" height="420" fill="#ffffff"/>
+<text x="400" y="34" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="400" dy="0">Un SLA, deux échéances</tspan></text>
+<line x1="40" y1="200" x2="770" y2="200" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<circle cx="80" cy="200" r="9" fill="#2c5282"/>
+<text x="80" y="238" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="80" dy="0">Ouverture</tspan></text>
+<circle cx="250" cy="200" r="9" fill="#2c5282"/>
+<text x="250" y="238" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="250" dy="0">1re prise en charge</tspan></text>
+<circle cx="700" cy="200" r="9" fill="#2c5282"/>
+<text x="700" y="238" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="700" dy="0">Résolution</tspan></text>
+<rect x="80" y="110" width="170" height="40" rx="8" fill="#e8f1fb" stroke="#2c5282" stroke-width="2"/>
+<text x="165" y="136" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="165" dy="0">TTO (prise en charge)</tspan></text>
+<rect x="80" y="255" width="620" height="40" rx="8" fill="#fff3cd" stroke="#8a6d00" stroke-width="2"/>
+<text x="390" y="281" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="390" dy="0">TTR (résolution) — cible selon la priorité</tspan></text>
+<text x="400" y="335" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="400" dy="0">Exemple fictif :   P1 → TTO 15 min, TTR 4 h   |   P3 → TTO 4 h, TTR 3 jours ouvrés</tspan></text>
+<text x="400" y="362" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="400" dy="0">Le calendrier (heures ouvrées) et les suspensions modifient le calcul des échéances.</tspan></text>
+<text x="400" y="390" font-size="14" text-anchor="middle" font-weight="normal" fill="#34495e"><tspan x="400" dy="0">Alertes à 75 % et 100 % de l&#x27;échéance : prévenir avant de dépasser.</tspan></text>
+
+</svg>

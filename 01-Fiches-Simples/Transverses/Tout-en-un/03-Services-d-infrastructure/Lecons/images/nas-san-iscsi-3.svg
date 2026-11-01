@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-labelledby="t d">
+<title id="t">Multipath : deux chemins redondants entre serveur et baie</title>
+<desc id="d">Le serveur dispose de deux cartes réseau reliées à deux commutateurs distincts, eux-mêmes reliés à deux contrôleurs de la baie. Le service multipath regroupe les chemins en un seul périphérique /dev/mapper/mpatha et bascule en cas de panne.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1a1a1a"/></marker></defs>
+<rect width="800" height="450" fill="#ffffff"/>
+<text x="400" y="30" text-anchor="middle" font-size="20" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Multipath : un disque, plusieurs chemins</text>
+<rect x="300" y="60" width="200" height="90" rx="8" fill="#cfe3ff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="400.0" y="90.9" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Serveur</text>
+<text x="400.0" y="109.9" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">/dev/mapper/mpatha</text>
+<text x="400.0" y="128.9" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">(périphérique unique)</text>
+<rect x="120" y="190" width="150" height="60" rx="8" fill="#fff3a8" stroke="#1a1a1a" stroke-width="2"/>
+<text x="195.0" y="215.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">NIC A</text>
+<text x="195.0" y="233.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">192.0.2.21</text>
+<rect x="530" y="190" width="150" height="60" rx="8" fill="#fff3a8" stroke="#1a1a1a" stroke-width="2"/>
+<text x="605.0" y="215.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">NIC B</text>
+<text x="605.0" y="233.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">198.51.100.21</text>
+<line x1="350" y1="150" x2="220" y2="190" stroke="#1a1a1a" stroke-width="2.5"/>
+<line x1="450" y1="150" x2="600" y2="190" stroke="#1a1a1a" stroke-width="2.5"/>
+<rect x="120" y="280" width="150" height="50" rx="8" fill="#ffe2b8" stroke="#1a1a1a" stroke-width="2"/>
+<text x="195.0" y="309.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Commutateur 1</text>
+<rect x="530" y="280" width="150" height="50" rx="8" fill="#ffe2b8" stroke="#1a1a1a" stroke-width="2"/>
+<text x="605.0" y="309.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Commutateur 2</text>
+<line x1="195" y1="250" x2="195" y2="280" stroke="#1a1a1a" stroke-width="2.5"/>
+<line x1="605" y1="250" x2="605" y2="280" stroke="#1a1a1a" stroke-width="2.5"/>
+<rect x="120" y="370" width="150" height="60" rx="8" fill="#d4f2d4" stroke="#1a1a1a" stroke-width="2"/>
+<text x="195.0" y="395.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Contrôleur A</text>
+<text x="195.0" y="413.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">192.0.2.30</text>
+<rect x="530" y="370" width="150" height="60" rx="8" fill="#d4f2d4" stroke="#1a1a1a" stroke-width="2"/>
+<text x="605.0" y="395.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Contrôleur B</text>
+<text x="605.0" y="413.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">198.51.100.30</text>
+<line x1="195" y1="330" x2="195" y2="370" stroke="#1a1a1a" stroke-width="2.5"/>
+<line x1="605" y1="330" x2="605" y2="370" stroke="#1a1a1a" stroke-width="2.5"/>
+<line x1="270" y1="400" x2="530" y2="400" stroke="#1a1a1a" stroke-width="2.5" stroke-dasharray="6 4"/>
+<text x="400" y="375" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">même LUN</text>
+<text x="400" y="300" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Chemin A : actif</text>
+<text x="400" y="320" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Chemin B : actif ou en attente</text>
+</svg>

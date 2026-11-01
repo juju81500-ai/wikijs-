@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500" role="img" aria-labelledby="t d">
+<title id="t">Traduction d'adresses PAT avec une adresse publique partagée</title>
+<desc id="d">Deux postes du réseau interne 192.0.2.0/24 sortent via un routeur NAT dont l'adresse externe est 203.0.113.1. Le routeur remplace l'adresse source par 203.0.113.1 et distingue les flux par des ports source différents. La table de traduction fait la correspondance au retour. Adresses de documentation utilisées à la place d'adresses privées.</desc>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a41"/></marker><marker id="arrr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b00020"/></marker></defs>
+<rect width="800" height="500" fill="#ffffff"/>
+<text x="400" y="30" font-family="sans-serif" font-size="22" fill="#1b2a41" text-anchor="middle" font-weight="bold">PAT : plusieurs postes, une seule adresse externe</text>
+<rect x="10" y="70" width="170" height="60" rx="8" fill="#cfe3ff" stroke="#1b2a41" stroke-width="2"/>
+<text x="95" y="95" font-family="sans-serif" font-size="18" fill="#1b2a41" text-anchor="middle" font-weight="bold">PC1</text>
+<text x="95" y="118" font-family="monospace" font-size="14" fill="#1b2a41" text-anchor="middle" font-weight="normal">192.0.2.10</text>
+<rect x="10" y="150" width="170" height="60" rx="8" fill="#cfe3ff" stroke="#1b2a41" stroke-width="2"/>
+<text x="95" y="175" font-family="sans-serif" font-size="18" fill="#1b2a41" text-anchor="middle" font-weight="bold">PC2</text>
+<text x="95" y="198" font-family="monospace" font-size="14" fill="#1b2a41" text-anchor="middle" font-weight="normal">192.0.2.11</text>
+<rect x="290" y="90" width="220" height="140" rx="8" fill="#e8ecf1" stroke="#1b2a41" stroke-width="2"/>
+<text x="400" y="120" font-family="sans-serif" font-size="20" fill="#1b2a41" text-anchor="middle" font-weight="bold">Routeur NAT</text>
+<text x="400" y="150" font-family="monospace" font-size="14" fill="#1b2a41" text-anchor="middle" font-weight="normal">interne : 192.0.2.1</text>
+<text x="400" y="172" font-family="monospace" font-size="14" fill="#1b2a41" text-anchor="middle" font-weight="normal">externe : 203.0.113.1</text>
+<rect x="620" y="110" width="170" height="80" rx="8" fill="#d4f1d4" stroke="#1b2a41" stroke-width="2"/>
+<text x="705" y="140" font-family="sans-serif" font-size="18" fill="#1b2a41" text-anchor="middle" font-weight="bold">Serveur</text>
+<text x="705" y="166" font-family="monospace" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">198.51.100.80:443</text>
+<line x1="180" y1="100" x2="290" y2="130" stroke="#1b2a41" stroke-width="3"/>
+<line x1="180" y1="180" x2="290" y2="180" stroke="#1b2a41" stroke-width="3"/>
+<line x1="510" y1="160" x2="620" y2="150" stroke="#5b2a86" stroke-width="5"/>
+<text x="235" y="95" font-family="sans-serif" font-size="13" fill="#555" text-anchor="middle" font-weight="normal">inside</text>
+<text x="565" y="125" font-family="sans-serif" font-size="13" fill="#555" text-anchor="middle" font-weight="normal">outside</text>
+<rect x="20" y="260" width="760" height="215" rx="8" fill="#fff3b0" stroke="#1b2a41" stroke-width="2"/>
+<text x="400" y="288" font-family="sans-serif" font-size="17" fill="#1b2a41" text-anchor="middle" font-weight="bold">Table de traduction (extrait) — le routeur la consulte au retour</text>
+<text x="40" y="320" font-family="sans-serif" font-size="15" fill="#1b2a41" text-anchor="start" font-weight="bold">Inside local</text>
+<text x="300" y="320" font-family="sans-serif" font-size="15" fill="#1b2a41" text-anchor="start" font-weight="bold">Inside global</text>
+<text x="540" y="320" font-family="sans-serif" font-size="15" fill="#1b2a41" text-anchor="start" font-weight="bold">Destination</text>
+<line x1="30" y1="328" x2="770" y2="328" stroke="#1b2a41" stroke-width="1"/>
+<text x="40" y="356" font-family="monospace" font-size="15" fill="#1b2a41" text-anchor="start" font-weight="normal">192.0.2.10:51000</text>
+<text x="300" y="356" font-family="monospace" font-size="15" fill="#1b2a41" text-anchor="start" font-weight="normal">203.0.113.1:40001</text>
+<text x="540" y="356" font-family="monospace" font-size="15" fill="#1b2a41" text-anchor="start" font-weight="normal">198.51.100.80:443</text>
+<text x="40" y="388" font-family="monospace" font-size="15" fill="#1b2a41" text-anchor="start" font-weight="normal">192.0.2.11:51000</text>
+<text x="300" y="388" font-family="monospace" font-size="15" fill="#1b2a41" text-anchor="start" font-weight="normal">203.0.113.1:40002</text>
+<text x="540" y="388" font-family="monospace" font-size="15" fill="#1b2a41" text-anchor="start" font-weight="normal">198.51.100.80:443</text>
+<text x="40" y="420" font-family="monospace" font-size="15" fill="#1b2a41" text-anchor="start" font-weight="normal">192.0.2.10:49152</text>
+<text x="300" y="420" font-family="monospace" font-size="15" fill="#1b2a41" text-anchor="start" font-weight="normal">203.0.113.1:40003</text>
+<text x="540" y="420" font-family="monospace" font-size="15" fill="#1b2a41" text-anchor="start" font-weight="normal">198.51.100.53:53</text>
+<text x="400" y="462" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">Le port externe différencie les flux ; deux postes peuvent avoir le même port source interne.</text>
+</svg>

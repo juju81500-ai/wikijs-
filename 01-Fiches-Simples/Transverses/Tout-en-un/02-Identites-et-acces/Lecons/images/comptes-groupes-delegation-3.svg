@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d" font-family="sans-serif">
+  <title id="t">Cycle de vie d'un compte : arrivée, mobilité, départ</title>
+  <desc id="d">Trois phases en frise. Arrivée : demande validée, création dans la bonne OU, ajout aux groupes globaux de rôle, mot de passe initial à changer. Mobilité ou remplacement : retrait des anciens groupes, ajout des nouveaux, revue des accès. Départ : désactivation immédiate, déplacement vers une OU Désactivés, conservation puis suppression après délai de rétention.</desc>
+  <rect width="800" height="420" fill="#ffffff"/>
+  <defs>
+    <marker id="a" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto"><path d="M0,0 L14,7 L0,14 z" fill="#222222"/></marker>
+  </defs>
+  <text x="400" y="30" font-size="20" font-weight="bold" text-anchor="middle" fill="#0b2e59">Cycle de vie d'un compte</text>
+
+  <rect x="20" y="60" width="230" height="300" rx="10" fill="#d9f2d9" stroke="#1b5e20" stroke-width="3"/>
+  <text x="135" y="92" font-size="18" font-weight="bold" text-anchor="middle" fill="#1b5e20">1. Arrivée</text>
+  <text x="135" y="130" font-size="14" text-anchor="middle" fill="#111111">Demande validée (RH + chef)</text>
+  <text x="135" y="162" font-size="14" text-anchor="middle" fill="#111111">Création dans la bonne OU</text>
+  <text x="135" y="194" font-size="14" text-anchor="middle" fill="#111111">Ajout aux groupes globaux</text>
+  <text x="135" y="214" font-size="14" text-anchor="middle" fill="#111111">de rôle (pas aux DL)</text>
+  <text x="135" y="246" font-size="14" text-anchor="middle" fill="#111111">Mot de passe temporaire :</text>
+  <text x="135" y="266" font-size="14" text-anchor="middle" fill="#111111">changement à la 1re connexion</text>
+  <text x="135" y="310" font-size="13" text-anchor="middle" fill="#1b5e20">Trace : ticket + date</text>
+
+  <rect x="285" y="60" width="230" height="300" rx="10" fill="#fff0c2" stroke="#8a6200" stroke-width="3"/>
+  <text x="400" y="92" font-size="18" font-weight="bold" text-anchor="middle" fill="#5a4000">2. Mobilité</text>
+  <text x="400" y="130" font-size="14" text-anchor="middle" fill="#111111">Retrait des anciens groupes</text>
+  <text x="400" y="162" font-size="14" text-anchor="middle" fill="#111111">Ajout des nouveaux groupes</text>
+  <text x="400" y="194" font-size="14" text-anchor="middle" fill="#111111">Déplacement d'OU si besoin</text>
+  <text x="400" y="226" font-size="14" text-anchor="middle" fill="#111111">Remplaçant : mêmes groupes,</text>
+  <text x="400" y="246" font-size="14" text-anchor="middle" fill="#111111">jamais de partage du compte</text>
+  <text x="400" y="290" font-size="14" text-anchor="middle" fill="#111111">Revue périodique des accès</text>
+  <text x="400" y="334" font-size="13" text-anchor="middle" fill="#5a4000">Trace : ticket + date</text>
+
+  <rect x="550" y="60" width="230" height="300" rx="10" fill="#fdeaea" stroke="#9b1c1c" stroke-width="3"/>
+  <text x="665" y="92" font-size="18" font-weight="bold" text-anchor="middle" fill="#7a1010">3. Départ</text>
+  <text x="665" y="130" font-size="14" text-anchor="middle" fill="#111111">Désactivation le jour J</text>
+  <text x="665" y="162" font-size="14" text-anchor="middle" fill="#111111">Réinitialisation du secret,</text>
+  <text x="665" y="182" font-size="14" text-anchor="middle" fill="#111111">fin des sessions et jetons</text>
+  <text x="665" y="206" font-size="14" text-anchor="middle" fill="#111111">Déplacement vers l'OU</text>
+  <text x="665" y="226" font-size="14" text-anchor="middle" fill="#111111">« Désactivés »</text>
+  <text x="665" y="246" font-size="14" text-anchor="middle" fill="#111111">Conservation (ex. 90 jours)</text>
+  <text x="665" y="278" font-size="14" text-anchor="middle" fill="#111111">Suppression définitive</text>
+  <text x="665" y="298" font-size="14" text-anchor="middle" fill="#111111">après validation</text>
+  <text x="665" y="334" font-size="13" text-anchor="middle" fill="#7a1010">Trace : ticket + date</text>
+
+  <line x1="250" y1="210" x2="283" y2="210" stroke="#222222" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="515" y1="210" x2="548" y2="210" stroke="#222222" stroke-width="3" marker-end="url(#a)"/>
+
+  <text x="400" y="395" font-size="15" text-anchor="middle" fill="#111111">Principe : on désactive d'abord, on supprime plus tard, et chaque étape laisse une trace.</text>
+</svg>

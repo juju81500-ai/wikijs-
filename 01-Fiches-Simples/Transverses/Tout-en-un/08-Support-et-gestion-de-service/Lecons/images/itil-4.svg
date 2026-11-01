@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 510" width="800" height="510" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">Exemple de CMDB avec relations</title>
+<desc id="d">Graphe : le service messagerie repose sur une application, qui s&#x27;exécute sur un serveur virtuel et utilise une base de données ; le serveur dépend d&#x27;un hôte de virtualisation et la base d&#x27;une baie de stockage.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#34495e"/></marker></defs>
+<rect width="800" height="510" fill="#ffffff"/>
+<text x="400" y="34" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="400" dy="0">CMDB : des éléments de configuration et leurs relations</tspan></text>
+<rect x="300" y="60" width="200" height="60" rx="8" fill="#fff3cd" stroke="#8a6d00" stroke-width="2"/>
+<text x="400.0" y="96" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="400.0" dy="0">Service : messagerie</tspan></text>
+<rect x="300" y="160" width="200" height="60" rx="8" fill="#e8f1fb" stroke="#2c5282" stroke-width="2"/>
+<text x="400.0" y="196" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="400.0" dy="0">Application de messagerie</tspan></text>
+<rect x="80" y="270" width="200" height="60" rx="8" fill="#e8f1fb" stroke="#2c5282" stroke-width="2"/>
+<text x="180.0" y="306" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="180.0" dy="0">Serveur virtuel SRV-MAIL</tspan></text>
+<rect x="520" y="270" width="200" height="60" rx="8" fill="#e8f1fb" stroke="#2c5282" stroke-width="2"/>
+<text x="620.0" y="306" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="620.0" dy="0">Base de données</tspan></text>
+<rect x="80" y="370" width="200" height="60" rx="8" fill="#e8f1fb" stroke="#2c5282" stroke-width="2"/>
+<text x="180.0" y="406" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="180.0" dy="0">Hôte de virtualisation</tspan></text>
+<rect x="520" y="370" width="200" height="60" rx="8" fill="#e8f1fb" stroke="#2c5282" stroke-width="2"/>
+<text x="620.0" y="406" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="620.0" dy="0">Baie de stockage</tspan></text>
+<line x1="400" y1="120" x2="400" y2="160" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="340" y1="220" x2="200" y2="270" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="460" y1="220" x2="600" y2="270" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="180" y1="330" x2="180" y2="370" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="620" y1="330" x2="620" y2="370" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="422" y="146" font-size="13" text-anchor="start" font-weight="normal" fill="#34495e"><tspan x="422" dy="0">repose sur</tspan></text>
+<text x="262" y="238" font-size="13" text-anchor="end" font-weight="normal" fill="#34495e"><tspan x="250" dy="0">s&#x27;exécute sur</tspan></text>
+<text x="532" y="238" font-size="13" text-anchor="start" font-weight="normal" fill="#34495e"><tspan x="550" dy="0">utilise</tspan></text>
+<text x="400" y="465" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="400" dy="0">Si l&#x27;hôte tombe, quels services sont touchés ?</tspan></text>
+<text x="400" y="490" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="400" dy="0">La CMDB permet de répondre en remontant les relations.</tspan></text>
+
+</svg>

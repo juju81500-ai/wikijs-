@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img">
+<title>Une condition lit le code retour d'une commande</title>
+<desc>La commande testée s'exécute, le shell lit son code retour : 0 déclenche la branche then, toute autre valeur la branche else.</desc>
+<defs><marker id="a0b6b2e" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#0b6b2e"/></marker><marker id="a1b2a41" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a41"/></marker><marker id="ab00020" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b00020"/></marker></defs>
+<rect width="800" height="400" fill="#ffffff"/>
+<text xml:space="preserve" x="400" y="34" font-family="monospace" font-size="24" font-weight="bold" fill="#111111" text-anchor="middle">if COMMANDE ; then … else … fi</text>
+<rect x="240" y="70" width="320" height="70" rx="8" fill="#e8f1fb" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="400.0" y="99.45" font-family="sans-serif" font-size="17" font-weight="normal" fill="#111111" text-anchor="middle">COMMANDE s'exécute</text>
+<text xml:space="preserve" x="400.0" y="122.45" font-family="sans-serif" font-size="17" font-weight="normal" fill="#111111" text-anchor="middle">ex. [[ -f /etc/hostname ]]</text>
+<rect x="240" y="180" width="320" height="60" rx="8" fill="#fff4cc" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="400.0" y="215.95" font-family="sans-serif" font-size="17" font-weight="normal" fill="#111111" text-anchor="middle">Le shell lit le code retour ($?)</text>
+<line x1="400" y1="140" x2="400" y2="180" stroke="#1b2a41" stroke-width="3" marker-end="url(#a1b2a41)"/>
+<rect x="40" y="300" width="300" height="70" rx="8" fill="#e3f5e8" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="190.0" y="329.3" font-family="sans-serif" font-size="18" font-weight="normal" fill="#111111" text-anchor="middle">then : code = 0</text>
+<text xml:space="preserve" x="190.0" y="353.3" font-family="sans-serif" font-size="18" font-weight="normal" fill="#111111" text-anchor="middle">(succès, « vrai »)</text>
+<rect x="460" y="300" width="300" height="70" rx="8" fill="#fde3e3" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="610.0" y="329.3" font-family="sans-serif" font-size="18" font-weight="normal" fill="#111111" text-anchor="middle">else : code ≠ 0</text>
+<text xml:space="preserve" x="610.0" y="353.3" font-family="sans-serif" font-size="18" font-weight="normal" fill="#111111" text-anchor="middle">(échec, « faux »)</text>
+<line x1="330" y1="240" x2="190" y2="300" stroke="#0b6b2e" stroke-width="3" marker-end="url(#a0b6b2e)"/>
+<line x1="470" y1="240" x2="610" y2="300" stroke="#b00020" stroke-width="3" marker-end="url(#ab00020)"/>
+<text xml:space="preserve" x="220" y="262" font-family="sans-serif" font-size="22" font-weight="bold" fill="#0b6b2e" text-anchor="middle">0</text>
+<text xml:space="preserve" x="580" y="262" font-family="sans-serif" font-size="20" font-weight="bold" fill="#b00020" text-anchor="middle">1, 2, 127…</text>
+</svg>

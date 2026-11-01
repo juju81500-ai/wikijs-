@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 500" width="900" height="500" role="img" aria-labelledby="t d">
+<title id="t">Zones réseau et flux autorisés</title>
+<desc id="d">Internet, DMZ, réseau interne et zone d'administration séparés par un pare-feu. Les flux autorisés sont indiqués par des flèches ; le trafic de la DMZ vers l'interne est limité.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1b1b1b"/></marker></defs>
+<rect width="900" height="500" fill="#ffffff"/>
+<text x="450" y="32" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111">Zones, DMZ et matrice de flux (exemple)</text>
+<rect x="20" y="55" width="200" height="400" rx="12" fill="#eeeeee" stroke="#555555" stroke-width="2" stroke-dasharray="10 6"/>
+<text x="32" y="77" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#555555">Internet</text>
+<rect x="40" y="170" width="160" height="60" rx="8" fill="#ffffff" stroke="#555555" stroke-width="2"/>
+<text x="120.0" y="195.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Visiteur</text>
+<text x="120.0" y="214.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">203.0.113.0/24</text>
+<rect x="310" y="200" width="150" height="110" rx="8" fill="#ffe08a" stroke="#8a5a00" stroke-width="2"/>
+<text x="385.0" y="232.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#111111">Pare-feu</text>
+<text x="385.0" y="250.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">politique par zone</text>
+<text x="385.0" y="268.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">« tout refuser »</text>
+<text x="385.0" y="286.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">sauf règles ci-contre</text>
+<rect x="520" y="55" width="360" height="150" rx="12" fill="#fff0f0" stroke="#8b0000" stroke-width="2" stroke-dasharray="10 6"/>
+<text x="532" y="77" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#8b0000">DMZ 198.51.100.0/24</text>
+<rect x="540" y="95" width="150" height="60" rx="8" fill="#ffffff" stroke="#8b0000" stroke-width="2"/>
+<text x="615.0" y="120.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Reverse proxy</text>
+<text x="615.0" y="139.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">TLS, WAF</text>
+<rect x="710" y="95" width="150" height="60" rx="8" fill="#ffffff" stroke="#8b0000" stroke-width="2"/>
+<text x="785.0" y="120.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Serveur de</text>
+<text x="785.0" y="139.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">relais mail</text>
+<rect x="520" y="225" width="360" height="110" rx="12" fill="#e6f6ea" stroke="#1c6b34" stroke-width="2" stroke-dasharray="10 6"/>
+<text x="532" y="247" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1c6b34">Réseau interne 192.0.2.0/24</text>
+<rect x="540" y="265" width="150" height="55" rx="8" fill="#ffffff" stroke="#1c6b34" stroke-width="2"/>
+<text x="615.0" y="287.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Applications</text>
+<text x="615.0" y="306.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">base de données</text>
+<rect x="710" y="265" width="150" height="55" rx="8" fill="#ffffff" stroke="#1c6b34" stroke-width="2"/>
+<text x="785.0" y="287.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Postes</text>
+<text x="785.0" y="306.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">utilisateurs</text>
+<rect x="520" y="355" width="360" height="100" rx="12" fill="#dbe7ff" stroke="#1a3d7c" stroke-width="2" stroke-dasharray="10 6"/>
+<text x="532" y="377" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1a3d7c">Administration 2001:db8:10::/64</text>
+<rect x="540" y="390" width="150" height="50" rx="8" fill="#ffffff" stroke="#1a3d7c" stroke-width="2"/>
+<text x="615.0" y="419.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Bastion</text>
+<rect x="710" y="390" width="150" height="50" rx="8" fill="#ffffff" stroke="#1a3d7c" stroke-width="2"/>
+<text x="785.0" y="419.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Supervision</text>
+<line x1="200" y1="200" x2="310" y2="235" stroke="#8b0000" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="250" y="210" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">443</text>
+<line x1="460" y1="235" x2="540" y2="130" stroke="#8b0000" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="470" y="170" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">443 seul.</text>
+<line x1="790" y1="205" x2="790" y2="225" stroke="#1c6b34" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#a)"/>
+<text x="700" y="219" font-family="Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" text-anchor="end" fill="#1c6b34">limité, journalisé</text>
+<line x1="460" y1="290" x2="520" y2="290" stroke="#1c6b34" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="492" y="275" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">flux précis</text>
+<line x1="460" y1="300" x2="540" y2="400" stroke="#1a3d7c" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="440" y="370" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">SSH/RDP via bastion</text>
+<text x="250" y="478" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="start" fill="#111111">Aucun flux direct Internet → interne. DMZ → interne limité (hôte, port) et journalisé.</text>
+</svg>

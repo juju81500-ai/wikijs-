@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 430" width="820" height="430" role="img" aria-labelledby="t d">
+<title id="t">Deux approches de déploiement : image classique et Autopilot</title>
+<desc id="d">Colonne de gauche : déploiement par image avec serveur de déploiement, démarrage réseau, installation, application des paramètres. Colonne de droite : approche moderne, l&#x27;appareil reçoit sa configuration depuis le service cloud lors du premier démarrage.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333333"/></marker></defs>
+<rect width="820" height="430" fill="#ffffff"/>
+<text x="410" y="30" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" text-anchor="middle" fill="#111111">Image classique ou approvisionnement moderne</text>
+<text x="210" y="68" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Déploiement par image (MDT / WDS)</text>
+<text x="615" y="68" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Approvisionnement cloud (Autopilot / Intune)</text>
+<rect x="30" y="85" width="360" height="52" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="210.0" y="115.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Démarrage réseau (PXE) ou clé USB</text>
+<rect x="425" y="85" width="370" height="52" rx="10" fill="#e3f5e6" stroke="#1d6b2f" stroke-width="2"/>
+<text x="610.0" y="115.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Appareil enregistré chez le service</text>
+<path d="M210,137 L210,165" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<path d="M610,137 L610,165" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<rect x="30" y="165" width="360" height="52" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="210.0" y="195.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Image système + pilotes + applications</text>
+<rect x="425" y="165" width="370" height="52" rx="10" fill="#e3f5e6" stroke="#1d6b2f" stroke-width="2"/>
+<text x="610.0" y="195.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Premier démarrage : connexion Internet</text>
+<path d="M210,217 L210,245" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<path d="M610,217 L610,245" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<rect x="30" y="245" width="360" height="52" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="210.0" y="275.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Séquence de tâches automatisée</text>
+<rect x="425" y="245" width="370" height="52" rx="10" fill="#e3f5e6" stroke="#1d6b2f" stroke-width="2"/>
+<text x="610.0" y="275.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">L&#x27;utilisateur s&#x27;identifie</text>
+<path d="M210,297 L210,325" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<path d="M610,297 L610,325" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<rect x="30" y="325" width="360" height="52" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="210.0" y="355.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Poste prêt, joint au domaine</text>
+<rect x="425" y="325" width="370" height="52" rx="10" fill="#e3f5e6" stroke="#1d6b2f" stroke-width="2"/>
+<text x="610.0" y="355.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Politiques et applications appliquées</text>
+<text x="410" y="415" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">Le choix dépend du parc, du réseau et de l&#x27;existant ; les deux peuvent coexister</text>
+</svg>

@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" role="img" aria-labelledby="t d">
+  <title id="t">Un paquet traverse un routeur : les adresses IP restent, les adresses MAC changent à chaque saut</title>
+  <desc id="d">Un poste 192.0.2.10 envoie un paquet à un serveur 198.51.100.20 via un routeur. Sur le premier lien, la trame porte les adresses MAC du poste et du routeur ; sur le second lien, la trame porte les adresses MAC du routeur et du serveur. Les adresses IP source et destination sont identiques sur les deux liens.</desc>
+  <rect width="800" height="440" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#111111">
+    <text x="400" y="26" font-size="20" font-weight="bold" text-anchor="middle">Saut par saut : la trame change, le paquet reste</text>
+
+    <!-- équipements -->
+    <rect x="20" y="50" width="200" height="86" rx="8" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/>
+    <text x="120" y="78" text-anchor="middle" font-weight="bold">Poste A</text>
+    <text x="120" y="98" text-anchor="middle" font-size="13">IP 192.0.2.10</text>
+    <text x="120" y="118" text-anchor="middle" font-size="12">MAC 00:00:5e:00:53:01</text>
+
+    <rect x="300" y="50" width="200" height="86" rx="8" fill="#fef9c3" stroke="#713f12" stroke-width="2"/>
+    <text x="400" y="74" text-anchor="middle" font-weight="bold">Routeur</text>
+    <text x="400" y="92" text-anchor="middle" font-size="11">gauche : 192.0.2.1 · MAC …:02</text>
+    <text x="400" y="112" text-anchor="middle" font-size="11">droite : 198.51.100.1 · MAC …:03</text>
+
+    <rect x="580" y="50" width="200" height="86" rx="8" fill="#dcfce7" stroke="#14532d" stroke-width="2"/>
+    <text x="680" y="78" text-anchor="middle" font-weight="bold">Serveur B</text>
+    <text x="680" y="98" text-anchor="middle" font-size="13">IP 198.51.100.20</text>
+    <text x="680" y="118" text-anchor="middle" font-size="12">MAC 00:00:5e:00:53:04</text>
+
+    <!-- liens -->
+    <line x1="220" y1="93" x2="300" y2="93" stroke="#111111" stroke-width="4"/>
+    <line x1="500" y1="93" x2="580" y2="93" stroke="#111111" stroke-width="4"/>
+    <text x="260" y="84" text-anchor="middle" font-size="12">lien 1</text>
+    <text x="540" y="84" text-anchor="middle" font-size="12">lien 2</text>
+
+    <!-- trame 1 -->
+    <text x="20" y="176" font-weight="bold">Sur le lien 1 (réseau 192.0.2.0/24)</text>
+    <rect x="20" y="186" width="760" height="70" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+    <rect x="20" y="186" width="250" height="70" fill="#fecaca" stroke="#7f1d1d" stroke-width="2"/>
+    <text x="30" y="208" font-weight="bold" font-size="13">En-tête Ethernet</text>
+    <text x="30" y="228" font-size="12">MAC src …:01 (poste A)</text>
+    <text x="30" y="246" font-size="12">MAC dst …:02 (routeur)</text>
+    <rect x="270" y="186" width="260" height="70" fill="#fde68a" stroke="#713f12" stroke-width="2"/>
+    <text x="280" y="208" font-weight="bold" font-size="13">En-tête IP</text>
+    <text x="280" y="228" font-size="12">IP src 192.0.2.10</text>
+    <text x="280" y="246" font-size="12">IP dst 198.51.100.20</text>
+    <rect x="530" y="186" width="250" height="70" fill="#bbf7d0" stroke="#14532d" stroke-width="2"/>
+    <text x="540" y="208" font-weight="bold" font-size="13">Segment TCP + données</text>
+    <text x="540" y="228" font-size="12">port src 49152 → dst 443</text>
+
+    <!-- trame 2 -->
+    <text x="20" y="298" font-weight="bold">Sur le lien 2 (réseau 198.51.100.0/24)</text>
+    <rect x="20" y="308" width="760" height="70" fill="#f8fafc" stroke="#334155" stroke-width="2"/>
+    <rect x="20" y="308" width="250" height="70" fill="#fecaca" stroke="#7f1d1d" stroke-width="2"/>
+    <text x="30" y="330" font-weight="bold" font-size="13">En-tête Ethernet (NOUVEAU)</text>
+    <text x="30" y="350" font-size="12">MAC src …:03 (routeur)</text>
+    <text x="30" y="368" font-size="12">MAC dst …:04 (serveur B)</text>
+    <rect x="270" y="308" width="260" height="70" fill="#fde68a" stroke="#713f12" stroke-width="2"/>
+    <text x="280" y="330" font-weight="bold" font-size="13">En-tête IP (TTL − 1)</text>
+    <text x="280" y="350" font-size="12">IP src 192.0.2.10</text>
+    <text x="280" y="368" font-size="12">IP dst 198.51.100.20</text>
+    <rect x="530" y="308" width="250" height="70" fill="#bbf7d0" stroke="#14532d" stroke-width="2"/>
+    <text x="540" y="330" font-weight="bold" font-size="13">Segment TCP + données</text>
+    <text x="540" y="350" font-size="12">inchangé</text>
+
+    <text x="400" y="406" font-size="13" text-anchor="middle">Le routeur retire l'en-tête Ethernet, lit l'IP, décrémente le TTL, puis refabrique une trame.</text>
+    <text x="400" y="428" font-size="12" text-anchor="middle">Création originale du projet Pack Master (CC0). MAC et IP : plages réservées à la documentation.</text>
+  </g>
+</svg>

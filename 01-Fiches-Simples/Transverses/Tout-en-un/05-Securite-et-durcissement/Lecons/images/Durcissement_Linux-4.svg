@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 270" width="800" height="270" role="img" aria-labelledby="t d">
+<title id="t">Principe d'auditd : du noyau au rapport</title>
+<desc id="d">Le noyau génère des événements d'audit selon des règles, auditd les écrit dans audit.log, puis ausearch et aureport les interrogent.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a41"/></marker></defs>
+<rect width="800" height="270" fill="#ffffff"/>
+<text x="400" y="34" font-size="22" fill="#111111" text-anchor="middle" font-weight="bold" font-family="sans-serif">auditd : le journal d'audit du noyau</text>
+<rect x="15" y="80" width="132" height="100" rx="10" fill="#e8f1fb" stroke="#1b2a41" stroke-width="2"/>
+<text x="81.0" y="115.75" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Noyau</text>
+<text x="81.0" y="135.25" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">appels système,</text>
+<text x="81.0" y="154.75" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">accès fichiers</text>
+<line x1="147" y1="130" x2="171" y2="130" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<rect x="171" y="80" width="132" height="100" rx="10" fill="#fff3c4" stroke="#1b2a41" stroke-width="2"/>
+<text x="237.0" y="115.75" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Règles</text>
+<text x="237.0" y="135.25" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">auditctl /</text>
+<text x="237.0" y="154.75" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">audit.rules</text>
+<line x1="303" y1="130" x2="327" y2="130" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<rect x="327" y="80" width="132" height="100" rx="10" fill="#e8f1fb" stroke="#1b2a41" stroke-width="2"/>
+<text x="393.0" y="115.75" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">auditd</text>
+<text x="393.0" y="135.25" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">démon</text>
+<text x="393.0" y="154.75" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">d'écriture</text>
+<line x1="459" y1="130" x2="483" y2="130" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<rect x="483" y="80" width="132" height="100" rx="10" fill="#ece6f7" stroke="#1b2a41" stroke-width="2"/>
+<text x="549.0" y="115.75" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">audit.log</text>
+<text x="549.0" y="135.25" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">/var/log/audit/</text>
+<text x="549.0" y="154.75" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">append-only</text>
+<line x1="615" y1="130" x2="639" y2="130" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<rect x="639" y="80" width="132" height="100" rx="10" fill="#e3f4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="705.0" y="115.75" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">ausearch /</text>
+<text x="705.0" y="135.25" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">aureport</text>
+<text x="705.0" y="154.75" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">lecture</text>
+<text x="400" y="225" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Les règles décident quoi surveiller ; l'analyse se fait après coup, en lecture seule.</text>
+<text x="400" y="250" font-size="16" fill="#8a1c12" text-anchor="middle" font-weight="normal" font-family="sans-serif">Surveiller trop de choses sature le disque : ciblez les fichiers sensibles.</text>
+</svg>

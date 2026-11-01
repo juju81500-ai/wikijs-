@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" width="800" height="430" role="img" aria-labelledby="t d">
+<title id="t">Principe du protocole Spanning Tree sur trois commutateurs</title>
+<desc id="d">Trois commutateurs en triangle. SW1 est le pont racine. Les ports vers la racine sont racine ou désignés. Un port de SW3 vers SW2 est bloqué pour éviter la boucle.</desc>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a41"/></marker><marker id="arrr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b00020"/></marker></defs>
+<rect width="800" height="430" fill="#ffffff"/>
+<text x="400" y="35" font-family="sans-serif" font-size="20" fill="#1b2a41" text-anchor="middle" font-weight="bold">STP : un triangle de liens devient un arbre sans boucle</text>
+<rect x="270" y="60" width="260" height="80" rx="8" fill="#d4f1d4" stroke="#1b2a41" stroke-width="4"/>
+<text x="400" y="92" font-family="sans-serif" font-size="18" fill="#1b2a41" text-anchor="middle" font-weight="bold">SW1 — pont racine</text>
+<text x="400" y="120" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">priorité 4096, MAC le plus bas</text>
+<rect x="60" y="300" width="200" height="80" rx="8" fill="#e8ecf1" stroke="#1b2a41" stroke-width="2"/>
+<text x="160" y="332" font-family="sans-serif" font-size="20" fill="#1b2a41" text-anchor="middle" font-weight="bold">SW2</text>
+<text x="160" y="360" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">priorité 32768</text>
+<rect x="540" y="300" width="200" height="80" rx="8" fill="#e8ecf1" stroke="#1b2a41" stroke-width="2"/>
+<text x="640" y="332" font-family="sans-serif" font-size="20" fill="#1b2a41" text-anchor="middle" font-weight="bold">SW3</text>
+<text x="640" y="360" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">priorité 32768</text>
+<line x1="330" y1="140" x2="200" y2="300" stroke="#1b2a41" stroke-width="4"/>
+<line x1="470" y1="140" x2="600" y2="300" stroke="#1b2a41" stroke-width="4"/>
+<line x1="260" y1="340" x2="540" y2="340" stroke="#b00020" stroke-width="4" stroke-dasharray="10 8"/>
+<text x="215" y="205" font-family="sans-serif" font-size="15" fill="#1b2a41" text-anchor="end" font-weight="normal">actif</text>
+<text x="585" y="205" font-family="sans-serif" font-size="15" fill="#1b2a41" text-anchor="start" font-weight="normal">actif</text>
+<text x="400" y="328" font-family="sans-serif" font-size="14" fill="#b00020" text-anchor="middle" font-weight="bold">lien redondant</text>
+<text x="400" y="362" font-family="sans-serif" font-size="14" fill="#b00020" text-anchor="middle" font-weight="normal">(un port bloqué)</text>
+<circle cx="525" cy="340" r="14" fill="#ffd0d0" stroke="#b00020" stroke-width="3"/>
+<text x="525" y="345" font-family="sans-serif" font-size="16" fill="#b00020" text-anchor="middle" font-weight="bold">✕</text>
+<text x="400" y="410" font-family="sans-serif" font-size="14" fill="#1b2a41" text-anchor="middle" font-weight="normal">Un port bloqué n'envoie ni ne reçoit de données, mais reste prêt à reprendre si un lien actif tombe.</text>
+</svg>

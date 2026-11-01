@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 460" width="800" height="460" font-family="sans-serif">
+  <title>Hiérarchie DNS et zone example.com</title>
+  <desc>Arbre DNS : la racine (point) au sommet, puis les domaines de premier niveau com, org et test, puis la zone example.com contenant les enregistrements www (A), mail (A) et l'apex avec MX, TXT, NS et SOA.</desc>
+  <rect width="800" height="460" fill="#ffffff"/>
+  <g stroke="#333333" stroke-width="2" fill="none">
+    <line x1="400" y1="78" x2="190" y2="140"/>
+    <line x1="400" y1="78" x2="400" y2="140"/>
+    <line x1="400" y1="78" x2="610" y2="140"/>
+    <line x1="190" y1="178" x2="190" y2="230"/>
+    <line x1="190" y1="270" x2="80" y2="330"/>
+    <line x1="190" y1="270" x2="190" y2="330"/>
+    <line x1="190" y1="270" x2="300" y2="330"/>
+  </g>
+  <rect x="260" y="26" width="280" height="52" rx="8" fill="#1f4e79"/>
+  <text x="400" y="48" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">Racine « . »</text>
+  <text x="400" y="68" font-size="12" fill="#ffffff" text-anchor="middle">13 adresses logiques, nombreuses instances</text>
+  <rect x="130" y="140" width="120" height="38" rx="8" fill="#2e75b6"/>
+  <text x="190" y="165" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">.com</text>
+  <rect x="340" y="140" width="120" height="38" rx="8" fill="#2e75b6"/>
+  <text x="400" y="165" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">.org</text>
+  <rect x="550" y="140" width="120" height="38" rx="8" fill="#2e75b6"/>
+  <text x="610" y="165" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">.test</text>
+  <text x="540" y="205" font-size="13" fill="#222222" text-anchor="middle">niveau 1 : domaines de premier niveau (TLD)</text>
+  <rect x="110" y="230" width="160" height="40" rx="8" fill="#548235"/>
+  <text x="190" y="256" font-size="16" fill="#ffffff" text-anchor="middle" font-weight="bold">example.com</text>
+  <text x="285" y="255" font-size="13" fill="#222222">← zone déléguée</text>
+  <rect x="20" y="330" width="120" height="40" rx="6" fill="#fff2cc" stroke="#7f6000" stroke-width="2"/>
+  <text x="80" y="355" font-size="14" fill="#000000" text-anchor="middle">www</text>
+  <rect x="145" y="330" width="90" height="40" rx="6" fill="#fff2cc" stroke="#7f6000" stroke-width="2"/>
+  <text x="190" y="355" font-size="14" fill="#000000" text-anchor="middle">mail</text>
+  <rect x="240" y="330" width="120" height="40" rx="6" fill="#fff2cc" stroke="#7f6000" stroke-width="2"/>
+  <text x="300" y="355" font-size="14" fill="#000000" text-anchor="middle">@ (apex)</text>
+  <text x="80" y="392" font-size="12" fill="#000000" text-anchor="middle">A 192.0.2.10</text>
+  <text x="190" y="392" font-size="12" fill="#000000" text-anchor="middle">A 192.0.2.25</text>
+  <text x="300" y="392" font-size="12" fill="#000000" text-anchor="middle">MX, TXT, NS, SOA</text>
+  <rect x="440" y="250" width="350" height="180" rx="8" fill="#f2f2f2" stroke="#333333" stroke-width="1.5"/>
+  <text x="455" y="276" font-size="14" fill="#000000" font-weight="bold">Lecture d'un nom, de droite à gauche</text>
+  <text x="455" y="300" font-size="13" fill="#000000">www.example.com.</text>
+  <text x="455" y="324" font-size="12" fill="#000000">1. la racine connaît les serveurs de « com »</text>
+  <text x="455" y="344" font-size="12" fill="#000000">2. « com » connaît ceux de « example.com »</text>
+  <text x="455" y="364" font-size="12" fill="#000000">3. « example.com » connaît l'adresse de « www »</text>
+  <text x="455" y="392" font-size="12" fill="#000000">Chaque niveau délègue au suivant (NS).</text>
+  <text x="455" y="412" font-size="12" fill="#000000">Adresses fictives de documentation (RFC 5737).</text>
+</svg>

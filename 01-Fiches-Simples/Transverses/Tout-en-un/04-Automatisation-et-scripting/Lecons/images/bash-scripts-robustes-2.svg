@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 470" width="800" height="470" role="img">
+<title>Cinq situations où set -e ne fait pas ce qu'on croit</title>
+<desc>Un échec testé par if ou || est ignoré ; une fonction appelée dans un if perd set -e ; une liste &amp;&amp; finale, ((i++)) et local v=$(cmd) surprennent.</desc>
+<defs></defs>
+<rect width="800" height="470" fill="#ffffff"/>
+<text xml:space="preserve" x="400" y="34" font-family="sans-serif" font-size="24" font-weight="bold" fill="#111111" text-anchor="middle">set -e : les pièges</text>
+<rect x="30" y="62" width="400" height="60" rx="8" fill="#f2f2f2" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="45" y="99" font-family="monospace" font-size="15" font-weight="normal" fill="#111111" text-anchor="start">if cmd ; then …   ou   cmd || autre</text>
+<rect x="440" y="62" width="330" height="60" rx="8" fill="#fff4cc" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="455" y="99" font-family="sans-serif" font-size="13" font-weight="bold" fill="#8a4b00" text-anchor="start">échec IGNORÉ (c'est un test)</text>
+<rect x="30" y="138" width="400" height="60" rx="8" fill="#f2f2f2" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="45" y="175" font-family="monospace" font-size="15" font-weight="normal" fill="#111111" text-anchor="start">fonction appelée dans un if</text>
+<rect x="440" y="138" width="330" height="60" rx="8" fill="#fff4cc" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="455" y="175" font-family="sans-serif" font-size="13" font-weight="bold" fill="#8a4b00" text-anchor="start">set -e désactivé dans toute la fonction</text>
+<rect x="30" y="214" width="400" height="60" rx="8" fill="#f2f2f2" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="45" y="251" font-family="monospace" font-size="15" font-weight="normal" fill="#111111" text-anchor="start">f() { [[ -n "$x" ]] &amp;&amp; echo oui; }</text>
+<rect x="440" y="214" width="330" height="60" rx="8" fill="#fde3e3" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="455" y="251" font-family="sans-serif" font-size="13" font-weight="bold" fill="#b00020" text-anchor="start">renvoie 1 si $x vide : ARRÊT surprise</text>
+<rect x="30" y="290" width="400" height="60" rx="8" fill="#f2f2f2" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="45" y="327" font-family="monospace" font-size="15" font-weight="normal" fill="#111111" text-anchor="start">((i++))  quand i vaut 0</text>
+<rect x="440" y="290" width="330" height="60" rx="8" fill="#fde3e3" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="455" y="327" font-family="sans-serif" font-size="13" font-weight="bold" fill="#b00020" text-anchor="start">valeur 0 = code 1 : ARRÊT surprise</text>
+<rect x="30" y="366" width="400" height="60" rx="8" fill="#f2f2f2" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="45" y="403" font-family="monospace" font-size="15" font-weight="normal" fill="#111111" text-anchor="start">local v="$(cmd)"</text>
+<rect x="440" y="366" width="330" height="60" rx="8" fill="#fff4cc" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="455" y="403" font-family="sans-serif" font-size="13" font-weight="bold" fill="#8a4b00" text-anchor="start">échec de cmd MASQUÉ par local</text>
+<text xml:space="preserve" x="400" y="455" font-family="sans-serif" font-size="16" font-weight="normal" fill="#111111" text-anchor="middle">Un filet de sécurité, pas une stratégie : contrôlez explicitement (|| die).</text>
+</svg>

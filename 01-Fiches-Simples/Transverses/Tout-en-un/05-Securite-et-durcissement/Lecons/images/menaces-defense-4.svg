@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420" role="img" aria-labelledby="t d">
+<title id="t">Réponse à incident de premier niveau</title>
+<desc id="d">Séquence : détecter, qualifier, contenir avec prudence, escalader, documenter, puis retour d'expérience. L'analyste de niveau 1 ne détruit pas les preuves et n'agit pas hors procédure.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1b1b1b"/></marker></defs>
+<rect width="900" height="420" fill="#ffffff"/>
+<text x="450" y="32" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111">Réponse de niveau 1 : suivre la procédure, préserver les preuves</text>
+<rect x="20" y="110" width="150" height="100" rx="8" fill="#dbe7ff" stroke="#1a3d7c" stroke-width="2"/>
+<text x="95.0" y="146.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#111111">Détecter</text>
+<text x="95.0" y="164.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">alerte ou appel</text>
+<text x="95.0" y="182.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">d'un utilisateur</text>
+<line x1="170" y1="160" x2="198" y2="160" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<rect x="198" y="110" width="150" height="100" rx="8" fill="#ffe08a" stroke="#1a3d7c" stroke-width="2"/>
+<text x="273.0" y="146.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#111111">Qualifier</text>
+<text x="273.0" y="164.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">faux positif ?</text>
+<text x="273.0" y="182.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">quelle gravité ?</text>
+<line x1="348" y1="160" x2="376" y2="160" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<rect x="376" y="110" width="150" height="100" rx="8" fill="#ffe0e0" stroke="#1a3d7c" stroke-width="2"/>
+<text x="451.0" y="146.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#111111">Contenir</text>
+<text x="451.0" y="164.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">isoler selon</text>
+<text x="451.0" y="182.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">la procédure</text>
+<line x1="526" y1="160" x2="554" y2="160" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<rect x="554" y="110" width="150" height="100" rx="8" fill="#b8e6c4" stroke="#1a3d7c" stroke-width="2"/>
+<text x="629.0" y="146.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#111111">Escalader</text>
+<text x="629.0" y="164.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">niveau 2,</text>
+<text x="629.0" y="182.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">astreinte</text>
+<line x1="704" y1="160" x2="732" y2="160" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<rect x="732" y="110" width="150" height="100" rx="8" fill="#eef3fb" stroke="#1a3d7c" stroke-width="2"/>
+<text x="807.0" y="146.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#111111">Documenter</text>
+<text x="807.0" y="164.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">chronologie,</text>
+<text x="807.0" y="182.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">actions, preuves</text>
+<rect x="120" y="270" width="660" height="100" rx="8" fill="#fff0f0" stroke="#8b0000" stroke-width="2"/>
+<text x="450.0" y="306.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#111111">À ne jamais faire seul</text>
+<text x="450.0" y="324.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">éteindre brutalement, effacer, « nettoyer », contre-attaquer, discuter publiquement de l'incident</text>
+<text x="450.0" y="342.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">Sans accord de la hiérarchie : on contient, on documente, on escalade.</text>
+</svg>

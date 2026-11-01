@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 540" role="img" aria-labelledby="t d" font-family="sans-serif">
+  <title id="t">Décision d'application d'une GPO sur un ordinateur ou un utilisateur</title>
+  <desc id="d">Organigramme vertical : la GPO est-elle liée à un conteneur parent de l'objet ? Le lien est-il activé ? La partie utilisateur ou ordinateur est-elle activée ? Le groupe de l'objet possède-t-il Lecture et Appliquer la stratégie de groupe dans le filtrage de sécurité ? Le filtre WMI renvoie-t-il vrai ? Si toutes les réponses sont oui, la GPO est appliquée ; sinon elle est ignorée.</desc>
+  <rect width="800" height="540" fill="#ffffff"/>
+  <defs>
+    <marker id="a" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto"><path d="M0,0 L14,7 L0,14 z" fill="#222222"/></marker>
+  </defs>
+  <text x="400" y="28" font-size="20" font-weight="bold" text-anchor="middle" fill="#0b2e59">Une GPO s'applique-t-elle à cet objet ?</text>
+
+  <rect x="200" y="48" width="400" height="48" rx="8" fill="#d6e6f8" stroke="#0b2e59" stroke-width="3"/>
+  <text x="400" y="78" font-size="16" text-anchor="middle" fill="#0b2e59">1. Lien vers un conteneur parent de l'objet ?</text>
+  <line x1="400" y1="96" x2="400" y2="118" stroke="#222222" stroke-width="3" marker-end="url(#a)"/>
+
+  <rect x="200" y="120" width="400" height="48" rx="8" fill="#d6e6f8" stroke="#0b2e59" stroke-width="3"/>
+  <text x="400" y="150" font-size="16" text-anchor="middle" fill="#0b2e59">2. Lien activé ? (et GPO non désactivée)</text>
+  <line x1="400" y1="168" x2="400" y2="190" stroke="#222222" stroke-width="3" marker-end="url(#a)"/>
+
+  <rect x="200" y="192" width="400" height="48" rx="8" fill="#d6e6f8" stroke="#0b2e59" stroke-width="3"/>
+  <text x="400" y="222" font-size="16" text-anchor="middle" fill="#0b2e59">3. Côté Ordinateur / Utilisateur activé ?</text>
+  <line x1="400" y1="240" x2="400" y2="262" stroke="#222222" stroke-width="3" marker-end="url(#a)"/>
+
+  <rect x="200" y="264" width="400" height="60" rx="8" fill="#fff0c2" stroke="#8a6200" stroke-width="3"/>
+  <text x="400" y="290" font-size="16" text-anchor="middle" fill="#5a4000">4. Filtrage de sécurité : Lecture ET</text>
+  <text x="400" y="311" font-size="16" text-anchor="middle" fill="#5a4000">Appliquer la stratégie de groupe ?</text>
+  <line x1="400" y1="324" x2="400" y2="346" stroke="#222222" stroke-width="3" marker-end="url(#a)"/>
+
+  <rect x="200" y="348" width="400" height="60" rx="8" fill="#fff0c2" stroke="#8a6200" stroke-width="3"/>
+  <text x="400" y="374" font-size="16" text-anchor="middle" fill="#5a4000">5. Filtre WMI : la requête WQL</text>
+  <text x="400" y="395" font-size="16" text-anchor="middle" fill="#5a4000">renvoie-t-elle au moins un résultat ?</text>
+  <line x1="400" y1="408" x2="400" y2="436" stroke="#222222" stroke-width="3" marker-end="url(#a)"/>
+
+  <rect x="200" y="438" width="400" height="50" rx="8" fill="#d9f2d9" stroke="#1b5e20" stroke-width="3"/>
+  <text x="400" y="469" font-size="17" font-weight="bold" text-anchor="middle" fill="#1b5e20">GPO appliquée (tous les « oui »)</text>
+
+  <rect x="630" y="120" width="160" height="200" rx="8" fill="#fdeaea" stroke="#9b1c1c" stroke-width="3"/>
+  <text x="710" y="150" font-size="16" font-weight="bold" text-anchor="middle" fill="#7a1010">Un seul « non »</text>
+  <text x="710" y="176" font-size="15" text-anchor="middle" fill="#111111">→ GPO ignorée</text>
+  <text x="710" y="208" font-size="14" text-anchor="middle" fill="#111111">Raison visible dans</text>
+  <text x="710" y="228" font-size="14" text-anchor="middle" fill="#111111">gpresult /r, section</text>
+  <text x="710" y="248" font-size="14" text-anchor="middle" fill="#111111">« objets de stratégie</text>
+  <text x="710" y="268" font-size="14" text-anchor="middle" fill="#111111">de groupe refusés »</text>
+  <line x1="600" y1="294" x2="628" y2="294" stroke="#9b1c1c" stroke-width="3" marker-end="url(#a)"/>
+
+  <text x="400" y="516" font-size="14" text-anchor="middle" fill="#222222">Les étapes 4 et 5 sont les « filtres » ; les étapes 1 à 3 relèvent des liens et des options.</text>
+</svg>

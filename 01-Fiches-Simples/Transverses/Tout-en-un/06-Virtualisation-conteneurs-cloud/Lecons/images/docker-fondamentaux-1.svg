@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" aria-labelledby="t d">
+<title id="t">Machines virtuelles et conteneurs : comparaison des piles</title>
+<desc id="d">À gauche, trois machines virtuelles avec chacune son système invité au-dessus d'un hyperviseur. À droite, trois conteneurs partageant le noyau de l'hôte via un moteur de conteneurs.</desc>
+<defs><marker id="ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f3a5f"/></marker></defs>
+<rect width="800" height="420" fill="#ffffff"/>
+<text x="200" y="30" font-family="sans-serif" font-size="18" font-weight="bold" fill="#102030" text-anchor="middle">Machines virtuelles</text>
+<text x="600" y="30" font-family="sans-serif" font-size="18" font-weight="bold" fill="#102030" text-anchor="middle">Conteneurs</text>
+<rect x="30" y="50" width="115" height="40" rx="6" fill="#fff6c9" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="87.5" y="74.9" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">Application</text>
+<rect x="30" y="92" width="115" height="40" rx="6" fill="#dff3e3" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="87.5" y="116.9" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">Bibliothèques</text>
+<rect x="30" y="134" width="115" height="50" rx="6" fill="#fde7cc" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="87.5" y="155.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">Système invité</text>
+<text x="87.5" y="171.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">(noyau complet)</text>
+<rect x="155" y="50" width="115" height="40" rx="6" fill="#fff6c9" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="212.5" y="74.9" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">Application</text>
+<rect x="155" y="92" width="115" height="40" rx="6" fill="#dff3e3" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="212.5" y="116.9" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">Bibliothèques</text>
+<rect x="155" y="134" width="115" height="50" rx="6" fill="#fde7cc" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="212.5" y="155.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">Système invité</text>
+<text x="212.5" y="171.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">(noyau complet)</text>
+<rect x="280" y="50" width="115" height="40" rx="6" fill="#fff6c9" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="337.5" y="74.9" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">Application</text>
+<rect x="280" y="92" width="115" height="40" rx="6" fill="#dff3e3" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="337.5" y="116.9" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">Bibliothèques</text>
+<rect x="280" y="134" width="115" height="50" rx="6" fill="#fde7cc" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="337.5" y="155.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">Système invité</text>
+<text x="337.5" y="171.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">(noyau complet)</text>
+<rect x="30" y="196" width="365" height="45" rx="6" fill="#dbe9f8" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="212.5" y="223.75" font-family="sans-serif" font-size="15" font-weight="bold" fill="#102030" text-anchor="middle">Hyperviseur</text>
+<rect x="30" y="243" width="365" height="45" rx="6" fill="#e9ecef" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="212.5" y="270.4" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">Système d'exploitation hôte ou matériel</text>
+<rect x="30" y="290" width="365" height="45" rx="6" fill="#e9ecef" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="212.5" y="317.4" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">Serveur physique</text>
+<rect x="430" y="50" width="115" height="40" rx="6" fill="#fff6c9" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="487.5" y="74.9" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">Application</text>
+<rect x="430" y="92" width="115" height="40" rx="6" fill="#dff3e3" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="487.5" y="116.9" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">Bibliothèques</text>
+<rect x="555" y="50" width="115" height="40" rx="6" fill="#fff6c9" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="612.5" y="74.9" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">Application</text>
+<rect x="555" y="92" width="115" height="40" rx="6" fill="#dff3e3" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="612.5" y="116.9" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">Bibliothèques</text>
+<rect x="680" y="50" width="115" height="40" rx="6" fill="#fff6c9" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="737.5" y="74.9" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">Application</text>
+<rect x="680" y="92" width="115" height="40" rx="6" fill="#dff3e3" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="737.5" y="116.9" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">Bibliothèques</text>
+<rect x="430" y="146" width="365" height="45" rx="6" fill="#dbe9f8" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="612.5" y="173.75" font-family="sans-serif" font-size="15" font-weight="bold" fill="#102030" text-anchor="middle">Moteur de conteneurs</text>
+<rect x="430" y="193" width="365" height="55" rx="6" fill="#fde7cc" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="612.5" y="216.9" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">Noyau Linux de l'hôte</text>
+<text x="612.5" y="233.9" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">(partagé par tous les conteneurs)</text>
+<rect x="430" y="250" width="365" height="45" rx="6" fill="#e9ecef" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="612.5" y="277.4" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">Système hôte</text>
+<rect x="430" y="297" width="365" height="38" rx="6" fill="#e9ecef" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="612.5" y="320.9" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">Serveur physique ou VM</text>
+<text x="30" y="370" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="start">VM : isolation forte, démarrage en minutes, plusieurs Go par machine.</text>
+<text x="30" y="395" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="start">Conteneur : isolation par le noyau, démarrage en secondes, images de quelques dizaines de Mo.</text>
+</svg>

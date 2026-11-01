@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" width="800" height="430" role="img" aria-labelledby="t d">
+<title id="t">iSCSI : initiateur, réseau IP et cible avec LUN</title>
+<desc id="d">Un initiateur iSCSI identifié par un IQN ouvre une session TCP sur le port 3260 vers un portail cible. La cible présente deux LUN qui apparaissent comme des disques locaux sur le serveur.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1a1a1a"/></marker></defs>
+<rect width="800" height="430" fill="#ffffff"/>
+<text x="400" y="30" text-anchor="middle" font-size="20" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Session iSCSI : initiateur → cible</text>
+<rect x="30" y="80" width="220" height="150" rx="8" fill="#cfe3ff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="140.0" y="125.2" text-anchor="middle" font-size="12" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Initiateur (serveur)</text>
+<text x="140.0" y="142.2" text-anchor="middle" font-size="12" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">IQN :</text>
+<text x="140.0" y="159.2" text-anchor="middle" font-size="12" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">iqn.2026-11.test.example:srv1</text>
+<text x="140.0" y="176.2" text-anchor="middle" font-size="12" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">192.0.2.21</text>
+<text x="140.0" y="193.2" text-anchor="middle" font-size="12" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">apparaît : /dev/sdb</text>
+<rect x="300" y="120" width="200" height="70" rx="8" fill="#fff3a8" stroke="#1a1a1a" stroke-width="2"/>
+<text x="400.0" y="141.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Réseau IP dédié</text>
+<text x="400.0" y="159.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">VLAN stockage</text>
+<text x="400.0" y="177.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">198.51.100.0/24</text>
+<rect x="550" y="80" width="220" height="150" rx="8" fill="#d4f2d4" stroke="#1a1a1a" stroke-width="2"/>
+<text x="660.0" y="125.2" text-anchor="middle" font-size="12" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Cible (baie / serveur)</text>
+<text x="660.0" y="142.2" text-anchor="middle" font-size="12" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">IQN :</text>
+<text x="660.0" y="159.2" text-anchor="middle" font-size="12" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">iqn.2026-11.test.example:baie1</text>
+<text x="660.0" y="176.2" text-anchor="middle" font-size="12" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">portail 192.0.2.30:3260</text>
+<text x="660.0" y="193.2" text-anchor="middle" font-size="12" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">LUN 0 : 200 Go, LUN 1 : 50 Go</text>
+<line x1="250" y1="155" x2="300" y2="155" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="500" y1="155" x2="550" y2="155" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="400" y="290" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Authentification possible : CHAP (secret partagé) + liste d'IQN autorisés (masquage de LUN)</text>
+<text x="400" y="320" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Bonnes pratiques : réseau séparé, MTU 9000 de bout en bout, plusieurs chemins</text>
+<rect x="150" y="350" width="500" height="50" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="400.0" y="379.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">découverte → connexion → LUN visible → partition/formatage → montage</text>
+</svg>

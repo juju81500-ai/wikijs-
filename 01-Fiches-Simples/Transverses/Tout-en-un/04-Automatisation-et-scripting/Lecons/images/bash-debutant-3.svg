@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" width="800" height="430" role="img">
+<title>Les trois formes de quoting</title>
+<desc>Avec f égal à « mon fichier.txt » : sans guillemets le shell coupe en deux mots, entre guillemets doubles il garde un seul mot, entre apostrophes il ne développe rien.</desc>
+<defs></defs>
+<rect width="800" height="430" fill="#ffffff"/>
+<text xml:space="preserve" x="400" y="34" font-family="monospace" font-size="24" font-weight="bold" fill="#111111" text-anchor="middle">Avec  f="mon fichier.txt"</text>
+<rect x="30" y="70" width="220" height="300" rx="8" fill="#fde3e3" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="140" y="108" font-family="monospace" font-size="24" font-weight="bold" fill="#111111" text-anchor="middle">$f</text>
+<text xml:space="preserve" x="140" y="134" font-family="sans-serif" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">(sans guillemets)</text>
+<text xml:space="preserve" x="140" y="180" font-family="sans-serif" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">Variable développée : oui</text>
+<text xml:space="preserve" x="140" y="204" font-family="sans-serif" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">Jokers (*) développés : oui</text>
+<text xml:space="preserve" x="140" y="228" font-family="sans-serif" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">Découpage en mots : OUI</text>
+<text xml:space="preserve" x="140" y="270" font-family="sans-serif" font-size="15" font-weight="bold" fill="#111111" text-anchor="middle">Résultat :</text>
+<text xml:space="preserve" x="140" y="296" font-family="monospace" font-size="17" font-weight="normal" fill="#111111" text-anchor="middle">[mon]</text>
+<text xml:space="preserve" x="140" y="320" font-family="monospace" font-size="17" font-weight="normal" fill="#111111" text-anchor="middle">[fichier.txt]</text>
+<text xml:space="preserve" x="140" y="350" font-family="sans-serif" font-size="16" font-weight="bold" fill="#111111" text-anchor="middle">2 mots : risqué</text>
+<rect x="290" y="70" width="220" height="300" rx="8" fill="#e3f5e8" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="400" y="108" font-family="monospace" font-size="24" font-weight="bold" fill="#111111" text-anchor="middle">"$f"</text>
+<text xml:space="preserve" x="400" y="134" font-family="sans-serif" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">(guillemets doubles)</text>
+<text xml:space="preserve" x="400" y="180" font-family="sans-serif" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">Variable développée : oui</text>
+<text xml:space="preserve" x="400" y="204" font-family="sans-serif" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">Jokers (*) développés : non</text>
+<text xml:space="preserve" x="400" y="228" font-family="sans-serif" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">Découpage en mots : non</text>
+<text xml:space="preserve" x="400" y="270" font-family="sans-serif" font-size="15" font-weight="bold" fill="#111111" text-anchor="middle">Résultat :</text>
+<text xml:space="preserve" x="400" y="296" font-family="monospace" font-size="17" font-weight="normal" fill="#111111" text-anchor="middle">[mon fichier.txt]</text>
+<text xml:space="preserve" x="400" y="350" font-family="sans-serif" font-size="16" font-weight="bold" fill="#111111" text-anchor="middle">1 mot : à privilégier</text>
+<rect x="550" y="70" width="220" height="300" rx="8" fill="#e8f1fb" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="660" y="108" font-family="monospace" font-size="24" font-weight="bold" fill="#111111" text-anchor="middle">'$f'</text>
+<text xml:space="preserve" x="660" y="134" font-family="sans-serif" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">(apostrophes)</text>
+<text xml:space="preserve" x="660" y="180" font-family="sans-serif" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">Variable développée : non</text>
+<text xml:space="preserve" x="660" y="204" font-family="sans-serif" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">Jokers (*) développés : non</text>
+<text xml:space="preserve" x="660" y="228" font-family="sans-serif" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">Découpage en mots : non</text>
+<text xml:space="preserve" x="660" y="270" font-family="sans-serif" font-size="15" font-weight="bold" fill="#111111" text-anchor="middle">Résultat :</text>
+<text xml:space="preserve" x="660" y="296" font-family="monospace" font-size="17" font-weight="normal" fill="#111111" text-anchor="middle">[$f]</text>
+<text xml:space="preserve" x="660" y="350" font-family="sans-serif" font-size="16" font-weight="bold" fill="#111111" text-anchor="middle">texte littéral</text>
+<text xml:space="preserve" x="400" y="405" font-family="sans-serif" font-size="17" font-weight="normal" fill="#111111" text-anchor="middle">Règle d'or : toute expansion se met entre guillemets doubles.</text>
+</svg>

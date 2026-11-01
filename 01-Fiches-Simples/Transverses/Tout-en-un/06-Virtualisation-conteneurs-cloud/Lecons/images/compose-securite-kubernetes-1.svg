@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" role="img" aria-labelledby="t d">
+<title id="t">Pile Docker Compose : proxy, application, base, réseaux, volume et secret</title>
+<desc id="d">Un fichier compose.yaml décrit trois services. Le proxy est sur le réseau front, l'application sur front et back, la base de données uniquement sur back. La base utilise un volume nommé et un secret monté en fichier.</desc>
+<defs><marker id="ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f3a5f"/></marker></defs>
+<rect width="800" height="440" fill="#ffffff"/>
+<rect x="20" y="20" width="760" height="400" rx="6" fill="#f6f8fa" stroke="#8a97a6" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="35" y="45" font-family="sans-serif" font-size="15" font-weight="bold" fill="#102030" text-anchor="start">compose.yaml — projet « demo »</text>
+<rect x="180" y="70" width="580" height="120" rx="6" fill="#dbe9f8" stroke="#1f3a5f" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="192" y="92" font-family="sans-serif" font-size="13" font-weight="bold" fill="#102030" text-anchor="start">Réseau « front »</text>
+<rect x="180" y="205" width="580" height="130" rx="6" fill="#dff3e3" stroke="#2d6a3e" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="192" y="227" font-family="sans-serif" font-size="13" font-weight="bold" fill="#102030" text-anchor="start">Réseau « back » (internal : aucun accès extérieur)</text>
+<rect x="40" y="100" width="110" height="60" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="95.0" y="126.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">Client</text>
+<text x="95.0" y="141.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">198.51.100.25</text>
+<rect x="205" y="105" width="150" height="60" rx="6" fill="#fff6c9" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="280.0" y="131.4" font-family="sans-serif" font-size="14" font-weight="bold" fill="#102030" text-anchor="middle">proxy</text>
+<text x="280.0" y="148.4" font-family="sans-serif" font-size="14" font-weight="bold" fill="#102030" text-anchor="middle">ports : 8080:80</text>
+<rect x="430" y="105" width="150" height="60" rx="6" fill="#fff6c9" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="505.0" y="131.4" font-family="sans-serif" font-size="14" font-weight="bold" fill="#102030" text-anchor="middle">app</text>
+<text x="505.0" y="148.4" font-family="sans-serif" font-size="14" font-weight="bold" fill="#102030" text-anchor="middle">USER non root</text>
+<rect x="590" y="250" width="150" height="60" rx="6" fill="#fff6c9" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="665.0" y="276.4" font-family="sans-serif" font-size="14" font-weight="bold" fill="#102030" text-anchor="middle">db</text>
+<text x="665.0" y="293.4" font-family="sans-serif" font-size="14" font-weight="bold" fill="#102030" text-anchor="middle">PostgreSQL</text>
+<line x1="150" y1="130" x2="205" y2="135" stroke="#1f3a5f" stroke-width="2" marker-end="url(#ar)"/>
+<text x="177.5" y="122.5" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">HTTP</text>
+<line x1="355" y1="135" x2="430" y2="135" stroke="#1f3a5f" stroke-width="2" marker-end="url(#ar)"/>
+<text x="392.5" y="125.0" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">proxy → app</text>
+<line x1="540" y1="165" x2="640" y2="250" stroke="#1f3a5f" stroke-width="2" marker-end="url(#ar)"/>
+<text x="635.0" y="201.5" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">requêtes SQL</text>
+<rect x="590" y="355" width="150" height="50" rx="6" fill="#fde7cc" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="665.0" y="384.9" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="middle">volume « dbdata »</text>
+<line x1="665" y1="310" x2="665" y2="355" stroke="#1f3a5f" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#ar)"/>
+<rect x="330" y="355" width="220" height="50" rx="6" fill="#f9d9d9" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="440.0" y="376.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">secret « db_password »</text>
+<text x="440.0" y="391.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">/run/secrets/db_password</text>
+<line x1="550" y1="370" x2="600" y2="310" stroke="#1f3a5f" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#ar)"/>
+</svg>

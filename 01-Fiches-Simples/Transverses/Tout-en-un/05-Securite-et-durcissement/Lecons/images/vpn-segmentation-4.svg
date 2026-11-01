@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 420" width="900" height="420" role="img" aria-labelledby="t d">
+<title id="t">Principe de WireGuard : routage par clés</title>
+<desc id="d">Deux pairs WireGuard échangent leurs clés publiques. Chaque pair déclare les adresses autorisées (AllowedIPs) associées à la clé publique de l'autre, ce qui sert à la fois de routage et de filtre. Les clés affichées sont des étiquettes, pas de vraies clés.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1b1b1b"/></marker></defs>
+<rect width="900" height="420" fill="#ffffff"/>
+<text x="450" y="32" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111">WireGuard : une clé publique ↔ des adresses autorisées</text>
+<rect x="40" y="70" width="300" height="190" rx="8" fill="#dbe7ff" stroke="#1a3d7c" stroke-width="2"/>
+<text x="190.0" y="122.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Pair A (serveur)</text>
+<text x="190.0" y="141.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">interface wg0 : 198.51.100.1/24</text>
+<text x="190.0" y="160.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">clé privée : (secrète, locale)</text>
+<text x="190.0" y="179.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">clé publique : &lt;CLE_PUB_A&gt;</text>
+<text x="190.0" y="198.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">écoute UDP 51820</text>
+<text x="190.0" y="217.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Peer B : AllowedIPs 198.51.100.2/32</text>
+<rect x="560" y="70" width="300" height="190" rx="8" fill="#b8e6c4" stroke="#1c6b34" stroke-width="2"/>
+<text x="710.0" y="122.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Pair B (poste nomade)</text>
+<text x="710.0" y="141.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">interface wg0 : 198.51.100.2/24</text>
+<text x="710.0" y="160.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">clé privée : (secrète, locale)</text>
+<text x="710.0" y="179.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">clé publique : &lt;CLE_PUB_B&gt;</text>
+<text x="710.0" y="198.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Endpoint 203.0.113.10:51820</text>
+<text x="710.0" y="217.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Peer A : AllowedIPs 198.51.100.1/32</text>
+<line x1="340" y1="150" x2="560" y2="150" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="450" y="138" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">paquets UDP chiffrés</text>
+<line x1="560" y1="190" x2="340" y2="190" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="450" y="208" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">(ChaCha20-Poly1305, Noise)</text>
+<text x="450" y="295" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Un paquet entrant n'est accepté que s'il est déchiffré avec la clé du pair</text>
+<text x="450" y="317" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">ET que son adresse source figure dans les AllowedIPs de ce pair.</text>
+<text x="450" y="355" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Silencieux : sans clé valide, le port UDP ne répond pas aux sondes.</text>
+<text x="450" y="385" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">Plan du tunnel 198.51.100.0/24 : adresses de documentation.</text>
+</svg>

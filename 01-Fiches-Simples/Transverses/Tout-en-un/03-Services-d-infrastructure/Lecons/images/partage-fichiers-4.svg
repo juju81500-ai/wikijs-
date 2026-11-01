@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="800" height="380" role="img" aria-labelledby="t d">
+<title id="t">Quotas : limite souple, période de grâce et limite stricte</title>
+<desc id="d">Un utilisateur consomme de l'espace. En dessous de la limite souple tout va bien ; entre la limite souple et la limite stricte il dispose d'une période de grâce ; à la limite stricte les écritures sont refusées.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1a1a1a"/></marker></defs>
+<rect width="800" height="380" fill="#ffffff"/>
+<text x="400" y="30" text-anchor="middle" font-size="20" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Les trois zones d'un quota d'espace disque</text>
+<rect x="40" y="100" width="260" height="70" rx="8" fill="#d4f2d4" stroke="#1a1a1a" stroke-width="2"/>
+<text x="170.0" y="130.25" text-anchor="middle" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Zone verte</text>
+<text x="170.0" y="150.25" text-anchor="middle" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">sous la limite souple</text>
+<rect x="300" y="100" width="230" height="70" rx="8" fill="#fff3a8" stroke="#1a1a1a" stroke-width="2"/>
+<text x="415.0" y="130.25" text-anchor="middle" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Zone orange</text>
+<text x="415.0" y="150.25" text-anchor="middle" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">grâce (ex. 7 jours)</text>
+<rect x="530" y="100" width="230" height="70" rx="8" fill="#ffd0d0" stroke="#1a1a1a" stroke-width="2"/>
+<text x="645.0" y="130.25" text-anchor="middle" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Zone rouge</text>
+<text x="645.0" y="150.25" text-anchor="middle" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">écriture refusée</text>
+<text x="40" y="200" text-anchor="start" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">0</text>
+<text x="300" y="200" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">limite souple (ex. 8 Go)</text>
+<text x="530" y="200" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">limite stricte (10 Go)</text>
+<line x1="40" y1="215" x2="760" y2="215" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="400" y="265" text-anchor="middle" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Si la grâce expire, la limite souple devient bloquante.</text>
+<text x="400" y="295" text-anchor="middle" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Commandes utiles : quota -s, repquota -a, setquota, xfs_quota.</text>
+<text x="400" y="325" text-anchor="middle" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Sous Windows Server : FSRM (quotas de dossier).</text>
+</svg>

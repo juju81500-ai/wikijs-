@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 420" width="820" height="420" role="img" aria-labelledby="t d">
+<title id="t">Modèle en couches pour isoler une panne</title>
+<desc id="d">Cinq couches empilées de l&#x27;application au matériel, avec deux flèches : on peut remonter depuis le matériel ou descendre depuis l&#x27;application, ou diviser en deux.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333333"/></marker></defs>
+<rect width="820" height="420" fill="#ffffff"/>
+<text x="410" y="30" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" text-anchor="middle" fill="#111111">Isoler : on réduit le périmètre couche par couche</text>
+<rect x="150" y="60" width="520" height="58" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="410.0" y="84.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Application / compte</text>
+<text x="410.0" y="102.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Le logiciel fonctionne-t-il pour un autre utilisateur ?</text>
+<rect x="150" y="126" width="520" height="58" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="410.0" y="150.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Session / profil</text>
+<text x="410.0" y="168.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Une nouvelle session de test reproduit-elle le défaut ?</text>
+<rect x="150" y="192" width="520" height="58" rx="10" fill="#fff4d6" stroke="#8a5a00" stroke-width="2"/>
+<text x="410.0" y="216.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Système et pilotes</text>
+<text x="410.0" y="234.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Mises à jour, services, journaux d&#x27;événements ?</text>
+<rect x="150" y="258" width="520" height="58" rx="10" fill="#fff4d6" stroke="#8a5a00" stroke-width="2"/>
+<text x="410.0" y="282.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Réseau (IP, DNS, filtrage)</text>
+<text x="410.0" y="300.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Adresse, passerelle, nom, port ?</text>
+<rect x="150" y="324" width="520" height="58" rx="10" fill="#f0f0f0" stroke="#333333" stroke-width="2"/>
+<text x="410.0" y="348.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Matériel / câblage</text>
+<text x="410.0" y="366.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Autre prise, autre câble, autre poste ?</text>
+<path d="M100,380 L100,70" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<text x="92" y="235" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="end" fill="#111111">Remonter</text>
+<path d="M720,70 L720,380" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<text x="728" y="235" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#111111">Descendre</text>
+<text x="410" y="405" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">Dichotomie : tester à mi-chemin, puis recommencer dans la moitié fautive</text>
+</svg>

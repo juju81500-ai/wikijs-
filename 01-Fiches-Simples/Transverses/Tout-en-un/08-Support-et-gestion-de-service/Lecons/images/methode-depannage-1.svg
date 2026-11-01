@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" width="820" height="400" role="img" aria-labelledby="t d">
+<title id="t">Cycle de dépannage en six étapes</title>
+<desc id="d">Six étapes : questionner, reproduire, isoler, formuler des hypothèses, tester, documenter ; une flèche de retour relie le test aux hypothèses quand elles sont infirmées.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333333"/></marker></defs>
+<rect width="820" height="400" fill="#ffffff"/>
+<text x="410" y="34" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111">Cycle de dépannage structuré</text>
+<rect x="40" y="60" width="200" height="90" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="140.0" y="91.25" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">1. Questionner</text>
+<text x="140.0" y="110.25" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">Qui, quoi, quand,</text>
+<text x="140.0" y="129.25" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">depuis quand ?</text>
+<rect x="310" y="60" width="200" height="90" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="410.0" y="91.25" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">2. Reproduire</text>
+<text x="410.0" y="110.25" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">Obtenir le défaut</text>
+<text x="410.0" y="129.25" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">à la demande</text>
+<rect x="580" y="60" width="200" height="90" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="680.0" y="91.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">3. Isoler</text>
+<text x="680.0" y="109.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Réduire le périmètre</text>
+<text x="680.0" y="127.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">(poste, réseau, compte)</text>
+<path d="M240,105 L310,105" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<path d="M510,105 L580,105" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<path d="M680,150 L680,230" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<rect x="580" y="230" width="200" height="90" rx="10" fill="#fff4d6" stroke="#8a5a00" stroke-width="2"/>
+<text x="680.0" y="261.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">4. Hypothèses</text>
+<text x="680.0" y="279.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Classer par probabilité</text>
+<text x="680.0" y="297.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">et par coût du test</text>
+<rect x="310" y="230" width="200" height="90" rx="10" fill="#fff4d6" stroke="#8a5a00" stroke-width="2"/>
+<text x="410.0" y="261.25" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">5. Tester</text>
+<text x="410.0" y="280.25" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">Un seul changement</text>
+<text x="410.0" y="299.25" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">à la fois, réversible</text>
+<rect x="40" y="230" width="200" height="90" rx="10" fill="#e3f5e6" stroke="#1d6b2f" stroke-width="2"/>
+<text x="140.0" y="261.25" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">6. Documenter</text>
+<text x="140.0" y="280.25" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">Cause, correctif,</text>
+<text x="140.0" y="299.25" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">retour arrière</text>
+<path d="M580,275 L510,275" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<path d="M310,275 L240,275" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<text x="245" y="262" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#222222">Résolu</text>
+<path d="M410,320 L410,355 L680,355 L680,320" fill="none" stroke="#333333" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#a)"/>
+<text x="420" y="378" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#222222">Hypothèse infirmée : on revient aux hypothèses</text>
+</svg>

@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d">
+  <title id="t">Comment le noyau Linux décide d'un accès fichier</title>
+  <desc id="d">Un processus lance une ouverture de fichier. Si l'UID effectif est 0 (root), l'accès est en général accordé. Sinon, si l'UID est celui du propriétaire, les droits du propriétaire s'appliquent. Sinon, si le GID du processus ou un groupe supplémentaire correspond, les droits du groupe s'appliquent. Sinon, ce sont les droits « autres ». Les ACL étendent ce mécanisme avec des entrées nommées.</desc>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#111111"/></marker>
+  </defs>
+  <rect width="800" height="420" fill="#ffffff"/>
+  <text x="400" y="32" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#111111">Qui peut ouvrir ce fichier ? L'ordre des vérifications</text>
+  <g font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">
+    <rect x="20" y="60" width="170" height="70" rx="8" fill="#e2e8f0" stroke="#334155" stroke-width="2"/>
+    <text x="105" y="90" font-weight="bold">Processus</text>
+    <text x="105" y="112">UID + GID + groupes</text>
+
+    <rect x="230" y="60" width="150" height="70" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="2"/>
+    <text x="305" y="90" font-weight="bold">UID = 0 ?</text>
+    <text x="305" y="112">oui : root, accès</text>
+
+    <rect x="420" y="60" width="170" height="70" rx="8" fill="#dbeafe" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="505" y="90" font-weight="bold">Propriétaire ?</text>
+    <text x="505" y="112">oui : bits « u »</text>
+
+    <rect x="630" y="60" width="150" height="70" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="2"/>
+    <text x="705" y="90" font-weight="bold">Du groupe ?</text>
+    <text x="705" y="112">oui : bits « g »</text>
+
+    <rect x="630" y="200" width="150" height="70" rx="8" fill="#fef3c7" stroke="#b45309" stroke-width="2"/>
+    <text x="705" y="230" font-weight="bold">Sinon</text>
+    <text x="705" y="252">bits « o » (autres)</text>
+
+    <rect x="230" y="200" width="360" height="70" rx="8" fill="#f3e8ff" stroke="#7e22ce" stroke-width="2"/>
+    <text x="410" y="230" font-weight="bold">Avec ACL : entrées nommées</text>
+    <text x="410" y="252">(user:bob, group:devs) + masque</text>
+  </g>
+  <line x1="190" y1="95" x2="228" y2="95" stroke="#111111" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="380" y1="95" x2="418" y2="95" stroke="#111111" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="590" y1="95" x2="628" y2="95" stroke="#111111" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="705" y1="130" x2="705" y2="198" stroke="#111111" stroke-width="2" marker-end="url(#a)"/>
+  <line x1="630" y1="235" x2="592" y2="235" stroke="#111111" stroke-width="2" marker-end="url(#a)" stroke-dasharray="6 4"/>
+  <rect x="20" y="300" width="760" height="100" rx="8" fill="#fffbeb" stroke="#92400e" stroke-width="2"/>
+  <g font-family="sans-serif" font-size="16" fill="#111111">
+    <text x="36" y="328">Le premier critère qui correspond décide : un propriétaire sans « w » ne peut pas écrire,</text>
+    <text x="36" y="352">même si « autres » le peut. Le droit « x » sur un répertoire = le traverser.</text>
+    <text x="36" y="376">Groupes supplémentaires lus à l'ouverture de session (commandes id, groups).</text>
+  </g>
+</svg>

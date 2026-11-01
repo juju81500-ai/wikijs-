@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 455" width="800" height="455" role="img" aria-labelledby="t d">
+<title id="t">Défense en couches d'un poste ou serveur Windows</title>
+<desc id="d">Cinq couches empilées de la plus profonde à la plus externe : données chiffrées avec BitLocker, hôte avec Defender et correctifs, comptes avec LAPS, réseau avec pare-feu, supervision avec journaux de sécurité.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a41"/></marker></defs>
+<rect width="800" height="455" fill="#ffffff"/>
+<text x="400" y="34" font-size="22" fill="#111111" text-anchor="middle" font-weight="bold" font-family="sans-serif">Windows : cinq couches complémentaires</text>
+<rect x="30" y="65" width="740" height="62" rx="10" fill="#ece6f7" stroke="#1b2a41" stroke-width="2"/>
+<text x="130" y="102" font-size="19" fill="#111111" text-anchor="middle" font-weight="bold" font-family="sans-serif">Données</text>
+<text x="450" y="102" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">BitLocker : disque chiffré, clé de récupération sauvegardée</text>
+<rect x="30" y="137" width="740" height="62" rx="10" fill="#e8f1fb" stroke="#1b2a41" stroke-width="2"/>
+<text x="130" y="174" font-size="19" fill="#111111" text-anchor="middle" font-weight="bold" font-family="sans-serif">Hôte</text>
+<text x="450" y="174" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Microsoft Defender actif, correctifs Windows Update à jour</text>
+<rect x="30" y="209" width="740" height="62" rx="10" fill="#fff3c4" stroke="#1b2a41" stroke-width="2"/>
+<text x="130" y="246" font-size="19" fill="#111111" text-anchor="middle" font-weight="bold" font-family="sans-serif">Comptes</text>
+<text x="450" y="246" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">LAPS : mot de passe administrateur local unique et renouvelé</text>
+<rect x="30" y="281" width="740" height="62" rx="10" fill="#e3f4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="130" y="318" font-size="19" fill="#111111" text-anchor="middle" font-weight="bold" font-family="sans-serif">Réseau</text>
+<text x="450" y="318" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Pare-feu Defender, SMB (445) et RDP (3389) non exposés</text>
+<rect x="30" y="353" width="740" height="62" rx="10" fill="#fde4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="130" y="390" font-size="19" fill="#111111" text-anchor="middle" font-weight="bold" font-family="sans-serif">Supervision</text>
+<text x="450" y="390" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Journal Sécurité : 4624/4625 (connexions), 4720 (compte créé)</text>
+<text x="400" y="442" font-size="14" fill="#444444" text-anchor="middle" font-weight="normal" font-family="sans-serif">Aucune couche ne suffit seule : chacune compense les faiblesses des autres.</text>
+</svg>

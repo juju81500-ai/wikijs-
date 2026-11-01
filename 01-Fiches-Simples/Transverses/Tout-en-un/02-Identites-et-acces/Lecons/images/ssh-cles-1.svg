@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" role="img" aria-labelledby="t d">
+  <title id="t">Authentification SSH par clé publique</title>
+  <desc id="d">Le client conserve sa clé privée et l'agent ssh la garde en mémoire. Le serveur possède la clé publique dans authorized_keys. Au moment de la connexion, le serveur envoie un défi, le client le signe avec la clé privée sans jamais l'envoyer, et le serveur vérifie la signature avec la clé publique.</desc>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#111111"/></marker>
+  </defs>
+  <rect width="800" height="380" fill="#ffffff"/>
+  <text x="400" y="32" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#111111">Clé publique / clé privée : la preuve sans le secret</text>
+  <g font-family="sans-serif" font-size="16" fill="#111111">
+    <rect x="20" y="55" width="260" height="215" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="3"/>
+    <text x="150" y="85" text-anchor="middle" font-size="19" font-weight="bold">Poste client</text>
+    <text x="150" y="108" text-anchor="middle">(192.0.2.10)</text>
+    <rect x="40" y="125" width="220" height="50" rx="6" fill="#ffffff" stroke="#1e3a8a" stroke-width="2"/>
+    <text x="150" y="147" text-anchor="middle" font-weight="bold">~/.ssh/id_ed25519</text>
+    <text x="150" y="166" text-anchor="middle">clé PRIVÉE (reste ici)</text>
+    <rect x="40" y="190" width="220" height="60" rx="6" fill="#ffffff" stroke="#1e3a8a" stroke-width="2"/>
+    <text x="150" y="214" text-anchor="middle" font-weight="bold">ssh-agent</text>
+    <text x="150" y="234" text-anchor="middle">garde la clé déverrouillée</text>
+
+    <rect x="520" y="55" width="260" height="215" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+    <text x="650" y="85" text-anchor="middle" font-size="19" font-weight="bold">Serveur SSH</text>
+    <text x="650" y="108" text-anchor="middle">(198.51.100.20)</text>
+    <rect x="540" y="125" width="220" height="50" rx="6" fill="#ffffff" stroke="#14532d" stroke-width="2"/>
+    <text x="650" y="147" text-anchor="middle" font-weight="bold">~/.ssh/authorized_keys</text>
+    <text x="650" y="166" text-anchor="middle">clé PUBLIQUE autorisée</text>
+    <rect x="540" y="190" width="220" height="60" rx="6" fill="#ffffff" stroke="#14532d" stroke-width="2"/>
+    <text x="650" y="214" text-anchor="middle" font-weight="bold">sshd</text>
+    <text x="650" y="234" text-anchor="middle">vérifie la signature</text>
+
+    <line x1="282" y1="130" x2="518" y2="130" stroke="#111111" stroke-width="2" marker-end="url(#a)"/>
+    <text x="400" y="122" text-anchor="middle">① « Je suis alice » + clé publique</text>
+    <line x1="518" y1="170" x2="282" y2="170" stroke="#111111" stroke-width="2" marker-end="url(#a)"/>
+    <text x="400" y="162" text-anchor="middle">② Défi aléatoire à signer</text>
+    <line x1="282" y1="210" x2="518" y2="210" stroke="#111111" stroke-width="2" marker-end="url(#a)"/>
+    <text x="400" y="202" text-anchor="middle">③ Signature (pas la clé !)</text>
+    <line x1="518" y1="250" x2="282" y2="250" stroke="#111111" stroke-width="2" marker-end="url(#a)" stroke-dasharray="6 4"/>
+    <text x="400" y="242" text-anchor="middle">④ Accès accordé</text>
+  </g>
+  <rect x="20" y="295" width="760" height="65" rx="8" fill="#fffbeb" stroke="#92400e" stroke-width="2"/>
+  <g font-family="sans-serif" font-size="16" fill="#111111">
+    <text x="36" y="322">La clé privée ne circule jamais sur le réseau. Protégez-la par une passphrase.</text>
+    <text x="36" y="346">La clé publique peut être copiée partout : seule la clé privée permet de signer.</text>
+  </g>
+</svg>

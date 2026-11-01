@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" width="900" height="460" role="img" aria-labelledby="t d">
+<title id="t">Triade CIA : confidentialité, intégrité, disponibilité</title>
+<desc id="d">Triangle dont les trois sommets sont la confidentialité, l'intégrité et la disponibilité, avec pour chacun un exemple de menace et de mesure de défense.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1b1b1b"/></marker></defs>
+<rect width="900" height="460" fill="#ffffff"/>
+<text x="450" y="32" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111">La triade CIA et ses mesures</text>
+<polygon points="450,70 150,330 750,330" fill="#f3f6ff" stroke="#1a3d7c" stroke-width="3"/>
+<rect x="350" y="55" width="200" height="50" rx="8" fill="#dbe7ff" stroke="#1a3d7c" stroke-width="2"/>
+<text x="450.0" y="85.6" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#111111">Confidentialité</text>
+<rect x="50" y="320" width="200" height="50" rx="8" fill="#b8e6c4" stroke="#1c6b34" stroke-width="2"/>
+<text x="150.0" y="350.6" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#111111">Intégrité</text>
+<rect x="650" y="320" width="200" height="50" rx="8" fill="#ffe08a" stroke="#8a5a00" stroke-width="2"/>
+<text x="750.0" y="350.6" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="bold" text-anchor="middle" fill="#111111">Disponibilité</text>
+<text x="450" y="190" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Information protégée</text>
+<text x="450" y="212" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">(données, systèmes, services)</text>
+<text x="570" y="75" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#8b0000">Menace : fuite, vol de compte</text>
+<text x="570" y="95" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#111111">Défense : chiffrement, accès minimal, MFA</text>
+<text x="20" y="395" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#8b0000">Menace : altération, falsification</text>
+<text x="20" y="413" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#111111">Défense : signatures, sommes de contrôle, journaux</text>
+<text x="880" y="395" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="end" fill="#8b0000">Menace : panne, rançongiciel, saturation</text>
+<text x="880" y="413" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="end" fill="#111111">Défense : sauvegardes testées, redondance, correctifs</text>
+<text x="450" y="445" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Une mesure renforce souvent un pilier et pèse sur un autre : on arbitre selon le risque.</text>
+</svg>

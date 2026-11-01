@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" width="900" height="430" role="img" aria-labelledby="t d">
+<title id="t">Bastion d'administration et reverse proxy</title>
+<desc id="d">Deux chaînes : l'administrateur passe par un bastion qui authentifie et journalise avant d'atteindre les serveurs ; les visiteurs atteignent un reverse proxy qui termine TLS et relaie vers les applications internes.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1b1b1b"/></marker></defs>
+<rect width="900" height="430" fill="#ffffff"/>
+<text x="450" y="32" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111">Deux points d'entrée contrôlés</text>
+<rect x="20" y="55" width="860" height="170" rx="12" fill="#eef3fb" stroke="#1a3d7c" stroke-width="2" stroke-dasharray="10 6"/>
+<text x="32" y="77" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1a3d7c">Administration : un seul chemin, tout est tracé</text>
+<rect x="40" y="110" width="150" height="70" rx="8" fill="#ffffff" stroke="#1a3d7c" stroke-width="2"/>
+<text x="115.0" y="140.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Administrateur</text>
+<text x="115.0" y="159.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">VPN + MFA</text>
+<rect x="290" y="100" width="200" height="90" rx="8" fill="#dbe7ff" stroke="#1a3d7c" stroke-width="2"/>
+<text x="390.0" y="130.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Bastion</text>
+<text x="390.0" y="149.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">authentifie, autorise,</text>
+<text x="390.0" y="168.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">journalise la session</text>
+<rect x="640" y="110" width="200" height="70" rx="8" fill="#ffffff" stroke="#1a3d7c" stroke-width="2"/>
+<text x="740.0" y="131.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#111111">Serveurs 192.0.2.0/24</text>
+<text x="740.0" y="149.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">SSH / RDP uniquement</text>
+<text x="740.0" y="167.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">depuis le bastion</text>
+<line x1="190" y1="145" x2="290" y2="145" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="240" y="133" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">SSH</text>
+<line x1="490" y1="145" x2="640" y2="145" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="565" y="133" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">SSH</text>
+<rect x="20" y="245" width="860" height="170" rx="12" fill="#fff0f0" stroke="#8b0000" stroke-width="2" stroke-dasharray="10 6"/>
+<text x="32" y="267" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#8b0000">Publication web : le reverse proxy en frontal</text>
+<rect x="40" y="300" width="150" height="70" rx="8" fill="#ffffff" stroke="#8b0000" stroke-width="2"/>
+<text x="115.0" y="330.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Visiteur</text>
+<text x="115.0" y="349.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">HTTPS</text>
+<rect x="290" y="290" width="200" height="90" rx="8" fill="#ffe0e0" stroke="#8b0000" stroke-width="2"/>
+<text x="390.0" y="321.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#111111">Reverse proxy (DMZ)</text>
+<text x="390.0" y="339.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">TLS, en-têtes, limites,</text>
+<text x="390.0" y="357.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">filtrage des requêtes</text>
+<rect x="640" y="300" width="200" height="70" rx="8" fill="#ffffff" stroke="#8b0000" stroke-width="2"/>
+<text x="740.0" y="321.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#111111">Application interne</text>
+<text x="740.0" y="339.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">HTTP(S) restreint</text>
+<text x="740.0" y="357.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">au proxy seul</text>
+<line x1="190" y1="335" x2="290" y2="335" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="240" y="323" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">443</text>
+<line x1="490" y1="335" x2="640" y2="335" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="565" y="323" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">8080</text>
+</svg>

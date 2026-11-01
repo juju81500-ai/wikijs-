@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" role="img" aria-labelledby="t d">
+<title id="t">Locataire Microsoft Entra ID et services Microsoft 365</title>
+<desc id="d">Un locataire (tenant) Entra ID contient les utilisateurs, groupes, rôles d'administration et stratégies d'accès conditionnel. Il authentifie l'accès aux services Microsoft 365 comme la messagerie, le partage de fichiers et la collaboration.</desc>
+<defs><marker id="ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f3a5f"/></marker></defs>
+<rect width="800" height="440" fill="#ffffff"/>
+<rect x="20" y="20" width="760" height="400" rx="6" fill="#f6f8fa" stroke="#8a97a6" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="35" y="45" font-family="sans-serif" font-size="15" font-weight="bold" fill="#102030" text-anchor="start">Locataire (tenant) example.test — Microsoft Entra ID</text>
+<rect x="40" y="65" width="330" height="170" rx="6" fill="#dbe9f8" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="55" y="88" font-family="sans-serif" font-size="14" font-weight="bold" fill="#102030" text-anchor="start">Identités</text>
+<rect x="55" y="100" width="140" height="45" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="125.0" y="127.05" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">Utilisateurs</text>
+<rect x="215" y="100" width="140" height="45" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="285.0" y="127.05" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">Groupes</text>
+<rect x="55" y="155" width="140" height="60" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="125.0" y="181.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">Invités (B2B)</text>
+<text x="125.0" y="196.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">identités applicatives</text>
+<rect x="215" y="155" width="140" height="60" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="285.0" y="181.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">Appareils</text>
+<text x="285.0" y="196.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">enregistrés</text>
+<rect x="400" y="65" width="360" height="170" rx="6" fill="#fff6c9" stroke="#8a6d00" stroke-width="1.5"/>
+<text x="415" y="88" font-family="sans-serif" font-size="14" font-weight="bold" fill="#102030" text-anchor="start">Contrôle d'accès</text>
+<rect x="415" y="100" width="160" height="45" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="495.0" y="126.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">Rôles d'administration</text>
+<rect x="585" y="100" width="160" height="45" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="665.0" y="126.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">Accès conditionnel</text>
+<rect x="415" y="155" width="160" height="60" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="495.0" y="181.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">MFA / méthodes</text>
+<text x="495.0" y="196.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">d'authentification</text>
+<rect x="585" y="155" width="160" height="60" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="665.0" y="181.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">Journaux de</text>
+<text x="665.0" y="196.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">connexion et d'audit</text>
+<line x1="205" y1="235" x2="205" y2="285" stroke="#1f3a5f" stroke-width="2" marker-end="url(#ar)"/>
+<line x1="580" y1="235" x2="580" y2="285" stroke="#1f3a5f" stroke-width="2" marker-end="url(#ar)"/>
+<rect x="40" y="285" width="720" height="115" rx="6" fill="#dff3e3" stroke="#2d6a3e" stroke-width="1.5"/>
+<text x="55" y="308" font-family="sans-serif" font-size="14" font-weight="bold" fill="#102030" text-anchor="start">Services Microsoft 365 (licences attribuées aux utilisateurs ou groupes)</text>
+<rect x="55" y="325" width="155" height="60" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="132.5" y="351.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">Exchange</text>
+<text x="132.5" y="367.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">(messagerie)</text>
+<rect x="230" y="325" width="155" height="60" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="307.5" y="351.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">SharePoint /</text>
+<text x="307.5" y="367.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">OneDrive</text>
+<rect x="405" y="325" width="155" height="60" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="482.5" y="359.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">Teams</text>
+<rect x="580" y="325" width="155" height="60" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="657.5" y="351.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">Centre</text>
+<text x="657.5" y="367.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">d'administration</text>
+</svg>

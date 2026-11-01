@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d">
+  <title id="t">Snapshot : chaîne de deltas sur le même stockage, contre sauvegarde indépendante</title>
+  <desc id="d">En haut, un disque de base suivi de deltas de snapshot, tous sur le même datastore ; la perte du datastore détruit tout. En bas, une sauvegarde copiée vers un dépôt distinct, restaurable même si le datastore est perdu.</desc>
+  <rect width="800" height="420" fill="#ffffff"/>
+  <text x="400" y="30" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#111">Snapshot n'est pas sauvegarde</text>
+  <g font-family="sans-serif" font-size="15" fill="#111">
+    <rect x="30" y="50" width="520" height="150" rx="8" fill="#fff2cc" stroke="#7f6000" stroke-width="2"/>
+    <text x="45" y="75" font-weight="bold">Datastore de production (un seul domaine de panne)</text>
+    <rect x="50" y="95" width="130" height="80" fill="#cfe2f3" stroke="#1f4e79"/><text x="115" y="130" text-anchor="middle">Disque de base</text><text x="115" y="150" text-anchor="middle" font-size="13">état à T0</text>
+    <rect x="215" y="95" width="130" height="80" fill="#fce5cd" stroke="#b45f06"/><text x="280" y="130" text-anchor="middle">Delta S1</text><text x="280" y="150" text-anchor="middle" font-size="13">écritures après T0</text>
+    <rect x="380" y="95" width="150" height="80" fill="#fce5cd" stroke="#b45f06"/><text x="455" y="130" text-anchor="middle">Delta S2</text><text x="455" y="150" text-anchor="middle" font-size="13">état courant de la VM</text>
+    <path d="M180 135 H213 M345 135 H378" stroke="#444" stroke-width="3"/>
+    <rect x="580" y="75" width="190" height="100" fill="#f4cccc" stroke="#990000" stroke-width="2"/>
+    <text x="675" y="110" text-anchor="middle" font-weight="bold" fill="#990000">Panne du stockage</text>
+    <text x="675" y="132" text-anchor="middle">tout est perdu :</text>
+    <text x="675" y="152" text-anchor="middle">base, deltas, VM</text>
+  </g>
+  <g font-family="sans-serif" font-size="15" fill="#111">
+    <rect x="30" y="240" width="520" height="150" rx="8" fill="#d9ead3" stroke="#274e13" stroke-width="2"/>
+    <text x="45" y="265" font-weight="bold">Sauvegarde : copie vers un autre support, un autre site</text>
+    <rect x="50" y="285" width="150" height="80" fill="#cfe2f3" stroke="#1f4e79"/><text x="125" y="320" text-anchor="middle">VM (production)</text>
+    <rect x="360" y="285" width="170" height="80" fill="#b6d7a8" stroke="#274e13"/><text x="445" y="318" text-anchor="middle">Dépôt distinct</text><text x="445" y="340" text-anchor="middle" font-size="13">copies versionnées</text>
+    <path d="M200 325 H355" stroke="#444" stroke-width="3"/><polygon points="353,315 353,335 363,325" fill="#444"/>
+    <text x="278" y="315" text-anchor="middle" font-size="13">copie</text>
+    <rect x="580" y="260" width="190" height="110" fill="#d9ead3" stroke="#274e13" stroke-width="2"/>
+    <text x="675" y="295" text-anchor="middle" font-weight="bold" fill="#274e13">Restauration</text>
+    <text x="675" y="317" text-anchor="middle">possible même si</text>
+    <text x="675" y="337" text-anchor="middle">le datastore a disparu</text>
+    <text x="675" y="357" text-anchor="middle" font-size="13">(à tester régulièrement)</text>
+  </g>
+</svg>

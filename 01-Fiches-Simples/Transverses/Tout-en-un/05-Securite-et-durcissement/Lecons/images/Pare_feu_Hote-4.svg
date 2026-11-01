@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 360" width="800" height="360" role="img" aria-labelledby="t d">
+<title id="t">Les trois profils du Pare-feu Windows Defender</title>
+<desc id="d">Trois cartes pour les profils Domaine, Privé et Public : trafic entrant bloqué par défaut, sortant autorisé, et règle RDP limitée à un réseau d'administration.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a41"/></marker></defs>
+<rect width="800" height="360" fill="#ffffff"/>
+<text x="400" y="34" font-size="22" fill="#111111" text-anchor="middle" font-weight="bold" font-family="sans-serif">Trois profils, trois niveaux de confiance</text>
+<rect x="20" y="70" width="244" height="200" rx="10" fill="#e3f4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="142" y="105" font-size="22" fill="#111111" text-anchor="middle" font-weight="bold" font-family="sans-serif">Domaine</text>
+<text x="142" y="135.0" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">réseau d'entreprise</text>
+<text x="142" y="154.5" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">authentifié par AD</text>
+<text x="142" y="195.0" font-size="14" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Entrant : bloqué par défaut</text>
+<text x="142" y="213.2" font-size="14" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Sortant : autorisé</text>
+<text x="142" y="231.4" font-size="14" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">RDP : 192.0.2.0/24 seul</text>
+<rect x="278" y="70" width="244" height="200" rx="10" fill="#fff3c4" stroke="#1b2a41" stroke-width="2"/>
+<text x="400" y="105" font-size="22" fill="#111111" text-anchor="middle" font-weight="bold" font-family="sans-serif">Privé</text>
+<text x="400" y="135.0" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">réseau de confiance</text>
+<text x="400" y="154.5" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">domicile ou labo</text>
+<text x="400" y="195.0" font-size="14" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Entrant : bloqué par défaut</text>
+<text x="400" y="213.2" font-size="14" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Sortant : autorisé</text>
+<text x="400" y="231.4" font-size="14" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">RDP : 192.0.2.0/24 seul</text>
+<rect x="536" y="70" width="244" height="200" rx="10" fill="#fde4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="658" y="105" font-size="22" fill="#111111" text-anchor="middle" font-weight="bold" font-family="sans-serif">Public</text>
+<text x="658" y="135.0" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">réseau non fiable</text>
+<text x="658" y="154.5" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">café, hôtel, gare</text>
+<text x="658" y="195.0" font-size="14" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Entrant : bloqué par défaut</text>
+<text x="658" y="213.2" font-size="14" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Sortant : autorisé</text>
+<text x="658" y="231.4" font-size="14" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">RDP : fermé</text>
+<rect x="20" y="290" width="744" height="50" rx="10" fill="#e8f1fb" stroke="#1b2a41" stroke-width="2"/>
+<text x="392.0" y="320.6" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Vérifier le profil actif avant d'écrire une règle : Get-NetConnectionProfile</text>
+</svg>

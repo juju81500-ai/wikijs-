@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" role="img" aria-labelledby="t d">
+<title id="t">Partage de fichiers : clients SMB et NFS face à un serveur de fichiers</title>
+<desc id="d">Un serveur de fichiers expose le même dossier /srv/partage via SMB (Samba) vers un client Windows et via NFS vers un client Linux ; chaque protocole utilise ses propres ports et son propre modèle d'authentification.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1a1a1a"/></marker></defs>
+<rect width="800" height="480" fill="#ffffff"/>
+<text x="400" y="30" text-anchor="middle" font-size="20" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Un serveur de fichiers, deux protocoles</text>
+<rect x="300" y="150" width="200" height="200" rx="8" fill="#d4f2d4" stroke="#1a1a1a" stroke-width="2"/>
+<text x="400.0" y="226.4" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Serveur de fichiers</text>
+<text x="400.0" y="245.4" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">srv-fichiers.example.test</text>
+<text x="400.0" y="264.4" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">192.0.2.10</text>
+<text x="400.0" y="283.4" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">/srv/partage</text>
+<rect x="20" y="70" width="200" height="100" rx="8" fill="#cfe3ff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="120.0" y="106.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Poste Windows</text>
+<text x="120.0" y="124.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">192.0.2.51</text>
+<text x="120.0" y="142.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">accès \\srv-fichiers\partage</text>
+<rect x="20" y="200" width="200" height="100" rx="8" fill="#cfe3ff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="120.0" y="236.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Poste Windows</text>
+<text x="120.0" y="254.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">192.0.2.52</text>
+<text x="120.0" y="272.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">lecteur réseau Z:</text>
+<rect x="580" y="130" width="200" height="100" rx="8" fill="#ffe2b8" stroke="#1a1a1a" stroke-width="2"/>
+<text x="680.0" y="166.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Client Linux</text>
+<text x="680.0" y="184.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">192.0.2.61</text>
+<text x="680.0" y="202.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">mount -t nfs</text>
+<rect x="580" y="270" width="200" height="100" rx="8" fill="#ffe2b8" stroke="#1a1a1a" stroke-width="2"/>
+<text x="680.0" y="306.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Serveur d'applications</text>
+<text x="680.0" y="324.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">192.0.2.62</text>
+<text x="680.0" y="342.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">montage NFS (fstab)</text>
+<line x1="220" y1="120" x2="300" y2="200" stroke="#1a1a1a" stroke-width="2.5"/>
+<line x1="220" y1="250" x2="300" y2="260" stroke="#1a1a1a" stroke-width="2.5"/>
+<line x1="580" y1="180" x2="500" y2="230" stroke="#1a1a1a" stroke-width="2.5"/>
+<line x1="580" y1="320" x2="500" y2="290" stroke="#1a1a1a" stroke-width="2.5"/>
+<text x="150" y="200" text-anchor="middle" font-size="1" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a"></text>
+<rect x="200" y="390" width="190" height="50" rx="8" fill="#fff3a8" stroke="#1a1a1a" stroke-width="2"/>
+<text x="315.0" y="419.9" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">SMB : TCP 445</text>
+<rect x="410" y="390" width="190" height="50" rx="8" fill="#fff3a8" stroke="#1a1a1a" stroke-width="2"/>
+<text x="485.0" y="419.9" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">NFS : TCP/UDP 2049</text>
+<text x="160" y="105" text-anchor="middle" font-size="1" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a"></text>
+<text x="125" y="330" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Authentification : comptes</text>
+<text x="125" y="348" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">(Kerberos / NTLM, domaine)</text>
+<text x="685" y="400" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Authentification : UID/GID</text>
+<text x="685" y="418" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">ou Kerberos (krb5)</text>
+</svg>

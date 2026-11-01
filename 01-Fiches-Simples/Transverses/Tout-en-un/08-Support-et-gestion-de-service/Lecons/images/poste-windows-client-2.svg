@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 340" width="820" height="340" role="img" aria-labelledby="t d">
+<title id="t">Chaîne d&#x27;impression Windows</title>
+<desc id="d">Cinq maillons : application, spouleur, pilote d&#x27;impression, port ou serveur d&#x27;impression, imprimante. Sous chaque maillon, un contrôle à effectuer.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333333"/></marker></defs>
+<rect width="820" height="340" fill="#ffffff"/>
+<text x="410" y="30" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" text-anchor="middle" fill="#111111">Chaîne d&#x27;impression : un maillon à la fois</text>
+<rect x="20" y="70" width="140" height="80" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="90.0" y="105.75" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">Application</text>
+<text x="90.0" y="124.75" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">émet le job</text>
+<rect x="20" y="200" width="140" height="70" rx="10" fill="#fff4d6" stroke="#8a5a00" stroke-width="2"/>
+<text x="90.0" y="231.05" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">Imprime-t-elle</text>
+<text x="90.0" y="248.05" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">en PDF ?</text>
+<path d="M90,150 L90,200" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<path d="M160,110 L180,110" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<rect x="180" y="70" width="140" height="80" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="250.0" y="105.75" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">Spouleur</text>
+<text x="250.0" y="124.75" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">file d&#x27;attente</text>
+<rect x="180" y="200" width="140" height="70" rx="10" fill="#fff4d6" stroke="#8a5a00" stroke-width="2"/>
+<text x="250.0" y="231.05" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">Service Spouleur</text>
+<text x="250.0" y="248.05" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">démarré ?</text>
+<path d="M250,150 L250,200" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<path d="M320,110 L340,110" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<rect x="340" y="70" width="140" height="80" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="410.0" y="105.75" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">Pilote</text>
+<text x="410.0" y="124.75" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">traduction</text>
+<rect x="340" y="200" width="140" height="70" rx="10" fill="#fff4d6" stroke="#8a5a00" stroke-width="2"/>
+<text x="410.0" y="231.05" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">Pilote adapté,</text>
+<text x="410.0" y="248.05" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">version signée ?</text>
+<path d="M410,150 L410,200" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<path d="M480,110 L500,110" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<rect x="500" y="70" width="140" height="80" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="570.0" y="105.75" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">Port / serveur</text>
+<text x="570.0" y="124.75" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">route le job</text>
+<rect x="500" y="200" width="140" height="70" rx="10" fill="#fff4d6" stroke="#8a5a00" stroke-width="2"/>
+<text x="570.0" y="231.05" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">Joignable ?</text>
+<text x="570.0" y="248.05" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">(192.0.2.50:9100)</text>
+<path d="M570,150 L570,200" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<path d="M640,110 L660,110" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<rect x="660" y="70" width="140" height="80" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="730.0" y="105.75" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">Imprimante</text>
+<text x="730.0" y="124.75" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">état matériel</text>
+<rect x="660" y="200" width="140" height="70" rx="10" fill="#fff4d6" stroke="#8a5a00" stroke-width="2"/>
+<text x="730.0" y="231.05" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">Voyant, bourrage,</text>
+<text x="730.0" y="248.05" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">consommable</text>
+<path d="M730,150 L730,200" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<text x="410" y="310" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Si le test PDF échoue : le problème est en amont de l&#x27;imprimante</text>
+</svg>

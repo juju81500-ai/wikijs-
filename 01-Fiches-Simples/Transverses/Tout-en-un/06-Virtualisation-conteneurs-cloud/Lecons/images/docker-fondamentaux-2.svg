@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" width="800" height="430" role="img" aria-labelledby="t d">
+<title id="t">Couches d'une image Docker et couche inscriptible du conteneur</title>
+<desc id="d">Pile de couches en lecture seule produites par chaque instruction du Dockerfile, surmontée d'une fine couche inscriptible propre au conteneur. Plusieurs conteneurs partagent les mêmes couches d'image.</desc>
+<defs><marker id="ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f3a5f"/></marker></defs>
+<rect width="800" height="430" fill="#ffffff"/>
+<text x="20" y="28" font-family="sans-serif" font-size="15" font-weight="bold" fill="#102030" text-anchor="start">Instruction du Dockerfile</text>
+<text x="330" y="28" font-family="sans-serif" font-size="15" font-weight="bold" fill="#102030" text-anchor="start">Couche produite</text>
+<text x="590" y="28" font-family="sans-serif" font-size="15" font-weight="bold" fill="#102030" text-anchor="start">Conteneurs A et B</text>
+<rect x="20" y="330" width="290" height="44" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="165.0" y="356.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">FROM debian:stable-slim</text>
+<rect x="330" y="330" width="230" height="44" rx="6" fill="#e9ecef" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="445.0" y="348.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">Couche de base (OS minimal)</text>
+<text x="445.0" y="363.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">(lecture seule)</text>
+<rect x="20" y="278" width="290" height="44" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="165.0" y="304.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">RUN apt-get install -y python3</text>
+<rect x="330" y="278" width="230" height="44" rx="6" fill="#dbe9f8" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="445.0" y="296.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">Paquets installés</text>
+<text x="445.0" y="311.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">(lecture seule)</text>
+<rect x="20" y="226" width="290" height="44" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="165.0" y="252.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">COPY requirements.txt .</text>
+<rect x="330" y="226" width="230" height="44" rx="6" fill="#dbe9f8" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="445.0" y="244.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">Fichier de dépendances</text>
+<text x="445.0" y="259.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">(lecture seule)</text>
+<rect x="20" y="174" width="290" height="44" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="165.0" y="200.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">RUN pip install -r requirements.txt</text>
+<rect x="330" y="174" width="230" height="44" rx="6" fill="#dbe9f8" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="445.0" y="192.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">Bibliothèques Python</text>
+<text x="445.0" y="207.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">(lecture seule)</text>
+<rect x="20" y="122" width="290" height="44" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="165.0" y="148.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">COPY app/ /app</text>
+<rect x="330" y="122" width="230" height="44" rx="6" fill="#dff3e3" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="445.0" y="140.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">Code de l'application</text>
+<text x="445.0" y="155.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">(lecture seule)</text>
+<rect x="330" y="70" width="230" height="44" rx="6" fill="#fde7cc" stroke="#1f3a5f" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="445.0" y="88.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">Couche inscriptible</text>
+<text x="445.0" y="103.7" font-family="sans-serif" font-size="12" fill="#102030" text-anchor="middle">(propre au conteneur)</text>
+<rect x="590" y="70" width="190" height="44" rx="6" fill="#fde7cc" stroke="#1f3a5f" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="685.0" y="96.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">Écritures de A</text>
+<rect x="590" y="122" width="190" height="44" rx="6" fill="#fde7cc" stroke="#1f3a5f" stroke-width="1.5" stroke-dasharray="6 4"/>
+<text x="685.0" y="148.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">Écritures de B</text>
+<text x="20" y="400" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="start">Chaque instruction crée une couche ; le cache de build réutilise les couches inchangées.</text>
+<text x="20" y="420" font-family="sans-serif" font-size="14" fill="#102030" text-anchor="start">Les couches d'image sont partagées entre conteneurs : seules les écritures sont propres à chacun.</text>
+</svg>

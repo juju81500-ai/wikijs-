@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="900" height="440" role="img" aria-labelledby="t d">
+<title id="t">VPN site à site et accès distant</title>
+<desc id="d">Un site siège en 192.0.2.0/24 et un site agence en 198.51.100.0/24 sont reliés par un tunnel chiffré à travers Internet ; un poste nomade se connecte aussi à une passerelle VPN. Les adresses sont des adresses de documentation.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1b1b1b"/></marker></defs>
+<rect width="900" height="440" fill="#ffffff"/>
+<text x="450" y="32" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111">Deux usages du VPN : site à site et accès distant</text>
+<rect x="20" y="55" width="230" height="200" rx="12" fill="#eef3fb" stroke="#1a3d7c" stroke-width="2" stroke-dasharray="10 6"/>
+<text x="32" y="77" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1a3d7c">Siège (réseau interne)</text>
+<rect x="40" y="95" width="190" height="40" rx="8" fill="#ffffff" stroke="#1a3d7c" stroke-width="2"/>
+<text x="135.0" y="119.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Postes 192.0.2.0/24</text>
+<rect x="40" y="170" width="190" height="60" rx="8" fill="#dbe7ff" stroke="#1a3d7c" stroke-width="2"/>
+<text x="135.0" y="195.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Passerelle VPN</text>
+<text x="135.0" y="214.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">pare-feu</text>
+<rect x="650" y="55" width="230" height="200" rx="12" fill="#e6f6ea" stroke="#1c6b34" stroke-width="2" stroke-dasharray="10 6"/>
+<text x="662" y="77" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1c6b34">Agence (réseau interne)</text>
+<rect x="670" y="95" width="190" height="40" rx="8" fill="#ffffff" stroke="#1c6b34" stroke-width="2"/>
+<text x="765.0" y="119.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Postes 198.51.100.0/24</text>
+<rect x="670" y="170" width="190" height="60" rx="8" fill="#b8e6c4" stroke="#1c6b34" stroke-width="2"/>
+<text x="765.0" y="195.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Passerelle VPN</text>
+<text x="765.0" y="214.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">pare-feu</text>
+<ellipse cx="450" cy="150" rx="150" ry="55" fill="#eeeeee" stroke="#555555" stroke-width="2"/>
+<text x="450" y="155" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">Internet (non fiable)</text>
+<rect x="230" y="190" width="440" height="22" rx="11" fill="#ffe08a" stroke="#8a5a00" stroke-width="2"/>
+<text x="450" y="206" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">Tunnel chiffré et authentifié (IPsec, WireGuard, OpenVPN)</text>
+<rect x="300" y="290" width="300" height="60" rx="8" fill="#fff7e0" stroke="#8a5a00" stroke-width="2"/>
+<text x="450.0" y="315.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Poste nomade 203.0.113.50</text>
+<text x="450.0" y="334.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">client VPN, authentification forte</text>
+<line x1="450" y1="290" x2="450" y2="215" stroke="#8a5a00" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="520" y="270" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">accès distant</text>
+<text x="450" y="385" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Le VPN protège le transport ; il ne remplace ni le filtrage interne, ni l'authentification des utilisateurs.</text>
+<text x="450" y="410" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Principe du moindre privilège : n'ouvrir que les sous-réseaux et ports nécessaires.</text>
+</svg>

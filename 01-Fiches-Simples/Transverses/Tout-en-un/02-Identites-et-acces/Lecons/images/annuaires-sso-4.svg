@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d">
+  <title id="t">Cycle de vie des accès : arrivée, mobilité, départ et revue périodique</title>
+  <desc id="d">Cycle en cinq étapes : 1. Demande et approbation, 2. Attribution avec le moindre privilège, 3. Utilisation et journalisation, 4. Revue périodique par le responsable, 5. Retrait ou renouvellement. Le cycle recommence ; les départs et mobilités déclenchent un retrait immédiat.</desc>
+  <defs>
+    <marker id="a" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="#111111"/></marker>
+  </defs>
+  <rect width="800" height="420" fill="#ffffff"/>
+  <text x="400" y="30" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#111111">Cycle de vie d'un accès</text>
+  <g font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">
+    <rect x="30" y="60" width="210" height="80" rx="10" fill="#dbeafe" stroke="#1d4ed8" stroke-width="3"/>
+    <text x="135" y="92" font-weight="bold">1. Demande</text>
+    <text x="135" y="116">validée par le manager</text>
+
+    <rect x="295" y="60" width="210" height="80" rx="10" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+    <text x="400" y="92" font-weight="bold">2. Attribution</text>
+    <text x="400" y="116">moindre privilège</text>
+
+    <rect x="560" y="60" width="210" height="80" rx="10" fill="#fef3c7" stroke="#b45309" stroke-width="3"/>
+    <text x="665" y="92" font-weight="bold">3. Utilisation</text>
+    <text x="665" y="116">MFA, journaux, alertes</text>
+
+    <rect x="560" y="225" width="210" height="80" rx="10" fill="#f3e8ff" stroke="#7e22ce" stroke-width="3"/>
+    <text x="665" y="257" font-weight="bold">4. Revue périodique</text>
+    <text x="665" y="281">trimestrielle ou annuelle</text>
+
+    <rect x="295" y="225" width="210" height="80" rx="10" fill="#fee2e2" stroke="#b91c1c" stroke-width="3"/>
+    <text x="400" y="257" font-weight="bold">5. Retrait/renouveler</text>
+    <text x="400" y="281">preuve conservée</text>
+  </g>
+  <g stroke="#111111" stroke-width="3" marker-end="url(#a)">
+    <line x1="240" y1="100" x2="293" y2="100"/>
+    <line x1="505" y1="100" x2="558" y2="100"/>
+    <line x1="665" y1="140" x2="665" y2="223"/>
+    <line x1="560" y1="265" x2="507" y2="265"/>
+    <path d="M295 265 L135 265 L135 142" fill="none"/>
+  </g>
+  <rect x="20" y="335" width="760" height="70" rx="8" fill="#fffbeb" stroke="#92400e" stroke-width="2"/>
+  <g font-family="sans-serif" font-size="16" fill="#111111">
+    <text x="36" y="362">Départ ou changement de poste : retrait immédiat, sans attendre la prochaine revue.</text>
+    <text x="36" y="386">Un accès non revu finit par devenir un accès oublié, donc un risque.</text>
+  </g>
+</svg>

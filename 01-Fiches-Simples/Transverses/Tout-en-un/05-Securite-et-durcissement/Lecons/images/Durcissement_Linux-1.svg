@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" aria-labelledby="t d">
+<title id="t">Surface d'attaque d'un serveur Linux et contre-mesures</title>
+<desc id="d">Cinq colonnes : réseau, services, comptes, logiciels, fichiers. Chacune montre la surface exposée en haut et la mesure de durcissement correspondante en bas.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a41"/></marker></defs>
+<rect width="800" height="420" fill="#ffffff"/>
+<text x="400" y="36" font-size="24" fill="#111111" text-anchor="middle" font-weight="bold" font-family="sans-serif">Réduire la surface d'attaque : cinq fronts</text>
+<rect x="20" y="70" width="144" height="50" rx="10" fill="#1b2a41" stroke="#1b2a41" stroke-width="2"/>
+<text x="92.0" y="101.3" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" font-family="sans-serif">Réseau</text>
+<rect x="20" y="140" width="144" height="80" rx="10" fill="#fde4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="92.0" y="175.5" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">ports en écoute</text>
+<text x="92.0" y="195.0" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">inutiles</text>
+<text x="92" y="250" font-size="14" fill="#444444" text-anchor="middle" font-weight="normal" font-family="sans-serif">▼ on réduit</text>
+<rect x="20" y="265" width="144" height="80" rx="10" fill="#e3f4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="92.0" y="300.5" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">pare-feu hôte</text>
+<text x="92.0" y="320.0" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">écoute limitée</text>
+<rect x="174" y="70" width="144" height="50" rx="10" fill="#1b2a41" stroke="#1b2a41" stroke-width="2"/>
+<text x="246.0" y="101.3" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" font-family="sans-serif">Services</text>
+<rect x="174" y="140" width="144" height="80" rx="10" fill="#fde4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="246.0" y="175.5" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">démons installés</text>
+<text x="246.0" y="195.0" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">mais inutilisés</text>
+<text x="246" y="250" font-size="14" fill="#444444" text-anchor="middle" font-weight="normal" font-family="sans-serif">▼ on réduit</text>
+<rect x="174" y="265" width="144" height="80" rx="10" fill="#e3f4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="246.0" y="300.5" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">désactiver</text>
+<text x="246.0" y="320.0" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">ou désinstaller</text>
+<rect x="328" y="70" width="144" height="50" rx="10" fill="#1b2a41" stroke="#1b2a41" stroke-width="2"/>
+<text x="400.0" y="101.3" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" font-family="sans-serif">Comptes</text>
+<rect x="328" y="140" width="144" height="80" rx="10" fill="#fde4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="400.0" y="175.5" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">root distant,</text>
+<text x="400.0" y="195.0" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">mots de passe</text>
+<text x="400" y="250" font-size="14" fill="#444444" text-anchor="middle" font-weight="normal" font-family="sans-serif">▼ on réduit</text>
+<rect x="328" y="265" width="144" height="80" rx="10" fill="#e3f4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="400.0" y="300.5" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">clés SSH,</text>
+<text x="400.0" y="320.0" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">sudo nominatif</text>
+<rect x="482" y="70" width="144" height="50" rx="10" fill="#1b2a41" stroke="#1b2a41" stroke-width="2"/>
+<text x="554.0" y="101.3" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" font-family="sans-serif">Logiciels</text>
+<rect x="482" y="140" width="144" height="80" rx="10" fill="#fde4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="554.0" y="175.5" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">paquets</text>
+<text x="554.0" y="195.0" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">non corrigés</text>
+<text x="554" y="250" font-size="14" fill="#444444" text-anchor="middle" font-weight="normal" font-family="sans-serif">▼ on réduit</text>
+<rect x="482" y="265" width="144" height="80" rx="10" fill="#e3f4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="554.0" y="300.5" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">mises à jour</text>
+<text x="554.0" y="320.0" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">de sécurité</text>
+<rect x="636" y="70" width="144" height="50" rx="10" fill="#1b2a41" stroke="#1b2a41" stroke-width="2"/>
+<text x="708.0" y="101.3" font-size="18" fill="#ffffff" text-anchor="middle" font-weight="bold" font-family="sans-serif">Fichiers</text>
+<rect x="636" y="140" width="144" height="80" rx="10" fill="#fde4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="708.0" y="175.5" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">droits trop</text>
+<text x="708.0" y="195.0" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">larges</text>
+<text x="708" y="250" font-size="14" fill="#444444" text-anchor="middle" font-weight="normal" font-family="sans-serif">▼ on réduit</text>
+<rect x="636" y="265" width="144" height="80" rx="10" fill="#e3f4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="708.0" y="300.5" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">moindre droit,</text>
+<text x="708.0" y="320.0" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">umask, chmod</text>
+<rect x="20" y="365" width="760" height="40" rx="10" fill="#fff3c4" stroke="#1b2a41" stroke-width="2"/>
+<text x="400.0" y="390.25" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Chaque mesure est vérifiée en lecture seule : ss -lntp, systemctl, sshd -T, find, apt list --upgradable</text>
+</svg>

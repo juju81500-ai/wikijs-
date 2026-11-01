@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" width="800" height="430" role="img" aria-labelledby="t d">
+<title id="t">Comparaison de RIP, OSPF et BGP</title>
+<desc id="d">Trois colonnes. RIP : protocole intérieur à vecteur de distance, métrique en nombre de sauts, maximum 15. OSPF : protocole intérieur à état de liens, métrique coût, algorithme de Dijkstra. BGP : protocole extérieur à vecteur de chemins, entre systèmes autonomes, politiques de routage.</desc>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a41"/></marker><marker id="arrr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b00020"/></marker></defs>
+<rect width="800" height="430" fill="#ffffff"/>
+<text x="400" y="32" font-family="sans-serif" font-size="22" fill="#1b2a41" text-anchor="middle" font-weight="bold">Trois familles de routage dynamique</text>
+<rect x="20" y="60" width="240" height="340" rx="8" fill="#cfe3ff" stroke="#1b2a41" stroke-width="2"/>
+<text x="140" y="105" font-family="sans-serif" font-size="34" fill="#1b2a41" text-anchor="middle" font-weight="bold">RIP</text>
+<text x="140" y="135" font-family="sans-serif" font-size="15" fill="#1b2a41" text-anchor="middle" font-weight="bold">IGP — vecteur de distance</text>
+<line x1="40" y1="150" x2="240" y2="150" stroke="#1b2a41" stroke-width="1"/>
+<text x="140" y="185" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">Métrique : nombre de sauts</text>
+<text x="140" y="227" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">(15 max, 16 = inaccessible)</text>
+<text x="140" y="269" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">Annonces périodiques aux voisins</text>
+<text x="140" y="311" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">Simple, lent à converger</text>
+<text x="140" y="353" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">Usage : petits réseaux, pédagogie</text>
+<rect x="280" y="60" width="240" height="340" rx="8" fill="#d4f1d4" stroke="#1b2a41" stroke-width="2"/>
+<text x="400" y="105" font-family="sans-serif" font-size="34" fill="#1b2a41" text-anchor="middle" font-weight="bold">OSPF</text>
+<text x="400" y="135" font-family="sans-serif" font-size="15" fill="#1b2a41" text-anchor="middle" font-weight="bold">IGP — état de liens</text>
+<line x1="300" y1="150" x2="500" y2="150" stroke="#1b2a41" stroke-width="1"/>
+<text x="400" y="185" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">Métrique : coût (bande passante)</text>
+<text x="400" y="227" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">Chaque routeur connaît la carte</text>
+<text x="400" y="269" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">et calcule les chemins (Dijkstra)</text>
+<text x="400" y="311" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">Zones, convergence rapide</text>
+<text x="400" y="353" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">Usage : réseaux d'entreprise</text>
+<rect x="540" y="60" width="240" height="340" rx="8" fill="#ffe0b8" stroke="#1b2a41" stroke-width="2"/>
+<text x="660" y="105" font-family="sans-serif" font-size="34" fill="#1b2a41" text-anchor="middle" font-weight="bold">BGP</text>
+<text x="660" y="135" font-family="sans-serif" font-size="15" fill="#1b2a41" text-anchor="middle" font-weight="bold">EGP — vecteur de chemins</text>
+<line x1="560" y1="150" x2="760" y2="150" stroke="#1b2a41" stroke-width="1"/>
+<text x="660" y="185" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">Entre systèmes autonomes (AS)</text>
+<text x="660" y="227" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">Choix par attributs et politiques</text>
+<text x="660" y="269" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">(AS-path, préférence locale…)</text>
+<text x="660" y="311" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">Très stable, convergence prudente</text>
+<text x="660" y="353" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">Usage : Internet, opérateurs</text>
+<text x="400" y="422" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">IGP = à l'intérieur d'un domaine administratif ; EGP = entre domaines</text>
+</svg>

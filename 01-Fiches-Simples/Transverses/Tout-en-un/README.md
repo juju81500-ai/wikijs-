@@ -4,6 +4,12 @@
 
 Les pages listées ici sont des bases de travail à décliner. Elles ne sont pas la destination finale des fiches tout-en-un : créer une copie adaptée pour chaque OS/version concerné dans `01-Fiches-Simples/<OS>/<version>/Tout-en-un/<categorie>/`. Même si plusieurs copies partent du même sujet, chacune doit contenir les commandes, prérequis et validations propres à sa cible.
 
+## Référentiel, leçons et crédits
+
+- [Référentiel des sites TSSR](00-Referentiel-Sites/README.md) : cartographie des catégories et cours de quatre sites publics (titres et liens, sans reproduction de contenu).
+- [Index des leçons illustrées](Lecons_Index.md) : leçons originales, exercices corrigés et quiz par catégorie.
+- [Crédits des images](Credits_Images.md) : source et licence de chaque illustration.
+
 ## Catégories
 
 1. [Réseaux et protocoles](01-Reseaux-et-protocoles/README.md)

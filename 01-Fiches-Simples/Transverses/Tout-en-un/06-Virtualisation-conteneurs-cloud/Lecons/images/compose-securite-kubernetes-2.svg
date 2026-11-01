@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" width="800" height="430" role="img" aria-labelledby="t d">
+<title id="t">Empilement des protections d'un conteneur durci</title>
+<desc id="d">Couches concentriques de défense : image minimale et signée, utilisateur non root, capacités Linux retirées, système de fichiers en lecture seule, secrets hors de l'image, limites de ressources, réseau restreint.</desc>
+<defs><marker id="ar" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1f3a5f"/></marker></defs>
+<rect width="800" height="430" fill="#ffffff"/>
+<rect x="20" y="20" width="760" height="390" rx="6" fill="#e9ecef" stroke="#4a5a6a" stroke-width="1.5"/>
+<text x="40" y="48" font-family="sans-serif" font-size="15" font-weight="bold" fill="#102030" text-anchor="start">Hôte et noyau à jour, moteur de conteneurs non exposé</text>
+<rect x="50" y="65" width="700" height="330" rx="6" fill="#dbe9f8" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="70" y="92" font-family="sans-serif" font-size="14" font-weight="bold" fill="#102030" text-anchor="start">Réseau restreint, limites de ressources (mémoire, CPU, processus)</text>
+<rect x="80" y="110" width="640" height="270" rx="6" fill="#dff3e3" stroke="#2d6a3e" stroke-width="1.5"/>
+<text x="100" y="137" font-family="sans-serif" font-size="14" font-weight="bold" fill="#102030" text-anchor="start">Conteneur : lecture seule, capacités retirées, no-new-privileges</text>
+<rect x="110" y="155" width="580" height="210" rx="6" fill="#fff6c9" stroke="#8a6d00" stroke-width="1.5"/>
+<text x="130" y="182" font-family="sans-serif" font-size="14" font-weight="bold" fill="#102030" text-anchor="start">Processus lancé en utilisateur non root (USER 10001)</text>
+<rect x="140" y="200" width="250" height="140" rx="6" fill="#ffffff" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="265.0" y="257.9" font-family="sans-serif" font-size="14" font-weight="bold" fill="#102030" text-anchor="middle">Image minimale</text>
+<text x="265.0" y="274.9" font-family="sans-serif" font-size="14" font-weight="bold" fill="#102030" text-anchor="middle">et signée</text>
+<text x="265.0" y="291.9" font-family="sans-serif" font-size="14" font-weight="bold" fill="#102030" text-anchor="middle">(digest épinglé)</text>
+<rect x="410" y="200" width="250" height="60" rx="6" fill="#f9d9d9" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="535.0" y="226.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">Secrets montés en fichier</text>
+<text x="535.0" y="242.55" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">(jamais dans l'image)</text>
+<rect x="410" y="275" width="250" height="65" rx="6" fill="#fde7cc" stroke="#1f3a5f" stroke-width="1.5"/>
+<text x="535.0" y="296.05" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">Volumes ciblés,</text>
+<text x="535.0" y="312.05" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">écriture limitée à /tmp</text>
+<text x="535.0" y="328.05" font-family="sans-serif" font-size="13" fill="#102030" text-anchor="middle">et aux données</text>
+</svg>

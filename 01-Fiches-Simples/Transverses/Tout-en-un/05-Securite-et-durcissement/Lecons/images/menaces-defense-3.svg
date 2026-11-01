@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 480" width="900" height="480" role="img" aria-labelledby="t d">
+<title id="t">De la journalisation à la corrélation</title>
+<desc id="d">Plusieurs sources de journaux (pare-feu, serveurs, authentification, proxy) sont collectées, normalisées et horodatées de façon synchronisée, puis corrélées par des règles pour produire une alerte qualifiée par un analyste.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1b1b1b"/></marker></defs>
+<rect width="900" height="480" fill="#ffffff"/>
+<text x="450" y="32" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111">Journaux de sécurité : collecte, normalisation, corrélation</text>
+<rect x="20" y="65" width="190" height="55" rx="8" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="115.0" y="97.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Pare-feu</text>
+<line x1="210" y1="92" x2="290" y2="200" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<rect x="20" y="140" width="190" height="55" rx="8" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="115.0" y="172.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Serveurs Linux/Windows</text>
+<line x1="210" y1="167" x2="290" y2="200" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<rect x="20" y="215" width="190" height="55" rx="8" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="115.0" y="247.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Annuaire / VPN</text>
+<line x1="210" y1="242" x2="290" y2="200" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<rect x="20" y="290" width="190" height="55" rx="8" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="115.0" y="322.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Reverse proxy</text>
+<line x1="210" y1="317" x2="290" y2="200" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<rect x="290" y="150" width="170" height="100" rx="8" fill="#dbe7ff" stroke="#1a3d7c" stroke-width="2"/>
+<text x="375.0" y="186.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#111111">Collecteur</text>
+<text x="375.0" y="204.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">horloges NTP,</text>
+<text x="375.0" y="222.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">UTC, format commun</text>
+<rect x="510" y="150" width="170" height="100" rx="8" fill="#ffe08a" stroke="#8a5a00" stroke-width="2"/>
+<text x="595.0" y="186.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#111111">Corrélation</text>
+<text x="595.0" y="204.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">règles, seuils,</text>
+<text x="595.0" y="222.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">séquences</text>
+<rect x="720" y="150" width="160" height="100" rx="8" fill="#fff0f0" stroke="#8b0000" stroke-width="2"/>
+<text x="800.0" y="185.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Alerte</text>
+<text x="800.0" y="204.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">qualifiée par</text>
+<text x="800.0" y="223.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">l'analyste</text>
+<line x1="460" y1="200" x2="510" y2="200" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<line x1="680" y1="200" x2="720" y2="200" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="450" y="390" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Exemple : 20 échecs de connexion sur un compte, puis une réussite, puis une connexion VPN inhabituelle</text>
+<text x="450" y="412" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">= trois événements banals isolés, un signal fort une fois rapprochés.</text>
+<text x="450" y="452" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Conserver les journaux hors de la machine surveillée, avec rétention et droits restreints.</text>
+</svg>

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" width="800" height="440" role="img">
+<title>Quel outil pour quelle question ?</title>
+<desc>Sept questions fréquentes et l'outil adapté : grep, cut, sort et uniq, sed, awk, find, xargs.</desc>
+<defs><marker id="a1b2a41" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a41"/></marker></defs>
+<rect width="800" height="440" fill="#ffffff"/>
+<text xml:space="preserve" x="400" y="34" font-family="sans-serif" font-size="24" font-weight="bold" fill="#111111" text-anchor="middle">Quel outil pour quelle question ?</text>
+<rect x="30" y="56" width="470" height="46" rx="8" fill="#f7f7f7" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="45" y="85" font-family="sans-serif" font-size="17" font-weight="normal" fill="#111111" text-anchor="start">Quelles lignes contiennent… ?</text>
+<line x1="500" y1="79" x2="540" y2="79" stroke="#1b2a41" stroke-width="3" marker-end="url(#a1b2a41)"/>
+<rect x="540" y="56" width="230" height="46" rx="8" fill="#e8f1fb" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="655" y="86" font-family="monospace" font-size="18" font-weight="bold" fill="#111111" text-anchor="middle">grep</text>
+<rect x="30" y="109" width="470" height="46" rx="8" fill="#f7f7f7" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="45" y="138" font-family="sans-serif" font-size="17" font-weight="normal" fill="#111111" text-anchor="start">Garder certaines colonnes d'un CSV simple</text>
+<line x1="500" y1="132" x2="540" y2="132" stroke="#1b2a41" stroke-width="3" marker-end="url(#a1b2a41)"/>
+<rect x="540" y="109" width="230" height="46" rx="8" fill="#e3f5e8" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="655" y="139" font-family="monospace" font-size="18" font-weight="bold" fill="#111111" text-anchor="middle">cut</text>
+<rect x="30" y="162" width="470" height="46" rx="8" fill="#f7f7f7" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="45" y="191" font-family="sans-serif" font-size="17" font-weight="normal" fill="#111111" text-anchor="start">Classer, dédoublonner, compter</text>
+<line x1="500" y1="185" x2="540" y2="185" stroke="#1b2a41" stroke-width="3" marker-end="url(#a1b2a41)"/>
+<rect x="540" y="162" width="230" height="46" rx="8" fill="#fff4cc" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="655" y="192" font-family="monospace" font-size="18" font-weight="bold" fill="#111111" text-anchor="middle">sort | uniq -c</text>
+<rect x="30" y="215" width="470" height="46" rx="8" fill="#f7f7f7" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="45" y="244" font-family="sans-serif" font-size="17" font-weight="normal" fill="#111111" text-anchor="start">Remplacer ou extraire du texte par motif</text>
+<line x1="500" y1="238" x2="540" y2="238" stroke="#1b2a41" stroke-width="3" marker-end="url(#a1b2a41)"/>
+<rect x="540" y="215" width="230" height="46" rx="8" fill="#e8f1fb" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="655" y="245" font-family="monospace" font-size="18" font-weight="bold" fill="#111111" text-anchor="middle">sed</text>
+<rect x="30" y="268" width="470" height="46" rx="8" fill="#f7f7f7" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="45" y="297" font-family="sans-serif" font-size="17" font-weight="normal" fill="#111111" text-anchor="start">Calculer : sommes, compteurs par clé</text>
+<line x1="500" y1="291" x2="540" y2="291" stroke="#1b2a41" stroke-width="3" marker-end="url(#a1b2a41)"/>
+<rect x="540" y="268" width="230" height="46" rx="8" fill="#e3f5e8" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="655" y="298" font-family="monospace" font-size="18" font-weight="bold" fill="#111111" text-anchor="middle">awk</text>
+<rect x="30" y="321" width="470" height="46" rx="8" fill="#f7f7f7" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="45" y="350" font-family="sans-serif" font-size="17" font-weight="normal" fill="#111111" text-anchor="start">Trouver des fichiers (nom, âge, taille)</text>
+<line x1="500" y1="344" x2="540" y2="344" stroke="#1b2a41" stroke-width="3" marker-end="url(#a1b2a41)"/>
+<rect x="540" y="321" width="230" height="46" rx="8" fill="#fff4cc" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="655" y="351" font-family="monospace" font-size="18" font-weight="bold" fill="#111111" text-anchor="middle">find</text>
+<rect x="30" y="374" width="470" height="46" rx="8" fill="#f7f7f7" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="45" y="403" font-family="sans-serif" font-size="17" font-weight="normal" fill="#111111" text-anchor="start">Appliquer une commande à une liste</text>
+<line x1="500" y1="397" x2="540" y2="397" stroke="#1b2a41" stroke-width="3" marker-end="url(#a1b2a41)"/>
+<rect x="540" y="374" width="230" height="46" rx="8" fill="#e8f1fb" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="655" y="404" font-family="monospace" font-size="18" font-weight="bold" fill="#111111" text-anchor="middle">xargs -0</text>
+</svg>

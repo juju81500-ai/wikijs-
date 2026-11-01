@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d">
+  <title id="t">Cluster de virtualisation : migration à chaud et haute disponibilité</title>
+  <desc id="d">Trois hôtes partagent un stockage commun et un réseau de gestion. Une VM est migrée à chaud de l'hôte 1 vers l'hôte 2 sans arrêt. Si l'hôte 3 tombe en panne, ses VM redémarrent sur les autres hôtes grâce à la haute disponibilité, avec un quorum de gestion.</desc>
+  <rect width="800" height="420" fill="#ffffff"/>
+  <text x="400" y="30" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#111">Cluster : migration à chaud (planifiée) et HA (après panne)</text>
+  <g font-family="sans-serif" font-size="15" fill="#111">
+    <rect x="30" y="55" width="220" height="140" rx="8" fill="#eef4fb" stroke="#1f4e79" stroke-width="2"/>
+    <text x="140" y="80" text-anchor="middle" font-weight="bold">Hôte 1</text>
+    <rect x="55" y="100" width="170" height="40" fill="#cfe2f3" stroke="#1f4e79"/><text x="140" y="125" text-anchor="middle">VM A (migre)</text>
+    <rect x="55" y="148" width="170" height="38" fill="#cfe2f3" stroke="#1f4e79"/><text x="140" y="172" text-anchor="middle">VM B</text>
+    <rect x="290" y="55" width="220" height="140" rx="8" fill="#eef4fb" stroke="#1f4e79" stroke-width="2"/>
+    <text x="400" y="80" text-anchor="middle" font-weight="bold">Hôte 2</text>
+    <rect x="315" y="100" width="170" height="40" fill="#d9ead3" stroke="#274e13" stroke-dasharray="6 4"/><text x="400" y="125" text-anchor="middle">VM A (arrivée)</text>
+    <rect x="315" y="148" width="170" height="38" fill="#cfe2f3" stroke="#1f4e79"/><text x="400" y="172" text-anchor="middle">VM C</text>
+    <rect x="550" y="55" width="220" height="140" rx="8" fill="#f4cccc" stroke="#990000" stroke-width="2"/>
+    <text x="660" y="80" text-anchor="middle" font-weight="bold" fill="#990000">Hôte 3 (en panne)</text>
+    <rect x="575" y="100" width="170" height="40" fill="#f9f9f9" stroke="#990000" stroke-dasharray="6 4"/><text x="660" y="125" text-anchor="middle">VM D (arrêtée)</text>
+    <rect x="575" y="148" width="170" height="38" fill="#f9f9f9" stroke="#990000" stroke-dasharray="6 4"/><text x="660" y="172" text-anchor="middle">VM E (arrêtée)</text>
+    <path d="M225 120 H312" stroke="#274e13" stroke-width="4"/><polygon points="310,110 310,130 322,120" fill="#274e13"/>
+    <text x="268" y="108" text-anchor="middle" font-size="13" fill="#274e13">à chaud</text>
+    <path d="M575 167 H495" stroke="#b45f06" stroke-width="3" stroke-dasharray="6 4"/><polygon points="497,159 497,175 487,167" fill="#b45f06"/>
+    <text x="530" y="228" text-anchor="middle" font-size="13" fill="#b45f06">HA : redémarrage de D et E ailleurs</text>
+    <rect x="30" y="250" width="740" height="45" fill="#fff2cc" stroke="#7f6000" stroke-width="2"/>
+    <text x="400" y="278" text-anchor="middle" font-weight="bold">Réseau de gestion et de migration (VLAN dédié, quorum du cluster)</text>
+    <path d="M140 195 V250 M400 195 V250 M660 195 V250" stroke="#444" stroke-width="3"/>
+    <rect x="30" y="325" width="740" height="60" fill="#d9ead3" stroke="#274e13" stroke-width="2"/>
+    <text x="400" y="350" text-anchor="middle" font-weight="bold">Stockage partagé (SAN, NFS, Ceph, vSAN, S2D…) ou réplication</text>
+    <text x="400" y="372" text-anchor="middle" font-size="13">sans disque accessible aux autres hôtes, pas de HA ni de migration sans copie des données</text>
+    <path d="M400 295 V325" stroke="#444" stroke-width="3"/>
+  </g>
+</svg>

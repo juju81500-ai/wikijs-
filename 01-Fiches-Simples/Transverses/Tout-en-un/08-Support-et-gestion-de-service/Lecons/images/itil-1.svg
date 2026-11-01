@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">Les quatre dimensions de la gestion d&#x27;un service</title>
+<desc id="d">Schéma : au centre, le service rendu ; autour, quatre blocs reliés : organisations et personnes, information et technologie, partenaires et fournisseurs, flux de valeur et processus.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#34495e"/></marker></defs>
+<rect width="800" height="450" fill="#ffffff"/>
+<text x="400" y="36" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="400" dy="0">Les quatre dimensions de la gestion d&#x27;un service (ITIL 4)</tspan></text>
+<rect x="290" y="170" width="220" height="100" rx="50" fill="#fff3cd" stroke="#8a6d00" stroke-width="2"/>
+<text x="400" y="215" font-size="17" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="400" dy="0">Service rendu</tspan><tspan x="400" dy="22.1">= valeur co-créée</tspan></text>
+<rect x="40" y="70" width="280" height="90" rx="8" fill="#e8f1fb" stroke="#2c5282" stroke-width="2"/>
+<text x="180" y="105" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="180" dy="0">Organisations et personnes</tspan></text>
+<text x="180" y="130" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="180" dy="0">Rôles, compétences,</tspan><tspan x="180" dy="18.2">culture, équipes</tspan></text>
+<rect x="480" y="70" width="280" height="90" rx="8" fill="#e8f1fb" stroke="#2c5282" stroke-width="2"/>
+<text x="620" y="105" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="620" dy="0">Information et technologie</tspan></text>
+<text x="620" y="130" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="620" dy="0">Outils, données, CMDB,</tspan><tspan x="620" dy="18.2">supervision</tspan></text>
+<rect x="40" y="300" width="280" height="90" rx="8" fill="#e8f1fb" stroke="#2c5282" stroke-width="2"/>
+<text x="180" y="335" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="180" dy="0">Partenaires et fournisseurs</tspan></text>
+<text x="180" y="360" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="180" dy="0">Prestataires, éditeurs,</tspan><tspan x="180" dy="18.2">contrats, sous-traitants</tspan></text>
+<rect x="480" y="300" width="280" height="90" rx="8" fill="#e8f1fb" stroke="#2c5282" stroke-width="2"/>
+<text x="620" y="335" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="620" dy="0">Flux de valeur et processus</tspan></text>
+<text x="620" y="360" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="620" dy="0">Étapes, règles, escalades,</tspan><tspan x="620" dy="18.2">procédures</tspan></text>
+<line x1="250" y1="160" x2="320" y2="195" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="550" y1="160" x2="480" y2="195" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="250" y1="300" x2="320" y2="245" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="550" y1="300" x2="480" y2="245" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="400" y="430" font-size="14" text-anchor="middle" font-weight="normal" fill="#34495e"><tspan x="400" dy="0">Négliger une dimension fragilise le service, même si les trois autres sont solides.</tspan></text>
+
+</svg>

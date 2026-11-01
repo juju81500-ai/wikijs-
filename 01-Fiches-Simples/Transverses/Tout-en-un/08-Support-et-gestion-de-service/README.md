@@ -5,3 +5,5 @@
 Fiches de triage, transfert, inventaire, compte rendu d'incident et pratiques ITSM.
 
 - [Qualifier un incident exploitable](Tout-en-un_Qualifier_Incident.md)
+
+- [Leçons illustrées de cette catégorie](Lecons/README.md)

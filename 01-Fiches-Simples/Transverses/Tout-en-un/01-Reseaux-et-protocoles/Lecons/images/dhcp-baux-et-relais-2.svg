@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" font-family="sans-serif">
+  <title>Relais DHCP entre deux réseaux</title>
+  <desc>Un poste client du réseau 198.51.100.0/24 émet un DHCPDISCOVER en diffusion. Le routeur relais, d'adresse 198.51.100.1, le transforme en message unicast vers le serveur DHCP 192.0.2.67 en renseignant le champ giaddr. Le serveur choisit la plage correspondant au giaddr et répond au relais, qui transmet au client.</desc>
+  <rect width="800" height="400" fill="#ffffff"/>
+  <rect x="20" y="60" width="270" height="250" rx="10" fill="#e2efda" stroke="#375623" stroke-width="2"/>
+  <text x="155" y="84" font-size="14" fill="#000000" text-anchor="middle" font-weight="bold">Réseau local 198.51.100.0/24</text>
+  <rect x="510" y="60" width="270" height="250" rx="10" fill="#deebf7" stroke="#1f4e79" stroke-width="2"/>
+  <text x="645" y="84" font-size="14" fill="#000000" text-anchor="middle" font-weight="bold">Réseau serveurs 192.0.2.0/24</text>
+  <rect x="50" y="130" width="130" height="60" rx="8" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+  <text x="115" y="156" font-size="15" fill="#000000" text-anchor="middle" font-weight="bold">Client</text>
+  <text x="115" y="176" font-size="12" fill="#000000" text-anchor="middle">sans adresse</text>
+  <rect x="330" y="130" width="140" height="60" rx="8" fill="#fff2cc" stroke="#7f6000" stroke-width="2"/>
+  <text x="400" y="154" font-size="15" fill="#000000" text-anchor="middle" font-weight="bold">Routeur relais</text>
+  <text x="400" y="174" font-size="12" fill="#000000" text-anchor="middle">198.51.100.1 (giaddr)</text>
+  <rect x="580" y="130" width="140" height="60" rx="8" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+  <text x="650" y="154" font-size="15" fill="#000000" text-anchor="middle" font-weight="bold">Serveur DHCP</text>
+  <text x="650" y="174" font-size="12" fill="#000000" text-anchor="middle">192.0.2.67</text>
+  <defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#c00000"/></marker>
+  <marker id="b" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#0b5394"/></marker></defs>
+  <line x1="182" y1="148" x2="326" y2="148" stroke="#c00000" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="472" y1="148" x2="576" y2="148" stroke="#c00000" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="576" y1="176" x2="472" y2="176" stroke="#0b5394" stroke-width="3" marker-end="url(#b)"/>
+  <line x1="326" y1="176" x2="182" y2="176" stroke="#0b5394" stroke-width="3" marker-end="url(#b)"/>
+  <text x="254" y="140" font-size="12" fill="#000000" text-anchor="middle">DISCOVER</text>
+  <text x="254" y="118" font-size="11" fill="#000000" text-anchor="middle">diffusion 255.255.255.255</text>
+  <text x="524" y="140" font-size="12" fill="#000000" text-anchor="middle">DISCOVER</text>
+  <text x="524" y="118" font-size="11" fill="#000000" text-anchor="middle">unicast + giaddr</text>
+  <text x="524" y="198" font-size="12" fill="#000000" text-anchor="middle">OFFER</text>
+  <text x="254" y="198" font-size="12" fill="#000000" text-anchor="middle">OFFER</text>
+  <rect x="40" y="228" width="420" height="70" rx="8" fill="#ffffff" stroke="#333333" stroke-width="1.5"/>
+  <text x="52" y="250" font-size="13" fill="#000000">Le serveur lit giaddr = 198.51.100.1,</text>
+  <text x="52" y="270" font-size="13" fill="#000000">choisit la plage 198.51.100.100 à .200</text>
+  <text x="52" y="290" font-size="13" fill="#000000">et répond au relais, pas au client.</text>
+  <text x="400" y="350" font-size="14" fill="#000000" text-anchor="middle" font-weight="bold">REQUEST et ACK suivent le même chemin.</text>
+  <text x="400" y="372" font-size="12" fill="#000000" text-anchor="middle">Ports UDP : client 68, serveur et relais 67. Adresses de documentation (RFC 5737).</text>
+</svg>

@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">Déroulé d&#x27;un incident majeur</title>
+<desc id="d">Cinq étapes : détection, déclaration, cellule de crise, rétablissement, retour d&#x27;expérience ; en dessous, la cadence de communication et trois rôles : responsable d&#x27;incident, technique et communication.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#34495e"/></marker></defs>
+<rect width="800" height="450" fill="#ffffff"/>
+<text x="400" y="34" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="400" dy="0">Déroulé d&#x27;un incident majeur</tspan></text>
+<rect x="20" y="90" width="130" height="90" rx="8" fill="#e8f1fb" stroke="#2c5282" stroke-width="2"/>
+<text x="85" y="125" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="85" dy="0">Détection</tspan></text>
+<text x="85" y="150" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="85" dy="0">alertes, appels</tspan></text>
+<line x1="150" y1="135" x2="175" y2="135" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="175" y="90" width="130" height="90" rx="8" fill="#e8f1fb" stroke="#2c5282" stroke-width="2"/>
+<text x="240" y="125" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="240" dy="0">Déclaration</tspan></text>
+<text x="240" y="150" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="240" dy="0">niveau majeur décidé</tspan></text>
+<line x1="305" y1="135" x2="330" y2="135" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="330" y="90" width="130" height="90" rx="8" fill="#fde2e2" stroke="#9b1c1c" stroke-width="2"/>
+<text x="395" y="125" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="395" dy="0">Cellule de crise</tspan></text>
+<text x="395" y="150" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="395" dy="0">rôles nommés</tspan></text>
+<line x1="460" y1="135" x2="485" y2="135" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="485" y="90" width="130" height="90" rx="8" fill="#e8f1fb" stroke="#2c5282" stroke-width="2"/>
+<text x="550" y="125" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="550" dy="0">Rétablissement</tspan></text>
+<text x="550" y="150" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="550" dy="0">contournement d&#x27;abord</tspan></text>
+<line x1="615" y1="135" x2="640" y2="135" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="640" y="90" width="130" height="90" rx="8" fill="#e8f1fb" stroke="#2c5282" stroke-width="2"/>
+<text x="705" y="125" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="705" dy="0">Post-mortem</tspan></text>
+<text x="705" y="150" font-size="12" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="705" dy="0">retour d&#x27;expérience</tspan></text>
+<rect x="20" y="215" width="760" height="60" rx="8" fill="#fff3cd" stroke="#8a6d00" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="400" y="240" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="400" dy="0">Communication à cadence fixe (par exemple toutes les 30 min) :</tspan></text>
+<text x="400" y="262" font-size="14" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="400" dy="0">constat – impact – actions en cours – prochaine information</tspan></text>
+<rect x="20" y="310" width="230" height="70" rx="8" fill="#e1f5e6" stroke="#1e6b34" stroke-width="2"/>
+<text x="135" y="340" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="135" dy="0">Responsable d&#x27;incident</tspan></text>
+<text x="135" y="362" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="135" dy="0">coordonne, décide</tspan></text>
+<rect x="285" y="310" width="230" height="70" rx="8" fill="#e1f5e6" stroke="#1e6b34" stroke-width="2"/>
+<text x="400" y="340" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="400" dy="0">Responsable technique</tspan></text>
+<text x="400" y="362" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="400" dy="0">diagnostic, corrections</tspan></text>
+<rect x="550" y="310" width="230" height="70" rx="8" fill="#e1f5e6" stroke="#1e6b34" stroke-width="2"/>
+<text x="665" y="340" font-size="14" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="665" dy="0">Responsable communication</tspan></text>
+<text x="665" y="362" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="665" dy="0">messages, journal</tspan></text>
+<text x="400" y="420" font-size="14" text-anchor="middle" font-weight="normal" fill="#34495e"><tspan x="400" dy="0">Séparer les rôles évite que celui qui répare soit aussi celui qui répond au téléphone.</tspan></text>
+
+</svg>

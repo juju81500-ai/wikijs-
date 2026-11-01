@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 360" width="820" height="360" role="img" aria-labelledby="t d">
+<title id="t">Cycle de vie d&#x27;un poste de travail</title>
+<desc id="d">Six phases : acquisition, préparation et imagerie, affectation, exploitation, retrait, effacement et recyclage. Une boucle de réaffectation relie le retrait à l&#x27;affectation.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333333"/></marker></defs>
+<rect width="820" height="360" fill="#ffffff"/>
+<text x="410" y="30" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" text-anchor="middle" fill="#111111">Cycle de vie d&#x27;un poste : de l&#x27;achat au recyclage</text>
+<rect x="15" y="80" width="120" height="90" rx="10" fill="#e3f5e6" stroke="#1d6b2f" stroke-width="2"/>
+<text x="75.0" y="112.55" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">1. Acquisition</text>
+<text x="75.0" y="129.55" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">commande,</text>
+<text x="75.0" y="146.55" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">réception</text>
+<path d="M135,125 L148,125" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<rect x="148" y="80" width="120" height="90" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="208.0" y="113.2" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" text-anchor="middle" fill="#111111">2. Préparation</text>
+<text x="208.0" y="129.2" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" text-anchor="middle" fill="#111111">image, pilotes,</text>
+<text x="208.0" y="145.2" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" text-anchor="middle" fill="#111111">inscription</text>
+<path d="M268,125 L281,125" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<rect x="281" y="80" width="120" height="90" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="341.0" y="112.55" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">3. Affectation</text>
+<text x="341.0" y="129.55" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">à un agent,</text>
+<text x="341.0" y="146.55" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">enregistrée</text>
+<path d="M401,125 L414,125" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<rect x="414" y="80" width="120" height="90" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="474.0" y="113.2" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" text-anchor="middle" fill="#111111">4. Exploitation</text>
+<text x="474.0" y="129.2" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" text-anchor="middle" fill="#111111">mises à jour,</text>
+<text x="474.0" y="145.2" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" text-anchor="middle" fill="#111111">support</text>
+<path d="M534,125 L547,125" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<rect x="547" y="80" width="120" height="90" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="607.0" y="112.55" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">5. Retrait</text>
+<text x="607.0" y="129.55" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">restitution,</text>
+<text x="607.0" y="146.55" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">remplacement</text>
+<path d="M667,125 L680,125" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<rect x="680" y="80" width="120" height="90" rx="10" fill="#e3f5e6" stroke="#1d6b2f" stroke-width="2"/>
+<text x="740.0" y="112.55" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">6. Fin de vie</text>
+<text x="740.0" y="129.55" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">effacement,</text>
+<text x="740.0" y="146.55" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">recyclage</text>
+<path d="M588,170 L588,225 L255,225 L255,170" fill="none" stroke="#333333" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#a)"/>
+<text x="270" y="250" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#222222">Réaffectation : retour à la préparation si le poste est réutilisable</text>
+<text x="410" y="310" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Chaque transition met à jour l&#x27;inventaire : l&#x27;état du poste doit toujours être connu</text>
+</svg>

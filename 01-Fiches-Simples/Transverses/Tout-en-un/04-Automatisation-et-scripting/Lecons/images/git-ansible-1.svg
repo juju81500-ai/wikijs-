@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="800" height="380" role="img" aria-labelledby="t d">
+<title id="t">Les trois zones de Git : dossier de travail, index et dépôt</title>
+<desc id="d">Schéma : git add déplace les modifications du dossier de travail vers l&#x27;index ; git commit les enregistre dans le dépôt local ; git push les envoie vers un dépôt distant.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a41"/></marker></defs>
+<rect width="800" height="380" fill="#f7f9fc"/>
+<text x="400" y="36" font-family="sans-serif" font-size="26" fill="#111111" text-anchor="middle" font-weight="bold">Du fichier modifié au commit</text>
+<rect x="20" y="90" width="180" height="110" rx="8" fill="#dbeafe" stroke="#1b2a41" stroke-width="2"/>
+<text x="110.0" y="139.79999999999998" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle" font-weight="bold">Dossier de travail</text>
+<text x="110.0" y="161.39999999999998" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">fichiers modifiés</text>
+<rect x="310" y="90" width="180" height="110" rx="8" fill="#fef9c3" stroke="#1b2a41" stroke-width="2"/>
+<text x="400.0" y="129.0" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle" font-weight="bold">Index (staging)</text>
+<text x="400.0" y="150.6" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">sélection pour</text>
+<text x="400.0" y="172.2" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">le prochain commit</text>
+<rect x="600" y="90" width="180" height="110" rx="8" fill="#dcfce7" stroke="#1b2a41" stroke-width="2"/>
+<text x="690.0" y="129.0" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle" font-weight="bold">Dépôt local</text>
+<text x="690.0" y="150.6" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">historique des</text>
+<text x="690.0" y="172.2" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">commits</text>
+<line x1="200" y1="145" x2="310" y2="145" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<text x="255" y="128" font-family="sans-serif" font-size="15" fill="#1b2a41" text-anchor="middle">git add</text>
+<line x1="490" y1="145" x2="600" y2="145" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<text x="545" y="128" font-family="sans-serif" font-size="15" fill="#1b2a41" text-anchor="middle">git commit</text>
+<rect x="580" y="270" width="200" height="70" rx="8" fill="#ede9fe" stroke="#1b2a41" stroke-width="2"/>
+<text x="680.0" y="299.8" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle" font-weight="bold">Dépôt distant</text>
+<text x="680.0" y="321.40000000000003" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">example.com</text>
+<line x1="680" y1="200" x2="680" y2="270" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<text x="730" y="240" font-family="sans-serif" font-size="15" fill="#1b2a41" text-anchor="middle">git push</text>
+<rect x="20" y="250" width="520" height="100" rx="8" fill="#ffffff" stroke="#b91c1c" stroke-width="2" stroke-dasharray="8 5"/>
+<text x="280" y="285" font-family="sans-serif" font-size="17" fill="#b91c1c" text-anchor="middle" font-weight="bold">Fichiers ignorés (.gitignore)</text>
+<text x="280" y="315" font-family="sans-serif" font-size="16" fill="#b91c1c" text-anchor="middle">secrets, mots de passe, clés, journaux : jamais ici</text>
+</svg>

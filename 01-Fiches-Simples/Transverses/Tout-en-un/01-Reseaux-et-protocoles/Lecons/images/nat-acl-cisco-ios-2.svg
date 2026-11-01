@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 480" width="800" height="480" role="img" aria-labelledby="t d">
+<title id="t">Évaluation d'une liste de contrôle d'accès, ligne par ligne</title>
+<desc id="d">Un paquet est comparé aux lignes de l'ACL de haut en bas. La première ligne qui correspond s'applique, permit ou deny, et l'évaluation s'arrête. Si aucune ligne ne correspond, un deny implicite final abandonne le paquet.</desc>
+<defs><marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a41"/></marker><marker id="arrr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="12" markerHeight="12" markerUnits="userSpaceOnUse" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#b00020"/></marker></defs>
+<rect width="800" height="480" fill="#ffffff"/>
+<text x="400" y="30" font-family="sans-serif" font-size="20" fill="#1b2a41" text-anchor="middle" font-weight="bold">ACL : première correspondance gagnante, deny implicite à la fin</text>
+<rect x="220" y="50" width="360" height="50" rx="8" fill="#cfe3ff" stroke="#1b2a41" stroke-width="2"/>
+<text x="400" y="81" font-family="sans-serif" font-size="17" fill="#1b2a41" text-anchor="middle" font-weight="bold">Paquet entrant sur l'interface</text>
+<line x1="400" y1="100" x2="400" y2="130" stroke="#1b2a41" stroke-width="3" marker-end="url(#arr)"/>
+<rect x="180" y="130" width="440" height="50" rx="8" fill="#e8ecf1" stroke="#1b2a41" stroke-width="2"/>
+<text x="400" y="152" font-family="monospace" font-size="15" fill="#1b2a41" text-anchor="middle" font-weight="bold">10 deny   tcp 192.0.2.50 → any eq 23</text>
+<text x="400" y="172" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">Correspond ? → abandon</text>
+<rect x="660" y="130" width="125" height="50" rx="8" fill="#ffd0d0" stroke="#1b2a41" stroke-width="2"/>
+<text x="722" y="160" font-family="sans-serif" font-size="16" fill="#1b2a41" text-anchor="middle" font-weight="bold">STOP</text>
+<line x1="620" y1="155" x2="660" y2="155" stroke="#1b2a41" stroke-width="3" marker-end="url(#arr)"/>
+<line x1="400" y1="180" x2="400" y2="200" stroke="#1b2a41" stroke-width="3" marker-end="url(#arr)"/>
+<text x="415" y="195" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="start" font-weight="normal">non</text>
+<rect x="180" y="200" width="440" height="50" rx="8" fill="#e8ecf1" stroke="#1b2a41" stroke-width="2"/>
+<text x="400" y="222" font-family="monospace" font-size="15" fill="#1b2a41" text-anchor="middle" font-weight="bold">20 permit tcp 192.0.2.0/24 → any eq 443</text>
+<text x="400" y="242" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">Correspond ? → autorisé</text>
+<rect x="660" y="200" width="125" height="50" rx="8" fill="#d4f1d4" stroke="#1b2a41" stroke-width="2"/>
+<text x="722" y="230" font-family="sans-serif" font-size="16" fill="#1b2a41" text-anchor="middle" font-weight="bold">STOP</text>
+<line x1="620" y1="225" x2="660" y2="225" stroke="#1b2a41" stroke-width="3" marker-end="url(#arr)"/>
+<line x1="400" y1="250" x2="400" y2="270" stroke="#1b2a41" stroke-width="3" marker-end="url(#arr)"/>
+<text x="415" y="265" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="start" font-weight="normal">non</text>
+<rect x="180" y="270" width="440" height="50" rx="8" fill="#e8ecf1" stroke="#1b2a41" stroke-width="2"/>
+<text x="400" y="292" font-family="monospace" font-size="15" fill="#1b2a41" text-anchor="middle" font-weight="bold">30 permit icmp 192.0.2.0/24 → any</text>
+<text x="400" y="312" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">Correspond ? → autorisé</text>
+<rect x="660" y="270" width="125" height="50" rx="8" fill="#d4f1d4" stroke="#1b2a41" stroke-width="2"/>
+<text x="722" y="300" font-family="sans-serif" font-size="16" fill="#1b2a41" text-anchor="middle" font-weight="bold">STOP</text>
+<line x1="620" y1="295" x2="660" y2="295" stroke="#1b2a41" stroke-width="3" marker-end="url(#arr)"/>
+<line x1="400" y1="320" x2="400" y2="360" stroke="#1b2a41" stroke-width="3" marker-end="url(#arr)"/>
+<text x="415" y="345" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="start" font-weight="normal">non</text>
+<rect x="150" y="360" width="500" height="60" rx="8" fill="#ffd0d0" stroke="#b00020" stroke-width="2"/>
+<text x="400" y="386" font-family="sans-serif" font-size="16" fill="#1b2a41" text-anchor="middle" font-weight="bold">deny implicite (invisible) : tout le reste est refusé</text>
+<text x="400" y="408" font-family="sans-serif" font-size="13" fill="#1b2a41" text-anchor="middle" font-weight="normal">à vérifier : ne pas se couper l'accès d'administration</text>
+<text x="400" y="455" font-family="sans-serif" font-size="14" fill="#1b2a41" text-anchor="middle" font-weight="normal">Ordre important : les règles précises d'abord, les règles générales ensuite.</text>
+</svg>

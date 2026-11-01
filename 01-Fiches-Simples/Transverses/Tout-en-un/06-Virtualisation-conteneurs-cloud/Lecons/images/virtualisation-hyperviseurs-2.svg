@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d">
+  <title id="t">Overcommit de vCPU et de mémoire sur un hôte</title>
+  <desc id="d">Un hôte de 8 cœurs physiques et 64 Go de RAM héberge quatre machines virtuelles totalisant 16 vCPU et 80 Go de RAM : les vCPU sont surengagés d'un facteur 2, la mémoire dépasse la capacité physique.</desc>
+  <rect width="800" height="420" fill="#ffffff"/>
+  <text x="400" y="30" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#111">Overcommit : promettre plus que l'hôte ne possède</text>
+  <g font-family="sans-serif" font-size="15" fill="#111">
+    <rect x="30" y="55" width="740" height="215" rx="8" fill="#eef4fb" stroke="#1f4e79" stroke-width="2"/>
+    <text x="45" y="80" font-weight="bold">Machines virtuelles (ce qui est promis)</text>
+    <rect x="50" y="95" width="160" height="80" fill="#cfe2f3" stroke="#1f4e79"/>
+    <text x="130" y="125" text-anchor="middle" font-weight="bold">VM web</text>
+    <text x="130" y="147" text-anchor="middle">4 vCPU · 16 Go</text>
+    <rect x="225" y="95" width="160" height="80" fill="#cfe2f3" stroke="#1f4e79"/>
+    <text x="305" y="125" text-anchor="middle" font-weight="bold">VM base</text>
+    <text x="305" y="147" text-anchor="middle">4 vCPU · 32 Go</text>
+    <rect x="400" y="95" width="160" height="80" fill="#cfe2f3" stroke="#1f4e79"/>
+    <text x="480" y="125" text-anchor="middle" font-weight="bold">VM appli</text>
+    <text x="480" y="147" text-anchor="middle">4 vCPU · 16 Go</text>
+    <rect x="575" y="95" width="175" height="80" fill="#cfe2f3" stroke="#1f4e79"/>
+    <text x="662" y="125" text-anchor="middle" font-weight="bold">VM test</text>
+    <text x="662" y="147" text-anchor="middle">4 vCPU · 16 Go</text>
+    <text x="400" y="215" text-anchor="middle" font-weight="bold">Total promis : 16 vCPU et 80 Go de RAM</text>
+    <text x="400" y="240" text-anchor="middle">Ratio vCPU : cœur = 16 / 8 = 2 : 1 (acceptable) — RAM 80 / 64 = 125 % (dangereux)</text>
+  </g>
+  <path d="M400 275 V300" stroke="#444" stroke-width="3"/>
+  <polygon points="390,298 410,298 400,312" fill="#444"/>
+  <g font-family="sans-serif" font-size="15" fill="#111">
+    <rect x="30" y="315" width="740" height="85" rx="8" fill="#f4f4f4" stroke="#444" stroke-width="2"/>
+    <text x="45" y="340" font-weight="bold">Hôte physique (ce qui existe)</text>
+    <rect x="50" y="352" width="330" height="35" fill="#d9ead3" stroke="#274e13"/>
+    <text x="215" y="375" text-anchor="middle">8 cœurs physiques (partage du temps)</text>
+    <rect x="400" y="352" width="350" height="35" fill="#f9cb9c" stroke="#b45f06"/>
+    <text x="575" y="375" text-anchor="middle">64 Go de RAM : risque de swap / OOM</text>
+  </g>
+</svg>

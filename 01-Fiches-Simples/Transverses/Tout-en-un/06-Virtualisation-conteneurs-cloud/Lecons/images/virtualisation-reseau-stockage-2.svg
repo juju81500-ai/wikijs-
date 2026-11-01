@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="t d">
+  <title id="t">Disque épais contre disque fin sur un datastore</title>
+  <desc id="d">Un datastore de 1 To contient deux disques épais de 300 Go réservés à l'avance, et trois disques fins de 400 Go virtuels chacun mais n'occupant que 100 Go réels. Le total promis dépasse la capacité du datastore : il faut surveiller l'espace libre.</desc>
+  <rect width="800" height="400" fill="#ffffff"/>
+  <text x="400" y="30" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#111">Datastore : épais (réservé) et fin (alloué à la demande)</text>
+  <g font-family="sans-serif" font-size="15" fill="#111">
+    <rect x="30" y="50" width="740" height="130" rx="8" fill="#eef4fb" stroke="#1f4e79" stroke-width="2"/>
+    <text x="45" y="75" font-weight="bold">Taille déclarée dans les VM (vue de l'invité)</text>
+    <rect x="50" y="90" width="120" height="70" fill="#cfe2f3" stroke="#1f4e79"/><text x="110" y="130" text-anchor="middle">Épais 300 Go</text>
+    <rect x="185" y="90" width="120" height="70" fill="#cfe2f3" stroke="#1f4e79"/><text x="245" y="130" text-anchor="middle">Épais 300 Go</text>
+    <rect x="320" y="90" width="140" height="70" fill="#fce5cd" stroke="#b45f06" stroke-dasharray="6 4"/><text x="390" y="125" text-anchor="middle">Fin 400 Go</text><text x="390" y="145" text-anchor="middle" font-size="13">(100 Go utilisés)</text>
+    <rect x="475" y="90" width="140" height="70" fill="#fce5cd" stroke="#b45f06" stroke-dasharray="6 4"/><text x="545" y="125" text-anchor="middle">Fin 400 Go</text><text x="545" y="145" text-anchor="middle" font-size="13">(100 Go utilisés)</text>
+    <rect x="630" y="90" width="125" height="70" fill="#fce5cd" stroke="#b45f06" stroke-dasharray="6 4"/><text x="692" y="125" text-anchor="middle">Fin 400 Go</text><text x="692" y="145" text-anchor="middle" font-size="13">(100 Go utilisés)</text>
+    <text x="400" y="205" text-anchor="middle" font-weight="bold">Total promis : 600 + 1200 = 1800 Go sur un datastore de 1000 Go</text>
+  </g>
+  <g font-family="sans-serif" font-size="15" fill="#111">
+    <text x="30" y="250" font-weight="bold">Occupation réelle du datastore (1 To = 1000 Go)</text>
+    <rect x="30" y="265" width="740" height="45" fill="#ffffff" stroke="#444" stroke-width="2"/>
+    <rect x="30" y="265" width="444" height="45" fill="#6fa8dc"/><text x="252" y="293" text-anchor="middle">Épais : 600 Go</text>
+    <rect x="474" y="265" width="222" height="45" fill="#f6b26b"/><text x="585" y="293" text-anchor="middle">Fins : 300 Go</text>
+    <rect x="696" y="265" width="74" height="45" fill="#ffffff"/><text x="733" y="285" font-size="12" text-anchor="middle">Libre</text><text x="733" y="301" font-size="12" text-anchor="middle">100 Go</text>
+    <text x="400" y="345" text-anchor="middle" font-weight="bold" fill="#990000">Si les fins grossissent : datastore plein, VM suspendues ou en erreur</text>
+    <text x="400" y="370" text-anchor="middle">Règle : alerte d'occupation, marge libre, instantanés et sauvegardes comptés</text>
+  </g>
+</svg>

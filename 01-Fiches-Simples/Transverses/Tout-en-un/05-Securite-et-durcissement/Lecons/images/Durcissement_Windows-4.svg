@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 380" width="800" height="380" role="img" aria-labelledby="t d">
+<title id="t">Exposition de SMB et RDP : à éviter depuis Internet, à encadrer en interne</title>
+<desc id="d">Internet est bloqué par le pare-feu périmétrique vers les ports 445 et 3389. Les administrateurs passent par un VPN ou un bastion, puis par une règle limitée au réseau d'administration.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a41"/></marker></defs>
+<rect width="800" height="380" fill="#ffffff"/>
+<text x="400" y="34" font-size="22" fill="#111111" text-anchor="middle" font-weight="bold" font-family="sans-serif">SMB (445) et RDP (3389) : ne jamais exposer directement</text>
+<rect x="20" y="90" width="150" height="100" rx="10" fill="#fde4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="95.0" y="135.2" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Internet</text>
+<text x="95.0" y="156.0" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">203.0.113.0/24</text>
+<rect x="250" y="90" width="150" height="100" rx="10" fill="#fff3c4" stroke="#1b2a41" stroke-width="2"/>
+<text x="325.0" y="135.2" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Pare-feu</text>
+<text x="325.0" y="156.0" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">périmétrique</text>
+<rect x="480" y="90" width="300" height="100" rx="10" fill="#e8f1fb" stroke="#1b2a41" stroke-width="2"/>
+<text x="630.0" y="124.8" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Serveur Windows</text>
+<text x="630.0" y="145.6" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">198.51.100.50</text>
+<text x="630.0" y="166.4" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">445 / 3389 : réseau admin seul</text>
+<line x1="170" y1="140" x2="250" y2="140" stroke="#b3261e" stroke-width="3" marker-end="url(#a)"/>
+<text x="210" y="125" font-size="28" fill="#b3261e" text-anchor="middle" font-weight="normal" font-family="sans-serif">✗</text>
+<line x1="400" y1="140" x2="480" y2="140" stroke="#2a6f2a" stroke-width="3" marker-end="url(#a)"/>
+<rect x="20" y="240" width="150" height="90" rx="10" fill="#e3f4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="95.0" y="280.20000000000005" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Administrateur</text>
+<text x="95.0" y="301.00000000000006" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">192.0.2.10</text>
+<rect x="250" y="240" width="150" height="90" rx="10" fill="#e3f4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="325.0" y="280.20000000000005" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">VPN ou</text>
+<text x="325.0" y="301.00000000000006" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">bastion</text>
+<line x1="170" y1="285" x2="250" y2="285" stroke="#2a6f2a" stroke-width="3" marker-end="url(#a)"/>
+<line x1="400" y1="285" x2="630" y2="192" stroke="#2a6f2a" stroke-width="3" marker-end="url(#a)"/>
+<text x="560" y="300" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">règle limitée à 192.0.2.0/24</text>
+</svg>

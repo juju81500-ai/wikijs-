@@ -16,6 +16,7 @@ DOCUMENT_DIRECTORIES = (
     "05-Hardening-AIS-Cyber",
     "06-Documentation-ext",
 )
+ASSET_SUFFIXES = {".svg", ".png", ".jpg", ".jpeg", ".gif", ".webp"}
 IMPORTED_EXTERNAL_REPOSITORIES = (Path("05-Referentiel-GitHub/nivvlem-TSSR"),)
 
 PLACEHOLDER_PATTERNS = (
@@ -33,7 +34,7 @@ def documentation_files(root: Path):
             continue
 
         for path in sorted(directory.rglob("*")):
-            if not path.is_file() or path.name == "README.md":
+            if not path.is_file() or path.name == "README.md" or path.suffix.lower() in ASSET_SUFFIXES:
                 continue
             if directory_name == "06-Documentation-ext":
                 relative_path = path.relative_to(directory)

@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" width="820" height="400" role="img" aria-labelledby="t d">
+<title id="t">Sources et usages d&#x27;un inventaire de postes</title>
+<desc id="d">Quatre sources de données (agent sur le poste, annuaire, réseau, achats) alimentent un inventaire central ; celui-ci sert la gestion des licences, la sécurité, le renouvellement et le support.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333333"/></marker></defs>
+<rect width="820" height="400" fill="#ffffff"/>
+<text x="410" y="30" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" text-anchor="middle" fill="#111111">Inventaire : plusieurs sources, une référence</text>
+<rect x="20" y="60" width="230" height="55" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="135.0" y="92.4" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Agent sur le poste</text>
+<rect x="570" y="60" width="230" height="55" rx="10" fill="#e3f5e6" stroke="#1d6b2f" stroke-width="2"/>
+<text x="685.0" y="92.4" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Licences et conformité</text>
+<path d="M250,87 L320,200" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<path d="M500,200 L570,87" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<rect x="20" y="140" width="230" height="55" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="135.0" y="172.4" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Annuaire (comptes machine)</text>
+<rect x="570" y="140" width="230" height="55" rx="10" fill="#e3f5e6" stroke="#1d6b2f" stroke-width="2"/>
+<text x="685.0" y="172.4" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Sécurité et correctifs</text>
+<path d="M250,167 L320,200" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<path d="M500,200 L570,167" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<rect x="20" y="220" width="230" height="55" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="135.0" y="252.4" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Découverte réseau</text>
+<rect x="570" y="220" width="230" height="55" rx="10" fill="#e3f5e6" stroke="#1d6b2f" stroke-width="2"/>
+<text x="685.0" y="252.4" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Renouvellement du parc</text>
+<path d="M250,247 L320,200" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<path d="M500,200 L570,247" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<rect x="20" y="300" width="230" height="55" rx="10" fill="#e8f1fb" stroke="#1f4e8c" stroke-width="2"/>
+<text x="135.0" y="332.4" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Commandes et factures</text>
+<rect x="570" y="300" width="230" height="55" rx="10" fill="#e3f5e6" stroke="#1d6b2f" stroke-width="2"/>
+<text x="685.0" y="332.4" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Support et diagnostic</text>
+<path d="M250,327 L320,200" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<path d="M500,200 L570,327" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<rect x="320" y="150" width="180" height="100" rx="10" fill="#fff4d6" stroke="#8a5a00" stroke-width="2"/>
+<text x="410.0" y="195.75" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Inventaire central</text>
+<text x="410.0" y="214.75" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">(source de vérité)</text>
+<text x="410" y="385" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">Rapprocher les sources et signaler les écarts : un poste connu d&#x27;une source seule est suspect</text>
+</svg>

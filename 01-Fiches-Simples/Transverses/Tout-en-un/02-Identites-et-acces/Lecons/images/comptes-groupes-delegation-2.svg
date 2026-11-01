@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="t d" font-family="sans-serif">
+  <title id="t">Permissions de partage et permissions NTFS : le plus restrictif l'emporte</title>
+  <desc id="d">Un utilisateur accède à un dossier via le réseau. Les permissions de partage (exemple : Modifier) et les permissions NTFS (exemple : Lecture) sont évaluées séparément ; le droit effectif à travers le réseau est le plus restrictif des deux, ici Lecture. En accès local, seules les permissions NTFS comptent.</desc>
+  <rect width="800" height="400" fill="#ffffff"/>
+  <defs>
+    <marker id="a" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto"><path d="M0,0 L14,7 L0,14 z" fill="#222222"/></marker>
+  </defs>
+  <text x="400" y="30" font-size="20" font-weight="bold" text-anchor="middle" fill="#0b2e59">Accès par le réseau : deux portes en série</text>
+
+  <rect x="20" y="70" width="140" height="120" rx="10" fill="#e6e6e6" stroke="#333333" stroke-width="3"/>
+  <text x="90" y="110" font-size="16" font-weight="bold" text-anchor="middle" fill="#111111">Utilisateur</text>
+  <text x="90" y="134" font-size="14" text-anchor="middle" fill="#111111">alice.martin</text>
+  <text x="90" y="156" font-size="14" text-anchor="middle" fill="#111111">via \\SRV-FICHIERS</text>
+
+  <rect x="230" y="70" width="170" height="120" rx="10" fill="#fff0c2" stroke="#8a6200" stroke-width="3"/>
+  <text x="315" y="102" font-size="16" font-weight="bold" text-anchor="middle" fill="#5a4000">Porte 1 : partage</text>
+  <text x="315" y="128" font-size="14" text-anchor="middle" fill="#111111">Permissions du partage</text>
+  <text x="315" y="154" font-size="15" font-weight="bold" text-anchor="middle" fill="#5a4000">Modifier</text>
+  <text x="315" y="176" font-size="13" text-anchor="middle" fill="#444444">(réseau uniquement)</text>
+
+  <rect x="470" y="70" width="170" height="120" rx="10" fill="#d6e6f8" stroke="#0b2e59" stroke-width="3"/>
+  <text x="555" y="102" font-size="16" font-weight="bold" text-anchor="middle" fill="#0b2e59">Porte 2 : NTFS</text>
+  <text x="555" y="128" font-size="14" text-anchor="middle" fill="#111111">Permissions du dossier</text>
+  <text x="555" y="154" font-size="15" font-weight="bold" text-anchor="middle" fill="#0b2e59">Lecture</text>
+  <text x="555" y="176" font-size="13" text-anchor="middle" fill="#444444">(local + réseau)</text>
+
+  <line x1="160" y1="130" x2="228" y2="130" stroke="#222222" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="400" y1="130" x2="468" y2="130" stroke="#222222" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="640" y1="130" x2="688" y2="130" stroke="#222222" stroke-width="3" marker-end="url(#a)"/>
+
+  <rect x="690" y="70" width="100" height="120" rx="10" fill="#d9f2d9" stroke="#1b5e20" stroke-width="3"/>
+  <text x="740" y="110" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b5e20">Droit</text>
+  <text x="740" y="130" font-size="14" font-weight="bold" text-anchor="middle" fill="#1b5e20">effectif</text>
+  <text x="740" y="160" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Lecture</text>
+
+  <rect x="20" y="230" width="760" height="140" rx="10" fill="#f3f3f3" stroke="#333333" stroke-width="2"/>
+  <text x="400" y="262" font-size="16" font-weight="bold" text-anchor="middle" fill="#111111">Règles pratiques</text>
+  <text x="400" y="292" font-size="15" text-anchor="middle" fill="#111111">Droit effectif réseau = le plus restrictif entre partage et NTFS.</text>
+  <text x="400" y="318" font-size="15" text-anchor="middle" fill="#111111">Un « Refuser » explicite l'emporte sur les « Autoriser » du même niveau.</text>
+  <text x="400" y="344" font-size="15" text-anchor="middle" fill="#111111">Bonne pratique : partage large (Utilisateurs authentifiés), finesse dans NTFS.</text>
+</svg>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" width="800" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Anatomie de l'adresse IPv6 2001:db8:acad:1::1/64</title>
+  <desc id="d">Une adresse IPv6 de 128 bits est découpée en huit groupes de 16 bits. Les trois premiers groupes (48 bits) forment le préfixe de routage global, le quatrième (16 bits) est l'identifiant de sous-réseau, les quatre derniers (64 bits) forment l'identifiant d'interface.</desc>
+  <rect width="800" height="330" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#111111">
+  <text x="400" y="26" font-size="20" font-weight="bold" text-anchor="middle">Anatomie de 2001:db8:acad:1::1/64</text>
+<rect x="20" y="70" width="95" height="56" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2.5"/>
+<text x="67.5" y="104" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold">2001</text>
+<text x="67.5" y="62" text-anchor="middle" font-size="12">groupe 1</text>
+<text x="67.5" y="144" text-anchor="middle" font-size="12">16 bits</text>
+<rect x="115" y="70" width="95" height="56" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2.5"/>
+<text x="162.5" y="104" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold">0db8</text>
+<text x="162.5" y="62" text-anchor="middle" font-size="12">groupe 2</text>
+<text x="162.5" y="144" text-anchor="middle" font-size="12">16 bits</text>
+<rect x="210" y="70" width="95" height="56" fill="#bfdbfe" stroke="#1e3a8a" stroke-width="2.5"/>
+<text x="257.5" y="104" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold">acad</text>
+<text x="257.5" y="62" text-anchor="middle" font-size="12">groupe 3</text>
+<text x="257.5" y="144" text-anchor="middle" font-size="12">16 bits</text>
+<rect x="305" y="70" width="95" height="56" fill="#bbf7d0" stroke="#14532d" stroke-width="2.5"/>
+<text x="352.5" y="104" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold">0001</text>
+<text x="352.5" y="62" text-anchor="middle" font-size="12">groupe 4</text>
+<text x="352.5" y="144" text-anchor="middle" font-size="12">16 bits</text>
+<rect x="400" y="70" width="95" height="56" fill="#fed7aa" stroke="#7c2d12" stroke-width="2.5"/>
+<text x="447.5" y="104" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold">0000</text>
+<text x="447.5" y="62" text-anchor="middle" font-size="12">groupe 5</text>
+<text x="447.5" y="144" text-anchor="middle" font-size="12">16 bits</text>
+<rect x="495" y="70" width="95" height="56" fill="#fed7aa" stroke="#7c2d12" stroke-width="2.5"/>
+<text x="542.5" y="104" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold">0000</text>
+<text x="542.5" y="62" text-anchor="middle" font-size="12">groupe 6</text>
+<text x="542.5" y="144" text-anchor="middle" font-size="12">16 bits</text>
+<rect x="590" y="70" width="95" height="56" fill="#fed7aa" stroke="#7c2d12" stroke-width="2.5"/>
+<text x="637.5" y="104" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold">0000</text>
+<text x="637.5" y="62" text-anchor="middle" font-size="12">groupe 7</text>
+<text x="637.5" y="144" text-anchor="middle" font-size="12">16 bits</text>
+<rect x="685" y="70" width="95" height="56" fill="#fed7aa" stroke="#7c2d12" stroke-width="2.5"/>
+<text x="732.5" y="104" text-anchor="middle" font-family="monospace" font-size="22" font-weight="bold">0001</text>
+<text x="732.5" y="62" text-anchor="middle" font-size="12">groupe 8</text>
+<text x="732.5" y="144" text-anchor="middle" font-size="12">16 bits</text>
+<path d="M22,160 L22,170 L303,170 L303,160" fill="none" stroke="#1e3a8a" stroke-width="3"/>
+<text x="162.5" y="192" text-anchor="middle" font-weight="bold" fill="#1e3a8a">Préfixe de routage global</text>
+<text x="162.5" y="212" text-anchor="middle" font-size="13">48 bits (/48) — attribué au site</text>
+<path d="M307,160 L307,170 L398,170 L398,160" fill="none" stroke="#14532d" stroke-width="3"/>
+<text x="352.5" y="192" text-anchor="middle" font-weight="bold" fill="#14532d">Sous-réseau</text>
+<text x="352.5" y="212" text-anchor="middle" font-size="13">16 bits</text>
+<path d="M402,160 L402,170 L778,170 L778,160" fill="none" stroke="#7c2d12" stroke-width="3"/>
+<text x="590.0" y="192" text-anchor="middle" font-weight="bold" fill="#7c2d12">Identifiant d'interface</text>
+<text x="590.0" y="212" text-anchor="middle" font-size="13">64 bits — identifie l'hôte dans le /64</text>
+<line x1="402" y1="66" x2="402" y2="130" stroke="#b91c1c" stroke-width="4" stroke-dasharray="6 3"/>
+<text x="400" y="258" text-anchor="middle" font-size="14">Notation abrégée : 2001:db8:acad:1::1 (zéros de tête omis, « :: » remplace les groupes nuls)</text>
+<text x="400" y="282" text-anchor="middle" font-size="14">Le « /64 » indique que les 64 premiers bits désignent le réseau.</text>
+<text x="400" y="314" text-anchor="middle" font-size="12">Création originale du projet Pack Master (CC0). Préfixe de documentation 2001:db8::/32 (RFC 3849).</text>
+</g></svg>

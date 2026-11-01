@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t d">
+  <title id="t">Correspondance des concepts entre Proxmox VE, vSphere et Hyper-V</title>
+  <desc id="d">Tableau en schéma comparant quatre fonctions : gestion centralisée, hyperviseur, haute disponibilité et migration à chaud, avec l'équivalent sur Proxmox VE, VMware vSphere et Microsoft Hyper-V.</desc>
+  <rect width="800" height="440" fill="#ffffff"/>
+  <text x="400" y="30" text-anchor="middle" font-family="sans-serif" font-size="20" font-weight="bold" fill="#111">Mêmes besoins, vocabulaires différents</text>
+  <g font-family="sans-serif" font-size="14" fill="#111" stroke="#444" stroke-width="1.5">
+    <rect x="20" y="50" width="170" height="50" fill="#d9d9d9"/><rect x="190" y="50" width="195" height="50" fill="#cfe2f3"/><rect x="385" y="50" width="195" height="50" fill="#d9ead3"/><rect x="580" y="50" width="200" height="50" fill="#fce5cd"/>
+    <rect x="20" y="100" width="170" height="65" fill="#f3f3f3"/><rect x="190" y="100" width="195" height="65" fill="#fff"/><rect x="385" y="100" width="195" height="65" fill="#fff"/><rect x="580" y="100" width="200" height="65" fill="#fff"/>
+    <rect x="20" y="165" width="170" height="65" fill="#f3f3f3"/><rect x="190" y="165" width="195" height="65" fill="#fff"/><rect x="385" y="165" width="195" height="65" fill="#fff"/><rect x="580" y="165" width="200" height="65" fill="#fff"/>
+    <rect x="20" y="230" width="170" height="65" fill="#f3f3f3"/><rect x="190" y="230" width="195" height="65" fill="#fff"/><rect x="385" y="230" width="195" height="65" fill="#fff"/><rect x="580" y="230" width="200" height="65" fill="#fff"/>
+    <rect x="20" y="295" width="170" height="65" fill="#f3f3f3"/><rect x="190" y="295" width="195" height="65" fill="#fff"/><rect x="385" y="295" width="195" height="65" fill="#fff"/><rect x="580" y="295" width="200" height="65" fill="#fff"/>
+    <rect x="20" y="360" width="170" height="65" fill="#f3f3f3"/><rect x="190" y="360" width="195" height="65" fill="#fff"/><rect x="385" y="360" width="195" height="65" fill="#fff"/><rect x="580" y="360" width="200" height="65" fill="#fff"/>
+  </g>
+  <g font-family="sans-serif" font-size="14" fill="#111" text-anchor="middle" stroke="none">
+    <text x="105" y="81" font-weight="bold">Fonction</text>
+    <text x="287" y="81" font-weight="bold">Proxmox VE</text>
+    <text x="482" y="81" font-weight="bold">VMware vSphere</text>
+    <text x="680" y="81" font-weight="bold">Microsoft Hyper-V</text>
+    <text x="105" y="137" font-weight="bold">Gestion</text>
+    <text x="287" y="132">Interface web de chaque</text><text x="287" y="150">nœud, cluster intégré</text>
+    <text x="482" y="132">vCenter Server</text><text x="482" y="150">(ESXi pour chaque hôte)</text>
+    <text x="680" y="132">Gestionnaire Hyper-V,</text><text x="680" y="150">Admin Center, SCVMM</text>
+    <text x="105" y="202" font-weight="bold">Cluster</text>
+    <text x="287" y="197">Corosync + pmxcfs</text><text x="287" y="215">(quorum)</text>
+    <text x="482" y="197">Cluster vCenter</text><text x="482" y="215">(DRS / HA)</text>
+    <text x="680" y="197">Clustering de basculement</text><text x="680" y="215">Windows (WSFC)</text>
+    <text x="105" y="267" font-weight="bold">Haute dispo.</text>
+    <text x="287" y="262">Gestionnaire HA,</text><text x="287" y="280">groupes et règles</text>
+    <text x="482" y="262">vSphere HA</text><text x="482" y="280">(agent FDM)</text>
+    <text x="680" y="262">Rôle de cluster</text><text x="680" y="280">de VM hautement disponible</text>
+    <text x="105" y="332" font-weight="bold">Migration à chaud</text>
+    <text x="287" y="327">Migration en ligne</text><text x="287" y="345">(qm migrate --online)</text>
+    <text x="482" y="327">vMotion</text><text x="482" y="345">(+ Storage vMotion)</text>
+    <text x="680" y="327">Migration dynamique</text><text x="680" y="345">(Live Migration)</text>
+    <text x="105" y="397" font-weight="bold">Modèle</text><text x="105" y="415" font-weight="bold">économique</text>
+    <text x="287" y="392">Logiciel libre (AGPL),</text><text x="287" y="410">support par abonnement</text>
+    <text x="482" y="392">Licences et abonnements</text><text x="482" y="410">commerciaux (voir éditeur)</text>
+    <text x="680" y="392">Inclus à Windows Server</text><text x="680" y="410">(licences à vérifier)</text>
+  </g>
+</svg>

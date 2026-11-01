@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" aria-labelledby="t d">
+<title id="t">Le pipeline PowerShell transmet des objets</title>
+<desc id="d">Schéma : Get-Process produit des objets, Where-Object les filtre, Sort-Object les trie, Select-Object choisit les propriétés, puis le résultat est affiché.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a41"/></marker></defs>
+<rect width="800" height="420" fill="#f7f9fc"/>
+<text x="400" y="40" font-family="sans-serif" font-size="24" fill="#111111" text-anchor="middle" font-weight="bold">Le pipeline transmet des objets, pas du texte</text>
+<rect x="20" y="80" width="160" height="100" rx="8" fill="#dbeafe" stroke="#1b2a41" stroke-width="2"/>
+<text x="100.0" y="124.8" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle" font-weight="bold">Get-Process</text>
+<text x="100.0" y="146.4" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">produit des objets</text>
+<rect x="220" y="80" width="160" height="100" rx="8" fill="#dcfce7" stroke="#1b2a41" stroke-width="2"/>
+<text x="300.0" y="114.0" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle" font-weight="bold">Where-Object</text>
+<text x="300.0" y="135.6" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">garde ceux où</text>
+<text x="300.0" y="157.2" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">CPU &gt; 10</text>
+<rect x="420" y="80" width="160" height="100" rx="8" fill="#fef9c3" stroke="#1b2a41" stroke-width="2"/>
+<text x="500.0" y="114.0" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle" font-weight="bold">Sort-Object</text>
+<text x="500.0" y="135.6" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">trie sur la</text>
+<text x="500.0" y="157.2" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">propriété CPU</text>
+<rect x="620" y="80" width="160" height="100" rx="8" fill="#ede9fe" stroke="#1b2a41" stroke-width="2"/>
+<text x="700.0" y="124.8" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle" font-weight="bold">Select-Object</text>
+<text x="700.0" y="146.4" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">garde Name, CPU</text>
+<line x1="180" y1="130" x2="220" y2="130" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<line x1="380" y1="130" x2="420" y2="130" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<line x1="580" y1="130" x2="620" y2="130" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<text x="400" y="225" font-family="sans-serif" font-size="18" fill="#111111" text-anchor="middle">Chaque objet transporté possède des propriétés et des méthodes :</text>
+<rect x="120" y="245" width="560" height="110" rx="8" fill="#ffffff" stroke="#1b2a41" stroke-width="2"/>
+<text x="400" y="278" font-family="sans-serif" font-size="18" fill="#111111" text-anchor="middle" font-weight="bold">Objet « processus »</text>
+<text x="400" y="308" font-family="monospace" font-size="17" fill="#111111" text-anchor="middle">Name = notepad    Id = 4120    CPU = 12,5    WS = 48 Mo</text>
+<text x="400" y="338" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">Propriétés lisibles avec Get-Member</text>
+<text x="400" y="395" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">Comme un tri postal : à chaque étape, on garde le colis entier.</text>
+</svg>

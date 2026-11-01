@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d">
+  <title id="t">Arbre d'un annuaire LDAP (DIT) pour example.com</title>
+  <desc id="d">La racine dc=example,dc=com contient deux unités d'organisation : ou=People avec les entrées uid=alice et uid=bob, et ou=Groups avec les entrées cn=admins et cn=devs. Le nom distinctif (DN) d'une entrée se lit de la feuille vers la racine, par exemple uid=alice,ou=People,dc=example,dc=com.</desc>
+  <rect width="800" height="420" fill="#ffffff"/>
+  <text x="400" y="30" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#111111">Un annuaire LDAP est un arbre</text>
+  <g stroke="#111111" stroke-width="2" fill="none">
+    <line x1="400" y1="95" x2="400" y2="115"/>
+    <line x1="200" y1="115" x2="600" y2="115"/>
+    <line x1="200" y1="115" x2="200" y2="140"/>
+    <line x1="600" y1="115" x2="600" y2="140"/>
+    <line x1="200" y1="190" x2="200" y2="215"/>
+    <line x1="110" y1="215" x2="290" y2="215"/>
+    <line x1="110" y1="215" x2="110" y2="240"/>
+    <line x1="290" y1="215" x2="290" y2="240"/>
+    <line x1="600" y1="190" x2="600" y2="215"/>
+    <line x1="510" y1="215" x2="690" y2="215"/>
+    <line x1="510" y1="215" x2="510" y2="240"/>
+    <line x1="690" y1="215" x2="690" y2="240"/>
+  </g>
+  <g font-family="monospace" font-size="16" fill="#111111" text-anchor="middle">
+    <rect x="270" y="50" width="260" height="45" rx="8" fill="#fee2e2" stroke="#b91c1c" stroke-width="3"/>
+    <text x="400" y="78" font-weight="bold">dc=example,dc=com</text>
+    <rect x="120" y="140" width="160" height="50" rx="8" fill="#dbeafe" stroke="#1d4ed8" stroke-width="3"/>
+    <text x="200" y="170" font-weight="bold">ou=People</text>
+    <rect x="520" y="140" width="160" height="50" rx="8" fill="#dcfce7" stroke="#15803d" stroke-width="3"/>
+    <text x="600" y="170" font-weight="bold">ou=Groups</text>
+    <rect x="40" y="240" width="140" height="50" rx="8" fill="#ffffff" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="110" y="271">uid=alice</text>
+    <rect x="220" y="240" width="140" height="50" rx="8" fill="#ffffff" stroke="#1d4ed8" stroke-width="2"/>
+    <text x="290" y="271">uid=bob</text>
+    <rect x="440" y="240" width="140" height="50" rx="8" fill="#ffffff" stroke="#15803d" stroke-width="2"/>
+    <text x="510" y="271">cn=admins</text>
+    <rect x="620" y="240" width="140" height="50" rx="8" fill="#ffffff" stroke="#15803d" stroke-width="2"/>
+    <text x="690" y="271">cn=devs</text>
+  </g>
+  <rect x="20" y="315" width="760" height="85" rx="8" fill="#fffbeb" stroke="#92400e" stroke-width="2"/>
+  <g font-family="sans-serif" font-size="16" fill="#111111">
+    <text x="36" y="342">DN (nom distinctif) : se lit de la feuille vers la racine.</text>
+    <text x="36" y="366" font-family="monospace" font-size="16">uid=alice,ou=People,dc=example,dc=com</text>
+    <text x="36" y="390">Les groupes listent leurs membres par DN (attribut member) : « qui est dans quoi ».</text>
+  </g>
+</svg>

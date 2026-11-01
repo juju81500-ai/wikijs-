@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" role="img" aria-labelledby="t d" font-family="sans-serif">
+  <title id="t">Ordre de traitement des stratégies de groupe : L, S, D, OU</title>
+  <desc id="d">Quatre étapes de gauche à droite : stratégie locale, puis GPO liées au site, puis GPO liées au domaine, puis GPO liées aux unités d'organisation de la plus haute à la plus profonde. La dernière étape appliquée l'emporte en cas de conflit. Deux exceptions sont signalées : Appliqué (Enforced) force le lien vers le bas, et Bloquer l'héritage arrête l'héritage venant du haut.</desc>
+  <rect width="800" height="420" fill="#ffffff"/>
+  <defs>
+    <marker id="a" markerUnits="userSpaceOnUse" markerWidth="14" markerHeight="14" refX="12" refY="7" orient="auto"><path d="M0,0 L14,7 L0,14 z" fill="#222222"/></marker>
+  </defs>
+  <text x="400" y="30" font-size="20" font-weight="bold" text-anchor="middle" fill="#0b2e59">Ordre d'application : L → S → D → OU</text>
+
+  <rect x="20" y="60" width="160" height="110" rx="10" fill="#e6e6e6" stroke="#333333" stroke-width="3"/>
+  <text x="100" y="92" font-size="18" font-weight="bold" text-anchor="middle" fill="#111111">1. Local</text>
+  <text x="100" y="118" font-size="14" text-anchor="middle" fill="#111111">Stratégie locale</text>
+  <text x="100" y="138" font-size="14" text-anchor="middle" fill="#111111">de l'ordinateur</text>
+  <text x="100" y="158" font-size="13" text-anchor="middle" fill="#444444">(la plus faible)</text>
+
+  <rect x="226" y="60" width="160" height="110" rx="10" fill="#fff0c2" stroke="#8a6200" stroke-width="3"/>
+  <text x="306" y="92" font-size="18" font-weight="bold" text-anchor="middle" fill="#5a4000">2. Site</text>
+  <text x="306" y="118" font-size="14" text-anchor="middle" fill="#111111">GPO liées au site</text>
+  <text x="306" y="138" font-size="14" text-anchor="middle" fill="#111111">AD (sous-réseau)</text>
+
+  <rect x="432" y="60" width="160" height="110" rx="10" fill="#d6e6f8" stroke="#0b2e59" stroke-width="3"/>
+  <text x="512" y="92" font-size="18" font-weight="bold" text-anchor="middle" fill="#0b2e59">3. Domaine</text>
+  <text x="512" y="118" font-size="14" text-anchor="middle" fill="#111111">GPO liées à</text>
+  <text x="512" y="138" font-size="14" text-anchor="middle" fill="#111111">example.test</text>
+
+  <rect x="638" y="60" width="142" height="110" rx="10" fill="#d9f2d9" stroke="#1b5e20" stroke-width="3"/>
+  <text x="709" y="92" font-size="18" font-weight="bold" text-anchor="middle" fill="#1b5e20">4. OU</text>
+  <text x="709" y="118" font-size="14" text-anchor="middle" fill="#111111">Parent puis</text>
+  <text x="709" y="138" font-size="14" text-anchor="middle" fill="#111111">enfant</text>
+  <text x="709" y="158" font-size="13" text-anchor="middle" fill="#1b5e20">(la plus forte)</text>
+
+  <line x1="180" y1="115" x2="224" y2="115" stroke="#222222" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="386" y1="115" x2="430" y2="115" stroke="#222222" stroke-width="3" marker-end="url(#a)"/>
+  <line x1="592" y1="115" x2="636" y2="115" stroke="#222222" stroke-width="3" marker-end="url(#a)"/>
+
+  <rect x="20" y="200" width="760" height="44" rx="8" fill="#f3f3f3" stroke="#333333" stroke-width="2"/>
+  <text x="400" y="228" font-size="16" text-anchor="middle" fill="#111111">En cas de conflit sur un même paramètre, le dernier appliqué gagne.</text>
+
+  <rect x="20" y="266" width="370" height="130" rx="10" fill="#fdeaea" stroke="#9b1c1c" stroke-width="3"/>
+  <text x="205" y="296" font-size="17" font-weight="bold" text-anchor="middle" fill="#7a1010">Exception 1 : Appliqué (Enforced)</text>
+  <text x="205" y="324" font-size="14" text-anchor="middle" fill="#111111">Le lien ne peut pas être écrasé par un</text>
+  <text x="205" y="344" font-size="14" text-anchor="middle" fill="#111111">niveau plus bas et traverse « Bloquer</text>
+  <text x="205" y="364" font-size="14" text-anchor="middle" fill="#111111">l'héritage ». Le plus haut Enforced gagne.</text>
+
+  <rect x="410" y="266" width="370" height="130" rx="10" fill="#eef0fb" stroke="#2c3e9b" stroke-width="3"/>
+  <text x="595" y="296" font-size="17" font-weight="bold" text-anchor="middle" fill="#1c2a7a">Exception 2 : Bloquer l'héritage</text>
+  <text x="595" y="324" font-size="14" text-anchor="middle" fill="#111111">Posé sur une OU, il ignore les GPO</text>
+  <text x="595" y="344" font-size="14" text-anchor="middle" fill="#111111">venant du site, du domaine et des OU</text>
+  <text x="595" y="364" font-size="14" text-anchor="middle" fill="#111111">parentes, sauf celles en Appliqué.</text>
+</svg>

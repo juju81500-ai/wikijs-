@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 520" width="800" height="520" font-family="sans-serif">
+  <title>Poignée de main TCP puis requête HTTP</title>
+  <desc>Diagramme de séquence entre un client 198.51.100.20 (port éphémère 50422) et un serveur 203.0.113.10 (port 80). Le client envoie SYN, le serveur répond SYN-ACK, le client envoie ACK. Le client envoie ensuite une requête HTTP GET, le serveur répond 200 OK, puis la connexion est fermée par des segments FIN.</desc>
+  <rect width="800" height="520" fill="#ffffff"/>
+  <defs>
+    <marker id="r" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#c00000"/></marker>
+    <marker id="u" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#0b5394"/></marker>
+    <marker id="g" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#38761d"/></marker>
+  </defs>
+  <rect x="80" y="20" width="220" height="50" rx="8" fill="#e2efda" stroke="#375623" stroke-width="2"/>
+  <text x="190" y="42" font-size="15" fill="#000000" text-anchor="middle" font-weight="bold">Client 198.51.100.20</text>
+  <text x="190" y="60" font-size="12" fill="#000000" text-anchor="middle">port éphémère 50422</text>
+  <rect x="500" y="20" width="220" height="50" rx="8" fill="#deebf7" stroke="#1f4e79" stroke-width="2"/>
+  <text x="610" y="42" font-size="15" fill="#000000" text-anchor="middle" font-weight="bold">Serveur 203.0.113.10</text>
+  <text x="610" y="60" font-size="12" fill="#000000" text-anchor="middle">port 80 (en écoute)</text>
+  <line x1="190" y1="70" x2="190" y2="500" stroke="#000000" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="610" y1="70" x2="610" y2="500" stroke="#000000" stroke-width="2" stroke-dasharray="6 4"/>
+  <line x1="194" y1="110" x2="606" y2="140" stroke="#c00000" stroke-width="3" marker-end="url(#r)"/>
+  <text x="400" y="116" font-size="13" fill="#000000" text-anchor="middle" font-weight="bold">1. SYN  (seq=0)</text>
+  <line x1="606" y1="170" x2="194" y2="200" stroke="#0b5394" stroke-width="3" marker-end="url(#u)"/>
+  <text x="400" y="176" font-size="13" fill="#000000" text-anchor="middle" font-weight="bold">2. SYN-ACK  (seq=0, ack=1)</text>
+  <line x1="194" y1="230" x2="606" y2="260" stroke="#c00000" stroke-width="3" marker-end="url(#r)"/>
+  <text x="400" y="236" font-size="13" fill="#000000" text-anchor="middle" font-weight="bold">3. ACK  (ack=1)</text>
+  <rect x="20" y="275" width="760" height="26" fill="#fff2cc"/>
+  <text x="400" y="293" font-size="13" fill="#000000" text-anchor="middle">Connexion établie : le flux d'octets peut commencer</text>
+  <line x1="194" y1="325" x2="606" y2="345" stroke="#c00000" stroke-width="3" marker-end="url(#r)"/>
+  <text x="400" y="326" font-size="13" fill="#000000" text-anchor="middle">4. HTTP : GET / HTTP/1.1</text>
+  <line x1="606" y1="375" x2="194" y2="395" stroke="#0b5394" stroke-width="3" marker-end="url(#u)"/>
+  <text x="400" y="376" font-size="13" fill="#000000" text-anchor="middle">5. HTTP/1.1 200 OK  + contenu</text>
+  <line x1="194" y1="425" x2="606" y2="440" stroke="#38761d" stroke-width="3" marker-end="url(#g)"/>
+  <text x="400" y="426" font-size="13" fill="#000000" text-anchor="middle">6. FIN, ACK</text>
+  <line x1="606" y1="465" x2="194" y2="480" stroke="#38761d" stroke-width="3" marker-end="url(#g)"/>
+  <text x="400" y="466" font-size="13" fill="#000000" text-anchor="middle">7. FIN, ACK</text>
+  <text x="400" y="512" font-size="11" fill="#000000" text-anchor="middle">Numéros de séquence relatifs, comme les affiche Wireshark. Adresses de documentation.</text>
+</svg>

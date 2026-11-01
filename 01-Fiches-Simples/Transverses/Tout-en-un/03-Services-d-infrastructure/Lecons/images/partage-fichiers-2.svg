@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" aria-labelledby="t d">
+<title id="t">Droits de partage et droits du système de fichiers : le plus restrictif gagne</title>
+<desc id="d">Deux filtres successifs : d'abord les permissions du partage SMB ou de l'export NFS, ensuite les permissions NTFS ou POSIX du dossier. L'accès effectif est l'intersection des deux. Exemple : partage Modifier et système de fichiers Lecture donne Lecture.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1a1a1a"/></marker></defs>
+<rect width="800" height="420" fill="#ffffff"/>
+<text x="400" y="30" text-anchor="middle" font-size="20" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Accès effectif = intersection des deux couches</text>
+<rect x="30" y="80" width="200" height="110" rx="8" fill="#cfe3ff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="130.0" y="111.4" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Couche 1</text>
+<text x="130.0" y="130.4" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Droits du PARTAGE</text>
+<text x="130.0" y="149.4" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">(SMB share / export NFS)</text>
+<text x="130.0" y="168.4" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">ex. : Modifier</text>
+<rect x="300" y="80" width="200" height="110" rx="8" fill="#d4f2d4" stroke="#1a1a1a" stroke-width="2"/>
+<text x="400.0" y="111.4" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Couche 2</text>
+<text x="400.0" y="130.4" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Droits du DOSSIER</text>
+<text x="400.0" y="149.4" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">(NTFS / POSIX / ACL)</text>
+<text x="400.0" y="168.4" text-anchor="middle" font-size="14" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">ex. : Lecture</text>
+<rect x="570" y="80" width="200" height="110" rx="8" fill="#fff3a8" stroke="#1a1a1a" stroke-width="2"/>
+<text x="670.0" y="120.25" text-anchor="middle" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Accès effectif</text>
+<text x="670.0" y="140.25" text-anchor="middle" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">LECTURE</text>
+<text x="670.0" y="160.25" text-anchor="middle" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">(le plus restrictif)</text>
+<line x1="230" y1="135" x2="300" y2="135" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="500" y1="135" x2="570" y2="135" stroke="#1a1a1a" stroke-width="2.5" marker-end="url(#a)"/>
+<text x="400" y="230" text-anchor="middle" font-size="15" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Tableau d'exemples</text>
+<rect x="130" y="245" width="180" height="26" rx="8" fill="#e6e6e6" stroke="#1a1a1a" stroke-width="2"/>
+<text x="220.0" y="262.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Partage</text>
+<rect x="320" y="245" width="180" height="26" rx="8" fill="#e6e6e6" stroke="#1a1a1a" stroke-width="2"/>
+<text x="410.0" y="262.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Dossier</text>
+<rect x="510" y="245" width="180" height="26" rx="8" fill="#e6e6e6" stroke="#1a1a1a" stroke-width="2"/>
+<text x="600.0" y="262.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" font-weight="bold" fill="#1a1a1a">Résultat</text>
+<rect x="130" y="275" width="180" height="26" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="220.0" y="292.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Contrôle total</text>
+<rect x="320" y="275" width="180" height="26" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="410.0" y="292.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Lecture</text>
+<rect x="510" y="275" width="180" height="26" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="600.0" y="292.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Lecture</text>
+<rect x="130" y="305" width="180" height="26" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="220.0" y="322.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Lecture</text>
+<rect x="320" y="305" width="180" height="26" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="410.0" y="322.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Modifier</text>
+<rect x="510" y="305" width="180" height="26" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="600.0" y="322.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Lecture</text>
+<rect x="130" y="335" width="180" height="26" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="220.0" y="352.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Modifier</text>
+<rect x="320" y="335" width="180" height="26" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="410.0" y="352.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Modifier</text>
+<rect x="510" y="335" width="180" height="26" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="600.0" y="352.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Modifier</text>
+<rect x="130" y="365" width="180" height="26" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="220.0" y="382.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Modifier</text>
+<rect x="320" y="365" width="180" height="26" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="410.0" y="382.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Aucun accès</text>
+<rect x="510" y="365" width="180" height="26" rx="8" fill="#ffffff" stroke="#1a1a1a" stroke-width="2"/>
+<text x="600.0" y="382.55" text-anchor="middle" font-size="13" font-family="DejaVu Sans, Arial, sans-serif" fill="#1a1a1a">Refusé</text>
+</svg>

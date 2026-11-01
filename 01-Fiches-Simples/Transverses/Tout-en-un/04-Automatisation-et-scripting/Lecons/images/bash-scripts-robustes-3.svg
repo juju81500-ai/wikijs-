@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" width="800" height="430" role="img">
+<title>Comparaison de cron et des timers systemd</title>
+<desc>Cinq critères : définition de l'horaire, journal, rattrapage, dépendances, test à la demande.</desc>
+<defs></defs>
+<rect width="800" height="430" fill="#ffffff"/>
+<text xml:space="preserve" x="400" y="34" font-family="sans-serif" font-size="24" font-weight="bold" fill="#111111" text-anchor="middle">cron  ou  timer systemd ?</text>
+<rect x="30" y="56" width="180" height="44" rx="8" fill="#dddddd" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="120" y="84" font-family="sans-serif" font-size="17" font-weight="bold" fill="#111111" text-anchor="middle">Critère</text>
+<rect x="210" y="56" width="280" height="44" rx="8" fill="#e8f1fb" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="350" y="84" font-family="sans-serif" font-size="17" font-weight="bold" fill="#111111" text-anchor="middle">cron (crontab)</text>
+<rect x="490" y="56" width="280" height="44" rx="8" fill="#e3f5e8" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="630" y="84" font-family="sans-serif" font-size="17" font-weight="bold" fill="#111111" text-anchor="middle">timer systemd</text>
+<rect x="30" y="100" width="180" height="58" rx="8" fill="#f2f2f2" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="120" y="135" font-family="sans-serif" font-size="16" font-weight="bold" fill="#111111" text-anchor="middle">Horaire</text>
+<rect x="210" y="100" width="280" height="58" rx="8" fill="#ffffff" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="350" y="135" font-family="sans-serif" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">5 champs : m h jour mois jds</text>
+<rect x="490" y="100" width="280" height="58" rx="8" fill="#ffffff" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="630" y="135" font-family="monospace" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">OnCalendar=*-*-* 02:30</text>
+<rect x="30" y="158" width="180" height="58" rx="8" fill="#f2f2f2" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="120" y="193" font-family="sans-serif" font-size="16" font-weight="bold" fill="#111111" text-anchor="middle">Journal</text>
+<rect x="210" y="158" width="280" height="58" rx="8" fill="#ffffff" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="350" y="193" font-family="sans-serif" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">mail ou redirection manuelle</text>
+<rect x="490" y="158" width="280" height="58" rx="8" fill="#ffffff" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="630" y="193" font-family="monospace" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">journalctl -u service</text>
+<rect x="30" y="216" width="180" height="58" rx="8" fill="#f2f2f2" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="120" y="251" font-family="sans-serif" font-size="16" font-weight="bold" fill="#111111" text-anchor="middle">Rattrapage</text>
+<rect x="210" y="216" width="280" height="58" rx="8" fill="#ffffff" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="350" y="251" font-family="sans-serif" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">non (exécution perdue)</text>
+<rect x="490" y="216" width="280" height="58" rx="8" fill="#ffffff" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="630" y="251" font-family="monospace" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">Persistent=true</text>
+<rect x="30" y="274" width="180" height="58" rx="8" fill="#f2f2f2" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="120" y="309" font-family="sans-serif" font-size="16" font-weight="bold" fill="#111111" text-anchor="middle">Dépendances</text>
+<rect x="210" y="274" width="280" height="58" rx="8" fill="#ffffff" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="350" y="309" font-family="sans-serif" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">aucune</text>
+<rect x="490" y="274" width="280" height="58" rx="8" fill="#ffffff" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="630" y="309" font-family="monospace" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">After=, Requires=, limites</text>
+<rect x="30" y="332" width="180" height="58" rx="8" fill="#f2f2f2" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="120" y="367" font-family="sans-serif" font-size="16" font-weight="bold" fill="#111111" text-anchor="middle">Test</text>
+<rect x="210" y="332" width="280" height="58" rx="8" fill="#ffffff" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="350" y="367" font-family="sans-serif" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">copier la commande à la main</text>
+<rect x="490" y="332" width="280" height="58" rx="8" fill="#ffffff" stroke="#1b2a41" stroke-width="2"/>
+<text xml:space="preserve" x="630" y="367" font-family="monospace" font-size="14" font-weight="normal" fill="#111111" text-anchor="middle">systemctl start x.service</text>
+<text xml:space="preserve" x="400" y="410" font-family="sans-serif" font-size="16" font-weight="normal" fill="#111111" text-anchor="middle">Cron pour le très simple ; timer dès qu'il faut journal, rattrapage ou dépendances.</text>
+</svg>

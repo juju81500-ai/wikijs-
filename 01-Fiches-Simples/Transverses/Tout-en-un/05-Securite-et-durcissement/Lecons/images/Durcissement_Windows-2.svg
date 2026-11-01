@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" width="800" height="330" role="img" aria-labelledby="t d">
+<title id="t">Ordre d'application des GPO : local, site, domaine, unité d'organisation</title>
+<desc id="d">Quatre niveaux appliqués dans l'ordre LSDOU ; le dernier appliqué l'emporte en cas de conflit, sauf paramètres imposés ou blocage d'héritage.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a41"/></marker></defs>
+<rect width="800" height="330" fill="#ffffff"/>
+<text x="400" y="34" font-size="22" fill="#111111" text-anchor="middle" font-weight="bold" font-family="sans-serif">GPO : ordre LSDOU, le dernier appliqué gagne</text>
+<rect x="20" y="80" width="160" height="110" rx="10" fill="#e8f1fb" stroke="#1b2a41" stroke-width="2"/>
+<text x="100.0" y="119.8" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">L</text>
+<text x="100.0" y="140.6" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Stratégie</text>
+<text x="100.0" y="161.4" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">locale</text>
+<line x1="180" y1="135" x2="216" y2="135" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<rect x="216" y="80" width="160" height="110" rx="10" fill="#e8f1fb" stroke="#1b2a41" stroke-width="2"/>
+<text x="296.0" y="119.8" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">S</text>
+<text x="296.0" y="140.6" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Site</text>
+<text x="296.0" y="161.4" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">AD</text>
+<line x1="376" y1="135" x2="412" y2="135" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<rect x="412" y="80" width="160" height="110" rx="10" fill="#fff3c4" stroke="#1b2a41" stroke-width="2"/>
+<text x="492.0" y="119.8" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">D</text>
+<text x="492.0" y="140.6" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Domaine</text>
+<text x="492.0" y="161.4" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">example.test</text>
+<line x1="572" y1="135" x2="608" y2="135" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<rect x="608" y="80" width="160" height="110" rx="10" fill="#e3f4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="688.0" y="119.8" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">OU</text>
+<text x="688.0" y="140.6" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Unité d'org.</text>
+<text x="688.0" y="161.4" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Postes-Serveurs</text>
+<text x="400" y="225" font-size="17" fill="#111111" text-anchor="middle" font-weight="bold" font-family="sans-serif">priorité croissante  →</text>
+<rect x="40" y="250" width="720" height="55" rx="10" fill="#fff3c4" stroke="#1b2a41" stroke-width="2"/>
+<text x="400.0" y="282.75" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Contrôles : gpresult /r (résultat appliqué) et gpupdate /force (actualisation)</text>
+</svg>

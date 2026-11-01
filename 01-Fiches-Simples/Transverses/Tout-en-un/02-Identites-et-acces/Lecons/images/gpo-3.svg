@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 440" role="img" aria-labelledby="t d" font-family="sans-serif">
+  <title id="t">Maquette du laboratoire GPO : domaine, unités d'organisation et liens de GPO</title>
+  <desc id="d">Arborescence du domaine example.test avec deux GPO de domaine, puis l'OU Entreprise contenant les OU Postes et Utilisateurs. La GPO « Lab-Verrouillage-Ecran » est liée à l'OU Postes, la GPO « Lab-Restrictions-Utilisateur » est liée à l'OU Utilisateurs, et la GPO « Lab-Poste-Portable » est liée à Postes avec un filtre WMI. Les machines SRV-DC01 et PC-W11-01 sont indiquées.</desc>
+  <rect width="800" height="440" fill="#ffffff"/>
+  <text x="400" y="28" font-size="20" font-weight="bold" text-anchor="middle" fill="#0b2e59">Maquette du laboratoire GPO</text>
+
+  <rect x="260" y="48" width="280" height="56" rx="8" fill="#d6e6f8" stroke="#0b2e59" stroke-width="3"/>
+  <text x="400" y="72" font-size="16" font-weight="bold" text-anchor="middle" fill="#0b2e59">Domaine example.test</text>
+  <text x="400" y="93" font-size="14" text-anchor="middle" fill="#111111">GPO liée : Default Domain Policy</text>
+
+  <line x1="400" y1="104" x2="400" y2="132" stroke="#333333" stroke-width="3"/>
+  <rect x="260" y="132" width="280" height="50" rx="8" fill="#d9f2d9" stroke="#1b5e20" stroke-width="3"/>
+  <text x="400" y="163" font-size="16" font-weight="bold" text-anchor="middle" fill="#1b5e20">OU=Entreprise</text>
+
+  <line x1="400" y1="182" x2="400" y2="204" stroke="#333333" stroke-width="3"/>
+  <line x1="200" y1="204" x2="600" y2="204" stroke="#333333" stroke-width="3"/>
+  <line x1="200" y1="204" x2="200" y2="226" stroke="#333333" stroke-width="3"/>
+  <line x1="600" y1="204" x2="600" y2="226" stroke="#333333" stroke-width="3"/>
+
+  <rect x="60" y="226" width="280" height="100" rx="8" fill="#d9f2d9" stroke="#1b5e20" stroke-width="3"/>
+  <text x="200" y="252" font-size="16" font-weight="bold" text-anchor="middle" fill="#1b5e20">OU=Postes</text>
+  <text x="200" y="276" font-size="14" text-anchor="middle" fill="#111111">GPO : Lab-Verrouillage-Ecran</text>
+  <text x="200" y="298" font-size="14" text-anchor="middle" fill="#111111">GPO : Lab-Poste-Portable</text>
+  <text x="200" y="318" font-size="13" text-anchor="middle" fill="#7a1010">(filtre WMI : type de châssis)</text>
+
+  <rect x="460" y="226" width="280" height="100" rx="8" fill="#d9f2d9" stroke="#1b5e20" stroke-width="3"/>
+  <text x="600" y="252" font-size="16" font-weight="bold" text-anchor="middle" fill="#1b5e20">OU=Utilisateurs</text>
+  <text x="600" y="282" font-size="14" text-anchor="middle" fill="#111111">GPO : Lab-Restrictions-Utilisateur</text>
+  <text x="600" y="304" font-size="13" text-anchor="middle" fill="#7a1010">(filtrage de sécurité : GG_Standard)</text>
+
+  <rect x="60" y="356" width="280" height="64" rx="8" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <text x="200" y="382" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">PC-W11-01 (client)</text>
+  <text x="200" y="404" font-size="14" text-anchor="middle" fill="#111111">192.0.2.50 - dans OU=Postes</text>
+  <line x1="200" y1="326" x2="200" y2="356" stroke="#333333" stroke-width="3" stroke-dasharray="6 4"/>
+
+  <rect x="460" y="356" width="280" height="64" rx="8" fill="#ffffff" stroke="#333333" stroke-width="3"/>
+  <text x="600" y="382" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Utilisateur alice.martin</text>
+  <text x="600" y="404" font-size="14" text-anchor="middle" fill="#111111">membre de GG_Standard</text>
+  <line x1="600" y1="326" x2="600" y2="356" stroke="#333333" stroke-width="3" stroke-dasharray="6 4"/>
+
+  <text x="400" y="395" font-size="14" text-anchor="middle" fill="#111111">DC : SRV-DC01</text>
+  <text x="400" y="414" font-size="14" text-anchor="middle" fill="#111111">192.0.2.10</text>
+</svg>

@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 420" width="800" height="420" role="img" aria-labelledby="t d">
+<title id="t">Chaîne de contrôle d'un durcissement SSH</title>
+<desc id="d">Un poste d'administration se connecte au serveur ; les directives clés de sshd_config sont validées par sshd -t puis testées depuis une seconde session, avec une session de secours restée ouverte.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a41"/></marker></defs>
+<rect width="800" height="420" fill="#ffffff"/>
+<text x="400" y="34" font-size="22" fill="#111111" text-anchor="middle" font-weight="bold" font-family="sans-serif">SSH : de la directive au test</text>
+<rect x="20" y="80" width="170" height="90" rx="10" fill="#e8f1fb" stroke="#1b2a41" stroke-width="2"/>
+<text x="105.0" y="109.8" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Poste admin</text>
+<text x="105.0" y="130.6" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">192.0.2.10</text>
+<text x="105.0" y="151.4" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">clé privée</text>
+<rect x="610" y="80" width="170" height="90" rx="10" fill="#e8f1fb" stroke="#1b2a41" stroke-width="2"/>
+<text x="695.0" y="109.8" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Serveur</text>
+<text x="695.0" y="130.6" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">198.51.100.20</text>
+<text x="695.0" y="151.4" font-size="16" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">sshd : port 22</text>
+<line x1="190" y1="115" x2="610" y2="115" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<text x="400" y="105" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">session n°2 : test</text>
+<line x1="190" y1="145" x2="610" y2="145" stroke="#2a6f2a" stroke-width="3" stroke-dasharray="8 6" marker-end="url(#a)"/>
+<text x="400" y="166" font-size="15" fill="#2a6f2a" text-anchor="middle" font-weight="normal" font-family="sans-serif">session n°1 : secours (reste ouverte)</text>
+<rect x="20" y="210" width="360" height="150" rx="10" fill="#fff3c4" stroke="#1b2a41" stroke-width="2"/>
+<text x="200.0" y="251.25" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Directives à vérifier (sshd -T)</text>
+<text x="200.0" y="270.75" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">PermitRootLogin no</text>
+<text x="200.0" y="290.25" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">PasswordAuthentication no</text>
+<text x="200.0" y="309.75" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">PubkeyAuthentication yes</text>
+<text x="200.0" y="329.25" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">AllowUsers admin-example</text>
+<rect x="420" y="210" width="360" height="150" rx="10" fill="#e3f4e1" stroke="#1b2a41" stroke-width="2"/>
+<text x="600.0" y="251.25" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">Procédure</text>
+<text x="600.0" y="270.75" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">1. cp sshd_config en .bak</text>
+<text x="600.0" y="290.25" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">2. sshd -t  (syntaxe)</text>
+<text x="600.0" y="309.75" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">3. recharger (pas redémarrer)</text>
+<text x="600.0" y="329.25" font-size="15" fill="#111111" text-anchor="middle" font-weight="normal" font-family="sans-serif">4. tester la session n°2</text>
+<text x="400" y="395" font-size="15" fill="#111111" text-anchor="middle" font-weight="bold" font-family="sans-serif">Une seule règle d'or : la session n°1 ne se ferme qu'après le succès de la n°2.</text>
+</svg>

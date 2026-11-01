@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 640" width="820" height="640" role="img" aria-labelledby="t d">
+<title id="t">Arbre de décision : service inaccessible depuis un poste</title>
+<desc id="d">Arbre en cinq questions : adresse IP valide, passerelle joignable, nom résolu, port du service joignable, puis cause applicative ou de compte. Chaque réponse négative mène à une action de vérification.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#333333"/></marker></defs>
+<rect width="820" height="640" fill="#ffffff"/>
+<text x="410" y="30" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="19" font-weight="bold" text-anchor="middle" fill="#111111">Arbre de décision : « je n&#x27;accède plus au service »</text>
+<rect x="60" y="55" width="330" height="60" rx="10" fill="#fff4d6" stroke="#8a5a00" stroke-width="2"/>
+<text x="225.0" y="89.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Le poste a-t-il une adresse IP valide ?</text>
+<rect x="480" y="55" width="300" height="60" rx="10" fill="#fde8e8" stroke="#9b1c1c" stroke-width="2"/>
+<text x="630.0" y="81.05" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">Vérifier câble, Wi-Fi, DHCP</text>
+<text x="630.0" y="98.05" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">(adresse en 169.254.x.x = DHCP absent)</text>
+<path d="M390,85 L480,85" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<text x="435" y="77" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#9b1c1c">non</text>
+<path d="M225,115 L225,160" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<text x="235" y="143" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#1d6b2f">oui</text>
+<rect x="60" y="160" width="330" height="60" rx="10" fill="#fff4d6" stroke="#8a5a00" stroke-width="2"/>
+<text x="225.0" y="195.25" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">La passerelle répond-elle au ping ?</text>
+<rect x="480" y="160" width="300" height="60" rx="10" fill="#fde8e8" stroke="#9b1c1c" stroke-width="2"/>
+<text x="630.0" y="186.2" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" text-anchor="middle" fill="#111111">Problème de LAN local :</text>
+<text x="630.0" y="202.2" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" text-anchor="middle" fill="#111111">VLAN, port de commutateur, pare-feu local</text>
+<path d="M390,190 L480,190" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<text x="435" y="182" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#9b1c1c">non</text>
+<path d="M225,220 L225,265" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<text x="235" y="248" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#1d6b2f">oui</text>
+<rect x="60" y="265" width="330" height="60" rx="10" fill="#fff4d6" stroke="#8a5a00" stroke-width="2"/>
+<text x="225.0" y="299.9" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Le nom du service est-il résolu (DNS) ?</text>
+<rect x="480" y="265" width="300" height="60" rx="10" fill="#fde8e8" stroke="#9b1c1c" stroke-width="2"/>
+<text x="630.0" y="291.05" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">Vérifier serveurs DNS configurés,</text>
+<text x="630.0" y="308.05" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">tester avec une IP de documentation</text>
+<path d="M390,295 L480,295" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<text x="435" y="287" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#9b1c1c">non</text>
+<path d="M225,325 L225,370" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<text x="235" y="353" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#1d6b2f">oui</text>
+<rect x="60" y="370" width="330" height="60" rx="10" fill="#fff4d6" stroke="#8a5a00" stroke-width="2"/>
+<text x="225.0" y="405.25" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">Le port du service est-il joignable ?</text>
+<rect x="480" y="370" width="300" height="60" rx="10" fill="#fde8e8" stroke="#9b1c1c" stroke-width="2"/>
+<text x="630.0" y="396.05" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">Pare-feu, service arrêté,</text>
+<text x="630.0" y="413.05" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">règle de filtrage, proxy</text>
+<path d="M390,400 L480,400" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<text x="435" y="392" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#9b1c1c">non</text>
+<path d="M225,430 L225,475" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<text x="235" y="458" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="start" fill="#1d6b2f">oui</text>
+<rect x="60" y="475" width="330" height="60" rx="10" fill="#fff4d6" stroke="#8a5a00" stroke-width="2"/>
+<text x="225.0" y="509.2" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="12" font-weight="normal" text-anchor="middle" fill="#111111">Un autre compte / un autre poste réussit-il ?</text>
+<rect x="480" y="475" width="300" height="60" rx="10" fill="#e3f5e6" stroke="#1d6b2f" stroke-width="2"/>
+<text x="630.0" y="501.05" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">Oui : problème de compte ou de poste</text>
+<text x="630.0" y="518.05" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">Non : panne côté serveur ou application</text>
+<path d="M390,505 L480,505" fill="none" stroke="#333333" stroke-width="2" marker-end="url(#a)"/>
+<text x="435" y="497" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#9b1c1c">non</text>
+<text x="410" y="610" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">Jaune : question à trancher par un test — Rouge : zone suspecte — Vert : conclusion</text>
+</svg>

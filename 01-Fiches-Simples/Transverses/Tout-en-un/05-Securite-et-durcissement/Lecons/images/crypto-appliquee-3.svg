@@ -1,0 +1,35 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 440" width="900" height="440" role="img" aria-labelledby="t d">
+<title id="t">Chaîne de confiance des certificats</title>
+<desc id="d">Une autorité racine présente dans le magasin de confiance signe une autorité intermédiaire, qui signe le certificat du serveur www.example.com. Le client vérifie chaque signature, les dates et le nom.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1b1b1b"/></marker></defs>
+<rect width="900" height="440" fill="#ffffff"/>
+<text x="450" y="32" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111">Chaîne de confiance d'un certificat serveur</text>
+<rect x="300" y="60" width="300" height="70" rx="8" fill="#ffe08a" stroke="#8a5a00" stroke-width="2"/>
+<text x="450.0" y="90.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">AC racine (Example Root CA)</text>
+<text x="450.0" y="109.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">auto-signée, dans le magasin de confiance</text>
+<rect x="300" y="170" width="300" height="70" rx="8" fill="#dbe7ff" stroke="#1a3d7c" stroke-width="2"/>
+<text x="450.0" y="200.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">AC intermédiaire</text>
+<text x="450.0" y="219.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">signée par la racine</text>
+<rect x="300" y="280" width="300" height="70" rx="8" fill="#b8e6c4" stroke="#1c6b34" stroke-width="2"/>
+<text x="450.0" y="310.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#111111">Certificat www.example.com</text>
+<text x="450.0" y="328.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">SAN, dates, clé publique, signé par l'intermédiaire</text>
+<line x1="450" y1="130" x2="450" y2="170" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="490" y="155" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">signe</text>
+<line x1="450" y1="240" x2="450" y2="280" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="490" y="265" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">signe</text>
+<rect x="20" y="150" width="230" height="130" rx="8" fill="#ffffff" stroke="#333333" stroke-width="2"/>
+<text x="135.0" y="181.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Le client vérifie :</text>
+<text x="135.0" y="200.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">1. signatures de la chaîne</text>
+<text x="135.0" y="219.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">2. dates de validité</text>
+<text x="135.0" y="238.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">3. nom demandé ∈ SAN</text>
+<text x="135.0" y="257.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">4. révocation (OCSP/CRL)</text>
+<rect x="650" y="150" width="230" height="130" rx="8" fill="#fff0f0" stroke="#8b0000" stroke-width="2"/>
+<text x="765.0" y="181.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Échecs classiques :</text>
+<text x="765.0" y="200.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">certificat expiré</text>
+<text x="765.0" y="219.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">nom non couvert</text>
+<text x="765.0" y="238.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">intermédiaire manquant</text>
+<text x="765.0" y="257.9" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">racine inconnue</text>
+<line x1="300" y1="215" x2="250" y2="215" stroke="#333333" stroke-width="2.2" marker-end="url(#a)"/>
+<line x1="650" y1="215" x2="600" y2="215" stroke="#8b0000" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#a)"/>
+<text x="450" y="395" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">La confiance vient de la signature et du magasin de confiance, pas du cadenas affiché.</text>
+</svg>

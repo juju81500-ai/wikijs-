@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 460" width="900" height="460" role="img" aria-labelledby="t d">
+<title id="t">Chiffrement symétrique et asymétrique</title>
+<desc id="d">Deux schémas : une clé secrète partagée chiffre et déchiffre ; une paire de clés publique et privée permet à Alice d'envoyer un message que seule la clé privée de Bob peut ouvrir.</desc>
+<defs><marker id="a" markerWidth="10" markerHeight="8" refX="9" refY="4" orient="auto"><path d="M0,0 L10,4 L0,8 z" fill="#1b1b1b"/></marker></defs>
+<rect width="900" height="460" fill="#ffffff"/>
+<text x="450" y="32" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="bold" text-anchor="middle" fill="#111111">Symétrique et asymétrique : qui possède quelle clé ?</text>
+<rect x="20" y="50" width="430" height="390" rx="12" fill="#fff7e0" stroke="#8a5a00" stroke-width="2" stroke-dasharray="10 6"/>
+<text x="32" y="72" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#8a5a00">Symétrique : une seule clé secrète</text>
+<rect x="45" y="110" width="110" height="60" rx="8" fill="#ffffff" stroke="#8a5a00" stroke-width="2"/>
+<text x="100.0" y="135.25" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Alice</text>
+<text x="100.0" y="155.25" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">texte clair</text>
+<rect x="295" y="110" width="130" height="60" rx="8" fill="#ffffff" stroke="#8a5a00" stroke-width="2"/>
+<text x="360.0" y="135.25" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Bob</text>
+<text x="360.0" y="155.25" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">texte clair</text>
+<rect x="170" y="215" width="110" height="50" rx="8" fill="#ffe08a" stroke="#8a5a00" stroke-width="2"/>
+<text x="225.0" y="235.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="bold" text-anchor="middle" fill="#111111">Clé secrète K</text>
+<text x="225.0" y="254.4" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">(partagée)</text>
+<line x1="155" y1="140" x2="295" y2="140" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="225" y="128" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">message chiffré avec K</text>
+<line x1="225" y1="215" x2="225" y2="150" stroke="#8a5a00" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#a)"/>
+<text x="235" y="300" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Rapide, adapté aux gros volumes (AES-GCM,</text>
+<text x="235" y="320" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">ChaCha20-Poly1305).</text>
+<text x="235" y="355" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#8b0000">Difficulté : comment transmettre K</text>
+<text x="235" y="375" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#8b0000">sans qu'elle soit interceptée ?</text>
+<rect x="470" y="50" width="410" height="390" rx="12" fill="#e6f6ea" stroke="#1c6b34" stroke-width="2" stroke-dasharray="10 6"/>
+<text x="482" y="72" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="start" fill="#1c6b34">Asymétrique : une paire de clés</text>
+<rect x="490" y="110" width="110" height="60" rx="8" fill="#ffffff" stroke="#1c6b34" stroke-width="2"/>
+<text x="545.0" y="135.25" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Alice</text>
+<text x="545.0" y="155.25" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">texte clair</text>
+<rect x="750" y="110" width="110" height="60" rx="8" fill="#ffffff" stroke="#1c6b34" stroke-width="2"/>
+<text x="805.0" y="135.25" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="bold" text-anchor="middle" fill="#111111">Bob</text>
+<text x="805.0" y="155.25" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="normal" text-anchor="middle" fill="#111111">clé privée</text>
+<rect x="600" y="215" width="130" height="50" rx="8" fill="#b8e6c4" stroke="#1c6b34" stroke-width="2"/>
+<text x="665.0" y="235.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="bold" text-anchor="middle" fill="#111111">Clé publique de Bob</text>
+<text x="665.0" y="253.55" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">(diffusable)</text>
+<line x1="600" y1="140" x2="750" y2="140" stroke="#1b1b1b" stroke-width="2.2" marker-end="url(#a)"/>
+<text x="675" y="128" font-family="Arial, Helvetica, sans-serif" font-size="13" font-weight="normal" text-anchor="middle" fill="#111111">chiffré avec la publique</text>
+<line x1="665" y1="215" x2="665" y2="150" stroke="#1c6b34" stroke-width="2.2" stroke-dasharray="7 5" marker-end="url(#a)"/>
+<text x="675" y="300" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Seule la clé privée de Bob déchiffre.</text>
+<text x="675" y="320" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">Plus lent : sert à échanger une clé de session</text>
+<text x="675" y="340" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#111111">ou à signer, pas à chiffrer de gros fichiers.</text>
+<text x="675" y="375" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="normal" text-anchor="middle" fill="#8b0000">La clé privée ne quitte jamais son propriétaire.</text>
+</svg>

@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" role="img" aria-labelledby="t d">
+  <title id="t">Fichiers SSH côté client et côté serveur, avec leurs permissions</title>
+  <desc id="d">Côté client : le dossier ~/.ssh en 700 contient id_ed25519 en 600, id_ed25519.pub en 644, config en 600 et known_hosts en 644 ou 600. Côté serveur : /etc/ssh/sshd_config en 644 appartenant à root, et ~/.ssh/authorized_keys en 600 dans le dossier personnel de l'utilisateur.</desc>
+  <rect width="800" height="400" fill="#ffffff"/>
+  <text x="400" y="32" text-anchor="middle" font-family="sans-serif" font-size="22" font-weight="bold" fill="#111111">Où vivent les fichiers SSH (et leurs droits)</text>
+  <g font-family="sans-serif" font-size="16" fill="#111111">
+    <rect x="20" y="55" width="370" height="260" rx="10" fill="#eff6ff" stroke="#1d4ed8" stroke-width="3"/>
+    <text x="205" y="84" text-anchor="middle" font-size="19" font-weight="bold">Côté client (poste)</text>
+    <text x="40" y="118" font-family="monospace" font-size="16" font-weight="bold">~/.ssh/            700</text>
+    <text x="60" y="148" font-family="monospace" font-size="16">id_ed25519       600  privée</text>
+    <text x="60" y="176" font-family="monospace" font-size="16">id_ed25519.pub   644  publique</text>
+    <text x="60" y="204" font-family="monospace" font-size="16">config           600  alias, options</text>
+    <text x="60" y="232" font-family="monospace" font-size="16">known_hosts      644  empreintes</text>
+    <text x="60" y="260" font-family="monospace" font-size="16">/etc/ssh/ssh_config     global</text>
+    <text x="40" y="294" font-size="15">sshd refuse les clés si droits trop larges.</text>
+
+    <rect x="410" y="55" width="370" height="260" rx="10" fill="#f0fdf4" stroke="#15803d" stroke-width="3"/>
+    <text x="595" y="84" text-anchor="middle" font-size="19" font-weight="bold">Côté serveur</text>
+    <text x="430" y="118" font-family="monospace" font-size="16" font-weight="bold">/etc/ssh/</text>
+    <text x="450" y="148" font-family="monospace" font-size="16">sshd_config      644  root</text>
+    <text x="450" y="176" font-family="monospace" font-size="16">sshd_config.d/*.conf</text>
+    <text x="450" y="204" font-family="monospace" font-size="16">ssh_host_*_key   600  hôte</text>
+    <text x="430" y="238" font-family="monospace" font-size="16" font-weight="bold">~alice/.ssh/       700</text>
+    <text x="450" y="266" font-family="monospace" font-size="16">authorized_keys  600</text>
+    <text x="430" y="294" font-size="15">Dossier perso non inscriptible par autrui.</text>
+  </g>
+  <rect x="20" y="335" width="760" height="50" rx="8" fill="#fffbeb" stroke="#92400e" stroke-width="2"/>
+  <text x="36" y="366" font-family="sans-serif" font-size="16" fill="#111111">Test sans risque : « ssh -G nom-d-hote » affiche la configuration effective sans se connecter.</text>
+</svg>

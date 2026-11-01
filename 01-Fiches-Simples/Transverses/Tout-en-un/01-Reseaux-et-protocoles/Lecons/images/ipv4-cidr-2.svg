@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 330" width="800" height="330" role="img" aria-labelledby="t d">
+  <title id="t">Découpage de 192.0.2.0/24 en quatre sous-réseaux /26</title>
+  <desc id="d">Une barre représentant les 256 adresses de 192.0.2.0/24 est découpée en quatre blocs égaux de 64 adresses : 192.0.2.0/26, 192.0.2.64/26, 192.0.2.128/26 et 192.0.2.192/26, avec pour chacun la plage d'hôtes et l'adresse de diffusion.</desc>
+  <rect width="800" height="330" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#111111">
+  <text x="400" y="26" font-size="20" font-weight="bold" text-anchor="middle">192.0.2.0/24 → 4 sous-réseaux /26 (2 bits empruntés)</text>
+<rect x="20" y="50" width="190" height="130" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2.5"/>
+<text x="115" y="78" text-anchor="middle" font-weight="bold">192.0.2.0/26</text>
+<text x="115" y="104" text-anchor="middle" font-size="13">hôtes .1 à .62</text>
+<text x="115" y="124" text-anchor="middle" font-size="13">diffusion .63</text>
+<text x="115" y="150" text-anchor="middle" font-size="12">bits 25-26 : 00</text>
+<text x="115" y="168" text-anchor="middle" font-size="12">64 adresses</text>
+<rect x="210" y="50" width="190" height="130" fill="#dcfce7" stroke="#14532d" stroke-width="2.5"/>
+<text x="305" y="78" text-anchor="middle" font-weight="bold">192.0.2.64/26</text>
+<text x="305" y="104" text-anchor="middle" font-size="13">hôtes .65 à .126</text>
+<text x="305" y="124" text-anchor="middle" font-size="13">diffusion .127</text>
+<text x="305" y="150" text-anchor="middle" font-size="12">bits 25-26 : 01</text>
+<text x="305" y="168" text-anchor="middle" font-size="12">64 adresses</text>
+<rect x="400" y="50" width="190" height="130" fill="#fef9c3" stroke="#713f12" stroke-width="2.5"/>
+<text x="495" y="78" text-anchor="middle" font-weight="bold">192.0.2.128/26</text>
+<text x="495" y="104" text-anchor="middle" font-size="13">hôtes .129 à .190</text>
+<text x="495" y="124" text-anchor="middle" font-size="13">diffusion .191</text>
+<text x="495" y="150" text-anchor="middle" font-size="12">bits 25-26 : 10</text>
+<text x="495" y="168" text-anchor="middle" font-size="12">64 adresses</text>
+<rect x="590" y="50" width="190" height="130" fill="#fee2e2" stroke="#7f1d1d" stroke-width="2.5"/>
+<text x="685" y="78" text-anchor="middle" font-weight="bold">192.0.2.192/26</text>
+<text x="685" y="104" text-anchor="middle" font-size="13">hôtes .193 à .254</text>
+<text x="685" y="124" text-anchor="middle" font-size="13">diffusion .255</text>
+<text x="685" y="150" text-anchor="middle" font-size="12">bits 25-26 : 11</text>
+<text x="685" y="168" text-anchor="middle" font-size="12">64 adresses</text>
+<line x1="20" y1="205" x2="780" y2="205" stroke="#111111" stroke-width="2"/>
+<line x1="20" y1="198" x2="20" y2="212" stroke="#111111" stroke-width="2"/>
+<text x="20" y="232" text-anchor="middle" font-size="13">.0</text>
+<line x1="210" y1="198" x2="210" y2="212" stroke="#111111" stroke-width="2"/>
+<text x="210" y="232" text-anchor="middle" font-size="13">.64</text>
+<line x1="400" y1="198" x2="400" y2="212" stroke="#111111" stroke-width="2"/>
+<text x="400" y="232" text-anchor="middle" font-size="13">.128</text>
+<line x1="590" y1="198" x2="590" y2="212" stroke="#111111" stroke-width="2"/>
+<text x="590" y="232" text-anchor="middle" font-size="13">.192</text>
+<line x1="780" y1="198" x2="780" y2="212" stroke="#111111" stroke-width="2"/>
+<text x="780" y="232" text-anchor="middle" font-size="13">.256</text>
+<text x="400" y="268" text-anchor="middle" font-size="14">Masque /24 = 255.255.255.0 → masque /26 = 255.255.255.192</text>
+<text x="400" y="290" text-anchor="middle" font-size="14">Pas (incrément) = 256 − 192 = 64</text>
+<text x="400" y="318" text-anchor="middle" font-size="12">Création originale du projet Pack Master (CC0). Plage de documentation RFC 5737.</text>
+</g></svg>

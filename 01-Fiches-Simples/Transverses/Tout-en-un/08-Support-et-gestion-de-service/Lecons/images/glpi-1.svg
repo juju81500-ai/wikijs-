@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" width="800" height="450" role="img" aria-labelledby="t d" font-family="Helvetica, Arial, sans-serif">
+<title id="t">Modèle de parc : éléments reliés</title>
+<desc id="d">Schéma conceptuel : une entité contient des ordinateurs reliés à un utilisateur, des logiciels, des périphériques et du matériel réseau ; des tickets peuvent être rattachés à chaque élément.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#34495e"/></marker></defs>
+<rect width="800" height="450" fill="#ffffff"/>
+<text x="400" y="34" font-size="20" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="400" dy="0">Le parc dans un outil de gestion : tout est relié</tspan></text>
+<rect x="300" y="60" width="200" height="55" rx="8" fill="#fff3cd" stroke="#8a6d00" stroke-width="2"/>
+<text x="400" y="93" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="400" dy="0">Entité (site, filiale)</tspan></text>
+<rect x="300" y="170" width="200" height="70" rx="8" fill="#e8f1fb" stroke="#2c5282" stroke-width="2"/>
+<text x="400" y="200" font-size="16" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="400" dy="0">Ordinateur</tspan></text>
+<text x="400" y="222" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="400" dy="0">nom, série, état, lieu</tspan></text>
+<line x1="400" y1="115" x2="400" y2="170" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="30" y="170" width="200" height="70" rx="8" fill="#e1f5e6" stroke="#1e6b34" stroke-width="2"/>
+<text x="130" y="200" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="130" dy="0">Utilisateur</tspan></text>
+<text x="130" y="222" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="130" dy="0">affectation</tspan></text>
+<rect x="570" y="170" width="200" height="70" rx="8" fill="#e1f5e6" stroke="#1e6b34" stroke-width="2"/>
+<text x="670" y="200" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="670" dy="0">Logiciels</tspan></text>
+<text x="670" y="222" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="670" dy="0">installés, licences</tspan></text>
+<rect x="30" y="300" width="200" height="70" rx="8" fill="#e1f5e6" stroke="#1e6b34" stroke-width="2"/>
+<text x="130" y="330" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="130" dy="0">Moniteur / périphérique</tspan></text>
+<text x="130" y="352" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="130" dy="0">connecté à</tspan></text>
+<rect x="570" y="300" width="200" height="70" rx="8" fill="#e1f5e6" stroke="#1e6b34" stroke-width="2"/>
+<text x="670" y="330" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="670" dy="0">Matériel réseau</tspan></text>
+<text x="670" y="352" font-size="13" text-anchor="middle" font-weight="normal" fill="#1b2a3a"><tspan x="670" dy="0">port, VLAN, IP</tspan></text>
+<line x1="230" y1="205" x2="300" y2="205" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="500" y1="205" x2="570" y2="205" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="300" y1="225" x2="230" y2="310" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="500" y1="225" x2="570" y2="310" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+<rect x="250" y="370" width="300" height="55" rx="8" fill="#fde2e2" stroke="#9b1c1c" stroke-width="2"/>
+<text x="400" y="403" font-size="15" text-anchor="middle" font-weight="bold" fill="#1b2a3a"><tspan x="400" dy="0">Tickets liés à l&#x27;élément</tspan></text>
+<line x1="400" y1="370" x2="400" y2="242" stroke="#34495e" stroke-width="2.5" marker-end="url(#a)"/>
+
+</svg>

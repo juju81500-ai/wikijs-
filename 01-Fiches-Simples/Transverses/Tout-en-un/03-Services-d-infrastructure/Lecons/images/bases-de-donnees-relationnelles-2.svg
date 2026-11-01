@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 430" width="800" height="430" font-family="DejaVu Sans, Arial, Helvetica, sans-serif" role="img">
+<title>Architecture client-serveur d'un SGBD relationnel</title>
+<desc>Trois types de clients (outil en ligne de commande, application web, tâche de sauvegarde) se connectent au serveur de base de données sur le port 3306 pour MariaDB ou 5432 pour PostgreSQL. Le serveur vérifie les comptes et droits, exécute les requêtes SQL, et lit ou écrit le répertoire de données et les journaux.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b1b1b"/></marker></defs>
+<rect width="800" height="430" fill="#ffffff"/>
+<text x="400" y="30" text-anchor="middle" font-size="18" fill="#111111" font-weight="bold">Un serveur de base de données, plusieurs types de clients</text>
+<rect x="20" y="70" width="190" height="70" rx="8" fill="#fef3c7" stroke="#92400e" stroke-width="2"/>
+<text x="115.0" y="100.1" text-anchor="middle" font-size="16" fill="#111111">mysql / psql</text>
+<text x="115.0" y="121.1" text-anchor="middle" font-size="16" fill="#111111">(administrateur)</text>
+<rect x="20" y="170" width="190" height="70" rx="8" fill="#fef3c7" stroke="#92400e" stroke-width="2"/>
+<text x="115.0" y="200.1" text-anchor="middle" font-size="16" fill="#111111">Application web</text>
+<text x="115.0" y="221.1" text-anchor="middle" font-size="16" fill="#111111">compte applicatif</text>
+<rect x="20" y="270" width="190" height="70" rx="8" fill="#fef3c7" stroke="#92400e" stroke-width="2"/>
+<text x="115.0" y="300.1" text-anchor="middle" font-size="16" fill="#111111">Tâche de sauvegarde</text>
+<text x="115.0" y="321.1" text-anchor="middle" font-size="16" fill="#111111">compte lecture seule</text>
+<rect x="300" y="60" width="230" height="300" rx="8" fill="#dcfce7" stroke="#14532d" stroke-width="2"/>
+<text x="415.0" y="145.25" text-anchor="middle" font-size="15" fill="#111111" font-weight="bold">Serveur SGBD</text>
+<text x="415.0" y="165.25" text-anchor="middle" font-size="15" fill="#111111">MariaDB :3306</text>
+<text x="415.0" y="185.25" text-anchor="middle" font-size="15" fill="#111111">PostgreSQL :5432</text>
+<text x="415.0" y="205.25" text-anchor="middle" font-size="15" fill="#111111"></text>
+<text x="415.0" y="225.25" text-anchor="middle" font-size="15" fill="#111111">1. authentification</text>
+<text x="415.0" y="245.25" text-anchor="middle" font-size="15" fill="#111111">2. contrôle des droits</text>
+<text x="415.0" y="265.25" text-anchor="middle" font-size="15" fill="#111111">3. exécution du SQL</text>
+<text x="415.0" y="285.25" text-anchor="middle" font-size="15" fill="#111111">4. écriture journalisée</text>
+<rect x="610" y="70" width="170" height="90" rx="8" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/>
+<text x="695.0" y="101.55" text-anchor="middle" font-size="13" fill="#111111">Données</text>
+<text x="695.0" y="119.55" text-anchor="middle" font-size="13" fill="#111111">/var/lib/mysql ou</text>
+<text x="695.0" y="137.55" text-anchor="middle" font-size="13" fill="#111111">/var/lib/postgresql</text>
+<rect x="610" y="190" width="170" height="70" rx="8" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/>
+<text x="695.0" y="220.55" text-anchor="middle" font-size="13" fill="#111111">Journaux</text>
+<text x="695.0" y="238.55" text-anchor="middle" font-size="13" fill="#111111">erreurs, requêtes lentes</text>
+<rect x="610" y="290" width="170" height="70" rx="8" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/>
+<text x="695.0" y="320.55" text-anchor="middle" font-size="13" fill="#111111">Configuration</text>
+<text x="695.0" y="338.55" text-anchor="middle" font-size="13" fill="#111111">bind-address, pg_hba</text>
+<line x1="212" y1="105" x2="298" y2="125" stroke="#1b1b1b" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="212" y1="205" x2="298" y2="205" stroke="#1b1b1b" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="212" y1="305" x2="298" y2="285" stroke="#1b1b1b" stroke-width="2.5" marker-end="url(#a)"/>
+<line x1="532" y1="115" x2="608" y2="115" stroke="#1b1b1b" stroke-width="2.5" marker-end="url(#a)" marker-start="url(#a)"/>
+<line x1="532" y1="225" x2="608" y2="225" stroke="#1b1b1b" stroke-width="2.5" marker-end="url(#a)" marker-start="url(#a)"/>
+<line x1="532" y1="325" x2="608" y2="325" stroke="#1b1b1b" stroke-width="2.5" marker-end="url(#a)" marker-start="url(#a)"/>
+<rect x="20" y="385" width="760" height="35" rx="8" fill="#f3f4f6" stroke="#374151" stroke-width="2" stroke-dasharray="6 4"/>
+<text x="400.0" y="407.4" text-anchor="middle" font-size="14" fill="#111111">Principe : un compte par usage, avec le minimum de droits nécessaires</text>
+</svg>

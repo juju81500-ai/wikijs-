@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img" aria-labelledby="t d">
+<title id="t">Flux d&#x27;import CSV vers Active Directory avec simulation</title>
+<desc id="d">Schéma : un fichier CSV est lu avec Import-Csv, chaque ligne est vérifiée, simulée avec WhatIf, puis appliquée, et les résultats sont journalisés.</desc>
+<defs><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1b2a41"/></marker></defs>
+<rect width="800" height="400" fill="#f7f9fc"/>
+<text x="400" y="36" font-family="sans-serif" font-size="23" fill="#111111" text-anchor="middle" font-weight="bold">Import CSV : lire, vérifier, simuler, appliquer, journaliser</text>
+<rect x="15" y="90" width="130" height="110" rx="8" fill="#dbeafe" stroke="#1b2a41" stroke-width="2"/>
+<text x="80.0" y="131.0" font-family="sans-serif" font-size="14" fill="#111111" text-anchor="middle" font-weight="bold">Fichier CSV</text>
+<text x="80.0" y="149.9" font-family="sans-serif" font-size="14" fill="#111111" text-anchor="middle">1 ligne =</text>
+<text x="80.0" y="168.8" font-family="sans-serif" font-size="14" fill="#111111" text-anchor="middle">1 compte</text>
+<rect x="170" y="90" width="130" height="110" rx="8" fill="#dcfce7" stroke="#1b2a41" stroke-width="2"/>
+<text x="235.0" y="131.0" font-family="sans-serif" font-size="14" fill="#111111" text-anchor="middle" font-weight="bold">Import-Csv</text>
+<text x="235.0" y="149.9" font-family="sans-serif" font-size="14" fill="#111111" text-anchor="middle">objets avec</text>
+<text x="235.0" y="168.8" font-family="sans-serif" font-size="14" fill="#111111" text-anchor="middle">colonnes</text>
+<rect x="325" y="90" width="130" height="110" rx="8" fill="#fef9c3" stroke="#1b2a41" stroke-width="2"/>
+<text x="390.0" y="131.0" font-family="sans-serif" font-size="14" fill="#111111" text-anchor="middle" font-weight="bold">Vérifier</text>
+<text x="390.0" y="149.9" font-family="sans-serif" font-size="14" fill="#111111" text-anchor="middle">champs vides,</text>
+<text x="390.0" y="168.8" font-family="sans-serif" font-size="14" fill="#111111" text-anchor="middle">doublons</text>
+<rect x="480" y="90" width="130" height="110" rx="8" fill="#ede9fe" stroke="#1b2a41" stroke-width="2"/>
+<text x="545.0" y="131.0" font-family="sans-serif" font-size="14" fill="#111111" text-anchor="middle" font-weight="bold">-WhatIf</text>
+<text x="545.0" y="149.9" font-family="sans-serif" font-size="14" fill="#111111" text-anchor="middle">simulation sans</text>
+<text x="545.0" y="168.8" font-family="sans-serif" font-size="14" fill="#111111" text-anchor="middle">effet réel</text>
+<rect x="635" y="90" width="130" height="110" rx="8" fill="#fee2e2" stroke="#1b2a41" stroke-width="2"/>
+<text x="700.0" y="131.0" font-family="sans-serif" font-size="14" fill="#111111" text-anchor="middle" font-weight="bold">New-ADUser</text>
+<text x="700.0" y="149.9" font-family="sans-serif" font-size="14" fill="#111111" text-anchor="middle">création réelle</text>
+<text x="700.0" y="168.8" font-family="sans-serif" font-size="14" fill="#111111" text-anchor="middle">après revue</text>
+<line x1="145" y1="145" x2="170" y2="145" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<line x1="300" y1="145" x2="325" y2="145" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<line x1="455" y1="145" x2="480" y2="145" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<line x1="610" y1="145" x2="635" y2="145" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)"/>
+<rect x="240" y="270" width="320" height="70" rx="8" fill="#ffffff" stroke="#1b2a41" stroke-width="2"/>
+<text x="400.0" y="299.8" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle" font-weight="bold">Journal</text>
+<text x="400.0" y="321.40000000000003" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">date · action · résultat · erreur</text>
+<line x1="700" y1="200" x2="560" y2="290" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)" stroke-dasharray="8 5"/>
+<line x1="400" y1="200" x2="400" y2="270" stroke="#1b2a41" stroke-width="3" marker-end="url(#a)" stroke-dasharray="8 5"/>
+<text x="400" y="375" font-family="sans-serif" font-size="16" fill="#111111" text-anchor="middle">Le journal sert de preuve et de moyen de relance en cas d&#x27;échec partiel.</text>
+</svg>

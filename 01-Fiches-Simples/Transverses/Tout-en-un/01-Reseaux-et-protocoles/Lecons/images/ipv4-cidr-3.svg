@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400" role="img" aria-labelledby="t d">
+  <title id="t">Exemple VLSM : 198.51.100.0/24 découpé en blocs de tailles différentes</title>
+  <desc id="d">Une barre de 256 adresses est découpée du plus grand au plus petit besoin : LAN A en /25 (0 à 127), LAN B en /26 (128 à 191), LAN C en /27 (192 à 223), deux liaisons point à point en /30 (224 à 227 et 228 à 231), et il reste 24 adresses libres de 232 à 255.</desc>
+  <rect width="800" height="400" fill="#ffffff"/>
+  <g font-family="sans-serif" font-size="14" fill="#111111">
+  <text x="400" y="26" font-size="20" font-weight="bold" text-anchor="middle">VLSM : 198.51.100.0/24 découpé selon les besoins</text>
+<rect x="40.0" y="50" width="360.0" height="80" fill="#dbeafe" stroke="#1e3a8a" stroke-width="2"/>
+<text x="220.0" y="96" text-anchor="middle" font-weight="bold" font-size="14">LAN A /25</text>
+<rect x="400.0" y="50" width="180.0" height="80" fill="#dcfce7" stroke="#14532d" stroke-width="2"/>
+<text x="490.0" y="96" text-anchor="middle" font-weight="bold" font-size="14">LAN B /26</text>
+<rect x="580.0" y="50" width="90.0" height="80" fill="#fef9c3" stroke="#713f12" stroke-width="2"/>
+<text x="625.0" y="96" text-anchor="middle" font-weight="bold" font-size="14">LAN C /27</text>
+<rect x="670.0" y="50" width="11.2" height="80" fill="#fecaca" stroke="#7f1d1d" stroke-width="2"/>
+<rect x="681.2" y="50" width="11.2" height="80" fill="#fca5a5" stroke="#7f1d1d" stroke-width="2"/>
+<rect x="692.5" y="50" width="67.5" height="80" fill="#e5e7eb" stroke="#374151" stroke-width="2"/>
+<text x="726.2" y="96" text-anchor="middle" font-weight="bold" font-size="12">libre</text>
+<line x1="40.0" y1="130" x2="40.0" y2="142" stroke="#111111" stroke-width="2"/><text x="40.0" y="158" text-anchor="middle" font-size="12">.0</text>
+<line x1="400.0" y1="130" x2="400.0" y2="142" stroke="#111111" stroke-width="2"/><text x="400.0" y="158" text-anchor="middle" font-size="12">.128</text>
+<line x1="580.0" y1="130" x2="580.0" y2="142" stroke="#111111" stroke-width="2"/><text x="580.0" y="158" text-anchor="middle" font-size="12">.192</text>
+<line x1="670.0" y1="130" x2="670.0" y2="142" stroke="#111111" stroke-width="2"/><text x="670.0" y="158" text-anchor="end" font-size="12">.224</text>
+<line x1="692.5" y1="130" x2="692.5" y2="142" stroke="#111111" stroke-width="2"/><text x="692.5" y="158" text-anchor="start" font-size="12">.232</text>
+<line x1="760.0" y1="130" x2="760.0" y2="142" stroke="#111111" stroke-width="2"/><text x="760.0" y="158" text-anchor="middle" font-size="12">.256</text>
+<rect x="40" y="176" width="22" height="22" fill="#dbeafe" stroke="#111111" stroke-width="1.5"/>
+<text x="74" y="193" font-weight="bold">LAN A</text><text x="150" y="193" font-size="13">besoin : 100 hôtes</text><text x="340" y="193" font-family="monospace" font-size="14">198.51.100.0/25</text><text x="570" y="193" font-size="13">→ 126 hôtes utiles</text>
+<rect x="40" y="210" width="22" height="22" fill="#dcfce7" stroke="#111111" stroke-width="1.5"/>
+<text x="74" y="227" font-weight="bold">LAN B</text><text x="150" y="227" font-size="13">besoin : 50 hôtes</text><text x="340" y="227" font-family="monospace" font-size="14">198.51.100.128/26</text><text x="570" y="227" font-size="13">→ 62 hôtes utiles</text>
+<rect x="40" y="244" width="22" height="22" fill="#fef9c3" stroke="#111111" stroke-width="1.5"/>
+<text x="74" y="261" font-weight="bold">LAN C</text><text x="150" y="261" font-size="13">besoin : 20 hôtes</text><text x="340" y="261" font-family="monospace" font-size="14">198.51.100.192/27</text><text x="570" y="261" font-size="13">→ 30 hôtes utiles</text>
+<rect x="40" y="278" width="22" height="22" fill="#fecaca" stroke="#111111" stroke-width="1.5"/>
+<text x="74" y="295" font-weight="bold">Lien 1</text><text x="150" y="295" font-size="13">besoin : 2 équipements</text><text x="340" y="295" font-family="monospace" font-size="14">198.51.100.224/30</text><text x="570" y="295" font-size="13">→ 2 hôtes utiles</text>
+<rect x="40" y="312" width="22" height="22" fill="#fca5a5" stroke="#111111" stroke-width="1.5"/>
+<text x="74" y="329" font-weight="bold">Lien 2</text><text x="150" y="329" font-size="13">besoin : 2 équipements</text><text x="340" y="329" font-family="monospace" font-size="14">198.51.100.228/30</text><text x="570" y="329" font-size="13">→ 2 hôtes utiles</text>
+<text x="400" y="372" text-anchor="middle" font-size="13">Règle : on place les plus gros blocs en premier, chacun sur une frontière alignée.</text>
+<text x="400" y="392" text-anchor="middle" font-size="12">Création originale du projet Pack Master (CC0). Plage de documentation RFC 5737.</text>
+</g></svg>
