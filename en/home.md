@@ -2,11 +2,11 @@
 title: Home
 description: Welcome to my wiki!
 published: true
-date: '2026-11-02T21:01:32.536Z'
+date: '2026-11-02T22:02:56.513Z'
 tags: []
-editor: visual
-dateCreated: '2026-11-02T21:01:32.536Z'
+editor: markdown
+dateCreated: '2026-11-02T22:02:56.513Z'
 ---
 
-Write some content here...gthyudg
-
+##test W
+rite some content here...
