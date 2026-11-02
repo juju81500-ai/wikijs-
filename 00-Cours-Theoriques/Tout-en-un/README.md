@@ -21,7 +21,7 @@ Les pages listées ici sont des bases de travail à décliner. Elles ne sont pas
 7. [Exploitation, supervision et sauvegarde](07-Exploitation-supervision-sauvegarde/README.md)
 8. [Support et gestion de service](08-Support-et-gestion-de-service/README.md)
 
-Les catégories sont des axes de classement sous le dossier de chaque OS/version, pas des procédures. Les thèmes ont été repérés à partir des sources publiques et doivent être vérifiés par la documentation officielle correspondant à la cible. Voir la [taxonomie et les sources publiques](../../../06-Documentation-ext/Sources_Publiques_TSSR_Pour_Fiches_Tout-en-un.md) et le [modèle officiel](../../../03-Templates-Machines/Template_Fiche_Tout-en-un.md).
+Les catégories sont des axes de classement sous le dossier de chaque OS/version, pas des procédures. Les thèmes ont été repérés à partir des sources publiques et doivent être vérifiés par la documentation officielle correspondant à la cible. Voir la [taxonomie et les sources publiques](../../06-Documentation-ext/Sources_Publiques_TSSR_Pour_Fiches_Tout-en-un.md) et le [modèle officiel](../../03-Templates-Machines/Template_Fiche_Tout-en-un.md).
 
 ## Fiches disponibles
 

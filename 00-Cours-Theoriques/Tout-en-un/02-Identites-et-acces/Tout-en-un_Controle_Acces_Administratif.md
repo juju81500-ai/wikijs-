@@ -55,6 +55,6 @@ Ne jamais publier la sortie contenant des noms de comptes ou des groupes interne
 
 ## Si le problème n'est pas résolu
 
-- [Fiches comptes Debian 12](../../../Debian/12/Vie-du-systeme/Fiches-par-theme/Administration-systeme/)
-- [Fiches comptes Windows Server 2022](../../../Windows/Server-2022/Vie-du-systeme/Fiches-par-theme/Administration-systeme/)
+- [Fiches comptes Debian 12](../../../01-Fiches-Simples/Debian/12/Vie-du-systeme/Fiches-par-theme/Administration-systeme/)
+- [Fiches comptes Windows Server 2022](../../../01-Fiches-Simples/Windows/Server-2022/Vie-du-systeme/Fiches-par-theme/Administration-systeme/)
 - [Documentation Microsoft — Get-LocalUser](https://learn.microsoft.com/powershell/module/microsoft.powershell.localaccounts/get-localuser)

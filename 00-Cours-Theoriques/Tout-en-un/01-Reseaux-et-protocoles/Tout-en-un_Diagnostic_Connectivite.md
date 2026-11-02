@@ -65,7 +65,7 @@ Ne pas scanner une plage entière, tester des ports non autorisés ni désactive
 
 ## Si le problème n'est pas résolu
 
-- [Fiches réseau Debian](../../../Debian/13/Vie-du-systeme/Fiches-par-theme/Reseau/)
-- [Fiches réseau Rocky Linux](../../../Rocky-Linux/9/Vie-du-systeme/Fiches-par-theme/Reseau/)
-- [Fiches réseau Windows Server 2022](../../../Windows/Server-2022/Vie-du-systeme/Fiches-par-theme/Reseau/)
+- [Fiches réseau Debian](../../../01-Fiches-Simples/Debian/13/Vie-du-systeme/Fiches-par-theme/Reseau/)
+- [Fiches réseau Rocky Linux](../../../01-Fiches-Simples/Rocky-Linux/9/Vie-du-systeme/Fiches-par-theme/Reseau/)
+- [Fiches réseau Windows Server 2022](../../../01-Fiches-Simples/Windows/Server-2022/Vie-du-systeme/Fiches-par-theme/Reseau/)
 - [Documentation Microsoft — Test-NetConnection](https://learn.microsoft.com/powershell/module/nettcpip/test-netconnection)

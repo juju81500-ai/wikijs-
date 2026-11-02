@@ -56,9 +56,9 @@ Ne pas envoyer des noms internes ou des données client à un résolveur public.
 
 ## Si le problème n'est pas résolu
 
-- [Fiches réseau Debian](../../../Debian/13/Vie-du-systeme/Fiches-par-theme/Reseau/)
-- [Fiches réseau Ubuntu 24.04](../../../Ubuntu/24.04/Vie-du-systeme/Fiches-par-theme/Reseau/)
-- [Fiches réseau Windows Server 2022](../../../Windows/Server-2022/Vie-du-systeme/Fiches-par-theme/Reseau/)
-- [Sources publiques et règle de classement](../../../../06-Documentation-ext/Sources_Publiques_TSSR_Pour_Fiches_Tout-en-un.md)
+- [Fiches réseau Debian](../../../01-Fiches-Simples/Debian/13/Vie-du-systeme/Fiches-par-theme/Reseau/)
+- [Fiches réseau Ubuntu 24.04](../../../01-Fiches-Simples/Ubuntu/24.04/Vie-du-systeme/Fiches-par-theme/Reseau/)
+- [Fiches réseau Windows Server 2022](../../../01-Fiches-Simples/Windows/Server-2022/Vie-du-systeme/Fiches-par-theme/Reseau/)
+- [Sources publiques et règle de classement](../../../06-Documentation-ext/Sources_Publiques_TSSR_Pour_Fiches_Tout-en-un.md)
 - [Documentation Microsoft — Resolve-DnsName](https://learn.microsoft.com/powershell/module/dnsclient/resolve-dnsname)
 - [Documentation systemd — resolvectl](https://www.freedesktop.org/software/systemd/man/latest/resolvectl.html)
