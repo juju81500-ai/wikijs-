@@ -11,9 +11,9 @@ C'est un projet **collaboratif et open source dans son esprit** : les contributi
 
 | Dossier | Contenu |
 |---|---|
-| [00-Cours-Theoriques](00-Cours-Theoriques/) | Parcours théoriques originaux et liens vers les cours, animations et illustrations hébergés chez leurs auteurs. |
+| [00-Cours-Theoriques](00-Cours-Theoriques/) | Parcours théoriques originaux, [bases et leçons tout-en-un](00-Cours-Theoriques/Tout-en-un/README.md), et liens vers les cours, animations et illustrations hébergés chez leurs auteurs. |
 | [00-Administration](00-Administration/) | Pilotage du pack : guides d'import Wiki.js, matrices de contrôle, scripts de vérification et de préparation de l'import. Consulter les documents de ce dossier pour la structure à jour. |
-| [01-Fiches-Simples](01-Fiches-Simples/) | Fiches courtes, une tâche = une fiche, classées par OS/plateforme (Debian, Ubuntu, Rocky Linux, Alpine, Proxmox, VMware, TrueNAS, pfSense, OPNsense, logiciels, transverses). Les anciennes fiches tout-en-un transverses servent de bases à décliner en copies propres à chaque OS/version concerné. |
+| [01-Fiches-Simples](01-Fiches-Simples/) | Fiches courtes, une tâche = une fiche, classées par OS/plateforme (Debian, Ubuntu, Rocky Linux, Alpine, Proxmox, VMware, TrueNAS, pfSense, OPNsense, logiciels, transverses). Les bases tout-en-un sont dans `00-Cours-Theoriques/Tout-en-un` et se déclinent en copies propres à chaque OS/version concerné. |
 | [02-Fiches-Completes](02-Fiches-Completes/) | Procédures complètes d'installation/configuration (présentation, paramètres machine, protocole, validation, retour arrière). |
 | [03-Templates-Machines](03-Templates-Machines/) | Modèles officiels de fiches (simple, complète) et synthèse d'architecture. |
 | [04-Questions-Reponses](04-Questions-Reponses/) | Fiches Q/R et de réparation/dépannage. |

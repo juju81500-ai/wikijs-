@@ -8,6 +8,8 @@ Parcours de compréhension pour relier les notions avant de passer aux fiches pr
 
 - [Réseaux TCP/IP : du paquet au pare-feu](Parcours_Theorique_Reseaux_TSSR.md) — cours progressif avec schéma, objectifs, questions de révision et liens vers les animations d'origine.
 
+- [Bases et leçons tout-en-un](Tout-en-un/README.md) — sujets transverses par catégorie (réseaux, identités, sécurité, exploitation, support), à décliner en fiches par OS/version.
+
 ## Ressources théoriques complémentaires
 
 | Thème | Ressource | Apport |
