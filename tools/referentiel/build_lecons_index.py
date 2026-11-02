@@ -14,7 +14,7 @@ import sys
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
-BASE = ROOT / "01-Fiches-Simples" / "Transverses" / "Tout-en-un"
+BASE = ROOT / "00-Cours-Theoriques" / "Tout-en-un"
 
 
 def meta(text: str, key: str) -> str:

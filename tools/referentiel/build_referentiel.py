@@ -24,7 +24,7 @@ from pathlib import Path
 
 UA = "pack-master-referentiel/1.0 (titres publics, debit limite)"
 ROOT = Path(__file__).resolve().parents[2]
-OUT = ROOT / "01-Fiches-Simples" / "Transverses" / "Tout-en-un" / "00-Referentiel-Sites"
+OUT = ROOT / "00-Cours-Theoriques" / "Tout-en-un" / "00-Referentiel-Sites"
 DATE = time.strftime("%Y-%m-%d")
 
 SR = "https://www.stephane-robert.info"
