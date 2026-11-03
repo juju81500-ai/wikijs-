@@ -6,6 +6,8 @@ Parcours de compréhension pour relier les notions avant de passer aux fiches pr
 
 ## Parcours vedette
 
+- [Glossaire TSSR et AIS](glossaire.md) — définitions des termes et sigles utilisés dans les fiches et les référentiels.
+
 - [Réseaux TCP/IP : du paquet au pare-feu](parcours-theorique-reseaux-tssr.md) — cours progressif avec schéma, objectifs, questions de révision et liens vers les animations d'origine.
 
 - [Bases et leçons tout-en-un](tout-en-un/readme.md) — sujets transverses par catégorie (réseaux, identités, sécurité, exploitation, support), à décliner en fiches par OS/version.

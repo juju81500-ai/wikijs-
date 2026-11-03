@@ -17,6 +17,7 @@ from urllib.parse import unquote, urlsplit, urlunsplit
 
 ROOT = Path(__file__).resolve().parents[2]
 SOURCE_DIRECTORIES = (
+    "00-cours-theoriques",
     "00-administration",
     "01-fiches-simples",
     "02-fiches-completes",
@@ -26,6 +27,7 @@ SOURCE_DIRECTORIES = (
     "06-documentation-ext",
 )
 CATEGORY_TITLES = {
+    "00-cours-theoriques": "Cours theoriques",
     "00-administration": "Administration",
     "01-fiches-simples": "Fiches simples",
     "02-fiches-completes": "Fiches completes",
@@ -75,7 +77,7 @@ def tags_from(text: str) -> tuple[str, ...]:
     values = re.findall(r"`([^`]+)`", raw_tags)
     if not values:
         values = [part.strip() for part in raw_tags.split(",") if part.strip()]
-    return tuple(dict.fromkeys(value.strip() for value in values if value.strip()))
+    return tuple(dict.fromkeys(slug(value) for value in values if re.search(r"[A-Za-z0-9]", value)))
 
 
 def title_from(path: Path, text: str) -> str:
@@ -191,6 +193,9 @@ def source_pages() -> tuple[list[Page], list[str]]:
             try:
                 text = path.read_text(encoding="utf-8")
             except (OSError, UnicodeError) as error:
+                if not path.name.lower().endswith(".md"):
+                    skipped.append(str(path.relative_to(ROOT)))
+                    continue
                 raise ValueError(f"Fichier illisible : {path.relative_to(ROOT)} ({error})") from error
             if not is_markdown(path, text):
                 skipped.append(str(path.relative_to(ROOT)))
