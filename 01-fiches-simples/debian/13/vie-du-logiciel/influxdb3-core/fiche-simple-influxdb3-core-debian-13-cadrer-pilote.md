@@ -1,6 +1,6 @@
 # Fiche simple — Cadrer un pilote InfluxDB 3 Core sur Debian 13
 
-- **Environnement** : VM Debian 13 Trixie, instance mono-nœud de laboratoire
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie, instance mono-nœud de laboratoire
 - **OS / Version** : Debian 13; InfluxDB 3 Core
 - **Catégorie** : base de données de séries temporelles / cadrage
 - **Tags** : `debian13`, `influxdb3-core`, `cadrage`, `pilote`, `limites`
@@ -21,13 +21,13 @@ Décider si InfluxDB 3 Core convient au besoin et préparer un pilote sans le co
    ```
    👉 Explication : on confirme Debian 13, la capacité disque disponible pour le stockage local et l'horloge synchronisée.
 
-2. Contrôler qu'aucune API n'est déjà exposée sur le port prévu :
+2. Contrôler qu'aucune [[Glossary:API]] n'est déjà exposée sur le port prévu :
    ```bash
    sudo ss -ltnp | grep ':8181' || echo "port 8181 libre"
    ```
    👉 Explication : le port `8181` doit être libre avant l'installation; le pilote ne doit pas être joignable depuis le réseau.
 
-3. Consigner par écrit : propriétaire, sources de métriques, volume attendu, rétention (ex. `30d`), RPO/RTO et test de restauration.
+3. Consigner par écrit : propriétaire, sources de métriques, volume attendu, rétention (ex. `30d`), [[Glossary:RPO]]/RTO et test de restauration.
    👉 Explication : sans ces valeurs, la taille du disque et la stratégie de sauvegarde ne peuvent pas être validées.
 
 4. Vérifier les limites de l'édition Core (mono-nœud, nombre de bases) dans la documentation officielle `https://docs.influxdata.com/influxdb3/core/`.
@@ -39,7 +39,7 @@ Avant mise en production, consigner le propriétaire, les sources et consommateu
 
 ## 3. Production — Sécurité
 
-- Garder l’API liée à loopback tant qu’un proxy TLS et un filtrage réseau approuvés ne sont pas en place.
+- Garder l’API liée à loopback tant qu’un proxy [[Glossary:TLS]] et un filtrage réseau approuvés ne sont pas en place.
 - Ne jamais partager le jeton opérateur; stocker les secrets dans le coffre et les révoquer en cas d’exposition.
 - Utiliser uniquement des données synthétiques dans le pilote et protéger les copies de données/journaux.
 - Ne pas restaurer sur l’instance active sans copie préalable, validation de la cible et changement approuvé.

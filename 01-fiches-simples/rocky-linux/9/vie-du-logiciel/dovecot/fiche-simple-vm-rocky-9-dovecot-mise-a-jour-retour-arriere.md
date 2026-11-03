@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_9_Dovecot_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Rocky Linux 9; Dovecot depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9; Dovecot depuis les dépôts de la distribution
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : Vie du logiciel / Dovecot — Mise à jour et retour arrière
 - **Tags** : `dovecot`, `serveur`, `vie-du-logiciel`, `mise_a_jour_retour_arriere`

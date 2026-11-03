@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Vie_Systeme_04_Preparation_Du_Support_D
 
-- **Environnement** : VM Debian 13 « trixie » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 13 « trixie » (serveur)
 - **OS / Version** : Debian 13; étape 04 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian13`, `vie-du-systeme`, `cycle-de-vie`, `etape-04`
@@ -13,7 +13,7 @@ Rendre l'ISO démarrable sur serveur physique ou VM.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Clé USB : repérer la clé, puis écrire l'image (remplacer `sdX` par la clé; **efface tout**) :
+1. Clé [[Glossary:USB]] : repérer la clé, puis écrire l'image (remplacer `sdX` par la clé; **efface tout**) :
    ```bash
    lsblk -o NAME,SIZE,MODEL,TRAN
    sudo dd if=~/iso/debian-13.X.Y-amd64-netinst.iso of=/dev/sdX bs=4M status=progress conv=fsync
@@ -29,7 +29,7 @@ Rendre l'ISO démarrable sur serveur physique ou VM.
 
 ## 2. Production — Contrôles
 
-Pour un serveur physique, utiliser la console distante (iDRAC, iLO, IPMI) pour monter l'image.
+Pour un serveur physique, utiliser la console distante (iDRAC, iLO, [[Glossary:IPMI]]) pour monter l'image.
 
 ## 3. Production — Sécurité
 

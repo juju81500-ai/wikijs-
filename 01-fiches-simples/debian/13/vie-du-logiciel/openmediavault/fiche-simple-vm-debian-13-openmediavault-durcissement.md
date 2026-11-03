@@ -17,7 +17,7 @@ Durcir OMV, planifier les mises à jour et sauvegarder les données.
    ```bash
    sudo ss -tlnp
    ```
-   👉 Explication : Seuls SSH, interface Web et SMB attendus, limités au réseau d'administration/clients prévus.
+   👉 Explication : Seuls [[Glossary:SSH]], interface Web et SMB attendus, limités au réseau d'administration/clients prévus.
 
 2. Désactiver le SSH direct root une fois le service contrôlé :
    ```bash
@@ -36,11 +36,11 @@ Durcir OMV, planifier les mises à jour et sauvegarder les données.
 
 ## 2. Production — Contrôles
 
-Sauvegarder les données sur un autre système ou support hors ligne, avec copie séparée des clés; valider la compatibilité OMV 8 d'un plugin de sauvegarde de configuration sur VM de test.
+Sauvegarder les données sur un autre système ou support hors ligne, avec copie séparée des clés; valider la compatibilité OMV 8 d'un plugin de sauvegarde de configuration sur [[Glossary:VM]] de test.
 
 ## 3. Production — Sécurité
 
-- Restreindre l'interface Web à un VLAN de gestion.
+- Restreindre l'interface Web à un [[Glossary:VLAN]] de gestion.
 - Désactiver invité et anciens protocoles SMB.
 
 ## Validation et retour arrière

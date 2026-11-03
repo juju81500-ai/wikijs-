@@ -1,13 +1,13 @@
 # 📄 HAProxy
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : HAProxy 2.6.x (paquet des dépôts Debian 12, à vérifier sur la version déployée)
 - **Catégorie** : Services Web et bases de données
 - **Tags** : `[debian-12]`, `[haproxy]`, `[reverse-proxy]`, `[load-balancer]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer HAProxy sur Debian 12 comme répartiteur de charge HTTP devant deux serveurs web, vérifier qu'il redistribue les requêtes, puis le durcir (statistiques protégées, pare-feu restreint, certificat TLS) avant de le mettre devant un service de l'entreprise. Les tests ne se font que sur votre propre serveur et vos propres machines.
+Installer HAProxy sur Debian 12 comme répartiteur de charge [[Glossary:HTTP]] devant deux serveurs web, vérifier qu'il redistribue les requêtes, puis le durcir (statistiques protégées, pare-feu restreint, certificat [[Glossary:TLS]]) avant de le mettre devant un service de l'entreprise. Les tests ne se font que sur votre propre serveur et vos propres machines.
 
 ---
 
@@ -58,7 +58,7 @@ echo "show servers state" | sudo socat stdio /run/haproxy/admin.sock
 ---
 
 ## ⚡ 2. Production — Façon Simplifiée
-1. Ouverture du pare-feu uniquement pour le web et l'administration SSH :
+1. Ouverture du pare-feu uniquement pour le web et l'administration [[Glossary:SSH]] :
 ```bash
 sudo apt install -y ufw
 sudo ufw allow from 192.168.10.0/24 to any port 22 proto tcp

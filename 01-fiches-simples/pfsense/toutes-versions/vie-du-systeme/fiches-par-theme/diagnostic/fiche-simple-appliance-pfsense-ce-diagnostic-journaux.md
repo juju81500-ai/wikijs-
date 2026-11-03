@@ -1,6 +1,6 @@
 # 📄 fiche-simple-appliance-pfsense-ce-diagnostic-journaux.md
 
-- **Environnement** : pfSense CE sur VM Proxmox VE ou appliance dédiée
+- **Environnement** : pfSense CE sur [[Glossary:VM]] Proxmox VE ou appliance dédiée
 - **OS / Version** : pfSense CE 2.x (base FreeBSD) - Toutes-versions
 - **Catégorie** : Diagnostic / Journaux système
 - **Tags** : `pfsense`, `ce`, `freebsd`, `logs`, `syslog`, `diagnostic`
@@ -15,7 +15,7 @@ Identifier les erreurs système et les blocages de pare-feu sur pfSense CE, à p
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Ouvrir le journal système dans l'interface :
    `Status > System Logs > System` : filtrer sur les niveaux `error`, `critical`, `alert`
-   👉 Explication : Affiche les erreurs des services (DHCP, DNS, VPN, sshd, webConfigurator).
+   👉 Explication : Affiche les erreurs des services ([[Glossary:DHCP]], [[Glossary:DNS]], [[Glossary:VPN]], sshd, webConfigurator).
 2. Contrôler les blocages du pare-feu :
    `Status > System Logs > Firewall` : filtrer par interface et par action `block`
    👉 Explication : Permet de vérifier qu'un flux bloqué l'est par une règle attendue.
@@ -48,7 +48,7 @@ Identifier les erreurs système et les blocages de pare-feu sur pfSense CE, à p
 1. Vérifier les services d'administration en écoute :
    `sockstat -4 -6 -l`
    👉 Explication : Repère tout service ouvert non prévu dans le plan d'adressage.
-2. Contrôler l'état du service SSH :
+2. Contrôler l'état du service [[Glossary:SSH]] :
    `service sshd status`
    👉 Explication : Confirme que sshd fonctionne avec la configuration validée.
 3. Conserver les journaux d'administration plus longtemps que les journaux de trafic :

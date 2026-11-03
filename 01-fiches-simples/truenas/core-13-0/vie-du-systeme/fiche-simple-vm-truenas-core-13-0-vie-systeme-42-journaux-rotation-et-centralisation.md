@@ -13,7 +13,7 @@ Conserver et centraliser les journaux.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Avancé > Serveur Syslog.
+1. [[Glossary:GUI]] : Système > Avancé > Serveur Syslog.
    ```sh
    midclt call system.advanced.update '{"syslogserver": "SERVEUR_LOG", "syslog_transport": "TLS"}'
    ```

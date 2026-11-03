@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_9_PowerShell_Sauvegarder_Restaurer
 
-- **Environnement** : VM Rocky Linux 9 de laboratoire, accès sudo, dépôt Microsoft pour RHEL 9
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 de laboratoire, accès sudo, dépôt Microsoft pour [[Glossary:RHEL]] 9
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : shell / scripting
 - **Tags** : `rocky9`, `powershell`, `pwsh`, `scripting`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Sauvegarder et restaurer l'état de PowerShell 7 : profils, inventaire des modules, configuration SSH.
+Sauvegarder et restaurer l'état de PowerShell 7 : profils, inventaire des modules, configuration [[Glossary:SSH]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 

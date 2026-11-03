@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_9_WireGuard_Configurer
 
-- **Environnement** : VM Rocky Linux 9 dédiée à un serveur WireGuard natif
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à un serveur WireGuard natif
 - **OS / Version** : Rocky Linux 9; wireguard-tools issu d'EPEL, module noyau à vérifier sur l'hôte
 - **Catégorie** : WireGuard natif / configurer
 - **Tags** : `wireguard`, `rocky9`, `vie-du-logiciel`, `configurer`
@@ -47,7 +47,7 @@ Vérifier l'unicité des AllowedIPs; un /32 par pair client.
 
 ## 3. Production — Sécurité
 
-- Ne pas utiliser 0.0.0.0/0 sans architecture full-tunnel validée; ne pas activer le routage IP implicitement.
+- Ne pas utiliser 0.0.0.0/0 sans architecture full-tunnel validée; ne pas activer le routage [[Glossary:IP]] implicitement.
 
 ## Validation et retour arrière
 

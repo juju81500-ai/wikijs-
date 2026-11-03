@@ -1,19 +1,19 @@
 # 📄 VM_WinSrv_2022_Reseau_Fixer-IP-Et-DNS.md
 
-- **Environnement** : VM (Hyper-V / Proxmox VE / VSphere)
+- **Environnement** : [[Glossary:VM]] (Hyper-V / Proxmox VE / VSphere)
 - **OS / Version** : Windows Server 2022 Standard / Datacenter - Famille Windows
-- **Catégorie** : Réseau / Adressage IP & DNS
+- **Catégorie** : Réseau / Adressage [[Glossary:IP]] & [[Glossary:DNS]]
 - **Tags** : `[winsrv2022]`, `[windows-server]`, `[reseau]`, `[ip-statique]`, `[dns]`, `[gui]`, `[powershell]`, `[hardening]`
 
 ---
 
 ## 🎯 Problème précis à résoudre
-Fixer une adresse IP statique, configurer la passerelle et les serveurs DNS sous Windows Server 2022 en utilisant l'interface graphique (GUI) pas-à-pas ou la ligne de commande PowerShell.
+Fixer une adresse IP statique, configurer la passerelle et les serveurs DNS sous Windows Server 2022 en utilisant l'interface graphique ([[Glossary:GUI]]) pas-à-pas ou la ligne de commande PowerShell.
 
 ---
 
 ## 🖥️ Méthode Interface Graphique (GUI Pas-à-Pas - "Clic-Clic")
-Avant de modifier une carte à distance, prévoir un accès console ou un moyen de retour arrière : le changement d'IP peut couper la session. Vérifier également que l'adresse choisie est libre ou réservée dans le plan DHCP.
+Avant de modifier une carte à distance, prévoir un accès console ou un moyen de retour arrière : le changement d'IP peut couper la session. Vérifier également que l'adresse choisie est libre ou réservée dans le plan [[Glossary:DHCP]].
 
 1. **Ouvrir la fenêtre des connexions réseau** :
    - Appuyer sur les touches `Win + R` du clavier pour ouvrir la boîte de dialogue *Exécuter*.
@@ -26,7 +26,7 @@ Avant de modifier une carte à distance, prévoir un accès console ou un moyen 
    - 👉 *Explication : Affiche la liste des protocoles et services rattachés à la carte.*
 
 3. **Configurer IPv4 et le serveur DNS** :
-   - Dans la liste, cliquer une fois sur **Protocole Internet version 4 (TCP/IPv4)**.
+   - Dans la liste, cliquer une fois sur **Protocole Internet version 4 ([[Glossary:TCP]]/IPv4)**.
    - Cliquer sur le bouton **Propriétés** en bas à droite (ou double-cliquer sur la ligne).
    - Cocher l'option : **Utiliser l'adresse IP suivante :**
      - *Adresse IP* : `192.168.1.50`
@@ -34,7 +34,7 @@ Avant de modifier une carte à distance, prévoir un accès console ou un moyen 
      - *Passerelle par défaut* : `192.168.1.1`
    - Cocher l'option : **Utiliser l'adresse de serveur DNS suivante :**
      - *Serveur DNS préféré* : `192.168.1.10` (Adresse du serveur DNS local/AD)
-   - *Serveur DNS auxiliaire* : laisser vide ou saisir un autre DNS interne AD si disponible.
+   - *Serveur DNS auxiliaire* : laisser vide ou saisir un autre DNS interne [[Glossary:AD]] si disponible.
    - Cliquer sur **OK**, puis sur **Fermer**.
    - 👉 *Explication : Applique et enregistre immédiatement l'adresse IP et les serveurs DNS de manière permanente.*
 
@@ -81,7 +81,7 @@ Avant de modifier une carte à distance, prévoir un accès console ou un moyen 
    ```powershell
    Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Services\NetBT\Parameters\Interfaces\Tcpip_*' -Name NetbiosOptions -Value 2
    ```
-   👉 *Explication : Tu bloques l'empoisonnement de noms NetBIOS sur le LAN d'entreprise.*
+   👉 *Explication : Tu bloques l'empoisonnement de noms NetBIOS sur le [[Glossary:LAN]] d'entreprise.*
 2. **Désactivation de l'autoconfiguration IPv6 Router Discovery** :
    ```powershell
    Set-NetIPInterface -InterfaceAlias "Ethernet0" -AddressFamily IPv6 -RouterDiscovery Disabled

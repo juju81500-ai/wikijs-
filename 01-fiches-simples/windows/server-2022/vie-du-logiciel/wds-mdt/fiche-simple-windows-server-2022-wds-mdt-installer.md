@@ -1,7 +1,7 @@
 # Fiche_Simple_-_Windows_Server_2022_WDS_MDT_Installer
 
-- **Environnement** : Windows Server 2022, serveur de déploiement dédié (VM de lab ou serveur), droits administrateur local
-- **OS / Version** : Windows Server 2022; WDS (rôle intégré), Windows ADK + module WinPE, MDT : vérifier la version publiée et le statut de support
+- **Environnement** : Windows Server 2022, serveur de déploiement dédié ([[Glossary:VM]] de lab ou serveur), droits administrateur local
+- **OS / Version** : Windows Server 2022; WDS (rôle intégré), Windows [[Glossary:ADK]] + module WinPE, [[Glossary:MDT]] : vérifier la version publiée et le statut de support
 - **Catégorie** : Automatisation, déploiement et IaC
 - **Tags** : `windows-server-2022`, `wds`, `mdt`, `installation`, `adk`
 
@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Installer le rôle WDS, Windows ADK (avec WinPE) et MDT sur Windows Server 2022. Limite documentée par Microsoft : sur Windows 11 et les versions futures de Windows Server (dont Windows Server 2025), le déploiement WDS depuis le `boot.wim` des médias d'installation est bloqué ; le PXE vers des images de démarrage personnalisées (MDT, Configuration Manager) reste possible. Ce pack ne propose donc pas de série WDS/MDT pour Windows Server 2025 : voir la [fiche Prérequis et limites](./fiche-simple-windows-server-2022-wds-mdt-prerequis-limites.md). Configuration ensuite : [fiche Configurer](./fiche-simple-windows-server-2022-wds-mdt-configurer.md).
+Installer le rôle WDS, Windows ADK (avec WinPE) et MDT sur Windows Server 2022. Limite documentée par Microsoft : sur Windows 11 et les versions futures de Windows Server (dont Windows Server 2025), le déploiement WDS depuis le `boot.wim` des médias d'installation est bloqué ; le [[Glossary:PXE]] vers des images de démarrage personnalisées (MDT, Configuration Manager) reste possible. Ce pack ne propose donc pas de série WDS/MDT pour Windows Server 2025 : voir la [fiche Prérequis et limites](./fiche-simple-windows-server-2022-wds-mdt-prerequis-limites.md). Configuration ensuite : [fiche Configurer](./fiche-simple-windows-server-2022-wds-mdt-configurer.md).
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Installer le rôle WDS. GUI : `Gestionnaire de serveur > Gérer > Ajouter des rôles et fonctionnalités > Services de déploiement Windows` (Serveur de déploiement + Serveur de transport).
+1. Installer le rôle WDS. [[Glossary:GUI]] : `Gestionnaire de serveur > Gérer > Ajouter des rôles et fonctionnalités > Services de déploiement Windows` (Serveur de déploiement + Serveur de transport).
    ```powershell
    Install-WindowsFeature -Name WDS -IncludeManagementTools
    Get-WindowsFeature WDS*
@@ -45,7 +45,7 @@ Installer le rôle WDS, Windows ADK (avec WinPE) et MDT sur Windows Server 2022.
 
 ## 2. Production — Contrôles
 
-Serveur dédié et à jour ; volume NTFS séparé pour `RemoteInstall` et le partage ; ADK, MDT et ISO Windows téléchargés depuis des sources officielles, licences confirmées ; fenêtre de changement validée.
+Serveur dédié et à jour ; volume [[Glossary:NTFS]] séparé pour `RemoteInstall` et le partage ; ADK, MDT et ISO Windows téléchargés depuis des sources officielles, licences confirmées ; fenêtre de changement validée.
 
 ## 3. Production — Sécurité
 

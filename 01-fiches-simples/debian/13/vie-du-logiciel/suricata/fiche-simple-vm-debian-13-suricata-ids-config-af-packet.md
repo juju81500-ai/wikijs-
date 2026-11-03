@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-suricata-ids-config-af-packet.md
 
-- **Environnement** : VM Debian 13 avec Suricata installé
+- **Environnement** : [[Glossary:VM]] Debian 13 avec Suricata installé
 - **OS / Version** : Debian 13 Trixie; Suricata 8.0.7 et suricata-update (Debian Backports)
 - **Catégorie** : detection reseau / configuration
 - **Tags** : `suricata`, `debian13`, `af-packet`, `yaml`
@@ -25,7 +25,7 @@ Configurer HOME_NET et la capture AF_PACKET sans mode inline.
    ```
    👉 Explication : on y règle `HOME_NET` et la section `af-packet`.
 
-3. Adapter ces blocs (réseaux et interface `enp2s0` d'exemple à remplacer par vos CIDR et votre interface) :
+3. Adapter ces blocs (réseaux et interface `enp2s0` d'exemple à remplacer par vos [[Glossary:CIDR]] et votre interface) :
    ```bash
    vars:
      address-groups:

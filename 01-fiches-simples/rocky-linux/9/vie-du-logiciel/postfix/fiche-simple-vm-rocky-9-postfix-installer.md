@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_9_Postfix_Installer
 
-- **Environnement** : VM Rocky Linux 9; Postfix depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9; Postfix depuis les dépôts de la distribution
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : Vie du logiciel / Postfix — Installer
 - **Tags** : `postfix`, `serveur`, `vie-du-logiciel`, `installer`

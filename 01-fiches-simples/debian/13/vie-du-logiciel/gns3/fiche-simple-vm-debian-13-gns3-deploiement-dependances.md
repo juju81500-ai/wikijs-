@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Installer les prérequis APT et vérifier KVM.
+Installer les prérequis [[Glossary:APT]] et vérifier [[Glossary:KVM]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -25,7 +25,7 @@ Installer les prérequis APT et vérifier KVM.
    python3 --version
    qemu-system-x86_64 --version
    ```
-   👉 Explication : on contrôle Python et QEMU.
+   👉 Explication : on contrôle Python et [[Glossary:QEMU]].
 
 3. Activer libvirt et contrôler KVM :
    ```bash

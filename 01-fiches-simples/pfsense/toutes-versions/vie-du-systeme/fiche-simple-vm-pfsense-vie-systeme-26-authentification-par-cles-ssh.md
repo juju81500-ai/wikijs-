@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_26_Authentification_Par_Cles_Ssh
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 26 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-26`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Remplacer le mot de passe par une clé pour l'accès SSH.
+Remplacer le mot de passe par une clé pour l'accès [[Glossary:SSH]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 

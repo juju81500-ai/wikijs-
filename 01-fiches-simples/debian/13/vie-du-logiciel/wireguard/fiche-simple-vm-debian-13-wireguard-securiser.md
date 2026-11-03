@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_WireGuard_Securiser
 
-- **Environnement** : VM Debian 13 dédiée à WireGuard natif
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à WireGuard natif
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : WireGuard natif / sécuriser
 - **Tags** : `wireguard`, `debian13`, `vie-du-logiciel`, `securiser`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Limiter pairs et flux, protéger clés privées et port UDP.
+Limiter pairs et flux, protéger clés privées et port [[Glossary:UDP]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -26,7 +26,7 @@ Limiter pairs et flux, protéger clés privées et port UDP.
    ```
    👉 Explication : La règle doit respecter le gestionnaire déjà en place, l’interface et les sources prévues.
 
-3. Si UFW est déjà le pare-feu actif et que le flux est approuvé, limiter le port d’écoute :
+3. Si [[Glossary:UFW]] est déjà le pare-feu actif et que le flux est approuvé, limiter le port d’écoute :
    ```bash
    sudo ufw allow from VPN_SOURCE_CIDR to any port VPN_UDP_PORT proto udp
    sudo ufw status numbered
@@ -41,7 +41,7 @@ Limiter pairs et flux, protéger clés privées et port UDP.
 
 ## 2. Production — Contrôles
 
-Prévoir rotation/révocation rapide des pairs, sauvegarde sécurisée et accès administratif indépendant du VPN.
+Prévoir rotation/révocation rapide des pairs, sauvegarde sécurisée et accès administratif indépendant du [[Glossary:VPN]].
 
 ## 3. Production — Sécurité
 

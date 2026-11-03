@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_33_Securisation_Des_Systemes_De
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 33 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-33`
@@ -20,7 +20,7 @@ Protéger la configuration et les points de restauration.
    ```
    👉 Explication : `config.xml` doit appartenir à `root` et ne pas être lisible par les autres.
 
-2. Créer un environnement de démarrage ZFS : System > Boot Environments > Add, puis vérifier :
+2. Créer un environnement de démarrage [[Glossary:ZFS]] : System > Boot Environments > Add, puis vérifier :
    ```sh
    bectl list
    zfs list -t snapshot | head

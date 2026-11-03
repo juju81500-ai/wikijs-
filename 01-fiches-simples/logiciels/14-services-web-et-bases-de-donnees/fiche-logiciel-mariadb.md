@@ -2,7 +2,7 @@
 
 - **Catégorie** : Services Web et bases de données
 - **Plateforme** : Linux / Windows
-- **Produit (matrice)** : MySQL / MariaDB / PostgreSQL / SQL Server
+- **Produit (matrice)** : MySQL / MariaDB / PostgreSQL / [[Glossary:SQL]] Server
 - **Statut dans le pack** : Couvert
 - **Tags** : `logiciel`, `14-services-web-et-bases-de-donnees`, `couvert`
 
@@ -16,6 +16,6 @@ Cette fiche est le point d'entrée du logiciel : elle indique si le pack contien
 
 Procédure pas à pas du pack : [MariaDB](fiche-simple-mariadb.md).
 
-Fiche simple associée au guide LEMP : [sécuriser MariaDB et créer la base](../../debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-lemp-securiser-mariadb.md).
+Fiche simple associée au guide [[Glossary:LEMP]] : [sécuriser MariaDB et créer la base](../../debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-lemp-securiser-mariadb.md).
 
 Fiches simples du guide : [prérequis et limites](../../debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-mariadb-prerequis-limites.md), [11](../../debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-database-installation-mariadb-11.md), [configurer](../../debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-mariadb-configurer.md), [mariadb](../../debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-lemp-securiser-mariadb.md), [sécuriser](../../debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-mariadb-securiser.md), [valider (recette)](../../debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-mariadb-valider.md), [sauvegarder / restaurer](../../debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-mariadb-sauvegarder-restaurer.md), [mise à jour et retour arrière](../../debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-mariadb-mettre-a-jour.md).

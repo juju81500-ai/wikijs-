@@ -13,7 +13,7 @@ Conserver les journaux et les envoyer ailleurs.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Avancé > Syslog > Serveur syslog distant.
+1. [[Glossary:GUI]] : Système > Avancé > Syslog > Serveur syslog distant.
    ```bash
    sudo midclt call system.advanced.update '{"syslogserver": "SERVEUR_LOG", "syslog_transport": "TLS"}'
    ```
@@ -32,7 +32,7 @@ Conserver 90 jours minimum selon la politique.
 
 ## 3. Production — Sécurité
 
-Chiffrer le transport (TLS) et restreindre l'accès aux journaux.
+Chiffrer le transport ([[Glossary:TLS]]) et restreindre l'accès aux journaux.
 
 ## Validation et retour arrière
 

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Nextcloud_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13; Nextcloud (archive officielle), Apache, PHP 8.4 et MariaDB
+- **Environnement** : [[Glossary:VM]] Debian 13; Nextcloud (archive officielle), Apache, PHP 8.4 et MariaDB
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / Nextcloud — Sauvegarder / restaurer
 - **Tags** : `debian13`, `nextcloud`, `cloud`, `apache`, `php`, `sauvegarder-restaurer`

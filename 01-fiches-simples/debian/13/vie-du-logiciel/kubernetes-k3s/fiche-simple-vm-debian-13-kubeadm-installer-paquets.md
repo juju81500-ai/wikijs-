@@ -50,7 +50,7 @@ Planifier la mise à niveau une mineure à la fois, vérifier les notes de versi
 
 ## 3. Production — Sécurité
 
-- Ne pas désactiver la validation APT ou importer une clé non vérifiée.
+- Ne pas désactiver la validation [[Glossary:APT]] ou importer une clé non vérifiée.
 - Ne pas mélanger les versions mineures des composants sans support documenté.
 - Ne pas mettre à niveau automatiquement kubelet/kubeadm/kubectl hors fenêtre prévue.
 - Limiter l'accès aux sources APT et vérifier les candidats avant installation.

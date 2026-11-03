@@ -2,7 +2,7 @@
 
 - **Catégorie** : Services Web et bases de données
 - **Plateforme** : Linux / Windows
-- **Produit (matrice)** : Apache / Nginx / IIS
+- **Produit (matrice)** : Apache / Nginx / [[Glossary:IIS]]
 - **Statut dans le pack** : Guide complet — installation du rôle IIS et site pilote Windows Server 2022
 - **Tags** : `logiciel`, `14-services-web-et-bases-de-donnees`, `partiel`
 

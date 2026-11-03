@@ -9,14 +9,14 @@
 
 ## Problème précis à résoudre
 
-Préparer le BIOS/UEFI et le matériel pour la virtualisation.
+Préparer le [[Glossary:BIOS]]/UEFI et le matériel pour la virtualisation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Au démarrage, entrer dans le Setup (F2 ou F11 selon le constructeur) et activer : Virtualisation (Intel VT-x / AMD-V), VT-d / AMD-Vi (IOMMU), mode UEFI, Secure Boot selon la politique.
-   👉 Explication : VT-x/AMD-V est indispensable pour KVM; l'IOMMU sert au passthrough PCI.
+   👉 Explication : VT-x/AMD-V est indispensable pour [[Glossary:KVM]]; l'IOMMU sert au passthrough PCI.
 
-2. Configurer le RAID matériel ou passer le contrôleur en mode HBA/IT si ZFS ou Ceph est prévu (iDRAC : **Configuration > Configuration du stockage**).
+2. Configurer le [[Glossary:RAID]] matériel ou passer le contrôleur en mode [[Glossary:HBA]]/IT si [[Glossary:ZFS]] ou Ceph est prévu (iDRAC : **Configuration > Configuration du stockage**).
    👉 Explication : ZFS doit voir les disques bruts, sans RAID matériel entre les deux.
 
 3. Après installation, contrôler la virtualisation et l'IOMMU :
@@ -28,7 +28,7 @@ Préparer le BIOS/UEFI et le matériel pour la virtualisation.
    👉 Explication : un compteur supérieur à 0 confirme la virtualisation; les lignes DMAR/IOMMU confirment VT-d.
 
 4. Mettre à jour firmware BIOS, iDRAC et cartes réseau/RAID avant la mise en production.
-   👉 Explication : corrige des défauts connus; à faire avant d'héberger des VM.
+   👉 Explication : corrige des défauts connus; à faire avant d'héberger des [[Glossary:VM]].
 
 ## 2. Production — Contrôles
 

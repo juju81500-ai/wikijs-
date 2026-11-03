@@ -23,7 +23,7 @@ Donner à un compte nominatif seulement les groupes nécessaires.
    ```bash
    sudo usermod -aG ubridge,libvirt,kvm "$USER"
    ```
-   👉 Explication : ces groupes permettent interfaces virtuelles, libvirt et KVM.
+   👉 Explication : ces groupes permettent interfaces virtuelles, libvirt et [[Glossary:KVM]].
 
 3. Fermer puis rouvrir la session, puis vérifier :
    ```bash

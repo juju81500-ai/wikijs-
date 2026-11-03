@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-bind9-autoritatif-valider.md
 
-- **Environnement** : VM Debian 13 avec bind9 configuré
+- **Environnement** : [[Glossary:VM]] Debian 13 avec bind9 configuré
 - **OS / Version** : Debian 13 Trixie; paquets bind9 de la distribution
 - **Catégorie** : dns / validation
 - **Tags** : `debian13`, `bind9`, `named-checkconf`, `dig`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Contrôler la syntaxe et les réponses DNS avant et après le rechargement.
+Contrôler la syntaxe et les réponses [[Glossary:DNS]] avant et après le rechargement.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -39,7 +39,7 @@ Contrôler la syntaxe et les réponses DNS avant et après le rechargement.
    👉 Explication : les trois premières réponses doivent porter le drapeau `aa` (autoritatif); la dernière ne doit pas être résolue récursivement.
 
 4. Refaire le test depuis une adresse non autorisée.
-   👉 Explication : l'ACL doit refuser la requête.
+   👉 Explication : l'[[Glossary:ACL]] doit refuser la requête.
 
 ## 2. Production — Contrôles
 

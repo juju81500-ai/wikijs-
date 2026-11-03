@@ -1,8 +1,8 @@
 # fiche-simple-vm-windows-server-2022-prtg-acces.md
 
-- **Environnement** : Serveur Windows dédié ou VM, accès d'administration restreint
-- **OS / Version** : Windows Server 2022 ou 2025 en Desktop Experience; PRTG Network Monitor maintenu
-- **Catégorie** : supervision / SNMP / WMI
+- **Environnement** : Serveur Windows dédié ou [[Glossary:VM]], accès d'administration restreint
+- **OS / Version** : Windows Server 2022 ou 2025 en Desktop Experience; [[Glossary:PRTG]] Network Monitor maintenu
+- **Catégorie** : supervision / [[Glossary:SNMP]] / [[Glossary:WMI]]
 - **Tags** : `prtg`, `windows-server`, `supervision`, `acces`, `rbac`, `snmpv3`
 
 ---
@@ -16,7 +16,7 @@ Séparer les droits administrateur, opérateur et comptes de scan.
 1. Créer des comptes nominatifs et des groupes séparés : **Setup > User Accounts** et **Setup > User Groups**.
    👉 Explication : administrateurs et opérateurs lecture seule ont des droits distincts.
 
-2. Restreindre l'interface Web aux réseaux d'administration et activer l'authentification centralisée ou le MFA lorsque disponible.
+2. Restreindre l'interface Web aux réseaux d'administration et activer l'authentification centralisée ou le [[Glossary:MFA]] lorsque disponible.
    👉 Explication : on réduit l'exposition de l'interface.
 
 3. Utiliser des comptes en lecture seule pour WMI/Windows et SNMPv3 authPriv en lecture seule pour le réseau.

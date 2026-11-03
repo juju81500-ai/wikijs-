@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_22_Synchronisation_Horaire_Ntp
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 22 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-22`
@@ -13,7 +13,7 @@ Garantir une heure fiable sur le pare-feu et le réseau.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Aller dans Services > Service de temps réseau > Général : ajouter les serveurs (ex. `fr.pool.ntp.org`), activer l'interface LAN pour servir l'heure, Enregistrer.
+1. Aller dans Services > Service de temps réseau > Général : ajouter les serveurs (ex. `fr.pool.ntp.org`), activer l'interface [[Glossary:LAN]] pour servir l'heure, Enregistrer.
    👉 Explication : le pare-feu synchronise son horloge et peut la fournir aux clients.
 
 2. Contrôler la synchronisation en shell :
@@ -29,7 +29,7 @@ Utiliser au moins trois sources, dont une interne si possible.
 
 ## 3. Production — Sécurité
 
-Autoriser le NTP sortant (UDP 123) seulement vers les serveurs choisis.
+Autoriser le [[Glossary:NTP]] sortant ([[Glossary:UDP]] 123) seulement vers les serveurs choisis.
 
 ## Validation et retour arrière
 

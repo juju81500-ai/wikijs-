@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_39_Chiffrement_Des_Flux_Pki
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 39 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-39`
@@ -20,7 +20,7 @@ Obtenir un certificat.
    ```
    👉 Explication : obtient et installe un certificat.
 
-2. Ajouter une CA interne :
+2. Ajouter une [[Glossary:CA]] interne :
    ```bash
    sudo cp ca-entreprise.crt /usr/local/share/ca-certificates/
    sudo update-ca-certificates

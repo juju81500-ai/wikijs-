@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-12-freepbx-configurer-reseau-tester.md
 
-- **Environnement** : VLAN voix, téléphones pilotes et trunk de test fournis par l'opérateur
+- **Environnement** : [[Glossary:VLAN]] voix, téléphones pilotes et trunk de test fournis par l'opérateur
 - **OS / Version** : FreePBX/Asterisk selon versions supportées
-- **Catégorie** : téléphonie IP / réseau et recette
+- **Catégorie** : téléphonie [[Glossary:IP]] / réseau et recette
 - **Tags** : `debian12`, `freepbx`, `asterisk`, `voip`, `firewall`, `testing`
 
 ---

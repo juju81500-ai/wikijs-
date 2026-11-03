@@ -1,12 +1,12 @@
 # 📄 Fiche_Simple_-_VM_Debian_13_Securite_Sysctl_Noyau
 
-- **Environnement** : VM ou serveur Debian 13 (Kernel 6.12+)
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 13 (Kernel 6.12+)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
 - **Catégorie** : Sécurité / Durcissement du noyau et de la pile réseau
 - **Tags** : `[debian13]`, `[debian]`, `[sysctl]`, `[kernel]`, `[reseau]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Durcir les paramètres du noyau Linux et de la pile réseau IPv4 / IPv6 sur Debian 13 (protection contre les redirections ICMP, le spoofing et l'usurpation de liens), via un fichier persistant dans `/etc/sysctl.d/`, sans casser les services qui dépendent du routage.
+Durcir les paramètres du noyau Linux et de la pile réseau IPv4 / IPv6 sur Debian 13 (protection contre les redirections [[Glossary:ICMP]], le spoofing et l'usurpation de liens), via un fichier persistant dans `/etc/sysctl.d/`, sans casser les services qui dépendent du routage.
 
 ---
 
@@ -62,7 +62,7 @@ Durcir les paramètres du noyau Linux et de la pile réseau IPv4 / IPv6 sur Debi
 ---
 
 ## 🔒 3. Production — Façon Sécurisée (Hardening & Isolation Enterprise)
-1. Ne pas désactiver le routage sur une machine qui doit router (pare-feu, VPN, passerelle) ou héberger des conteneurs : `net.ipv4.ip_forward` doit rester à `1` dans ce cas. Vérifier la valeur actuelle avant toute modification :
+1. Ne pas désactiver le routage sur une machine qui doit router (pare-feu, [[Glossary:VPN]], passerelle) ou héberger des conteneurs : `net.ipv4.ip_forward` doit rester à `1` dans ce cas. Vérifier la valeur actuelle avant toute modification :
    ```bash
    sysctl net.ipv4.ip_forward
    ```

@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Rocky_9_tcpdump_Installer
 
-- **Environnement** : VM Rocky Linux 9 dédiée à tcpdump
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à tcpdump
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : tcpdump / installation
 - **Tags** : `tcpdump`, `rocky9`, `vie-du-logiciel`, `installer`
 

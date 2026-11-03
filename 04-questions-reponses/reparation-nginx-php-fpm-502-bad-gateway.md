@@ -41,4 +41,4 @@ curl -sS -o /dev/null -w '%{http_code}\n' -H 'Host: app.example.net' http://127.
 sudo journalctl -u nginx --since '-5 minutes' --no-pager
 ```
 
-Attendre le code HTTP prévu par l'application (souvent 200 ou une redirection). Si `nginx -t` échoue ou si le site reste indisponible, restaurer la sauvegarde, valider de nouveau puis recharger Nginx. Ne pas publier `phpinfo()` ou les messages d'erreur PHP en production.
+Attendre le code [[Glossary:HTTP]] prévu par l'application (souvent 200 ou une redirection). Si `nginx -t` échoue ou si le site reste indisponible, restaurer la sauvegarde, valider de nouveau puis recharger Nginx. Ne pas publier `phpinfo()` ou les messages d'erreur PHP en production.

@@ -1,12 +1,12 @@
 # 📄 fiche-simple-vm-rocky-9-systeme-qemu-guest-agent.md
 
-- **Environnement** : VM KVM / QEMU (Proxmox VE, libvirt)
-- **OS / Version** : Rocky Linux 9 / RHEL 9 avec systemd
+- **Environnement** : [[Glossary:VM]] [[Glossary:KVM]] / [[Glossary:QEMU]] (Proxmox VE, libvirt)
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 avec systemd
 - **Catégorie** : Système & Services / Agent de virtualisation
 - **Tags** : `[rocky9]`, `[rhel9]`, `[qemu]`, `[kvm]`, `[virtio]`, `[proxmox]`
 
 ## 🎯 Problème précis à résoudre
-Installer l'agent invité QEMU sur Rocky Linux 9 pour remonter les adresses IP à l'hyperviseur, permettre l'arrêt propre de la VM et créer des snapshots cohérents.
+Installer l'agent invité QEMU sur Rocky Linux 9 pour remonter les adresses [[Glossary:IP]] à l'hyperviseur, permettre l'arrêt propre de la VM et créer des snapshots cohérents.
 
 ---
 

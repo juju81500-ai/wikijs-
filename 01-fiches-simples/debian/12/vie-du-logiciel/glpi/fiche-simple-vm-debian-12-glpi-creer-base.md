@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-12-glpi-creer-base.md
 
-- **Environnement** : MariaDB local sur VM Debian hébergeant GLPI
+- **Environnement** : MariaDB local sur [[Glossary:VM]] Debian hébergeant [[Glossary:GLPI]]
 - **OS / Version** : Debian 12 ou 13; MariaDB du dépôt approuvé
 - **Catégorie** : GLPI / base de données
 - **Tags** : `debian12`, `glpi`, `mariadb`, `database`, `least-privilege`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Créer une base GLPI dédiée et un compte SQL dont les accès sont limités à cette base.
+Créer une base GLPI dédiée et un compte [[Glossary:SQL]] dont les accès sont limités à cette base.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

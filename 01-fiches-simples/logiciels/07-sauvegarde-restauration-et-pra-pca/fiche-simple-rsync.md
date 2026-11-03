@@ -1,13 +1,13 @@
 # 📄 rsync
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : rsync 3.2.x fourni par les dépôts Debian 12, à vérifier avec `rsync --version` sur la version déployée
 - **Catégorie** : Sauvegarde, restauration et PRA / PCA
 - **Tags** : `[debian-12]`, `[rsync]`, `[sauvegarde]`, `[ssh]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Copier un dossier de données vers un serveur de sauvegarde par SSH avec rsync, vérifier le résultat, tester une restauration, planifier la copie, puis durcir l'accès (clé SSH dédiée, commande forcée côté serveur). Cette fiche couvre Linux ; l'usage de rsync sous Windows n'est pas traité. Les tests ne se font que sur votre propre serveur.
+Copier un dossier de données vers un serveur de sauvegarde par [[Glossary:SSH]] avec rsync, vérifier le résultat, tester une restauration, planifier la copie, puis durcir l'accès (clé SSH dédiée, commande forcée côté serveur). Cette fiche couvre Linux ; l'usage de rsync sous Windows n'est pas traité. Les tests ne se font que sur votre propre serveur.
 
 ---
 
@@ -113,10 +113,10 @@ sudo rsync -avhn --checksum -e "ssh -i /root/.ssh/cle_sauvegarde" /srv/donnees/ 
 ```
 👉 Explication : `--checksum` compare le contenu réel et non seulement la taille et la date. `-n` simule : aucune liste de fichier à transférer signifie que les copies sont identiques.
 
-4. Préservation des ACL et attributs étendus :
+4. Préservation des [[Glossary:ACL]] et attributs étendus :
 ```bash
 sudo rsync -aAXH --dry-run -e "ssh -i /root/.ssh/cle_sauvegarde" /srv/donnees/ svc-sauv@srv-sauv01:/srv/sauvegardes/donnees/
 ```
-👉 Explication : `-A` et `-X` conservent les ACL et attributs étendus. Point à vérifier : le serveur de destination doit supporter ces attributs (système de fichiers ext4 ou XFS). Retirer `--dry-run` une fois le test validé, puis reporter les options dans la ligne cron.
+👉 Explication : `-A` et `-X` conservent les ACL et attributs étendus. Point à vérifier : le serveur de destination doit supporter ces attributs (système de fichiers ext4 ou [[Glossary:XFS]]). Retirer `--dry-run` une fois le test validé, puis reporter les options dans la ligne cron.
 
 ---

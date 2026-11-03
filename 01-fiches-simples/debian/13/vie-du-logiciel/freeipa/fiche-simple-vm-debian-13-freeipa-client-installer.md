@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_FreeIPA_Client_Installer
 
-- **Environnement** : VM Debian 13 cliente d'un domaine FreeIPA existant
+- **Environnement** : [[Glossary:VM]] Debian 13 cliente d'un domaine FreeIPA existant
 - **OS / Version** : Debian 13 Trixie; paquet freeipa-client des dépôts, version à vérifier
 - **Catégorie** : FreeIPA client / installer
 - **Tags** : `freeipa`, `debian13`, `vie-du-logiciel`, `installer`
@@ -19,7 +19,7 @@ Installer le client FreeIPA sur Debian depuis les dépôts de la distribution.
    apt-cache policy freeipa-client
    sudo apt install freeipa-client
    ```
-   👉 Explication : Le paquet installe ipa-client-install et les dépendances (SSSD, Kerberos); noter la version et vérifier qu'elle est compatible avec le serveur.
+   👉 Explication : Le paquet installe ipa-client-install et les dépendances ([[Glossary:SSSD]], Kerberos); noter la version et vérifier qu'elle est compatible avec le serveur.
 
 2. Contrôler la commande d'inscription :
    ```bash

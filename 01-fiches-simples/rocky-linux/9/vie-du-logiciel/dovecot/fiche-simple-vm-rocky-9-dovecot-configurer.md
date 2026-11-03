@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_9_Dovecot_Configurer
 
-- **Environnement** : VM Rocky Linux 9; Dovecot depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9; Dovecot depuis les dépôts de la distribution
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : Vie du logiciel / Dovecot — Configurer
 - **Tags** : `dovecot`, `serveur`, `vie-du-logiciel`, `configurer`
@@ -31,7 +31,7 @@ Tracer les paramètres, les domaines et les réseaux autorisés; contrôler la s
 
 ## 3. Production — Sécurité
 
-Postfix : garder `reject_unauth_destination` et limiter `mynetworks`. Dovecot : activer TLS selon la version et les protocoles utilisés.
+Postfix : garder `reject_unauth_destination` et limiter `mynetworks`. Dovecot : activer [[Glossary:TLS]] selon la version et les protocoles utilisés.
 
 ## Validation et retour arrière
 

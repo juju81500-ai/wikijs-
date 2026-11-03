@@ -1,6 +1,6 @@
 # 📄 MongoDB
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : MongoDB 7.0.x (dépôt officiel MongoDB, Debian 12 ne fournit pas MongoDB dans ses dépôts ; version à vérifier sur la version déployée)
 - **Catégorie** : Services Web et bases de données
@@ -69,7 +69,7 @@ Ajouter dans `/etc/mongod.conf` :
 security:
   authorization: enabled
 ```
-👉 Explication : `authorization: enabled` oblige à s'identifier pour toute opération, à ajouter seulement après la création des comptes de l'étape 2. Le port 27017 n'est accessible qu'au serveur applicatif `192.168.10.21` (à adapter). `ss` confirme l'adresse d'écoute. SSH est ouvert avant l'activation du pare-feu.
+👉 Explication : `authorization: enabled` oblige à s'identifier pour toute opération, à ajouter seulement après la création des comptes de l'étape 2. Le port 27017 n'est accessible qu'au serveur applicatif `192.168.10.21` (à adapter). `ss` confirme l'adresse d'écoute. [[Glossary:SSH]] est ouvert avant l'activation du pare-feu.
 
 ---
 

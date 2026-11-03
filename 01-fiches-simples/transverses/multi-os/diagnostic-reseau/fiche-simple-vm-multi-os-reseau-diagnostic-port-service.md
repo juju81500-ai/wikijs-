@@ -1,6 +1,6 @@
 # fiche-simple-vm-multi-os-reseau-diagnostic-port-service.md
 
-- **Environnement** : VM, poste, serveur, LXC Proxmox ou hôte Docker (Linux ou Windows)
+- **Environnement** : [[Glossary:VM]], poste, serveur, [[Glossary:LXC]] Proxmox ou hôte Docker (Linux ou Windows)
 - **OS / Version** : Debian 12/13, Ubuntu 24-04/26-04, Rocky Linux 9, Alpine Linux, Windows 10/11, Windows Server 2022/2025
 - **Catégorie** : réseau / couche application
 - **Tags** : `reseau`, `diagnostic`, `multi-os`, `depannage`
@@ -17,7 +17,7 @@ Confirmer qu'un port précis répond et que le service écoute.
    ```bash
    nc -vz -w 3 192.0.2.10 443
    ```
-   👉 Explication : `succeeded` confirme que le TCP est ouvert; l'application n'est pas encore validée.
+   👉 Explication : `succeeded` confirme que le [[Glossary:TCP]] est ouvert; l'application n'est pas encore validée.
 
 2. Côté serveur Linux : vérifier l'écoute et les services en échec :
    ```bash

@@ -34,7 +34,7 @@ Sécuriser le compte Administrateur local initial.
 
 ## 2. Production — Contrôles
 
-Stocker le mot de passe dans le coffre de l'organisation; utiliser **Windows LAPS** une fois le serveur joint au domaine.
+Stocker le mot de passe dans le coffre de l'organisation; utiliser **Windows [[Glossary:LAPS]]** une fois le serveur joint au domaine.
 
 ## 3. Production — Sécurité
 

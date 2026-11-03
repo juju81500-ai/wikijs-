@@ -1,6 +1,6 @@
 # 📄 fiche-simple-appliance-pfsense-ce-systeme-mise-a-jour.md
 
-- **Environnement** : pfSense CE sur VM Proxmox VE ou appliance dédiée, fenêtre de maintenance planifiée
+- **Environnement** : pfSense CE sur [[Glossary:VM]] Proxmox VE ou appliance dédiée, fenêtre de maintenance planifiée
 - **OS / Version** : pfSense CE 2.x (base FreeBSD) - Toutes-versions
 - **Catégorie** : Système / Mises à jour
 - **Tags** : `pfsense`, `ce`, `freebsd`, `update`, `pkg`, `maintenance`

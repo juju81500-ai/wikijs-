@@ -14,7 +14,7 @@
 2. **organiser** la gestion des vulnérabilités et des correctifs : inventaire, priorisation, tests, déploiement par vagues, vérification ;
 3. **cadrer** un scan de vulnérabilités **autorisé** et interpréter ses résultats ;
 4. **décrire** le chemin d'un journal de sécurité jusqu'à l'alerte et écrire une règle de corrélation simple ;
-5. **reconnaître** un hameçonnage, vérifier SPF, DKIM et DMARC, et organiser un signalement ;
+5. **reconnaître** un hameçonnage, vérifier [[Glossary:SPF]], [[Glossary:DKIM]] et [[Glossary:DMARC]], et organiser un signalement ;
 6. **bâtir** un programme de sensibilisation utile ;
 7. **appliquer** une réponse à incident de premier niveau : qualifier, contenir selon la procédure, préserver les preuves, escalader, documenter.
 
@@ -22,8 +22,8 @@ Leçon **strictement défensive** : ni exploit, ni outil offensif.
 
 ## Prérequis et durée
 
-- Bases d'administration Linux et Windows (services, comptes, journaux) et de réseau (ports, DNS).
-- Une VM Linux jetable avec snapshot ; une VM Windows de test est un plus.
+- Bases d'administration Linux et Windows (services, comptes, journaux) et de réseau (ports, [[Glossary:DNS]]).
+- Une [[Glossary:VM]] Linux jetable avec snapshot ; une VM Windows de test est un plus.
 - Voir aussi : [Cryptographie appliquée](lecon-cryptographie-appliquee.md), [VPN et segmentation](lecon-vpn-segmentation.md).
 - Durée : environ 3 h 30. Adresses de documentation (`192.0.2.0/24`, `198.51.100.0/24`, `203.0.113.0/24`, `2001:db8::/32`), domaines `example.com` et `example.test`, données fictives.
 
@@ -33,7 +33,7 @@ Leçon **strictement défensive** : ni exploit, ni outil offensif.
 - Un correctif non appliqué reste une cause majeure de compromission : adoptez un **cycle** régulier.
 - On ne scanne **que** ce que l'on est autorisé à scanner : accord écrit, périmètre, fenêtre.
 - Un journal isolé est banal ; la **corrélation** fait émerger le signal, à condition d'avoir des horloges synchronisées et une centralisation.
-- L'hameçonnage demande une défense technique (SPF/DKIM/DMARC, MFA résistant) **et** humaine (sensibilisation, signalement facile).
+- L'hameçonnage demande une défense technique (SPF/DKIM/DMARC, [[Glossary:MFA]] résistant) **et** humaine (sensibilisation, signalement facile).
 - Niveau 1 : **qualifier, contenir selon la procédure, préserver les preuves, escalader, documenter**.
 
 ![Triangle de la triade CIA avec confidentialité, intégrité et disponibilité aux sommets, et pour chacun un exemple de menace et de défense](images/menaces-defense-1.svg)
@@ -44,7 +44,7 @@ Leçon **strictement défensive** : ni exploit, ni outil offensif.
 
 ## 1. La triade CIA et le raisonnement par le risque
 
-La sécurité de l'information repose sur trois propriétés (CIA en anglais, DIC en français).
+La sécurité de l'information repose sur trois propriétés (CIA en anglais, [[Glossary:DIC]] en français).
 
 | Propriété | Question | Exemple de violation | Mesures |
 |---|---|---|---|
@@ -71,8 +71,8 @@ Des référentiels publics comme MITRE ATT&CK servent à **vérifier que l'on d�
 
 ### 3.1 Vocabulaire
 
-- **CVE** : identifiant public d'une vulnérabilité.
-- **CVSS** : note de gravité technique de 0 à 10 ; elle ne dit pas si la faille est exploitée chez vous.
+- **[[Glossary:CVE]]** : identifiant public d'une vulnérabilité.
+- **[[Glossary:CVSS]]** : note de gravité technique de 0 à 10 ; elle ne dit pas si la faille est exploitée chez vous.
 - **KEV** : catalogue (CISA) des failles **réellement exploitées**, à traiter en priorité.
 - **Avis de sécurité** : bulletins de l'éditeur, de la distribution ou du CERT-FR.
 
@@ -108,7 +108,7 @@ Un scanner envoie des requêtes pour identifier versions et mauvaises configurat
 
 - **Découverte** : quels hôtes et services existent ? Peu intrusif.
 - **Scan de vulnérabilités** : versions obsolètes et mauvaises configurations ; l'**authentifié** (compte en lecture) est plus précis.
-- **Audit de configuration** : comparaison à une référence de durcissement (CIS, ANSSI), en local et en lecture seule.
+- **Audit de configuration** : comparaison à une référence de durcissement (CIS, [[Glossary:ANSSI]]), en local et en lecture seule.
 
 ### 4.3 Lire les résultats
 
@@ -118,13 +118,13 @@ Un **faux positif** signale une faille inexistante (version rétro-portée par l
 
 ### 5.1 Sources
 
-- **Linux** : connexions SSH, `sudo`, comptes (`journald`, `/var/log/auth.log`).
+- **Linux** : connexions [[Glossary:SSH]], `sudo`, comptes (`journald`, `/var/log/auth.log`).
 - **Windows** : connexions réussies (4624), échecs (4625), verrouillage (4740), création de compte (4720), effacement des journaux (1102).
-- **Réseau et applications** : pare-feu, VPN, DNS, authentifications, reverse proxy.
+- **Réseau et applications** : pare-feu, [[Glossary:VPN]], DNS, authentifications, reverse proxy.
 
 ### 5.2 Conditions pour qu'un journal serve
 
-1. **Horloges synchronisées** (NTP, chrony), de préférence en UTC.
+1. **Horloges synchronisées** ([[Glossary:NTP]], chrony), de préférence en UTC.
 2. **Centralisation** hors de la machine surveillée : l'attaquant efface d'abord les traces locales.
 3. **Rétention** adaptée, accès restreint, respect de la vie privée (les journaux contiennent des données personnelles).
 4. **Normalisation** : champs communs (date, source, utilisateur, adresse, action, résultat), intégrité protégée.
@@ -153,7 +153,7 @@ Trop d'alertes inutiles épuisent l'équipe. Réglez les seuils, listez les exce
 - **DKIM** (RFC 6376) : signature des messages, clé publique dans le DNS ;
 - **DMARC** (RFC 7489) : politique si SPF et DKIM échouent (`none`, `quarantine`, `reject`) et rapports. Commencez par `none` pour observer, puis resserrez : passer directement à `reject` peut bloquer du courrier légitime.
 
-**Défenses en couches** : filtrage et analyse des liens et pièces jointes, bandeau « externe », blocage des macros ; **MFA résistant à l'hameçonnage** (clés FIDO2, passkeys) ; double validation et rappel au numéro connu pour les virements ; bouton de signalement unique.
+**Défenses en couches** : filtrage et analyse des liens et pièces jointes, bandeau « externe », blocage des macros ; **MFA résistant à l'hameçonnage** (clés [[Glossary:FIDO2]], passkeys) ; double validation et rappel au numéro connu pour les virements ; bouton de signalement unique.
 
 **Si l'on a cliqué ou saisi son mot de passe** : le dire **immédiatement**, sans honte. Le niveau 1 applique alors la procédure : changer le mot de passe depuis un poste de confiance, révoquer sessions et jetons, vérifier les règles de messagerie, isoler le poste si un fichier a été ouvert.
 
@@ -170,7 +170,7 @@ Un programme efficace est :
 
 ## 8. Réponse à incident de premier niveau
 
-Un **événement** est une observation ; un **incident** compromet ou menace la sécurité de l'information ou des services. Les processus s'inspirent souvent du guide **NIST SP 800-61** : préparation ; détection et analyse ; confinement, éradication, récupération ; retour d'expérience. Le **niveau 1** reçoit l'alerte, la qualifie, applique les mesures **prévues** et **escalade**. Il n'enquête pas à fond et ne « répare » pas à sa façon.
+Un **événement** est une observation ; un **incident** compromet ou menace la sécurité de l'information ou des services. Les processus s'inspirent souvent du guide **[[Glossary:NIST]] SP 800-61** : préparation ; détection et analyse ; confinement, éradication, récupération ; retour d'expérience. Le **niveau 1** reçoit l'alerte, la qualifie, applique les mesures **prévues** et **escalade**. Il n'enquête pas à fond et ne « répare » pas à sa façon.
 
 ![Cinq étapes de la réponse de niveau 1 : détecter, qualifier, contenir, escalader et documenter, avec un encadré listant ce qu'il ne faut pas faire seul](images/menaces-defense-4.svg)
 
@@ -197,7 +197,7 @@ Contre-attaquer ou scanner l'attaquant (illégal) ; répondre au fraudeur ou pay
 
 ### 8.4 Dimension réglementaire
 
-Une violation de données personnelles peut imposer une **notification à l'autorité dans les 72 heures** (RGPD, article 33). La décision revient au délégué à la protection des données et à la direction : le niveau 1 **escalade sans délai** et consigne l'heure de découverte.
+Une violation de données personnelles peut imposer une **notification à l'autorité dans les 72 heures** ([[Glossary:RGPD]], article 33). La décision revient au délégué à la protection des données et à la direction : le niveau 1 **escalade sans délai** et consigne l'heure de découverte.
 
 ### 8.5 Contenu d'un ticket
 
@@ -217,7 +217,7 @@ date -Is
 apt list --upgradable 2>/dev/null | head -20
 ```
 
-👉 Explication : consigne l'identité de la machine et l'heure, puis liste les mises à jour disponibles d'après les index APT présents ; rien n'est installé. Sous famille RPM : `dnf updateinfo list security`.
+👉 Explication : consigne l'identité de la machine et l'heure, puis liste les mises à jour disponibles d'après les index [[Glossary:APT]] présents ; rien n'est installé. Sous famille [[Glossary:RPM]] : `dnf updateinfo list security`.
 
 ```powershell
 Get-ComputerInfo -Property OsName,OsVersion,OsBuildNumber
@@ -346,7 +346,7 @@ rm -f auth-demo.log correle.sh
 1. (a) Confidentialité ; (b) intégrité ; (c) disponibilité (et confidentialité en cas d'exfiltration) ; (d) disponibilité : une mesure de sécurité mal maîtrisée crée elle-même l'incident, d'où tests et fenêtres.
 2. Le **serveur exposé** : l'exploitation est réelle et accessible ; CVSS décrit la gravité théorique, pas la probabilité chez vous. Le serveur isolé suit, avec mesures compensatoires entre-temps.
 3. Exemple : responsable du système (autorise) et opérateur ; périmètre `192.0.2.10` ; exclusions : tout le reste ; fenêtre le 2026-11-01 de 14 h à 15 h ; pas de déni de service, débit réduit ; contact d'astreinte ; rapport stocké chiffré, accès restreint, supprimé après correction.
-4. Exemple : plus de 10 échecs en 10 minutes depuis une même adresse, puis une réussite depuis cette adresse, puis création d'une règle de redirection vers l'extérieur : gravité **haute**. Faux positifs : utilisateur qui a oublié son mot de passe puis crée un transfert légitime, supervision interne, NAT partagé. On les traite par exceptions et vérification auprès de l'utilisateur.
+4. Exemple : plus de 10 échecs en 10 minutes depuis une même adresse, puis une réussite depuis cette adresse, puis création d'une règle de redirection vers l'extérieur : gravité **haute**. Faux positifs : utilisateur qui a oublié son mot de passe puis crée un transfert légitime, supervision interne, [[Glossary:NAT]] partagé. On les traite par exceptions et vérification auprès de l'utilisateur.
 5. Indices : urgence artificielle, menace de suspension, domaine réel `verification-compte.invalid` (le préfixe `example.test` est trompeur), signature générique. Conduite : ne pas cliquer, signaler, conserver le message, ne pas répondre ; si le lien a été ouvert, déclencher la procédure de compte compromis.
 6. Ticket immédiat (heures 14:05 et 14:40) ; verrouiller le compte et révoquer les sessions selon la procédure ; changement de mot de passe depuis un poste de confiance ; vérifier règles de messagerie et MFA ; conserver courriel, capture de la fausse page et journaux VPN ; **escalader** au niveau 2 avec chronologie ; ne pas contacter l'attaquant.
 7. Exemple, testé sur le journal fictif : `awk '/Failed password/ { u=$(NF-5); n[u]++; if (n[u]==3) print "ALERTE compte " u }' auth-demo.log` ; le nom du compte est le cinquième champ avant la fin de ligne, que l'utilisateur soit valide ou `invalid user`. Seul `alice` déclenche l'alerte.
@@ -372,7 +372,7 @@ rm -f auth-demo.log correle.sh
 - A. Remplace la journalisation — B. Relie des événements banals pour faire émerger un signal — C. Bloque seule les attaques — D. Chiffre les journaux
 
 **Q7.** Quel enregistrement indique quoi faire quand SPF et DKIM échouent ?
-- A. MX — B. DMARC — C. PTR — D. CNAME
+- A. MX — B. DMARC — C. PTR — D. [[Glossary:CNAME]]
 
 **Q8.** Indicateur de sensibilisation à privilégier en plus du taux de clic ?
 - A. Nombre de diapositives — B. Taux et délai de signalement — C. Durée de la formation — D. Nombre de sanctions
@@ -418,7 +418,7 @@ Principe constant : **recueillir les faits d'abord**, n'agir que selon la procé
 - ANSSI : <https://cyber.gouv.fr/>
 - Cybermalveillance.gouv.fr : <https://www.cybermalveillance.gouv.fr/>
 - RFC 7208 (SPF) : <https://www.rfc-editor.org/rfc/rfc7208> ; RFC 6376 (DKIM) : <https://www.rfc-editor.org/rfc/rfc6376> ; RFC 7489 (DMARC) : <https://www.rfc-editor.org/rfc/rfc7489>
-- CNIL — violations de données : <https://www.cnil.fr/>
+- [[Glossary:CNIL]] — violations de données : <https://www.cnil.fr/>
 
 ## Crédits des images
 

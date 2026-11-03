@@ -2,9 +2,9 @@
 
 - **OS / Version** : Debian 12 Bookworm, Znuny 7.3.8
 - **Type de fiche** : Installation/Déploiement
-- **Environnement** : VM Linux dédiée, Apache/mod_perl et MariaDB 10.11
+- **Environnement** : [[Glossary:VM]] Linux dédiée, Apache/mod_perl et MariaDB 10.11
 - **Machine ciblée** : Serveur helpdesk / ticketing
-- **Catégorie** : ITSM / ticketing
+- **Catégorie** : [[Glossary:ITSM]] / ticketing
 - **Tags** : `znuny`, `debian12`, `itsm`, `ticketing`, `apache`, `mariadb`
 
 ## 1. Préparer l'installation
@@ -13,7 +13,7 @@ Fiche simple : [préparer l'installation](../../../../01-fiches-simples/debian/1
 
 Znuny 7.3.8 est une version de maintenance publiée le 14 octobre 2026. Vérifier les notes de version et le support applicatif avant mise en production. La documentation officielle teste notamment Debian 12 et Rocky Linux 9; ce guide cible Debian 12 et l'archive source officielle.
 
-Prévoir DNS, TLS, SMTP, sauvegarde hors hôte et accès console/SSH de secours. Les prérequis officiels incluent Apache avec mod_perl, MariaDB 10.3+ ou un autre moteur supporté, Perl 5.16+ et plusieurs modules Perl. Utiliser un serveur dédié ou une VM de test avant production.
+Prévoir [[Glossary:DNS]], [[Glossary:TLS]], [[Glossary:SMTP]], sauvegarde hors hôte et accès console/SSH de secours. Les prérequis officiels incluent Apache avec mod_perl, MariaDB 10.3+ ou un autre moteur supporté, Perl 5.16+ et plusieurs modules Perl. Utiliser un serveur dédié ou une VM de test avant production.
 
 ## 2. Installer les paquets système
 

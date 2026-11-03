@@ -13,7 +13,7 @@ Obtenir l'ISO officielle de Proxmox VE 8.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Télécharger l'ISO depuis le site officiel (GUI : navigateur, https://www.proxmox.com/en/downloads > Proxmox Virtual Environment > ISO Images) ou en ligne de commande (remplacer `X.Y-Z` par la version choisie) :
+1. Télécharger l'ISO depuis le site officiel ([[Glossary:GUI]] : navigateur, https://www.proxmox.com/en/downloads > Proxmox Virtual Environment > ISO Images) ou en ligne de commande (remplacer `X.Y-Z` par la version choisie) :
    ```bash
    curl -LO https://enterprise.proxmox.com/iso/proxmox-ve_X.Y-Z.iso
    curl -LO https://enterprise.proxmox.com/iso/SHA256SUMS

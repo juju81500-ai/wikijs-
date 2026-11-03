@@ -13,7 +13,7 @@ Arrêter les services inutiles.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Services : mettre sur arrêt et désactiver le démarrage automatique de ce qui n'est pas utilisé (FTP, Telnet, SNMP, etc.).
+1. [[Glossary:GUI]] : Système > Services : mettre sur arrêt et désactiver le démarrage automatique de ce qui n'est pas utilisé ([[Glossary:FTP]], Telnet, [[Glossary:SNMP]], etc.).
    ```bash
    sudo midclt call service.query | python3 -m json.tool | grep -B2 -A6 '"enable": true'
    ```

@@ -36,7 +36,7 @@ icacls C:\Captures
 
 ## 2. Production — Contrôles
 
-Ne pas lancer Wireshark GUI en administrateur en continu : privilégier la capture par TShark/dumpcap puis analyse en compte standard.
+Ne pas lancer Wireshark [[Glossary:GUI]] en administrateur en continu : privilégier la capture par TShark/dumpcap puis analyse en compte standard.
 
 ## 3. Production — Sécurité
 

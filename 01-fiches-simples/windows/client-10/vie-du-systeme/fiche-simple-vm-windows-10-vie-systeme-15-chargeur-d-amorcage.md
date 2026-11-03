@@ -25,7 +25,7 @@ Contrôler le Gestionnaire de démarrage Windows (UEFI) et le mode de démarrage
    msinfo32 /report "$env:USERPROFILE\msinfo.txt"
    Select-String -Path "$env:USERPROFILE\msinfo.txt" -Pattern 'Mode BIOS|démarrage sécurisé|BIOS Mode|Secure Boot'
    ```
-   👉 Explication : génère le rapport et en extrait le mode BIOS et l'état de Secure Boot.
+   👉 Explication : génère le rapport et en extrait le mode [[Glossary:BIOS]] et l'état de Secure Boot.
 
 3. Régler un délai d'affichage du menu court en cas de double démarrage (déconseillé en entreprise).
    ```powershell

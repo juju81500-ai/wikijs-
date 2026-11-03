@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_PostgreSQL_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; PostgreSQL 17 des dépôts Debian
 - **Catégorie** : base de données / PostgreSQL / Prérequis et limites
 - **Tags** : `debian13`, `postgresql`, `prerequis`
@@ -28,7 +28,7 @@ Cadrer l'exploitation de PostgreSQL sur Debian 13 avant configuration, sécurisa
    👉 Explication : prévoir de l'espace pour les sauvegardes et les journaux WAL.
 
 3. Lister les besoins :
-   👉 Explication : bases, rôles applicatifs, IP clientes, volumétrie, RPO/RTO.
+   👉 Explication : bases, rôles applicatifs, [[Glossary:IP]] clientes, volumétrie, [[Glossary:RPO]]/RTO.
 
 ## 2. Production — Contrôles
 

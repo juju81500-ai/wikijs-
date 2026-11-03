@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_47_Test_De_Resilience_Et
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 47 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-47`
@@ -13,10 +13,10 @@ Vérifier le comportement lors d'une panne et les alertes.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Simuler la perte du WAN (désactiver l'interface virtuelle) et observer Status > Gateways.
+1. Simuler la perte du [[Glossary:WAN]] (désactiver l'interface virtuelle) et observer Status > Gateways.
    👉 Explication : la bascule (groupe de passerelles) ou l'alerte doit se produire.
 
-2. Avec CARP (si HA, Firewall > Virtual IPs et System > High Avail. Sync) : Status > CARP (failover) > Enter Persistent CARP Maintenance Mode. En shell :
+2. Avec [[Glossary:CARP]] (si HA, Firewall > Virtual IPs et System > High Avail. Sync) : Status > CARP (failover) > Enter Persistent CARP Maintenance Mode. En shell :
    ```sh
    sysctl net.inet.carp.allow
    ifconfig vtnet0 | grep carp

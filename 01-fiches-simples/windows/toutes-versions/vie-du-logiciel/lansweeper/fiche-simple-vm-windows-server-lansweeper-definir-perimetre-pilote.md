@@ -1,6 +1,6 @@
 # fiche-simple-vm-windows-server-lansweeper-definir-perimetre-pilote.md
 
-- **Environnement** : Serveur Windows x64 avec Lansweeper Classic (SQL LocalDB ou SQL Server selon l'échelle)
+- **Environnement** : Serveur Windows x64 avec Lansweeper Classic ([[Glossary:SQL]] LocalDB ou SQL Server selon l'échelle)
 - **OS / Version** : Windows Server 2022 recommandé; Lansweeper Classic selon la matrice officielle
 - **Catégorie** : inventaire de parc / découverte réseau
 - **Tags** : `lansweeper`, `windows-server-2022`, `inventaire`, `wmi`, `snmp`
@@ -13,16 +13,16 @@ Limiter la découverte à une plage autorisée avec des identifiants minimaux.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Dans le **First Run Wizard**, saisir une petite plage IP appartenant à l'organisation et validée par l'équipe réseau.
+1. Dans le **First Run Wizard**, saisir une petite plage [[Glossary:IP]] appartenant à l'organisation et validée par l'équipe réseau.
    👉 Explication : ne jamais scanner de réseau tiers ou non approuvé.
 
 2. Créer des identifiants de découverte distincts : **Scanning > Scanning Credentials**.
    👉 Explication : un compte par usage, à privilèges minimaux.
 
-3. Pour Windows, préférer un compte de lecture/découverte dédié plutôt qu'administrateur de domaine; limiter WMI et lecture AD aux systèmes concernés.
+3. Pour Windows, préférer un compte de lecture/découverte dédié plutôt qu'administrateur de domaine; limiter [[Glossary:WMI]] et lecture [[Glossary:AD]] aux systèmes concernés.
    👉 Explication : réduit l'impact d'une compromission.
 
-4. Pour SNMP, utiliser SNMPv3 en lecture seule si disponible.
+4. Pour [[Glossary:SNMP]], utiliser SNMPv3 en lecture seule si disponible.
    👉 Explication : évite les communautés en clair.
 
 5. Limiter la portée de chaque identifiant par domaine ou plage; garder les secrets dans le coffre du produit.

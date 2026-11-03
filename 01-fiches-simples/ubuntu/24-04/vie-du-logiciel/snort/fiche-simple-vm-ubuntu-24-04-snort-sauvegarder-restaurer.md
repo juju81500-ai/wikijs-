@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Snort_Sauvegarder_Restaurer
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Snort
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Snort
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Snort / sauvegarde et restauration
 - **Tags** : `snort`, `ubuntu24.04`, `vie-du-logiciel`, `sauvegarder-restaurer`

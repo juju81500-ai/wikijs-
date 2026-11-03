@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_30_Protection_Contre_Le_Brute
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 30 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-30`
@@ -19,7 +19,7 @@ Bannir les sources qui échouent à s'authentifier.
    ```
    👉 Explication : ajoute le service et les filtres usuels.
 
-2. Configurer la prison SSH (journal BusyBox dans `/var/log/messages`) :
+2. Configurer la prison [[Glossary:SSH]] (journal BusyBox dans `/var/log/messages`) :
    ```sh
    doas sh -c 'cat > /etc/fail2ban/jail.d/sshd-local.conf <<EOF
    [sshd]

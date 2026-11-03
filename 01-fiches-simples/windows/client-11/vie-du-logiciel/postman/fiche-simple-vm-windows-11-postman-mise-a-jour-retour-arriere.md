@@ -2,7 +2,7 @@
 
 - **Environnement** : Poste Windows 11 géré, compte standard, Postman Desktop et Newman
 - **OS / Version** : Windows 11 Client
-- **Catégorie** : API / mise à jour et retour arrière
+- **Catégorie** : [[Glossary:API]] / mise à jour et retour arrière
 - **Tags** : `windows-11`, `postman`, `api`, `newman`, `vie-du-logiciel`
 
 ---
@@ -29,7 +29,7 @@ Mettre à jour Postman et Newman sur Windows 11 de manière contrôlée, avec sa
    ```powershell
    winget upgrade --id Postman.Postman -e
    ```
-   👉 Explication : Applique la version publiée. Alternative GUI : Paramètres > Update / About Postman (libellé à vérifier).
+   👉 Explication : Applique la version publiée. Alternative [[Glossary:GUI]] : Paramètres > Update / About Postman (libellé à vérifier).
 
 4. Mettre à jour Newman :
    ```powershell

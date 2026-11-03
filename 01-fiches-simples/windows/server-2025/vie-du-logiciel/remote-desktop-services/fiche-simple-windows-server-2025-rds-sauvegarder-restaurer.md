@@ -37,7 +37,7 @@ Sauvegarder et restaurer la configuration RDS (collections, certificats, base de
 
 ## 2. Production — Contrôles
 
-- Définir RPO/RTO, rétention et test de restauration périodique.
+- Définir [[Glossary:RPO]]/RTO, rétention et test de restauration périodique.
 - Chiffrer et isoler les sauvegardes; contrôler leurs accès.
 - Réactiver les licences si le serveur de licences est reconstruit; contacter Microsoft pour la réactivation.
 

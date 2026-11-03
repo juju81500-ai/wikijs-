@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_02_Recuperation_De_L_Image
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 02 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-02`
@@ -19,7 +19,7 @@ Obtenir l'ISO officielle d'Alpine Linux 3-19.
    curl -LO https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86_64/alpine-virt-3.19.PATCH-x86_64.iso.sha256
    curl -LO https://dl-cdn.alpinelinux.org/alpine/v3.19/releases/x86_64/alpine-virt-3.19.PATCH-x86_64.iso.asc
    ```
-   👉 Explication : récupère l'image, son empreinte SHA-256 et sa signature GPG; `virt` embarque le noyau optimisé pour les machines virtuelles, `standard` convient au matériel.
+   👉 Explication : récupère l'image, son empreinte SHA-256 et sa signature [[Glossary:GPG]]; `virt` embarque le noyau optimisé pour les machines virtuelles, `standard` convient au matériel.
 
 2. Contrôler la taille et la date du fichier :
    ```sh

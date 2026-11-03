@@ -1,8 +1,8 @@
 # Fiche_Simple_-_VM_Debian_13_Postman_Environnements_Secrets
 
-- **Environnement** : VM Debian 13 Trixie avec bureau graphique, Postman Desktop et Newman
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie avec bureau graphique, Postman Desktop et Newman
 - **OS / Version** : Debian 13 Trixie
-- **Catégorie** : API / variables et secrets
+- **Catégorie** : [[Glossary:API]] / variables et secrets
 - **Tags** : `debian13`, `postman`, `api`, `newman`, `vie-du-logiciel`
 
 ---
@@ -41,7 +41,7 @@ Séparer URL, paramètres et secrets avec des environnements Postman et des vari
    ```text
    Environments > ENV_LAB > ⋯ > Export > vérifier que API_TOKEN n'a pas de valeur
    ```
-   👉 Explication : Contrôler le JSON exporté avant de le partager.
+   👉 Explication : Contrôler le [[Glossary:JSON]] exporté avant de le partager.
 
 ## 2. Production — Contrôles
 

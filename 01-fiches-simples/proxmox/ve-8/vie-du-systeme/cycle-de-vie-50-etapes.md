@@ -1,7 +1,7 @@
 # Cycle de vie 50 étapes : Proxmox VE 8
 
 - **OS / Version** : Proxmox Virtual Environment 8.x; confirmer la version mineure et les dépôts actifs avant intervention
-- **Environnement** : Hyperviseur bare-metal; les VM et conteneurs hébergés sont des systèmes distincts
+- **Environnement** : Hyperviseur bare-metal; les [[Glossary:VM]] et conteneurs hébergés sont des systèmes distincts
 - **Catégorie** : Installation / exploitation / vérification
 - **Tags** : `cycle-de-vie`, `proxmox`, `pve8`, `hyperviseur`, `installation`, `production`, `verification`
 
@@ -18,7 +18,7 @@ Cette checklist suit les 50 étapes du [cycle complet Proxmox](../../../../02-fi
 
 ### Phase 1 — Préparation et prérequis (1 à 5)
 
-1. Définir charge, CPU, mémoire, stockage, réseau et croissance.
+1. Définir charge, [[Glossary:CPU]], mémoire, stockage, réseau et croissance.
 2. Télécharger l'ISO Proxmox VE depuis le site officiel.
 3. Vérifier l'empreinte publiée et l'authenticité de l'image.
 4. Préparer le média d'installation ou la console de gestion distante.
@@ -28,8 +28,8 @@ Cette checklist suit les 50 étapes du [cycle complet Proxmox](../../../../02-fi
 
 6. Choisir langue et paramètres régionaux.
 7. Choisir le clavier approprié.
-8. Définir l'adressage réseau de gestion et le DNS.
-9. Définir un hostname FQDN stable.
+8. Définir l'adressage réseau de gestion et le [[Glossary:DNS]].
+9. Définir un hostname [[Glossary:FQDN]] stable.
 10. Configurer le compte administrateur initial et protéger ses identifiants.
 11. Prévoir des comptes nominatifs et un accès de secours.
 12. Définir le fuseau horaire et la synchronisation horaire.
@@ -39,22 +39,22 @@ Cette checklist suit les 50 étapes du [cycle complet Proxmox](../../../../02-fi
 
 ### Phase 3 — Configuration post-installation (16 à 25)
 
-16. Fixer l'adresse de gestion et documenter les VLAN/interfaces.
+16. Fixer l'adresse de gestion et documenter les [[Glossary:VLAN]]/interfaces.
 17. Configurer DNS et résolution de noms.
 18. Vérifier hostname, FQDN et résolution locale.
 19. Configurer uniquement les dépôts correspondant à la souscription et version.
 20. Examiner les annonces et planifier les mises à jour PVE.
 21. Installer/valider les pilotes et agents uniquement s'ils sont requis.
-22. Vérifier les sources NTP et la synchronisation de tous les nœuds.
+22. Vérifier les sources [[Glossary:NTP]] et la synchronisation de tous les nœuds.
 23. Installer les outils d'administration approuvés sans modifier les paquets système hors support.
 24. Configurer les notifications et bannières selon la politique.
 25. Capturer l'état initial et vérifier la sauvegarde; un snapshot n'est pas une sauvegarde indépendante.
 
 ### Phase 4 — Sécurisation et hardening (26 à 35)
 
-26. Mettre en place des clés SSH protégées et des comptes individuels.
+26. Mettre en place des clés [[Glossary:SSH]] protégées et des comptes individuels.
 27. Restreindre l'interface et SSH au réseau d'administration; garder un accès console.
-28. Appliquer rôles, permissions et MFA lorsque pris en charge.
+28. Appliquer rôles, permissions et [[Glossary:MFA]] lorsque pris en charge.
 29. Configurer le pare-feu Proxmox sur les couches nécessaires après validation des règles.
 30. Activer les alertes et protections adaptées sans verrouiller l'accès d'administration.
 31. Réduire les services exposés après vérification des dépendances PVE.
@@ -81,6 +81,5 @@ Cette checklist suit les 50 étapes du [cycle complet Proxmox](../../../../02-fi
 46. Planifier puis tester un redémarrage contrôlé d'un nœud selon les dépendances HA.
 47. Tester les alertes et bascules en laboratoire ou lors d'une maintenance approuvée.
 48. Restaurer une VM/CT en environnement isolé et consigner le résultat.
-49. Enregistrer nœuds, VM/CT, flux et accès dans la CMDB/IPAM; stocker les secrets dans le coffre approuvé.
+49. Enregistrer nœuds, VM/CT, flux et accès dans la [[Glossary:CMDB]]/IPAM; stocker les secrets dans le coffre approuvé.
 50. Maintenir le runbook, les versions, les dépendances, les procédures de mise à jour et de retour arrière.
-

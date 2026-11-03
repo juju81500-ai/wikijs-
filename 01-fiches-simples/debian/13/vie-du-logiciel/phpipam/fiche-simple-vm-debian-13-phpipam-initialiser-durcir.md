@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-13-phpipam-initialiser-durcir.md
 
-- **Environnement** : VM Debian 13, phpIPAM avec MariaDB locale, PHP-FPM et Nginx
+- **Environnement** : [[Glossary:VM]] Debian 13, phpIPAM avec MariaDB locale, PHP-FPM et Nginx
 - **OS / Version** : Debian 13 Trixie x86-64; phpIPAM 1.8.3; PHP 8.4
-- **Catégorie** : IPAM / sécurité
+- **Catégorie** : [[Glossary:IPAM]] / sécurité
 - **Tags** : `debian13`, `phpipam`, `ipam`, `nginx`, `mariadb`, `installateur`, `durcissement`
 
 ---
@@ -13,7 +13,7 @@ Initialiser le schéma puis désactiver l'installateur et durcir la console.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Ouvrir `https://ipam.example.net/` (nom d'exemple) et lancer l'assistant d'installation avec le compte SQL applicatif `phpipam`.
+1. Ouvrir `https://ipam.example.net/` (nom d'exemple) et lancer l'assistant d'installation avec le compte [[Glossary:SQL]] applicatif `phpipam`.
    👉 Explication : initialise le schéma; ne jamais fournir le compte root.
 
 2. Changer immédiatement le mot de passe administrateur initial.
@@ -25,10 +25,10 @@ Initialiser le schéma puis désactiver l'installateur et durcir la console.
    ```
    👉 Explication : passer `$disable_installer = true` et vérifier `$debugging = false`.
 
-4. Créer des comptes nominatifs et groupes limités aux sections nécessaires; créer un token API minimal seulement si l'API est utilisée.
+4. Créer des comptes nominatifs et groupes limités aux sections nécessaires; créer un token [[Glossary:API]] minimal seulement si l'API est utilisée.
    👉 Explication : réduit les droits de chaque acteur.
 
-5. Saisir quelques préfixes et adresses fictifs du lab et vérifier sous-réseaux, VLAN et sections.
+5. Saisir quelques préfixes et adresses fictifs du lab et vérifier sous-réseaux, [[Glossary:VLAN]] et sections.
    👉 Explication : valide le modèle sans scan ni suppression automatique.
 
 ## 2. Production — Contrôles
@@ -39,7 +39,7 @@ Ne pas activer scan, ping, discovery ni suppression des adresses inactives dans 
 
 - Mot de passe admin changé immédiatement.
 - Installateur désactivé.
-- API sans HTTP non sécurisé.
+- API sans [[Glossary:HTTP]] non sécurisé.
 - Compte administrateur réservé aux changements d'administration.
 
 ## Validation et retour arrière

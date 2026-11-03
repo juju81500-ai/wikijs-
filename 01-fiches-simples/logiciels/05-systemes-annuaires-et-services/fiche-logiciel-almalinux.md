@@ -2,7 +2,7 @@
 
 - **Catégorie** : Systèmes, annuaires et services
 - **Plateforme** : Linux
-- **Produit (matrice)** : RHEL / AlmaLinux / Rocky Linux
+- **Produit (matrice)** : [[Glossary:RHEL]] / AlmaLinux / Rocky Linux
 - **Statut dans le pack** : Partiel
 - **Tags** : `logiciel`, `05-systemes-annuaires-et-services`, `partiel`
 

@@ -1,15 +1,15 @@
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Systeme_Joindre_AD_Sssd
 
-- **Environnement** : VM Ubuntu Server joint à un domaine Active Directory
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat) - realmd 0.17.x et SSSD 2.9.x (versions des dépôts Noble)
+- **Environnement** : [[Glossary:VM]] Ubuntu Server joint à un domaine Active Directory
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble Numbat) - realmd 0.17.x et [[Glossary:SSSD]] 2.9.x (versions des dépôts Noble)
 - **Catégorie** : Système / Annuaire et authentification centralisée
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[active-directory]`, `[realmd]`, `[sssd]`, `[kerberos]`, `[pam]`
 
 ## 🎯 Problème précis à résoudre
-Joindre un serveur Ubuntu Server 24-04 LTS à un domaine Active Directory avec `realmd` et `sssd`, autoriser des groupes AD précis à se connecter et contrôler la résolution des comptes du domaine.
+Joindre un serveur Ubuntu Server 24-04 LTS à un domaine Active Directory avec `realmd` et `sssd`, autoriser des groupes [[Glossary:AD]] précis à se connecter et contrôler la résolution des comptes du domaine.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
-1. Vérifier la résolution DNS du domaine, qui doit pointer vers un contrôleur de domaine :
+1. Vérifier la résolution [[Glossary:DNS]] du domaine, qui doit pointer vers un contrôleur de domaine :
    ```bash
    resolvectl status | grep -i 'DNS Servers'
    host -t SRV _ldap._tcp.<domaine>
@@ -56,6 +56,6 @@ Joindre un serveur Ubuntu Server 24-04 LTS à un domaine Active Directory avec `
    👉 *Explication : Un fichier sudoers mal formé peut bloquer l'accès administrateur ; `visudo -cf` doit répondre `parsed OK`. Le groupe doit être écrit sans espace inutile.*
 
 ## ✅ Validation et retour arrière
-- Depuis un autre poste, ouvrir une session SSH avec `<utilisateur>@<domaine>` et vérifier `id` ; le groupe AD autorisé doit apparaître.
+- Depuis un autre poste, ouvrir une session [[Glossary:SSH]] avec `<utilisateur>@<domaine>` et vérifier `id` ; le groupe AD autorisé doit apparaître.
 - Vérifier la jonction avec `sudo realm list` et les journaux avec `sudo journalctl -u sssd --since today --no-pager`.
 - Retour arrière : `sudo realm leave <domaine>` (avec `--user=<compte_admin_ad>` si demandé), puis `sudo apt purge -y realmd sssd sssd-tools`.

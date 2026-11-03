@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Définir la disposition des disques : GPT, partition système EFI, partition de récupération, volume NTFS.
+Définir la disposition des disques : [[Glossary:GPT]], partition système [[Glossary:EFI]], partition de récupération, volume [[Glossary:NTFS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 

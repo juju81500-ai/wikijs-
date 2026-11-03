@@ -22,7 +22,7 @@ Recetter l'ensemble de la configuration défensive de Google Workspace.
    ```
    👉 Explication : taux d'enrôlement cohérent (GAM optionnel).
 
-3. Envoyer un message de test vers une boîte externe et lire les en-têtes (SPF, DKIM, DMARC).
+3. Envoyer un message de test vers une boîte externe et lire les en-têtes ([[Glossary:SPF]], [[Glossary:DKIM]], [[Glossary:DMARC]]).
    👉 Explication : confirme les contrôles de bout en bout.
 
 4. Vérifier dans Vault que la règle de rétention est active.

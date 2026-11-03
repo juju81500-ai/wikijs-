@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_44_Audit_D_Exposition_Reseau
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 44 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-44`
@@ -19,7 +19,7 @@ Mesurer ce que voit Internet.
    ```
    👉 Explication : ne doit montrer que les ports publiés volontairement (ex. 1194/UDP pour OpenVPN).
 
-2. Comparer aux règles WAN (Firewall > Rules > WAN) et aux redirections (Firewall > NAT > Port Forward).
+2. Comparer aux règles [[Glossary:WAN]] (Firewall > Rules > WAN) et aux redirections (Firewall > [[Glossary:NAT]] > Port Forward).
    👉 Explication : toute exposition doit correspondre à une règle documentée.
 
 ## 2. Production — Contrôles

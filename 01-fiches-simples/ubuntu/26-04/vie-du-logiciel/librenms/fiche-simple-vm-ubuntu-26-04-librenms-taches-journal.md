@@ -1,7 +1,7 @@
 # fiche-simple-vm-ubuntu-26-04-librenms-taches-journal.md
 
-- **Environnement** : VM Ubuntu Server 26-04 dédiée à LibreNMS (Nginx, PHP-FPM, MariaDB, SNMP)
-- **OS / Version** : Ubuntu Server 26-04 LTS; LibreNMS 26.10.2; PHP 8.5
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 dédiée à LibreNMS (Nginx, PHP-FPM, MariaDB, [[Glossary:SNMP]])
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]]; LibreNMS 26.10.2; PHP 8.5
 - **Catégorie** : supervision / planification
 - **Tags** : `ubuntu2604`, `librenms`, `snmpv3`, `nginx`, `mariadb`
 

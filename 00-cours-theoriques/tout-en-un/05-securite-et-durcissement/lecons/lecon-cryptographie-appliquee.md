@@ -12,8 +12,8 @@
 
 1. **distinguer** chiffrement symétrique, asymétrique, hachage, signature et code d'authentification, et dire quel outil répond à quel besoin ;
 2. **expliquer** pourquoi un mot de passe se stocke avec un sel et une fonction lente, et choisir une fonction adaptée ;
-3. **lire** un certificat X.509 (sujet, émetteur, SAN, dates) et décrire sa chaîne de confiance ;
-4. **décrire** une poignée de main TLS 1.3 et reconnaître les erreurs de validation fréquentes ;
+3. **lire** un certificat X.509 (sujet, émetteur, [[Glossary:SAN]], dates) et décrire sa chaîne de confiance ;
+4. **décrire** une poignée de main [[Glossary:TLS]] 1.3 et reconnaître les erreurs de validation fréquentes ;
 5. **appliquer** de bonnes pratiques de gestion des clés : génération, droits, stockage, rotation, révocation ;
 6. **repérer** les erreurs classiques et les corriger ;
 7. **réaliser** un laboratoire local avec OpenSSL sur des clés jetables.
@@ -21,7 +21,7 @@
 ## Prérequis et durée
 
 - Terminal Linux (commandes de base, redirections, `chmod`) ; notions de réseau (client/serveur, port 443).
-- Une VM Linux jetable avec OpenSSL 3.x. Aucun accès à un serveur de production.
+- Une [[Glossary:VM]] Linux jetable avec OpenSSL 3.x. Aucun accès à un serveur de production.
 - Durée : environ 3 h. Domaines `example.com` et `example.test`, adresses de documentation (`192.0.2.0/24`, `198.51.100.0/24`, `203.0.113.0/24`, `2001:db8::/32`). Aucune vraie clé ni aucun vrai mot de passe : vous générez vos propres valeurs de test. Suite logique : [VPN et segmentation](lecon-vpn-segmentation.md).
 
 ## L'essentiel en bref
@@ -52,11 +52,11 @@ Trois idées :
 
 - Les briques sont **complémentaires** : un message chiffré mais non authentifié peut être modifié en route. On utilise donc des modes **AEAD** (AES-GCM) qui chiffrent et protègent l'intégrité.
 - **Principe de Kerckhoffs** : tout doit rester sûr même si l'attaquant connaît l'algorithme ; seule la clé est secrète. Un algorithme public, étudié pendant des années, vaut mieux qu'un procédé « maison ».
-- Taille de clé et algorithme sont des **paramètres de sécurité** : un ordre de grandeur courant associe 128 bits symétriques, RSA 3072 et une courbe de 256 bits.
+- Taille de clé et algorithme sont des **paramètres de sécurité** : un ordre de grandeur courant associe 128 bits symétriques, [[Glossary:RSA]] 3072 et une courbe de 256 bits.
 
 ## 2. Chiffrement symétrique
 
-**La même clé** chiffre et déchiffre : un coffre dont Alice et Bob détiennent chacun un exemplaire de la clé. C'est rapide, y compris sur des téraoctets (instructions AES-NI). À retenir : **AES** (128 ou 256 bits) et **ChaCha20-Poly1305**.
+**La même clé** chiffre et déchiffre : un coffre dont Alice et Bob détiennent chacun un exemplaire de la clé. C'est rapide, y compris sur des téraoctets (instructions AES-NI). À retenir : **[[Glossary:AES]]** (128 ou 256 bits) et **ChaCha20-Poly1305**.
 
 **Modes de fonctionnement** (AES traite 16 octets à la fois) :
 
@@ -102,7 +102,7 @@ Deux ingrédients règlent le problème :
 | bcrypt | Éprouvée | coût (≥ 12 aujourd'hui) |
 | PBKDF2-HMAC-SHA-256 | Normalisée, répandue | itérations (centaines de milliers) |
 
-Les coûts évoluent avec le matériel : suivez les fiches de l'OWASP ou de l'ANSSI et **mesurez** (quelques centaines de millisecondes par vérification). Un **poivre** (secret global hors base) ajoute une protection, sans remplacer la fonction lente ni l'**authentification multifacteur**.
+Les coûts évoluent avec le matériel : suivez les fiches de l'OWASP ou de l'[[Glossary:ANSSI]] et **mesurez** (quelques centaines de millisecondes par vérification). Un **poivre** (secret global hors base) ajoute une protection, sans remplacer la fonction lente ni l'**authentification multifacteur**.
 
 ![Schéma du stockage d'un mot de passe : un mot de passe et un sel aléatoire passent dans une fonction lente, seule l'empreinte et le sel sont conservés ; à la connexion on recalcule et on compare](images/crypto-appliquee-2.svg)
 
@@ -112,7 +112,7 @@ Les coûts évoluent avec le matériel : suivez les fiches de l'OWASP ou de l'AN
 
 L'émetteur calcule l'empreinte du document et la **signe avec sa clé privée**. Tout le monde vérifie avec la **clé publique** : **intégrité** (rien n'a changé), **authenticité** (le détenteur de la clé a signé) et **non-répudiation** technique. Analogie : un sceau de cire, que seul le propriétaire de la bague produit mais que chacun peut contrôler.
 
-On la rencontre dans les **dépôts de paquets** (APT, RPM), les **commits Git** et images de conteneurs signés, les **certificats TLS**, les mises à jour de firmware.
+On la rencontre dans les **dépôts de paquets** ([[Glossary:APT]], [[Glossary:RPM]]), les **commits Git** et images de conteneurs signés, les **certificats TLS**, les mises à jour de firmware.
 
 **Signature ou somme de contrôle ?** Une somme publiée **sur la même page** que le fichier ne prouve rien : si la page est compromise, les deux sont remplacés. Une signature vérifiée avec une clé publique obtenue **par un autre canal fiable** apporte une vraie garantie.
 
@@ -131,11 +131,11 @@ Une clé publique seule n'a pas de nom. Un **certificat X.509** l'associe à une
 
 *Figure 3 — Chaîne de confiance et vérifications du client. Schéma original, domaine public (CC0).*
 
-Le client contrôle les signatures de la chaîne, les **dates**, que **le nom demandé figure dans le SAN**, l'usage et, selon les cas, la révocation (OCSP, CRL). Un seul échec doit faire refuser la connexion.
+Le client contrôle les signatures de la chaîne, les **dates**, que **le nom demandé figure dans le SAN**, l'usage et, selon les cas, la révocation (OCSP, [[Glossary:CRL]]). Un seul échec doit faire refuser la connexion.
 
 | Type | Qui signe | Usage |
 |---|---|---|
-| AC publique (ACME) | Autorité reconnue des navigateurs | Services sur Internet |
+| AC publique ([[Glossary:ACME]]) | Autorité reconnue des navigateurs | Services sur Internet |
 | AC interne | Votre autorité, racine distribuée à vos postes | Services internes, mTLS |
 | Auto-signé | Le certificat lui-même | **Laboratoire uniquement** |
 
@@ -157,7 +157,7 @@ TLS apporte **confidentialité** (chiffrement), **intégrité** (AEAD) et **auth
 
 *Figure 4 — Poignée de main TLS 1.3 simplifiée. Schéma original, domaine public (CC0).*
 
-**Réglages raisonnables** : TLS 1.3, TLS 1.2 si des clients l'exigent, SSL et TLS 1.0/1.1 désactivés (RFC 8996), suites AEAD à échange éphémère (un générateur de profils à jour, comme celui de Mozilla, aide), **HSTS** (RFC 6797) activé progressivement car une erreur de certificat devient alors bloquante. **mTLS** : le client présente aussi un certificat, utile entre services ; il faut gérer l'émission et la révocation.
+**Réglages raisonnables** : TLS 1.3, TLS 1.2 si des clients l'exigent, [[Glossary:SSL]] et TLS 1.0/1.1 désactivés (RFC 8996), suites AEAD à échange éphémère (un générateur de profils à jour, comme celui de Mozilla, aide), **[[Glossary:HSTS]]** (RFC 6797) activé progressivement car une erreur de certificat devient alors bloquante. **mTLS** : le client présente aussi un certificat, utile entre services ; il faut gérer l'émission et la révocation.
 
 ## 8. Gestion des clés
 
@@ -175,7 +175,7 @@ Un algorithme sûr avec une clé mal gérée n'offre aucune protection. Raisonne
 
 - **Jamais de clé privée dans un dépôt Git** (même privé), une image de conteneur, un ticket ou une capture. Utilisez `.gitignore` et un détecteur de secrets. Si une clé a fuité, elle est **compromise** : révoquez et remplacez, ne supprimez pas seulement le commit.
 - **Séparez** clés de test et de production ; celles de cette leçon sont jetables.
-- Pour SSH, préférez des clés **Ed25519** protégées par phrase de passe et agent.
+- Pour [[Glossary:SSH]], préférez des clés **Ed25519** protégées par phrase de passe et agent.
 - Prévoyez un **séquestre** (coffre partagé à double contrôle) pour le cas où le seul détenteur d'une clé est indisponible.
 
 ## 9. Erreurs classiques
@@ -291,7 +291,7 @@ echo | openssl s_client -connect 127.0.0.1:14443 -servername www.example.test 2>
 cd ~ && shred -u ~/lab-crypto/*.key 2>/dev/null; rm -rf ~/lab-crypto
 ```
 
-👉 Explication : efface les clés de laboratoire puis le dossier. `shred` ne garantit rien sur SSD ou système de fichiers à journal ; l'enjeu est nul ici puisque les clés étaient jetables. Pour des clés réelles : chiffrement du disque et révocation.
+👉 Explication : efface les clés de laboratoire puis le dossier. `shred` ne garantit rien sur [[Glossary:SSD]] ou système de fichiers à journal ; l'enjeu est nul ici puisque les clés étaient jetables. Pour des clés réelles : chiffrement du disque et révocation.
 
 ## Exercices
 
@@ -365,7 +365,7 @@ Isolez d'abord : `openssl s_client` depuis le client, comparez nom, dates, chaî
 
 - Chiffrer ≠ hacher ≠ signer ≠ certifier : chaque brique répond à un besoin.
 - Gros volumes : **symétrique AEAD** ; échange et signature : **asymétrique** ; TLS combine les deux avec un échange éphémère.
-- Mot de passe : **sel unique + fonction lente**, plus MFA.
+- Mot de passe : **sel unique + fonction lente**, plus [[Glossary:MFA]].
 - Un certificat n'est valide que si chaîne, dates, **nom (SAN)** et usage sont corrects.
 - Jamais de vérification TLS désactivée, de clé publiée ou d'algorithme maison.
 - La **gestion du cycle de vie des clés** fait la différence.
@@ -382,7 +382,7 @@ Isolez d'abord : `openssl s_client` depuis le client, comparez nom, dates, chaî
 - RFC 8555 (ACME) : <https://www.rfc-editor.org/rfc/rfc8555>
 - Documentation OpenSSL : <https://docs.openssl.org/>
 - ANSSI : <https://cyber.gouv.fr/>
-- NIST SP 800-57 Part 1 (gestion des clés) : <https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final>
+- [[Glossary:NIST]] SP 800-57 Part 1 (gestion des clés) : <https://csrc.nist.gov/pubs/sp/800/57/pt1/r5/final>
 
 ## Crédits des images
 

@@ -46,7 +46,7 @@ Configurer les profils et les modules pour Windows PowerShell 5.1 et PowerShell 
    ```
    👉 Explication : `Install-PSResource` (PSResourceGet) est livré avec PowerShell 7.4 et supérieur ; en 5.1 utiliser PowerShellGet. PSGallery reste non approuvé tant qu'on ne le décide pas.
 
-6. Fonctionnalités Windows (module ServerManager) : GUI Gestionnaire de serveur > Gérer > Ajouter des rôles et fonctionnalités ; ligne de commande :
+6. Fonctionnalités Windows (module ServerManager) : [[Glossary:GUI]] Gestionnaire de serveur > Gérer > Ajouter des rôles et fonctionnalités ; ligne de commande :
    ```powershell
    Get-WindowsFeature | Where-Object Installed
    ```

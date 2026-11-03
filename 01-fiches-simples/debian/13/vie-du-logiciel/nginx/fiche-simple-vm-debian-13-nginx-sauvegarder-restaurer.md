@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Nginx_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; Nginx des dépôts Debian
 - **Catégorie** : serveur Web / Nginx / Sauvegarder et restaurer
 - **Tags** : `debian13`, `nginx`, `sauvegarde`

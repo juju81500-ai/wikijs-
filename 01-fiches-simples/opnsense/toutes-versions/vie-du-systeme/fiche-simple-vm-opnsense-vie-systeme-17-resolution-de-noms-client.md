@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_17_Resolution_De_Noms_Client
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 17 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-17`
@@ -9,14 +9,14 @@
 
 ## Problème précis à résoudre
 
-Configurer les serveurs DNS utilisés par le pare-feu et les clients.
+Configurer les serveurs [[Glossary:DNS]] utilisés par le pare-feu et les clients.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Renseigner Système > Paramètres > Général > Serveurs DNS (ex. `IP_DNS1`, `IP_DNS2`) et décocher « Autoriser le remplacement par le DHCP du WAN » si les DNS sont imposés.
+1. Renseigner Système > Paramètres > Général > Serveurs DNS (ex. `IP_DNS1`, `IP_DNS2`) et décocher « Autoriser le remplacement par le [[Glossary:DHCP]] du [[Glossary:WAN]] » si les DNS sont imposés.
    👉 Explication : `IP_DNS1` et `IP_DNS2` sont les résolveurs internes ou publics choisis.
 
-2. Activer le résolveur local dans Services > Unbound DNS > Général (Activer, interfaces LAN, DNSSEC).
+2. Activer le résolveur local dans Services > Unbound DNS > Général (Activer, interfaces [[Glossary:LAN]], [[Glossary:DNSSEC]]).
    👉 Explication : les clients interrogent le pare-feu qui résout ou relaie.
 
 3. Tester en shell :

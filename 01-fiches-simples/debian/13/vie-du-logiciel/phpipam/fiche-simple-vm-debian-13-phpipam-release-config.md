@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-13-phpipam-release-config.md
 
-- **Environnement** : VM Debian 13, phpIPAM avec MariaDB locale, PHP-FPM et Nginx
+- **Environnement** : [[Glossary:VM]] Debian 13, phpIPAM avec MariaDB locale, PHP-FPM et Nginx
 - **OS / Version** : Debian 13 Trixie x86-64; phpIPAM 1.8.3; PHP 8.4
-- **Catégorie** : IPAM / installation
+- **Catégorie** : [[Glossary:IPAM]] / installation
 - **Tags** : `debian13`, `phpipam`, `ipam`, `nginx`, `mariadb`, `release`, `sha256`
 
 ---
@@ -51,7 +51,7 @@ Télécharger phpIPAM 1.8.3, vérifier son empreinte et créer sa configuration.
    sudo chown root:www-data /var/www/phpipam/config.php
    sudo chmod 0640 /var/www/phpipam/config.php
    ```
-   👉 Explication : protège le fichier qui contient le secret SQL.
+   👉 Explication : protège le fichier qui contient le secret [[Glossary:SQL]].
 
 ## 2. Production — Contrôles
 

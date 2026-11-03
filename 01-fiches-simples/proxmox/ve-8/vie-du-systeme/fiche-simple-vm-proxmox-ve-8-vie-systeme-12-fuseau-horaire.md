@@ -13,7 +13,7 @@ Régler le fuseau horaire de l'hôte.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Dans l'installateur : champ **Time zone** = Europe/Paris. Après installation (GUI : **Nœud > System > Time > Edit**) :
+1. Dans l'installateur : champ **Time zone** = Europe/Paris. Après installation ([[Glossary:GUI]] : **Nœud > System > Time > Edit**) :
    ```bash
    timedatectl set-timezone Europe/Paris
    timedatectl

@@ -13,7 +13,7 @@ Appliquer des réglages sûrs.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Tunables > Ajouter (variable, valeur, type sysctl).
+1. [[Glossary:GUI]] : Système > Tunables > Ajouter (variable, valeur, type sysctl).
    ```sh
    sysctl net.inet.tcp.blackhole
    midclt call tunable.create '{"type": "SYSCTL", "var": "net.inet.tcp.blackhole", "value": "2"}'

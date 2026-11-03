@@ -9,12 +9,12 @@
 
 ## Problème précis à résoudre
 
-Nommer l'hôte avec un FQDN résolvable (obligatoire sous Proxmox).
+Nommer l'hôte avec un [[Glossary:FQDN]] résolvable (obligatoire sous Proxmox).
 
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Dans l'installateur : champ **Hostname (FQDN)** (par exemple `pve01.domaine.local`).
-   👉 Explication : le FQDN doit se résoudre vers l'IP de gestion, sinon les services Proxmox échouent.
+   👉 Explication : le FQDN doit se résoudre vers l'[[Glossary:IP]] de gestion, sinon les services Proxmox échouent.
 
 2. Après installation, contrôler :
    ```bash
@@ -24,12 +24,12 @@ Nommer l'hôte avec un FQDN résolvable (obligatoire sous Proxmox).
    ```
    👉 Explication : le FQDN doit pointer vers `IP_HOTE`, pas vers 127.0.1.1.
 
-3. Ne pas renommer un nœud après sa création : réinstaller si le nom est faux (GUI : l'interface ne permet pas de renommer).
+3. Ne pas renommer un nœud après sa création : réinstaller si le nom est faux ([[Glossary:GUI]] : l'interface ne permet pas de renommer).
    👉 Explication : le nom est inscrit dans `/etc/pve` et dans le cluster.
 
 ## 2. Production — Contrôles
 
-Nom conforme à la convention de nommage et déclaré dans le DNS (A et PTR).
+Nom conforme à la convention de nommage et déclaré dans le [[Glossary:DNS]] (A et PTR).
 
 ## 3. Production — Sécurité
 

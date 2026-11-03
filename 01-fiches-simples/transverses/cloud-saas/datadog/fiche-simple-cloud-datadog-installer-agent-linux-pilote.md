@@ -9,7 +9,7 @@
 
 ## 🎯 Problème précis à résoudre
 
-Enrôler un seul hôte pilote dans Datadog et confirmer la remontée des métriques sans exposer de clé API.
+Enrôler un seul hôte pilote dans Datadog et confirmer la remontée des métriques sans exposer de clé [[Glossary:API]].
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 

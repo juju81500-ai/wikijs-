@@ -2,7 +2,7 @@
 
 - **Environnement** : Hôte Docker avec Docker Compose v2 et réseau Traefik existant
 - **OS / Version** : Hôte Linux maintenu; Snipe-IT 8.8.3; MariaDB 11.4.7
-- **Catégorie** : ITSM / gestion des actifs
+- **Catégorie** : [[Glossary:ITSM]] / gestion des actifs
 - **Tags** : `snipe-it`, `docker`, `mariadb`, `traefik`, `inventaire`
 
 ---
@@ -35,7 +35,7 @@ Contrôler la configuration Compose puis démarrer la stack.
    ```
    👉 Explication : Affiche l'état et les derniers journaux.
 
-4. Ouvrir **https://assets.example.net**, terminer le prévol, créer un compte administrateur nominatif, puis configurer SMTP, rôles, catégories, modèles, statuts et lieux.
+4. Ouvrir **https://assets.example.net**, terminer le prévol, créer un compte administrateur nominatif, puis configurer [[Glossary:SMTP]], rôles, catégories, modèles, statuts et lieux.
    👉 Explication : prépare la structure avant l'import d'inventaire.
 
 ## 2. Production — Contrôles

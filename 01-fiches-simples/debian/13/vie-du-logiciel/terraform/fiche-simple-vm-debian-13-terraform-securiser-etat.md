@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Terraform_Securiser_Etat
 
-- **Environnement** : VM Debian 13 de laboratoire avec fournisseur sandbox
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire avec fournisseur sandbox
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : infrastructure as code
 - **Tags** : `debian13`, `terraform`, `iac`, `state`, `securite`
@@ -37,7 +37,7 @@ Protéger l’état, les plans et les identifiants des fournisseurs cloud.
    ```text
    Navigateur > ouvrir la documentation officielle : https://developer.hashicorp.com/terraform/install
    ```
-   👉 Explication : les détails dépendent du fournisseur; suivre son guide officiel. Détail à confirmer dans la documentation officielle avant application : Confirmer chiffrement au repos, versionnage, verrouillage, IAM et journaux dans le backend choisi.
+   👉 Explication : les détails dépendent du fournisseur; suivre son guide officiel. Détail à confirmer dans la documentation officielle avant application : Confirmer chiffrement au repos, versionnage, verrouillage, [[Glossary:IAM]] et journaux dans le backend choisi.
 
 ## 2. Production — Contrôles
 

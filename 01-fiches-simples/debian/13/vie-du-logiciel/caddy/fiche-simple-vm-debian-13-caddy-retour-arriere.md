@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-caddy-retour-arriere.md
 
-- **Environnement** : VM Debian 13, Caddyfile sauvegardé et paquet provenant du dépôt approuvé
+- **Environnement** : [[Glossary:VM]] Debian 13, Caddyfile sauvegardé et paquet provenant du dépôt approuvé
 - **OS / Version** : Debian 13; Caddy stable
 - **Catégorie** : serveur Web / gestion du changement
 - **Tags** : `debian13`, `caddy`, `rollback`, `configuration`, `changement`
@@ -46,7 +46,7 @@ Exécuter le retour arrière dans une fenêtre approuvée avec propriétaire app
 
 ## Validation et retour arrière
 
-- **Validation** : Caddy actif, TLS vérifié, application et flux conformes, aucun port inattendu.
+- **Validation** : Caddy actif, [[Glossary:TLS]] vérifié, application et flux conformes, aucun port inattendu.
 - **Retour arrière** : si la restauration échoue, garder le service isolé et escalader au propriétaire; ne pas improviser une configuration de production.
 
 ## Si le problème n'est pas résolu

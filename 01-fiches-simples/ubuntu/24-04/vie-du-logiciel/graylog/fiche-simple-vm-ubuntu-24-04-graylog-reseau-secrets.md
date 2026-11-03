@@ -1,7 +1,7 @@
 # fiche-simple-vm-ubuntu-24-04-graylog-reseau-secrets.md
 
 - **Environnement** : Ubuntu Server 24-04: nœud Graylog + MongoDB et Data Node (laboratoire)
-- **OS / Version** : Ubuntu Server 24-04 LTS; Graylog 7.2; MongoDB 8.0
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]]; Graylog 7.2; MongoDB 8.0
 - **Catégorie** : journaux / sécurité
 - **Tags** : `ubuntu2404`, `graylog`, `datanode`, `mongodb`, `secrets`, `pare-feu`
 
@@ -25,7 +25,7 @@ Limiter les flux et préparer les secrets partagés.
    ```
    👉 Explication : ce secret doit être identique sur Graylog Server et Data Node.
 
-3. Limiter les règles du pare-feu aux adresses des composants et postes d'administration (UFW; adresses d'exemple à remplacer) :
+3. Limiter les règles du pare-feu aux adresses des composants et postes d'administration ([[Glossary:UFW]]; adresses d'exemple à remplacer) :
    ```bash
    sudo ufw allow from 192.0.2.0/24 to any port 9000 proto tcp
    sudo ufw status numbered

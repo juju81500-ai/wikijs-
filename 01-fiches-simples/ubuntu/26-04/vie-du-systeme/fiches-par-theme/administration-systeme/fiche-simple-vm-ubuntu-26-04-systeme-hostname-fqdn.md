@@ -1,7 +1,7 @@
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Systeme_Hostname_FQDN
 
-- **Environnement** : VM ou serveur Ubuntu (installation Subiquity ou image cloud-init)
-- **OS / Version** : Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu (installation Subiquity ou image cloud-init)
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]]
 - **Catégorie** : Système / Identité de la machine
 - **Tags** : `ubuntu2604`, `hostname`, `fqdn`, `hosts`, `systemd`, `cloud-init`
 
@@ -9,7 +9,7 @@
 
 ## 🎯 Problème précis à résoudre
 
-Donner au serveur un nom d'hôte court et un FQDN cohérents, résolus localement et stables après redémarrage, afin que SSH, la supervision, l'annuaire et les certificats identifient la machine de la même façon.
+Donner au serveur un nom d'hôte court et un [[Glossary:FQDN]] cohérents, résolus localement et stables après redémarrage, afin que [[Glossary:SSH]], la supervision, l'annuaire et les certificats identifient la machine de la même façon.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 
@@ -50,7 +50,7 @@ grep -rn "preserve_hostname" /etc/cloud/cloud.cfg /etc/cloud/cloud.cfg.d/ 2>/dev
 ```
 👉 Explication : Sur une VM clonée ou une image cloud, cloud-init peut remettre son propre nom à chaque démarrage. Si aucune ligne n'apparaît, cloud-init n'est pas configuré pour conserver le nom.
 
-2. Vérifier la résolution du FQDN par le DNS interne :
+2. Vérifier la résolution du FQDN par le [[Glossary:DNS]] interne :
 ```bash
 resolvectl query <nom_du_serveur>.<domaine>
 ```
@@ -67,7 +67,7 @@ preserve_hostname: true
 ```
 👉 Explication : Le fichier `99-*` a priorité sur les fichiers par défaut. Le nom défini à l'installation n'est plus écrasé lors d'un redémarrage ou d'un clonage.
 
-2. Contrôler l'enregistrement inverse (PTR) de l'adresse IP de la machine :
+2. Contrôler l'enregistrement inverse (PTR) de l'adresse [[Glossary:IP]] de la machine :
 ```bash
 dig -x <IP_SERVEUR> +short
 ```

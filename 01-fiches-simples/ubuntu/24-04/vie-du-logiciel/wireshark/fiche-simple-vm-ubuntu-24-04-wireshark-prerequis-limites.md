@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Wireshark_Prerequis_Limites
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Wireshark
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Wireshark
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Wireshark / prérequis et limites
 - **Tags** : `wireshark`, `ubuntu24.04`, `vie-du-logiciel`, `prerequis-limites`
@@ -26,7 +26,7 @@ Cadrer l’usage autorisé de Wireshark/TShark sur VM Ubuntu Server 24-04 LTS : 
    👉 Explication : L’interface graphique demande une session X11/Wayland; sur un serveur sans bureau, utiliser TShark en ligne de commande. Le disque doit accueillir les captures.
 
 3. Noter les limites.
-   👉 Explication : Wireshark ne déchiffre pas TLS sans clés fournies légalement; une VM ne voit que le trafic de son vSwitch; les dissecteurs traitent des données non fiables, d’où la nécessité de rester à jour. 
+   👉 Explication : Wireshark ne déchiffre pas [[Glossary:TLS]] sans clés fournies légalement; une VM ne voit que le trafic de son vSwitch; les dissecteurs traitent des données non fiables, d’où la nécessité de rester à jour. 
 
 ## 2. Production — Contrôles
 

@@ -1,16 +1,16 @@
 # Fiche simple — Debian 13 : installer et contrôler Kea DHCPv4
 
-- **OS / Version** : VM Debian 13 Trixie
+- **OS / Version** : [[Glossary:VM]] Debian 13 Trixie
 - **Catégorie** : Services réseau / DHCPv4
 - **Tags** : `[debian13]`, `[kea]`, `[dhcpv4]`, `[reseau]`, `[lab]`
 
 ## Objectif
 
-Installer Kea DHCPv4 pour un VLAN autorisé, vérifier la configuration et effectuer un test client sans perturber un réseau partagé.
+Installer Kea DHCPv4 pour un [[Glossary:VLAN]] autorisé, vérifier la configuration et effectuer un test client sans perturber un réseau partagé.
 
 ## 1. Préparer le réseau
 
-Avant installation, noter l'interface, l'IP statique du serveur, le préfixe, la passerelle, les DNS et le pool approuvé. Vérifier qu'aucun autre serveur DHCP n'est actif sur le VLAN. Utiliser un VLAN de lab isolé pour le premier essai.
+Avant installation, noter l'interface, l'[[Glossary:IP]] statique du serveur, le préfixe, la passerelle, les [[Glossary:DNS]] et le pool approuvé. Vérifier qu'aucun autre serveur [[Glossary:DHCP]] n'est actif sur le VLAN. Utiliser un VLAN de lab isolé pour le premier essai.
 
 ```bash
 ip -br address
@@ -49,9 +49,9 @@ Pour configuration avec base de données ou hooks, le contrôle approfondi `sudo
 
 ## 4. Faire un essai client contrôlé
 
-Tester depuis une VM cliente située sur le VLAN isolé. Vérifier qu'elle reçoit une adresse dans le pool approuvé et les bonnes options routeur, DNS et domaine. Ne jamais lancer un client DHCP de test sur un LAN partagé.
+Tester depuis une VM cliente située sur le VLAN isolé. Vérifier qu'elle reçoit une adresse dans le pool approuvé et les bonnes options routeur, DNS et domaine. Ne jamais lancer un client DHCP de test sur un [[Glossary:LAN]] partagé.
 
-DHCPv4 utilise UDP 67/68. Restreindre les chemins et relais au périmètre prévu; les sockets bruts utilisés pour les clients directement connectés peuvent contourner certains filtres locaux.
+DHCPv4 utilise [[Glossary:UDP]] 67/68. Restreindre les chemins et relais au périmètre prévu; les sockets bruts utilisés pour les clients directement connectés peuvent contourner certains filtres locaux.
 
 ## Retour arrière
 

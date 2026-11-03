@@ -1,6 +1,6 @@
 # fiche-simple-vm-windows-server-2025-production-installer-systeme.md
 
-- **Environnement** : Serveur physique ou VM Windows Server 2025 administré par l'organisation
+- **Environnement** : Serveur physique ou [[Glossary:VM]] Windows Server 2025 administré par l'organisation
 - **OS / Version** : Windows Server 2025 Standard ou Datacenter
 - **Catégorie** : installation / déploiement
 - **Tags** : `windows-server-2025`, `installation`, `production`, `uefi`, `openssh`

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_27_Durcissement_De_L_Acces
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 27 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-27`

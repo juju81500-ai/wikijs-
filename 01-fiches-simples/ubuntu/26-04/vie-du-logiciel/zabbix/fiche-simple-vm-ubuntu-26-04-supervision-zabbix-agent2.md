@@ -1,7 +1,7 @@
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Supervision_Zabbix_Agent2
 
-- **Environnement** : VM ou serveur Ubuntu supervisé par un serveur Zabbix existant
-- **OS / Version** : Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu supervisé par un serveur Zabbix existant
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]]
 - **Catégorie** : Supervision / Agent Zabbix
 - **Tags** : `ubuntu2604`, `zabbix`, `zabbix-agent2`, `supervision`, `port-10050`
 
@@ -53,7 +53,7 @@ zabbix_agent2 -t system.uptime
 ```bash
 sudo ufw allow from <IP_SERVEUR_ZABBIX> to any port 10050 proto tcp
 ```
-👉 Explication : Autorise le serveur Zabbix à interroger l'agent et refuse les autres sources (la politique UFW par défaut refuse déjà le trafic entrant).
+👉 Explication : Autorise le serveur Zabbix à interroger l'agent et refuse les autres sources (la politique [[Glossary:UFW]] par défaut refuse déjà le trafic entrant).
 
 2. Tester depuis le serveur Zabbix :
 ```bash
@@ -63,7 +63,7 @@ zabbix_get -s <IP_SERVEUR> -k agent.ping
 
 ## 🔒 3. Production — Façon Sécurisée
 
-1. Activer le chiffrement TLS entre l'agent et le serveur uniquement si la politique le demande. Vérifier d'abord les paramètres de certificats dans `/etc/zabbix/zabbix_agent2.conf` (`TLSConnect`, `TLSAccept`), puis la configuration PSK ou certificat.
+1. Activer le chiffrement [[Glossary:TLS]] entre l'agent et le serveur uniquement si la politique le demande. Vérifier d'abord les paramètres de certificats dans `/etc/zabbix/zabbix_agent2.conf` (`TLSConnect`, `TLSAccept`), puis la configuration PSK ou certificat.
 👉 Explication : Sans TLS, les données de supervision transitent en clair ; le choix PSK ou certificat dépend du parc et doit être documenté.
 
 2. Limiter les clés accessibles à distance dans `zabbix_agent2.conf` :

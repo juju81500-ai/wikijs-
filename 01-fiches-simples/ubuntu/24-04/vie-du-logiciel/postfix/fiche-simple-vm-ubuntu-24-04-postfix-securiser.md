@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Postfix_Securiser
 
-- **Environnement** : VM Ubuntu Server 24-04; Postfix depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04; Postfix depuis les dépôts de la distribution
 - **OS / Version** : Ubuntu Server 24-04
 - **Catégorie** : Vie du logiciel / Postfix — Sécuriser
 - **Tags** : `postfix`, `serveur`, `vie-du-logiciel`, `securiser`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Limiter connexions réseau et protéger TLS et comptes de Postfix.
+Limiter connexions réseau et protéger [[Glossary:TLS]] et comptes de Postfix.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -26,12 +26,12 @@ sudo ufw allow from ADMIN_CIDR to any port 22 proto tcp
 sudo ufw allow 25/tcp
 sudo ufw status verbose
    ```
-   👉 Explication : Configure STARTTLS opportuniste et le refus du relais non autorisé. `SMTP_CERT`, `SMTP_KEY` et `ADMIN_CIDR` sont des placeholders à remplacer par les certificats installés et le réseau admin; sur Rocky, restorecon vérifie les labels sans désactiver SELinux.
+   👉 Explication : Configure [[Glossary:STARTTLS]] opportuniste et le refus du relais non autorisé. `SMTP_CERT`, `SMTP_KEY` et `ADMIN_CIDR` sont des placeholders à remplacer par les certificats installés et le réseau admin; sur Rocky, restorecon vérifie les labels sans désactiver SELinux.
 
 
 ## 2. Production — Contrôles
 
-Ubuntu : UFW si prévu; Rocky : firewalld et SELinux enforcing. Autoriser uniquement les flux documentés.
+Ubuntu : [[Glossary:UFW]] si prévu; Rocky : firewalld et SELinux enforcing. Autoriser uniquement les flux documentés.
 
 ## 3. Production — Sécurité
 

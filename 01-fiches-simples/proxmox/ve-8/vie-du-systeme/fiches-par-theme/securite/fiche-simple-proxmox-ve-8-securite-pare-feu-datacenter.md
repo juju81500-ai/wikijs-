@@ -1,6 +1,6 @@
 # 📄 fiche-simple-proxmox-ve-8-securite-pare-feu-datacenter.md
 
-- **Environnement** : Nœud ou cluster Proxmox VE 8 (pare-feu datacenter, pare-feu hôte et pare-feu des VM)
+- **Environnement** : Nœud ou cluster Proxmox VE 8 (pare-feu datacenter, pare-feu hôte et pare-feu des [[Glossary:VM]])
 - **OS / Version** : Proxmox VE 8.x - Debian 12 Bookworm
 - **Catégorie** : Sécurité réseau / Pare-feu hyperviseur
 - **Tags** : `[proxmox-ve-8]`, `[pve-firewall]`, `[datacenter]`, `[reseau]`, `[hardening]`
@@ -30,7 +30,7 @@ pvesh set /cluster/firewall/options --enable 1
 ```bash
 pvesh create /cluster/firewall/rules --type in --action ACCEPT --proto tcp --dport 8006 --source <reseau_admin_cidr> --enable 1 --comment "Interface web admin"
 ```
-👉 Explication : crée une règle entrante TCP/8006 (interface web Proxmox) limitée au réseau d'administration, par exemple `192.168.10.0/24`.
+👉 Explication : crée une règle entrante [[Glossary:TCP]]/8006 (interface web Proxmox) limitée au réseau d'administration, par exemple `192.168.10.0/24`.
 
 4. Vérifier les règles compilées :
 ```bash
@@ -45,9 +45,9 @@ pve-firewall compile
 ```bash
 pvesh create /cluster/firewall/aliases --name reseau_admin --cidr <reseau_admin_cidr>
 ```
-👉 Explication : nomme le réseau d'administration pour le réutiliser dans toutes les règles au lieu de répéter le CIDR.
+👉 Explication : nomme le réseau d'administration pour le réutiliser dans toutes les règles au lieu de répéter le [[Glossary:CIDR]].
 
-2. Autoriser SSH et l'interface web depuis cet alias :
+2. Autoriser [[Glossary:SSH]] et l'interface web depuis cet alias :
 ```bash
 pvesh create /cluster/firewall/rules --type in --action ACCEPT --proto tcp --dport 22 --source reseau_admin --enable 1 --comment "SSH admin"
 pvesh create /cluster/firewall/rules --type in --action ACCEPT --proto tcp --dport 8006 --source reseau_admin --enable 1 --comment "Web admin"
@@ -58,7 +58,7 @@ pvesh create /cluster/firewall/rules --type in --action ACCEPT --proto tcp --dpo
 ```bash
 pvesh create /cluster/firewall/rules --type in --action ACCEPT --proto udp --dport 5405:5412 --source <reseau_cluster_cidr> --enable 1 --comment "Corosync cluster"
 ```
-👉 Explication : Corosync utilise les ports UDP 5405 à 5412 pour le quorum et la communication du cluster ; à ignorer sur un nœud autonome. Les migrations de VM entre nœuds nécessitent en plus une règle TCP 60000:60050 depuis le réseau cluster.
+👉 Explication : Corosync utilise les ports [[Glossary:UDP]] 5405 à 5412 pour le quorum et la communication du cluster ; à ignorer sur un nœud autonome. Les migrations de VM entre nœuds nécessitent en plus une règle TCP 60000:60050 depuis le réseau cluster.
 
 4. Activer le pare-feu au niveau de l'hôte :
 ```bash
@@ -70,7 +70,7 @@ pvesh set /nodes/<nom_de_l_hote>/firewall/options --enable 1
 ```bash
 pvesh set /cluster/firewall/options --enable 1 --policy_in DROP
 ```
-👉 Explication : tout trafic entrant non autorisé par une règle est bloqué. Vérifier au préalable que l'accès SSH et web depuis `reseau_admin` fonctionne, et conserver un accès console (IPMI, iDRAC, iLO ou clavier/écran) en cas d'erreur.
+👉 Explication : tout trafic entrant non autorisé par une règle est bloqué. Vérifier au préalable que l'accès SSH et web depuis `reseau_admin` fonctionne, et conserver un accès console ([[Glossary:IPMI]], iDRAC, iLO ou clavier/écran) en cas d'erreur.
 
 ---
 

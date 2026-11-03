@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_13_Partitionnement_Et_Systemes_De
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 13 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-13`
@@ -13,7 +13,7 @@ Choisir le système de fichiers de l'installation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Dans l'installateur, choisir `Guided Installation` en `ZFS` (recommandé) ou `UFS` pour un matériel très limité; ZFS permet les points de restauration.
+1. Dans l'installateur, choisir `Guided Installation` en `ZFS` (recommandé) ou `UFS` pour un matériel très limité; [[Glossary:ZFS]] permet les points de restauration.
    👉 Explication : ZFS active les environnements de démarrage (Système > Snapshots) pour annuler une mise à jour.
 
 2. Choisir un disque en stripe (un disque) ou en `mirror` (deux disques) puis valider l'effacement du disque.

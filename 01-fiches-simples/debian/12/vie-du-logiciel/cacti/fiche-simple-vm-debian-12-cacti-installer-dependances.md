@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-12-cacti-installer-dependances.md
 
-- **Environnement** : VM Debian 12 dédiée (Apache, PHP, MariaDB, poller local)
+- **Environnement** : [[Glossary:VM]] Debian 12 dédiée (Apache, PHP, MariaDB, poller local)
 - **OS / Version** : Debian 12 Bookworm; Cacti 1.2.31
 - **Catégorie** : supervision / paquets
 - **Tags** : `debian12`, `cacti`, `snmp`, `rrdtool`, `mariadb`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Installer Apache, MariaDB, RRDtool, SNMP, PHP et ses extensions.
+Installer Apache, MariaDB, RRDtool, [[Glossary:SNMP]], PHP et ses extensions.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

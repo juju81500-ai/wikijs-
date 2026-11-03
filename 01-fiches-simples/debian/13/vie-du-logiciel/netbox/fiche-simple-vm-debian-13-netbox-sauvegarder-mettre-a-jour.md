@@ -2,7 +2,7 @@
 
 - **Environnement** : NetBox 4.7.4 sur Debian 13, stockage et sauvegardes chiffrées hors hôte
 - **OS / Version** : Debian 13; NetBox et PostgreSQL
-- **Catégorie** : IPAM / DCIM / sauvegarde et maintenance
+- **Catégorie** : [[Glossary:IPAM]] / [[Glossary:DCIM]] / sauvegarde et maintenance
 - **Tags** : `debian13`, `netbox`, `backup`, `restore`, `upgrade`
 
 ---
@@ -42,12 +42,12 @@ Protéger la base, la configuration, les médias et les fichiers locaux, puis d�
    ```
    👉 Explication : remplacer `X.Y.Z`; copier `configuration.py` et les médias dans la nouvelle arborescence, exécuter son `upgrade.sh`, puis basculer le lien `/opt/netbox` et redémarrer `netbox` et `netbox-rq`.
 
-5. En cas de migration depuis 4.7.0/4.7.1, renouveler les jetons API créés par tâches de masse (considérés compromis).
+5. En cas de migration depuis 4.7.0/4.7.1, renouveler les jetons [[Glossary:API]] créés par tâches de masse (considérés compromis).
    👉 Explication : NetBox 4.7.2 corrige l'exposition de ces jetons dans les résultats de jobs.
 
 ## 2. Production — Contrôles
 
-Documenter RPO/RTO, fréquence, rétention, chiffrement, responsables, procédure de restauration et tests réguliers avant mise à niveau.
+Documenter [[Glossary:RPO]]/RTO, fréquence, rétention, chiffrement, responsables, procédure de restauration et tests réguliers avant mise à niveau.
 
 ## 3. Production — Sécurité
 

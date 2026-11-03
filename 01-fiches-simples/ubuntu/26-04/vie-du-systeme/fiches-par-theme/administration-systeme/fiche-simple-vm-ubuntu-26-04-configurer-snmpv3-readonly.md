@@ -1,7 +1,7 @@
 # 📄 fiche-simple-vm-ubuntu-26-04-configurer-snmpv3-readonly.md
 
-- **Environnement** : VM Ubuntu supervisée par LibreNMS ou un poller SNMP autorisé
-- **OS / Version** : Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu supervisée par LibreNMS ou un poller [[Glossary:SNMP]] autorisé
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]]
 - **Catégorie** : Supervision / SNMPv3
 - **Tags** : `ubuntu2604`, `snmpv3`, `snmpd`, `supervision`, `securite`
 
@@ -64,12 +64,12 @@ Activer SNMPv3 en lecture seule sur un serveur Linux et n'accepter les requêtes
    sudo systemctl --no-pager status snmpd
    sudo ss -lunp | grep ':161'
    ```
-   👉 Explication : le port 161 doit écouter uniquement sur l'IP de gestion.
+   👉 Explication : le port 161 doit écouter uniquement sur l'[[Glossary:IP]] de gestion.
 
 
 ## 🔒 3. Production — Façon Sécurisée
 
-- Restreindre UDP/161 dans le pare-feu à l'adresse IP du poller uniquement.
+- Restreindre [[Glossary:UDP]]/161 dans le pare-feu à l'adresse IP du poller uniquement.
 - Ne pas configurer `rwuser`, SNMPv1/v2c ou une communauté publique pour cette supervision.
 - Déposer les secrets au clavier dans l'éditeur et les transmettre par coffre sécurisé; ne pas les ajouter à l'historique shell.
 - Installer les règles firewall persistantes selon la politique de la VM et vérifier qu'aucune écoute ne subsiste sur l'interface publique.

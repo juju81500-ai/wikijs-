@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_45_Analyse_Des_Journaux_D
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 45 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-45`

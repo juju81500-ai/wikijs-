@@ -1,7 +1,7 @@
 # fiche-simple-vm-ubuntu-24-04-graylog-installer-mongodb.md
 
 - **Environnement** : Ubuntu Server 24-04: nœud Graylog + MongoDB et Data Node (laboratoire)
-- **OS / Version** : Ubuntu Server 24-04 LTS; Graylog 7.2; MongoDB 8.0
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]]; Graylog 7.2; MongoDB 8.0
 - **Catégorie** : journaux / base de données
 - **Tags** : `ubuntu2404`, `graylog`, `datanode`, `mongodb`, `mongod`
 

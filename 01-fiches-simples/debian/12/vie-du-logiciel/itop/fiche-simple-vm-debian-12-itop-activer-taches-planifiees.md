@@ -1,15 +1,15 @@
 # fiche-simple-vm-debian-12-itop-activer-taches-planifiees.md
 
-- **Environnement** : VM Linux dédiée avec Apache, PHP 8.2 ou 8.3 et MariaDB 10.11 (serveur ITSM/CMDB)
-- **OS / Version** : Debian 12 Bookworm (ou Ubuntu Server 24-04 LTS); iTop Community 3.3.0
-- **Catégorie** : ITSM / CMDB / helpdesk
+- **Environnement** : [[Glossary:VM]] Linux dédiée avec Apache, PHP 8.2 ou 8.3 et MariaDB 10.11 (serveur [[Glossary:ITSM]]/CMDB)
+- **OS / Version** : Debian 12 Bookworm (ou Ubuntu Server 24-04 [[Glossary:LTS]]); iTop Community 3.3.0
+- **Catégorie** : ITSM / [[Glossary:CMDB]] / helpdesk
 - **Tags** : `debian12`, `itop`, `itsm`, `cmdb`, `apache`, `mariadb`
 
 ---
 
 ## Problème précis à résoudre
 
-Activer `cron.php` pour SLA, notifications et tâches asynchrones sans mot de passe en ligne de commande.
+Activer `cron.php` pour [[Glossary:SLA]], notifications et tâches asynchrones sans mot de passe en ligne de commande.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

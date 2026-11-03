@@ -1,12 +1,12 @@
 # 📄 VM_Debian_12_Securite_Configuration-Fail2ban-SSH.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Sécurité & Prevention d'Intrusion
 - **Tags** : `[debian12]`, `[debian-family]`, `[fail2ban]`, `[ssh]`, `[nftables]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer et configurer Fail2ban sur Debian 12 pour détecter et bannir automatiquement les adresses IP effectuant des attaques par force brute SSH via `nftables`.
+Installer et configurer Fail2ban sur Debian 12 pour détecter et bannir automatiquement les adresses [[Glossary:IP]] effectuant des attaques par force brute [[Glossary:SSH]] via `nftables`.
 
 ---
 

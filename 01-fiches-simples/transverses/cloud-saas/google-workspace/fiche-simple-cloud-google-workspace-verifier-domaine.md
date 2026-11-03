@@ -14,7 +14,7 @@ Contrôler et ajouter le domaine du tenant Google Workspace.
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Interface : console d'administration > Compte > Domaines > Gérer les domaines > Ajouter un domaine, puis valider la propriété (enregistrement TXT).
-   👉 Explication : la propriété est prouvée par DNS.
+   👉 Explication : la propriété est prouvée par [[Glossary:DNS]].
 
 2. Contrôler l'état avec GAM (si installé) :
    ```bash
@@ -27,7 +27,7 @@ Contrôler et ajouter le domaine du tenant Google Workspace.
 
 ## 2. Production — Contrôles
 
-Planifier la bascule MX avec TTL réduit.
+Planifier la bascule MX avec [[Glossary:TTL]] réduit.
 
 ## 3. Production — Sécurité
 

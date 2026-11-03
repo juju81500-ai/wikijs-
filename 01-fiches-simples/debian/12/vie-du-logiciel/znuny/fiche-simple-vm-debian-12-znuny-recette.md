@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-12-znuny-recette.md
 
-- **Environnement** : VM Debian 12 dédiée (Apache/mod_perl, MariaDB 10.11), Znuny 7.3.8
+- **Environnement** : [[Glossary:VM]] Debian 12 dédiée (Apache/mod_perl, MariaDB 10.11), Znuny 7.3.8
 - **OS / Version** : Debian 12 Bookworm; Znuny 7.3.8
-- **Catégorie** : ITSM / ticketing
+- **Catégorie** : [[Glossary:ITSM]] / ticketing
 - **Tags** : `debian12`, `znuny`, `recette`, `sauvegarde`
 
 ---
@@ -40,7 +40,7 @@ Valider le fonctionnement de Znuny et préparer l'exploitation (sauvegarde, mise
 
 ## 2. Production — Contrôles
 
-Configurer SMTP, annuaire et stockage des pièces jointes selon les politiques; planifier sauvegardes et mises à jour.
+Configurer [[Glossary:SMTP]], annuaire et stockage des pièces jointes selon les politiques; planifier sauvegardes et mises à jour.
 
 ## 3. Production — Sécurité
 

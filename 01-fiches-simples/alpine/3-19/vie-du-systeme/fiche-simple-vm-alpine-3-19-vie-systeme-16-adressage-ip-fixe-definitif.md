@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_16_Adressage_Ip_Fixe_Definitif
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 16 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-16`
@@ -25,13 +25,13 @@ Passer à l'adresse fixe définitive.
        gateway PASSERELLE
    EOF
    ```
-   👉 Explication : remplace le DHCP par l'adresse fixe; Alpine utilise `ifupdown-ng` qui accepte la notation `adresse/préfixe`.
+   👉 Explication : remplace le [[Glossary:DHCP]] par l'adresse fixe; Alpine utilise `ifupdown-ng` qui accepte la notation `adresse/préfixe`.
 
 2. Appliquer depuis la console :
    ```sh
    doas rc-service networking restart
    ```
-   👉 Explication : recharge la configuration réseau; une erreur coupe la session SSH.
+   👉 Explication : recharge la configuration réseau; une erreur coupe la session [[Glossary:SSH]].
 
 3. Vérifier l'adresse, la route et la sortie :
    ```sh
@@ -43,7 +43,7 @@ Passer à l'adresse fixe définitive.
 
 ## 2. Production — Contrôles
 
-Réserver l'adresse dans l'IPAM ou le DHCP et l'inscrire à la CMDB.
+Réserver l'adresse dans l'[[Glossary:IPAM]] ou le DHCP et l'inscrire à la [[Glossary:CMDB]].
 
 ## 3. Production — Sécurité
 

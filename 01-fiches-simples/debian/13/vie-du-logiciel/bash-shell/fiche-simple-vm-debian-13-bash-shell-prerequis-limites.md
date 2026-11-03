@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Bash_Shell_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 de laboratoire, compte utilisateur non privilégié
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire, compte utilisateur non privilégié
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : shell / scripting
 - **Tags** : `debian13`, `bash`, `shell`, `scripting`, `securite`
@@ -17,7 +17,7 @@ Identifier version, dépendances, shell/endpoint et périmètre avant usage de B
    cat /etc/os-release
    apt-cache policy bash
    ```
-   👉 Explication : confirmer Debian 13 et l’origine APT approuvée.
+   👉 Explication : confirmer Debian 13 et l’origine [[Glossary:APT]] approuvée.
 
 2. Inspecter les dépendances ou destination
    ```bash

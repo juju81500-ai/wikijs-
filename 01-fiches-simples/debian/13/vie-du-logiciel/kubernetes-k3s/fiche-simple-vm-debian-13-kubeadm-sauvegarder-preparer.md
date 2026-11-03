@@ -13,7 +13,7 @@ Préserver l'état des nœuds et collecter les informations initiales avant modi
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Faire un snapshot de chaque VM : **Proxmox > VM > Snapshots > Take Snapshot** (ou l'outil de l'hyperviseur).
+1. Faire un snapshot de chaque [[Glossary:VM]] : **Proxmox > VM > Snapshots > Take Snapshot** (ou l'outil de l'hyperviseur).
    👉 Explication : point de retour complet avant toute modification.
 
 2. Sauvegarder les fichiers modifiés :
@@ -34,7 +34,7 @@ Préserver l'état des nœuds et collecter les informations initiales avant modi
 
 ## 2. Production — Contrôles
 
-Définir RPO/RTO, rétention et approbation des snapshots; vérifier l'espace et le périmètre des sauvegardes.
+Définir [[Glossary:RPO]]/RTO, rétention et approbation des snapshots; vérifier l'espace et le périmètre des sauvegardes.
 
 ## 3. Production — Sécurité
 

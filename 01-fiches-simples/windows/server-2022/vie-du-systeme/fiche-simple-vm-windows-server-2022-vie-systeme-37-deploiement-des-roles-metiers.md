@@ -19,7 +19,7 @@ Installer les rôles et fonctionnalités nécessaires.
    ```
    👉 Explication : dresse la liste de l'existant.
 
-2. Installer un rôle par commande (exemple : IIS ; remplacer par le rôle voulu) :
+2. Installer un rôle par commande (exemple : [[Glossary:IIS]] ; remplacer par le rôle voulu) :
    ```powershell
    Install-WindowsFeature -Name Web-Server -IncludeManagementTools
    ```

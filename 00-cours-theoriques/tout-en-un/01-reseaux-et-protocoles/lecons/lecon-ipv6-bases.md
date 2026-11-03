@@ -1,7 +1,7 @@
 # Leçon — IPv6 : bases, types d'adresses et coexistence avec IPv4
 
 - **Tags** : `transverse`, `tout-en-un`, `lecon`, `reseau`, `ipv6`, `slaac`, `double-pile`, `nat64`, `ndp`
-- **Niveau** : intermédiaire (TSSR, support, administration système)
+- **Niveau** : intermédiaire ([[Glossary:TSSR]], support, administration système)
 - **Durée estimée** : 3 h 30 (lecture 1 h 15, laboratoire 1 h, exercices et quiz 1 h 15)
 
 ---
@@ -21,9 +21,9 @@
 
 ## Prérequis et durée
 
-- Connaître le principe d'une adresse IP et d'un masque (voir la leçon [Adressage IPv4, masques, CIDR, VLSM](lecon-ipv4-cidr-vlsm.md)) ; savoir lire de l'hexadécimal (0-9, a-f) : A = 10, F = 15.
+- Connaître le principe d'une adresse [[Glossary:IP]] et d'un masque (voir la leçon [Adressage IPv4, masques, CIDR, VLSM](lecon-ipv4-cidr-vlsm.md)) ; savoir lire de l'hexadécimal (0-9, a-f) : A = 10, F = 15.
 - Notions de couches réseau (voir [Modèle OSI et TCP/IP](lecon-osi-tcpip.md)).
-- Durée : environ 3 h 30. Le laboratoire se fait sur une VM Linux ou un poste Windows de test ; les commandes sont en lecture seule.
+- Durée : environ 3 h 30. Le laboratoire se fait sur une [[Glossary:VM]] Linux ou un poste Windows de test ; les commandes sont en lecture seule.
 
 ## L'essentiel en bref
 
@@ -32,7 +32,7 @@
 - Un sous-réseau est presque toujours un **/64** : 64 bits de préfixe, 64 bits d'identifiant d'interface.
 - Il n'y a **plus de broadcast** : il est remplacé par le **multicast**.
 - Un hôte possède **plusieurs adresses** à la fois : une adresse **lien local** (`fe80::/10`) et une ou plusieurs adresses globales ou ULA.
-- **NDP** (sur ICMPv6) remplace ARP ; **SLAAC** permet l'auto-configuration à partir d'annonces de routeur.
+- **NDP** (sur ICMPv6) remplace [[Glossary:ARP]] ; **SLAAC** permet l'auto-configuration à partir d'annonces de routeur.
 - IPv4 et IPv6 coexisteront longtemps : **double pile** (le plus courant), **tunnels**, **NAT64/DNS64**.
 - Préfixe d'exemple dans cette leçon : `2001:db8::/32` (RFC 3849), réservé à la documentation.
 
@@ -42,7 +42,7 @@
 
 ### 1.1 Le problème : l'épuisement d'IPv4
 
-IPv4 offre environ 4,3 milliards d'adresses (2³²). Avec la multiplication des téléphones, objets connectés et serveurs, les réserves publiques sont épuisées depuis plusieurs années. Pour tenir, on a recouru massivement au **NAT** : plusieurs machines privées partagent une adresse publique. Le NAT est pratique mais complique les connexions entrantes, certains protocoles et le diagnostic.
+IPv4 offre environ 4,3 milliards d'adresses (2³²). Avec la multiplication des téléphones, objets connectés et serveurs, les réserves publiques sont épuisées depuis plusieurs années. Pour tenir, on a recouru massivement au **[[Glossary:NAT]]** : plusieurs machines privées partagent une adresse publique. Le NAT est pratique mais complique les connexions entrantes, certains protocoles et le diagnostic.
 
 IPv6 apporte 2¹²⁸ adresses, soit environ 3,4 × 10³⁸. Un seul site se voit attribuer en général un /48, qui contient 65 536 sous-réseaux, chacun capable d'héberger 2⁶⁴ adresses.
 
@@ -55,10 +55,10 @@ IPv6 apporte 2¹²⁸ adresses, soit environ 3,4 × 10³⁸. Un seul site se voi
 | En-tête | 20 octets minimum, longueur variable | **40 octets fixes**, extensions séparées |
 | Diffusion | broadcast | **multicast** (pas de broadcast) |
 | Résolution adresse ↔ MAC | ARP | **NDP** (ICMPv6) |
-| Configuration | DHCP ou statique | **SLAAC**, DHCPv6 ou statique |
+| Configuration | [[Glossary:DHCP]] ou statique | **SLAAC**, DHCPv6 ou statique |
 | Fragmentation | par les routeurs possible | **uniquement par l'émetteur** |
 | Somme de contrôle d'en-tête | oui | non (laissée aux couches 2 et 4) |
-| Protocole d'accompagnement | ICMP | ICMPv6, **indispensable** au fonctionnement |
+| Protocole d'accompagnement | [[Glossary:ICMP]] | ICMPv6, **indispensable** au fonctionnement |
 
 Analogie : passer d'IPv4 à IPv6 ressemble au passage des anciens numéros de téléphone à 8 chiffres à des numéros bien plus longs : le principe reste le même (un numéro identifie une ligne), mais l'espace disponible devient pratiquement inépuisable et le plan de numérotation, plus hiérarchique.
 
@@ -89,7 +89,7 @@ Règles de bonne écriture : lettres en **minuscules**, `::` pour la **plus long
 
 ### 2.3 Préfixe et longueur
 
-Comme en CIDR, `/n` donne le nombre de bits du préfixe : `2001:db8:acad:1::/64` désigne tous les hôtes dont les 64 premiers bits valent `2001:0db8:acad:0001`. Il n'existe pas de masque décimal en IPv6 : on n'utilise **que** la notation `/n`.
+Comme en [[Glossary:CIDR]], `/n` donne le nombre de bits du préfixe : `2001:db8:acad:1::/64` désigne tous les hôtes dont les 64 premiers bits valent `2001:0db8:acad:0001`. Il n'existe pas de masque décimal en IPv6 : on n'utilise **que** la notation `/n`.
 
 Dans une URL, l'adresse se place entre crochets : `http://[2001:db8::10]:8080/`, pour ne pas confondre `:` de l'adresse et `:` du port.
 
@@ -114,9 +114,9 @@ Dans une URL, l'adresse se place entre crochets : `http://[2001:db8::10]:8080/`,
 | /32 | Un fournisseur d'accès (registre régional) | Contient 65 536 /48 |
 | /48 | Un site ou une entreprise | 65 536 sous-réseaux /64 |
 | /56 | Un petit site (certains fournisseurs) | 256 sous-réseaux /64 |
-| /64 | **Un sous-réseau (un VLAN, un lien)** | Taille standard, nécessaire à SLAAC |
+| /64 | **Un sous-réseau (un [[Glossary:VLAN]], un lien)** | Taille standard, nécessaire à SLAAC |
 
-Règle pratique : **on ne découpe pas en dessous de /64** pour les réseaux d'utilisateurs ; on ne s'économise pas les adresses. Le travail du VLSM d'IPv4 est remplacé par un simple numérotage hexadécimal.
+Règle pratique : **on ne découpe pas en dessous de /64** pour les réseaux d'utilisateurs ; on ne s'économise pas les adresses. Le travail du [[Glossary:VLSM]] d'IPv4 est remplacé par un simple numérotage hexadécimal.
 
 ### 3.2 Exemple : un /48 pour une entreprise
 
@@ -170,7 +170,7 @@ Le 4ᵉ chiffre hexadécimal (`ff0`**`2`**) code la **portée** : 1 = interface,
 
 ### 4.6 Anycast
 
-Une adresse **anycast** est attribuée à plusieurs machines ; le routage envoie le paquet à la plus proche. Techniquement, c'est une adresse unicast présente sur plusieurs équipements. Cette technique sert surtout à des services répartis (DNS, CDN).
+Une adresse **anycast** est attribuée à plusieurs machines ; le routage envoie le paquet à la plus proche. Techniquement, c'est une adresse unicast présente sur plusieurs équipements. Cette technique sert surtout à des services répartis ([[Glossary:DNS]], CDN).
 
 ---
 
@@ -235,7 +235,7 @@ Chaque équipement exécute **IPv4 et IPv6 en parallèle**, avec les deux adress
 
 Un **tunnel** encapsule des paquets IPv6 dans des paquets IPv4 (protocole IP numéro 41, par exemple le **6in4**, RFC 4213) pour traverser un réseau qui ne gère pas encore IPv6. Utile pour relier deux sites IPv6 ou raccorder un site isolé, mais :
 
-- réduit la MTU effective (en-tête IPv4 supplémentaire de 20 octets) ;
+- réduit la [[Glossary:MTU]] effective (en-tête IPv4 supplémentaire de 20 octets) ;
 - ajoute de la latence et un point de panne ;
 - doit être considéré comme une **solution transitoire**.
 
@@ -343,7 +343,7 @@ curl -6 -sI https://example.com/ -o /dev/null -w '%{http_code}\n'
 curl -4 -sI https://example.com/ -o /dev/null -w '%{http_code}\n'
 ```
 
-👉 Explication : envoie la même requête en forçant IPv6 (`-6`) puis IPv4 (`-4`) et n'affiche que le code HTTP. Si la première échoue et pas la seconde, le problème est propre à IPv6 (route, pare-feu ou absence de connectivité).
+👉 Explication : envoie la même requête en forçant IPv6 (`-6`) puis IPv4 (`-4`) et n'affiche que le code [[Glossary:HTTP]]. Si la première échoue et pas la seconde, le problème est propre à IPv6 (route, pare-feu ou absence de connectivité).
 
 ### Étape 6 — Manipuler les adresses avec Python
 

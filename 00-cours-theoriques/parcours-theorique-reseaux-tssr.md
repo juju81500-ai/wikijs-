@@ -1,20 +1,20 @@
 # Réseaux TCP/IP : du paquet au pare-feu
 
 - **Niveau** : débutant à intermédiaire
-- **Public** : TSSR, administrateurs systèmes et réseaux en formation
+- **Public** : [[Glossary:TSSR]], administrateurs systèmes et réseaux en formation
 - **Durée indicative** : 2 à 3 heures avec les animations et exercices liés
 - **Tags** : `cours`, `theorie`, `reseau`, `tcp-ip`, `tssr`
 - **Dernière vérification des liens** : 2026-10-31
 
 ## Objectif
 
-Comprendre comment un poste obtient sa configuration, trouve une destination et échange des données avec un service, puis savoir où interviennent le switch, le routeur, le DNS et le pare-feu.
+Comprendre comment un poste obtient sa configuration, trouve une destination et échange des données avec un service, puis savoir où interviennent le switch, le routeur, le [[Glossary:DNS]] et le pare-feu.
 
 ## 1. Les couches et l'encapsulation
 
-Une application produit des données. Les protocoles de transport les organisent en segments TCP ou datagrammes UDP. IP ajoute les adresses de source et de destination pour acheminer les paquets entre réseaux. Sur chaque liaison, Ethernet ou Wi-Fi transporte le paquet dans une trame vers le prochain saut.
+Une application produit des données. Les protocoles de transport les organisent en segments [[Glossary:TCP]] ou datagrammes [[Glossary:UDP]]. [[Glossary:IP]] ajoute les adresses de source et de destination pour acheminer les paquets entre réseaux. Sur chaque liaison, Ethernet ou Wi-Fi transporte le paquet dans une trame vers le prochain saut.
 
-Les adresses MAC servent à la livraison sur le lien local. Les adresses IP servent à l'acheminement entre réseaux. À chaque routeur, la trame du lien courant est remplacée par une trame adaptée au lien suivant; les adresses IP restent normalement les mêmes de bout en bout, sauf mécanisme tel que le NAT.
+Les adresses MAC servent à la livraison sur le lien local. Les adresses IP servent à l'acheminement entre réseaux. À chaque routeur, la trame du lien courant est remplacée par une trame adaptée au lien suivant; les adresses IP restent normalement les mêmes de bout en bout, sauf mécanisme tel que le [[Glossary:NAT]].
 
 ```mermaid
 sequenceDiagram
@@ -37,7 +37,7 @@ sequenceDiagram
 
 ## 2. IPv4, préfixes et passerelle
 
-Une adresse IPv4 contient 32 bits. Le préfixe CIDR, par exemple `/24`, indique combien de bits identifient le réseau. L'adresse réseau et le préfixe déterminent si une destination est considérée comme locale. Pour une destination hors du sous-réseau, l'hôte transmet le trafic à sa passerelle par défaut.
+Une adresse IPv4 contient 32 bits. Le préfixe [[Glossary:CIDR]], par exemple `/24`, indique combien de bits identifient le réseau. L'adresse réseau et le préfixe déterminent si une destination est considérée comme locale. Pour une destination hors du sous-réseau, l'hôte transmet le trafic à sa passerelle par défaut.
 
 Les plages privées définies par la RFC 1918 sont `10.0.0.0/8`, `172.16.0.0/12` et `192.168.0.0/16`. Elles ne sont pas routées sur l'Internet public. Le NAT traduit des adresses; il ne remplace pas le filtrage d'un pare-feu.
 
@@ -48,7 +48,7 @@ Les plages privées définies par la RFC 1918 sont `10.0.0.0/8`, `172.16.0.0/12`
 
 ## 3. Switches, VLAN et routage
 
-Un switch apprend quelles adresses MAC sont visibles sur ses ports et utilise cette table pour transmettre les trames. Un VLAN crée un domaine de diffusion logique distinct. Un lien trunk transporte plusieurs VLAN en ajoutant une étiquette 802.1Q aux trames concernées.
+Un switch apprend quelles adresses MAC sont visibles sur ses ports et utilise cette table pour transmettre les trames. Un [[Glossary:VLAN]] crée un domaine de diffusion logique distinct. Un lien trunk transporte plusieurs VLAN en ajoutant une étiquette 802.1Q aux trames concernées.
 
 Deux VLAN sont deux réseaux distincts : pour communiquer, ils ont besoin d'un équipement de couche 3 (routeur ou switch de niveau 3). Le routage inter-VLAN est un point naturel de contrôle des flux. La séparation seule ne suffit pas : les règles d'accès doivent être définies et vérifiées.
 
@@ -56,7 +56,7 @@ Deux VLAN sont deux réseaux distincts : pour communiquer, ils ont besoin d'un �
 
 ## 4. DHCP : obtenir une configuration
 
-DHCP distribue notamment une adresse IP, un préfixe, une passerelle, des DNS et une durée de bail. L'échange classique se retient par **DORA** :
+[[Glossary:DHCP]] distribue notamment une adresse IP, un préfixe, une passerelle, des DNS et une durée de bail. L'échange classique se retient par **DORA** :
 
 | Étape | Rôle |
 |---|---|
@@ -81,7 +81,7 @@ Le DNS aide à trouver une destination, mais ne garantit ni que le service répo
 
 Un pare-feu compare un flux à des règles définies par des critères tels que source, destination, protocole et port. Selon le produit, les règles sont évaluées dans un ordre donné. Une politique de refus par défaut, suivie d'autorisations limitées au besoin, réduit les ouvertures accidentelles.
 
-Un pare-feu à états suit les connexions afin de reconnaître le trafic de réponse associé à une connexion autorisée. Une DMZ isole les services publiés du réseau interne; elle ne rend pas un service sûr à elle seule. Il faut aussi contrôler les flux de la DMZ vers les autres zones et protéger l'administration.
+Un pare-feu à états suit les connexions afin de reconnaître le trafic de réponse associé à une connexion autorisée. Une [[Glossary:DMZ]] isole les services publiés du réseau interne; elle ne rend pas un service sûr à elle seule. Il faut aussi contrôler les flux de la DMZ vers les autres zones et protéger l'administration.
 
 **Animation** : [Le pare-feu et ses règles](https://www.jousseaume.online/cours/pare-feu-et-regles/) (ordre des règles, suivi des connexions et DMZ).
 

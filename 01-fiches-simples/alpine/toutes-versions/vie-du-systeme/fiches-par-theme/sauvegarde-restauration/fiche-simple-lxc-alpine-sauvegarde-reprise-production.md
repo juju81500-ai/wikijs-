@@ -1,8 +1,8 @@
 # fiche-simple-lxc-alpine-sauvegarde-reprise-production.md
 
-- **Environnement** : incident de production; CT source et point PBS identifiés
+- **Environnement** : incident de production; [[Glossary:CT]] source et point [[Glossary:PBS]] identifiés
 - **OS / Version** : Proxmox VE, PBS et Alpine maintenus
-- **Catégorie** : sauvegarde LXC / reprise
+- **Catégorie** : sauvegarde [[Glossary:LXC]] / reprise
 - **Tags** : `alpine`, `proxmox`, `pbs`, `lxc`, `reprise`, `rpo`, `rto`
 
 ---
@@ -30,7 +30,7 @@ Reprendre le service depuis une sauvegarde après validation, sans écritures co
    ```bash
    pct shutdown CTID
    ```
-   👉 Explication : avant de réutiliser IP, DNS ou tâches planifiées.
+   👉 Explication : avant de réutiliser [[Glossary:IP]], [[Glossary:DNS]] ou tâches planifiées.
 
 4. Basculer l'adresse/DNS/VIP :
    ```bash
@@ -41,7 +41,7 @@ Reprendre le service depuis une sauvegarde après validation, sans écritures co
 
 ## 2. Production — Contrôles
 
-Activer la procédure d'incident et faire approuver point de reprise, gel d'écriture, bascule réseau, propriétaire applicatif et mesures RPO/RTO.
+Activer la procédure d'incident et faire approuver point de reprise, gel d'écriture, bascule réseau, propriétaire applicatif et mesures [[Glossary:RPO]]/RTO.
 
 ## 3. Production — Sécurité
 

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_ISC-DHCP-Server_Prerequis_Limites
 
-- **Environnement** : VM Debian 13; ISC DHCP déprécié, usage transitoire
+- **Environnement** : [[Glossary:VM]] Debian 13; ISC [[Glossary:DHCP]] déprécié, usage transitoire
 - **OS / Version** : Debian 13
 - **Catégorie** : Vie du logiciel / ISC-DHCP-Server — Prérequis et limites
 - **Tags** : `isc-dhcp`, `serveur`, `vie-du-logiciel`, `prerequis_limites`
@@ -20,7 +20,7 @@ apt show isc-dhcp-server
 ip -br addr
 sudo dhcpd -t -cf /etc/dhcp/dhcpd.conf 2>&1 || true
    ```
-   👉 Explication : Le paquet Trixie est deprecated; confirmer provenance et avis Debian. ISC DHCP est EOL upstream depuis 2022.
+   👉 Explication : Le paquet Trixie est deprecated; confirmer provenance et avis Debian. ISC DHCP est [[Glossary:EOL]] upstream depuis 2022.
 
 
 ## 2. Production — Contrôles
@@ -29,7 +29,7 @@ Réserver à la maintenance existante; documenter date de migration Kea.
 
 ## 3. Production — Sécurité
 
-Limiter l’écoute au VLAN autorisé et surveiller avis Debian.
+Limiter l’écoute au [[Glossary:VLAN]] autorisé et surveiller avis Debian.
 
 ## Validation et retour arrière
 

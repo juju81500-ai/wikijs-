@@ -1,8 +1,8 @@
 # Fiche_Simple_-_VM_Debian_13_MySQL_Securiser
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; MySQL Community (dépôt officiel Oracle)
-- **Catégorie** : base de données / MySQL / Sécuriser (TLS, comptes, pare-feu)
+- **Catégorie** : base de données / MySQL / Sécuriser ([[Glossary:TLS]], comptes, pare-feu)
 - **Tags** : `debian13`, `mysql`, `securite`
 
 ---
@@ -43,7 +43,7 @@ Durcir les comptes, imposer TLS et filtrer le port 3306 de MySQL.
    # si ufw est utilisé :
    sudo ufw allow from IP_CLIENT to any port 3306 proto tcp
    ```
-   👉 Explication : seules les IP clientes autorisées atteignent le port.
+   👉 Explication : seules les [[Glossary:IP]] clientes autorisées atteignent le port.
 
 ## 2. Production — Contrôles
 

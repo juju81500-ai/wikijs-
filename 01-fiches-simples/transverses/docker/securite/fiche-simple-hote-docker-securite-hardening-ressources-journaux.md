@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Éviter qu'un conteneur sature CPU, mémoire ou disque.
+Éviter qu'un conteneur sature [[Glossary:CPU]], mémoire ou disque.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

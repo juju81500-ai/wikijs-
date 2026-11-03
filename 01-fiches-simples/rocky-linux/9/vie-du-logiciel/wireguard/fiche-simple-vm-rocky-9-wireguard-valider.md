@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_9_WireGuard_Valider
 
-- **Environnement** : VM Rocky Linux 9 dédiée à un serveur WireGuard natif
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à un serveur WireGuard natif
 - **OS / Version** : Rocky Linux 9; wireguard-tools issu d'EPEL, module noyau à vérifier sur l'hôte
 - **Catégorie** : WireGuard natif / valider
 - **Tags** : `wireguard`, `rocky9`, `vie-du-logiciel`, `valider`
@@ -31,7 +31,7 @@ Recetter le tunnel avec un pair pilote.
    ```bash
    ping -c 3 ADRESSE_AUTORISEE
    ```
-   👉 Explication : ADRESSE_AUTORISEE est une IP de test autorisée (à remplacer); vérifier qu'une destination non autorisée reste inaccessible.
+   👉 Explication : ADRESSE_AUTORISEE est une [[Glossary:IP]] de test autorisée (à remplacer); vérifier qu'une destination non autorisée reste inaccessible.
 
 ## 2. Production — Contrôles
 

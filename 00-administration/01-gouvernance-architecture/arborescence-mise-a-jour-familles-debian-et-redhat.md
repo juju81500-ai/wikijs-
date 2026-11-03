@@ -76,20 +76,20 @@ Chaque OS dispose des mêmes sous-dossiers : `Installation-Deploiement`, `Diagno
 
 ### 🐧 Famille Debian & Dérivés (`Debian-Family/`)
 - **Debian** (Version 11 Bullseye, 12 Bookworm, etc.)
-- **Ubuntu / Ubuntu Server** (LTS 22-04, 24-04, etc.)
+- **Ubuntu / Ubuntu Server** ([[Glossary:LTS]] 22-04, 24-04, etc.)
 - **Kali Linux** (Outils de sécurité / Pentest)
 - **Linux Mint** (Postes de travail)
 - **Proxmox VE (PVE)** (Hyperviseur basé sur Debian)
 
 ### 🎩 Famille RedHat / RHEL & Dérivés (`RedHat-Family/`)
-- **RedHat Enterprise Linux (RHEL)** (RHEL 8, 9, etc.)
+- **RedHat Enterprise Linux ([[Glossary:RHEL]])** (RHEL 8, 9, etc.)
 - **Rocky Linux** (Alternative RHEL entreprise)
 - **AlmaLinux** (Alternative RHEL entreprise)
 - **CentOS / CentOS Stream**
 - **Fedora** (Distribution communautaire / cutting-edge)
 
 ### 🏔️ Famille Alpine Linux (`Alpine/`)
-- **Alpine Linux** (Conteneurs LXC et VM légers, APK package manager, OpenRC)
+- **Alpine Linux** (Conteneurs [[Glossary:LXC]] et [[Glossary:VM]] légers, [[Glossary:APK]] package manager, OpenRC)
 
 ### 🪟 Famille Windows (`Windows/`)
 - **Windows Server** (2019, 2022, 2025)

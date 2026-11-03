@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Installer Elasticsearch, démarrer le service et sécuriser l'accès à l'API HTTPS.
+Installer Elasticsearch, démarrer le service et sécuriser l'accès à l'[[Glossary:API]] HTTPS.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -20,7 +20,7 @@ Installer Elasticsearch, démarrer le service et sécuriser l'accès à l'API HT
    sudo systemctl enable --now elasticsearch.service
    sudo systemctl --no-pager status elasticsearch
    ```
-   👉 Explication : Au premier démarrage, la sécurité, les certificats TLS et le token Kibana sont générés automatiquement.
+   👉 Explication : Au premier démarrage, la sécurité, les certificats [[Glossary:TLS]] et le token Kibana sont générés automatiquement.
 
 2. Définir le mot de passe du superutilisateur (saisi de façon interactive, jamais en argument) :
    ```bash
@@ -28,7 +28,7 @@ Installer Elasticsearch, démarrer le service et sécuriser l'accès à l'API HT
    ```
    👉 Explication : L'option `-i` demande le mot de passe au clavier; le stocker dans le coffre de l'organisation.
 
-3. Tester l'API HTTPS avec le certificat CA local :
+3. Tester l'API HTTPS avec le certificat [[Glossary:CA]] local :
    ```bash
    curl --cacert /etc/elasticsearch/certs/http_ca.crt -u elastic https://localhost:9200
    ```

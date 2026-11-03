@@ -1,12 +1,12 @@
 # 📄 VM_Ubuntu_24.04_Securite_Configuration-UFW-Firewall.md
 
-- **Environnement** : VM (Ubuntu Server 24-04 LTS)
+- **Environnement** : [[Glossary:VM]] (Ubuntu Server 24-04 [[Glossary:LTS]])
 - **OS / Version** : Ubuntu 24-04 LTS - Famille Debian / Ubuntu
-- **Catégorie** : Sécurité & Pare-feu Local (UFW)
+- **Catégorie** : Sécurité & Pare-feu Local ([[Glossary:UFW]])
 - **Tags** : `[ubuntu-24.04]`, `[ufw]`, `[pare-feu]`, `[security]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Configurer et activer le pare-feu simplifié UFW (Uncomplicated Firewall) sous Ubuntu Server 24-04 LTS, appliquer une politique de sécurité fermée par défaut et filtrer les accès SSH et HTTP/HTTPS.
+Configurer et activer le pare-feu simplifié UFW (Uncomplicated Firewall) sous Ubuntu Server 24-04 LTS, appliquer une politique de sécurité fermée par défaut et filtrer les accès [[Glossary:SSH]] et [[Glossary:HTTP]]/HTTPS.
 
 ---
 
@@ -28,6 +28,6 @@ Configurer et activer le pare-feu simplifié UFW (Uncomplicated Firewall) sous U
 ---
 
 ## 🔒 3. Production — Façon Sécurisée (Hardening & Isolation Enterprise)
-1. Restriction de l'accès SSH à la seule IP du bastion d'administration :
+1. Restriction de l'accès SSH à la seule [[Glossary:IP]] du bastion d'administration :
    `ufw allow from 192.168.1.10 to any port 22 proto tcp comment 'SSH Bastion Admin'`
    👉 Explication : Bloque l'accès SSH pour tous les autres équipements du réseau local.

@@ -2,7 +2,7 @@
 
 - **OS / Version** : Rocky Linux 9 x86_64; paquets `ipa-server` des dépôts de la distribution (version non figée, à relever sur l'hôte)
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : premier serveur FreeIPA/IdM avec CA intégrée et DNS intégré optionnel, sauvegarde `ipa-backup`
+- **Périmètre** : premier serveur FreeIPA/IdM avec [[Glossary:CA]] intégrée et [[Glossary:DNS]] intégré optionnel, sauvegarde `ipa-backup`
 - **Catégorie** : annuaire / identité / Kerberos
 - **Tags** : `freeipa`, `idm`, `rocky-linux-9`, `kerberos`, `ldap`, `ipa-server-install`, `ipa-backup`
 
@@ -10,16 +10,16 @@
 
 Fiche simple : [cadrer le périmètre FreeIPA](../../../../01-fiches-simples/rocky-linux/9/vie-du-logiciel/freeipa/fiche-simple-vm-rocky-9-freeipa-cadrer-perimetre.md).
 
-FreeIPA fournit LDAP (389 Directory Server), Kerberos, une CA et, en option, DNS. Le projet FreeIPA indique supporter Fedora et Red Hat Enterprise Linux; la procédure détaillée la plus précise est la documentation RHEL 9 « Installing Identity Management ». Rocky Linux 9 est compatible RHEL, mais cette compatibilité est une hypothèse à valider en laboratoire : aucune procédure Rocky dédiée n'a été trouvée dans une source officielle. Ce guide n'a pas été testé sur Rocky Linux 9.
+FreeIPA fournit [[Glossary:LDAP]] (389 Directory Server), Kerberos, une CA et, en option, DNS. Le projet FreeIPA indique supporter Fedora et Red Hat Enterprise Linux; la procédure détaillée la plus précise est la documentation [[Glossary:RHEL]] 9 « Installing Identity Management ». Rocky Linux 9 est compatible RHEL, mais cette compatibilité est une hypothèse à valider en laboratoire : aucune procédure Rocky dédiée n'a été trouvée dans une source officielle. Ce guide n'a pas été testé sur Rocky Linux 9.
 
-Ne pas installer FreeIPA sur un serveur qui héberge déjà un autre service d'annuaire, DNS, serveur web ou CA. Réplicas, relation de confiance AD (`ipa-server-trust-ad`), CA externe et migration depuis OpenLDAP/NIS ne sont pas couverts; pour un simple annuaire LDAP, voir le [guide OpenLDAP Debian 13](../../../debian/13/installation-deploiement/87-deploiement-openldap-2-6-debian-13.md).
+Ne pas installer FreeIPA sur un serveur qui héberge déjà un autre service d'annuaire, DNS, serveur web ou CA. Réplicas, relation de confiance [[Glossary:AD]] (`ipa-server-trust-ad`), CA externe et migration depuis OpenLDAP/NIS ne sont pas couverts; pour un simple annuaire LDAP, voir le [guide OpenLDAP Debian 13](../../../debian/13/installation-deploiement/87-deploiement-openldap-2-6-debian-13.md).
 
 ## 2. Prérequis à valider avant l'installation
 
 Fiche simple : [valider les prérequis FreeIPA](../../../../01-fiches-simples/rocky-linux/9/vie-du-logiciel/freeipa/fiche-simple-vm-rocky-9-freeipa-prerequis.md).
 
-- VM dédiée, snapshot avant installation. Pour un petit déploiement, la documentation RHEL 9 dimensionne la RAM selon la volumétrie (10 000 utilisateurs : au moins 4 Go de RAM et 4 Go de swap); le démarrage rapide FreeIPA donne un minimum absolu de 1,2 Go avec CA et 2 Go pour un test. Réserver la RAM (pas de ballooning).
-- Nom d'hôte FQDN statique, jamais `localhost`; il doit se résoudre en l'IP du serveur et la résolution inverse doit correspondre. Dans `/etc/hosts`, le FQDN vient en premier. Utiliser un domaine que l'organisation possède, pas `example.com`.
+- [[Glossary:VM]] dédiée, snapshot avant installation. Pour un petit déploiement, la documentation RHEL 9 dimensionne la [[Glossary:RAM]] selon la volumétrie (10 000 utilisateurs : au moins 4 Go de RAM et 4 Go de swap); le démarrage rapide FreeIPA donne un minimum absolu de 1,2 Go avec CA et 2 Go pour un test. Réserver la RAM (pas de ballooning).
+- Nom d'hôte [[Glossary:FQDN]] statique, jamais `localhost`; il doit se résoudre en l'[[Glossary:IP]] du serveur et la résolution inverse doit correspondre. Dans `/etc/hosts`, le FQDN vient en premier. Utiliser un domaine que l'organisation possède, pas `example.com`.
 - Heure synchronisée (chrony) : Kerberos échoue en cas de dérive.
 - Pare-feu : ports 80/tcp, 443/tcp, 389/tcp, 636/tcp, 88/tcp+udp, 464/tcp+udp et, avec DNS intégré, 53/tcp+udp.
 - Considérer le domaine, le realm Kerberos et le FQDN du serveur comme définitifs : les arrêter par écrit avant de continuer.
@@ -42,7 +42,7 @@ Ajouter `--add-service=dns` seulement si le DNS intégré est retenu. Lancer ens
 sudo ipa-server-install
 ```
 
-Le journal est `/var/log/ipaserver-install.log`. Le mode non interactif place les mots de passe dans la ligne de commande (visible dans l'historique et la liste des processus) : ne pas l'utiliser en production. Si le DNS intégré est activé, l'option `--no-dnssec-validation` n'est à ajouter que si DNSSEC n'est pas requis, comme l'indique la documentation Red Hat. Avec un DNS externe, l'installeur génère `/tmp/ipa.system.records.*.db` : publier ces enregistrements dans la zone existante.
+Le journal est `/var/log/ipaserver-install.log`. Le mode non interactif place les mots de passe dans la ligne de commande (visible dans l'historique et la liste des processus) : ne pas l'utiliser en production. Si le DNS intégré est activé, l'option `--no-dnssec-validation` n'est à ajouter que si [[Glossary:DNSSEC]] n'est pas requis, comme l'indique la documentation Red Hat. Avec un DNS externe, l'installeur génère `/tmp/ipa.system.records.*.db` : publier ces enregistrements dans la zone existante.
 
 ## 4. Premières actions
 

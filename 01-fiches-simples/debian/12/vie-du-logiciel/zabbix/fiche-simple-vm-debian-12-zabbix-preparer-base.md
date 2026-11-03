@@ -1,7 +1,7 @@
 # fiche-simple-vm-debian-12-zabbix-preparer-base.md
 
 - **Environnement** : MariaDB local dédié au serveur Zabbix Debian 12
-- **OS / Version** : Debian 12 Bookworm; MariaDB maintenu et schéma Zabbix 7.0 LTS
+- **OS / Version** : Debian 12 Bookworm; MariaDB maintenu et schéma Zabbix 7.0 [[Glossary:LTS]]
 - **Catégorie** : supervision / base de données
 - **Tags** : `debian12`, `zabbix`, `mariadb`, `database`, `schema`
 

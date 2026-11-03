@@ -1,17 +1,17 @@
 # Déployer PRTG Network Monitor sur Windows Server
 
-- **OS / Version** : Windows Server 2022 ou 2025 en Desktop Experience; PRTG Network Monitor version maintenue
+- **OS / Version** : Windows Server 2022 ou 2025 en Desktop Experience; [[Glossary:PRTG]] Network Monitor version maintenue
 - **Type de fiche** : Installation/Déploiement
-- **Environnement** : Serveur Windows dédié ou VM, accès d'administration restreint
+- **Environnement** : Serveur Windows dédié ou [[Glossary:VM]], accès d'administration restreint
 - **Machine ciblée** : Serveur de supervision réseau
-- **Catégorie** : Supervision / SNMP / WMI
+- **Catégorie** : Supervision / [[Glossary:SNMP]] / [[Glossary:WMI]]
 - **Tags** : `prtg`, `windows-server`, `supervision`, `snmp`, `wmi`, `monitoring`
 
 ## 1. Dimensionner et préparer
 
 Fiche simple : [dimensionner et préparer](../../../../01-fiches-simples/windows/server-2022/vie-du-logiciel/prtg/fiche-simple-vm-windows-server-2022-prtg-dimensionner.md).
 
-Dimensionner selon le nombre de capteurs, intervalles, protocoles et rétention; suivre les tableaux officiels Paessler plutôt que le nombre d'équipements seul. Prévoir un volume de données dédié, sauvegarde, DNS, adresse fixe et fenêtre d'installation.
+Dimensionner selon le nombre de capteurs, intervalles, protocoles et rétention; suivre les tableaux officiels Paessler plutôt que le nombre d'équipements seul. Prévoir un volume de données dédié, sauvegarde, [[Glossary:DNS]], adresse fixe et fenêtre d'installation.
 
 Le Core Server et les sondes Windows nécessitent une version de Windows prise en charge et .NET Framework 4.7.2 minimum (4.8 recommandé). Ne pas installer sur Windows Server Core. Pour des domaines ou réseaux distants, prévoir des Remote Probes ou Multi-Platform Probe selon la matrice officielle.
 
@@ -49,7 +49,7 @@ Fiche simple : [recette](../../../../01-fiches-simples/windows/server-2022/vie-d
 - Confirmer état du service Core et de la sonde, accès Web et certificat.
 - Vérifier qu'un appareil pilote et ses capteurs attendus sont `Up`.
 - Tester une alerte de seuil sur un capteur de test, son destinataire et sa résolution.
-- Examiner CPU/RAM/disque, durée des scans et journaux système.
+- Examiner [[Glossary:CPU]]/RAM/disque, durée des scans et journaux système.
 - Valider permissions avec un compte opérateur non administrateur.
 
 ## 6. Exploitation et restauration

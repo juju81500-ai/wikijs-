@@ -1,7 +1,7 @@
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Journaux_Journald_Logrotate
 
-- **Environnement** : VM Ubuntu Server
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat) - systemd 255, logrotate 3.21
+- **Environnement** : [[Glossary:VM]] Ubuntu Server
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble Numbat) - systemd 255, logrotate 3.21
 - **Catégorie** : Journaux / Gestion, rotation et conservation
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[journald]`, `[journalctl]`, `[logrotate]`, `[logs]`, `[retention]`
 
@@ -14,7 +14,7 @@ Rendre persistants les journaux systemd, borner leur taille et leur durée de co
    journalctl --disk-usage
    ls -ld /var/log/journal
    ```
-   👉 *Explication : Si `/var/log/journal` n'existe pas, les journaux sont volatils (en RAM) et disparaissent au redémarrage.*
+   👉 *Explication : Si `/var/log/journal` n'existe pas, les journaux sont volatils (en [[Glossary:RAM]]) et disparaissent au redémarrage.*
 2. Tester la rotation logrotate sans écrire de fichier :
    ```bash
    sudo logrotate -d /etc/logrotate.conf

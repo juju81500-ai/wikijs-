@@ -10,12 +10,12 @@
 
 Fiche simple : [cadrer le cluster kubeadm](../../../../01-fiches-simples/debian/13/vie-du-logiciel/kubernetes-k3s/fiche-simple-vm-debian-13-kubeadm-cadrer.md).
 
-- Au moins 2 machines (1 plan de contrôle, 1 ou plusieurs workers) : 2 Go de RAM minimum chacune et 2 CPU minimum pour le plan de contrôle, d'après la documentation officielle.
-- Nom d'hôte, adresse MAC et `product_uuid` uniques ; adresses IP statiques ; connectivité complète entre nœuds ; ports requis ouverts (voir [ports et protocoles](https://kubernetes.io/docs/reference/networking/ports-and-protocols/)).
+- Au moins 2 machines (1 plan de contrôle, 1 ou plusieurs workers) : 2 Go de [[Glossary:RAM]] minimum chacune et 2 [[Glossary:CPU]] minimum pour le plan de contrôle, d'après la documentation officielle.
+- Nom d'hôte, adresse MAC et `product_uuid` uniques ; adresses [[Glossary:IP]] statiques ; connectivité complète entre nœuds ; ports requis ouverts (voir [ports et protocoles](https://kubernetes.io/docs/reference/networking/ports-and-protocols/)).
 - Swap désactivé (kubelet refuse par défaut de démarrer avec du swap) : contrôler avec `swapon --show`, désactiver avec `sudo swapoff -a` et retirer l'entrée persistante de `/etc/fstab`.
-- Un nom DNS ou une adresse de répartiteur pour `--control-plane-endpoint` si une évolution vers la haute disponibilité est possible (recommandé par la documentation).
-- Choix d'un plugin réseau (CNI) et de ses prérequis (CIDR des pods, ports) avant `kubeadm init`.
-- Console hors bande ou snapshot de VM avant de commencer.
+- Un nom [[Glossary:DNS]] ou une adresse de répartiteur pour `--control-plane-endpoint` si une évolution vers la haute disponibilité est possible (recommandé par la documentation).
+- Choix d'un plugin réseau (CNI) et de ses prérequis ([[Glossary:CIDR]] des pods, ports) avant `kubeadm init`.
+- Console hors bande ou snapshot de [[Glossary:VM]] avant de commencer.
 
 ```bash
 uname -r
@@ -118,7 +118,7 @@ Utiliser la commande `kubeadm join` affichée en fin d'initialisation. Si elle e
 sudo kubeadm token create --print-join-command
 ```
 
-Le jeton et le hash de CA sont des secrets d'enrôlement : ne pas les journaliser dans un ticket ou un dépôt.
+Le jeton et le hash de [[Glossary:CA]] sont des secrets d'enrôlement : ne pas les journaliser dans un ticket ou un dépôt.
 
 ## 7. Validation
 
@@ -157,7 +157,7 @@ sudo ETCDCTL_API=3 etcdctl --endpoints=https://127.0.0.1:2379 \
 
 Fiche simple : [contrôler le durcissement et l'exploitation](../../../../01-fiches-simples/debian/13/vie-du-logiciel/kubernetes-k3s/fiche-simple-vm-debian-13-kubeadm-durcir.md).
 
-Restreindre l'API aux réseaux d'administration, appliquer RBAC minimal, des politiques réseau, une gestion des secrets hors dépôt, et la rotation des certificats (`kubeadm certs check-expiration`). Ne pas exposer `NodePort` ou `LoadBalancer` sans filtrage amont. Cette fiche ne remplace ni une revue de durcissement ni un essai de reprise.
+Restreindre l'[[Glossary:API]] aux réseaux d'administration, appliquer [[Glossary:RBAC]] minimal, des politiques réseau, une gestion des secrets hors dépôt, et la rotation des certificats (`kubeadm certs check-expiration`). Ne pas exposer `NodePort` ou `LoadBalancer` sans filtrage amont. Cette fiche ne remplace ni une revue de durcissement ni un essai de reprise.
 
 ## Sources
 

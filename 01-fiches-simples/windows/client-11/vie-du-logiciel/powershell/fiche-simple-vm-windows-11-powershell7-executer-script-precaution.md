@@ -1,7 +1,7 @@
 # fiche-simple-vm-windows-11-powershell7-executer-script-precaution.md
 
-- **Environnement** : VM ou poste Windows 11 de test; compte standard puis élévation uniquement si requise
-- **OS / Version** : Windows 11 x64; PowerShell 7.6.9 Stable (LTS)
+- **Environnement** : [[Glossary:VM]] ou poste Windows 11 de test; compte standard puis élévation uniquement si requise
+- **OS / Version** : Windows 11 x64; PowerShell 7.6.9 Stable ([[Glossary:LTS]])
 - **Catégorie** : administration / PowerShell
 - **Tags** : `windows-11`, `powershell`, `pwsh`, `administration`, `scripts`, `securite`
 
@@ -36,7 +36,7 @@ Dans les scripts, préférer chemins explicites, filtres ciblés, gestion d'erre
 
 ## 3. Production — Sécurité
 
-- Ne pas définir globalement `Bypass` ou `Unrestricted`, ni affaiblir une stratégie imposée par GPO.
+- Ne pas définir globalement `Bypass` ou `Unrestricted`, ni affaiblir une stratégie imposée par [[Glossary:GPO]].
 - Ne pas lancer en administrateur si l'opération ne le requiert pas.
 
 ## Validation et retour arrière

@@ -1,6 +1,6 @@
 # 📄 VMware Horizon
 
-- **Catégorie** : Poste de travail et VDI
+- **Catégorie** : Poste de travail et [[Glossary:VDI]]
 - **Plateforme** : Appliance / Windows
 - **Produit (matrice)** : VMware Horizon
 - **Statut dans le pack** : Couvert

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_ISC-DHCP-Server_Valider
 
-- **Environnement** : VM Debian 13; ISC DHCP déprécié, usage transitoire
+- **Environnement** : [[Glossary:VM]] Debian 13; ISC [[Glossary:DHCP]] déprécié, usage transitoire
 - **OS / Version** : Debian 13
 - **Catégorie** : Vie du logiciel / ISC-DHCP-Server — Valider (recette)
 - **Tags** : `isc-dhcp`, `serveur`, `vie-du-logiciel`, `valider`
@@ -21,7 +21,7 @@ systemctl is-active isc-dhcp-server
 sudo journalctl -u isc-dhcp-server -n 60 --no-pager
 sudo tail -n 30 /var/lib/dhcp/dhcpd.leases
    ```
-   👉 Explication : Redémarrer uniquement dans VLAN test; les baux sont des données réseau à protéger.
+   👉 Explication : Redémarrer uniquement dans [[Glossary:VLAN]] test; les baux sont des données réseau à protéger.
 
 
 ## 2. Production — Contrôles

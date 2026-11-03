@@ -1,8 +1,8 @@
 # Fiche_Simple_-_VM_Debian_13_PuTTY_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Debian 13 (Trixie), poste d'administration en ligne de commande
+- **Environnement** : [[Glossary:VM]] Debian 13 (Trixie), poste d'administration en ligne de commande
 - **OS / Version** : Debian 13 (Trixie) — paquet putty-tools
-- **Catégorie** : outils d'administration / SSH
+- **Catégorie** : outils d'administration / [[Glossary:SSH]]
 - **Tags** : `putty`, `putty-tools`, `plink`, `puttygen`, `ssh`, `mise-a-jour`, `retour-arriere`
 
 ---

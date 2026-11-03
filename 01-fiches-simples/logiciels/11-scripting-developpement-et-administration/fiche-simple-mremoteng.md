@@ -1,13 +1,13 @@
 # 📄 mRemoteNG
 
-- **Environnement** : VM (Windows Server 2022)
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022)
 - **OS / Version** : Windows Server 2022 (Desktop Experience), PowerShell 5.1
 - **Version** : mRemoteNG 1.77.x (paquet winget `mRemoteNG.mRemoteNG`, à vérifier sur la version déployée)
 - **Catégorie** : Scripting, développement et administration
 - **Tags** : `[windows-server-2022]`, `[mremoteng]`, `[rdp]`, `[ssh]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer mRemoteNG sur Windows Server 2022, créer un jeu de connexions de test (RDP et SSH) dans un fichier de connexions chiffré, puis le protéger et le sauvegarder pour l'exploitation en production. Les connexions ne ciblent que vos propres machines.
+Installer mRemoteNG sur Windows Server 2022, créer un jeu de connexions de test ([[Glossary:RDP]] et [[Glossary:SSH]]) dans un fichier de connexions chiffré, puis le protéger et le sauvegarder pour l'exploitation en production. Les connexions ne ciblent que vos propres machines.
 
 ---
 

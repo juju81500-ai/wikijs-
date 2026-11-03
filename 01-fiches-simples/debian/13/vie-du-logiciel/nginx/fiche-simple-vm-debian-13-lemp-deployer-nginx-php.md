@@ -2,7 +2,7 @@
 
 - **Environnement** : Debian 13; Nginx et PHP-FPM 8.4 depuis les dépôts Debian
 - **OS / Version** : Debian 13 Trixie
-- **Catégorie** : pile Web LEMP / virtual host
+- **Catégorie** : pile Web [[Glossary:LEMP]] / virtual host
 - **Tags** : `debian13`, `lemp`, `nginx`, `php-fpm`, `virtual-host`
 
 ---
@@ -68,7 +68,7 @@ Configurer un hôte Nginx et le relier au socket PHP-FPM réellement installé, 
 
 ## 2. Production — Contrôles
 
-Vérifier chemins, nom DNS, socket FPM, droits du code, modules PHP nécessaires et validation de configuration avant tout rechargement.
+Vérifier chemins, nom [[Glossary:DNS]], socket FPM, droits du code, modules PHP nécessaires et validation de configuration avant tout rechargement.
 
 ## 3. Production — Sécurité
 

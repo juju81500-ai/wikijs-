@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Installer un outil CLI Python isolé sans toucher au système.
+Installer un outil [[Glossary:CLI]] Python isolé sans toucher au système.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

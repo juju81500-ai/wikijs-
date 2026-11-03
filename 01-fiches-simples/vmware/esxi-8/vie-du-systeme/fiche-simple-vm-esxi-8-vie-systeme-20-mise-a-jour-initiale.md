@@ -26,7 +26,7 @@ Appliquer les correctifs avant mise en service.
    reboot
    esxcli system maintenanceMode set --enable false
    ```
-   👉 Explication : les VM doivent être arrêtées ou migrées avant de passer en maintenance.
+   👉 Explication : les [[Glossary:VM]] doivent être arrêtées ou migrées avant de passer en maintenance.
 
 3. Vérifier la version :
    ```sh

@@ -8,7 +8,7 @@
 
 ## 📚 Couverture dans le pack
 
-Couvert — Suricata IDS passif sur Debian 13, Ubuntu 24-04 et Rocky Linux 9 (EPEL). L’IPS/inline n’est pas couvert; vérifier la version publiée par chaque dépôt.
+Couvert — Suricata [[Glossary:IDS]] passif sur Debian 13, Ubuntu 24-04 et Rocky Linux 9 (EPEL). L’IPS/inline n’est pas couvert; vérifier la version publiée par chaque dépôt.
 
 Fiches simples du guide : [cadrer la capture](../../debian/13/vie-du-logiciel/suricata/fiche-simple-vm-debian-13-suricata-ids-cadrer-capture.md), [installer](../../debian/13/vie-du-logiciel/suricata/fiche-simple-vm-debian-13-suricata-ids-installer.md), [identifier l’interface](../../debian/13/vie-du-logiciel/suricata/fiche-simple-vm-debian-13-suricata-ids-interface.md), [configurer AF_PACKET passif](../../debian/13/vie-du-logiciel/suricata/fiche-simple-vm-debian-13-suricata-ids-config-af-packet.md), [mettre à jour les règles](../../debian/13/vie-du-logiciel/suricata/fiche-simple-vm-debian-13-suricata-ids-regles.md), [démarrer/observer](../../debian/13/vie-du-logiciel/suricata/fiche-simple-vm-debian-13-suricata-ids-demarrer-observer.md), [exploitation et durcissement](../../debian/13/vie-du-logiciel/suricata/fiche-simple-vm-debian-13-suricata-ids-exploitation.md), [validation](../../debian/13/vie-du-logiciel/suricata/fiche-simple-vm-debian-13-suricata-valider-capteur-ids.md).
 

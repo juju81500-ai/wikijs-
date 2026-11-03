@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_9_RHEL_Insights
 
-- **Environnement** : VM Rocky Linux 9 comme repère documentaire; sujet RHEL
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 comme repère documentaire; sujet [[Glossary:RHEL]]
 - **OS / Version** : Red Hat Enterprise Linux 9; commandes RHSM sur RHEL autorisé
 - **Catégorie** : Vie du logiciel / RHEL — Contrôler Red Hat Insights
 - **Tags** : `rocky9`, `rhel`, `rhel`, `migration`

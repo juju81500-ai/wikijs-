@@ -1,7 +1,7 @@
 # 📄 PowerShell
 
-- **Environnement** : VM ou poste Windows 11 de test (compte standard, élévation uniquement si requise) ; Debian 13 pour l'étape PowerShell 7 sous Linux
-- **OS / Version** : Windows 11 x64 et Debian 13 - PowerShell 7.6.9 Stable (LTS), installé côte à côte avec Windows PowerShell 5.1
+- **Environnement** : [[Glossary:VM]] ou poste Windows 11 de test (compte standard, élévation uniquement si requise) ; Debian 13 pour l'étape PowerShell 7 sous Linux
+- **OS / Version** : Windows 11 x64 et Debian 13 - PowerShell 7.6.9 Stable ([[Glossary:LTS]]), installé côte à côte avec Windows PowerShell 5.1
 - **Catégorie** : Scripting, développement et administration
 - **Tags** : `[windows-11]`, `[debian13]`, `[powershell]`, `[pwsh]`, `[diagnostic]`, `[administration]`, `[securite]`
 
@@ -40,7 +40,7 @@ Installer et valider PowerShell 7.6.9 sur Windows 11 (et sur Debian 13 pour Powe
 ---
 
 ## ⚡ 2. Production — Façon Simplifiée
-1. Contrôle de la signature du MSI téléchargé depuis la publication officielle (remplacer `<chemin_du_msi>` par le chemin complet du fichier `PowerShell-7.6.9-win-x64.msi`) :
+1. Contrôle de la signature du [[Glossary:MSI]] téléchargé depuis la publication officielle (remplacer `<chemin_du_msi>` par le chemin complet du fichier `PowerShell-7.6.9-win-x64.msi`) :
    ```powershell
    Get-AuthenticodeSignature -FilePath "<chemin_du_msi>" | Select-Object Status, SignerCertificate
    ```
@@ -56,7 +56,7 @@ Installer et valider PowerShell 7.6.9 sur Windows 11 (et sur Debian 13 pour Powe
    ```powershell
    Start-Process -FilePath "<chemin_du_msi>" -Wait
    ```
-   👉 Explication : Lance l'installation de PowerShell 7 avec l'assistant Microsoft. Conserver les options de mise à jour imposées par la politique du poste (Microsoft Update ou WSUS).
+   👉 Explication : Lance l'installation de PowerShell 7 avec l'assistant Microsoft. Conserver les options de mise à jour imposées par la politique du poste (Microsoft Update ou [[Glossary:WSUS]]).
 
 4. Validation de la version installée :
    ```powershell
@@ -71,7 +71,7 @@ Installer et valider PowerShell 7.6.9 sur Windows 11 (et sur Debian 13 pour Powe
    ```powershell
    Get-ExecutionPolicy -List
    ```
-   👉 Explication : Affiche la stratégie par portée (processus, utilisateur, machine). Ne jamais définir `Bypass` ou `Unrestricted`, ni affaiblir une stratégie imposée par GPO. Une stratégie d'exécution n'est pas une frontière de sécurité.
+   👉 Explication : Affiche la stratégie par portée (processus, utilisateur, machine). Ne jamais définir `Bypass` ou `Unrestricted`, ni affaiblir une stratégie imposée par [[Glossary:GPO]]. Une stratégie d'exécution n'est pas une frontière de sécurité.
 
 2. Inventaire des modules disponibles avant tout script :
    ```powershell

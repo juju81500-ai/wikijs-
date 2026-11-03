@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Passbolt_Valider_Recette
 
-- **Environnement** : VM Debian 13 dédiée avec domaine, base et SMTP définis
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée avec domaine, base et [[Glossary:SMTP]] définis
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : gestionnaire de secrets / serveur
 - **Tags** : `debian13`, `passbolt`, `secrets`, `tls`, `sauvegarde`

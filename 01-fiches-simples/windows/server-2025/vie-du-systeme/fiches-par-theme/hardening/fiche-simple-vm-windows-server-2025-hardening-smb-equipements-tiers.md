@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Anticiper l'impact des nouveaux défauts SMB sur clients, NAS et appliances.
+Anticiper l'impact des nouveaux défauts SMB sur clients, [[Glossary:NAS]] et appliances.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

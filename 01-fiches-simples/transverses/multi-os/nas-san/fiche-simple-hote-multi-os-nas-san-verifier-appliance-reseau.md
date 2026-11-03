@@ -32,8 +32,8 @@ Contrôler la baie/NAS puis la connectivité réseau côté client.
    ```
    👉 Explication : les erreurs disque ou réseau récentes apparaissent.
 
-4. Vérifier aussi DNS, MTU et VLAN de l'adresse de stockage depuis le bon réseau.
-   👉 Explication : un ping réussi ne prouve pas que le partage ou la LUN fonctionne.
+4. Vérifier aussi [[Glossary:DNS]], [[Glossary:MTU]] et [[Glossary:VLAN]] de l'adresse de stockage depuis le bon réseau.
+   👉 Explication : un ping réussi ne prouve pas que le partage ou la [[Glossary:LUN]] fonctionne.
 
 ## 2. Production — Contrôles
 

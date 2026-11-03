@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Dovecot_Securiser
 
-- **Environnement** : VM Debian 13; Dovecot depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Debian 13; Dovecot depuis les dépôts de la distribution
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / Dovecot — Sécuriser
 - **Tags** : `debian13`, `dovecot`, `imap`, `messagerie`, `securiser`
@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Imposer TLS, refuser l'authentification en clair et filtrer l'accès à Dovecot.
+Imposer [[Glossary:TLS]], refuser l'authentification en clair et filtrer l'accès à Dovecot.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Obtenir un certificat pour le FQDN (fiche Certbot du pack) puis déclarer TLS (syntaxe 2.4, à vérifier sur la version publiée) :
+1. Obtenir un certificat pour le [[Glossary:FQDN]] (fiche Certbot du pack) puis déclarer TLS (syntaxe 2.4, à vérifier sur la version publiée) :
    ```bash
    sudo tee /etc/dovecot/conf.d/92-tls.conf >/dev/null <<'EOF'
    ssl = required
@@ -54,7 +54,7 @@ Imposer TLS, refuser l'authentification en clair et filtrer l'accès à Dovecot.
 
 ## 2. Production — Contrôles
 
-Vérifier le renouvellement du certificat (rechargement de Dovecot après renouvellement), la politique de mots de passe PAM et les journaux d'échecs de connexion.
+Vérifier le renouvellement du certificat (rechargement de Dovecot après renouvellement), la politique de mots de passe [[Glossary:PAM]] et les journaux d'échecs de connexion.
 
 ## 3. Production — Sécurité
 

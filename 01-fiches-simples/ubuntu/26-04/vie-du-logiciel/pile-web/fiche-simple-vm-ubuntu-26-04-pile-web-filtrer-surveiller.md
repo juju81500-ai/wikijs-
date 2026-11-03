@@ -1,7 +1,7 @@
 # fiche-simple-vm-ubuntu-26-04-pile-web-filtrer-surveiller.md
 
-- **Environnement** : VM ou serveur dédié Ubuntu Server hébergeant une application PHP avec PostgreSQL local et TLS
-- **OS / Version** : Ubuntu Server 26-04 LTS (Resolute); Nginx, PHP 8.5, PostgreSQL 18
+- **Environnement** : [[Glossary:VM]] ou serveur dédié Ubuntu Server hébergeant une application PHP avec PostgreSQL local et [[Glossary:TLS]]
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]] (Resolute); Nginx, PHP 8.5, PostgreSQL 18
 - **Catégorie** : services web / pare-feu
 - **Tags** : `ubuntu2604`, `nginx`, `php8.5`, `postgresql18`, `tls`
 
@@ -17,14 +17,14 @@ Limiter les flux entrants et surveiller le serveur.
    ```bash
    sudo ufw status verbose
    ```
-   👉 Explication : Affiche le pare-feu UFW s'il est actif; vérifier le pare-feu réellement utilisé.
+   👉 Explication : Affiche le pare-feu [[Glossary:UFW]] s'il est actif; vérifier le pare-feu réellement utilisé.
 
 2. Autoriser les flux requis :
    ```bash
    sudo ufw allow 443/tcp
    sudo ufw allow from 192.0.2.0/24 to any port 22 proto tcp
    ```
-   👉 Explication : Autorise HTTPS et SSH depuis le seul réseau d'administration (`192.0.2.0/24` est un exemple à remplacer). À jouer seulement si UFW est le pare-feu retenu et après avoir prévu l'accès SSH.
+   👉 Explication : Autorise HTTPS et [[Glossary:SSH]] depuis le seul réseau d'administration (`192.0.2.0/24` est un exemple à remplacer). À jouer seulement si UFW est le pare-feu retenu et après avoir prévu l'accès SSH.
 
 3. Surveiller :
    ```bash

@@ -1,6 +1,6 @@
 # fiche-simple-appliance-opnsense-carp-pfsync-configurer-interfaces-synchronisation.md
 
-- **Environnement** : Deux appliances OPNsense en haute disponibilité (CARP et pfsync)
+- **Environnement** : Deux appliances OPNsense en haute disponibilité ([[Glossary:CARP]] et pfsync)
 - **OS / Version** : OPNsense (toutes versions compatibles entre les deux nœuds)
 - **Catégorie** : pare-feu / haute disponibilité
 - **Tags** : `opnsense`, `carp`, `pfsync`, `ha`, `firewall`
@@ -13,11 +13,11 @@ Configurer interfaces, pfsync et synchronisation de configuration sur les deux n
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Configurer IP fixes et rôles d'interface sur les deux équipements : **Interfaces > [nom de l'interface]**.
+1. Configurer [[Glossary:IP]] fixes et rôles d'interface sur les deux équipements : **Interfaces > [nom de l'interface]**.
    👉 Explication : les adresses doivent correspondre au plan.
 
 2. Sur le nœud principal : **System > High Availability > Settings**, activer **Synchronize states** (pfsync) et choisir l'interface privée dédiée, avec l'adresse du pair.
-   👉 Explication : ne jamais utiliser le WAN ou le réseau public pour pfsync.
+   👉 Explication : ne jamais utiliser le [[Glossary:WAN]] ou le réseau public pour pfsync.
 
 3. Activer la synchronisation de configuration : renseigner l'adresse de l'interface dédiée du secondaire et le compte de synchronisation, puis sélectionner uniquement les composants à synchroniser.
    👉 Explication : limite la synchronisation au nécessaire.
@@ -30,7 +30,7 @@ Configurer interfaces, pfsync et synchronisation de configuration sur les deux n
 
 ## 2. Production — Contrôles
 
-Consigner les composants synchronisés et le compte utilisé; tester la synchronisation avant de créer les VIP.
+Consigner les composants synchronisés et le compte utilisé; tester la synchronisation avant de créer les [[Glossary:VIP]].
 
 ## 3. Production — Sécurité
 

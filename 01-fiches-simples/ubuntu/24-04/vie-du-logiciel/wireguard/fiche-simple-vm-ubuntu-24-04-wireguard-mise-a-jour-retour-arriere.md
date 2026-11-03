@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_WireGuard_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Ubuntu 24-04 dédiée à un serveur WireGuard natif
-- **OS / Version** : Ubuntu 24-04 LTS Noble; noyau avec module WireGuard et paquet wireguard, versions à vérifier
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 dédiée à un serveur WireGuard natif
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; noyau avec module WireGuard et paquet wireguard, versions à vérifier
 - **Catégorie** : WireGuard natif / mise à jour / retour arrière
 - **Tags** : `wireguard`, `ubuntu24-04`, `vie-du-logiciel`, `mise-a-jour-retour-arriere`
 

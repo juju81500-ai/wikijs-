@@ -29,7 +29,7 @@ Tester accès, refus, supervision et restauration.
 4. Sauvegarder les données indépendamment du serveur et tester la restauration.
    👉 Explication : un partage sans sauvegarde testée est un risque.
 
-5. Planifier toute modification d'export ou de LUN.
+5. Planifier toute modification d'export ou de [[Glossary:LUN]].
    👉 Explication : les clients peuvent perdre des écritures ou se bloquer.
 
 ## 2. Production — Contrôles

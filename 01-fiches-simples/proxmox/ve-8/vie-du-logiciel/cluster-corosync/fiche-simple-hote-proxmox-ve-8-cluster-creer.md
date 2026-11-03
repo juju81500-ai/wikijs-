@@ -26,7 +26,7 @@ Créer le cluster sur un premier nœud puis y joindre les autres.
 3. Sur un nœud vierge : **Datacenter > Cluster > Join Cluster**, coller les informations de jointure du premier nœud et saisir le mot de passe root à l'invite.
    👉 Explication : le mot de passe se saisit dans l'interface, jamais en argument.
 
-4. Ou en ligne de commande depuis la console (192.0.2.11 est un exemple d'IP du nœud existant à remplacer) :
+4. Ou en ligne de commande depuis la console (192.0.2.11 est un exemple d'[[Glossary:IP]] du nœud existant à remplacer) :
    ```bash
    pvecm add 192.0.2.11
    pvecm status

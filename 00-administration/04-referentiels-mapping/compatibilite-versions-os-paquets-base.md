@@ -17,13 +17,13 @@ Les séries ci-dessous sont celles des versions de distribution. Les révisions 
 | MariaDB | 10.11 | 11.8 | Arrêt propre et sauvegarde avant migration majeure |
 | Nginx | 1.22 | 1.26 | Les fichiers de site restent semblables; tester les modules et directives |
 | OpenSSH | 9.2p1 | 10.0p1 | DSA est supprimé dans Trixie; adapter les clients anciens |
-| OpenSSL | 3.0 | 3.5 | Vérifier compatibilité TLS, extensions et applications compilées |
+| OpenSSL | 3.0 | 3.5 | Vérifier compatibilité [[Glossary:TLS]], extensions et applications compilées |
 
 ### Changements Debian à ne pas manquer
 
 - Debian 13 utilise `systemd-tmpfiles` pour nettoyer `/tmp` et `/var/tmp`; ne pas y stocker des données durables.
 - `/etc/sysctl.conf` n'est plus lu par `systemd-sysctl` dans Trixie; placer les réglages locaux dans `/etc/sysctl.d/*.conf`.
-- Le paquet `samba-ad-dc` doit être installé pour la fonction contrôleur de domaine Samba AD.
+- Le paquet `samba-ad-dc` doit être installé pour la fonction contrôleur de domaine Samba [[Glossary:AD]].
 - MariaDB 10.11 vers 11.8 exige un arrêt propre; le serveur 11.8 ne doit pas tenter de récupérer directement un répertoire laissé incohérent par 10.11.
 - OpenSSH 10.0 ne prend plus en charge DSA; `~/.pam_environment` n'est plus lu par sshd.
 - `systemd-resolved` est un paquet distinct sous Bookworm; ne pas supposer qu'il est installé.
@@ -31,18 +31,18 @@ Les séries ci-dessous sont celles des versions de distribution. Les révisions 
 
 ## Repères Ubuntu Server
 
-| Paquet / composant | Ubuntu 24-04 LTS Noble | Ubuntu 26-04 LTS Resolute | Conséquence pour les fiches |
+| Paquet / composant | Ubuntu 24-04 [[Glossary:LTS]] Noble | Ubuntu 26-04 LTS Resolute | Conséquence pour les fiches |
 |---|---:|---:|---|
 | Noyau GA | 6.8 | 7.0 | Vérifier pilotes, modules externes et HWE |
 | systemd | 255 | 259 | Cgroup v1 est supprimé en 26-04; migrer les configurations anciennes |
 | Netplan | 1.0 | 1.2 | Tester les YAML et le renderer réellement installé |
-| APT | 2.8 | 3.1 | `apt-key` est supprimé en 26-04; utiliser des keyrings et sources deb822 |
+| [[Glossary:APT]] | 2.8 | 3.1 | `apt-key` est supprimé en 26-04; utiliser des keyrings et sources deb822 |
 | Python 3 par défaut | 3.12 | 3.14 | Tester les applications, extensions natives et environnements virtuels |
 | PHP | 8.3 | 8.5 | Vérifier modules, extensions et compatibilité applicative |
 | PostgreSQL | 16 | 18 | Prévoir une migration de cluster, pas une simple mise à jour des paquets |
 | MySQL | 8.0 | 8.4 LTS | Vérifier l'authentification; `mysql_native_password` est désactivé par défaut en 8.4 |
 | OpenSSH | 9.6p1 | 10.2p1 | DSA supprimé; tester clés, algorithmes et options sshd |
-| NTP client par défaut | systemd-timesyncd | Chrony | Vérifier service, sources et fichiers de configuration |
+| [[Glossary:NTP]] client par défaut | systemd-timesyncd | Chrony | Vérifier service, sources et fichiers de configuration |
 
 **Attention au nom de version :** Ubuntu 26-04 LTS est la série d'avril 2026. Un nom comme `26-04.1` désigne une image ponctuelle; il ne s'agit pas d'une nouvelle série APT. Confirmer le point release disponible avant de choisir l'ISO.
 
@@ -59,13 +59,13 @@ Les séries ci-dessous sont celles des versions de distribution. Les révisions 
 | Sujet | Windows Server 2022 | Windows Server 2025 | Contrôle à faire |
 |---|---|---|---|
 | Installation | Server Core ou Desktop Experience | Même choix, à fixer à l'installation | Core/Desktop Experience ne se convertissent pas après installation; prévoir une réinstallation pour changer |
-| CPU minimum | Exigences x64 Microsoft | Ajoute SSE4.2 et POPCNT | Vérifier les flags CPU exposés par l'hyperviseur |
-| RAM minimale VM d'installation | Core: 1 Go; Desktop Experience: 2 Go | 2 Go minimum; 4 Go recommandés pour Desktop Experience | Allouer suffisamment de RAM pendant le setup |
+| [[Glossary:CPU]] minimum | Exigences x64 Microsoft | Ajoute SSE4.2 et POPCNT | Vérifier les flags CPU exposés par l'hyperviseur |
+| [[Glossary:RAM]] minimale [[Glossary:VM]] d'installation | Core: 1 Go; Desktop Experience: 2 Go | 2 Go minimum; 4 Go recommandés pour Desktop Experience | Allouer suffisamment de RAM pendant le setup |
 | OpenSSH Server | Fonctionnalité à installer selon besoin | Composant serveur installé par défaut | Vérifier service, règles entrantes et groupe `OpenSSH Users` |
-| SMB sortant | Réglages selon version et stratégie | Signature requise par défaut; chiffrement sortant renforcé | Tester NAS, sauvegardes et clients non-Microsoft avant bascule |
+| SMB sortant | Réglages selon version et stratégie | Signature requise par défaut; chiffrement sortant renforcé | Tester [[Glossary:NAS]], sauvegardes et clients non-Microsoft avant bascule |
 | Credential Guard | Dépend de la configuration | Activé par défaut sur matériels compatibles | Vérifier matériel et compatibilité des logiciels d'identité |
-| AD DS | Comportement établi en 2022 | Nouveaux contrôles LDAP, Kerberos et niveau fonctionnel | Tester les applications LDAP; ne pas activer les options forêt-wide sans plan |
-| Comptes locaux | Windows LAPS disponible selon mises à jour | Windows LAPS enrichi (comptes gérés, passphrases, rollback image) | Vérifier schéma, GPO et délégations avant déploiement |
+| AD DS | Comportement établi en 2022 | Nouveaux contrôles [[Glossary:LDAP]], Kerberos et niveau fonctionnel | Tester les applications LDAP; ne pas activer les options forêt-wide sans plan |
+| Comptes locaux | Windows [[Glossary:LAPS]] disponible selon mises à jour | Windows LAPS enrichi (comptes gérés, passphrases, rollback image) | Vérifier schéma, [[Glossary:GPO]] et délégations avant déploiement |
 
 Ces changements de Windows Server 2025 ne sont pas tous des changements de « paquet » : il s'agit aussi de prérequis matériels, valeurs par défaut et compatibilité des protocoles.
 

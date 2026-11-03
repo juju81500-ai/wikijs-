@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-12-itop-assistant-initial.md
 
-- **Environnement** : VM Linux dédiée avec Apache, PHP 8.2 ou 8.3 et MariaDB 10.11 (serveur ITSM/CMDB)
-- **OS / Version** : Debian 12 Bookworm (ou Ubuntu Server 24-04 LTS); iTop Community 3.3.0
-- **Catégorie** : ITSM / CMDB / helpdesk
+- **Environnement** : [[Glossary:VM]] Linux dédiée avec Apache, PHP 8.2 ou 8.3 et MariaDB 10.11 (serveur [[Glossary:ITSM]]/CMDB)
+- **OS / Version** : Debian 12 Bookworm (ou Ubuntu Server 24-04 [[Glossary:LTS]]); iTop Community 3.3.0
+- **Catégorie** : ITSM / [[Glossary:CMDB]] / helpdesk
 - **Tags** : `debian12`, `itop`, `itsm`, `cmdb`, `apache`, `mariadb`
 
 ---
@@ -19,7 +19,7 @@ Terminer l'installation par l'assistant web puis le verrouiller.
    ```
    👉 Explication : le service doit être actif.
 
-2. Ouvrir **https://itsm.example.net/setup** (remplacer par votre nom DNS).
+2. Ouvrir **https://itsm.example.net/setup** (remplacer par votre nom [[Glossary:DNS]]).
    👉 Explication : lance l'assistant.
 
 3. Sélectionner la base dédiée, saisir l'utilisateur `itop` et son secret, puis vérifier les contrôles PHP et Graphviz.
@@ -31,7 +31,7 @@ Terminer l'installation par l'assistant web puis le verrouiller.
 5. Appliquer la procédure officielle de protection de l'assistant setup et vérifier qu'il n'est plus accessible aux utilisateurs non autorisés.
    👉 Explication : évite une réinstallation ou une fuite d'information.
 
-6. Configurer notifications SMTP, annuaire LDAP/AD si requis, profils et premières données CMDB.
+6. Configurer notifications [[Glossary:SMTP]], annuaire [[Glossary:LDAP]]/AD si requis, profils et premières données CMDB.
    👉 Explication : finalise l'exploitation.
 
 ## 2. Production — Contrôles

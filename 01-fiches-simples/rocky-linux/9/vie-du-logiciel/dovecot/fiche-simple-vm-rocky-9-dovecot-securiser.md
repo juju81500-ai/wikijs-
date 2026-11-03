@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_9_Dovecot_Securiser
 
-- **Environnement** : VM Rocky Linux 9; Dovecot depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9; Dovecot depuis les dépôts de la distribution
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : Vie du logiciel / Dovecot — Sécuriser
 - **Tags** : `dovecot`, `serveur`, `vie-du-logiciel`, `securiser`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Limiter connexions réseau et protéger TLS et comptes de Dovecot.
+Limiter connexions réseau et protéger [[Glossary:TLS]] et comptes de Dovecot.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -35,7 +35,7 @@ sudo firewall-cmd --list-all
 
 ## 2. Production — Contrôles
 
-Ubuntu : UFW si prévu; Rocky : firewalld et SELinux enforcing. Autoriser uniquement les flux documentés.
+Ubuntu : [[Glossary:UFW]] si prévu; Rocky : firewalld et SELinux enforcing. Autoriser uniquement les flux documentés.
 
 ## 3. Production — Sécurité
 

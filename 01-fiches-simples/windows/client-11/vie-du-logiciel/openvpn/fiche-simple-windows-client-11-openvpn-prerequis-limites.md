@@ -18,7 +18,7 @@ Valider le poste et le profil avant d'installer le client OpenVPN.
    winver
    ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
    ```
-   👉 Explication : GUI : touche Windows + R, saisir winver. L'installation exige un compte administrateur; la commande PowerShell renvoie True dans une console élevée.
+   👉 Explication : [[Glossary:GUI]] : touche Windows + R, saisir winver. L'installation exige un compte administrateur; la commande PowerShell renvoie True dans une console élevée.
 
 2. Rassembler les éléments fournis par l'administrateur du serveur :
    👉 Explication : Un profil NOM_PROFIL.ovpn (NOM_PROFIL à remplacer par le nom fourni), le certificat client et sa clé (ou un profil unique intégré), la clé tls-crypt si elle n'est pas intégrée. Ces fichiers arrivent par un canal protégé.

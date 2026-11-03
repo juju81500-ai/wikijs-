@@ -1,8 +1,8 @@
 # Fiche_Simple_-_VM_Debian_13_PostgreSQL_Securiser
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; PostgreSQL 17 des dépôts Debian
-- **Catégorie** : base de données / PostgreSQL / Sécuriser (TLS, pg_hba, pare-feu)
+- **Catégorie** : base de données / PostgreSQL / Sécuriser ([[Glossary:TLS]], pg_hba, pare-feu)
 - **Tags** : `debian13`, `postgresql`, `securite`
 
 ---
@@ -49,7 +49,7 @@ Chiffrer les connexions PostgreSQL, restreindre `pg_hba.conf` et filtrer le port
    # si ufw est utilisé :
    sudo ufw allow from IP_CLIENT to any port 5432 proto tcp
    ```
-   👉 Explication : seules les IP clientes autorisées atteignent PostgreSQL.
+   👉 Explication : seules les [[Glossary:IP]] clientes autorisées atteignent PostgreSQL.
 
 ## 2. Production — Contrôles
 

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_12_Vie_Systeme_07_Disposition_Du_Clavier_Keymap
 
-- **Environnement** : VM Debian 12 « bookworm » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 12 « bookworm » (serveur)
 - **OS / Version** : Debian 12; étape 07 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian12`, `vie-du-systeme`, `cycle-de-vie`, `etape-07`

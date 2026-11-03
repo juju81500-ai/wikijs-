@@ -13,7 +13,7 @@ Vérifier que la configuration survit à un redémarrage.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Passer l'hôte en maintenance (migrer les VM) puis redémarrer :
+1. Passer l'hôte en maintenance (migrer les [[Glossary:VM]]) puis redémarrer :
    ```sh
    esxcli system maintenanceMode set --enable true
    esxcli system shutdown reboot -d 60 -r 'test persistance'
@@ -27,7 +27,7 @@ Vérifier que la configuration survit à un redémarrage.
    esxcli storage filesystem list
    esxcli system ntp get
    ```
-   👉 Explication : IP, datastores, NTP.
+   👉 Explication : [[Glossary:IP]], datastores, [[Glossary:NTP]].
 
 3. Contrôler le démarrage automatique des VM (Host Client : **Hôte > Gérer > Système > Démarrage automatique**) :
    ```sh

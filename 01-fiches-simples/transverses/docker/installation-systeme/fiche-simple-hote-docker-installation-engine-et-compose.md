@@ -1,6 +1,6 @@
 # 📄 Docker_Hote_Installation_Docker-Et-Compose.md
 
-- **Environnement** : VM / Hôte Physique
+- **Environnement** : [[Glossary:VM]] / Hôte Physique
 - **OS / Version** : Debian 12 / Ubuntu 24-04 - Famille Debian
 - **Catégorie** : Virtualisation & Conteneurs
 - **Tags** : `[docker]`, `[docker-compose]`, `[debian-family]`, `[conteneurs]`, `[hardening]`

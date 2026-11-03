@@ -1,12 +1,12 @@
 # 📄 VM_Debian_12_Reseau_Hosts-Resolv.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Réseau & Services / Résolution de noms
 - **Tags** : `[debian12]`, `[debian-family]`, `[reseau]`, `[dns]`, `[etc-hosts]`, `[resolv-conf]`, `[nsswitch]`
 
 ## 🎯 Problème précis à résoudre
-Gérer la résolution de noms d'un serveur Debian 12 : table locale `/etc/hosts`, serveurs DNS dans `/etc/resolv.conf` et ordre de résolution défini par `/etc/nsswitch.conf`, pour joindre les machines du domaine sans dépendre d'une requête DNS externe.
+Gérer la résolution de noms d'un serveur Debian 12 : table locale `/etc/hosts`, serveurs [[Glossary:DNS]] dans `/etc/resolv.conf` et ordre de résolution défini par `/etc/nsswitch.conf`, pour joindre les machines du domaine sans dépendre d'une requête DNS externe.
 
 ---
 
@@ -32,7 +32,7 @@ Gérer la résolution de noms d'un serveur Debian 12 : table locale `/etc/hosts`
    👉 Explication : Renseigner `nameserver <ip_dns_primaire>`, `nameserver <ip_dns_secondaire>` et `search <nom_du_domaine>` (fichier statique, adapté si la configuration réseau n'est pas gérée par un démon DNS).
 3. Contrôle de la résolution via le DNS interne :
    `dig +short <nom_hote>.<nom_du_domaine> @<ip_dns_primaire>`
-   👉 Explication : Interroge directement le serveur DNS interne et affiche l'adresse IP enregistrée.
+   👉 Explication : Interroge directement le serveur DNS interne et affiche l'adresse [[Glossary:IP]] enregistrée.
 
 ---
 
@@ -42,7 +42,7 @@ Gérer la résolution de noms d'un serveur Debian 12 : table locale `/etc/hosts`
    👉 Explication : La ligne attendue est `hosts: files dns`, ce qui impose la lecture de `/etc/hosts` avant toute requête DNS et limite les détournements par un DNS externe.
 2. Contrôle de l'état du fichier de résolveur :
    `ls -l /etc/resolv.conf`
-   👉 Explication : Vérifie qu'il s'agit d'un fichier attendu (fichier statique ou lien vers le résolveur systemd) et qu'il n'a pas été remplacé silencieusement par un DHCP.
+   👉 Explication : Vérifie qu'il s'agit d'un fichier attendu (fichier statique ou lien vers le résolveur systemd) et qu'il n'a pas été remplacé silencieusement par un [[Glossary:DHCP]].
 3. Contrôle de la résolution inverse depuis le DNS interne :
    `dig -x <adresse_ip_du_serveur> +short @<ip_dns_primaire>`
-   👉 Explication : Vérifie que le PTR correspond au FQDN attendu, condition de cohérence avec la fiche d'identité de la machine.
+   👉 Explication : Vérifie que le PTR correspond au [[Glossary:FQDN]] attendu, condition de cohérence avec la fiche d'identité de la machine.

@@ -2,7 +2,7 @@
 
 - **Objectif** : importer les fiches du pack dans Wiki.js sans les coller une par une
 - **Environnement** : Wiki.js 2.5.317 dans Docker Compose
-- **Methode** : stockage Git de Wiki.js, connexion SSH
+- **Methode** : stockage Git de Wiki.js, connexion [[Glossary:SSH]]
 - **Corpus** : dossier `wikijs-import-v2`
 - **Tags** : `wikijs`, `docker`, `git`, `ssh`, `import`, `markdown`
 
@@ -88,7 +88,7 @@ Dans l'administration Wiki.js, ouvrir **Storage**, activer **Git**, puis renseig
 | SSH Private Key Path | `/run/secrets/wikijs_git` |
 | Username / Password | Vides pour SSH |
 | Sync Direction | `Bi-directional` si Wiki.js doit publier les modifications |
-| Verify SSL Certificate | Active |
+| Verify [[Glossary:SSL]] Certificate | Active |
 
 Renseigner egalement le nom et l'adresse email de l'auteur des commits. Enregistrer avec **Apply Changes** et attendre que l'etat Git passe au vert.
 

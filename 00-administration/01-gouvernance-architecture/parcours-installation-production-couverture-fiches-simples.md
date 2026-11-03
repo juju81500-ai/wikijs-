@@ -6,14 +6,14 @@ Ce document indique, pour chaque famille, les étapes de l'installation à la pr
 
 | Famille / cible | Étape du parcours | État | Fiche(s) existante(s) |
 |---|---|---|---|
-| Alpine LXC | Créer et installer un CT depuis un template maintenu | EXISTE | [[Fiche_Simple_-_LXC_Alpine_Installation_Creation_CT_Proxmox]] |
+| Alpine [[Glossary:LXC]] | Créer et installer un [[Glossary:CT]] depuis un template maintenu | EXISTE | [[Fiche_Simple_-_LXC_Alpine_Installation_Creation_CT_Proxmox]] |
 | Alpine LXC | Initialiser paquets, compte admin et services | EXISTE | `apk`, `doas`, OpenRC |
-| Alpine LXC | Configurer et diagnostiquer réseau/DNS | EXISTE | IP statique et diagnostic réseau LXC |
-| Alpine LXC | Configurer SSH et les services | EXISTE | OpenSSH, Chrony et services OpenRC |
+| Alpine LXC | Configurer et diagnostiquer réseau/DNS | EXISTE | [[Glossary:IP]] statique et diagnostic réseau LXC |
+| Alpine LXC | Configurer [[Glossary:SSH]] et les services | EXISTE | OpenSSH, Chrony et services OpenRC |
 | Alpine LXC | Contrôler la préparation à la production | EXISTE | [[Fiche_Simple_-_LXC_Alpine_Controle_Mise_Production]] |
-| Debian VM | Installer Debian 13 sur une VM | EXISTE | [[Fiche_Simple_-_VM_Debian_13_Installation_OS_Premier_Demarrage]] |
+| Debian [[Glossary:VM]] | Installer Debian 13 sur une VM | EXISTE | [[Fiche_Simple_-_VM_Debian_13_Installation_OS_Premier_Demarrage]] |
 | Debian VM | Préparer compte, hostname, mises à jour et réseau | PARTIEL | Fiches existantes Debian 12/13; vérifier la version cible |
-| Debian VM | Installer rôles, stockage et services | EXISTE | Nginx, DNS, bases, systemd, LVM, RAID, NFS, iSCSI |
+| Debian VM | Installer rôles, stockage et services | EXISTE | Nginx, [[Glossary:DNS]], bases, systemd, [[Glossary:LVM]], [[Glossary:RAID]], [[Glossary:NFS]], iSCSI |
 | Debian VM | Appliquer les contrôles de sécurité | EXISTE | SSH, AppArmor et nftables |
 | Debian VM | Vérifier sauvegarde/restauration avant production | EXISTE | [[Fiche_Simple_-_VM_Debian_13_Controle_Mise_Production]] |
 | Docker-LXC | Installer le moteur sur l'hôte | EXISTE | Docker Engine et Compose |
@@ -22,20 +22,20 @@ Ce document indique, pour chaque famille, les étapes de l'installation à la pr
 | Docker-LXC | Mettre à jour une stack et revenir à la version précédente | EXISTE | [[Fiche_Simple_-_Docker_Production_Mise_A_Jour_Rollback_Compose]] |
 | Docker-LXC | Reconstruire l'hôte et restaurer ses stacks | EXISTE | [[Fiche_Simple_-_Docker_Production_Reconstruire_Hote_Restaurer_Stacks]] |
 | Rocky Linux VM | Installer Rocky Linux 9 sur une VM | EXISTE | [[Fiche_Simple_-_VM_Rocky_9_Installation_OS_Premier_Demarrage]] |
-| Rocky Linux VM | Préparer compte, DNF, hostname et IP | PARTIEL | Utilisateur `wheel`, DNF et NetworkManager |
+| Rocky Linux VM | Préparer compte, [[Glossary:DNF]], hostname et IP | PARTIEL | Utilisateur `wheel`, DNF et NetworkManager |
 | Rocky Linux VM | Configurer stockage, services et conteneurs | EXISTE | LVM/XFS, quotas, Chrony, Podman/Quadlet |
 | Rocky Linux VM | Configurer SELinux et firewalld | EXISTE | Fiches SELinux/firewalld et ouverture de port |
 | Rocky Linux VM | Contrôler la réception en production | EXISTE | [[Fiche_Simple_-_VM_Rocky_9_Controle_Mise_Production]] |
 | Ubuntu Server VM | Installer Ubuntu Server 24-04 sur une VM | EXISTE | [[Fiche_Simple_-_VM_Ubuntu_24.04_Installation_OS_Premier_Demarrage]] |
-| Ubuntu Server VM | Préparer réseau, comptes, mises à jour et cloud-init | PARTIEL | Netplan, UFW, mises à jour et cloud-init |
+| Ubuntu Server VM | Préparer réseau, comptes, mises à jour et cloud-init | PARTIEL | Netplan, [[Glossary:UFW]], mises à jour et cloud-init |
 | Ubuntu Server VM | Configurer services et contrôles de sécurité | EXISTE | SSH, AppArmor, firewall et diagnostic DNS |
 | Ubuntu Server VM | Contrôler la réception en production | EXISTE | [[Fiche_Simple_-_VM_Ubuntu_24.04_Controle_Mise_Production]] |
 | Windows 11 | Installer Windows 11 et terminer le premier démarrage | EXISTE | [[Fiche_Simple_-_VM_Windows_11_Installation_OS_Premier_Demarrage]] |
 | Windows 11 | Configurer compte, réseau, domaine et accès distant | EXISTE | Compte local, IP/DNS, jonction domaine et OpenSSH/RDP |
-| Windows 11 | Activer les protections du poste | EXISTE | BitLocker, pare-feu, mises à jour et LAPS selon gestion |
+| Windows 11 | Activer les protections du poste | EXISTE | BitLocker, pare-feu, mises à jour et [[Glossary:LAPS]] selon gestion |
 | Windows 11 | Vérifier le poste avant remise à l'utilisateur | EXISTE | [[Fiche_Simple_-_VM_Windows_11_Controle_Mise_Production]] |
 | Windows Server 2022 | Installer Windows Server et préparer le premier démarrage | EXISTE | [[Fiche_Simple_-_VM_Windows_Server_2022_Installation_OS_Premier_Demarrage]] |
-| Windows Server 2022 | Configurer réseau et services de rôle | EXISTE | AD DS, DNS, DHCP, IIS, SMB, GPO et RDS |
+| Windows Server 2022 | Configurer réseau et services de rôle | EXISTE | [[Glossary:AD]] DS, DNS, [[Glossary:DHCP]], [[Glossary:IIS]], SMB, [[Glossary:GPO]] et RDS |
 | Windows Server 2022 | Appliquer les protections et sauvegardes | EXISTE | GPO, LAPS, pare-feu et sauvegarde état système |
 | Windows Server 2022 | Contrôler la mise en production et la reprise | EXISTE | [[Fiche_Simple_-_VM_Windows_Server_2022_Controle_Mise_Production]] |
 
@@ -71,13 +71,13 @@ La matrice complète des séries et comportements des paquets se trouve dans [[C
 | Version cible | Installation / migration | Différences couvertes | État |
 |---|---|---|---|
 | Debian 12 Bookworm | [[Fiche_Simple_-_VM_Debian_12_Installation_OS_Premier_Demarrage]] | Séries Bookworm; MariaDB 10.11, PostgreSQL 15, PHP 8.2, Nginx 1.22 | EXISTE |
-| Debian 12 → 13 | [[Fiche_Simple_-_VM_Debian_12_13_Preparer_Migration_Paquets]] | APT, /tmp, sysctl, réseau, SSH et migrations majeures | EXISTE |
+| Debian 12 → 13 | [[Fiche_Simple_-_VM_Debian_12_13_Preparer_Migration_Paquets]] | [[Glossary:APT]], /tmp, sysctl, réseau, SSH et migrations majeures | EXISTE |
 | Debian 13 Trixie | [[Fiche_Simple_-_VM_Debian_13_Installation_OS_Premier_Demarrage]] | Séries Trixie; PHP 8.4, PostgreSQL 17, MariaDB 11.8, Nginx 1.26 | EXISTE |
-| Ubuntu 24-04 LTS Noble | [[Fiche_Simple_-_VM_Ubuntu_24.04_Installation_OS_Premier_Demarrage]] | Série Noble : PHP 8.3, PostgreSQL 16, systemd 255 | EXISTE |
+| Ubuntu 24-04 [[Glossary:LTS]] Noble | [[Fiche_Simple_-_VM_Ubuntu_24.04_Installation_OS_Premier_Demarrage]] | Série Noble : PHP 8.3, PostgreSQL 16, systemd 255 | EXISTE |
 | Ubuntu 26-04 LTS Resolute | [[Fiche_Simple_-_VM_Ubuntu_26.04_Installation_OS_Premier_Demarrage]] | APT 3.1, systemd 259, Netplan 1.2, PHP 8.5, PostgreSQL 18 | EXISTE |
 | Windows Server 2022 | [[Fiche_Simple_-_VM_Windows_Server_2022_Installation_OS_Premier_Demarrage]] | Procédures de rôles existantes spécifiques à 2022 | EXISTE |
 | Windows Server 2025 | [[Fiche_Simple_-_VM_Windows_Server_2025_Installation_OS_Premier_Demarrage]] | Installation et prérequis matériels 2025 | EXISTE |
-| Windows Server 2022 → 2025 | [[Fiche_Simple_-_VM_Windows_Server_2025_Compatibilite_Fonctionnalites_2022]] | SMB, OpenSSH, AD DS/LDAP, Credential Guard et CPU | EXISTE |
+| Windows Server 2022 → 2025 | [[Fiche_Simple_-_VM_Windows_Server_2025_Compatibilite_Fonctionnalites_2022]] | SMB, OpenSSH, AD DS/LDAP, Credential Guard et [[Glossary:CPU]] | EXISTE |
 
 **Nommage :** `26-04` désigne la série LTS Ubuntu; `26-04.1` est une image ponctuelle. Le point release ne constitue pas une nouvelle base APT.
 
@@ -102,10 +102,10 @@ La matrice complète des séries et comportements des paquets se trouve dans [[C
 | Créer | Définir ressources VM, firmware, disque et réseau | [[Fiche_Simple_-_VM_Debian_13_Installation_OS_Premier_Demarrage]] | EXISTE |
 | Installer | Vérifier ISO, partitionner le disque, installer Debian 13 et SSH | [[Fiche_Simple_-_VM_Debian_13_Installation_OS_Premier_Demarrage]] | EXISTE |
 | Initialiser | Créer compte `sudo`, hostname, mises à jour, heure et outils VM | Fiches Debian 12/13 de comptes, hostname, mises à jour et outils invités | PARTIEL |
-| Connecter | Configurer IP, DNS, routes et VLAN avec le gestionnaire réseau effectif | [[Fiche_Simple_-_VM_Debian_13_IP_Statique_systemd-networkd]], [[Fiche_Simple_-_VM_Debian_13_Reseau_Configuration_VLAN_8021q]] | EXISTE |
+| Connecter | Configurer IP, DNS, routes et [[Glossary:VLAN]] avec le gestionnaire réseau effectif | [[Fiche_Simple_-_VM_Debian_13_IP_Statique_systemd-networkd]], [[Fiche_Simple_-_VM_Debian_13_Reseau_Configuration_VLAN_8021q]] | EXISTE |
 | Déployer | Installer le rôle (Web, DNS, base, fichiers, supervision) et son unité systemd | Fiches Debian dédiées aux services et applications | EXISTE |
 | Protéger | Configurer SSH, AppArmor, nftables, droits et mises à jour | Fiches Debian sécurité SSH, AppArmor et nftables | EXISTE |
-| Sauvegarder | Sauvegarder les données, config et dépôts avec rétention et clé séparée | BorgBackup/Rclone Debian 12; PBS pour la VM complète | PARTIEL |
+| Sauvegarder | Sauvegarder les données, config et dépôts avec rétention et clé séparée | BorgBackup/Rclone Debian 12; [[Glossary:PBS]] pour la VM complète | PARTIEL |
 | Tester | Restaurer en isolé, vérifier le service et documenter le résultat | [[Fiche_Simple_-_VM_Debian_13_Controle_Mise_Production]], [[12_Proxmox_Backup_Server_3x_PBS_Deduplication]] | EXISTE |
 | Basculer | Tester les accès client, DNS/IP et retour vers l'ancienne version | [[Fiche_Simple_-_VM_Debian_13_Controle_Mise_Production]] | PARTIEL |
 
@@ -155,10 +155,10 @@ La matrice complète des séries et comportements des paquets se trouve dans [[C
 
 | Action simple | Découpage concret | Fiche(s) | État |
 |---|---|---|---|
-| Créer | Définir poste/VM, édition, TPM, Secure Boot, stockage et réseau | [[Fiche_Simple_-_VM_Windows_11_Installation_OS_Premier_Demarrage]] | EXISTE |
+| Créer | Définir poste/VM, édition, [[Glossary:TPM]], Secure Boot, stockage et réseau | [[Fiche_Simple_-_VM_Windows_11_Installation_OS_Premier_Demarrage]] | EXISTE |
 | Installer | Installer Windows, terminer OOBE et appliquer les pilotes | [[Fiche_Simple_-_VM_Windows_11_Installation_OS_Premier_Demarrage]] | EXISTE |
 | Initialiser | Nommer le poste, créer/inscrire le compte et appliquer les mises à jour | Fiches Windows 11 installation, compte local et jonction au domaine | EXISTE |
-| Connecter | Configurer IP/DNS, joindre le domaine et tester les accès distants requis | Fiches Windows 11 réseau, domaine, RDP/OpenSSH | EXISTE |
+| Connecter | Configurer IP/DNS, joindre le domaine et tester les accès distants requis | Fiches Windows 11 réseau, domaine, [[Glossary:RDP]]/OpenSSH | EXISTE |
 | Déployer | Installer les applications approuvées et vérifier leur fonctionnement | La réception mentionne les applications, mais pas de procédure de déploiement de parc | PARTIEL |
 | Protéger | Activer BitLocker, Defender, pare-feu et gestion LAPS si le poste est géré | Fiches Windows 11 BitLocker, firewall et LAPS | EXISTE |
 | Sauvegarder les fichiers | Sauvegarder le profil utilisateur vers File History ou une solution gérée approuvée | [[Fiche_Simple_-_VM_Windows_11_Sauvegarder_Fichiers_File_History]] | EXISTE |

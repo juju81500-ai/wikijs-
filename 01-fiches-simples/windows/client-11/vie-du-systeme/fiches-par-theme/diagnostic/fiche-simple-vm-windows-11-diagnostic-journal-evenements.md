@@ -1,6 +1,6 @@
 # 📄 Fiche_Simple_-_VM_Windows_11_Diagnostic_Journal_Evenements
 
-- **Environnement** : VM / Poste de travail (Windows 11)
+- **Environnement** : [[Glossary:VM]] / Poste de travail (Windows 11)
 - **OS / Version** : Windows 11 - Famille Windows Client
 - **Catégorie** : Système & Services / Diagnostic et journaux
 - **Tags** : `[windows-11]`, `[observateur-evenements]`, `[get-winevent]`, `[diagnostic]`, `[gui]`, `[powershell]`
@@ -28,7 +28,7 @@ Diagnostiquer un poste Windows 11 qui présente des erreurs, des plantages d'app
    ```powershell
    Get-WinEvent -FilterHashtable @{ LogName = 'System', 'Application'; Level = 1, 2, 3; StartTime = (Get-Date).AddHours(-24) } -MaxEvents 50 -ErrorAction SilentlyContinue | Select-Object TimeCreated, LogName, Id, LevelDisplayName, ProviderName, Message
    ```
-   👉 Explication : Équivalent PowerShell du filtre GUI. `-ErrorAction SilentlyContinue` évite l'erreur lorsqu'aucun événement ne correspond.
+   👉 Explication : Équivalent PowerShell du filtre [[Glossary:GUI]]. `-ErrorAction SilentlyContinue` évite l'erreur lorsqu'aucun événement ne correspond.
 
 ---
 

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_14_Selection_Des_Composants_De
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 14 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-14`

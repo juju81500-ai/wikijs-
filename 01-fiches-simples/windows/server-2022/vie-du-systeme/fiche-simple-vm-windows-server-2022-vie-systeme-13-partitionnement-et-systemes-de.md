@@ -19,12 +19,12 @@ Organiser les disques système et de données.
    ```
    👉 Explication : repère le disque de données vierge (`PartitionStyle` à `RAW`).
 
-2. Initialiser, partitionner et formater en NTFS ou ReFS (remplacer `N` par le numéro du disque de données) :
+2. Initialiser, partitionner et formater en [[Glossary:NTFS]] ou ReFS (remplacer `N` par le numéro du disque de données) :
    ```powershell
    Initialize-Disk -Number N -PartitionStyle GPT
    New-Partition -DiskNumber N -UseMaximumSize -DriveLetter D | Format-Volume -FileSystem NTFS -NewFileSystemLabel DONNEES -AllocationUnitSize 65536
    ```
-   👉 Explication : disque GPT, volume `D:` nommé `DONNEES`; un cluster de 64 Ko convient aux bases et aux machines virtuelles. **Vérifier `N` pour ne pas effacer le disque système.**
+   👉 Explication : disque [[Glossary:GPT]], volume `D:` nommé `DONNEES`; un cluster de 64 Ko convient aux bases et aux machines virtuelles. **Vérifier `N` pour ne pas effacer le disque système.**
 
 3. Contrôler les volumes :
    ```powershell

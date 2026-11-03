@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_48_Test_De_Restauration_Pra
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 48 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-48`
@@ -34,7 +34,7 @@ Prouver que la sauvegarde est restaurable.
 
 ## 2. Production — Contrôles
 
-Mesurer RTO et RPO.
+Mesurer [[Glossary:RTO]] et [[Glossary:RPO]].
 
 ## 3. Production — Sécurité
 

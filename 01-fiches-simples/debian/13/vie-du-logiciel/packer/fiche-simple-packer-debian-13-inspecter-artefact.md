@@ -45,7 +45,7 @@ Pour une chaîne d’images de production, approuver le builder, les images de b
 ## 3. Production — Sécurité
 
 - L’accès au socket Docker équivaut généralement à des privilèges root; réserver le pilote aux opérateurs autorisés.
-- Ne jamais intégrer de secret dans HCL, les variables commitées, les journaux ou les couches d’image.
+- Ne jamais intégrer de secret dans [[Glossary:HCL]], les variables commitées, les journaux ou les couches d’image.
 - Ne pas publier l’image vers un registre ni exécuter de build sur un démon partagé sans approbation.
 - Verrouiller et réviser les plugins et sources; rejeter tout artefact dont la provenance ou le contenu est incertain.
 

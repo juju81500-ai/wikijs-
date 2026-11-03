@@ -13,14 +13,14 @@ Vérifier le périmètre Community, les prérequis et le dimensionnement avant d
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Relever la version du système et les ressources de la VM :
+1. Relever la version du système et les ressources de la [[Glossary:VM]] :
    ```bash
    cat /etc/os-release | head -3
    nproc && free -h && df -h /opt
    ```
-   👉 Explication : repère publié : 2 cœurs, 4 Go de RAM et 20 Go SSD pour environ 50 appareils; adapter au volume réel de RRD.
+   👉 Explication : repère publié : 2 cœurs, 4 Go de [[Glossary:RAM]] et 20 Go [[Glossary:SSD]] pour environ 50 appareils; adapter au volume réel de RRD.
 
-2. Vérifier l'heure et la résolution DNS de la VM (nom d'exemple à remplacer) :
+2. Vérifier l'heure et la résolution [[Glossary:DNS]] de la VM (nom d'exemple à remplacer) :
    ```bash
    timedatectl status | grep -E 'synchronized|NTP'
    getent hosts observium.mgmt.example
@@ -32,7 +32,7 @@ Vérifier le périmètre Community, les prérequis et le dimensionnement avant d
 
 ## 2. Production — Contrôles
 
-VM dédiée, adresse de gestion stable, NTP, certificat HTTPS, sauvegarde MariaDB/`config.php`/`rrd` et restauration testée.
+VM dédiée, adresse de gestion stable, [[Glossary:NTP]], certificat HTTPS, sauvegarde MariaDB/`config.php`/`rrd` et restauration testée.
 
 ## 3. Production — Sécurité
 

@@ -2,7 +2,7 @@
 
 - **Environnement** : Hôte Hyper-V Windows Server 2022
 - **OS / Version** : Windows Server 2022 Standard/Datacenter, Hyper-V installé
-- **Catégorie** : Virtualisation / création de VM
+- **Catégorie** : Virtualisation / création de [[Glossary:VM]]
 - **Tags** : `windows-server-2022`, `hyper-v`, `vm`, `powershell`, `reseau`
 
 ---
@@ -22,7 +22,7 @@ Créer une VM pilote connectée uniquement au switch et au datastore approuvés.
    ```
    👉 Explication : espace, mémoire et génération invitée; comparer le hash de l'ISO à celui publié.
 
-2. Créer la VM génération 2 : GUI **Gestionnaire Hyper-V > Action > Nouveau > Ordinateur virtuel** (génération 2, mémoire, réseau = switch de lab, disque virtuel, ISO), ou :
+2. Créer la VM génération 2 : [[Glossary:GUI]] **Gestionnaire Hyper-V > Action > Nouveau > Ordinateur virtuel** (génération 2, mémoire, réseau = switch de lab, disque virtuel, ISO), ou :
    ```powershell
    New-VM -Name "VM-PILOTE" -Generation 2 -MemoryStartupBytes 4GB -NewVHDPath "D:\VM\VM-PILOTE.vhdx" -NewVHDSizeBytes 60GB -SwitchName "LAB-ISOLE"
    Set-VMProcessor VM-PILOTE -Count 2

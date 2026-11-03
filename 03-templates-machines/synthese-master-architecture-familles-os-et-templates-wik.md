@@ -40,14 +40,14 @@ Les fiches complètes sont rangées sous `02-fiches-completes/<OS>/<Type>/` avec
 
 1. **Debian/**
    - Debian 12 Bookworm et Debian 13 Trixie
-   - Conteneurs LXC Debian sur Proxmox
+   - Conteneurs [[Glossary:LXC]] Debian sur Proxmox
    - Ubuntu est classé dans son propre dossier
 
 2. **RedHat-Rocky/**
    - Rocky Linux 9
 
 3. **Alpine/**
-   - Alpine Linux (LXC et VM légers)
+   - Alpine Linux (LXC et [[Glossary:VM]] légers)
 
 4. **Windows/**
    - Windows Server 2022 et 2025
@@ -62,7 +62,7 @@ Les fiches complètes sont rangées sous `02-fiches-completes/<OS>/<Type>/` avec
 
 - **Indexation** : l'arborescence et les matrices servent d'index; les pages doivent porter un titre, des tags et un périmètre explicite.
 - **Méthodes** : les fiches simples utilisent les modes lab/production quand ils sont pertinents; une procédure de réparation ou un guide spécifique à un produit peut adopter une structure diagnostic/correction/retour arrière.
-- **Structure des étapes** : commande exacte ou clic GUI + explication simple, claire et précise.
+- **Structure des étapes** : commande exacte ou clic [[Glossary:GUI]] + explication simple, claire et précise.
 - **Versions** : vérifier les notes de version et les paquets de la distribution. Debian 12/13, Ubuntu 24-04/26-04 et Windows Server 2022/2025 ne sont pas interchangeables.
 - **Contrôle automatisé** : lancer `python3 00-administration/03-qualite-tests/verify-wiki.py .`; ce contrôle est en lecture seule et ne certifie pas l'exécution réelle des procédures.
 

@@ -1,13 +1,13 @@
 # EVE-NG : éditions Community, Freemium et Pro, licences et statut
 
-- **Environnement** : VM ou serveur d'émulation réseau de laboratoire (hors production)
+- **Environnement** : [[Glossary:VM]] ou serveur d'émulation réseau de laboratoire (hors production)
 - **Tags** : `eve-ng`, `laboratoire`, `reseau`, `emulation`, `licence`
 - **Statut de validation** : **Verdict : Non testé sur plateforme cible.** Les procédures ci-dessous sont issues de la méthode documentaire et doivent être rejouées en laboratoire avant toute production.
 
 ## 1. Périmètre et prérequis
 
 - Périmètre : plateforme de laboratoire réseau multi-éditeurs, installation en VM, accès web, import d'images et premier laboratoire. Usage : formation et validation ; ne pas l'utiliser comme environnement de production.
-- Matériel : virtualisation imbriquée activée sur l'hôte, CPU avec extensions de virtualisation, RAM et disque adaptés au nombre de nœuds, réseau d'accès.
+- Matériel : virtualisation imbriquée activée sur l'hôte, [[Glossary:CPU]] avec extensions de virtualisation, [[Glossary:RAM]] et disque adaptés au nombre de nœuds, réseau d'accès.
 - Images éditeur (routeurs, pare-feu) : le droit de les utiliser dépend des licences des éditeurs ; l'outil ne fournit pas ces images.
 
 ## 2. Exigences de version et licence – restrictions et statut
@@ -25,7 +25,7 @@
 
 1. Télécharger l'OVA/ISO depuis le site officiel uniquement ; vérifier la somme de contrôle si publiée.
 2. Importer dans l'hyperviseur de laboratoire, activer la virtualisation imbriquée sur la VM, configurer CPU/RAM/disque et un réseau accessible.
-3. Démarrer, suivre l'assistant de première configuration (mot de passe root, nom d'hôte, DNS, NTP, mode IP).
+3. Démarrer, suivre l'assistant de première configuration (mot de passe root, nom d'hôte, [[Glossary:DNS]], [[Glossary:NTP]], mode [[Glossary:IP]]).
 4. Accéder à l'interface web par HTTPS (restreindre l'accès au poste d'administration) et changer les mots de passe par défaut.
 5. Vérifier le prérequis de virtualisation :
 ```bash

@@ -88,7 +88,7 @@ Cliquer sur le nom pour voir l'état de couverture ; une procédure détaillée 
 
 ### Sauvegarde, restauration et PRA / PCA
 
-- [Nakivo-Altaro](../../../logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-nakivo-altaro.md) — Partiel — NAKIVO Windows Server 2022 et Transporter Linux sur Debian 13 et Ubuntu Server 24-04; Altaro/Hornetsecurity limité à la documentation publique de VM Backup
+- [Nakivo-Altaro](../../../logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-nakivo-altaro.md) — Partiel — NAKIVO Windows Server 2022 et Transporter Linux sur Debian 13 et Ubuntu Server 24-04; Altaro/Hornetsecurity limité à la documentation publique de [[Glossary:VM]] Backup
 - [Robocopy](../../../logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-robocopy.md) — Couvert
 - [Veeam-Backup-Replication](../../../logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-veeam-backup-replication.md) — Couvert
 - [rsync](../../../logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-rsync.md) — Couvert
@@ -105,7 +105,7 @@ Cliquer sur le nom pour voir l'état de couverture ; une procédure détaillée 
 ### Services Web et bases de données
 
 - [Apache](../../../logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-apache.md) — Couvert
-- [IIS](../../../logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-iis.md) — Guide complet — installation du rôle IIS et site pilote Windows Server 2022
+- [IIS](../../../logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-iis.md) — Guide complet — installation du rôle [[Glossary:IIS]] et site pilote Windows Server 2022
 - [MariaDB](../../../logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-mariadb.md) — Couvert
 - [MySQL](../../../logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-mysql.md) — Couvert
 - [Nginx](../../../logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-nginx.md) — Couvert

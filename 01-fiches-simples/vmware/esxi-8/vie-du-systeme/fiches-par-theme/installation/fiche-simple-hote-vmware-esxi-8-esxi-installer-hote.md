@@ -1,7 +1,7 @@
 # fiche-simple-hote-vmware-esxi-8-esxi-installer-hote.md
 
 - **Environnement** : Hôte physique VMware ESXi 8.0 pilote autonome (DCUI, Host Client, vCenter)
-- **OS / Version** : VMware ESXi 8.0, build et image OEM validés sur le matériel
+- **OS / Version** : VMware ESXi 8.0, build et image [[Glossary:OEM]] validés sur le matériel
 - **Catégorie** : virtualisation / installation
 - **Tags** : `vmware`, `esxi`, `vsphere8`, `hyperviseur`, `dcui`, `iso`
 
@@ -13,7 +13,7 @@ Installer ESXi depuis l'ISO ou l'image OEM vérifiée.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Démarrer sur le média : **Console BMC/iDRAC/iLO > Média virtuel > Monter l'ISO ESXi**
+1. Démarrer sur le média : **Console [[Glossary:BMC]]/iDRAC/iLO > Média virtuel > Monter l'ISO ESXi**
    👉 Explication : méthode interactive recommandée pour un premier hôte.
 
 2. Dans l'installateur, choisir le disque système après double contrôle : **Select a Disk to Install or Upgrade**
@@ -23,7 +23,7 @@ Installer ESXi depuis l'ISO ou l'image OEM vérifiée.
    👉 Explication : ne jamais le saisir dans un ticket.
 
 4. Après redémarrage, dans la DCUI : **F2 Customize System > Configure Management Network**
-   👉 Explication : fixer interface, VLAN de management, IP, masque, passerelle, DNS et hostname.
+   👉 Explication : fixer interface, [[Glossary:VLAN]] de management, [[Glossary:IP]], masque, passerelle, [[Glossary:DNS]] et hostname.
 
 5. Tester depuis un poste du réseau d'administration :
    ```bash

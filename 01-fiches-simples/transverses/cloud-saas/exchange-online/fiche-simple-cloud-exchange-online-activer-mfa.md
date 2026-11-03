@@ -24,11 +24,11 @@ Imposer l'authentification multifacteur aux comptes du tenant, administrateurs e
 
 ## 2. Production — Contrôles
 
-Vérifier que tous les administrateurs sont enrôlés et que les protocoles hérités (authentification de base) ne contournent pas le MFA.
+Vérifier que tous les administrateurs sont enrôlés et que les protocoles hérités (authentification de base) ne contournent pas le [[Glossary:MFA]].
 
 ## 3. Production — Sécurité
 
-- Privilégier les méthodes résistantes au hameçonnage (clé FIDO2, Microsoft Authenticator).
+- Privilégier les méthodes résistantes au hameçonnage (clé [[Glossary:FIDO2]], Microsoft Authenticator).
 - Surveiller le compte d'urgence.
 
 ## Validation et retour arrière

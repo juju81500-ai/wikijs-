@@ -9,12 +9,12 @@
 
 ## Problème précis à résoudre
 
-Donner une adresse au NAS pour atteindre l'interface web.
+Donner une adresse au [[Glossary:NAS]] pour atteindre l'interface web.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Au premier démarrage, le menu de la console propose `1) Configure Network Interfaces` ; saisir adresse, masque, passerelle.
-   👉 Explication : ou laisser DHCP puis fixer l'adresse à l'étape 16.
+   👉 Explication : ou laisser [[Glossary:DHCP]] puis fixer l'adresse à l'étape 16.
 
 2. Contrôler :
    ```sh

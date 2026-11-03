@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_12_Vie_Systeme_21_Pilotes_Et_Agents_De
 
-- **Environnement** : VM Debian 12 « bookworm » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 12 « bookworm » (serveur)
 - **OS / Version** : Debian 12; étape 21 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian12`, `vie-du-systeme`, `cycle-de-vie`, `etape-21`
@@ -18,7 +18,7 @@ Installer l'agent adapté à l'hyperviseur.
    sudo apt install qemu-guest-agent
    sudo systemctl enable --now qemu-guest-agent
    ```
-   👉 Explication : permet à l'hyperviseur de lire l'IP et d'arrêter proprement la VM (activer **Options > QEMU Guest Agent** côté Proxmox).
+   👉 Explication : permet à l'hyperviseur de lire l'[[Glossary:IP]] et d'arrêter proprement la VM (activer **Options > [[Glossary:QEMU]] Guest Agent** côté Proxmox).
 
 2. VMware ou Hyper-V (selon la plateforme) :
    ```bash

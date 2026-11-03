@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_25_Validation_De_L_Etat
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 25 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-25`
@@ -30,7 +30,7 @@ Figer un état propre.
 
 ## 2. Production — Contrôles
 
-Convertir en modèle seulement après nettoyage (machine-id, clés SSH).
+Convertir en modèle seulement après nettoyage (machine-id, clés [[Glossary:SSH]]).
 
 ## 3. Production — Sécurité
 

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_12_Vie_Systeme_29_Pare_Feu_Hote
 
-- **Environnement** : VM Debian 12 « bookworm » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 12 « bookworm » (serveur)
 - **OS / Version** : Debian 12; étape 29 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian12`, `vie-du-systeme`, `cycle-de-vie`, `etape-29`
@@ -27,7 +27,7 @@ Filtrer les flux entrants.
    sudo systemctl enable --now nftables
    sudo nft list ruleset
    ```
-   👉 Explication : politique `drop` en entrée avec SSH autorisé depuis le réseau d'administration.
+   👉 Explication : politique `drop` en entrée avec [[Glossary:SSH]] autorisé depuis le réseau d'administration.
 
 ## 2. Production — Contrôles
 

@@ -17,16 +17,16 @@ Désactiver ce qui n'est pas utile sur l'hôte.
    ```bash
    ss -tulpn
    ```
-   👉 Explication : identifie les services ouverts (SSH 22, 8006, 3128 spiceproxy, 111 rpcbind, 25 postfix local).
+   👉 Explication : identifie les services ouverts ([[Glossary:SSH]] 22, 8006, 3128 spiceproxy, 111 rpcbind, 25 postfix local).
 
 2. Désactiver les services inutiles (remplacer `SERVICE`) :
    ```bash
    systemctl disable --now rpcbind.service rpcbind.socket
    systemctl disable --now SERVICE
    ```
-   👉 Explication : ne désactiver `rpcbind` que si aucun stockage NFS n'est monté.
+   👉 Explication : ne désactiver `rpcbind` que si aucun stockage [[Glossary:NFS]] n'est monté.
 
-3. Désactiver l'accès SPICE/console si inutile (GUI : **Datacenter > Options**) et supprimer les ISO et templates inutilisés (GUI : **Stockage > ISO Images > Remove**).
+3. Désactiver l'accès SPICE/console si inutile ([[Glossary:GUI]] : **Datacenter > Options**) et supprimer les ISO et templates inutilisés (GUI : **Stockage > ISO Images > Remove**).
    👉 Explication : moins de fichiers et de services exposés.
 
 ## 2. Production — Contrôles

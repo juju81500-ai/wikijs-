@@ -1,12 +1,12 @@
 # 📄 fiche-simple-vm-alpine-chrony-ntp-openrc.md
 
-- **Environnement** : VM Alpine Linux
+- **Environnement** : [[Glossary:VM]] Alpine Linux
 - **OS / Version** : Alpine Linux avec OpenRC et Chrony
 - **Catégorie** : Services / Synchronisation horaire
 - **Tags** : `[alpine]`, `[chrony]`, `[ntp]`, `[openrc]`, `[time]`, `[services]`
 
 ## 🎯 Problème précis à résoudre
-Installer Chrony comme client NTP sur une VM Alpine, le gérer avec OpenRC et vérifier la synchronisation sans exposer inutilement un service NTP serveur.
+Installer Chrony comme client [[Glossary:NTP]] sur une VM Alpine, le gérer avec OpenRC et vérifier la synchronisation sans exposer inutilement un service NTP serveur.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Installer Chrony, l'activer au démarrage OpenRC et le lancer :
@@ -37,9 +37,9 @@ Installer Chrony comme client NTP sur une VM Alpine, le gérer avec OpenRC et v�
    👉 *Explication : adapter le chemin de configuration au paquet Alpine installé et ne garder que des sources approuvées par l'organisation.*
 
 ## 🔒 3. Production — Façon Sécurisée
-1. Configurer la machine comme client seulement. Ne pas ajouter de directive `allow` ni ouvrir UDP/123 si elle ne doit pas servir d'autres équipements.
+1. Configurer la machine comme client seulement. Ne pas ajouter de directive `allow` ni ouvrir [[Glossary:UDP]]/123 si elle ne doit pas servir d'autres équipements.
 2. Ne pas utiliser `chronyc makestep` en fonctionnement courant sans évaluer l'effet d'un saut d'horloge sur les applications et les journaux.
-3. En LXC, vérifier la stratégie de temps de l'hôte Proxmox : le conteneur partage le noyau et ne gère pas son horloge comme une VM autonome.
+3. En [[Glossary:LXC]], vérifier la stratégie de temps de l'hôte Proxmox : le conteneur partage le noyau et ne gère pas son horloge comme une VM autonome.
 
 ## ✅ Validation et retour arrière
 - Confirmer que `chronyc tracking` indique une source sélectionnée et une dérive attendue.

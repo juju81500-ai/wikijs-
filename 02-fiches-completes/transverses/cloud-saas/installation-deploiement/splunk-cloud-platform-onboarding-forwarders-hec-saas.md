@@ -2,8 +2,8 @@
 
 - **OS / Version** : Tenant Splunk Cloud Platform (SaaS) ; Universal Forwarder sur Linux ou Windows
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : Onboarding d'un tenant existant, index, rôles, envoi par Universal Forwarder et HTTP Event Collector (HEC), contrôle de réception
-- **Catégorie** : SIEM / observabilité
+- **Périmètre** : Onboarding d'un tenant existant, index, rôles, envoi par Universal Forwarder et [[Glossary:HTTP]] Event Collector (HEC), contrôle de réception
+- **Catégorie** : [[Glossary:SIEM]] / observabilité
 - **Tags** : `splunk-cloud`,`saas`,`universal-forwarder`,`hec`,`siem`
 
 ## 1. Portée, hypothèses et licences
@@ -11,27 +11,27 @@
 - Couvre l'usage d'un **tenant Splunk Cloud Platform** (service géré par Splunk). Le déploiement logiciel autohébergé est traité dans le [guide Splunk Enterprise Debian 12](../../../debian/12/installation-deploiement/54-deploiement-splunk-enterprise-10-2-debian-12.md) et ne s'applique pas ici : vous n'installez ni n'administrez les serveurs de recherche ou d'indexation.
 - **Souscription requise** : Splunk Cloud Platform est vendu sur abonnement (volume d'ingestion ou charge de travail selon l'offre). Un essai peut exister mais ses limites sont fixées par l'éditeur au moment de l'inscription ; les confirmer avant de planifier.
 - Hypothèses : le tenant est provisionné, un compte avec le rôle `sc_admin` (ou équivalent) est disponible, les sources à collecter sont inventoriées et leur collecte est autorisée par la politique de l'organisation (données personnelles, rétention).
-- Les fonctions disponibles (Admin Config Service, expérience « Victoria » ou « Classic », gestion des listes d'autorisation d'IP) dépendent de l'offre et de la région : vérifier dans la documentation de votre stack.
+- Les fonctions disponibles (Admin Config Service, expérience « Victoria » ou « Classic », gestion des listes d'autorisation d'[[Glossary:IP]]) dépendent de l'offre et de la région : vérifier dans la documentation de votre stack.
 
 ## 2. Prérequis
 
 - Nom du stack (`<stack>.splunkcloud.com`), région, type d'expérience (visible dans le support/portail).
-- Flux sortants autorisés du réseau interne vers le stack (récepteur de forwarders, par défaut TCP 9997 pour la réception Splunk-to-Splunk selon la documentation Splunk Cloud ; HTTPS 443 pour HEC) : valider les ports exacts dans la documentation « Splunk Cloud Platform » car ils dépendent de l'expérience.
-- Plan de nommage : index (`os_linux`, `os_windows`, `app_<nom>`), sourcetypes, rôles et rétention validés avec le RSSI.
+- Flux sortants autorisés du réseau interne vers le stack (récepteur de forwarders, par défaut [[Glossary:TCP]] 9997 pour la réception Splunk-to-Splunk selon la documentation Splunk Cloud ; HTTPS 443 pour HEC) : valider les ports exacts dans la documentation « Splunk Cloud Platform » car ils dépendent de l'expérience.
+- Plan de nommage : index (`os_linux`, `os_windows`, `app_<nom>`), sourcetypes, rôles et rétention validés avec le [[Glossary:RSSI]].
 - Moyens de gestion des secrets pour tokens HEC et identifiants.
 
 ## 3. Préparer le tenant (index, rôles, accès)
 
-1. Se connecter à l'interface web du stack avec un compte administrateur nominatif ; activer l'authentification forte / SAML selon la politique.
+1. Se connecter à l'interface web du stack avec un compte administrateur nominatif ; activer l'authentification forte / [[Glossary:SAML]] selon la politique.
 2. Créer les index (Settings > Indexes) avec rétention et taille adaptées. Ne pas utiliser l'index `main` par défaut pour tout.
-3. Créer des rôles à moindre privilège (lecture par index) et les rattacher aux groupes SSO. Éviter les comptes partagés.
-4. Si l'accès à l'API ou à HEC est restreint par liste d'autorisation, ajouter les adresses de sortie (NAT) de l'organisation via l'interface prévue (Admin Config Service ou page « IP allow list »), après validation de la documentation applicable à votre offre.
+3. Créer des rôles à moindre privilège (lecture par index) et les rattacher aux groupes [[Glossary:SSO]]. Éviter les comptes partagés.
+4. Si l'accès à l'[[Glossary:API]] ou à HEC est restreint par liste d'autorisation, ajouter les adresses de sortie ([[Glossary:NAT]]) de l'organisation via l'interface prévue (Admin Config Service ou page « IP allow list »), après validation de la documentation applicable à votre offre.
 
 ## 4. Chemin A — Universal Forwarder
 
 1. Télécharger l'Universal Forwarder depuis le portail officiel Splunk (compte Splunk requis) et vérifier la somme de contrôle publiée.
 2. Télécharger depuis le stack le **paquet d'identifiants du Universal Forwarder** (application « Universal Forwarder Credentials », fichier `.spl` ; le nom exact figure sur la page de téléchargement de votre stack). Il contient certificats et destinations ; le traiter comme un secret.
-3. Installer le forwarder (Linux : paquet `.deb`/`.rpm` ; Windows : MSI) en suivant la procédure « Install a universal forwarder » de la documentation. Démarrer avec un compte de service dédié, pas root/SYSTEM quand c'est évitable.
+3. Installer le forwarder (Linux : paquet `.deb`/`.rpm` ; Windows : [[Glossary:MSI]]) en suivant la procédure « Install a universal forwarder » de la documentation. Démarrer avec un compte de service dédié, pas root/SYSTEM quand c'est évitable.
 4. Installer le paquet d'identifiants :
 
 ```bash

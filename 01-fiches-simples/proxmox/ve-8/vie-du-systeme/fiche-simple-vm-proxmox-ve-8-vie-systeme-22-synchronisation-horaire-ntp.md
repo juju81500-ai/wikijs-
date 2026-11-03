@@ -18,7 +18,7 @@ Garder l'heure exacte (essentiel pour le cluster et les certificats).
    nano /etc/chrony/chrony.conf
    systemctl restart chrony
    ```
-   👉 Explication : remplacer la ligne `pool` par `server IP_NTP iburst` (`IP_NTP` = serveur NTP interne).
+   👉 Explication : remplacer la ligne `pool` par `server IP_NTP iburst` (`IP_NTP` = serveur [[Glossary:NTP]] interne).
 
 2. Contrôler la synchronisation :
    ```bash

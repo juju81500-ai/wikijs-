@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_HAProxy_Mettre_A_Jour
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; HAProxy des dépôts Debian
 - **Catégorie** : répartiteur de charge / HAProxy / Mise à jour et retour arrière
 - **Tags** : `debian13`, `haproxy`, `mise-a-jour`

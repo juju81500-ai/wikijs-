@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Rocky_9_Zeek_Configurer
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Zeek
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Zeek
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Zeek / capteur passif standalone
 - **Tags** : `zeek`, `rocky9`, `vie-du-logiciel`, `configurer`
 
@@ -50,7 +50,7 @@ Faire relire interface et réseaux locaux; surveiller l’espace disque et les p
 
 ## Validation et retour arrière
 
-- **Validation** : Les journaux conn.log (et dns.log si du DNS est observé) sont produits sans erreur.
+- **Validation** : Les journaux conn.log (et dns.log si du [[Glossary:DNS]] est observé) sont produits sans erreur.
 - **Retour arrière** : arrêter le conteneur (`sudo podman ps` puis `sudo podman stop NOM_CONTENEUR`, nom à remplacer) et supprimer les logs de test selon la politique.
 
 ## Si le problème n’est pas résolu

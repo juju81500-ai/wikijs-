@@ -2,7 +2,7 @@
 
 - **Environnement** : QGIS Desktop sur Debian 13 amd64
 - **OS / Version** : Debian 13; QGIS 3.44 LTR
-- **Catégorie** : SIG / dépôt APT
+- **Catégorie** : SIG / dépôt [[Glossary:APT]]
 - **Tags** : `debian13`, `qgis`, `apt`, `gpg`, `depot`
 
 ---

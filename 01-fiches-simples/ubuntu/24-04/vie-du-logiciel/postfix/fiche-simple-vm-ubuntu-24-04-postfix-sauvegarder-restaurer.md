@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Postfix_Sauvegarder_Restaurer
 
-- **Environnement** : VM Ubuntu Server 24-04; Postfix depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04; Postfix depuis les dépôts de la distribution
 - **OS / Version** : Ubuntu Server 24-04
 - **Catégorie** : Vie du logiciel / Postfix — Sauvegarder / restaurer
 - **Tags** : `postfix`, `serveur`, `vie-du-logiciel`, `sauvegarder_restaurer`
@@ -23,7 +23,7 @@ sudo chmod 600 /root/postfix-config-*.tgz
 
 ## 2. Production — Contrôles
 
-Dovecot : inclure boîtes et métadonnées selon backend; Postfix : traiter la file séparément si nécessaire. Définir RPO/RTO.
+Dovecot : inclure boîtes et métadonnées selon backend; Postfix : traiter la file séparément si nécessaire. Définir [[Glossary:RPO]]/RTO.
 
 ## 3. Production — Sécurité
 

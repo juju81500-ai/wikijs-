@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-samba-ad-dc-preparer-debian.md
 
-- **Environnement** : VM Debian 13 de laboratoire, contrôleur de domaine Samba AD DC (DNS SAMBA_INTERNAL)
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire, contrôleur de domaine Samba [[Glossary:AD]] [[Glossary:DC]] ([[Glossary:DNS]] SAMBA_INTERNAL)
 - **OS / Version** : Debian 13 Trixie; Samba 4.22 (dépôts Debian)
 - **Catégorie** : annuaire / préparation
 - **Tags** : `debian13`, `samba`, `active-directory`, `lab`, `apt`, `kerberos`
@@ -18,7 +18,7 @@ Configurer l'hôte et installer les paquets du rôle AD DC.
    127.0.0.1 localhost
    192.0.2.10 dc1.ad.lab.test dc1
    ```
-   👉 Explication : associe le FQDN du DC à son adresse statique, jamais à `127.0.1.1`.
+   👉 Explication : associe le [[Glossary:FQDN]] du DC à son adresse statique, jamais à `127.0.1.1`.
 
 2. Exécuter :
    ```bash
@@ -26,7 +26,7 @@ Configurer l'hôte et installer les paquets du rôle AD DC.
    timedatectl status
    ip -br address
    ```
-   👉 Explication : vérifie le nom, la synchronisation NTP et l'adresse statique.
+   👉 Explication : vérifie le nom, la synchronisation [[Glossary:NTP]] et l'adresse statique.
 
 3. Exécuter :
    ```bash
@@ -53,7 +53,7 @@ Ne pas ajouter de dépôt tiers Samba; suivre le manuel Debian de la version ins
 
 ## Validation et retour arrière
 
-- **Validation** : le nom, l'heure et l'IP sont corrects et les paquets sont installés.
+- **Validation** : le nom, l'heure et l'[[Glossary:IP]] sont corrects et les paquets sont installés.
 - **Retour arrière** : `sudo apt remove` des paquets installés ou restauration de la VM de lab.
 
 ## Si le problème n'est pas résolu

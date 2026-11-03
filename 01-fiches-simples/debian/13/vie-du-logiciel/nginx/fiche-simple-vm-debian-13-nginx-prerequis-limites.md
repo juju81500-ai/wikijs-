@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Nginx_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; Nginx des dépôts Debian
 - **Catégorie** : serveur Web / Nginx / Prérequis et limites
 - **Tags** : `debian13`, `nginx`, `prerequis`
@@ -13,7 +13,7 @@ Vérifier que la VM peut accueillir Nginx seul (serveur Web statique ou reverse 
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Contrôler l'OS, la résolution DNS et l'espace disque :
+1. Contrôler l'OS, la résolution [[Glossary:DNS]] et l'espace disque :
    ```bash
    cat /etc/os-release | grep -E '^(PRETTY_NAME|VERSION_ID)='
    hostname -f
@@ -28,11 +28,11 @@ Vérifier que la VM peut accueillir Nginx seul (serveur Web statique ou reverse 
    👉 Explication : un Apache ou un autre proxy installé par défaut doit être arrêté ou déplacé avant Nginx.
 
 3. Noter les limites du périmètre :
-   👉 Explication : cette série couvre Nginx du dépôt Debian (version 1.26 attendue, à vérifier avec `apt-cache policy nginx`), sans PHP-FPM (voir la fiche LEMP), sans module commercial Nginx Plus et sans haute disponibilité (voir Keepalived-HAProxy).
+   👉 Explication : cette série couvre Nginx du dépôt Debian (version 1.26 attendue, à vérifier avec `apt-cache policy nginx`), sans PHP-FPM (voir la fiche [[Glossary:LEMP]]), sans module commercial Nginx Plus et sans haute disponibilité (voir Keepalived-HAProxy).
 
 ## 2. Production — Contrôles
 
-Consigner le nom DNS, l'adresse IP, le rôle (statique, reverse proxy), le responsable, la fenêtre de maintenance et la politique de sauvegarde avant toute installation.
+Consigner le nom DNS, l'adresse [[Glossary:IP]], le rôle (statique, reverse proxy), le responsable, la fenêtre de maintenance et la politique de sauvegarde avant toute installation.
 
 ## 3. Production — Sécurité
 

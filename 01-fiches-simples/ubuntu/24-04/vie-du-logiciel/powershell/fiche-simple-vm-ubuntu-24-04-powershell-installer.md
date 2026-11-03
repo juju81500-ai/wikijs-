@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_PowerShell_Installer
 
-- **Environnement** : VM Ubuntu 24-04 LTS de laboratoire, accès sudo, dépôt Microsoft officiel
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 [[Glossary:LTS]] de laboratoire, accès sudo, dépôt Microsoft officiel
 - **OS / Version** : Ubuntu 24-04 LTS
 - **Catégorie** : shell / scripting
 - **Tags** : `ubuntu2404`, `powershell`, `pwsh`, `scripting`
@@ -41,7 +41,7 @@ Installer PowerShell 7 sur Ubuntu 24-04 LTS depuis le dépôt Microsoft.
    ```bash
    sudo snap install powershell --classic
    ```
-   👉 Explication : le paquet Snap se met à jour automatiquement, ce qui peut gêner une version figée ; ne pas combiner avec le paquet APT.
+   👉 Explication : le paquet Snap se met à jour automatiquement, ce qui peut gêner une version figée ; ne pas combiner avec le paquet [[Glossary:APT]].
 
 5. Supprimer le fichier temporaire :
    ```bash

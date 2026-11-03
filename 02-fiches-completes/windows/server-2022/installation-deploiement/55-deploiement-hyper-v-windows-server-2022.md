@@ -2,7 +2,7 @@
 
 - **OS / Version** : Windows Server 2022 Datacenter ou Standard selon les droits de virtualisation
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : Hôte Hyper-V autonome et VM pilote; hors cluster
+- **Périmètre** : Hôte Hyper-V autonome et [[Glossary:VM]] pilote; hors cluster
 - **Catégorie** : Virtualisation / infrastructure
 - **Tags** : `hyper-v`, `windows-server-2022`, `virtualisation`, `vm`, `powershell`
 
@@ -10,7 +10,7 @@
 
 Fiche simple : [préparer l'hôte](../../../../01-fiches-simples/windows/server-2022/vie-du-logiciel/hyper-v/fiche-simple-vm-windows-server-2022-hyper-v-preparer-hote.md).
 
-Vérifier le matériel, BIOS/UEFI, extensions de virtualisation, SLAT, mémoire, compatibilité des NIC/HBA, stockage et licence Windows Server. Planifier l'accès console hors bande, les VLANs, les adresses de gestion, l'espace pour les VM et la protection des sauvegardes. Une VM n'est pas une sauvegarde de son hôte.
+Vérifier le matériel, [[Glossary:BIOS]]/UEFI, extensions de virtualisation, SLAT, mémoire, compatibilité des [[Glossary:NIC]]/HBA, stockage et licence Windows Server. Planifier l'accès console hors bande, les VLANs, les adresses de gestion, l'espace pour les VM et la protection des sauvegardes. Une VM n'est pas une sauvegarde de son hôte.
 
 Installer les correctifs et pilotes certifiés. Décider si l'hôte sera Server Core ou Desktop Experience et documenter les accès Hyper-V Administrators. Éviter les applications tierces qui dépendent du même hyperviseur matériel.
 
@@ -46,7 +46,7 @@ Get-VMSwitch
 
 Créer le commutateur virtuel en fonction du besoin validé : `External` pour raccorder des VM au réseau physique, `Internal` pour hôte/VM, ou `Private` pour échanges entre VM seulement. La création ou modification d'un commutateur External peut interrompre le réseau de l'hôte; intervenir avec accès console et fenêtre approuvée.
 
-N'attribuer des VLANs qu'après confirmation du port physique et des VLAN autorisés. Séparer gestion, stockage, migration et réseaux invités selon le design; éviter de partager le NIC de gestion si le design ne le prévoit pas.
+N'attribuer des VLANs qu'après confirmation du port physique et des [[Glossary:VLAN]] autorisés. Séparer gestion, stockage, migration et réseaux invités selon le design; éviter de partager le NIC de gestion si le design ne le prévoit pas.
 
 ## 4. Définir les chemins et créer une VM pilote
 
@@ -74,9 +74,9 @@ Vérifier démarrage invité, réseau, stockage, intégration et journaux Hyper-
 Fiche simple : [durcir et prévoir le retour arrière](../../../../01-fiches-simples/windows/server-2022/vie-du-logiciel/hyper-v/fiche-simple-vm-windows-server-2022-hyper-v-durcissement-retour.md).
 
 - Utiliser des comptes nominatifs et un groupe restreint Hyper-V Administrators; auditer les accès.
-- Restreindre WinRM, RDP et ports de migration aux réseaux de gestion.
+- Restreindre WinRM, [[Glossary:RDP]] et ports de migration aux réseaux de gestion.
 - Maintenir Defender, pare-feu, Secure Boot et correctifs; n'activer que les services nécessaires.
-- Tester sauvegarde et restauration de VM en réseau isolé; documenter propriétaire, RPO/RTO et dépendances.
+- Tester sauvegarde et restauration de VM en réseau isolé; documenter propriétaire, [[Glossary:RPO]]/RTO et dépendances.
 - Si l'installation du rôle échoue, vérifier prérequis, build et firmware. Avant retrait du rôle, arrêter/migrer les VM, sauvegarder et suivre la procédure Microsoft.
 
 ## Sources

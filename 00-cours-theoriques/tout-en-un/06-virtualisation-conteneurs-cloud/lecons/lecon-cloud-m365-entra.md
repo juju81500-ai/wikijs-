@@ -1,7 +1,7 @@
 # Leçon — Cloud : IaaS, PaaS, SaaS, responsabilité partagée, coûts, sécurité d'accès, Microsoft 365 et Microsoft Entra ID
 
 - **Tags** : `transverse`, `tout-en-un`, `lecon`, `cloud`, `iaas`, `paas`, `saas`, `microsoft-365`, `entra-id`, `identite`
-- **Niveau** : débutant à intermédiaire (technicien TSSR, administrateur junior)
+- **Niveau** : débutant à intermédiaire (technicien [[Glossary:TSSR]], administrateur junior)
 - **Durée estimée** : 4 h (cours 1 h 45, labo guidé 1 h 30, exercices et quiz 45 min)
 
 > **Avertissement de test** : aucun tenant Microsoft, abonnement cloud ni module PowerShell n'a été utilisé pour rédiger cette leçon. **Toutes les commandes et manipulations d'interface sont non testées sur la plateforme cible.** Travaillez uniquement dans un tenant de test ou de démonstration, jamais en premier sur un tenant de production.
@@ -16,20 +16,20 @@
 2. Appliquer le modèle de **responsabilité partagée** pour dire qui doit sécuriser quoi.
 3. Expliquer **régions** et **zones de disponibilité** et choisir une région selon latence, conformité et coût.
 4. Comprendre les mécanismes de **facturation** et mettre en place des garde-fous de coûts.
-5. Appliquer les principes de **sécurité d'accès** : moindre privilège, MFA, comptes d'administration séparés, comptes de secours.
-6. Décrire un **tenant Microsoft 365** et son lien avec **Microsoft Entra ID** (ex-Azure AD).
+5. Appliquer les principes de **sécurité d'accès** : moindre privilège, [[Glossary:MFA]], comptes d'administration séparés, comptes de secours.
+6. Décrire un **tenant Microsoft 365** et son lien avec **Microsoft Entra ID** (ex-Azure [[Glossary:AD]]).
 7. Réaliser côté administrateur les opérations de base : utilisateurs, groupes, licences, rôles, MFA, accès conditionnel en mode rapport.
 
 ## Prérequis et durée
 
-- Notions de réseau (DNS, HTTPS) et d'annuaire (compte, groupe).
+- Notions de réseau ([[Glossary:DNS]], HTTPS) et d'annuaire (compte, groupe).
 - Un **tenant de test** Microsoft 365 (programme développeur, essai ou démonstration) et un compte administrateur de ce tenant ; un abonnement cloud de test est optionnel.
 - PowerShell 7 pour la partie Microsoft Graph. Durée : 4 h.
 
 ## L'essentiel en bref
 
 - Le **cloud** fournit des ressources informatiques à la demande, via le réseau, facturées à l'usage.
-- **IaaS** : on loue de l'infrastructure (VM, réseau, disques). **PaaS** : on déploie son code sur une plateforme gérée. **SaaS** : on utilise un logiciel prêt à l'emploi.
+- **IaaS** : on loue de l'infrastructure ([[Glossary:VM]], réseau, disques). **PaaS** : on déploie son code sur une plateforme gérée. **SaaS** : on utilise un logiciel prêt à l'emploi.
 - **Responsabilité partagée** : le fournisseur sécurise le cloud (datacentres, matériel, hyperviseur) ; le client sécurise **ce qu'il met dans** le cloud (données, identités, configuration). Les données et les accès sont **toujours** à la charge du client.
 - Le coût est **variable** : sans suivi, il dérive. Budgets, alertes, étiquettes et arrêt des ressources inutiles sont indispensables.
 - L'identité est le **nouveau périmètre** : la majorité des compromissions cloud passent par un compte volé. MFA et moindre privilège sont prioritaires.
@@ -39,7 +39,7 @@
 
 ## 1. Le cloud, en clair
 
-Le **cloud computing** consiste à consommer des ressources informatiques (calcul, stockage, réseau, logiciels) fournies par un prestataire, à la demande et via Internet. La définition de référence du NIST retient cinq caractéristiques : **libre-service** à la demande, **accès large par le réseau**, **mutualisation** des ressources, **élasticité rapide** et **service mesuré** (on paie ce qu'on consomme).
+Le **cloud computing** consiste à consommer des ressources informatiques (calcul, stockage, réseau, logiciels) fournies par un prestataire, à la demande et via Internet. La définition de référence du [[Glossary:NIST]] retient cinq caractéristiques : **libre-service** à la demande, **accès large par le réseau**, **mutualisation** des ressources, **élasticité rapide** et **service mesuré** (on paie ce qu'on consomme).
 
 Analogie : l'électricité. Autrefois, chaque usine produisait la sienne (salle serveur). Aujourd'hui on se branche sur un réseau, on consomme, on paie au compteur. Il reste à bien câbler chez soi : le fournisseur garantit le courant, pas que votre installation est sûre.
 
@@ -70,7 +70,7 @@ C'est la notion la plus testée et la plus mal comprise. Règle simple : **le fo
 | **Identités et droits d'accès** | **Client** | **Client** | **Client** |
 | **Données** (classification, partage, sauvegarde) | **Client** | **Client** | **Client** |
 
-Conséquences : un **stockage public par erreur** est une faute du client ; en SaaS, un administrateur sans MFA ou un partage trop large relèvent de **vous** ; la **sauvegarde** reste à votre charge (la redondance du fournisseur ne protège ni de votre suppression, ni d'un rançongiciel) ; la **conformité** (RGPD) engage le client.
+Conséquences : un **stockage public par erreur** est une faute du client ; en SaaS, un administrateur sans MFA ou un partage trop large relèvent de **vous** ; la **sauvegarde** reste à votre charge (la redondance du fournisseur ne protège ni de votre suppression, ni d'un rançongiciel) ; la **conformité** ([[Glossary:RGPD]]) engage le client.
 
 ## 4. Régions, zones et disponibilité
 
@@ -84,11 +84,11 @@ Une **région** est une zone géographique contenant plusieurs datacentres. Une 
 - le **coût** : les prix varient selon les régions ;
 - les **services disponibles** : toutes les fonctions ne sont pas déployées partout.
 
-Pour la disponibilité : une application répartie sur **trois zones** survit à la perte d'une zone ; une copie dans une **seconde région** couvre un sinistre régional, avec un surcoût et une complexité de bascule. Définissez deux objectifs chiffrés : le **RTO** (durée maximale d'interruption acceptable) et le **RPO** (perte de données maximale acceptable). Le **SLA** du fournisseur (par exemple 99,9 % de disponibilité) donne des crédits en cas de manquement, pas une garantie de service sans panne.
+Pour la disponibilité : une application répartie sur **trois zones** survit à la perte d'une zone ; une copie dans une **seconde région** couvre un sinistre régional, avec un surcoût et une complexité de bascule. Définissez deux objectifs chiffrés : le **[[Glossary:RTO]]** (durée maximale d'interruption acceptable) et le **[[Glossary:RPO]]** (perte de données maximale acceptable). Le **[[Glossary:SLA]]** du fournisseur (par exemple 99,9 % de disponibilité) donne des crédits en cas de manquement, pas une garantie de service sans panne.
 
 En SaaS comme Microsoft 365, la région de résidence des données se choisit surtout à la création du tenant ; consultez les engagements de résidence du service.
 
-Avec un abonnement de test et l'interface Azure CLI, cette commande en lecture seule vérifie le contexte actif :
+Avec un abonnement de test et l'interface Azure [[Glossary:CLI]], cette commande en lecture seule vérifie le contexte actif :
 
 ```bash
 az account show --query "{abonnement:name, tenant:tenantId}" -o table
@@ -106,7 +106,7 @@ Garde-fous de base : **budgets et alertes** à 50, 80 et 100 % ; **étiquettes**
 
 Dans le cloud, il n'y a plus de pare-feu d'entreprise protégeant un réseau interne : toute ressource est joignable via Internet par quiconque s'authentifie. **L'identité devient le périmètre.** Les principes à appliquer partout :
 
-- **MFA** (authentification multifacteur) pour tous les comptes, **obligatoire** pour les administrateurs. Privilégiez les méthodes résistantes à l'hameçonnage (clé de sécurité FIDO2, passkeys, application d'authentification avec confirmation numérique) plutôt que le SMS.
+- **MFA** (authentification multifacteur) pour tous les comptes, **obligatoire** pour les administrateurs. Privilégiez les méthodes résistantes à l'hameçonnage (clé de sécurité [[Glossary:FIDO2]], passkeys, application d'authentification avec confirmation numérique) plutôt que le SMS.
 - **Moindre privilège** : attribuez le rôle le plus restreint qui permet la tâche, sur le périmètre le plus étroit possible, et pour la durée nécessaire.
 - **Comptes d'administration séparés** : un compte nominatif pour la bureautique, un autre pour l'administration, jamais utilisé pour lire le courrier ni naviguer.
 - **Pas de partage de comptes**, ni de mots de passe ou clés d'accès longue durée en clair dans du code ou Git.
@@ -128,19 +128,19 @@ Services principaux et leur rôle :
 
 | Service | Fonction | À connaître côté administrateur |
 |---|---|---|
-| **Exchange Online** | messagerie et agendas | boîtes aux lettres, enregistrements DNS (MX, SPF, DKIM, DMARC), règles de transport |
+| **Exchange Online** | messagerie et agendas | boîtes aux lettres, enregistrements DNS (MX, [[Glossary:SPF]], [[Glossary:DKIM]], [[Glossary:DMARC]]), règles de transport |
 | **SharePoint Online / OneDrive** | sites d'équipe, stockage de fichiers | partage externe, quotas, rétention |
 | **Teams** | discussions, réunions, équipes | création d'équipes, invités, stratégies |
 | **Centre d'administration Microsoft 365** | gestion des utilisateurs, licences, domaines, santé du service | point d'entrée de l'administrateur |
 | **Microsoft Entra ID** | annuaire, authentification, accès | utilisateurs, groupes, rôles, MFA, accès conditionnel |
 
-**Domaines** : le tenant porte d'abord un domaine `.onmicrosoft.com`. Pour utiliser `example.test`, on l'ajoute dans le centre d'administration et on **prouve sa propriété** par un enregistrement DNS TXT, puis on ajuste MX, SPF, DKIM et DMARC. Toute modification DNS est sensible : notez les valeurs existantes, utilisez un TTL court et conservez l'ancienne configuration pour revenir en arrière.
+**Domaines** : le tenant porte d'abord un domaine `.onmicrosoft.com`. Pour utiliser `example.test`, on l'ajoute dans le centre d'administration et on **prouve sa propriété** par un enregistrement DNS TXT, puis on ajuste MX, SPF, DKIM et DMARC. Toute modification DNS est sensible : notez les valeurs existantes, utilisez un [[Glossary:TTL]] court et conservez l'ancienne configuration pour revenir en arrière.
 
 **Licences** : chaque utilisateur reçoit un plan qui active des services. L'affectation **par groupe** automatise le cycle de vie : on ajoute la personne au groupe, elle reçoit sa licence ; on la retire, la licence est libérée. Surveillez aussi l'état de santé des services, le centre de messages et les rapports d'utilisation.
 
 ## 8. Microsoft Entra ID : l'annuaire cloud
 
-**Microsoft Entra ID** (anciennement Azure Active Directory) est le service d'identité de Microsoft. Il gère les **utilisateurs**, **groupes**, **appareils** et **applications**, authentifie les connexions et applique les règles d'accès. Il ne faut pas le confondre avec Active Directory Domain Services sur site : protocoles et modèles diffèrent (ici OAuth 2.0, OpenID Connect, SAML ; là Kerberos et LDAP). Dans les environnements **hybrides**, un outil de synchronisation (Microsoft Entra Connect ou Cloud Sync) copie les comptes de l'annuaire sur site vers le cloud.
+**Microsoft Entra ID** (anciennement Azure Active Directory) est le service d'identité de Microsoft. Il gère les **utilisateurs**, **groupes**, **appareils** et **applications**, authentifie les connexions et applique les règles d'accès. Il ne faut pas le confondre avec Active Directory Domain Services sur site : protocoles et modèles diffèrent (ici OAuth 2.0, OpenID Connect, [[Glossary:SAML]] ; là Kerberos et [[Glossary:LDAP]]). Dans les environnements **hybrides**, un outil de synchronisation (Microsoft Entra Connect ou Cloud Sync) copie les comptes de l'annuaire sur site vers le cloud.
 
 **Objets** : *utilisateurs* (membres, invités B2B), *identités applicatives*, *groupes* de sécurité ou Microsoft 365 (à appartenance fixe ou **dynamique**), *appareils* enregistrés ou joints pour évaluer leur conformité.
 
@@ -225,7 +225,7 @@ Terminez toujours par `Disconnect-MgGraph` (ferme la session et libère le jeton
 
 **Cadre** : tenant Microsoft 365 **de test**, sans donnée réelle, avec un compte administrateur de ce tenant ; commandes **non testées sur la plateforme cible**. 
 
-**Sécurité de la manipulation** : avant toute modification de politique d'accès, **exportez la configuration actuelle** (captures d'écran ou export JSON des politiques), vérifiez que **deux comptes de secours** existent et sont exclus des politiques, et gardez une session administrateur ouverte dans une fenêtre de navigation privée distincte pour pouvoir annuler une erreur. Pas de snapshot possible ici : le retour arrière consiste à désactiver la politique et à restaurer l'état exporté.
+**Sécurité de la manipulation** : avant toute modification de politique d'accès, **exportez la configuration actuelle** (captures d'écran ou export [[Glossary:JSON]] des politiques), vérifiez que **deux comptes de secours** existent et sont exclus des politiques, et gardez une session administrateur ouverte dans une fenêtre de navigation privée distincte pour pouvoir annuler une erreur. Pas de snapshot possible ici : le retour arrière consiste à désactiver la politique et à restaurer l'état exporté.
 
 1. **Cartographier le tenant.** Dans le centre d'administration Microsoft Entra, notez le nom du tenant, son identifiant, les domaines vérifiés et l'édition de licence. Dans le centre d'administration Microsoft 365, notez les plans de licence et le nombre d'unités libres.
 2. **Lister les administrateurs** avec le script d'audit de la section 9 : 2 à 4 administrateurs généraux nominatifs sont attendus.
@@ -340,7 +340,7 @@ Méthode : vérifier d'abord **le contexte** (tenant, abonnement, compte), puis 
 |---|---|---|---|---|
 | `images/cloud-m365-entra-1.svg` à `-3.svg` | Création originale, aucune source externe | Projet Pack Master | CC0 1.0 — <https://creativecommons.org/publicdomain/zero/1.0/> | Sans objet |
 
-Mention : « Création originale du projet Pack Master, dédiée au domaine public (CC0) ». Aucune image libre n'a pu être vérifiée sur Wikimedia Commons (API indisponible, limitation de débit) ; des schémas originaux ont donc été créés.
+Mention : « Création originale du projet Pack Master, dédiée au domaine public (CC0) ». Aucune image libre n'a pu être vérifiée sur Wikimedia Commons ([[Glossary:API]] indisponible, limitation de débit) ; des schémas originaux ont donc été créés.
 
 ## Historique de vérification
 

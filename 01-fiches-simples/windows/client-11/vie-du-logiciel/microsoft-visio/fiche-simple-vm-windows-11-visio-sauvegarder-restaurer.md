@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Windows_11_Visio_Sauvegarder_Restaurer
 
-- **Environnement** : Poste Windows 11 x64 d'un utilisateur ou administrateur (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'un utilisateur ou administrateur ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; version Visio à vérifier auprès de l'éditeur
 - **Catégorie** : outil de diagrammes / poste de travail
 - **Tags** : `visio`, `windows11`, `microsoft-365`, `sauvegarde`
@@ -22,7 +22,7 @@ robocopy "$env:USERPROFILE\Documents\Mes formes" CHEMIN_SAUVEGARDE\MesFormes /MI
 ```
    👉 Explication : CHEMIN_SAUVEGARDE est à remplacer ; /MIR supprime en destination ce qui n'existe plus en source : vérifier avant usage.
 
-3. Activer l'historique des versions sur le site SharePoint/OneDrive : GUI **Bibliothèque > Paramètres > Paramètres de la bibliothèque > Paramètres de contrôle de version**.
+3. Activer l'historique des versions sur le site SharePoint/OneDrive : [[Glossary:GUI]] **Bibliothèque > Paramètres > Paramètres de la bibliothèque > Paramètres de contrôle de version**.
    👉 Explication : permet de restaurer une version antérieure d'un diagramme.
 
 4. Restaurer : inverser la copie vers un dossier de test puis ouvrir un fichier restauré.

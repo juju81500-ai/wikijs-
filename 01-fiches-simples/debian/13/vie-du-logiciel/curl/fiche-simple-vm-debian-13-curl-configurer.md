@@ -1,8 +1,8 @@
 # Fiche_Simple_-_VM_Debian_13_cURL_Configurer
 
-- **Environnement** : VM Debian 13 avec réseau de test autorisé
+- **Environnement** : [[Glossary:VM]] Debian 13 avec réseau de test autorisé
 - **OS / Version** : Debian 13 Trixie
-- **Catégorie** : transfert HTTP / diagnostic
+- **Catégorie** : transfert [[Glossary:HTTP]] / diagnostic
 - **Tags** : `debian13`, `curl`, `http`, `tls`, `api`
 ---
 
@@ -39,7 +39,7 @@ Gérer les paramètres par utilisateur ou configuration centrale contrôlée; co
 
 - Ne jamais conserver identifiants en clair dans l’historique ou config.
 - Protéger permissions et environnement.
-- Ne pas définir des réglages qui neutralisent TLS ou validation.
+- Ne pas définir des réglages qui neutralisent [[Glossary:TLS]] ou validation.
 
 ## Validation et retour arrière
 

@@ -1,7 +1,7 @@
 # fiche-simple-vm-rocky-9-pile-web-deployer-verifier.md
 
-- **Environnement** : VM ou serveur Rocky Linux 9 hébergeant une application PHP avec MariaDB locale
-- **OS / Version** : Rocky Linux 9 / RHEL 9; Nginx, PHP-FPM et MariaDB des dépôts actifs
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux 9 hébergeant une application PHP avec MariaDB locale
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9; Nginx, PHP-FPM et MariaDB des dépôts actifs
 - **Catégorie** : services web / recette
 - **Tags** : `rocky9`, `nginx`, `php-fpm`, `mariadb`, `selinux`
 
@@ -22,7 +22,7 @@ Déployer l'application et vérifier toute la chaîne avant l'ouverture.
    sudo journalctl -u nginx -u php-fpm -u mariadb --no-pager -n 30
    sudo ausearch -m avc -ts recent
    ```
-   👉 Explication : Teste la réponse HTTP, lit les journaux et cherche des refus SELinux.
+   👉 Explication : Teste la réponse [[Glossary:HTTP]], lit les journaux et cherche des refus SELinux.
 
 3. Supprimer les pages de test (par exemple `phpinfo`) avant d'ouvrir le service.
    👉 Explication : elles divulguent la configuration.

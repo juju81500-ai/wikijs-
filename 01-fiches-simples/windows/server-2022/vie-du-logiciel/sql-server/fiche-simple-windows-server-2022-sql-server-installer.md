@@ -1,6 +1,6 @@
 # Fiche_Simple_-_Windows_Server_2022_SQL-Server_Installer
 
-- **Environnement** : VM Windows Server 2022 (SQL Server 2022 Standard ou Developer)
+- **Environnement** : [[Glossary:VM]] Windows Server 2022 ([[Glossary:SQL]] Server 2022 Standard ou Developer)
 - **OS / Version** : Windows Server 2022; SQL Server 2022 (instance par défaut MSSQLSERVER)
 - **Catégorie** : base de données / SQL Server / Installer SQL Server et les outils
 - **Tags** : `windows-server-2022`, `sql-server`, `sqlserver-2022`, `installation`
@@ -13,7 +13,7 @@ Installer le moteur de base de données SQL Server 2022 puis SSMS, de façon ass
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI — monter le média : clic droit sur l'ISO SQL Server → Monter, puis lancer `setup.exe` :
+1. [[Glossary:GUI]] — monter le média : clic droit sur l'ISO SQL Server → Monter, puis lancer `setup.exe` :
    👉 Explication : le Centre d'installation s'ouvre ; vérifier que le média provient du site Microsoft ou d'un dépôt de licences approuvé.
 
 2. GUI — Installation → Nouvelle installation autonome de SQL Server :

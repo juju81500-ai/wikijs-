@@ -1,6 +1,6 @@
 # 📄 VM_Debian_12_Securite_AppArmor.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Sécurité & Contrôle d'accès / Contrôle d'accès obligatoire (MAC)
 - **Tags** : `[debian12]`, `[debian-family]`, `[apparmor]`, `[mac]`, `[profils]`, `[enforce]`, `[hardening]`

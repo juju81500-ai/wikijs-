@@ -1,6 +1,6 @@
 # Déployer Zeek 8.0 LTS en capteur passif sur Debian 13
 
-- **OS / Version** : Debian 13 Trixie; Zeek 8.0 LTS depuis le dépôt officiel OBS du projet
+- **OS / Version** : Debian 13 Trixie; Zeek 8.0 [[Glossary:LTS]] depuis le dépôt officiel OBS du projet
 - **Type de fiche** : Installation/Déploiement
 - **Périmètre** : un nœud standalone ZeekControl sur une interface miroir approuvée; pas de cluster ni d'IPS
 - **Catégorie** : Supervision et analyse passive du trafic réseau
@@ -10,17 +10,17 @@
 
 Fiche simple : [définir périmètre et source réseau](../../../../01-fiches-simples/debian/13/vie-du-logiciel/zeek/fiche-simple-vm-debian-13-zeek-cadrer.md).
 
-Zeek analyse les métadonnées des protocoles et génère des journaux structurés; il complète un IDS à signatures tel que Suricata ou Snort, mais ne les remplace pas et ne bloque pas le trafic dans cette procédure.
+Zeek analyse les métadonnées des protocoles et génère des journaux structurés; il complète un [[Glossary:IDS]] à signatures tel que Suricata ou Snort, mais ne les remplace pas et ne bloque pas le trafic dans cette procédure.
 
-Déployer une VM Debian 13 dédiée avec une interface de gestion et une interface de capture séparée. Connecter la capture à un port miroir/SPAN ou à un TAP approuvé, et faire confirmer par l'équipe réseau les VLAN visibles, le sens du miroir et la liste des sous-réseaux internes. Une interface connectée à un commutateur ordinaire ne reçoit généralement que le trafic de la VM elle-même. La capture peut contenir des données sensibles; définir qui accède aux journaux et leur durée de conservation avant mise en service.
+Déployer une [[Glossary:VM]] Debian 13 dédiée avec une interface de gestion et une interface de capture séparée. Connecter la capture à un port miroir/SPAN ou à un TAP approuvé, et faire confirmer par l'équipe réseau les [[Glossary:VLAN]] visibles, le sens du miroir et la liste des sous-réseaux internes. Une interface connectée à un commutateur ordinaire ne reçoit généralement que le trafic de la VM elle-même. La capture peut contenir des données sensibles; définir qui accède aux journaux et leur durée de conservation avant mise en service.
 
-Cette fiche vise un nœud standalone de laboratoire. Elle ne couvre pas le provisionnement du SPAN/TAP, le dimensionnement haute performance, un cluster, l'investigation d'incidents ou la capture de réseaux tiers.
+Cette fiche vise un nœud standalone de laboratoire. Elle ne couvre pas le provisionnement du [[Glossary:SPAN]]/TAP, le dimensionnement haute performance, un cluster, l'investigation d'incidents ou la capture de réseaux tiers.
 
 ## 2. Ajouter le dépôt officiel Zeek 8.0 LTS pour Debian 13
 
 Fiche simple : [ajouter le dépôt Zeek 8.0 LTS et installer](../../../../01-fiches-simples/debian/13/vie-du-logiciel/zeek/fiche-simple-vm-debian-13-zeek-depot-installer.md).
 
-Le projet Zeek publie ses paquets binaires Linux via Open Build Service et recommande une ligne LTS explicite plutôt que la ligne `zeek` roulante. La page du dépôt pour `security:zeek` confirme le répertoire Debian 13. Importer la clé du dépôt dans un keyring dédié et associer explicitement ce keyring à la source APT :
+Le projet Zeek publie ses paquets binaires Linux via Open Build Service et recommande une ligne LTS explicite plutôt que la ligne `zeek` roulante. La page du dépôt pour `security:zeek` confirme le répertoire Debian 13. Importer la clé du dépôt dans un keyring dédié et associer explicitement ce keyring à la source [[Glossary:APT]] :
 
 ```bash
 sudo apt update
@@ -89,9 +89,9 @@ host=localhost
 interface=enp2s0
 ```
 
-Dans `/opt/zeek/etc/networks.cfg`, remplacer les sous-réseaux privés par les CIDR réellement suivis. N'ajouter aucun réseau qui n'est pas dans le périmètre approuvé; Zeek s'en sert pour distinguer l'espace local dans les analyses et journaux.
+Dans `/opt/zeek/etc/networks.cfg`, remplacer les sous-réseaux privés par les [[Glossary:CIDR]] réellement suivis. N'ajouter aucun réseau qui n'est pas dans le périmètre approuvé; Zeek s'en sert pour distinguer l'espace local dans les analyses et journaux.
 
-Configurer les options d'archivage dans `/opt/zeek/etc/zeekctl.cfg` : nom de contact opérationnel et rétention de logs conforme à la politique de stockage. Les logs peuvent contenir des noms d'hôtes, des adresses, des métadonnées HTTP/DNS/TLS et des éléments d'enquête. Ne pas activer l'extraction de fichiers ou des scripts locaux non relus.
+Configurer les options d'archivage dans `/opt/zeek/etc/zeekctl.cfg` : nom de contact opérationnel et rétention de logs conforme à la politique de stockage. Les logs peuvent contenir des noms d'hôtes, des adresses, des métadonnées [[Glossary:HTTP]]/DNS/TLS et des éléments d'enquête. Ne pas activer l'extraction de fichiers ou des scripts locaux non relus.
 
 ## 5. Vérifier la configuration et déployer ZeekControl
 
@@ -125,7 +125,7 @@ sudo -u zeek /opt/zeek/bin/zeekctl status
 sudo ls -lah /opt/zeek/logs/current
 ```
 
-Les fichiers attendus incluent généralement `conn.log`, ainsi que les logs de protocoles observés. Lire un échantillon de `conn.log` et confirmer les UID, adresses, ports et timestamps avec un flux connu et autorisé. Si les logs sont au format TSV, consulter les métadonnées de colonnes en tête; si le format JSON est configuré, valider une ligne avec un parseur JSON. Protéger les logs comme des données réseau sensibles.
+Les fichiers attendus incluent généralement `conn.log`, ainsi que les logs de protocoles observés. Lire un échantillon de `conn.log` et confirmer les UID, adresses, ports et timestamps avec un flux connu et autorisé. Si les logs sont au format TSV, consulter les métadonnées de colonnes en tête; si le format [[Glossary:JSON]] est configuré, valider une ligne avec un parseur JSON. Protéger les logs comme des données réseau sensibles.
 
 Pour un essai hors ligne sans surveiller une interface, utiliser une capture PCAP de laboratoire obtenue légalement :
 
@@ -146,7 +146,7 @@ Fiche simple : [exploiter et durcir Zeek](../../../../01-fiches-simples/debian/1
 - Mettre à jour Zeek dans la même ligne LTS, tester d'abord les scripts locaux et les journaux, puis lancer `zeekctl deploy` après vérification.
 - Transférer les logs vers un collecteur protégé avec un transport chiffré, des permissions minimales et une rétention documentée.
 - Ne pas présenter les sorties `notice.log` comme preuve automatique d'intrusion; corréler avec les systèmes et événements autorisés.
-- Pour une charge élevée, dimensionner CPU, mémoire, NIC, buffer/capture et stockage avec des mesures de perte réelles; les performances d'un seul worker sont limitées par son cœur.
+- Pour une charge élevée, dimensionner [[Glossary:CPU]], mémoire, [[Glossary:NIC]], buffer/capture et stockage avec des mesures de perte réelles; les performances d'un seul worker sont limitées par son cœur.
 
 ## Sources
 

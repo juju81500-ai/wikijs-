@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-12-splunk-installer-sans-root.md
 
-- **Environnement** : VM Debian 12 dédiée à Splunk Enterprise autonome (laboratoire)
+- **Environnement** : [[Glossary:VM]] Debian 12 dédiée à Splunk Enterprise autonome (laboratoire)
 - **OS / Version** : Debian 12 Bookworm; Splunk Enterprise 10.2
 - **Catégorie** : journaux / installation
 - **Tags** : `debian12`, `splunk`, `logs`, `dpkg`, `non-root`

@@ -1,6 +1,6 @@
 # 📄 Podman / Buildah
 
-- **Environnement** : VM (Rocky Linux 9)
+- **Environnement** : [[Glossary:VM]] (Rocky Linux 9)
 - **OS / Version** : Rocky Linux 9 (dépôt AppStream)
 - **Version** : Podman et Buildah fournis par les dépôts Rocky 9, à vérifier avec `podman --version` et `buildah --version` sur la version déployée
 - **Catégorie** : Virtualisation et conteneurisation

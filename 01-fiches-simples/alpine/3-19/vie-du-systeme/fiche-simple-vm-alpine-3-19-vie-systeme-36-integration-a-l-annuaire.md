@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_36_Integration_A_L_Annuaire
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 36 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-36`
@@ -18,15 +18,15 @@ Rattacher la machine à l'exploitation (Alpine n'a pas de `realm join`).
    nc -zv SERVEUR_ANNUAIRE 389
    nc -zv SERVEUR_ANNUAIRE 636
    ```
-   👉 Explication : contrôle les ports LDAP et LDAPS.
+   👉 Explication : contrôle les ports [[Glossary:LDAP]] et LDAPS.
 
 2. Chercher le client d'authentification disponible :
    ```sh
    apk search -v sssd openldap-clients
    ```
-   👉 Explication : indique si SSSD et les outils LDAP sont proposés dans les dépôts 3-19.
+   👉 Explication : indique si [[Glossary:SSSD]] et les outils LDAP sont proposés dans les dépôts 3-19.
 
-3. Enregistrer la machine dans le réseau d'administration (DNS, supervision, bastion) :
+3. Enregistrer la machine dans le réseau d'administration ([[Glossary:DNS]], supervision, bastion) :
    ```sh
    hostname -f
    ip -br addr
@@ -35,7 +35,7 @@ Rattacher la machine à l'exploitation (Alpine n'a pas de `realm join`).
 
 ## 2. Production — Contrôles
 
-Les comptes locaux nominatifs avec clés SSH restent la méthode par défaut pour Alpine.
+Les comptes locaux nominatifs avec clés [[Glossary:SSH]] restent la méthode par défaut pour Alpine.
 
 ## 3. Production — Sécurité
 

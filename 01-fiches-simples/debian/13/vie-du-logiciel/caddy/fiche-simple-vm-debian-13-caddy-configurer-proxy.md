@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-caddy-configurer-proxy.md
 
-- **Environnement** : VM Debian 13, application amont de test approuvée
+- **Environnement** : [[Glossary:VM]] Debian 13, application amont de test approuvée
 - **OS / Version** : Debian 13; Caddy stable
 - **Catégorie** : serveur Web / reverse proxy
 - **Tags** : `debian13`, `caddy`, `reverse-proxy`, `caddyfile`, `https`
@@ -40,7 +40,7 @@ Configurer un reverse proxy Caddy vers un service amont local après sauvegarde 
 
 ## 2. Production — Contrôles
 
-Faire valider FQDN, routage, amont, DNS, en-têtes transmis, limites de requêtes et dépendances par les propriétaires réseau et applicatif.
+Faire valider [[Glossary:FQDN]], routage, amont, [[Glossary:DNS]], en-têtes transmis, limites de requêtes et dépendances par les propriétaires réseau et applicatif.
 
 ## 3. Production — Sécurité
 

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_29_Pare_Feu_Hote
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 29 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-29`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Ne laisser entrer que SSH et le service prévu.
+Ne laisser entrer que [[Glossary:SSH]] et le service prévu.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

@@ -1,6 +1,6 @@
 # 📄 VM_WinSrv_2022_ADDS_Joindre-Domaine.md
 
-- **Environnement** : VM / Serveur client (Windows Server 2022 / Windows 10/11)
+- **Environnement** : [[Glossary:VM]] / Serveur client (Windows Server 2022 / Windows 10/11)
 - **OS / Version** : Windows Server 2022 / Win 10-11 - Famille Windows
 - **Catégorie** : Système & Annuaire / Active Directory
 - **Tags** : `[windows-server]`, `[windows-11]`, `[active-directory]`, `[domain-join]`, `[gui]`, `[powershell]`
@@ -25,7 +25,7 @@ Joindre un serveur ou un poste client à un domaine Active Directory (ex: `lab.l
 
 3. **Joindre le domaine Active Directory** :
    - Dans la section *Membre de*, cocher l'option **Domaine**.
-   - Taper le nom FQDN du domaine (ex: `lab.local`).
+   - Taper le nom [[Glossary:FQDN]] du domaine (ex: `lab.local`).
    - Cliquer sur **OK**.
 
 4. **Saisir les identifiants d'administration** :
@@ -38,7 +38,7 @@ Joindre un serveur ou un poste client à un domaine Active Directory (ex: `lab.l
 
 ## ⚡ Méthode Ligne de commande PowerShell
 
-1. **Vérifier au préalable la résolution DNS du domaine** :
+1. **Vérifier au préalable la résolution [[Glossary:DNS]] du domaine** :
    ```powershell
    Test-Connection -TargetName "lab.local" -Count 2
    ```

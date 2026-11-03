@@ -1,7 +1,7 @@
 # Leçon — Déploiement et inventaire des postes : images, MDT/WDS/Autopilot/Intune, automatisation et cycle de vie
 
 - **Tags** : `transverse`, `tout-en-un`, `lecon`, `support`, `deploiement`, `inventaire`, `autopilot`, `intune`, `cycle-de-vie`
-- **Niveau** : intermédiaire (technicien support N2, TSSR, administrateur junior)
+- **Niveau** : intermédiaire (technicien support N2, [[Glossary:TSSR]], administrateur junior)
 - **Durée estimée** : 4 h (lecture 1 h 30, laboratoire 1 h 15, exercices et quiz 1 h 15)
 
 ---
@@ -11,7 +11,7 @@
 À l'issue de cette leçon, vous saurez :
 
 1. Expliquer ce qu'est une **image de référence** et choisir entre image « épaisse », « mince » et approche hybride.
-2. Situer **WDS, MDT, Configuration Manager, Autopilot et Intune** les uns par rapport aux autres (concepts et limites).
+2. Situer **WDS, [[Glossary:MDT]], Configuration Manager, Autopilot et Intune** les uns par rapport aux autres (concepts et limites).
 3. Décrire une **installation automatisée** : fichier de réponses, séquence de tâches, scripts de premier démarrage, gestionnaire de paquets.
 4. Définir un **inventaire** utile : champs, sources, rapprochement, qualité des données.
 5. Décrire le **cycle de vie du matériel**, de la commande au recyclage, avec l'effacement sécurisé des données.
@@ -19,8 +19,8 @@
 
 ## Prérequis et durée
 
-- Notions de Windows (compte, domaine, disque), de réseau (DHCP, DNS) et de PowerShell de base ; la leçon [Le poste Windows client](lecon-poste-windows-client.md) est un complément utile.
-- Une **VM Windows jetable** pour la pratique (snapshot et console hyperviseur disponibles). Les outils serveur (WDS, Intune) sont étudiés **en concepts** : aucun n'est requis.
+- Notions de Windows (compte, domaine, disque), de réseau ([[Glossary:DHCP]], [[Glossary:DNS]]) et de PowerShell de base ; la leçon [Le poste Windows client](lecon-poste-windows-client.md) est un complément utile.
+- Une **[[Glossary:VM]] Windows jetable** pour la pratique (snapshot et console hyperviseur disponibles). Les outils serveur (WDS, Intune) sont étudiés **en concepts** : aucun n'est requis.
 - Durée totale : environ 4 h.
 
 ## L'essentiel en bref
@@ -85,7 +85,7 @@ dism /Get-WimInfo /WimFile:D:\sources\install.wim /Index:1
 
 Chaîne par image :
 
-1. Le poste démarre par le **réseau (PXE)** ou depuis une clé USB.
+1. Le poste démarre par le **réseau ([[Glossary:PXE]])** ou depuis une clé [[Glossary:USB]].
 2. **WDS** (Windows Deployment Services, rôle Windows Server) répond au démarrage réseau et fournit une image de démarrage (WinPE).
 3. **MDT** (Microsoft Deployment Toolkit) ajoute une **séquence de tâches** : partitionnement, application de l'image, injection de pilotes, installation d'applications, jonction au domaine, paramétrage.
 4. Le poste redémarre sur le système fraîchement installé.
@@ -216,7 +216,7 @@ Un inventaire répond à : *qu'avons-nous, où, à qui, dans quel état, avec qu
 ### 5.2 Les champs utiles
 
 - **Identité** : numéro de série (identifiant stable), nom d'hôte, modèle, constructeur, étiquette d'inventaire.
-- **Technique** : système et version, processeur, mémoire, disque, version du BIOS/UEFI, chiffrement du disque, état de conformité.
+- **Technique** : système et version, processeur, mémoire, disque, version du [[Glossary:BIOS]]/UEFI, chiffrement du disque, état de conformité.
 - **Administratif** : date d'achat, fin de garantie, fournisseur, coût, centre de coûts.
 - **Affectation** : utilisateur ou service, site, état (stock, en service, en réparation, retiré).
 - **Logiciels** : applications et versions, licences associées.
@@ -313,7 +313,7 @@ Désignez un **propriétaire** des données, privilégiez la mise à jour **auto
 ### 6.1 Effacer les données avant de sortir un poste
 
 - Disque **chiffré** : la destruction de la clé de chiffrement (effacement cryptographique) est une méthode reconnue, à condition que le chiffrement ait été actif depuis le début.
-- Sinon : **effacement** avec un outil adapté au type de support (SSD, disque magnétique), selon les recommandations de la norme **NIST SP 800-88** ; **destruction physique** si le support est défaillant ou si les données sont très sensibles.
+- Sinon : **effacement** avec un outil adapté au type de support ([[Glossary:SSD]], disque magnétique), selon les recommandations de la norme **[[Glossary:NIST]] SP 800-88** ; **destruction physique** si le support est défaillant ou si les données sont très sensibles.
 - **Trace** : certificat d'effacement ou de destruction, date, numéro de série, opérateur.
 - **Filière DEEE** : les équipements électroniques en fin de vie se confient à un organisme agréé.
 
@@ -414,7 +414,7 @@ A. Un script très rapide. B. Un script dont les exécutions répétées donnent
 **Réponse : B.** Il vérifie l'état avant d'agir.
 
 **Q6. Quel est le meilleur identifiant stable d'un poste pour rapprocher des sources ?**
-A. Le nom d'hôte. B. Le numéro de série. C. L'adresse IP. D. Le nom de l'utilisateur.
+A. Le nom d'hôte. B. Le numéro de série. C. L'adresse [[Glossary:IP]]. D. Le nom de l'utilisateur.
 **Réponse : B.** Le nom, l'IP et l'utilisateur changent ; le numéro de série reste.
 
 **Q7. Pourquoi éviter `Win32_Product` pour l'inventaire logiciel ?**
@@ -470,7 +470,7 @@ A. Aucune. B. Tests sur VM puis pilote, snapshot ou sauvegarde, accès de secour
 | `images/deploiement-inventaire-2.svg` | Création originale (aucune source externe) | Projet Pack Master | CC0 1.0 — <https://creativecommons.org/publicdomain/zero/1.0/> | Sans objet |
 | `images/deploiement-inventaire-3.svg` | Création originale (aucune source externe) | Projet Pack Master | CC0 1.0 — <https://creativecommons.org/publicdomain/zero/1.0/> | Sans objet |
 
-Création originale du projet Pack Master, dédiée au domaine public (CC0). Aucune image Commons retenue : l'API de Commons renvoyait HTTP 429 lors de la recherche.
+Création originale du projet Pack Master, dédiée au domaine public (CC0). Aucune image Commons retenue : l'[[Glossary:API]] de Commons renvoyait [[Glossary:HTTP]] 429 lors de la recherche.
 
 ## Historique de vérification
 

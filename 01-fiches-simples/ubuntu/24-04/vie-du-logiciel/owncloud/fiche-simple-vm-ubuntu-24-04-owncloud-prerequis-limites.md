@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_ownCloud_Prerequis_Limites
 
-- **Environnement** : VM Ubuntu Server 24-04; ownCloud Infinite Scale (oCIS), binaire officiel
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04; ownCloud Infinite Scale (oCIS), binaire officiel
 - **OS / Version** : Ubuntu Server 24-04
 - **Catégorie** : Vie du logiciel / ownCloud — Prérequis et limites
 - **Tags** : `owncloud`, `serveur`, `vie-du-logiciel`, `prerequis_limites`
@@ -26,7 +26,7 @@ curl -fsSL https://download.owncloud.com/ocis/ocis/stable/
 
 ## 2. Production — Contrôles
 
-Documenter version, FQDN, reverse proxy, stockage et RPO/RTO.
+Documenter version, [[Glossary:FQDN]], reverse proxy, stockage et [[Glossary:RPO]]/RTO.
 
 ## 3. Production — Sécurité
 

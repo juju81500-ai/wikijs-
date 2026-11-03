@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Attribuer l'adresse IP définitive.
+Attribuer l'adresse [[Glossary:IP]] définitive.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Ouvrir **Panneau de configuration > Réseau et Internet > Centre Réseau et partage > Modifier les paramètres de la carte > Propriétés > Protocole Internet version 4 (TCP/IPv4)**.
+1. Ouvrir **Panneau de configuration > Réseau et Internet > Centre Réseau et partage > Modifier les paramètres de la carte > Propriétés > Protocole Internet version 4 ([[Glossary:TCP]]/IPv4)**.
    ```powershell
    Get-NetIPConfiguration
    ```
@@ -25,7 +25,7 @@ Attribuer l'adresse IP définitive.
    New-NetIPAddress -InterfaceAlias 'ALIAS' -IPAddress IP -PrefixLength 24 -DefaultGateway PASSERELLE
    Set-DnsClientServerAddress -InterfaceAlias 'ALIAS' -ServerAddresses IP_DNS
    ```
-   👉 Explication : `IP_DNS` est l'adresse du serveur DNS interne; à lancer depuis la console de la VM car la connexion distante sera coupée.
+   👉 Explication : `IP_DNS` est l'adresse du serveur [[Glossary:DNS]] interne; à lancer depuis la console de la [[Glossary:VM]] car la connexion distante sera coupée.
 
 3. Contrôler :
    ```powershell
@@ -36,7 +36,7 @@ Attribuer l'adresse IP définitive.
 
 ## 2. Production — Contrôles
 
-Déclarer l'adresse dans l'IPAM et le DNS (enregistrement A et PTR).
+Déclarer l'adresse dans l'[[Glossary:IPAM]] et le DNS (enregistrement A et PTR).
 
 ## 3. Production — Sécurité
 

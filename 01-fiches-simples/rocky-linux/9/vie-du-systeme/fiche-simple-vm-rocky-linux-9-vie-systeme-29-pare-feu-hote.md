@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_29_Pare_Feu_Hote
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 29 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-29`
@@ -21,7 +21,7 @@ Filtrer les flux entrants avec firewalld.
    ```
    👉 Explication : firewalld est le pare-feu par défaut de Rocky; zone `public`.
 
-2. Autoriser SSH depuis le réseau d'administration seulement (adapter `192.0.2.0/24`) :
+2. Autoriser [[Glossary:SSH]] depuis le réseau d'administration seulement (adapter `192.0.2.0/24`) :
    ```bash
    sudo firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="192.0.2.0/24" service name="ssh" accept'
    sudo firewall-cmd --permanent --remove-service=ssh

@@ -1,7 +1,7 @@
 # fiche-simple-vm-windows-server-2022-adds-dns-dhcp-preparer-architecture.md
 
-- **Environnement** : VM ou serveur dédié Windows Server 2022, domaine de laboratoire ou d'entreprise
-- **OS / Version** : Windows Server 2022; rôles AD DS, DNS et DHCP
+- **Environnement** : [[Glossary:VM]] ou serveur dédié Windows Server 2022, domaine de laboratoire ou d'entreprise
+- **OS / Version** : Windows Server 2022; rôles [[Glossary:AD]] DS, [[Glossary:DNS]] et [[Glossary:DHCP]]
 - **Catégorie** : annuaire / services réseau
 - **Tags** : `windows-server-2022`, `active-directory`, `dns`, `dhcp`, `gpo`
 
@@ -13,8 +13,8 @@ Définir l'architecture et renommer le serveur avant la promotion.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Définir le nom DNS du domaine, le nom NetBIOS, les sous-réseaux, les réservations, les relais DHCP, les DNS amont et la stratégie de sauvegarde; réserver une adresse IP statique et vérifier l'heure/NTP.
-   👉 Explication : on ne crée pas de domaine de production sans rôles FSMO, réplication, comptes de secours et restauration définis.
+1. Définir le nom DNS du domaine, le nom NetBIOS, les sous-réseaux, les réservations, les relais DHCP, les DNS amont et la stratégie de sauvegarde; réserver une adresse [[Glossary:IP]] statique et vérifier l'heure/NTP.
+   👉 Explication : on ne crée pas de domaine de production sans rôles [[Glossary:FSMO]], réplication, comptes de secours et restauration définis.
 
 2. Dans PowerShell administrateur, contrôler l'adresse :
    ```powershell
@@ -22,7 +22,7 @@ Définir l'architecture et renommer le serveur avant la promotion.
    ```
    👉 Explication : l'adresse doit être statique et conforme au plan IP.
 
-3. GUI : **Gestionnaire de serveur > Serveur local > Nom de l'ordinateur** pour renommer.
+3. [[Glossary:GUI]] : **Gestionnaire de serveur > Serveur local > Nom de l'ordinateur** pour renommer.
    👉 Explication : équivalent graphique de la commande ci-dessous.
 
 4. Renommer et redémarrer (DC01 est un exemple à remplacer par votre nom) :

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_9_Dovecot_Prerequis_Limites
 
-- **Environnement** : VM Rocky Linux 9; Dovecot depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9; Dovecot depuis les dépôts de la distribution
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : Vie du logiciel / Dovecot — Prérequis et limites
 - **Tags** : `dovecot`, `serveur`, `vie-du-logiciel`, `prerequis_limites`
@@ -25,7 +25,7 @@ sudo ss -lntup
 
 ## 2. Production — Contrôles
 
-Documenter rôle SMTP/IMAP, domaines, réseaux autorisés et ports.
+Documenter rôle [[Glossary:SMTP]]/IMAP, domaines, réseaux autorisés et ports.
 
 ## 3. Production — Sécurité
 

@@ -23,7 +23,7 @@ Choisir la langue de l'interface et du système.
    ```bash
    sudo midclt call system.general.update '{"language": "fr"}'
    ```
-   👉 Explication : équivalent de la modification dans la GUI.
+   👉 Explication : équivalent de la modification dans la [[Glossary:GUI]].
 
 ## 2. Production — Contrôles
 

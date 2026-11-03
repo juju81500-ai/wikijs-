@@ -1,6 +1,6 @@
 # 📄 VM_Debian_12_Stockage_Configuration-Partage-Samba.md
 
-- **Environnement** : VM (Debian 12 Bookworm)
+- **Environnement** : [[Glossary:VM]] (Debian 12 Bookworm)
 - **OS / Version** : Debian 12 - Famille Debian
 - **Catégorie** : Stockage / Partage de fichiers (Samba / SMB)
 - **Tags** : `[debian12]`, `[samba]`, `[smb]`, `[cifs]`, `[partage-fichiers]`, `[hardening]`
@@ -56,10 +56,10 @@ Installer le service Samba sur Debian 12, créer un partage réseau compatible W
    hosts deny = 0.0.0.0/0
    ```
    Remplacer le réseau d'exemple par le réseau client réel, puis exécuter `testparm -s` avant `systemctl reload smbd`.
-   👉 Explication : Bloque les anciennes versions vulnérables du protocole SMB (SMB1/SMB2) et force le chiffrement AES du trafic réseau.
+   👉 Explication : Bloque les anciennes versions vulnérables du protocole SMB (SMB1/SMB2) et force le chiffrement [[Glossary:AES]] du trafic réseau.
 
 2. Masquage des fichiers non autorisés et blocage des fichiers exécutables (.exe, .bat, .sh) :
    `sed -i '/\[Partage_TSSR\]/a \   veto files = /*.exe/*.bat/*.vbs/*.sh/\n   hide unreadable = yes' /etc/samba/smb.conf`
    👉 Explication : Empêche le dépôt de fichiers exécutables potentiellement malveillants et masque les fichiers illisibles pour l'utilisateur.
 
-3. Autoriser TCP/445 uniquement aux clients prévus dans le pare-feu persistant déjà géré par le serveur. N'ajouter les règles SMB dans la configuration propriétaire, les valider, puis appliquer pendant une fenêtre ; ne pas utiliser une règle `nft add rule` en mémoire comme configuration finale.
+3. Autoriser [[Glossary:TCP]]/445 uniquement aux clients prévus dans le pare-feu persistant déjà géré par le serveur. N'ajouter les règles SMB dans la configuration propriétaire, les valider, puis appliquer pendant une fenêtre ; ne pas utiliser une règle `nft add rule` en mémoire comme configuration finale.

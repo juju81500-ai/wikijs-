@@ -2,7 +2,7 @@
 
 - **Environnement** : Hôte Docker avec Docker Compose v2 et réseau Traefik existant
 - **OS / Version** : Hôte Linux maintenu; Snipe-IT 8.8.3; MariaDB 11.4.7
-- **Catégorie** : ITSM / gestion des actifs
+- **Catégorie** : [[Glossary:ITSM]] / gestion des actifs
 - **Tags** : `snipe-it`, `docker`, `mariadb`, `traefik`, `inventaire`
 
 ---
@@ -38,7 +38,7 @@ Renseigner `.env`, générer `APP_KEY` et relier le service à Traefik.
 4. Sauvegarder `APP_KEY` dans le coffre de secrets.
    👉 Explication : elle est nécessaire pour déchiffrer certains champs après restauration.
 
-5. Utiliser les labels Traefik en vigueur pour router `app` vers le port 80, connecter `app` à `traefik_proxy`, retirer le port hôte 8000 et définir `APP_TRUSTED_PROXIES` avec le CIDR réel du réseau proxy.
+5. Utiliser les labels Traefik en vigueur pour router `app` vers le port 80, connecter `app` à `traefik_proxy`, retirer le port hôte 8000 et définir `APP_TRUSTED_PROXIES` avec le [[Glossary:CIDR]] réel du réseau proxy.
    👉 Explication : Traefik publie l'application; la base n'est jamais exposée.
 
 ## 2. Production — Contrôles

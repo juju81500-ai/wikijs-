@@ -1,6 +1,6 @@
 # 📄 VM_Win11_Utilisateurs_Creer-Compte-Local-Et-Admin.md
 
-- **Environnement** : VM / Poste client (Windows 11 / Windows 10)
+- **Environnement** : [[Glossary:VM]] / Poste client (Windows 11 / Windows 10)
 - **OS / Version** : Windows 11 Pro / Enterprise / Windows 10 - Famille Windows Client
 - **Catégorie** : Utilisateurs & Droits / Gestion des Comptes Clients
 - **Tags** : `[windows-11]`, `[windows-10]`, `[windows-client]`, `[utilisateurs]`, `[admin-local]`, `[gui]`, `[powershell]`

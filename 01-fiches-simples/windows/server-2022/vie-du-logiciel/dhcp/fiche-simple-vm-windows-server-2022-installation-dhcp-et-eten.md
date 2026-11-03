@@ -1,20 +1,20 @@
 # 📄 VM_WinSrv_2022_DHCP_Installation-Et-Etendue-Scope.md
 
-- **Environnement** : VM (Hyper-V / Proxmox VE)
+- **Environnement** : [[Glossary:VM]] (Hyper-V / Proxmox VE)
 - **OS / Version** : Windows Server 2022 - Famille Windows Server
-- **Catégorie** : Services Réseau (DHCP)
+- **Catégorie** : Services Réseau ([[Glossary:DHCP]])
 - **Tags** : `[winsrv2022]`, `[windows-family]`, `[dhcp]`, `[active-directory]`, `[gui]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer le rôle Serveur DHCP sous Windows Server 2022, autoriser le serveur dans Active Directory et configurer une étendue d'adresses IP sécurisée avec réserves.
+Installer le rôle Serveur DHCP sous Windows Server 2022, autoriser le serveur dans Active Directory et configurer une étendue d'adresses [[Glossary:IP]] sécurisée avec réserves.
 
 ---
 
 ## 🖥️ Méthode Interface Graphique (GUI pas-à-pas)
 
 ### Prérequis
-- Configurer une adresse IP statique et les DNS corrects sur le serveur DHCP avant l'installation.
-- En domaine AD, avoir un compte autorisé à installer le rôle et autoriser le serveur DHCP. Ne pas brancher un DHCP de laboratoire au réseau de production.
+- Configurer une adresse IP statique et les [[Glossary:DNS]] corrects sur le serveur DHCP avant l'installation.
+- En domaine [[Glossary:AD]], avoir un compte autorisé à installer le rôle et autoriser le serveur DHCP. Ne pas brancher un DHCP de laboratoire au réseau de production.
 
 ### Installer et autoriser le serveur DHCP
 1. Dans **Gestionnaire de serveur** > **Gérer** > **Ajouter des rôles et fonctionnalités**, choisir **Installation basée sur un rôle ou une fonctionnalité**, sélectionner le serveur local et cocher **Serveur DHCP**. Ajouter les outils demandés, puis terminer l'assistant avec **Installer**.
@@ -43,7 +43,7 @@ Référence : [Microsoft Learn — Installer et configurer DHCP Server](https://
    👉 Explication : Déclare le serveur DHCP auprès d'Active Directory pour autoriser la distribution des baux IP.
 2. Configuration de l'étendue de production complète avec options réseau :
    `Add-DhcpServerv4Scope -Name "Scope-Prod-Clients" -StartRange 192.168.1.100 -EndRange 192.168.1.200 -SubnetMask 255.255.255.0`
-   👉 Explication : Définit la plage d'attribution pour les clients du LAN.
+   👉 Explication : Définit la plage d'attribution pour les clients du [[Glossary:LAN]].
 3. Configuration des options de groupe (Passerelle & DNS) :
    `Set-DhcpServerv4OptionValue -OptionId 3 -Value "192.168.1.1" -ScopeId 192.168.1.0`
    `Set-DhcpServerv4OptionValue -OptionId 6 -Value "192.168.1.10" -ScopeId 192.168.1.0`

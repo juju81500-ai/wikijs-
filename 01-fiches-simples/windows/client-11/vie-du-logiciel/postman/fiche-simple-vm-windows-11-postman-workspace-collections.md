@@ -2,7 +2,7 @@
 
 - **Environnement** : Poste Windows 11 géré, compte standard, Postman Desktop et Newman
 - **OS / Version** : Windows 11 Client
-- **Catégorie** : API / workspace et collections
+- **Catégorie** : [[Glossary:API]] / workspace et collections
 - **Tags** : `windows-11`, `postman`, `api`, `newman`, `vie-du-logiciel`
 
 ---
@@ -35,7 +35,7 @@ Créer un workspace Postman maîtrisé et une première collection de requêtes 
    ```text
    COLLECTION_LAB > ⋯ > Export > Collection v2.1 > enregistrer COLLECTION_LAB.postman_collection.json
    ```
-   👉 Explication : Le JSON sert de sauvegarde et d'entrée à Newman ; vérifier qu'il ne contient aucun secret avant stockage.
+   👉 Explication : Le [[Glossary:JSON]] sert de sauvegarde et d'entrée à Newman ; vérifier qu'il ne contient aucun secret avant stockage.
 
 5. Contrôler le fichier exporté :
    ```powershell

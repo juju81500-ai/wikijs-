@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-zeek-valider-capteur.md
 
-- **Environnement** : Zeek 8.0 LTS, Debian 13, nœud standalone et interface miroir autorisée
+- **Environnement** : Zeek 8.0 [[Glossary:LTS]], Debian 13, nœud standalone et interface miroir autorisée
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Analyse passive réseau
 - **Tags** : `debian13`, `zeek`, `zeekctl`, `af-packet`, `network-monitoring`, `lab`
@@ -17,7 +17,7 @@ Confirmer que Zeek reçoit les paquets d'une interface miroir approuvée, tourne
    ```bash
    ip -br link
    ```
-   👉 Explication : relever l'interface miroir/TAP; consigner VLAN visibles et CIDR dans `networks.cfg`.
+   👉 Explication : relever l'interface miroir/TAP; consigner [[Glossary:VLAN]] visibles et [[Glossary:CIDR]] dans `networks.cfg`.
 
 2. Vérifier la version et AF_PACKET :
    ```bash
@@ -54,7 +54,7 @@ Confirmer que Zeek reçoit les paquets d'une interface miroir approuvée, tourne
 
 ## 2. Production — Contrôles
 
-Surveiller pertes de capture, CPU, rotation/rétention des logs, espace disque et état ZeekControl. Tester les changements de scripts et de ligne LTS sur un capteur de recette avant `deploy` en production.
+Surveiller pertes de capture, [[Glossary:CPU]], rotation/rétention des logs, espace disque et état ZeekControl. Tester les changements de scripts et de ligne LTS sur un capteur de recette avant `deploy` en production.
 
 ## 3. Production — Sécurité
 

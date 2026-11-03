@@ -35,7 +35,7 @@ Cliquer sur le nom pour voir l'état de couverture ; une procédure détaillée 
 - [Bacula](../../../logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-bacula.md) — Couvert
 - [Bareos](../../../logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-bareos.md) — Couvert
 - [BorgBackup](../../../logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-borgbackup.md) — Couvert
-- [Nakivo-Altaro](../../../logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-nakivo-altaro.md) — Partiel — NAKIVO Windows Server 2022 et Transporter Linux sur Debian 13 et Ubuntu Server 24-04; Altaro/Hornetsecurity limité à la documentation publique de VM Backup
+- [Nakivo-Altaro](../../../logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-nakivo-altaro.md) — Partiel — NAKIVO Windows Server 2022 et Transporter Linux sur Debian 13 et Ubuntu Server 24-04; Altaro/Hornetsecurity limité à la documentation publique de [[Glossary:VM]] Backup
 - [Restic](../../../logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-restic.md) — Couvert
 - [Robocopy](../../../logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-robocopy.md) — Couvert
 - [Veeam-Backup-Replication](../../../logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-veeam-backup-replication.md) — Couvert
@@ -49,4 +49,4 @@ Cliquer sur le nom pour voir l'état de couverture ; une procédure détaillée 
 - [Nutanix-AHV](../../../logiciels/03-virtualisation-et-conteneurisation/fiche-logiciel-nutanix-ahv.md) — Matériel/éditeur propriétaire — hors périmètre pas à pas
 - [Podman-Buildah](../../../logiciels/03-virtualisation-et-conteneurisation/fiche-logiciel-podman-buildah.md) — Couvert
 - [Proxmox-VE](../../../logiciels/03-virtualisation-et-conteneurisation/fiche-logiciel-proxmox-ve.md) — Couvert
-- [VMware-vSphere](../../../logiciels/03-virtualisation-et-conteneurisation/fiche-logiciel-vmware-vsphere.md) — Couvert — vSphere 8 : ESXi, vCenter Server Appliance (installation, sauvegarde/restauration VAMI, mises à jour, certificats), HA/DRS, réseau, datastore NFS, snapshots, maintenance. Hors périmètre : vSAN, NSX, Lifecycle Manager avancé.
+- [VMware-vSphere](../../../logiciels/03-virtualisation-et-conteneurisation/fiche-logiciel-vmware-vsphere.md) — Couvert — vSphere 8 : ESXi, vCenter Server Appliance (installation, sauvegarde/restauration VAMI, mises à jour, certificats), HA/DRS, réseau, datastore [[Glossary:NFS]], snapshots, maintenance. Hors périmètre : vSAN, NSX, Lifecycle Manager avancé.

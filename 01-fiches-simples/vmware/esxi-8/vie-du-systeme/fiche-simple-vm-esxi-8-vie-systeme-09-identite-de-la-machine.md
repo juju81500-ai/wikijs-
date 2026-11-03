@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Nommer l'hôte avec un FQDN résolvable.
+Nommer l'hôte avec un [[Glossary:FQDN]] résolvable.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Host Client : **Gérer > Système > Mise en réseau > Pile TCP/IP par défaut > Modifier les paramètres** (nom d'hôte, domaine). Ou DCUI : **Configure Management Network > DNS Configuration**. En ligne de commande :
+1. Host Client : **Gérer > Système > Mise en réseau > Pile [[Glossary:TCP]]/IP par défaut > Modifier les paramètres** (nom d'hôte, domaine). Ou DCUI : **Configure Management Network > [[Glossary:DNS]] Configuration**. En ligne de commande :
    ```sh
    esxcli system hostname set --host=esx01 --domain=domaine.local
    esxcli system hostname get

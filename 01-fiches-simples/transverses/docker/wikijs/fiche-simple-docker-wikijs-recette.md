@@ -13,12 +13,12 @@ Valider le fonctionnement complet de Wiki.js après déploiement.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Vérifier le certificat présenté et la redirection HTTP vers HTTPS (domaine d'exemple à remplacer) :
+1. Vérifier le certificat présenté et la redirection [[Glossary:HTTP]] vers HTTPS (domaine d'exemple à remplacer) :
    ```bash
    curl -sSI http://wiki.example.net | head -n 5
    curl -sSI https://wiki.example.net | head -n 5
    ```
-   👉 Explication : le certificat doit correspondre au nom DNS et HTTP doit rediriger vers HTTPS selon la politique Traefik.
+   👉 Explication : le certificat doit correspondre au nom [[Glossary:DNS]] et HTTP doit rediriger vers HTTPS selon la politique Traefik.
 
 2. Dans Wiki.js, créer une page de test, la modifier puis y joindre un fichier : **Pages > New Page** (menu de la barre supérieure).
    👉 Explication : on vérifie l'écriture en base et sur le stockage.

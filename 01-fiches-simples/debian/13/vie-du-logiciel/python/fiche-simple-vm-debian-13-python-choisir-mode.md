@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Choisir entre paquet APT, venv par projet ou pipx.
+Choisir entre paquet [[Glossary:APT]], venv par projet ou pipx.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -27,7 +27,7 @@ Choisir entre paquet APT, venv par projet ou pipx.
 
 ## 2. Production — Contrôles
 
-Application système : paquets Debian. Projet applicatif : `venv`. Outil CLI hors Debian : `pipx`. Ces environnements isolent les dépendances, pas les permissions.
+Application système : paquets Debian. Projet applicatif : `venv`. Outil [[Glossary:CLI]] hors Debian : `pipx`. Ces environnements isolent les dépendances, pas les permissions.
 
 ## 3. Production — Sécurité
 

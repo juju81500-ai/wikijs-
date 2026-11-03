@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Vérifier le quorum, les liens Corosync et la cohérence des VM et du stockage.
+Vérifier le quorum, les liens Corosync et la cohérence des [[Glossary:VM]] et du stockage.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

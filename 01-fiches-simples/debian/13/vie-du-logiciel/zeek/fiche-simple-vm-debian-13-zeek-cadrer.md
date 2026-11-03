@@ -1,7 +1,7 @@
 # fiche-simple-vm-debian-13-zeek-cadrer.md
 
-- **Environnement** : VM Debian 13 capteur passif Zeek standalone sur interface miroir approuvée
-- **OS / Version** : Debian 13 Trixie; Zeek 8.0 LTS (dépôt OBS officiel)
+- **Environnement** : [[Glossary:VM]] Debian 13 capteur passif Zeek standalone sur interface miroir approuvée
+- **OS / Version** : Debian 13 Trixie; Zeek 8.0 [[Glossary:LTS]] (dépôt OBS officiel)
 - **Catégorie** : supervision / analyse passive du trafic
 - **Tags** : `debian13`, `zeek`, `zeekctl`, `af-packet`, `network-monitoring`
 
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Définir la source de trafic (SPAN/TAP), les VLAN visibles et la gouvernance des journaux avant d'installer Zeek.
+Définir la source de trafic ([[Glossary:SPAN]]/TAP), les [[Glossary:VLAN]] visibles et la gouvernance des journaux avant d'installer Zeek.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

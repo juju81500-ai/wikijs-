@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Rocky_9_Wireshark_Sauvegarder_Restaurer
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Wireshark
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Wireshark
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Wireshark / sauvegarde et restauration
 - **Tags** : `wireshark`, `rocky9`, `vie-du-logiciel`, `sauvegarder-restaurer`
 
@@ -17,7 +17,7 @@ Sauvegarder les profils/préférences Wireshark et les captures de preuve.
    ```bash
    tar -czf ~/wireshark-profil-DATE.tar.gz -C ~/.config wireshark
    ```
-   👉 Explication : Archive préférences, profils et filtres; DATE est à remplacer. Ne pas y inclure de keylog TLS : le retirer au besoin.
+   👉 Explication : Archive préférences, profils et filtres; DATE est à remplacer. Ne pas y inclure de keylog [[Glossary:TLS]] : le retirer au besoin.
 
 2. Empreinte d’une capture de preuve :
    ```bash

@@ -1,8 +1,8 @@
 # 📄 LXC_Debian_13_Systeme_Mise-A-Jour-Dist-Upgrade.md
 
-- **Environnement** : LXC (Proxmox VE 8+ / Conteneur Debian 13)
+- **Environnement** : [[Glossary:LXC]] (Proxmox VE 8+ / Conteneur Debian 13)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
-- **Catégorie** : Maintenance & Système / Gestion des paquets APT
+- **Catégorie** : Maintenance & Système / Gestion des paquets [[Glossary:APT]]
 - **Tags** : `[debian13]`, `[lxc]`, `[apt]`, `[upgrade]`, `[maintenance]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
@@ -54,6 +54,6 @@ Effectuer la maintenance, la mise à jour complète des paquets logiciels et la 
    sudo apt-config dump | grep -i unattended
    sudo systemctl status unattended-upgrades
    ```
-2. Limiter les origines automatiques selon la politique de l'organisation et le contenu du dépôt Debian Trixie local. Tester la configuration sur un CT pilote et vérifier les journaux avant généralisation.
+2. Limiter les origines automatiques selon la politique de l'organisation et le contenu du dépôt Debian Trixie local. Tester la configuration sur un [[Glossary:CT]] pilote et vérifier les journaux avant généralisation.
 3. Pour les résidus `rc`, lister d'abord les paquets concernés avec `dpkg -l | awk '$1 == "rc" {print $2}'`; purger seulement la sélection validée.
 4. N'exécuter `dpkg --configure -a` que lorsqu'une installation interrompue est signalée par APT/dpkg, après avoir corrigé sa cause et vérifié l'espace disque.

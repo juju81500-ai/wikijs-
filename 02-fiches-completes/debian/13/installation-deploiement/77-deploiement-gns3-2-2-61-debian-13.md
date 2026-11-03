@@ -2,7 +2,7 @@
 
 - **OS / Version** : Debian 13 Trixie amd64; GNS3 2.2.61 stable
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : interface graphique et serveur GNS3 local par `pipx`, QEMU/KVM et laboratoire isolé
+- **Périmètre** : interface graphique et serveur GNS3 local par `pipx`, [[Glossary:QEMU]]/KVM et laboratoire isolé
 - **Catégorie** : simulation réseau / laboratoire
 - **Tags** : `gns3`, `debian13`, `qemu`, `kvm`, `lab`, `simulation-reseau`
 
@@ -10,11 +10,11 @@
 
 Fiche simple : [cadrer version et périmètre](../../../../01-fiches-simples/debian/13/vie-du-logiciel/gns3/fiche-simple-vm-debian-13-gns3-deploiement-version-perimetre.md).
 
-Au 27 octobre 2026, GNS3 2.2.61 est la dernière version stable publiée; GNS3 3.1 est encore en préversion alpha. Le guide Linux amont documente Debian par `pipx` et précise que GNS3 n'est pas disponible dans les dépôts APT Debian en tant que paquet natif. La branche 3.1 alpha n'est pas utilisée ici.
+Au 27 octobre 2026, GNS3 2.2.61 est la dernière version stable publiée; GNS3 3.1 est encore en préversion alpha. Le guide Linux amont documente Debian par `pipx` et précise que GNS3 n'est pas disponible dans les dépôts [[Glossary:APT]] Debian en tant que paquet natif. La branche 3.1 alpha n'est pas utilisée ici.
 
-Cette fiche installe l'interface et le serveur sur un poste Debian 13 amd64, avec QEMU/KVM pour les machines de lab. Le serveur reste local. Aucun lien Cloud, NAT externe, pont vers une carte physique, image propriétaire ou scénario d'attaque n'est inclus. Les appliances disponibles au Marketplace ne remplacent pas les images logicielles: obtenir ces images directement auprès de leur éditeur et respecter leurs licences.
+Cette fiche installe l'interface et le serveur sur un poste Debian 13 amd64, avec QEMU/KVM pour les machines de lab. Le serveur reste local. Aucun lien Cloud, [[Glossary:NAT]] externe, pont vers une carte physique, image propriétaire ou scénario d'attaque n'est inclus. Les appliances disponibles au Marketplace ne remplacent pas les images logicielles: obtenir ces images directement auprès de leur éditeur et respecter leurs licences.
 
-Prévoir un environnement graphique, la virtualisation CPU activée dans le firmware, plusieurs coeurs/Go de mémoire et de l'espace disque dédié aux images et projets. Sur une machine virtuelle, la virtualisation imbriquée doit être prise en charge par l'hyperviseur.
+Prévoir un environnement graphique, la virtualisation [[Glossary:CPU]] activée dans le firmware, plusieurs coeurs/Go de mémoire et de l'espace disque dédié aux images et projets. Sur une machine virtuelle, la virtualisation imbriquée doit être prise en charge par l'hyperviseur.
 
 ## 2. Installer les dépendances Debian 13
 
@@ -66,7 +66,7 @@ Ne pas mélanger le dépôt PPA Ubuntu, les paquets système PyPI installés par
 
 Fiche simple : [accorder les accès minimaux](../../../../01-fiches-simples/debian/13/vie-du-logiciel/gns3/fiche-simple-vm-debian-13-gns3-deploiement-acces-minimaux.md).
 
-GNS3 et QEMU nécessitent des accès locaux pour créer des interfaces virtuelles et employer KVM/libvirt. Utiliser un compte nominatif de laboratoire et l'ajouter seulement aux groupes requis par les fonctions employées :
+GNS3 et QEMU nécessitent des accès locaux pour créer des interfaces virtuelles et employer [[Glossary:KVM]]/libvirt. Utiliser un compte nominatif de laboratoire et l'ajouter seulement aux groupes requis par les fonctions employées :
 
 ```bash
 getent group ubridge libvirt kvm
@@ -105,7 +105,7 @@ Fiche simple : [sauvegarder, mettre à jour et nettoyer](../../../../01-fiches-s
 
 Enregistrer le projet, les fichiers de configuration et les images séparément dans un espace contrôlé. Sauvegarder les fichiers du projet; sauvegarder les images uniquement si leur licence le permet. Tester l'ouverture de la copie dans un second profil ou poste compatible.
 
-Avant une mise à niveau, fermer GNS3, sauvegarder les projets et consigner les versions GUI/serveur ainsi que les versions d'appliances. Mettre à niveau les deux paquets `pipx` vers la même stable; ouvrir une copie d'un projet représentatif avant reprise. Garder l'ancien environnement jusqu'à validation.
+Avant une mise à niveau, fermer GNS3, sauvegarder les projets et consigner les versions [[Glossary:GUI]]/serveur ainsi que les versions d'appliances. Mettre à niveau les deux paquets `pipx` vers la même stable; ouvrir une copie d'un projet représentatif avant reprise. Garder l'ancien environnement jusqu'à validation.
 
 Après un exercice, arrêter les noeuds et le projet, supprimer les disques temporaires identifiés et vérifier les ressources libvirt. Ne pas effacer les images, snapshots ou projets d'autres personnes.
 

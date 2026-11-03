@@ -28,7 +28,7 @@ Contrôler la configuration, le service et l'accès Samba.
    ```
    👉 Explication : vérifie découverte et authentification.
 
-3. Contrôler le nom du partage, les ACL/permissions, la résolution DNS et le dialecte/signature SMB.
+3. Contrôler le nom du partage, les [[Glossary:ACL]]/permissions, la résolution [[Glossary:DNS]] et le dialecte/signature SMB.
    👉 Explication : ce sont les causes courantes de refus.
 
 ## 2. Production — Contrôles

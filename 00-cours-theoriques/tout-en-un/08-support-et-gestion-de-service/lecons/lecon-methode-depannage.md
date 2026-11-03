@@ -1,7 +1,7 @@
 # Leçon — Méthode de dépannage structurée : questionner, reproduire, isoler, tester, documenter
 
 - **Tags** : `transverse`, `tout-en-un`, `lecon`, `support`, `depannage`, `methode`, `diagnostic`
-- **Niveau** : débutant à intermédiaire (technicien support N1/N2, étudiant TSSR)
+- **Niveau** : débutant à intermédiaire (technicien support N1/N2, étudiant [[Glossary:TSSR]])
 - **Durée estimée** : 3 h 30 (lecture 1 h 30, laboratoire 1 h, exercices et quiz 1 h)
 
 ---
@@ -19,7 +19,7 @@
 
 ## Prérequis et durée
 
-- Notions sur un poste Windows ou Linux, l'adressage IP et le DNS ; savoir ouvrir un terminal.
+- Notions sur un poste Windows ou Linux, l'adressage [[Glossary:IP]] et le [[Glossary:DNS]] ; savoir ouvrir un terminal.
 - Une **machine virtuelle jetable** pour la mise en pratique (aucune machine de production).
 - Durée totale : environ 3 h 30.
 
@@ -83,7 +83,7 @@ Un défaut que l'on peut déclencher à la demande est déjà à moitié résolu
 
 ### 3.1 Niveaux de reproduction
 
-Reproduisez avec l'utilisateur (à distance, avec son accord), puis seul sur son poste, puis sur un poste de référence ou une VM. Pour un défaut **intermittent**, on capture (journaux, mesures régulières) jusqu'à obtenir une occurrence horodatée à corréler avec d'autres événements.
+Reproduisez avec l'utilisateur (à distance, avec son accord), puis seul sur son poste, puis sur un poste de référence ou une [[Glossary:VM]]. Pour un défaut **intermittent**, on capture (journaux, mesures régulières) jusqu'à obtenir une occurrence horodatée à corréler avec d'autres événements.
 
 ### 3.2 Pièges et minimum reproductible
 
@@ -104,7 +104,7 @@ La question la plus rentable : **qu'est-ce qui diffère entre ce qui fonctionne 
 |---|---|---|
 | Même compte, autre poste | le compte | profil, droits, configuration utilisateur |
 | Autre compte, même poste | le poste | système, pilote, réseau local, logiciel |
-| Même poste, autre réseau (câble ↔ Wi-Fi, VPN ↔ site) | le réseau | segment, VLAN, filtrage, DNS |
+| Même poste, autre réseau (câble ↔ Wi-Fi, [[Glossary:VPN]] ↔ site) | le réseau | segment, [[Glossary:VLAN]], filtrage, DNS |
 | Même poste, autre application | l'application | version, configuration, dépendance |
 
 ### 4.2 Raisonner en couches
@@ -123,7 +123,7 @@ Avec 16 causes équiprobables, un test qui les sépare en 8 + 8 puis encore en d
 
 ### 5.1 Une hypothèse est une phrase testable
 
-Mal formulée : « C'est le réseau. » Bien formulée : « Le poste n'obtient plus d'adresse DHCP, donc il se retrouve en 169.254.x.x et ne joint aucun serveur. » La seconde indique **ce qu'on devrait observer** si elle est vraie, donc comment la tester.
+Mal formulée : « C'est le réseau. » Bien formulée : « Le poste n'obtient plus d'adresse [[Glossary:DHCP]], donc il se retrouve en 169.254.x.x et ne joint aucun serveur. » La seconde indique **ce qu'on devrait observer** si elle est vraie, donc comment la tester.
 
 ### 5.2 Trois critères de tri
 
@@ -159,7 +159,7 @@ Get-NetIPConfiguration
 Test-NetConnection -ComputerName 192.0.2.1
 ```
 
-👉 Explication : envoie un test ICMP vers la passerelle supposée (adresse de documentation à remplacer en laboratoire) et indique si elle répond ; premier test de la couche réseau locale.
+👉 Explication : envoie un test [[Glossary:ICMP]] vers la passerelle supposée (adresse de documentation à remplacer en laboratoire) et indique si elle répond ; premier test de la couche réseau locale.
 
 ```powershell
 Resolve-DnsName -Name www.example.com
@@ -171,7 +171,7 @@ Resolve-DnsName -Name www.example.com
 Test-NetConnection -ComputerName www.example.com -Port 443
 ```
 
-👉 Explication : vérifie qu'un port TCP précis (ici HTTPS) est joignable ; la ligne `TcpTestSucceeded` donne le verdict.
+👉 Explication : vérifie qu'un port [[Glossary:TCP]] précis (ici HTTPS) est joignable ; la ligne `TcpTestSucceeded` donne le verdict.
 
 ```powershell
 Get-WinEvent -LogName System -MaxEvents 20
@@ -203,7 +203,7 @@ dig +short www.example.com
 curl -sS -I --max-time 5 https://www.example.com/
 ```
 
-👉 Explication : demande uniquement les en-têtes HTTP avec un délai maximal de 5 secondes ; teste la chaîne complète (DNS, TCP, TLS, HTTP) et le message d'erreur distingue les cas.
+👉 Explication : demande uniquement les en-têtes [[Glossary:HTTP]] avec un délai maximal de 5 secondes ; teste la chaîne complète (DNS, TCP, [[Glossary:TLS]], HTTP) et le message d'erreur distingue les cas.
 
 ```bash
 journalctl -p warning --since "30 min ago" --no-pager | tail -n 30
@@ -447,7 +447,7 @@ A. Les mots de passe. B. Symptôme, hypothèses, cause, correctif, retour arriè
 | `images/methode-depannage-2.svg` | Création originale (aucune source externe) | Projet Pack Master | CC0 1.0 — <https://creativecommons.org/publicdomain/zero/1.0/> | Sans objet |
 | `images/methode-depannage-3.svg` | Création originale (aucune source externe) | Projet Pack Master | CC0 1.0 — <https://creativecommons.org/publicdomain/zero/1.0/> | Sans objet |
 
-Création originale du projet Pack Master, dédiée au domaine public (CC0). Aucune image Commons retenue : l'API de Commons renvoyait HTTP 429 lors de la recherche.
+Création originale du projet Pack Master, dédiée au domaine public (CC0). Aucune image Commons retenue : l'[[Glossary:API]] de Commons renvoyait HTTP 429 lors de la recherche.
 
 ## Historique de vérification
 

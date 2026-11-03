@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Podman_Buildah_Securiser
 
-- **Environnement** : VM Ubuntu 24-04 LTS de laboratoire, utilisateur sudoer et compte de service dédié
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 [[Glossary:LTS]] de laboratoire, utilisateur sudoer et compte de service dédié
 - **OS / Version** : Ubuntu 24-04 LTS
 - **Catégorie** : conteneurs
 - **Tags** : `ubuntu2404`, `podman`, `buildah`, `conteneurs`, `rootless`, `oci`
@@ -23,7 +23,7 @@ Durcir l'exécution des conteneurs Podman : rootless, capacités, système de fi
    ```bash
    cat /etc/containers/policy.json
    ```
-   👉 Explication : la politique par défaut peut accepter toute image ; la durcir (signatures GPG ou sigstore, registres listés) suivant `containers-policy.json(5)`.
+   👉 Explication : la politique par défaut peut accepter toute image ; la durcir (signatures [[Glossary:GPG]] ou sigstore, registres listés) suivant `containers-policy.json(5)`.
 
 3. Utiliser les secrets Podman plutôt que des variables d'environnement (NOM_SECRET à remplacer ; le mot de passe est saisi, jamais écrit en dur) :
    ```bash

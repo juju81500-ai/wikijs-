@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Nextcloud_Securiser
 
-- **Environnement** : VM Debian 13; Nextcloud (archive officielle), Apache, PHP 8.4 et MariaDB
+- **Environnement** : [[Glossary:VM]] Debian 13; Nextcloud (archive officielle), Apache, PHP 8.4 et MariaDB
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / Nextcloud — Sécuriser
 - **Tags** : `debian13`, `nextcloud`, `cloud`, `apache`, `php`, `securiser`
@@ -20,7 +20,7 @@ Passer Nextcloud en HTTPS, durcir Apache et limiter les accès.
    ```
    👉 Explication : Certbot ajoute le virtual host 443 et la redirection ; renouvellement automatique via timer systemd.
 
-2. Activer HSTS et masquer les informations serveur :
+2. Activer [[Glossary:HSTS]] et masquer les informations serveur :
    ```bash
    sudo a2enmod headers
    sudo tee /etc/apache2/conf-available/nextcloud-secu.conf >/dev/null <<'EOF'
@@ -38,7 +38,7 @@ Passer Nextcloud en HTTPS, durcir Apache et limiter les accès.
    sudo ufw allow 80/tcp
    sudo ufw allow 443/tcp
    ```
-   👉 Explication : n'exposer que HTTP/HTTPS ; MariaDB reste en écoute locale uniquement.
+   👉 Explication : n'exposer que [[Glossary:HTTP]]/HTTPS ; MariaDB reste en écoute locale uniquement.
 
 4. Activer l'authentification à deux facteurs :
    ```bash
@@ -55,7 +55,7 @@ Passer Nextcloud en HTTPS, durcir Apache et limiter les accès.
 
 ## 2. Production — Contrôles
 
-Tester l'instance avec un scanner de configuration TLS reconnu sur votre propre domaine, vérifier le renouvellement du certificat et la protection contre le brute-force intégrée.
+Tester l'instance avec un scanner de configuration [[Glossary:TLS]] reconnu sur votre propre domaine, vérifier le renouvellement du certificat et la protection contre le brute-force intégrée.
 
 ## 3. Production — Sécurité
 

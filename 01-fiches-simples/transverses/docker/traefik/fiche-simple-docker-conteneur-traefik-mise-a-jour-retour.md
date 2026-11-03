@@ -13,7 +13,7 @@ Mettre à niveau Traefik avec un retour arrière sûr.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Sauvegarder configuration et stockage ACME :
+1. Sauvegarder configuration et stockage [[Glossary:ACME]] :
    ```bash
    cp -a acme.json acme.json.sauvegarde
    cp -a compose.yaml compose.yaml.sauvegarde

@@ -7,7 +7,7 @@
 ## 1. Périmètre et prérequis
 
 Deux éditeurs, deux produits : ne pas mélanger.
-- **Nakivo Backup & Replication** : sauvegarde/réplication de VM (VMware vSphere, Hyper-V, Nutanix AHV, etc.), machines physiques, cloud ; déploiement sur Windows, Linux, appliance ou NAS ; transporteurs, dépôts.
+- **Nakivo Backup & Replication** : sauvegarde/réplication de [[Glossary:VM]] (VMware vSphere, Hyper-V, Nutanix [[Glossary:AHV]], etc.), machines physiques, cloud ; déploiement sur Windows, Linux, appliance ou [[Glossary:NAS]] ; transporteurs, dépôts.
 - **Altaro VM Backup**, aujourd'hui commercialisé sous l'éditeur Hornetsecurity (gamme « VM Backup » ; Altaro est l'ancien nom) : sauvegarde Hyper-V et VMware. Gamme complémentaire « 365 Total Backup » pour Microsoft 365 : produit différent, licence par utilisateur.
 Prérequis : dépôt de sauvegarde sur stockage distinct de la production, règle 3-2-1, compte de service à droits minimaux, connectivité hyperviseur, synchronisation horaire, politique de rétention, chiffrement des sauvegardes avec séquestre de clé.
 
@@ -35,7 +35,7 @@ Prérequis : dépôt de sauvegarde sur stockage distinct de la production, règl
 
 ## 5. Vérifications
 
-- Tâche terminée sans avertissement ; sauvegarde cohérente applicativement (VSS pour Windows).
+- Tâche terminée sans avertissement ; sauvegarde cohérente applicativement ([[Glossary:VSS]] pour Windows).
 - Restauration vers un site de test réussie et vérifiée.
 - Alertes email/supervision actives.
 

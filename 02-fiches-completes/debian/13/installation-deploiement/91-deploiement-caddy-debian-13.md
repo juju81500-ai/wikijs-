@@ -10,9 +10,9 @@
 
 Fiche simple : [cadrer le pilote Caddy](../../../../01-fiches-simples/debian/13/vie-du-logiciel/caddy/fiche-simple-vm-debian-13-caddy-cadrer-pilote.md).
 
-Cette procédure installe Caddy depuis son dépôt APT officiel et publie un service HTTP local derrière un nom DNS. Elle ne configure pas de DNS, d'application amont, de SSO, de haute disponibilité ni de politique WAF.
+Cette procédure installe Caddy depuis son dépôt [[Glossary:APT]] officiel et publie un service [[Glossary:HTTP]] local derrière un nom [[Glossary:DNS]]. Elle ne configure pas de DNS, d'application amont, de [[Glossary:SSO]], de haute disponibilité ni de politique [[Glossary:WAF]].
 
-Prérequis : VM Debian 13 dédiée ou approuvée, nom de domaine contrôlé, DNS public/interne adapté, service amont actif, accès administrateur et sauvegarde des fichiers de configuration. Pour un certificat ACME public, le nom doit résoudre vers cette machine et les challenges nécessaires doivent être joignables. Ne jamais exposer le port de gestion ou une application amont non protégée.
+Prérequis : [[Glossary:VM]] Debian 13 dédiée ou approuvée, nom de domaine contrôlé, DNS public/interne adapté, service amont actif, accès administrateur et sauvegarde des fichiers de configuration. Pour un certificat [[Glossary:ACME]] public, le nom doit résoudre vers cette machine et les challenges nécessaires doivent être joignables. Ne jamais exposer le port de gestion ou une application amont non protégée.
 
 ## 2. Installer depuis le dépôt officiel
 
@@ -70,7 +70,7 @@ sudo systemctl reload caddy
 sudo systemctl --no-pager status caddy
 ```
 
-Si l'application n'écoute pas sur loopback, choisir un réseau dédié et des règles d'accès appropriées. Ouvrir seulement les ports entrants nécessaires (généralement TCP/80 et TCP/443 pour HTTP-01/TLS-ALPN-01), après vérification du gestionnaire de pare-feu actif.
+Si l'application n'écoute pas sur loopback, choisir un réseau dédié et des règles d'accès appropriées. Ouvrir seulement les ports entrants nécessaires (généralement [[Glossary:TCP]]/80 et TCP/443 pour HTTP-01/TLS-ALPN-01), après vérification du gestionnaire de pare-feu actif.
 
 ## 4. Vérifier le service
 

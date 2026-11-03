@@ -1,8 +1,8 @@
 # 📄 VM_WinSrv_2022_DNS_Configuration-Zone-Directe-Inverse.md
 
-- **Environnement** : VM (Hyper-V / Proxmox VE / VSphere)
+- **Environnement** : [[Glossary:VM]] (Hyper-V / Proxmox VE / VSphere)
 - **OS / Version** : Windows Server 2022 Standard / Datacenter - Famille Windows
-- **Catégorie** : Services Réseau / DNS
+- **Catégorie** : Services Réseau / [[Glossary:DNS]]
 - **Tags** : `[windows-server-2022]`, `[windows-family]`, `[dns]`, `[zone-directe]`, `[zone-inverse]`, `[gui]`, `[powershell]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
@@ -13,8 +13,8 @@ Installer le rôle Serveur DNS sur Windows Server 2022, créer une zone de reche
 ## 🖥️ Méthode Interface Graphique (GUI pas-à-pas)
 
 ### Prérequis
-- Configurer une adresse IP statique sur le serveur et confirmer le plan DNS avec l'administrateur réseau.
-- Choisir le type de zone avant création : une zone intégrée AD est réservée à un serveur DNS hébergé sur un contrôleur de domaine ; une zone autonome est stockée dans un fichier.
+- Configurer une adresse [[Glossary:IP]] statique sur le serveur et confirmer le plan DNS avec l'administrateur réseau.
+- Choisir le type de zone avant création : une zone intégrée [[Glossary:AD]] est réservée à un serveur DNS hébergé sur un contrôleur de domaine ; une zone autonome est stockée dans un fichier.
 - Une mise à jour dynamique sécurisée n'est disponible que pour une zone intégrée à Active Directory.
 
 ### Installer le rôle DNS
@@ -23,15 +23,15 @@ Installer le rôle Serveur DNS sur Windows Server 2022, créer une zone de reche
 3. Ouvrir **Gestionnaire de serveur** > **Outils** > **DNS** (ou `dnsmgmt.msc`).
 
 ### Créer la zone directe et la zone inverse
-1. Dans DNS Manager, clic droit sur **Zones de recherche directe** > **Nouvelle zone...**. Choisir **Zone principale**. Si le serveur est un DC et que la zone appartient au domaine AD, choisir **Stocker la zone dans Active Directory** et le périmètre de réplication validé ; sinon conserver une zone principale fichier.
+1. Dans DNS Manager, clic droit sur **Zones de recherche directe** > **Nouvelle zone...**. Choisir **Zone principale**. Si le serveur est un [[Glossary:DC]] et que la zone appartient au domaine AD, choisir **Stocker la zone dans Active Directory** et le périmètre de réplication validé ; sinon conserver une zone principale fichier.
 2. Saisir le nom de zone (`lab.local` uniquement si ce suffixe est réellement celui de l'environnement). Pour une zone AD intégrée, choisir **Mises à jour dynamiques sécurisées uniquement**. Ne pas activer les mises à jour non sécurisées.
 3. Clic droit sur **Zones de recherche inversée** > **Nouvelle zone...**. Choisir **Zone principale**, le mode de stockage cohérent avec la zone directe, **IPv4**, puis l'ID réseau `192.168.1` pour le sous-réseau `192.168.1.0/24`. Configurer les mises à jour dynamiques de la même façon que pour la zone directe.
-4. Ajouter les enregistrements A/PTR avec la procédure GUI de la fiche [DNS — créer un enregistrement A et CNAME](./fiche-simple-vm-windows-server-2022-dns-creer-enregistrement.md). Cocher la création PTR associée seulement si la zone inverse existe et si le serveur est autorisé à la modifier.
+4. Ajouter les enregistrements A/PTR avec la procédure [[Glossary:GUI]] de la fiche [DNS — créer un enregistrement A et CNAME](./fiche-simple-vm-windows-server-2022-dns-creer-enregistrement.md). Cocher la création PTR associée seulement si la zone inverse existe et si le serveur est autorisé à la modifier.
 
 ### Sécuriser et vérifier
 1. Dans les propriétés de chaque zone, onglet **Transferts de zone**, désactiver les transferts s'ils ne sont pas nécessaires ; sinon les limiter aux serveurs DNS secondaires approuvés. Ne jamais autoriser le transfert à n'importe quel serveur.
 2. Dans les propriétés du serveur > **Redirecteurs**, saisir uniquement les résolveurs amont approuvés par l'organisation. Ne pas utiliser directement des DNS publics pour un domaine AD interne sans décision d'architecture.
-3. Vérifier que les zones et enregistrements apparaissent dans DNS Manager, puis tester les résolutions directe et inverse depuis un client autorisé. Une vérification CLI `nslookup` peut compléter le contrôle graphique.
+3. Vérifier que les zones et enregistrements apparaissent dans DNS Manager, puis tester les résolutions directe et inverse depuis un client autorisé. Une vérification [[Glossary:CLI]] `nslookup` peut compléter le contrôle graphique.
 
 Référence : [Microsoft Learn — Installer et configurer DNS Server](https://learn.microsoft.com/en-us/windows-server/networking/dns/quickstart-install-configure-dns-server).
 
@@ -65,7 +65,7 @@ Référence : [Microsoft Learn — Installer et configurer DNS Server](https://l
 
 3. Création de la zone de recherche inversée intégrée Active Directory :
    `Add-DnsServerPrimaryZone -NetworkId "192.168.1.0/24" -ReplicationScope "Forest"`
-   👉 Explication : Crée la zone inversée 1.168.192.in-addr.arpa pour convertir les IP en noms FQDN.
+   👉 Explication : Crée la zone inversée 1.168.192.in-addr.arpa pour convertir les IP en noms [[Glossary:FQDN]].
 
 4. Création simultanée d'un enregistrement A et de son pointeur PTR :
    `Add-DnsServerResourceRecordA -Name "srv-app" -ZoneName "lab.local" -IPv4Address "192.168.1.60" -CreatePtr`
@@ -84,7 +84,7 @@ Référence : [Microsoft Learn — Installer et configurer DNS Server](https://l
 
 3. Activation du verrouillage du cache DNS (Cache Locking) et anti-recul :
    `Set-DnsServerCache -CacheLockingPercent 96`
-   👉 Explication : Empêche la modification des enregistrements en cache jusqu'à l'expiration de leur TTL (protection contre le Cache Poisoning / Spoofing).
+   👉 Explication : Empêche la modification des enregistrements en cache jusqu'à l'expiration de leur [[Glossary:TTL]] (protection contre le Cache Poisoning / Spoofing).
 
 4. Configuration des réexpéditeurs DNS approuvés :
    `Set-DnsServerForwarder -IPAddress "10.0.0.53","10.0.0.54"`
@@ -92,4 +92,4 @@ Référence : [Microsoft Learn — Installer et configurer DNS Server](https://l
 
 5. Application des règles de pare-feu Windows pour le trafic DNS sécurisé :
    `Set-NetFirewallRule -DisplayGroup "Serveur DNS" -Enabled True -Profile Domain,Private`
-   👉 Explication : Autorise les flux UDP/TCP 53 uniquement sur les profils réseau privés et de domaine.
+   👉 Explication : Autorise les flux [[Glossary:UDP]]/TCP 53 uniquement sur les profils réseau privés et de domaine.

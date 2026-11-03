@@ -25,7 +25,7 @@ Installer OneAgent sur un seul hôte de test et vérifier son arrivée dans le t
 3. Dans Dynatrace, ouvrir **Infrastructure > Hosts** (nom du menu variable selon la version) et vérifier l'hôte, ses métadonnées et le mode choisi.
    👉 Explication : confirme l'arrivée de l'hôte dans le bon tenant.
 
-4. Redémarrer les processus applicatifs seulement si nécessaire pour le monitoring profond, dans une fenêtre approuvée, puis contrôler CPU, mémoire et disponibilité.
+4. Redémarrer les processus applicatifs seulement si nécessaire pour le monitoring profond, dans une fenêtre approuvée, puis contrôler [[Glossary:CPU]], mémoire et disponibilité.
    👉 Explication : mesure l'impact avant le déploiement à l'échelle.
 
 ## 2. Production — Contrôles

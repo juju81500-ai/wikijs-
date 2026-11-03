@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-samba-ad-dc-resolveur-demarrage.md
 
-- **Environnement** : VM Debian 13 de laboratoire, contrôleur de domaine Samba AD DC (DNS SAMBA_INTERNAL)
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire, contrôleur de domaine Samba [[Glossary:AD]] [[Glossary:DC]] ([[Glossary:DNS]] SAMBA_INTERNAL)
 - **OS / Version** : Debian 13 Trixie; Samba 4.22 (dépôts Debian)
 - **Catégorie** : annuaire / service
 - **Tags** : `debian13`, `samba`, `active-directory`, `lab`, `dns`, `systemd`

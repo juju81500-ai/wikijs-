@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Installer le paquet vérifié avec APT, qui résout ses dépendances.
+Installer le paquet vérifié avec [[Glossary:APT]], qui résout ses dépendances.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

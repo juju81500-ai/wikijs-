@@ -20,7 +20,7 @@ Avant toute modification, consigner le propriétaire du service, les actifs et u
 
 ## 🔎 Validation
 
-Déployer d’abord sur un groupe pilote, valider connexion des utilisateurs autorisés, MFA, accès aux seules ressources attendues, mise à jour et remontée des journaux. En cas d’incident, suspendre le lot, rétablir le package/profil précédent supporté et révoquer les accès concernés. Vérifier aussi l’horodatage, la journalisation et l’absence de secrets dans les tickets ou exports; faire approuver le résultat par le propriétaire du service.
+Déployer d’abord sur un groupe pilote, valider connexion des utilisateurs autorisés, [[Glossary:MFA]], accès aux seules ressources attendues, mise à jour et remontée des journaux. En cas d’incident, suspendre le lot, rétablir le package/profil précédent supporté et révoquer les accès concernés. Vérifier aussi l’horodatage, la journalisation et l’absence de secrets dans les tickets ou exports; faire approuver le résultat par le propriétaire du service.
 
 ## ↩️ Retour arrière
 

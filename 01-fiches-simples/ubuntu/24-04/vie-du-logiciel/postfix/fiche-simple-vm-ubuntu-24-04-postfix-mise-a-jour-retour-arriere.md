@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Postfix_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Ubuntu Server 24-04; Postfix depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04; Postfix depuis les dépôts de la distribution
 - **OS / Version** : Ubuntu Server 24-04
 - **Catégorie** : Vie du logiciel / Postfix — Mise à jour et retour arrière
 - **Tags** : `postfix`, `serveur`, `vie-du-logiciel`, `mise_a_jour_retour_arriere`

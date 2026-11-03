@@ -10,7 +10,7 @@
 
 À l'issue de cette leçon, vous saurez :
 
-1. expliquer le rôle d'un serveur de fichiers et distinguer SMB/CIFS (monde Windows, Samba) de NFS (monde Unix) ;
+1. expliquer le rôle d'un serveur de fichiers et distinguer SMB/CIFS (monde Windows, Samba) de [[Glossary:NFS]] (monde Unix) ;
 2. publier un dossier avec Samba sous Linux et avec `New-SmbShare` sous Windows Server ;
 3. exporter un dossier en NFS et le monter sur un client Linux ;
 4. raisonner sur la **double couche de permissions** (droits du partage et droits du système de fichiers) et prédire l'accès effectif ;
@@ -21,15 +21,15 @@
 ## Prérequis et durée
 
 - Connaissances de base de Linux (ligne de commande, utilisateurs et groupes, droits `rwx`) et de la leçon sur le stockage local (partitions, systèmes de fichiers, `fstab`) — voir [Leçon — Stockage local](lecon-stockage-local.md).
-- Notions de réseau IP : adresse, masque, port TCP, pare-feu.
-- Une ou deux machines virtuelles **jetables** : une VM Linux (Debian/Ubuntu Server) suffit pour tout le laboratoire ; une VM Windows Server d'évaluation est optionnelle.
+- Notions de réseau [[Glossary:IP]] : adresse, masque, port [[Glossary:TCP]], pare-feu.
+- Une ou deux machines virtuelles **jetables** : une [[Glossary:VM]] Linux (Debian/Ubuntu Server) suffit pour tout le laboratoire ; une VM Windows Server d'évaluation est optionnelle.
 - Durée totale : environ 3 h 30.
 
 Convention : serveur `srv-fichiers.example.test` = `192.0.2.10`, clients dans `192.0.2.0/24`, domaine fictif `EXAMPLE`. Aucun mot de passe réel n'est écrit ; les mots de passe sont saisis à l'invite et ne doivent jamais figurer dans un script ni dans un dépôt.
 
 ## L'essentiel en bref
 
-- Un **serveur de fichiers** rend un dossier accessible à plusieurs machines. Le client voit un dossier ou un lecteur ; le serveur garde le contrôle du système de fichiers (c'est ce qui le distingue d'un disque en mode bloc, cf. leçon NAS/SAN/iSCSI).
+- Un **serveur de fichiers** rend un dossier accessible à plusieurs machines. Le client voit un dossier ou un lecteur ; le serveur garde le contrôle du système de fichiers (c'est ce qui le distingue d'un disque en mode bloc, cf. leçon [[Glossary:NAS]]/SAN/iSCSI).
 - **SMB/CIFS** (TCP 445) : standard Windows, implémenté sous Linux par **Samba** ; authentification par comptes (local, domaine, Kerberos).
 - **NFS** (TCP/UDP 2049, version 4 conseillée) : standard Unix/Linux ; identification par UID/GID ou Kerberos.
 - Accès effectif = **intersection** des droits du partage et des droits du système de fichiers : le plus restrictif l'emporte.
@@ -56,11 +56,11 @@ Les deux familles à maîtriser :
 | Implémentation Linux | Samba (serveur), `cifs-utils` (client) | `nfs-kernel-server`, `nfs-common` |
 | Port | TCP 445 | TCP 2049 (NFSv4) |
 | Identification | Comptes et mots de passe, domaine, Kerberos | UID/GID par défaut, Kerberos en option |
-| Sémantique de droits | ACL Windows (NTFS) | Droits POSIX, ACL NFSv4 |
+| Sémantique de droits | [[Glossary:ACL]] Windows ([[Glossary:NTFS]]) | Droits POSIX, ACL NFSv4 |
 | Usage typique | Postes Windows, partages de service, imprimantes | Serveurs Linux, virtualisation, home dirs Unix |
 | Découverte | Navigation réseau, DFS | Aucune : on connaît l'export |
 
-**CIFS** désigne à l'origine un ancien dialecte (SMB 1) mais reste employé pour SMB en général ; la commande Linux `mount -t cifs` négocie aujourd'hui SMB 2 ou 3.
+**[[Glossary:CIFS]]** désigne à l'origine un ancien dialecte (SMB 1) mais reste employé pour SMB en général ; la commande Linux `mount -t cifs` négocie aujourd'hui SMB 2 ou 3.
 
 ## 2. SMB : partages Windows et Samba
 
@@ -184,7 +184,7 @@ Get-SmbShareAccess -Name Compta
 
 👉 Explication : commandes en lecture seule qui listent les partages publiés et leurs permissions de partage (pas les permissions NTFS).
 
-Bonne pratique Windows : utiliser le modèle **AGDLP** (comptes → groupes globaux → groupes locaux de domaine → permissions) plutôt que des droits individuels.
+Bonne pratique Windows : utiliser le modèle **[[Glossary:AGDLP]]** (comptes → groupes globaux → groupes locaux de domaine → permissions) plutôt que des droits individuels.
 
 ## 3. NFS : le partage Unix
 
@@ -197,7 +197,7 @@ Les versions à connaître :
 - **NFSv3** : sans état, plusieurs services annexes (`rpcbind`, `mountd`, `lockd`…) et ports variables — pénible à filtrer ;
 - **NFSv4** (RFC 7530) puis **4.1/4.2** : avec état, **un seul port (TCP 2049)**, verrouillage intégré, ACL, authentification Kerberos possible, meilleure traversée des pare-feu. **Choix par défaut aujourd'hui.**
 
-Point de vigilance : NFS fait confiance au client et applique tel quel l'**UID/GID** reçu. Si `alice` est l'UID 1001 sur le client et 1002 sur le serveur, les droits sont faux. Il faut des UID/GID **cohérents** (LDAP, SSSD) ou Kerberos (`sec=krb5`) dès que le réseau n'est pas totalement maîtrisé.
+Point de vigilance : NFS fait confiance au client et applique tel quel l'**UID/GID** reçu. Si `alice` est l'UID 1001 sur le client et 1002 sur le serveur, les droits sont faux. Il faut des UID/GID **cohérents** ([[Glossary:LDAP]], [[Glossary:SSSD]]) ou Kerberos (`sec=krb5`) dès que le réseau n'est pas totalement maîtrisé.
 
 ### 3.2 Exporter un dossier
 
@@ -293,7 +293,7 @@ sudo setfacl -d -m g:grp_audit:rx /srv/partage/compta
 getfacl /srv/partage/compta
 ```
 
-👉 Explication : donne au groupe `grp_audit` un accès en lecture et traversée ; la seconde commande définit l'ACL **par défaut** (`-d`) pour que les futurs fichiers l'héritent ; `getfacl` affiche le résultat. Le système de fichiers doit supporter les ACL (ext4 et XFS le font par défaut).
+👉 Explication : donne au groupe `grp_audit` un accès en lecture et traversée ; la seconde commande définit l'ACL **par défaut** (`-d`) pour que les futurs fichiers l'héritent ; `getfacl` affiche le résultat. Le système de fichiers doit supporter les ACL (ext4 et [[Glossary:XFS]] le font par défaut).
 
 ### 4.3 Côté NFS
 
@@ -349,7 +349,7 @@ sudo mount -a
 ### 5.3 Les erreurs classiques
 
 - **Sans `nofail`/`_netdev`** : le démarrage attend 90 s ou bascule en mode secours si le serveur est injoignable.
-- **Nom non résolu au démarrage** : préférer un DNS fiable ou une IP fixe.
+- **Nom non résolu au démarrage** : préférer un [[Glossary:DNS]] fiable ou une IP fixe.
 - **Fichiers créés sous le point de montage avant le montage** : masqués une fois le partage monté, ils semblent « disparus ».
 - **Montage obsolète (*stale file handle*)** : `umount -l` puis remonter.
 
@@ -431,7 +431,7 @@ Observer d'abord (quota souple), prévenir à 80 et 90 %, prévoir une procédur
 - SMB 1 désactivé, signature SMB, chiffrement SMB 3 pour les données sensibles, pas d'accès invité.
 - Moindre privilège : groupes par rôle, revue périodique.
 - Journaux : `journalctl -u smbd`, `/var/log/samba/`, `journalctl -u nfs-server`, audit Windows.
-- Les « versions précédentes » (VSS, snapshots) ne remplacent pas une sauvegarde externe testée.
+- Les « versions précédentes » ([[Glossary:VSS]], snapshots) ne remplacent pas une sauvegarde externe testée.
 - Utiliser un nom DNS de service (`fichiers.example.test`) pour migrer sans toucher aux clients.
 
 ---

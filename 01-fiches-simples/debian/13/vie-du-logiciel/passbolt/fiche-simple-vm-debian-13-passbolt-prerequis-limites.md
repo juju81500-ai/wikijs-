@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Passbolt_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 dédiée avec domaine, base et SMTP définis
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée avec domaine, base et [[Glossary:SMTP]] définis
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : gestionnaire de secrets / serveur
 - **Tags** : `debian13`, `passbolt`, `secrets`, `tls`, `sauvegarde`
@@ -8,7 +8,7 @@
 
 ## Problème précis à résoudre
 
-Préparer DNS, base, SMTP, TLS et récupération des clés avant l’installation Passbolt CE.
+Préparer [[Glossary:DNS]], base, SMTP, [[Glossary:TLS]] et récupération des clés avant l’installation Passbolt CE.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -19,13 +19,13 @@ Préparer DNS, base, SMTP, TLS et récupération des clés avant l’installatio
    df -h
    getent hosts passbolt.example.com
    ```
-   👉 Explication : remplacer le FQDN par le nom à remplacer; horloge correcte.
+   👉 Explication : remplacer le [[Glossary:FQDN]] par le nom à remplacer; horloge correcte.
 
 2. Définir base, SMTP et propriétaire
    ```text
    Navigateur > ouvrir la documentation officielle : https://www.passbolt.com/docs/hosting/install/ce/debian/
    ```
-   👉 Explication : confirmer versions supportées dans guide CE. Détail à confirmer dans la documentation officielle avant application : Documenter base supportée, relais mail, stockage, responsable, rétention et RPO/RTO.
+   👉 Explication : confirmer versions supportées dans guide CE. Détail à confirmer dans la documentation officielle avant application : Documenter base supportée, relais mail, stockage, responsable, rétention et [[Glossary:RPO]]/RTO.
 
 3. Vérifier les ports exposés
    ```bash

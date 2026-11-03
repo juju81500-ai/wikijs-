@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Nginx_Installer
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; Nginx des dépôts Debian
 - **Catégorie** : serveur Web / Nginx / Installer
 - **Tags** : `debian13`, `nginx`, `installation`

@@ -2,19 +2,19 @@
 
 - **OS / Version** : TrueNAS SCALE 25.10 Community Edition; matériel x86-64 compatible
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : NAS autonome pilote, pool miroir, partage contrôlé et copie de sauvegarde
-- **Catégorie** : Stockage réseau / NAS ZFS
+- **Périmètre** : [[Glossary:NAS]] autonome pilote, pool miroir, partage contrôlé et copie de sauvegarde
+- **Catégorie** : Stockage réseau / NAS [[Glossary:ZFS]]
 - **Tags** : `truenas`, `scale2510`, `zfs`, `nas`, `smb`, `nfs`, `sauvegarde`
 
 ## 1. Dimensionner et préparer
 
 Fiche simple : [dimensionner et préparer](../../../../01-fiches-simples/truenas/scale-25-10/vie-du-systeme/fiches-par-theme/deploiement/fiche-simple-truenas-scale-25-10-deploiement-dimensionner-preparer.md).
 
-Confirmer matériel, contrôleur HBA, disques, réseau, capacité utile, croissance, tolérance aux pannes et clients SMB/NFS/iSCSI. La documentation TrueNAS donne 8 Go de RAM comme minimum de base et au moins deux disques de même capacité pour un pool miroir; augmenter les ressources selon nombre de disques, connexions, apps, VM et charge. Utiliser ECC lorsque le matériel le permet.
+Confirmer matériel, contrôleur [[Glossary:HBA]], disques, réseau, capacité utile, croissance, tolérance aux pannes et clients SMB/NFS/iSCSI. La documentation TrueNAS donne 8 Go de [[Glossary:RAM]] comme minimum de base et au moins deux disques de même capacité pour un pool miroir; augmenter les ressources selon nombre de disques, connexions, apps, [[Glossary:VM]] et charge. Utiliser ECC lorsque le matériel le permet.
 
-TrueNAS doit voir les disques de données directement. Éviter un contrôleur RAID matériel qui masque les disques et leurs informations SMART; utiliser HBA/JBOD compatible. TrueNAS virtualisé avec disques virtuels n'est pas recommandé pour héberger des données critiques en production.
+TrueNAS doit voir les disques de données directement. Éviter un contrôleur [[Glossary:RAID]] matériel qui masque les disques et leurs informations [[Glossary:SMART]]; utiliser HBA/JBOD compatible. TrueNAS virtualisé avec disques virtuels n'est pas recommandé pour héberger des données critiques en production.
 
-Réserver un support de démarrage distinct (20 Go recommandé par l'installateur 25.10), un accès console/IPMI, une interface de gestion et un réseau de stockage approprié. Définir les VLANs, DNS, NTP, certificats TLS, administrateurs, partage prévu et stratégie de chiffrement des datasets.
+Réserver un support de démarrage distinct (20 Go recommandé par l'installateur 25.10), un accès console/IPMI, une interface de gestion et un réseau de stockage approprié. Définir les VLANs, [[Glossary:DNS]], [[Glossary:NTP]], certificats [[Glossary:TLS]], administrateurs, partage prévu et stratégie de chiffrement des datasets.
 
 ## 2. Télécharger, vérifier et installer
 
@@ -22,7 +22,7 @@ Fiche simple : [télécharger, vérifier et installer](../../../../01-fiches-sim
 
 Télécharger l'ISO TrueNAS SCALE 25.10 depuis la page officielle, puis vérifier SHA-256 ou signature PGP publiée avant de créer le média. Démarrer en UEFI selon le matériel et installer sur le périphérique de boot identifié; l'installateur efface le disque choisi.
 
-Après redémarrage, utiliser l'adresse affichée dans le menu console pour ouvrir l'interface d'administration. Définir un compte admin dédié, un mot de passe unique, nom d'hôte, IP statique et DNS/NTP. Utiliser HTTPS avec un certificat approuvé et ne pas exposer l'interface à Internet.
+Après redémarrage, utiliser l'adresse affichée dans le menu console pour ouvrir l'interface d'administration. Définir un compte admin dédié, un mot de passe unique, nom d'hôte, [[Glossary:IP]] statique et DNS/NTP. Utiliser HTTPS avec un certificat approuvé et ne pas exposer l'interface à Internet.
 
 ## 3. Créer le pool et les datasets
 
@@ -30,7 +30,7 @@ Fiche simple : [créer le pool et les datasets](../../../../01-fiches-simples/tr
 
 Planifier les vdevs en fonction de capacité, disponibilité, performances et extensions futures. Le choix de layout est difficile à modifier après création. Pour un pilote, sélectionner les disques attendus et un layout miroir simple; pour la production, faire valider le nombre de vdevs, la redondance, les spare et le plan de remplacement par le responsable stockage.
 
-Créer des datasets enfants distincts par usage/équipe; ne jamais partager le dataset racine du pool. Examiner preset, sensibilité de casse, ACL et chiffrement avant sauvegarde des données. Créer un jeu de données et un partage SMB/NFS dédiés avec comptes nominatifs et permissions minimales.
+Créer des datasets enfants distincts par usage/équipe; ne jamais partager le dataset racine du pool. Examiner preset, sensibilité de casse, [[Glossary:ACL]] et chiffrement avant sauvegarde des données. Créer un jeu de données et un partage SMB/NFS dédiés avec comptes nominatifs et permissions minimales.
 
 ## 4. Mettre en service le partage
 
@@ -55,7 +55,7 @@ Fiche simple : [exploiter et revenir en arrière](../../../../01-fiches-simples/
 - Vérifier l'état du pool et les alertes dans l'interface; ne pas lancer de scrub ou remplacement de disque sans suivre la procédure et identifier le slot/périphérique.
 - Avant upgrade, vérifier les notes 25.10, sauvegarder configuration et données, puis tester l'accès aux partages.
 - En cas de panne, isoler le NAS du réseau si nécessaire, ne jamais créer un nouveau pool sur les disques existants et contacter l'équipe stockage/support.
-- Documenter topologie, layout, numéros de série, chiffrement, propriétaires de partages, RPO/RTO et résultats des restaurations.
+- Documenter topologie, layout, numéros de série, chiffrement, propriétaires de partages, [[Glossary:RPO]]/RTO et résultats des restaurations.
 
 ## Sources
 

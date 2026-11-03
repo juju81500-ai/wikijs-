@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_12_Vie_Systeme_18_Table_D_Hotes_Locale
 
-- **Environnement** : VM Debian 12 « bookworm » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 12 « bookworm » (serveur)
 - **OS / Version** : Debian 12; étape 18 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian12`, `vie-du-systeme`, `cycle-de-vie`, `etape-18`
@@ -22,7 +22,7 @@ Compléter `/etc/hosts` si besoin.
 
 ## 2. Production — Contrôles
 
-Utiliser le DNS plutôt que `/etc/hosts` pour tout hôte partagé.
+Utiliser le [[Glossary:DNS]] plutôt que `/etc/hosts` pour tout hôte partagé.
 
 ## 3. Production — Sécurité
 

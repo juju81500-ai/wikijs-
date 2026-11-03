@@ -25,7 +25,7 @@ Installer une version Vault officielle et épinglée, avec utilisateur de servic
    curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
    echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] https://apt.releases.hashicorp.com $(lsb_release -cs) main" | sudo tee /etc/apt/sources.list.d/hashicorp.list
    ```
-   👉 Explication : le dépôt est signé : APT refusera un paquet altéré. Si la documentation éditeur indique un autre nom de suite pour trixie, la suivre.
+   👉 Explication : le dépôt est signé : [[Glossary:APT]] refusera un paquet altéré. Si la documentation éditeur indique un autre nom de suite pour trixie, la suivre.
 
 3. Lister les versions disponibles puis installer une version précise (version d'exemple à remplacer par celle validée) :
    ```bash

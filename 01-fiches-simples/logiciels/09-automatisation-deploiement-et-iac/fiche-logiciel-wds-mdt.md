@@ -2,13 +2,13 @@
 
 - **Catégorie** : Automatisation, déploiement et IaC
 - **Plateforme** : Windows / Linux
-- **Produit (matrice)** : WDS + MDT / FOG Project
+- **Produit (matrice)** : WDS + [[Glossary:MDT]] / FOG Project
 - **Statut dans le pack** : Couvert — Windows Server 2022 (7 fiches). Windows Server 2025 non couvert : limite WDS documentée par Microsoft (voir Couverture).
 - **Tags** : `logiciel`, `09-automatisation-deploiement-et-iac`, `couvert`
 
 ## 📚 Couverture dans le pack
 
-Série Windows Server 2022 en 7 fiches : prérequis, installation, configuration, sécurisation, recette PXE, sauvegarde et maintenance. La [procédure historique WDS/MDT](fiche-simple-wds-mdt.md) reste disponible et n’est pas dupliquée. Windows Server 2025 : non couvert — Microsoft documente que le déploiement WDS depuis le `boot.wim` des médias Windows 11 et des versions futures de Windows Server est bloqué (PXE vers images personnalisées MDT/Configuration Manager non affecté) et recommande Configuration Manager ou MDT; aucune procédure 2025 n’est inventée ici. Le statut de support de MDT est à vérifier sur Microsoft Learn.
+Série Windows Server 2022 en 7 fiches : prérequis, installation, configuration, sécurisation, recette [[Glossary:PXE]], sauvegarde et maintenance. La [procédure historique WDS/MDT](fiche-simple-wds-mdt.md) reste disponible et n’est pas dupliquée. Windows Server 2025 : non couvert — Microsoft documente que le déploiement WDS depuis le `boot.wim` des médias Windows 11 et des versions futures de Windows Server est bloqué (PXE vers images personnalisées MDT/Configuration Manager non affecté) et recommande Configuration Manager ou MDT; aucune procédure 2025 n’est inventée ici. Le statut de support de MDT est à vérifier sur Microsoft Learn.
 
 Fiches simples du guide : [prérequis et limites](../../windows/server-2022/vie-du-logiciel/wds-mdt/fiche-simple-windows-server-2022-wds-mdt-prerequis-limites.md), [installation](../../windows/server-2022/vie-du-logiciel/wds-mdt/fiche-simple-windows-server-2022-wds-mdt-installer.md), [configuration](../../windows/server-2022/vie-du-logiciel/wds-mdt/fiche-simple-windows-server-2022-wds-mdt-configurer.md), [sécurisation](../../windows/server-2022/vie-du-logiciel/wds-mdt/fiche-simple-windows-server-2022-wds-mdt-securisation.md), [recette PXE](../../windows/server-2022/vie-du-logiciel/wds-mdt/fiche-simple-windows-server-2022-wds-mdt-recette.md), [sauvegarde et restauration](../../windows/server-2022/vie-du-logiciel/wds-mdt/fiche-simple-windows-server-2022-wds-mdt-sauvegarde-restauration.md), [maintenance et retour arrière](../../windows/server-2022/vie-du-logiciel/wds-mdt/fiche-simple-windows-server-2022-wds-mdt-maintenance-retour-arriere.md)
 

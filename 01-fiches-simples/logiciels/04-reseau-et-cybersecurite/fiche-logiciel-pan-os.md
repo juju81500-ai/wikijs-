@@ -12,7 +12,7 @@ Fiche défensive d’administration et de gouvernance. Elle ne remplace pas le g
 
 ## 🧭 Périmètre
 
-Gérer les rôles d’administration nominatifs, MFA/SSO selon les capacités déployées, le plan de gestion isolé et les changements de politiques via le processus de revue. Vérifier les sauvegardes de configuration et leur protection, l’état des journaux centralisés et les avis de sécurité; valider la compatibilité des mises à jour et de Panorama le cas échéant dans la documentation de la version sous support.
+Gérer les rôles d’administration nominatifs, [[Glossary:MFA]]/SSO selon les capacités déployées, le plan de gestion isolé et les changements de politiques via le processus de revue. Vérifier les sauvegardes de configuration et leur protection, l’état des journaux centralisés et les avis de sécurité; valider la compatibilité des mises à jour et de Panorama le cas échéant dans la documentation de la version sous support.
 
 ## ✅ Autorisation et préparation
 

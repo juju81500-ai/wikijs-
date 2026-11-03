@@ -1,7 +1,7 @@
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Journaux_Journald_Logrotate
 
-- **Environnement** : VM ou serveur Ubuntu avec journaux systemd et services applicatifs
-- **OS / Version** : Ubuntu Server 26-04 LTS (systemd 259)
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu avec journaux systemd et services applicatifs
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]] (systemd 259)
 - **Catégorie** : Journaux / Rétention et rotation
 - **Tags** : `ubuntu2604`, `journald`, `logrotate`, `systemd`, `retention`, `journaux`
 

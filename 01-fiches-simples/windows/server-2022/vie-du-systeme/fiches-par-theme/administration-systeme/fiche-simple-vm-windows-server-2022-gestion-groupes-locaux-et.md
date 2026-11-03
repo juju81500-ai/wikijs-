@@ -1,6 +1,6 @@
 # 📄 VM_WinSrv_2022_Utilisateurs_Gestion-Groupes-Locaux-Et-AD.md
 
-- **Environnement** : VM / Contrôleur de Domaine (Windows Server 2022)
+- **Environnement** : [[Glossary:VM]] / Contrôleur de Domaine (Windows Server 2022)
 - **OS / Version** : Windows Server 2022 Standard / Datacenter
 - **Catégorie** : Utilisateurs & Droits / Groupes Active Directory & Locaux
 - **Tags** : `[winsrv2022]`, `[active-directory]`, `[groupes]`, `[agdlp]`, `[gui]`, `[powershell]`
@@ -8,17 +8,17 @@
 ---
 
 ## 🎯 Problème précis à résoudre
-Créer des groupes de sécurité locaux et Active Directory (Global / Local de Domaine), ajouter et retirer des membres, et implémenter la stratégie d'attribution des droits selon le modèle AGDLP.
+Créer des groupes de sécurité locaux et Active Directory (Global / Local de Domaine), ajouter et retirer des membres, et implémenter la stratégie d'attribution des droits selon le modèle [[Glossary:AGDLP]].
 
 ---
 
 ## 🖥️ Méthode Interface Graphique (GUI Pas-à-Pas)
 
 ### Créer un groupe Active Directory
-1. Sur un serveur avec les outils AD DS/RSAT, ouvrir **Gestionnaire de serveur** > **Outils** > **Utilisateurs et ordinateurs Active Directory** (`dsa.msc`).
-2. Dans l'OU prévue pour les groupes, clic droit > **Nouveau** > **Groupe**. Saisir un nom explicite (ex. `GRP_TSSR_Techniciens`), choisir **Global** comme étendue et **Sécurité** comme type, puis valider.
+1. Sur un serveur avec les outils [[Glossary:AD]] DS/RSAT, ouvrir **Gestionnaire de serveur** > **Outils** > **Utilisateurs et ordinateurs Active Directory** (`dsa.msc`).
+2. Dans l'[[Glossary:OU]] prévue pour les groupes, clic droit > **Nouveau** > **Groupe**. Saisir un nom explicite (ex. `GRP_TSSR_Techniciens`), choisir **Global** comme étendue et **Sécurité** comme type, puis valider.
 3. Ouvrir les propriétés du groupe > **Membres** > **Ajouter**, saisir le compte (ex. `jdupont`), choisir **Vérifier les noms**, puis **OK**. Confirmer le membre dans la liste.
-4. Pour attribuer un accès à une ressource selon AGDLP, créer le groupe de ressource **Domain Local** (ex. `DL_Donnees_Modification`), y ajouter le groupe Global métier, puis attribuer les permissions de la ressource au groupe Domain Local. Ne pas attribuer directement des ACL aux personnes.
+4. Pour attribuer un accès à une ressource selon AGDLP, créer le groupe de ressource **Domain Local** (ex. `DL_Donnees_Modification`), y ajouter le groupe Global métier, puis attribuer les permissions de la ressource au groupe Domain Local. Ne pas attribuer directement des [[Glossary:ACL]] aux personnes.
 
 ### Gérer un groupe local sur un serveur membre
 1. Sur un serveur autonome ou membre du domaine (pas sur un contrôleur de domaine), ouvrir **Gestion de l'ordinateur** (`compmgmt.msc`) > **Utilisateurs et groupes locaux** > **Groupes**.
@@ -51,7 +51,7 @@ Sur un contrôleur de domaine, **Utilisateurs et groupes locaux** n'est pas disp
    Get-ADGroupMember -Identity "GRP_TSSR_Techniciens"
    ```
    👉 Explication : vérifie le résultat.
-5. Groupe local sur un serveur membre (équivalent de la méthode GUI) :
+5. Groupe local sur un serveur membre (équivalent de la méthode [[Glossary:GUI]]) :
    ```powershell
    New-LocalGroup -Name "GRP_Local_Support" -Description "Support"
    Add-LocalGroupMember -Group "GRP_Local_Support" -Member "LAB\jdupont"

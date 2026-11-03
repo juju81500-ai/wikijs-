@@ -1,8 +1,8 @@
 # Déployer LibreNMS 26.10.2 sur Ubuntu Server 26-04
 
-- **OS / Version** : Ubuntu Server 26-04 LTS; LibreNMS 26.10.2; PHP 8.5
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]]; LibreNMS 26.10.2; PHP 8.5
 - **Type de fiche** : Installation/Déploiement
-- **Environnement** : VM Linux dédiée, Nginx, PHP-FPM, MariaDB et SNMP
+- **Environnement** : [[Glossary:VM]] Linux dédiée, Nginx, PHP-FPM, MariaDB et [[Glossary:SNMP]]
 - **Machine ciblée** : Serveur de supervision réseau
 - **Catégorie** : Supervision / SNMP
 - **Tags** : `librenms`, `ubuntu2604`, `supervision`, `snmpv3`, `nginx`, `mariadb`
@@ -11,7 +11,7 @@
 
 Fiche simple : [préparer le serveur LibreNMS](../../../../01-fiches-simples/ubuntu/26-04/vie-du-logiciel/librenms/fiche-simple-vm-ubuntu-26-04-librenms-preparer-serveur.md).
 
-LibreNMS recommande PHP 8.5 (minimum 8.4). Vérifier que la version est disponible depuis les dépôts Ubuntu approuvés avant installation; ne pas ajouter de dépôt tiers PHP non validé. Prévoir DNS, TLS, NTP, disque dédié aux RRD/logs, sauvegardes et liste des appareils que l'organisation est autorisée à superviser.
+LibreNMS recommande PHP 8.5 (minimum 8.4). Vérifier que la version est disponible depuis les dépôts Ubuntu approuvés avant installation; ne pas ajouter de dépôt tiers PHP non validé. Prévoir [[Glossary:DNS]], [[Glossary:TLS]], [[Glossary:NTP]], disque dédié aux RRD/logs, sauvegardes et liste des appareils que l'organisation est autorisée à superviser.
 
 L'interface de LibreNMS n'est pas sécurisée pour exposition Internet par défaut. Prévoir un reverse proxy HTTPS/SSO ou un accès limité au réseau de supervision. Utiliser exclusivement des secrets SNMPv3 en lecture seule lorsque les équipements le permettent.
 
@@ -134,7 +134,7 @@ server {
 }
 ```
 
-Cette configuration écoute en HTTP uniquement pour le contrôle initial; ne pas exposer l'application ainsi. Mettre ensuite le TLS au reverse proxy ou configurer un vhost HTTPS approuvé avant accès utilisateur. Tester puis redémarrer :
+Cette configuration écoute en [[Glossary:HTTP]] uniquement pour le contrôle initial; ne pas exposer l'application ainsi. Mettre ensuite le TLS au reverse proxy ou configurer un vhost HTTPS approuvé avant accès utilisateur. Tester puis redémarrer :
 
 ```bash
 sudo nginx -t

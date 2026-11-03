@@ -32,11 +32,11 @@ Protéger l'état du cluster et organiser les mises à niveau/migrations selon l
    ```bash
    sudo kubeadm reset
    ```
-   👉 Explication : destructif pour la configuration locale du nœud. Après une mise à niveau échouée, restaurer le snapshot de VM ou la sauvegarde etcd.
+   👉 Explication : destructif pour la configuration locale du nœud. Après une mise à niveau échouée, restaurer le snapshot de [[Glossary:VM]] ou la sauvegarde etcd.
 
 ## 2. Production — Contrôles
 
-Définir RPO/RTO, fréquence, chiffrement, conservation, ordre d'upgrade, fenêtre, supervision et critères de validation avant chaque mise à niveau.
+Définir [[Glossary:RPO]]/RTO, fréquence, chiffrement, conservation, ordre d'upgrade, fenêtre, supervision et critères de validation avant chaque mise à niveau.
 
 ## 3. Production — Sécurité
 

@@ -13,7 +13,7 @@ Garder Git à jour et détecter configurations ou identifiants indésirables.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Mettre à jour Git via APT :
+1. Mettre à jour Git via [[Glossary:APT]] :
    ```bash
    sudo apt update
    sudo apt install --only-upgrade git

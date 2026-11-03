@@ -1,8 +1,8 @@
 # 📄 SQL Server
 
-- **Environnement** : VM (Windows Server 2022)
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022)
 - **OS / Version** : Windows Server 2022 (Standard ou Datacenter)
-- **Version** : SQL Server 2022 (instance par défaut `MSSQLSERVER`, à vérifier sur la version déployée)
+- **Version** : [[Glossary:SQL]] Server 2022 (instance par défaut `MSSQLSERVER`, à vérifier sur la version déployée)
 - **Catégorie** : Services Web et bases de données
 - **Tags** : `[windows-server-2022]`, `[sql-server]`, `[base-de-donnees]`, `[sauvegarde]`, `[hardening]`
 
@@ -55,7 +55,7 @@ Get-CimInstance Win32_Service -Filter "Name='MSSQLSERVER' OR Name='SQLSERVERAGEN
 New-NetFirewallRule -DisplayName "SQL Server 1433 TCP entrant" -Direction Inbound -Protocol TCP -LocalPort 1433 -RemoteAddress 192.168.10.0/24 -Action Allow
 Get-NetFirewallRule -DisplayName "SQL Server 1433 TCP entrant" | Get-NetFirewallAddressFilter
 ```
-👉 Explication : Le port 1433 TCP n'est accessible qu'au sous-réseau `192.168.10.0/24` (à adapter). Si l'instance utilise un port dynamique ou une instance nommée, la règle doit viser le port réel, à vérifier dans le SQL Server Configuration Manager.
+👉 Explication : Le port 1433 [[Glossary:TCP]] n'est accessible qu'au sous-réseau `192.168.10.0/24` (à adapter). Si l'instance utilise un port dynamique ou une instance nommée, la règle doit viser le port réel, à vérifier dans le SQL Server Configuration Manager.
 
 ---
 

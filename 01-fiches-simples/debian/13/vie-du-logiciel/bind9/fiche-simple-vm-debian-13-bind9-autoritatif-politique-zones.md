@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-bind9-autoritatif-politique-zones.md
 
-- **Environnement** : VM Debian 13 avec bind9 installé
+- **Environnement** : [[Glossary:VM]] Debian 13 avec bind9 installé
 - **OS / Version** : Debian 13 Trixie; paquets bind9 de la distribution
 - **Catégorie** : dns / configuration
 - **Tags** : `debian13`, `bind9`, `zone`, `acl`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Configurer BIND en autoritatif strict et déclarer la zone directe et inverse.
+Configurer [[Glossary:BIND]] en autoritatif strict et déclarer la zone directe et inverse.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -17,7 +17,7 @@ Configurer BIND en autoritatif strict et déclarer la zone directe et inverse.
    ```bash
    sudo nano /etc/bind/named.conf.options
    ```
-   👉 Explication : on ouvre le fichier d'options pour y placer l'ACL et les options ci-dessous.
+   👉 Explication : on ouvre le fichier d'options pour y placer l'[[Glossary:ACL]] et les options ci-dessous.
 
 2. Ajouter l'ACL et ajuster le bloc `options` (adresses d'exemple à remplacer par les vôtres) :
    ```bash
@@ -119,7 +119,7 @@ Faire relire l'ACL, les zones, le propriétaire de zone et la procédure d'incr�
 - Ne jamais mettre `any` dans les ACL.
 - Garder `allow-transfer { none; }` tant qu'aucun secondaire n'existe.
 - Ne pas rendre la configuration inscriptible par l'utilisateur `bind`.
-- Ne pas activer de mises à jour dynamiques basées sur une simple IP source.
+- Ne pas activer de mises à jour dynamiques basées sur une simple [[Glossary:IP]] source.
 
 ## Validation et retour arrière
 

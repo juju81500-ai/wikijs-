@@ -1,16 +1,16 @@
 # Nutanix AHV : cluster, Prism et première VM
 
-- **Environnement** : Cluster Nutanix (AOS + AHV) sur matériel compatible ou environnement d'évaluation
+- **Environnement** : Cluster Nutanix (AOS + [[Glossary:AHV]]) sur matériel compatible ou environnement d'évaluation
 - **Tags** : `nutanix`, `ahv`, `hyperviseur`, `hci`, `prism`
 - **Statut de validation** : **Verdict : Non testé sur plateforme cible.** Les procédures ci-dessous sont issues de la méthode documentaire et doivent être rejouées en laboratoire avant toute production.
 
 ## 1. Périmètre et prérequis
 
-- Périmètre : création d'un cluster AHV, accès Prism, réseau, stockage, première VM, sauvegarde et retour arrière. Hors périmètre : Nutanix Cloud Clusters, Flow, DR multi-sites.
+- Périmètre : création d'un cluster AHV, accès Prism, réseau, stockage, première [[Glossary:VM]], sauvegarde et retour arrière. Hors périmètre : Nutanix Cloud Clusters, Flow, DR multi-sites.
 - Matériel/HCL : vérifier la compatibilité nœuds, disques, cartes réseau et firmware dans la matrice de compatibilité du portail éditeur.
-- Réseau : plan d'adressage pour hyperviseur (AHV), CVM et IPMI/BMC ; VLAN, DNS, NTP, passerelle ; commutateurs avec MTU et LACP/active-backup décidés.
+- Réseau : plan d'adressage pour hyperviseur (AHV), CVM et [[Glossary:IPMI]]/BMC ; [[Glossary:VLAN]], [[Glossary:DNS]], [[Glossary:NTP]], passerelle ; commutateurs avec [[Glossary:MTU]] et LACP/active-backup décidés.
 - Minimum de nœuds, facteur de réplication (RF2/RF3) et capacité tolérée en cas de panne : à valider selon la documentation éditeur de la version retenue.
-- Comptes : accès au portail support, licences ou évaluation, clés API/téléchargement.
+- Comptes : accès au portail support, licences ou évaluation, clés [[Glossary:API]]/téléchargement.
 
 ## 2. Exigences de version et licence
 
@@ -23,10 +23,10 @@
 1. Relever l'inventaire (numéros de série, IPMI, firmware) et valider la compatibilité.
 2. Préparer les adresses et noms ; vérifier DNS direct/inverse et NTP.
 3. Installer ou vérifier l'image AHV/AOS sur chaque nœud selon la procédure éditeur (Foundation ou méthode documentée).
-4. Créer le cluster depuis une CVM, puis définir le nom, les VIP et les serveurs DNS/NTP.
+4. Créer le cluster depuis une CVM, puis définir le nom, les [[Glossary:VIP]] et les serveurs DNS/NTP.
 5. Se connecter à Prism Element, accepter le contrat, enregistrer le cluster.
 6. Créer un réseau VM (VLAN) et un conteneur de stockage avec les options de redondance retenues.
-7. Charger une image ISO dans la bibliothèque d'images et créer une VM de test (vCPU, RAM, disque, NIC).
+7. Charger une image ISO dans la bibliothèque d'images et créer une VM de test (vCPU, [[Glossary:RAM]], disque, [[Glossary:NIC]]).
 8. Installer les pilotes invités VirtIO si l'OS invité l'exige (Windows notamment).
 9. Planifier une protection (snapshots/sauvegarde) et la tester par restauration vers une VM de test.
 

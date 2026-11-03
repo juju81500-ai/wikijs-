@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_07_Disposition_Du_Clavier_Keymap
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 07 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-07`

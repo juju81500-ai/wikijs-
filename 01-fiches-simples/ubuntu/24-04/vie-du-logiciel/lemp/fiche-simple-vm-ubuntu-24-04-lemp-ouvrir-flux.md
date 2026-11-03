@@ -1,7 +1,7 @@
 # fiche-simple-vm-ubuntu-24-04-lemp-ouvrir-flux.md
 
-- **Environnement** : VM Ubuntu Server 24-04 dédiée à une application Web PHP
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble); Nginx, PHP 8.3, MariaDB 10.11
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 dédiée à une application Web PHP
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble); Nginx, PHP 8.3, MariaDB 10.11
 - **Catégorie** : web / pare-feu
 - **Tags** : `ubuntu24.04`, `nginx`, `php8.3`, `mariadb`, `lemp`, `ufw`, `firewall`
 
@@ -13,13 +13,13 @@ Autoriser seulement les flux Web utiles.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Lire l'état du pare-feu réellement géré (UFW d'après la fiche du même OS) :
+1. Lire l'état du pare-feu réellement géré ([[Glossary:UFW]] d'après la fiche du même OS) :
    ```bash
    sudo ufw status verbose
    ```
    👉 Explication : identifie les règles actuelles avant modification.
 
-2. Autoriser HTTP (ACME/redirection) et HTTPS :
+2. Autoriser [[Glossary:HTTP]] ([[Glossary:ACME]]/redirection) et HTTPS :
    ```bash
    sudo ufw allow 80/tcp
    sudo ufw allow 443/tcp
@@ -34,7 +34,7 @@ Autoriser seulement les flux Web utiles.
 
 ## 2. Production — Contrôles
 
-Restreindre SSH au réseau d'administration.
+Restreindre [[Glossary:SSH]] au réseau d'administration.
 
 ## 3. Production — Sécurité
 

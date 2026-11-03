@@ -31,7 +31,7 @@ Appliquer un Cumulative Update (ou une mise à jour de sécurité) sans perte de
    ```powershell
    D:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /Mode:Upgrade
    ```
-   👉 Explication : tourner sous un compte administrateur local, en PowerShell élevé et non en session RDP déconnectable.
+   👉 Explication : tourner sous un compte administrateur local, en PowerShell élevé et non en session [[Glossary:RDP]] déconnectable.
 
 5. Sortir le serveur de maintenance :
    ```powershell
@@ -43,7 +43,7 @@ Appliquer un Cumulative Update (ou une mise à jour de sécurité) sans perte de
 
 ## 2. Production — Contrôles
 
-Mettre à jour un serveur à la fois, hors heures ouvrées, ordre selon la documentation (extensions AD si exigées), redémarrer, puis appliquer les mises à jour de sécurité (SU) en mode élevé.
+Mettre à jour un serveur à la fois, hors heures ouvrées, ordre selon la documentation (extensions [[Glossary:AD]] si exigées), redémarrer, puis appliquer les mises à jour de sécurité (SU) en mode élevé.
 
 ## 3. Production — Sécurité
 
@@ -54,7 +54,7 @@ Mettre à jour un serveur à la fois, hors heures ouvrées, ordre selon la docum
 ## Validation et retour arrière
 
 - **Validation** : `Get-ExchangeServer | fl Name,AdminDisplayVersion` indique le nouveau build, `Test-ServiceHealth` et `Test-ReplicationHealth` sont sains.
-- **Retour arrière** : la désinstallation d'un CU n'est pas supportée : restaurer la VM/sauvegarde ou réinstaller le serveur avec `Setup.exe /Mode:RecoverServer` après avoir réinstallé le système, puis ré-ajouter les copies DAG ; tester ce scénario en lab.
+- **Retour arrière** : la désinstallation d'un CU n'est pas supportée : restaurer la [[Glossary:VM]]/sauvegarde ou réinstaller le serveur avec `Setup.exe /Mode:RecoverServer` après avoir réinstallé le système, puis ré-ajouter les copies DAG ; tester ce scénario en lab.
 
 ## Si le problème n'est pas résolu
 

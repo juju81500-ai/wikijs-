@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_OpenVPN_Installer
 
-- **Environnement** : VM Debian 13 dédiée à OpenVPN Community Edition
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à OpenVPN Community Edition
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : OpenVPN Community Edition / installer
 - **Tags** : `openvpn`, `debian13`, `vie-du-logiciel`, `installer`
@@ -20,7 +20,7 @@ Installer les paquets depuis les dépôts Debian approuvés sans exposer de serv
    ```
    👉 Explication : Confirmer l’origine du paquet avant installation.
 
-2. Installer OpenVPN et l’outil PKI :
+2. Installer OpenVPN et l’outil [[Glossary:PKI]] :
    ```bash
    sudo apt install openvpn easy-rsa
    openvpn --version
@@ -40,7 +40,7 @@ Consigner versions, dépôts et unité systemd; prévoir une fenêtre de changem
 
 ## 3. Production — Sécurité
 
-- Ne pas lancer une configuration d’exemple ni ouvrir le port avant validation; conserver la clé de CA hors ligne.
+- Ne pas lancer une configuration d’exemple ni ouvrir le port avant validation; conserver la clé de [[Glossary:CA]] hors ligne.
 
 ## Validation et retour arrière
 

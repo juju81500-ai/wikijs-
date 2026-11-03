@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Choisir les disques de démarrage ; ZFS gère le reste.
+Choisir les disques de démarrage ; [[Glossary:ZFS]] gère le reste.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -21,7 +21,7 @@ Choisir les disques de démarrage ; ZFS gère le reste.
    zpool status freenas-boot
    gpart show
    ```
-   👉 Explication : pool ONLINE. GUI : Système > Mises à jour de démarrage > État.
+   👉 Explication : pool ONLINE. [[Glossary:GUI]] : Système > Mises à jour de démarrage > État.
 
 3. Ne pas modifier les partitions du système.
    👉 Explication : le système est restauré à chaque démarrage.

@@ -7,7 +7,7 @@ $todo = '[à compléter]'
 $os = Get-CimInstance Win32_OperatingSystem
 $cs = Get-CimInstance Win32_ComputerSystem
 $model = "$($cs.Manufacturer) $($cs.Model)"
-$type = if ($cs.HypervisorPresent -or $model -match 'Virtual|VMware|KVM|QEMU|Xen|Hyper-V') { "VM ($model)" } else { 'Physique' }
+$type = if ($cs.HypervisorPresent -or $model -match 'Virtual|VMware|[[Glossary:KVM]]|[[Glossary:QEMU]]|Xen|Hyper-V') { "[[Glossary:VM]] ($model)" } else { 'Physique' }
 
 $ips = (Get-NetIPAddress -AddressFamily IPv4 -ErrorAction SilentlyContinue |
     Where-Object { $_.IPAddress -notmatch '^(127\.|169\.254\.)' } |
@@ -44,9 +44,9 @@ function Or-Todo($v) { if ($v) { $v } else { $todo } }
 * **Rôle et Utilisation** : $todo
 * **Besoins (Allocation ressources)** :
   * **vCPU** : $($cs.NumberOfLogicalProcessors)
-  * **RAM** : $([math]::Round($cs.TotalPhysicalMemory / 1GB, 1)) Go
+  * **[[Glossary:RAM]]** : $([math]::Round($cs.TotalPhysicalMemory / 1GB, 1)) Go
   * **Stockage** : $(Or-Todo $disks)
-  * **Adresse IP** : $(Or-Todo $ips)
+  * **Adresse [[Glossary:IP]]** : $(Or-Todo $ips)
 
 ---
 

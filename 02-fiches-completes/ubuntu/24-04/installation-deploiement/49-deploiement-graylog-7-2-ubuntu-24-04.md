@@ -1,6 +1,6 @@
 # Déployer Graylog 7.2 sur Ubuntu Server 24-04
 
-- **OS / Version** : Ubuntu Server 24-04 LTS; Graylog 7.2
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]]; Graylog 7.2
 - **Type de fiche** : Installation/Déploiement
 - **Architecture** : un nœud Graylog + MongoDB et un Data Node pour un laboratoire représentatif
 - **Catégorie** : Centralisation et analyse des journaux
@@ -10,9 +10,9 @@
 
 Fiche simple : [cadrer et vérifier les prérequis](../../../../01-fiches-simples/ubuntu/24-04/vie-du-logiciel/graylog/fiche-simple-vm-ubuntu-24-04-graylog-cadrer-prerequis.md).
 
-Cette fiche suit l'architecture Graylog Core décrite par l'éditeur : Graylog Server et MongoDB sur un hôte, Data Node sur un hôte séparé. Pour la production, dimensionner les nœuds selon le débit EPS, la taille moyenne des événements, la rétention, les index et la charge de recherche. Utiliser une zone de stockage dédiée, idéalement XFS pour les données du Data Node.
+Cette fiche suit l'architecture Graylog Core décrite par l'éditeur : Graylog Server et MongoDB sur un hôte, Data Node sur un hôte séparé. Pour la production, dimensionner les nœuds selon le débit EPS, la taille moyenne des événements, la rétention, les index et la charge de recherche. Utiliser une zone de stockage dédiée, idéalement [[Glossary:XFS]] pour les données du Data Node.
 
-Vérifier la matrice de compatibilité Graylog 7.2 pour les versions d'Ubuntu et MongoDB avant la fenêtre de changement. Préparer DNS, NTP, certificats TLS, sauvegarde et capacité disque. Une installation mono-nœud n'est pas une architecture HA.
+Vérifier la matrice de compatibilité Graylog 7.2 pour les versions d'Ubuntu et MongoDB avant la fenêtre de changement. Préparer [[Glossary:DNS]], [[Glossary:NTP]], certificats [[Glossary:TLS]], sauvegarde et capacité disque. Une installation mono-nœud n'est pas une architecture HA.
 
 ## 2. Réseau et secrets
 
@@ -41,7 +41,7 @@ Fiche simple : [installer Data Node](../../../../01-fiches-simples/ubuntu/24-04/
 
 Sur son hôte dédié, récupérer le paquet de dépôt Graylog 7.2 depuis `packages.graylog2.org`, contrôler l'origine et installer le paquet de dépôt puis `graylog-datanode`. Ne pas déployer OpenSearch séparément avec cette architecture Data Node.
 
-Définir `vm.max_map_count` à au moins `262144` dans un fichier sous `/etc/sysctl.d/` puis appliquer `sysctl --system`. Renseigner dans `/etc/graylog/datanode/datanode.conf` le secret partagé, l'URI MongoDB authentifiée et la taille de heap adaptée à la mémoire. L'éditeur recommande environ la moitié de la RAM, avec un plafond de 31 Go.
+Définir `vm.max_map_count` à au moins `262144` dans un fichier sous `/etc/sysctl.d/` puis appliquer `sysctl --system`. Renseigner dans `/etc/graylog/datanode/datanode.conf` le secret partagé, l'URI MongoDB authentifiée et la taille de heap adaptée à la mémoire. L'éditeur recommande environ la moitié de la [[Glossary:RAM]], avec un plafond de 31 Go.
 
 ```bash
 sudo systemctl enable --now graylog-datanode

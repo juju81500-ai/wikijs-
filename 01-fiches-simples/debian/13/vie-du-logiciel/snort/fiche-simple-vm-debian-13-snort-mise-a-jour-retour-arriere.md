@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Snort_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Debian 13 dédiée à Snort IDS passif
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à Snort [[Glossary:IDS]] passif
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : Snort IDS passif / mise à jour et retour arrière
 - **Tags** : `snort`, `debian13`, `vie-du-logiciel`, `mise_a_jour_retour_arriere`

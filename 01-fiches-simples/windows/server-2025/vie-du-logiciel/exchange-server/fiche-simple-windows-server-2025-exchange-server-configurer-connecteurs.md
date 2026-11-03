@@ -17,9 +17,9 @@ Configurer les flux entrants et sortants d’Exchange SE sur Windows Server 2025
    👉 Explication : vérifier le nom des menus dans la version déployée; ne pas exposer l’EAC publiquement pour cette opération.
 
 2. Créer ou modifier un connecteur de réception seulement pour les sources et usages requis, conformément à la documentation Microsoft.
-   👉 Explication : ne pas activer un relais anonyme général; limiter les adresses IP et les autorisations au périmètre prévu.
+   👉 Explication : ne pas activer un relais anonyme général; limiter les adresses [[Glossary:IP]] et les autorisations au périmètre prévu.
 
-3. Configurer le connecteur d’envoi vers la destination approuvée et documenter les domaines, DNS/MX et relais autorisés.
+3. Configurer le connecteur d’envoi vers la destination approuvée et documenter les domaines, [[Glossary:DNS]]/MX et relais autorisés.
    👉 Explication : valider le routage avec les propriétaires DNS et messagerie avant une bascule.
 
 4. Dans Exchange Management Shell, examiner les connecteurs configurés :
@@ -31,7 +31,7 @@ Configurer les flux entrants et sortants d’Exchange SE sur Windows Server 2025
 
 ## 2. Production — Contrôles
 
-Planifier une fenêtre de changement, sauvegarder les configurations concernées, vérifier l’état AD/DNS et Exchange, puis appliquer les étapes d’abord en environnement pilote.
+Planifier une fenêtre de changement, sauvegarder les configurations concernées, vérifier l’état [[Glossary:AD]]/DNS et Exchange, puis appliquer les étapes d’abord en environnement pilote.
 
 ## 3. Production — Sécurité
 

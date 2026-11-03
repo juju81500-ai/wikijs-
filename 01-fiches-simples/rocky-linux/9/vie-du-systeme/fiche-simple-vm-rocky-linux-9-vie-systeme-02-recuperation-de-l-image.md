@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_02_Recuperation_De_L_Image
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 02 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-02`

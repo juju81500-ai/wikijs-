@@ -1,6 +1,6 @@
 # fiche-simple-hote-windows-11-deploiement-choisir-mode.md
 
-- **Environnement** : Parc de postes utilisateur: poste physique ou VM de test
+- **Environnement** : Parc de postes utilisateur: poste physique ou [[Glossary:VM]] de test
 - **OS / Version** : Windows 11 Pro ou Enterprise selon la gestion prévue
 - **Catégorie** : déploiement de poste de travail
 - **Tags** : `windows11`, `deploiement`, `oobe`, `bitlocker`, `production`
@@ -13,13 +13,13 @@ Décider comment le poste sera géré avant d'installer Windows 11.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Déterminer le mode de gestion : Autopilot/Intune, MECM, AD DS/GPO, image d'entreprise ou processus autonome.
+1. Déterminer le mode de gestion : Autopilot/Intune, MECM, [[Glossary:AD]] DS/GPO, image d'entreprise ou processus autonome.
    👉 Explication : l'enrôlement en masse dépend de la solution de parc et suit son runbook.
 
 2. Vérifier édition et licence prévues (Pro ou Enterprise).
    👉 Explication : l'édition doit correspondre à la licence et au mode de gestion.
 
-3. Sur un poste de test, contrôler TPM, Secure Boot et build :
+3. Sur un poste de test, contrôler [[Glossary:TPM]], Secure Boot et build :
    ```powershell
    Get-Tpm
    Confirm-SecureBootUEFI

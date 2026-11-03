@@ -1,7 +1,7 @@
 # Diagnostiquer un incident NAS/SAN : SMB, NFS et iSCSI
 
 - **Type de fiche** : Diagnostic
-- **Environnement** : Serveur Linux, NAS ou SAN; client de test autorisé
+- **Environnement** : Serveur Linux, [[Glossary:NAS]] ou [[Glossary:SAN]]; client de test autorisé
 - **OS / Version** : Linux client/serveur ou appliance de stockage; adapter les commandes à la version et au constructeur
 - **Rôle** : Isoler les pannes de stockage sans provoquer de perte de données ni de split-brain
 - **Tags** : `nas`, `san`, `diagnostic`, `samba`, `nfs4`, `iscsi`, `stockage`
@@ -12,13 +12,13 @@ Fiche simple : [protéger les données et cadrer l'incident](../../../../01-fich
 
 Identifier service, partage/LUN, hôtes touchés, heure de début, erreurs, changements récents et état des sauvegardes. Suspendre les migrations et écritures non nécessaires si des erreurs I/O ou un risque de corruption sont observés.
 
-Ne pas formater, forcer un démontage, réinitialiser une baie, supprimer une session iSCSI ou remonter une LUN en écriture depuis plusieurs hôtes. En cluster, vérifier le propriétaire actif et le mécanisme de réservation avant action.
+Ne pas formater, forcer un démontage, réinitialiser une baie, supprimer une session iSCSI ou remonter une [[Glossary:LUN]] en écriture depuis plusieurs hôtes. En cluster, vérifier le propriétaire actif et le mécanisme de réservation avant action.
 
 ## 2. Vérifier l'appliance et le réseau
 
 Fiche simple : [vérifier l'appliance et le réseau](../../../../01-fiches-simples/transverses/multi-os/nas-san/fiche-simple-hote-multi-os-nas-san-verifier-appliance-reseau.md).
 
-Sur la baie/NAS, examiner les alertes constructeur, état des disques, pools, contrôleurs, interfaces, ventilateurs, capacité et réplication. Côté client, vérifier adresse, route, DNS, MTU, VLAN et accessibilité de l'adresse de stockage depuis le bon réseau.
+Sur la baie/NAS, examiner les alertes constructeur, état des disques, pools, contrôleurs, interfaces, ventilateurs, capacité et réplication. Côté client, vérifier adresse, route, [[Glossary:DNS]], [[Glossary:MTU]], [[Glossary:VLAN]] et accessibilité de l'adresse de stockage depuis le bon réseau.
 
 ```bash
 ip -br address
@@ -44,7 +44,7 @@ sudo smbstatus
 sudo journalctl -u smbd --since "30 minutes ago" --no-pager
 ```
 
-Depuis un client autorisé, vérifier la découverte et l'authentification avec `smbclient` ou l'outil natif. Contrôler nom de partage, ACL/permissions, résolution DNS et dialecte/signature SMB. Ne pas assouplir la signature ou le chiffrement globalement pour rétablir un seul client incompatible.
+Depuis un client autorisé, vérifier la découverte et l'authentification avec `smbclient` ou l'outil natif. Contrôler nom de partage, [[Glossary:ACL]]/permissions, résolution DNS et dialecte/signature SMB. Ne pas assouplir la signature ou le chiffrement globalement pour rétablir un seul client incompatible.
 
 ## 4. Diagnostiquer NFSv4
 

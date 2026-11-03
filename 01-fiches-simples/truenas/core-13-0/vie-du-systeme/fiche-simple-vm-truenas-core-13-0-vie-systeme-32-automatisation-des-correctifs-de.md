@@ -13,7 +13,7 @@ Suivre les mises à jour sans les subir.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Mises à jour : surveiller les alertes de mise à jour.
+1. [[Glossary:GUI]] : Système > Mises à jour : surveiller les alertes de mise à jour.
    ```sh
    midclt call update.check_available
    ```
@@ -24,7 +24,7 @@ Suivre les mises à jour sans les subir.
 
 ## 2. Production — Contrôles
 
-Tester d'abord sur un NAS de test.
+Tester d'abord sur un [[Glossary:NAS]] de test.
 
 ## 3. Production — Sécurité
 

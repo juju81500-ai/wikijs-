@@ -1,6 +1,6 @@
 # fiche-simple-appliance-opnsense-diagnostic-reseau-delimiter-symptome.md
 
-- **Environnement** : Appliance OPNsense seule ou paire CARP; accès console recommandé
+- **Environnement** : Appliance OPNsense seule ou paire [[Glossary:CARP]]; accès console recommandé
 - **OS / Version** : OPNsense Community ou Business Edition maintenue
 - **Catégorie** : pare-feu / diagnostic
 - **Tags** : `opnsense`, `diagnostic`, `reseau`, `firewall`, `dns`, `vpn`
@@ -16,7 +16,7 @@ Décrire précisément la panne avant d'agir.
 1. Noter source, destination, protocole/port, horaire, interface et dernier changement dans le ticket.
    👉 Explication : permet de reproduire et de corréler avec les journaux.
 
-2. Déterminer si la panne touche un client, un VLAN, un service, un tunnel ou tout le site.
+2. Déterminer si la panne touche un client, un [[Glossary:VLAN]], un service, un tunnel ou tout le site.
    👉 Explication : cadre la zone à tester.
 
 3. En CARP : **Interfaces > Virtual IPs > Status** pour identifier le nœud MASTER et le dernier basculement.

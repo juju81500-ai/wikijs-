@@ -1,7 +1,7 @@
 # Reprise d'une forêt Active Directory Domain Services
 
 - **Type de fiche** : Autres — sauvegarde / reprise après sinistre
-- **Environnement** : Forêt AD DS d'entreprise; laboratoire isolé recommandé
+- **Environnement** : Forêt [[Glossary:AD]] DS d'entreprise; laboratoire isolé recommandé
 - **OS / Version** : Windows Server 2022 pour les contrôleurs de domaine concernés
 - **Rôle** : Préparer et encadrer la restauration d'une forêt AD DS après perte majeure ou compromission
 - **Tags** : `windows-server-2022`, `active-directory`, `ad-ds`, `forest-recovery`, `backup`, `disaster-recovery`
@@ -10,7 +10,7 @@
 
 Fiche simple : [déterminer si la reprise de forêt est nécessaire](../../../../01-fiches-simples/windows/server-2022/vie-du-logiciel/active-directory/fiche-simple-vm-windows-server-2022-reprise-foret-ad-ds-determiner-necessite.md).
 
-Une panne isolée d'un contrôleur de domaine ne justifie pas automatiquement une restauration de forêt. Évaluer d'abord l'état des réplications, des autres DC, du DNS et des sauvegardes avec l'équipe AD et sécurité. En cas d'incident de sécurité, isoler les systèmes suspectés et conserver les preuves selon le plan de réponse.
+Une panne isolée d'un contrôleur de domaine ne justifie pas automatiquement une restauration de forêt. Évaluer d'abord l'état des réplications, des autres [[Glossary:DC]], du [[Glossary:DNS]] et des sauvegardes avec l'équipe AD et sécurité. En cas d'incident de sécurité, isoler les systèmes suspectés et conserver les preuves selon le plan de réponse.
 
 Ce guide est un cadre de préparation, pas un substitut à la procédure Microsoft et au runbook propre à la forêt. Ne jamais improviser une reprise sur la production.
 
@@ -19,17 +19,17 @@ Ce guide est un cadre de préparation, pas un substitut à la procédure Microso
 Fiche simple : [préparer et qualifier les sauvegardes AD DS](../../../../01-fiches-simples/windows/server-2022/vie-du-logiciel/active-directory/fiche-simple-vm-windows-server-2022-reprise-foret-ad-ds-preparer-sauvegardes.md).
 
 - Maintenir des sauvegardes AD DS compatibles, protégées contre l'altération et testées régulièrement.
-- Documenter par domaine le DC retenu, la date de sauvegarde, la méthode de restauration, les rôles FSMO et les dépendances DNS/SYSVOL.
+- Documenter par domaine le DC retenu, la date de sauvegarde, la méthode de restauration, les rôles [[Glossary:FSMO]] et les dépendances DNS/SYSVOL.
 - Conserver les supports, comptes de secours, clés et procédures hors ligne ou dans un coffre distinct du domaine.
 - Vérifier que la sauvegarde est antérieure à la compromission présumée et que sa restauration a déjà été testée en laboratoire.
 
-Sans sauvegarde saine et procédure vérifiée, arrêter et escalader au responsable AD/éditeur. Un snapshot VM ne remplace pas une sauvegarde AD-aware, sauf scénario explicitement pris en charge par Microsoft avec un hyperviseur compatible VM-Generation ID et le runbook correspondant.
+Sans sauvegarde saine et procédure vérifiée, arrêter et escalader au responsable AD/éditeur. Un snapshot [[Glossary:VM]] ne remplace pas une sauvegarde AD-aware, sauf scénario explicitement pris en charge par Microsoft avec un hyperviseur compatible VM-Generation ID et le runbook correspondant.
 
 ## 3. Restaurer les premiers contrôleurs en isolation
 
 Fiche simple : [restaurer les premiers contrôleurs en isolation](../../../../01-fiches-simples/windows/server-2022/vie-du-logiciel/active-directory/fiche-simple-vm-windows-server-2022-reprise-foret-ad-ds-restaurer-premiers-dc.md).
 
-Suivre le runbook Microsoft officiel pour chaque domaine. En règle générale, restaurer d'abord un DC inscriptible du domaine racine de forêt, isolé du réseau de production; procéder ensuite aux domaines parents avant les domaines enfants. Utiliser une sauvegarde AD-aware et appliquer les consignes précises relatives à AD DS et SYSVOL.
+Suivre le runbook Microsoft officiel pour chaque domaine. En règle générale, restaurer d'abord un DC inscriptible du domaine racine de forêt, isolé du réseau de production; procéder ensuite aux domaines parents avant les domaines enfants. Utiliser une sauvegarde AD-aware et appliquer les consignes précises relatives à AD DS et [[Glossary:SYSVOL]].
 
 La restauration initiale de SYSVOL est particulièrement sensible : la procédure autoritative ne s'applique qu'au DC désigné selon le guide Microsoft. Une mauvaise restauration peut introduire des conflits de réplication. Ne pas exécuter de séquences `ntdsutil`, `wbadmin` ou de modification de registre copiées sans confirmer qu'elles correspondent au scénario et au DC concernés.
 

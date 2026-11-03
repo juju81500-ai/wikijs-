@@ -41,7 +41,7 @@ Régler le fuseau horaire correct, Europe/Paris, et l'heure d'été automatique.
 
 ## 2. Production — Contrôles
 
-Fuseau identique sur tout le parc, appliqué par GPO ou Intune, avec l'heure du domaine comme source.
+Fuseau identique sur tout le parc, appliqué par [[Glossary:GPO]] ou Intune, avec l'heure du domaine comme source.
 
 ## 3. Production — Sécurité
 

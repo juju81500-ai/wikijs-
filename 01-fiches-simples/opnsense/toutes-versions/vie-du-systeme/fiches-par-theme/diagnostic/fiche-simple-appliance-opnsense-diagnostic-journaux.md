@@ -1,6 +1,6 @@
 # 📄 fiche-simple-appliance-opnsense-diagnostic-journaux.md
 
-- **Environnement** : OPNsense sur VM Proxmox VE ou appliance dédiée
+- **Environnement** : OPNsense sur [[Glossary:VM]] Proxmox VE ou appliance dédiée
 - **OS / Version** : OPNsense (base FreeBSD) - Toutes-versions (chemins de menu à vérifier sur la version déployée)
 - **Catégorie** : Diagnostic / Journaux système
 - **Tags** : `opnsense`, `freebsd`, `logs`, `diagnostic`, `firewall`
@@ -15,7 +15,7 @@ Identifier les erreurs système et les blocages de pare-feu d'OPNsense depuis l'
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Consulter les journaux généraux :
    `Diagnostics > Log Files > General` (à vérifier sur la version déployée) : filtrer sur `error` ou `critical`
-   👉 Explication : Affiche les erreurs des services (DHCP, DNS, VPN, sshd, interface web).
+   👉 Explication : Affiche les erreurs des services ([[Glossary:DHCP]], [[Glossary:DNS]], [[Glossary:VPN]], sshd, interface web).
 2. Suivre les blocages du pare-feu en direct :
    `Firewall > Log Files > Live View` : filtrer par interface et par action `block`
    👉 Explication : Permet de vérifier qu'un flux est bloqué par la règle attendue pendant le test.

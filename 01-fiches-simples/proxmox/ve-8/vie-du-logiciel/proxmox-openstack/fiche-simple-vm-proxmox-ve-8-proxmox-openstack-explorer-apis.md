@@ -1,8 +1,8 @@
 # Fiche_Simple_-_VM_Proxmox_VE_8_Proxmox_OpenStack_Explorer_APIs
 
-- **Environnement** : Proxmox VE 8.x et DevStack dans VM de lab isolée
-- **OS / Version** : Proxmox VE 8.x; Ubuntu 24-04 LTS / OpenStack DevStack
-- **Catégorie** : cloud privé / API
+- **Environnement** : Proxmox VE 8.x et DevStack dans [[Glossary:VM]] de lab isolée
+- **OS / Version** : Proxmox VE 8.x; Ubuntu 24-04 [[Glossary:LTS]] / OpenStack DevStack
+- **Catégorie** : cloud privé / [[Glossary:API]]
 - **Tags** : `proxmox-ve`, `pve8`, `openstack`, `api`, `lab`
 
 ---
@@ -32,7 +32,7 @@ Observer les deux interfaces de gestion et évaluer une interaction API sans sup
 
 ## 3. Production — Sécurité
 
-- Identités non privilégiées, jetons limités, TLS, coffre-fort et journaux protégés; jamais token, `openrc` ou Authorization en clair dans commande/dépôt.
+- Identités non privilégiées, jetons limités, [[Glossary:TLS]], coffre-fort et journaux protégés; jamais token, `openrc` ou Authorization en clair dans commande/dépôt.
 
 ## Validation et retour arrière
 

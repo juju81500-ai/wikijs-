@@ -1,7 +1,7 @@
 # Leçon — Stratégies de groupe (GPO) : ordre LSDOU, héritage, filtrage et dépannage
 
 - **Tags** : `transverse`, `tout-en-un`, `lecon`, `identites`, `active-directory`, `gpo`, `stratégies-de-groupe`, `windows-server`
-- **Niveau** : Intermédiaire (TSSR / administrateur systèmes)
+- **Niveau** : Intermédiaire ([[Glossary:TSSR]] / administrateur systèmes)
 - **Durée estimée** : 3 h 30 (lecture 1 h 10, laboratoire 1 h 40, exercices et quiz 40 min)
 
 ---
@@ -10,18 +10,18 @@
 
 À la fin de cette leçon, vous saurez :
 
-1. expliquer ce qu'est une GPO et où elle est stockée (conteneur AD et dossier SYSVOL) ;
+1. expliquer ce qu'est une [[Glossary:GPO]] et où elle est stockée (conteneur [[Glossary:AD]] et dossier [[Glossary:SYSVOL]]) ;
 2. prédire l'ordre de traitement **LSDOU** et le résultat d'un conflit ;
 3. utiliser **l'héritage**, **Appliqué (Enforced)**, **Bloquer l'héritage** et le traitement par **boucle de rappel (loopback)** ;
-4. cibler une GPO avec le **filtrage de sécurité** et un **filtre WMI** ;
+4. cibler une GPO avec le **filtrage de sécurité** et un **filtre [[Glossary:WMI]]** ;
 5. diagnostiquer avec `gpupdate`, `gpresult` et les journaux ;
 6. réaliser quatre cas pratiques dans un laboratoire jetable.
 
 ## Prérequis et durée
 
-- Avoir suivi la leçon sur Active Directory Domain Services (domaine, OU, DNS, sites) ou en maîtriser les notions.
-- Un laboratoire à deux VM sur un réseau isolé : `SRV-DC01` (192.0.2.10, contrôleur du domaine `example.test`) et `PC-W11-01` (192.0.2.50, poste joint au domaine), en versions d'évaluation officielles et détruisibles. Prenez un **instantané** avant de commencer.
-- Les outils de gestion des stratégies de groupe (console GPMC et module PowerShell `GroupPolicy`) installés sur le DC.
+- Avoir suivi la leçon sur Active Directory Domain Services (domaine, [[Glossary:OU]], [[Glossary:DNS]], sites) ou en maîtriser les notions.
+- Un laboratoire à deux [[Glossary:VM]] sur un réseau isolé : `SRV-DC01` (192.0.2.10, contrôleur du domaine `example.test`) et `PC-W11-01` (192.0.2.50, poste joint au domaine), en versions d'évaluation officielles et détruisibles. Prenez un **instantané** avant de commencer.
+- Les outils de gestion des stratégies de groupe (console GPMC et module PowerShell `GroupPolicy`) installés sur le [[Glossary:DC]].
 
 Aucun mot de passe n'apparaît dans cette leçon. Les adresses sont des adresses de documentation.
 
@@ -54,7 +54,7 @@ Chaque GPO a une **configuration ordinateur** (appliquée au démarrage de la ma
 Une GPO est en réalité **deux objets** liés par un GUID :
 
 - le **conteneur de stratégie de groupe (GPC)**, dans l'annuaire, sous `CN=Policies,CN=System,DC=example,DC=test` : il porte le nom, l'état, la version et les permissions ;
-- le **modèle de stratégie de groupe (GPT)**, dans le dossier **SYSVOL** : `\\example.test\SYSVOL\example.test\Policies\{GUID}`. Il contient les fichiers de réglages (`Registry.pol`, scripts, modèles de sécurité).
+- le **modèle de stratégie de groupe ([[Glossary:GPT]])**, dans le dossier **SYSVOL** : `\\example.test\SYSVOL\example.test\Policies\{GUID}`. Il contient les fichiers de réglages (`Registry.pol`, scripts, modèles de sécurité).
 
 Le GPC se réplique avec l'annuaire, le GPT avec le mécanisme de réplication de SYSVOL (DFSR). Quand les deux se désynchronisent (versions différentes), la GPO ne s'applique pas correctement : c'est une cause de panne classique (voir la section dépannage).
 
@@ -155,7 +155,7 @@ Get-CimInstance -Query "SELECT * FROM Win32_OperatingSystem WHERE ProductType = 
 
 ### 6.3 Ciblage au niveau de l'élément (préférences)
 
-Les **préférences** disposent d'un ciblage par élément (groupe, OU, nom, plage IP…), qui évite de multiplier les GPO. N'y enregistrez **jamais** de mot de passe : le chiffrement historique est cassé et a été retiré (MS14-025).
+Les **préférences** disposent d'un ciblage par élément (groupe, OU, nom, plage [[Glossary:IP]]…), qui évite de multiplier les GPO. N'y enregistrez **jamais** de mot de passe : le chiffrement historique est cassé et a été retiré (MS14-025).
 
 ## 7. Quand une GPO est-elle appliquée ? Le rafraîchissement
 
@@ -332,7 +332,7 @@ Détruisez ensuite les VM ou restaurez l'instantané.
 4. **(Filtrage)** Écrivez, en PowerShell, les commandes pour que la GPO `Lab-Poste` ne s'applique qu'aux ordinateurs du groupe `GG_Postes_Pilote`.
 5. **(Panne)** Une GPO utilisateur est liée à `OU=Postes`. Elle ne s'applique pas aux utilisateurs. Pourquoi, et comment corriger ?
 6. **(Lecture de sortie)** `gpresult` indique « Filtré : Refus (sécurité) ». Donnez deux causes possibles et une vérification pour chacune.
-7. **(Scénario)** Vous devez désactiver le stockage USB uniquement sur les postes de la salle 12 (`OU=Salle12`), sans toucher aux autres. Proposez la solution (GPO, lien, héritage) et le test de validation.
+7. **(Scénario)** Vous devez désactiver le stockage [[Glossary:USB]] uniquement sur les postes de la salle 12 (`OU=Salle12`), sans toucher aux autres. Proposez la solution (GPO, lien, héritage) et le test de validation.
 
 ## Corrigés des exercices
 
@@ -388,7 +388,7 @@ Détruisez ensuite les VM ou restaurez l'instantané.
 | GPO d'utilisateur ignorée après durcissement des permissions | *Lecture* retirée à Utilisateurs authentifiés (MS16-072) | `Get-GPPermission -Name X -All` | Redonner *Lecture* |
 | Réglage inversé le lendemain | Une GPO d'un niveau inférieur l'écrase | `gpresult /h` (colonne « GPO gagnante ») | Ajuster l'ordre ou supprimer le doublon |
 | Effets différents selon le DC | Réplication SYSVOL ou AD en retard | `dcdiag /test:sysvolcheck`, `repadmin /replsummary` | Attendre ou traiter la réplication |
-| Retard important à l'ouverture de session | Trop de GPO, filtres WMI lents, liens WAN | Journal GroupPolicy (durées) | Simplifier, regrouper, désactiver les moitiés vides |
+| Retard important à l'ouverture de session | Trop de GPO, filtres WMI lents, liens [[Glossary:WAN]] | Journal GroupPolicy (durées) | Simplifier, regrouper, désactiver les moitiés vides |
 
 Règle d'or : **tester d'abord sur une OU pilote** ; sauvegarder (`Backup-GPO`) avant de changer.
 

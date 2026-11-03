@@ -1,13 +1,13 @@
 # 📄 Kubernetes / K3s
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : K3s installé par le script officiel, canal stable en lab ; version à figer en production et à vérifier sur la version déployée (`k3s --version`)
 - **Catégorie** : Virtualisation et conteneurisation
 - **Tags** : `[debian-12]`, `[k3s]`, `[kubernetes]`, `[conteneurs]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer un cluster K3s à un seul nœud serveur sur Debian 12, vérifier que l'API répond et que les pods démarrent, puis le durcir (kubeconfig restreint, pare-feu limité, chiffrement des secrets, namespace isolé). Les tests ne se font que sur votre propre serveur.
+Installer un cluster K3s à un seul nœud serveur sur Debian 12, vérifier que l'[[Glossary:API]] répond et que les pods démarrent, puis le durcir (kubeconfig restreint, pare-feu limité, chiffrement des secrets, namespace isolé). Les tests ne se font que sur votre propre serveur.
 
 ---
 
@@ -63,7 +63,7 @@ kubectl get deployment,pods,svc
 curl -sfL https://get.k3s.io -o /tmp/k3s-install.sh
 sudo INSTALL_K3S_CHANNEL=stable INSTALL_K3S_EXEC="server --write-kubeconfig-mode 600 --disable traefik --tls-san k3s-srv01.tssr.lan --secrets-encryption" sh /tmp/k3s-install.sh
 ```
-👉 Explication : `--write-kubeconfig-mode 600` limite le kubeconfig à root, `--disable traefik` retire l'Ingress installé par défaut si un autre contrôleur est retenu, `--tls-san` ajoute le nom DNS au certificat de l'API, `--secrets-encryption` chiffre les secrets au repos. Point à vérifier : le canal `stable` change avec le temps ; figer la version avec `INSTALL_K3S_VERSION` pour la mise en production. Sur un serveur déjà installé en lab, désinstaller d'abord avec `sudo /usr/local/bin/k3s-uninstall.sh`.
+👉 Explication : `--write-kubeconfig-mode 600` limite le kubeconfig à root, `--disable traefik` retire l'Ingress installé par défaut si un autre contrôleur est retenu, `--tls-san` ajoute le nom [[Glossary:DNS]] au certificat de l'API, `--secrets-encryption` chiffre les secrets au repos. Point à vérifier : le canal `stable` change avec le temps ; figer la version avec `INSTALL_K3S_VERSION` pour la mise en production. Sur un serveur déjà installé en lab, désinstaller d'abord avec `sudo /usr/local/bin/k3s-uninstall.sh`.
 
 2. Pare-feu limité aux administrateurs et aux nœuds :
 ```bash
@@ -75,7 +75,7 @@ sudo ufw default deny incoming
 sudo ufw enable
 sudo ufw status verbose
 ```
-👉 Explication : SSH est autorisé en premier pour éviter de couper l'accès. L'API (6443) et le kubelet (10250) ne sont ouverts qu'au réseau d'administration `10.10.20.0/24`. Point à vérifier : sur un nœud unique, le port 8472/udp (VXLAN) n'est pas nécessaire ; sur un cluster multi-nœuds, il doit être ouvert entre nœuds seulement. ufw ne filtre pas tous les flux des pods : valider par un test depuis un poste autorisé et un poste refusé.
+👉 Explication : [[Glossary:SSH]] est autorisé en premier pour éviter de couper l'accès. L'API (6443) et le kubelet (10250) ne sont ouverts qu'au réseau d'administration `10.10.20.0/24`. Point à vérifier : sur un nœud unique, le port 8472/udp (VXLAN) n'est pas nécessaire ; sur un cluster multi-nœuds, il doit être ouvert entre nœuds seulement. ufw ne filtre pas tous les flux des pods : valider par un test depuis un poste autorisé et un poste refusé.
 
 3. Kubeconfig restreint et contrôle des accès :
 ```bash

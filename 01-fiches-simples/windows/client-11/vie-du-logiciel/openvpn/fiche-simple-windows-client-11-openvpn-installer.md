@@ -13,7 +13,7 @@ Installer le client OpenVPN Community depuis la source officielle.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : télécharger l'installateur MSI Windows 64 bits sur la page officielle des téléchargements, puis le lancer en administrateur (clic droit > Installer).
+1. [[Glossary:GUI]] : télécharger l'installateur [[Glossary:MSI]] Windows 64 bits sur la page officielle des téléchargements, puis le lancer en administrateur (clic droit > Installer).
    👉 Explication : Utiliser uniquement openvpn.net; conserver la version choisie dans le ticket.
 
 2. Vérifier l'empreinte du fichier puis installer en PowerShell élevé :

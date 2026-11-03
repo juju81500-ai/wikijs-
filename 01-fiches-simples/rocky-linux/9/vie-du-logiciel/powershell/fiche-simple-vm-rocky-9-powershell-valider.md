@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_9_PowerShell_Valider
 
-- **Environnement** : VM Rocky Linux 9 de laboratoire, accès sudo, dépôt Microsoft pour RHEL 9
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 de laboratoire, accès sudo, dépôt Microsoft pour [[Glossary:RHEL]] 9
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : shell / scripting
 - **Tags** : `rocky9`, `powershell`, `pwsh`, `scripting`
@@ -31,7 +31,7 @@ Recette de PowerShell 7 : installation, profil, modules, remoting.
    ```
    👉 Explication : aucune erreur au démarrage.
 
-4. Tester le remoting SSH depuis un client (HOTE et UTILISATEUR à remplacer) :
+4. Tester le remoting [[Glossary:SSH]] depuis un client (HOTE et UTILISATEUR à remplacer) :
    ```powershell
    Invoke-Command -HostName HOTE -UserName UTILISATEUR -ScriptBlock { hostname }
    ```

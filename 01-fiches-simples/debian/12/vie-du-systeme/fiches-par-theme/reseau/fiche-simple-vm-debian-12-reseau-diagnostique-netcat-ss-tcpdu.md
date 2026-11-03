@@ -1,6 +1,6 @@
 # 📄 VM_Debian_12_Reseau_Diagnostique-Netcat-SS-Tcpdump.md
 
-- **Environnement** : VM / LXC (Debian 12 Bookworm)
+- **Environnement** : [[Glossary:VM]] / [[Glossary:LXC]] (Debian 12 Bookworm)
 - **OS / Version** : Debian 12 - Famille Debian
 - **Catégorie** : Réseau & Dépannage / Diagnostic Flux
 - **Tags** : `[debian12]`, `[netcat]`, `[ss]`, `[tcpdump]`, `[reseau]`, `[depannage]`, `[hardening]`
@@ -11,7 +11,7 @@ Diagnostiquer les pannes de connectivité réseau, analyser les sockets en écou
 ---
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
-1. Test rapide de portée d'un port TCP distant avec netcat :
+1. Test rapide de portée d'un port [[Glossary:TCP]] distant avec netcat :
    `nc -zvw3 192.168.1.50 80`
    👉 Explication : Tente une connexion sur le port 80 avec un délai d'attente de 3 secondes sans envoyer de données.
 2. Écoute temporaire sur un port pour simuler un service :
@@ -23,7 +23,7 @@ Diagnostiquer les pannes de connectivité réseau, analyser les sockets en écou
 ## ⚡ 2. Production — Façon Simplifiée
 1. Inspection de tous les ports TCP/UDP en écoute avec processus associés :
    `ss -tulnp`
-   👉 Explication : Affiche la liste exacte des démons réseau actifs, leurs IP d'écoute et leurs numéros de PID.
+   👉 Explication : Affiche la liste exacte des démons réseau actifs, leurs [[Glossary:IP]] d'écoute et leurs numéros de [[Glossary:PID]].
 2. Capture en direct des paquets sur une interface spécifique :
    `tcpdump -i eth0 -n host 192.168.1.50 and port 443`
    👉 Explication : Filtre et affiche le trafic HTTPS échangé spécifiquement avec la machine 192.168.1.50.

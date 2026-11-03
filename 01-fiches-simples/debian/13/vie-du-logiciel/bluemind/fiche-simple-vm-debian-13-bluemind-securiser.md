@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_BlueMind_Securiser
 
-- **Environnement** : VM Debian 13; BlueMind 5.7; guide public
+- **Environnement** : [[Glossary:VM]] Debian 13; BlueMind 5.7; guide public
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Vie du logiciel / BlueMind — Sécuriser
 - **Tags** : `bluemind`, `serveur`, `vie-du-logiciel`, `securiser`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Protéger TLS, administration et exposition réseau BlueMind.
+Protéger [[Glossary:TLS]], administration et exposition réseau BlueMind.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

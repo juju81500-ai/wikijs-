@@ -26,7 +26,7 @@ Définir les sources d'installation autorisées : Microsoft Store, WinGet, Intun
    ```
    👉 Explication : n'autorise que des sources maîtrisées.
 
-3. Restreindre le Microsoft Store par GPO ou Intune : **Configuration ordinateur > Modèles d'administration > Composants Windows > Store > Désactiver l'application Store**.
+3. Restreindre le Microsoft Store par [[Glossary:GPO]] ou Intune : **Configuration ordinateur > Modèles d'administration > Composants Windows > Store > Désactiver l'application Store**.
    ```powershell
    Get-AppxPackage -AllUsers Microsoft.WindowsStore | Select-Object Name,Version
    ```

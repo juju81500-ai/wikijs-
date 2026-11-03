@@ -11,14 +11,14 @@ Types : cours, quiz, jeu, lab, outil, guide.
 | Page/Module | Catégorie | Type | Lien |
 |---|---|---|---|
 | Accueil — Page d’accueil : présentation du site, accès rapides aux modules, au QCM du jour et aux outils. | Pages du site | outil | <https://zentssr.com> |
-| modules — Liste des modules de révision, séparés entre prérequis et modules CCP+. | Pages du site | cours | <https://zentssr.com/modules> |
+| modules — Liste des modules de révision, séparés entre prérequis et modules [[Glossary:CCP]]+. | Pages du site | cours | <https://zentssr.com/modules> |
 | quiz — Choix du module pour lancer un QCM de révision. | Pages du site | quiz | <https://zentssr.com/quiz> |
 | jeux-labs — Page à deux onglets regroupant les jeux/quiz et les labs interactifs. | Pages du site | jeu | <https://zentssr.com/jeux-labs> |
 | games — Alias de la page jeux-labs ouvert sur l’onglet jeux et quiz. | Pages du site | jeu | <https://zentssr.com/games> |
 | labs — Alias de la page jeux-labs ouvert sur l’onglet labs en terminal simulé. | Pages du site | lab | <https://zentssr.com/labs> |
-| installation — Catalogue de guides d’installation pas à pas de services TSSR. | Pages du site | guide | <https://zentssr.com/installation> |
+| installation — Catalogue de guides d’installation pas à pas de services [[Glossary:TSSR]]. | Pages du site | guide | <https://zentssr.com/installation> |
 | scripting-cours — Cours interactifs Bash et PowerShell avec quiz dédiés. | Pages du site | cours | <https://zentssr.com/scripting-cours> |
-| subnetting-table — Calculateur de sous-réseaux IP avec table des puissances de 2. | Pages du site | outil | <https://zentssr.com/subnetting-table> |
+| subnetting-table — Calculateur de sous-réseaux [[Glossary:IP]] avec table des puissances de 2. | Pages du site | outil | <https://zentssr.com/subnetting-table> |
 | infos-exam — Informations sur le déroulé de l’examen TSSR, domaines clés et mode test. | Pages du site | guide | <https://zentssr.com/infos-exam> |
 | entretien-oral — Conseils pour l’oral devant le jury et catégories de questions types. | Pages du site | guide | <https://zentssr.com/entretien-oral> |
 | faq-examen — Foire aux questions sur l’examen avec moteur de recherche. | Pages du site | guide | <https://zentssr.com/faq-examen> |
@@ -31,24 +31,24 @@ Types : cours, quiz, jeu, lab, outil, guide.
 |---|---|---|---|
 | Prérequis Fondamentaux — Socle Cisco, Linux, PowerShell et Active Directory à maîtriser avant le reste. | Prérequis | cours | <https://zentssr.com/modules/prerequis> |
 | Support Utilisateur — Module d’assistance aux utilisateurs : tickets, diagnostic poste et réseau, accès distants. | CCP 1 | cours | <https://zentssr.com/modules/ccp1> |
-| Windows Server / AD — Module d’exploitation des serveurs Windows et de l’annuaire Active Directory. | CCP 2 | cours | <https://zentssr.com/modules/ccp2> |
+| Windows Server / [[Glossary:AD]] — Module d’exploitation des serveurs Windows et de l’annuaire Active Directory. | CCP 2 | cours | <https://zentssr.com/modules/ccp2> |
 | Linux — Module d’exploitation des serveurs Linux : fichiers, droits, services et planification. | CCP 3 | cours | <https://zentssr.com/modules/ccp3> |
 | VMware vSphere — Module consacré à l’infrastructure virtualisée VMware vSphere. | CCP 5 | cours | <https://zentssr.com/modules/ccp5> |
 | Sécurité Réseau — Module de sécurisation des accès Internet autour du pare-feu pfSense. | CCP 7 | cours | <https://zentssr.com/modules/ccp7> |
 | Sauvegardes / PRA / PCA — Module sur les sauvegardes, restaurations et plans de reprise ou de continuité. | CCP 8 | cours | <https://zentssr.com/modules/ccp8> |
 | Déploiement Postes — Module de déploiement et de maintenance des postes de travail. | CCP 9 | cours | <https://zentssr.com/modules/ccp9> |
-| Subnetting & CIDR — Module de calcul d’adressage IP, CIDR et découpage VLSM. | Modules transverses CCP+ | cours | <https://zentssr.com/modules/subnetting> |
+| Subnetting & [[Glossary:CIDR]] — Module de calcul d’adressage IP, CIDR et découpage [[Glossary:VLSM]]. | Modules transverses CCP+ | cours | <https://zentssr.com/modules/subnetting> |
 | Ports & Protocoles — Module de référence sur les ports, protocoles et acronymes réseau. | Modules transverses CCP+ | cours | <https://zentssr.com/modules/ports> |
 | Scripting Bash & PS — Module d’introduction au scripting Bash et PowerShell. | Modules transverses CCP+ | cours | <https://zentssr.com/modules/scripting> |
 | Cisco IOS — Module sur la configuration de base des équipements Cisco IOS. | Modules transverses CCP+ | cours | <https://zentssr.com/modules/cisco> |
-| GLPI & Supervision — Module sur la gestion de parc, la supervision et le stockage réseau. | Modules transverses CCP+ | cours | <https://zentssr.com/modules/glpi> |
+| [[Glossary:GLPI]] & Supervision — Module sur la gestion de parc, la supervision et le stockage réseau. | Modules transverses CCP+ | cours | <https://zentssr.com/modules/glpi> |
 | Entretien Technique Oral — Module renvoyant vers la page de préparation à l’entretien oral du jury. | Modules transverses CCP+ | guide | <https://zentssr.com/entretien-oral> |
 
 ## 3. Thèmes de cours par module
 
 | Page/Module | Catégorie | Type | Lien |
 |---|---|---|---|
-| Schéma réseau — DHCP, ARP, DNS, NAT en interaction | Prérequis Fondamentaux | cours | <https://zentssr.com/cours/prerequis> |
+| Schéma réseau — [[Glossary:DHCP]], [[Glossary:ARP]], [[Glossary:DNS]], [[Glossary:NAT]] en interaction | Prérequis Fondamentaux | cours | <https://zentssr.com/cours/prerequis> |
 | Modèle OSI — Les 7 couches | Prérequis Fondamentaux | cours | <https://zentssr.com/cours/prerequis> |
 | Cisco IOS — Les indispensables | Prérequis Fondamentaux | cours | <https://zentssr.com/cours/prerequis> |
 | Linux — Les commandes essentielles | Prérequis Fondamentaux | cours | <https://zentssr.com/cours/prerequis> |
@@ -59,12 +59,12 @@ Types : cours, quiz, jeu, lab, outil, guide.
 | Niveaux de priorité | Support Utilisateur | cours | <https://zentssr.com/cours/ccp1> |
 | Diagnostic réseau Windows | Support Utilisateur | cours | <https://zentssr.com/cours/ccp1> |
 | Active Directory côté support | Support Utilisateur | cours | <https://zentssr.com/cours/ccp1> |
-| Bureau à distance (RDP) | Support Utilisateur | cours | <https://zentssr.com/cours/ccp1> |
+| Bureau à distance ([[Glossary:RDP]]) | Support Utilisateur | cours | <https://zentssr.com/cours/ccp1> |
 | Structure Active Directory | Windows Server / AD | cours | <https://zentssr.com/cours/ccp2> |
 | Gestion des utilisateurs PowerShell | Windows Server / AD | cours | <https://zentssr.com/cours/ccp2> |
-| Stratégies de groupe (GPO) | Windows Server / AD | cours | <https://zentssr.com/cours/ccp2> |
+| Stratégies de groupe ([[Glossary:GPO]]) | Windows Server / AD | cours | <https://zentssr.com/cours/ccp2> |
 | DNS Windows Server | Windows Server / AD | cours | <https://zentssr.com/cours/ccp2> |
-| Permissions NTFS & Partages | Windows Server / AD | cours | <https://zentssr.com/cours/ccp2> |
+| Permissions [[Glossary:NTFS]] & Partages | Windows Server / AD | cours | <https://zentssr.com/cours/ccp2> |
 | Système de fichiers Linux | Linux | cours | <https://zentssr.com/cours/ccp3> |
 | Permissions Linux | Linux | cours | <https://zentssr.com/cours/ccp3> |
 | Commandes essentielles | Linux | cours | <https://zentssr.com/cours/ccp3> |
@@ -72,30 +72,30 @@ Types : cours, quiz, jeu, lab, outil, guide.
 | Tâches planifiées (cron) | Linux | cours | <https://zentssr.com/cours/ccp3> |
 | ESXi & Architecture vSphere | VMware vSphere | cours | <https://zentssr.com/cours/ccp5> |
 | Snapshots | VMware vSphere | cours | <https://zentssr.com/cours/ccp5> |
-| HA & DRS | VMware vSphere | cours | <https://zentssr.com/cours/ccp5> |
+| HA & [[Glossary:DRS]] | VMware vSphere | cours | <https://zentssr.com/cours/ccp5> |
 | Réseau & Stockage VMware | VMware vSphere | cours | <https://zentssr.com/cours/ccp5> |
 | pfSense - Pare-feu | Sécurité Réseau | cours | <https://zentssr.com/cours/ccp7> |
-| VPN | Sécurité Réseau | cours | <https://zentssr.com/cours/ccp7> |
-| VLAN | Sécurité Réseau | cours | <https://zentssr.com/cours/ccp7> |
-| IDS / IPS & Sécurité avancée | Sécurité Réseau | cours | <https://zentssr.com/cours/ccp7> |
+| [[Glossary:VPN]] | Sécurité Réseau | cours | <https://zentssr.com/cours/ccp7> |
+| [[Glossary:VLAN]] | Sécurité Réseau | cours | <https://zentssr.com/cours/ccp7> |
+| [[Glossary:IDS]] / IPS & Sécurité avancée | Sécurité Réseau | cours | <https://zentssr.com/cours/ccp7> |
 | Types de sauvegardes | Sauvegardes / PRA / PCA | cours | <https://zentssr.com/cours/ccp8> |
-| RPO & RTO | Sauvegardes / PRA / PCA | cours | <https://zentssr.com/cours/ccp8> |
+| [[Glossary:RPO]] & [[Glossary:RTO]] | Sauvegardes / PRA / PCA | cours | <https://zentssr.com/cours/ccp8> |
 | PRA & PCA | Sauvegardes / PRA / PCA | cours | <https://zentssr.com/cours/ccp8> |
 | Outils de sauvegarde | Sauvegardes / PRA / PCA | cours | <https://zentssr.com/cours/ccp8> |
 | Sysprep | Déploiement Postes | cours | <https://zentssr.com/cours/ccp9> |
 | WDS - Déploiement réseau | Déploiement Postes | cours | <https://zentssr.com/cours/ccp9> |
 | DISM - Gestion d'images | Déploiement Postes | cours | <https://zentssr.com/cours/ccp9> |
-| MDT - Déploiement avancé | Déploiement Postes | cours | <https://zentssr.com/cours/ccp9> |
+| [[Glossary:MDT]] - Déploiement avancé | Déploiement Postes | cours | <https://zentssr.com/cours/ccp9> |
 | Bases du subnetting | Subnetting & CIDR | cours | <https://zentssr.com/cours/subnetting> |
 | Méthode du bloc | Subnetting & CIDR | cours | <https://zentssr.com/cours/subnetting> |
 | Adresses privées & spéciales | Subnetting & CIDR | cours | <https://zentssr.com/cours/subnetting> |
 | VLSM | Subnetting & CIDR | cours | <https://zentssr.com/cours/subnetting> |
 | Modèle OSI — Les 7 couches (priorité examen) | Ports & Protocoles | cours | <https://zentssr.com/cours/ports> |
-| Définitions ITSM — Vocabulaire indispensable | Ports & Protocoles | cours | <https://zentssr.com/cours/ports> |
+| Définitions [[Glossary:ITSM]] — Vocabulaire indispensable | Ports & Protocoles | cours | <https://zentssr.com/cours/ports> |
 | Tableau complet des ports TSSR | Ports & Protocoles | cours | <https://zentssr.com/cours/ports> |
 | Ports essentiels à connaître | Ports & Protocoles | cours | <https://zentssr.com/cours/ports> |
 | Ports réseau & services | Ports & Protocoles | cours | <https://zentssr.com/cours/ports> |
-| TCP vs UDP | Ports & Protocoles | cours | <https://zentssr.com/cours/ports> |
+| [[Glossary:TCP]] vs [[Glossary:UDP]] | Ports & Protocoles | cours | <https://zentssr.com/cours/ports> |
 | Enregistrements DNS | Ports & Protocoles | cours | <https://zentssr.com/cours/ports> |
 | Bash - Les bases | Scripting Bash & PS | cours | <https://zentssr.com/cours/scripting> |
 | Bash - Conditions & Boucles | Scripting Bash & PS | cours | <https://zentssr.com/cours/scripting> |
@@ -103,10 +103,10 @@ Types : cours, quiz, jeu, lab, outil, guide.
 | PowerShell - Avancé | Scripting Bash & PS | cours | <https://zentssr.com/cours/scripting> |
 | Modes de configuration Cisco | Cisco IOS | cours | <https://zentssr.com/cours/cisco> |
 | VLANs sur Switch Cisco | Cisco IOS | cours | <https://zentssr.com/cours/cisco> |
-| Configurer SSH | Cisco IOS | cours | <https://zentssr.com/cours/cisco> |
-| Routage & ACL | Cisco IOS | cours | <https://zentssr.com/cours/cisco> |
+| Configurer [[Glossary:SSH]] | Cisco IOS | cours | <https://zentssr.com/cours/cisco> |
+| Routage & [[Glossary:ACL]] | Cisco IOS | cours | <https://zentssr.com/cours/cisco> |
 | GLPI — Gestion de parc ITSM | GLPI & Supervision | cours | <https://zentssr.com/cours/glpi> |
-| NAS & SAN — Stockage réseau | GLPI & Supervision | cours | <https://zentssr.com/cours/glpi> |
+| [[Glossary:NAS]] & [[Glossary:SAN]] — Stockage réseau | GLPI & Supervision | cours | <https://zentssr.com/cours/glpi> |
 | Zabbix — Supervision d'infrastructure | GLPI & Supervision | cours | <https://zentssr.com/cours/glpi> |
 | iSCSI — Stockage bloc via IP | GLPI & Supervision | cours | <https://zentssr.com/cours/glpi> |
 
@@ -208,7 +208,7 @@ Types : cours, quiz, jeu, lab, outil, guide.
 
 | Page/Module | Catégorie | Type | Lien |
 |---|---|---|---|
-| Windows Server + AD + OU | Windows | guide | <https://zentssr.com/installation> |
+| Windows Server + AD + [[Glossary:OU]] | Windows | guide | <https://zentssr.com/installation> |
 | GLPI sur serveur LAMP | GLPI | guide | <https://zentssr.com/installation> |
 | Zabbix — Supervision réseau | Zabbix | guide | <https://zentssr.com/installation> |
 | GLPI sur serveur WAMP (guide marqué « Attention ») | GLPI | guide | <https://zentssr.com/installation> |

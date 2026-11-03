@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_PowerShell_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Ubuntu 24-04 LTS de laboratoire, accès sudo, dépôt Microsoft officiel
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 [[Glossary:LTS]] de laboratoire, accès sudo, dépôt Microsoft officiel
 - **OS / Version** : Ubuntu 24-04 LTS
 - **Catégorie** : shell / scripting
 - **Tags** : `ubuntu2404`, `powershell`, `pwsh`, `scripting`
@@ -49,7 +49,7 @@ Tester sur un pilote, lire les notes de version PowerShell, conserver le paquet 
 ## 3. Production — Sécurité
 
 - Ne mettre à jour que depuis le dépôt Microsoft approuvé.
-- Ne pas mélanger Snap, APT et téléchargements manuels.
+- Ne pas mélanger Snap, [[Glossary:APT]] et téléchargements manuels.
 
 ## Validation et retour arrière
 

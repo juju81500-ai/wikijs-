@@ -8,15 +8,15 @@ Test automatique du 29 octobre 2026 sur les 2 854 documents de `01-fiches-simple
 
 | Contrôle | Résultat |
 |---|---|
-| Structure obligatoire (titre, problème, hors-production, production, sécurité) | Conforme. Les 40 fiches qui s'écartent du modèle ont une structure équivalente (« Objectif », « Méthode GUI / PowerShell », « Diagnostic ») ; aucune fiche vide |
+| Structure obligatoire (titre, problème, hors-production, production, sécurité) | Conforme. Les 40 fiches qui s'écartent du modèle ont une structure équivalente (« Objectif », « Méthode [[Glossary:GUI]] / PowerShell », « Diagnostic ») ; aucune fiche vide |
 | Liens relatifs | 0 lien cassé |
 | Blocs de code non fermés | 0 |
 | Fiche avec commandes mais sans « 👉 Explication » | 0 |
-| Syntaxe `bash -n` des blocs `bash` (placeholders `<X>` neutralisés) | 17 alertes, toutes des fichiers de configuration (BIND, etc.) placés dans un bloc `bash` : faux positifs |
+| Syntaxe `bash -n` des blocs `bash` (placeholders `<X>` neutralisés) | 17 alertes, toutes des fichiers de configuration ([[Glossary:BIND]], etc.) placés dans un bloc `bash` : faux positifs |
 | Secrets en clair | 1 corrigé (Keycloak : mot de passe de lab remplacé par `<MOT_DE_PASSE_ADMIN_A_REMPLACER>`). Les autres occurrences sont des placeholders |
 | `curl \| sh` ou `curl \| bash` exécutés | 2 corrigés (K3s, GitLab : téléchargement, lecture avec `less`, puis exécution). Les autres occurrences sont des avertissements « ne jamais faire » |
 | `chmod 777` | Uniquement dans des avertissements |
-| URL en `http://` | Dépôts APT (signés par GPG), WSUS interne, exemples : acceptables |
+| URL en `http://` | Dépôts [[Glossary:APT]] (signés par [[Glossary:GPG]]), [[Glossary:WSUS]] interne, exemples : acceptables |
 
 ## Ce que le test ne couvre pas
 

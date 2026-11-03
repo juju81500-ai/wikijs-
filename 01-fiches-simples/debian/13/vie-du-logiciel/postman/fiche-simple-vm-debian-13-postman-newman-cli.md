@@ -1,8 +1,8 @@
 # Fiche_Simple_-_VM_Debian_13_Postman_Newman_CLI
 
-- **Environnement** : VM Debian 13 Trixie avec bureau graphique, Postman Desktop et Newman
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie avec bureau graphique, Postman Desktop et Newman
 - **OS / Version** : Debian 13 Trixie
-- **Catégorie** : API / exécution en ligne de commande
+- **Catégorie** : [[Glossary:API]] / exécution en ligne de commande
 - **Tags** : `debian13`, `postman`, `api`, `newman`, `vie-du-logiciel`
 
 ---

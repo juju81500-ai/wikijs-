@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_tcpdump_Configurer
 
-- **Environnement** : VM Debian 13 dédiée à tcpdump
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à tcpdump
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : tcpdump / configurer
 - **Tags** : `tcpdump`, `debian13`, `vie-du-logiciel`, `configurer`
@@ -24,7 +24,7 @@ Réaliser une capture finie avec filtre, taille et stockage restreint.
    INTERFACE_CAPTURE=INTERFACE_CAPTURE
    sudo timeout --signal=INT 60 tcpdump -i "$INTERFACE_CAPTURE" -nn -s 96 -c 100 -w /var/tmp/tcpdump-lab/capture.pcap icmp or arp
    ```
-   👉 Explication : Remplacer INTERFACE_CAPTURE par l’interface autorisée. Le filtre ICMP/ARP est un exemple à adapter; -s 96 limite les octets conservés.
+   👉 Explication : Remplacer INTERFACE_CAPTURE par l’interface autorisée. Le filtre [[Glossary:ICMP]]/ARP est un exemple à adapter; -s 96 limite les octets conservés.
 
 3. Pour une observation limitée sans fichier, examiner quelques paquets :
    ```bash

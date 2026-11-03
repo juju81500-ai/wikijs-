@@ -1,6 +1,6 @@
 # fiche-simple-lxc-alpine-proxmox-securiser-exposition.md
 
-- **Environnement** : LXC Alpine sur Proxmox avec filtrage défini par l'architecture
+- **Environnement** : [[Glossary:LXC]] Alpine sur Proxmox avec filtrage défini par l'architecture
 - **OS / Version** : branche Alpine maintenue; noyau partagé avec l'hôte Proxmox
 - **Catégorie** : virtualisation / réseau et sécurité
 - **Tags** : `alpine`, `proxmox`, `lxc`, `firewall`, `hardening`
@@ -13,7 +13,7 @@ Exposer uniquement les services indispensables et appliquer les contrôles au ni
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Vérifier les ports à l'écoute dans le CT :
+1. Vérifier les ports à l'écoute dans le [[Glossary:CT]] :
    ```sh
    apk add iproute2
    ss -lntup
@@ -35,7 +35,7 @@ Exposer uniquement les services indispensables et appliquer les contrôles au ni
    ```bash
    pct config CTID
    ```
-   👉 Explication : contrôler `unprivileged: 1`, `features`; documenter l'adresse et le rôle dans DNS, supervision, inventaire.
+   👉 Explication : contrôler `unprivileged: 1`, `features`; documenter l'adresse et le rôle dans [[Glossary:DNS]], supervision, inventaire.
 
 ## 2. Production — Contrôles
 

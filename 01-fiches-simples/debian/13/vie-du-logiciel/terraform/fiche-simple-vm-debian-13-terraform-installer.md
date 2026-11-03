@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Terraform_Installer
 
-- **Environnement** : VM Debian 13 de laboratoire avec fournisseur sandbox
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire avec fournisseur sandbox
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : infrastructure as code
 - **Tags** : `debian13`, `terraform`, `iac`, `state`, `securite`
@@ -8,7 +8,7 @@
 
 ## Problème précis à résoudre
 
-Installer Terraform selon le dépôt officiel HashiCorp et vérifier signatures/provenance APT.
+Installer Terraform selon le dépôt officiel HashiCorp et vérifier signatures/provenance [[Glossary:APT]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -41,7 +41,7 @@ Installer Terraform selon le dépôt officiel HashiCorp et vérifier signatures/
 
 ## 2. Production — Contrôles
 
-Déployer CLI depuis source approuvée, épingler version et tester providers en préproduction.
+Déployer [[Glossary:CLI]] depuis source approuvée, épingler version et tester providers en préproduction.
 
 ## 3. Production — Sécurité
 

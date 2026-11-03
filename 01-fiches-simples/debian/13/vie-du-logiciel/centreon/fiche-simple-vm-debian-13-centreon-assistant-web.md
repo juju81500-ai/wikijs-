@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-centreon-assistant-web.md
 
-- **Environnement** : VM Debian 13 dédiée, serveur Centreon Central avec MariaDB locale
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée, serveur Centreon Central avec MariaDB locale
 - **OS / Version** : Debian 13 Trixie; Centreon 26.10
 - **Catégorie** : supervision / configuration
 - **Tags** : `debian13`, `centreon`, `supervision`, `wizard`, `admin`
@@ -13,7 +13,7 @@ Finaliser Centreon via son assistant Web et créer le compte administrateur.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Ouvrir `https://centreon.example.net/centreon` (nom d'exemple à remplacer par votre FQDN) depuis le réseau d'administration.
+1. Ouvrir `https://centreon.example.net/centreon` (nom d'exemple à remplacer par votre [[Glossary:FQDN]]) depuis le réseau d'administration.
    👉 Explication : accède à l'assistant d'installation.
 
 2. Suivre l'assistant : vérifier les dépendances, garder les chemins recommandés.
@@ -22,12 +22,12 @@ Finaliser Centreon via son assistant Web et créer le compte administrateur.
 3. Créer le compte `admin` avec un mot de passe unique saisi dans l'assistant et conservé dans un coffre.
    👉 Explication : le secret n'est jamais mis en ligne de commande.
 
-4. Laisser l'assistant initialiser les bases et modules, puis vérifier le certificat TLS présenté par le navigateur.
+4. Laisser l'assistant initialiser les bases et modules, puis vérifier le certificat [[Glossary:TLS]] présenté par le navigateur.
    👉 Explication : confirme que HTTPS utilise le certificat attendu.
 
 ## 2. Production — Contrôles
 
-Après installation, l'accès à la page d'installation ne doit plus être possible; vérifier la redirection HTTP vers HTTPS selon la politique approuvée.
+Après installation, l'accès à la page d'installation ne doit plus être possible; vérifier la redirection [[Glossary:HTTP]] vers HTTPS selon la politique approuvée.
 
 ## 3. Production — Sécurité
 

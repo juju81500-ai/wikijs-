@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Nginx_Valider
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; Nginx des dépôts Debian
 - **Catégorie** : serveur Web / Nginx / Valider (recette)
 - **Tags** : `debian13`, `nginx`, `recette`
@@ -21,7 +21,7 @@ Prouver que Nginx fonctionne, est sécurisé et supervisable avant la mise en se
    ```
    👉 Explication : `nginx -T` affiche la configuration effective (ne pas la diffuser : elle peut contenir des chemins ou des secrets).
 
-2. Tester les réponses HTTP et HTTPS :
+2. Tester les réponses [[Glossary:HTTP]] et HTTPS :
    ```bash
    curl -sI http://SITE.example.net/ | head -5
    curl -sI https://SITE.example.net/ | head -8

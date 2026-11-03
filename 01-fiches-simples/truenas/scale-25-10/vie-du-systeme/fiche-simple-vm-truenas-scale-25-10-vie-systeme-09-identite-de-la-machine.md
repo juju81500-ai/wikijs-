@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Nommer le NAS de façon cohérente avec le DNS.
+Nommer le [[Glossary:NAS]] de façon cohérente avec le [[Glossary:DNS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Réseau > Paramètres globaux > Nom d'hôte, Nom de domaine.
+1. [[Glossary:GUI]] : Réseau > Paramètres globaux > Nom d'hôte, Nom de domaine.
    ```bash
    sudo midclt call network.configuration.update '{"hostname": "NOM_NAS", "domain": "EXEMPLE.LOCAL"}'
    ```
@@ -36,7 +36,7 @@ Ne pas utiliser de nom révélant le contenu des données.
 
 ## Validation et retour arrière
 
-- **Validation** : `hostname -f` renvoie le FQDN attendu.
+- **Validation** : `hostname -f` renvoie le [[Glossary:FQDN]] attendu.
 - **Retour arrière** : restaurer le snapshot ou la sauvegarde pris avant l'étape; consigner l'écart avant de poursuivre.
 
 ## Si le problème n'est pas résolu

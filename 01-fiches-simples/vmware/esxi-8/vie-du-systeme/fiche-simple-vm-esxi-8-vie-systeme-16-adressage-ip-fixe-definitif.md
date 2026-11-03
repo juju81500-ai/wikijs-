@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Fixer l'IP de gestion et le commutateur standard.
+Fixer l'[[Glossary:IP]] de gestion et le commutateur standard.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -40,7 +40,7 @@ Faire la modification avec un accès console hors bande.
 
 ## 3. Production — Sécurité
 
-Documenter l'IP dans l'IPAM; VLAN de gestion séparé.
+Documenter l'IP dans l'[[Glossary:IPAM]]; [[Glossary:VLAN]] de gestion séparé.
 
 ## Validation et retour arrière
 

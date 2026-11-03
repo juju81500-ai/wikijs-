@@ -17,9 +17,9 @@ Vérifier l'amorçage du système installé.
    ```bash
    [ -d /sys/firmware/efi ] && echo UEFI || echo BIOS
    ```
-   👉 Explication : affiche UEFI ou BIOS.
+   👉 Explication : affiche UEFI ou [[Glossary:BIOS]].
 
-2. Lister les environnements d'amorçage : GUI Système > Environnements d'amorçage.
+2. Lister les environnements d'amorçage : [[Glossary:GUI]] Système > Environnements d'amorçage.
    ```bash
    sudo midclt call bootenv.query | python3 -m json.tool | head -30
    ```
@@ -31,11 +31,11 @@ Garder au moins un environnement d'amorçage précédent.
 
 ## 3. Production — Sécurité
 
-Protéger l'accès console et BMC.
+Protéger l'accès console et [[Glossary:BMC]].
 
 ## Validation et retour arrière
 
-- **Validation** : Le NAS redémarre seul sur le disque système.
+- **Validation** : Le [[Glossary:NAS]] redémarre seul sur le disque système.
 - **Retour arrière** : restaurer le snapshot ou la sauvegarde pris avant l'étape; consigner l'écart avant de poursuivre.
 
 ## Si le problème n'est pas résolu

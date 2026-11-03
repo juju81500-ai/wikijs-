@@ -13,7 +13,7 @@ Créer un compte nominatif pour chaque administrateur.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Identifiants > Utilisateurs > Ajouter (nom, mot de passe, rôle Administrateur complet).
+1. [[Glossary:GUI]] : Identifiants > Utilisateurs > Ajouter (nom, mot de passe, rôle Administrateur complet).
    ```bash
    sudo midclt call user.create '{"username":"ADMIN1","full_name":"Prénom Nom","password":"MOT_DE_PASSE","group_create":true,"roles":["FULL_ADMIN"]}'
    ```

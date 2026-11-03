@@ -1,14 +1,14 @@
 # 📄 Fiche_Simple_-_VM_Windows_Server_2022_Securite_ADCS_Certs
 
-- **Environnement** : VM (Windows Server 2022, autorité de certification d'entreprise) / Domaine Active Directory
-- **OS / Version** : Windows Server 2022 - Famille Windows Server (AD CS)
-- **Catégorie** : Sécurité / PKI et certificats
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022, autorité de certification d'entreprise) / Domaine Active Directory
+- **OS / Version** : Windows Server 2022 - Famille Windows Server ([[Glossary:AD]] CS)
+- **Catégorie** : Sécurité / [[Glossary:PKI]] et certificats
 - **Tags** : `[windows-server-2022]`, `[ad-cs]`, `[pki]`, `[certificats]`, `[certutil]`, `[powershell]`
 
 ## 🎯 Problème précis à résoudre
-Installer une autorité de certification Active Directory Certificate Services (AD CS) pour émettre les certificats TLS et de machine du domaine, puis demander un certificat serveur et publier les listes de révocation (CRL).
+Installer une autorité de certification Active Directory Certificate Services (AD CS) pour émettre les certificats [[Glossary:TLS]] et de machine du domaine, puis demander un certificat serveur et publier les listes de révocation ([[Glossary:CRL]]).
 
-> En production, la hiérarchie recommandée est une racine hors ligne (Standalone Root CA) et une autorité émettrice subordonnée (Enterprise Subordinate CA). La procédure lab ci-dessous crée une racine d'entreprise unique, à ne pas utiliser telle quelle en production.
+> En production, la hiérarchie recommandée est une racine hors ligne (Standalone Root [[Glossary:CA]]) et une autorité émettrice subordonnée (Enterprise Subordinate CA). La procédure lab ci-dessous crée une racine d'entreprise unique, à ne pas utiliser telle quelle en production.
 
 ---
 
@@ -22,7 +22,7 @@ Installer une autorité de certification Active Directory Certificate Services (
    ```powershell
    Install-AdcsCertificationAuthority -CAType EnterpriseRootCa -CACommonName "<nom_autorite>" -CryptoProviderName "RSA#Microsoft Software Key Storage Provider" -KeyLength 4096 -HashAlgorithmName SHA256 -ValidityPeriod Years -ValidityPeriodUnits 5 -Force
    ```
-   👉 Explication : Crée la clé RSA 4096 bits et le certificat racine valable 5 ans. Cette opération est définitive pour la forêt du lab.
+   👉 Explication : Crée la clé [[Glossary:RSA]] 4096 bits et le certificat racine valable 5 ans. Cette opération est définitive pour la forêt du lab.
 3. Vérifier l'autorité et les modèles de certificats disponibles :
    ```powershell
    certutil -CAInfo
@@ -40,7 +40,7 @@ Installer une autorité de certification Active Directory Certificate Services (
    ```powershell
    Get-Certificate -Template "WebServer" -DnsName "<nom_serveur_dns>" -CertStoreLocation Cert:\LocalMachine\My
    ```
-   👉 Explication : Génère une demande, la soumet à l'autorité et installe le certificat dans le magasin de la machine. Le nom DNS doit correspondre au nom utilisé par les clients.
+   👉 Explication : Génère une demande, la soumet à l'autorité et installe le certificat dans le magasin de la machine. Le nom [[Glossary:DNS]] doit correspondre au nom utilisé par les clients.
 2. Contrôler le certificat installé :
    ```powershell
    Get-ChildItem -Path Cert:\LocalMachine\My | Where-Object { $_.Subject -like "*<nom_serveur_dns>*" } | Select-Object Subject, NotAfter, Thumbprint
@@ -55,7 +55,7 @@ Installer une autorité de certification Active Directory Certificate Services (
    New-Item -ItemType Directory -Path "C:\PKI" -Force | Out-Null
    certutil -ca.cert "C:\PKI\ca_racine.cer"
    ```
-   👉 Explication : Fournit le certificat public de l'autorité à déployer par GPO. La clé privée ne quitte jamais l'autorité.
+   👉 Explication : Fournit le certificat public de l'autorité à déployer par [[Glossary:GPO]]. La clé privée ne quitte jamais l'autorité.
 2. Régler la période de publication des CRL (une semaine) et la publier :
    ```powershell
    certutil -setreg CA\CRLPeriodUnits 1

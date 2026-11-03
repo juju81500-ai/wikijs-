@@ -13,7 +13,7 @@ Revenir à l'état 2016/2019 si la mise à niveau vers 2022 échoue ou si l'appl
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Avant l'opération : consigner l'emplacement de la sauvegarde complète et du snapshot de VM.
+1. Avant l'opération : consigner l'emplacement de la sauvegarde complète et du snapshot de [[Glossary:VM]].
    👉 Explication : une mise à niveau en place n'a pas de désinstallation générale fiable : le retour arrière repose sur la sauvegarde ou le snapshot.
 2. Si l'installation échoue en cours de route, laisser Windows annuler automatiquement la mise à niveau et redémarrer ; ne pas couper l'alimentation.
    👉 Explication : Windows Setup restaure l'ancien système en cas d'échec ; vérifier ensuite les journaux dans `C:\$WINDOWS.~BT\Sources\Panther`.
@@ -23,8 +23,8 @@ Revenir à l'état 2016/2019 si la mise à niveau vers 2022 échoue ou si l'appl
    wbadmin start sysrecovery -version:VERSION_A_REMPLACER -backupTarget:E: -machineName:NOM_SERVEUR
    ```
    👉 Explication : `VERSION_A_REMPLACER` provient de `wbadmin get versions` ; `sysrecovery` s'exécute depuis l'environnement de récupération (WinRE).
-4. Pour un contrôleur de domaine : suivre la procédure de restauration d'AD DS (état système) et ne pas restaurer un snapshot sans précautions USN/réplication.
-   👉 Explication : une restauration incorrecte d'un DC peut causer un retour en arrière de la réplication (USN rollback) ; utiliser une VM compatible VM-GenerationID.
+4. Pour un contrôleur de domaine : suivre la procédure de restauration d'[[Glossary:AD]] DS (état système) et ne pas restaurer un snapshot sans précautions USN/réplication.
+   👉 Explication : une restauration incorrecte d'un [[Glossary:DC]] peut causer un retour en arrière de la réplication (USN rollback) ; utiliser une VM compatible VM-GenerationID.
 
 ## 2. Production — Contrôles
 

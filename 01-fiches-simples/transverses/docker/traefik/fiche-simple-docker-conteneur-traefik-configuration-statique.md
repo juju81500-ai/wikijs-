@@ -13,7 +13,7 @@ Préparer la configuration de départ de Traefik dans Compose.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Épingler une version maintenue de Traefik dans `compose.yaml` (publier uniquement 80 et 443, réseaux dédiés, journaux, resolver ACME).
+1. Épingler une version maintenue de Traefik dans `compose.yaml` (publier uniquement 80 et 443, réseaux dédiés, journaux, resolver [[Glossary:ACME]]).
    👉 Explication : évite les surprises d'une version flottante.
 
 2. Valider la syntaxe :
@@ -28,7 +28,7 @@ Préparer la configuration de départ de Traefik dans Compose.
    ```
    👉 Explication : prépare le démarrage.
 
-4. Garder identifiants DNS et secrets ACME hors dépôt, labels et journaux.
+4. Garder identifiants [[Glossary:DNS]] et secrets ACME hors dépôt, labels et journaux.
    👉 Explication : évite leur fuite.
 
 ## 2. Production — Contrôles

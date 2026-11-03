@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Zeek_Valider
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Zeek
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Zeek
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Zeek / validation
 - **Tags** : `zeek`, `ubuntu24.04`, `vie-du-logiciel`, `valider`
@@ -31,7 +31,7 @@ Recetter le capteur Zeek : processus, journaux et pertes de paquets.
    ```bash
    sudo /opt/zeek/bin/zeek-cut ts id.orig_h id.resp_h proto < /opt/zeek/logs/current/conn.log | tail -n 10
    ```
-   👉 Explication : Affiche quelques colonnes de `conn.log` (le trafic ICMP y figure avec proto icmp).
+   👉 Explication : Affiche quelques colonnes de `conn.log` (le trafic [[Glossary:ICMP]] y figure avec proto icmp).
 
 ## 2. Production — Contrôles
 

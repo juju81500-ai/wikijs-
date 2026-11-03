@@ -24,7 +24,7 @@ Maintenir le Caddyfile, les certificats et le paquet sans perdre le renouvelleme
    ```bash
    sudo cp -a /etc/caddy/Caddyfile /root/Caddyfile.$(date +%F)
    ```
-   👉 Explication : sauvegarder aussi tout certificat géré manuellement; les certificats ACME se renouvellent, mais dépendent du DNS et des ports.
+   👉 Explication : sauvegarder aussi tout certificat géré manuellement; les certificats [[Glossary:ACME]] se renouvellent, mais dépendent du [[Glossary:DNS]] et des ports.
 
 3. Mettre à jour après lecture des notes de version et test sur un pilote :
    ```bash
@@ -36,7 +36,7 @@ Maintenir le Caddyfile, les certificats et le paquet sans perdre le renouvelleme
 
 ## 2. Production — Contrôles
 
-Définir responsable de certificat, alertes de renouvellement, politique de rotation, sauvegarde, maintenance APT et procédure d'interruption.
+Définir responsable de certificat, alertes de renouvellement, politique de rotation, sauvegarde, maintenance [[Glossary:APT]] et procédure d'interruption.
 
 ## 3. Production — Sécurité
 

@@ -1,6 +1,6 @@
 # 📄 PostgreSQL
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : PostgreSQL 15.x (paquet des dépôts Debian 12, à vérifier sur la version déployée)
 - **Catégorie** : Services Web et bases de données
@@ -68,7 +68,7 @@ echo "$APP_PASS"
 ```
 👉 Explication : Le mot de passe s'affiche une seule fois : le copier dans le coffre-fort du pack. Le rôle `appli` devient propriétaire de `base_appli`.
 
-4. Ouverture du pare-feu pour l'application et l'administration SSH :
+4. Ouverture du pare-feu pour l'application et l'administration [[Glossary:SSH]] :
 ```bash
 sudo apt install -y ufw
 sudo ufw allow from 192.168.10.0/24 to any port 22 proto tcp

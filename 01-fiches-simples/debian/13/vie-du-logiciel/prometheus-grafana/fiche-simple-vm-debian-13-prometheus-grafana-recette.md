@@ -23,7 +23,7 @@ Confirmer l'état des services et des cibles avant de considérer la collecte op
    ```bash
    curl -fsS http://127.0.0.1:9090/-/ready
    ```
-   👉 Explication : une réponse HTTP 200 confirme que le serveur accepte les requêtes.
+   👉 Explication : une réponse [[Glossary:HTTP]] 200 confirme que le serveur accepte les requêtes.
 
 3. Examiner l'état des cibles :
    ```bash
@@ -43,7 +43,7 @@ Définir sondes de disponibilité, alertes opérationnelles, seuils, rotation d'
 
 ## 3. Production — Sécurité
 
-- Les endpoints et sorties API peuvent révéler les cibles internes; restreindre l'accès.
+- Les endpoints et sorties [[Glossary:API]] peuvent révéler les cibles internes; restreindre l'accès.
 - Ne pas publier des résultats contenant des noms d'hôtes sensibles.
 - Ne pas assimiler un endpoint `UP` à une supervision complète ou à une détection d'incident.
 - Ne pas ignorer silencieusement les cibles qui échouent.

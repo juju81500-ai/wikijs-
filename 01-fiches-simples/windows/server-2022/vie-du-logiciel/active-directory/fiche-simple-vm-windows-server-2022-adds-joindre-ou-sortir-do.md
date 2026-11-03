@@ -1,6 +1,6 @@
 # 📄 VM_WinSrv_2022_ADDS_Joindre-Ou-Sortir-Domaine.md
 
-- **Environnement** : VM / Serveur Physique
+- **Environnement** : [[Glossary:VM]] / Serveur Physique
 - **OS / Version** : Windows Server 2022 / Windows 11 / Windows 10
 - **Catégorie** : Active Directory / Domaine
 - **Tags** : `[winsrv2022]`, `[win11]`, `[active-directory]`, `[joindre-domaine]`, `[gui]`, `[powershell]`, `[hardening]`
@@ -15,7 +15,7 @@ Joindre un serveur Windows Server ou un poste de travail à un domaine Active Di
 ## 🖥️ Méthode Interface Graphique (GUI Pas-à-Pas - "Clic-Clic")
 ### Avant la jonction
 1. Vérifier que l'édition de Windows prend en charge la jonction à un domaine (Windows Pro/Enterprise ou Windows Server).
-2. Dans les propriétés IPv4 de la carte réseau (`ncpa.cpl`), configurer comme DNS uniquement le ou les DNS internes Active Directory. Un DNS public en secondaire peut empêcher la découverte du contrôleur de domaine.
+2. Dans les propriétés IPv4 de la carte réseau (`ncpa.cpl`), configurer comme [[Glossary:DNS]] uniquement le ou les DNS internes Active Directory. Un DNS public en secondaire peut empêcher la découverte du contrôleur de domaine.
 3. Vérifier que l'horloge est synchronisée et que le nom de l'ordinateur est conforme à la convention de nommage.
 
 
@@ -28,9 +28,9 @@ Joindre un serveur Windows Server ou un poste de travail à un domaine Active Di
    - Dans l'onglet *Nom de l'ordinateur*, cliquer sur le bouton **Modifier...** en bas à droite.
    - En haut, dans le champ *Nom de l'ordinateur*, vérifier/saisir le nom d'hôte de la machine (ex: `SRV-APP-01`).
    - En bas, dans la section *Membre de*, cocher l'option **Domaine :**.
-   - Saisir le nom FQDN du domaine Active Directory (ex: `lab.local`).
+   - Saisir le nom [[Glossary:FQDN]] du domaine Active Directory (ex: `lab.local`).
    - Cliquer sur **OK**.
-   - 👉 *Explication : Lance la tentative de jonction au domaine AD via le réseau.*
+   - 👉 *Explication : Lance la tentative de jonction au domaine [[Glossary:AD]] via le réseau.*
 
 3. **Authentification de l'administrateur du domaine** :
    - Une fenêtre d'invite de sécurité s'affiche : saisir l'identifiant d'un compte autorisé (ex: `LAB\Administrateur` ou `adm-jdupont`) et son mot de passe.
@@ -61,11 +61,11 @@ om_utilisateur` pour ouvrir une session locale; l'accès et les stratégies du d
 ---
 
 ## ⚡ 2. Production — Façon Simplifiée
-1. **Jonction contrôlée avec spécification de l'Unité d'Organisation (OU) cible** :
+1. **Jonction contrôlée avec spécification de l'Unité d'Organisation ([[Glossary:OU]]) cible** :
    ```powershell
    Add-Computer -DomainName "lab.local" -OUPath "OU=TSSR_Serveurs,DC=lab,DC=local" -Credential (Get-Credential) -Restart -Force
    ```
-   👉 *Explication : Tu places immédiatement la machine dans l'OU réservée aux serveurs pour lui appliquer directement les bonnes GPO dès le premier boot.*
+   👉 *Explication : Tu places immédiatement la machine dans l'OU réservée aux serveurs pour lui appliquer directement les bonnes [[Glossary:GPO]] dès le premier boot.*
 
 2. **Sortie d'un domaine pour revenir en Workgroup (si nécessaire)** :
    ```powershell

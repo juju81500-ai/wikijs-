@@ -18,7 +18,7 @@ Préparer l'hôte, Docker et le compte de service Bitwarden.
    sudo apt update
    sudo apt full-upgrade
    ```
-   👉 Explication : applique les correctifs; configurer aussi DNS et NTP.
+   👉 Explication : applique les correctifs; configurer aussi [[Glossary:DNS]] et [[Glossary:NTP]].
 
 2. Vérifier Docker Engine et Compose :
    ```bash

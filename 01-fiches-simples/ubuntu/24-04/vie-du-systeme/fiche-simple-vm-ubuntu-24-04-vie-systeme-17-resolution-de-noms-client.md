@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Vie_Systeme_17_Resolution_De_Noms_Client
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS « noble »
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] « noble »
 - **OS / Version** : Ubuntu 24-04; étape 17 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2404`, `vie-du-systeme`, `cycle-de-vie`, `etape-17`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Configurer les serveurs DNS.
+Configurer les serveurs [[Glossary:DNS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 

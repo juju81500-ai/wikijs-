@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Dovecot_Valider
 
-- **Environnement** : VM Ubuntu Server 24-04; Dovecot depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04; Dovecot depuis les dépôts de la distribution
 - **OS / Version** : Ubuntu Server 24-04
 - **Catégorie** : Vie du logiciel / Dovecot — Valider (recette)
 - **Tags** : `dovecot`, `serveur`, `vie-du-logiciel`, `valider`

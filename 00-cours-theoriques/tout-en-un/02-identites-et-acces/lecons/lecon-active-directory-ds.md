@@ -1,7 +1,7 @@
 # Leçon — Active Directory Domain Services : domaine, forêt, DNS, Kerberos et sites
 
 - **Tags** : `transverse`, `tout-en-un`, `lecon`, `identites`, `active-directory`, `kerberos`, `dns`, `windows-server`
-- **Niveau** : Débutant à intermédiaire (TSSR / administrateur systèmes)
+- **Niveau** : Débutant à intermédiaire ([[Glossary:TSSR]] / administrateur systèmes)
 - **Durée estimée** : 3 h 30 (lecture 1 h 15, laboratoire 1 h 30, exercices et quiz 45 min)
 
 ---
@@ -10,27 +10,27 @@
 
 À la fin de cette leçon, vous saurez :
 
-1. expliquer ce qu'apporte Active Directory Domain Services (AD DS) par rapport à des comptes locaux dispersés ;
+1. expliquer ce qu'apporte Active Directory Domain Services ([[Glossary:AD]] DS) par rapport à des comptes locaux dispersés ;
 2. distinguer **domaine**, **arbre**, **forêt**, **contrôleur de domaine** et **catalogue global** ;
-3. décrire le rôle du **DNS** et vérifier qu'un contrôleur est annoncé aux clients ;
-4. raconter un échange **Kerberos**, puis dire quand **NTLM** prend le relais ;
-5. lire un DN LDAP et comprendre le **schéma** ;
-6. concevoir des **OU** raisonnables et modéliser des **sites** ;
+3. décrire le rôle du **[[Glossary:DNS]]** et vérifier qu'un contrôleur est annoncé aux clients ;
+4. raconter un échange **Kerberos**, puis dire quand **[[Glossary:NTLM]]** prend le relais ;
+5. lire un [[Glossary:DN]] [[Glossary:LDAP]] et comprendre le **schéma** ;
+6. concevoir des **[[Glossary:OU]]** raisonnables et modéliser des **sites** ;
 7. monter un laboratoire jetable et lancer des diagnostics en lecture seule.
 
 ## Prérequis et durée
 
-- Notions de réseau IP, de DNS et de ports TCP/UDP ; usage de PowerShell.
-- Pour le laboratoire : un hyperviseur, une VM Windows Server et une VM cliente Windows sur un réseau **isolé**, en versions d'évaluation officielles, détruisibles.
+- Notions de réseau [[Glossary:IP]], de DNS et de ports [[Glossary:TCP]]/UDP ; usage de PowerShell.
+- Pour le laboratoire : un hyperviseur, une [[Glossary:VM]] Windows Server et une VM cliente Windows sur un réseau **isolé**, en versions d'évaluation officielles, détruisibles.
 - Durée : environ 3 h 30 (lecture 1 h 15, laboratoire 1 h 30, exercices et quiz 45 min).
 
 Les adresses appartiennent aux plages de documentation (192.0.2.0/24, 198.51.100.0/24), le domaine est `example.test`, et aucun mot de passe n'apparaît : les secrets sont saisis de façon interactive.
 
 ## L'essentiel en bref
 
-- AD DS = **annuaire** d'objets + **authentification** (Kerberos, NTLM) + **administration** (GPO, étudiées dans une autre leçon).
+- AD DS = **annuaire** d'objets + **authentification** (Kerberos, NTLM) + **administration** ([[Glossary:GPO]], étudiées dans une autre leçon).
 - **Domaine** = frontière de réplication et d'administration ; **forêt** = frontière de sécurité, schéma unique.
-- Un **contrôleur de domaine** (DC) héberge la base `NTDS.dit` ; les DC se répliquent entre eux, sauf quelques rôles uniques (FSMO).
+- Un **contrôleur de domaine** ([[Glossary:DC]]) héberge la base `NTDS.dit` ; les DC se répliquent entre eux, sauf quelques rôles uniques ([[Glossary:FSMO]]).
 - **Sans DNS correct, AD ne fonctionne pas** : les clients trouvent les DC par des enregistrements SRV.
 - **Kerberos** repose sur des tickets et une heure cohérente (5 minutes de tolérance) ; **NTLM** est un secours plus ancien.
 - Les **OU** servent à déléguer et à appliquer des GPO ; les **sites** décrivent la topologie réseau.
@@ -80,7 +80,7 @@ Règle pratique pour un petit établissement : **une forêt, un domaine**.
 Un **contrôleur de domaine** est un serveur Windows sur lequel le rôle AD DS est installé et promu. Il héberge :
 
 - la base d'annuaire `NTDS.dit` (dossier `C:\Windows\NTDS` par défaut) ;
-- le dossier partagé **SYSVOL** (scripts et GPO, réplication par DFSR) ;
+- le dossier partagé **[[Glossary:SYSVOL]]** (scripts et GPO, réplication par DFSR) ;
 - les services Kerberos (KDC), LDAP, DNS (souvent), le service d'horloge Windows (W32Time).
 
 ### 3.1 Réplication multi-maître
@@ -96,7 +96,7 @@ Quelques opérations sont confiées à un seul DC à la fois (**FSMO**) :
 | Maître de schéma | Forêt | Autorise les modifications du schéma |
 | Maître de nommage de domaine | Forêt | Ajoute ou retire des domaines de la forêt |
 | Émulateur PDC | Domaine | Référence de l'heure, verrouillages, changements de mot de passe urgents |
-| Maître RID | Domaine | Distribue des plages d'identifiants relatifs (RID) pour créer des SID |
+| Maître RID | Domaine | Distribue des plages d'identifiants relatifs (RID) pour créer des [[Glossary:SID]] |
 | Maître d'infrastructure | Domaine | Maintient les références inter-domaines |
 
 Dans un petit domaine, tous ces rôles résident souvent sur le premier DC.
@@ -304,7 +304,7 @@ Install-WindowsFeature -Name AD-Domain-Services -IncludeManagementTools
 Install-ADDSForest -DomainName "example.test" -DomainNetbiosName "EXAMPLE" -InstallDns -SafeModeAdministratorPassword (Read-Host -AsSecureString "Mot de passe DSRM")
 ```
 
-👉 Explication : crée une nouvelle forêt et un premier domaine, installe le DNS et demande interactivement le mot de passe du mode de restauration des services d'annuaire (DSRM). Le serveur redémarre à la fin. Choisissez un secret de laboratoire, jamais réutilisé ailleurs.
+👉 Explication : crée une nouvelle forêt et un premier domaine, installe le DNS et demande interactivement le mot de passe du mode de restauration des services d'annuaire ([[Glossary:DSRM]]). Le serveur redémarre à la fin. Choisissez un secret de laboratoire, jamais réutilisé ailleurs.
 
 ### Étape 3 — Vérifier l'état du DC (lecture seule)
 
@@ -373,7 +373,7 @@ Restaurez l'instantané ou supprimez les deux VM.
 
 **Q1.** Quelle est la vraie frontière de sécurité dans AD ? A) Le domaine — B) La forêt — C) L'OU — D) Le site
 
-**Q2.** Quel protocole interroge l'annuaire ? A) SMB — B) LDAP — C) SNMP — D) NTP
+**Q2.** Quel protocole interroge l'annuaire ? A) SMB — B) LDAP — C) [[Glossary:SNMP]] — D) [[Glossary:NTP]]
 
 **Q3.** Un client ne trouve plus de DC. Cause la plus vraisemblable ? A) Fond d'écran — B) DNS client ne connaissant pas la zone du domaine — C) Impression bloquée — D) Navigateur obsolète
 
@@ -409,7 +409,7 @@ Restaurez l'instantané ou supprimez les deux VM.
 | Symptôme | Cause probable | Vérification (lecture seule) | Action |
 | --- | --- | --- | --- |
 | « Domaine introuvable » à la jonction | Le client n'utilise pas le DNS du DC | `Get-DnsClientServerAddress`, `Resolve-DnsName _ldap._tcp.dc._msdcs.example.test -Type SRV` | Pointer le DNS du client vers le DC |
-| Kerberos échoue, NTLM passe | Écart d'heure, SPN absent ou dupliqué, accès par IP | `klist`, `w32tm /query /status`, `setspn -L SRV-FICHIERS` | Corriger l'heure, utiliser le FQDN, supprimer le doublon de SPN |
+| Kerberos échoue, NTLM passe | Écart d'heure, SPN absent ou dupliqué, accès par IP | `klist`, `w32tm /query /status`, `setspn -L SRV-FICHIERS` | Corriger l'heure, utiliser le [[Glossary:FQDN]], supprimer le doublon de SPN |
 | Ouverture de session lente | Sous-réseau non déclaré, DC lointain | `nltest /dsgetsite`, `nltest /dsgetdc:example.test` | Déclarer le sous-réseau, ajouter un DC local |
 | Réplication en erreur | DNS, pare-feu, heure, SYSVOL | `repadmin /replsummary`, `dcdiag /test:replications` | Traiter d'abord la cause réseau ou DNS |
 
@@ -453,4 +453,4 @@ Ordre de dépannage : **réseau → DNS → heure → ports → journaux d'évé
 | --- | --- | --- | --- |
 | 2026-11-01 | Windows Server (AD DS), client Windows, Linux (`dig`) | Rédaction assistée (Copilot) | Non testé sur plateforme cible |
 
-Remarque : aucune commande n'a été exécutée sur Windows Server ; seuls les licences d'images (API Wikimedia Commons) et la validité XML des SVG ont été contrôlées localement.
+Remarque : aucune commande n'a été exécutée sur Windows Server ; seuls les licences d'images ([[Glossary:API]] Wikimedia Commons) et la validité XML des SVG ont été contrôlées localement.

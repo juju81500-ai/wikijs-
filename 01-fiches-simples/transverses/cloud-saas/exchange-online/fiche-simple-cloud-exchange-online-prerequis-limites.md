@@ -26,7 +26,7 @@ Cadrer l'administration défensive d'Exchange Online avant toute modification : 
    ```powershell
    Connect-ExchangeOnline -UserPrincipalName ADMIN_UPN
    ```
-   👉 Explication : ADMIN_UPN est à remplacer par votre compte administrateur; l'authentification (MFA) se fait dans la fenêtre interactive, aucun mot de passe en clair.
+   👉 Explication : ADMIN_UPN est à remplacer par votre compte administrateur; l'authentification ([[Glossary:MFA]]) se fait dans la fenêtre interactive, aucun mot de passe en clair.
 
 4. Noter les limites : pas d'accès au serveur, pas de journaux transport bruts, fonctions dépendantes de la licence (Defender for Office 365, Purview).
    👉 Explication : la plateforme est gérée par Microsoft; le client ne contrôle que la configuration du tenant.

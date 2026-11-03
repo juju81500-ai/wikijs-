@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-caddy-valider-service.md
 
-- **Environnement** : VM Debian 13, FQDN et client de test autorisés
+- **Environnement** : [[Glossary:VM]] Debian 13, [[Glossary:FQDN]] et client de test autorisés
 - **OS / Version** : Debian 13; Caddy stable
 - **Catégorie** : serveur Web / validation
 - **Tags** : `debian13`, `caddy`, `https`, `certificat`, `validation`
@@ -17,13 +17,13 @@ Vérifier la réponse HTTPS de Caddy, son certificat, son journal et l'absence d
    ```bash
    curl -fsSI https://app.example.net/
    ```
-   👉 Explication : code HTTP attendu et certificat valide (nom, expiration).
+   👉 Explication : code [[Glossary:HTTP]] attendu et certificat valide (nom, expiration).
 
 2. Lire les journaux :
    ```bash
    sudo journalctl -u caddy --since '15 minutes ago' --no-pager
    ```
-   👉 Explication : repérer les erreurs ACME ou de connexion amont.
+   👉 Explication : repérer les erreurs [[Glossary:ACME]] ou de connexion amont.
 
 3. Vérifier les ports à l'écoute :
    ```bash

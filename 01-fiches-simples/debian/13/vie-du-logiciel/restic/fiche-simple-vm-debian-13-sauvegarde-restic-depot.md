@@ -1,6 +1,6 @@
 # 📄 Fiche_Simple_-_VM_Debian_13_Sauvegarde_Restic_Depot
 
-- **Environnement** : VM ou serveur Debian 13 avec données applicatives à sauvegarder
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 13 avec données applicatives à sauvegarder
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
 - **Catégorie** : Sauvegarde / Dépôt chiffré Restic
 - **Tags** : `[debian13]`, `[debian]`, `[restic]`, `[sauvegarde]`, `[chiffrement]`, `[backup]`

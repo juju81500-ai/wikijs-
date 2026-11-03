@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_WireGuard_Securiser
 
-- **Environnement** : VM Ubuntu 24-04 dédiée à un serveur WireGuard natif
-- **OS / Version** : Ubuntu 24-04 LTS Noble; noyau avec module WireGuard et paquet wireguard, versions à vérifier
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 dédiée à un serveur WireGuard natif
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; noyau avec module WireGuard et paquet wireguard, versions à vérifier
 - **Catégorie** : WireGuard natif / sécuriser
 - **Tags** : `wireguard`, `ubuntu24-04`, `vie-du-logiciel`, `securiser`
 
@@ -13,14 +13,14 @@ Réduire l'exposition du serveur WireGuard.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Ouvrir seulement le port UDP VPN (ufw) :
+1. Ouvrir seulement le port [[Glossary:UDP]] [[Glossary:VPN]] (ufw) :
    ```bash
    sudo ufw allow from ADMIN_NETWORK to any port 22 proto tcp
    sudo ufw allow VPN_UDP_PORT/udp
    sudo ufw enable
    sudo ufw status verbose
    ```
-   👉 Explication : ADMIN_NETWORK (CIDR d'administration) et VPN_UDP_PORT (port UDP du serveur) sont à remplacer; autoriser SSH avant d'activer ufw.
+   👉 Explication : ADMIN_NETWORK ([[Glossary:CIDR]] d'administration) et VPN_UDP_PORT (port UDP du serveur) sont à remplacer; autoriser [[Glossary:SSH]] avant d'activer ufw.
 
 2. Activer le routage uniquement si le serveur doit joindre un réseau interne :
    ```bash

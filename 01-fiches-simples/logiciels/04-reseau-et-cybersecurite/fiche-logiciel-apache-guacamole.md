@@ -12,7 +12,7 @@ Fiche défensive d’administration et de gouvernance. Elle ne remplace pas le g
 
 ## 🧭 Périmètre
 
-Guide de déploiement : [Apache Guacamole 1.6.0 avec Docker Compose](../../../02-fiches-completes/transverses/docker/installation-deploiement/121-deploiement-apache-guacamole-1-6-docker.md). Celui-ci couvre le socle PostgreSQL et l'accès derrière reverse proxy HTTPS; MFA/SSO, haute disponibilité et connexions cibles ne sont pas inclus. Exposer l’accès via TLS et un frontal pris en charge, protéger le compte d’administration, activer MFA via une extension d’authentification approuvée, appliquer des droits par connexion et utilisateur, et ne pas activer presse-papiers/transfert de fichiers sans besoin validé. Stocker les secrets de connexion dans un mécanisme protégé et journaliser les accès selon la politique de confidentialité.
+Guide de déploiement : [Apache Guacamole 1.6.0 avec Docker Compose](../../../02-fiches-completes/transverses/docker/installation-deploiement/121-deploiement-apache-guacamole-1-6-docker.md). Celui-ci couvre le socle PostgreSQL et l'accès derrière reverse proxy HTTPS; [[Glossary:MFA]]/SSO, haute disponibilité et connexions cibles ne sont pas inclus. Exposer l’accès via [[Glossary:TLS]] et un frontal pris en charge, protéger le compte d’administration, activer MFA via une extension d’authentification approuvée, appliquer des droits par connexion et utilisateur, et ne pas activer presse-papiers/transfert de fichiers sans besoin validé. Stocker les secrets de connexion dans un mécanisme protégé et journaliser les accès selon la politique de confidentialité.
 
 ## ✅ Autorisation et préparation
 

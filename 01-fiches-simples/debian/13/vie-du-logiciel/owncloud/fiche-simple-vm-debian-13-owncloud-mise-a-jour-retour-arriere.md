@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_ownCloud_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Debian 13; ownCloud Infinite Scale (oCIS), binaire officiel, Nginx
+- **Environnement** : [[Glossary:VM]] Debian 13; ownCloud Infinite Scale (oCIS), binaire officiel, Nginx
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / ownCloud — Mise à jour et retour arrière
 - **Tags** : `debian13`, `owncloud`, `ocis`, `cloud`, `mise-a-jour-retour-arriere`

@@ -1,6 +1,6 @@
 # fiche-simple-vm-windows-server-2022-robocopy-perimetre.md
 
-- **Environnement** : Windows Server 2022 (Robocopy intégré); partages SMB et volumes NTFS
+- **Environnement** : Windows Server 2022 (Robocopy intégré); partages SMB et volumes [[Glossary:NTFS]]
 - **OS / Version** : Windows Server 2022 (Robocopy; non testé sur d'autres versions)
 - **Catégorie** : copie / sauvegarde de fichiers
 - **Tags** : `windows-server-2022`, `robocopy`, `perimetre`
@@ -16,7 +16,7 @@ Comprendre ce que Robocopy sait faire et ce qu'il ne sait pas faire avant de l'u
 1. Retenir que Robocopy copie des arborescences de fichiers.
    👉 Explication : ce n'est ni une sauvegarde historisée, ni une sauvegarde applicative.
 
-2. Pour fichiers verrouillés, bases de données et états système, choisir une solution adaptée (Veeam, VSS, sauvegarde native).
+2. Pour fichiers verrouillés, bases de données et états système, choisir une solution adaptée (Veeam, [[Glossary:VSS]], sauvegarde native).
    👉 Explication : Robocopy ne copie pas de façon cohérente les fichiers ouverts.
 
 3. Retenir qu'un miroir (`/MIR`) propage les suppressions.

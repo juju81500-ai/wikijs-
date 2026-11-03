@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_OpenVPN_Installer
 
-- **Environnement** : VM Ubuntu 24-04 dédiée à OpenVPN Community Edition (serveur)
-- **OS / Version** : Ubuntu 24-04 LTS Noble; version des dépôts à vérifier sur l'hôte
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 dédiée à OpenVPN Community Edition (serveur)
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; version des dépôts à vérifier sur l'hôte
 - **Catégorie** : OpenVPN Community Edition / installer
 - **Tags** : `openvpn`, `ubuntu24-04`, `vie-du-logiciel`, `installer`
 
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Installer OpenVPN Community Edition et l'outil PKI depuis les dépôts de Ubuntu sans démarrer de service non configuré.
+Installer OpenVPN Community Edition et l'outil [[Glossary:PKI]] depuis les dépôts de Ubuntu sans démarrer de service non configuré.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -34,7 +34,7 @@ Consigner version, dépôt d'origine et unités disponibles; prévoir un client 
 
 ## 3. Production — Sécurité
 
-- Ne pas activer ni démarrer l'unité avant d'avoir une configuration validée; conserver la clé de CA hors ligne.
+- Ne pas activer ni démarrer l'unité avant d'avoir une configuration validée; conserver la clé de [[Glossary:CA]] hors ligne.
 
 ## Validation et retour arrière
 

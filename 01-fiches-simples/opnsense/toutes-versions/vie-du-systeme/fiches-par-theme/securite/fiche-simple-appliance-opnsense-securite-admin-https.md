@@ -1,6 +1,6 @@
 # 📄 fiche-simple-appliance-opnsense-securite-admin-https.md
 
-- **Environnement** : OPNsense sur VM Proxmox VE ou appliance dédiée, avec un réseau de gestion distinct du LAN utilisateurs
+- **Environnement** : OPNsense sur [[Glossary:VM]] Proxmox VE ou appliance dédiée, avec un réseau de gestion distinct du [[Glossary:LAN]] utilisateurs
 - **OS / Version** : OPNsense (base FreeBSD) - Toutes-versions (libellés de menu à vérifier sur la version déployée)
 - **Catégorie** : Sécurité / Accès d'administration
 - **Tags** : `opnsense`, `freebsd`, `https`, `ssh`, `hardening`, `firewall`
@@ -8,14 +8,14 @@
 ---
 
 ## 🎯 Problème précis à résoudre
-Restreindre l'interface web et l'accès SSH d'OPNsense à un réseau d'administration, imposer HTTPS et l'authentification par clé SSH, sans se verrouiller hors de l'appliance.
+Restreindre l'interface web et l'accès [[Glossary:SSH]] d'OPNsense à un réseau d'administration, imposer HTTPS et l'authentification par clé SSH, sans se verrouiller hors de l'appliance.
 
 ---
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Passer l'interface web en HTTPS et limiter son écoute à l'interface d'administration :
-   `System > Settings > Administration` : Protocol = `HTTPS`, TCP port = `443`, Listen Interfaces = `<interface_gestion>`
-   👉 Explication : Supprime l'écoute HTTP en clair et empêche l'interface web d'écouter sur les interfaces utilisateurs.
+   `System > Settings > Administration` : Protocol = `HTTPS`, [[Glossary:TCP]] port = `443`, Listen Interfaces = `<interface_gestion>`
+   👉 Explication : Supprime l'écoute [[Glossary:HTTP]] en clair et empêche l'interface web d'écouter sur les interfaces utilisateurs.
 2. Créer un alias du réseau d'administration :
    `Firewall > Aliases` puis Add : Name = `ADMIN_NET`, Type = `Network(s)`, Content = `<reseau_gestion>/<prefixe>`
    👉 Explication : Un alias unique se modifie en un seul point et sert dans toutes les règles d'administration.
@@ -36,7 +36,7 @@ Restreindre l'interface web et l'accès SSH d'OPNsense à un réseau d'administr
 
 ## ⚡ 2. Production — Façon Simplifiée
 1. Importer un certificat signé par l'autorité interne :
-   `System > Trust > Certificates` (importer ou créer le certificat), puis `System > Settings > Administration` : SSL Certificate = `<certificat_admin>`
+   `System > Trust > Certificates` (importer ou créer le certificat), puis `System > Settings > Administration` : [[Glossary:SSL]] Certificate = `<certificat_admin>`
    👉 Explication : Les postes administrateurs n'affichent plus d'avertissement de certificat.
 2. Activer SSH avec clé et sans connexion root par mot de passe :
    `System > Settings > Administration` (section Secure Shell) : Enable Secure Shell = coché, Permit root user login = `No`, Permit password login = `No` (à vérifier sur la version déployée)
@@ -54,7 +54,7 @@ Restreindre l'interface web et l'accès SSH d'OPNsense à un réseau d'administr
 1. Créer un compte administrateur nominatif et un groupe dédié :
    `System > Access > Users` : compte `<admin_nominatif>` ; `System > Access > Groups` : groupe `<groupe_admins>` avec le privilège administration
    👉 Explication : Assure la traçabilité et évite l'usage du compte root.
-2. Vérifier qu'aucune règle n'expose l'administration sur WAN :
+2. Vérifier qu'aucune règle n'expose l'administration sur [[Glossary:WAN]] :
    `Firewall > Rules > WAN` : aucune règle Pass vers `This Firewall` sur les ports 22 ou 443
    👉 Explication : L'administration reste strictement interne.
 3. Contrôler les règles réellement chargées depuis le shell :

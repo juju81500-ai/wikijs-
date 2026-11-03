@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_GitLab_CE_Configurer
 
-- **Environnement** : VM Debian 13 de préproduction; FQDN et ressources confirmés
+- **Environnement** : [[Glossary:VM]] Debian 13 de préproduction; [[Glossary:FQDN]] et ressources confirmés
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : forge Git / administration
 - **Tags** : `debian13`, `gitlab-ce`, `forge-git`, `tls`, `sauvegarde`
@@ -23,7 +23,7 @@ Configurer URL, paramètres Omnibus et premier compte administrateur nominatif.
    ```ruby
    external_url "https://gitlab.example.com"
    ```
-   👉 Explication : remplacer le FQDN par le nom à remplacer; une terminaison proxy doit être configurée sans double TLS.
+   👉 Explication : remplacer le FQDN par le nom à remplacer; une terminaison proxy doit être configurée sans double [[Glossary:TLS]].
 
 3. Appliquer et contrôler la configuration
    ```bash
@@ -32,7 +32,7 @@ Configurer URL, paramètres Omnibus et premier compte administrateur nominatif.
    ```
    👉 Explication : analyser les erreurs de génération avant toute exposition réseau.
 
-4. Créer compte nominatif et activer MFA
+4. Créer compte nominatif et activer [[Glossary:MFA]]
    ```text
    Navigateur > ouvrir la documentation officielle : https://docs.gitlab.com/install/package/
    ```

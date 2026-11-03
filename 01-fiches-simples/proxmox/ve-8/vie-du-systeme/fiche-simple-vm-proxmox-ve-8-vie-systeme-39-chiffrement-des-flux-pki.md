@@ -13,14 +13,14 @@ Remplacer le certificat auto-signé de l'interface web.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : **Nœud > System > Certificates > ACME** (Let's Encrypt) ou **Upload Custom Certificate** pour un certificat de l'AC interne. En ligne de commande :
+1. [[Glossary:GUI]] : **Nœud > System > Certificates > [[Glossary:ACME]]** (Let's Encrypt) ou **Upload Custom Certificate** pour un certificat de l'AC interne. En ligne de commande :
    ```bash
    pvenode cert info
    pvenode acme account register DEFAULT ADMIN_MAIL
    pvenode config set --acme domains=pve01.domaine.local
    pvenode acme cert order
    ```
-   👉 Explication : ACME nécessite que le nom soit résolvable et validable (HTTP ou DNS); sinon utiliser l'AC interne.
+   👉 Explication : ACME nécessite que le nom soit résolvable et validable ([[Glossary:HTTP]] ou [[Glossary:DNS]]); sinon utiliser l'AC interne.
 
 2. Avec une AC interne, importer la chaîne :
    ```bash

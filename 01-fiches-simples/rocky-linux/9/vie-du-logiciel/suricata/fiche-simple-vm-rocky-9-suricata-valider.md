@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Rocky_9_Suricata_Valider
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Suricata
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Suricata
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Suricata / validation
 - **Tags** : `suricata`, `rocky9`, `vie-du-logiciel`, `valider`
 
@@ -24,13 +24,13 @@ Recetter le capteur : moteur actif, règles chargées, événements écrits.
    ```bash
    curl -s http://testmynids.org/uid/index.html -o /dev/null
    ```
-   👉 Explication : Requête inoffensive vers un site de test d’IDS; elle ne doit être faite que si la sortie Internet est autorisée et si la règle de test est chargée. Sinon utiliser un serveur de test interne.
+   👉 Explication : Requête inoffensive vers un site de test d’[[Glossary:IDS]]; elle ne doit être faite que si la sortie Internet est autorisée et si la règle de test est chargée. Sinon utiliser un serveur de test interne.
 
 3. Lire l’alerte :
    ```bash
    sudo jq "select(.event_type==\"alert\")" /var/log/suricata/eve.json | tail -n 20
    ```
-   👉 Explication : Affiche les alertes JSON; sans alerte, vérifier la position de la capture et les règles.
+   👉 Explication : Affiche les alertes [[Glossary:JSON]]; sans alerte, vérifier la position de la capture et les règles.
 
 4. Rejouer un fichier pcap autorisé hors ligne (option) :
    ```bash

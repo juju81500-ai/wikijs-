@@ -1,13 +1,13 @@
 # 📄 Postman
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : Postman Desktop (dernière version publique, archive Linux 64 bits) et Newman 6.x (npm, à vérifier sur la version déployée)
 - **Catégorie** : Scripting, développement et administration
 - **Tags** : `[debian-12]`, `[postman]`, `[newman]`, `[api]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer Postman Desktop et Newman (exécution en ligne de commande) sur Debian 12, tester une API de lab avec une collection et un environnement, puis lancer les mêmes tests en production sans secret en clair ni synchronisation non maîtrisée. Les tests ne ciblent que vos propres API.
+Installer Postman Desktop et Newman (exécution en ligne de commande) sur Debian 12, tester une [[Glossary:API]] de lab avec une collection et un environnement, puis lancer les mêmes tests en production sans secret en clair ni synchronisation non maîtrisée. Les tests ne ciblent que vos propres API.
 
 ---
 

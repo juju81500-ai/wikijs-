@@ -1,6 +1,6 @@
 # 📄 OpenVAS
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : Greenbone Vulnerability Management (paquet `gvm` des dépôts Debian 12, version à vérifier sur la version déployée)
 - **Catégorie** : Réseau et cybersécurité
@@ -56,7 +56,7 @@ sudo ufw allow from <adresse_ip_admin> to any port 9392 proto tcp
 sudo ufw enable
 sudo ufw status verbose
 ```
-👉 Explication : Le port 9392 n'est ouvert que pour le poste d'administration. Autoriser SSH avant `ufw enable` évite de perdre l'accès.
+👉 Explication : Le port 9392 n'est ouvert que pour le poste d'administration. Autoriser [[Glossary:SSH]] avant `ufw enable` évite de perdre l'accès.
 
 2. Création d'un compte d'analyse dédié (sans droit administrateur) :
 ```bash

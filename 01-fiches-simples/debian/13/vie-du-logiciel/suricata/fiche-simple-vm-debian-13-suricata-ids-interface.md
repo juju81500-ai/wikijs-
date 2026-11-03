@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-suricata-ids-interface.md
 
-- **Environnement** : VM Debian 13 avec une interface de capture
+- **Environnement** : [[Glossary:VM]] Debian 13 avec une interface de capture
 - **OS / Version** : Debian 13 Trixie; Suricata 8.0.7 et suricata-update (Debian Backports)
 - **Catégorie** : detection reseau / interface
 - **Tags** : `suricata`, `debian13`, `interface`, `span`
@@ -20,7 +20,7 @@ Repérer l'interface miroir et limiter ce qu'elle observe.
    ```
    👉 Explication : on identifie l'interface de capture et on vérifie qu'elle est séparée de la gestion.
 
-2. Documenter le sens du miroir et les VLAN visibles avec l'équipe réseau.
+2. Documenter le sens du miroir et les [[Glossary:VLAN]] visibles avec l'équipe réseau.
    👉 Explication : l'interface ne doit recevoir que le trafic approuvé; éviter les ports de gestion et d'hyperviseur.
 
 3. Sur une VM, faire valider par l'équipe virtualisation que le pont ou vSwitch délivre le trafic miroir et autorise le mode promiscuous.

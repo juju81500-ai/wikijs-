@@ -13,11 +13,11 @@ Déployer l'authentification multifacteur sur un groupe pilote avant extension, 
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Portail : Entra admin center → Entra ID → Authentication methods → Policies ; vérifier les méthodes activées (Microsoft Authenticator, FIDO2…) et cibler un groupe pilote (GRP-MFA-PILOTE à remplacer).
+1. Portail : Entra admin center → Entra ID → Authentication methods → Policies ; vérifier les méthodes activées (Microsoft Authenticator, [[Glossary:FIDO2]]…) et cibler un groupe pilote (GRP-MFA-PILOTE à remplacer).
    👉 Explication : les chemins de menu et la disponibilité des méthodes varient ; vérifier selon licence.
 
 2. Portail : Entra ID → Authentication methods → User registration details.
-   👉 Explication : rapport d'enregistrement MFA par utilisateur.
+   👉 Explication : rapport d'enregistrement [[Glossary:MFA]] par utilisateur.
 
 3. Lire la politique de méthodes via Graph :
    ```powershell

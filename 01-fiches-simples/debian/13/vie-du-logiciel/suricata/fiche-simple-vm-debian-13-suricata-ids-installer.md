@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-suricata-ids-installer.md
 
-- **Environnement** : VM Debian 13 avec trixie-backports activé
+- **Environnement** : [[Glossary:VM]] Debian 13 avec trixie-backports activé
 - **OS / Version** : Debian 13 Trixie; Suricata 8.0.7 et suricata-update (Debian Backports)
 - **Catégorie** : detection reseau / installation
 - **Tags** : `suricata`, `debian13`, `backports`, `apt`

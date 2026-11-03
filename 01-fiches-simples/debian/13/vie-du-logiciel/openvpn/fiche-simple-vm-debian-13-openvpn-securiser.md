@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_OpenVPN_Securiser
 
-- **Environnement** : VM Debian 13 dédiée à OpenVPN Community Edition
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à OpenVPN Community Edition
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : OpenVPN Community Edition / sécuriser
 - **Tags** : `openvpn`, `debian13`, `vie-du-logiciel`, `securiser`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Limiter les accès, protéger les clés et n’ouvrir que le flux VPN approuvé.
+Limiter les accès, protéger les clés et n’ouvrir que le flux [[Glossary:VPN]] approuvé.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -25,14 +25,14 @@ Limiter les accès, protéger les clés et n’ouvrir que le flux VPN approuvé.
    ```
    👉 Explication : Commande en lecture seule. Définir la règle dans le gestionnaire déjà utilisé, limitée au port et aux sources prévus; ne pas superposer les gestionnaires.
 
-3. Si UFW est déjà le pare-feu actif et que l’équipe réseau a approuvé ce flux, limiter l’ouverture :
+3. Si [[Glossary:UFW]] est déjà le pare-feu actif et que l’équipe réseau a approuvé ce flux, limiter l’ouverture :
    ```bash
    sudo ufw allow from VPN_SOURCE_CIDR to any port 1194 proto udp
    sudo ufw status numbered
    ```
    👉 Explication : remplacer VPN_SOURCE_CIDR par la plage approuvée; ne pas activer UFW ni superposer un pare-feu si un autre gestionnaire est utilisé.
 
-4. Si une CRL est prévue, installer la CRL validée et configurer son chemin dans server.conf.
+4. Si une [[Glossary:CRL]] est prévue, installer la CRL validée et configurer son chemin dans server.conf.
    👉 Explication : Contrôler la directive et le rechargement selon la version installée.
 
 ## 2. Production — Contrôles
@@ -41,7 +41,7 @@ Limiter l’écoute à l’interface prévue, vérifier les journaux d’authent
 
 ## 3. Production — Sécurité
 
-- TLS 1.2 minimum et suites AEAD supportées; appliquer le moindre privilège seulement après vérification de compatibilité.
+- [[Glossary:TLS]] 1.2 minimum et suites AEAD supportées; appliquer le moindre privilège seulement après vérification de compatibilité.
 
 ## Validation et retour arrière
 

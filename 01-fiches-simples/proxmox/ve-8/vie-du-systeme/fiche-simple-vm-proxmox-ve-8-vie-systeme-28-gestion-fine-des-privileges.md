@@ -26,11 +26,11 @@ Donner des droits d'administration précis sans partager root.
    ```
    👉 Explication : limite le compte aux commandes Proxmox nécessaires.
 
-3. Préférer les rôles Proxmox (GUI : **Datacenter > Permissions**) pour les actions sur les VM.
+3. Préférer les rôles Proxmox ([[Glossary:GUI]] : **Datacenter > Permissions**) pour les actions sur les [[Glossary:VM]].
    ```bash
    pveum role list
    ```
-   👉 Explication : les rôles couvrent l'API et l'interface sans donner de shell.
+   👉 Explication : les rôles couvrent l'[[Glossary:API]] et l'interface sans donner de shell.
 
 ## 2. Production — Contrôles
 

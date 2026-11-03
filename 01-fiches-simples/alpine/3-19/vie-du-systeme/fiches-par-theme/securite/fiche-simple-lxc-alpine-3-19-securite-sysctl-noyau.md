@@ -1,6 +1,6 @@
 # 📄 fiche-simple-lxc-alpine-3-19-securite-sysctl-noyau.md
 
-- **Environnement** : LXC (Proxmox VE)
+- **Environnement** : [[Glossary:LXC]] (Proxmox VE)
 - **OS / Version** : Alpine Linux 3-19 - Famille Alpine (OpenRC, apk)
 - **Catégorie** : Sécurité / Durcissement noyau et pile réseau
 - **Tags** : `[alpine3.19]`, `[alpine]`, `[lxc]`, `[sysctl]`, `[kernel]`, `[hardening]`
@@ -42,7 +42,7 @@ Lire, tester et rendre persistants des paramètres `sysctl` de durcissement rés
    net.ipv4.tcp_syncookies = 1
    EOF
    ```
-   👉 Explication : Ces paramètres refusent les redirections ICMP et le routage par la source, activent les SYN cookies et le filtrage de chemin inverse. Ne pas placer `kernel.*` dans ce fichier pour un LXC : ces clés sont celles de l'hôte.
+   👉 Explication : Ces paramètres refusent les redirections [[Glossary:ICMP]] et le routage par la source, activent les SYN cookies et le filtrage de chemin inverse. Ne pas placer `kernel.*` dans ce fichier pour un LXC : ces clés sont celles de l'hôte.
 
 2. Appliquer le fichier et le rendre persistant au démarrage avec OpenRC :
    ```sh
@@ -59,7 +59,7 @@ Lire, tester et rendre persistants des paramètres `sysctl` de durcissement rés
    ```sh
    sysctl --system
    ```
-   👉 Explication : À exécuter sur l'hôte. Un conteneur partage le noyau de l'hôte : un durcissement global se valide au niveau de l'hôte, pas dans le CT.
+   👉 Explication : À exécuter sur l'hôte. Un conteneur partage le noyau de l'hôte : un durcissement global se valide au niveau de l'hôte, pas dans le [[Glossary:CT]].
 
 2. Contrôler la valeur effective dans le conteneur :
    ```sh

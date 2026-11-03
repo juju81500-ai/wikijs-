@@ -13,7 +13,7 @@ Disposer des outils de diagnostic de base.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Activer SSH le temps de l'intervention (Host Client : **Gérer > Services > TSM-SSH > Démarrer**; ESXi Shell : **TSM**) :
+1. Activer [[Glossary:SSH]] le temps de l'intervention (Host Client : **Gérer > Services > TSM-SSH > Démarrer**; ESXi Shell : **TSM**) :
    ```sh
    vim-cmd hostsvc/enable_ssh
    vim-cmd hostsvc/start_ssh
@@ -29,7 +29,7 @@ Disposer des outils de diagnostic de base.
    esxcfg-nics -l
    esxcfg-vmknic -l
    ```
-   👉 Explication : `esxtop` mesure CPU/RAM/disque/réseau; `esxcfg-*` listent cartes et interfaces.
+   👉 Explication : `esxtop` mesure [[Glossary:CPU]]/RAM/disque/réseau; `esxcfg-*` listent cartes et interfaces.
 
 3. Arrêter SSH après l'intervention :
    ```sh
@@ -48,7 +48,7 @@ SSH activé = alerte attendue; le refermer dès que possible.
 
 ## Validation et retour arrière
 
-- **Validation** : `vim-cmd vmsvc/getallvms` liste les VM.
+- **Validation** : `vim-cmd vmsvc/getallvms` liste les [[Glossary:VM]].
 - **Retour arrière** : restaurer le snapshot ou la sauvegarde pris avant l'étape; consigner l'écart avant de poursuivre.
 
 ## Si le problème n'est pas résolu

@@ -13,14 +13,14 @@ Afficher un avertissement légal à la connexion.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Éditer la bannière SSH :
+1. Éditer la bannière [[Glossary:SSH]] :
    ```bash
    echo 'Accès réservé aux administrateurs autorisés. Toute connexion est journalisée.' > /etc/issue.net
    nano /etc/ssh/sshd_config
    ```
    👉 Explication : ajouter `Banner /etc/issue.net` puis `systemctl reload ssh`.
 
-2. Ajouter des notes au nœud (GUI : **Nœud > Summary > Notes**).
+2. Ajouter des notes au nœud ([[Glossary:GUI]] : **Nœud > Summary > Notes**).
    👉 Explication : indique le rôle et le responsable de l'hôte.
 
 3. Mettre à jour `/etc/motd` avec le nom et le rôle de l'hôte.

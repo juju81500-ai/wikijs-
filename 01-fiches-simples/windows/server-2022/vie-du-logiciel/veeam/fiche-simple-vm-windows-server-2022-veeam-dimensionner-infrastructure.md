@@ -2,7 +2,7 @@
 
 - **Environnement** : Serveur Windows Server 2022 dédié au serveur de sauvegarde Veeam (pilote autonome) et hôte Hyper-V autorisé
 - **OS / Version** : Windows Server 2022; Veeam Backup & Replication 13.1.2.57
-- **Catégorie** : sauvegarde VM / cadrage
+- **Catégorie** : sauvegarde [[Glossary:VM]] / cadrage
 - **Tags** : `windows-server-2022`, `veeam`, `backup-replication`, `hyper-v`, `dimensionnement`
 
 ---
@@ -19,7 +19,7 @@ Vérifier que le futur serveur Veeam respecte les minimums annoncés.
    Get-CimInstance Win32_ComputerSystem | Select-Object @{n='RAM_Go';e={[math]::Round($_.TotalPhysicalMemory/1GB,1)}}
    (Get-CimInstance Win32_OperatingSystem).Caption
    ```
-   👉 Explication : le minimum annoncé est 8 cœurs et 16 Go de RAM, plus 500 Mo par job concurrent.
+   👉 Explication : le minimum annoncé est 8 cœurs et 16 Go de [[Glossary:RAM]], plus 500 Mo par job concurrent.
 
 2. Lire l'espace disque des volumes :
    ```powershell
@@ -27,7 +27,7 @@ Vérifier que le futur serveur Veeam respecte les minimums annoncés.
    ```
    👉 Explication : dimensionner la capacité du dépôt, du catalogue et de la restauration.
 
-3. GUI équivalent : **Gestionnaire de serveur > Serveur local**
+3. [[Glossary:GUI]] équivalent : **Gestionnaire de serveur > Serveur local**
    👉 Explication : affiche OS, processeurs et mémoire.
 
 ## 2. Production — Contrôles

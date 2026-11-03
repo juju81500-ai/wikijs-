@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_FreeIPA_Client_Configurer
 
-- **Environnement** : VM Ubuntu 24-04 cliente d'un domaine FreeIPA existant
-- **OS / Version** : Ubuntu 24-04 LTS Noble; paquet freeipa-client des dépôts, version à vérifier
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 cliente d'un domaine FreeIPA existant
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; paquet freeipa-client des dépôts, version à vérifier
 - **Catégorie** : FreeIPA client / configurer
 - **Tags** : `freeipa`, `ubuntu24-04`, `vie-du-logiciel`, `configurer`
 
@@ -19,7 +19,7 @@ Inscrire le client Ubuntu au domaine FreeIPA.
    ```
    👉 Explication : IPA_DOMAIN, IPA_REALM (en majuscules, par convention), IPA_SERVER_FQDN et ADMIN_PRINCIPAL (compte autorisé à inscrire des hôtes) sont à remplacer. -W demande le mot de passe au clavier : ne jamais le passer en argument. --mkhomedir crée le répertoire personnel à la première connexion.
 
-2. Confirmer les valeurs détectées lorsque l'outil les affiche, puis laisser l'outil configurer SSSD, Kerberos et NTP.
+2. Confirmer les valeurs détectées lorsque l'outil les affiche, puis laisser l'outil configurer [[Glossary:SSSD]], Kerberos et [[Glossary:NTP]].
    👉 Explication : Relire le récapitulatif avant de répondre yes.
 
 3. Contrôler les fichiers produits :

@@ -1,6 +1,6 @@
 # fiche-simple-appliance-opnsense-carp-pfsync-preparer-basculement.md
 
-- **Environnement** : Deux appliances OPNsense en haute disponibilité (CARP et pfsync)
+- **Environnement** : Deux appliances OPNsense en haute disponibilité ([[Glossary:CARP]] et pfsync)
 - **OS / Version** : OPNsense (toutes versions compatibles entre les deux nœuds)
 - **Catégorie** : pare-feu / haute disponibilité
 - **Tags** : `opnsense`, `carp`, `pfsync`, `ha`, `firewall`
@@ -13,11 +13,11 @@ Préparer deux appliances avant de configurer CARP et pfsync.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Attribuer à chaque appliance une IP propre sur chaque interface : **Interfaces > [nom de l'interface]**, type IPv4 statique.
-   👉 Explication : chaque nœud garde sa propre adresse en plus de la VIP partagée.
+1. Attribuer à chaque appliance une [[Glossary:IP]] propre sur chaque interface : **Interfaces > [nom de l'interface]**, type IPv4 statique.
+   👉 Explication : chaque nœud garde sa propre adresse en plus de la [[Glossary:VIP]] partagée.
 
 2. Prévoir une VIP CARP distincte par réseau, un réseau dédié à pfsync et un réseau de synchronisation de configuration.
-   👉 Explication : évite de transporter l'état sur le WAN.
+   👉 Explication : évite de transporter l'état sur le [[Glossary:WAN]].
 
 3. Vérifier que les commutateurs autorisent les adresses MAC virtuelles CARP et que les deux appliances ont une version compatible : **System > Firmware > Status**.
    👉 Explication : une incompatibilité casse la synchronisation.

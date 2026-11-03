@@ -32,7 +32,7 @@ Prévoir une fenêtre de changement, une sauvegarde de configuration, des règle
 ## 3. Production — Sécurité
 
 - Garder le système et le Transporter dans le périmètre de mises à jour approuvé.
-- Ne pas exposer SSH ou l’interface NAKIVO sur Internet sans architecture de sécurité explicitement approuvée.
+- Ne pas exposer [[Glossary:SSH]] ou l’interface NAKIVO sur Internet sans architecture de sécurité explicitement approuvée.
 - Ne jamais copier de secrets ou de clés privées dans les fiches ou journaux partagés.
 
 ## Validation et retour arrière

@@ -1,12 +1,12 @@
 # 📄 VM_WinSrv_2022_Reseau_Fixer-IP-PowerShell.md
 
-- **Environnement** : VM (Hyper-V / Proxmox VE / VMware)
+- **Environnement** : [[Glossary:VM]] (Hyper-V / Proxmox VE / VMware)
 - **OS / Version** : Windows Server 2022 Datacenter / Standard - Famille Windows
 - **Catégorie** : Réseau
 - **Tags** : `[winsrv2022]`, `[windows-server]`, `[reseau]`, `[ip-statique]`, `[powershell]`, `[firewall-windows]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Fixer une adresse IP statique, configurer les serveurs DNS et sécuriser la carte réseau sur Windows Server 2022 en ligne de commande PowerShell.
+Fixer une adresse [[Glossary:IP]] statique, configurer les serveurs [[Glossary:DNS]] et sécuriser la carte réseau sur Windows Server 2022 en ligne de commande PowerShell.
 
 ---
 
@@ -19,11 +19,11 @@ Fixer une adresse IP statique, configurer les serveurs DNS et sécuriser la cart
    👉 Explication : Assigne immédiatement l'adresse 192.168.1.50/24 et la passerelle 192.168.1.1 sur l'interface ciblée.
 3. Test instantané de connectivité :
    `Test-NetConnection -ComputerName 192.168.1.1`
-   👉 Explication : Vérifie la réponse ICMP (Ping) vers la passerelle.
+   👉 Explication : Vérifie la réponse [[Glossary:ICMP]] (Ping) vers la passerelle.
 
 **Équivalent interface graphique :**
 
-- **Gestionnaire de serveur > Serveur local > Ethernet**, ou **Win + R** > `ncpa.cpl` > clic droit sur la carte > **Propriétés > Protocole Internet version 4 (TCP/IPv4) > Propriétés**, saisir IP, masque, passerelle et DNS, **OK**.
+- **Gestionnaire de serveur > Serveur local > Ethernet**, ou **Win + R** > `ncpa.cpl` > clic droit sur la carte > **Propriétés > Protocole Internet version 4 ([[Glossary:TCP]]/IPv4) > Propriétés**, saisir IP, masque, passerelle et DNS, **OK**.
   👉 Explication : équivalent de `New-NetIPAddress`; adapter les valeurs d'exemple.
 
 ## ⚡ 2. Production — Façon Simplifiée

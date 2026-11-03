@@ -13,7 +13,7 @@ Arrêter les services inutiles.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Services : désactiver et mettre à Off FTP, Telnet, SNMP, UPS si inutiles.
+1. [[Glossary:GUI]] : Services : désactiver et mettre à Off [[Glossary:FTP]], Telnet, [[Glossary:SNMP]], UPS si inutiles.
    ```sh
    midclt call service.query | grep -B3 -A3 '"enable": true'
    ```

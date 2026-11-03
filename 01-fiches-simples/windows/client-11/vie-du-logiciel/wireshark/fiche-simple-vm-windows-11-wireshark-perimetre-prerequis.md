@@ -28,10 +28,10 @@ Cadrer le périmètre légal et technique avant d'installer Wireshark et Npcap s
 ```
    👉 Explication : `True` : l'installation du pilote Npcap exige l'administrateur.
 
-4. Lire la licence Npcap sur https://npcap.com/ (édition gratuite limitée à un usage restreint; usage en entreprise, redistribution ou installation silencieuse : licence OEM/Pro).
+4. Lire la licence Npcap sur https://npcap.com/ (édition gratuite limitée à un usage restreint; usage en entreprise, redistribution ou installation silencieuse : licence [[Glossary:OEM]]/Pro).
    👉 Explication : Le pilote Npcap est obligatoire pour capturer; sans lui Wireshark ne peut qu'ouvrir des fichiers existants.
 
-5. Lister les besoins : capture Ethernet/Wi-Fi seulement, mode monitor Wi-Fi, ou USB.
+5. Lister les besoins : capture Ethernet/Wi-Fi seulement, mode monitor Wi-Fi, ou [[Glossary:USB]].
    👉 Explication : Les options de l'installeur (mode monitor 802.11, USBPcap) ne se cochent que si nécessaires.
 
 ## 2. Production — Contrôles

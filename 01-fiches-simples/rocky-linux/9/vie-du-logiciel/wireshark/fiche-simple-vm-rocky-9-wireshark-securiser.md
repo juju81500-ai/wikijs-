@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Rocky_9_Wireshark_Securiser
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Wireshark
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Wireshark
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Wireshark / sécurisation
 - **Tags** : `wireshark`, `rocky9`, `vie-du-logiciel`, `securiser`
 
@@ -28,7 +28,7 @@ Réduire les risques liés aux privilèges, aux dissecteurs et aux captures Wire
    ```
    👉 Explication : Les captures peuvent contenir des mots de passe en clair; accès limité au propriétaire.
 
-3. Ne pas conserver de clés TLS :
+3. Ne pas conserver de clés [[Glossary:TLS]] :
    ```bash
    ls -l ~/.config/wireshark 2>/dev/null
    ```

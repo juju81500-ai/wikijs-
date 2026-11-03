@@ -19,7 +19,7 @@ Contrôler sessions iSCSI et chemins multipath.
    sudo multipath -ll
    lsblk -o NAME,TYPE,SIZE,FSTYPE,MOUNTPOINTS
    ```
-   👉 Explication : on compare aux IQN, LUN, ACL, VLAN et contrôleurs attendus.
+   👉 Explication : on compare aux IQN, [[Glossary:LUN]], [[Glossary:ACL]], [[Glossary:VLAN]] et contrôleurs attendus.
 
 2. Chercher les erreurs dans le journal :
    ```bash

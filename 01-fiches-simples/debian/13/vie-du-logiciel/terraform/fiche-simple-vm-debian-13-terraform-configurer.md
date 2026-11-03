@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Terraform_Configurer
 
-- **Environnement** : VM Debian 13 de laboratoire avec fournisseur sandbox
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire avec fournisseur sandbox
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : infrastructure as code
 - **Tags** : `debian13`, `terraform`, `iac`, `state`, `securite`

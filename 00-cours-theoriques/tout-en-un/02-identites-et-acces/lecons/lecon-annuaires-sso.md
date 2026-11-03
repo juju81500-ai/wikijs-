@@ -11,27 +11,27 @@
 À la fin de cette leçon, vous saurez :
 
 1. Distinguer **identification**, **authentification** et **autorisation**.
-2. Lire un annuaire LDAP (DN, objectClass, filtres) et l'interroger sans modifier.
-3. Expliquer **SSSD**, **NSS** et **PAM** et diagnostiquer une panne simple.
-4. Décrire les flux **OIDC** et **SAML**.
-5. Choisir un facteur de **MFA** et en connaître les faiblesses.
+2. Lire un annuaire [[Glossary:LDAP]] ([[Glossary:DN]], objectClass, filtres) et l'interroger sans modifier.
+3. Expliquer **[[Glossary:SSSD]]**, **NSS** et **[[Glossary:PAM]]** et diagnostiquer une panne simple.
+4. Décrire les flux **[[Glossary:OIDC]]** et **[[Glossary:SAML]]**.
+5. Choisir un facteur de **[[Glossary:MFA]]** et en connaître les faiblesses.
 6. Appliquer le **moindre privilège** (rôles, arrivée / mobilité / départ).
 7. Mener une **revue périodique des accès** exploitable.
 
 ## Prérequis et durée
 
 - Conseillé : les leçons [Comptes, groupes, permissions et sudo](lecon-comptes-linux.md) et [SSH, clés et bastion](lecon-ssh-cles.md).
-- Une **VM Debian/Ubuntu jetable** pour la section 9 ; adresses et mots de passe du cours sont fictifs. Durée : environ 4 h.
+- Une **[[Glossary:VM]] Debian/Ubuntu jetable** pour la section 9 ; adresses et mots de passe du cours sont fictifs. Durée : environ 4 h.
 
 > **Règle de sécurité** : aucune installation ni modification d'annuaire en production. Les commandes de consultation sont sans danger mais utilisent un compte de service : ne le partagez pas et ne le copiez jamais dans un dépôt.
 
 ## L'essentiel en bref
 
 - Un **annuaire** centralise les identités (qui est qui, dans quels groupes) ; **LDAP** est le protocole pour l'interroger ; **SSSD** les rend utilisables par Linux.
-- **SSO** : on s'authentifie **une fois** auprès d'un fournisseur d'identité (IdP) et les applications lui font confiance. **OIDC** et **SAML** en sont les deux grands protocoles web.
-- Le **MFA** combine au moins deux facteurs indépendants ; les clés FIDO2 résistent au hameçonnage, les SMS le moins.
+- **[[Glossary:SSO]]** : on s'authentifie **une fois** auprès d'un fournisseur d'identité (IdP) et les applications lui font confiance. **OIDC** et **SAML** en sont les deux grands protocoles web.
+- Le **MFA** combine au moins deux facteurs indépendants ; les clés [[Glossary:FIDO2]] résistent au hameçonnage, les SMS le moins.
 - **Moindre privilège** : chacun reçoit les droits nécessaires à sa tâche, pour la durée nécessaire, via des **rôles** plutôt que des cas particuliers.
-- L'**IAM** (gestion des identités et des accès) est un **processus** : demander, approuver, attribuer, **revoir**, retirer. Une revue d'accès sans suite concrète n'est qu'une formalité.
+- L'**[[Glossary:IAM]]** (gestion des identités et des accès) est un **processus** : demander, approuver, attribuer, **revoir**, retirer. Une revue d'accès sans suite concrète n'est qu'une formalité.
 
 ---
 
@@ -40,7 +40,7 @@
 | Notion | Question | Exemple |
 |---|---|---|
 | **Identification** | « Qui dites-vous être ? » | saisir `alice@example.com` |
-| **Authentification** | « Pouvez-vous le prouver ? » | mot de passe, code TOTP, clé FIDO2 |
+| **Authentification** | « Pouvez-vous le prouver ? » | mot de passe, code [[Glossary:TOTP]], clé FIDO2 |
 | **Autorisation** | « Qu'avez-vous le droit de faire ? » | membre du groupe `compta` : lecture du dossier |
 
 Analogie : à l'entrée d'un festival, vous annoncez votre nom, montrez une pièce d'identité, puis le bracelet détermine les zones accessibles. La **traçabilité** (journaux) répond à « qui a fait quoi, quand ». Un utilisateur *authentifié* n'est pas *autorisé* à tout.
@@ -56,7 +56,7 @@ Analogie : à l'entrée d'un festival, vous annoncez votre nom, montrez une piè
 *Figure 1 — Un annuaire LDAP fictif pour example.com. Schéma original du projet (CC0).*
 
 - **Entrée** : un nœud (personne, groupe, unité). **DN** (*Distinguished Name*) : son adresse complète, lue de la feuille vers la racine (`uid=alice,ou=People,dc=example,dc=com`). **RDN** : sa partie propre (`uid=alice`).
-- **Base** : point de départ d'une recherche (`dc=example,dc=com`, dérivé du domaine DNS).
+- **Base** : point de départ d'une recherche (`dc=example,dc=com`, dérivé du domaine [[Glossary:DNS]]).
 - **objectClass** : le « modèle » de l'entrée (`inetOrgPerson`, `posixAccount`, `groupOfNames`), qui impose et autorise des **attributs** (`cn`, `mail`, `uidNumber`, `member`…). Leur ensemble forme le **schéma**.
 - **Opérations** : *bind* (s'authentifier), *search*, *add / modify / delete* (réservées aux administrateurs).
 
@@ -68,7 +68,7 @@ Analogie : à l'entrée d'un festival, vous annoncez votre nom, montrez une piè
 |---|---|
 | `(uid=alice)` | l'entrée dont l'uid vaut alice |
 | `(&(objectClass=inetOrgPerson)(mail=*@example.com))` | ET : personnes avec un mail de ce domaine |
-| `(\|(uid=alice)(uid=bob))` | OU : alice ou bob |
+| `(\|(uid=alice)(uid=bob))` | [[Glossary:OU]] : alice ou bob |
 | `(!(loginShell=/usr/sbin/nologin))` | NON : comptes avec un vrai shell |
 
 ### 2.3 Interroger en lecture seule
@@ -188,7 +188,7 @@ Avec le **SSO**, un **fournisseur d'identité** (IdP) authentifie l'utilisateur 
 *Figure 3 — Le flux « code d'autorisation » d'OIDC en six étapes. Schéma original du projet (CC0).*
 
 - **Code d'autorisation + PKCE** (RFC 7636) : flux recommandé.
-- **Jetons** : *ID token* (qui est l'utilisateur), *access token* (accès aux API), *refresh token* (à protéger comme un mot de passe).
+- **Jetons** : *ID token* (qui est l'utilisateur), *access token* (accès aux [[Glossary:API]]), *refresh token* (à protéger comme un mot de passe).
 - **Revendications** : `iss` (émetteur), `sub` (identifiant stable), `aud` (destinataire), `exp` (expiration), `iat`, `nonce` (anti-rejeu).
 - **Découverte** : `/.well-known/openid-configuration` publie points d'accès et clés de signature.
 
@@ -212,7 +212,7 @@ curl -s https://idp.example.com/.well-known/openid-configuration | head -c 600
 
 | | **SAML 2.0** | **OIDC** |
 |---|---|---|
-| Format | assertions XML | jetons JSON (JWT) |
+| Format | assertions XML | jetons [[Glossary:JSON]] (JWT) |
 | Usage | entreprise, SaaS historiques | web moderne, mobile, API |
 | Configuration | métadonnées XML | document `.well-known` |
 
@@ -239,7 +239,7 @@ Bonnes pratiques : MFA d'abord pour les **comptes à privilèges** ; **récupér
 
 Chaque identité reçoit **uniquement** les droits nécessaires, **pour la durée nécessaire**. Analogie : le badge d'un livreur n'ouvre pas la salle des serveurs et expire le soir.
 
-- **Rôles (RBAC)** : on attribue le rôle « Support niveau 1 », pas des droits individuels ; changer de poste = changer de rôle. **ABAC** ajoute le contexte (lieu, appareil, heure).
+- **Rôles ([[Glossary:RBAC]])** : on attribue le rôle « Support niveau 1 », pas des droits individuels ; changer de poste = changer de rôle. **ABAC** ajoute le contexte (lieu, appareil, heure).
 - **Séparation des tâches** : qui demande n'approuve pas.
 - **Comptes distincts** : un compte ordinaire pour le quotidien, un compte **administrateur** séparé.
 - **Élévation à la demande** (*just-in-time*) : droit accordé quelques heures avec justification.
@@ -249,7 +249,7 @@ Chaque identité reçoit **uniquement** les droits nécessaires, **pour la duré
 |---|---|---|
 | **Arrivée** | rôle de base lié au poste | copier les droits d'un collègue |
 | **Mobilité** | **retirer** les anciens droits en ajoutant les nouveaux | accumulation (*privilege creep*) |
-| **Départ** | désactiver compte, jetons, clés SSH, VPN | comptes orphelins |
+| **Départ** | désactiver compte, jetons, clés [[Glossary:SSH]], [[Glossary:VPN]] | comptes orphelins |
 
 ## 7. IAM : la vue d'ensemble
 
@@ -291,7 +291,7 @@ getent passwd | awk -F: '$3 == 0 {print $1}'
 
 **Objectif** : monter un petit annuaire OpenLDAP, y créer un utilisateur et un groupe, puis faire reconnaître cet utilisateur par Linux via SSSD, sur **une VM jetable unique** (snapshot avant de commencer).
 
-> Mots de passe jetables uniquement. Ce laboratoire désactive volontairement TLS : **interdit hors labo**.
+> Mots de passe jetables uniquement. Ce laboratoire désactive volontairement [[Glossary:TLS]] : **interdit hors labo**.
 
 **Étape 1 — Installer le serveur d'annuaire et les outils.**
 
@@ -342,7 +342,7 @@ gidNumber: 20001
 memberUid: alice
 ```
 
-👉 Explication : LDIF fictif. `posixAccount` donne UID, GID, dossier et shell ; `posixGroup` définit le groupe (`memberUid`). Les UID 20001 évitent les collisions avec les comptes locaux.
+👉 Explication : LDIF fictif. `posixAccount` donne UID, [[Glossary:GID]], dossier et shell ; `posixGroup` définit le groupe (`memberUid`). Les UID 20001 évitent les collisions avec les comptes locaux.
 
 ```bash
 ldapadd -x -D "cn=admin,dc=example,dc=com" -W -f lab.ldif
@@ -477,10 +477,10 @@ A. Considérer l'accès comme validé — B. Relancer, puis escalader ou retirer
 |---|---|---|
 | `getent passwd alice` vide | `sss` absent de `nsswitch.conf`, SSSD arrêté, schéma incomplet | vérifier la config, `sssctl config-check`, `journalctl -u sssd` |
 | SSSD refuse de démarrer | `sssd.conf` pas en 0600 root, erreur de syntaxe | `chmod 600`, `sssctl config-check` |
-| Erreur TLS | CA non reconnue, nom différent du certificat | installer la CA, utiliser le nom du certificat |
+| Erreur TLS | [[Glossary:CA]] non reconnue, nom différent du certificat | installer la CA, utiliser le nom du certificat |
 | Un nouveau groupe n'est pas vu | cache SSSD | `sss_cache --everything`, reconnexion |
 | `Invalid credentials (49)` à `ldapsearch` | mauvais DN ou mot de passe | `ldapwhoami`, vérifier le DN complet du compte de service |
-| SAML « assertion invalide » | horloge décalée, certificat expiré | NTP, renouveler le certificat, vérifier l'ACS |
+| SAML « assertion invalide » | horloge décalée, certificat expiré | [[Glossary:NTP]], renouveler le certificat, vérifier l'ACS |
 | OIDC « redirect_uri mismatch » | URL de retour différente de celle déclarée | aligner exactement, chemin compris |
 | Droits qui s'accumulent | pas de retrait lors des mobilités | processus mobilité + revue périodique |
 | Revue « validée en bloc » | listes illisibles | listes courtes, par rôle, avec dernière utilisation |
@@ -506,7 +506,7 @@ A. Considérer l'accès comme validé — B. Relancer, puis escalader ou retirer
 - OpenID Connect Core 1.0 : <https://openid.net/specs/openid-connect-core-1_0.html>
 - RFC 6749 (OAuth 2.0) : <https://www.rfc-editor.org/rfc/rfc6749> ; RFC 7636 (PKCE) : <https://www.rfc-editor.org/rfc/rfc7636> ; RFC 7519 (JWT) : <https://www.rfc-editor.org/rfc/rfc7519> ; RFC 6238 (TOTP) : <https://www.rfc-editor.org/rfc/rfc6238>
 - OASIS SAML 2.0, aperçu technique : <https://docs.oasis-open.org/security/saml/Post2.0/sstc-saml-tech-overview-2.0.html>
-- NIST SP 800-63B (authentification et cycle de vie) : <https://pages.nist.gov/800-63-3/sp800-63b.html>
+- [[Glossary:NIST]] SP 800-63B (authentification et cycle de vie) : <https://pages.nist.gov/800-63-3/sp800-63b.html>
 - Leçons précédentes : [Comptes, groupes, permissions et sudo](lecon-comptes-linux.md) et [SSH, clés et bastion](lecon-ssh-cles.md).
 
 ## Crédits des images

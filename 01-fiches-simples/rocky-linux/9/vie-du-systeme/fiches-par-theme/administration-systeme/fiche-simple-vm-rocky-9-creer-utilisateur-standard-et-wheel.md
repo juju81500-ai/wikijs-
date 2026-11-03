@@ -1,6 +1,6 @@
 # 📄 VM_Rocky_9_Utilisateurs_Creer-Utilisateur-Standard-Et-Wheel.md
 
-- **Environnement** : VM / Serveur (Rocky Linux 9 / RHEL 9)
+- **Environnement** : [[Glossary:VM]] / Serveur (Rocky Linux 9 / [[Glossary:RHEL]] 9)
 - **OS / Version** : Rocky Linux 9 / RHEL 9 - Famille RedHat
 - **Catégorie** : Utilisateurs & Droits / Sudo & Wheel
 - **Tags** : `[rocky9]`, `[rhel-family]`, `[utilisateurs]`, `[wheel]`, `[sudo]`, `[hardening]`
@@ -55,4 +55,4 @@ Créer un utilisateur restreint et un utilisateur administrateur appartenant au 
 
 ## 🔒 3. Production — Façon Sécurisée (Hardening Enterprise & Wheel Enforcement)
 1. Vérifier la configuration sudo existante avec `sudo visudo -c`. Si une règle wheel est nécessaire, créer un fichier dédié avec `sudo visudo -f /etc/sudoers.d/10-wheel` et valider à nouveau ; ne pas écraser la configuration existante par `>`.
-2. Pour interdire la connexion root SSH, sauvegarder la configuration, examiner `sshd -T`, éditer un fichier géré sans append répété, valider avec `sshd -t`, recharger `sshd` puis tester une seconde connexion avant de fermer la session.
+2. Pour interdire la connexion root [[Glossary:SSH]], sauvegarder la configuration, examiner `sshd -T`, éditer un fichier géré sans append répété, valider avec `sshd -t`, recharger `sshd` puis tester une seconde connexion avant de fermer la session.

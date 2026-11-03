@@ -14,7 +14,7 @@ Contrôler et ajouter le domaine de messagerie accepté dans le tenant.
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Interface : centre d'administration Microsoft 365 > Paramètres > Domaines > Ajouter un domaine, puis suivre l'assistant de vérification (enregistrement TXT).
-   👉 Explication : la propriété du domaine est prouvée par un enregistrement TXT DNS.
+   👉 Explication : la propriété du domaine est prouvée par un enregistrement TXT [[Glossary:DNS]].
 
 2. Lister les domaines acceptés :
    ```powershell
@@ -27,7 +27,7 @@ Contrôler et ajouter le domaine de messagerie accepté dans le tenant.
 
 ## 2. Production — Contrôles
 
-Valider la propriété DNS et planifier la bascule MX avec TTL réduit.
+Valider la propriété DNS et planifier la bascule MX avec [[Glossary:TTL]] réduit.
 
 ## 3. Production — Sécurité
 

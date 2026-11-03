@@ -35,7 +35,7 @@ Définir la procédure de récupération du mot de passe maître et des facteurs
 ## 3. Production — Sécurité
 
 - Protéger la session de bureau; le contenu est déchiffré en mémoire quand le coffre est ouvert.
-- Éviter de stocker le secret TOTP dans la même base que le mot de passe, sauf choix de risque explicite.
+- Éviter de stocker le secret [[Glossary:TOTP]] dans la même base que le mot de passe, sauf choix de risque explicite.
 
 ## Validation et retour arrière
 

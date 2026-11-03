@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Wireshark_Configurer
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Wireshark
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Wireshark
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Wireshark / privilèges de capture et analyse
 - **Tags** : `wireshark`, `ubuntu24.04`, `vie-du-logiciel`, `configurer`
@@ -32,14 +32,14 @@ Autoriser une capture minimale via dumpcap et analyser un fichier hors ligne.
    ```
    👉 Explication : `-c` limite les paquets, `-f` applique un filtre de capture, `-w` écrit le fichier; HOTE_AUTORISE est à remplacer.
 
-4. Analyser hors ligne en CLI :
+4. Analyser hors ligne en [[Glossary:CLI]] :
    ```bash
    capinfos /var/tmp/TICKET.pcapng
    tshark -r /var/tmp/TICKET.pcapng -q -z io,phs
    ```
    👉 Explication : `capinfos` résume le fichier; `-z io,phs` affiche la hiérarchie des protocoles sans interpréter de contenu applicatif.
 
-5. Ouvrir dans la GUI : menu Fichier > Ouvrir, sélectionner le .pcapng, puis Statistiques > Hiérarchie des protocoles.
+5. Ouvrir dans la [[Glossary:GUI]] : menu Fichier > Ouvrir, sélectionner le .pcapng, puis Statistiques > Hiérarchie des protocoles.
    👉 Explication : La GUI est réservée aux postes avec session graphique; l’analyse reste hors ligne.
 
 ## 2. Production — Contrôles

@@ -13,7 +13,7 @@ Régler le fuseau.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Général > Fuseau horaire (Europe/Paris).
+1. [[Glossary:GUI]] : Système > Général > Fuseau horaire (Europe/Paris).
    ```sh
    midclt call system.general.update '{"timezone": "Europe/Paris"}'
    ```

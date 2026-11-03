@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Windows_11_mRemoteNG_Validation
 
-- **Environnement** : Poste Windows 11 x64 d'administration (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'administration ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; mRemoteNG VERSION_MREMOTENG (à remplacer)
 - **Catégorie** : gestionnaire de connexions distantes
 - **Tags** : `mremoteng`, `windows11`, `validation`
@@ -16,10 +16,10 @@ Valider l'installation et la configuration mRemoteNG.
 1. `Get-Process mRemoteNG | Select Name,Id,Path`.
    👉 Explication : confirme le binaire exécuté.
 
-2. Ouvrir une connexion SSH de test puis `whoami`.
+2. Ouvrir une connexion [[Glossary:SSH]] de test puis `whoami`.
    👉 Explication : test fonctionnel.
 
-3. Ouvrir une connexion RDP de test vers HOTE_RDP (à remplacer).
+3. Ouvrir une connexion [[Glossary:RDP]] de test vers HOTE_RDP (à remplacer).
    👉 Explication : test du second protocole.
 
 4. Vérifier l'emplacement du fichier : `Get-ChildItem "$env:APPDATA\mRemoteNG"`.

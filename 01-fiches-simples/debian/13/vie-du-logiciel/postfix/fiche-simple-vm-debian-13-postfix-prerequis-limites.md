@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Postfix_Prerequis_Limites
 
-- **Environnement** : VM Debian 13; Postfix depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Debian 13; Postfix depuis les dépôts de la distribution
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / Postfix — Prérequis et limites
 - **Tags** : `debian13`, `postfix`, `smtp`, `messagerie`, `prerequis-limites`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Vérifier qu'une VM Debian 13 peut héberger un serveur SMTP Postfix avant toute installation, et connaître les limites (relais ouvert, port 25 filtré, réputation d'IP).
+Vérifier qu'une VM Debian 13 peut héberger un serveur [[Glossary:SMTP]] Postfix avant toute installation, et connaître les limites (relais ouvert, port 25 filtré, réputation d'[[Glossary:IP]]).
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -18,7 +18,7 @@ Vérifier qu'une VM Debian 13 peut héberger un serveur SMTP Postfix avant toute
    cat /etc/os-release | head -3
    hostnamectl --static
    ```
-   👉 Explication : un nom pleinement qualifié (FQDN, ex. `MAIL.EXAMPLE.NET`, à remplacer) est indispensable : il sert d'identité SMTP (HELO).
+   👉 Explication : un nom pleinement qualifié ([[Glossary:FQDN]], ex. `MAIL.EXAMPLE.NET`, à remplacer) est indispensable : il sert d'identité SMTP (HELO).
 
 2. Vérifier la version de Postfix proposée par les dépôts Debian 13 :
    ```bash
@@ -32,7 +32,7 @@ Vérifier qu'une VM Debian 13 peut héberger un serveur SMTP Postfix avant toute
    ```
    👉 Explication : aucun autre MTA (exim4 est souvent préinstallé) ne doit écouter. S'il existe, le désinstaller ou le désactiver avant l'installation.
 
-4. Contrôler les enregistrements DNS du domaine (remplacer `EXAMPLE.NET`) :
+4. Contrôler les enregistrements [[Glossary:DNS]] du domaine (remplacer `EXAMPLE.NET`) :
    ```bash
    dig +short MX EXAMPLE.NET
    dig +short A MAIL.EXAMPLE.NET
@@ -48,7 +48,7 @@ Vérifier qu'une VM Debian 13 peut héberger un serveur SMTP Postfix avant toute
 
 ## 2. Production — Contrôles
 
-Documenter FQDN, IP, PTR, MX, SPF/DKIM/DMARC prévus, volumétrie attendue, présence d'un relais sortant, politique de rétention des files et propriétaire du service. Valider que le domaine est bien géré par l'organisation.
+Documenter FQDN, IP, PTR, MX, [[Glossary:SPF]]/DKIM/DMARC prévus, volumétrie attendue, présence d'un relais sortant, politique de rétention des files et propriétaire du service. Valider que le domaine est bien géré par l'organisation.
 
 ## 3. Production — Sécurité
 

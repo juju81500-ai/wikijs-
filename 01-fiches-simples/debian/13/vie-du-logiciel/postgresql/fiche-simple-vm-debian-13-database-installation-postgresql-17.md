@@ -1,12 +1,12 @@
 # 📄 fiche-simple-vm-debian-13-database-installation-postgresql-17.md
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 (Trixie), PostgreSQL 17 des dépôts Debian
 - **Catégorie** : Base de données / Installation / Sécurité
 - **Tags** : `[debian13]`, `[trixie]`, `[postgresql17]`, `[database]`, `[sql]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer PostgreSQL 17 depuis les dépôts Debian 13, créer un rôle applicatif limité et n'autoriser les connexions distantes qu'avec TLS et `scram-sha-256`.
+Installer PostgreSQL 17 depuis les dépôts Debian 13, créer un rôle applicatif limité et n'autoriser les connexions distantes qu'avec [[Glossary:TLS]] et `scram-sha-256`.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Vérifier la version candidate avant installation :
@@ -55,7 +55,7 @@ Installer PostgreSQL 17 depuis les dépôts Debian 13, créer un rôle applicati
    host    all      all      0.0.0.0/0     reject
    host    all      all      ::0/0         reject
    ```
-2. Configurer `password_encryption = 'scram-sha-256'`, `ssl = on` et un certificat serveur valide; ouvrir TCP/5432 uniquement au réseau client prévu.
+2. Configurer `password_encryption = 'scram-sha-256'`, `ssl = on` et un certificat serveur valide; ouvrir [[Glossary:TCP]]/5432 uniquement au réseau client prévu.
 3. Valider puis recharger le cluster ciblé :
    ```bash
    sudo -u postgres psql -c 'SELECT pg_reload_conf();'

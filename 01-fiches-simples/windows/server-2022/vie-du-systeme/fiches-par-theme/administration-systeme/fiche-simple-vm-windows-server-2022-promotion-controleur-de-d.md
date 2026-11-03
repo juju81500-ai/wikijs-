@@ -1,21 +1,21 @@
 # 📄 VM_WinSrv_2022_ADDS_Promotion-Controleur-Domaine.md
 
-- **Environnement** : VM (Hyper-V / Proxmox VE)
+- **Environnement** : [[Glossary:VM]] (Hyper-V / Proxmox VE)
 - **OS / Version** : Windows Server 2022 - Famille Windows Server
-- **Catégorie** : Annuaire & Identité (AD DS)
+- **Catégorie** : Annuaire & Identité ([[Glossary:AD]] DS)
 - **Tags** : `[winsrv2022]`, `[windows-family]`, `[active-directory]`, `[adds]`, `[dns]`, `[gui]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer le rôle AD DS (Services de domaine Active Directory), promouvoir la machine en premier Contrôleur de Domaine (DC) de la forêt et sécuriser l'annuaire.
+Installer le rôle AD DS (Services de domaine Active Directory), promouvoir la machine en premier Contrôleur de Domaine ([[Glossary:DC]]) de la forêt et sécuriser l'annuaire.
 
 ---
 
 ## 🖥️ Méthode Interface Graphique (GUI pas-à-pas)
 
 ### Préparer la promotion
-- Attribuer une adresse IP statique et vérifier le nom du serveur, la synchronisation horaire, la connectivité et les DNS selon le scénario. Pour un DC supplémentaire, utiliser les DNS du domaine existant ; ne pas inventer une configuration DNS de production.
+- Attribuer une adresse [[Glossary:IP]] statique et vérifier le nom du serveur, la synchronisation horaire, la connectivité et les [[Glossary:DNS]] selon le scénario. Pour un DC supplémentaire, utiliser les DNS du domaine existant ; ne pas inventer une configuration DNS de production.
 - Confirmer que le changement crée bien une nouvelle forêt. Si le domaine existe déjà, choisir **Ajouter un contrôleur de domaine à un domaine existant** ; ne pas créer une seconde forêt par erreur.
-- Préparer le nom DNS/NetBIOS, le site AD, les chemins NTDS/SYSVOL si non standards, les comptes autorisés et un mot de passe DSRM transmis par canal sécurisé. Prévoir le redémarrage et un point de retour arrière.
+- Préparer le nom DNS/NetBIOS, le site AD, les chemins NTDS/SYSVOL si non standards, les comptes autorisés et un mot de passe [[Glossary:DSRM]] transmis par canal sécurisé. Prévoir le redémarrage et un point de retour arrière.
 
 ### Installer AD DS et promouvoir le serveur
 1. Dans **Gestionnaire de serveur** > **Gérer** > **Ajouter des rôles et fonctionnalités**, choisir **Installation basée sur un rôle ou une fonctionnalité**, sélectionner le serveur local, cocher **Services AD DS**, puis **Ajouter des fonctionnalités** et terminer l'installation.

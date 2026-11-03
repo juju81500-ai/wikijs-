@@ -3,14 +3,14 @@
 - **OS / Version** : Debian 13 Trixie x86-64; édition et version Vault fixées selon le canal validé
 - **Type de fiche** : Installation/Déploiement
 - **Périmètre** : Cluster de trois nœuds Raft pour services et équipes autorisés
-- **Catégorie** : Coffre de secrets / PKI / tokens
+- **Catégorie** : Coffre de secrets / [[Glossary:PKI]] / tokens
 - **Tags** : `vault`, `hashicorp`, `debian13`, `raft`, `secrets`, `tls`, `iam`
 
 ## 1. Choisir l'architecture
 
 Fiche simple : [cadrer l'architecture Vault Raft](../../../../01-fiches-simples/debian/13/vie-du-logiciel/hashicorp-vault/fiche-simple-vm-debian-13-vault-architecture.md).
 
-Valider si Vault Community ou Enterprise répond au besoin et à la licence. Pour la production, prévoir idéalement trois nœuds Vault dans des domaines de panne distincts, stockage Raft persistant, DNS stable, NTP, certificats TLS par nœud, supervision et sauvegarde des snapshots. Une instance unique est un lab, pas un service HA.
+Valider si Vault Community ou Enterprise répond au besoin et à la licence. Pour la production, prévoir idéalement trois nœuds Vault dans des domaines de panne distincts, stockage Raft persistant, [[Glossary:DNS]] stable, [[Glossary:NTP]], certificats [[Glossary:TLS]] par nœud, supervision et sauvegarde des snapshots. Une instance unique est un lab, pas un service HA.
 
 Définir les propriétaires, méthodes d'authentification, engines, politiques d'accès, rotation/TTL, audit, limites de requêtes et plan de reprise avant le premier secret.
 
@@ -26,7 +26,7 @@ Le paquet officiel crée un utilisateur système dédié et une unité systemd. 
 
 Fiche simple : [configurer TLS et stockage Raft](../../../../01-fiches-simples/debian/13/vie-du-logiciel/hashicorp-vault/fiche-simple-vm-debian-13-vault-tls-raft.md).
 
-Utiliser des certificats émis par l'autorité approuvée avec SAN correspondant au DNS du nœud et chiffrer API (`8200`) et cluster (`8201`). Établir la chaîne de confiance client avant d'ouvrir l'accès. Dans `/etc/vault.d/vault.hcl`, configurer `api_addr`, `cluster_addr`, listener TCP TLS et backend `storage "raft"` avec `path` persistant et `node_id` unique par nœud.
+Utiliser des certificats émis par l'autorité approuvée avec [[Glossary:SAN]] correspondant au DNS du nœud et chiffrer [[Glossary:API]] (`8200`) et cluster (`8201`). Établir la chaîne de confiance client avant d'ouvrir l'accès. Dans `/etc/vault.d/vault.hcl`, configurer `api_addr`, `cluster_addr`, listener [[Glossary:TCP]] TLS et backend `storage "raft"` avec `path` persistant et `node_id` unique par nœud.
 
 Ne pas copier une configuration de développement. Le service doit être seul sur son hôte autant que possible; restreindre le pare-feu, désactiver les core dumps, évaluer swap/mlock selon le backend et les recommandations actuelles, protéger stockage et sauvegardes.
 
@@ -34,7 +34,7 @@ Ne pas copier une configuration de développement. Le service doit être seul su
 
 Fiche simple : [initialiser et joindre le cluster Raft](../../../../01-fiches-simples/debian/13/vie-du-logiciel/hashicorp-vault/fiche-simple-vm-debian-13-vault-initialiser.md).
 
-Vérifier la syntaxe de la configuration et l'unité avant activation. Démarrer les nœuds, confirmer TLS via CA vérifiée, puis initialiser le cluster une seule fois. La cérémonie d'initialisation produit des clés de déverrouillage et un token root initial : générer les seuils/parts selon le plan, remettre les parts à des détenteurs séparés, sauvegarder selon procédure et ne jamais conserver les valeurs en clair dans shell history, Wiki ou tickets.
+Vérifier la syntaxe de la configuration et l'unité avant activation. Démarrer les nœuds, confirmer TLS via [[Glossary:CA]] vérifiée, puis initialiser le cluster une seule fois. La cérémonie d'initialisation produit des clés de déverrouillage et un token root initial : générer les seuils/parts selon le plan, remettre les parts à des détenteurs séparés, sauvegarder selon procédure et ne jamais conserver les valeurs en clair dans shell history, Wiki ou tickets.
 
 Joindre les autres nœuds via `retry_join` et l'identité TLS; contrôler quorum, leader et santé avant de continuer. Si l'auto-unseal est utilisé, configurer une intégration KMS/HSM supportée et une identité machine, jamais une credential permanente en clair dans `vault.hcl`.
 
@@ -44,7 +44,7 @@ Fiche simple : [créer les accès et activer l'audit](../../../../01-fiches-simp
 
 Utiliser le token root uniquement pour le bootstrap initial : activer une méthode d'authentification d'entreprise, créer des politiques explicites à moindre privilège et des tokens courts pour les workloads. Activer au moins un audit device avant usage opérationnel; expédier les audits vers un stockage central protégé.
 
-Tester un secret synthétique avec un rôle de service dédié, vérifier refus d'accès hors politique, TTL/renouvellement et révocation. L'interface Web est une option d'administration, pas un substitut à IAM ou audit.
+Tester un secret synthétique avec un rôle de service dédié, vérifier refus d'accès hors politique, [[Glossary:TTL]]/renouvellement et révocation. L'interface Web est une option d'administration, pas un substitut à [[Glossary:IAM]] ou audit.
 
 ## 6. Vérifier et exploiter
 

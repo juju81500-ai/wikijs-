@@ -1,8 +1,8 @@
 # fiche-simple-vm-windows-server-2022-prtg-pilote.md
 
-- **Environnement** : Serveur Windows dédié ou VM, accès d'administration restreint
-- **OS / Version** : Windows Server 2022 ou 2025 en Desktop Experience; PRTG Network Monitor maintenu
-- **Catégorie** : supervision / SNMP / WMI
+- **Environnement** : Serveur Windows dédié ou [[Glossary:VM]], accès d'administration restreint
+- **OS / Version** : Windows Server 2022 ou 2025 en Desktop Experience; [[Glossary:PRTG]] Network Monitor maintenu
+- **Catégorie** : supervision / [[Glossary:SNMP]] / [[Glossary:WMI]]
 - **Tags** : `prtg`, `windows-server`, `supervision`, `pilote`, `capteurs`
 
 ---
@@ -13,7 +13,7 @@ Superviser un petit périmètre autorisé avant d'élargir.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Ajouter un équipement autorisé : **Devices > Add Device**, puis ajouter d'abord les capteurs Ping et HTTP.
+1. Ajouter un équipement autorisé : **Devices > Add Device**, puis ajouter d'abord les capteurs Ping et [[Glossary:HTTP]].
    👉 Explication : on commence par des capteurs simples.
 
 2. Ajouter ensuite SNMP ou WMI selon les permissions approuvées.

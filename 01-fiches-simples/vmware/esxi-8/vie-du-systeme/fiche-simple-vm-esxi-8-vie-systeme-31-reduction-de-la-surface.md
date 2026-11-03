@@ -20,7 +20,7 @@ Désactiver ce qui n'est pas utile.
    ```
    👉 Explication : identifie les ports ouverts.
 
-2. Arrêter les services inutiles (SLP, SNMP si non utilisé) :
+2. Arrêter les services inutiles (SLP, [[Glossary:SNMP]] si non utilisé) :
    ```sh
    /etc/init.d/slpd stop
    chkconfig slpd off

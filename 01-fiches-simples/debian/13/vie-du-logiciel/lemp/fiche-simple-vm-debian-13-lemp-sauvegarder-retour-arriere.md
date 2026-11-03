@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-lemp-sauvegarder-retour-arriere.md
 
-- **Environnement** : application LEMP Debian 13; sauvegarde de configuration et export MariaDB vérifiés
+- **Environnement** : application [[Glossary:LEMP]] Debian 13; sauvegarde de configuration et export MariaDB vérifiés
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : pile Web LEMP / sauvegarde et reprise
 - **Tags** : `debian13`, `lemp`, `backup`, `restore`, `rollback`, `mariadb`
@@ -42,7 +42,7 @@ Pouvoir revenir à une configuration cohérente après un changement Nginx ou un
 
 ## 2. Production — Contrôles
 
-Définir rétention, chiffrement, accès aux sauvegardes, responsables, fréquence des exercices et exigences RPO/RTO.
+Définir rétention, chiffrement, accès aux sauvegardes, responsables, fréquence des exercices et exigences [[Glossary:RPO]]/RTO.
 
 ## 3. Production — Sécurité
 

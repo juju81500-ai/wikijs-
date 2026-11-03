@@ -18,16 +18,16 @@ Choisir le contrôle d'accès adapté à Debian/Proxmox.
    aa-status 2>/dev/null | head
    getenforce 2>/dev/null || echo 'SELinux absent'
    ```
-   👉 Explication : AppArmor est peu utilisé sur l'hôte; l'isolation passe par KVM et les conteneurs non privilégiés.
+   👉 Explication : AppArmor est peu utilisé sur l'hôte; l'isolation passe par [[Glossary:KVM]] et les conteneurs non privilégiés.
 
-2. Créer les conteneurs LXC en mode non privilégié (GUI : **Create CT > Unprivileged container** coché).
+2. Créer les conteneurs [[Glossary:LXC]] en mode non privilégié ([[Glossary:GUI]] : **Create [[Glossary:CT]] > Unprivileged container** coché).
    ```bash
    pct config CTID | grep unprivileged
    ```
    👉 Explication : `CTID` = numéro du conteneur; `unprivileged: 1` attendu.
 
 3. Limiter les droits via les rôles (GUI : **Datacenter > Permissions > Roles**).
-   👉 Explication : le contrôle d'accès se fait au niveau de l'API Proxmox.
+   👉 Explication : le contrôle d'accès se fait au niveau de l'[[Glossary:API]] Proxmox.
 
 ## 2. Production — Contrôles
 

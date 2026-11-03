@@ -13,7 +13,7 @@ Limiter les moyens d'administration à ce qui est requis.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Contrôler SSH, pare-feu et Defender :
+1. Contrôler [[Glossary:SSH]], pare-feu et Defender :
    ```powershell
    Get-Service sshd -ErrorAction SilentlyContinue
    Get-NetFirewallProfile | Select-Object Name, Enabled
@@ -24,10 +24,10 @@ Limiter les moyens d'administration à ce qui est requis.
 2. Vérifier que `sshd` n'écoute ou n'accepte que les connexions requises et filtrer au réseau d'administration si SSH est utilisé.
    👉 Explication : réduit la surface d'attaque.
 
-3. Conserver WinRM/RDP seulement selon le modèle retenu, avec NLA, pare-feu à portée limitée et comptes dédiés.
+3. Conserver WinRM/RDP seulement selon le modèle retenu, avec [[Glossary:NLA]], pare-feu à portée limitée et comptes dédiés.
    👉 Explication : limite les accès distants.
 
-4. Utiliser Windows LAPS et des comptes nominatifs; retirer les rôles locaux non requis.
+4. Utiliser Windows [[Glossary:LAPS]] et des comptes nominatifs; retirer les rôles locaux non requis.
    👉 Explication : évite les mots de passe administrateur partagés.
 
 5. Examiner **Sécurité Windows > Sécurité de l'appareil** : isolation du noyau (VBS), démarrage sécurisé; Credential Guard selon la compatibilité du rôle.

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_WireGuard_Valider
 
-- **Environnement** : VM Debian 13 dédiée à WireGuard natif
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à WireGuard natif
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : WireGuard natif / valider
 - **Tags** : `wireguard`, `debian13`, `vie-du-logiciel`, `valider`

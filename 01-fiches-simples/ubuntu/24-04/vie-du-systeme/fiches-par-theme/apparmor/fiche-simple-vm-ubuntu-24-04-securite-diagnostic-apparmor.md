@@ -1,7 +1,7 @@
 # 📄 fiche-simple-vm-ubuntu-24-04-securite-diagnostic-apparmor.md
 
-- **Environnement** : VM Ubuntu Server
-- **OS / Version** : Ubuntu Server 24-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]]
 - **Catégorie** : Sécurité / Contrôle d'accès
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[apparmor]`, `[securite]`, `[audit]`, `[hardening]`
 

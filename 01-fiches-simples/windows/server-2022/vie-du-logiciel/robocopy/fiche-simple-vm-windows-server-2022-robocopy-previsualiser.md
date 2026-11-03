@@ -1,6 +1,6 @@
 # fiche-simple-vm-windows-server-2022-robocopy-previsualiser.md
 
-- **Environnement** : Windows Server 2022 (Robocopy intégré); partages SMB et volumes NTFS
+- **Environnement** : Windows Server 2022 (Robocopy intégré); partages SMB et volumes [[Glossary:NTFS]]
 - **OS / Version** : Windows Server 2022 (Robocopy; non testé sur d'autres versions)
 - **Catégorie** : copie / sauvegarde de fichiers
 - **Tags** : `windows-server-2022`, `robocopy`, `apercu`, `dry-run`
@@ -20,7 +20,7 @@ Lister ce que la copie ferait, sans rien copier ni supprimer.
    ```
    👉 Explication : `/E` copie les sous-dossiers, `/COPY:DAT` données, attributs, dates; `/R:2 /W:5` limite les tentatives (les valeurs par défaut, 1 000 000 et 30 s, bloquent un travail).
 
-2. Pour conserver les ACL NTFS, ajouter `S` : `/COPY:DATS`.
+2. Pour conserver les [[Glossary:ACL]] NTFS, ajouter `S` : `/COPY:DATS`.
    👉 Explication : il faut des droits suffisants; `/COPYALL` ajoute propriétaire et audit et exige des privilèges élevés.
 
 3. Relire le journal :

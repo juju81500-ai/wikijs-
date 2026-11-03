@@ -1,6 +1,6 @@
 # fiche-simple-vm-rocky-9-buildah-installer.md
 
-- **Environnement** : VM Rocky Linux 9 de build, compte non privilégié dédié
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 de build, compte non privilégié dédié
 - **OS / Version** : Rocky Linux 9; paquet Buildah des dépôts de la distribution
 - **Catégorie** : conteneurs / chaîne de build
 - **Tags** : `buildah`, `oci`, `rocky9`, `rootless`, `containerfile`, `registre`

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_FreeIPA_Client_Configurer
 
-- **Environnement** : VM Debian 13 cliente d'un domaine FreeIPA existant
+- **Environnement** : [[Glossary:VM]] Debian 13 cliente d'un domaine FreeIPA existant
 - **OS / Version** : Debian 13 Trixie; paquet freeipa-client des dépôts, version à vérifier
 - **Catégorie** : FreeIPA client / configurer
 - **Tags** : `freeipa`, `debian13`, `vie-du-logiciel`, `configurer`
@@ -19,7 +19,7 @@ Inscrire le client Debian au domaine FreeIPA.
    ```
    👉 Explication : IPA_DOMAIN, IPA_REALM (en majuscules, par convention), IPA_SERVER_FQDN et ADMIN_PRINCIPAL (compte autorisé à inscrire des hôtes) sont à remplacer. -W demande le mot de passe au clavier : ne jamais le passer en argument. --mkhomedir crée le répertoire personnel à la première connexion.
 
-2. Confirmer les valeurs détectées lorsque l'outil les affiche, puis laisser l'outil configurer SSSD, Kerberos et NTP.
+2. Confirmer les valeurs détectées lorsque l'outil les affiche, puis laisser l'outil configurer [[Glossary:SSSD]], Kerberos et [[Glossary:NTP]].
    👉 Explication : Relire le récapitulatif avant de répondre yes.
 
 3. Contrôler les fichiers produits :

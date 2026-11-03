@@ -1,8 +1,8 @@
 # Fiche_Simple_-_Windows_Server_2022_SQL-Server_Securiser
 
-- **Environnement** : VM Windows Server 2022 (SQL Server 2022 Standard ou Developer)
+- **Environnement** : [[Glossary:VM]] Windows Server 2022 ([[Glossary:SQL]] Server 2022 Standard ou Developer)
 - **OS / Version** : Windows Server 2022; SQL Server 2022 (instance par défaut MSSQLSERVER)
-- **Catégorie** : base de données / SQL Server / Sécuriser (authentification, TLS, pare-feu)
+- **Catégorie** : base de données / SQL Server / Sécuriser (authentification, [[Glossary:TLS]], pare-feu)
 - **Tags** : `windows-server-2022`, `sql-server`, `sqlserver-2022`, `securite`
 
 ---
@@ -13,7 +13,7 @@ Durcir l'authentification, imposer le chiffrement des connexions et limiter l'ac
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI — SSMS : clic droit sur le serveur → Propriétés → Sécurité : Authentification Windows ; Audit de connexion : échecs seulement ou toutes :
+1. [[Glossary:GUI]] — SSMS : clic droit sur le serveur → Propriétés → Sécurité : Authentification Windows ; Audit de connexion : échecs seulement ou toutes :
    ```powershell
    sqlcmd -S localhost -E -Q "SELECT SERVERPROPERTY('IsIntegratedSecurityOnly') AS WindowsOnly;"
    ```
@@ -29,7 +29,7 @@ Durcir l'authentification, imposer le chiffrement des connexions et limiter l'ac
    ```powershell
    Get-ChildItem Cert:\LocalMachine\My | Select-Object Subject,Thumbprint,NotAfter,EnhancedKeyUsageList
    ```
-   👉 Explication : le certificat doit avoir l'usage Authentification du serveur, un nom correspondant au FQDN du serveur et la clé privée lisible par le compte de service SQL. Redémarrer le service après la sélection.
+   👉 Explication : le certificat doit avoir l'usage Authentification du serveur, un nom correspondant au [[Glossary:FQDN]] du serveur et la clé privée lisible par le compte de service SQL. Redémarrer le service après la sélection.
 
 4. PowerShell — équivalent registre (identifiant d'instance MSSQL16 attendu pour SQL Server 2022) :
    ```powershell
@@ -44,7 +44,7 @@ Durcir l'authentification, imposer le chiffrement des connexions et limiter l'ac
    ```powershell
    New-NetFirewallRule -DisplayName 'SQL Server 1433' -Direction Inbound -Protocol TCP -LocalPort 1433 -RemoteAddress IP_CLIENT -Action Allow
    ```
-   👉 Explication : GUI : Pare-feu Windows Defender avec fonctions avancées de sécurité → Règles de trafic entrant → Nouvelle règle → Port TCP 1433, limiter l'étendue aux IP clientes. Remplacer `IP_CLIENT` (à remplacer).
+   👉 Explication : GUI : Pare-feu Windows Defender avec fonctions avancées de sécurité → Règles de trafic entrant → Nouvelle règle → Port [[Glossary:TCP]] 1433, limiter l'étendue aux [[Glossary:IP]] clientes. Remplacer `IP_CLIENT` (à remplacer).
 
 6. Désactiver SQL Server Browser pour une instance par défaut :
    ```powershell

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Nextcloud_Installer
 
-- **Environnement** : VM Debian 13; Nextcloud (archive officielle), Apache, PHP 8.4 et MariaDB
+- **Environnement** : [[Glossary:VM]] Debian 13; Nextcloud (archive officielle), Apache, PHP 8.4 et MariaDB
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / Nextcloud — Installer
 - **Tags** : `debian13`, `nextcloud`, `cloud`, `apache`, `php`, `installer`
@@ -39,7 +39,7 @@ Installer Nextcloud (archive officielle vérifiée) avec Apache, PHP et MariaDB 
    curl -fLO https://download.nextcloud.com/server/releases/latest.tar.bz2.sha256
    sha256sum -c latest.tar.bz2.sha256
    ```
-   👉 Explication : `latest` suit la dernière version stable ; pour figer une version utiliser `nextcloud-VERSION.tar.bz2` (à remplacer). Une signature GPG (`.asc`) est aussi publiée : la vérifier en production.
+   👉 Explication : `latest` suit la dernière version stable ; pour figer une version utiliser `nextcloud-VERSION.tar.bz2` (à remplacer). Une signature [[Glossary:GPG]] (`.asc`) est aussi publiée : la vérifier en production.
 
 4. Déployer dans la racine web :
    ```bash
@@ -70,7 +70,7 @@ Vérifier que la version installée correspond à celle visée (`occ status`), q
 ## Validation et retour arrière
 
 - **Validation** : `sudo -u www-data php /var/www/nextcloud/occ status` indique `installed: true`.
-- **Retour arrière** : supprimer `/var/www/nextcloud`, `DROP DATABASE nextcloud;` et l'utilisateur SQL, ou restaurer le snapshot.
+- **Retour arrière** : supprimer `/var/www/nextcloud`, `DROP DATABASE nextcloud;` et l'utilisateur [[Glossary:SQL]], ou restaurer le snapshot.
 
 ## Si le problème n'est pas résolu
 

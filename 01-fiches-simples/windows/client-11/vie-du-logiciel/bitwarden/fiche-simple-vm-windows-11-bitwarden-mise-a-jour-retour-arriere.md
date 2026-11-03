@@ -24,7 +24,7 @@ Maintenir app/extension à jour et révoquer sessions en cas de poste remplacé.
    ```
    👉 Explication : remplacer le fichier à remplacer; signature doit être valide.
 
-3. Tester MFA, verrouillage et synchronisation en pilote
+3. Tester [[Glossary:MFA]], verrouillage et synchronisation en pilote
    ```text
    Navigateur > ouvrir la documentation officielle : https://bitwarden.com/download/
    ```

@@ -12,7 +12,7 @@ Fiche défensive d’administration et de gouvernance. Elle ne remplace pas le g
 
 ## 🧭 Périmètre
 
-Sécuriser la console par MFA, comptes nominatifs, rôles délégués et journal d’audit; associer les politiques à des groupes d’équipements issus de l’inventaire validé. Piloter les changements de protection, les mises à jour et exclusions; limiter leur durée et documenter leur justification. Traiter les actions sur hôte via le processus incident approuvé.
+Sécuriser la console par [[Glossary:MFA]], comptes nominatifs, rôles délégués et journal d’audit; associer les politiques à des groupes d’équipements issus de l’inventaire validé. Piloter les changements de protection, les mises à jour et exclusions; limiter leur durée et documenter leur justification. Traiter les actions sur hôte via le processus incident approuvé.
 
 ## ✅ Autorisation et préparation
 

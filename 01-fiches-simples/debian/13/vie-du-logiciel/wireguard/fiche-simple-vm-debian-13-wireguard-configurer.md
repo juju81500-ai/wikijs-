@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_WireGuard_Configurer
 
-- **Environnement** : VM Debian 13 dédiée à WireGuard natif
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à WireGuard natif
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : WireGuard natif / configurer
 - **Tags** : `wireguard`, `debian13`, `vie-du-logiciel`, `configurer`
@@ -51,7 +51,7 @@ Vérifier unicité des AllowedIPs et cohérence des routes; un /32 par pair est 
 
 ## 3. Production — Sécurité
 
-- Ne pas utiliser 0.0.0.0/0 sans architecture full-tunnel validée; ne pas activer implicitement le transfert IP.
+- Ne pas utiliser 0.0.0.0/0 sans architecture full-tunnel validée; ne pas activer implicitement le transfert [[Glossary:IP]].
 
 ## Validation et retour arrière
 

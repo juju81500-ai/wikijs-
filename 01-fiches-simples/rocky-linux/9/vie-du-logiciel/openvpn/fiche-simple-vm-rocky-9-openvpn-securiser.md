@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_9_OpenVPN_Securiser
 
-- **Environnement** : VM Rocky Linux 9 dédiée à OpenVPN Community Edition (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à OpenVPN Community Edition (serveur)
 - **OS / Version** : Rocky Linux 9; paquets openvpn et easy-rsa issus d'EPEL, version à vérifier
 - **Catégorie** : OpenVPN Community Edition / sécuriser
 - **Tags** : `openvpn`, `rocky9`, `vie-du-logiciel`, `securiser`
@@ -20,7 +20,7 @@ Réduire l'exposition du serveur : pare-feu, droits, révocation et journalisati
    sudo firewall-cmd --reload
    sudo firewall-cmd --list-all
    ```
-   👉 Explication : VPN_UDP_PORT (1194 par défaut) est à remplacer par le port UDP retenu. Le masquerade n'est à ajouter que si le plan réseau impose du NAT; sinon omettre la ligne --add-masquerade et utiliser des routes.
+   👉 Explication : VPN_UDP_PORT (1194 par défaut) est à remplacer par le port [[Glossary:UDP]] retenu. Le masquerade n'est à ajouter que si le plan réseau impose du [[Glossary:NAT]]; sinon omettre la ligne --add-masquerade et utiliser des routes.
 
 2. Vérifier les droits des secrets :
    ```bash
@@ -29,20 +29,20 @@ Réduire l'exposition du serveur : pare-feu, droits, révocation et journalisati
    ```
    👉 Explication : Aucune clé ne doit sortir de la commande find (toutes en 0600).
 
-3. Activer la révocation : installer la CRL générée par la PKI hors ligne puis la déclarer dans server.conf :
+3. Activer la révocation : installer la [[Glossary:CRL]] générée par la [[Glossary:PKI]] hors ligne puis la déclarer dans server.conf :
    ```bash
    sudo install -o root -g root -m 0644 CRL_FICHIER /etc/openvpn/server/crl.pem
    sudoedit /etc/openvpn/server/server.conf   # ajouter : crl-verify /etc/openvpn/server/crl.pem
    ```
-   👉 Explication : CRL_FICHIER est la CRL émise par la CA (à remplacer). Prévoir un renouvellement avant son expiration.
+   👉 Explication : CRL_FICHIER est la CRL émise par la [[Glossary:CA]] (à remplacer). Prévoir un renouvellement avant son expiration.
 
 ## 2. Production — Contrôles
 
-Restreindre l'accès SSH au réseau d'administration; centraliser les journaux (journalctl -u openvpn-server@server).
+Restreindre l'accès [[Glossary:SSH]] au réseau d'administration; centraliser les journaux (journalctl -u openvpn-server@server).
 
 ## 3. Production — Sécurité
 
-- Exposer uniquement le port UDP VPN; révoquer immédiatement tout certificat perdu ou lié à un départ.
+- Exposer uniquement le port UDP [[Glossary:VPN]]; révoquer immédiatement tout certificat perdu ou lié à un départ.
 
 ## Validation et retour arrière
 

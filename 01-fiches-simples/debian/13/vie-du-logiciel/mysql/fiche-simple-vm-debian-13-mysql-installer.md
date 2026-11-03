@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_MySQL_Installer
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; MySQL Community (dépôt officiel Oracle)
 - **Catégorie** : base de données / MySQL / Installer
 - **Tags** : `debian13`, `mysql`, `installation`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Installer MySQL Community (version LTS) depuis le dépôt APT officiel Oracle avec vérification de la source.
+Installer MySQL Community (version [[Glossary:LTS]]) depuis le dépôt [[Glossary:APT]] officiel Oracle avec vérification de la source.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

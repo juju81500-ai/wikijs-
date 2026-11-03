@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Dimensionner et préparer l'environnement avant d'installer PBS.
+Dimensionner et préparer l'environnement avant d'installer [[Glossary:PBS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -19,7 +19,7 @@ Dimensionner et préparer l'environnement avant d'installer PBS.
 2. Séparer datastore et système si possible; prévoir une copie hors site ou hors ligne.
    👉 Explication : protège contre la perte du serveur.
 
-3. Vérifier DNS, NTP et compatibilité des versions PVE/PBS. Sur un hôte PVE existant :
+3. Vérifier [[Glossary:DNS]], [[Glossary:NTP]] et compatibilité des versions PVE/PBS. Sur un hôte PVE existant :
    ```bash
    pveversion
    timedatectl status

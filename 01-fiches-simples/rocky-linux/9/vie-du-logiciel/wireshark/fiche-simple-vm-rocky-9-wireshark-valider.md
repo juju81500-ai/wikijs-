@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Rocky_9_Wireshark_Valider
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Wireshark
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Wireshark
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Wireshark / validation
 - **Tags** : `wireshark`, `rocky9`, `vie-du-logiciel`, `valider`
 
@@ -13,7 +13,7 @@ Recetter une capture locale bornée et sa relecture.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Capturer cinq paquets ICMP autorisés :
+1. Capturer cinq paquets [[Glossary:ICMP]] autorisés :
    ```bash
    dumpcap -i INTERFACE_AUTORISEE -c 5 -f icmp -w /var/tmp/recette.pcapng &
    ping -c 3 HOTE_AUTORISE
@@ -45,7 +45,7 @@ Archiver date, version et résultat de la recette.
 ## Validation et retour arrière
 
 - **Validation** : Les paquets ICMP sont lus par tshark et aucune capture ne reste active.
-- **Retour arrière** : Arrêter un éventuel dumpcap restant avec `kill PID_DUMPCAP` (PID à remplacer).
+- **Retour arrière** : Arrêter un éventuel dumpcap restant avec `kill PID_DUMPCAP` ([[Glossary:PID]] à remplacer).
 
 ## Si le problème n’est pas résolu
 

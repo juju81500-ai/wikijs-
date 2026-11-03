@@ -1,6 +1,6 @@
 # 📄 Apache
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : Apache 2.4.x (paquet des dépôts Debian 12, à vérifier sur la version déployée)
 - **Catégorie** : Services Web et bases de données
@@ -69,7 +69,7 @@ sudo systemctl reload apache2
 ```
 👉 Explication : `a2ensite` active le nouvel hôte virtuel, `a2dissite` retire le site par défaut. `configtest` valide la syntaxe avant le rechargement.
 
-3. Ouverture du pare-feu pour HTTP, HTTPS et administration :
+3. Ouverture du pare-feu pour [[Glossary:HTTP]], HTTPS et administration :
 ```bash
 sudo apt install -y ufw
 sudo ufw allow from <adresse_ip_admin> to any port 22 proto tcp
@@ -77,7 +77,7 @@ sudo ufw allow 'Apache Full'
 sudo ufw enable
 sudo ufw status verbose
 ```
-👉 Explication : Ouvre SSH seulement pour `<adresse_ip_admin>` avant d'activer le pare-feu. Le profil `Apache Full` ouvre les ports 80 et 443. Vérifier que le profil existe avec `sudo ufw app list`.
+👉 Explication : Ouvre [[Glossary:SSH]] seulement pour `<adresse_ip_admin>` avant d'activer le pare-feu. Le profil `Apache Full` ouvre les ports 80 et 443. Vérifier que le profil existe avec `sudo ufw app list`.
 
 ---
 
@@ -98,7 +98,7 @@ ServerSignature Off
 sudo a2enmod ssl headers rewrite
 sudo a2enmod http2
 ```
-👉 Explication : Active le module TLS, la gestion des en-têtes de sécurité et la réécriture d'URL. Le certificat est référencé dans un hôte virtuel `*:443` avec `SSLEngine on`, `SSLCertificateFile` et `SSLCertificateKeyFile` ; les chemins sont à vérifier sur la version déployée.
+👉 Explication : Active le module [[Glossary:TLS]], la gestion des en-têtes de sécurité et la réécriture d'URL. Le certificat est référencé dans un hôte virtuel `*:443` avec `SSLEngine on`, `SSLCertificateFile` et `SSLCertificateKeyFile` ; les chemins sont à vérifier sur la version déployée.
 
 3. Désactivation des modules non utilisés :
 ```bash

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_ESXi_8_VMware_vSphere_Datastore_NFS
 
-- **Environnement** : vCenter Server et ESXi 8.x de laboratoire; serveur NFS de test
+- **Environnement** : vCenter Server et ESXi 8.x de laboratoire; serveur [[Glossary:NFS]] de test
 - **OS / Version** : VMware vSphere 8.x
 - **Catégorie** : virtualisation / stockage
 - **Tags** : `vmware-vsphere`, `vsphere8`, `datastore`, `nfs`, `stockage`
@@ -36,7 +36,7 @@ Ajouter un datastore NFS de laboratoire sans toucher aux banques VMFS de product
 
 ## Validation et retour arrière
 
-- **Validation** : datastore monté et données de test vérifiées. **Retour arrière** : après arrêt/retrait des VM, démonter dans vSphere; supprimer l’export uniquement avec l’accord de son propriétaire.
+- **Validation** : datastore monté et données de test vérifiées. **Retour arrière** : après arrêt/retrait des [[Glossary:VM]], démonter dans vSphere; supprimer l’export uniquement avec l’accord de son propriétaire.
 
 ## Si le problème n'est pas résolu
 

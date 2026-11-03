@@ -1,12 +1,12 @@
 # 📄 fiche-simple-vm-rocky-9-securite-fail2ban.md
 
-- **Environnement** : VM ou serveur Rocky Linux
-- **OS / Version** : Rocky Linux 9 / RHEL 9 (paquet fail2ban fourni par EPEL)
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 (paquet fail2ban fourni par EPEL)
 - **Catégorie** : Sécurité / Protection contre le brute-force
 - **Tags** : `[rocky9]`, `[rhel9]`, `[fail2ban]`, `[epel]`, `[ssh]`, `[firewalld]`
 
 ## 🎯 Problème précis à résoudre
-Bloquer automatiquement les adresses IP qui échouent répétitivement à l'authentification SSH sur Rocky Linux 9, avec un blocage géré par firewalld.
+Bloquer automatiquement les adresses [[Glossary:IP]] qui échouent répétitivement à l'authentification [[Glossary:SSH]] sur Rocky Linux 9, avec un blocage géré par firewalld.
 
 ---
 

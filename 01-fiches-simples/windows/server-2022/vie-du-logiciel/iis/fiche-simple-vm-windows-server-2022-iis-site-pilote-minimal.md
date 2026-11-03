@@ -1,7 +1,7 @@
 # fiche-simple-vm-windows-server-2022-iis-site-pilote-minimal.md
 
-- **Environnement** : VM Windows Server 2022 pilote
-- **OS / Version** : Windows Server 2022; rôle Web Server (IIS)
+- **Environnement** : [[Glossary:VM]] Windows Server 2022 pilote
+- **OS / Version** : Windows Server 2022; rôle Web Server ([[Glossary:IIS]])
 - **Catégorie** : serveur Web / IIS
 - **Tags** : `iis`, `windows-server-2022`, `web-server`, `tls`, `application-pool`
 
@@ -20,20 +20,20 @@ Créer un site statique de test isolé.
    ```
    👉 Explication : contenu sans donnée métier.
 
-2. GUI : **Gestionnaire des services Internet (IIS) > clic droit sur Sites > Ajouter un site Web**, nom `Pilote`, chemin `C:\Sites\Pilote`, avec un pool d'applications dédié.
+2. [[Glossary:GUI]] : **Gestionnaire des services Internet (IIS) > clic droit sur Sites > Ajouter un site Web**, nom `Pilote`, chemin `C:\Sites\Pilote`, avec un pool d'applications dédié.
    👉 Explication : le site utilise son propre pool.
 
-3. Configurer un binding correspondant au nom DNS et au certificat prévus; pour un pilote local, limiter le test à localhost ou au réseau d'administration.
+3. Configurer un binding correspondant au nom [[Glossary:DNS]] et au certificat prévus; pour un pilote local, limiter le test à localhost ou au réseau d'administration.
    👉 Explication : on évite toute exposition prématurée.
 
 ## 2. Production — Contrôles
 
-Pour une application réelle, choisir l'identité de pool dédiée avec les permissions NTFS minimales.
+Pour une application réelle, choisir l'identité de pool dédiée avec les permissions [[Glossary:NTFS]] minimales.
 
 ## 3. Production — Sécurité
 
 - Ne pas accorder `Everyone:FullControl` ni utiliser un compte Administrateur.
-- Ne pas exposer à Internet avant bindings, TLS, journaux, mises à jour, authentification et règles réseau.
+- Ne pas exposer à Internet avant bindings, [[Glossary:TLS]], journaux, mises à jour, authentification et règles réseau.
 
 ## Validation et retour arrière
 

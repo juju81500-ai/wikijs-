@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_OpenVPN_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Debian 13 dédiée à OpenVPN Community Edition
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à OpenVPN Community Edition
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : OpenVPN Community Edition / mise à jour et retour arrière
 - **Tags** : `openvpn`, `debian13`, `vie-du-logiciel`, `mise_a_jour_retour_arriere`

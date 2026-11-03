@@ -5,7 +5,7 @@
 
 ## Symptômes
 
-Les connexions par adresse IP fonctionnent, mais les noms de domaine échouent, ou bien les applications signalent des erreurs de résolution.
+Les connexions par adresse [[Glossary:IP]] fonctionnent, mais les noms de domaine échouent, ou bien les applications signalent des erreurs de résolution.
 
 ## 1. Diagnostiquer sans modifier
 
@@ -17,7 +17,7 @@ resolvectl query deb.debian.org
 ```
 
 - Si la passerelle n'est pas joignable, corriger d'abord l'adresse ou la route réseau.
-- Si `resolvectl status` n'affiche aucun DNS pour le lien actif, vérifier le gestionnaire qui possède la configuration (Netplan, NetworkManager, DHCP ou systemd-networkd).
+- Si `resolvectl status` n'affiche aucun [[Glossary:DNS]] pour le lien actif, vérifier le gestionnaire qui possède la configuration (Netplan, NetworkManager, [[Glossary:DHCP]] ou systemd-networkd).
 - Comparer avec un autre poste du même réseau et vérifier que le serveur DNS choisi est autorisé par la politique locale.
 
 ## 2. Vérifier la configuration propriétaire

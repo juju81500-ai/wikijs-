@@ -37,7 +37,7 @@ Prouver qu'un job Bareos peut restaurer les données attendues vers une cible te
 
 ## 2. Production — Contrôles
 
-Répéter les restaurations par type d'OS, application et niveau de sauvegarde (Full/Incremental/Differential); documenter durée, RPO/RTO, restauration du catalogue et bootstrap.
+Répéter les restaurations par type d'OS, application et niveau de sauvegarde (Full/Incremental/Differential); documenter durée, [[Glossary:RPO]]/RTO, restauration du catalogue et bootstrap.
 
 ## 3. Production — Sécurité
 

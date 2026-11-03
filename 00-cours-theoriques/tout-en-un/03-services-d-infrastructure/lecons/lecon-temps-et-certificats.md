@@ -12,24 +12,24 @@
 
 1. expliquer pourquoi un serveur dont l'heure dérive provoque des pannes de certificats, de journaux et d'authentification ;
 2. configurer et contrôler un client ou un serveur de temps **chrony** ;
-3. décrire les rôles d'une **PKI** : autorité racine, intermédiaire, certificat de feuille, chaîne de confiance ;
+3. décrire les rôles d'une **[[Glossary:PKI]]** : autorité racine, intermédiaire, certificat de feuille, chaîne de confiance ;
 4. créer une autorité de certification interne de laboratoire, produire une **CSR** et émettre un certificat serveur avec `openssl` ;
 5. installer une autorité interne dans le magasin de confiance d'un système ;
-6. expliquer le principe d'**ACME** (Let's Encrypt) et le renouvellement automatique ;
+6. expliquer le principe d'**[[Glossary:ACME]]** (Let's Encrypt) et le renouvellement automatique ;
 7. **dépanner** un certificat avec `openssl` : expiration, nom, chaîne incomplète, clé qui ne correspond pas.
 
 ## Prérequis et durée
 
-- Terminal Linux, notions de réseau (UDP/TCP, DNS) et leçon [Serveur web et reverse proxy](lecon-serveur-web-et-reverse-proxy.md) conseillée (HTTPS).
-- Une VM jetable Debian 12 ou Ubuntu avec `sudo`, sans donnée réelle. Les adresses `192.0.2.0/24`, `203.0.113.0/24` et les noms `example.com` / `example.test` sont des valeurs de documentation. Durée : 4 à 5 heures.
+- Terminal Linux, notions de réseau ([[Glossary:UDP]]/TCP, [[Glossary:DNS]]) et leçon [Serveur web et reverse proxy](lecon-serveur-web-et-reverse-proxy.md) conseillée (HTTPS).
+- Une [[Glossary:VM]] jetable Debian 12 ou Ubuntu avec `sudo`, sans donnée réelle. Les adresses `192.0.2.0/24`, `203.0.113.0/24` et les noms `example.com` / `example.test` sont des valeurs de documentation. Durée : 4 à 5 heures.
 
 ## L'essentiel en bref
 
 - Un certificat n'est valable que **dans une plage de dates** : une horloge fausse invalide tous les certificats, et Kerberos refuse les écarts de plus de 5 minutes par défaut.
-- **chrony** synchronise l'horloge (NTP, UDP 123) ; `chronyc tracking` et `chronyc sources` sont les commandes de diagnostic.
+- **chrony** synchronise l'horloge ([[Glossary:NTP]], UDP 123) ; `chronyc tracking` et `chronyc sources` sont les commandes de diagnostic.
 - Une **PKI** relie une clé publique à une identité par une signature ; la confiance vient d'une **racine** installée chez le client.
 - On génère la **clé privée** sur le serveur, on envoie seulement la **CSR** ; la clé ne circule jamais.
-- Un serveur doit présenter sa **chaîne** (feuille + intermédiaires) et un **SAN** correspondant au nom visité.
+- Un serveur doit présenter sa **chaîne** (feuille + intermédiaires) et un **[[Glossary:SAN]]** correspondant au nom visité.
 - **ACME** automatise l'émission et le renouvellement ; la surveillance de l'expiration reste indispensable.
 - `openssl s_client`, `x509` et `verify` règlent la plupart des problèmes.
 
@@ -41,7 +41,7 @@ Des convives aux montres différentes ne peuvent plus se donner rendez-vous à 2
 
 - **valider les certificats** (`notBefore` / `notAfter`) : un serveur en retard de deux jours reçoit un certificat « pas encore valide » ;
 - **corréler les journaux** de plusieurs machines pendant un incident ;
-- **authentifier** : Kerberos (donc Active Directory) tolère 5 minutes d'écart par défaut ; les codes à usage unique (TOTP) dépendent de l'horloge ;
+- **authentifier** : Kerberos (donc Active Directory) tolère 5 minutes d'écart par défaut ; les codes à usage unique ([[Glossary:TOTP]]) dépendent de l'horloge ;
 - **planifier** (tâches cron, sauvegardes) et horodater des preuves.
 
 Une VM est particulièrement exposée : après suspension ou migration, son horloge peut sauter.
@@ -142,7 +142,7 @@ Une **PKI** (Public Key Infrastructure) est l'ensemble des acteurs, règles et o
 - **Paire de clés** : la clé **privée** reste secrète sur le serveur ; la clé **publique** est incluse dans le certificat.
 - **Certificat X.509** : document signé contenant sujet, clé publique, émetteur, dates de validité, usages et **SAN** (Subject Alternative Name, la liste des noms valables : c'est lui que les navigateurs vérifient, pas le « CN »).
 - **CSR** (Certificate Signing Request, demande de signature) : contient la clé publique et les noms souhaités, signée par la clé privée correspondante. L'autorité signe et renvoie le certificat ; **la clé privée n'est jamais transmise**.
-- **CA** (autorité de certification) : entité qui signe. Une **CA racine** s'auto-signe ; elle est gardée **hors ligne** et signe peu de choses. Une **CA intermédiaire** signe les certificats du quotidien.
+- **[[Glossary:CA]]** (autorité de certification) : entité qui signe. Une **CA racine** s'auto-signe ; elle est gardée **hors ligne** et signe peu de choses. Une **CA intermédiaire** signe les certificats du quotidien.
 - **Chaîne de confiance** : feuille → intermédiaire → racine. Le client fait confiance à la racine parce qu'elle figure déjà dans son **magasin de confiance** ; il remonte la chaîne en vérifiant chaque signature, les dates et les usages.
 
 ![Schéma d'une PKI interne : la CA racine hors ligne signe la CA intermédiaire, qui signe le certificat du serveur www.example.com à partir d'une demande CSR envoyée par le serveur ; le client ne fait confiance qu'à la racine installée dans son magasin](images/temps-et-certificats-2.svg)
@@ -155,7 +155,7 @@ Pour des noms **privés** (`intranet.example.test`), une autorité publique ne p
 
 ### 4.2 Durées de vie et révocation
 
-Plus un certificat vit longtemps, plus un vol de clé est dangereux. Ordres de grandeur : racine 10 à 20 ans, intermédiaire 3 à 10 ans, serveur 90 jours à 13 mois. La **révocation** (CRL, OCSP) invalide un certificat avant son terme mais est inégalement vérifiée : la meilleure parade est la **courte durée de vie avec renouvellement automatique**.
+Plus un certificat vit longtemps, plus un vol de clé est dangereux. Ordres de grandeur : racine 10 à 20 ans, intermédiaire 3 à 10 ans, serveur 90 jours à 13 mois. La **révocation** ([[Glossary:CRL]], OCSP) invalide un certificat avant son terme mais est inégalement vérifiée : la meilleure parade est la **courte durée de vie avec renouvellement automatique**.
 
 ---
 
@@ -290,7 +290,7 @@ openssl s_client -connect 192.0.2.10:443 -servername www.example.test -showcerts
 | `error 18 … self-signed certificate` | Certificat auto-signé non approuvé | Installer l'autorité de confiance ou émettre via une CA |
 | `error 10 … certificate has expired` | Date `notAfter` dépassée | Renouveler ; vérifier l'horloge du client **et** du serveur |
 | `error 9 … certificate is not yet valid` | `notBefore` dans le futur | Horloge du client en retard : vérifier chrony |
-| `error 62 … hostname mismatch` | Le nom visité n'est pas dans le SAN | Réémettre avec le bon SAN ; visiter le nom prévu (pas l'IP) |
+| `error 62 … hostname mismatch` | Le nom visité n'est pas dans le SAN | Réémettre avec le bon SAN ; visiter le nom prévu (pas l'[[Glossary:IP]]) |
 | `error 26 … unsupported certificate purpose` | Usage (`serverAuth`) absent | Réémettre avec les bonnes extensions |
 
 ### 7.3 Clé et certificat correspondent-ils ?
@@ -318,7 +318,7 @@ openssl x509 -in www.crt -pubkey -noout | openssl sha256
 1. **Contrôler le temps** : exécutez `chronyc tracking` et `chronyc sources -v`, relevez la strate et l'écart.
 2. **Construire la PKI** : reprenez les commandes des sections 5 à 5.2 dans `~/pki-lab`.
 3. **Vérifier** : exécutez les trois `openssl verify` de la section 5.3 et notez le message d'erreur de la deuxième.
-4. **Lancer un serveur TLS de test** :
+4. **Lancer un serveur [[Glossary:TLS]] de test** :
 
 ```bash
 openssl s_server -accept 8443 -cert www.crt -cert_chain inter.crt -key www.key -www -quiet &
@@ -373,7 +373,7 @@ cd ~ && rm -rf ~/pki-lab
 
 ## Quiz
 
-**1.** Quel protocole synchronise l'horloge ? A. SNMP — B. NTP — C. LDAP — D. SMTP. **Réponse : B** ; NTP (UDP 123).
+**1.** Quel protocole synchronise l'horloge ? A. [[Glossary:SNMP]] — B. NTP — C. [[Glossary:LDAP]] — D. [[Glossary:SMTP]]. **Réponse : B** ; NTP (UDP 123).
 
 **2.** Que montre `chronyc tracking` ? A. Les routes — B. L'état de synchronisation et l'écart de l'horloge — C. Les certificats — D. Les utilisateurs. **Réponse : B**.
 

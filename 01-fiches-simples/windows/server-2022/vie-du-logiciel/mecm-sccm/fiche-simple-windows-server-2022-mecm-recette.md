@@ -13,7 +13,7 @@ Recetter un site MECM/SCCM : santé des composants, client fonctionnel, contenu 
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Contrôler l'état du site. GUI : `Surveillance > État du site` et `État des composants`.
+1. Contrôler l'état du site. [[Glossary:GUI]] : `Surveillance > État du site` et `État des composants`.
    ```powershell
    Get-Service SMS_EXECUTIVE, SMS_SITE_COMPONENT_MANAGER, SMS_SITE_VSS_WRITER | Select-Object Name, Status
    ```

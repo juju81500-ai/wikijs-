@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_39_Chiffrement_Des_Flux_Pki
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 39 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-39`
@@ -9,14 +9,14 @@
 
 ## Problème précis à résoudre
 
-Remplacer le certificat auto-signé du GUI.
+Remplacer le certificat auto-signé du [[Glossary:GUI]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Créer ou importer une autorité : System > Certificate Manager > CAs > Add, puis Certificates > Add/Sign (Common Name `fw01.exemple.lan`).
    👉 Explication : génère un certificat serveur signé par votre autorité.
 
-2. Appliquer le certificat : System > Advanced > Admin Access > SSL/TLS Certificate, puis Save.
+2. Appliquer le certificat : System > Advanced > Admin Access > [[Glossary:SSL]]/TLS Certificate, puis Save.
    👉 Explication : le GUI présente le certificat reconnu par les postes.
 
 3. Contrôler en shell :
@@ -31,7 +31,7 @@ Surveiller les dates d'expiration; utiliser le paquet `acme` si le nom est publi
 
 ## 3. Production — Sécurité
 
-Clé d'au moins 2048 bits (RSA) ou ECDSA; TLS 1.2 minimum.
+Clé d'au moins 2048 bits ([[Glossary:RSA]]) ou ECDSA; [[Glossary:TLS]] 1.2 minimum.
 
 ## Validation et retour arrière
 

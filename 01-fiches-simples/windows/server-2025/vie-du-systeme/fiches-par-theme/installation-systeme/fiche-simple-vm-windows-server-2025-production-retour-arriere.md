@@ -1,6 +1,6 @@
 # fiche-simple-vm-windows-server-2025-production-retour-arriere.md
 
-- **Environnement** : Serveur physique ou VM Windows Server 2025 administré par l'organisation
+- **Environnement** : Serveur physique ou [[Glossary:VM]] Windows Server 2025 administré par l'organisation
 - **OS / Version** : Windows Server 2025 Standard ou Datacenter
 - **Catégorie** : installation / déploiement
 - **Tags** : `windows-server-2025`, `installation`, `production`, `uefi`, `openssh`
@@ -25,7 +25,7 @@ Prévoir et appliquer le retour arrière en cas d'échec.
    wevtutil epl System C:\Preuves\System.evtx
    wevtutil epl Application C:\Preuves\Application.evtx
    ```
-   👉 Explication : coupe le réseau et exporte les journaux. GUI : **Panneau de configuration > Centre Réseau et partage > Modifier les paramètres de la carte > Désactiver**, **Observateur d'événements > Enregistrer tous les événements sous...**.
+   👉 Explication : coupe le réseau et exporte les journaux. [[Glossary:GUI]] : **Panneau de configuration > Centre Réseau et partage > Modifier les paramètres de la carte > Désactiver**, **Observateur d'événements > Enregistrer tous les événements sous...**.
 
 3. Appliquer le plan de restauration ou de réinstallation validé.
    👉 Explication : seul un plan préalablement testé est fiable.

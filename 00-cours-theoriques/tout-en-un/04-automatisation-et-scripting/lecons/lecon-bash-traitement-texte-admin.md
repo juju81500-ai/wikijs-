@@ -21,9 +21,9 @@
 ## Prérequis et durée
 
 - Leçon « Bash pour débuter » (tubes, redirections, quoting) : [lecon-bash-debutant.md](lecon-bash-debutant.md).
-- Un **laboratoire jetable** : VM Linux (Debian, Ubuntu ou Rocky Linux), compte non privilégié, **instantané préalable**. Toutes les commandes **lisent** des fichiers factices créés dans `~/labo-texte` ; les seules écritures sont dans ce dossier, et les suppressions sont **simulées** (`echo`).
+- Un **laboratoire jetable** : [[Glossary:VM]] Linux (Debian, Ubuntu ou Rocky Linux), compte non privilégié, **instantané préalable**. Toutes les commandes **lisent** des fichiers factices créés dans `~/labo-texte` ; les seules écritures sont dans ce dossier, et les suppressions sont **simulées** (`echo`).
 - Aucune donnée réelle : adresses de documentation (192.0.2.0/24, 198.51.100.0/24, 203.0.113.0/24, 2001:db8::/32) et noms fictifs. Ne rejouez jamais ces essais sur des journaux de production sans copie préalable.
-- Outils GNU : Debian, Ubuntu et Rocky Linux les fournissent ; sur BSD ou macOS, certaines options diffèrent.
+- Outils GNU : Debian, Ubuntu et Rocky Linux les fournissent ; sur [[Glossary:BSD]] ou macOS, certaines options diffèrent.
 
 ## L'essentiel en bref
 
@@ -49,7 +49,7 @@ Un journal web peut peser des gigaoctets : aucune lecture à l'œil n'est possib
 
 ## 2. Préparer les jeux de données factices
 
-Créez le dossier de travail et trois fichiers : un journal web, un journal d'authentification SSH et un inventaire CSV (séparateur point-virgule).
+Créez le dossier de travail et trois fichiers : un journal web, un journal d'authentification [[Glossary:SSH]] et un inventaire CSV (séparateur point-virgule).
 
 ```bash
 mkdir -p ~/labo-texte && cd ~/labo-texte
@@ -433,7 +433,7 @@ a) `awk` b) `cut` c) `grep`
 | `images/bash-texte-admin-2.svg` | Création originale du projet Pack Master | Projet Pack Master | CC0 1.0 — <https://creativecommons.org/publicdomain/zero/1.0/deed.fr> | Aucune |
 | `images/bash-texte-admin-3.svg` | Création originale du projet Pack Master | Projet Pack Master | CC0 1.0 — <https://creativecommons.org/publicdomain/zero/1.0/deed.fr> | Aucune |
 
-Création originale du projet Pack Master, dédiée au domaine public (CC0). Licence de `bash-texte-admin-1.svg` vérifiée par l'API de Wikimedia Commons le 2026-11-01 (« Public domain », attribution non requise mais indiquée).
+Création originale du projet Pack Master, dédiée au domaine public (CC0). Licence de `bash-texte-admin-1.svg` vérifiée par l'[[Glossary:API]] de Wikimedia Commons le 2026-11-01 (« Public domain », attribution non requise mais indiquée).
 
 ## Historique de vérification
 

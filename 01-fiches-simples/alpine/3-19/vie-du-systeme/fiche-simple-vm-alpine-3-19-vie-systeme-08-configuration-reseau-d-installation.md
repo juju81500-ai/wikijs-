@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_08_Configuration_Reseau_D_Installation
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 08 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-08`
@@ -23,7 +23,7 @@ Obtenir une connexion réseau temporaire pour installer.
    ```sh
    rc-service networking restart
    ```
-   👉 Explication : relance la configuration (à faire depuis la console, pas via SSH).
+   👉 Explication : relance la configuration (à faire depuis la console, pas via [[Glossary:SSH]]).
 
 3. Vérifier l'adresse, la route et la sortie :
    ```sh
@@ -35,7 +35,7 @@ Obtenir une connexion réseau temporaire pour installer.
 
 ## 2. Production — Contrôles
 
-Une adresse DHCP suffit pour l'installation; l'adressage fixe définitif est traité à l'étape 16.
+Une adresse [[Glossary:DHCP]] suffit pour l'installation; l'adressage fixe définitif est traité à l'étape 16.
 
 ## 3. Production — Sécurité
 

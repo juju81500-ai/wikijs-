@@ -1,6 +1,6 @@
 # fiche-simple-vm-ubuntu-24-04-migration-26-04-impact-changements.md
 
-- **Environnement** : VM ou serveur Ubuntu Server LTS
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu Server [[Glossary:LTS]]
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble) vers 26-04 LTS (Resolute)
 - **Catégorie** : migration de version
 - **Tags** : `ubuntu24.04`, `ubuntu26.04`, `migration`, `php`, `postgresql`, `systemd`, `apt`
@@ -25,7 +25,7 @@ Tester en avance les applications touchées par les nouvelles versions.
 4. Chrony : éviter les sources horaires en double.
    👉 Explication : Chrony devient le service horaire par défaut.
 
-5. systemd 259 et APT 3 : migrer les scripts SysV vers des unités natives (cgroup v1 supprimé) et remplacer `apt-key` par des dépôts avec clés dédiées.
+5. systemd 259 et [[Glossary:APT]] 3 : migrer les scripts SysV vers des unités natives (cgroup v1 supprimé) et remplacer `apt-key` par des dépôts avec clés dédiées.
    👉 Explication : ces changements cassent des scripts et dépôts tiers.
 
 6. Dracut, OpenLDAP, Samba, Dovecot : lire les notes spécifiques si ces services sont installés.

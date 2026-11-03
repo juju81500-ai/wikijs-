@@ -53,7 +53,7 @@ Valider la version CRI, le cgroup v2, les réglages systemd et la compatibilité
 
 ## 3. Production — Sécurité
 
-- Ne pas exposer l'API CRI ou le socket containerd au réseau.
+- Ne pas exposer l'[[Glossary:API]] CRI ou le socket containerd au réseau.
 - Ne pas remplacer une configuration existante sans sauvegarde.
 - Ne pas ajouter Docker Engine comme substitut CRI sans installer et valider `cri-dockerd`.
 - Appliquer le runtime de manière identique et contrôlée à tous les nœuds.

@@ -1,6 +1,6 @@
 # 📄 Fiche_Simple_-_VM_Debian_13_Supervision_Zabbix_Agent2
 
-- **Environnement** : VM ou serveur Debian 13 supervisé par un serveur Zabbix
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 13 supervisé par un serveur Zabbix
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
 - **Catégorie** : Supervision / Agent Zabbix
 - **Tags** : `[debian13]`, `[debian]`, `[zabbix]`, `[zabbix-agent2]`, `[supervision]`, `[monitoring]`

@@ -1,7 +1,7 @@
 # Leçon — Comptes, groupes et délégation : AGDLP, droits NTFS et partage, comptes de service, cycle de vie
 
 - **Tags** : `transverse`, `tout-en-un`, `lecon`, `identites`, `active-directory`, `groupes`, `agdlp`, `ntfs`, `delegation`, `comptes-de-service`
-- **Niveau** : Intermédiaire (TSSR / administrateur systèmes)
+- **Niveau** : Intermédiaire ([[Glossary:TSSR]] / administrateur systèmes)
 - **Durée estimée** : 3 h 30 (lecture 1 h 10, laboratoire 1 h 40, exercices et quiz 40 min)
 
 ---
@@ -11,16 +11,16 @@
 À la fin de cette leçon, vous saurez :
 
 1. distinguer comptes **utilisateur**, **ordinateur**, **de service** et groupes de **sécurité** ou de **distribution** ;
-2. choisir l'**étendue** d'un groupe (domaine local, globale, universelle) et appliquer **AGDLP** ou **AGUDLP** ;
-3. combiner **droits NTFS** et **droits de partage** et prédire le droit effectif ;
+2. choisir l'**étendue** d'un groupe (domaine local, globale, universelle) et appliquer **[[Glossary:AGDLP]]** ou **AGUDLP** ;
+3. combiner **droits [[Glossary:NTFS]]** et **droits de partage** et prédire le droit effectif ;
 4. **déléguer** une tâche d'administration à une équipe sans lui donner les droits d'administrateur du domaine ;
 5. choisir et créer un **compte de service géré** (gMSA) plutôt qu'un compte classique ;
 6. conduire proprement le **cycle de vie** d'un compte : arrivée, mobilité ou remplacement, départ.
 
 ## Prérequis et durée
 
-- Connaître le vocabulaire d'Active Directory (domaine, OU, DC) vu dans la leçon sur AD DS.
-- Laboratoire à deux VM sur un réseau isolé : `SRV-DC01` (192.0.2.10, domaine `example.test`) et `SRV-FICHIERS` (192.0.2.20, serveur de fichiers membre du domaine), versions d'évaluation officielles, détruisibles. Faites un **instantané** avant de commencer.
+- Connaître le vocabulaire d'Active Directory (domaine, [[Glossary:OU]], [[Glossary:DC]]) vu dans la leçon sur [[Glossary:AD]] DS.
+- Laboratoire à deux [[Glossary:VM]] sur un réseau isolé : `SRV-DC01` (192.0.2.10, domaine `example.test`) et `SRV-FICHIERS` (192.0.2.20, serveur de fichiers membre du domaine), versions d'évaluation officielles, détruisibles. Faites un **instantané** avant de commencer.
 - Durée : environ 3 h 30.
 
 Les adresses sont des adresses de documentation, les noms d'utilisateurs sont fictifs, et **aucun mot de passe n'est écrit** : les commandes le demandent de façon interactive.
@@ -41,7 +41,7 @@ Les adresses sont des adresses de documentation, les noms d'utilisateurs sont fi
 - **Compte utilisateur** : une personne (nominatif : un compte = une personne).
 - **Compte ordinateur** : une machine jointe ; son mot de passe est renouvelé automatiquement.
 - **Compte de service** : un programme, jamais utilisé par un humain.
-- **Groupe de sécurité** : ensemble d'objets auquel on accorde des droits (il figure dans les ACL) ; un **groupe de distribution** n'est qu'une liste de diffusion.
+- **Groupe de sécurité** : ensemble d'objets auquel on accorde des droits (il figure dans les [[Glossary:ACL]]) ; un **groupe de distribution** n'est qu'une liste de diffusion.
 
 Bonnes pratiques de nommage : `prenom.nom` pour les personnes, `adm-prenom.nom` pour le compte d'administration **distinct** de la même personne, `svc-application` ou `gmsa-application` pour les services, `GG_` pour les groupes globaux et `DL_` pour les groupes de domaine local. Ce préfixe n'est pas une obligation technique : c'est ce qui permet de lire l'architecture d'un coup d'œil.
 
@@ -251,11 +251,11 @@ Remove-ADGroupMember -Identity "GG_Compta" -Members "alice.martin" -Confirm:$fal
 Add-ADGroupMember -Identity "GG_Achats" -Members "alice.martin"
 ```
 
-👉 Explication : retire l'ancien rôle **avant** d'ajouter le nouveau ; sinon les droits s'accumulent (c'est la « dérive des privilèges »). Déplacez aussi le compte dans l'OU adaptée si des GPO diffèrent.
+👉 Explication : retire l'ancien rôle **avant** d'ajouter le nouveau ; sinon les droits s'accumulent (c'est la « dérive des privilèges »). Déplacez aussi le compte dans l'OU adaptée si des [[Glossary:GPO]] diffèrent.
 
 ### 6.3 Remplacement
 
-Charlie remplace Bruno. **On ne renomme jamais le compte de Bruno** pour Charlie : il hériterait de l'historique, du SID, des droits, des boîtes aux lettres et des journaux de Bruno. On crée un **nouveau compte**, on lui donne les **mêmes groupes de rôle**, on transfère la propriété des fichiers et des tâches planifiées, puis on traite le départ de Bruno.
+Charlie remplace Bruno. **On ne renomme jamais le compte de Bruno** pour Charlie : il hériterait de l'historique, du [[Glossary:SID]], des droits, des boîtes aux lettres et des journaux de Bruno. On crée un **nouveau compte**, on lui donne les **mêmes groupes de rôle**, on transfère la propriété des fichiers et des tâches planifiées, puis on traite le départ de Bruno.
 
 ```powershell
 Get-ADUser -Identity "bruno.durand" -Properties MemberOf | Select-Object -ExpandProperty MemberOf
@@ -268,7 +268,7 @@ Get-ADUser -Identity "bruno.durand" -Properties MemberOf | Select-Object -Expand
 Le jour du départ, dans cet ordre :
 
 1. **Désactiver** le compte, sans le supprimer ;
-2. réinitialiser le mot de passe, fermer les sessions, révoquer les jetons et accès distants (VPN, messagerie mobile) ;
+2. réinitialiser le mot de passe, fermer les sessions, révoquer les jetons et accès distants ([[Glossary:VPN]], messagerie mobile) ;
 3. noter le motif et le numéro de ticket dans la description ;
 4. déplacer le compte dans `OU=Desactives` ;
 5. conserver pour la durée définie par la politique (par exemple 90 jours), puis supprimer après validation.
@@ -376,7 +376,7 @@ Jouez les scénarios des sections 6.1 à 6.4 avec deux comptes fictifs, vérifie
 
 **Q4.** Le partage s'applique-t-il à un accès local ? A) Oui — B) Non, seul NTFS — C) Seulement pour les administrateurs — D) Seulement en lecture
 
-**Q5.** Un utilisateur ajouté à un groupe ne voit pas encore le droit. Pourquoi ? A) Le DNS est cassé — B) Son jeton d'accès n'a pas été renouvelé — C) Le groupe est de distribution — D) Le schéma est verrouillé
+**Q5.** Un utilisateur ajouté à un groupe ne voit pas encore le droit. Pourquoi ? A) Le [[Glossary:DNS]] est cassé — B) Son jeton d'accès n'a pas été renouvelé — C) Le groupe est de distribution — D) Le schéma est verrouillé
 
 **Q6.** Principe d'une délégation de contrôle ? A) Donner les droits d'administrateur — B) Donner un droit précis sur une OU à un groupe — C) Supprimer l'OU — D) Dupliquer la GPO
 

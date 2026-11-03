@@ -9,14 +9,14 @@
 
 ## Problème précis à résoudre
 
-Préparer le BIOS/UEFI et les contrôleurs de disques pour ZFS.
+Préparer le [[Glossary:BIOS]]/UEFI et les contrôleurs de disques pour [[Glossary:ZFS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Activer UEFI, la virtualisation (si besoin) et désactiver le Secure Boot si l'installation ne démarre pas. Mettre à jour le firmware BIOS/BMC.
    👉 Explication : chemin variable selon constructeur : menu BIOS/UEFI > Boot.
 
-2. Passer le contrôleur de disques en mode HBA/IT (JBOD), sans RAID matériel :
+2. Passer le contrôleur de disques en mode [[Glossary:HBA]]/IT (JBOD), sans [[Glossary:RAID]] matériel :
    ```bash
    sudo lspci | grep -i -E 'sas|raid|sata'
    sudo storcli /c0 show
@@ -32,11 +32,11 @@ Préparer le BIOS/UEFI et les contrôleurs de disques pour ZFS.
 
 ## 2. Production — Contrôles
 
-Mettre à jour le firmware HBA et BMC en fenêtre de maintenance ; ne jamais utiliser de RAID matériel avec ZFS.
+Mettre à jour le firmware HBA et [[Glossary:BMC]] en fenêtre de maintenance ; ne jamais utiliser de RAID matériel avec ZFS.
 
 ## 3. Production — Sécurité
 
-Protéger le BIOS/BMC par mot de passe et isoler le BMC sur un VLAN d'administration.
+Protéger le BIOS/BMC par mot de passe et isoler le BMC sur un [[Glossary:VLAN]] d'administration.
 
 ## Validation et retour arrière
 

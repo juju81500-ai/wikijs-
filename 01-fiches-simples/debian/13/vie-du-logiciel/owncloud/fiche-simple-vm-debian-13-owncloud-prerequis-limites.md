@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_ownCloud_Prerequis_Limites
 
-- **Environnement** : VM Debian 13; ownCloud Infinite Scale (oCIS), binaire officiel, Nginx
+- **Environnement** : [[Glossary:VM]] Debian 13; ownCloud Infinite Scale (oCIS), binaire officiel, Nginx
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / ownCloud — Prérequis et limites
 - **Tags** : `debian13`, `owncloud`, `ocis`, `cloud`, `prerequis-limites`
@@ -19,12 +19,12 @@ Choisir la variante ownCloud adaptée à Debian 13 : ownCloud Infinite Scale (oC
    free -h
    df -h /var
    ```
-   👉 Explication : dimensionner selon la documentation officielle (RAM, stockage des données et des métadonnées).
+   👉 Explication : dimensionner selon la documentation officielle ([[Glossary:RAM]], stockage des données et des métadonnées).
 
 2. Vérifier la prise en charge de la variante visée :
    👉 Explication : avant de choisir ownCloud Classic 10 (PHP, paquets du dépôt officiel), consulter la matrice officielle : Debian 13/PHP 8.4 n'y figure pas forcément (à vérifier). Pour Classic sur Debian 12, voir la fiche existante du pack (lien en bas). Cette série traite oCIS.
 
-3. Contrôler que le port 9200 est libre et le nom DNS :
+3. Contrôler que le port 9200 est libre et le nom [[Glossary:DNS]] :
    ```bash
    sudo ss -tlnp | grep ':9200' || echo libre
    hostnamectl --static
@@ -39,7 +39,7 @@ Choisir la variante ownCloud adaptée à Debian 13 : ownCloud Infinite Scale (oC
 
 ## 2. Production — Contrôles
 
-Documenter variante (Classic ou oCIS), version, FQDN, stockage, authentification (OIDC interne par défaut) et propriétaire. oCIS stocke données et métadonnées dans un dossier unique à sauvegarder.
+Documenter variante (Classic ou oCIS), version, [[Glossary:FQDN]], stockage, authentification ([[Glossary:OIDC]] interne par défaut) et propriétaire. oCIS stocke données et métadonnées dans un dossier unique à sauvegarder.
 
 ## 3. Production — Sécurité
 

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_12_Vie_Systeme_08_Configuration_Reseau_D_Installation
 
-- **Environnement** : VM Debian 12 « bookworm » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 12 « bookworm » (serveur)
 - **OS / Version** : Debian 12; étape 08 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian12`, `vie-du-systeme`, `cycle-de-vie`, `etape-08`
@@ -13,7 +13,7 @@ Disposer d'un réseau pendant l'installation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Dans l'installateur Debian, laisser le DHCP ou saisir une IP statique temporaire (**Configurer le réseau**). Après démarrage, contrôler :
+1. Dans l'installateur Debian, laisser le [[Glossary:DHCP]] ou saisir une [[Glossary:IP]] statique temporaire (**Configurer le réseau**). Après démarrage, contrôler :
    ```bash
    ip -br address
    ip route
@@ -23,7 +23,7 @@ Disposer d'un réseau pendant l'installation.
 
 ## 2. Production — Contrôles
 
-Utiliser un VLAN d'installation si le réseau de production n'a pas de DHCP.
+Utiliser un [[Glossary:VLAN]] d'installation si le réseau de production n'a pas de DHCP.
 
 ## 3. Production — Sécurité
 

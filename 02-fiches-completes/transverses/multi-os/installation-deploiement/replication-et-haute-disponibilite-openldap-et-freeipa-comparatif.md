@@ -1,6 +1,6 @@
 # Réplication et haute disponibilité : OpenLDAP et FreeIPA (guide comparatif)
 
-- **Environnement** : Annuaires LDAP sur Linux, en complément de [OpenLDAP sur Debian 13](../../../debian/13/installation-deploiement/87-deploiement-openldap-2-6-debian-13.md) et [FreeIPA sur Rocky Linux 9](../../../rocky-linux/9/installation-deploiement/88-deploiement-freeipa-rocky-linux-9.md)
+- **Environnement** : Annuaires [[Glossary:LDAP]] sur Linux, en complément de [OpenLDAP sur Debian 13](../../../debian/13/installation-deploiement/87-deploiement-openldap-2-6-debian-13.md) et [FreeIPA sur Rocky Linux 9](../../../rocky-linux/9/installation-deploiement/88-deploiement-freeipa-rocky-linux-9.md)
 - **Tags** : `ldap`, `openldap`, `freeipa`, `replication`, `ha`, `syncrepl`
 - **Statut de validation** : **Verdict : Non testé sur plateforme cible.** Les procédures ci-dessous sont issues de la méthode documentaire et doivent être rejouées en laboratoire avant toute production.
 
@@ -11,15 +11,15 @@ Deux variantes distinctes, à ne pas mélanger :
 |---|---|---|
 | Mécanisme | `syncrepl` (provider/consumer) ou multi-provider (MirrorMode / N-way) | Réplication multi-maître native entre réplicas (accords de réplication) |
 | Mise en place | Configuration manuelle `cn=config` | `ipa-replica-install`, topologie gérée |
-| Services inclus | LDAP seul | LDAP, Kerberos, DNS (option), CA, SSSD |
+| Services inclus | LDAP seul | LDAP, Kerberos, [[Glossary:DNS]] (option), [[Glossary:CA]], [[Glossary:SSSD]] |
 | HA des clients | À organiser (DNS, load balancer, liste d'URI) | Les clients SSSD découvrent les serveurs par SRV/DNS |
 
-Prérequis communs : DNS direct/inverse cohérent, NTP synchronisé, certificats valides, ports ouverts entre nœuds, sauvegarde complète et testée, fenêtre de maintenance validée, au moins deux nœuds (voir quorum ci-dessous).
+Prérequis communs : DNS direct/inverse cohérent, [[Glossary:NTP]] synchronisé, certificats valides, ports ouverts entre nœuds, sauvegarde complète et testée, fenêtre de maintenance validée, au moins deux nœuds (voir quorum ci-dessous).
 
 ## 2. Exigences de version et licence
 
 - **Versions à figer avant déploiement** : mêmes versions mineures de logiciel sur tous les nœuds, selon la documentation de la version retenue.
-- OpenLDAP : licence libre (OpenLDAP Public License). FreeIPA : logiciel libre ; la version supportée commercialement est Red Hat Identity Management (abonnement RHEL requis).
+- OpenLDAP : licence libre (OpenLDAP Public License). FreeIPA : logiciel libre ; la version supportée commercialement est Red Hat Identity Management (abonnement [[Glossary:RHEL]] requis).
 
 ## 3. Quorum et choix d'architecture
 
@@ -35,7 +35,7 @@ sudo slapcat -n 0 -l /var/backups/ldap-config.ldif
 sudo slapcat -n 1 -l /var/backups/ldap-data.ldif
 ```
 2. Sur le provider : charger le module `syncprov` et l'overlay, après avoir défini `olcServerID`.
-3. Créer un compte de réplication en lecture seule avec ACL minimales ; TLS obligatoire (`ldaps` ou StartTLS).
+3. Créer un compte de réplication en lecture seule avec [[Glossary:ACL]] minimales ; [[Glossary:TLS]] obligatoire (`ldaps` ou StartTLS).
 4. Sur le consumer : ajouter `olcSyncrepl` vers le provider (type `refreshAndPersist`, `starttls=critical`).
 5. Contrôler la convergence : comparer `contextCSN`.
 ```bash
@@ -43,7 +43,7 @@ ldapsearch -x -H ldap://provider -s base -b "dc=exemple,dc=org" contextCSN
 ldapsearch -x -H ldap://consumer -s base -b "dc=exemple,dc=org" contextCSN
 ```
 6. Tester l'ajout d'une entrée de test sur le provider et sa présence sur le consumer, puis la supprimer.
-7. Configurer côté clients plusieurs URI LDAP ou un VIP/DNS.
+7. Configurer côté clients plusieurs URI LDAP ou un [[Glossary:VIP]]/DNS.
 
 ## 5. Procédure – Variante B : FreeIPA réplicas
 

@@ -1,7 +1,7 @@
 # fiche-simple-vm-ubuntu-24-04-graylog-installer-server.md
 
 - **Environnement** : Ubuntu Server 24-04: nœud Graylog + MongoDB et Data Node (laboratoire)
-- **OS / Version** : Ubuntu Server 24-04 LTS; Graylog 7.2; MongoDB 8.0
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]]; Graylog 7.2; MongoDB 8.0
 - **Catégorie** : journaux / installation
 - **Tags** : `ubuntu2404`, `graylog`, `datanode`, `mongodb`, `graylog-server`, `password_secret`
 
@@ -38,7 +38,7 @@ Installer et configurer Graylog Server.
    sudo systemctl --no-pager status graylog-server
    sudo journalctl -u graylog-server -b --no-pager
    ```
-   👉 Explication : la JVM vaut environ la moitié de la RAM, jusqu'à 16 Go.
+   👉 Explication : la JVM vaut environ la moitié de la [[Glossary:RAM]], jusqu'à 16 Go.
 
 ## 2. Production — Contrôles
 

@@ -1,6 +1,6 @@
 # fiche-simple-appliance-opnsense-carp-pfsync-tester-basculement.md
 
-- **Environnement** : Deux appliances OPNsense en haute disponibilité (CARP et pfsync)
+- **Environnement** : Deux appliances OPNsense en haute disponibilité ([[Glossary:CARP]] et pfsync)
 - **OS / Version** : OPNsense (toutes versions compatibles entre les deux nœuds)
 - **Catégorie** : pare-feu / haute disponibilité
 - **Tags** : `opnsense`, `carp`, `pfsync`, `ha`, `firewall`
@@ -19,7 +19,7 @@ Vérifier que le basculement fonctionne et que les services restent disponibles.
 2. Confirmer que les états de sessions sont synchronisés.
    👉 Explication : permet de conserver les connexions existantes au basculement.
 
-3. Depuis un client, lancer un ping continu vers la VIP (remplacer 192.0.2.1 par la VIP réelle) :
+3. Depuis un client, lancer un ping continu vers la [[Glossary:VIP]] (remplacer 192.0.2.1 par la VIP réelle) :
    ```bash
    ping 192.0.2.1
    ```
@@ -31,7 +31,7 @@ Vérifier que le basculement fonctionne et que les services restent disponibles.
 5. Restaurer le nœud et observer la préemption.
    👉 Explication : vérifie le comportement de retour.
 
-6. Vérifier DHCP, DNS, VPN, NAT et règles nécessaires.
+6. Vérifier [[Glossary:DHCP]], [[Glossary:DNS]], [[Glossary:VPN]], [[Glossary:NAT]] et règles nécessaires.
    👉 Explication : les services doivent rester fonctionnels.
 
 ## 2. Production — Contrôles

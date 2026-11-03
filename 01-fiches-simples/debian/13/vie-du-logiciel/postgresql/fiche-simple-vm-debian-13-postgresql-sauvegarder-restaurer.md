@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_PostgreSQL_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; PostgreSQL 17 des dépôts Debian
 - **Catégorie** : base de données / PostgreSQL / Sauvegarder et restaurer
 - **Tags** : `debian13`, `postgresql`, `sauvegarde`

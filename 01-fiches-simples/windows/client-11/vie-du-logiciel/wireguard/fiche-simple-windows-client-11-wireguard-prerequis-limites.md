@@ -18,7 +18,7 @@ Valider le poste et les paramètres avant d'installer le client WireGuard.
    winver
    ([Security.Principal.WindowsPrincipal][Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole([Security.Principal.WindowsBuiltInRole]::Administrator)
    ```
-   👉 Explication : GUI : touche Windows + R puis winver. L'installation exige un compte administrateur.
+   👉 Explication : [[Glossary:GUI]] : touche Windows + R puis winver. L'installation exige un compte administrateur.
 
 2. Recueillir les paramètres fournis par l'administrateur du serveur :
    👉 Explication : SERVER_PUBLIC_KEY (clé publique du serveur), SERVER_ENDPOINT:VPN_UDP_PORT (adresse et port), CLIENT_VPN_ADDRESS (adresse du client), ALLOWED_NETWORKS (réseaux à joindre). Valeurs en majuscules à remplacer; la clé privée du client est générée sur le poste, jamais reçue.

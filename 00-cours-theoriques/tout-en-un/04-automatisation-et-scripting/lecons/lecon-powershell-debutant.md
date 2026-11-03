@@ -15,7 +15,7 @@
 3. trouver une commande inconnue avec `Get-Command`, comprendre son usage avec `Get-Help` et inspecter ce qu'elle renvoie avec `Get-Member` ;
 4. enchaîner des cmdlets dans un **pipeline d'objets** et raisonner sur ce qui circule entre deux étapes ;
 5. filtrer, trier, regrouper et résumer des résultats avec `Where-Object`, `Sort-Object`, `Select-Object`, `Group-Object` et `Measure-Object` ;
-6. choisir un format de sortie adapté (`Format-Table`, `Format-List`, export CSV ou JSON) sans casser le pipeline ;
+6. choisir un format de sortie adapté (`Format-Table`, `Format-List`, export CSV ou [[Glossary:JSON]]) sans casser le pipeline ;
 7. décrire le rôle et les limites de la **politique d'exécution** et choisir une valeur raisonnable pour un poste de travail ;
 8. écrire un petit script paramétré, l'exécuter proprement et le tester sans risque.
 
@@ -396,7 +396,7 @@ Remove-Item -Path .\*.tmp -Confirm
    Remove-Item -Path .\labo-ps -Recurse -WhatIf
    Remove-Item -Path .\labo-ps -Recurse
    ```
-   👉 Explication : la simulation vous laisse relire le chemin exact avant la suppression réelle ; restaurez l'instantané de la VM si vous avez modifié autre chose.
+   👉 Explication : la simulation vous laisse relire le chemin exact avant la suppression réelle ; restaurez l'instantané de la [[Glossary:VM]] si vous avez modifié autre chose.
 
 ## Exercices
 

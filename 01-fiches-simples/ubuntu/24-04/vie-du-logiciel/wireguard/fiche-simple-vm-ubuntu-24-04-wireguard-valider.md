@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_WireGuard_Valider
 
-- **Environnement** : VM Ubuntu 24-04 dédiée à un serveur WireGuard natif
-- **OS / Version** : Ubuntu 24-04 LTS Noble; noyau avec module WireGuard et paquet wireguard, versions à vérifier
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 dédiée à un serveur WireGuard natif
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; noyau avec module WireGuard et paquet wireguard, versions à vérifier
 - **Catégorie** : WireGuard natif / valider
 - **Tags** : `wireguard`, `ubuntu24-04`, `vie-du-logiciel`, `valider`
 
@@ -31,7 +31,7 @@ Recetter le tunnel avec un pair pilote.
    ```bash
    ping -c 3 ADRESSE_AUTORISEE
    ```
-   👉 Explication : ADRESSE_AUTORISEE est une IP de test autorisée (à remplacer); vérifier qu'une destination non autorisée reste inaccessible.
+   👉 Explication : ADRESSE_AUTORISEE est une [[Glossary:IP]] de test autorisée (à remplacer); vérifier qu'une destination non autorisée reste inaccessible.
 
 ## 2. Production — Contrôles
 

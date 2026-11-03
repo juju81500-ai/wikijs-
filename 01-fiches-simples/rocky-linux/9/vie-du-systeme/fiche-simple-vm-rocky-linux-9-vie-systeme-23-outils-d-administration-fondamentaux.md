@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_23_Outils_D_Administration_Fondamentaux
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 23 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-23`
@@ -23,7 +23,7 @@ Installer la boîte à outils d'exploitation.
    ```bash
    sudo dnf install -y htop iotop sysstat
    ```
-   👉 Explication : observer CPU, mémoire et disques.
+   👉 Explication : observer [[Glossary:CPU]], mémoire et disques.
 
 3. Contrôler la présence des commandes :
    ```bash

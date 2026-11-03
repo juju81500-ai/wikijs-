@@ -7,7 +7,7 @@
 
 ## Problème précis à résoudre
 
-Vérifier qu'une DMZ de laboratoire n'autorise que les flux nécessaires entre WAN simulé, DMZ, LAN de test et administration.
+Vérifier qu'une [[Glossary:DMZ]] de laboratoire n'autorise que les flux nécessaires entre [[Glossary:WAN]] simulé, DMZ, [[Glossary:LAN]] de test et administration.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -16,7 +16,7 @@ Vérifier qu'une DMZ de laboratoire n'autorise que les flux nécessaires entre W
    ifconfig -a | grep -E '^[a-z]|inet '
    netstat -rn
    ```
-   👉 Explication : le lab est isolé; aucune plage ne chevauche le poste, le VPN ou le LAN.
+   👉 Explication : le lab est isolé; aucune plage ne chevauche le poste, le [[Glossary:VPN]] ou le LAN.
 
 2. Préparer la matrice des flux (tableau ci-dessous) : origine, destination, protocole/port, propriétaire.
    👉 Explication : chaque test cible un résultat attendu précis.
@@ -26,7 +26,7 @@ Vérifier qu'une DMZ de laboratoire n'autorise que les flux nécessaires entre W
    nc -zv IP_DMZ PORT_PUBLIE
    curl -fsSI http://IP_DMZ:PORT_PUBLIE/
    ```
-   👉 Explication : remplacer IP et port; seul le port prévu doit répondre.
+   👉 Explication : remplacer [[Glossary:IP]] et port; seul le port prévu doit répondre.
 
 4. Vérifier les refus WAN→LAN/administration et DMZ→LAN depuis les machines concernées :
    ```bash

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Passbolt_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Debian 13 dédiée avec domaine, base et SMTP définis
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée avec domaine, base et [[Glossary:SMTP]] définis
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : gestionnaire de secrets / serveur
 - **Tags** : `debian13`, `passbolt`, `secrets`, `tls`, `sauvegarde`
@@ -12,7 +12,7 @@ Mettre à jour paquet CE et suivre migrations compatibles en protégeant clés/b
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Vérifier versions et origine APT
+1. Vérifier versions et origine [[Glossary:APT]]
    ```bash
    dpkg-query -W passbolt-ce-server
    apt-cache policy passbolt-ce-server

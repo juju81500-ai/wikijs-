@@ -1,8 +1,8 @@
 # 📄 VM_Debian_13_Services_Installation-Chronyc-NTP.md
 
-- **Environnement** : VM / Serveur (Debian 13)
+- **Environnement** : [[Glossary:VM]] / Serveur (Debian 13)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
-- **Catégorie** : Services Réseau / Synchronisation Horaire NTP
+- **Catégorie** : Services Réseau / Synchronisation Horaire [[Glossary:NTP]]
 - **Tags** : `[debian13]`, `[ntp]`, `[chrony]`, `[time]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
@@ -49,4 +49,4 @@ Installer et configurer le démon chrony sur Debian 13 pour assurer la synchroni
    `echo "bindcmdaddress 127.0.0.1" >> /etc/chrony/chrony.conf && systemctl restart chrony`
    👉 Explication : Restreint les commandes de gestion à l'interface de bouclage local.
 
-3. Pour un client NTP, autoriser le trafic sortant requis vers les sources approuvées ; ne pas ouvrir UDP/123 en entrée. Pour un serveur de temps, autoriser UDP/123 uniquement depuis ses clients dans le pare-feu persistant géré par l'hôte.
+3. Pour un client NTP, autoriser le trafic sortant requis vers les sources approuvées ; ne pas ouvrir [[Glossary:UDP]]/123 en entrée. Pour un serveur de temps, autoriser UDP/123 uniquement depuis ses clients dans le pare-feu persistant géré par l'hôte.

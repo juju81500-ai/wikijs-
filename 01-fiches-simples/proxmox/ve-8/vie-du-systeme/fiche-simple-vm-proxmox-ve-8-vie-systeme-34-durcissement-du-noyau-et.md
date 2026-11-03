@@ -21,7 +21,7 @@ Appliquer des paramètres noyau prudents.
    net.ipv4.icmp_echo_ignore_broadcasts = 1
    kernel.dmesg_restrict = 1
    ```
-   👉 Explication : protège contre l'usurpation d'adresses et les redirections ICMP.
+   👉 Explication : protège contre l'usurpation d'adresses et les redirections [[Glossary:ICMP]].
 
 2. Appliquer :
    ```bash
@@ -29,7 +29,7 @@ Appliquer des paramètres noyau prudents.
    ```
    👉 Explication : charge tous les fichiers sysctl.
 
-3. Ne pas désactiver `net.ipv4.ip_forward` ni les ponts : Proxmox en a besoin pour les VM.
+3. Ne pas désactiver `net.ipv4.ip_forward` ni les ponts : Proxmox en a besoin pour les [[Glossary:VM]].
    👉 Explication : un durcissement trop strict coupe le réseau des VM.
 
 ## 2. Production — Contrôles

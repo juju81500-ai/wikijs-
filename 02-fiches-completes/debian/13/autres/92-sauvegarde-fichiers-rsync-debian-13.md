@@ -1,7 +1,7 @@
 # Copier et sauvegarder des fichiers avec rsync sur Debian 13
 
 - **Type de fiche** : Autres — copie / sauvegarde de fichiers
-- **Environnement** : serveurs Debian 13 Trixie, transfert local ou via SSH
+- **Environnement** : serveurs Debian 13 Trixie, transfert local ou via [[Glossary:SSH]]
 - **OS / Version** : Debian 13; paquet `rsync` 3.5.0+ds1-0+deb13u1 (version du dépôt Debian vérifiée le 29 octobre 2026)
 - **Rôle** : Prévisualiser puis exécuter une copie de fichiers, avec garde-fous contre les suppressions
 - **Tags** : `rsync`, `debian13`, `sauvegarde`, `ssh`, `dry-run`, `delete`
@@ -41,7 +41,7 @@ Toujours commencer avec `--dry-run` (`-n`). Aucun fichier n'est modifié; `--ite
 rsync -aHAX --numeric-ids --one-file-system --dry-run --itemize-changes --stats -e ssh "$SRC" "$DST"
 ```
 
-`-a` préserve permissions, dates, liens symboliques, propriétaire et groupe; `-H` liens physiques; `-A` ACL; `-X` attributs étendus (la destination doit les prendre en charge); `--numeric-ids` évite le remappage des UID/GID; `--one-file-system` empêche de traverser les autres montages. Relire la liste, puis contrôler le nombre de fichiers et le volume dans `--stats`.
+`-a` préserve permissions, dates, liens symboliques, propriétaire et groupe; `-H` liens physiques; `-A` [[Glossary:ACL]]; `-X` attributs étendus (la destination doit les prendre en charge); `--numeric-ids` évite le remappage des UID/GID; `--one-file-system` empêche de traverser les autres montages. Relire la liste, puis contrôler le nombre de fichiers et le volume dans `--stats`.
 
 ## 4. Exécuter la copie sans suppression
 

@@ -2,9 +2,9 @@
 
 - **OS / Version** : Linux (conteneurs ou paquets selon produit)
 - **Type de fiche** : Installation/Déploiement
-- **Environnement** : VM ou hôte conteneurisé avec HTTPS et base de données
-- **Machine ciblée** : Fournisseur d'identité / portail SSO
-- **Catégorie** : Identité / SSO / MFA
+- **Environnement** : [[Glossary:VM]] ou hôte conteneurisé avec HTTPS et base de données
+- **Machine ciblée** : Fournisseur d'identité / portail [[Glossary:SSO]]
+- **Catégorie** : Identité / SSO / [[Glossary:MFA]]
 - **Tags** : `keycloak`, `authelia`, `authentik`, `sso`, `oidc`, `saml`, `mfa`
 
 ## 1. Périmètre
@@ -13,17 +13,17 @@ Comparer les trois solutions, choisir selon le besoin, puis déployer de façon 
 
 ## 2. Prérequis
 
-- Nom DNS, certificat TLS et reverse proxy.
+- Nom [[Glossary:DNS]], certificat [[Glossary:TLS]] et reverse proxy.
 - Base de données prise en charge, sauvegardée (PostgreSQL recommandé selon produit).
-- Annuaire LDAP/AD ou stockage de comptes local.
-- Liste des applications à protéger et protocoles pris en charge (OIDC, SAML, forward-auth).
+- Annuaire [[Glossary:LDAP]]/AD ou stockage de comptes local.
+- Liste des applications à protéger et protocoles pris en charge ([[Glossary:OIDC]], [[Glossary:SAML]], forward-auth).
 - Compte administrateur d'urgence et secrets en coffre.
 
 ## 3. Variantes éditeur à distinguer
 
 | Produit | Positionnement | Protocoles | Remarque |
 |---|---|---|---|
-| Keycloak | IAM complet, fédération d'identités, projet CNCF | OIDC, SAML, OAuth 2.0 | Plus riche mais plus lourd (Java), clustering possible |
+| Keycloak | [[Glossary:IAM]] complet, fédération d'identités, projet CNCF | OIDC, SAML, OAuth 2.0 | Plus riche mais plus lourd (Java), clustering possible |
 | Authelia | Portail d'authentification léger derrière reverse proxy | Forward-auth, OIDC (selon version) | Configuration par fichier YAML |
 | Authentik | Fournisseur d'identité avec interface d'administration | OIDC, SAML, LDAP, proxy | Dépend de PostgreSQL |
 
@@ -49,7 +49,7 @@ Configurer la fédération LDAP/AD, puis créer un client OIDC/SAML ou une règl
 
 ### 4.5 Activer le MFA
 
-Imposer TOTP ou WebAuthn selon les capacités du produit, avec politique de récupération documentée.
+Imposer [[Glossary:TOTP]] ou WebAuthn selon les capacités du produit, avec politique de récupération documentée.
 
 ### 4.6 Sauvegarder et superviser
 

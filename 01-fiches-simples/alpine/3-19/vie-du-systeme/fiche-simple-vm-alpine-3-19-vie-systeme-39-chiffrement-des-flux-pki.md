@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_39_Chiffrement_Des_Flux_Pki
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 39 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-39`
@@ -18,7 +18,7 @@ Protéger les échanges avec des certificats.
    doas apk add certbot
    doas certbot certonly --standalone -d FQDN
    ```
-   👉 Explication : obtient un certificat via ACME; le port 80 doit être libre et joignable. En interne, utiliser l'AC de l'entreprise.
+   👉 Explication : obtient un certificat via [[Glossary:ACME]]; le port 80 doit être libre et joignable. En interne, utiliser l'AC de l'entreprise.
 
 2. Tester le renouvellement :
    ```sh

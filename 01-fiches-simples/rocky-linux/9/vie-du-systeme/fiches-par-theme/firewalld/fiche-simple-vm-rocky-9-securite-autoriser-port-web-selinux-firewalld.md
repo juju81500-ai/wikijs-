@@ -1,12 +1,12 @@
 # 📄 fiche-simple-vm-rocky-9-securite-autoriser-port-web-selinux-firewalld.md
 
-- **Environnement** : VM Rocky Linux 9 exécutant un service web sur un port personnalisé
-- **OS / Version** : Rocky Linux 9 / RHEL 9 avec SELinux et firewalld
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 exécutant un service web sur un port personnalisé
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 avec SELinux et firewalld
 - **Catégorie** : Sécurité / Réseau
 - **Tags** : `[rocky9]`, `[rhel9]`, `[selinux]`, `[firewalld]`, `[port]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Autoriser un service HTTP sur un port TCP personnalisé en déclarant le port SELinux approprié et une règle firewalld persistante et limitée.
+Autoriser un service [[Glossary:HTTP]] sur un port [[Glossary:TCP]] personnalisé en déclarant le port SELinux approprié et une règle firewalld persistante et limitée.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Confirmer le port d'écoute réel, l'état SELinux et la zone firewalld :

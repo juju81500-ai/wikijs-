@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-13-phpipam-paquets.md
 
-- **Environnement** : VM Debian 13, phpIPAM avec MariaDB locale, PHP-FPM et Nginx
+- **Environnement** : [[Glossary:VM]] Debian 13, phpIPAM avec MariaDB locale, PHP-FPM et Nginx
 - **OS / Version** : Debian 13 Trixie x86-64; phpIPAM 1.8.3; PHP 8.4
-- **Catégorie** : IPAM / installation
+- **Catégorie** : [[Glossary:IPAM]] / installation
 - **Tags** : `debian13`, `phpipam`, `ipam`, `nginx`, `mariadb`, `apt`, `php`
 
 ---

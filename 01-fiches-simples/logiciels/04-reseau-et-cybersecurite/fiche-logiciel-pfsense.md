@@ -1,7 +1,7 @@
 # 📄 pfSense
 
 - **Catégorie** : Réseau et cybersécurité
-- **Plateforme** : Appliance / VM FreeBSD
+- **Plateforme** : Appliance / [[Glossary:VM]] FreeBSD
 - **Produit (matrice)** : pfSense
 - **Statut dans le pack** : Couvert
 - **Tags** : `logiciel`, `04-reseau-et-cybersecurite`, `couvert`

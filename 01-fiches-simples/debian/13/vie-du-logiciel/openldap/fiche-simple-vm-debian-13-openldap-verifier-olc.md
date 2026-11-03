@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-openldap-verifier-olc.md
 
-- **Environnement** : VM Debian 13 avec slapd local
+- **Environnement** : [[Glossary:VM]] Debian 13 avec slapd local
 - **OS / Version** : Debian 13; OpenLDAP 2.6 / OLC `cn=config`
 - **Catégorie** : annuaire / configuration
 - **Tags** : `debian13`, `openldap`, `olc`, `cn-config`, `ldapsearch`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Lire le suffixe et le DN administrateur depuis OLC avant d'ajouter des entrées ou modifier l'annuaire.
+Lire le suffixe et le [[Glossary:DN]] administrateur depuis OLC avant d'ajouter des entrées ou modifier l'annuaire.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -45,7 +45,7 @@ Faire relire chaque changement OLC, conserver l'export `slapcat -n 0` et planifi
 
 - L'authentification `EXTERNAL` sur `ldapi:///` dépend de l'identité locale; limiter l'accès root.
 - Ne pas publier des exports de `cn=config`, qui peuvent révéler des paramètres sensibles.
-- Ne pas modifier ACL sans sauvegarde et test avec un compte non privilégié.
+- Ne pas modifier [[Glossary:ACL]] sans sauvegarde et test avec un compte non privilégié.
 
 ## Validation et retour arrière
 

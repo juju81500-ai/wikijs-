@@ -13,13 +13,13 @@ Faire respecter le moindre privilège avec le contrôle de compte d'utilisateur.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Contrôler UAC : **Paramètres > Comptes > Contrôle de compte d'utilisateur** (panneau de configuration `UserAccountControlSettings.exe`).
+1. Contrôler [[Glossary:UAC]] : **Paramètres > Comptes > Contrôle de compte d'utilisateur** (panneau de configuration `UserAccountControlSettings.exe`).
    ```powershell
    Get-ItemProperty HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System | Select-Object EnableLUA,ConsentPromptBehaviorAdmin,PromptOnSecureDesktop
    ```
    👉 Explication : `EnableLUA = 1` : UAC actif; `ConsentPromptBehaviorAdmin = 2` : confirmation sur le bureau sécurisé.
 
-2. Imposer les valeurs sûres par GPO : **Configuration ordinateur > Paramètres Windows > Paramètres de sécurité > Stratégies locales > Options de sécurité > Contrôle de compte d'utilisateur**.
+2. Imposer les valeurs sûres par [[Glossary:GPO]] : **Configuration ordinateur > Paramètres Windows > Paramètres de sécurité > Stratégies locales > Options de sécurité > Contrôle de compte d'utilisateur**.
    ```powershell
    Set-ItemProperty HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System EnableLUA 1 -Type DWord
    Set-ItemProperty HKLM:\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System ConsentPromptBehaviorAdmin 2 -Type DWord

@@ -8,7 +8,7 @@
 
 - Périmètre : conception, déploiement initial de laboratoire (méthode documentée par le projet), contrôles par client `openstack`, premier projet et instance. Hors périmètre : exploitation multi-région, CI/CD de cloud.
 - Composants de base : Keystone (identité), Glance (images), Nova (calcul), Neutron (réseau), Cinder (volumes), Horizon (interface). Placement et services de messagerie/base de données à prévoir.
-- Matériel/laboratoire : nœud contrôleur et calcul, plusieurs interfaces réseau (gestion, provider, stockage), virtualisation matérielle activée, DNS/NTP, ressources suffisantes selon le guide d'installation.
+- Matériel/laboratoire : nœud contrôleur et calcul, plusieurs interfaces réseau (gestion, provider, stockage), virtualisation matérielle activée, [[Glossary:DNS]]/NTP, ressources suffisantes selon le guide d'installation.
 - Haute disponibilité (contrôleurs multiples, Galera, RabbitMQ) : quorum impair obligatoire pour les clusters de base de données et de messagerie.
 
 ## 2. Exigences de version et licence
@@ -19,7 +19,7 @@
 ## 3. Procédure
 
 1. Choisir la méthode d'installation documentée pour la release retenue (guide d'installation manuel, ou outil de déploiement supporté).
-2. Préparer l'OS : mise à jour, noms d'hôtes, résolution, NTP, paquets de base, interfaces réseau.
+2. Préparer l'OS : mise à jour, noms d'hôtes, résolution, [[Glossary:NTP]], paquets de base, interfaces réseau.
 3. Déployer les services dans l'ordre documenté : base de données, messagerie, Keystone, Glance, Placement, Nova, Neutron, Cinder, Horizon.
 4. Charger les identifiants (fichier RC, jamais versionné) puis contrôler :
 ```bash
@@ -28,7 +28,7 @@ openstack compute service list
 openstack network agent list
 openstack volume service list
 ```
-5. Importer une image de test vérifiée, créer un réseau, un sous-réseau, un groupe de sécurité restrictif et une clé SSH :
+5. Importer une image de test vérifiée, créer un réseau, un sous-réseau, un groupe de sécurité restrictif et une clé [[Glossary:SSH]] :
 ```bash
 openstack image create --file image.qcow2 --disk-format qcow2 --container-format bare --public=false test-img
 openstack network create lab-net
@@ -47,7 +47,7 @@ openstack server create --image test-img --flavor <flavor> --network lab-net --k
 - Sauvegarder bases et configuration avant chaque montée de version ; migrer release par release, jamais en sautant des versions non documentées.
 - Supprimer un projet, un réseau ou un volume est destructif ; contrôler les dépendances.
 - Perte de quorum Galera/RabbitMQ : suivre la procédure de récupération officielle, ne pas redémarrer tous les nœuds simultanément.
-- Exposer les API et Horizon uniquement derrière TLS et filtrage réseau.
+- Exposer les [[Glossary:API]] et Horizon uniquement derrière [[Glossary:TLS]] et filtrage réseau.
 
 ## 6. Documentation officielle
 

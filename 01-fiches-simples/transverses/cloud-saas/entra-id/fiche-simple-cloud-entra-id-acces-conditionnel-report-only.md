@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Créer une politique d'accès conditionnel exigeant le MFA en mode report-only, la valider avec What If et les journaux, puis seulement l'activer sur pilote.
+Créer une politique d'accès conditionnel exigeant le [[Glossary:MFA]] en mode report-only, la valider avec What If et les journaux, puis seulement l'activer sur pilote.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -42,7 +42,7 @@ Créer une politique d'accès conditionnel exigeant le MFA en mode report-only, 
    ```
    👉 Explication : crée la politique en report-only ; Policy.ReadWrite.ConditionalAccess est un droit d'écriture, à utiliser seulement par le rôle approprié.
 
-6. Valider avec What If : Conditional Access → Policies → What If → saisir utilisateur pilote, application, plateforme et IP.
+6. Valider avec What If : Conditional Access → Policies → What If → saisir utilisateur pilote, application, plateforme et [[Glossary:IP]].
    👉 Explication : vérifie quelles politiques s'appliqueraient ; tester aussi un compte hors pilote et un compte d'urgence (aucune application attendue).
 
 7. Analyser les connexions : Entra ID → Sign-in logs → onglet Conditional Access (Report-only) ; ou le classeur Conditional Access insights and reporting.
@@ -53,7 +53,7 @@ Créer une politique d'accès conditionnel exigeant le MFA en mode report-only, 
    Connect-MgGraph -Scopes 'Policy.Read.All' -ContextScope Process
    Get-MgIdentityConditionalAccessPolicy | Select DisplayName,State,Id
    ```
-   👉 Explication : contrôle de l'état ; l'API d'évaluation What If Graph est disponible en préversion selon documentation, à vérifier avant usage.
+   👉 Explication : contrôle de l'état ; l'[[Glossary:API]] d'évaluation What If Graph est disponible en préversion selon documentation, à vérifier avant usage.
 
 ## 2. Production — Contrôles
 

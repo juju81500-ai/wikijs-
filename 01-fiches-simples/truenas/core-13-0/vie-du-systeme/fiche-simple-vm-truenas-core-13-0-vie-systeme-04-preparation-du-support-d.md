@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Créer la clé USB ou le média virtuel.
+Créer la clé [[Glossary:USB]] ou le média virtuel.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -27,7 +27,7 @@ Créer la clé USB ou le média virtuel.
    ```
    👉 Explication : écrit l'image brute ; efface la clé.
 
-3. Pour une VM ou un BMC, monter l'ISO en lecteur virtuel.
+3. Pour une [[Glossary:VM]] ou un [[Glossary:BMC]], monter l'ISO en lecteur virtuel.
    👉 Explication : évite la clé physique.
 
 ## 2. Production — Contrôles

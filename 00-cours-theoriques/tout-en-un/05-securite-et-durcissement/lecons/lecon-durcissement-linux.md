@@ -12,7 +12,7 @@
 
 1. expliquer la **surface d'attaque** d'un serveur Linux et la réduire méthodiquement ;
 2. contrôler **mises à jour, comptes, services, ports et permissions** avec des commandes en **lecture seule** ;
-3. durcir **SSH** sans vous enfermer dehors (fichier dédié, contrôle de syntaxe, session de secours) ;
+3. durcir **[[Glossary:SSH]]** sans vous enfermer dehors (fichier dédié, contrôle de syntaxe, session de secours) ;
 4. exploiter les **journaux** et décrire le **principe d'auditd** ;
 5. situer les **recommandations CIS** comme référentiel de contrôle ;
 6. conduire un changement avec le cycle **snapshot → console de secours → test → retour arrière**.
@@ -20,8 +20,8 @@
 ## Prérequis et durée
 
 - Utiliser un terminal, lire un fichier de configuration, utiliser `sudo`.
-- Notions de réseau : adresse IP, port TCP, service.
-- Une **VM jetable** (Debian 12 ou Ubuntu Server LTS) avec **console d'hyperviseur** et **snapshot**. Adresses de documentation : `192.0.2.0/24`, `198.51.100.0/24`, `203.0.113.0/24` ; domaine `example.test`.
+- Notions de réseau : adresse [[Glossary:IP]], port [[Glossary:TCP]], service.
+- Une **[[Glossary:VM]] jetable** (Debian 12 ou Ubuntu Server [[Glossary:LTS]]) avec **console d'hyperviseur** et **snapshot**. Adresses de documentation : `192.0.2.0/24`, `198.51.100.0/24`, `203.0.113.0/24` ; domaine `example.test`.
 - Durée : environ 3 h 30.
 
 > ⚠️ **Périmètre.** N'exécutez ces commandes que sur des machines dont vous êtes responsable, de préférence en laboratoire. Répétez toujours un changement sur une copie avant la production.
@@ -81,7 +81,7 @@ Les erreurs de sécurité les plus coûteuses viennent rarement des pirates : c'
 À chaque changement de ce document :
 
 1. **Snapshot préalable** : instantané de l'hyperviseur ou, au minimum, copie du fichier (`cp -a fichier fichier.bak-AAAAMMJJ`) et sauvegarde récente.
-2. **Accès console de secours** : console de l'hyperviseur, console série, IPMI/iDRAC/iLO. Il fonctionne **même sans réseau ni SSH** : testez-le *avant* de commencer.
+2. **Accès console de secours** : console de l'hyperviseur, console série, [[Glossary:IPMI]]/iDRAC/iLO. Il fonctionne **même sans réseau ni SSH** : testez-le *avant* de commencer.
 3. **Changement + contrôle de syntaxe** : `sshd -t`, `nginx -t`, `visudo -c`…
 4. **Test depuis une seconde session indépendante** : on ne ferme jamais la session ouverte avant que la nouvelle réussisse (comme l'alpiniste qui ne lâche une corde qu'une fois la suivante mousquetonnée).
 5. **Validation ou retour arrière** : en cas d'échec, restaurer la copie, recharger, retester.
@@ -103,7 +103,7 @@ ls -l /var/run/reboot-required 2>/dev/null || echo "pas de redémarrage signalé
 uname -r
 ```
 
-👉 Explication : liste les mises à jour connues des index locaux, **simule** (`-s`) une mise à jour sans rien installer, puis vérifie si un redémarrage est attendu (sous Debian/Ubuntu) et quel noyau tourne. `apt update` rafraîchit les index : il modifie le cache APT, pas le système.
+👉 Explication : liste les mises à jour connues des index locaux, **simule** (`-s`) une mise à jour sans rien installer, puis vérifie si un redémarrage est attendu (sous Debian/Ubuntu) et quel noyau tourne. `apt update` rafraîchit les index : il modifie le cache [[Glossary:APT]], pas le système.
 
 Famille Red Hat :
 
@@ -136,7 +136,7 @@ last -n 10
 
 👉 Explication : montre les membres des groupes d'administration (`sudo` sous Debian, `wheel` sous Red Hat), la politique d'expiration d'un compte (remplacez `nom_utilisateur`) et les dernières connexions.
 
-**Bonnes pratiques.** Un compte par personne (sinon les journaux ne prouvent rien) ; `sudo` nominatif plutôt que `root` direct ; verrouiller les comptes inutilisés (`sudo usermod -L compte`) ; préférer les clés SSH ou une authentification centralisée avec MFA ; éditer `sudoers` uniquement avec `visudo`, qui contrôle la syntaxe, en gardant une session `root` ou la console ouverte.
+**Bonnes pratiques.** Un compte par personne (sinon les journaux ne prouvent rien) ; `sudo` nominatif plutôt que `root` direct ; verrouiller les comptes inutilisés (`sudo usermod -L compte`) ; préférer les clés SSH ou une authentification centralisée avec [[Glossary:MFA]] ; éditer `sudoers` uniquement avec `visudo`, qui contrôle la syntaxe, en gardant une session `root` ou la console ouverte.
 
 ## 5. SSH : la porte principale
 
@@ -212,7 +212,7 @@ sudo find / -xdev \( -nouser -o -nogroup \) 2>/dev/null | head -20
 sudo find / -xdev -type f -perm -4000 -ls 2>/dev/null
 ```
 
-👉 Explication : (1) droits en octal, propriétaire et chemin ; repères Debian : `/etc/passwd` en `644`, `/etc/shadow` en `640` (root:shadow) ; (2) fichiers modifiables par **n'importe qui** ; (3) fichiers sans propriétaire connu ; (4) fichiers **SUID**, qui s'exécutent avec les droits de leur propriétaire : comparez à la référence de la distribution, un SUID inattendu dans `/tmp` ou `/home` est suspect. `-xdev` évite de traverser les autres systèmes de fichiers ; tout est en lecture.
+👉 Explication : (1) droits en octal, propriétaire et chemin ; repères Debian : `/etc/passwd` en `644`, `/etc/shadow` en `640` (root:shadow) ; (2) fichiers modifiables par **n'importe qui** ; (3) fichiers sans propriétaire connu ; (4) fichiers **[[Glossary:SUID]]**, qui s'exécutent avec les droits de leur propriétaire : comparez à la référence de la distribution, un SUID inattendu dans `/tmp` ou `/home` est suspect. `-xdev` évite de traverser les autres systèmes de fichiers ; tout est en lecture.
 
 ```bash
 findmnt -no TARGET,OPTIONS /tmp
@@ -445,8 +445,8 @@ a) installe les mises à jour b) simule la mise à jour sans rien installer c) s
 - Pages de manuel du système d'audit : <https://man7.org/linux/man-pages/man8/auditd.8.html>, <https://man7.org/linux/man-pages/man8/auditctl.8.html>, <https://man7.org/linux/man-pages/man8/ausearch.8.html>
 - Page de manuel de `ss` : <https://man7.org/linux/man-pages/man8/ss.8.html>
 - Benchmarks CIS (site officiel) : <https://www.cisecurity.org/cis-benchmarks>
-- ANSSI, recommandations de sécurité relatives à un système GNU/Linux : <https://cyber.gouv.fr/publications/recommandations-de-securite-relatives-un-systeme-gnulinux>
-- NIST SP 800-123, *Guide to General Server Security* : <https://csrc.nist.gov/pubs/sp/800/123/final>
+- [[Glossary:ANSSI]], recommandations de sécurité relatives à un système GNU/Linux : <https://cyber.gouv.fr/publications/recommandations-de-securite-relatives-un-systeme-gnulinux>
+- [[Glossary:NIST]] SP 800-123, *Guide to General Server Security* : <https://csrc.nist.gov/pubs/sp/800/123/final>
 
 ---
 

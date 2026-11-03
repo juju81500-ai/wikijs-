@@ -6,12 +6,12 @@ Aucune fiche du pack n'a été exécutée sur un système réel. Cette liste imp
 
 ## 1. Règles strictes
 
-1. **Environnement jetable obligatoire** : VM ou laboratoire isolé, snapshot avant chaque fiche, aucun accès au réseau de production, aucune donnée réelle.
+1. **Environnement jetable obligatoire** : [[Glossary:VM]] ou laboratoire isolé, snapshot avant chaque fiche, aucun accès au réseau de production, aucune donnée réelle.
 2. **Version exacte** : tester sur la version d'OS et du logiciel indiquées dans la fiche. Noter la version réellement installée (`cat /etc/os-release`, `winver`, `Get-ComputerInfo`, version du logiciel).
 3. **Exécution littérale** : copier les commandes telles quelles, dans l'ordre, sans correction silencieuse. Toute modification nécessaire est un **écart** à consigner.
 4. **Chaque 👉 Explication est lue** : si l'explication ne correspond pas au résultat observé, la fiche est en échec.
 5. **Validation puis retour arrière** : la section « Validation et retour arrière » doit être exécutée jusqu'au bout. Une fiche dont le retour arrière échoue est **KO**, même si l'installation réussit.
-6. **Accès de secours** : avant toute fiche touchant SSH, pare-feu, réseau, comptes ou RDP, garder une console hyperviseur ouverte.
+6. **Accès de secours** : avant toute fiche touchant [[Glossary:SSH]], pare-feu, réseau, comptes ou [[Glossary:RDP]], garder une console hyperviseur ouverte.
 7. **Une fiche = un verdict** parmi : `OK`, `OK avec écarts` (corrigée dans le dépôt), `KO` (bloquante), `Non applicable`. Pas de verdict implicite.
 8. **Revue par une seconde personne** pour toute fiche P0.
 9. **Après correction d'une fiche**, la rejouer entièrement depuis un snapshot propre.
@@ -21,8 +21,8 @@ Aucune fiche du pack n'a été exécutée sur un système réel. Cette liste imp
 
 | Priorité | Critère | Délai cible |
 |---|---|---|
-| **P0** | Risque de perte d'accès, de perte de données ou d'indisponibilité (partitionnement, IP fixe, SSH, pare-feu, sauvegarde, restauration, mise à jour, retour arrière, annuaire, stockage, hyperviseur) | avant toute mise en production |
-| **P1** | Installation et sécurisation d'un service (dépôts, mises à jour, TLS, comptes de service) | avant mise en production du service concerné |
+| **P0** | Risque de perte d'accès, de perte de données ou d'indisponibilité (partitionnement, [[Glossary:IP]] fixe, SSH, pare-feu, sauvegarde, restauration, mise à jour, retour arrière, annuaire, stockage, hyperviseur) | avant toute mise en production |
+| **P1** | Installation et sécurisation d'un service (dépôts, mises à jour, [[Glossary:TLS]], comptes de service) | avant mise en production du service concerné |
 | **P2** | Configuration courante, supervision, documentation | selon l'usage |
 
 ## 3. Journal d'un test (à recopier pour chaque fiche)
@@ -43,15 +43,15 @@ Aucune fiche du pack n'a été exécutée sur un système réel. Cette liste imp
 
 | Sujet | Risque |
 |---|---|
-| Clés GPG Ubuntu (identifiants donnés de mémoire) | comparer à la page officielle avant import |
-| Ubuntu 26-04 : sudo-rs, client NTP par défaut, trousseau `ubuntu.sources` | noms de paquets à confirmer |
+| Clés [[Glossary:GPG]] Ubuntu (identifiants donnés de mémoire) | comparer à la page officielle avant import |
+| Ubuntu 26-04 : sudo-rs, client [[Glossary:NTP]] par défaut, trousseau `ubuntu.sources` | noms de paquets à confirmer |
 | Rocky 9 : URL `CHECKSUM.sig`, paquet `fail2ban-firewalld` | téléchargement ou installation en échec |
 | Windows Server : `PSWindowsUpdate`, `winget`, noms de groupes et règles localisés | commande absente ou nom différent |
 | Debian 13 : MySQL et MongoDB (dépôts officiels), GitLab CE, FOG | paquets non disponibles pour trixie |
 | winget : identifiants SSMS, MobaXterm et autres | identifiant inexistant |
 | Traefik : placeholder `VERSION_TRAEFIK` | version à choisir |
 | Redis Debian : prise en charge TLS du paquet | option inexistante |
-| SQL Server : chemin de registre `MSSQL16` | chiffrement non appliqué |
+| [[Glossary:SQL]] Server : chemin de registre `MSSQL16` | chiffrement non appliqué |
 | Exchange : procédures selon le cumulative update | commandes ou prérequis différents |
 | Citrix, Horizon : menus et versions éditeur | libellés différents |
 | Entra ID : licences, permissions Graph | fonction indisponible selon le tenant |

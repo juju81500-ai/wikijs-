@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_12_Vie_Systeme_09_Identite_De_La_Machine
 
-- **Environnement** : VM Debian 12 « bookworm » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 12 « bookworm » (serveur)
 - **OS / Version** : Debian 12; étape 09 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian12`, `vie-du-systeme`, `cycle-de-vie`, `etape-09`
@@ -19,7 +19,7 @@ Nommer la machine.
    hostnamectl
    hostname -f
    ```
-   👉 Explication : fixe le nom d'hôte; `hostname -f` doit renvoyer le FQDN.
+   👉 Explication : fixe le nom d'hôte; `hostname -f` doit renvoyer le [[Glossary:FQDN]].
 
 2. Aligner `/etc/hosts` :
    ```bash
@@ -29,7 +29,7 @@ Nommer la machine.
 
 ## 2. Production — Contrôles
 
-Respecter la convention de nommage de l'organisation et inscrire le nom au DNS.
+Respecter la convention de nommage de l'organisation et inscrire le nom au [[Glossary:DNS]].
 
 ## 3. Production — Sécurité
 

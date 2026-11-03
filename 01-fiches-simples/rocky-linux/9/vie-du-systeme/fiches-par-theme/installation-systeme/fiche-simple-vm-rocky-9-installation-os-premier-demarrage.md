@@ -1,6 +1,6 @@
 # 📄 fiche-simple-vm-rocky-9-installation-os-premier-demarrage.md
 
-- **Environnement** : VM sur Proxmox VE, KVM ou VMware
+- **Environnement** : [[Glossary:VM]] sur Proxmox VE, [[Glossary:KVM]] ou VMware
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : Installation / Système
 - **Tags** : `[rocky9]`, `[rhel9]`, `[installation]`, `[vm]`, `[dnf]`, `[premier-demarrage]`
@@ -10,7 +10,7 @@ Installer Rocky Linux 9 sur une nouvelle VM depuis une image officielle, prépar
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Télécharger l'ISO depuis une source officielle Rocky et vérifier son empreinte selon les instructions du projet.
-2. Créer une VM avec firmware, contrôleur disque, CPU, mémoire et carte réseau adaptés au lab; monter l'ISO.
+2. Créer une VM avec firmware, contrôleur disque, [[Glossary:CPU]], mémoire et carte réseau adaptés au lab; monter l'ISO.
 3. Dans l'installateur, choisir langue, disque cible, profil logiciel minimal, interface réseau et mot de passe administrateur; créer un compte nominatif avec droits d'administration.
 4. Après le premier démarrage, vérifier :
    ```bash
@@ -25,7 +25,7 @@ Installer Rocky Linux 9 sur une nouvelle VM depuis une image officielle, prépar
 ## ⚡ 2. Production — Façon Simplifiée
 1. Vérifier l'ISO, les ressources, le plan de stockage, le réseau virtuel, le hostname et la méthode de sauvegarde.
 2. Installer avec le schéma de partitionnement validé pour le rôle; n'activer que les logiciels nécessaires.
-3. Appliquer les mises à jour et les fiches correspondantes pour DNF, utilisateur `wheel`, NetworkManager, Chrony et outils invités.
+3. Appliquer les mises à jour et les fiches correspondantes pour [[Glossary:DNF]], utilisateur `wheel`, NetworkManager, Chrony et outils invités.
 4. Garder SELinux en `Enforcing`; configurer firewalld pour les flux requis avant d'installer les rôles applicatifs.
 
 ## 🔒 3. Production — Façon Sécurisée

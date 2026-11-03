@@ -2,7 +2,7 @@
 
 - **Environnement** : Hôte Hyper-V autonome Windows Server 2022 (hors cluster)
 - **OS / Version** : Windows Server 2022 Standard ou Datacenter
-- **Catégorie** : virtualisation / VM
+- **Catégorie** : virtualisation / [[Glossary:VM]]
 - **Tags** : `hyper-v`, `windows-server-2022`, `virtualisation`, `vm`, `powershell`
 
 ---
@@ -26,7 +26,7 @@ Fixer les chemins par défaut et créer une VM pilote unique.
    ```
    👉 Explication : (dérivé) VM génération 2 avec ressources documentées et switch approuvé.
 
-3. GUI équivalente : **Hyper-V Manager > Action > New > Virtual Machine**.
+3. [[Glossary:GUI]] équivalente : **Hyper-V Manager > Action > New > Virtual Machine**.
    👉 Explication : même création par l'assistant.
 
 4. Attacher une image OS vérifiée et ne pas utiliser les checkpoints comme sauvegarde.

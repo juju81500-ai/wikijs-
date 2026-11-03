@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Debian_13_Apache_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13 Trixie
-- **OS / Version** : Debian 13 Trixie; Apache HTTP Server
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
+- **OS / Version** : Debian 13 Trixie; Apache [[Glossary:HTTP]] Server
 - **Catégorie** : serveur Web / Apache / Sauvegarder et restaurer
 - **Tags** : `debian13`, `apache`, `sauvegarde`
 

@@ -2,7 +2,7 @@
 
 - **Statut** : Nextcloud 29 est une branche ancienne ; ne pas en faire une nouvelle installation exposée en production.
 - **Cible** : migrer vers une version maintenue après vérification des chemins de mise à niveau supportés
-- **Composants** : Nextcloud, base de données, Redis, proxy TLS, volumes persistants
+- **Composants** : Nextcloud, base de données, Redis, proxy [[Glossary:TLS]], volumes persistants
 - **Tags** : `nextcloud`, `docker`, `migration`, `mariadb`, `redis`, `tls`
 
 ## 1. Préparer la migration

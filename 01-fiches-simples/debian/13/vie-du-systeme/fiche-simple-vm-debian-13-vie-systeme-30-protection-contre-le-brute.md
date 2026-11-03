@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Vie_Systeme_30_Protection_Contre_Le_Brute
 
-- **Environnement** : VM Debian 13 « trixie » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 13 « trixie » (serveur)
 - **OS / Version** : Debian 13; étape 30 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian13`, `vie-du-systeme`, `cycle-de-vie`, `etape-30`
@@ -23,14 +23,14 @@ Bloquer les tentatives répétées.
    bantime = 1h
    EOT
    ```
-   👉 Explication : active la prison SSH.
+   👉 Explication : active la prison [[Glossary:SSH]].
 
 2. Activer et contrôler :
    ```bash
    sudo systemctl enable --now fail2ban
    sudo fail2ban-client status sshd
    ```
-   👉 Explication : affiche les IP bannies.
+   👉 Explication : affiche les [[Glossary:IP]] bannies.
 
 ## 2. Production — Contrôles
 

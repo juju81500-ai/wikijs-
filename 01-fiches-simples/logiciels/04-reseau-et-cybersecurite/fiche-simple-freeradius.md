@@ -1,13 +1,13 @@
 # 📄 FreeRADIUS
 
-- **Environnement** : VM (Debian 13)
+- **Environnement** : [[Glossary:VM]] (Debian 13)
 - **OS / Version** : Debian 13 (trixie)
 - **Version** : FreeRADIUS 3.2.x (paquet des dépôts Debian, à vérifier sur la version déployée)
 - **Catégorie** : Réseau et cybersécurité
 - **Tags** : `[debian-13]`, `[freeradius]`, `[radius]`, `[aaa]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer un serveur RADIUS FreeRADIUS sur Debian 13, vérifier sur ce même serveur qu'il accepte une authentification de test, puis le durcir (secret partagé propre, équipements réseau autorisés, pare-feu restreint) avant de le raccorder à un équipement réseau de l'entreprise (commutateur, borne Wi-Fi, concentrateur VPN). Les tests ne se font que sur votre propre serveur.
+Installer un serveur [[Glossary:RADIUS]] FreeRADIUS sur Debian 13, vérifier sur ce même serveur qu'il accepte une authentification de test, puis le durcir (secret partagé propre, équipements réseau autorisés, pare-feu restreint) avant de le raccorder à un équipement réseau de l'entreprise (commutateur, borne Wi-Fi, concentrateur [[Glossary:VPN]]). Les tests ne se font que sur votre propre serveur.
 
 ---
 
@@ -50,12 +50,12 @@ Ajouter à la fin du fichier, en remplaçant les valeurs entre chevrons :
 sudo systemctl restart freeradius
 radtest <utilisateur_test> <mot_de_passe_test> 127.0.0.1 0 testing123
 ```
-👉 Explication : `radtest` envoie une demande `Access-Request` au serveur local (`127.0.0.1`, port 1812 UDP, secret `testing123` du client `localhost` fourni par défaut). La réponse attendue est `Access-Accept`. Un `Access-Reject` signifie que le nom ou le mot de passe ne correspond pas à l'entrée du fichier `authorize`.
+👉 Explication : `radtest` envoie une demande `Access-Request` au serveur local (`127.0.0.1`, port 1812 [[Glossary:UDP]], secret `testing123` du client `localhost` fourni par défaut). La réponse attendue est `Access-Accept`. Un `Access-Reject` signifie que le nom ou le mot de passe ne correspond pas à l'entrée du fichier `authorize`.
 
 ---
 
 ## ⚡ 2. Production — Façon Simplifiée
-1. Déclaration de l'équipement réseau (NAS) avec un secret propre dans `clients.conf` :
+1. Déclaration de l'équipement réseau ([[Glossary:NAS]]) avec un secret propre dans `clients.conf` :
 ```bash
 sudo nano /etc/freeradius/<dossier_config>/clients.conf
 ```
@@ -66,7 +66,7 @@ client <nom_equipement> {
     secret = <secret_partage_fort>
 }
 ```
-👉 Explication : `<nom_equipement>` est un libellé libre, `<adresse_ip_equipement>` est l'adresse IP du commutateur, de la borne ou du concentrateur VPN qui interroge RADIUS. `<secret_partage_fort>` est un secret d'au moins 24 caractères aléatoires, saisi à l'identique sur l'équipement.
+👉 Explication : `<nom_equipement>` est un libellé libre, `<adresse_ip_equipement>` est l'adresse [[Glossary:IP]] du commutateur, de la borne ou du concentrateur VPN qui interroge RADIUS. `<secret_partage_fort>` est un secret d'au moins 24 caractères aléatoires, saisi à l'identique sur l'équipement.
 
 2. Contrôle de la syntaxe puis redémarrage :
 ```bash
@@ -85,7 +85,7 @@ sudo ufw allow from <adresse_ip_equipement> to any port 1813 proto udp
 sudo ufw enable
 sudo ufw status verbose
 ```
-👉 Explication : Autorise SSH seulement depuis `<adresse_ip_admin>` avant d'activer le pare-feu, ce qui évite de se couper l'accès. Le port 1812 UDP sert à l'authentification, le port 1813 UDP à la comptabilité (à ouvrir seulement si l'équipement l'utilise). `ufw status verbose` liste les règles actives.
+👉 Explication : Autorise [[Glossary:SSH]] seulement depuis `<adresse_ip_admin>` avant d'activer le pare-feu, ce qui évite de se couper l'accès. Le port 1812 UDP sert à l'authentification, le port 1813 UDP à la comptabilité (à ouvrir seulement si l'équipement l'utilise). `ufw status verbose` liste les règles actives.
 
 ---
 

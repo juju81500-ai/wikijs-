@@ -1,7 +1,7 @@
 # fiche-simple-vm-ubuntu-26-04-librenms-compte-service-code.md
 
-- **Environnement** : VM Ubuntu Server 26-04 dédiée à LibreNMS (Nginx, PHP-FPM, MariaDB, SNMP)
-- **OS / Version** : Ubuntu Server 26-04 LTS; LibreNMS 26.10.2; PHP 8.5
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 dédiée à LibreNMS (Nginx, PHP-FPM, MariaDB, [[Glossary:SNMP]])
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]]; LibreNMS 26.10.2; PHP 8.5
 - **Catégorie** : supervision / installation
 - **Tags** : `ubuntu2604`, `librenms`, `snmpv3`, `nginx`, `mariadb`
 
@@ -33,7 +33,7 @@ Créer l'utilisateur `librenms`, récupérer le code et poser les permissions.
    ```
    👉 Explication : Donne la propriété du dossier au compte de service.
 
-4. Définir les ACL :
+4. Définir les [[Glossary:ACL]] :
    ```bash
    sudo setfacl -d -m g::rwx /opt/librenms/rrd /opt/librenms/logs \
      /opt/librenms/bootstrap/cache /opt/librenms/storage

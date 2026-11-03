@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_48_Test_De_Restauration_Pra
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 48 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-48`
@@ -24,7 +24,7 @@ Prouver que la sauvegarde est restaurable.
    ```
    👉 Explication : `DATE` est la date de la copie; recharge les services avec la configuration restaurée.
 
-3. Vérifier les interfaces, règles et VPN après restauration.
+3. Vérifier les interfaces, règles et [[Glossary:VPN]] après restauration.
    👉 Explication : confirme que la sauvegarde est complète.
 
 ## 2. Production — Contrôles

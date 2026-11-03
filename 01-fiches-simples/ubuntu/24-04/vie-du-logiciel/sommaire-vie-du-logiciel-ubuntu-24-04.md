@@ -83,7 +83,7 @@ Logiciels qui s'installent et se gèrent sur Ubuntu 24-04. Pour chaque logiciel 
 
 ### Nakivo
 
-- Fiche d'entrée : [catalogue Nakivo-Altaro](../../../logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-nakivo-altaro.md) (statut : Partiel — NAKIVO Windows Server 2022 et Transporter Linux sur Debian 13 et Ubuntu Server 24-04; Altaro/Hornetsecurity limité à la documentation publique de VM Backup)
+- Fiche d'entrée : [catalogue Nakivo-Altaro](../../../logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-nakivo-altaro.md) (statut : Partiel — NAKIVO Windows Server 2022 et Transporter Linux sur Debian 13 et Ubuntu Server 24-04; Altaro/Hornetsecurity limité à la documentation publique de [[Glossary:VM]] Backup)
 - [Ubuntu 24-04 Nakivo Transporter Configurer](nakivo/fiche-simple-ubuntu-24-04-nakivo-transporter-configurer.md)
 - [Ubuntu 24-04 Nakivo Transporter Installer](nakivo/fiche-simple-ubuntu-24-04-nakivo-transporter-installer.md)
 - [Ubuntu 24-04 Nakivo Transporter Mettre A Jour Retour Arriere](nakivo/fiche-simple-ubuntu-24-04-nakivo-transporter-mettre-a-jour-retour-arriere.md)
@@ -338,7 +338,7 @@ Cliquer sur le nom pour voir l'état de couverture ; une procédure détaillée 
 - [Apache](../../../logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-apache.md) — Couvert
 - [Caddy](../../../logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-caddy.md) — Couvert
 - [HAProxy](../../../logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-haproxy.md) — Couvert
-- [IIS](../../../logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-iis.md) — Guide complet — installation du rôle IIS et site pilote Windows Server 2022
+- [IIS](../../../logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-iis.md) — Guide complet — installation du rôle [[Glossary:IIS]] et site pilote Windows Server 2022
 - [InfluxDB](../../../logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-influxdb.md) — Couvert
 - [MariaDB](../../../logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-mariadb.md) — Couvert
 - [MongoDB](../../../logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-mongodb.md) — Couvert

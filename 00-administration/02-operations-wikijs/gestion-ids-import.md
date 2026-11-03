@@ -8,7 +8,7 @@ Ce guide concerne les données `command_blocks` de `txt.txt`. Il ne concerne pas
 - Les IDs existants (`c-*` ou `cmd-*`) sont stables : ne pas les renommer pour corriger une erreur d'import, car des données de l'application peuvent déjà les référencer.
 - Pour une nouvelle commande, utiliser le prochain ID numérique `cmd-*` indiqué par le vérificateur.
 - Un `folder_id`, lorsqu'il existe, doit respecter le format `f-*`. Le fichier actuel ne contient pas la définition des dossiers; le vérificateur ne peut donc pas confirmer leur existence dans l'application cible.
-- Ne pas importer un JSON tronqué ou invalide. Restaurer l'export complet avant toute tentative; ne pas supprimer automatiquement la dernière commande incomplète.
+- Ne pas importer un [[Glossary:JSON]] tronqué ou invalide. Restaurer l'export complet avant toute tentative; ne pas supprimer automatiquement la dernière commande incomplète.
 
 ## Vérification
 

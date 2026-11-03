@@ -51,7 +51,7 @@ Préserver configuration, dashboards et données Prometheus de façon cohérente
 
 ## 2. Production — Contrôles
 
-Définir RPO/RTO, fréquence, rétention, chiffrement, destination, propriétaire, procédure de restauration et test planifié.
+Définir [[Glossary:RPO]]/RTO, fréquence, rétention, chiffrement, destination, propriétaire, procédure de restauration et test planifié.
 
 ## 3. Production — Sécurité
 

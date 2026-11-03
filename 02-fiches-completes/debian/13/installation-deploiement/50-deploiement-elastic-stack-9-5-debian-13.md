@@ -10,9 +10,9 @@
 
 Fiche simple : [cadrer le déploiement](../../../../01-fiches-simples/debian/13/vie-du-logiciel/elastic-stack/fiche-simple-vm-debian-13-elastic-stack-cadrer.md).
 
-Cette fiche installe Elasticsearch et Kibana depuis le dépôt APT officiel. Les deux composants doivent rester à la même version. Vérifier la matrice de systèmes supportés et les prérequis noyau/mémoire avant déploiement. Pour la production, concevoir séparément les rôles master/data/ingest, la haute disponibilité, les snapshots et la capacité de stockage en fonction du débit et de la rétention.
+Cette fiche installe Elasticsearch et Kibana depuis le dépôt [[Glossary:APT]] officiel. Les deux composants doivent rester à la même version. Vérifier la matrice de systèmes supportés et les prérequis noyau/mémoire avant déploiement. Pour la production, concevoir séparément les rôles master/data/ingest, la haute disponibilité, les snapshots et la capacité de stockage en fonction du débit et de la rétention.
 
-Garder les services internes derrière le réseau de gestion. Ne pas exposer Elasticsearch `9200` ou transport `9300` sur Internet; placer Kibana derrière un proxy TLS ou limiter son accès aux administrateurs.
+Garder les services internes derrière le réseau de gestion. Ne pas exposer Elasticsearch `9200` ou transport `9300` sur Internet; placer Kibana derrière un proxy [[Glossary:TLS]] ou limiter son accès aux administrateurs.
 
 ## 2. Ajouter le dépôt Elastic signé
 
@@ -43,7 +43,7 @@ sudo systemctl --no-pager status elasticsearch
 
 Au premier démarrage, Elasticsearch configure automatiquement la sécurité, les certificats TLS et un enrollment token Kibana. Conserver les certificats et secrets hors des journaux accessibles et du wiki. Régler `cluster.name` et `node.name`; pour un nœud unique, conserver les interfaces locales tant qu'un besoin réseau précis n'a pas été approuvé.
 
-Définir le mot de passe du superutilisateur avec l'outil `elasticsearch-reset-password` et l'enregistrer dans le coffre. Vérifier l'API en HTTPS en faisant confiance au certificat CA local; ne pas désactiver la vérification TLS avec `-k`.
+Définir le mot de passe du superutilisateur avec l'outil `elasticsearch-reset-password` et l'enregistrer dans le coffre. Vérifier l'[[Glossary:API]] en HTTPS en faisant confiance au certificat [[Glossary:CA]] local; ne pas désactiver la vérification TLS avec `-k`.
 
 ## 4. Installer et enrôler Kibana
 
@@ -74,7 +74,7 @@ Fiche simple : [exploitation et reprise](../../../../01-fiches-simples/debian/13
 - Utiliser snapshots vers un dépôt externe dédié et tester une restauration avant d'établir la rétention.
 - Surveiller espace, shards, heap JVM, latence, sauvegardes, santé de cluster et renouvellement des certificats.
 - Tester les upgrades en staging et mettre à niveau les composants selon les chemins supportés; sauvegarder avant toute montée de version.
-- Consigner les rôles RBAC, utilisateurs de service, API keys et leurs dates de rotation.
+- Consigner les rôles [[Glossary:RBAC]], utilisateurs de service, API keys et leurs dates de rotation.
 - Pour un cluster multi-nœuds, suivre les procédures de découverte/enrollment et ajouter `discovery.seed_hosts`; ne pas reprendre les réglages nœud unique tels quels.
 
 ## Sources

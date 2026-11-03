@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-caddy-cadrer-pilote.md
 
-- **Environnement** : VM Debian 13 dédiée, service amont de test local
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée, service amont de test local
 - **OS / Version** : Debian 13 Trixie; Caddy stable
 - **Catégorie** : serveur Web / reverse proxy
 - **Tags** : `debian13`, `caddy`, `cadrage`, `reverse-proxy`, `tls`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Vérifier les prérequis DNS, service amont, TLS et réseau avant de publier un reverse proxy Caddy.
+Vérifier les prérequis [[Glossary:DNS]], service amont, [[Glossary:TLS]] et réseau avant de publier un reverse proxy Caddy.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -24,7 +24,7 @@ Vérifier les prérequis DNS, service amont, TLS et réseau avant de publier un 
    ```bash
    sudo ss -ltnp | grep -E ':(80|443)\b' || echo "ports 80/443 libres"
    ```
-   👉 Explication : Caddy doit pouvoir ouvrir 80 et 443 (challenges ACME).
+   👉 Explication : Caddy doit pouvoir ouvrir 80 et 443 (challenges [[Glossary:ACME]]).
 
 3. Sauvegarder la configuration existante, si elle existe :
    ```bash

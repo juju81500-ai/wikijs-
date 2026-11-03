@@ -1,12 +1,12 @@
 # 📄 fiche-simple-vm-rocky-9-securite-sysctl-noyau.md
 
-- **Environnement** : VM ou serveur Rocky Linux
-- **OS / Version** : Rocky Linux 9 / RHEL 9 (noyau 5.14 et supérieur)
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 (noyau 5.14 et supérieur)
 - **Catégorie** : Sécurité / Durcissement du noyau et de la pile réseau
 - **Tags** : `[rocky9]`, `[rhel9]`, `[sysctl]`, `[kernel]`, `[reseau]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Appliquer un durcissement sysctl persistant (redirections ICMP, SYN cookies, filtrage anti-spoofing, ASLR, accès aux logs noyau) via `/etc/sysctl.d/` sur Rocky Linux 9, sans casser le routage ou les conteneurs.
+Appliquer un durcissement sysctl persistant (redirections [[Glossary:ICMP]], SYN cookies, filtrage anti-spoofing, ASLR, accès aux logs noyau) via `/etc/sysctl.d/` sur Rocky Linux 9, sans casser le routage ou les conteneurs.
 
 ---
 
@@ -62,7 +62,7 @@ Appliquer un durcissement sysctl persistant (redirections ICMP, SYN cookies, fil
    ```
    👉 Explication : `ip_forward` doit rester à `1` sur un routeur ou un hôte Podman avec réseau bridge. Ne pas forcer `0` dans le fichier de durcissement sur ces hôtes.
 
-2. Contrôler le filtrage de chemin inverse sur les serveurs multi-interfaces ou VPN :
+2. Contrôler le filtrage de chemin inverse sur les serveurs multi-interfaces ou [[Glossary:VPN]] :
    ```bash
    sysctl net.ipv4.conf.all.rp_filter
    ```

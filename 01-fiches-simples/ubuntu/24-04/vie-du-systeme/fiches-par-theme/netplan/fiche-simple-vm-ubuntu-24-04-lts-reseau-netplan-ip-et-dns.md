@@ -1,14 +1,14 @@
 # 📄 VM_Ubuntu_24.04_Reseau_Fixer-IP-Et-DNS.md
 
-- **Environnement** : VM (Proxmox VE / KVM / VMware)
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat) - Famille Debian
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]] / VMware)
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble Numbat) - Famille Debian
 - **Catégorie** : Réseau / Netplan
 - **Tags** : `[ubuntu24.04]`, `[debian-family]`, `[netplan]`, `[ip-statique]`, `[dns]`, `[systemd-networkd]`
 
 ---
 
 ## 🎯 Problème précis à résoudre
-Fixer une adresse IP statique, la passerelle et les serveurs DNS sous Ubuntu Server 24-04 LTS avec l'outil Netplan et le backend `systemd-networkd`.
+Fixer une adresse [[Glossary:IP]] statique, la passerelle et les serveurs [[Glossary:DNS]] sous Ubuntu Server 24-04 LTS avec l'outil Netplan et le backend `systemd-networkd`.
 
 ---
 

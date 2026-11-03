@@ -1,7 +1,7 @@
 # 📄 fiche-simple-vm-rocky-9-stockage-configurer-quotas-projet-xfs.md
 
-- **Environnement** : VM Rocky Linux avec système de fichiers XFS dédié aux données
-- **OS / Version** : Rocky Linux 9 / RHEL 9
+- **Environnement** : [[Glossary:VM]] Rocky Linux avec système de fichiers [[Glossary:XFS]] dédié aux données
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9
 - **Catégorie** : Stockage / Administration
 - **Tags** : `[rocky9]`, `[rhel9]`, `[xfs]`, `[quotas]`, `[stockage]`, `[administration]`
 

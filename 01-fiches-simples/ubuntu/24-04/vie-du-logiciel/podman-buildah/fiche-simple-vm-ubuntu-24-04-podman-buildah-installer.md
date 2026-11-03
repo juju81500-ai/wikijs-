@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Podman_Buildah_Installer
 
-- **Environnement** : VM Ubuntu 24-04 LTS de laboratoire, utilisateur sudoer et compte de service dédié
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 [[Glossary:LTS]] de laboratoire, utilisateur sudoer et compte de service dédié
 - **OS / Version** : Ubuntu 24-04 LTS
 - **Catégorie** : conteneurs
 - **Tags** : `ubuntu2404`, `podman`, `buildah`, `conteneurs`, `rootless`, `oci`

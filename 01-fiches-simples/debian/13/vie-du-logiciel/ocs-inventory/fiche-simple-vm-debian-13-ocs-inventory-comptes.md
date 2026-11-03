@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-13-ocs-inventory-comptes.md
 
-- **Environnement** : VM Debian 13 dédiée, OCS Inventory 3.0 (Nginx, uWSGI, PostgreSQL local)
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée, OCS Inventory 3.0 (Nginx, uWSGI, PostgreSQL local)
 - **OS / Version** : Debian 13 Trixie; OCS Inventory 3.0; PostgreSQL 17
-- **Catégorie** : inventaire de parc / ITSM
+- **Catégorie** : inventaire de parc / [[Glossary:ITSM]]
 - **Tags** : `debian13`, `ocs-inventory`, `ocs3`, `postgresql`, `nginx`, `rbac`
 
 ---

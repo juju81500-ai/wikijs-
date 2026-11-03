@@ -1,6 +1,6 @@
 # 📄 fiche-simple-truenas-scale-25-10-systeme-mise-a-jour.md
 
-- **Environnement** : TrueNAS SCALE 25.10 (Goldeye), NAS de lab ou de production, fenêtre de maintenance planifiée
+- **Environnement** : TrueNAS SCALE 25.10 (Goldeye), [[Glossary:NAS]] de lab ou de production, fenêtre de maintenance planifiée
 - **OS / Version** : TrueNAS SCALE 25.10 Goldeye (base Debian)
 - **Catégorie** : Système / Mises à jour
 - **Tags** : `truenas`, `scale2510`, `debian`, `update`, `boot-environment`, `maintenance`
@@ -40,7 +40,7 @@ Mettre à jour TrueNAS SCALE 25.10 sans perdre la configuration ni les pools, av
    👉 Explication : TrueNAS signale les mises à jour disponibles sans les installer.
 2. Planifier l'installation dans une fenêtre de maintenance :
    `System Settings > Update` : Update
-   👉 Explication : Les services (SMB, NFS, iSCSI) sont interrompus pendant le redémarrage.
+   👉 Explication : Les services (SMB, [[Glossary:NFS]], iSCSI) sont interrompus pendant le redémarrage.
 3. Contrôler les environnements de démarrage conservés :
    `zfs list -r -t filesystem boot-pool/ROOT`
    👉 Explication : Liste les versions précédentes disponibles pour un retour arrière.

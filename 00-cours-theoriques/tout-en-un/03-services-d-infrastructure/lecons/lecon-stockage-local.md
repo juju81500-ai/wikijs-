@@ -11,17 +11,17 @@
 À l'issue de cette leçon, vous saurez :
 
 1. décrire le chemin qui sépare un disque physique d'un fichier lisible par une application (disque, partition, système de fichiers, point de montage) ;
-2. choisir entre MBR et GPT pour un disque donné et expliquer pourquoi ;
-3. choisir un système de fichiers (ext4, XFS, Btrfs, NTFS, exFAT) selon l'usage ;
-4. calculer la capacité utile et la tolérance de panne des niveaux RAID 0, 1, 5, 6 et 10, et expliquer pourquoi un RAID n'est jamais une sauvegarde ;
-5. construire un volume avec LVM (PV, VG, LV), l'agrandir à chaud et prendre un snapshot ;
+2. choisir entre [[Glossary:MBR]] et [[Glossary:GPT]] pour un disque donné et expliquer pourquoi ;
+3. choisir un système de fichiers (ext4, [[Glossary:XFS]], Btrfs, [[Glossary:NTFS]], exFAT) selon l'usage ;
+4. calculer la capacité utile et la tolérance de panne des niveaux [[Glossary:RAID]] 0, 1, 5, 6 et 10, et expliquer pourquoi un RAID n'est jamais une sauvegarde ;
+5. construire un volume avec [[Glossary:LVM]] (PV, VG, LV), l'agrandir à chaud et prendre un snapshot ;
 6. diagnostiquer les pannes classiques : disque plein, grappe dégradée, UUID changé, table de partitions illisible.
 
 ## Prérequis et durée
 
 - Savoir ouvrir un terminal Linux et lire la sortie d'une commande (`ls`, `cat`, `df`).
 - Notions de base sur les droits Unix (utilisateur, groupe) — utile mais non indispensable.
-- Une machine virtuelle Linux **jetable** (Debian ou Ubuntu Server récent, 2 Go de RAM, 5 Go de disque libre) pour la partie pratique. Ne faites jamais les manipulations de formatage sur une machine contenant des données réelles.
+- Une machine virtuelle Linux **jetable** (Debian ou Ubuntu Server récent, 2 Go de [[Glossary:RAM]], 5 Go de disque libre) pour la partie pratique. Ne faites jamais les manipulations de formatage sur une machine contenant des données réelles.
 - Durée totale : environ 3 h 30.
 
 Convention : adresses et noms fictifs (`example.com`, `192.0.2.0/24`), aucun mot de passe réel.
@@ -44,7 +44,7 @@ Les couches, de bas en haut :
 
 | Couche | Rôle | Exemple Linux |
 |---|---|---|
-| Support physique | Stocker des bits | HDD, SSD SATA, SSD NVMe |
+| Support physique | Stocker des bits | HDD, [[Glossary:SSD]] [[Glossary:SATA]], SSD NVMe |
 | Périphérique bloc | Exposer des blocs numérotés | `/dev/sda`, `/dev/nvme0n1` |
 | Table de partitions | Découper le disque | MBR ou GPT |
 | (Optionnel) RAID / LVM | Regrouper, redonder, rendre souple | `/dev/md0`, `/dev/vg_data/lv_donnees` |
@@ -101,8 +101,8 @@ Avantages : capacité quasi illimitée, GUID et nom lisible par partition, somme
 |---|---|
 | Disque > 2 To | GPT (obligatoire) |
 | Serveur ou poste UEFI récent | GPT |
-| BIOS historique, disque < 2 To, vieux système | MBR possible |
-| Clé USB destinée à de très vieux appareils | MBR possible |
+| [[Glossary:BIOS]] historique, disque < 2 To, vieux système | MBR possible |
+| Clé [[Glossary:USB]] destinée à de très vieux appareils | MBR possible |
 | Doute | GPT |
 
 ### 2.4 Manipuler les partitions
@@ -148,9 +148,9 @@ Une partition vierge n'est qu'un espace de blocs. Le **système de fichiers** (F
 | **ext4** | Linux | Robuste, éprouvé, réduction et agrandissement possibles | Pas de snapshots natifs |
 | **XFS** | Linux | Excellent pour gros fichiers et forte concurrence ; défaut de plusieurs distributions serveur | Agrandissement possible, **réduction impossible** |
 | **Btrfs** | Linux | Snapshots, sommes de contrôle de données, compression, sous-volumes | Plus complexe, RAID 5/6 Btrfs à éviter en production |
-| **NTFS** | Windows | ACL, journal, quotas, chiffrement EFS | Support en écriture sous Linux via pilote `ntfs3` ou `ntfs-3g` |
+| **NTFS** | Windows | [[Glossary:ACL]], journal, quotas, chiffrement EFS | Support en écriture sous Linux via pilote `ntfs3` ou `ntfs-3g` |
 | **exFAT** | Multi-OS | Fichiers > 4 Gio, idéal clé USB/carte SD | Pas de droits fins, pas de journal |
-| **FAT32** | Multi-OS | Compatibilité maximale (partition EFI) | Fichier maximal 4 Gio, aucune sécurité |
+| **FAT32** | Multi-OS | Compatibilité maximale (partition [[Glossary:EFI]]) | Fichier maximal 4 Gio, aucune sécurité |
 
 Règle simple pour un serveur Linux : **ext4 ou XFS** (Btrfs si l'on veut des snapshots et qu'on le maîtrise). Pour un partage destiné à Windows, le FS sous-jacent reste ext4 ou XFS : c'est Samba qui parle SMB (voir la leçon sur le partage de fichiers).
 
@@ -203,7 +203,7 @@ sudo fsck.ext4 -f /dev/sdb1
 
 > **Le RAID n'est pas une sauvegarde.** Une suppression accidentelle, un chiffrement par un rançongiciel, une erreur d'administration ou un incendie sont répliqués instantanément sur tous les disques. Le RAID protège de la **panne matérielle d'un disque**, pas de la perte de données. Conservez toujours une sauvegarde indépendante (règle 3-2-1 : trois copies, deux supports, une hors site).
 
-Le RAID peut être **matériel** (carte contrôleur), **logiciel** (`mdadm` sous Linux, Espaces de stockage sous Windows, ZFS) ou **« fake RAID »** fourni par le chipset. Pour un laboratoire ou un petit serveur, `md` est simple et portable.
+Le RAID peut être **matériel** (carte contrôleur), **logiciel** (`mdadm` sous Linux, Espaces de stockage sous Windows, [[Glossary:ZFS]]) ou **« fake RAID »** fourni par le chipset. Pour un laboratoire ou un petit serveur, `md` est simple et portable.
 
 ### 4.2 Les niveaux essentiels
 
@@ -283,7 +283,7 @@ sudo mdadm /dev/md0 --add /dev/sde
 
 Ajoutez un disque de secours (*hot spare*) et une alerte e-mail (`MAILADDR admin@example.com`) pour être prévenu le jour de la panne.
 
-Surveiller la santé des disques eux-mêmes avec SMART :
+Surveiller la santé des disques eux-mêmes avec [[Glossary:SMART]] :
 
 ```bash
 sudo smartctl -H /dev/sda
@@ -396,7 +396,7 @@ Mesurez avant d'acheter (volume actuel, croissance, rétention), gardez 30 % de 
 
 ## Mise en pratique guidée
 
-**Cadre** : machine virtuelle Linux jetable, droits administrateur dans la VM uniquement. Nous allons simuler des disques avec de simples **fichiers** associés à des périphériques *loop* : aucun vrai disque n'est modifié. Faites un instantané de la VM avant de commencer.
+**Cadre** : machine virtuelle Linux jetable, droits administrateur dans la [[Glossary:VM]] uniquement. Nous allons simuler des disques avec de simples **fichiers** associés à des périphériques *loop* : aucun vrai disque n'est modifié. Faites un instantané de la VM avant de commencer.
 
 **Étape 1 — créer quatre faux disques de 512 Mio.**
 
@@ -594,7 +594,7 @@ Documentations officielles et normes (lecture) :
 | `images/stockage-local-4.svg` | <https://commons.wikimedia.org/wiki/File:RAID_10.svg> | Wheart, d'après `RAID 0.svg` de Cburnett | CC BY-SA 3.0 — <https://creativecommons.org/licenses/by-sa/3.0/> | Aucune modification du fichier |
 | `images/stockage-local-5.svg` | Fichier original de ce dépôt | Pack Master | Création originale du projet Pack Master, dédiée au domaine public (CC0) — <https://creativecommons.org/publicdomain/zero/1.0/> | Sans objet |
 
-Les images 1 à 4 restent soumises à leur licence CC BY-SA d'origine (partage dans les mêmes conditions) ; elles ont été téléchargées telles quelles depuis Wikimedia Commons (licences vérifiées par l'API de Commons le 2026-11-01).
+Les images 1 à 4 restent soumises à leur licence CC BY-SA d'origine (partage dans les mêmes conditions) ; elles ont été téléchargées telles quelles depuis Wikimedia Commons (licences vérifiées par l'[[Glossary:API]] de Commons le 2026-11-01).
 
 ## Historique de vérification
 

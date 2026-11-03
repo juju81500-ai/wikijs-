@@ -1,6 +1,6 @@
 # Fiche_Simple_-_Windows_Server_2022_WDS_MDT_Recette
 
-- **Environnement** : Windows Server 2022, WDS + MDT installés et configurés selon la procédure historique; poste ou VM de test
+- **Environnement** : Windows Server 2022, WDS + [[Glossary:MDT]] installés et configurés selon la procédure historique; poste ou [[Glossary:VM]] de test
 - **OS / Version** : Windows Server 2022; WDS, MDT : vérifier la version publiée
 - **Catégorie** : Automatisation, déploiement et IaC
 - **Tags** : `windows-server-2022`, `wds`, `mdt`, `recette`, `validation`
@@ -13,7 +13,7 @@ Recetter le service de déploiement après installation, changement ou restaurat
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Contrôler les services. GUI : `services.msc`.
+1. Contrôler les services. [[Glossary:GUI]] : `services.msc`.
    ```powershell
    Get-Service WDSServer, LanmanServer | Select-Object Name, Status
    ```
@@ -33,7 +33,7 @@ Recetter le service de déploiement après installation, changement ou restaurat
    ```
    👉 Explication : remplacer `SERVEUR-DEPLOIEMENT`; doit renvoyer `True` depuis un poste autorisé.
 
-4. Démarrer une VM de test en PXE (touche F12 ou ordre de boot réseau), lancer la séquence de tâches de test.
+4. Démarrer une VM de test en [[Glossary:PXE]] (touche F12 ou ordre de boot réseau), lancer la séquence de tâches de test.
    👉 Explication : la VM doit obtenir une adresse, charger WinPE, se connecter au partage, installer et rejoindre le domaine si prévu.
 
 5. Consulter les journaux côté serveur :
@@ -48,7 +48,7 @@ Rejouer le test sur un poste pilote réel; consigner image, séquence et résult
 
 ## 3. Production — Sécurité
 
-- Recette sur un VLAN de test ou un poste non sensible; aucun secret dans les captures ou journaux joints.
+- Recette sur un [[Glossary:VLAN]] de test ou un poste non sensible; aucun secret dans les captures ou journaux joints.
 
 ## Validation et retour arrière
 

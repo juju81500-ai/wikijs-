@@ -20,7 +20,7 @@ Vérifier que la panne est détectée et que l'alerte part.
    ```
    👉 Explication : la 1re commande simule la panne, la 2e rétablit; le trafic de gestion doit rester joignable.
 
-2. Avec vCenter, tester HA sur une VM de test (vSphere Client : **Cluster > Configurer > Disponibilité vSphere**) puis couper l'hôte de test.
+2. Avec vCenter, tester HA sur une [[Glossary:VM]] de test (vSphere Client : **Cluster > Configurer > Disponibilité vSphere**) puis couper l'hôte de test.
    👉 Explication : la VM doit redémarrer sur un autre hôte.
 
 3. Contrôler la réception de l'alerte et noter le délai.

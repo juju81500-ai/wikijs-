@@ -7,7 +7,7 @@
 ## 1. Périmètre et prérequis
 
 - Périmètre : stockage haute disponibilité à deux nœuds (réplication synchrone) pour hyperviseurs. Ne couvre pas la plateforme complète HCI propriétaire ni les appliances livrées clé en main.
-- Matériel : deux serveurs équivalents, disques ou RAID dédiés, réseau de synchronisation dédié et réseau iSCSI séparé du réseau de gestion ; liaisons redondantes.
+- Matériel : deux serveurs équivalents, disques ou [[Glossary:RAID]] dédiés, réseau de synchronisation dédié et réseau iSCSI séparé du réseau de gestion ; liaisons redondantes.
 - Quorum : avec deux nœuds, prévoir un témoin (heartbeat via le réseau de gestion ou nœud témoin) pour éviter le split-brain, selon les recommandations de la documentation éditeur.
 - Sauvegarde : sauvegarde externe complète avant mise en production ; la réplication ne remplace pas la sauvegarde.
 - Fenêtre : l'initialisation de la synchro complète peut saturer le réseau et dégrader les performances.
@@ -19,7 +19,7 @@
 
 ## 3. Procédure
 
-1. Valider la compatibilité OS/hyperviseur et la configuration réseau (MTU identique, pas de NAT, ports iSCSI ouverts seulement entre nœuds et hôtes).
+1. Valider la compatibilité OS/hyperviseur et la configuration réseau ([[Glossary:MTU]] identique, pas de [[Glossary:NAT]], ports iSCSI ouverts seulement entre nœuds et hôtes).
 2. Installer le logiciel sur les deux nœuds depuis le programme téléchargé via le compte éditeur ; vérifier hash/signature si fournis.
 3. Créer les volumes de stockage locaux, les cibles et les périphériques répliqués selon l'assistant de la console de gestion.
 4. Configurer les chemins de synchronisation et de heartbeat ; lancer la synchronisation initiale.
@@ -30,7 +30,7 @@
 
 - État « Synchronized » sur tous les périphériques ; latence de synchro stable.
 - Chemins MPIO actifs sur les deux nœuds.
-- Alertes de la console traitées ; test de restauration d'une VM depuis sauvegarde.
+- Alertes de la console traitées ; test de restauration d'une [[Glossary:VM]] depuis sauvegarde.
 
 ## 5. Rollback et risques
 

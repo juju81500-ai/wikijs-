@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Installer PBS et créer un datastore avec des accès minimaux.
+Installer [[Glossary:PBS]] et créer un datastore avec des accès minimaux.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -19,13 +19,13 @@ Installer PBS et créer un datastore avec des accès minimaux.
 2. Ouvrir l'interface d'administration `https://IP_DU_PBS:8007` (remplacer IP_DU_PBS par l'adresse réelle).
    👉 Explication : console web de PBS.
 
-3. **Administration > Storage / Disks > Directory** ou **ZFS** pour créer le stockage, puis **Datastore > Add Datastore**.
+3. **Administration > Storage / Disks > Directory** ou **[[Glossary:ZFS]]** pour créer le stockage, puis **Datastore > Add Datastore**.
    👉 Explication : crée un datastore sur un système de fichiers pris en charge; ne pas utiliser de commandes génériques de formatage ou montage sur un stockage actif.
 
 4. Vérifier capacité, alertes et politique de nettoyage (prune/GC).
    👉 Explication : évite le remplissage du datastore.
 
-5. **Configuration > Access Control > User Management**, puis **API Token**: créer utilisateurs et tokens dédiés avec permissions minimales sur les namespaces et datastores requis.
+5. **Configuration > Access Control > User Management**, puis **[[Glossary:API]] Token**: créer utilisateurs et tokens dédiés avec permissions minimales sur les namespaces et datastores requis.
    👉 Explication : évite l'usage de `root@pam`.
 
 ## 2. Production — Contrôles

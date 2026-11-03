@@ -1,7 +1,7 @@
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Systeme_Timezone_Locale
 
-- **Environnement** : VM Ubuntu Server
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat)
+- **Environnement** : [[Glossary:VM]] Ubuntu Server
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble Numbat)
 - **Catégorie** : Système / Fuseau horaire et localisation
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[timezone]`, `[locale]`, `[timedatectl]`, `[localectl]`, `[utc]`
 
@@ -15,7 +15,7 @@ Configurer le fuseau horaire, conserver l'horloge matérielle en UTC et génére
    localectl status
    locale
    ```
-   👉 *Explication : `timedatectl` affiche le fuseau et la synchronisation NTP ; `localectl` affiche la locale et la disposition clavier.*
+   👉 *Explication : `timedatectl` affiche le fuseau et la synchronisation [[Glossary:NTP]] ; `localectl` affiche la locale et la disposition clavier.*
 2. Définir le fuseau horaire :
    ```bash
    sudo timedatectl set-timezone Europe/Paris

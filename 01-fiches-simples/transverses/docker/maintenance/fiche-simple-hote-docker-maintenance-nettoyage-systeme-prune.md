@@ -68,7 +68,7 @@ Le pilote `local` applique une rotation intégrée. Le changement du pilote par 
 ```bash
 sudo dockerd --validate --config-file=/etc/docker/daemon.json
 ```
-   👉 Explication : valide le JSON avant de redémarrer Docker.
+   👉 Explication : valide le [[Glossary:JSON]] avant de redémarrer Docker.
 
 Si `--validate` n'est pas disponible dans la version installée, ne pas redémarrer le démon sur la base de ce contrôle ; valider avec la procédure propre à cette version. Planifier tout redémarrage Docker en production et confirmer le comportement de reprise des conteneurs.
 

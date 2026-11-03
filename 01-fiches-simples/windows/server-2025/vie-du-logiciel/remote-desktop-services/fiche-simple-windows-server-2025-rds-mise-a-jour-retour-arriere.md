@@ -13,7 +13,7 @@ Appliquer les mises à jour d'un hôte RDS Windows Server 2025 avec point de ret
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Créer un point de retour : checkpoint de la VM pilote (Hyper-V : **Gestionnaire Hyper-V** > clic droit VM > **Point de contrôle**) ou sauvegarde d'état système.
+1. Créer un point de retour : checkpoint de la [[Glossary:VM]] pilote (Hyper-V : **Gestionnaire Hyper-V** > clic droit VM > **Point de contrôle**) ou sauvegarde d'état système.
    👉 Explication : Permet de revenir à l'état antérieur; pour un hôte physique, utiliser la sauvegarde de la fiche dédiée.
 2. Relever l'état avant mise à jour :
    ```powershell
@@ -21,14 +21,14 @@ Appliquer les mises à jour d'un hôte RDS Windows Server 2025 avec point de ret
    Get-ComputerInfo | Select-Object OsBuildNumber
    ```
    👉 Explication : Conserve la référence pour comparer après correctif.
-3. Vider l'hôte de ses nouvelles sessions puis installer les mises à jour : **Paramètres** > **Windows Update** (ou WSUS/Intune selon l'organisation).
+3. Vider l'hôte de ses nouvelles sessions puis installer les mises à jour : **Paramètres** > **Windows Update** (ou [[Glossary:WSUS]]/Intune selon l'organisation).
    👉 Explication : Sur une ferme, traiter un hôte à la fois; les sessions actives sont interrompues au redémarrage.
 4. Contrôler après redémarrage :
    ```powershell
    Get-Service TermService
    Get-WindowsFeature RDS-RD-Server
    ```
-   👉 Explication : Confirme que le service RDP et le rôle sont toujours actifs; refaire la recette.
+   👉 Explication : Confirme que le service [[Glossary:RDP]] et le rôle sont toujours actifs; refaire la recette.
 5. En cas de régression, désinstaller le correctif identifié :
    ```powershell
    wusa /uninstall /kb:NUMERO_KB

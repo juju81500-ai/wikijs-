@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Windows_11_Visio_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : Poste Windows 11 x64 d'un utilisateur ou administrateur (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'un utilisateur ou administrateur ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; version Visio à vérifier auprès de l'éditeur
 - **Catégorie** : outil de diagrammes / poste de travail
 - **Tags** : `visio`, `windows11`, `microsoft-365`, `mise-a-jour`
@@ -17,9 +17,9 @@ Mettre à jour Visio et revenir en arrière.
 ```powershell
 & 'C:\Program Files\Common Files\Microsoft Shared\ClickToRun\OfficeC2RClient.exe' /update user
 ```
-   👉 Explication : déclenche la mise à jour Click-to-Run ; GUI équivalent **Fichier > Compte > Options de mise à jour > Mettre à jour maintenant**.
+   👉 Explication : déclenche la mise à jour Click-to-Run ; [[Glossary:GUI]] équivalent **Fichier > Compte > Options de mise à jour > Mettre à jour maintenant**.
 
-2. Sur un parc : définir le canal par Intune ou GPO, et déployer en anneaux (pilote puis production).
+2. Sur un parc : définir le canal par Intune ou [[Glossary:GPO]], et déployer en anneaux (pilote puis production).
    👉 Explication : limite l'impact d'une régression.
 
 3. Retour arrière vers une version connue :

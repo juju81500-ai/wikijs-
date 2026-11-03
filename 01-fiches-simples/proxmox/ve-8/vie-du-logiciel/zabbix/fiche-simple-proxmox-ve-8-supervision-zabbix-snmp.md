@@ -1,6 +1,6 @@
 # 📄 fiche-simple-proxmox-ve-8-supervision-zabbix-snmp.md
 
-- **Environnement** : Hyperviseur Proxmox VE 8 supervisé par un serveur Zabbix (agent) ou par un poller SNMP
+- **Environnement** : Hyperviseur Proxmox VE 8 supervisé par un serveur Zabbix (agent) ou par un poller [[Glossary:SNMP]]
 - **OS / Version** : Proxmox VE 8.x - Debian 12 Bookworm
 - **Catégorie** : Supervision / Métriques et inventaire
 - **Tags** : `[proxmox-ve-8]`, `[debian-bookworm]`, `[zabbix]`, `[snmp]`, `[supervision]`, `[hardening]`
@@ -46,7 +46,7 @@ zabbix_agentd -t system.cpu.load[all,avg1]
 ```bash
 pvesh create /cluster/firewall/rules --type in --action ACCEPT --proto tcp --dport 10050 --source <ip_serveur_zabbix> --enable 1 --comment "Zabbix agent"
 ```
-👉 Explication : ouvre l'agent Zabbix (TCP/10050) au seul serveur de supervision, en complément du pare-feu datacenter.
+👉 Explication : ouvre l'agent Zabbix ([[Glossary:TCP]]/10050) au seul serveur de supervision, en complément du pare-feu datacenter.
 
 2. Déclarer l'hôte dans l'interface Zabbix avec le modèle « Linux by Zabbix agent » (action dans l'interface web Zabbix, nom d'hôte identique à `Hostname`), puis valider depuis le serveur Zabbix :
 ```bash
@@ -68,13 +68,13 @@ journalctl -u zabbix-agent -n 50 --no-pager
 apt install -y snmpd
 net-snmp-create-v3-user -ro -A <mot_de_passe_auth> -a SHA -X <mot_de_passe_priv> -x AES <utilisateur_snmp>
 ```
-👉 Explication : SNMPv3 avec authentification SHA et chiffrement AES remplace la communauté SNMPv2c en clair ; l'utilisateur n'a qu'un droit de lecture. Utiliser des mots de passe distincts et de plus de 12 caractères.
+👉 Explication : SNMPv3 avec authentification SHA et chiffrement [[Glossary:AES]] remplace la communauté SNMPv2c en clair ; l'utilisateur n'a qu'un droit de lecture. Utiliser des mots de passe distincts et de plus de 12 caractères.
 
 2. Restreindre le port SNMP au serveur de supervision :
 ```bash
 pvesh create /cluster/firewall/rules --type in --action ACCEPT --proto udp --dport 161 --source <ip_serveur_zabbix> --enable 1 --comment "SNMP lecture supervision"
 ```
-👉 Explication : seul le serveur de supervision peut interroger le port UDP/161 de l'hôte ; toute autre source reste bloquée par la politique du pare-feu.
+👉 Explication : seul le serveur de supervision peut interroger le port [[Glossary:UDP]]/161 de l'hôte ; toute autre source reste bloquée par la politique du pare-feu.
 
 3. Redémarrer snmpd puis tester une requête SNMPv3 :
 ```bash

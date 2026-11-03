@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Vérifier que l'hôte, le DNS et le réseau Traefik sont prêts avant de déployer Wiki.js.
+Vérifier que l'hôte, le [[Glossary:DNS]] et le réseau Traefik sont prêts avant de déployer Wiki.js.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -34,7 +34,7 @@ Vérifier que l'hôte, le DNS et le réseau Traefik sont prêts avant de déploy
    ```
    👉 Explication : Traefik doit déjà écouter; Wiki.js n'a pas besoin de publier de port.
 
-4. Contrôler les ressources disponibles (au moins 2 vCPU et 1 Go de RAM) :
+4. Contrôler les ressources disponibles (au moins 2 vCPU et 1 Go de [[Glossary:RAM]]) :
    ```bash
    nproc
    free -h
@@ -49,7 +49,7 @@ Documenter le nom DNS, le réseau Traefik, le dimensionnement et le propriétair
 ## 3. Production — Sécurité
 
 - Ne pas exposer PostgreSQL ni le port 3000 sur l'hôte.
-- Vérifier que le certificat ACME fonctionne déjà pour un autre service avant d'ajouter Wiki.js.
+- Vérifier que le certificat [[Glossary:ACME]] fonctionne déjà pour un autre service avant d'ajouter Wiki.js.
 
 ## Validation et retour arrière
 

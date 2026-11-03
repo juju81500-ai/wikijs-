@@ -1,7 +1,7 @@
 # Déployer GLPI 11 sur Debian 12 ou 13
 
-- **Environnement** : VM Linux dédiée, sauvegardée
-- **Composants** : Nginx ou Apache, PHP-FPM, MariaDB, GLPI
+- **Environnement** : [[Glossary:VM]] Linux dédiée, sauvegardée
+- **Composants** : Nginx ou Apache, PHP-FPM, MariaDB, [[Glossary:GLPI]]
 - **Tags** : `glpi`, `itsm`, `debian12`, `debian13`, `mariadb`, `php`
 
 ## 1. Préparer et vérifier la compatibilité
@@ -10,7 +10,7 @@ Fiche simple : [préparer le déploiement et vérifier la compatibilité](../../
 
 Utiliser une version maintenue de GLPI et consulter sa matrice officielle pour les versions PHP, extensions et bases supportées par le système choisi. GLPI 11.12 est une version future/indicative selon la source du pack : confirmer qu'elle existe et qu'elle est prise en charge avant installation.
 
-Prévoir DNS, TLS, stockage des documents, compte de service, sauvegarde cohérente de la base et des fichiers, puis fenêtre de maintenance. Ne pas exposer le répertoire de données ou les fichiers de configuration au serveur Web.
+Prévoir [[Glossary:DNS]], [[Glossary:TLS]], stockage des documents, compte de service, sauvegarde cohérente de la base et des fichiers, puis fenêtre de maintenance. Ne pas exposer le répertoire de données ou les fichiers de configuration au serveur Web.
 
 ```bash
 sudo apt update
@@ -29,7 +29,7 @@ sudo mariadb-secure-installation
 sudo mariadb
 ```
 
-Dans la console SQL, définir un secret unique conservé hors du dépôt :
+Dans la console [[Glossary:SQL]], définir un secret unique conservé hors du dépôt :
 
 ```sql
 CREATE DATABASE glpi CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;

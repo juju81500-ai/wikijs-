@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_OpenVPN_Configurer
 
-- **Environnement** : VM Debian 13 dédiée à OpenVPN Community Edition
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à OpenVPN Community Edition
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : OpenVPN Community Edition / configurer
 - **Tags** : `openvpn`, `debian13`, `vie-du-logiciel`, `configurer`
@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Configurer un serveur VPN UDP avec certificats, sans publier de routes non approuvées.
+Configurer un serveur [[Glossary:VPN]] [[Glossary:UDP]] avec certificats, sans publier de routes non approuvées.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Installer les certificats préparés par la PKI approuvée :
+1. Installer les certificats préparés par la [[Glossary:PKI]] approuvée :
    ```bash
    sudo install -d -o root -g root -m 0750 /etc/openvpn/server
    sudo install -o root -g root -m 0644 CA_CERTIFICATE /etc/openvpn/server/ca.crt
@@ -21,7 +21,7 @@ Configurer un serveur VPN UDP avec certificats, sans publier de routes non appro
    sudo install -o root -g root -m 0600 SERVER_PRIVATE_KEY /etc/openvpn/server/server.key
    sudo sh -c "umask 077; openvpn --genkey tls-crypt /etc/openvpn/server/tls-crypt.key"
    ```
-   👉 Explication : CA_CERTIFICATE, SERVER_CERTIFICATE et SERVER_PRIVATE_KEY sont des chemins à remplacer par les fichiers approuvés; ne jamais copier la clé privée de la CA.
+   👉 Explication : CA_CERTIFICATE, SERVER_CERTIFICATE et SERVER_PRIVATE_KEY sont des chemins à remplacer par les fichiers approuvés; ne jamais copier la clé privée de la [[Glossary:CA]].
 
 2. Créer la configuration serveur :
    ```bash
@@ -46,7 +46,7 @@ Configurer un serveur VPN UDP avec certificats, sans publier de routes non appro
    persist-tun
    verb 3
    ```
-   👉 Explication : Remplacer VPN_NETWORK et VPN_NETMASK par le plan validé. La clé tls-crypt est générée sur l’hôte et doit être remise au client par un canal protégé; une CRL reste à ajouter si la procédure de révocation la prévoit.
+   👉 Explication : Remplacer VPN_NETWORK et VPN_NETMASK par le plan validé. La clé tls-crypt est générée sur l’hôte et doit être remise au client par un canal protégé; une [[Glossary:CRL]] reste à ajouter si la procédure de révocation la prévoit.
 
 3. Restreindre les droits :
    ```bash

@@ -1,7 +1,7 @@
 # fiche-simple-vm-windows-11-powershell7-versions-perimetre.md
 
-- **Environnement** : VM ou poste Windows 11 de test; compte standard puis élévation uniquement si requise
-- **OS / Version** : Windows 11 x64; PowerShell 7.6.9 Stable (LTS)
+- **Environnement** : [[Glossary:VM]] ou poste Windows 11 de test; compte standard puis élévation uniquement si requise
+- **OS / Version** : Windows 11 x64; PowerShell 7.6.9 Stable ([[Glossary:LTS]])
 - **Catégorie** : administration / PowerShell
 - **Tags** : `windows-11`, `powershell`, `pwsh`, `administration`, `scripts`, `securite`
 

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_31_Reduction_De_La_Surface
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 31 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-31`
@@ -13,7 +13,7 @@ Désactiver les services inutiles.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Vérifier les services actifs dans Lobby > Tableau de bord (widget Services) et dans chaque menu Services; désactiver DHCP, Unbound ou SSH s'ils ne servent pas.
+1. Vérifier les services actifs dans Lobby > Tableau de bord (widget Services) et dans chaque menu Services; désactiver [[Glossary:DHCP]], Unbound ou [[Glossary:SSH]] s'ils ne servent pas.
    👉 Explication : moins de services signifie moins de vulnérabilités.
 
 2. Lister les ports en écoute :
@@ -32,7 +32,7 @@ Comparer la liste à la baseline à chaque revue.
 
 ## 3. Production — Sécurité
 
-Aucun service d'administration ne doit écouter sur le WAN.
+Aucun service d'administration ne doit écouter sur le [[Glossary:WAN]].
 
 ## Validation et retour arrière
 

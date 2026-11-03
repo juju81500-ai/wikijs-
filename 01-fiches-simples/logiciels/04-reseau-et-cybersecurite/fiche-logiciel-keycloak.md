@@ -12,7 +12,7 @@ Fiche défensive d’administration et de gouvernance. Elle ne remplace pas le g
 
 ## 🧭 Périmètre
 
-Complément de sécurité aux fiches existantes: utiliser le mode de production documenté, TLS, base de données et proxy configurés conformément à la version déployée; protéger la console, désactiver les comptes bootstrap après installation selon la doc, activer MFA et rôles minimaux, gérer secrets/certificats et sauvegardes. Ne jamais exposer une configuration de développement comme service de production.
+Complément de sécurité aux fiches existantes: utiliser le mode de production documenté, [[Glossary:TLS]], base de données et proxy configurés conformément à la version déployée; protéger la console, désactiver les comptes bootstrap après installation selon la doc, activer [[Glossary:MFA]] et rôles minimaux, gérer secrets/certificats et sauvegardes. Ne jamais exposer une configuration de développement comme service de production.
 
 ## ✅ Autorisation et préparation
 

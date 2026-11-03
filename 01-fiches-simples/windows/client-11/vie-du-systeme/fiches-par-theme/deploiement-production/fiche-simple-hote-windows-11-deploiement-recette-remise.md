@@ -1,6 +1,6 @@
 # fiche-simple-hote-windows-11-deploiement-recette-remise.md
 
-- **Environnement** : Parc de postes utilisateur: poste physique ou VM de test
+- **Environnement** : Parc de postes utilisateur: poste physique ou [[Glossary:VM]] de test
 - **OS / Version** : Windows 11 Pro ou Enterprise selon la gestion prévue
 - **Catégorie** : déploiement de poste de travail
 - **Tags** : `windows11`, `deploiement`, `oobe`, `bitlocker`, `production`
@@ -13,7 +13,7 @@ Valider le poste avant remise à l'utilisateur.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Tester ouverture de session, réseau, DNS, VPN, applications, imprimantes/périphériques et outils de support.
+1. Tester ouverture de session, réseau, [[Glossary:DNS]], [[Glossary:VPN]], applications, imprimantes/périphériques et outils de support.
    👉 Explication : valide l'usage quotidien.
 
 2. Tester le DNS depuis le poste (remplacer `intranet.example.net` par un nom interne réel) :

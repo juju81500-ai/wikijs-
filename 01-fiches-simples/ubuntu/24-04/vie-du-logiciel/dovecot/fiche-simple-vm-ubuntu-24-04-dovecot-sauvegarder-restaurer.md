@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Dovecot_Sauvegarder_Restaurer
 
-- **Environnement** : VM Ubuntu Server 24-04; Dovecot depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04; Dovecot depuis les dépôts de la distribution
 - **OS / Version** : Ubuntu Server 24-04
 - **Catégorie** : Vie du logiciel / Dovecot — Sauvegarder / restaurer
 - **Tags** : `dovecot`, `serveur`, `vie-du-logiciel`, `sauvegarder_restaurer`
@@ -23,7 +23,7 @@ sudo chmod 600 /root/dovecot-config-*.tgz
 
 ## 2. Production — Contrôles
 
-Dovecot : inclure boîtes et métadonnées selon backend; Postfix : traiter la file séparément si nécessaire. Définir RPO/RTO.
+Dovecot : inclure boîtes et métadonnées selon backend; Postfix : traiter la file séparément si nécessaire. Définir [[Glossary:RPO]]/RTO.
 
 ## 3. Production — Sécurité
 

@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Configurer et tester le client DNS et les suffixes de recherche.
+Configurer et tester le client [[Glossary:DNS]] et les suffixes de recherche.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -48,7 +48,7 @@ DNS internes en premier pour l'annuaire; DNS externes via le résolveur de l'ent
 
 ## 3. Production — Sécurité
 
-Ne pas utiliser de DNS publics sur un poste joint au domaine : la jonction et les GPO en dépendent.
+Ne pas utiliser de DNS publics sur un poste joint au domaine : la jonction et les [[Glossary:GPO]] en dépendent.
 
 ## Validation et retour arrière
 

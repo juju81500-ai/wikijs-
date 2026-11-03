@@ -13,12 +13,12 @@ Vérifier que la configuration survit à un redémarrage.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Migrer ou arrêter proprement les VM, puis redémarrer :
+1. Migrer ou arrêter proprement les [[Glossary:VM]], puis redémarrer :
    ```bash
    qm list
    reboot
    ```
-   👉 Explication : en cluster, migrer d'abord (GUI : **VM > Migrate**).
+   👉 Explication : en cluster, migrer d'abord ([[Glossary:GUI]] : **VM > Migrate**).
 
 2. Après redémarrage, vérifier :
    ```bash
@@ -28,7 +28,7 @@ Vérifier que la configuration survit à un redémarrage.
    pvecm status
    qm list
    ```
-   👉 Explication : IP, services, quorum et VM configurées en démarrage automatique.
+   👉 Explication : [[Glossary:IP]], services, quorum et VM configurées en démarrage automatique.
 
 3. Contrôler le démarrage automatique des VM (GUI : **VM > Options > Start at boot**) :
    ```bash

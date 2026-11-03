@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Windows_10_MobaXterm_Differences
 
 - **Environnement** : Poste Windows Client-10 existant; application MobaXterm
-- **OS / Version** : Windows 10 — vérifier édition, version, LTSC ou statut ESU; la compatibilité produit dépend du build éditeur
+- **OS / Version** : Windows 10 — vérifier édition, version, LTSC ou statut [[Glossary:ESU]]; la compatibilité produit dépend du build éditeur
 - **Catégorie** : poste de travail / client d’administration distante
 - **Tags** : `windows-client-10`, `mobaxterm`, `cycle-de-vie`, `limites`
 

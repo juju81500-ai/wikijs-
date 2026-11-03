@@ -1,7 +1,7 @@
 # Diagnostiquer un incident réseau sur OPNsense
 
 - **Type de fiche** : Diagnostic
-- **Environnement** : Appliance OPNsense seule ou paire CARP; accès à la console recommandé
+- **Environnement** : Appliance OPNsense seule ou paire [[Glossary:CARP]]; accès à la console recommandé
 - **OS / Version** : OPNsense Community ou Business Edition maintenue
 - **Rôle** : Localiser une panne de flux sans désactiver les protections du pare-feu
 - **Tags** : `opnsense`, `diagnostic`, `reseau`, `firewall`, `dns`, `vpn`
@@ -10,7 +10,7 @@
 
 Fiche simple : [délimiter le symptôme](../../../../01-fiches-simples/opnsense/toutes-versions/vie-du-systeme/fiches-par-theme/diagnostic/fiche-simple-appliance-opnsense-diagnostic-reseau-delimiter-symptome.md).
 
-Noter source, destination, protocole/port, horaire, interface et dernier changement. Déterminer si la panne concerne un seul client, VLAN, service, tunnel ou tout le site. En environnement CARP, identifier le nœud MASTER et le dernier basculement.
+Noter source, destination, protocole/port, horaire, interface et dernier changement. Déterminer si la panne concerne un seul client, [[Glossary:VLAN]], service, tunnel ou tout le site. En environnement CARP, identifier le nœud MASTER et le dernier basculement.
 
 Ne pas désactiver le filtrage global, vider toutes les tables d'état ou redémarrer les services avant d'avoir capturé les indices : ces actions peuvent masquer la cause et couper les sessions.
 
@@ -20,7 +20,7 @@ Fiche simple : [contrôler l'état de l'appliance](../../../../01-fiches-simples
 
 Dans l'interface : vérifier **System > Firmware > Status**, l'état matériel, **Interfaces > Overview**, les passerelles, CARP et les journaux système/firewall autour de l'heure concernée. Un audit de santé peut aider à repérer des fichiers ou dépendances altérés.
 
-Depuis **Interfaces > Diagnostics**, utiliser Ping, DNS Lookup, Port Probe, Trace Route et Packet Capture. Choisir la bonne interface et l'adresse source; le pare-feu peut avoir une route ou une politique différente du client.
+Depuis **Interfaces > Diagnostics**, utiliser Ping, [[Glossary:DNS]] Lookup, Port Probe, Trace Route et Packet Capture. Choisir la bonne interface et l'adresse source; le pare-feu peut avoir une route ou une politique différente du client.
 
 ## 3. Suivre le flux de bout en bout
 
@@ -29,7 +29,7 @@ Fiche simple : [suivre le flux de bout en bout](../../../../01-fiches-simples/op
 1. Vérifier l'adresse, le masque, la passerelle, le DNS et le VLAN du client.
 2. Vérifier l'arrivée du paquet sur l'interface attendue avec une capture filtrée par hôte/port.
 3. Lire le journal firewall et confirmer la règle correspondante, l'ordre, l'interface et l'état associé.
-4. Vérifier route, passerelle, NAT et résolution DNS; tester depuis l'interface OPNsense avec la source appropriée.
+4. Vérifier route, passerelle, [[Glossary:NAT]] et résolution DNS; tester depuis l'interface OPNsense avec la source appropriée.
 5. Vérifier le retour côté serveur et les règles du chemin retour.
 
 Capturer uniquement les champs et la durée nécessaires; les fichiers pcap peuvent contenir des données sensibles et doivent être protégés puis supprimés selon la politique.
@@ -38,10 +38,10 @@ Capturer uniquement les champs et la durée nécessaires; les fichiers pcap peuv
 
 Fiche simple : [traiter les cas DNS, VPN, CARP et MTU](../../../../01-fiches-simples/opnsense/toutes-versions/vie-du-systeme/fiches-par-theme/diagnostic/fiche-simple-appliance-opnsense-diagnostic-reseau-cas-particuliers.md).
 
-- **DNS** : comparer résolution depuis le client et depuis OPNsense; vérifier les règles DNS, redirecteurs, DNSSEC et le service choisi.
-- **VPN** : vérifier négociation, phase/SA, routes et sélecteurs avant de recréer les tunnels.
-- **CARP/pfsync** : contrôler l'état des VIP et le lien de synchronisation sur les deux nœuds; éviter deux maîtres actifs.
-- **MTU** : tester des paquets avec DF et tailles progressives; ne pas réduire globalement le MTU sans isoler le segment concerné.
+- **DNS** : comparer résolution depuis le client et depuis OPNsense; vérifier les règles DNS, redirecteurs, [[Glossary:DNSSEC]] et le service choisi.
+- **[[Glossary:VPN]]** : vérifier négociation, phase/SA, routes et sélecteurs avant de recréer les tunnels.
+- **CARP/pfsync** : contrôler l'état des [[Glossary:VIP]] et le lien de synchronisation sur les deux nœuds; éviter deux maîtres actifs.
+- **[[Glossary:MTU]]** : tester des paquets avec DF et tailles progressives; ne pas réduire globalement le MTU sans isoler le segment concerné.
 
 ## 5. Corriger et valider
 

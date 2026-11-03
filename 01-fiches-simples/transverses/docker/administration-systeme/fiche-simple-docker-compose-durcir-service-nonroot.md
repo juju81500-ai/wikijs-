@@ -45,7 +45,7 @@ Réduire les privilèges d'un service Compose avec un utilisateur non-root, un s
 
 ## 🔒 3. Production — Façon Sécurisée
 1. Ne pas utiliser `privileged: true`, le socket Docker hôte ou des montages de système hôte pour contourner les problèmes de permissions.
-2. Éviter les tags d'image mobiles comme `latest`; définir les quotas mémoire et CPU selon l'usage attendu.
+2. Éviter les tags d'image mobiles comme `latest`; définir les quotas mémoire et [[Glossary:CPU]] selon l'usage attendu.
 3. Garder les données persistantes dans des volumes dédiés et limiter les montages en écriture aux seuls chemins requis.
 
 ## ✅ Validation et retour arrière

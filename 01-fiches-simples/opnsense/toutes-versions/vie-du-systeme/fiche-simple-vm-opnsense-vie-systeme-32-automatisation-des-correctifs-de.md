@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_32_Automatisation_Des_Correctifs_De
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 32 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-32`
@@ -32,7 +32,7 @@ Appliquer les correctifs de sécurité dans une fenêtre de maintenance avec poi
 
 ## 3. Production — Sécurité
 
-Appliquer sans délai les correctifs critiques exposant le WAN.
+Appliquer sans délai les correctifs critiques exposant le [[Glossary:WAN]].
 
 ## Validation et retour arrière
 

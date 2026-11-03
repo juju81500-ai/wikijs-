@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-vscode-depot-apt.md
 
-- **Environnement** : Poste Debian 13 amd64, VS Code Stable installé via le dépôt APT Microsoft
+- **Environnement** : Poste Debian 13 amd64, VS Code Stable installé via le dépôt [[Glossary:APT]] Microsoft
 - **OS / Version** : Debian 13 Trixie amd64; Visual Studio Code Stable 1.143.1
 - **Catégorie** : éditeur / dépôt APT
 - **Tags** : `debian13`, `vscode`, `apt`, `signed-by`, `gpg`

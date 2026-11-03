@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Wireshark_Valider
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Wireshark
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Wireshark
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Wireshark / validation
 - **Tags** : `wireshark`, `ubuntu24.04`, `vie-du-logiciel`, `valider`
@@ -13,7 +13,7 @@ Recetter une capture locale bornée et sa relecture.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Capturer cinq paquets ICMP autorisés :
+1. Capturer cinq paquets [[Glossary:ICMP]] autorisés :
    ```bash
    dumpcap -i INTERFACE_AUTORISEE -c 5 -f icmp -w /var/tmp/recette.pcapng &
    ping -c 3 HOTE_AUTORISE
@@ -45,7 +45,7 @@ Archiver date, version et résultat de la recette.
 ## Validation et retour arrière
 
 - **Validation** : Les paquets ICMP sont lus par tshark et aucune capture ne reste active.
-- **Retour arrière** : Arrêter un éventuel dumpcap restant avec `kill PID_DUMPCAP` (PID à remplacer).
+- **Retour arrière** : Arrêter un éventuel dumpcap restant avec `kill PID_DUMPCAP` ([[Glossary:PID]] à remplacer).
 
 ## Si le problème n’est pas résolu
 

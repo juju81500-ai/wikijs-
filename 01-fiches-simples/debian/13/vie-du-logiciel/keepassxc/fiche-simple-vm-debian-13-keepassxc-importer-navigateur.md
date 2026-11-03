@@ -20,7 +20,7 @@ Importer des mots de passe sans fuite et activer l'intégration navigateur de fa
    ```bash
    shred -u "$HOME/export-a-supprimer.csv"
    ```
-   👉 Explication : `export-a-supprimer.csv` est un exemple à remplacer; la suppression ne garantit pas l'effacement sur SSD ou snapshots.
+   👉 Explication : `export-a-supprimer.csv` est un exemple à remplacer; la suppression ne garantit pas l'effacement sur [[Glossary:SSD]] ou snapshots.
 
 3. Intégration navigateur optionnelle : installer KeePassXC-Browser depuis le magasin officiel du navigateur, puis activer le navigateur dans **Tools > Settings > Browser Integration**.
    👉 Explication : limite la surface au navigateur choisi.

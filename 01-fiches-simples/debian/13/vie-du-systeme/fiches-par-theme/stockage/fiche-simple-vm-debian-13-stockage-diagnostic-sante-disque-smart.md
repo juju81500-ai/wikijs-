@@ -1,12 +1,12 @@
 # 📄 fiche-simple-vm-debian-13-stockage-diagnostic-sante-disque-smart.md
 
-- **Environnement** : VM ou serveur physique; accès direct au périphérique requis
+- **Environnement** : [[Glossary:VM]] ou serveur physique; accès direct au périphérique requis
 - **OS / Version** : Debian 13 (Trixie)
 - **Catégorie** : Stockage / Maintenance
 - **Tags** : `[debian13]`, `[debian]`, `[stockage]`, `[smartmontools]`, `[smart]`, `[maintenance]`
 
 ## 🎯 Problème précis à résoudre
-Installer `smartmontools`, identifier un disque compatible et consulter ses informations de santé sous Debian 13, sans confondre un résultat SMART avec une garantie contre les pannes.
+Installer `smartmontools`, identifier un disque compatible et consulter ses informations de santé sous Debian 13, sans confondre un résultat [[Glossary:SMART]] avec une garantie contre les pannes.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Installer l'outil et inventorier les périphériques détectés :
@@ -42,7 +42,7 @@ Installer `smartmontools`, identifier un disque compatible et consulter ses info
 ## 🔒 3. Production — Façon Sécurisée
 1. Ne pas lancer un test SMART long ou destructif pendant une période de forte charge; planifier les autotests et vérifier leur durée selon le modèle du disque.
 2. Un état `PASSED` n'exclut pas une panne imminente. Conserver des sauvegardes testées et superviser l'espace, les erreurs d'E/S et les alertes du contrôleur.
-3. Dans une VM, consulter également l'hyperviseur ou le stockage sous-jacent : les attributs SMART peuvent être masqués. Dans un LXC, ne pas exposer un disque hôte au conteneur uniquement pour ce diagnostic.
+3. Dans une VM, consulter également l'hyperviseur ou le stockage sous-jacent : les attributs SMART peuvent être masqués. Dans un [[Glossary:LXC]], ne pas exposer un disque hôte au conteneur uniquement pour ce diagnostic.
 
 ## ✅ Validation et retour arrière
 - Comparer `smartctl --health` et `smartctl --all` avec l'identité réelle du disque; confirmer que le démon est actif.

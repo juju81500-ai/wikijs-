@@ -1,6 +1,6 @@
 # 📄 ownCloud
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : ownCloud Classic 10.x (paquet du dépôt officiel ownCloud, à vérifier sur la version déployée)
 - **Catégorie** : Messagerie et collaboratif
@@ -65,7 +65,7 @@ cd /var/www/owncloud
 sudo -u www-data php occ config:system:set trusted_domains 1 --value="<nom_serveur_cloud>"
 sudo -u www-data php occ config:system:set overwrite.cli.url --value="https://<nom_serveur_cloud>/"
 ```
-👉 Explication : Seul le nom déclaré est accepté dans l'en-tête `Host`. `<nom_serveur_cloud>` est le FQDN du service.
+👉 Explication : Seul le nom déclaré est accepté dans l'en-tête `Host`. `<nom_serveur_cloud>` est le [[Glossary:FQDN]] du service.
 
 3. Contrôle de la configuration :
 ```bash
@@ -82,7 +82,7 @@ sudo ufw allow 443/tcp
 sudo ufw enable
 sudo ufw status verbose
 ```
-👉 Explication : Ouvre SSH seulement pour `<adresse_ip_admin>` avant d'activer le pare-feu. Seul le port 443 est exposé aux utilisateurs.
+👉 Explication : Ouvre [[Glossary:SSH]] seulement pour `<adresse_ip_admin>` avant d'activer le pare-feu. Seul le port 443 est exposé aux utilisateurs.
 
 ---
 

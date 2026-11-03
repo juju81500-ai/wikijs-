@@ -1,15 +1,15 @@
 # fiche-simple-vm-debian-13-openldap-configurer-tls.md
 
-- **Environnement** : VM Debian 13 avec FQDN stable et certificat provisionné par l'organisation
+- **Environnement** : [[Glossary:VM]] Debian 13 avec [[Glossary:FQDN]] stable et certificat provisionné par l'organisation
 - **OS / Version** : Debian 13; OpenLDAP 2.6
-- **Catégorie** : annuaire / chiffrement TLS
+- **Catégorie** : annuaire / chiffrement [[Glossary:TLS]]
 - **Tags** : `debian13`, `openldap`, `tls`, `ldaps`, `starttls`, `certificat`
 
 ---
 
 ## Problème précis à résoudre
 
-Configurer TLS pour protéger les échanges LDAP, sans exposer ou rendre illisible la clé privée.
+Configurer TLS pour protéger les échanges [[Glossary:LDAP]], sans exposer ou rendre illisible la clé privée.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -52,16 +52,16 @@ Configurer TLS pour protéger les échanges LDAP, sans exposer ou rendre illisib
    sudo systemctl restart slapd
    sudo ss -ltnp | grep -E ':(389|636)\b'
    ```
-   👉 Explication : `636` doit écouter; imposer ensuite le chiffrement (`olcSecurity`) seulement après validation STARTTLS/LDAPS.
+   👉 Explication : `636` doit écouter; imposer ensuite le chiffrement (`olcSecurity`) seulement après validation [[Glossary:STARTTLS]]/LDAPS.
 
 ## 2. Production — Contrôles
 
-Documenter émission, renouvellement, chaîne CA, FQDN, clients, listener, ports, dépendances et procédure de changement de TLS.
+Documenter émission, renouvellement, chaîne [[Glossary:CA]], FQDN, clients, listener, ports, dépendances et procédure de changement de TLS.
 
 ## 3. Production — Sécurité
 
 - Ne pas copier la clé privée dans le wiki ou un dépôt; garder les permissions strictes.
-- Ne pas ouvrir TCP/389 ou TCP/636 avant validation et filtrage client.
+- Ne pas ouvrir [[Glossary:TCP]]/389 ou TCP/636 avant validation et filtrage client.
 - Ne pas imposer TLS avant que tous les clients requis aient été testés.
 - Garder un LDIF inverse et une session d'administration locale pendant le changement.
 

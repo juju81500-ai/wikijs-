@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-bind9-autoritatif-cadrer.md
 
-- **Environnement** : VM Debian 13 pour un DNS autoritatif de laboratoire
+- **Environnement** : [[Glossary:VM]] Debian 13 pour un [[Glossary:DNS]] autoritatif de laboratoire
 - **OS / Version** : Debian 13 Trixie; paquets bind9 de la distribution
 - **Catégorie** : dns / cadrage
 - **Tags** : `debian13`, `bind9`, `dns`, `cadrage`
@@ -19,7 +19,7 @@ Définir le périmètre du serveur DNS autoritatif et vérifier les prérequis a
    ```
    👉 Explication : la commande ne doit rien afficher; sinon un autre service occupe déjà DNS et doit être traité avant.
 
-2. Relever l'adresse IP statique du serveur :
+2. Relever l'adresse [[Glossary:IP]] statique du serveur :
    ```bash
    ip -br address
    ```

@@ -1,7 +1,7 @@
 # fiche-simple-hote-vmware-esxi-8-esxi-configurer-services-essentiels.md
 
 - **Environnement** : Hôte physique VMware ESXi 8.0 pilote autonome (DCUI, Host Client, vCenter)
-- **OS / Version** : VMware ESXi 8.0, build et image OEM validés sur le matériel
+- **OS / Version** : VMware ESXi 8.0, build et image [[Glossary:OEM]] validés sur le matériel
 - **Catégorie** : virtualisation / configuration
 - **Tags** : `vmware`, `esxi`, `vsphere8`, `hyperviseur`, `ntp`, `dns`, `syslog`, `vswitch`
 
@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Configurer heure, DNS, réseau, stockage et journaux.
+Configurer heure, [[Glossary:DNS]], réseau, stockage et journaux.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Configurer l'heure et NTP : **Host Client > Manage > System > Time & date > Edit NTP Settings**
+1. Configurer l'heure et [[Glossary:NTP]] : **Host Client > Manage > System > Time & date > Edit NTP Settings**
    👉 Explication : un ESXi à l'heure est indispensable aux journaux et à vCenter.
    Équivalent en ligne de commande (ESXi Shell, adresses d'exemple à remplacer) :
    ```bash
@@ -22,8 +22,8 @@ Configurer heure, DNS, réseau, stockage et journaux.
    ```
    👉 Explication : définit le serveur de temps et affiche la configuration.
 
-2. Configurer DNS : **Host Client > Networking > TCP/IP stacks > Default TCP/IP stack > Edit settings**
-   👉 Explication : confirmer la résolution directe et inverse du FQDN.
+2. Configurer DNS : **Host Client > Networking > [[Glossary:TCP]]/IP stacks > Default TCP/IP stack > Edit settings**
+   👉 Explication : confirmer la résolution directe et inverse du [[Glossary:FQDN]].
    Équivalent en ligne de commande (ESXi Shell, adresses d'exemple à remplacer) :
    ```bash
    esxcli network ip dns server add --server=192.0.2.53
@@ -32,7 +32,7 @@ Configurer heure, DNS, réseau, stockage et journaux.
    👉 Explication : ajoute et liste les serveurs DNS.
 
 3. Créer vSwitch et port groups : **Host Client > Networking > Virtual switches / Port groups**
-   👉 Explication : isoler la gestion des réseaux VM; ne pas relier un port group à un uplink non validé.
+   👉 Explication : isoler la gestion des réseaux [[Glossary:VM]]; ne pas relier un port group à un uplink non validé.
    Équivalent en ligne de commande (ESXi Shell, adresses d'exemple à remplacer) :
    ```bash
    esxcli network vswitch standard list
@@ -57,7 +57,7 @@ Configurer heure, DNS, réseau, stockage et journaux.
    ```
    👉 Explication : définit le collecteur distant puis recharge le service.
 
-6. Contrôler SSH et ESXi Shell : **Host Client > Manage > Services > TSM-SSH / ESXi Shell > Stop**
+6. Contrôler [[Glossary:SSH]] et ESXi Shell : **Host Client > Manage > Services > TSM-SSH / ESXi Shell > Stop**
    👉 Explication : les désactiver lorsqu'inutiles; restreindre le Host Client au réseau d'administration.
    Équivalent en ligne de commande (ESXi Shell, adresses d'exemple à remplacer) :
    ```bash

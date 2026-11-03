@@ -1,6 +1,6 @@
 # 📄 QGIS
 
-- **Catégorie** : Topologie, IPAM et outils métiers
+- **Catégorie** : Topologie, [[Glossary:IPAM]] et outils métiers
 - **Plateforme** : Multiplateforme
 - **Produit (matrice)** : QGIS
 - **Statut dans le pack** : Couvert

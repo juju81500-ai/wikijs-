@@ -46,7 +46,7 @@ Régler la langue d'affichage, le format régional et la localisation en frança
 
 ## 2. Production — Contrôles
 
-Imposer la langue et la région par GPO ou par profil Intune pour garder des postes homogènes.
+Imposer la langue et la région par [[Glossary:GPO]] ou par profil Intune pour garder des postes homogènes.
 
 ## 3. Production — Sécurité
 

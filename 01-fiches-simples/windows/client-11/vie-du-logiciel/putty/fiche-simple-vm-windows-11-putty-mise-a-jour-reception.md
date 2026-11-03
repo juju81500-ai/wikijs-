@@ -2,7 +2,7 @@
 
 - **Environnement** : Poste Windows 11 x64 d'administration
 - **OS / Version** : Windows 11 x64; PuTTY 0.85 Stable
-- **Catégorie** : client SSH / maintenance
+- **Catégorie** : client [[Glossary:SSH]] / maintenance
 - **Tags** : `putty`, `windows11`, `ssh`, `puttygen`, `host-key`
 
 ---
@@ -16,7 +16,7 @@ Maintenir PuTTY à jour et valider les critères de réception.
 1. Consulter régulièrement la page Stable et ses notes de version.
    👉 Explication : repère les correctifs de sécurité.
 
-2. Télécharger le nouveau MSI et sa signature, vérifier la clé Release en cours.
+2. Télécharger le nouveau [[Glossary:MSI]] et sa signature, vérifier la clé Release en cours.
    👉 Explication : la clé peut changer après rotation; refaire les vérifications de l'étape de téléchargement.
 
 3. Tester la mise à jour sur un poste pilote.

@@ -1,6 +1,6 @@
 # 📄 VM_Debian_12_Supervision_Installation-Zabbix-Serveur.md
 
-- **Environnement** : VM (Debian 12 Bookworm)
+- **Environnement** : [[Glossary:VM]] (Debian 12 Bookworm)
 - **OS / Version** : Debian 12 - Famille Debian
 - **Catégorie** : Supervision / Zabbix Server
 - **Tags** : `[debian12]`, `[zabbix-server]`, `[mariadb]`, `[apache2]`, `[supervision]`, `[hardening]`
@@ -12,7 +12,7 @@ Installer le serveur de supervision central Zabbix Server avec base de données 
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Installation du paquet de dépôt officiel Zabbix :
-   Télécharger le paquet de dépôt correspondant à Debian 12 depuis la source officielle Zabbix, vérifier son intégrité, puis installer et actualiser les index APT.
+   Télécharger le paquet de dépôt correspondant à Debian 12 depuis la source officielle Zabbix, vérifier son intégrité, puis installer et actualiser les index [[Glossary:APT]].
    👉 Explication : Active les canaux de paquets officiels maintenus par l'éditeur Zabbix.
 2. Installation des composants serveur, web et base de données :
    `apt-get install -y zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf mariadb-server`
@@ -36,8 +36,8 @@ Installer le serveur de supervision central Zabbix Server avec base de données 
 ---
 
 ## 🔒 3. Production — Façon Sécurisée (Hardening & Isolation Enterprise)
-1. Activer HTTPS uniquement après configuration d'un certificat valide dans le virtual host Apache, puis tester le site via HTTPS. `a2enmod ssl headers` seul n'installe pas de certificat et ne configure pas TLS.
+1. Activer HTTPS uniquement après configuration d'un certificat valide dans le virtual host Apache, puis tester le site via HTTPS. `a2enmod ssl headers` seul n'installe pas de certificat et ne configure pas [[Glossary:TLS]].
 2. Surcharge des directives de sécurité PHP dans la configuration Zabbix :
    `echo 'php_flag session.cookie_secure on' >> /etc/zabbix/apache.conf && systemctl reload apache2`
-   👉 Explication : Force l'isolation des cookies de session HTTP pour parer le vol de jetons.
-3. Autoriser TCP/10051 uniquement aux proxies/agents actifs prévus dans le pare-feu persistant géré par l'hôte. Valider et appliquer la règle par ce gestionnaire ; ne pas utiliser une règle nftables runtime comme configuration finale.
+   👉 Explication : Force l'isolation des cookies de session [[Glossary:HTTP]] pour parer le vol de jetons.
+3. Autoriser [[Glossary:TCP]]/10051 uniquement aux proxies/agents actifs prévus dans le pare-feu persistant géré par l'hôte. Valider et appliquer la règle par ce gestionnaire ; ne pas utiliser une règle nftables runtime comme configuration finale.

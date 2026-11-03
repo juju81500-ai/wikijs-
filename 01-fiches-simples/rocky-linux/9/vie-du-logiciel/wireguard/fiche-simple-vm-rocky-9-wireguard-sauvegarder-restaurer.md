@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_9_WireGuard_Sauvegarder_Restaurer
 
-- **Environnement** : VM Rocky Linux 9 dédiée à un serveur WireGuard natif
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à un serveur WireGuard natif
 - **OS / Version** : Rocky Linux 9; wireguard-tools issu d'EPEL, module noyau à vérifier sur l'hôte
 - **Catégorie** : WireGuard natif / sauvegarder / restaurer
 - **Tags** : `wireguard`, `rocky9`, `vie-du-logiciel`, `sauvegarder-restaurer`

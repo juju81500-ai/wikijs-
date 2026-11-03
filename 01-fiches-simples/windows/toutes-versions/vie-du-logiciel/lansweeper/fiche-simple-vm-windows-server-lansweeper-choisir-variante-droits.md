@@ -1,6 +1,6 @@
 # fiche-simple-vm-windows-server-lansweeper-choisir-variante-droits.md
 
-- **Environnement** : Serveur Windows x64 avec Lansweeper Classic (SQL LocalDB ou SQL Server selon l'échelle)
+- **Environnement** : Serveur Windows x64 avec Lansweeper Classic ([[Glossary:SQL]] LocalDB ou SQL Server selon l'échelle)
 - **OS / Version** : Windows Server 2022 recommandé; Lansweeper Classic selon la matrice officielle
 - **Catégorie** : inventaire de parc / découverte réseau
 - **Tags** : `lansweeper`, `windows-server-2022`, `inventaire`, `wmi`, `snmp`
@@ -26,7 +26,7 @@ Choisir Lansweeper Classic on-premises et vérifier la machine avant installatio
    ```
    👉 Explication : Windows 64 bits (ni Home, ni Core, ni Starter); `Release` 528040 ou plus correspond à .NET 4.8.
 
-4. Préparer sauvegarde, DNS, certificat HTTPS et un compte d'administration nominatif.
+4. Préparer sauvegarde, [[Glossary:DNS]], certificat HTTPS et un compte d'administration nominatif.
    👉 Explication : Windows Server est recommandé au-delà de 1 000 actifs.
 
 ## 2. Production — Contrôles

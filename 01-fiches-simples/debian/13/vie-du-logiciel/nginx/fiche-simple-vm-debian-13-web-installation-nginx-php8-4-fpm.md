@@ -1,6 +1,6 @@
 # 📄 fiche-simple-vm-debian-13-web-installation-nginx-php8-4-fpm.md
 
-- **Environnement** : VM ou serveur Debian 13
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 13
 - **OS / Version** : Debian 13 (Trixie), Nginx et PHP-FPM 8.4 des dépôts Debian
 - **Catégorie** : Web / Installation / Configuration
 - **Tags** : `[debian13]`, `[trixie]`, `[nginx]`, `[php8.4]`, `[php-fpm]`, `[web]`, `[hardening]`
@@ -46,6 +46,6 @@ Installer Nginx et PHP-FPM 8.4 sur Debian 13, relier le serveur au socket FPM de
 3. Garder le code non modifiable par le processus Web et limiter l'écriture aux répertoires applicatifs nécessaires.
 
 ## ✅ Validation et retour arrière
-- Confirmer `nginx -t`, l'état des services, le socket PHP-FPM, le code HTTP attendu et les journaux.
+- Confirmer `nginx -t`, l'état des services, le socket PHP-FPM, le code [[Glossary:HTTP]] attendu et les journaux.
 - En cas d'échec, restaurer le server block sauvegardé, exécuter `nginx -t`, puis recharger Nginx.
 - Vérifier que le site ne référence pas un ancien socket PHP après mise à jour.

@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Configurer les serveurs DNS.
+Configurer les serveurs [[Glossary:DNS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Réseau > Configuration globale > Serveur DNS 1 à 3.
+1. [[Glossary:GUI]] : Réseau > Configuration globale > Serveur DNS 1 à 3.
    ```sh
    midclt call network.configuration.update '{"nameserver1": "DNS1", "nameserver2": "DNS2"}'
    ```

@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Rattacher le poste à l'annuaire et à l'outil de gestion (GPO, Intune).
+Rattacher le poste à l'annuaire et à l'outil de gestion ([[Glossary:GPO]], Intune).
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -17,7 +17,7 @@ Rattacher le poste à l'annuaire et à l'outil de gestion (GPO, Intune).
    ```powershell
    dsregcmd /status | Select-String 'AzureAdJoined|DomainJoined|MdmUrl|TenantName'
    ```
-   👉 Explication : affiche la jonction AD/Entra ID et l'inscription à la gestion des appareils (MDM).
+   👉 Explication : affiche la jonction [[Glossary:AD]]/Entra ID et l'inscription à la gestion des appareils (MDM).
 
 2. Appliquer et contrôler les GPO : **Configuration ordinateur** et **Utilisateur**.
    ```powershell

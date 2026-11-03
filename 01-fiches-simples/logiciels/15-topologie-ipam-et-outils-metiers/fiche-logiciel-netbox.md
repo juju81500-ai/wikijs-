@@ -1,6 +1,6 @@
 # 📄 NetBox
 
-- **Catégorie** : Topologie, IPAM et outils métiers
+- **Catégorie** : Topologie, [[Glossary:IPAM]] et outils métiers
 - **Plateforme** : Linux
 - **Produit (matrice)** : NetBox
 - **Statut dans le pack** : Couvert

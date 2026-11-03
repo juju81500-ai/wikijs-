@@ -53,7 +53,7 @@ Pour une autre interface, définir périmètre, durée, filtre, emplacement séc
 
 ## Validation et retour arrière
 
-- **Validation** : Le PCAP local s'ouvre et contient les paquets ICMP.
+- **Validation** : Le PCAP local s'ouvre et contient les paquets [[Glossary:ICMP]].
 - **Retour arrière** : Supprimer le fichier et le dossier `captures` s'ils sont inutiles.
 
 ## Si le problème n'est pas résolu

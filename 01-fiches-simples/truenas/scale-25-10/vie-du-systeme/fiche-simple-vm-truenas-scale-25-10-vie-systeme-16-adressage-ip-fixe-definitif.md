@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Fixer l'adresse IP du NAS.
+Fixer l'adresse [[Glossary:IP]] du [[Glossary:NAS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Réseau > Interfaces > interface > Modifier > désactiver DHCP > Ajouter un alias IP (ADRESSE/24), puis Tester les modifications, puis Enregistrer.
+1. [[Glossary:GUI]] : Réseau > Interfaces > interface > Modifier > désactiver [[Glossary:DHCP]] > Ajouter un alias IP (ADRESSE/24), puis Tester les modifications, puis Enregistrer.
    ```bash
    sudo midclt call interface.update INTERFACE '{"ipv4_dhcp": false, "aliases": [{"address": "ADRESSE", "netmask": 24}]}'
    sudo midclt call interface.commit
@@ -36,11 +36,11 @@ Fixer l'adresse IP du NAS.
 
 ## 2. Production — Contrôles
 
-Réserver l'adresse dans l'IPAM ; prévoir une interface dédiée au stockage (iSCSI/NFS).
+Réserver l'adresse dans l'[[Glossary:IPAM]] ; prévoir une interface dédiée au stockage (iSCSI/NFS).
 
 ## 3. Production — Sécurité
 
-Utiliser un VLAN de stockage non routé quand c'est possible.
+Utiliser un [[Glossary:VLAN]] de stockage non routé quand c'est possible.
 
 ## Validation et retour arrière
 

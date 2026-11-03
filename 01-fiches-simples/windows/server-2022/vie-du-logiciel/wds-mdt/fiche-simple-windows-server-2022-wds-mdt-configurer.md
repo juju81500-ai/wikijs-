@@ -1,6 +1,6 @@
 # Fiche_Simple_-_Windows_Server_2022_WDS_MDT_Configurer
 
-- **Environnement** : Windows Server 2022, WDS, ADK/WinPE et MDT installés, ISO Windows 11 officiel monté, réseau de lab isolé
+- **Environnement** : Windows Server 2022, WDS, [[Glossary:ADK]]/WinPE et [[Glossary:MDT]] installés, ISO Windows 11 officiel monté, réseau de lab isolé
 - **OS / Version** : Windows Server 2022; WDS, MDT : vérifier la version publiée
 - **Catégorie** : Automatisation, déploiement et IaC
 - **Tags** : `windows-server-2022`, `wds`, `mdt`, `configuration`, `pxe`
@@ -13,12 +13,12 @@ Initialiser WDS, créer le partage de déploiement MDT, importer un système, g�
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Initialiser WDS. GUI : `Outils d'administration > Services de déploiement Windows > clic droit sur le serveur > Configurer le serveur`.
+1. Initialiser WDS. [[Glossary:GUI]] : `Outils d'administration > Services de déploiement Windows > clic droit sur le serveur > Configurer le serveur`.
    ```powershell
    wdsutil /Initialize-Server /RemInst:"D:\RemoteInstall"
    wdsutil /Set-Server /AnswerClients:Known
    ```
-   👉 Explication : `D:\RemoteInstall` est à remplacer par un volume NTFS dédié. `Known` ne répond qu'aux postes pré-déclarés ; `All` est réservé à un lab isolé.
+   👉 Explication : `D:\RemoteInstall` est à remplacer par un volume [[Glossary:NTFS]] dédié. `Known` ne répond qu'aux postes pré-déclarés ; `All` est réservé à un lab isolé.
 
 2. Créer le partage de déploiement MDT. GUI : `Deployment Workbench > Deployment Shares > New Deployment Share`.
    ```powershell
@@ -50,7 +50,7 @@ Initialiser WDS, créer le partage de déploiement MDT, importer un système, g�
 
 ## 2. Production — Contrôles
 
-Réponse PXE restreinte, options DHCP 66/67 ou relais validés avec l'équipe réseau, volume dimensionné, séquence de tâches testée sur une VM avant tout poste réel.
+Réponse [[Glossary:PXE]] restreinte, options [[Glossary:DHCP]] 66/67 ou relais validés avec l'équipe réseau, volume dimensionné, séquence de tâches testée sur une [[Glossary:VM]] avant tout poste réel.
 
 ## 3. Production — Sécurité
 

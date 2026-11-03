@@ -18,7 +18,7 @@ Installer la console de gestion, créer les politiques et déployer les agents d
 - Compte de déploiement dédié, avec droits limités, et ports/flux ouverts entre console et clients selon la doc.
 - Désinstallation planifiée des anciens antivirus pour éviter les conflits.
 - Groupe pilote et sauvegarde/instantané des serveurs critiques avant installation.
-- Avant toute décision d'achat ou de maintien, évaluer le risque réglementaire et fournisseur propre à votre organisation (certaines administrations ont émis des recommandations sur certains éditeurs); consulter l'ANSSI/RSSI.
+- Avant toute décision d'achat ou de maintien, évaluer le risque réglementaire et fournisseur propre à votre organisation (certaines administrations ont émis des recommandations sur certains éditeurs); consulter l'[[Glossary:ANSSI]]/RSSI.
 - Produit commercial : la console, les droits d'accès au portail éditeur et la licence sont des prérequis. Aucune commande générique n'est donnée quand elle dépend de la console ou de la version; suivre la documentation de la version exacte.
 
 ## 3. Variantes éditeur à distinguer
@@ -46,7 +46,7 @@ Générer ou télécharger les paquets d'installation depuis la console; vérifi
 
 ### 4.4 Déployer sur le pilote
 
-Utiliser la tâche de déploiement à distance de la console ou l'outil existant (GPO, Intune, Ansible). Ne pas stocker de jetons dans un dépôt.
+Utiliser la tâche de déploiement à distance de la console ou l'outil existant ([[Glossary:GPO]], Intune, Ansible). Ne pas stocker de jetons dans un dépôt.
 
 ### 4.5 Vérifier et généraliser
 

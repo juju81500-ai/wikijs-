@@ -1,14 +1,14 @@
 # Active Directory, DNS et DHCP sur Windows Server 2022
 
-- **Environnement** : VM ou serveur dédié, domaine de laboratoire ou d'entreprise
-- **Rôles** : AD DS et DNS ; DHCP facultatif et de préférence séparé en production
+- **Environnement** : [[Glossary:VM]] ou serveur dédié, domaine de laboratoire ou d'entreprise
+- **Rôles** : [[Glossary:AD]] DS et [[Glossary:DNS]] ; [[Glossary:DHCP]] facultatif et de préférence séparé en production
 - **Tags** : `windows-server-2022`, `active-directory`, `dns`, `dhcp`, `gpo`
 
 ## 1. Préparer l'architecture
 
 Fiche simple : [préparer l'architecture](../../../../01-fiches-simples/windows/server-2022/vie-du-logiciel/active-directory/fiche-simple-vm-windows-server-2022-adds-dns-dhcp-preparer-architecture.md).
 
-Définir le nom DNS du domaine, le nom NetBIOS, les sous-réseaux, les réservations, les relais DHCP, les DNS amont et la stratégie de sauvegarde. Réserver une adresse IP statique et vérifier l'heure/NTP. Ne pas créer un domaine de production avant d'avoir défini les rôles FSMO, la réplication, les comptes de secours et la restauration.
+Définir le nom DNS du domaine, le nom NetBIOS, les sous-réseaux, les réservations, les relais DHCP, les DNS amont et la stratégie de sauvegarde. Réserver une adresse [[Glossary:IP]] statique et vérifier l'heure/NTP. Ne pas créer un domaine de production avant d'avoir défini les rôles [[Glossary:FSMO]], la réplication, les comptes de secours et la restauration.
 
 Dans PowerShell administrateur, contrôler l'adresse puis renommer avant la promotion :
 
@@ -48,7 +48,7 @@ Configurer les redirecteurs DNS uniquement vers des résolveurs approuvés. Vér
 
 Fiche simple : [ajouter DHCP](../../../../01-fiches-simples/windows/server-2022/vie-du-logiciel/active-directory/fiche-simple-vm-windows-server-2022-adds-dns-dhcp-ajouter-dhcp.md).
 
-Ne pas activer un second serveur DHCP sur le même VLAN sans conception de bascule. Créer la portée après validation des plages exclues et de la passerelle :
+Ne pas activer un second serveur DHCP sur le même [[Glossary:VLAN]] sans conception de bascule. Créer la portée après validation des plages exclues et de la passerelle :
 
 ```powershell
 Install-WindowsFeature DHCP -IncludeManagementTools
@@ -65,6 +65,6 @@ Remplacer tous les exemples par le plan IP réel. Ne pas activer la portée avan
 Fiche simple : [sauvegarder, sécuriser et prévoir le retour arrière](../../../../01-fiches-simples/windows/server-2022/vie-du-logiciel/active-directory/fiche-simple-vm-windows-server-2022-adds-dns-dhcp-sauvegarde-securite-retour.md).
 
 - Sauvegarder l'état système avec une solution compatible AD DS et tester une restauration hors production.
-- Protéger le mot de passe DSRM, limiter les membres des groupes privilégiés et administrer avec des comptes séparés.
-- Restreindre les flux aux réseaux nécessaires ; ne pas exposer LDAP, Kerberos, DNS ou DHCP à Internet.
+- Protéger le mot de passe [[Glossary:DSRM]], limiter les membres des groupes privilégiés et administrer avec des comptes séparés.
+- Restreindre les flux aux réseaux nécessaires ; ne pas exposer [[Glossary:LDAP]], Kerberos, DNS ou DHCP à Internet.
 - Une promotion de contrôleur ne se défait pas par simple désinstallation de rôle. En cas d'échec, conserver les journaux et suivre la procédure de rétrogradation/nettoyage AD DS adaptée.

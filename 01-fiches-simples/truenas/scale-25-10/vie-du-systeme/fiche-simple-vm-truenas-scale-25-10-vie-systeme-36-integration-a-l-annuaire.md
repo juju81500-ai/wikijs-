@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Joindre le NAS à Active Directory ou LDAP.
+Joindre le [[Glossary:NAS]] à Active Directory ou [[Glossary:LDAP]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Identifiants > Services d'annuaire > Configurer Active Directory (domaine, compte de jonction).
+1. [[Glossary:GUI]] : Identifiants > Services d'annuaire > Configurer Active Directory (domaine, compte de jonction).
    ```bash
    sudo midclt call activedirectory.config | python3 -m json.tool | head -20
    ```
@@ -28,7 +28,7 @@ Joindre le NAS à Active Directory ou LDAP.
 
 ## 2. Production — Contrôles
 
-Vérifier d'abord DNS et NTP (écart d'horloge maximum : 5 minutes).
+Vérifier d'abord [[Glossary:DNS]] et [[Glossary:NTP]] (écart d'horloge maximum : 5 minutes).
 
 ## 3. Production — Sécurité
 

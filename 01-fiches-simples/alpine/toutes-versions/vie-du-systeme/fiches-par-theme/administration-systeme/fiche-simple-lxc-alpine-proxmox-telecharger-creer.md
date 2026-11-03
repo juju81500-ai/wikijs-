@@ -2,14 +2,14 @@
 
 - **Environnement** : nœud Proxmox VE avec stockage de templates et bridge/VLAN prévus
 - **OS / Version** : template Alpine maintenu proposé par Proxmox VE
-- **Catégorie** : virtualisation / création LXC
+- **Catégorie** : virtualisation / création [[Glossary:LXC]]
 - **Tags** : `alpine`, `proxmox`, `lxc`, `template`, `unprivileged`
 
 ---
 
 ## Problème précis à résoudre
 
-Télécharger un template Alpine maintenu et créer un CT LXC avec configuration minimale, non privilégiée et adaptée au service.
+Télécharger un template Alpine maintenu et créer un [[Glossary:CT]] LXC avec configuration minimale, non privilégiée et adaptée au service.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -27,16 +27,16 @@ Télécharger un template Alpine maintenu et créer un CT LXC avec configuration
    ```
    👉 Explication : `local` est le stockage de templates du nœud; le template doit apparaître dans la liste.
 
-3. Interface Proxmox : cliquer **Créer CT** (en haut à droite) et renseigner : ID unique, hostname, mot de passe/clé SSH.
+3. Interface Proxmox : cliquer **Créer CT** (en haut à droite) et renseigner : ID unique, hostname, mot de passe/clé [[Glossary:SSH]].
    👉 Explication : le compte initial est temporaire; passer ensuite à un compte nominatif.
 
-4. Onglet **Template** : sélectionner le template Alpine téléchargé. Onglet **Disks** : stockage et taille. Onglet **CPU** et **Memory** : selon la charge.
+4. Onglet **Template** : sélectionner le template Alpine téléchargé. Onglet **Disks** : stockage et taille. Onglet **[[Glossary:CPU]]** et **Memory** : selon la charge.
    👉 Explication : dimensionner au plus juste.
 
 5. Onglet **General** : cocher **Unprivileged container**.
    👉 Explication : limite l'impact d'une évasion de conteneur.
 
-6. Onglet **Network** : bridge, **VLAN Tag**, IP statique ou DHCP, passerelle; onglet **DNS** : serveur.
+6. Onglet **Network** : bridge, **[[Glossary:VLAN]] Tag**, [[Glossary:IP]] statique ou [[Glossary:DHCP]], passerelle; onglet **[[Glossary:DNS]]** : serveur.
    👉 Explication : laisser nesting, FUSE et périphériques hôte désactivés sauf besoin documenté.
 
 7. Onglet **Confirm** : vérifier le résumé puis **Finish**.

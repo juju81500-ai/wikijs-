@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Zeek_Installer
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Zeek
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Zeek
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Zeek / installation
 - **Tags** : `zeek`, `ubuntu24.04`, `vie-du-logiciel`, `installer`

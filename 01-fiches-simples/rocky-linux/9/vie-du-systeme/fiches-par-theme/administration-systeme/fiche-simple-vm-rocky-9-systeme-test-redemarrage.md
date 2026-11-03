@@ -1,7 +1,7 @@
 # 📄 fiche-simple-vm-rocky-9-systeme-test-redemarrage.md
 
-- **Environnement** : VM ou serveur Rocky Linux
-- **OS / Version** : Rocky Linux 9 / RHEL 9 avec systemd
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 avec systemd
 - **Catégorie** : Système & Services / Validation de persistance
 - **Tags** : `[rocky9]`, `[rhel9]`, `[reboot]`, `[persistance]`, `[systemd]`, `[validation]`
 
@@ -41,7 +41,7 @@ Vérifier qu'un serveur Rocky Linux 9 redémarre proprement et que les montages,
    nmcli -t -f NAME,DEVICE connection show --active
    timedatectl status
    ```
-   👉 Explication : Chaque interface attendue doit avoir son adresse IP et son profil NetworkManager actif. `timedatectl` confirme l'horloge synchronisée.
+   👉 Explication : Chaque interface attendue doit avoir son adresse [[Glossary:IP]] et son profil NetworkManager actif. `timedatectl` confirme l'horloge synchronisée.
 
 2. Vérifier SELinux, le pare-feu et les services métiers :
    ```bash

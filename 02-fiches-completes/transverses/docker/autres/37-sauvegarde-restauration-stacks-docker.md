@@ -76,7 +76,7 @@ Fiche simple : [vérifier la sauvegarde](../../../../01-fiches-simples/transvers
 - Comparer les tailles, journaux et sommes de contrôle; tester l'archive et l'inventaire du dump.
 - Chiffrer avant transfert externe et séparer les clés des archives.
 - Appliquer une rétention documentée et surveiller les échecs.
-- Programmer un exercice de restauration sur une stack isolée, sans DNS ni données réelles.
+- Programmer un exercice de restauration sur une stack isolée, sans [[Glossary:DNS]] ni données réelles.
 
 ## 6. Restaurer sur un environnement isolé
 

@@ -1,6 +1,6 @@
 # 📄 Microsoft RDS
 
-- **Catégorie** : Poste de travail et VDI
+- **Catégorie** : Poste de travail et [[Glossary:VDI]]
 - **Plateforme** : Windows
 - **Produit (matrice)** : Microsoft RDS
 - **Statut dans le pack** : Couvert — Windows Server 2022 et Windows Server 2025.
@@ -8,7 +8,7 @@
 
 ## 📚 Couverture dans le pack
 
-Les procédures RDS couvrent les prérequis, l’installation/configuration, la sécurisation, la recette, la sauvegarde/restauration et la maintenance sous Windows Server 2022, et sous Windows Server 2025 (prérequis et licences RDS CAL, installation GUI/PowerShell, TLS/comptes/pare-feu, recette, sauvegarde/restauration, mises à jour/rollback). Les fiches historiques d’activation RDP et de configuration restent disponibles dans le dossier RDS.
+Les procédures RDS couvrent les prérequis, l’installation/configuration, la sécurisation, la recette, la sauvegarde/restauration et la maintenance sous Windows Server 2022, et sous Windows Server 2025 (prérequis et licences RDS CAL, installation [[Glossary:GUI]]/PowerShell, [[Glossary:TLS]]/comptes/pare-feu, recette, sauvegarde/restauration, mises à jour/rollback). Les fiches historiques d’activation [[Glossary:RDP]] et de configuration restent disponibles dans le dossier RDS.
 
 Fiches simples du guide : Windows Server 2022 — [prérequis et limites](../../windows/server-2022/vie-du-logiciel/remote-desktop-services/fiche-simple-windows-server-2022-rds-prerequis-limites.md), [installer et configurer](../../windows/server-2022/vie-du-logiciel/remote-desktop-services/fiche-simple-windows-server-2022-rds-installer-configurer.md), [sécuriser les accès](../../windows/server-2022/vie-du-logiciel/remote-desktop-services/fiche-simple-windows-server-2022-rds-securiser-acces.md), [valider la recette](../../windows/server-2022/vie-du-logiciel/remote-desktop-services/fiche-simple-windows-server-2022-rds-valider-recette.md), [sauvegarder et restaurer](../../windows/server-2022/vie-du-logiciel/remote-desktop-services/fiche-simple-windows-server-2022-rds-sauvegarder-restaurer.md), [mettre à jour et revenir en arrière](../../windows/server-2022/vie-du-logiciel/remote-desktop-services/fiche-simple-windows-server-2022-rds-mise-a-jour-retour-arriere.md)
 

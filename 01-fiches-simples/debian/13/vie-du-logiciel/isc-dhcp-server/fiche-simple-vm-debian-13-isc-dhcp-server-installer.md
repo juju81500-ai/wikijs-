@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_ISC-DHCP-Server_Installer
 
-- **Environnement** : VM Debian 13; ISC DHCP déprécié, usage transitoire
+- **Environnement** : [[Glossary:VM]] Debian 13; ISC [[Glossary:DHCP]] déprécié, usage transitoire
 - **OS / Version** : Debian 13
 - **Catégorie** : Vie du logiciel / ISC-DHCP-Server — Installer
 - **Tags** : `isc-dhcp`, `serveur`, `vie-du-logiciel`, `installer`

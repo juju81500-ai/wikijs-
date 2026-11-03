@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Postfix_Valider
 
-- **Environnement** : VM Debian 13; Postfix depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Debian 13; Postfix depuis les dépôts de la distribution
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / Postfix — Valider (recette)
 - **Tags** : `debian13`, `postfix`, `smtp`, `messagerie`, `valider`
@@ -39,11 +39,11 @@ Recetter Postfix : service actif, ports, envoi local, refus de relais ouvert et 
    ```
    👉 Explication : la réponse attendue est un refus (`Relay access denied`). Adresses à remplacer par des adresses de test dont vous disposez.
 
-5. Contrôler le chiffrement STARTTLS :
+5. Contrôler le chiffrement [[Glossary:STARTTLS]] :
    ```bash
    openssl s_client -starttls smtp -connect MAIL.EXAMPLE.NET:25 -brief </dev/null
    ```
-   👉 Explication : affiche le protocole TLS négocié et la chaîne de certificats.
+   👉 Explication : affiche le protocole [[Glossary:TLS]] négocié et la chaîne de certificats.
 
 ## 2. Production — Contrôles
 

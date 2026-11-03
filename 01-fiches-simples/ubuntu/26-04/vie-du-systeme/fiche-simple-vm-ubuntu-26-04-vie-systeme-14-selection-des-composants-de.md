@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_14_Selection_Des_Composants_De
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 14 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-14`
@@ -37,7 +37,7 @@ Moins de paquets = moins de surface d'attaque.
 
 ## Validation et retour arrière
 
-- **Validation** : Seuls SSH et les services de base tournent.
+- **Validation** : Seuls [[Glossary:SSH]] et les services de base tournent.
 - **Retour arrière** : restaurer le snapshot ou la sauvegarde pris avant l'étape; consigner l'écart avant de poursuivre.
 
 ## Si le problème n'est pas résolu

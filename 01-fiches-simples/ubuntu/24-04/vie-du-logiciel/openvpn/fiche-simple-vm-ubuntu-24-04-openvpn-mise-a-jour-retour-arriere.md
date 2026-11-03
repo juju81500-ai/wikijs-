@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_OpenVPN_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Ubuntu 24-04 dédiée à OpenVPN Community Edition (serveur)
-- **OS / Version** : Ubuntu 24-04 LTS Noble; version des dépôts à vérifier sur l'hôte
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 dédiée à OpenVPN Community Edition (serveur)
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; version des dépôts à vérifier sur l'hôte
 - **Catégorie** : OpenVPN Community Edition / mise à jour / retour arrière
 - **Tags** : `openvpn`, `ubuntu24-04`, `vie-du-logiciel`, `mise-a-jour-retour-arriere`
 

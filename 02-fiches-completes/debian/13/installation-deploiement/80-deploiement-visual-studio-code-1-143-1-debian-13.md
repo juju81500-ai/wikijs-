@@ -2,7 +2,7 @@
 
 - **OS / Version** : Debian 13 Trixie amd64; Visual Studio Code Stable 1.143.1
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : paquet `.deb` Microsoft via dépôt APT officiel, configuration utilisateur et contrôles Workspace Trust/extensions
+- **Périmètre** : paquet `.deb` Microsoft via dépôt [[Glossary:APT]] officiel, configuration utilisateur et contrôles Workspace Trust/extensions
 - **Catégorie** : éditeur de code / environnement de développement
 - **Tags** : `vscode`, `visual-studio-code`, `debian13`, `apt`, `workspace-trust`, `extensions`
 

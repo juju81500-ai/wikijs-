@@ -17,9 +17,9 @@ Vérifier l'amorçage du système installé.
    ```sh
    sysctl machdep.bootmethod
    ```
-   👉 Explication : affiche UEFI ou BIOS.
+   👉 Explication : affiche UEFI ou [[Glossary:BIOS]].
 
-2. Lister les environnements d'amorçage : GUI Système > Mises à jour de démarrage.
+2. Lister les environnements d'amorçage : [[Glossary:GUI]] Système > Mises à jour de démarrage.
    ```sh
    beadm list
    ```
@@ -31,11 +31,11 @@ Garder un environnement précédent.
 
 ## 3. Production — Sécurité
 
-Protéger console et BMC.
+Protéger console et [[Glossary:BMC]].
 
 ## Validation et retour arrière
 
-- **Validation** : Le NAS démarre seul.
+- **Validation** : Le [[Glossary:NAS]] démarre seul.
 - **Retour arrière** : restaurer le snapshot ou la sauvegarde pris avant l'étape; consigner l'écart avant de poursuivre.
 
 ## Si le problème n'est pas résolu

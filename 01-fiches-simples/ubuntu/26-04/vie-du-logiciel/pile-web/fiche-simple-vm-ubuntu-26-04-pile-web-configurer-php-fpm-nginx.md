@@ -1,7 +1,7 @@
 # fiche-simple-vm-ubuntu-26-04-pile-web-configurer-php-fpm-nginx.md
 
-- **Environnement** : VM ou serveur dédié Ubuntu Server hébergeant une application PHP avec PostgreSQL local et TLS
-- **OS / Version** : Ubuntu Server 26-04 LTS (Resolute); Nginx, PHP 8.5, PostgreSQL 18
+- **Environnement** : [[Glossary:VM]] ou serveur dédié Ubuntu Server hébergeant une application PHP avec PostgreSQL local et [[Glossary:TLS]]
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]] (Resolute); Nginx, PHP 8.5, PostgreSQL 18
 - **Catégorie** : services web / configuration
 - **Tags** : `ubuntu2604`, `nginx`, `php8.5`, `postgresql18`, `tls`
 

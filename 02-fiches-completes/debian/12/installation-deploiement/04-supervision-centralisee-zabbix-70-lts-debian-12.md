@@ -1,6 +1,6 @@
 # Serveur Zabbix 7.0 LTS sur Debian 12
 
-- **Environnement** : VM de supervision dédiée
+- **Environnement** : [[Glossary:VM]] de supervision dédiée
 - **Rôles** : Serveur, frontend Web et base locale ; agents ou proxies séparés selon le réseau
 - **Tags** : `zabbix`, `7.0-lts`, `debian12`, `supervision`, `mariadb`
 
@@ -8,7 +8,7 @@
 
 Fiche simple : [concevoir et préparer Zabbix](../../../../01-fiches-simples/debian/12/vie-du-logiciel/zabbix/fiche-simple-vm-debian-12-zabbix-concevoir-preparer.md).
 
-Dimensionner la base selon le nombre d'hôtes, d'items et la durée de conservation. Réserver DNS/IP, TLS, stockage, sauvegarde de la base et accès réseau des agents. Utiliser le dépôt officiel Zabbix correspondant exactement à Debian 12 et à la branche 7.0 LTS ; ne pas mélanger paquets Debian et dépôt d'une autre distribution.
+Dimensionner la base selon le nombre d'hôtes, d'items et la durée de conservation. Réserver [[Glossary:DNS]]/IP, [[Glossary:TLS]], stockage, sauvegarde de la base et accès réseau des agents. Utiliser le dépôt officiel Zabbix correspondant exactement à Debian 12 et à la branche 7.0 [[Glossary:LTS]] ; ne pas mélanger paquets Debian et dépôt d'une autre distribution.
 
 ```bash
 sudo apt update
@@ -33,7 +33,7 @@ Importer le schéma une seule fois après avoir confirmé que la base est vide e
 
 Fiche simple : [installer et configurer serveur et frontend](../../../../01-fiches-simples/debian/12/vie-du-logiciel/zabbix/fiche-simple-vm-debian-12-zabbix-installer-configurer.md).
 
-Installer le serveur MySQL, le frontend PHP, les scripts SQL et l'agent depuis le dépôt Zabbix validé. Configurer `DBName`, `DBUser` et `DBPassword` dans `/etc/zabbix/zabbix_server.conf` sans committer le secret. Régler le fuseau horaire et le serveur Web avec le frontend fourni par le paquet.
+Installer le serveur MySQL, le frontend PHP, les scripts [[Glossary:SQL]] et l'agent depuis le dépôt Zabbix validé. Configurer `DBName`, `DBUser` et `DBPassword` dans `/etc/zabbix/zabbix_server.conf` sans committer le secret. Régler le fuseau horaire et le serveur Web avec le frontend fourni par le paquet.
 
 ```bash
 sudo apt install zabbix-server-mysql zabbix-frontend-php zabbix-apache-conf zabbix-sql-scripts zabbix-agent

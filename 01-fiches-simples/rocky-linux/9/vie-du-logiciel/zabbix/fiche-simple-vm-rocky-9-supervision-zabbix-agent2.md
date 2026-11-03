@@ -1,7 +1,7 @@
 # 📄 fiche-simple-vm-rocky-9-supervision-zabbix-agent2.md
 
-- **Environnement** : VM ou serveur Rocky Linux supervisé par Zabbix
-- **OS / Version** : Rocky Linux 9 / RHEL 9 (Zabbix 7.0 LTS, dépôt officiel Zabbix)
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux supervisé par Zabbix
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 (Zabbix 7.0 [[Glossary:LTS]], dépôt officiel Zabbix)
 - **Catégorie** : Supervision / Agent de supervision
 - **Tags** : `[rocky9]`, `[rhel9]`, `[zabbix]`, `[monitoring]`, `[firewalld]`, `[psk]`
 
@@ -66,7 +66,7 @@ Installer l'agent Zabbix 2 sur Rocky Linux 9, le déclarer auprès du serveur Za
    ```
    👉 Explication : La clé est stockée avec des droits limités au groupe `zabbix`. Elle doit être copiée à l'identique dans la configuration de l'hôte côté serveur Zabbix.
 
-2. Ajouter les paramètres TLS dans `/etc/zabbix/zabbix_agent2.conf` :
+2. Ajouter les paramètres [[Glossary:TLS]] dans `/etc/zabbix/zabbix_agent2.conf` :
    ```text
    TLSConnect=psk
    TLSAccept=psk

@@ -1,6 +1,6 @@
 # 📄 fiche-simple-vm-debian-13-installation-os-premier-demarrage.md
 
-- **Environnement** : VM sur Proxmox VE, KVM ou VMware
+- **Environnement** : [[Glossary:VM]] sur Proxmox VE, [[Glossary:KVM]] ou VMware
 - **OS / Version** : Debian GNU/Linux 13 (Trixie)
 - **Catégorie** : Installation / Système
 - **Tags** : `[debian13]`, `[debian]`, `[installation]`, `[vm]`, `[systemd]`, `[premier-demarrage]`
@@ -9,10 +9,10 @@
 Installer Debian 13 sur une nouvelle VM avec un partitionnement adapté au rôle, un compte administrateur nominatif et un accès de secours documenté.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
-1. Créer une VM et monter l'ISO Debian 13 vérifié; définir CPU, mémoire, disque, firmware et carte réseau selon le lab.
-2. Dans l'installateur, choisir langue, région, clavier, nom d'hôte et domaine; configurer le réseau DHCP ou les valeurs du plan IP.
+1. Créer une VM et monter l'ISO Debian 13 vérifié; définir [[Glossary:CPU]], mémoire, disque, firmware et carte réseau selon le lab.
+2. Dans l'installateur, choisir langue, région, clavier, nom d'hôte et domaine; configurer le réseau [[Glossary:DHCP]] ou les valeurs du plan [[Glossary:IP]].
 3. Choisir le partitionnement guidé pour le lab ou le partitionnement séparé justifié pour le rôle; vérifier les disques sélectionnés avant validation.
-4. Créer un compte nominatif; éviter la connexion SSH root directe. Installer le serveur SSH et les utilitaires système nécessaires.
+4. Créer un compte nominatif; éviter la connexion [[Glossary:SSH]] root directe. Installer le serveur SSH et les utilitaires système nécessaires.
 5. Redémarrer sans l'ISO puis vérifier :
    ```bash
    cat /etc/debian_version
@@ -34,6 +34,6 @@ Installer Debian 13 sur une nouvelle VM avec un partitionnement adapté au rôle
 3. Séparer les données applicatives du système lorsque le besoin de restauration et la conception le justifient.
 
 ## ✅ Validation et retour arrière
-- Confirmer version, hostname, stockage, adresse, résolution DNS, SSH et état systemd.
+- Confirmer version, hostname, stockage, adresse, résolution [[Glossary:DNS]], SSH et état systemd.
 - Tester une restauration de VM ou de sauvegarde de fichiers avant d'héberger des données de production.
 - Si l'installation est incorrecte, conserver les journaux utiles puis reconstruire la VM depuis l'ISO validé plutôt que réparer des couches inconnues.

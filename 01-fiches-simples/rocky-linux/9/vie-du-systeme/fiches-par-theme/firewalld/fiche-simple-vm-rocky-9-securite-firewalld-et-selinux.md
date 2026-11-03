@@ -1,7 +1,7 @@
 # 📄 VM_Rocky_9_Securite_Configuration-Firewalld-Et-SELinux.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
-- **OS / Version** : Rocky Linux 9 / RHEL 9 - Famille RedHat
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 - Famille RedHat
 - **Catégorie** : Sécurité & Hardening OS
 - **Tags** : `[rocky9]`, `[rhel-family]`, `[firewalld]`, `[selinux]`, `[hardening]`
 
@@ -45,7 +45,7 @@ Configurer et verrouiller le pare-feu local `firewalld` et ajuster les politique
    sudo firewall-cmd --reload
    sudo firewall-cmd --zone=public --list-all
    ```
-   👉 Explication : Remplacer `public` selon l'interface. Ne pas ouvrir HTTP si le service n'en a pas besoin.
+   👉 Explication : Remplacer `public` selon l'interface. Ne pas ouvrir [[Glossary:HTTP]] si le service n'en a pas besoin.
 
 ---
 
@@ -58,7 +58,7 @@ Configurer et verrouiller le pare-feu local `firewalld` et ajuster les politique
    sudo firewall-cmd --permanent --zone=public --remove-service=ssh
    sudo firewall-cmd --reload
    ```
-   `192.0.2.0/24` est un exemple documentaire. Vérifier une seconde connexion via la source autorisée avant de retirer l'ouverture SSH générale ; remplacer `public` par la zone réelle.
+   `192.0.2.0/24` est un exemple documentaire. Vérifier une seconde connexion via la source autorisée avant de retirer l'ouverture [[Glossary:SSH]] générale ; remplacer `public` par la zone réelle.
 2. Ne pas définir la zone par défaut à `drop` sans cartographier toutes les interfaces, services et règles runtime. Les services non explicitement prévus peuvent être coupés.
 3. Pour un chemin Web personnalisé, déclarer le type SELinux persistant puis restaurer le contexte :
    ```bash

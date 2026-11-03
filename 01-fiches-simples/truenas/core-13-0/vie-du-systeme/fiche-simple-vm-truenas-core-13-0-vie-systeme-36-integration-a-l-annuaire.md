@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Joindre Active Directory ou LDAP.
+Joindre Active Directory ou [[Glossary:LDAP]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Services d'annuaire > Active Directory (domaine, compte de jonction).
+1. [[Glossary:GUI]] : Services d'annuaire > Active Directory (domaine, compte de jonction).
    ```sh
    midclt call activedirectory.config | head -20
    ```
@@ -28,7 +28,7 @@ Joindre Active Directory ou LDAP.
 
 ## 2. Production — Contrôles
 
-Vérifier DNS et NTP d'abord (écart maximum : 5 minutes).
+Vérifier [[Glossary:DNS]] et [[Glossary:NTP]] d'abord (écart maximum : 5 minutes).
 
 ## 3. Production — Sécurité
 

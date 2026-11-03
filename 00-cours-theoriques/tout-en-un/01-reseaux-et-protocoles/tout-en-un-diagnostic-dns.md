@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Déterminer si un échec d'accès par nom vient de la résolution DNS, du résolveur configuré ou d'une donnée DNS incorrecte, sans modifier la configuration.
+Déterminer si un échec d'accès par nom vient de la résolution [[Glossary:DNS]], du résolveur configuré ou d'une donnée DNS incorrecte, sans modifier la configuration.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -39,7 +39,7 @@ Déterminer si un échec d'accès par nom vient de la résolution DNS, du résol
    ```powershell
    Resolve-DnsName -Name example.org
    ```
-   👉 Explication : comparer avec les résultats attendus et les journaux côté résolveur autorisé. Une réponse différente peut être normale selon split-DNS, VPN, cache ou politique de filtrage.
+   👉 Explication : comparer avec les résultats attendus et les journaux côté résolveur autorisé. Une réponse différente peut être normale selon split-DNS, [[Glossary:VPN]], cache ou politique de filtrage.
 
 ## 2. Production — Contrôles
 

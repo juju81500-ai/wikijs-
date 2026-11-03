@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Confirmer que Vaultwarden (serveur communautaire) est le bon choix et que les prérequis Docker, DNS et HTTPS sont réunis.
+Confirmer que Vaultwarden (serveur communautaire) est le bon choix et que les prérequis Docker, [[Glossary:DNS]] et HTTPS sont réunis.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -30,11 +30,11 @@ Confirmer que Vaultwarden (serveur communautaire) est le bon choix et que les pr
    👉 Explication : le reverse proxy HTTPS a besoin de ce nom.
 
 4. Prévoir un reverse proxy HTTPS (par exemple Traefik) devant le conteneur.
-   👉 Explication : l'interface web utilise des API de chiffrement du navigateur qui exigent un contexte sécurisé.
+   👉 Explication : l'interface web utilise des [[Glossary:API]] de chiffrement du navigateur qui exigent un contexte sécurisé.
 
 ## 2. Production — Contrôles
 
-Valider le périmètre : SQLite uniquement, sans SSO ni conformité particulière. Hôte Docker durci au préalable.
+Valider le périmètre : SQLite uniquement, sans [[Glossary:SSO]] ni conformité particulière. Hôte Docker durci au préalable.
 
 ## 3. Production — Sécurité
 

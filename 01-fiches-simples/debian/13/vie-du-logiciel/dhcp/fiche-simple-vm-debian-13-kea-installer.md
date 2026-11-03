@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-13-kea-installer.md
 
-- **Environnement** : VM Debian 13 serveur DHCPv4 sur un VLAN de test isolé
+- **Environnement** : [[Glossary:VM]] Debian 13 serveur DHCPv4 sur un [[Glossary:VLAN]] de test isolé
 - **OS / Version** : Debian 13 Trixie x86-64; ISC Kea (canal stable)
-- **Catégorie** : réseau / DHCP
+- **Catégorie** : réseau / [[Glossary:DHCP]]
 - **Tags** : `debian13`, `kea`, `dhcpv4`, `isc`, `reseau`
 
 ---
@@ -24,7 +24,7 @@ Installer Kea DHCPv4 depuis le dépôt stable ISC et repérer l'unité systemd D
    ```bash
    sudo apt install isc-kea-dhcp4 isc-kea-admin
    ```
-   👉 Explication : `isc-kea-dhcp-ddns` n'est à ajouter que si les mises à jour DNS sont prévues.
+   👉 Explication : `isc-kea-dhcp-ddns` n'est à ajouter que si les mises à jour [[Glossary:DNS]] sont prévues.
 
 3. Repérer l'unité systemd réelle :
    ```bash

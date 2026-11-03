@@ -13,7 +13,7 @@ Limiter les tentatives de connexion.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Services > SSH > Paramètres avancés > nombre de tentatives, ou Système > Sécurité > Verrouillage.
+1. [[Glossary:GUI]] : Services > [[Glossary:SSH]] > Paramètres avancés > nombre de tentatives, ou Système > Sécurité > Verrouillage.
    ```bash
    sudo midclt call system.security.config
    ```

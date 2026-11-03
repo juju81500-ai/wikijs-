@@ -1,6 +1,6 @@
 # fiche-simple-vm-windows-11-putty-valider-ssh-hostkey.md
 
-- **Environnement** : PuTTY 0.85 Stable x64 sur Windows 11, serveur SSH de test autorisé
+- **Environnement** : PuTTY 0.85 Stable x64 sur Windows 11, serveur [[Glossary:SSH]] de test autorisé
 - **OS / Version** : Windows 11 x64
 - **Catégorie** : administration distante / SSH
 - **Tags** : `windows11`, `putty`, `ssh`, `host-key`, `puttygen`, `validation`
@@ -13,7 +13,7 @@ Valider une session PuTTY vers un serveur SSH autorisé en vérifiant le logicie
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. **Interface graphique** : télécharger le MSI 0.85 depuis le site officiel; vérifier la signature Authenticode et la signature GPG avec la clé Release 2026 et son empreinte officielle.
+1. **Interface graphique** : télécharger le [[Glossary:MSI]] 0.85 depuis le site officiel; vérifier la signature Authenticode et la signature [[Glossary:GPG]] avec la clé Release 2026 et son empreinte officielle.
 2. Installer sous Windows 11 et confirmer la version avec **Help > About PuTTY**.
 3. Obtenir le nom d'hôte, le compte, le port et l'empreinte SSH du serveur par un canal indépendant.
 4. Ouvrir la session et comparer exactement l'empreinte de la première connexion. Annuler si elle diffère ou si une clé connue change sans explication confirmée.

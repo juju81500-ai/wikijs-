@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Confirmer que nœuds, CNI, DNS interne et déploiement de test fonctionnent avant d'accueillir des charges réelles.
+Confirmer que nœuds, CNI, [[Glossary:DNS]] interne et déploiement de test fonctionnent avant d'accueillir des charges réelles.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -41,7 +41,7 @@ Confirmer que nœuds, CNI, DNS interne et déploiement de test fonctionnent avan
 
 ## 2. Production — Contrôles
 
-Faire approuver les sondes, capacity planning, observabilité, RBAC, politiques réseau, stockage et critères de disponibilité.
+Faire approuver les sondes, capacity planning, observabilité, [[Glossary:RBAC]], politiques réseau, stockage et critères de disponibilité.
 
 ## 3. Production — Sécurité
 

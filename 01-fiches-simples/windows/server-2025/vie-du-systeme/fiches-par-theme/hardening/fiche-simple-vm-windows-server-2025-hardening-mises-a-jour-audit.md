@@ -28,7 +28,7 @@ Maîtriser les mises à jour et centraliser les journaux d'audit.
 3. Gérer les mises à jour via le mécanisme de parc, tester sur un groupe pilote et planifier les redémarrages.
    👉 Explication : limite les incidents.
 
-4. Centraliser événements sécurité, Defender, SMB et AD DS et contrôler la rétention.
+4. Centraliser événements sécurité, Defender, SMB et [[Glossary:AD]] DS et contrôler la rétention.
    👉 Explication : permet l'investigation.
 
 ## 2. Production — Contrôles

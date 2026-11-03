@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_49_Enregistrement_Cmdb_Et_Gestion
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 49 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-49`
@@ -13,7 +13,7 @@ Déclarer le pare-feu dans l'inventaire.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Créer la fiche CMDB : nom, FQDN, adresses WAN/LAN, version, interfaces, rôle, propriétaire, criticité, lien vers la sauvegarde.
+1. Créer la fiche [[Glossary:CMDB]] : nom, [[Glossary:FQDN]], adresses [[Glossary:WAN]]/LAN, version, interfaces, rôle, propriétaire, criticité, lien vers la sauvegarde.
    👉 Explication : rend le pare-feu identifiable pour les équipes.
 
 2. Exporter les informations techniques :

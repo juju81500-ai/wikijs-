@@ -79,7 +79,7 @@ Logiciels qui s'installent et se gèrent sur Windows Server 2022. Pour chaque lo
 
 ### IIS
 
-- Fiche d'entrée : [catalogue IIS](../../../logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-iis.md) (statut : Guide complet — installation du rôle IIS et site pilote Windows Server 2022)
+- Fiche d'entrée : [catalogue IIS](../../../logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-iis.md) (statut : Guide complet — installation du rôle [[Glossary:IIS]] et site pilote Windows Server 2022)
 - [VM Windows Server 2022 IIS Installer Role Web Server](iis/fiche-simple-vm-windows-server-2022-iis-installer-role-web-server.md)
 - [VM Windows Server 2022 IIS Perimetre Prerequis](iis/fiche-simple-vm-windows-server-2022-iis-perimetre-prerequis.md)
 - [VM Windows Server 2022 IIS Retour Arriere](iis/fiche-simple-vm-windows-server-2022-iis-retour-arriere.md)
@@ -99,7 +99,7 @@ Logiciels qui s'installent et se gèrent sur Windows Server 2022. Pour chaque lo
 
 ### Nakivo
 
-- Fiche d'entrée : [catalogue Nakivo-Altaro](../../../logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-nakivo-altaro.md) (statut : Partiel — NAKIVO Windows Server 2022 et Transporter Linux sur Debian 13 et Ubuntu Server 24-04; Altaro/Hornetsecurity limité à la documentation publique de VM Backup)
+- Fiche d'entrée : [catalogue Nakivo-Altaro](../../../logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-nakivo-altaro.md) (statut : Partiel — NAKIVO Windows Server 2022 et Transporter Linux sur Debian 13 et Ubuntu Server 24-04; Altaro/Hornetsecurity limité à la documentation publique de [[Glossary:VM]] Backup)
 - [Windows Server 2022 Nakivo Configurer](nakivo/fiche-simple-windows-server-2022-nakivo-configurer.md)
 - [Windows Server 2022 Nakivo Installer Director Transporter](nakivo/fiche-simple-windows-server-2022-nakivo-installer-director-transporter.md)
 - [Windows Server 2022 Nakivo Job Sauvegarde](nakivo/fiche-simple-windows-server-2022-nakivo-job-sauvegarde.md)

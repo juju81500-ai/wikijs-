@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_18_Table_D_Hotes_Locale
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 18 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-18`
@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Déclarer les noms locaux sans serveur DNS dédié.
+Déclarer les noms locaux sans serveur [[Glossary:DNS]] dédié.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Ajouter un enregistrement dans Services > Unbound DNS > Remplacements > Ajouter : Hôte `srv01`, Domaine `exemple.lan`, IP `IP_SERVEUR`.
+1. Ajouter un enregistrement dans Services > Unbound DNS > Remplacements > Ajouter : Hôte `srv01`, Domaine `exemple.lan`, [[Glossary:IP]] `IP_SERVEUR`.
    👉 Explication : `IP_SERVEUR` est l'adresse de la machine nommée.
 
 2. Contrôler la résolution :

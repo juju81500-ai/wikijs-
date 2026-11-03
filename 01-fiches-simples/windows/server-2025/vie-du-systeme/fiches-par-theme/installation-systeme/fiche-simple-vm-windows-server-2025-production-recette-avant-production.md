@@ -1,6 +1,6 @@
 # fiche-simple-vm-windows-server-2025-production-recette-avant-production.md
 
-- **Environnement** : Serveur physique ou VM Windows Server 2025 administré par l'organisation
+- **Environnement** : Serveur physique ou [[Glossary:VM]] Windows Server 2025 administré par l'organisation
 - **OS / Version** : Windows Server 2025 Standard ou Datacenter
 - **Catégorie** : installation / déploiement
 - **Tags** : `windows-server-2025`, `installation`, `production`, `uefi`, `openssh`
@@ -13,7 +13,7 @@ Valider le serveur avant sa mise en production.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Vérifier DNS, heure, connectivité depuis les réseaux autorisés, mises à jour, accès d'administration, supervision, sauvegarde/restauration et journaux.
+1. Vérifier [[Glossary:DNS]], heure, connectivité depuis les réseaux autorisés, mises à jour, accès d'administration, supervision, sauvegarde/restauration et journaux.
    👉 Explication : on contrôle tous les points d'exploitation.
 
 2. Contrôler les services et l'historique d'événements :

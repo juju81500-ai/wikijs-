@@ -2,14 +2,14 @@
 
 - **OS / Version** : Linux (Debian/Ubuntu/RHEL) et Windows Server
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : Choix d'architecture, durcissement, TLS, reverse proxy, haute disponibilité, exploitation
+- **Périmètre** : Choix d'architecture, durcissement, [[Glossary:TLS]], reverse proxy, haute disponibilité, exploitation
 - **Catégorie** : Serveurs web
 - **Tags** : `apache`,`nginx`,`iis`,`reverse-proxy`,`tls`,`production`
 
 ## 1. Portée, hypothèses et licences
 
 - Fiche de comparaison et d'architecture, qui complète sans les remplacer : [Apache HTTP Server sur Debian 13](../../../debian/13/installation-deploiement/124-deploiement-apache-http-server-debian-13.md), [pile LEMP Nginx sur Debian 13](../../../debian/13/installation-deploiement/02-pile-lemp-debian-13-nginx-php-mariadb.md) et [IIS sur Windows Server 2022](../../../windows/server-2022/installation-deploiement/122-installation-iis-windows-server-2022.md). Les procédures d'installation s'y trouvent.
-- Licences : Apache HTTP Server (Apache 2.0) et Nginx (licence BSD à deux clauses pour la version open source ; une offre commerciale existe) sont libres ; IIS est un rôle de Windows Server, licencié avec Windows Server.
+- Licences : Apache [[Glossary:HTTP]] Server (Apache 2.0) et Nginx (licence [[Glossary:BSD]] à deux clauses pour la version open source ; une offre commerciale existe) sont libres ; [[Glossary:IIS]] est un rôle de Windows Server, licencié avec Windows Server.
 - Hypothèses : application déjà identifiée, exigences de disponibilité et de sécurité connues, environnement de préproduction disponible.
 
 ## 2. Critères de choix
@@ -18,7 +18,7 @@
 |---|---|---|---|
 | Modèle | Processus/threads, modules MPM | Événementiel | Pool d'applications, modules natifs et managés |
 | Configuration | Fichiers texte, `.htaccess` facultatif | Fichiers texte | Console, `applicationHost.config`, PowerShell |
-| Atouts usuels | Flexibilité de modules, hérité large | Reverse proxy, fichiers statiques | .NET/ASP.NET, intégration AD |
+| Atouts usuels | Flexibilité de modules, hérité large | Reverse proxy, fichiers statiques | .NET/ASP.NET, intégration [[Glossary:AD]] |
 | Usage fréquent | Web applicatif PHP, mod_* | Frontal, répartiteur | Applications Windows |
 
 Aucune de ces valeurs n'est une mesure de performance : les performances se mesurent sur votre charge.
@@ -27,12 +27,12 @@ Aucune de ces valeurs n'est une mesure de performance : les performances se mesu
 
 1. **Instance unique** : réservée au développement et aux services peu critiques.
 2. **Frontal + applicatif** : un reverse proxy (Nginx, Apache ou IIS avec Application Request Routing) termine le TLS et relaie vers des serveurs applicatifs en réseau privé.
-3. **Cluster redondant** : au moins deux nœuds derrière un répartiteur (matériel, logiciel, DNS) avec contrôles de santé, sessions sans état ou persistantes, contenu synchronisé par déploiement automatisé et non par copie manuelle.
-4. **Zone DMZ** : frontal en DMZ, applicatif et base de données dans des zones internes, flux explicitement ouverts.
+3. **Cluster redondant** : au moins deux nœuds derrière un répartiteur (matériel, logiciel, [[Glossary:DNS]]) avec contrôles de santé, sessions sans état ou persistantes, contenu synchronisé par déploiement automatisé et non par copie manuelle.
+4. **Zone [[Glossary:DMZ]]** : frontal en DMZ, applicatif et base de données dans des zones internes, flux explicitement ouverts.
 
 ## 4. Mise en œuvre commune
 
-1. TLS : certificats gérés de façon centrale, protocoles et suites conformes à la politique (référence ANSSI ou Mozilla), redirection HTTP vers HTTPS, HSTS après validation.
+1. TLS : certificats gérés de façon centrale, protocoles et suites conformes à la politique (référence [[Glossary:ANSSI]] ou Mozilla), redirection HTTP vers HTTPS, [[Glossary:HSTS]] après validation.
 2. Durcissement : masquer les versions, désactiver les modules/fonctionnalités inutiles, utilisateur de service sans privilèges, limiter la taille des requêtes, protéger les répertoires de gestion.
 3. Journalisation : journaux d'accès et d'erreur centralisés, rotation, synchronisation du temps.
 4. Sauvegarde : configuration et contenu versionnés ; test de restauration périodique.
@@ -62,7 +62,7 @@ Get-WebBinding
 Get-WebAppPoolState
 ```
 
-Toujours tester la configuration avant le rechargement. Sur RHEL/Rocky, le service Apache s'appelle `httpd` ; vérifier les noms de service de la distribution.
+Toujours tester la configuration avant le rechargement. Sur [[Glossary:RHEL]]/Rocky, le service Apache s'appelle `httpd` ; vérifier les noms de service de la distribution.
 
 ## 6. Reverse proxy et haute disponibilité
 

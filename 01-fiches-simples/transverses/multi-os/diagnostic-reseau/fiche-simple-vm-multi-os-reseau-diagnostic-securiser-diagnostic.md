@@ -1,6 +1,6 @@
 # fiche-simple-vm-multi-os-reseau-diagnostic-securiser-diagnostic.md
 
-- **Environnement** : VM, poste, serveur, LXC Proxmox ou hôte Docker (Linux ou Windows)
+- **Environnement** : [[Glossary:VM]], poste, serveur, [[Glossary:LXC]] Proxmox ou hôte Docker (Linux ou Windows)
 - **OS / Version** : Debian 12/13, Ubuntu 24-04/26-04, Rocky Linux 9, Alpine Linux, Windows 10/11, Windows Server 2022/2025
 - **Catégorie** : réseau / prérequis
 - **Tags** : `reseau`, `diagnostic`, `multi-os`, `depannage`
@@ -13,7 +13,7 @@ Préparer un diagnostic réseau sans risquer de couper l'accès à la machine.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Noter l'heure, la machine, l'interface, le VLAN, la source, la destination et le port concernés dans le ticket.
+1. Noter l'heure, la machine, l'interface, le [[Glossary:VLAN]], la source, la destination et le port concernés dans le ticket.
    👉 Explication : ces éléments permettent de reproduire le test et de comparer avec une machine saine.
 
 2. Relever la route et l'adresse sur la machine en panne puis sur une machine fonctionnelle du même segment :
@@ -26,7 +26,7 @@ Préparer un diagnostic réseau sans risquer de couper l'accès à la machine.
 3. Ouvrir une console d'hyperviseur, Proxmox ou hors bande avant toute modification distante.
    👉 Explication : si l'accès réseau est perdu, la console permet de revenir en arrière.
 
-4. Lister les changements récents : IP, DHCP, DNS, pare-feu, switch, hyperviseur.
+4. Lister les changements récents : [[Glossary:IP]], [[Glossary:DHCP]], [[Glossary:DNS]], pare-feu, switch, hyperviseur.
    👉 Explication : la panne suit souvent un changement récent.
 
 5. Sous Windows, relever l'état des cartes :

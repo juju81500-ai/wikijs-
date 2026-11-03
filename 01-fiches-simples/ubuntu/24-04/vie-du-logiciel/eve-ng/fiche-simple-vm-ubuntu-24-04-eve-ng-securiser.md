@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_EVE-NG_Securiser
 
-- **Environnement** : VM EVE-NG (appliance basée sur Ubuntu Server 24-04 LTS) hébergée sur un poste ou serveur de virtualisation
+- **Environnement** : [[Glossary:VM]] EVE-NG (appliance basée sur Ubuntu Server 24-04 [[Glossary:LTS]]) hébergée sur un poste ou serveur de virtualisation
 - **OS / Version** : EVE-NG 7.x (7.2.0-18 au contrôle du 29/10/2026), Ubuntu 24-04 LTS embarqué; Community 6.2.0-4 (Ubuntu 22-04) en fin de support juin 2026
 - **Catégorie** : simulation réseau / sécurité
 - **Tags** : `ubuntu24.04`, `eve-ng`, `securite`, `durcissement`, `authentification`, `reseau`
@@ -19,11 +19,11 @@ Réduire l'exposition d'une VM EVE-NG et remplacer les identifiants par défaut.
 2. Créer un compte nominatif par utilisateur : **Management > User management > Add user**, renseigner `NOM_UTILISATEUR` et le rôle adapté.
    👉 Explication : évite le partage du compte administrateur; les rôles disponibles dépendent de la licence.
 
-3. Vérifier les services en écoute depuis la CLI :
+3. Vérifier les services en écoute depuis la [[Glossary:CLI]] :
    ```bash
    ss -tlnp | grep -E ':(22|443)\b'
    ```
-   👉 Explication : EVE-NG est géré en HTTPS (443) et SSH (22); tout autre port exposé doit être justifié.
+   👉 Explication : EVE-NG est géré en HTTPS (443) et [[Glossary:SSH]] (22); tout autre port exposé doit être justifié.
 
 4. Contrôler la mise à jour et la version :
    ```bash
@@ -34,7 +34,7 @@ Réduire l'exposition d'une VM EVE-NG et remplacer les identifiants par défaut.
 5. Pour l'authentification centralisée, consulter les sections Radius et Active Directory du cookbook et configurer **System > System Settings**.
    👉 Explication : fonction documentée; ⚠️ les paramètres (serveur, secret partagé) doivent venir de votre administrateur et ne sont pas détaillés ici.
 
-6. Pour un certificat HTTPS d'entreprise, suivre la page officielle « SSL how to make EVE with custom https ».
+6. Pour un certificat HTTPS d'entreprise, suivre la page officielle « [[Glossary:SSL]] how to make EVE with custom https ».
    👉 Explication : ⚠️ procédure longue, non reproduite ici car non vérifiée en détail.
 
 ## 2. Production — Contrôles
@@ -45,9 +45,9 @@ Réduire l'exposition d'une VM EVE-NG et remplacer les identifiants par défaut.
 
 ## 3. Production — Sécurité
 
-- Ne pas exposer EVE-NG sur Internet; l'isoler dans un VLAN de lab.
+- Ne pas exposer EVE-NG sur Internet; l'isoler dans un [[Glossary:VLAN]] de lab.
 - Ne pas faire de mise à niveau de la version d'Ubuntu : la doc EVE-NG l'interdit explicitement.
-- Ne pas ajouter de dépôts APT tiers sur l'appliance.
+- Ne pas ajouter de dépôts [[Glossary:APT]] tiers sur l'appliance.
 - Ne pas relier de nœuds de lab au réseau de production sans accord.
 
 ## Validation et retour arrière

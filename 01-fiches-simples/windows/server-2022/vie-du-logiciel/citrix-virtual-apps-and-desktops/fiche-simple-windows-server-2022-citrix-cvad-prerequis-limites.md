@@ -1,8 +1,8 @@
 # Fiche_Simple_-_Windows_Server_2022_Citrix_CVAD_Prerequis_Limites
 
-- **Environnement** : Serveurs Windows Server 2022 (Delivery Controller, StoreFront, licences, SQL) et VM VDA, compte administrateur nominatif
+- **Environnement** : Serveurs Windows Server 2022 (Delivery Controller, StoreFront, licences, [[Glossary:SQL]]) et [[Glossary:VM]] VDA, compte administrateur nominatif
 - **OS / Version** : Windows Server 2022; version CVAD à vérifier auprès de l'éditeur
-- **Catégorie** : VDI / virtualisation d'applications / Citrix
+- **Catégorie** : [[Glossary:VDI]] / virtualisation d'applications / Citrix
 - **Tags** : `citrix`, `cvad`, `windows-server`, `prerequis`
 
 ---
@@ -17,7 +17,7 @@ Cadrer les prérequis, licences et limites avant de déployer Citrix Virtual App
    👉 Explication : la matrice de support dépend de la version publiée ; ne pas supposer.
 
 2. Lister les rôles prévus et les noms de serveurs : DC1_CITRIX (Delivery Controller), SF1_CITRIX (StoreFront), LIC_CITRIX (serveur de licences), SQL_CITRIX (SQL Server), VDA_MODELE (image de base).
-   👉 Explication : ces noms sont des placeholders à remplacer par vos noms DNS ; un seul rôle par serveur est recommandé en production.
+   👉 Explication : ces noms sont des placeholders à remplacer par vos noms [[Glossary:DNS]] ; un seul rôle par serveur est recommandé en production.
 
 3. Contrôler le domaine et le DNS depuis chaque serveur. PowerShell :
 ```powershell
@@ -25,9 +25,9 @@ Get-ComputerInfo -Property CsDomain,OsName,OsVersion
 Resolve-DnsName NOM_DC_AD
 Test-NetConnection SQL_CITRIX -Port 1433
 ```
-   👉 Explication : CsDomain doit être le domaine AD cible ; NOM_DC_AD est un contrôleur de domaine à remplacer ; 1433 est le port SQL par défaut (instance nommée : adapter).
+   👉 Explication : CsDomain doit être le domaine [[Glossary:AD]] cible ; NOM_DC_AD est un contrôleur de domaine à remplacer ; 1433 est le port SQL par défaut (instance nommée : adapter).
 
-4. Cadrer les licences : GUI **Citrix Cloud / compte Citrix > Licences** pour récupérer le fichier de licence ou le code, et vérifier que la date Subscription Advantage / droit est valide pour la version installée.
+4. Cadrer les licences : [[Glossary:GUI]] **Citrix Cloud / compte Citrix > Licences** pour récupérer le fichier de licence ou le code, et vérifier que la date Subscription Advantage / droit est valide pour la version installée.
    👉 Explication : une version trop récente par rapport à la date de licence est refusée ; à contrôler avant installation. Les licences Windows Server RDS (CAL RDS) pour les VDA serveur sont à prévoir séparément.
 
 5. Contrôler les droits : compte de service ou administrateur de domaine nominatif ayant droit de création de bases sur SQL_CITRIX (rôle dbcreator temporaire).
@@ -36,7 +36,7 @@ Test-NetConnection SQL_CITRIX -Port 1433
 ## 2. Production — Contrôles
 
 - Matrice de support et date de licence validées par écrit.
-- Plan d'adressage, DNS et horloge NTP cohérents entre tous les serveurs.
+- Plan d'adressage, DNS et horloge [[Glossary:NTP]] cohérents entre tous les serveurs.
 - Test d'abord sur un lab avant toute production.
 
 ## 3. Production — Sécurité

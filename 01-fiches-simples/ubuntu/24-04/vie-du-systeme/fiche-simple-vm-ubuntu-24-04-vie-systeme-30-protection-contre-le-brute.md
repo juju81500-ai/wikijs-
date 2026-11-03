@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Vie_Systeme_30_Protection_Contre_Le_Brute
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS « noble »
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] « noble »
 - **OS / Version** : Ubuntu 24-04; étape 30 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2404`, `vie-du-systeme`, `cycle-de-vie`, `etape-30`
@@ -24,14 +24,14 @@ Bloquer les tentatives répétées.
    bantime = 1h
    EOT
    ```
-   👉 Explication : active la prison SSH; `backend = systemd` évite de dépendre de `/var/log/auth.log`.
+   👉 Explication : active la prison [[Glossary:SSH]]; `backend = systemd` évite de dépendre de `/var/log/auth.log`.
 
 2. Activer et contrôler :
    ```bash
    sudo systemctl enable --now fail2ban
    sudo fail2ban-client status sshd
    ```
-   👉 Explication : affiche les IP bannies.
+   👉 Explication : affiche les [[Glossary:IP]] bannies.
 
 ## 2. Production — Contrôles
 

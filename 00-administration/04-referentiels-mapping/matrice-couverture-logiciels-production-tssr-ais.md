@@ -19,7 +19,7 @@ Pour les mémos, scripts communautaires, listes d'outils et requêtes GitHub, co
 
 | Produit | Plateforme | État / référence |
 |---|---|---|
-| GLPI | Linux / Windows | Couvert — [guide GLPI](../../02-fiches-completes/debian/12/installation-deploiement/03-helpdesk-itsm-glpi-11-12-debian-12-13.md) et fiches simples par étape |
+| [[Glossary:GLPI]] | Linux / Windows | Couvert — [guide GLPI](../../02-fiches-completes/debian/12/installation-deploiement/03-helpdesk-itsm-glpi-11-12-debian-12-13.md) et fiches simples par étape |
 | OCS Inventory | Linux / Windows | Couvert — [guide OCS Inventory](../../02-fiches-completes/debian/13/installation-deploiement/41-deploiement-ocs-inventory-3-debian-13.md) et fiches simples par étape |
 | Snipe-IT | Linux / Windows | Couvert — [guide Snipe-IT](../../02-fiches-completes/transverses/docker/installation-deploiement/39-deploiement-snipe-it-8-docker-mariadb-traefik.md) et fiches simples par étape |
 | Jira Service Management | Cloud/SaaS | Couvert — [guide JSM](../../02-fiches-completes/transverses/cloud-saas/installation-deploiement/43-deploiement-jira-service-management-cloud-itsm.md) et fiches simples par étape |
@@ -33,7 +33,7 @@ Pour les mémos, scripts communautaires, listes d'outils et requêtes GitHub, co
 |---|---|---|
 | Centreon | Linux | Couvert — [guide Centreon](../../02-fiches-completes/debian/13/installation-deploiement/48-deploiement-centreon-26-10-debian-13.md) et fiches simples par étape |
 | Zabbix | Linux | Couvert — [guide Zabbix](../../02-fiches-completes/debian/12/installation-deploiement/04-supervision-centralisee-zabbix-70-lts-debian-12.md) et fiches simples par étape |
-| PRTG Network Monitor | Windows | Couvert — [guide PRTG](../../02-fiches-completes/windows/server-2022/installation-deploiement/47-deploiement-prtg-network-monitor-windows-server.md) et fiches simples par étape |
+| [[Glossary:PRTG]] Network Monitor | Windows | Couvert — [guide PRTG](../../02-fiches-completes/windows/server-2022/installation-deploiement/47-deploiement-prtg-network-monitor-windows-server.md) et fiches simples par étape |
 | Prometheus + Grafana | Multiplateforme | Couvert — [guide Prometheus/Grafana](../../02-fiches-completes/debian/13/installation-deploiement/45-deploiement-prometheus-grafana-debian-13.md) et fiches simples par étape |
 | Datadog | Cloud/SaaS | Couvert — [guide Datadog Agent](../../02-fiches-completes/transverses/cloud-saas/installation-deploiement/52-deploiement-datadog-agent-linux-saas.md) et fiches simples par étape |
 | Dynatrace | Cloud/SaaS | Couvert — [guide OneAgent](../../02-fiches-completes/transverses/cloud-saas/installation-deploiement/53-deploiement-dynatrace-oneagent-linux-saas.md) et fiches simples par étape |
@@ -41,7 +41,7 @@ Pour les mémos, scripts communautaires, listes d'outils et requêtes GitHub, co
 | LibreNMS | Linux | Couvert — [guide LibreNMS](../../02-fiches-completes/ubuntu/26-04/installation-deploiement/46-deploiement-librenms-26-10-2-ubuntu-26-04.md) et fiches simples par étape |
 | Observium | Linux | Couvert pour l'édition Community sur Debian 13 — [guide](../../02-fiches-completes/debian/13/installation-deploiement/69-deploiement-observium-community-debian-13.md) et [fiche pilote SNMPv3](../../01-fiches-simples/debian/13/vie-du-logiciel/observium/fiche-simple-vm-debian-13-observium-ajouter-hote-snmpv3.md) et fiches simples par étape |
 | Graylog | Multiplateforme | Couvert — [guide Graylog](../../02-fiches-completes/ubuntu/24-04/installation-deploiement/49-deploiement-graylog-7-2-ubuntu-24-04.md) et fiches simples par étape |
-| ELK Stack | Multiplateforme | Couvert — [guide Elastic Stack](../../02-fiches-completes/debian/13/installation-deploiement/50-deploiement-elastic-stack-9-5-debian-13.md) et fiches simples par étape |
+| [[Glossary:ELK]] Stack | Multiplateforme | Couvert — [guide Elastic Stack](../../02-fiches-completes/debian/13/installation-deploiement/50-deploiement-elastic-stack-9-5-debian-13.md) et fiches simples par étape |
 | Splunk Enterprise / Cloud | Multiplateforme / SaaS | Couvert pour Enterprise sur Debian 12 — [guide existant](../../02-fiches-completes/debian/12/installation-deploiement/54-deploiement-splunk-enterprise-10-2-debian-12.md) ; [onboarding Splunk Cloud](../../02-fiches-completes/transverses/cloud-saas/installation-deploiement/splunk-cloud-platform-onboarding-forwarders-hec-saas.md) — non testé sur plateforme cible |
 
 ## 3. Virtualisation et conteneurisation
@@ -51,7 +51,7 @@ Pour les mémos, scripts communautaires, listes d'outils et requêtes GitHub, co
 | VMware vSphere (ESXi / vCenter) | Appliance / bare-metal | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/03-virtualisation-et-conteneurisation/fiche-logiciel-vmware-vsphere.md) et fiches simples par étape |
 | Microsoft Hyper-V | Windows Server | Couvert — [guide Hyper-V 2022](../../02-fiches-completes/windows/server-2022/installation-deploiement/55-deploiement-hyper-v-windows-server-2022.md) et fiches simples par étape |
 | Proxmox VE | Appliance Debian | Couvert — [guide Proxmox VE](../../02-fiches-completes/proxmox/ve-8/installation-deploiement/09-hyperviseur-proxmox-ve-8x-cluster-corosync.md) et fiches simples par étape |
-| Nutanix AHV | Appliance | Fiche de cadrage du cluster et de la première VM — [guide](../../02-fiches-completes/transverses/multi-os/installation-deploiement/deploiement-nutanix-ahv-cluster-et-premiere-vm.md), non testé |
+| Nutanix [[Glossary:AHV]] | Appliance | Fiche de cadrage du cluster et de la première [[Glossary:VM]] — [guide](../../02-fiches-completes/transverses/multi-os/installation-deploiement/deploiement-nutanix-ahv-cluster-et-premiere-vm.md), non testé |
 | Docker / Docker Compose | Linux / Windows | Couvert — [guide de durcissement Docker](../../02-fiches-completes/transverses/docker/autres/32-hardening-hote-docker-production.md), [guide de sauvegarde Compose](../../02-fiches-completes/transverses/docker/autres/37-sauvegarde-restauration-stacks-docker.md) et fiches simples par étape |
 | Kubernetes / K3s | Multiplateforme | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/03-virtualisation-et-conteneurisation/fiche-logiciel-kubernetes-k3s.md) et fiches simples par étape |
 | Podman / Buildah | Linux | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/03-virtualisation-et-conteneurisation/fiche-logiciel-podman-buildah.md) et fiches simples par étape |
@@ -62,7 +62,7 @@ Pour les mémos, scripts communautaires, listes d'outils et requêtes GitHub, co
 |---|---|---|
 | pfSense | Appliance / VM FreeBSD | Couvert pour pfSense CE 2.9.0 en laboratoire Proxmox — [guide](../../02-fiches-completes/pfsense/toutes-versions/installation-deploiement/70-deploiement-pfsense-ce-2-9-0-proxmox-lab.md) et [fiche de validation](../../01-fiches-simples/pfsense/toutes-versions/vie-du-systeme/fiches-par-theme/administration-systeme/fiche-simple-pfsense-ce-2-9-0-valider-flux-lab.md); appliance physique et production non couvertes et fiches simples par étape |
 | OPNsense | Appliance FreeBSD | Couvert — [installation OPNsense](../../02-fiches-completes/opnsense/toutes-versions/installation-deploiement/33-installation-appliance-opnsense-production.md), [HA](../../02-fiches-completes/opnsense/toutes-versions/autres/10-pare-feu-appliance-opnsense-carp-pfsync-ha.md) et fiches simples par étape |
-| DMZ / segmentation des zones | Multi-OS / pare-feu | Couvert pour la conception et la validation en laboratoire — [guide DMZ](../../02-fiches-completes/transverses/multi-os/autres/86-conception-dmz-segmentation-flux-multi-os.md) et [checklist de flux](../../01-fiches-simples/pfsense/toutes-versions/vie-du-systeme/fiches-par-theme/administration-systeme/fiche-simple-dmz-valider-flux-zone-lab.md); configurations détaillées par constructeur non couvertes et fiches simples par étape |
+| [[Glossary:DMZ]] / segmentation des zones | Multi-OS / pare-feu | Couvert pour la conception et la validation en laboratoire — [guide DMZ](../../02-fiches-completes/transverses/multi-os/autres/86-conception-dmz-segmentation-flux-multi-os.md) et [checklist de flux](../../01-fiches-simples/pfsense/toutes-versions/vie-du-systeme/fiches-par-theme/administration-systeme/fiche-simple-dmz-valider-flux-zone-lab.md); configurations détaillées par constructeur non couvertes et fiches simples par étape |
 | FortiOS / FortiGate, PAN-OS / Palo Alto, Cisco ASA / Firepower, Stormshield | Appliances | Fiche comparative de configuration défensive multi-appliance — [guide](../../02-fiches-completes/transverses/multi-os/installation-deploiement/appliances-pare-feu-forti-pan-cisco-stormshield.md), non testé par constructeur |
 | Snort / Suricata / Zeek | Linux | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/04-reseau-et-cybersecurite/fiche-logiciel-suricata.md) et fiches simples par étape |
 | Wazuh | Linux / multiplateforme | Couvert — [guide Wazuh](../../02-fiches-completes/debian/12/installation-deploiement/11-siem-xdr-centralise-wazuh-4x-debian-12.md) et fiches simples par étape |
@@ -71,27 +71,27 @@ Pour les mémos, scripts communautaires, listes d'outils et requêtes GitHub, co
 | Wireshark / tcpdump | Multiplateforme | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/04-reseau-et-cybersecurite/fiche-logiciel-wireshark.md) et fiches simples par étape |
 | Nmap / Zenmap | Multiplateforme | Défensif uniquement — pas de fiche de scan opérationnel général |
 | Nessus / OpenVAS | Linux | Fiche de scan limité aux cibles autorisées — [guide](../../02-fiches-completes/transverses/multi-os/installation-deploiement/scan-vulnerabilites-nessus-openvas.md), non testé |
-| PingCastle / BloodHound | Windows / multiplateforme | Fiche d'audit AD défensif et autorisé — [guide](../../02-fiches-completes/transverses/multi-os/installation-deploiement/audit-ad-pingcastle-bloodhound.md), non testé |
+| PingCastle / BloodHound | Windows / multiplateforme | Fiche d'audit [[Glossary:AD]] défensif et autorisé — [guide](../../02-fiches-completes/transverses/multi-os/installation-deploiement/audit-ad-pingcastle-bloodhound.md), non testé |
 | OpenVPN / WireGuard | Multiplateforme | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/04-reseau-et-cybersecurite/fiche-logiciel-wireguard.md) et fiches simples par étape |
 | FreePBX / Asterisk | Appliance / Linux supporté | Couvert pour un déploiement de laboratoire — [guide téléphonie IP](../../02-fiches-completes/debian/12/installation-deploiement/13-telephonie-ip-freepbx-asterisk-20-debian-12.md) et fiches simples par étape; utiliser une combinaison officiellement supportée |
-| Cisco AnyConnect / FortiClient / GlobalProtect | Multiplateforme | Fiche de déploiement et contrôle des clients VPN — [guide](../../02-fiches-completes/transverses/multi-os/installation-deploiement/clients-vpn-anyconnect-forticlient-globalprotect.md), non testé par éditeur |
-| Apache Guacamole | Linux | Déploiement de base par [guide Docker](../../02-fiches-completes/transverses/docker/installation-deploiement/121-deploiement-apache-guacamole-1-6-docker.md) et complément MFA/SSO/HA/cibles — [guide d'architecture](../../02-fiches-completes/transverses/multi-os/installation-deploiement/apache-guacamole-architecture-complete-mfa-sso-ha-cibles.md), non testé |
+| Cisco AnyConnect / FortiClient / GlobalProtect | Multiplateforme | Fiche de déploiement et contrôle des clients [[Glossary:VPN]] — [guide](../../02-fiches-completes/transverses/multi-os/installation-deploiement/clients-vpn-anyconnect-forticlient-globalprotect.md), non testé par éditeur |
+| Apache Guacamole | Linux | Déploiement de base par [guide Docker](../../02-fiches-completes/transverses/docker/installation-deploiement/121-deploiement-apache-guacamole-1-6-docker.md) et complément [[Glossary:MFA]]/SSO/HA/cibles — [guide d'architecture](../../02-fiches-completes/transverses/multi-os/installation-deploiement/apache-guacamole-architecture-complete-mfa-sso-ha-cibles.md), non testé |
 | FreeRADIUS | Linux | Fiche de cadrage et configuration d'authentification réseau — [guide](../../02-fiches-completes/transverses/multi-os/installation-deploiement/authentification-freeradius.md), non testé |
-| Keycloak / Authelia / Authentik | Linux | Fiche comparative de déploiement SSO — [guide](../../02-fiches-completes/transverses/multi-os/installation-deploiement/sso-keycloak-authelia-authentik.md), non testé par produit |
+| Keycloak / Authelia / Authentik | Linux | Fiche comparative de déploiement [[Glossary:SSO]] — [guide](../../02-fiches-completes/transverses/multi-os/installation-deploiement/sso-keycloak-authelia-authentik.md), non testé par produit |
 | Cisco ISE | Appliance | Fiche de cadrage du contrôle d'accès réseau — [guide](../../02-fiches-completes/transverses/multi-os/installation-deploiement/controle-acces-cisco-ise.md), non testé |
 
 ## 5. Systèmes, annuaires et services
 
 | Produit / famille | Plateforme | État / référence |
 |---|---|---|
-| Windows Server 2016 / 2019 / 2022 : AD DS, DNS, DHCP, GPO, WSUS, DFS, RDS | Windows | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/05-systemes-annuaires-et-services/fiche-logiciel-windows-server-2016-2019-2022.md) et fiches simples par étape |
+| Windows Server 2016 / 2019 / 2022 : AD DS, [[Glossary:DNS]], [[Glossary:DHCP]], [[Glossary:GPO]], [[Glossary:WSUS]], DFS, RDS | Windows | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/05-systemes-annuaires-et-services/fiche-logiciel-windows-server-2016-2019-2022.md) et fiches simples par étape |
 | Windows 10 / 11 | Windows | Couvert — [déploiement Windows 11](../../02-fiches-completes/windows/client-11/installation-deploiement/25-deploiement-postes-windows-11-production.md) et fiches simples par étape |
 | Microsoft Entra ID | Cloud | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/05-systemes-annuaires-et-services/fiche-logiciel-microsoft-entra-id.md) et fiches simples par étape |
 | Debian / Ubuntu Server | Linux | Couvert — guides OS et services selon les versions documentées |
-| RHEL / AlmaLinux / Rocky Linux | Linux | Rocky Linux 9 documenté ; [fiche comparative des prérequis RHEL/Alma/Rocky](../../02-fiches-completes/transverses/multi-os/installation-deploiement/complement-rhel-almalinux-par-rapport-a-rocky-linux-9.md). Les déploiements RHEL/Alma restent à valider sur versions supportées |
-| Samba / Samba4 | Linux | Couvert pour un lab AD DC — [guide Samba AD DC Debian 13](../../02-fiches-completes/debian/13/installation-deploiement/65-deploiement-samba-ad-dc-debian-13.md); partage SMB traité séparément dans [NAS/SAN](../../02-fiches-completes/transverses/multi-os/installation-deploiement/07-stockage-reseau-nas-san-samba-nfsv4-iscsi.md). Migration de forêt et validation production non couvertes et fiches simples par étape |
+| [[Glossary:RHEL]] / AlmaLinux / Rocky Linux | Linux | Rocky Linux 9 documenté ; [fiche comparative des prérequis RHEL/Alma/Rocky](../../02-fiches-completes/transverses/multi-os/installation-deploiement/complement-rhel-almalinux-par-rapport-a-rocky-linux-9.md). Les déploiements RHEL/Alma restent à valider sur versions supportées |
+| Samba / Samba4 | Linux | Couvert pour un lab AD [[Glossary:DC]] — [guide Samba AD DC Debian 13](../../02-fiches-completes/debian/13/installation-deploiement/65-deploiement-samba-ad-dc-debian-13.md); partage SMB traité séparément dans [NAS/SAN](../../02-fiches-completes/transverses/multi-os/installation-deploiement/07-stockage-reseau-nas-san-samba-nfsv4-iscsi.md). Migration de forêt et validation production non couvertes et fiches simples par étape |
 | OpenLDAP / FreeIPA | Linux | Guides d'installation existants : [OpenLDAP Debian 13](../../02-fiches-completes/debian/13/installation-deploiement/87-deploiement-openldap-2-6-debian-13.md) et [FreeIPA Rocky Linux 9](../../02-fiches-completes/rocky-linux/9/installation-deploiement/88-deploiement-freeipa-rocky-linux-9.md) ; réplication/HA décrites dans le [guide comparatif](../../02-fiches-completes/transverses/multi-os/installation-deploiement/replication-et-haute-disponibilite-openldap-et-freeipa-comparatif.md), non testé |
-| BIND 9 | Linux | Couvert — [guide autoritatif Debian 13](../../02-fiches-completes/debian/13/installation-deploiement/63-deploiement-bind9-autoritatif-debian-13.md) et fiche simple Debian existante et fiches simples par étape |
+| [[Glossary:BIND]] 9 | Linux | Couvert — [guide autoritatif Debian 13](../../02-fiches-completes/debian/13/installation-deploiement/63-deploiement-bind9-autoritatif-debian-13.md) et fiche simple Debian existante et fiches simples par étape |
 | Kea DHCPv4 | Linux | Couvert — [guide DHCPv4 Debian 13](../../02-fiches-completes/debian/13/installation-deploiement/64-deploiement-kea-dhcpv4-debian-13.md) et fiche simple de contrôle et fiches simples par étape |
 | ISC DHCP Server (dhcpd) | Linux | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/05-systemes-annuaires-et-services/fiche-logiciel-isc-dhcp-server.md) et fiches simples par étape |
 
@@ -103,7 +103,7 @@ Pour les mémos, scripts communautaires, listes d'outils et requêtes GitHub, co
 | TrueNAS SCALE | Appliance Linux | Couvert — [guide SCALE 25.10](../../02-fiches-completes/truenas/scale-25-10/installation-deploiement/60-deploiement-truenas-scale-25-10.md) et fiches simples par étape |
 | OpenMediaVault | Linux Debian | Couvert — [guide OpenMediaVault 8 sur Debian 13](../../02-fiches-completes/debian/13/installation-deploiement/66-deploiement-openmediavault-8-debian-13.md) et fiches simples par étape |
 | Ceph | Linux | Couvert pour un lab Tentacle 20.2.4 / Ubuntu 22-04 — [guide cephadm](../../02-fiches-completes/ubuntu/22-04/installation-deploiement/67-deploiement-ceph-tentacle-20-2-4-ubuntu-22-04.md). Debian 13 n'est pas listé comme plateforme testée par Ceph; revue et essais de production manquants et fiches simples par étape |
-| StarWind Virtual SAN | Windows / Linux | Fiche de cadrage d'un cluster à deux nœuds — [guide](../../02-fiches-completes/transverses/multi-os/installation-deploiement/deploiement-starwind-virtual-san-stockage-hyperconverge-2-noeuds.md), non testé |
+| StarWind Virtual [[Glossary:SAN]] | Windows / Linux | Fiche de cadrage d'un cluster à deux nœuds — [guide](../../02-fiches-completes/transverses/multi-os/installation-deploiement/deploiement-starwind-virtual-san-stockage-hyperconverge-2-noeuds.md), non testé |
 | NetApp ONTAP / Dell EMC | Appliances | Fiche de comparaison des solutions et interfaces d'administration — [guide](../../02-fiches-completes/transverses/multi-os/installation-deploiement/stockage-netapp-ontap-et-dell-emc-solutions-et-interfaces.md), non testé par équipement |
 
 ## 7. Sauvegarde, restauration et PRA / PCA
@@ -135,7 +135,7 @@ Pour les mémos, scripts communautaires, listes d'outils et requêtes GitHub, co
 | Ansible | Linux | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/09-automatisation-deploiement-et-iac/fiche-logiciel-ansible.md) et fiches simples par étape |
 | Terraform / OpenTofu | Multiplateforme | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/09-automatisation-deploiement-et-iac/fiche-logiciel-terraform-opentofu.md) et fiches simples par étape |
 | Microsoft MECM / SCCM | Windows | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/09-automatisation-deploiement-et-iac/fiche-logiciel-microsoft-mecm-sccm.md) et fiches simples par étape |
-| WDS + MDT / FOG Project | Windows / Linux | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/09-automatisation-deploiement-et-iac/fiche-logiciel-wds-mdt.md) et fiches simples par étape |
+| WDS + [[Glossary:MDT]] / FOG Project | Windows / Linux | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/09-automatisation-deploiement-et-iac/fiche-logiciel-wds-mdt.md) et fiches simples par étape |
 | Git / GitLab / GitHub / Gitea | Multiplateforme | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/09-automatisation-deploiement-et-iac/fiche-logiciel-git.md) et fiches simples par étape |
 | Packer | Multiplateforme | [Pilote Debian 13 avec plugin Docker local](../../02-fiches-completes/debian/13/installation-deploiement/126-administration-packer-debian-13.md) et [complément builders VM/cloud et publication d'images](../../02-fiches-completes/transverses/multi-os/installation-deploiement/packer-builders-vm-et-cloud-et-publication-dimages.md), non testés sur les cibles correspondantes |
 
@@ -183,9 +183,9 @@ Pour les mémos, scripts communautaires, listes d'outils et requêtes GitHub, co
 
 | Produit | Plateforme | État |
 |---|---|---|
-| Apache / Nginx / IIS | Linux / Windows | Guides existants : [Apache Debian 13](../../02-fiches-completes/debian/13/installation-deploiement/124-deploiement-apache-http-server-debian-13.md), [LEMP Nginx Debian 13](../../02-fiches-completes/debian/13/installation-deploiement/02-pile-lemp-debian-13-nginx-php-mariadb.md) et [IIS Windows Server 2022](../../02-fiches-completes/windows/server-2022/installation-deploiement/122-installation-iis-windows-server-2022.md), complétés par l'[architecture de production comparative](../../02-fiches-completes/transverses/multi-os/installation-deploiement/architectures-production-apache-nginx-iis-comparatif-linux-windows.md), non testée |
+| Apache / Nginx / [[Glossary:IIS]] | Linux / Windows | Guides existants : [Apache Debian 13](../../02-fiches-completes/debian/13/installation-deploiement/124-deploiement-apache-http-server-debian-13.md), [LEMP Nginx Debian 13](../../02-fiches-completes/debian/13/installation-deploiement/02-pile-lemp-debian-13-nginx-php-mariadb.md) et [IIS Windows Server 2022](../../02-fiches-completes/windows/server-2022/installation-deploiement/122-installation-iis-windows-server-2022.md), complétés par l'[architecture de production comparative](../../02-fiches-completes/transverses/multi-os/installation-deploiement/architectures-production-apache-nginx-iis-comparatif-linux-windows.md), non testée |
 | HAProxy / Traefik / Caddy | Linux | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-traefik.md) et fiches simples par étape |
-| MySQL / MariaDB / PostgreSQL / SQL Server | Linux / Windows | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-mariadb.md) et fiches simples par étape |
+| MySQL / MariaDB / PostgreSQL / [[Glossary:SQL]] Server | Linux / Windows | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-mariadb.md) et fiches simples par étape |
 | MongoDB / Redis / InfluxDB | Linux | Couvert — [fiche logiciel](../../01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-influxdb.md) et fiches simples par étape |
 
 ## 15. Topologie, IPAM et outils métiers
@@ -219,9 +219,9 @@ Les outils et actions orientés intrusion, exploitation, déauthentification Wi-
 ## Ordre de traitement proposé pour la suite
 
 1. Sauvegarde d'entreprise : Veeam, puis Bacula/Bareos.
-2. Stockage virtualisé et NAS : TrueNAS, Ceph et ONTAP selon l'environnement disponible.
+2. Stockage virtualisé et [[Glossary:NAS]] : TrueNAS, Ceph et ONTAP selon l'environnement disponible.
 3. Identité/secrets : Vaultwarden/Bitwarden et HashiCorp Vault.
-4. Réseau/sécurité défensive : pfSense, IDS/IPS, scanners de vulnérabilités et outils de logs/endpoint, avec sources et autorisation explicites.
+4. Réseau/sécurité défensive : pfSense, [[Glossary:IDS]]/IPS, scanners de vulnérabilités et outils de logs/endpoint, avec sources et autorisation explicites.
 5. Automatisation et cloud : Ansible complet, Terraform/OpenTofu, MECM/WDS, puis fournisseurs cloud.
 
 Les sujets commerciaux (Veeam, Fortinet, Cisco, Citrix, etc.) nécessitent de préciser la version/licence et l'environnement effectivement visés avant de produire un runbook détaillé.

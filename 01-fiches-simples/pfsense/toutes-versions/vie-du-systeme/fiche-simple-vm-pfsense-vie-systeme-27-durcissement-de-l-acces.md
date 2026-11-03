@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_27_Durcissement_De_L_Acces
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 27 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-27`
@@ -9,14 +9,14 @@
 
 ## Problème précis à résoudre
 
-Limiter l'accès SSH et web.
+Limiter l'accès [[Glossary:SSH]] et web.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Dans System > Advanced > Admin Access > Secure Shell : activer SSH, SSHd Key Only = `Public Key Only`, choisir le port (ex. 2222).
    👉 Explication : seules les clés sont acceptées.
 
-2. Dans la même page (webConfigurator) : protocole HTTPS, changer le port TCP, cocher « Anti-lockout » seulement sur LAN, et limiter l'accès via les règles Firewall > Rules > LAN.
+2. Dans la même page (webConfigurator) : protocole HTTPS, changer le port [[Glossary:TCP]], cocher « Anti-lockout » seulement sur [[Glossary:LAN]], et limiter l'accès via les règles Firewall > Rules > LAN.
    👉 Explication : réduit l'exposition de l'interface web.
 
 3. Contrôler :
@@ -32,7 +32,7 @@ Conserver un accès console en cas d'erreur.
 
 ## 3. Production — Sécurité
 
-Ne jamais ouvrir SSH ou le GUI sur le WAN.
+Ne jamais ouvrir SSH ou le [[Glossary:GUI]] sur le [[Glossary:WAN]].
 
 ## Validation et retour arrière
 

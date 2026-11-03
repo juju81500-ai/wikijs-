@@ -40,7 +40,7 @@ Valider sur un poste pilote avant généralisation.
 ## 3. Production — Sécurité
 
 - L'interface graphique ne doit pas tourner en root.
-- Promiscuous et capture WLAN ne sont pas activés par défaut.
+- Promiscuous et capture [[Glossary:WLAN]] ne sont pas activés par défaut.
 
 ## Validation et retour arrière
 

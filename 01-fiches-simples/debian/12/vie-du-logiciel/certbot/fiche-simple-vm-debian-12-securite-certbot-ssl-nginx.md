@@ -1,12 +1,12 @@
 # 📄 VM_Debian_12_Securite_Certbot-SSL-Nginx.md
 
-- **Environnement** : VM (Debian 12 Bookworm)
+- **Environnement** : [[Glossary:VM]] (Debian 12 Bookworm)
 - **OS / Version** : Debian 12 - Famille Debian
 - **Catégorie** : Sécurité & Certificats / HTTPS SSL-TLS
 - **Tags** : `[debian12]`, `[certbot]`, `[letsencrypt]`, `[nginx]`, `[ssl]`, `[tls]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Générer et installer un certificat SSL/TLS gratuit Let's Encrypt avec Certbot pour un serveur Web Nginx sous Debian 12, automatiser le renouvellement et renforcer la suite cryptographique (TLS 1.3, HSTS).
+Générer et installer un certificat [[Glossary:SSL]]/TLS gratuit Let's Encrypt avec Certbot pour un serveur Web Nginx sous Debian 12, automatiser le renouvellement et renforcer la suite cryptographique ([[Glossary:TLS]] 1.3, [[Glossary:HSTS]]).
 
 ---
 
@@ -24,7 +24,7 @@ Générer et installer un certificat SSL/TLS gratuit Let's Encrypt avec Certbot 
 ## ⚡ 2. Production — Façon Simplifiée
 1. Demande et configuration automatique du certificat SSL pour Nginx :
    `certbot --nginx -d wiki.lab.local --non-interactive --agree-tos -m admin@lab.local --redirect`
-   👉 Explication : Vérifie le domaine, émet le certificat de production et configure automatiquement le VirtualHost Nginx avec une redirection HTTP vers HTTPS.
+   👉 Explication : Vérifie le domaine, émet le certificat de production et configure automatiquement le VirtualHost Nginx avec une redirection [[Glossary:HTTP]] vers HTTPS.
 
 2. Test du renouvellement automatique :
    `certbot renew --dry-run`

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_PostgreSQL_Valider
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; PostgreSQL 17 des dépôts Debian
 - **Catégorie** : base de données / PostgreSQL / Valider (recette)
 - **Tags** : `debian13`, `postgresql`, `recette`
@@ -27,7 +27,7 @@ Prouver que PostgreSQL est opérationnel, chiffré et supervisable.
    ```
    👉 Explication : aucune règle `trust`.
 
-3. Vérifier TLS :
+3. Vérifier [[Glossary:TLS]] :
    ```bash
    sudo -u postgres psql -c 'SHOW ssl;'
    psql 'host=IP_SERVEUR sslmode=require dbname=APPDB user=APPUSER' -c 'SELECT ssl, version FROM pg_stat_ssl WHERE pid = pg_backend_pid();'

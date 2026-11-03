@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Dovecot_Valider
 
-- **Environnement** : VM Debian 13; Dovecot depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Debian 13; Dovecot depuis les dépôts de la distribution
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / Dovecot — Valider (recette)
 - **Tags** : `debian13`, `dovecot`, `imap`, `messagerie`, `valider`
@@ -30,7 +30,7 @@ Recetter Dovecot : service, authentification, accès IMAPS et remise LMTP.
    ```bash
    openssl s_client -connect MAIL.EXAMPLE.NET:993 -brief </dev/null
    ```
-   👉 Explication : affiche la version TLS et la chaîne de certificats.
+   👉 Explication : affiche la version [[Glossary:TLS]] et la chaîne de certificats.
 
 4. Vérifier la boîte après un message de test envoyé par Postfix :
    ```bash

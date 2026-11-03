@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Windows_11_mRemoteNG_Securisation
 
-- **Environnement** : Poste Windows 11 x64 d'administration (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'administration ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; mRemoteNG VERSION_MREMOTENG (à remplacer)
 - **Catégorie** : gestionnaire de connexions distantes
 - **Tags** : `mremoteng`, `windows11`, `securite`, `credentials`
@@ -25,7 +25,7 @@ Protéger le fichier de connexions et les identifiants mRemoteNG.
 4. Restreindre le dossier : `icacls "$env:APPDATA\mRemoteNG" /inheritance:r /grant:r "${env:USERNAME}:(OI)(CI)F"`.
    👉 Explication : seul l'utilisateur accède au fichier.
 
-5. Pour SSH, utiliser une clé privée protégée par passphrase, conservée séparément du mot de passe du fichier.
+5. Pour [[Glossary:SSH]], utiliser une clé privée protégée par passphrase, conservée séparément du mot de passe du fichier.
    👉 Explication : un vol de fichier ne livre pas les deux secrets.
 
 ## 2. Production — Contrôles
@@ -35,7 +35,7 @@ Documenter où est stocké MOT_DE_PASSE_FICHIER (coffre d'entreprise).
 ## 3. Production — Sécurité
 
 - Le chiffrement du fichier par défaut peut utiliser un mot de passe par défaut : changer ce comportement (à vérifier dans la documentation).
-- TLS/RDP : exiger NLA ; SSH : version 2 uniquement.
+- [[Glossary:TLS]]/RDP : exiger [[Glossary:NLA]] ; SSH : version 2 uniquement.
 
 ## Validation et retour arrière
 

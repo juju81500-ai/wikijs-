@@ -5,7 +5,7 @@
 
 ## Règle de sécurité
 
-Garder une session SSH existante ouverte et disposer d'un accès console avant toute correction. Ne pas désactiver le pare-feu ni réactiver globalement les mots de passe comme premier réflexe.
+Garder une session [[Glossary:SSH]] existante ouverte et disposer d'un accès console avant toute correction. Ne pas désactiver le pare-feu ni réactiver globalement les mots de passe comme premier réflexe.
 
 ## 1. Identifier où la connexion échoue
 

@@ -30,12 +30,12 @@ Détecter et désactiver SMB1 (protocole obsolète) sur 2016 et 2019 sans casser
    Disable-WindowsOptionalFeature -Online -FeatureName SMB1Protocol
    ```
    👉 Explication : la seconde commande retire la fonctionnalité ; un redémarrage peut être demandé.
-4. GUI équivalent : **Gestionnaire de serveur > Gérer > Supprimer des rôles et fonctionnalités > Fonctionnalités > Prise en charge du partage de fichiers SMB 1.0/CIFS**.
+4. [[Glossary:GUI]] équivalent : **Gestionnaire de serveur > Gérer > Supprimer des rôles et fonctionnalités > Fonctionnalités > Prise en charge du partage de fichiers SMB 1.0/CIFS**.
    👉 Explication : décocher la fonctionnalité, puis valider l'assistant.
 
 ## 2. Production — Contrôles
 
-- Conserver un inventaire des appareils réellement dépendants de SMB1 (imprimantes, NAS anciens) et prévoir leur remplacement.
+- Conserver un inventaire des appareils réellement dépendants de SMB1 (imprimantes, [[Glossary:NAS]] anciens) et prévoir leur remplacement.
 - Redémarrer en fenêtre de maintenance si demandé.
 
 ## 3. Production — Sécurité

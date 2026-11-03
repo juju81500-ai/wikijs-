@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_19_Configuration_Des_Depots_Logiciels
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 19 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-19`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Définir les sources APT.
+Définir les sources [[Glossary:APT]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 

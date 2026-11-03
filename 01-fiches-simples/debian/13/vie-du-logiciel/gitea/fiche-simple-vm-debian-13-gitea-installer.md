@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Gitea_Installer
 
-- **Environnement** : VM Debian 13 isolée; domaine et stockage définis
+- **Environnement** : [[Glossary:VM]] Debian 13 isolée; domaine et stockage définis
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : forge Git / administration
 - **Tags** : `debian13`, `gitea`, `forge-git`, `tls`, `sauvegarde`

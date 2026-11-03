@@ -8,9 +8,9 @@
 
 Fiche simple : [dimensionner et préparer la plateforme](../../../../01-fiches-simples/debian/12/vie-du-logiciel/wazuh/fiche-simple-vm-debian-12-wazuh-dimensionner-preparer.md).
 
-Choisir une version Wazuh 4.x encore maintenue et vérifier la matrice officielle pour OS, versions Java/OpenSearch embarquées, tailles de nœuds et limites d'index. Dimensionner CPU, RAM, stockage rapide et rétention à partir du débit réel de logs. Un nœud unique convient à un lab, pas à une architecture HA.
+Choisir une version Wazuh 4.x encore maintenue et vérifier la matrice officielle pour OS, versions Java/OpenSearch embarquées, tailles de nœuds et limites d'index. Dimensionner [[Glossary:CPU]], [[Glossary:RAM]], stockage rapide et rétention à partir du débit réel de logs. Un nœud unique convient à un lab, pas à une architecture HA.
 
-Définir DNS, synchronisation horaire, certificats, réseau d'administration, sources de journaux et durée de conservation. Ne jamais collecter des secrets non nécessaires.
+Définir [[Glossary:DNS]], synchronisation horaire, certificats, réseau d'administration, sources de journaux et durée de conservation. Ne jamais collecter des secrets non nécessaires.
 
 ## 2. Déployer selon l'architecture officielle
 
@@ -35,7 +35,7 @@ Vérifier qu'une modification de configuration produit un événement attendu et
 Fiche simple : [valider les contrôles opérationnels](../../../../01-fiches-simples/debian/12/vie-du-logiciel/wazuh/fiche-simple-vm-debian-12-wazuh-controles-operationnels.md).
 
 - Vérifier l'état des composants, la santé du cluster et l'espace d'index.
-- Configurer TLS pour l'interface et les communications inter-composants.
+- Configurer [[Glossary:TLS]] pour l'interface et les communications inter-composants.
 - Limiter les comptes du dashboard selon le principe du moindre privilège.
 - Superviser la file d'ingestion, les certificats, les expirations et l'heure système.
 

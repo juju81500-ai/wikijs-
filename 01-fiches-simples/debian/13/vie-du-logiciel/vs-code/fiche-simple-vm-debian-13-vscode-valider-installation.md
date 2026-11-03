@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-vscode-valider-installation.md
 
-- **Environnement** : Visual Studio Code Stable 1.143.1 via dépôt APT Microsoft sur Debian 13 amd64
+- **Environnement** : Visual Studio Code Stable 1.143.1 via dépôt [[Glossary:APT]] Microsoft sur Debian 13 amd64
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : éditeur de code / environnement de développement
 - **Tags** : `debian13`, `vscode`, `apt`, `validation`, `workspace-trust`, `extensions`

@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Créer la clé USB ou le média virtuel d'installation.
+Créer la clé [[Glossary:USB]] ou le média virtuel d'installation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -25,7 +25,7 @@ Créer la clé USB ou le média virtuel d'installation.
    ```
    👉 Explication : copie brute de l'image ; efface tout le contenu de la clé.
 
-3. Pour une VM ou un BMC (IPMI/iDRAC), monter l'ISO comme lecteur optique virtuel.
+3. Pour une [[Glossary:VM]] ou un [[Glossary:BMC]] ([[Glossary:IPMI]]/iDRAC), monter l'ISO comme lecteur optique virtuel.
    👉 Explication : évite la clé physique.
 
 ## 2. Production — Contrôles

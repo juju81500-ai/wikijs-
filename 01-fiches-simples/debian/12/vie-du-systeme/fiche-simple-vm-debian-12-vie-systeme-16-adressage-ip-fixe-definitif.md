@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_12_Vie_Systeme_16_Adressage_Ip_Fixe_Definitif
 
-- **Environnement** : VM Debian 12 « bookworm » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 12 « bookworm » (serveur)
 - **OS / Version** : Debian 12; étape 16 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian12`, `vie-du-systeme`, `cycle-de-vie`, `etape-16`
@@ -23,9 +23,9 @@ Configurer une adresse IPv4 statique avec le gestionnaire réseau réellement ut
    ```bash
    sudoedit /etc/network/interfaces
    ```
-   👉 Explication : exemple de paramètres à adapter après réservation IPAM : `iface ens18 inet static`, `address 192.0.2.10/24`, `gateway 192.0.2.1`.
+   👉 Explication : exemple de paramètres à adapter après réservation [[Glossary:IPAM]] : `iface ens18 inet static`, `address 192.0.2.10/24`, `gateway 192.0.2.1`.
 
-3. Pour une interface gérée par Netplan, modifier le fichier Netplan qui configure effectivement l'interface et remplacer sa configuration DHCP :
+3. Pour une interface gérée par Netplan, modifier le fichier Netplan qui configure effectivement l'interface et remplacer sa configuration [[Glossary:DHCP]] :
    ```bash
    sudoedit /etc/netplan/90-default.yaml
    ```
@@ -46,13 +46,13 @@ Configurer une adresse IPv4 statique avec le gestionnaire réseau réellement ut
            addresses:
              - 192.0.2.53
    ```
-   👉 Explication : remplacer le nom de l'interface, l'adresse, la passerelle et le DNS par les valeurs réservées dans l'IPAM.
+   👉 Explication : remplacer le nom de l'interface, l'adresse, la passerelle et le [[Glossary:DNS]] par les valeurs réservées dans l'IPAM.
 
 4. Appliquer la configuration ifupdown uniquement si cette méthode gère l'interface :
    ```bash
    sudo systemctl restart networking
    ```
-   👉 Explication : garder une console hyperviseur ouverte ; cette action peut interrompre SSH.
+   👉 Explication : garder une console hyperviseur ouverte ; cette action peut interrompre [[Glossary:SSH]].
 
 5. Valider et appliquer Netplan uniquement si cette méthode gère l'interface :
    ```bash
@@ -81,7 +81,7 @@ Valider depuis la console : une erreur coupe l'accès SSH.
 
 ## Validation et retour arrière
 
-- **Validation** : Le serveur répond sur la nouvelle IP.
+- **Validation** : Le serveur répond sur la nouvelle [[Glossary:IP]].
 - **Retour arrière** : restaurer le snapshot ou la sauvegarde pris avant l'étape; consigner l'écart avant de poursuivre.
 
 ## Si le problème n'est pas résolu

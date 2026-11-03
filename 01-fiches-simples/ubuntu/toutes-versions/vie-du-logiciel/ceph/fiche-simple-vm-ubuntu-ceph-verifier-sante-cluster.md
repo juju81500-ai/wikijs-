@@ -6,7 +6,7 @@
 
 ## Avant les contrôles
 
-Exécuter les commandes depuis un hôte d'administration disposant du CLI et d'une identité Ceph autorisée. Protéger `client.admin` et les keyrings; ne pas les copier dans un ticket ou une session partagée.
+Exécuter les commandes depuis un hôte d'administration disposant du [[Glossary:CLI]] et d'une identité Ceph autorisée. Protéger `client.admin` et les keyrings; ne pas les copier dans un ticket ou une session partagée.
 
 ## État général
 

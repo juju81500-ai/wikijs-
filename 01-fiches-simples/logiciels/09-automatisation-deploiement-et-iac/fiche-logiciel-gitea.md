@@ -8,7 +8,7 @@
 
 ## 📚 Couverture dans le pack
 
-Couvert — Gitea auto-hébergé Debian 13, installation, TLS, sauvegarde et mise à jour.
+Couvert — Gitea auto-hébergé Debian 13, installation, [[Glossary:TLS]], sauvegarde et mise à jour.
 
 ## 🧭 Utilisation
 

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_WireGuard_Installer
 
-- **Environnement** : VM Debian 13 dédiée à WireGuard natif
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à WireGuard natif
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : WireGuard natif / installer
 - **Tags** : `wireguard`, `debian13`, `vie-du-logiciel`, `installer`

@@ -1,6 +1,6 @@
 # fiche-simple-appliance-opnsense-diagnostic-reseau-flux-bout-en-bout.md
 
-- **Environnement** : Appliance OPNsense seule ou paire CARP; accès console recommandé
+- **Environnement** : Appliance OPNsense seule ou paire [[Glossary:CARP]]; accès console recommandé
 - **OS / Version** : OPNsense Community ou Business Edition maintenue
 - **Catégorie** : pare-feu / flux
 - **Tags** : `opnsense`, `diagnostic`, `reseau`, `firewall`, `dns`, `vpn`
@@ -13,7 +13,7 @@ Suivre un paquet du client au serveur.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Vérifier adresse, masque, passerelle, DNS et VLAN du client.
+1. Vérifier adresse, masque, passerelle, [[Glossary:DNS]] et [[Glossary:VLAN]] du client.
    👉 Explication : premier point de panne.
 
 2. **Interfaces > Diagnostics > Packet Capture** : filtrer par hôte et port pour confirmer l'arrivée du paquet. Équivalent shell (interface `igb0` et adresse d'exemple à remplacer) :
@@ -25,7 +25,7 @@ Suivre un paquet du client au serveur.
 3. **Firewall > Log Files > Live View** : confirmer la règle, l'ordre, l'interface et l'état.
    👉 Explication : identifie la règle qui laisse passer ou bloque.
 
-4. Vérifier route, passerelle, NAT (**Firewall > NAT**) et DNS, depuis l'interface avec la bonne source.
+4. Vérifier route, passerelle, [[Glossary:NAT]] (**Firewall > NAT**) et DNS, depuis l'interface avec la bonne source.
    👉 Explication : écarte les erreurs de routage.
 
 5. Contrôler le retour côté serveur et les règles du chemin retour.

@@ -1,12 +1,12 @@
 # 📄 VM_Debian_12_Automatisation_Installation-Ansible.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Automatisation & IaC
 - **Tags** : `[debian12]`, `[debian-family]`, `[ansible]`, `[automation]`, `[ssh-keys]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer le moteur d'automatisation Ansible, générer une paire de clés SSH dédiées et sécuriser le nœud de contrôle sur Debian 12.
+Installer le moteur d'automatisation Ansible, générer une paire de clés [[Glossary:SSH]] dédiées et sécuriser le nœud de contrôle sur Debian 12.
 
 ---
 
@@ -37,7 +37,7 @@ Installer le moteur d'automatisation Ansible, générer une paire de clés SSH d
 1. Création d'un compte utilisateur dédié sans privilège `ansible-admin` :
    `useradd -m -s /bin/bash ansible-admin && passwd -l ansible-admin`
    👉 Explication : Isole l'exécution d'Ansible hors du compte `root` et verrouille la connexion directe par mot de passe.
-2. Générer une clé SSH ED25519 protégée par phrase secrète dans une session du compte de contrôle ; conserver la clé privée sur le nœud de contrôle et utiliser `ssh-agent` pour les automatisations interactives. Pour les exécutions non interactives, documenter explicitement la gestion du secret dans un coffre.
+2. Générer une clé SSH [[Glossary:ED25519]] protégée par phrase secrète dans une session du compte de contrôle ; conserver la clé privée sur le nœud de contrôle et utiliser `ssh-agent` pour les automatisations interactives. Pour les exécutions non interactives, documenter explicitement la gestion du secret dans un coffre.
 3. Restriction stricte des permissions sur le dossier SSH et le fichier de configuration `/etc/ansible/ansible.cfg` :
    `chmod 700 /home/ansible-admin/.ssh && chmod 600 /home/ansible-admin/.ssh/id_ed25519 && chmod 644 /etc/ansible/ansible.cfg`
    👉 Explication : Garantit qu'aucun autre utilisateur du système ne peut lire ou dérober la clé privée de contrôle.

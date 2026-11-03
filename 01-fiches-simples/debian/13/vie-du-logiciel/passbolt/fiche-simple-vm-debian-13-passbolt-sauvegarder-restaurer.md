@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Passbolt_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13 dédiée avec domaine, base et SMTP définis
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée avec domaine, base et [[Glossary:SMTP]] définis
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : gestionnaire de secrets / serveur
 - **Tags** : `debian13`, `passbolt`, `secrets`, `tls`, `sauvegarde`
@@ -16,7 +16,7 @@ Sauvegarder base, configuration, pièces jointes et clés en jeu cohérent.
    ```text
    Navigateur > ouvrir la documentation officielle : https://www.passbolt.com/docs/hosting/install/ce/debian/
    ```
-   👉 Explication : ne pas supposer qu’un dump SQL est suffisant. Détail à confirmer dans la documentation officielle avant application : Lire le guide officiel pour relever base, configuration, clés serveur, pièces jointes et certificat requis.
+   👉 Explication : ne pas supposer qu’un dump [[Glossary:SQL]] est suffisant. Détail à confirmer dans la documentation officielle avant application : Lire le guide officiel pour relever base, configuration, clés serveur, pièces jointes et certificat requis.
 
 2. Créer dump SQL protégé
    ```bash
@@ -39,7 +39,7 @@ Sauvegarder base, configuration, pièces jointes et clés en jeu cohérent.
 
 ## 2. Production — Contrôles
 
-Définir RPO/RTO, chiffrement, rétention, séparation des clés et test périodique.
+Définir [[Glossary:RPO]]/RTO, chiffrement, rétention, séparation des clés et test périodique.
 
 ## 3. Production — Sécurité
 

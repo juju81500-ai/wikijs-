@@ -1,6 +1,6 @@
 # fiche-simple-vm-windows-server-lansweeper-recette.md
 
-- **Environnement** : Serveur Windows x64 avec Lansweeper Classic (SQL LocalDB ou SQL Server selon l'échelle)
+- **Environnement** : Serveur Windows x64 avec Lansweeper Classic ([[Glossary:SQL]] LocalDB ou SQL Server selon l'échelle)
 - **OS / Version** : Windows Server 2022 recommandé; Lansweeper Classic selon la matrice officielle
 - **Catégorie** : inventaire de parc / découverte réseau
 - **Tags** : `lansweeper`, `windows-server-2022`, `inventaire`, `wmi`, `snmp`

@@ -2,7 +2,7 @@
 
 - **Environnement** : plateforme Wazuh de test ou production dimensionnée; sources de logs autorisées
 - **OS / Version** : version Wazuh 4.x maintenue, compatibilité Debian 12 à confirmer
-- **Catégorie** : SIEM/XDR / cadrage
+- **Catégorie** : [[Glossary:SIEM]]/XDR / cadrage
 - **Tags** : `debian12`, `wazuh`, `siem`, `xdr`, `capacity`, `logs`
 
 ---
@@ -13,13 +13,13 @@ Préparer une plateforme Wazuh adaptée au volume réel et au niveau de disponib
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Relever les ressources de la VM :
+1. Relever les ressources de la [[Glossary:VM]] :
    ```bash
    nproc; free -h; df -h /var/lib
    ```
-   👉 Explication : comparer à la matrice officielle de la version retenue (CPU, RAM, stockage selon le nombre d'agents et la rétention).
+   👉 Explication : comparer à la matrice officielle de la version retenue ([[Glossary:CPU]], [[Glossary:RAM]], stockage selon le nombre d'agents et la rétention).
 
-2. Contrôler l'heure et le DNS :
+2. Contrôler l'heure et le [[Glossary:DNS]] :
    ```bash
    timedatectl | grep synchronized
    getent hosts wazuh.example.net

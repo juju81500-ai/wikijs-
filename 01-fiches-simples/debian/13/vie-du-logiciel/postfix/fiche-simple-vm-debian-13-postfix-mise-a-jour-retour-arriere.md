@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Postfix_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Debian 13; Postfix depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Debian 13; Postfix depuis les dépôts de la distribution
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / Postfix — Mise à jour et retour arrière
 - **Tags** : `debian13`, `postfix`, `smtp`, `messagerie`, `mise-a-jour-retour-arriere`

@@ -1,6 +1,6 @@
 # Administrer Windows 11 avec PowerShell 7.6.9
 
-- **OS / Version** : Windows 11 x64; PowerShell 7.6.9 Stable (LTS)
+- **OS / Version** : Windows 11 x64; PowerShell 7.6.9 Stable ([[Glossary:LTS]])
 - **Type de fiche** : Administration
 - **Rôle** : installer PowerShell 7 et effectuer des contrôles locaux reproductibles
 - **Périmètre** : shell local, objets/pipeline, aide, modules et diagnostic en lecture seule
@@ -16,7 +16,7 @@ PowerShell 7.6.9 est la dernière version stable disponible au 27 octobre 2026. 
 
 Fiche simple : [installer la version stable](../../../../01-fiches-simples/windows/client-11/vie-du-logiciel/powershell/fiche-simple-vm-windows-11-powershell7-installer-version-stable.md).
 
-Télécharger le MSI x64 depuis la publication officielle PowerShell `v7.6.9` sur GitHub :
+Télécharger le [[Glossary:MSI]] x64 depuis la publication officielle PowerShell `v7.6.9` sur GitHub :
 
 ```powershell
 $download = Join-Path $HOME 'Downloads\PowerShell-7.6.9'
@@ -40,7 +40,7 @@ Le statut doit être `Valid`, le signataire doit être Microsoft et le hash doit
 Start-Process msiexec.exe -Wait -ArgumentList '/i', $msi
 ```
 
-Le MSI x64 ajoute le binaire `pwsh.exe` au chemin par défaut et peut nécessiter l'approbation UAC. Ne pas activer PowerShell Remoting pendant l'installation sans demande et runbook d'entreprise explicites.
+Le MSI x64 ajoute le binaire `pwsh.exe` au chemin par défaut et peut nécessiter l'approbation [[Glossary:UAC]]. Ne pas activer PowerShell Remoting pendant l'installation sans demande et runbook d'entreprise explicites.
 
 ## 3. Vérifier le shell actif
 
@@ -106,7 +106,7 @@ N'installer un module que depuis une source approuvée, après vérification de 
 
 Fiche simple : [exécuter un script avec précaution](../../../../01-fiches-simples/windows/client-11/vie-du-logiciel/powershell/fiche-simple-vm-windows-11-powershell7-executer-script-precaution.md).
 
-Avant exécution, lire le script et ses dépendances, vérifier son origine, sa version requise, ses chemins et ses effets. Une stratégie d'exécution limite certains lancements accidentels mais n'est pas une frontière de sécurité; un utilisateur peut la contourner. Ne pas définir globalement `Bypass` ou `Unrestricted`, ni affaiblir une stratégie imposée par GPO. Examiner les portées effectives :
+Avant exécution, lire le script et ses dépendances, vérifier son origine, sa version requise, ses chemins et ses effets. Une stratégie d'exécution limite certains lancements accidentels mais n'est pas une frontière de sécurité; un utilisateur peut la contourner. Ne pas définir globalement `Bypass` ou `Unrestricted`, ni affaiblir une stratégie imposée par [[Glossary:GPO]]. Examiner les portées effectives :
 
 ```powershell
 Get-ExecutionPolicy -List

@@ -1,6 +1,6 @@
 # 📄 VM_WinSrv_2022_DHCP_Creer-Etendue-Et-Reservation-IP.md
 
-- **Environnement** : VM / Serveur DHCP Windows
+- **Environnement** : [[Glossary:VM]] / Serveur [[Glossary:DHCP]] Windows
 - **OS / Version** : Windows Server 2022 Standard / Datacenter
 - **Catégorie** : Services Réseau / DHCP
 - **Tags** : `[winsrv2022]`, `[dhcp]`, `[etendue]`, `[reservation-ip]`, `[gui]`, `[powershell]`, `[hardening]`
@@ -8,7 +8,7 @@
 ---
 
 ## 🎯 Problème précis à résoudre
-Créer une étendue DHCP IPv4 (plage d'adresses dynamiques, masque, passerelle, DNS) et attribuer une réservation d'adresse IP fixe basée sur la carte adresse MAC d'un équipement.
+Créer une étendue DHCP IPv4 (plage d'adresses dynamiques, masque, passerelle, [[Glossary:DNS]]) et attribuer une réservation d'adresse [[Glossary:IP]] fixe basée sur la carte adresse MAC d'un équipement.
 
 ---
 
@@ -16,7 +16,7 @@ Créer une étendue DHCP IPv4 (plage d'adresses dynamiques, masque, passerelle, 
 
 ### Prérequis
 - Le serveur DHCP a une adresse IP statique et le rôle DHCP est installé.
-- En environnement AD, le serveur DHCP doit être autorisé dans Active Directory avant de distribuer des baux.
+- En environnement [[Glossary:AD]], le serveur DHCP doit être autorisé dans Active Directory avant de distribuer des baux.
 - Valider le sous-réseau, la plage dynamique, les exclusions, la passerelle, les DNS, le suffixe DNS et les adresses réservées avec le responsable réseau.
 
 1. **Ouvrir la console et contrôler l'autorisation** :
@@ -43,7 +43,7 @@ Créer une étendue DHCP IPv4 (plage d'adresses dynamiques, masque, passerelle, 
    - Dans l'étendue, ouvrir **Baux d'adresses** et confirmer qu'un client de test reçoit une adresse dans la plage attendue.
    - Vérifier la réservation dans **Réservations** et, lorsque le client de test renouvelle son bail, confirmer que l'adresse prévue lui est attribuée.
    - Tester sur un client de laboratoire ou pendant une fenêtre approuvée ; ne pas renouveler le bail d'un serveur de production sans autorisation.
-   - 👉 *Explication : La présence d'une étendue activée ne valide pas à elle seule le relais DHCP, le VLAN ni les options reçues par le client.*
+   - 👉 *Explication : La présence d'une étendue activée ne valide pas à elle seule le relais DHCP, le [[Glossary:VLAN]] ni les options reçues par le client.*
 
 Référence : [Microsoft Learn — Installer et configurer DHCP Server](https://learn.microsoft.com/en-us/windows-server/networking/technologies/dhcp/quickstart-install-configure-dhcp-server).
 

@@ -1,6 +1,6 @@
 # fiche-simple-vm-proxmox-pfsense-ce-deploiement-acces-gui-premiers-reglages.md
 
-- **Environnement** : VM pfSense CE en laboratoire sur Proxmox VE, deux interfaces (WAN et LAN isolés)
+- **Environnement** : [[Glossary:VM]] pfSense CE en laboratoire sur Proxmox VE, deux interfaces ([[Glossary:WAN]] et [[Glossary:LAN]] isolés)
 - **OS / Version** : pfSense Community Edition 2.9.0 (VM x86-64 sur Proxmox VE)
 - **Catégorie** : pare-feu et routage
 - **Tags** : `pfsense`, `ce`, `proxmox`, `firewall`, `lab`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Ouvrir le GUI depuis le LAN isolé et sécuriser les réglages initiaux.
+Ouvrir le [[Glossary:GUI]] depuis le LAN isolé et sécuriser les réglages initiaux.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -17,15 +17,15 @@ Ouvrir le GUI depuis le LAN isolé et sécuriser les réglages initiaux.
    👉 Explication : le GUI n'est accessible que depuis le LAN isolé.
 
 2. Se connecter avec les identifiants par défaut `admin` / `pfsense` puis changer immédiatement le mot de passe : **System > User Manager > admin > Edit**.
-   👉 Explication : ne jamais laisser le mot de passe par défaut; ne jamais exposer GUI ou SSH sur WAN.
+   👉 Explication : ne jamais laisser le mot de passe par défaut; ne jamais exposer GUI ou [[Glossary:SSH]] sur WAN.
 
-3. Dans l'assistant (**System > Setup Wizard**) : nom d'hôte et domaine de lab sans conflit DNS, fuseau horaire et NTP.
+3. Dans l'assistant (**System > Setup Wizard**) : nom d'hôte et domaine de lab sans conflit [[Glossary:DNS]], fuseau horaire et [[Glossary:NTP]].
    👉 Explication : évite les incohérences d'heure et de nom.
 
 4. Configurer WAN selon le réseau amont isolé et contrôler la passerelle; remplacer le LAN par un sous-réseau de lab non chevauchant.
    👉 Explication : puis renouveler l'adresse de la VM cliente et rouvrir le GUI sur la nouvelle adresse.
 
-5. Si un DHCP existe déjà sur ce LAN, désactiver celui de pfSense : **Services > DHCP Server > LAN**, décocher **Enable**.
+5. Si un [[Glossary:DHCP]] existe déjà sur ce LAN, désactiver celui de pfSense : **Services > DHCP Server > LAN**, décocher **Enable**.
    👉 Explication : évite deux serveurs DHCP concurrents.
 
 6. Installer un certificat GUI de confiance pour le lab et limiter l'administration au réseau de gestion autorisé.

@@ -1,6 +1,6 @@
 # 📄 Caddy
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : Caddy 2.x (paquet du dépôt officiel Cloudsmith, à vérifier sur la version déployée)
 - **Catégorie** : Services Web et bases de données
@@ -21,7 +21,7 @@ curl -1sLf 'https://dl.cloudsmith.io/public/caddy/stable/debian.deb.txt' | sudo 
 sudo apt update
 sudo apt install -y caddy
 ```
-👉 Explication : Ajoute le dépôt officiel Caddy (clé GPG puis source APT) et installe le paquet. La procédure d'ajout du dépôt est celle publiée par le projet, à vérifier sur la version déployée.
+👉 Explication : Ajoute le dépôt officiel Caddy (clé [[Glossary:GPG]] puis source [[Glossary:APT]]) et installe le paquet. La procédure d'ajout du dépôt est celle publiée par le projet, à vérifier sur la version déployée.
 
 2. Vérification de la version et de la syntaxe :
 ```bash
@@ -81,7 +81,7 @@ systemctl status caddy --no-pager
 ```
 👉 Explication : Valide le fichier avant de le recharger, puis confirme que le service est actif.
 
-3. Ouverture du pare-feu pour HTTP, HTTPS et administration :
+3. Ouverture du pare-feu pour [[Glossary:HTTP]], HTTPS et administration :
 ```bash
 sudo apt install -y ufw
 sudo ufw allow from <adresse_ip_admin> to any port 22 proto tcp
@@ -90,7 +90,7 @@ sudo ufw allow 443/tcp
 sudo ufw enable
 sudo ufw status verbose
 ```
-👉 Explication : Ouvre SSH seulement pour `<adresse_ip_admin>` avant d'activer le pare-feu. Le port 80 sert à la validation du certificat et à la redirection, le port 443 au trafic HTTPS.
+👉 Explication : Ouvre [[Glossary:SSH]] seulement pour `<adresse_ip_admin>` avant d'activer le pare-feu. Le port 80 sert à la validation du certificat et à la redirection, le port 443 au trafic HTTPS.
 
 ---
 

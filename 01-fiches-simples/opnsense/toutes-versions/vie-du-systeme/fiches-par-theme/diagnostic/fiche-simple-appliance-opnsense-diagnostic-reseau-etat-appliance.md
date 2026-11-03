@@ -1,6 +1,6 @@
 # fiche-simple-appliance-opnsense-diagnostic-reseau-etat-appliance.md
 
-- **Environnement** : Appliance OPNsense seule ou paire CARP; accès console recommandé
+- **Environnement** : Appliance OPNsense seule ou paire [[Glossary:CARP]]; accès console recommandé
 - **OS / Version** : OPNsense Community ou Business Edition maintenue
 - **Catégorie** : pare-feu / diagnostic
 - **Tags** : `opnsense`, `diagnostic`, `reseau`, `firewall`, `dns`, `vpn`
@@ -16,7 +16,7 @@ Vérifier firmware, interfaces, passerelles et journaux autour de l'incident.
 1. **System > Firmware > Status** puis **Interfaces > Overview** et **System > Gateways > Dashboard**.
    👉 Explication : état du système, des liens et des passerelles.
 
-2. Console ou **Interfaces > Diagnostics** : utiliser **Ping**, **DNS Lookup**, **Port Probe**, **Trace Route**, **Packet Capture** avec la bonne interface et la bonne adresse source.
+2. Console ou **Interfaces > Diagnostics** : utiliser **Ping**, **[[Glossary:DNS]] Lookup**, **Port Probe**, **Trace Route**, **Packet Capture** avec la bonne interface et la bonne adresse source.
    👉 Explication : le pare-feu peut avoir une route ou politique différente du client.
 
 3. Équivalents en shell (menu console, option 8) :

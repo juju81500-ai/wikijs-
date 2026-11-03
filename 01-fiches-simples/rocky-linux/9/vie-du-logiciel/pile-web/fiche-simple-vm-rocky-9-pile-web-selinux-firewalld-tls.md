@@ -1,7 +1,7 @@
 # fiche-simple-vm-rocky-9-pile-web-selinux-firewalld-tls.md
 
-- **Environnement** : VM ou serveur Rocky Linux 9 hébergeant une application PHP avec MariaDB locale
-- **OS / Version** : Rocky Linux 9 / RHEL 9; Nginx, PHP-FPM et MariaDB des dépôts actifs
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux 9 hébergeant une application PHP avec MariaDB locale
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9; Nginx, PHP-FPM et MariaDB des dépôts actifs
 - **Catégorie** : services web / sécurité
 - **Tags** : `rocky9`, `nginx`, `php-fpm`, `mariadb`, `selinux`
 
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Garder SELinux et firewalld actifs et préparer le TLS.
+Garder SELinux et firewalld actifs et préparer le [[Glossary:TLS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -32,7 +32,7 @@ Garder SELinux et firewalld actifs et préparer le TLS.
    ```
    👉 Explication : Affiche les zones actives et les services autorisés de la zone par défaut.
 
-4. Ouvrir HTTP/HTTPS :
+4. Ouvrir [[Glossary:HTTP]]/HTTPS :
    ```bash
    sudo firewall-cmd --permanent --add-service=http --add-service=https
    sudo firewall-cmd --reload

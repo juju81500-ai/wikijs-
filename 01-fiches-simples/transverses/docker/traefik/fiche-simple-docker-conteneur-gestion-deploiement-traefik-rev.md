@@ -6,7 +6,7 @@
 - **Tags** : `[docker]`, `[traefik]`, `[reverse-proxy]`, `[letsencrypt]`, `[docker-compose]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Déployer le Reverse Proxy cloud-native Traefik v3 en conteneur Docker, configurer la découverte automatique des conteneurs via le socket Docker et sécuriser la génération des certificats Let's Encrypt SSL/TLS.
+Déployer le Reverse Proxy cloud-native Traefik v3 en conteneur Docker, configurer la découverte automatique des conteneurs via le socket Docker et sécuriser la génération des certificats Let's Encrypt [[Glossary:SSL]]/TLS.
 
 ---
 
@@ -50,7 +50,7 @@ Déployer le Reverse Proxy cloud-native Traefik v3 en conteneur Docker, configur
     ```
     Remplacer le courriel et le tag. Ce mode utilise le fournisseur fichier et ne monte pas le socket Docker.
 
-2. Créer le stockage ACME avec des permissions privées, valider la pile puis démarrer :
+2. Créer le stockage [[Glossary:ACME]] avec des permissions privées, valider la pile puis démarrer :
     ```bash
     mkdir -p dynamic letsencrypt
     touch letsencrypt/acme.json
@@ -78,7 +78,7 @@ Déployer le Reverse Proxy cloud-native Traefik v3 en conteneur Docker, configur
                 servers:
                    - url: http://app:8080
     ```
-    Remplacer le nom DNS et le nom/port du service par les valeurs réelles. Redirection HTTP vers HTTPS et dashboard doivent être configurés explicitement ; ne pas exposer l'API insegura.
+    Remplacer le nom [[Glossary:DNS]] et le nom/port du service par les valeurs réelles. Redirection [[Glossary:HTTP]] vers HTTPS et dashboard doivent être configurés explicitement ; ne pas exposer l'[[Glossary:API]] insegura.
 2. Le fournisseur Docker nécessite l'accès au socket, qui equivale à un privilège root. Si la découverte par labels est requise, utiliser un proxy de socket avec API minimale et réseau privé ; un montage `:ro` seul ne restreint pas les appels API.
 3. Vérifier DNS, challenge ACME, certificat et renouvellement en staging avant la production. Sauvegarder `acme.json` de manière chiffrée et limitée ; ne pas publier le dashboard sur une interface publique.
 4. Valider chaque modification avec `docker compose config --quiet`, consulter `docker compose logs traefik` puis tester le nom DNS en HTTPS depuis un client.

@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Mettre le NAS à jour dès l'installation.
+Mettre le [[Glossary:NAS]] à jour dès l'installation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Mise à jour > Rechercher les mises à jour > Télécharger puis Appliquer.
+1. [[Glossary:GUI]] : Système > Mise à jour > Rechercher les mises à jour > Télécharger puis Appliquer.
    ```bash
    sudo midclt call update.check_available | python3 -m json.tool
    ```

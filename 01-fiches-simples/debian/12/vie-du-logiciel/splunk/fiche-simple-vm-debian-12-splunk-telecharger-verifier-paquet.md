@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-12-splunk-telecharger-verifier-paquet.md
 
-- **Environnement** : VM Debian 12 dédiée à Splunk Enterprise autonome (laboratoire)
+- **Environnement** : [[Glossary:VM]] Debian 12 dédiée à Splunk Enterprise autonome (laboratoire)
 - **OS / Version** : Debian 12 Bookworm; Splunk Enterprise 10.2
 - **Catégorie** : journaux / téléchargement
 - **Tags** : `debian12`, `splunk`, `logs`, `sha512`, `deb`

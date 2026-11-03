@@ -1,7 +1,7 @@
 # Fiche_Simple_-_Tout-en-un_Qualifier_Incident
 
 - **Environnement** : centre de services, équipe d'exploitation ou support utilisateur
-- **OS / Version** : indépendant du système ; adapter aux outils ITSM autorisés
+- **OS / Version** : indépendant du système ; adapter aux outils [[Glossary:ITSM]] autorisés
 - **Catégorie** : Tout-en-un / Support et gestion de service
 - **Tags** : `transverse`, `tout-en-un`, `support`, `incident`, `itsm`
 
@@ -51,7 +51,7 @@ Transformer un signalement en incident exploitable, avec impact, périmètre, é
 
 ## 2. Production — Contrôles
 
-Respecter la priorité, le SLA, les règles d'escalade et les canaux déclarés. En cas d'incident majeur, activer le processus dédié et un responsable de communication.
+Respecter la priorité, le [[Glossary:SLA]], les règles d'escalade et les canaux déclarés. En cas d'incident majeur, activer le processus dédié et un responsable de communication.
 
 ## 3. Production — Sécurité
 
@@ -72,4 +72,4 @@ Ne pas déposer de mot de passe, clé privée, jeton, données de santé ou expo
 
 | Vérifié le | OS / version | Logiciel / version | Testeur | Verdict | Sources |
 |---|---|---|---|---|---|
-| 2026-10-31 | Sans objet | Outil ITSM selon organisation | — | Non testé sur plateforme cible | Référence ITIL ci-dessus |
+| 2026-10-31 | Sans objet | Outil ITSM selon organisation | — | Non testé sur plateforme cible | Référence [[Glossary:ITIL]] ci-dessus |

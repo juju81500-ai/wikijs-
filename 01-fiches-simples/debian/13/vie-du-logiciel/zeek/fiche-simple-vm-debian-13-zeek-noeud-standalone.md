@@ -1,7 +1,7 @@
 # fiche-simple-vm-debian-13-zeek-noeud-standalone.md
 
-- **Environnement** : VM Debian 13 capteur passif Zeek standalone sur interface miroir approuvée
-- **OS / Version** : Debian 13 Trixie; Zeek 8.0 LTS (dépôt OBS officiel)
+- **Environnement** : [[Glossary:VM]] Debian 13 capteur passif Zeek standalone sur interface miroir approuvée
+- **OS / Version** : Debian 13 Trixie; Zeek 8.0 [[Glossary:LTS]] (dépôt OBS officiel)
 - **Catégorie** : supervision / analyse passive du trafic
 - **Tags** : `debian13`, `zeek`, `zeekctl`, `af-packet`, `network-monitoring`
 
@@ -29,7 +29,7 @@ Configurer un nœud ZeekControl standalone sur l'interface miroir et les réseau
    ```
    👉 Explication : définit la capture sur la bonne interface.
 
-3. Éditer `/opt/zeek/etc/networks.cfg` : remplacer les sous-réseaux privés par les CIDR réellement suivis.
+3. Éditer `/opt/zeek/etc/networks.cfg` : remplacer les sous-réseaux privés par les [[Glossary:CIDR]] réellement suivis.
    👉 Explication : Zeek s'en sert pour distinguer l'espace local; n'ajouter aucun réseau hors périmètre.
 
 4. Dans `/opt/zeek/etc/zeekctl.cfg`, régler le contact opérationnel et la rétention des logs selon la politique de stockage.

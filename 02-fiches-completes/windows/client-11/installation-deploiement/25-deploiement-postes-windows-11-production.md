@@ -1,7 +1,7 @@
 # Déployer un poste Windows 11 en production
 
 - **Type de fiche** : Installation / Déploiement
-- **Environnement** : Parc de postes utilisateur, poste physique ou VM de test
+- **Environnement** : Parc de postes utilisateur, poste physique ou [[Glossary:VM]] de test
 - **OS / Version** : Windows 11 Pro ou Enterprise selon la gestion prévue
 - **Rôle** : Installer, sécuriser, inscrire et remettre un poste à l'utilisateur
 - **Tags** : `windows11`, `deploiement`, `oobe`, `intune`, `active-directory`, `bitlocker`, `production`
@@ -10,9 +10,9 @@
 
 Fiche simple : [choisir le mode de déploiement](../../../../01-fiches-simples/windows/client-11/vie-du-systeme/fiches-par-theme/deploiement-production/fiche-simple-hote-windows-11-deploiement-choisir-mode.md).
 
-Avant installation, déterminer si le poste sera géré par Autopilot/Intune, MECM, AD DS/GPO, une image d'entreprise ou un processus autonome. Cette fiche décrit les contrôles communs; les étapes d'enrôlement en masse dépendent de la solution de parc et doivent suivre son runbook.
+Avant installation, déterminer si le poste sera géré par Autopilot/Intune, MECM, [[Glossary:AD]] DS/GPO, une image d'entreprise ou un processus autonome. Cette fiche décrit les contrôles communs; les étapes d'enrôlement en masse dépendent de la solution de parc et doivent suivre son runbook.
 
-Vérifier édition/licence, compatibilité matérielle, TPM 2.0, Secure Boot, stockage, pilote réseau, utilisateur assigné et compte de récupération.
+Vérifier édition/licence, compatibilité matérielle, [[Glossary:TPM]] 2.0, Secure Boot, stockage, pilote réseau, utilisateur assigné et compte de récupération.
 
 ## 2. Installer Windows 11
 
@@ -29,8 +29,8 @@ Fiche simple : [inscrire et configurer le poste](../../../../01-fiches-simples/w
 
 - Définir un hostname conforme à la convention de parc.
 - Inscrire le poste dans le mécanisme prévu (Entra ID/Intune, AD DS ou MECM) et vérifier qu'il apparaît dans la console d'administration.
-- Appliquer les stratégies, certificats, VPN, Wi-Fi et applications attribuées; ces étapes diffèrent selon l'outil de gestion.
-- Utiliser un compte utilisateur standard; l'administration locale doit être gérée par Windows LAPS ou un mécanisme approuvé.
+- Appliquer les stratégies, certificats, [[Glossary:VPN]], Wi-Fi et applications attribuées; ces étapes diffèrent selon l'outil de gestion.
+- Utiliser un compte utilisateur standard; l'administration locale doit être gérée par Windows [[Glossary:LAPS]] ou un mécanisme approuvé.
 
 ## 4. Protéger les données et le système
 
@@ -38,7 +38,7 @@ Fiche simple : [protéger les données et le système](../../../../01-fiches-sim
 
 1. Vérifier Microsoft Defender et le pare-feu sur les profils requis.
 2. Activer BitLocker lorsque la stratégie le demande; confirmer que la clé de récupération a été déposée dans le coffre prévu avant de remettre le poste.
-3. Limiter RDP, OpenSSH et les règles entrantes au besoin approuvé.
+3. Limiter [[Glossary:RDP]], OpenSSH et les règles entrantes au besoin approuvé.
 4. Confirmer mises à jour, Secure Boot, TPM, chiffrement et état d'enrôlement.
 
 Exemple de contrôles non secrets en PowerShell :
@@ -61,7 +61,7 @@ Déployer uniquement les applications autorisées via le catalogue ou l'outil de
 
 Fiche simple : [recette et remise](../../../../01-fiches-simples/windows/client-11/vie-du-systeme/fiches-par-theme/deploiement-production/fiche-simple-hote-windows-11-deploiement-recette-remise.md).
 
-- Tester ouverture de session, réseau, DNS, VPN, applications, imprimantes/périphériques et outils de support.
+- Tester ouverture de session, réseau, [[Glossary:DNS]], VPN, applications, imprimantes/périphériques et outils de support.
 - Vérifier récupération des fichiers utilisateurs via OneDrive/File History ou la solution de sauvegarde retenue.
 - Documenter hostname, utilisateur, build, état BitLocker et réception; ne jamais inscrire le mot de passe ou la clé de récupération dans le procès-verbal.
 

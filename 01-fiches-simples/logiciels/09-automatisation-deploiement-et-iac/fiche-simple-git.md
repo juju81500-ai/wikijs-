@@ -1,13 +1,13 @@
 # 📄 Git
 
-- **Environnement** : VM (Debian 12) client et serveur de sauvegarde
+- **Environnement** : [[Glossary:VM]] (Debian 12) client et serveur de sauvegarde
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : Git 2.39.x (paquet des dépôts Debian 12, à vérifier sur la version déployée)
 - **Catégorie** : Automatisation, déploiement et IaC
 - **Tags** : `[debian-12]`, `[git]`, `[ssh]`, `[depot]`, `[sauvegarde]`
 
 ## 🎯 Problème précis à résoudre
-Configurer Git sur un poste d'administration Debian 12 (identité, clé SSH, branches), puis héberger un dépôt nu de sauvegarde sur un serveur Linux accessible en SSH. La procédure ne couvre pas GitHub (SaaS).
+Configurer Git sur un poste d'administration Debian 12 (identité, clé [[Glossary:SSH]], branches), puis héberger un dépôt nu de sauvegarde sur un serveur Linux accessible en SSH. La procédure ne couvre pas GitHub (SaaS).
 
 ---
 

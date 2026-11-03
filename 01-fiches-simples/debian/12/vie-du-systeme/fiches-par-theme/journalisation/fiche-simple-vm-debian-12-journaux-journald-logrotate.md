@@ -1,6 +1,6 @@
 # 📄 VM_Debian_12_Journaux_Journald-Logrotate.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Supervision & Journaux / Rétention et rotation
 - **Tags** : `[debian12]`, `[debian-family]`, `[journald]`, `[logrotate]`, `[journaux]`, `[retention]`

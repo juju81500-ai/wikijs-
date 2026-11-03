@@ -1,6 +1,6 @@
 # fiche-simple-lxc-alpine-diagnostic-preparer-intervention.md
 
-- **Environnement** : LXC Alpine sur Proxmox VE; console d'administration accessible
+- **Environnement** : [[Glossary:LXC]] Alpine sur Proxmox VE; console d'administration accessible
 - **OS / Version** : branche Alpine maintenue; noter la version réelle avant intervention
 - **Catégorie** : diagnostic / préparation
 - **Tags** : `alpine`, `proxmox`, `lxc`, `diagnostic`, `reseau`
@@ -17,9 +17,9 @@ Préparer un diagnostic réseau/service en préservant l'accès console et en é
    ```sh
    date; ip -br addr; ip route
    ```
-   👉 Explication : relever heure, IP, interface, bridge/VLAN, destination et port concernés.
+   👉 Explication : relever heure, [[Glossary:IP]], interface, bridge/VLAN, destination et port concernés.
 
-2. Garder la console Proxmox ouverte : **CT > Console** (ou `pct enter CTID` depuis le nœud).
+2. Garder la console Proxmox ouverte : **[[Glossary:CT]] > Console** (ou `pct enter CTID` depuis le nœud).
    👉 Explication : l'accès doit survivre à une perte réseau.
 
 3. Sauvegarder la configuration du CT :
@@ -28,7 +28,7 @@ Préparer un diagnostic réseau/service en préservant l'accès console et en é
    ```
    👉 Explication : remplacer `CTID`; ne pas vider les règles du firewall ni redémarrer le nœud.
 
-4. Suivre la chaîne : hôte/bridge → interface → IP → passerelle → route → DNS → port → service.
+4. Suivre la chaîne : hôte/bridge → interface → IP → passerelle → route → [[Glossary:DNS]] → port → service.
    👉 Explication : on ne corrige qu'une couche à la fois.
 
 ## 2. Production — Contrôles
@@ -38,7 +38,7 @@ Consigner symptômes, périmètre, changement récent, propriétaire réseau et 
 ## 3. Production — Sécurité
 
 - Ne pas vider les règles de pare-feu ni redémarrer tout le nœud Proxmox.
-- Ne pas supposer qu'un LXC se configure comme une VM.
+- Ne pas supposer qu'un LXC se configure comme une [[Glossary:VM]].
 - Ne pas modifier des fichiers générés automatiquement par Proxmox.
 - Ne pas réaliser de test vers une destination ou un port hors périmètre.
 

@@ -1,6 +1,6 @@
 # 📄 NetApp ONTAP
 
-- **Catégorie** : Stockage et SAN / NAS
+- **Catégorie** : Stockage et [[Glossary:SAN]] / [[Glossary:NAS]]
 - **Plateforme** : Appliances
 - **Produit (matrice)** : NetApp ONTAP / Dell EMC
 - **Statut dans le pack** : Matériel/éditeur propriétaire — hors périmètre pas à pas

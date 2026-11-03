@@ -1,6 +1,6 @@
 # 📄 Fiche_Simple_-_VM_Debian_13_Stockage_Fstab_Options
 
-- **Environnement** : VM ou serveur Debian 13 avec des montages temporaires à durcir
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 13 avec des montages temporaires à durcir
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
 - **Catégorie** : Stockage / Options de montage sécurisées
 - **Tags** : `[debian13]`, `[debian]`, `[fstab]`, `[mount]`, `[tmpfs]`, `[hardening]`
@@ -43,7 +43,7 @@ Appliquer les options de montage `nodev`, `nosuid` et `noexec` sur `/tmp` et `/d
    tmpfs /dev/shm tmpfs defaults,nodev,nosuid,noexec 0 0
    EOF
    ```
-   👉 Explication : `nodev` interdit les fichiers périphériques, `nosuid` ignore le bit SUID, `noexec` interdit l'exécution directe. `mode=1777` conserve les droits standards de `/tmp`. `size=1G` limite la RAM consommée ; l'adapter à la mémoire de la VM.
+   👉 Explication : `nodev` interdit les fichiers périphériques, `nosuid` ignore le bit [[Glossary:SUID]], `noexec` interdit l'exécution directe. `mode=1777` conserve les droits standards de `/tmp`. `size=1G` limite la [[Glossary:RAM]] consommée ; l'adapter à la mémoire de la VM.
 
 2. Valider la syntaxe du fichier fstab, puis monter les entrées :
    ```bash

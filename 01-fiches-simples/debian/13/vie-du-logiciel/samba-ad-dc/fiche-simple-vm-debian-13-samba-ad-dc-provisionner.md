@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-samba-ad-dc-provisionner.md
 
-- **Environnement** : VM Debian 13 de laboratoire, contrôleur de domaine Samba AD DC (DNS SAMBA_INTERNAL)
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire, contrôleur de domaine Samba [[Glossary:AD]] [[Glossary:DC]] ([[Glossary:DNS]] SAMBA_INTERNAL)
 - **OS / Version** : Debian 13 Trixie; Samba 4.22 (dépôts Debian)
 - **Catégorie** : annuaire / provisionnement
 - **Tags** : `debian13`, `samba`, `active-directory`, `lab`, `provision`, `samba-tool`
@@ -22,7 +22,7 @@ Créer un nouveau domaine AD avec samba-tool (une seule fois par DC).
      --domain=ADLAB \
      --dns-backend=SAMBA_INTERNAL
    ```
-   👉 Explication : crée base AD, SYSVOL, domaine Kerberos et DNS; `AD.LAB.TEST` et `ADLAB` sont des exemples à remplacer. Saisir le mot de passe Administrateur à l'invite, jamais en argument.
+   👉 Explication : crée base AD, [[Glossary:SYSVOL]], domaine Kerberos et DNS; `AD.LAB.TEST` et `ADLAB` sont des exemples à remplacer. Saisir le mot de passe Administrateur à l'invite, jamais en argument.
 
 2. Exécuter :
    ```bash

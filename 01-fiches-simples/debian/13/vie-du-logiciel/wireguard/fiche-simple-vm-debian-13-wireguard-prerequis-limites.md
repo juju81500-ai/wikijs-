@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_WireGuard_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 dédiée à WireGuard natif
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à WireGuard natif
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : WireGuard natif / prérequis et limites
 - **Tags** : `wireguard`, `debian13`, `vie-du-logiciel`, `prerequis_limites`
@@ -26,14 +26,14 @@ Préparer un endpoint WireGuard natif sur Debian 13, sans déploiement Docker.
    ip route
    sudo nft list ruleset
    ```
-   👉 Explication : Identifier interface de gestion et port UDP; cette procédure concerne l’hôte, pas Docker.
+   👉 Explication : Identifier interface de gestion et port [[Glossary:UDP]]; cette procédure concerne l’hôte, pas Docker.
 
 3. Faire approuver pairs, sous-réseaux, routes et accès d’urgence hors tunnel.
-   👉 Explication : Le routage ou NAT vers d’autres réseaux nécessite une validation distincte.
+   👉 Explication : Le routage ou [[Glossary:NAT]] vers d’autres réseaux nécessite une validation distincte.
 
 ## 2. Production — Contrôles
 
-Documenter endpoint, adressage VPN, propriétaire de chaque pair et plan de révocation/rotation.
+Documenter endpoint, adressage [[Glossary:VPN]], propriétaire de chaque pair et plan de révocation/rotation.
 
 ## 3. Production — Sécurité
 

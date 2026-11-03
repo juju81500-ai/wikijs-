@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-bind9-autoritatif-installer.md
 
-- **Environnement** : VM Debian 13, paquet bind9 Debian
+- **Environnement** : [[Glossary:VM]] Debian 13, paquet bind9 Debian
 - **OS / Version** : Debian 13 Trixie; paquets bind9 de la distribution
 - **Catégorie** : dns / installation
 - **Tags** : `debian13`, `bind9`, `apt`, `systemd`
@@ -41,7 +41,7 @@ Utiliser uniquement les dépôts Debian approuvés, suivre les mises à jour de 
 
 ## 3. Production — Sécurité
 
-- Ne pas installer BIND depuis une source tierce non revue.
+- Ne pas installer [[Glossary:BIND]] depuis une source tierce non revue.
 - Ne pas modifier récursivement les propriétaires de `/etc/bind`.
 - Conserver la protection AppArmor du paquet.
 

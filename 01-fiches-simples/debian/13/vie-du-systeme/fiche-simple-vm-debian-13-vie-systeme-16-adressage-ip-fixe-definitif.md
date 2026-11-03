@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Vie_Systeme_16_Adressage_Ip_Fixe_Definitif
 
-- **Environnement** : VM Debian 13 « trixie » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 13 « trixie » (serveur)
 - **OS / Version** : Debian 13; étape 16 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian13`, `vie-du-systeme`, `cycle-de-vie`, `etape-16`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Fixer l'IP du serveur.
+Fixer l'[[Glossary:IP]] du serveur.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -30,11 +30,11 @@ Fixer l'IP du serveur.
 
 ## 2. Production — Contrôles
 
-Réserver l'adresse dans l'IPAM (étape 49).
+Réserver l'adresse dans l'[[Glossary:IPAM]] (étape 49).
 
 ## 3. Production — Sécurité
 
-Valider depuis la console : une erreur coupe l'accès SSH.
+Valider depuis la console : une erreur coupe l'accès [[Glossary:SSH]].
 
 ## Validation et retour arrière
 

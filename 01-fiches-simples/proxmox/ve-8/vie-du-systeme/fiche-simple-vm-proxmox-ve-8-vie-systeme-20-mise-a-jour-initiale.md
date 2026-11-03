@@ -13,7 +13,7 @@ Appliquer tous les correctifs avant mise en service.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : **Nœud > Updates > Refresh**, puis **Upgrade**. En ligne de commande :
+1. [[Glossary:GUI]] : **Nœud > Updates > Refresh**, puis **Upgrade**. En ligne de commande :
    ```bash
    apt update
    apt full-upgrade
@@ -37,7 +37,7 @@ Appliquer tous les correctifs avant mise en service.
 
 ## 2. Production — Contrôles
 
-Planifier le redémarrage; migrer les VM d'abord si l'hôte est en cluster.
+Planifier le redémarrage; migrer les [[Glossary:VM]] d'abord si l'hôte est en cluster.
 
 ## 3. Production — Sécurité
 

@@ -1,6 +1,6 @@
 # 📄 VM_Debian_12_Sauvegarde_Configuration-Rclone-S3.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Sauvegarde & Stockage Cloud
 - **Tags** : `[debian12]`, `[debian-family]`, `[rclone]`, `[sauvegarde]`, `[s3]`, `[cron]`, `[hardening]`

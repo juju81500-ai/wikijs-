@@ -2,14 +2,14 @@
 
 - **OS / Version** : Windows (PingCastle); BloodHound Community Edition multiplateforme, collecteurs selon version
 - **Type de fiche** : Installation/Déploiement
-- **Environnement** : Domaine AD de laboratoire ou domaine audité avec accord écrit
+- **Environnement** : Domaine [[Glossary:AD]] de laboratoire ou domaine audité avec accord écrit
 - **Machine ciblée** : Poste d'audit sécurisé
 - **Catégorie** : Audit Active Directory
 - **Tags** : `pingcastle`, `bloodhound`, `active-directory`, `audit`, `defensif`
 
 ## 1. Périmètre
 
-Évaluer l'hygiène et les chemins d'attaque d'un domaine pour corriger les faiblesses, sans exploitation. La collecte ne se fait que sur un domaine autorisé, avec accord du responsable de l'annuaire et du RSSI.
+Évaluer l'hygiène et les chemins d'attaque d'un domaine pour corriger les faiblesses, sans exploitation. La collecte ne se fait que sur un domaine autorisé, avec accord du responsable de l'annuaire et du [[Glossary:RSSI]].
 
 ## 2. Prérequis
 
@@ -33,7 +33,7 @@ Les collecteurs (SharpHound, AzureHound) et leurs options varient selon la versi
 
 ### 4.1 Cadrer et préparer le poste
 
-Isoler le poste d'audit, vérifier l'heure, la résolution DNS du domaine et la connectivité vers un contrôleur de domaine autorisé.
+Isoler le poste d'audit, vérifier l'heure, la résolution [[Glossary:DNS]] du domaine et la connectivité vers un contrôleur de domaine autorisé.
 
 ### 4.2 Exécuter PingCastle
 
@@ -49,7 +49,7 @@ Lancer le collecteur officiel correspondant à la version, avec options minimale
 
 ### 4.5 Analyser défensivement
 
-Prioriser : comptes à privilèges excessifs, délégations non contraintes, chemins vers les groupes sensibles, comptes de service faibles, délégations ACL. Convertir chaque constat en action de remédiation.
+Prioriser : comptes à privilèges excessifs, délégations non contraintes, chemins vers les groupes sensibles, comptes de service faibles, délégations [[Glossary:ACL]]. Convertir chaque constat en action de remédiation.
 
 ### 4.6 Corriger et rescanner
 
@@ -70,7 +70,7 @@ Appliquer les corrections (réduction des droits, modèle d'administration en ni
 
 ## 7. Limites de version et de licence
 
-- Les noms de collecteurs, formats et API évoluent entre versions de BloodHound.
+- Les noms de collecteurs, formats et [[Glossary:API]] évoluent entre versions de BloodHound.
 - PingCastle a des conditions de licence à vérifier selon l'usage.
 - Les résultats ne remplacent pas une revue manuelle ni une analyse de risque.
 - Aucune exploitation des chemins découverts n'est dans le périmètre de cette fiche.

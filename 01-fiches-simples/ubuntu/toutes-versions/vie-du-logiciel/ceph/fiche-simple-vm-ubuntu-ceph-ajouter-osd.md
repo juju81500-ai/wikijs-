@@ -1,7 +1,7 @@
 # fiche-simple-vm-ubuntu-ceph-ajouter-osd.md
 
 - **Environnement** : Cluster Ceph de laboratoire à trois nœuds (ceph01, ceph02, ceph03) géré par cephadm
-- **OS / Version** : Ubuntu Server 22-04 LTS; Ceph Tentacle 20.2.4
+- **OS / Version** : Ubuntu Server 22-04 [[Glossary:LTS]]; Ceph Tentacle 20.2.4
 - **Catégorie** : stockage / cluster Ceph
 - **Tags** : `ubuntu2204`, `ceph`, `tentacle`, `cephadm`
 
@@ -17,7 +17,7 @@ Créer un OSD par nœud sur un disque de données explicitement choisi, sans eff
    ```bash
    lsblk -o NAME,SIZE,MODEL,SERIAL,FSTYPE,MOUNTPOINTS
    ```
-   👉 Explication : un disque éligible doit être vide, non monté, sans partition, système de fichiers ni LVM.
+   👉 Explication : un disque éligible doit être vide, non monté, sans partition, système de fichiers ni [[Glossary:LVM]].
 
 2. Lister les périphériques vus par Ceph :
    ```bash
@@ -75,7 +75,7 @@ Créer un OSD par nœud sur un disque de données explicitement choisi, sans eff
 
 ## 2. Production — Contrôles
 
-Faire valider physiquement chaque disque (série, by-id) par un second administrateur; jamais sur un disque système, monté, partagé avec une VM ou contenant des données.
+Faire valider physiquement chaque disque (série, by-id) par un second administrateur; jamais sur un disque système, monté, partagé avec une [[Glossary:VM]] ou contenant des données.
 
 ## 3. Production — Sécurité
 

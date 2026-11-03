@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_9_AlmaLinux_Verification_Apres_Transition
 
-- **Environnement** : VM Rocky Linux 9 comme repère documentaire; sujet AlmaLinux
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 comme repère documentaire; sujet AlmaLinux
 - **OS / Version** : AlmaLinux 8/9 selon la matrice officielle du chemin étudié; contrôles depuis clone Rocky Linux 9
 - **Catégorie** : Vie du logiciel / AlmaLinux — Vérifier après transition
 - **Tags** : `rocky9`, `almalinux`, `rhel`, `migration`

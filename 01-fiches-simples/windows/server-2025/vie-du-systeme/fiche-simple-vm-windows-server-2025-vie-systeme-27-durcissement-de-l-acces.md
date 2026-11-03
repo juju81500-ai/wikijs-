@@ -20,7 +20,7 @@ Restreindre qui peut se connecter à distance et comment.
    ```
    👉 Explication : seuls les comptes listés se connectent; le groupe est `Remote Desktop Users` en anglais.
 
-2. Limiter la source des connexions RDP (remplacer `IP_ADMIN` par l'adresse ou le sous-réseau d'administration) :
+2. Limiter la source des connexions [[Glossary:RDP]] (remplacer `IP_ADMIN` par l'adresse ou le sous-réseau d'administration) :
    ```powershell
    Set-NetFirewallRule -DisplayGroup 'Bureau à distance' -RemoteAddress IP_ADMIN
    ```
@@ -34,7 +34,7 @@ Restreindre qui peut se connecter à distance et comment.
 
 ## 2. Production — Contrôles
 
-Appliquer ces réglages par GPO sur l'ensemble des serveurs.
+Appliquer ces réglages par [[Glossary:GPO]] sur l'ensemble des serveurs.
 
 ## 3. Production — Sécurité
 

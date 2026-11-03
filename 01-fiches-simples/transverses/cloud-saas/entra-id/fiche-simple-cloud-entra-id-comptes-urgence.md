@@ -22,7 +22,7 @@ Préparer deux comptes d'accès d'urgence à exclure des politiques d'accès con
 3. Entra ID → Groups → New group → type Security ; nom GRP-URGENCE-EXCLUS (à remplacer) ; ajouter les comptes d'urgence.
    👉 Explication : un groupe unique simplifie l'exclusion dans chaque politique.
 
-4. Configurer une méthode de connexion robuste résistante à l'hameçonnage (clé FIDO2 ou certificat) selon la recommandation Microsoft, stockée hors ligne.
+4. Configurer une méthode de connexion robuste résistante à l'hameçonnage (clé [[Glossary:FIDO2]] ou certificat) selon la recommandation Microsoft, stockée hors ligne.
    👉 Explication : les secrets sont conservés dans un coffre physique ; aucun secret dans la fiche.
 
 5. Vérifier l'état des comptes :

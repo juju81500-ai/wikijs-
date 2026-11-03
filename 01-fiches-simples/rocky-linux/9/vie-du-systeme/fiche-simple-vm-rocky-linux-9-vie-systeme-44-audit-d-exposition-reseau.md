@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_44_Audit_D_Exposition_Reseau
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 44 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-44`
@@ -25,7 +25,7 @@ Vérifier ce que voit l'extérieur.
    ```
    👉 Explication : les ports vus doivent correspondre.
 
-3. Contrôler le service SSH exposé :
+3. Contrôler le service [[Glossary:SSH]] exposé :
    ```bash
    nmap -sV -p 22 192.0.2.10
    ```

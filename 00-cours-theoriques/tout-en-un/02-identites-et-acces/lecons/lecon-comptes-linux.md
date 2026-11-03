@@ -15,20 +15,20 @@
 3. Créer, verrouiller et supprimer comptes et groupes (`useradd`, `usermod`, `groupadd`, `passwd`, `userdel`).
 4. Lire et écrire des permissions avec `chmod`, `chown`, `chgrp`, y compris `setgid` et `sticky`.
 5. Prévoir les droits d'un nouveau fichier grâce à l'`umask`.
-6. Accorder un droit précis avec les **ACL POSIX**.
+6. Accorder un droit précis avec les **[[Glossary:ACL]] POSIX**.
 7. Déléguer avec **sudo** prudemment : `/etc/sudoers.d/`, `visudo`, moindre privilège.
 
 ## Prérequis et durée
 
 - Savoir utiliser un terminal (`cd`, `ls`, `cat`).
 - Une **machine virtuelle jetable** Debian ou Ubuntu dont vous êtes administrateur.
-- Durée totale : environ 3 h 30 ; le laboratoire (section 8) se fait sur la VM.
+- Durée totale : environ 3 h 30 ; le laboratoire (section 8) se fait sur la [[Glossary:VM]].
 
 > **Règle de sécurité** : les commandes de modification (`useradd`, `chmod -R`, `setfacl`, sudoers…) sont réservées au laboratoire ; les commandes de consultation (`id`, `ls -l`, `getent`, `getfacl`, `sudo -l`) sont sans danger.
 
 ## L'essentiel en bref
 
-- Linux manipule des **numéros** (UID, GID) ; les noms sont des étiquettes.
+- Linux manipule des **numéros** (UID, [[Glossary:GID]]) ; les noms sont des étiquettes.
 - Un fichier a **un propriétaire, un groupe et trois jeux de droits** (propriétaire, groupe, autres) en lecture (`r`), écriture (`w`), exécution (`x`).
 - Les **ACL** ajoutent des entrées nommées ; l'**umask** *retire* des droits à la création (666 fichier, 777 répertoire).
 - **sudo** délègue *une commande précise* sans distribuer le mot de passe de root.
@@ -117,7 +117,7 @@ getent passwd alice
 getent group projet
 ```
 
-👉 Explication : `getent` interroge les sources de `/etc/nsswitch.conf` (fichiers, SSSD, LDAP…) ; un `grep` sur `/etc/passwd` ne voit que les comptes locaux.
+👉 Explication : `getent` interroge les sources de `/etc/nsswitch.conf` (fichiers, [[Glossary:SSSD]], [[Glossary:LDAP]]…) ; un `grep` sur `/etc/passwd` ne voit que les comptes locaux.
 
 ## 3. Gérer comptes et groupes
 
@@ -149,7 +149,7 @@ sudo chage --list alice
 sudo userdel --remove alice
 ```
 
-👉 Explication : `--lock` rend la connexion par mot de passe impossible, mais une clé SSH peut rester valide : pour un départ, bloquez aussi SSH. `chage` règle l'expiration. `userdel --remove` supprime aussi le dossier personnel : irréversible, à faire après sauvegarde.
+👉 Explication : `--lock` rend la connexion par mot de passe impossible, mais une clé [[Glossary:SSH]] peut rester valide : pour un départ, bloquez aussi SSH. `chage` règle l'expiration. `userdel --remove` supprime aussi le dossier personnel : irréversible, à faire après sauvegarde.
 
 **Cycle de vie** : on verrouille, on conserve les données le temps voulu, puis on supprime. Un fichier orphelin s'affiche avec un simple numéro ; si l'UID est réattribué, la nouvelle personne hérite de ses fichiers.
 
@@ -261,7 +261,7 @@ Comment donner à Carole, hors du groupe `projet`, un accès en **lecture seule*
 getfacl /srv/projet
 ```
 
-👉 Explication : lecture seule : affiche les entrées de base (`user::`, `group::`, `other::`) et les entrées nommées (`user:carole:r-x`). ext4 et XFS gèrent les ACL par défaut.
+👉 Explication : lecture seule : affiche les entrées de base (`user::`, `group::`, `other::`) et les entrées nommées (`user:carole:r-x`). ext4 et [[Glossary:XFS]] gèrent les ACL par défaut.
 
 ```bash
 sudo setfacl --modify user:carole:rX /srv/projet
@@ -340,7 +340,7 @@ sudo chmod 0440 /etc/sudoers.d/90-projet-web
 - **Jokers (`*`)** : `/usr/bin/vi /etc/nginx/*` autorise un `vi` qui lance un shell (`:!sh`). Préférez `sudoedit`.
 - **Éditeurs, pagineurs, interpréteurs (`vim`, `less`, `python`, `find`, `tar`)** savent lancer d'autres programmes : les autoriser revient à donner un shell.
 - **Chemin relatif** : toujours en absolu, sinon un binaire homonyme du `PATH` peut être exécuté.
-- **Groupes `sudo` / `wheel`** : `sudo` (Debian, Ubuntu) et `wheel` (RHEL) sont liés à une règle sudoers ; les lister révèle vos administrateurs.
+- **Groupes `sudo` / `wheel`** : `sudo` (Debian, Ubuntu) et `wheel` ([[Glossary:RHEL]]) sont liés à une règle sudoers ; les lister révèle vos administrateurs.
 
 ```bash
 getent group sudo wheel

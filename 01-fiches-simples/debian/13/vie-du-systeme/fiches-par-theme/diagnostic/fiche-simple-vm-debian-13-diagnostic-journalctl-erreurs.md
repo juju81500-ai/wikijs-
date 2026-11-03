@@ -1,6 +1,6 @@
 # 📄 Fiche_Simple_-_VM_Debian_13_Diagnostic_Journalctl_Erreurs
 
-- **Environnement** : VM ou serveur Debian 13 avec systemd
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 13 avec systemd
 - **OS / Version** : Debian 13 (Trixie) avec systemd - Famille Debian
 - **Catégorie** : Diagnostic / Analyse des journaux d'erreurs
 - **Tags** : `[debian13]`, `[debian]`, `[journalctl]`, `[diagnostic]`, `[systemd]`, `[dmesg]`

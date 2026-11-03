@@ -25,7 +25,7 @@ Réutiliser les procédures Rocky Linux 9 pertinentes sans créer une nouvelle s
    - [Récupération et vérification de l’image](../../rocky-linux/9/vie-du-systeme/fiche-simple-vm-rocky-linux-9-vie-systeme-02-recuperation-de-l-image.md)
    - [Mise à jour initiale](../../rocky-linux/9/vie-du-systeme/fiche-simple-vm-rocky-linux-9-vie-systeme-20-mise-a-jour-initiale.md)
    - [Mises à jour et inventaire](../../rocky-linux/9/vie-du-systeme/fiches-par-theme/securite/fiche-simple-vm-rocky-9-securite-hardening-mises-a-jour-inventaire.md)
-   👉 Explication : les tâches communes DNF, firewalld et SELinux sont des repères; vérifier la compatibilité et le support applicables à l’hôte réel.
+   👉 Explication : les tâches communes [[Glossary:DNF]], firewalld et SELinux sont des repères; vérifier la compatibilité et le support applicables à l’hôte réel.
 
 3. Avant un changement, comparer le dépôt, le paquet release et la documentation officielle AlmaLinux.
    👉 Explication : ne pas copier aveuglément un nom de dépôt, une clé de signature ou une commande de souscription Rocky/RHEL.

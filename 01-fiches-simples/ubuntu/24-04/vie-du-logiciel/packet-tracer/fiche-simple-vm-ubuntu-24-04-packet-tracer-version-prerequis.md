@@ -1,7 +1,7 @@
 # fiche-simple-vm-ubuntu-24-04-packet-tracer-version-prerequis.md
 
-- **Environnement** : Poste Ubuntu Desktop 24-04 (VM) pour la simulation réseau pédagogique
-- **OS / Version** : Ubuntu Desktop 24-04 LTS amd64; Cisco Packet Tracer 9.0.1
+- **Environnement** : Poste Ubuntu Desktop 24-04 ([[Glossary:VM]]) pour la simulation réseau pédagogique
+- **OS / Version** : Ubuntu Desktop 24-04 [[Glossary:LTS]] amd64; Cisco Packet Tracer 9.0.1
 - **Catégorie** : simulation réseau / prérequis
 - **Tags** : `ubuntu24.04`, `cisco`, `packet-tracer`, `netacad`, `prerequis`
 
@@ -20,7 +20,7 @@ Vérifier que le poste est compatible avec Packet Tracer 9.0.1.
    free -h
    df -h "$HOME"
    ```
-   👉 Explication : Ubuntu 22-04/24-04 amd64, 4 Go de RAM libre et 1,4 Go de disque sont indiqués.
+   👉 Explication : Ubuntu 22-04/24-04 amd64, 4 Go de [[Glossary:RAM]] libre et 1,4 Go de disque sont indiqués.
 
 ## 2. Production — Contrôles
 

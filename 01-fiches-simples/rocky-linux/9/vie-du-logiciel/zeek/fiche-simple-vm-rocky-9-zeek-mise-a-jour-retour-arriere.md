@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Rocky_9_Zeek_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Zeek
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Zeek
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Zeek / mise à jour et retour arrière
 - **Tags** : `zeek`, `rocky9`, `vie-du-logiciel`, `mise-a-jour-retour-arriere`
 
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Mettre à jour Zeek dans la ligne LTS et revenir en arrière en cas de régression.
+Mettre à jour Zeek dans la ligne [[Glossary:LTS]] et revenir en arrière en cas de régression.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

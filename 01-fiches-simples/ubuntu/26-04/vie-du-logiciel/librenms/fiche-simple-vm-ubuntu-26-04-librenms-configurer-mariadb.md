@@ -1,7 +1,7 @@
 # fiche-simple-vm-ubuntu-26-04-librenms-configurer-mariadb.md
 
-- **Environnement** : VM Ubuntu Server 26-04 dédiée à LibreNMS (Nginx, PHP-FPM, MariaDB, SNMP)
-- **OS / Version** : Ubuntu Server 26-04 LTS; LibreNMS 26.10.2; PHP 8.5
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 dédiée à LibreNMS (Nginx, PHP-FPM, MariaDB, [[Glossary:SNMP]])
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]]; LibreNMS 26.10.2; PHP 8.5
 - **Catégorie** : supervision / base de données
 - **Tags** : `ubuntu2604`, `librenms`, `snmpv3`, `nginx`, `mariadb`
 
@@ -31,7 +31,7 @@ Régler MariaDB et créer une base et un compte dédiés à LibreNMS.
    ```bash
    sudo mariadb
    ```
-   👉 Explication : Ouvre la console SQL en root local.
+   👉 Explication : Ouvre la console [[Glossary:SQL]] en root local.
 
 4. Créer base et utilisateur :
    ```sql

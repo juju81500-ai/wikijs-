@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_ownCloud_Securiser
 
-- **Environnement** : VM Debian 13; ownCloud Infinite Scale (oCIS), binaire officiel, Nginx
+- **Environnement** : [[Glossary:VM]] Debian 13; ownCloud Infinite Scale (oCIS), binaire officiel, Nginx
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / ownCloud — Sécuriser
 - **Tags** : `debian13`, `owncloud`, `ocis`, `cloud`, `securiser`
@@ -36,7 +36,7 @@ Activer HTTPS valide, filtrer le réseau et protéger les secrets d'ownCloud Inf
    ```
    👉 Explication : contient clés et secrets d'authentification.
 
-4. Changer le mot de passe administrateur initial après première connexion : GUI.
+4. Changer le mot de passe administrateur initial après première connexion : [[Glossary:GUI]].
    👉 Explication : Profil > Compte > Changer le mot de passe (chemin à vérifier sur la version publiée).
 
 5. Ajouter les en-têtes de sécurité dans Nginx (bloc 443) :
@@ -44,7 +44,7 @@ Activer HTTPS valide, filtrer le réseau et protéger les secrets d'ownCloud Inf
    sudo sed -i '/server_name OCIS.EXAMPLE.NET;/a\    add_header Strict-Transport-Security "max-age=15552000" always;' /etc/nginx/sites-available/ocis
    sudo nginx -t && sudo systemctl reload nginx
    ```
-   👉 Explication : active HSTS ; à n'appliquer qu'une fois HTTPS validé (la ligne s'insère dans chaque bloc server contenant le nom).
+   👉 Explication : active [[Glossary:HSTS]] ; à n'appliquer qu'une fois HTTPS validé (la ligne s'insère dans chaque bloc server contenant le nom).
 
 ## 2. Production — Contrôles
 
@@ -53,7 +53,7 @@ Vérifier renouvellement du certificat, accès externe au port 9200 refusé, dro
 ## 3. Production — Sécurité
 
 - Secrets jamais copiés dans des tickets ou des dépôts.
-- Compte administrateur nominatif et MFA/politiques selon les capacités de la version.
+- Compte administrateur nominatif et [[Glossary:MFA]]/politiques selon les capacités de la version.
 - Protéger le proxy avec [Fail2ban](../fail2ban/fiche-simple-vm-debian-13-securite-fail2ban.md) si les journaux le permettent.
 
 ## Validation et retour arrière

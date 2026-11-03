@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_ownCloud_Valider
 
-- **Environnement** : VM Debian 13; ownCloud Infinite Scale (oCIS), binaire officiel, Nginx
+- **Environnement** : [[Glossary:VM]] Debian 13; ownCloud Infinite Scale (oCIS), binaire officiel, Nginx
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / ownCloud — Valider (recette)
 - **Tags** : `debian13`, `owncloud`, `ocis`, `cloud`, `valider`
@@ -20,13 +20,13 @@ Recetter ownCloud Infinite Scale : service, accès web, authentification et dép
    ```
    👉 Explication : oCIS doit écouter en 127.0.0.1:9200, Nginx sur 443.
 
-2. Tester le point de découverte OIDC :
+2. Tester le point de découverte [[Glossary:OIDC]] :
    ```bash
    curl -fsS https://OCIS.EXAMPLE.NET/.well-known/openid-configuration | head -c 300
    ```
-   👉 Explication : une réponse JSON confirme que le service d'authentification est joignable.
+   👉 Explication : une réponse [[Glossary:JSON]] confirme que le service d'authentification est joignable.
 
-3. Se connecter à l'interface Web avec le compte administrateur, créer un espace de test, déposer puis télécharger un fichier : chemin GUI.
+3. Se connecter à l'interface Web avec le compte administrateur, créer un espace de test, déposer puis télécharger un fichier : chemin [[Glossary:GUI]].
    👉 Explication : valide la chaîne HTTPS/proxy/stockage ; vérifier aussi un client de synchronisation.
 
 4. Lire les journaux :

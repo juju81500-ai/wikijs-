@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-12-cacti-finaliser-collecte.md
 
-- **Environnement** : VM Debian 12 dédiée (Apache, PHP, MariaDB, poller local)
+- **Environnement** : [[Glossary:VM]] Debian 12 dédiée (Apache, PHP, MariaDB, poller local)
 - **OS / Version** : Debian 12 Bookworm; Cacti 1.2.31
 - **Catégorie** : supervision / mise en service
 - **Tags** : `debian12`, `cacti`, `snmp`, `rrdtool`, `mariadb`
@@ -30,7 +30,7 @@ Terminer l'assistant web et configurer un poller sur un équipement pilote.
 
 ## 2. Production — Contrôles
 
-Limiter UDP/161 aux sources nécessaires; attacher uniquement les templates utiles.
+Limiter [[Glossary:UDP]]/161 aux sources nécessaires; attacher uniquement les templates utiles.
 
 ## 3. Production — Sécurité
 

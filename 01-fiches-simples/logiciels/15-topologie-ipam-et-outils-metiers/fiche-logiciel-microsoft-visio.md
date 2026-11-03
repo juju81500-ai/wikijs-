@@ -1,6 +1,6 @@
 # 📄 Microsoft Visio
 
-- **Catégorie** : Topologie, IPAM et outils métiers
+- **Catégorie** : Topologie, [[Glossary:IPAM]] et outils métiers
 - **Plateforme** : Windows / Microsoft 365
 - **Produit (matrice)** : Microsoft Visio
 - **Statut dans le pack** : Couvert

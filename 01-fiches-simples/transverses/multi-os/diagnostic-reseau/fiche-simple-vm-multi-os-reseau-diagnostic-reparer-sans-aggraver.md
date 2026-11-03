@@ -1,6 +1,6 @@
 # fiche-simple-vm-multi-os-reseau-diagnostic-reparer-sans-aggraver.md
 
-- **Environnement** : VM, poste, serveur, LXC Proxmox ou hôte Docker (Linux ou Windows)
+- **Environnement** : [[Glossary:VM]], poste, serveur, [[Glossary:LXC]] Proxmox ou hôte Docker (Linux ou Windows)
 - **OS / Version** : Debian 12/13, Ubuntu 24-04/26-04, Rocky Linux 9, Alpine Linux, Windows 10/11, Windows Server 2022/2025
 - **Catégorie** : réseau / correction
 - **Tags** : `reseau`, `diagnostic`, `multi-os`, `depannage`

@@ -1,6 +1,6 @@
 # fiche-simple-docker-nextcloud29-migration-retour-arriere.md
 
-- **Environnement** : Hôte Linux avec Nextcloud 29, MariaDB, Redis et proxy TLS en conteneurs Docker Compose
+- **Environnement** : Hôte Linux avec Nextcloud 29, MariaDB, Redis et proxy [[Glossary:TLS]] en conteneurs Docker Compose
 - **OS / Version** : Linux serveur; Nextcloud 29 (branche ancienne) vers une version maintenue
 - **Catégorie** : conteneurs / migration
 - **Tags** : `nextcloud`, `docker`, `migration`, `mariadb`, `redis`, `tls`

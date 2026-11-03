@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-ansible-cadrer-pilote.md
 
-- **Environnement** : VM Debian 13 dédiée au contrôle Ansible, hôtes explicitement autorisés
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée au contrôle Ansible, hôtes explicitement autorisés
 - **OS / Version** : Debian 13 Trixie; Ansible Core
 - **Catégorie** : automatisation / administration système
 - **Tags** : `debian13`, `ansible`, `cadrage`, `ssh`, `pilote`
@@ -21,7 +21,7 @@ Définir un périmètre pilote Ansible à lecture seule avant de se connecter à
    ```
    👉 Explication : utiliser un compte nominatif non root, sur une VM de contrôle dédiée.
 
-2. Vérifier que l'hôte de test est joignable en SSH par le compte prévu :
+2. Vérifier que l'hôte de test est joignable en [[Glossary:SSH]] par le compte prévu :
    ```bash
    ssh -o BatchMode=yes admin_ansible@serveur-test.example.net 'hostname; python3 --version'
    ```

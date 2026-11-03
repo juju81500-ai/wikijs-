@@ -13,7 +13,7 @@ Connaître les outils intégrés.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Shell : GUI Shell ou SSH.
+1. Shell : [[Glossary:GUI]] Shell ou [[Glossary:SSH]].
    ```sh
    zpool list
    zfs list
@@ -28,7 +28,7 @@ Connaître les outils intégrés.
    ```
    👉 Explication : version et modèle.
 
-3. API en ligne de commande :
+3. [[Glossary:API]] en ligne de commande :
    ```sh
    midclt call system.info
    ```

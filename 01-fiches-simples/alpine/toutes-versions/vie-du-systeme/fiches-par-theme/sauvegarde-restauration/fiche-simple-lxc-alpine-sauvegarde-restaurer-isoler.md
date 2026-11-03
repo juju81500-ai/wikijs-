@@ -1,8 +1,8 @@
 # fiche-simple-lxc-alpine-sauvegarde-restaurer-isoler.md
 
 - **Environnement** : PVE/PBS; restauration vers un CTID temporaire et un réseau isolé
-- **OS / Version** : Alpine Linux, version maintenue utilisée par le CT source
-- **Catégorie** : sauvegarde LXC / restauration test
+- **OS / Version** : Alpine Linux, version maintenue utilisée par le [[Glossary:CT]] source
+- **Catégorie** : sauvegarde [[Glossary:LXC]] / restauration test
 - **Tags** : `alpine`, `proxmox`, `pbs`, `lxc`, `restore`, `isolation`
 
 ---
@@ -13,7 +13,7 @@ Prouver qu'un point de sauvegarde restaure correctement le CT sans créer de con
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Restaurer vers un ID temporaire : **Stockage PBS > Content > point de sauvegarde > Restore** (CT ID temporaire), ou :
+1. Restaurer vers un ID temporaire : **Stockage [[Glossary:PBS]] > Content > point de sauvegarde > Restore** (CT ID temporaire), ou :
    ```bash
    pct restore 9001 STOCKAGE_PBS:backup/ct/CTID/DATE --storage STOCKAGE_DISQUE --unprivileged 1
    ```
@@ -24,7 +24,7 @@ Prouver qu'un point de sauvegarde restaure correctement le CT sans créer de con
    pct set 9001 -net0 name=eth0,bridge=vmbr_isole,ip=192.0.2.250/24
    pct start 9001
    ```
-   👉 Explication : bridge isolé ou IP de test distincte, pour éviter tout conflit avec l'original.
+   👉 Explication : bridge isolé ou [[Glossary:IP]] de test distincte, pour éviter tout conflit avec l'original.
 
 3. Vérifier dans Alpine :
    ```sh
@@ -37,7 +37,7 @@ Prouver qu'un point de sauvegarde restaure correctement le CT sans créer de con
 
 ## 2. Production — Contrôles
 
-Faire valider point de restauration, CTID, réseau isolé, données, résultats, RPO/RTO mesurés et responsable avant toute bascule.
+Faire valider point de restauration, CTID, réseau isolé, données, résultats, [[Glossary:RPO]]/RTO mesurés et responsable avant toute bascule.
 
 ## 3. Production — Sécurité
 

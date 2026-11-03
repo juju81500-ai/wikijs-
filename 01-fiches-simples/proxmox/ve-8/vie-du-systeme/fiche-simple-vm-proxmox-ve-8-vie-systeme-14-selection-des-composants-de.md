@@ -27,7 +27,7 @@ Choisir ce qui est installé avec l'hôte.
    👉 Explication : vérifie la présence de `proxmox-ve`, `pve-manager`, `qemu-server`.
 
 3. N'installer aucun paquet supplémentaire sans besoin (pas d'environnement graphique, pas de serveur applicatif sur l'hôte).
-   👉 Explication : l'hôte ne doit servir qu'à héberger des VM.
+   👉 Explication : l'hôte ne doit servir qu'à héberger des [[Glossary:VM]].
 
 ## 2. Production — Contrôles
 

@@ -1,12 +1,12 @@
 # 📄 VM_Debian_12_Securite_Sysctl-Noyau.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Sécurité & Noyau / Durcissement réseau et système
 - **Tags** : `[debian12]`, `[debian-family]`, `[sysctl]`, `[kernel]`, `[tcp-syncookies]`, `[rp-filter]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Durcir les paramètres du noyau Linux de Debian 12 via `sysctl` : protection contre le spoofing et les redirections ICMP, SYN flood, fuite d'adresses noyau et abus de liens symboliques, en persistant la configuration dans `/etc/sysctl.d/`.
+Durcir les paramètres du noyau Linux de Debian 12 via `sysctl` : protection contre le spoofing et les redirections [[Glossary:ICMP]], SYN flood, fuite d'adresses noyau et abus de liens symboliques, en persistant la configuration dans `/etc/sysctl.d/`.
 
 ---
 
@@ -17,7 +17,7 @@ Durcir les paramètres du noyau Linux de Debian 12 via `sysctl` : protection con
 2. Contrôle du filtrage de chemin inverse :
    `sysctl net.ipv4.conf.all.rp_filter`
    👉 Explication : Une valeur `1` active le filtrage anti-spoofing ; `0` le désactive.
-3. Vérification du routage IP :
+3. Vérification du routage [[Glossary:IP]] :
    `sysctl net.ipv4.ip_forward`
    👉 Explication : Doit valoir `0` sur un serveur qui n'est pas routeur, pour éviter qu'il relaie du trafic.
 

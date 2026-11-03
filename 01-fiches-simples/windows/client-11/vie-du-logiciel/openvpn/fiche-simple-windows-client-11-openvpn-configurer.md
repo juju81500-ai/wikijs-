@@ -13,7 +13,7 @@ Importer le profil fourni et le protéger.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : clic droit sur l'icône OpenVPN GUI > Importer un fichier > sélectionner NOM_PROFIL.ovpn.
+1. [[Glossary:GUI]] : clic droit sur l'icône OpenVPN GUI > Importer un fichier > sélectionner NOM_PROFIL.ovpn.
    👉 Explication : NOM_PROFIL est le profil fourni (à remplacer). Le profil est copié dans le dossier de configuration de l'utilisateur.
 
 2. Alternative en PowerShell élevé : copier le profil dans le dossier global :

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_ownCloud_Installer
 
-- **Environnement** : VM Ubuntu Server 24-04; ownCloud Infinite Scale (oCIS), binaire officiel
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04; ownCloud Infinite Scale (oCIS), binaire officiel
 - **OS / Version** : Ubuntu Server 24-04
 - **Catégorie** : Vie du logiciel / ownCloud — Installer
 - **Tags** : `owncloud`, `serveur`, `vie-du-logiciel`, `installer`

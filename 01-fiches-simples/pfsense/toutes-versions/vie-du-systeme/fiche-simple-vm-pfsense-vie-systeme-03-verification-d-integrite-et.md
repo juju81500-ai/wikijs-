@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_03_Verification_D_Integrite_Et
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 03 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-03`
@@ -21,7 +21,7 @@ Prouver que l'image n'est ni corrompue ni modifiée.
    👉 Explication : doit afficher `OK`; sous FreeBSD utiliser `sha256` et comparer à la valeur du fichier `.sha256`.
 
 2. Comparer l'empreinte avec celle affichée sur la page officielle de téléchargement ou de la documentation Netgate, obtenue par un second canal.
-   👉 Explication : pfSense CE ne fournit pas de signature GPG pour l'ISO : la somme de contrôle issue de deux canaux HTTPS distincts limite le risque.
+   👉 Explication : pfSense CE ne fournit pas de signature [[Glossary:GPG]] pour l'ISO : la somme de contrôle issue de deux canaux HTTPS distincts limite le risque.
 
 ## 2. Production — Contrôles
 

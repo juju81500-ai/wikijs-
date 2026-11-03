@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Traefik_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; Traefik v3 (binaire officiel)
 - **Catégorie** : reverse proxy / Traefik / Prérequis et limites
 - **Tags** : `debian13`, `traefik`, `prerequis`
@@ -22,14 +22,14 @@ Cadrer l'installation de Traefik en service systemd sur un hôte Debian 13 (hors
    👉 Explication : l'archive officielle dépend de l'architecture (`x86_64` → `amd64`).
 
 2. Lister les services à publier :
-   👉 Explication : adresse, port, protocole et nom DNS de chaque application ; Traefik les atteint via le fournisseur de fichiers (file provider).
+   👉 Explication : adresse, port, protocole et nom [[Glossary:DNS]] de chaque application ; Traefik les atteint via le fournisseur de fichiers (file provider).
 
 3. Noter les limites :
    👉 Explication : cette série installe Traefik v3 en binaire sous systemd ; la variante Docker est dans la série `Docker/Traefik` du pack ; la version est à vérifier sur la page des publications officielles.
 
 ## 2. Production — Contrôles
 
-Consigner DNS, certificats (ACME ou fichiers), responsable, fenêtre de maintenance, sauvegarde.
+Consigner DNS, certificats ([[Glossary:ACME]] ou fichiers), responsable, fenêtre de maintenance, sauvegarde.
 
 ## 3. Production — Sécurité
 

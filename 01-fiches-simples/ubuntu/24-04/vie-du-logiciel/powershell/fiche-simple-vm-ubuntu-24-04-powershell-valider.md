@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_PowerShell_Valider
 
-- **Environnement** : VM Ubuntu 24-04 LTS de laboratoire, accès sudo, dépôt Microsoft officiel
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 [[Glossary:LTS]] de laboratoire, accès sudo, dépôt Microsoft officiel
 - **OS / Version** : Ubuntu 24-04 LTS
 - **Catégorie** : shell / scripting
 - **Tags** : `ubuntu2404`, `powershell`, `pwsh`, `scripting`
@@ -31,7 +31,7 @@ Recette de PowerShell 7 : installation, profil, modules, remoting.
    ```
    👉 Explication : aucune erreur au démarrage.
 
-4. Tester le remoting SSH depuis un client (HOTE et UTILISATEUR à remplacer) :
+4. Tester le remoting [[Glossary:SSH]] depuis un client (HOTE et UTILISATEUR à remplacer) :
    ```powershell
    Invoke-Command -HostName HOTE -UserName UTILISATEUR -ScriptBlock { hostname }
    ```

@@ -13,7 +13,7 @@ Remplacer le certificat auto-signé de l'hôte.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Host Client : **Gérer > Sécurité > Certificats** (afficher). Pour installer un certificat signé, copier la clé et le certificat dans `/etc/vmware/ssl/` (SSH) :
+1. Host Client : **Gérer > Sécurité > Certificats** (afficher). Pour installer un certificat signé, copier la clé et le certificat dans `/etc/vmware/ssl/` ([[Glossary:SSH]]) :
    ```sh
    ls -l /etc/vmware/ssl/
    openssl x509 -in /etc/vmware/ssl/rui.crt -noout -subject -dates

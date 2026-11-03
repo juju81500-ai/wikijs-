@@ -1,7 +1,7 @@
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Systeme_Compte_Service
 
-- **Environnement** : VM Ubuntu Server
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat)
+- **Environnement** : [[Glossary:VM]] Ubuntu Server
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble Numbat)
 - **Catégorie** : Système / Comptes de service et isolation
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[useradd]`, `[nologin]`, `[systemd]`, `[service-account]`, `[hardening]`
 

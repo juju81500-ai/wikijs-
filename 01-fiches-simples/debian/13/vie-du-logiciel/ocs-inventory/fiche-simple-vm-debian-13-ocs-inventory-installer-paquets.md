@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-13-ocs-inventory-installer-paquets.md
 
-- **Environnement** : VM Debian 13 dédiée, OCS Inventory 3.0 (Nginx, uWSGI, PostgreSQL local)
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée, OCS Inventory 3.0 (Nginx, uWSGI, PostgreSQL local)
 - **OS / Version** : Debian 13 Trixie; OCS Inventory 3.0; PostgreSQL 17
-- **Catégorie** : inventaire de parc / ITSM
+- **Catégorie** : inventaire de parc / [[Glossary:ITSM]]
 - **Tags** : `debian13`, `ocs-inventory`, `ocs3`, `postgresql`, `nginx`, `apt`
 
 ---
@@ -20,7 +20,7 @@ Ajouter le dépôt officiel OCS Inventory 3 pour trixie et installer le serveur.
    echo "deb https://deb-v3.ocsinventory-ng.org/ trixie main" \
      | sudo tee /etc/apt/sources.list.d/ocsinventory.list
    ```
-   👉 Explication : la clé permet à APT de vérifier les paquets; le dépôt cible la suite `trixie`.
+   👉 Explication : la clé permet à [[Glossary:APT]] de vérifier les paquets; le dépôt cible la suite `trixie`.
 
 2. Mettre à jour l'index et contrôler l'origine du paquet :
    ```bash

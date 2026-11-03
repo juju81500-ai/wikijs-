@@ -29,7 +29,7 @@ Prouver que les données et le poste peuvent être restaurés.
    ```
    👉 Explication : liste les points de restauration puis restaure le point choisi (`NUMERO_POINT`); redémarrage automatique.
 
-4. Mesurer le temps réel de restauration (RTO) et le comparer à l'objectif.
+4. Mesurer le temps réel de restauration ([[Glossary:RTO]]) et le comparer à l'objectif.
    ```powershell
    Measure-Command { Restore-Computer -RestorePoint NUMERO_POINT -WhatIf }
    ```

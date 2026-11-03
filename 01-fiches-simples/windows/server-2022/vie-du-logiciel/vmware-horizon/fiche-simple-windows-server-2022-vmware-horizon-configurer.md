@@ -2,7 +2,7 @@
 
 - **Environnement** : Serveurs Windows Server 2022 (Connection Server), vCenter, UAG, compte administrateur nominatif
 - **OS / Version** : Windows Server 2022; version Horizon à vérifier auprès de l'éditeur
-- **Catégorie** : VDI / Horizon
+- **Catégorie** : [[Glossary:VDI]] / Horizon
 - **Tags** : `vmware-horizon`, `horizon`, `windows-server`, `configuration`
 
 ---
@@ -16,10 +16,10 @@ Configurer pools de bureaux, droits et Unified Access Gateway pour Horizon.
 1. Créer l'image parente : snapshot de VM_MODELE après installation de l'agent.
    👉 Explication : base des clones.
 
-2. Créer le pool : GUI **Inventory > Desktops > Add**, choisir le type (pool automatisé ou manuel), le clonage depuis vCenter, le modèle VM_MODELE, le snapshot, le datastore et la convention de nommage NOM_POOL (à remplacer).
+2. Créer le pool : [[Glossary:GUI]] **Inventory > Desktops > Add**, choisir le type (pool automatisé ou manuel), le clonage depuis vCenter, le modèle VM_MODELE, le snapshot, le datastore et la convention de nommage NOM_POOL (à remplacer).
    👉 Explication : le libellé exact des étapes dépend de la version.
 
-3. Donner les droits : GUI **Inventory > Desktops > NOM_POOL > Entitlements > Add** avec le groupe AD GROUPE_UTILISATEURS.
+3. Donner les droits : GUI **Inventory > Desktops > NOM_POOL > Entitlements > Add** avec le groupe [[Glossary:AD]] GROUPE_UTILISATEURS.
    👉 Explication : seuls ces utilisateurs voient le pool.
 
 4. Déployer UAG : importer l'OVA officielle dans vCenter ; renseigner le fichier INI avec le script de déploiement officiel (vérifier le nom du script dans la doc) :
@@ -47,7 +47,7 @@ Get-HVPool | Select-Object -ExpandProperty Base
 ## 3. Production — Sécurité
 
 - Droits via groupes AD.
-- UAG dans une DMZ avec pare-feu strict.
+- UAG dans une [[Glossary:DMZ]] avec pare-feu strict.
 
 ## Validation et retour arrière
 

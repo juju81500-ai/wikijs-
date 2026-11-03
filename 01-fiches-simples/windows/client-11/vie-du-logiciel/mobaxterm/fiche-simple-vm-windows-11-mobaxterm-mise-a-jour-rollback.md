@@ -1,8 +1,8 @@
 # Fiche_Simple_-_VM_Windows_11_MobaXterm_Mise_A_Jour_Rollback
 
-- **Environnement** : Poste Windows 11 x64 d'administration (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'administration ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; MobaXterm Home/Professional, version VERSION_MOBAXTERM (à remplacer)
-- **Catégorie** : client SSH/RDP multi-sessions
+- **Catégorie** : client [[Glossary:SSH]]/RDP multi-sessions
 - **Tags** : `mobaxterm`, `windows11`, `mise-a-jour`, `rollback`
 
 ---
@@ -16,7 +16,7 @@ Mettre à jour MobaXterm et pouvoir revenir à la version précédente.
 1. Sauvegarder la configuration (fiche Sauvegarde_Restauration) et noter la version actuelle (**Help > About**).
    👉 Explication : point de retour.
 
-2. GUI : **Help > Check for updates** ; télécharger la version VERSION_CIBLE (à remplacer) depuis le site officiel.
+2. [[Glossary:GUI]] : **Help > Check for updates** ; télécharger la version VERSION_CIBLE (à remplacer) depuis le site officiel.
    👉 Explication : mise à jour officielle.
 
 3. Dans PowerShell, chercher le nom exact : `winget search "MobaXterm" --source winget`. Relever l'ID exact affiché (colonne Id) et le noter comme ID_PAQUET_VERIFIE (à remplacer ; ne jamais le deviner). Puis : `winget upgrade --id ID_PAQUET_VERIFIE --exact` (seulement si l'ID est vérifié).

@@ -1,6 +1,6 @@
 # Fiche simple — Installer InfluxDB 3 Core depuis le dépôt officiel
 
-- **Environnement** : Debian 13 Trixie amd64, dépôts APT approuvés
+- **Environnement** : Debian 13 Trixie amd64, dépôts [[Glossary:APT]] approuvés
 - **OS / Version** : Debian 13; paquet `influxdb3-core`
 - **Catégorie** : base de données de séries temporelles / installation
 - **Tags** : `debian13`, `influxdb3-core`, `apt`, `signature`, `installation`
@@ -45,11 +45,11 @@ Installer le paquet InfluxDB 3 Core uniquement après validation de la clé et d
 
 ## 2. Production — Contrôles
 
-Avant mise en production, consigner le propriétaire, les sources et consommateurs, la rétention, la capacité, le RPO/RTO, les sauvegardes testées, les clients autorisés et la politique de jetons. Vérifier que les limites de l’édition Core répondent au besoin.
+Avant mise en production, consigner le propriétaire, les sources et consommateurs, la rétention, la capacité, le [[Glossary:RPO]]/RTO, les sauvegardes testées, les clients autorisés et la politique de jetons. Vérifier que les limites de l’édition Core répondent au besoin.
 
 ## 3. Production — Sécurité
 
-- Garder l’API liée à loopback tant qu’un proxy TLS et un filtrage réseau approuvés ne sont pas en place.
+- Garder l’[[Glossary:API]] liée à loopback tant qu’un proxy [[Glossary:TLS]] et un filtrage réseau approuvés ne sont pas en place.
 - Ne jamais partager le jeton opérateur; stocker les secrets dans le coffre et les révoquer en cas d’exposition.
 - Utiliser uniquement des données synthétiques dans le pilote et protéger les copies de données/journaux.
 - Ne pas restaurer sur l’instance active sans copie préalable, validation de la cible et changement approuvé.

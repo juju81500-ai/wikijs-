@@ -25,7 +25,7 @@ Confirmer que Windows Server 2025 et l’environnement Active Directory sont com
 3. Vérifier l’environnement Active Directory et les prérequis Exchange SE avant toute préparation de schéma.
    👉 Explication : Microsoft précise qu’un contrôleur Windows Server 2025 portant le rôle Schema Master doit avoir la mise à jour cumulative de novembre 2025 (KB5068861) ou ultérieure avant l’opération PrepareAD.
 
-4. Concevoir stockage, réseau, DNS et sauvegarde selon la documentation de déploiement Microsoft.
+4. Concevoir stockage, réseau, [[Glossary:DNS]] et sauvegarde selon la documentation de déploiement Microsoft.
    👉 Explication : les valeurs de dimensionnement et composants requis changent selon le CU/SU; ne pas recopier une liste d’un ancien guide sans vérification.
 
 5. Vérifier qu’aucune mise à niveau sur place de l’OS d’un serveur Exchange existant n’est prévue.
@@ -33,7 +33,7 @@ Confirmer que Windows Server 2025 et l’environnement Active Directory sont com
 
 ## 2. Production — Contrôles
 
-Planifier une fenêtre de changement, sauvegarder les configurations concernées, vérifier l’état AD/DNS et Exchange, puis appliquer les étapes d’abord en environnement pilote.
+Planifier une fenêtre de changement, sauvegarder les configurations concernées, vérifier l’état [[Glossary:AD]]/DNS et Exchange, puis appliquer les étapes d’abord en environnement pilote.
 
 ## 3. Production — Sécurité
 

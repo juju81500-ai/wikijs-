@@ -1,8 +1,8 @@
 # Fiche_Simple_-_VM_Debian_13_cURL_Installer
 
-- **Environnement** : VM Debian 13 avec réseau de test autorisé
+- **Environnement** : [[Glossary:VM]] Debian 13 avec réseau de test autorisé
 - **OS / Version** : Debian 13 Trixie
-- **Catégorie** : transfert HTTP / diagnostic
+- **Catégorie** : transfert [[Glossary:HTTP]] / diagnostic
 - **Tags** : `debian13`, `curl`, `http`, `tls`, `api`
 ---
 
@@ -12,7 +12,7 @@ Installer cURL depuis les dépôts Debian approuvés.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Vérifier candidat APT
+1. Vérifier candidat [[Glossary:APT]]
    ```bash
    sudo apt update
    apt-cache policy curl
@@ -30,7 +30,7 @@ Installer cURL depuis les dépôts Debian approuvés.
    curl --version
    command -v curl
    ```
-   👉 Explication : confirmer binaire et capacités TLS.
+   👉 Explication : confirmer binaire et capacités [[Glossary:TLS]].
 
 ## 2. Production — Contrôles
 

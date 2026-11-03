@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Windows_11_mRemoteNG_Sessions_Connexions
 
-- **Environnement** : Poste Windows 11 x64 d'administration (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'administration ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; mRemoteNG VERSION_MREMOTENG (à remplacer)
 - **Catégorie** : gestionnaire de connexions distantes
 - **Tags** : `mremoteng`, `windows11`, `session`, `connexions`
@@ -16,13 +16,13 @@ Créer des connexions mRemoteNG organisées et sans mot de passe en clair.
 1. Clic droit sur **Connections** > **New Folder** ; nommer DOSSIER_LAB (à remplacer).
    👉 Explication : classement logique.
 
-2. Clic droit sur le dossier > **New Connection** ; renseigner **Hostname/IP** = HOTE_CIBLE, **Protocol** = SSH version 2 ou RDP.
+2. Clic droit sur le dossier > **New Connection** ; renseigner **Hostname/IP** = HOTE_CIBLE, **Protocol** = [[Glossary:SSH]] version 2 ou [[Glossary:RDP]].
    👉 Explication : définit la cible et le protocole.
 
 3. Laisser le champ **Password** vide ; renseigner **Username** = UTILISATEUR_CIBLE (à remplacer).
    👉 Explication : le mot de passe sera saisi à la demande.
 
-4. Pour RDP : définir **Domain** = DOMAINE (à remplacer) et vérifier la sécurité NLA dans les options du protocole.
+4. Pour RDP : définir **Domain** = DOMAINE (à remplacer) et vérifier la sécurité [[Glossary:NLA]] dans les options du protocole.
    👉 Explication : protège l'authentification RDP.
 
 5. Double-clic sur la connexion pour tester.

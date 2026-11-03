@@ -28,7 +28,7 @@ Aligner l'horodatage.
    ```sh
    esxcli hardware clock set -y ANNEE -M MOIS -d JOUR -H HEURE -m MIN -s SEC
    ```
-   👉 Explication : valeurs en UTC; à éviter si NTP est configuré.
+   👉 Explication : valeurs en UTC; à éviter si [[Glossary:NTP]] est configuré.
 
 ## 2. Production — Contrôles
 

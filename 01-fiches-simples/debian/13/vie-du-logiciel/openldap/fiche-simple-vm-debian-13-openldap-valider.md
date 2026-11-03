@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-openldap-valider.md
 
-- **Environnement** : serveur OpenLDAP pilote et client LDAP autorisé avec CA de confiance
+- **Environnement** : serveur OpenLDAP pilote et client [[Glossary:LDAP]] autorisé avec [[Glossary:CA]] de confiance
 - **OS / Version** : Debian 13; OpenLDAP 2.6
 - **Catégorie** : annuaire / validation fonctionnelle
 - **Tags** : `debian13`, `openldap`, `ldapsearch`, `ldaps`, `validation`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Vérifier disponibilité locale, entrées attendues, TLS client et filtrage des ports LDAP.
+Vérifier disponibilité locale, entrées attendues, [[Glossary:TLS]] client et filtrage des ports LDAP.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -42,7 +42,7 @@ Vérifier disponibilité locale, entrées attendues, TLS client et filtrage des 
 
 ## 2. Production — Contrôles
 
-Faire valider les tests par le propriétaire applicatif et vérifier intégrations, ACL, journaux d'accès, disponibilité et alertes.
+Faire valider les tests par le propriétaire applicatif et vérifier intégrations, [[Glossary:ACL]], journaux d'accès, disponibilité et alertes.
 
 ## 3. Production — Sécurité
 

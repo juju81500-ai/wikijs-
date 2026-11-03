@@ -1,12 +1,12 @@
 # 📄 fiche-simple-vm-rocky-9-services-configurer-chrony-ntp.md
 
-- **Environnement** : VM ou serveur Rocky Linux
-- **OS / Version** : Rocky Linux 9 / RHEL 9 avec systemd
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 avec systemd
 - **Catégorie** : Services / Synchronisation horaire
 - **Tags** : `[rocky9]`, `[rhel9]`, `[chrony]`, `[ntp]`, `[systemd]`, `[time]`
 
 ## 🎯 Problème précis à résoudre
-Configurer Chrony comme client NTP sur Rocky Linux 9, vérifier la synchronisation avec `chronyc` et n'ouvrir UDP/123 que si le serveur doit répondre à des clients.
+Configurer Chrony comme client [[Glossary:NTP]] sur Rocky Linux 9, vérifier la synchronisation avec `chronyc` et n'ouvrir [[Glossary:UDP]]/123 que si le serveur doit répondre à des clients.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Installer Chrony, activer le service systemd et vérifier son état :

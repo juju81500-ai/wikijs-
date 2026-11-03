@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_29_Pare_Feu_Hote
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 29 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-29`
@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Filtrer les flux entrants avec UFW.
+Filtrer les flux entrants avec [[Glossary:UFW]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Définir la politique par défaut puis **autoriser SSH avant d'activer** (remplacer le réseau d'administration) :
+1. Définir la politique par défaut puis **autoriser [[Glossary:SSH]] avant d'activer** (remplacer le réseau d'administration) :
    ```bash
    sudo ufw default deny incoming
    sudo ufw default allow outgoing

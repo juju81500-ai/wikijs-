@@ -18,7 +18,7 @@ Appliquer des paramètres de sécurité prudents.
    esxcli network vswitch standard policy security set -v vSwitch0 --allow-promiscuous=false --allow-mac-change=false --allow-forged-transmits=false
    esxcli network vswitch standard policy security get -v vSwitch0
    ```
-   👉 Explication : empêche l'espionnage et l'usurpation entre VM.
+   👉 Explication : empêche l'espionnage et l'usurpation entre [[Glossary:VM]].
 
 2. Désactiver les fonctions inutiles :
    ```sh

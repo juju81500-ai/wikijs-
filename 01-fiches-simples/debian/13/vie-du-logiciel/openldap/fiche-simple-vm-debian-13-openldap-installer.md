@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-openldap-installer.md
 
-- **Environnement** : VM Debian 13 Trixie dédiée, dépôts APT approuvés
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie dédiée, dépôts [[Glossary:APT]] approuvés
 - **OS / Version** : Debian 13; slapd 2.6
 - **Catégorie** : annuaire / identité / installation
 - **Tags** : `debian13`, `openldap`, `slapd`, `apt`, `installation`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Installer slapd et les utilitaires LDAP Debian sans remplacer une base existante ni exposer un secret.
+Installer slapd et les utilitaires [[Glossary:LDAP]] Debian sans remplacer une base existante ni exposer un secret.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

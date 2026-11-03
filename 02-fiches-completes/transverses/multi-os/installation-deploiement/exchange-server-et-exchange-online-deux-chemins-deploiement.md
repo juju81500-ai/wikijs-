@@ -10,7 +10,7 @@
 
 - Les deux produits sont **différents** : Exchange Server est un logiciel installé et exploité par vous ; Exchange Online est un service SaaS inclus dans des abonnements Microsoft 365/Office 365. Ne pas mélanger leurs procédures.
 - **Licences** : Exchange Server requiert des licences serveur et des CAL ; Exchange Online requiert un abonnement par utilisateur. La version « Subscription Edition » d'Exchange Server et le calendrier de fin de support des versions antérieures sont publiés par Microsoft : consulter la politique de cycle de vie avant de choisir une version.
-- Hypothèses : domaine DNS maîtrisé, Active Directory en place pour le chemin A ou hybride, mandat de migration signé.
+- Hypothèses : domaine [[Glossary:DNS]] maîtrisé, Active Directory en place pour le chemin A ou hybride, mandat de migration signé.
 - Ce document ne remplace pas les guides de l'éditeur ; les prérequis de version (Windows Server, .NET, Active Directory) varient par build et doivent être lus dans la matrice de support Exchange.
 
 ## 2. Arbre de décision
@@ -26,7 +26,7 @@
 ## 3. Chemin A — Exchange Server (sur site)
 
 1. Lire la matrice de support et les prérequis de la version retenue ; dimensionner avec l'outil de dimensionnement Microsoft (Exchange Server Role Requirements Calculator selon la version).
-2. Préparer Active Directory (extension de schéma, préparation du domaine) uniquement après sauvegarde de l'état système des contrôleurs de domaine et accord du responsable AD. La syntaxe des options de `Setup.exe` (`/PrepareSchema`, `/PrepareAD`, acceptation de licence) est propre à la version : la copier depuis la documentation de la version retenue.
+2. Préparer Active Directory (extension de schéma, préparation du domaine) uniquement après sauvegarde de l'état système des contrôleurs de domaine et accord du responsable [[Glossary:AD]]. La syntaxe des options de `Setup.exe` (`/PrepareSchema`, `/PrepareAD`, acceptation de licence) est propre à la version : la copier depuis la documentation de la version retenue.
 3. Installer les prérequis Windows et le runtime documentés, puis lancer l'installation depuis le média officiel en mode assistant ou ligne de commande.
 4. Configuration post-installation : certificats publics, URLs de services (autodiscover, EWS, OWA), connecteurs d'envoi/réception, retrait des accès anonymes ou ouverts, configuration de la sauvegarde.
 5. Vérifications :
@@ -52,9 +52,9 @@ Get-AcceptedDomain
 Get-Mailbox -ResultSize 10
 ```
 
-3. Configurer les enregistrements DNS demandés par la console (MX, SPF, Autodiscover) ; publier SPF, DKIM et DMARC. Contrôler : `Get-DkimSigningConfig -Identity contoso.example`.
+3. Configurer les enregistrements DNS demandés par la console (MX, [[Glossary:SPF]], Autodiscover) ; publier SPF, [[Glossary:DKIM]] et [[Glossary:DMARC]]. Contrôler : `Get-DkimSigningConfig -Identity contoso.example`.
 4. Imposer l'authentification moderne et l'accès conditionnel côté Entra ID ; désactiver l'authentification de base selon la politique de Microsoft en vigueur.
-5. Migrer les boîtes par la méthode adaptée (basculement, par étapes, hybride, IMAP) via le centre d'administration, par lots pilotes.
+5. Migrer les boîtes par la méthode adaptée (basculement, par étapes, hybride, [[Glossary:IMAP]]) via le centre d'administration, par lots pilotes.
 
 ## 5. Chemin hybride (optionnel)
 

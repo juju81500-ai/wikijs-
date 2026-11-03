@@ -1,6 +1,6 @@
 # fiche-simple-truenas-scale-25-10-deploiement-sauvegarder-recuperer.md
 
-- **Environnement** : NAS autonome pilote (matériel x86-64 ou VM de laboratoire)
+- **Environnement** : [[Glossary:NAS]] autonome pilote (matériel x86-64 ou [[Glossary:VM]] de laboratoire)
 - **OS / Version** : TrueNAS SCALE 25.10 Community Edition
 - **Catégorie** : stockage NAS / sauvegarde
 - **Tags** : `truenas`, `scale2510`, `zfs`, `nas`, `smb`, `sauvegarde`
@@ -33,7 +33,7 @@ Exporter la configuration et prévoir une copie indépendante.
 
 ## 2. Production — Contrôles
 
-Définir RPO/RTO et rétention.
+Définir [[Glossary:RPO]]/RTO et rétention.
 
 ## 3. Production — Sécurité
 

@@ -13,13 +13,13 @@ Limiter les droits et chiffrer les données sensibles.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Stockage > Pools > Ajouter un jeu de données > Chiffrement.
+1. [[Glossary:GUI]] : Stockage > Pools > Ajouter un jeu de données > Chiffrement.
    ```sh
    zfs create -o encryption=on -o keyformat=passphrase POOL/CHIFFRE
    ```
    👉 Explication : la phrase secrète est demandée ; POOL est le pool, CHIFFRE le dataset.
 
-2. Définir les ACL : Stockage > Pools > jeu de données > Modifier les permissions.
+2. Définir les [[Glossary:ACL]] : Stockage > Pools > jeu de données > Modifier les permissions.
    ```sh
    zfs get acltype,aclmode POOL/DATASET
    ```
@@ -33,7 +33,7 @@ Limiter les droits et chiffrer les données sensibles.
 
 ## 2. Production — Contrôles
 
-Sauvegarder les clés hors du NAS.
+Sauvegarder les clés hors du [[Glossary:NAS]].
 
 ## 3. Production — Sécurité
 

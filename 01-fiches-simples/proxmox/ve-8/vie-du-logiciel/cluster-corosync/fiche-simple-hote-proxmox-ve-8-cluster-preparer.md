@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Vérifier versions, noms, IP et résolution avant de créer le cluster.
+Vérifier versions, noms, [[Glossary:IP]] et résolution avant de créer le cluster.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

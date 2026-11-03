@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Rendre l'ISO démarrable sur un serveur physique, via clé USB ou iDRAC/iLO.
+Rendre l'ISO démarrable sur un serveur physique, via clé [[Glossary:USB]] ou iDRAC/iLO.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -23,7 +23,7 @@ Rendre l'ISO démarrable sur un serveur physique, via clé USB ou iDRAC/iLO.
 2. Alternative sans clé : monter l'ISO en média virtuel dans la console de gestion (iDRAC : **Console virtuelle > Connecter le média virtuel > Mapper CD/DVD**; iLO : **Remote Console > Virtual Media**).
    👉 Explication : évite le déplacement sur site; l'ISO doit rester accessible pendant toute l'installation.
 
-3. Si l'hôte de test est lui-même une VM sous Proxmox (nested), attacher l'ISO (GUI : **VM > Hardware > Add > CD/DVD Drive**) :
+3. Si l'hôte de test est lui-même une [[Glossary:VM]] sous Proxmox (nested), attacher l'ISO ([[Glossary:GUI]] : **VM > Hardware > Add > CD/DVD Drive**) :
    ```bash
    qm set VMID --ide2 local:iso/proxmox-ve_X.Y-Z.iso,media=cdrom
    ```

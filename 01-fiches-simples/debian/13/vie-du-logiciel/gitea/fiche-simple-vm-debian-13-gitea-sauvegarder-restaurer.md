@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Gitea_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13 isolée; domaine et stockage définis
+- **Environnement** : [[Glossary:VM]] Debian 13 isolée; domaine et stockage définis
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : forge Git / administration
 - **Tags** : `debian13`, `gitea`, `forge-git`, `tls`, `sauvegarde`
@@ -39,7 +39,7 @@ Sauvegarder dépôts, base, données, configuration et secrets nécessaires; ép
 
 ## 2. Production — Contrôles
 
-Définir fréquence, chiffrement, rétention, RPO/RTO et tester l’intégralité de la restauration.
+Définir fréquence, chiffrement, rétention, [[Glossary:RPO]]/RTO et tester l’intégralité de la restauration.
 
 ## 3. Production — Sécurité
 

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_Windows_Server_2022_StarWind_Virtual_SAN_Sauvegarder_Restaurer
 
-- **Environnement** : Windows Server 2022 avec StarWind Virtual SAN; laboratoire isolé
+- **Environnement** : Windows Server 2022 avec StarWind Virtual [[Glossary:SAN]]; laboratoire isolé
 - **OS / Version** : Windows Server 2022; version StarWind à confirmer dans la documentation éditeur
 - **Catégorie** : stockage SAN / sauvegarde et restauration
 - **Tags** : `starwind`, `virtual-san`, `windows-server`, `sauvegarde`, `restauration`
@@ -23,7 +23,7 @@ Tester la récupération sans confondre réplication/disponibilité StarWind et 
 3. Ouvrir **Server Manager > Tools > Windows Server Backup > Backup Once** et choisir un emplacement de destination distinct.
    👉 Explication : ceci protège les éléments locaux sélectionnés, mais ne garantit pas la cohérence applicative des données présentées par StarWind.
 4. Configurer une sauvegarde applicative des charges hébergées, avec l’outil prévu pour ces charges et un dépôt séparé; réaliser un petit test.
-   👉 Explication : les données de VM et applications doivent être sauvegardées au niveau approprié; un miroir ou une réplication ne remplace pas une copie indépendante.
+   👉 Explication : les données de [[Glossary:VM]] et applications doivent être sauvegardées au niveau approprié; un miroir ou une réplication ne remplace pas une copie indépendante.
 5. Dans un environnement isolé, restaurer d’abord la configuration selon le guide StarWind de la version, puis restaurer une charge depuis son outil de sauvegarde.
    👉 Explication : ne pas écraser un volume ni réimporter un ancien état sur les nœuds actifs.
 6. Vérifier depuis un client de test que les volumes et données attendus sont accessibles.
@@ -31,7 +31,7 @@ Tester la récupération sans confondre réplication/disponibilité StarWind et 
 
 ## 2. Production — Contrôles
 
-- Documenter RPO/RTO, cohérence, rétention, séparation du dépôt et procédure de restauration par charge.
+- Documenter [[Glossary:RPO]]/RTO, cohérence, rétention, séparation du dépôt et procédure de restauration par charge.
 - Traiter miroir/réplication comme disponibilité, jamais comme sauvegarde autonome.
 
 ## 3. Production — Sécurité

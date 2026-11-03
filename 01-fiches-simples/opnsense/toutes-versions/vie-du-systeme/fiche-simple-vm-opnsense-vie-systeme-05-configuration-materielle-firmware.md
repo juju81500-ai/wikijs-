@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_05_Configuration_Materielle_Firmware
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 05 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-05`
@@ -13,7 +13,7 @@ Régler le firmware et les options de la VM avant l'installation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Choisir UEFI (ou BIOS) et noter ce choix; sur Proxmox : VM > Matériel > BIOS = OVMF, désactiver Secure Boot (Disque EFI sans clés préenrôlées).
+1. Choisir UEFI (ou [[Glossary:BIOS]]) et noter ce choix; sur Proxmox : VM > Matériel > BIOS = [[Glossary:OVMF]], désactiver Secure Boot (Disque [[Glossary:EFI]] sans clés préenrôlées).
    👉 Explication : OPNsense ne démarre pas avec les clés Secure Boot Microsoft par défaut.
 
 2. Activer les extensions de virtualisation et choisir un modèle de carte réseau `VirtIO` (ou Intel E1000 en secours).

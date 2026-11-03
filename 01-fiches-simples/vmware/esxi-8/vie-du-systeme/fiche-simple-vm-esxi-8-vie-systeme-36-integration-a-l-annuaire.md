@@ -19,17 +19,17 @@ Authentifier les administrateurs via Active Directory.
    esxcli system settings advanced set -o /Config/HostAgent/plugins/hostsvc/esxAdminsGroup -s GROUPE_AD_ESX
    esxcli system permission set -i GROUPE_AD_ESX -r Admin
    ```
-   👉 Explication : `DOMAINE` = domaine AD; `ADMIN_AD` = compte autorisé à joindre (mot de passe demandé); `GROUPE_AD_ESX` = groupe AD dédié aux administrateurs ESXi, différent du nom par défaut `ESX Admins`.
+   👉 Explication : `DOMAINE` = domaine [[Glossary:AD]]; `ADMIN_AD` = compte autorisé à joindre (mot de passe demandé); `GROUPE_AD_ESX` = groupe AD dédié aux administrateurs ESXi, différent du nom par défaut `ESX Admins`.
 
 2. Sous vCenter, rejoindre la source d'identité (vSphere Client : **Administration > Single Sign-On > Configuration > Fournisseurs d'identité**).
    👉 Explication : centralise l'authentification de tous les hôtes.
 
-3. Placer l'hôte dans le VLAN d'administration et l'inscrire dans l'IPAM.
+3. Placer l'hôte dans le [[Glossary:VLAN]] d'administration et l'inscrire dans l'[[Glossary:IPAM]].
    👉 Explication : accès réservé aux postes d'administration.
 
 ## 2. Production — Contrôles
 
-Utiliser LDAPS/Kerberos; jamais LDAP en clair.
+Utiliser LDAPS/Kerberos; jamais [[Glossary:LDAP]] en clair.
 
 ## 3. Production — Sécurité
 

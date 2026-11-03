@@ -1,6 +1,6 @@
 # 📄 fiche-simple-truenas-scale-25-10-verifier-pool-sauvegarde.md
 
-- **Environnement** : TrueNAS SCALE 25.10, NAS de lab ou de production
+- **Environnement** : TrueNAS SCALE 25.10, [[Glossary:NAS]] de lab ou de production
 - **OS / Version** : TrueNAS SCALE 25.10 Goldeye
 - **Catégorie** : Stockage / exploitation
 - **Tags** : `truenas`, `scale2510`, `zfs`, `pool`, `snapshot`, `restore`
@@ -55,7 +55,7 @@ Contrôler la santé d'un pool et prouver qu'un fichier de test peut être resta
 
 ## ✅ Validation et retour arrière
 
-- **Validation** : pool sain, tâche terminée, fichier restauré lisible et ACL attendue.
+- **Validation** : pool sain, tâche terminée, fichier restauré lisible et [[Glossary:ACL]] attendue.
 - **Retour arrière** : conserver le snapshot source et supprimer seulement le clone/répertoire de test après contrôle.
 
 ## 🔗 Si le problème n'est pas résolu

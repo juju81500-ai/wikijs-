@@ -1,6 +1,6 @@
 # fiche-simple-lxc-alpine-diagnostic-relever-etat.md
 
-- **Environnement** : nœud Proxmox VE et console du CT Alpine
+- **Environnement** : nœud Proxmox VE et console du [[Glossary:CT]] Alpine
 - **OS / Version** : branche Alpine maintenue
 - **Catégorie** : diagnostic / relevé d'état
 - **Tags** : `alpine`, `proxmox`, `lxc`, `pct`, `ip`, `openrc`
@@ -18,7 +18,7 @@ Comparer la configuration déclarée par Proxmox avec l'état observé dans le c
    pct config CTID
    pct status CTID
    ```
-   👉 Explication : relever bridge, VLAN tag, IP, passerelle, DNS et état du CT.
+   👉 Explication : relever bridge, [[Glossary:VLAN]] tag, [[Glossary:IP]], passerelle, [[Glossary:DNS]] et état du CT.
 
 2. Dans le conteneur Alpine :
    ```sh

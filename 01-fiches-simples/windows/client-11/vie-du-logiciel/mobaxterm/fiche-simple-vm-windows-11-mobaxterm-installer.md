@@ -1,8 +1,8 @@
 # Fiche_Simple_-_VM_Windows_11_MobaXterm_Installer
 
-- **Environnement** : Poste Windows 11 x64 d'administration (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'administration ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; MobaXterm Home/Professional, version VERSION_MOBAXTERM (à remplacer)
-- **Catégorie** : client SSH/RDP multi-sessions
+- **Catégorie** : client [[Glossary:SSH]]/RDP multi-sessions
 - **Tags** : `mobaxterm`, `windows11`, `installation`, `winget`
 
 ---
@@ -16,7 +16,7 @@ Installer MobaXterm sur Windows 11 de façon contrôlée.
 1. Télécharger l'installateur (ou la version portable) depuis https://mobaxterm.mobatek.net/download.html puis comparer le nom et la version à celle attendue (VERSION_MOBAXTERM, à remplacer).
    👉 Explication : source officielle et version voulue.
 
-2. GUI : double-clic sur l'installateur MSI/EXE, suivre l'assistant ; chemin habituel de l'application : `C:\Program Files (x86)\Mobatek\MobaXterm\` (à vérifier selon la version).
+2. [[Glossary:GUI]] : double-clic sur l'installateur [[Glossary:MSI]]/EXE, suivre l'assistant ; chemin habituel de l'application : `C:\Program Files (x86)\Mobatek\MobaXterm\` (à vérifier selon la version).
    👉 Explication : l'installation GUI est la référence.
 
 3. Dans PowerShell, chercher le nom exact : `winget search "MobaXterm" --source winget`. Relever l'ID exact affiché (colonne Id) et le noter comme ID_PAQUET_VERIFIE (à remplacer ; ne jamais le deviner). Puis, seulement avec l'ID vérifié : `winget install --id ID_PAQUET_VERIFIE --exact --source winget`.

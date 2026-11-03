@@ -9,14 +9,14 @@
 
 ## 1. Périmètre
 
-Fiche de cadrage défensif multi-appliance : identifier la variante, préparer l'accès d'administration, sauvegarder, appliquer une politique de base, journaliser et prévoir le retour arrière. Elle ne remplace pas le guide du constructeur et ne fournit pas de syntaxe CLI unique : chaque famille a sa propre interface.
+Fiche de cadrage défensif multi-appliance : identifier la variante, préparer l'accès d'administration, sauvegarder, appliquer une politique de base, journaliser et prévoir le retour arrière. Elle ne remplace pas le guide du constructeur et ne fournit pas de syntaxe [[Glossary:CLI]] unique : chaque famille a sa propre interface.
 
 ## 2. Prérequis
 
 - Modèle, version exacte du firmware et licence/support actifs (abonnements de sécurité éventuels).
 - Accès console hors bande ou fenêtre de maintenance avec accès physique/virtuel de secours.
-- Inventaire des zones, flux autorisés, plan d'adressage, serveurs NTP, syslog et annuaire d'authentification.
-- Compte nominatif d'administration, MFA si pris en charge, secrets dans un coffre.
+- Inventaire des zones, flux autorisés, plan d'adressage, serveurs [[Glossary:NTP]], syslog et annuaire d'authentification.
+- Compte nominatif d'administration, [[Glossary:MFA]] si pris en charge, secrets dans un coffre.
 - Laboratoire ou appliance virtuelle de test pour valider chaque changement.
 - Produit commercial : la console, les droits d'accès au portail éditeur et la licence sont des prérequis. Aucune commande générique n'est donnée quand elle dépend de la console ou de la version; suivre la documentation de la version exacte.
 
@@ -24,7 +24,7 @@ Fiche de cadrage défensif multi-appliance : identifier la variante, préparer l
 
 | Famille | Système | Gestion principale | Point d'attention |
 |---|---|---|---|
-| Fortinet | FortiOS (FortiGate) | GUI web, CLI FortiOS, FortiManager en option | Fonctions UTM/IPS liées aux abonnements FortiGuard |
+| Fortinet | FortiOS (FortiGate) | [[Glossary:GUI]] web, CLI FortiOS, FortiManager en option | Fonctions UTM/IPS liées aux abonnements FortiGuard |
 | Palo Alto | PAN-OS | GUI web, CLI PAN-OS, Panorama en option | Modèle « candidate/commit » : rien n'est actif avant le commit |
 | Cisco ASA | ASA software | CLI ASA, ASDM | ASA seul ne porte pas les fonctions IPS Firepower |
 | Cisco Firepower | Secure Firewall Threat Defense (FTD) | Secure Firewall Management Center (FMC) ou gestionnaire local selon modèle | Déploiement de politiques depuis la console de gestion |
@@ -36,11 +36,11 @@ Ne pas transposer une commande d'une famille à l'autre.
 
 ### 4.1 Inventorier et choisir la variante
 
-Relever pour chaque équipement : modèle, version, mode de gestion (local ou centralisé), licences, rôle (périmètre, interne, VPN). Consulter la matrice de compatibilité et les notes de version de l'éditeur avant toute mise à jour.
+Relever pour chaque équipement : modèle, version, mode de gestion (local ou centralisé), licences, rôle (périmètre, interne, [[Glossary:VPN]]). Consulter la matrice de compatibilité et les notes de version de l'éditeur avant toute mise à jour.
 
 ### 4.2 Sécuriser l'administration
 
-Dans la console de la famille concernée : restreindre l'accès de gestion à un réseau/une interface d'administration dédiée, imposer HTTPS et SSH uniquement, désactiver les protocoles en clair (Telnet, HTTP), créer des comptes nominatifs avec profils à moindre privilège, configurer une bannière légale et un délai d'expiration de session. Remplacer les identifiants par défaut.
+Dans la console de la famille concernée : restreindre l'accès de gestion à un réseau/une interface d'administration dédiée, imposer HTTPS et [[Glossary:SSH]] uniquement, désactiver les protocoles en clair (Telnet, [[Glossary:HTTP]]), créer des comptes nominatifs avec profils à moindre privilège, configurer une bannière légale et un délai d'expiration de session. Remplacer les identifiants par défaut.
 
 ### 4.3 Sauvegarder avant changement
 

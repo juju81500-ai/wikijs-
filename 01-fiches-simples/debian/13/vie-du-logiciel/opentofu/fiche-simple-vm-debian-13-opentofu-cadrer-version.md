@@ -30,19 +30,19 @@ Confirmer le périmètre et la version d'OpenTofu avant de modifier une infrastr
 3. Contrôler la licence avant redistribution : ouvrir `https://github.com/opentofu/opentofu/blob/main/LICENSE`.
    👉 Explication : le dépôt amont est sous MPL-2.0; valider la compatibilité avec l'usage prévu.
 
-4. Consigner le périmètre : outil CLI seul, projet pilote avec `terraform_data`, aucun fournisseur (Proxmox, AWS, Azure) ni module Terraform.
+4. Consigner le périmètre : outil [[Glossary:CLI]] seul, projet pilote avec `terraform_data`, aucun fournisseur (Proxmox, AWS, Azure) ni module Terraform.
    👉 Explication : chaque fournisseur exige sa propre fiche, ses identifiants et son modèle de droits.
 
 ## 2. Production — Contrôles
 
-Avant production, faire approuver la version, les modules/providers, les droits API, les backends, le verrouillage d'état, les revues de plan, les approbations et la récupération d'état.
+Avant production, faire approuver la version, les modules/providers, les droits [[Glossary:API]], les backends, le verrouillage d'état, les revues de plan, les approbations et la récupération d'état.
 
 ## 3. Production — Sécurité
 
 - Ne pas utiliser Terraform/OpenTofu pour modifier une cible réelle pendant ce pilote.
 - Ne pas partager le fichier d'état; il peut contenir des valeurs sensibles.
 - Ne pas mélanger le binaire OpenTofu avec Terraform ni présumer leur interchangeabilité.
-- Garder les clés et identifiants hors du dépôt et du code HCL.
+- Garder les clés et identifiants hors du dépôt et du code [[Glossary:HCL]].
 
 ## Validation et retour arrière
 

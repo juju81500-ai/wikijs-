@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Gitea_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 isolée; domaine et stockage définis
+- **Environnement** : [[Glossary:VM]] Debian 13 isolée; domaine et stockage définis
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : forge Git / administration
 - **Tags** : `debian13`, `gitea`, `forge-git`, `tls`, `sauvegarde`
@@ -8,7 +8,7 @@
 
 ## Problème précis à résoudre
 
-Définir version, FQDN, ressources, stockage, base, ports et sauvegardes avant d’installer Gitea.
+Définir version, [[Glossary:FQDN]], ressources, stockage, base, ports et sauvegardes avant d’installer Gitea.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -31,7 +31,7 @@ Définir version, FQDN, ressources, stockage, base, ports et sauvegardes avant d
    ```text
    Navigateur > ouvrir la documentation officielle : https://docs.gitea.com/installation/install-from-binary
    ```
-   👉 Explication : les limites de SQLite, base distante et stockage doivent être confirmées dans la documentation de la version. Détail à confirmer dans la documentation officielle avant application : Pilote isolé : base locale possible. Production : base supportée, proxy TLS, DNS et sauvegarde testée.
+   👉 Explication : les limites de SQLite, base distante et stockage doivent être confirmées dans la documentation de la version. Détail à confirmer dans la documentation officielle avant application : Pilote isolé : base locale possible. Production : base supportée, proxy [[Glossary:TLS]], [[Glossary:DNS]] et sauvegarde testée.
 
 ## 2. Production — Contrôles
 

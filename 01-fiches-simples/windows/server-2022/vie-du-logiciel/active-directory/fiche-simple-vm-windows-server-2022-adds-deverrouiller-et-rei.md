@@ -1,6 +1,6 @@
 # 📄 VM_WinSrv_2022_ADDS_Deverrouiller-Et-Reinitialiser-MotDePasse-Utilisateur.md
 
-- **Environnement** : VM / Contrôleur de Domaine AD DS
+- **Environnement** : [[Glossary:VM]] / Contrôleur de Domaine [[Glossary:AD]] DS
 - **OS / Version** : Windows Server 2022 Standard / Datacenter
 - **Catégorie** : Active Directory / Gestion des Utilisateurs
 - **Tags** : `[winsrv2022]`, `[active-directory]`, `[user-management]`, `[password-reset]`, `[unlock]`, `[gui]`, `[powershell]`
@@ -20,7 +20,7 @@ Déverrouiller un compte utilisateur bloqué suite à plusieurs échecs de mot d
    - 👉 *Explication : Ouvre la console d'administration principale de l'annuaire Active Directory.*
 
 2. **Rechercher le compte utilisateur** :
-   - Faire un **clic droit** sur le nom du domaine (ex: `lab.local`) ou sur l'Unité d'Organisation (OU).
+   - Faire un **clic droit** sur le nom du domaine (ex: `lab.local`) ou sur l'Unité d'Organisation ([[Glossary:OU]]).
    - Sélectionner **Rechercher...**.
    - Dans la case *Nom*, saisir le nom de l'utilisateur (ex: `jdupont`) puis cliquer sur **Rechercher maintenant**.
    - Faire un **double-clic** (ou clic droit ➔ *Propriétés*) sur le compte trouvé.
@@ -64,7 +64,7 @@ Déverrouiller un compte utilisateur bloqué suite à plusieurs échecs de mot d
 
 ## 🔒 3. Production — Façon Sécurisée (Hardening & Isolation Enterprise)
 1. **Rechercher l'événement de verrouillage dans le journal Sécurité d'un contrôleur de domaine** :
-   - En GUI, ouvrir l'Observateur d'événements (`eventvwr.msc`), puis **Journaux Windows > Sécurité > Filtrer le journal actuel...** et saisir l'ID d'événement `4740`.
+   - En [[Glossary:GUI]], ouvrir l'Observateur d'événements (`eventvwr.msc`), puis **Journaux Windows > Sécurité > Filtrer le journal actuel...** et saisir l'ID d'événement `4740`.
    - Ouvrir l'événement correspondant à l'utilisateur et relever le contrôleur de domaine, l'heure et le nom du poste appelant. Répéter sur les contrôleurs concernés si nécessaire; les événements dépendent de la stratégie d'audit et de la rétention des journaux.
    ```powershell
    Get-WinEvent -FilterHashtable @{ LogName = 'Security'; Id = 4740; StartTime = (Get-Date).AddDays(-1) } | Where-Object { $_.Message -match '(?i)jdupont' } | Select-Object TimeCreated, MachineName, Message

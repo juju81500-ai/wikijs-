@@ -24,7 +24,7 @@ Collecter un état de sécurité de base en lecture seule et comparer les écart
    ```bash
    apt list --upgradable
    ```
-   👉 Explication : liste les mises à jour connues des index APT existants ; ne met pas à jour les index ni les paquets.
+   👉 Explication : liste les mises à jour connues des index [[Glossary:APT]] existants ; ne met pas à jour les index ni les paquets.
 
 3. Relever les services en échec et les sockets à l'écoute sous Linux :
    ```bash
@@ -52,7 +52,7 @@ Définir un périmètre, un propriétaire, une référence de configuration et u
 
 ## 3. Production — Sécurité
 
-La fiche est une revue locale défensive : aucun test d'intrusion, balayage, désactivation de protection ou collecte de données hors périmètre. Ne pas transmettre de sorties brutes contenant des noms d'hôtes, IP internes, comptes ou logiciels non publics.
+La fiche est une revue locale défensive : aucun test d'intrusion, balayage, désactivation de protection ou collecte de données hors périmètre. Ne pas transmettre de sorties brutes contenant des noms d'hôtes, [[Glossary:IP]] internes, comptes ou logiciels non publics.
 
 ## Validation et retour arrière
 

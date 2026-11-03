@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Postfix_Prerequis_Limites
 
-- **Environnement** : VM Ubuntu Server 24-04; Postfix depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04; Postfix depuis les dépôts de la distribution
 - **OS / Version** : Ubuntu Server 24-04
 - **Catégorie** : Vie du logiciel / Postfix — Prérequis et limites
 - **Tags** : `postfix`, `serveur`, `vie-du-logiciel`, `prerequis_limites`
@@ -25,7 +25,7 @@ sudo ss -lntup
 
 ## 2. Production — Contrôles
 
-Documenter rôle SMTP/IMAP, domaines, réseaux autorisés et ports.
+Documenter rôle [[Glossary:SMTP]]/IMAP, domaines, réseaux autorisés et ports.
 
 ## 3. Production — Sécurité
 

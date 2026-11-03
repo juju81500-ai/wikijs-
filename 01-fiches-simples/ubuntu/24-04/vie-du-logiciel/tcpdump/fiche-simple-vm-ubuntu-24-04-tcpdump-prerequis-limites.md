@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_tcpdump_Prerequis_Limites
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à tcpdump
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à tcpdump
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : tcpdump / prérequis et limites
 - **Tags** : `tcpdump`, `ubuntu24.04`, `vie-du-logiciel`, `prerequis-limites`
@@ -32,7 +32,7 @@ Cadrer l’usage autorisé de tcpdump sur VM Ubuntu Server 24-04 LTS avant toute
    👉 Explication : Une capture non bornée peut remplir le disque; prévoir un volume dédié et une limite de taille.
 
 4. Noter les limites connues.
-   👉 Explication : tcpdump ne déchiffre pas TLS, ne voit pas le trafic entre deux VM d’un autre vSwitch, et tronque les paquets selon la taille de capture (`-s`). Il capture en lecture seule : il ne bloque rien. AppArmor : le profil `/etc/apparmor.d/usr.bin.tcpdump` peut refuser l’écriture hors des chemins prévus; en cas de refus, chercher `apparmor="DENIED"` dans `sudo journalctl -k`.
+   👉 Explication : tcpdump ne déchiffre pas [[Glossary:TLS]], ne voit pas le trafic entre deux VM d’un autre vSwitch, et tronque les paquets selon la taille de capture (`-s`). Il capture en lecture seule : il ne bloque rien. AppArmor : le profil `/etc/apparmor.d/usr.bin.tcpdump` peut refuser l’écriture hors des chemins prévus; en cas de refus, chercher `apparmor="DENIED"` dans `sudo journalctl -k`.
 
 ## 2. Production — Contrôles
 

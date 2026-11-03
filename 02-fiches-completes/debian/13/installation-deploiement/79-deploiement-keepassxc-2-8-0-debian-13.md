@@ -37,7 +37,7 @@ gpg --verify KeePassXC-2.8.0-1-x86_64.AppImage.sig KeePassXC-2.8.0-1-x86_64.AppI
 shasum -a 256 -c KeePassXC-2.8.0-1-x86_64.AppImage.DIGEST
 ```
 
-Ne pas exécuter le fichier si la signature est invalide, si l'empreinte ne correspond pas à la documentation officielle ou si le digest ne confirme pas `OK`. Un avertissement GPG sur le niveau de confiance n'est acceptable que si l'empreinte vérifiée est exactement celle publiée par le projet.
+Ne pas exécuter le fichier si la signature est invalide, si l'empreinte ne correspond pas à la documentation officielle ou si le digest ne confirme pas `OK`. Un avertissement [[Glossary:GPG]] sur le niveau de confiance n'est acceptable que si l'empreinte vérifiée est exactement celle publiée par le projet.
 
 ## 3. Lancer l'application sans privilèges
 
@@ -62,7 +62,7 @@ Fiche simple : [créer un coffre KDBX](../../../../01-fiches-simples/debian/13/v
 4. N'ajouter un fichier-clé ou une clé matérielle que si la procédure de récupération et ses copies de secours sont maîtrisées. Un facteur supplémentaire manquant bloque aussi l'accès.
 5. Organiser les entrées en groupes; générer des mots de passe uniques avec le générateur. Verrouiller le coffre lorsque le poste est laissé sans surveillance et définir un verrouillage automatique dans les paramètres de sécurité.
 
-Le contenu KDBX est chiffré sur disque, mais les informations sont déchiffrées en mémoire lorsque la base est ouverte. Protéger la session de bureau, limiter les logiciels exécutés dans le profil et éviter les captures d'écran ou le presse-papiers partagé dans les environnements sensibles. Stocker un secret TOTP dans la même base que le mot de passe réduit la séparation entre facteurs; réserver cette configuration à un choix de risque explicite.
+Le contenu KDBX est chiffré sur disque, mais les informations sont déchiffrées en mémoire lorsque la base est ouverte. Protéger la session de bureau, limiter les logiciels exécutés dans le profil et éviter les captures d'écran ou le presse-papiers partagé dans les environnements sensibles. Stocker un secret [[Glossary:TOTP]] dans la même base que le mot de passe réduit la séparation entre facteurs; réserver cette configuration à un choix de risque explicite.
 
 ## 5. Sauvegarder et restaurer le coffre
 
@@ -78,7 +78,7 @@ Pour tester une restauration, copier une sauvegarde dans un répertoire temporai
 
 Fiche simple : [importer des données et extension navigateur](../../../../01-fiches-simples/debian/13/vie-du-logiciel/keepassxc/fiche-simple-vm-debian-13-keepassxc-importer-navigateur.md).
 
-Préférer l'import direct d'un format chiffré pris en charge lorsque c'est possible. Un CSV ou export équivalent peut contenir tous les mots de passe en clair : créer ce fichier uniquement dans un emplacement protégé, l'importer, contrôler les entrées, puis supprimer les copies et vider la corbeille selon la politique du système. La suppression simple ne garantit pas l'effacement physique sur SSD, snapshots ou sauvegardes.
+Préférer l'import direct d'un format chiffré pris en charge lorsque c'est possible. Un CSV ou export équivalent peut contenir tous les mots de passe en clair : créer ce fichier uniquement dans un emplacement protégé, l'importer, contrôler les entrées, puis supprimer les copies et vider la corbeille selon la politique du système. La suppression simple ne garantit pas l'effacement physique sur [[Glossary:SSD]], snapshots ou sauvegardes.
 
 L'intégration navigateur est optionnelle. Installer KeePassXC-Browser uniquement depuis le magasin officiel du navigateur, activer explicitement les navigateurs concernés dans KeePassXC, puis approuver chaque association présentée. Vérifier le domaine et l'entrée avant autorisation; ne pas approuver une demande inattendue. Sur Linux, certains navigateurs distribués en Snap ou Flatpak peuvent ne pas prendre en charge le canal natif de communication.
 

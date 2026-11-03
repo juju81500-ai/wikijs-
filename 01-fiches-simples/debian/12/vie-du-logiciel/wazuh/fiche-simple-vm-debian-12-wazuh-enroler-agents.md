@@ -2,7 +2,7 @@
 
 - **Environnement** : Wazuh manager et hôtes pilotes autorisés; enrôlement suivant la version installée
 - **OS / Version** : Wazuh 4.x maintenu; agents compatibles avec leurs systèmes
-- **Catégorie** : SIEM/XDR / agents
+- **Catégorie** : [[Glossary:SIEM]]/XDR / agents
 - **Tags** : `debian12`, `wazuh`, `agent`, `enrollment`, `firewall`
 
 ---
@@ -13,7 +13,7 @@ Enrôler un agent pilote et confirmer la collecte avant de déployer l'agent à 
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Autoriser les flux entre agents et manager selon la version (généralement 1514/TCP événements et 1515/TCP enrôlement; 55000/TCP API) :
+1. Autoriser les flux entre agents et manager selon la version (généralement 1514/TCP événements et 1515/TCP enrôlement; 55000/TCP [[Glossary:API]]) :
    ```bash
    sudo ss -ltnp | grep -E ':(1514|1515|55000)\b'
    ```

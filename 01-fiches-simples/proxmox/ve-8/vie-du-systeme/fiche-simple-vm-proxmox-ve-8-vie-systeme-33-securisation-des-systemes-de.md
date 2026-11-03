@@ -17,15 +17,15 @@ Protéger les montages et les stockages.
    ```bash
    findmnt -o TARGET,SOURCE,FSTYPE,OPTIONS
    ```
-   👉 Explication : repérer les montages NFS/CIFS sans options de sécurité.
+   👉 Explication : repérer les montages [[Glossary:NFS]]/CIFS sans options de sécurité.
 
-2. Pour les stockages NFS, restreindre l'export côté serveur à l'IP des nœuds et monter avec options adaptées (GUI : **Datacenter > Storage > Add > NFS**) :
+2. Pour les stockages NFS, restreindre l'export côté serveur à l'[[Glossary:IP]] des nœuds et monter avec options adaptées ([[Glossary:GUI]] : **Datacenter > Storage > Add > NFS**) :
    ```bash
    pvesm add nfs STOCKAGE --server IP_NFS --export /EXPORT --content images,backup --options vers=4.1
    ```
    👉 Explication : `STOCKAGE` = nom du stockage; `IP_NFS` = serveur NFS; `/EXPORT` = chemin exporté.
 
-3. Chiffrer les disques sensibles si la politique l'exige (LUKS ou chiffrement ZFS natif).
+3. Chiffrer les disques sensibles si la politique l'exige (LUKS ou chiffrement [[Glossary:ZFS]] natif).
    ```bash
    zfs get encryption rpool
    ```

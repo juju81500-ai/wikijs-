@@ -18,9 +18,9 @@ Limiter et sécuriser Bureau à distance, WinRM et OpenSSH.
    Set-ItemProperty 'HKLM:\System\CurrentControlSet\Control\Terminal Server' fDenyTSConnections 1
    Disable-NetFirewallRule -DisplayGroup 'Bureau à distance'
    ```
-   👉 Explication : bloque RDP et ferme la règle de pare-feu correspondante (le nom du groupe peut être `Remote Desktop` sur un système en anglais).
+   👉 Explication : bloque [[Glossary:RDP]] et ferme la règle de pare-feu correspondante (le nom du groupe peut être `Remote Desktop` sur un système en anglais).
 
-2. Si RDP est nécessaire : activer l'authentification au niveau du réseau (NLA) et limiter aux membres d'un groupe : **Paramètres > Système > Bureau à distance > Exiger NLA**, puis **Sélectionner les utilisateurs**.
+2. Si RDP est nécessaire : activer l'authentification au niveau du réseau ([[Glossary:NLA]]) et limiter aux membres d'un groupe : **Paramètres > Système > Bureau à distance > Exiger NLA**, puis **Sélectionner les utilisateurs**.
    ```powershell
    Set-ItemProperty 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' UserAuthentication 1
    Add-LocalGroupMember -Group 'Utilisateurs du Bureau à distance' -Member 'DOMAINE\GROUPE_SUPPORT'
@@ -47,7 +47,7 @@ Accès distant uniquement depuis le réseau d'administration (filtrage par pare-
 
 ## 3. Production — Sécurité
 
-Pas de mot de passe seul, NLA obligatoire, comptes nominatifs, clés plutôt que mots de passe pour SSH.
+Pas de mot de passe seul, NLA obligatoire, comptes nominatifs, clés plutôt que mots de passe pour [[Glossary:SSH]].
 
 ## Validation et retour arrière
 

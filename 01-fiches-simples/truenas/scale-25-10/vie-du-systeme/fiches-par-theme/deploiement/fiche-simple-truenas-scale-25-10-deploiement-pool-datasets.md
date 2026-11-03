@@ -1,8 +1,8 @@
 # fiche-simple-truenas-scale-25-10-deploiement-pool-datasets.md
 
-- **Environnement** : NAS autonome pilote (matériel x86-64 ou VM de laboratoire)
+- **Environnement** : [[Glossary:NAS]] autonome pilote (matériel x86-64 ou [[Glossary:VM]] de laboratoire)
 - **OS / Version** : TrueNAS SCALE 25.10 Community Edition
-- **Catégorie** : stockage NAS / ZFS
+- **Catégorie** : stockage NAS / [[Glossary:ZFS]]
 - **Tags** : `truenas`, `scale2510`, `zfs`, `nas`, `smb`, `sauvegarde`
 
 ---
@@ -19,7 +19,7 @@ Créer un pool miroir pilote et des datasets par usage.
 2. Créer des datasets enfants : **Datasets > Add Dataset**, un par usage ou équipe.
    👉 Explication : on ne partage jamais le dataset racine.
 
-3. Examiner preset, sensibilité à la casse, ACL et chiffrement avant d'y mettre des données.
+3. Examiner preset, sensibilité à la casse, [[Glossary:ACL]] et chiffrement avant d'y mettre des données.
    👉 Explication : ces choix sont durables.
 
 4. Vérifier depuis le Shell (remplacer `tank` par le nom du pool) :

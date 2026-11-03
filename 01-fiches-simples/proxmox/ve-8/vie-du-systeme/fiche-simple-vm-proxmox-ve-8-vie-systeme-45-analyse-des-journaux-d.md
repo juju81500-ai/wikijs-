@@ -20,7 +20,7 @@ Repérer les erreurs au démarrage et en fonctionnement.
    ```
    👉 Explication : erreurs du démarrage en cours; `dmesg` montre noyau et matériel.
 
-2. GUI : **Nœud > System > Syslog** et **Nœud > Tasks** (état Error).
+2. [[Glossary:GUI]] : **Nœud > System > Syslog** et **Nœud > Tasks** (état Error).
    👉 Explication : affiche les tâches échouées avec le détail.
 
 3. Contrôler matériel et disques :
@@ -36,7 +36,7 @@ Traiter chaque erreur ou la justifier dans le dossier.
 
 ## 3. Production — Sécurité
 
-Ne pas ignorer les alertes SMART.
+Ne pas ignorer les alertes [[Glossary:SMART]].
 
 ## Validation et retour arrière
 

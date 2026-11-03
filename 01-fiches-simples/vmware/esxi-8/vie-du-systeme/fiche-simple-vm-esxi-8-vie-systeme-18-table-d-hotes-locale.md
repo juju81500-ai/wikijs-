@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Garantir la résolution des noms critiques sans DNS.
+Garantir la résolution des noms critiques sans [[Glossary:DNS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. ESXi n'a pas d'interface pour `/etc/hosts` : éditer le fichier en SSH :
+1. ESXi n'a pas d'interface pour `/etc/hosts` : éditer le fichier en [[Glossary:SSH]] :
    ```sh
    vi /etc/hosts
    cat /etc/hosts

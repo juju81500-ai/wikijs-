@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Dovecot_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Debian 13; Dovecot depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Debian 13; Dovecot depuis les dépôts de la distribution
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / Dovecot — Mise à jour et retour arrière
 - **Tags** : `debian13`, `dovecot`, `imap`, `messagerie`, `mise-a-jour-retour-arriere`

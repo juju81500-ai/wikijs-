@@ -2,7 +2,7 @@
 
 - **OS / Version** : Windows 11 x64; PuTTY 0.85 Stable
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : installateur MSI officiel, session SSH vers un hôte approuvé, authentification par clé et contrôle de clé d'hôte
+- **Périmètre** : installateur [[Glossary:MSI]] officiel, session [[Glossary:SSH]] vers un hôte approuvé, authentification par clé et contrôle de clé d'hôte
 - **Catégorie** : client d'administration distante
 - **Tags** : `putty`, `windows11`, `ssh`, `puttygen`, `pageant`, `host-key`
 
@@ -29,7 +29,7 @@ Invoke-WebRequest -Uri 'https://the.earth.li/~sgtatham/putty/latest/w64/putty-64
 Invoke-WebRequest -Uri 'https://www.chiark.greenend.org.uk/~sgtatham/putty/keys/release-2026.asc' -OutFile '.\release-2026.asc'
 ```
 
-Avant la vérification GPG, importer la clé et confirmer son empreinte complète avec la page officielle PuTTY :
+Avant la vérification [[Glossary:GPG]], importer la clé et confirmer son empreinte complète avec la page officielle PuTTY :
 
 ```powershell
 gpg --import .\release-2026.asc
@@ -90,7 +90,7 @@ Ne pas configurer l'acceptation automatique des clés d'hôte et ne pas désacti
 
 Fiche simple : [gérer journalisation, transferts et données sensibles](../../../../01-fiches-simples/windows/client-11/vie-du-logiciel/putty/fiche-simple-vm-windows-11-putty-journalisation-transferts.md).
 
-La journalisation de terminal est désactivée par défaut; si une politique exige un journal, sélectionner un dossier approuvé à ACL restreintes et définir la rotation/rétention. Les sorties de session peuvent contenir des identifiants, noms d'hôtes, commandes et données métier : inspecter les journaux avant de les partager.
+La journalisation de terminal est désactivée par défaut; si une politique exige un journal, sélectionner un dossier approuvé à [[Glossary:ACL]] restreintes et définir la rotation/rétention. Les sorties de session peuvent contenir des identifiants, noms d'hôtes, commandes et données métier : inspecter les journaux avant de les partager.
 
 Ne pas utiliser les protocoles Telnet ou Rlogin pour une administration réelle; leurs sessions ne protègent pas les identifiants et les données de la même façon que SSH. Les transferts PSCP/PSFTP exigent une destination autorisée et une vérification indépendante des fichiers transférés. Éviter l'option SCP non sûre et ne jamais transférer de clé privée vers l'hôte distant.
 

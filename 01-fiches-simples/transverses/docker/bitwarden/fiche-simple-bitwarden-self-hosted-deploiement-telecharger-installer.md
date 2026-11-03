@@ -36,7 +36,7 @@ Télécharger le script officiel, le contrôler puis lancer l'installation sous 
    ```bash
    ./bitwarden.sh install
    ```
-   👉 Explication : demande FQDN, option de certificat (Let's Encrypt si les prérequis publics sont réunis, sinon certificat d'entreprise), installation ID, clé et région.
+   👉 Explication : demande [[Glossary:FQDN]], option de certificat (Let's Encrypt si les prérequis publics sont réunis, sinon certificat d'entreprise), installation ID, clé et région.
 
 ## 2. Production — Contrôles
 

@@ -13,7 +13,7 @@ Valider le fonctionnement et consigner l'opération.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Tester clients, routage, DHCP/DNS, NAT, VPN et règles de blocage/autorisation.
+1. Tester clients, routage, [[Glossary:DHCP]]/DNS, [[Glossary:NAT]], [[Glossary:VPN]] et règles de blocage/autorisation.
    👉 Explication : on valide le service rendu.
 
 2. En HA, rétablir la synchronisation seulement après avoir confirmé les rôles et adresses propres des deux nœuds : **System > High Availability > Settings**.

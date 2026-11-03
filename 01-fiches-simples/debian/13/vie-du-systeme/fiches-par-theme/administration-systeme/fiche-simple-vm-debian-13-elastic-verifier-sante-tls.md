@@ -9,7 +9,7 @@
 
 ## 🎯 Problème précis à résoudre
 
-Vérifier l'état des services et l'accès TLS à Elasticsearch/Kibana après l'installation.
+Vérifier l'état des services et l'accès [[Glossary:TLS]] à Elasticsearch/Kibana après l'installation.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 
@@ -21,7 +21,7 @@ Vérifier l'état des services et l'accès TLS à Elasticsearch/Kibana après l'
    ```
    👉 Explication : les deux services doivent être `active (running)`.
 
-2. Tester l'API en HTTPS avec la CA du cluster (le secret est saisi, pas écrit) :
+2. Tester l'[[Glossary:API]] en HTTPS avec la [[Glossary:CA]] du cluster (le secret est saisi, pas écrit) :
    ```bash
    read -rsp "Mot de passe du compte de contrôle : " EPW; echo
    curl --cacert /etc/elasticsearch/certs/http_ca.crt -u COMPTE_CONTROLE:"$EPW" https://127.0.0.1:9200/_cluster/health?pretty

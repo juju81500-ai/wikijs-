@@ -1,8 +1,8 @@
 # 📄 VM_Debian_13_Systeme_Creation-Swapfile-LVM.md
 
-- **Environnement** : VM (Debian 13)
+- **Environnement** : [[Glossary:VM]] (Debian 13)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
-- **Catégorie** : Système & Mémoire / Fichier Swap & LVM
+- **Catégorie** : Système & Mémoire / Fichier Swap & [[Glossary:LVM]]
 - **Tags** : `[debian13]`, `[swap]`, `[memory]`, `[lvm]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
@@ -40,7 +40,7 @@ Créer et configurer un espace de mémoire virtuelle d'échange (Swap) sécuris�
 
 2. Optimisation du comportement d'échange dans `/etc/sysctl.d/99-swappiness.conf` :
    `echo -e "vm.swappiness = 10\nvm.vfs_cache_pressure = 50" > /etc/sysctl.d/99-swappiness.conf`
-   👉 Explication : Réduit le recours au swap sur disque pour préserver les performances d'I/O et favoriser la RAM physique.
+   👉 Explication : Réduit le recours au swap sur disque pour préserver les performances d'I/O et favoriser la [[Glossary:RAM]] physique.
 
 3. Appliquer les paramètres mémoire système :
    `sysctl --system`

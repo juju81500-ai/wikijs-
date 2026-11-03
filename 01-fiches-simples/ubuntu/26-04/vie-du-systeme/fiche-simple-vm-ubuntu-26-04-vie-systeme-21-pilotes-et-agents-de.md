@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_21_Pilotes_Et_Agents_De
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 21 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-21`
@@ -18,7 +18,7 @@ Installer l'agent adapté à l'hyperviseur.
    sudo apt install qemu-guest-agent
    sudo systemctl enable --now qemu-guest-agent
    ```
-   👉 Explication : permet à l'hyperviseur de lire l'IP et d'arrêter proprement la VM (activer **Options > QEMU Guest Agent** côté Proxmox); sur certaines images l'unité démarre seule : `enable` peut être refusé, vérifier `status`.
+   👉 Explication : permet à l'hyperviseur de lire l'[[Glossary:IP]] et d'arrêter proprement la VM (activer **Options > [[Glossary:QEMU]] Guest Agent** côté Proxmox); sur certaines images l'unité démarre seule : `enable` peut être refusé, vérifier `status`.
 
 2. VMware ou Hyper-V (selon la plateforme) :
    ```bash

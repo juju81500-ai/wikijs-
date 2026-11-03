@@ -24,7 +24,7 @@ Choisir le disque d'installation et créer le datastore.
    ```
    👉 Explication : repérer le disque (`naa.XXXX`) puis le formater; le Host Client est plus sûr pour la création.
 
-3. Prévoir un disque séparé pour les VM, distinct du disque d'amorçage.
+3. Prévoir un disque séparé pour les [[Glossary:VM]], distinct du disque d'amorçage.
    👉 Explication : évite un datastore saturé qui bloque l'hôte.
 
 ## 2. Production — Contrôles

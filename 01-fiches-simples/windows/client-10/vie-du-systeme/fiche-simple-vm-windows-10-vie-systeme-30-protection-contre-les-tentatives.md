@@ -33,7 +33,7 @@ Limiter les attaques par force brute en verrouillant les comptes.
    ```
    👉 Explication : enregistre succès et échecs (nom de la sous-catégorie en anglais : `Logon`).
 
-4. Bloquer une adresse source abusive sur RDP/SSH.
+4. Bloquer une adresse source abusive sur [[Glossary:RDP]]/SSH.
    ```powershell
    New-NetFirewallRule -DisplayName 'Bloquer ADRESSE_SOURCE' -Direction Inbound -RemoteAddress ADRESSE_SOURCE -Action Block
    ```
@@ -41,7 +41,7 @@ Limiter les attaques par force brute en verrouillant les comptes.
 
 ## 2. Production — Contrôles
 
-Alerte SIEM au-delà d'un seuil d'événements 4625; la politique de verrouillage vient de la GPO du domaine.
+Alerte [[Glossary:SIEM]] au-delà d'un seuil d'événements 4625; la politique de verrouillage vient de la [[Glossary:GPO]] du domaine.
 
 ## 3. Production — Sécurité
 

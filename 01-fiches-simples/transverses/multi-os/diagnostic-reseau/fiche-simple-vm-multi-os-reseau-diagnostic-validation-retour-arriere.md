@@ -1,6 +1,6 @@
 # fiche-simple-vm-multi-os-reseau-diagnostic-validation-retour-arriere.md
 
-- **Environnement** : VM, poste, serveur, LXC Proxmox ou hôte Docker (Linux ou Windows)
+- **Environnement** : [[Glossary:VM]], poste, serveur, [[Glossary:LXC]] Proxmox ou hôte Docker (Linux ou Windows)
 - **OS / Version** : Debian 12/13, Ubuntu 24-04/26-04, Rocky Linux 9, Alpine Linux, Windows 10/11, Windows Server 2022/2025
 - **Catégorie** : réseau / validation
 - **Tags** : `reseau`, `diagnostic`, `multi-os`, `depannage`
@@ -13,7 +13,7 @@ Prouver que la panne est résolue et savoir revenir en arrière.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Refaire la chaîne **Lien → Adresse → Passerelle → Route → DNS → Port → Application** depuis le client touché.
+1. Refaire la chaîne **Lien → Adresse → Passerelle → Route → [[Glossary:DNS]] → Port → Application** depuis le client touché.
    👉 Explication : on vérifie chaque couche dans l'ordre.
 
 2. Exemple Linux de contrôle final (remplacer `192.0.2.10` et `srv1.example.test`) :

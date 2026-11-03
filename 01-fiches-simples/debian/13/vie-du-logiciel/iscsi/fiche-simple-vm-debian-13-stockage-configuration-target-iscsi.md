@@ -1,12 +1,12 @@
 # 📄 VM_Debian_13_Stockage_Configuration-Target-iSCSI-LIO.md
 
-- **Environnement** : VM / Serveur Stockage (Debian 13)
+- **Environnement** : [[Glossary:VM]] / Serveur Stockage (Debian 13)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
-- **Catégorie** : Stockage / SAN iSCSI Target
+- **Catégorie** : Stockage / [[Glossary:SAN]] iSCSI Target
 - **Tags** : `[debian13]`, `[iscsi]`, `[targetcli]`, `[storage]`, `[san]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Configurer un serveur de stockage iSCSI Target (SAN) sous Debian 13 à l'aide du sous-système LIO et `targetcli-fb`, créer un LUN et sécuriser l'accès par authentification CHAP.
+Configurer un serveur de stockage iSCSI Target (SAN) sous Debian 13 à l'aide du sous-système LIO et `targetcli-fb`, créer un [[Glossary:LUN]] et sécuriser l'accès par authentification CHAP.
 
 ---
 
@@ -32,7 +32,7 @@ Configurer un serveur de stockage iSCSI Target (SAN) sous Debian 13 à l'aide du
 2. Créer le backstore uniquement avec le périphérique vérifié :
    `targetcli /backstores/block create name=lun_prod dev=/dev/vg_storage/lv_iscsi`
 
-2. Configuration du Target iSCSI et de l'IP d'écoute réseau :
+2. Configuration du Target iSCSI et de l'[[Glossary:IP]] d'écoute réseau :
    `targetcli /iscsi/iqn.2026-10.local.lab:target-prod/tpg1/portals create 192.168.1.50 3260`
    👉 Explication : Lie le service iSCSI à l'adresse IP dédiée du réseau de stockage SAN.
 
@@ -47,7 +47,7 @@ Configurer un serveur de stockage iSCSI Target (SAN) sous Debian 13 à l'aide du
 ---
 
 ## 🔒 3. Production — Façon Sécurisée (Hardening & Isolation Enterprise)
-1. Activer CHAP pour l'ACL de l'initiateur via une session d'administration restreinte. Saisir un secret unique conservé dans le coffre, sans le mettre dans l'historique shell ni dans la fiche :
+1. Activer CHAP pour l'[[Glossary:ACL]] de l'initiateur via une session d'administration restreinte. Saisir un secret unique conservé dans le coffre, sans le mettre dans l'historique shell ni dans la fiche :
    ```text
    targetcli
    /iscsi/iqn.2026-10.local.lab:target-prod/tpg1/acls/iqn.2026-10.local.lab:initiator01 set auth userid=iscsi_user password=<SECRET_CHAP>
@@ -55,7 +55,7 @@ Configurer un serveur de stockage iSCSI Target (SAN) sous Debian 13 à l'aide du
    ```
    👉 Explication : Remplacer le placeholder dans la session sécurisée et configurer le même secret côté initiateur. La commande seule ne configure pas l'authentification mutuelle.
 
-2. Autoriser TCP/3260 uniquement depuis les initiateurs prévus dans le pare-feu persistant géré par le serveur. Valider et appliquer la règle par ce gestionnaire ; une règle `nft add rule` ajoutée à chaud n'est pas persistante.
+2. Autoriser [[Glossary:TCP]]/3260 uniquement depuis les initiateurs prévus dans le pare-feu persistant géré par le serveur. Valider et appliquer la règle par ce gestionnaire ; une règle `nft add rule` ajoutée à chaud n'est pas persistante.
 
 3. Vérifier le nom du service fourni par le paquet puis l'activer :
    ```bash

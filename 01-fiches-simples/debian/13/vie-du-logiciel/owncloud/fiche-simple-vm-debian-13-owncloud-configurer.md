@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_ownCloud_Configurer
 
-- **Environnement** : VM Debian 13; ownCloud Infinite Scale (oCIS), binaire officiel, Nginx
+- **Environnement** : [[Glossary:VM]] Debian 13; ownCloud Infinite Scale (oCIS), binaire officiel, Nginx
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / ownCloud — Configurer
 - **Tags** : `debian13`, `owncloud`, `ocis`, `cloud`, `configurer`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Configurer ownCloud Infinite Scale derrière un reverse proxy Nginx avec TLS terminé par le proxy.
+Configurer ownCloud Infinite Scale derrière un reverse proxy Nginx avec [[Glossary:TLS]] terminé par le proxy.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -56,7 +56,7 @@ Configurer ownCloud Infinite Scale derrière un reverse proxy Nginx avec TLS ter
    ```
    👉 Explication : aucune erreur de démarrage attendue.
 
-5. Créer un utilisateur de test via l'interface (connexion administrateur > Utilisateurs) : chemin GUI.
+5. Créer un utilisateur de test via l'interface (connexion administrateur > Utilisateurs) : chemin [[Glossary:GUI]].
    👉 Explication : les comptes se gèrent dans l'application ; les quotas aussi.
 
 ## 2. Production — Contrôles

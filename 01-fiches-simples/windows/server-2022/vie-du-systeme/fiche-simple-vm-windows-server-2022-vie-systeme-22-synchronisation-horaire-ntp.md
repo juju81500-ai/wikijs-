@@ -20,7 +20,7 @@ Garder une heure exacte avec le service Temps Windows.
    ```
    👉 Explication : affiche la source de temps et l'écart; hors domaine, la source est `time.windows.com`.
 
-2. Hors domaine, définir des sources NTP (remplacer `SOURCE_NTP`, ex. `fr.pool.ntp.org`) :
+2. Hors domaine, définir des sources [[Glossary:NTP]] (remplacer `SOURCE_NTP`, ex. `fr.pool.ntp.org`) :
    ```powershell
    w32tm /config /manualpeerlist:"SOURCE_NTP" /syncfromflags:manual /reliable:yes /update
    Restart-Service w32time
@@ -40,7 +40,7 @@ Dans un domaine, ne configurer manuellement que l'émulateur PDC.
 
 ## 3. Production — Sécurité
 
-Limiter le trafic UDP 123 sortant aux sources de confiance.
+Limiter le trafic [[Glossary:UDP]] 123 sortant aux sources de confiance.
 
 ## Validation et retour arrière
 

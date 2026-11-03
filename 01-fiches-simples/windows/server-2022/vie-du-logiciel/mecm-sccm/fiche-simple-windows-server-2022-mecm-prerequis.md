@@ -1,6 +1,6 @@
 # Fiche_Simple_-_Windows_Server_2022_MECM_Prerequis
 
-- **Environnement** : Windows Server 2022 (futur serveur de site MECM/SCCM) dans un domaine AD DS
+- **Environnement** : Windows Server 2022 (futur serveur de site MECM/SCCM) dans un domaine [[Glossary:AD]] DS
 - **OS / Version** : Windows Server 2022; version de Configuration Manager current branch : vérifier la version publiée et la matrice de support Microsoft
 - **Catégorie** : Automatisation, déploiement et IaC
 - **Tags** : `windows-server-2022`, `mecm`, `sccm`, `prerequis`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Vérifier que l'architecture (AD DS, SQL Server, ADK/WinPE, rôles Windows) est prête et supportée avant toute installation de MECM/SCCM. Cette fiche n'installe pas le produit.
+Vérifier que l'architecture (AD DS, [[Glossary:SQL]] Server, [[Glossary:ADK]]/WinPE, rôles Windows) est prête et supportée avant toute installation de MECM/SCCM. Cette fiche n'installe pas le produit.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -20,7 +20,7 @@ Vérifier que l'architecture (AD DS, SQL Server, ADK/WinPE, rôles Windows) est 
    ```
    👉 Explication : ces valeurs servent aux contrôles suivants; rien n'est modifié.
 
-2. Contrôler l'OS et le domaine. GUI : `Gestionnaire de serveur > Serveur local`.
+2. Contrôler l'OS et le domaine. [[Glossary:GUI]] : `Gestionnaire de serveur > Serveur local`.
    ```powershell
    Get-ComputerInfo | Select-Object OsName, OsVersion, CsDomain, CsPartOfDomain
    ```

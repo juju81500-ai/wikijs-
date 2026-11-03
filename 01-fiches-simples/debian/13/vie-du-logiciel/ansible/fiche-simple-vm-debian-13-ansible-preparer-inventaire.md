@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Préparer un inventaire minimal et vérifier l'identité SSH de l'hôte avant toute opération distante.
+Préparer un inventaire minimal et vérifier l'identité [[Glossary:SSH]] de l'hôte avant toute opération distante.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

@@ -1,7 +1,7 @@
 # 📄 fiche-simple-vmware-esxi-8-configurer-hote-pilote.md
 
 - **Environnement** : Hôte physique VMware ESXi 8.0 et console d'administration
-- **OS / Version** : ESXi 8.0 build/image validée par l'OEM
+- **OS / Version** : ESXi 8.0 build/image validée par l'[[Glossary:OEM]]
 - **Catégorie** : Virtualisation / mise en service
 - **Tags** : `vmware`, `esxi`, `vsphere8`, `reseau`, `datastore`, `production`
 
@@ -13,15 +13,15 @@ Finaliser les paramètres d'un hôte ESXi pilote avant de le rattacher à une pl
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 
-1. Confirmer build et matériel : **Host Client > Manage > System > ... / Host > Summary**, ou en SSH :
+1. Confirmer build et matériel : **Host Client > Manage > System > ... / Host > Summary**, ou en [[Glossary:SSH]] :
    ```sh
    vmware -vl
    esxcli hardware platform get
    esxcli storage filesystem list
    ```
-   👉 Explication : comparer à la liste de compatibilité (HCL); garder l'accès console (iLO/iDRAC ou DCUI).
+   👉 Explication : comparer à la liste de compatibilité ([[Glossary:HCL]]); garder l'accès console (iLO/iDRAC ou DCUI).
 
-2. Définir hostname, IP de management, DNS et passerelle : **DCUI (F2) > Configure Management Network**, ou Host Client **Networking > VMkernel NICs**, **TCP/IP stacks**, ou :
+2. Définir hostname, [[Glossary:IP]] de management, [[Glossary:DNS]] et passerelle : **DCUI (F2) > Configure Management Network**, ou Host Client **Networking > VMkernel NICs**, **[[Glossary:TCP]]/IP stacks**, ou :
    ```sh
    esxcli system hostname set --host=esxi01 --domain=example.net
    esxcli network ip interface ipv4 set -i vmk0 -t static -I 192.0.2.10 -N 255.255.255.0
@@ -30,7 +30,7 @@ Finaliser les paramètres d'un hôte ESXi pilote avant de le rattacher à une pl
    ```
    👉 Explication : remplacer par les valeurs validées; une erreur coupe l'accès réseau, d'où la console.
 
-3. Configurer NTP : **Host Client > Manage > System > Time & date > Edit settings** (NTP), ou :
+3. Configurer [[Glossary:NTP]] : **Host Client > Manage > System > Time & date > Edit settings** (NTP), ou :
    ```sh
    esxcli system ntp set -s 192.0.2.123 -e yes
    esxcli system ntp get
@@ -43,7 +43,7 @@ Finaliser les paramètres d'un hôte ESXi pilote avant de le rattacher à une pl
    esxcli network vswitch standard portgroup add -p PG-LAB -v vSwitch0
    esxcli storage core device list | grep -E 'Display Name|Size'
    ```
-   👉 Explication : identifier le bon disque avant de créer le datastore; ne jamais effacer un LUN existant.
+   👉 Explication : identifier le bon disque avant de créer le datastore; ne jamais effacer un [[Glossary:LUN]] existant.
 
 5. Envoyer les logs vers un collecteur pilote : **Manage > System > Advanced settings > Syslog.global.logHost**, ou :
    ```sh
@@ -64,13 +64,13 @@ Finaliser les paramètres d'un hôte ESXi pilote avant de le rattacher à une pl
    esxcli system ntp get
    esxcli system syslog config get
    ```
-   👉 Explication : GUI : **Host Client > Networking / Storage / Manage > Licensing / Certificates**; rattacher ensuite à vCenter selon le design et les droits.
+   👉 Explication : [[Glossary:GUI]] : **Host Client > Networking / Storage / Manage > Licensing / Certificates**; rattacher ensuite à vCenter selon le design et les droits.
 
 
 ## 🔒 3. Production — Façon Sécurisée
 
 - Restreindre Host Client, SSH et ESXi Shell aux réseaux d'administration; fermer SSH/shell après usage.
-- Appliquer comptes nominatifs/roles least privilege et placer la gestion hors du réseau des VM.
+- Appliquer comptes nominatifs/roles least privilege et placer la gestion hors du réseau des [[Glossary:VM]].
 - Vérifier sauvegarde/restauration de configuration et VM avant d'héberger des charges réelles.
 
 ## ✅ Validation et retour arrière

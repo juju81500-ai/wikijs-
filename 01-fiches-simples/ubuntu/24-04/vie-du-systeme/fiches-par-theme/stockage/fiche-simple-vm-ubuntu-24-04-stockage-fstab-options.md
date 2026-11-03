@@ -1,7 +1,7 @@
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Stockage_Fstab_Options
 
-- **Environnement** : VM Ubuntu Server
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat)
+- **Environnement** : [[Glossary:VM]] Ubuntu Server
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble Numbat)
 - **Catégorie** : Stockage / Montages et options de sécurité
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[fstab]`, `[mount]`, `[tmpfs]`, `[nodev]`, `[nosuid]`, `[noexec]`
 
@@ -31,7 +31,7 @@ Vérifier les montages déclarés dans `/etc/fstab` sur Ubuntu Server 24-04 LTS,
    tmpfs /tmp     tmpfs defaults,nodev,nosuid,noexec,size=1G,mode=1777 0 0
    tmpfs /dev/shm tmpfs defaults,nodev,nosuid,noexec                  0 0
    ```
-   👉 *Explication : `nodev` interdit les périphériques spéciaux, `nosuid` ignore le bit SUID, `noexec` interdit l'exécution de binaires depuis ces montages. Ne pas appliquer `noexec` sur un répertoire où un installeur doit exécuter des scripts.*
+   👉 *Explication : `nodev` interdit les périphériques spéciaux, `nosuid` ignore le bit [[Glossary:SUID]], `noexec` interdit l'exécution de binaires depuis ces montages. Ne pas appliquer `noexec` sur un répertoire où un installeur doit exécuter des scripts.*
 2. Recharger systemd, valider et appliquer les montages :
    ```bash
    sudo systemctl daemon-reload

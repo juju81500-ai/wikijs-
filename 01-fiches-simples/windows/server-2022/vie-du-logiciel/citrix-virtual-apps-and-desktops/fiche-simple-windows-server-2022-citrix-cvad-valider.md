@@ -1,8 +1,8 @@
 # Fiche_Simple_-_Windows_Server_2022_Citrix_CVAD_Valider
 
-- **Environnement** : Serveurs Windows Server 2022 (Delivery Controller, StoreFront, licences, SQL) et VM VDA, compte administrateur nominatif
+- **Environnement** : Serveurs Windows Server 2022 (Delivery Controller, StoreFront, licences, [[Glossary:SQL]]) et [[Glossary:VM]] VDA, compte administrateur nominatif
 - **OS / Version** : Windows Server 2022; version CVAD à vérifier auprès de l'éditeur
-- **Catégorie** : VDI / virtualisation d'applications / Citrix
+- **Catégorie** : [[Glossary:VDI]] / virtualisation d'applications / Citrix
 - **Tags** : `citrix`, `cvad`, `windows-server`, `validation`
 
 ---
@@ -22,7 +22,7 @@ Get-BrokerCatalog | Select-Object Name,UnassignedCount
 ```
    👉 Explication : State doit être Active, RegistrationState Registered.
 
-2. Contrôler les licences : GUI **Studio > Licensing** (ou console d'administration des licences Citrix) pour les licences en usage et disponibles.
+2. Contrôler les licences : [[Glossary:GUI]] **Studio > Licensing** (ou console d'administration des licences Citrix) pour les licences en usage et disponibles.
    👉 Explication : les alertes d'expiration apparaissent ici.
 
 3. Se connecter à https://STORE_FQDN avec un utilisateur de test et lancer un bureau ou une application.

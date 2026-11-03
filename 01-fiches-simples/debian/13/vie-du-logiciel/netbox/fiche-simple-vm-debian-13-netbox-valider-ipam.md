@@ -2,7 +2,7 @@
 
 - **Environnement** : NetBox 4.7.4 sur Debian 13, base et tâche de fond disponibles
 - **OS / Version** : Debian 13 Trixie
-- **Catégorie** : IPAM / DCIM
+- **Catégorie** : [[Glossary:IPAM]] / [[Glossary:DCIM]]
 - **Tags** : `debian13`, `netbox`, `ipam`, `dcim`, `validation`, `backup`
 
 ---
@@ -22,7 +22,7 @@ Confirmer qu'un inventaire IPAM pilote est cohérent, accessible aux bons rôles
 2. Interface NetBox : créer un site (**Organization > Sites**), un aggregate (**IPAM > Aggregates**), un préfixe parent et un enfant (**IPAM > Prefixes**) avec rôle et statut cohérents.
    👉 Explication : on contrôle la hiérarchie et le statut des objets.
 
-3. **IPAM > IP Addresses > Add** : ajouter une adresse de test, puis ouvrir **IPAM > Prefixes** pour vérifier le calcul d'utilisation.
+3. **IPAM > [[Glossary:IP]] Addresses > Add** : ajouter une adresse de test, puis ouvrir **IPAM > Prefixes** pour vérifier le calcul d'utilisation.
    👉 Explication : aucune adresse en double hors VRF ne doit exister.
 
 4. Tester les permissions : se connecter avec le compte opérateur (**Admin > Permissions** pour le périmètre) et tenter de modifier un objet hors périmètre.
@@ -42,7 +42,7 @@ Définir les propriétaires et le processus de changement avant de faire de NetB
 ## 3. Production — Sécurité
 
 - HTTPS obligatoire; Nginx, PostgreSQL et Redis ne sont accessibles que depuis les composants nécessaires.
-- Protéger `configuration.py`, `SECRET_KEY`, `API_TOKEN_PEPPERS`, secrets de base et jetons API.
+- Protéger `configuration.py`, `SECRET_KEY`, `API_TOKEN_PEPPERS`, secrets de base et jetons [[Glossary:API]].
 - Accorder les permissions NetBox aux groupes et périmètres minimums; ne pas réutiliser un compte administrateur pour les intégrations.
 - Stocker les dumps chiffrés hors de l'hôte et tester régulièrement une restauration.
 

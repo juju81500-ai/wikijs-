@@ -13,7 +13,7 @@ Installer un certificat de serveur et activer HTTPS.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Ouvrir **certlm.msc > Personnel > Certificats > Toutes les tâches > Demander un nouveau certificat** (autorité interne AD CS) ou importer un certificat :
+1. Ouvrir **certlm.msc > Personnel > Certificats > Toutes les tâches > Demander un nouveau certificat** (autorité interne [[Glossary:AD]] CS) ou importer un certificat :
    ```powershell
    Get-ChildItem Cert:\LocalMachine\My | Select-Object Subject, NotAfter, Thumbprint
    ```
@@ -25,7 +25,7 @@ Installer un certificat de serveur et activer HTTPS.
    ```
    👉 Explication : installe le certificat sans afficher le mot de passe.
 
-3. Lier à un site IIS (**Gestionnaire IIS > Site > Liaisons > Ajouter https**) :
+3. Lier à un site [[Glossary:IIS]] (**Gestionnaire IIS > Site > Liaisons > Ajouter https**) :
    ```powershell
    New-WebBinding -Name 'Default Web Site' -Protocol https -Port 443
    (Get-WebBinding -Name 'Default Web Site' -Protocol https).AddSslCertificate('EMPREINTE','My')
@@ -38,7 +38,7 @@ Superviser les dates d'expiration et automatiser le renouvellement.
 
 ## 3. Production — Sécurité
 
-Désactiver TLS 1.0/1.1 et protéger les clés privées (non exportables).
+Désactiver [[Glossary:TLS]] 1.0/1.1 et protéger les clés privées (non exportables).
 
 ## Validation et retour arrière
 

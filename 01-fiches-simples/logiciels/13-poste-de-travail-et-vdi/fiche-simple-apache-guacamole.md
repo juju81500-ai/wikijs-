@@ -1,14 +1,14 @@
 # 📄 Apache Guacamole
 
-- **Environnement** : VM Debian 13 avec Docker Compose (passerelle d'accès distant RDP, SSH et VNC depuis un navigateur)
+- **Environnement** : [[Glossary:VM]] Debian 13 avec Docker Compose (passerelle d'accès distant [[Glossary:RDP]], [[Glossary:SSH]] et VNC depuis un navigateur)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian / Apache Guacamole (version fixée par le tag d'image Docker `<version_guacamole>`, à vérifier sur la version déployée)
-- **Catégorie** : Poste de travail et VDI
+- **Catégorie** : Poste de travail et [[Glossary:VDI]]
 - **Tags** : `[debian13]`, `[debian-family]`, `[guacamole]`, `[docker]`, `[docker-compose]`, `[rdp]`, `[ssh]`, `[vnc]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
 Déployer Apache Guacamole en Docker Compose sur Debian 13 avec ses trois conteneurs (`guacd`, PostgreSQL, interface web), vérifier l'accès au portail, remplacer le compte administrateur par défaut, puis restreindre l'exposition réseau et la sauvegarde de la base.
 
-Valeurs à personnaliser dans les fichiers et commandes : `<version_guacamole>` (tag d'image Guacamole, identique pour `guacd` et `guacamole`), `<version_postgresql>` (version PostgreSQL compatible avec Guacamole), `<mot_de_passe_bdd>` (mot de passe fort de la base), `<adresse_ip_serveur>` (adresse IP de la VM), `<reseau_admin>` (sous-réseau d'administration au format CIDR).
+Valeurs à personnaliser dans les fichiers et commandes : `<version_guacamole>` (tag d'image Guacamole, identique pour `guacd` et `guacamole`), `<version_postgresql>` (version PostgreSQL compatible avec Guacamole), `<mot_de_passe_bdd>` (mot de passe fort de la base), `<adresse_ip_serveur>` (adresse [[Glossary:IP]] de la VM), `<reseau_admin>` (sous-réseau d'administration au format [[Glossary:CIDR]]).
 
 ---
 
@@ -29,7 +29,7 @@ Valeurs à personnaliser dans les fichiers et commandes : `<version_guacamole>` 
    ```bash
    mkdir -p ~/guacamole/initdb
    ```
-   👉 Explication : Regroupe le fichier Compose, le script SQL et les données PostgreSQL dans un seul dossier.
+   👉 Explication : Regroupe le fichier Compose, le script [[Glossary:SQL]] et les données PostgreSQL dans un seul dossier.
 
 4. Génération du script SQL d'initialisation de la base Guacamole :
    ```bash
@@ -121,13 +121,13 @@ Valeurs à personnaliser dans les fichiers et commandes : `<version_guacamole>` 
    ```bash
    cd ~/guacamole && docker-compose up -d
    ```
-   👉 Explication : Le portail n'écoute plus sur toutes les interfaces. Le reverse proxy HTTPS (nginx, Apache ou équivalent, hors périmètre de cette fiche) doit être configuré pour exposer le service en TLS.
+   👉 Explication : Le portail n'écoute plus sur toutes les interfaces. Le reverse proxy HTTPS (nginx, Apache ou équivalent, hors périmètre de cette fiche) doit être configuré pour exposer le service en [[Glossary:TLS]].
 
 2. Pare-feu local : n'autoriser que le réseau d'administration sur SSH et HTTPS, puis activer le pare-feu. Garder une console ouverte avant ces commandes :
    ```bash
    sudo apt install -y ufw && sudo ufw allow from <reseau_admin> to any port 22 proto tcp && sudo ufw allow from <reseau_admin> to any port 443 proto tcp && sudo ufw default deny incoming && sudo ufw enable
    ```
-   👉 Explication : La règle SSH est posée avant l'activation pour éviter de se couper l'accès. `<reseau_admin>` est le sous-réseau d'administration au format CIDR (exemple : `192.168.10.0/24`). Vérifier l'interaction entre UFW et Docker sur la version déployée.
+   👉 Explication : La règle SSH est posée avant l'activation pour éviter de se couper l'accès. `<reseau_admin>` est le sous-réseau d'administration au format CIDR (exemple : `192.168.10.0/24`). Vérifier l'interaction entre [[Glossary:UFW]] et Docker sur la version déployée.
 
 3. Vérification de la liste des règles appliquées :
    ```bash

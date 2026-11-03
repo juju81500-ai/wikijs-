@@ -4,7 +4,7 @@
 - **Type de fiche** : Installation/Déploiement
 - **Environnement** : Tenant Atlassian Cloud administré par l'organisation
 - **Machine ciblée** : N/A — application hébergée par Atlassian
-- **Catégorie** : ITSM / centre de services
+- **Catégorie** : [[Glossary:ITSM]] / centre de services
 - **Tags** : `jira-service-management`, `atlassian-cloud`, `itsm`, `ticketing`, `saas`
 
 ## 1. Préparer le tenant et la gouvernance
@@ -30,7 +30,7 @@ Fiche simple : [structurer demandes et files](../../../../01-fiches-simples/tran
 
 - Créer des request types correspondant au vocabulaire des utilisateurs : incident, accès, équipement, logiciel et demande standard.
 - Associer les champs requis, catégories et formulaires au processus réel; éviter de collecter des secrets dans les descriptions ou pièces jointes.
-- Créer les files de travail des agents selon priorité, statut, équipe et SLA.
+- Créer les files de travail des agents selon priorité, statut, équipe et [[Glossary:SLA]].
 - Configurer les workflows pour les transitions réellement approuvées, avec règles d'assignation et d'escalade.
 - Configurer les calendriers, priorités et objectifs SLA; tester les conditions et le fuseau horaire avec des exemples.
 
@@ -38,7 +38,7 @@ Fiche simple : [structurer demandes et files](../../../../01-fiches-simples/tran
 
 Fiche simple : [contrôler l'accès clients](../../../../01-fiches-simples/transverses/cloud-saas/jira-service-management/fiche-simple-jira-service-management-deploiement-controler-acces-clients.md).
 
-Dans les paramètres d'accès du site et de l'espace, choisir explicitement entre accès restreint aux clients invités et domaines approuvés. Ne pas laisser un portail ouvert à tout Internet sauf décision métier documentée. Vérifier également l'option de partage de demandes, les organisations clientes, SSO/MFA et le traitement des comptes désactivés.
+Dans les paramètres d'accès du site et de l'espace, choisir explicitement entre accès restreint aux clients invités et domaines approuvés. Ne pas laisser un portail ouvert à tout Internet sauf décision métier documentée. Vérifier également l'option de partage de demandes, les organisations clientes, [[Glossary:SSO]]/MFA et le traitement des comptes désactivés.
 
 ## 5. Configurer les canaux et intégrations
 

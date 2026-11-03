@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Vie_Systeme_43_Controle_Des_Services_Et
 
-- **Environnement** : VM Debian 13 « trixie » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 13 « trixie » (serveur)
 - **OS / Version** : Debian 13; étape 43 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian13`, `vie-du-systeme`, `cycle-de-vie`, `etape-43`

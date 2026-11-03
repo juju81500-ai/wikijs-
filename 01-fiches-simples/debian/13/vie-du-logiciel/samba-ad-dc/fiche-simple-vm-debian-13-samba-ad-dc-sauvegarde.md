@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-samba-ad-dc-sauvegarde.md
 
-- **Environnement** : VM Debian 13 de laboratoire, contrôleur de domaine Samba AD DC (DNS SAMBA_INTERNAL)
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire, contrôleur de domaine Samba [[Glossary:AD]] [[Glossary:DC]] ([[Glossary:DNS]] SAMBA_INTERNAL)
 - **OS / Version** : Debian 13 Trixie; Samba 4.22 (dépôts Debian)
 - **Catégorie** : annuaire / sauvegarde
 - **Tags** : `debian13`, `samba`, `active-directory`, `lab`, `sauvegarde`, `restauration`
@@ -24,7 +24,7 @@ Sauvegarder un DC actif avec les outils Samba et tester la restauration.
 2. Lancer la sauvegarde vers un volume protégé, séparé du serveur, avec authentification interactive.
    👉 Explication : l'archive contient des données d'identité sensibles.
 
-3. Restaurer dans un réseau isolé, avec des noms et adresses de lab distincts, puis vérifier authentification, DNS, ACL SYSVOL et stratégies.
+3. Restaurer dans un réseau isolé, avec des noms et adresses de lab distincts, puis vérifier authentification, DNS, [[Glossary:ACL]] [[Glossary:SYSVOL]] et stratégies.
    👉 Explication : prouve que la sauvegarde est utilisable.
 
 ## 2. Production — Contrôles

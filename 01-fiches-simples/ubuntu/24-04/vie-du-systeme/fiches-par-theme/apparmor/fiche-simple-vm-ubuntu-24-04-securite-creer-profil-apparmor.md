@@ -1,7 +1,7 @@
 # 📄 fiche-simple-vm-ubuntu-24-04-securite-creer-profil-apparmor.md
 
-- **Environnement** : VM Ubuntu Server exécutant une application personnalisée
-- **OS / Version** : Ubuntu Server 24-04 LTS avec AppArmor
+- **Environnement** : [[Glossary:VM]] Ubuntu Server exécutant une application personnalisée
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] avec AppArmor
 - **Catégorie** : Sécurité / Contrôle d'accès
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[apparmor]`, `[profil]`, `[hardening]`, `[securite]`
 

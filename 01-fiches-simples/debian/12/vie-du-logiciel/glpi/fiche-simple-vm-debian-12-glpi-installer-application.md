@@ -1,7 +1,7 @@
 # fiche-simple-vm-debian-12-glpi-installer-application.md
 
-- **Environnement** : VM Debian dédiée avec serveur Web et PHP-FPM installés
-- **OS / Version** : Debian 12 ou 13; version GLPI validée
+- **Environnement** : [[Glossary:VM]] Debian dédiée avec serveur Web et PHP-FPM installés
+- **OS / Version** : Debian 12 ou 13; version [[Glossary:GLPI]] validée
 - **Catégorie** : GLPI / déploiement applicatif
 - **Tags** : `debian12`, `glpi`, `php`, `nginx`, `deployment`
 
@@ -41,7 +41,7 @@ Déployer l'archive GLPI officielle dans un répertoire versionné et configurer
    ```
    👉 Explication : déplacer ces répertoires hors de la racine Web selon la documentation de la version.
 
-5. Créer l'hôte virtuel Nginx (nom DNS, socket PHP réel, racine publique `public/`) :
+5. Créer l'hôte virtuel Nginx (nom [[Glossary:DNS]], socket PHP réel, racine publique `public/`) :
    ```bash
    ls /run/php/
    sudo tee /etc/nginx/sites-available/glpi >/dev/null <<'EOF'

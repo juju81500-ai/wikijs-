@@ -1,6 +1,6 @@
 # Diagnostic et dépannage Netplan sur Ubuntu 24-04
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]]
 - **Catégorie** : Réseau / Netplan
 - **Tags** : `ubuntu24.04`, `netplan`, `diagnostic`, `cloud-init`, `reseau`
 
@@ -31,7 +31,7 @@ sudo netplan generate
 ```
    👉 Explication : génère la configuration pour détecter les erreurs de syntaxe sans l'appliquer.
 
-Corriger les erreurs de syntaxe et vérifier interface, adresse, route, DNS, renderer et conflits avec d'autres fichiers sous `/etc/netplan/`.
+Corriger les erreurs de syntaxe et vérifier interface, adresse, route, [[Glossary:DNS]], renderer et conflits avec d'autres fichiers sous `/etc/netplan/`.
 
 ## 🔒 3. Appliquer avec accès de secours
 

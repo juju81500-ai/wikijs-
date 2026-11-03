@@ -1,6 +1,6 @@
 # fiche-simple-hote-windows-11-deploiement-inscrire-configurer-poste.md
 
-- **Environnement** : Parc de postes utilisateur: poste physique ou VM de test
+- **Environnement** : Parc de postes utilisateur: poste physique ou [[Glossary:VM]] de test
 - **OS / Version** : Windows 11 Pro ou Enterprise selon la gestion prévue
 - **Catégorie** : déploiement de poste de travail
 - **Tags** : `windows11`, `deploiement`, `oobe`, `bitlocker`, `production`
@@ -19,7 +19,7 @@ Nommer, inscrire et configurer le poste selon le mécanisme de gestion.
    ```
    👉 Explication : renomme le poste et le redémarre.
 
-2. Inscrire le poste : **Paramètres > Comptes > Accès Professionnel ou scolaire > Se connecter** (Entra ID/Intune), ou joindre le domaine AD DS selon la procédure de l'organisation.
+2. Inscrire le poste : **Paramètres > Comptes > Accès Professionnel ou scolaire > Se connecter** (Entra ID/Intune), ou joindre le domaine [[Glossary:AD]] DS selon la procédure de l'organisation.
    👉 Explication : l'étape exacte dépend de l'outil de gestion; vérifier ensuite que le poste apparaît dans la console d'administration.
 
 3. Contrôler l'état d'inscription :
@@ -28,10 +28,10 @@ Nommer, inscrire et configurer le poste selon le mécanisme de gestion.
    ```
    👉 Explication : affiche l'état de jonction (AzureAdJoined, DomainJoined).
 
-4. Laisser appliquer stratégies, certificats, VPN, Wi-Fi et applications attribuées.
+4. Laisser appliquer stratégies, certificats, [[Glossary:VPN]], Wi-Fi et applications attribuées.
    👉 Explication : ces éléments diffèrent selon l'outil de gestion.
 
-5. Utiliser un compte standard et gérer l'administration locale avec Windows LAPS ou un mécanisme approuvé.
+5. Utiliser un compte standard et gérer l'administration locale avec Windows [[Glossary:LAPS]] ou un mécanisme approuvé.
    👉 Explication : évite les comptes administrateurs partagés.
 
 ## 2. Production — Contrôles

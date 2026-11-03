@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-12-bacula-preparer-debian12-version.md
 
-- **Environnement** : VM Debian 12 dédiée à Bacula (Director, Storage Daemon, File Daemon, catalogue PostgreSQL)
+- **Environnement** : [[Glossary:VM]] Debian 12 dédiée à Bacula (Director, Storage Daemon, File Daemon, catalogue PostgreSQL)
 - **OS / Version** : Debian 12 Bookworm; Bacula Community 15.0.3 (backports)
 - **Catégorie** : sauvegarde / installation
 - **Tags** : `debian12`, `bacula`, `backports`, `postgresql`, `apt`, `backports`
@@ -18,7 +18,7 @@ Installer Bacula 15.0.3 depuis bookworm-backports sans mélanger les versions.
    sudo apt update
    apt-cache policy bacula-director-pgsql bacula-sd bacula-client bacula-console
    ```
-   👉 Explication : le candidat doit venir de Bookworm Backports et valoir `15.0.3-3~bpo12+1`; sinon arrêter et revoir les sources APT.
+   👉 Explication : le candidat doit venir de Bookworm Backports et valoir `15.0.3-3~bpo12+1`; sinon arrêter et revoir les sources [[Glossary:APT]].
 
 2. Installer les composants depuis les backports :
    ```bash

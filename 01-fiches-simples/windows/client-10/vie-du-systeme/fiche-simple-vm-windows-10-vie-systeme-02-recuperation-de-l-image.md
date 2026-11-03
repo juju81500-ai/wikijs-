@@ -28,7 +28,7 @@ Obtenir l'image officielle de Windows 10 depuis la source Microsoft ou le catalo
    ```powershell
    Copy-Item 'C:\ISO\Win10_FR.iso' '\\SERVEUR\ISO\' -Verbose
    ```
-   👉 Explication : l'image devient disponible pour la création du support ou de la VM.
+   👉 Explication : l'image devient disponible pour la création du support ou de la [[Glossary:VM]].
 
 4. Consigner la version (par exemple 24H2) et l'édition dans le dossier du projet.
    👉 Explication : garantit que tous les postes sont installés avec la même version.

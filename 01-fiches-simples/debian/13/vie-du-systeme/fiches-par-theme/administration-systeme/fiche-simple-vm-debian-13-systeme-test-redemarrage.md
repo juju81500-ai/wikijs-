@@ -1,12 +1,12 @@
 # 📄 Fiche_Simple_-_VM_Debian_13_Systeme_Test_Redemarrage
 
-- **Environnement** : VM ou serveur Debian 13 avant mise en production
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 13 avant mise en production
 - **OS / Version** : Debian 13 (Trixie) avec systemd - Famille Debian
 - **Catégorie** : Système & Services / Test de persistance au redémarrage
 - **Tags** : `[debian13]`, `[debian]`, `[reboot]`, `[systemd]`, `[validation]`, `[production]`
 
 ## 🎯 Problème précis à résoudre
-Vérifier qu'une VM ou un serveur Debian 13 redémarre proprement : montages, pile réseau, résolution DNS, pare-feu et services métier doivent revenir automatiquement, sans intervention manuelle.
+Vérifier qu'une VM ou un serveur Debian 13 redémarre proprement : montages, pile réseau, résolution [[Glossary:DNS]], pare-feu et services métier doivent revenir automatiquement, sans intervention manuelle.
 
 ---
 

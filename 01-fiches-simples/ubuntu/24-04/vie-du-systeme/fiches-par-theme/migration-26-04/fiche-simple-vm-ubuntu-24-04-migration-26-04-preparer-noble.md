@@ -1,6 +1,6 @@
 # fiche-simple-vm-ubuntu-24-04-migration-26-04-preparer-noble.md
 
-- **Environnement** : VM ou serveur Ubuntu Server LTS
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu Server [[Glossary:LTS]]
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble) vers 26-04 LTS (Resolute)
 - **Catégorie** : migration de version
 - **Tags** : `ubuntu24.04`, `ubuntu26.04`, `migration`, `preparation`, `noble`
@@ -33,7 +33,7 @@ Mettre Noble à jour et corriger les blocages avant l'upgrade.
    ```
    👉 Explication : la commande liste ce qu'il faut corriger.
 
-4. Vérifier cloud-init/Netplan, DNS, accès console et session SSH de secours.
+4. Vérifier cloud-init/Netplan, [[Glossary:DNS]], accès console et session [[Glossary:SSH]] de secours.
    👉 Explication : on garde un accès si le réseau change.
 
 5. Pour une base MariaDB ou PostgreSQL, confirmer la sauvegarde cohérente et la procédure de mise à niveau du moteur.

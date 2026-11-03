@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Vie_Systeme_32_Automatisation_Des_Correctifs_De
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS « noble »
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] « noble »
 - **OS / Version** : Ubuntu 24-04; étape 32 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2404`, `vie-du-systeme`, `cycle-de-vie`, `etape-32`

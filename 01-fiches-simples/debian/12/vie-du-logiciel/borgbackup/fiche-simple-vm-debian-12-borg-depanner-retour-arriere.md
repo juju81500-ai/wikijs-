@@ -25,7 +25,7 @@ Diagnostiquer un échec Borg sans supprimer les archives nécessaires ni aggrave
    ssh borgbackup@sauvegarde.example.net 'df -h /srv/borg/depot'
    journalctl -u borg-backup --since '-1 day' --no-pager
    ```
-   👉 Explication : les causes fréquentes sont dépôt verrouillé, espace plein, clé SSH ou phrase de passe incorrecte.
+   👉 Explication : les causes fréquentes sont dépôt verrouillé, espace plein, clé [[Glossary:SSH]] ou phrase de passe incorrecte.
 
 3. Si le dépôt est verrouillé après interruption :
    ```bash

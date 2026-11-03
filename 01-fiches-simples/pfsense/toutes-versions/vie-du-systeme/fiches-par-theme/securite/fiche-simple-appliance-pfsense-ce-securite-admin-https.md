@@ -1,6 +1,6 @@
 # 📄 fiche-simple-appliance-pfsense-ce-securite-admin-https.md
 
-- **Environnement** : pfSense CE sur VM Proxmox VE ou appliance dédiée, avec un réseau de gestion distinct du LAN utilisateurs
+- **Environnement** : pfSense CE sur [[Glossary:VM]] Proxmox VE ou appliance dédiée, avec un réseau de gestion distinct du [[Glossary:LAN]] utilisateurs
 - **OS / Version** : pfSense CE 2.x (base FreeBSD) - Toutes-versions (libellés de menu en anglais par défaut)
 - **Catégorie** : Sécurité / Accès d'administration
 - **Tags** : `pfsense`, `ce`, `freebsd`, `https`, `ssh`, `hardening`, `firewall`
@@ -8,14 +8,14 @@
 ---
 
 ## 🎯 Problème précis à résoudre
-Restreindre l'interface web (webConfigurator) et l'accès SSH de pfSense CE à un seul réseau d'administration, imposer HTTPS et l'authentification par clé SSH, sans se verrouiller hors de l'appliance.
+Restreindre l'interface web (webConfigurator) et l'accès [[Glossary:SSH]] de pfSense CE à un seul réseau d'administration, imposer HTTPS et l'authentification par clé SSH, sans se verrouiller hors de l'appliance.
 
 ---
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Passer le protocole de l'interface web en HTTPS :
-   `System > Advanced > Admin Access` : Protocol = `HTTPS`, TCP Port = `443`
-   👉 Explication : Supprime l'écoute HTTP en clair. Le certificat par défaut est auto-signé et sera remplacé en section 2.
+   `System > Advanced > Admin Access` : Protocol = `HTTPS`, [[Glossary:TCP]] Port = `443`
+   👉 Explication : Supprime l'écoute [[Glossary:HTTP]] en clair. Le certificat par défaut est auto-signé et sera remplacé en section 2.
 2. Créer un alias du réseau d'administration :
    `Firewall > Aliases > IP` puis Add : Name = `ADMIN_NET`, Type = `Network(s)`, Network = `<reseau_gestion>/<prefixe>`
    👉 Explication : Un alias unique évite de répéter l'adresse dans chaque règle et se modifie en un seul point.
@@ -36,7 +36,7 @@ Restreindre l'interface web (webConfigurator) et l'accès SSH de pfSense CE à u
 
 ## ⚡ 2. Production — Façon Simplifiée
 1. Remplacer le certificat auto-signé par un certificat signé par l'autorité interne :
-   `System > Cert. Manager` (créer le certificat signé), puis `System > Advanced > Admin Access` : SSL Certificate = `<certificat_admin>`
+   `System > Cert. Manager` (créer le certificat signé), puis `System > Advanced > Admin Access` : [[Glossary:SSL]] Certificate = `<certificat_admin>`
    👉 Explication : Les postes administrateurs valident le certificat sans avertissement navigateur.
 2. Activer SSH et déposer la clé publique de l'administrateur :
    `System > Advanced > Admin Access > Secure Shell` : cocher `Enable Secure Shell`, SSH Port = `22`
@@ -45,7 +45,7 @@ Restreindre l'interface web (webConfigurator) et l'accès SSH de pfSense CE à u
 3. Tester la connexion par clé :
    `ssh -i ~/.ssh/<cle_admin> -p 22 <utilisateur_admin>@<adresse_ip_pfsense>`
    👉 Explication : Confirme que la clé fonctionne avant toute modification de la méthode d'authentification. Si l'option de connexion par clé seule est disponible sur la version déployée (à vérifier), vérifier qu'une tentative par mot de passe est refusée.
-4. Activer la protection contre le brute-force SSH et GUI :
+4. Activer la protection contre le brute-force SSH et [[Glossary:GUI]] :
    `System > Advanced > Admin Access > Login Protection` (à vérifier sur la version déployée)
    👉 Explication : Bloque temporairement les adresses qui échouent trop de connexions.
 5. Autoriser SSH uniquement depuis ADMIN_NET :
@@ -58,7 +58,7 @@ Restreindre l'interface web (webConfigurator) et l'accès SSH de pfSense CE à u
 1. Créer un compte administrateur nominatif, membre du groupe `admins` :
    `System > User Manager > Users > Add` : Username = `<admin_nominatif>`, Group Memberships = `admins`, Authorized SSH Keys renseignée
    👉 Explication : Assure la traçabilité des actions. Le compte `admin` d'origine est conservé uniquement pour un accès de secours, avec son mot de passe dans le coffre-fort.
-2. Vérifier qu'aucune règle n'ouvre l'administration sur WAN :
+2. Vérifier qu'aucune règle n'ouvre l'administration sur [[Glossary:WAN]] :
    `Firewall > Rules > WAN` : aucune règle Pass vers `This Firewall` sur les ports 22 ou 443
    👉 Explication : Le WAN reste bloqué par défaut ; l'administration ne doit jamais être exposée sur Internet.
 3. Contrôler les règles réellement chargées depuis le shell :

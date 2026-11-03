@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Bash_Shell_Securiser
 
-- **Environnement** : VM Debian 13 de laboratoire, compte utilisateur non privilégié
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire, compte utilisateur non privilégié
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : shell / scripting
 - **Tags** : `debian13`, `bash`, `shell`, `scripting`, `securite`
@@ -38,7 +38,7 @@ Faire relire commandes automatisées et limiter les destinations, privilèges et
 ## 3. Production — Sécurité
 
 - Ne pas utiliser `eval` sur des entrées inconnues.
-- Ne pas désactiver validation TLS; ne pas transmettre secrets en URL.
+- Ne pas désactiver validation [[Glossary:TLS]]; ne pas transmettre secrets en URL.
 - Masquer données personnelles et credentials dans journaux.
 
 ## Validation et retour arrière

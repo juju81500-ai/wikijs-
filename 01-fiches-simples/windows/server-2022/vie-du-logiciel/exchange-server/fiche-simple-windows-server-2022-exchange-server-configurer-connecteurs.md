@@ -2,7 +2,7 @@
 
 - **Environnement** : Windows Server 2022; Exchange Server 2019 CU14 ou ultérieur, ou Exchange Server Subscription Edition (vérifier la matrice de support publiée)
 - **OS / Version** : Windows Server 2022
-- **Catégorie** : Messagerie / flux SMTP
+- **Catégorie** : Messagerie / flux [[Glossary:SMTP]]
 - **Tags** : `windows-server-2022`, `exchange-server`, `messagerie`, `connecteurs`, `smtp`, `transport`
 
 ---
@@ -23,9 +23,9 @@ Configurer le flux de messagerie : domaine accepté, connecteur d'envoi vers Int
    ```powershell
    New-SendConnector -Name "Vers-Internet" -Usage Internet -AddressSpaces "SMTP:*;1" -SourceTransportServers EXCH01 -DNSRoutingEnabled $true
    ```
-   👉 Explication : remplacer `EXCH01`. Pour un relais, remplacer le routage DNS par `-DNSRoutingEnabled $false -SmartHosts RELAIS.EXAMPLE.NET`.
+   👉 Explication : remplacer `EXCH01`. Pour un relais, remplacer le routage [[Glossary:DNS]] par `-DNSRoutingEnabled $false -SmartHosts RELAIS.EXAMPLE.NET`.
 
-3. Créer un connecteur de réception dédié aux applications (relais restreint par IP) : EAC > Flux de messagerie > Connecteurs de réception > + ; ou :
+3. Créer un connecteur de réception dédié aux applications (relais restreint par [[Glossary:IP]]) : EAC > Flux de messagerie > Connecteurs de réception > + ; ou :
    ```powershell
    New-ReceiveConnector -Name "Relais-Applications" -TransportRole FrontendTransport -Custom -Bindings 0.0.0.0:25 -RemoteIPRanges IP_APPLICATION
    ```
@@ -46,12 +46,12 @@ Configurer le flux de messagerie : domaine accepté, connecteur d'envoi vers Int
 
 ## 2. Production — Contrôles
 
-Vérifier MX, SPF, DKIM/DMARC côté DNS, le reverse DNS de l'IP d'envoi, l'ouverture du port 25 sortant au pare-feu et la liste des IP du connecteur de relais.
+Vérifier MX, [[Glossary:SPF]], [[Glossary:DKIM]]/DMARC côté DNS, le reverse DNS de l'IP d'envoi, l'ouverture du port 25 sortant au pare-feu et la liste des IP du connecteur de relais.
 
 ## 3. Production — Sécurité
 
 - Aucun relais ouvert : restreindre par IP et journaliser.
-- Activer TLS sur les connecteurs (certificat valide, voir fiche Certificats).
+- Activer [[Glossary:TLS]] sur les connecteurs (certificat valide, voir fiche Certificats).
 - Ne pas modifier les connecteurs par défaut sans nécessité.
 
 ## Validation et retour arrière

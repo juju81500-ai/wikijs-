@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_29_Pare_Feu_Hote
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 29 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-29`
@@ -13,10 +13,10 @@ Appliquer une politique de filtrage cohérente sur les interfaces.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Aller dans Firewall > Rules > LAN > Add : Action `Pass`, Protocol TCP/UDP, Source `LAN subnets`, Destination `any`, Destination Port 80/443/53, Save puis Apply Changes.
+1. Aller dans Firewall > Rules > [[Glossary:LAN]] > Add : Action `Pass`, Protocol [[Glossary:TCP]]/UDP, Source `LAN subnets`, Destination `any`, Destination Port 80/443/53, Save puis Apply Changes.
    👉 Explication : pfSense bloque par défaut tout ce qui n'est pas autorisé; chaque flux est ouvert explicitement.
 
-2. Firewall > Rules > WAN : garder le blocage par défaut et cocher « Block private networks » et « Block bogon networks » dans Interfaces > WAN.
+2. Firewall > Rules > [[Glossary:WAN]] : garder le blocage par défaut et cocher « Block private networks » et « Block bogon networks » dans Interfaces > WAN.
    👉 Explication : empêche les paquets usurpés depuis Internet.
 
 3. Contrôler les règles actives :

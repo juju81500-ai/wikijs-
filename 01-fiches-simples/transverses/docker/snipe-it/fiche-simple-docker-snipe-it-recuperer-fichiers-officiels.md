@@ -2,7 +2,7 @@
 
 - **Environnement** : Hôte Docker avec Docker Compose v2 et réseau Traefik existant
 - **OS / Version** : Hôte Linux maintenu; Snipe-IT 8.8.3; MariaDB 11.4.7
-- **Catégorie** : ITSM / gestion des actifs
+- **Catégorie** : [[Glossary:ITSM]] / gestion des actifs
 - **Tags** : `snipe-it`, `docker`, `mariadb`, `traefik`, `inventaire`
 
 ---

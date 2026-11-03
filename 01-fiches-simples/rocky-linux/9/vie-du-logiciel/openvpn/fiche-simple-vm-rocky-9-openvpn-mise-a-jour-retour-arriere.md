@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_9_OpenVPN_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Rocky Linux 9 dédiée à OpenVPN Community Edition (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à OpenVPN Community Edition (serveur)
 - **OS / Version** : Rocky Linux 9; paquets openvpn et easy-rsa issus d'EPEL, version à vérifier
 - **Catégorie** : OpenVPN Community Edition / mise à jour / retour arrière
 - **Tags** : `openvpn`, `rocky9`, `vie-du-logiciel`, `mise-a-jour-retour-arriere`

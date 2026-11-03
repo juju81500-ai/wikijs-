@@ -13,19 +13,19 @@ Dimensionner l'hôte Proxmox VE avant l'achat ou l'installation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Lister les VM et conteneurs à héberger avec leurs vCPU, RAM et disque (tableau dans le dossier projet). Sur un hôte existant, relever la charge :
+1. Lister les [[Glossary:VM]] et conteneurs à héberger avec leurs vCPU, [[Glossary:RAM]] et disque (tableau dans le dossier projet). Sur un hôte existant, relever la charge :
    ```bash
    pvesh get /nodes/NOEUD/status --output-format json-pretty
    nproc
    free -h
    lsblk -o NAME,SIZE,TYPE,ROTA
    ```
-   👉 Explication : `NOEUD` = nom du nœud (`hostname`). Donne CPU, RAM et type de disques (`ROTA=0` = SSD) pour comparer au besoin.
+   👉 Explication : `NOEUD` = nom du nœud (`hostname`). Donne [[Glossary:CPU]], RAM et type de disques (`ROTA=0` = [[Glossary:SSD]]) pour comparer au besoin.
 
-2. Calculer le total : somme des vCPU (ratio de sur-allocation 2:1 à 4:1 selon la charge), RAM des VM + 2 Go pour l'hôte (+ 1 Go par To de ZFS si ZFS est utilisé).
+2. Calculer le total : somme des vCPU (ratio de sur-allocation 2:1 à 4:1 selon la charge), RAM des VM + 2 Go pour l'hôte (+ 1 Go par To de [[Glossary:ZFS]] si ZFS est utilisé).
    👉 Explication : la RAM ne se sur-alloue pas sans risque (OOM killer); ZFS consomme du cache ARC.
 
-3. Prévoir réseau et stockage : 2 cartes pour la gestion et le trafic VM, 1 réseau dédié pour le stockage/cluster, disques SSD/NVMe pour les VM, disque séparé ou PBS pour les sauvegardes.
+3. Prévoir réseau et stockage : 2 cartes pour la gestion et le trafic VM, 1 réseau dédié pour le stockage/cluster, disques SSD/NVMe pour les VM, disque séparé ou [[Glossary:PBS]] pour les sauvegardes.
    👉 Explication : un hôte à 1 seule carte réseau mélange gestion, stockage et sauvegarde : à éviter en production.
 
 ## 2. Production — Contrôles

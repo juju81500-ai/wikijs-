@@ -27,7 +27,7 @@ Configurer la conservation et le transfert des journaux.
    ```
    👉 Explication : évite d'écraser les événements trop tôt.
 
-3. Activer le transfert vers un collecteur (WEF) :
+3. Activer le transfert vers un collecteur ([[Glossary:WEF]]) :
    ```powershell
    winrm quickconfig
    wecutil qc

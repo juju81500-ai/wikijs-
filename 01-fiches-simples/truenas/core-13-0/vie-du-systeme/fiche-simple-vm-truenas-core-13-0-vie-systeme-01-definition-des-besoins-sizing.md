@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Dimensionner le NAS (capacité utile, RAM ECC, redondance) avant la création.
+Dimensionner le [[Glossary:NAS]] (capacité utile, [[Glossary:RAM]] ECC, redondance) avant la création.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -19,19 +19,19 @@ Dimensionner le NAS (capacité utile, RAM ECC, redondance) avant la création.
    geom disk list | grep -E 'Name|Mediasize'
    zpool list
    ```
-   👉 Explication : CPU, RAM, disques et occupation des pools actuels.
+   👉 Explication : [[Glossary:CPU]], RAM, disques et occupation des pools actuels.
 
 2. Calculer la capacité utile selon la topologie :
    ```sh
    # MIRROR : 50 % ; RAIDZ1 : (N-1)/N ; RAIDZ2 : (N-2)/N ; RAIDZ3 : (N-3)/N
    # Exemple : 6 disques de 8 To en RAIDZ2 = 32 To bruts, environ 28 To utilisables
    ```
-   👉 Explication : ne pas dépasser environ 80 % d'occupation du pool ZFS.
+   👉 Explication : ne pas dépasser environ 80 % d'occupation du pool [[Glossary:ZFS]].
 
 3. Dimensionner la RAM : 8 Go minimum, puis environ 1 Go par To, de préférence ECC.
    👉 Explication : la RAM alimente le cache ARC ; l'ECC évite la corruption en mémoire.
 
-4. Choisir des disques CMR (pas SMR) et un disque de démarrage séparé (SSD ou clé fiable de 16 Go minimum, miroir conseillé).
+4. Choisir des disques CMR (pas SMR) et un disque de démarrage séparé ([[Glossary:SSD]] ou clé fiable de 16 Go minimum, miroir conseillé).
    👉 Explication : le pool de données n'est jamais le disque système.
 
 ## 2. Production — Contrôles

@@ -1,7 +1,7 @@
 # 📄 fiche-simple-vm-rocky-9-systeme-compte-service.md
 
-- **Environnement** : VM ou serveur Rocky Linux
-- **OS / Version** : Rocky Linux 9 / RHEL 9 avec systemd et SELinux
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 avec systemd et SELinux
 - **Catégorie** : Système & Services / Isolation des comptes de service
 - **Tags** : `[rocky9]`, `[rhel9]`, `[useradd]`, `[nologin]`, `[systemd]`, `[hardening]`
 

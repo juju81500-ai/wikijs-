@@ -13,7 +13,7 @@ Créer pool et partages selon l'usage.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Créer le pool : GUI Stockage > Créer un pool (nom, disposition, disques).
+1. Créer le pool : [[Glossary:GUI]] Stockage > Créer un pool (nom, disposition, disques).
    ```bash
    sudo zpool create -o ashift=12 POOL raidz2 sdb sdc sdd sde sdf sdg
    sudo zpool status POOL
@@ -27,7 +27,7 @@ Créer pool et partages selon l'usage.
    ```
    👉 Explication : dataset de fichiers et zvol (volume bloc) pour iSCSI.
 
-3. Créer le partage : GUI Partages > Windows (SMB) > Ajouter ; NFS ; iSCSI > Assistant.
+3. Créer le partage : GUI Partages > Windows (SMB) > Ajouter ; [[Glossary:NFS]] ; iSCSI > Assistant.
    ```bash
    sudo midclt call sharing.smb.create '{"path": "/mnt/POOL/DONNEES", "name": "DONNEES"}'
    sudo midclt call service.start cifs

@@ -9,24 +9,24 @@
 
 ## Problème précis à résoudre
 
-Créer le stockage, les réseaux et les modèles de VM.
+Créer le stockage, les réseaux et les modèles de [[Glossary:VM]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Ajouter un stockage (GUI : **Datacenter > Storage > Add**) ou en ligne de commande :
+1. Ajouter un stockage ([[Glossary:GUI]] : **Datacenter > Storage > Add**) ou en ligne de commande :
    ```bash
    pvesm status
    pvesm add dir ISO --path /mnt/iso --content iso,vztmpl
    ```
    👉 Explication : affiche les stockages puis ajoute un répertoire pour les ISO et modèles.
 
-2. Télécharger un modèle de conteneur (GUI : **Stockage > CT Templates > Templates**) :
+2. Télécharger un modèle de conteneur (GUI : **Stockage > [[Glossary:CT]] Templates > Templates**) :
    ```bash
    pveam update
    pveam available --section system | head
    pveam download local debian-12-standard_12.7-1_amd64.tar.zst
    ```
-   👉 Explication : `pveam` gère les modèles LXC; le nom exact vient de `pveam available`.
+   👉 Explication : `pveam` gère les modèles [[Glossary:LXC]]; le nom exact vient de `pveam available`.
 
 3. Créer une VM de test (GUI : **Create VM**) :
    ```bash
@@ -36,11 +36,11 @@ Créer le stockage, les réseaux et les modèles de VM.
 
 ## 2. Production — Contrôles
 
-Réserver une plage de numéros (VMID) par usage.
+Réserver une plage de numéros ([[Glossary:VMID]]) par usage.
 
 ## 3. Production — Sécurité
 
-Isoler les VM par VLAN (GUI : **VM > Hardware > Network Device > VLAN Tag**).
+Isoler les VM par [[Glossary:VLAN]] (GUI : **VM > Hardware > Network Device > VLAN Tag**).
 
 ## Validation et retour arrière
 

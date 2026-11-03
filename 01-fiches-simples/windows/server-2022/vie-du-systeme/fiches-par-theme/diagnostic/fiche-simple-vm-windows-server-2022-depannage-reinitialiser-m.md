@@ -1,6 +1,6 @@
 # 📄 VM_WinSrv_2022_Depannage_Reinitialiser-Mot-De-Passe-Local.md
 
-- **Environnement** : VM / Physique (Windows Server 2022)
+- **Environnement** : [[Glossary:VM]] / Physique (Windows Server 2022)
 - **OS / Version** : Windows Server 2022 - Famille Windows Server
 - **Catégorie** : Dépannage & Administration / Identité
 - **Tags** : `[windows-server-2022]`, `[depannage]`, `[mot-de-passe]`, `[gui]`, `[hardening]`
@@ -14,7 +14,7 @@ Réinitialiser le mot de passe d'un compte utilisateur local ou du compte Admini
 
 ### Vérifier le périmètre
 - Cette procédure concerne un serveur autonome ou membre d'un domaine, pas la réinitialisation d'un compte de domaine.
-- Sur un contrôleur de domaine, **Utilisateurs et groupes locaux** ne gère pas les comptes du domaine ; le compte Administrateur de restauration des services d'annuaire (DSRM) relève d'une procédure distincte.
+- Sur un contrôleur de domaine, **Utilisateurs et groupes locaux** ne gère pas les comptes du domaine ; le compte Administrateur de restauration des services d'annuaire ([[Glossary:DSRM]]) relève d'une procédure distincte.
 - Utiliser un compte d'administration autorisé et vérifier l'identité de la machine et du compte avant toute réinitialisation.
 
 ### Réinitialiser un compte local
@@ -45,6 +45,6 @@ Références : [Microsoft Learn — Comptes locaux](https://learn.microsoft.com/
 ---
 
 ## 🔒 3. Production — Façon Sécurisée (Hardening & Isolation Enterprise)
-1. Activation de la solution LAPS (Local Administrator Password Solution) de Microsoft :
+1. Activation de la solution [[Glossary:LAPS]] (Local Administrator Password Solution) de Microsoft :
    `Set-LapsADPasswordEncryptionPrincipal -Identity "Domain Controllers"`
    👉 Explication : Automatise la génération de mots de passe complexes uniques et aléatoires.

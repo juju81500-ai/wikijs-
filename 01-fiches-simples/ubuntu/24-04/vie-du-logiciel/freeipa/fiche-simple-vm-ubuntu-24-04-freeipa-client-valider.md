@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_FreeIPA_Client_Valider
 
-- **Environnement** : VM Ubuntu 24-04 cliente d'un domaine FreeIPA existant
-- **OS / Version** : Ubuntu 24-04 LTS Noble; paquet freeipa-client des dépôts, version à vérifier
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 cliente d'un domaine FreeIPA existant
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; paquet freeipa-client des dépôts, version à vérifier
 - **Catégorie** : FreeIPA client / valider
 - **Tags** : `freeipa`, `ubuntu24-04`, `vie-du-logiciel`, `valider`
 
@@ -20,7 +20,7 @@ Recetter le client avec un utilisateur du domaine.
    ```
    👉 Explication : UTILISATEUR_IPA est un compte de test du domaine (à remplacer); le mot de passe est saisi à l'invite.
 
-2. Vérifier la résolution des identités via SSSD :
+2. Vérifier la résolution des identités via [[Glossary:SSSD]] :
    ```bash
    id UTILISATEUR_IPA
    getent passwd UTILISATEUR_IPA
@@ -28,7 +28,7 @@ Recetter le client avec un utilisateur du domaine.
    ```
    👉 Explication : La commande id doit retourner uid/gid issus du domaine; IPA_DOMAIN est à remplacer.
 
-3. Tester une connexion SSH avec l'utilisateur du domaine :
+3. Tester une connexion [[Glossary:SSH]] avec l'utilisateur du domaine :
    ```bash
    ssh UTILISATEUR_IPA@CLIENT_FQDN
    ```

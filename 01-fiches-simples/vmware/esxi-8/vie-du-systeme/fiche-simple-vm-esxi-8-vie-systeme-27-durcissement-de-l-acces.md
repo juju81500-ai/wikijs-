@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Réduire l'exposition de SSH et de la console.
+Réduire l'exposition de [[Glossary:SSH]] et de la console.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -36,7 +36,7 @@ Garder l'accès DCUI en secours.
 
 ## 3. Production — Sécurité
 
-Accès via VPN ou machine de rebond.
+Accès via [[Glossary:VPN]] ou machine de rebond.
 
 ## Validation et retour arrière
 

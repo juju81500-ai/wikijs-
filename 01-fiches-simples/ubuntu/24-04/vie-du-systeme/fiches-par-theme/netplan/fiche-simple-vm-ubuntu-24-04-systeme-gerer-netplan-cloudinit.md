@@ -1,7 +1,7 @@
 # 📄 fiche-simple-vm-ubuntu-24-04-systeme-gerer-netplan-cloudinit.md
 
-- **Environnement** : VM Ubuntu 24-04 provisionnée par cloud-init
-- **OS / Version** : Ubuntu Server 24-04 LTS avec cloud-init et Netplan
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 provisionnée par cloud-init
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] avec cloud-init et Netplan
 - **Catégorie** : Système / Réseau / Provisionnement
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[cloud-init]`, `[netplan]`, `[reseau]`, `[systeme]`
 
@@ -41,6 +41,6 @@ Identifier si cloud-init régénère la configuration réseau Netplan et transf�
 3. Dans un cloud, respecter la méthode de provisionnement prise en charge par le fournisseur plutôt que de figer une configuration locale concurrente.
 
 ## ✅ Validation et retour arrière
-- Après redémarrage, vérifier l'adresse, la route, le DNS, le statut cloud-init et l'accès distant depuis une seconde session.
+- Après redémarrage, vérifier l'adresse, la route, le [[Glossary:DNS]], le statut cloud-init et l'accès distant depuis une seconde session.
 - En cas d'échec, restaurer les fichiers Netplan et la configuration cloud-init sauvegardés depuis la console, puis réappliquer Netplan.
 - Conserver le fonctionnement des autres modules cloud-init nécessaires à la machine.

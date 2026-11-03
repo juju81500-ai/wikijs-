@@ -1,7 +1,7 @@
 # fiche-simple-vm-windows-11-powershell7-installer-version-stable.md
 
-- **Environnement** : VM ou poste Windows 11 de test; compte standard puis élévation uniquement si requise
-- **OS / Version** : Windows 11 x64; PowerShell 7.6.9 Stable (LTS)
+- **Environnement** : [[Glossary:VM]] ou poste Windows 11 de test; compte standard puis élévation uniquement si requise
+- **OS / Version** : Windows 11 x64; PowerShell 7.6.9 Stable ([[Glossary:LTS]])
 - **Catégorie** : administration / PowerShell
 - **Tags** : `windows-11`, `powershell`, `pwsh`, `administration`, `scripts`, `securite`
 
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Installer PowerShell 7.6.9 depuis le MSI officiel après vérification de signature et de hash.
+Installer PowerShell 7.6.9 depuis le [[Glossary:MSI]] officiel après vérification de signature et de hash.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -35,7 +35,7 @@ Installer PowerShell 7.6.9 depuis le MSI officiel après vérification de signat
    ```powershell
    Start-Process msiexec.exe -Wait -ArgumentList '/i', $msi
    ```
-   👉 Explication : le MSI ajoute `pwsh.exe` au chemin par défaut; une approbation UAC peut être demandée. En GUI : **double-clic sur le fichier .msi** puis assistant.
+   👉 Explication : le MSI ajoute `pwsh.exe` au chemin par défaut; une approbation [[Glossary:UAC]] peut être demandée. En [[Glossary:GUI]] : **double-clic sur le fichier .msi** puis assistant.
 
 4. Conserver les options de mise à jour par Microsoft Update/WSUS selon la politique du poste dans l'assistant d'installation.
    👉 Explication : on respecte la politique de mise à jour de l'organisation.

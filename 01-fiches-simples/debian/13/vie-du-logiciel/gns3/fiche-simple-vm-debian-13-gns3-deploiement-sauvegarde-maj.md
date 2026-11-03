@@ -24,7 +24,7 @@ Sauvegarder les projets, mettre à niveau et nettoyer.
    gns3 --version
    gns3server --version
    ```
-   👉 Explication : on consigne les versions GUI et serveur.
+   👉 Explication : on consigne les versions [[Glossary:GUI]] et serveur.
 
 3. Mettre à niveau les deux composants vers la même stable (remplacer `2.2.61` par la nouvelle version stable) :
    ```bash

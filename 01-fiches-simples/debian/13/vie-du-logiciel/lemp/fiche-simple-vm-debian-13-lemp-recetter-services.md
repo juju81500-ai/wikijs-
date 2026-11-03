@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-lemp-recetter-services.md
 
-- **Environnement** : pile LEMP Debian 13 en lab ou après changement approuvé
+- **Environnement** : pile [[Glossary:LEMP]] Debian 13 en lab ou après changement approuvé
 - **OS / Version** : Debian 13; Nginx, MariaDB et PHP-FPM
 - **Catégorie** : pile Web LEMP / recette
 - **Tags** : `debian13`, `lemp`, `nginx`, `mariadb`, `php-fpm`, `recette`

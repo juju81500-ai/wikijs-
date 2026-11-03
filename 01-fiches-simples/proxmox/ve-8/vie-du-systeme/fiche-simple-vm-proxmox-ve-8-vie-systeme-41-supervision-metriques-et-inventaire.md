@@ -9,18 +9,18 @@
 
 ## Problème précis à résoudre
 
-Superviser l'hôte et les VM.
+Superviser l'hôte et les [[Glossary:VM]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Configurer SNMP ou l'agent Zabbix (voir la fiche liée). Pour l'API (GUI : **Datacenter > Metric Server > Add** : InfluxDB, Graphite) :
+1. Configurer [[Glossary:SNMP]] ou l'agent Zabbix (voir la fiche liée). Pour l'[[Glossary:API]] ([[Glossary:GUI]] : **Datacenter > Metric Server > Add** : InfluxDB, Graphite) :
    ```bash
    pvesh get /cluster/resources --type vm --output-format json-pretty | head -40
    apt install -y snmpd
    ```
    👉 Explication : l'API fournit l'inventaire des VM; `snmpd` expose les métriques de l'hôte.
 
-2. Surveiller au minimum : CPU, RAM, occupation des stockages et de ZFS, état SMART, quorum du cluster, tâches de sauvegarde, température.
+2. Surveiller au minimum : [[Glossary:CPU]], [[Glossary:RAM]], occupation des stockages et de [[Glossary:ZFS]], état [[Glossary:SMART]], quorum du cluster, tâches de sauvegarde, température.
    ```bash
    pvesm status
    zpool status -x
@@ -37,7 +37,7 @@ Seuils d'alerte documentés (stockage à 80 %).
 
 ## 3. Production — Sécurité
 
-Accès SNMP limité aux IP de supervision, v3 de préférence.
+Accès SNMP limité aux [[Glossary:IP]] de supervision, v3 de préférence.
 
 ## Validation et retour arrière
 

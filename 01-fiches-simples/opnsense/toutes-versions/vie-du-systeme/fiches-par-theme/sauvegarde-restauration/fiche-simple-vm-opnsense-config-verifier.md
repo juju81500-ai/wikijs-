@@ -22,10 +22,10 @@ S'assurer que l'export est exploitable et hors appliance.
 3. Copier la sauvegarde hors de l'appliance et de son stockage local.
    👉 Explication : la perte de l'appliance ne doit pas détruire la sauvegarde.
 
-4. Tester périodiquement la restauration sur une VM ou appliance isolée de même version.
+4. Tester périodiquement la restauration sur une [[Glossary:VM]] ou appliance isolée de même version.
    👉 Explication : seule une restauration testée prouve la sauvegarde.
 
-5. Option : **System > Snapshots** pour un retour arrière local sur ZFS.
+5. Option : **System > Snapshots** pour un retour arrière local sur [[Glossary:ZFS]].
    👉 Explication : un snapshot accélère un retour local mais ne remplace pas l'export hors appliance.
 
 ## 2. Production — Contrôles

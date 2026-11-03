@@ -1,6 +1,6 @@
 # fiche-simple-truenas-core-13-0-deploiement-snapshots-config.md
 
-- **Environnement** : Appliance TrueNAS CORE (FreeBSD) en VM de laboratoire ou NAS existant
+- **Environnement** : Appliance TrueNAS CORE (FreeBSD) en [[Glossary:VM]] de laboratoire ou [[Glossary:NAS]] existant
 - **OS / Version** : TrueNAS CORE, branche 13.0 (build exact à relever sur l'ISO)
 - **Catégorie** : stockage NAS / sauvegarde
 - **Tags** : `truenas-core`, `truenas`, `freebsd`, `zfs`, `smb`, `nas`

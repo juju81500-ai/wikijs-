@@ -1,6 +1,6 @@
 # fiche-simple-vm-ubuntu-24-04-migration-26-04-valider.md
 
-- **Environnement** : VM ou serveur Ubuntu Server LTS
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu Server [[Glossary:LTS]]
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble) vers 26-04 LTS (Resolute)
 - **Catégorie** : migration de version
 - **Tags** : `ubuntu24.04`, `ubuntu26.04`, `migration`, `validation`
@@ -21,7 +21,7 @@ Contrôler le système et les applications après la migration.
    ```
    👉 Explication : on confirme Ubuntu 26-04 et l'absence de service en échec.
 
-2. Vérifier réseau et DNS :
+2. Vérifier réseau et [[Glossary:DNS]] :
    ```bash
    ip -br address
    ip route
@@ -44,7 +44,7 @@ Garder le snapshot jusqu'à la fin de la période de validation.
 
 ## 3. Production — Sécurité
 
-- Contrôler que le pare-feu et SSH sont toujours correctement configurés.
+- Contrôler que le pare-feu et [[Glossary:SSH]] sont toujours correctement configurés.
 
 ## Validation et retour arrière
 

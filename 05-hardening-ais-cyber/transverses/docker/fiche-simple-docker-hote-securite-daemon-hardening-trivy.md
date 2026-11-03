@@ -1,14 +1,14 @@
 # 📄 Fiche Simple : Sécurisation & Hardening Hôte Docker
 
-- **Environnement** : Hôte Docker / VM
-- **OS / Version** : Debian 13 / Ubuntu 24-04 LTS
+- **Environnement** : Hôte Docker / [[Glossary:VM]]
+- **OS / Version** : Debian 13 / Ubuntu 24-04 [[Glossary:LTS]]
 - **Catégorie** : Sécurité & Hardening
 - **Tags** : `docker`, `hardening`, `trivy`, `security` 
 
 ---
 
 ## 🎯 Problème précis à résoudre
-Installer le moteur Docker Engine, sécuriser la configuration du démon (/etc/docker/daemon.json), restreindre le socket Unix et auditer les conteneurs contre les vulnérabilités CVE avec Trivy.
+Installer le moteur Docker Engine, sécuriser la configuration du démon (/etc/docker/daemon.json), restreindre le socket Unix et auditer les conteneurs contre les vulnérabilités [[Glossary:CVE]] avec Trivy.
 
 ---
 
@@ -51,7 +51,7 @@ Installer le moteur Docker Engine, sécuriser la configuration du démon (/etc/d
    docker ps
    ```
    👉 Explication : Vérifier la disponibilité des applications après redémarrage. `icc=false` peut casser certaines communications entre conteneurs ; tester les réseaux Compose avant de l'activer.
-3. Auditer l'image avec la CLI Trivy installée depuis sa source officielle et à jour, sans monter le socket Docker dans un conteneur scanner :
+3. Auditer l'image avec la [[Glossary:CLI]] Trivy installée depuis sa source officielle et à jour, sans monter le socket Docker dans un conteneur scanner :
    ```bash
    trivy image --severity HIGH,CRITICAL nginx:<VERSION_VALIDEE>
    ```

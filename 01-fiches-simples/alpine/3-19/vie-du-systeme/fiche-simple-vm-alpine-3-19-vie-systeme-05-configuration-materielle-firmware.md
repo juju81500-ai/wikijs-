@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_05_Configuration_Materielle_Firmware
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 05 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-05`
@@ -13,7 +13,7 @@ Régler le firmware avant l'installation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Choisir UEFI (ou BIOS) et désactiver Secure Boot :
+1. Choisir UEFI (ou [[Glossary:BIOS]]) et désactiver Secure Boot :
    👉 Explication : l'ISO Alpine n'est pas signée pour Secure Boot : s'il est actif, la machine refuse de démarrer l'image (menu du firmware, rubrique Boot / Security, ou option de la VM).
 
 2. Pour une VM, choisir un contrôleur disque et une carte réseau `virtio` :

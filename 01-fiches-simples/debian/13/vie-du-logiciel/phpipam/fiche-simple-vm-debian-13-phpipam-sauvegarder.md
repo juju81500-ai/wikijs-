@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-13-phpipam-sauvegarder.md
 
-- **Environnement** : VM Debian 13, phpIPAM avec MariaDB locale, PHP-FPM et Nginx
+- **Environnement** : [[Glossary:VM]] Debian 13, phpIPAM avec MariaDB locale, PHP-FPM et Nginx
 - **OS / Version** : Debian 13 Trixie x86-64; phpIPAM 1.8.3; PHP 8.4
-- **Catégorie** : IPAM / sauvegarde
+- **Catégorie** : [[Glossary:IPAM]] / sauvegarde
 - **Tags** : `debian13`, `phpipam`, `ipam`, `nginx`, `mariadb`, `sauvegarde`, `mariadb-dump`
 
 ---
@@ -41,7 +41,7 @@ Avant mise à niveau : sauvegarder base et `config.php`, remplacer le code en ga
 
 ## 3. Production — Sécurité
 
-- Sauvegardes chiffrées, `config.php` contient l'accès SQL.
+- Sauvegardes chiffrées, `config.php` contient l'accès [[Glossary:SQL]].
 - Ne pas restaurer une base de production par-dessus une instance active.
 
 ## Validation et retour arrière

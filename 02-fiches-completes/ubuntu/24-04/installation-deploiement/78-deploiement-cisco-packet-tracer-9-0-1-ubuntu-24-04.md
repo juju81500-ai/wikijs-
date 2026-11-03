@@ -1,6 +1,6 @@
 # Déployer Cisco Packet Tracer 9.0.1 sur Ubuntu 24-04
 
-- **OS / Version** : Ubuntu Desktop 24-04 LTS amd64; Cisco Packet Tracer 9.0.1
+- **OS / Version** : Ubuntu Desktop 24-04 [[Glossary:LTS]] amd64; Cisco Packet Tracer 9.0.1
 - **Type de fiche** : Installation/Déploiement
 - **Périmètre** : simulateur pédagogique, installation du paquet Ubuntu officiel et topologie de cours isolée
 - **Catégorie** : simulation réseau / formation
@@ -10,7 +10,7 @@
 
 Fiche simple : [vérifier la version et les prérequis](../../../../01-fiches-simples/ubuntu/24-04/vie-du-logiciel/packet-tracer/fiche-simple-vm-ubuntu-24-04-packet-tracer-version-prerequis.md).
 
-Au 27 octobre 2026, le portail officiel Cisco Networking Academy présente Packet Tracer 9.0.1 pour Ubuntu 64 bits. Les systèmes officiellement indiqués sont Ubuntu 22-04 et 24-04 LTS, processeur amd64, 4 Go de RAM libre et 1,4 Go de disque. Debian 13 n'est pas listé comme plateforme prise en charge: ce guide cible Ubuntu Desktop 24-04.
+Au 27 octobre 2026, le portail officiel Cisco Networking Academy présente Packet Tracer 9.0.1 pour Ubuntu 64 bits. Les systèmes officiellement indiqués sont Ubuntu 22-04 et 24-04 LTS, processeur amd64, 4 Go de [[Glossary:RAM]] libre et 1,4 Go de disque. Debian 13 n'est pas listé comme plateforme prise en charge: ce guide cible Ubuntu Desktop 24-04.
 
 Le téléchargement est réservé aux utilisateurs connectés au portail Cisco/NetAcad. L'accès peut être obtenu par inscription au cours gratuit « Getting Started with Cisco Packet Tracer ». Ne pas télécharger le logiciel depuis un miroir tiers et ne pas automatiser l'authentification du compte.
 
@@ -58,7 +58,7 @@ Fiche simple : [vérifier une topologie de cours isolée](../../../../01-fiches-
 
 1. Créer un nouveau fichier de simulation et y ajouter deux postes et un commutateur proposés par Packet Tracer.
 2. Utiliser uniquement des adresses réservées à la documentation ou au cours, sans liaison à une carte physique ou à un réseau externe.
-3. Relier les deux postes au commutateur et saisir leurs paramètres IP dans l'interface de l'outil.
+3. Relier les deux postes au commutateur et saisir leurs paramètres [[Glossary:IP]] dans l'interface de l'outil.
 4. Vérifier la connectivité au moyen du mécanisme de simulation intégré et examiner les événements affichés dans le mode Simulation.
 5. Enregistrer le projet, fermer l'application, rouvrir le fichier et vérifier que les équipements, liens et paramètres sont conservés.
 

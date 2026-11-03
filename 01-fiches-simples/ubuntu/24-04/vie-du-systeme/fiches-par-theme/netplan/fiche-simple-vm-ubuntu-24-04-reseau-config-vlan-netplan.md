@@ -1,7 +1,7 @@
 # 📄 fiche-simple-vm-ubuntu-24-04-reseau-config-vlan-netplan.md
 
-- **Environnement** : VM Ubuntu Server raccordée à un port trunk autorisant le VLAN
-- **OS / Version** : Ubuntu Server 24-04 LTS avec Netplan et `systemd-networkd`
+- **Environnement** : [[Glossary:VM]] Ubuntu Server raccordée à un port trunk autorisant le [[Glossary:VLAN]]
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] avec Netplan et `systemd-networkd`
 - **Catégorie** : Réseau / VLAN
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[netplan]`, `[vlan]`, `[8021q]`, `[networkd]`
 
@@ -40,10 +40,10 @@ Configurer une interface VLAN 802.1Q persistante avec Netplan sous Ubuntu Server
    sudo netplan try
    ip -d link show vlan20
    ```
-   👉 *Explication : le VLAN doit être autorisé sur le port trunk; l'ID, le sous-réseau et le DNS sont des exemples documentaires.*
+   👉 *Explication : le VLAN doit être autorisé sur le port trunk; l'ID, le sous-réseau et le [[Glossary:DNS]] sont des exemples documentaires.*
 
 ## ⚡ 2. Production — Façon Simplifiée
-1. Vérifier le VLAN ID, le réseau IP, le MTU et l'interface trunk côté switch/hyperviseur; sauvegarder les fichiers Netplan existants.
+1. Vérifier le VLAN ID, le réseau [[Glossary:IP]], le [[Glossary:MTU]] et l'interface trunk côté switch/hyperviseur; sauvegarder les fichiers Netplan existants.
 2. Déclarer le VLAN avec le renderer réellement utilisé par la machine. Ne pas attribuer simultanément la même adresse à l'interface physique et au VLAN.
 3. Appliquer avec `netplan try`, confirmer uniquement si l'accès est conservé, puis vérifier :
    ```bash
@@ -54,7 +54,7 @@ Configurer une interface VLAN 802.1Q persistante avec Netplan sous Ubuntu Server
    ```
 
 ## 🔒 3. Production — Façon Sécurisée
-1. Utiliser une console hyperviseur avant de modifier le réseau d'administration; une erreur de VLAN peut couper SSH.
+1. Utiliser une console hyperviseur avant de modifier le réseau d'administration; une erreur de VLAN peut couper [[Glossary:SSH]].
 2. Ne pas exposer les interfaces non nécessaires et maintenir le filtrage cohérent avec le nouveau sous-réseau.
 3. Si cloud-init gère le réseau, modifier la source de configuration prévue au lieu d'éditer un fichier généré.
 

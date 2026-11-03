@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_21_Pilotes_Et_Agents_De
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 21 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-21`
@@ -19,7 +19,7 @@ Installer l'agent de l'hyperviseur.
    ```
    👉 Explication : renvoie `kvm`, `vmware`, `microsoft`...
 
-2. Installer l'agent adapté (KVM/Proxmox ici) :
+2. Installer l'agent adapté ([[Glossary:KVM]]/Proxmox ici) :
    ```bash
    sudo dnf install -y qemu-guest-agent
    sudo systemctl enable --now qemu-guest-agent
@@ -42,7 +42,7 @@ N'installer que l'agent nécessaire.
 
 ## Validation et retour arrière
 
-- **Validation** : L'hyperviseur voit l'adresse IP de la VM.
+- **Validation** : L'hyperviseur voit l'adresse [[Glossary:IP]] de la VM.
 - **Retour arrière** : restaurer le snapshot ou la sauvegarde pris avant l'étape; consigner l'écart avant de poursuivre.
 
 ## Si le problème n'est pas résolu

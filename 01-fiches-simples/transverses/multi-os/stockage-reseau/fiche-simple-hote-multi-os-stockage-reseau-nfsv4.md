@@ -13,7 +13,7 @@ Exporter un chemin dédié en NFSv4 vers des clients explicites.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Installer le serveur NFS :
+1. Installer le serveur [[Glossary:NFS]] :
    ```bash
    sudo apt install nfs-kernel-server
    ```

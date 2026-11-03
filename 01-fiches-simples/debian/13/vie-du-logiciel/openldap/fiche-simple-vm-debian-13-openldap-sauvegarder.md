@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Exporter configuration et données LDAP en LDIF et protéger les fichiers hors hôte.
+Exporter configuration et données [[Glossary:LDAP]] en LDIF et protéger les fichiers hors hôte.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -33,7 +33,7 @@ Exporter configuration et données LDAP en LDIF et protéger les fichiers hors h
    ```
    👉 Explication : les fichiers ne doivent pas être vides; noter le nombre d'entrées pour la comparaison à la restauration.
 
-4. Sauvegarder séparément les certificats et clés TLS, puis copier le tout chiffré hors hôte :
+4. Sauvegarder séparément les certificats et clés [[Glossary:TLS]], puis copier le tout chiffré hors hôte :
    ```bash
    sudo tar -czf /var/backups/ldap/tls-$(date +%F).tar.gz /etc/ldap/tls
    ```
@@ -41,7 +41,7 @@ Exporter configuration et données LDAP en LDIF et protéger les fichiers hors h
 
 ## 2. Production — Contrôles
 
-Définir fréquence, RPO/RTO, rétention, chiffrement, transfert hors site, destinataires et test périodique de restauration.
+Définir fréquence, [[Glossary:RPO]]/RTO, rétention, chiffrement, transfert hors site, destinataires et test périodique de restauration.
 
 ## 3. Production — Sécurité
 

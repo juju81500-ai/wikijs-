@@ -2,7 +2,7 @@
 
 - **Environnement** : Tenant Atlassian Cloud administré par l'organisation (SaaS, aucune machine locale)
 - **OS / Version** : Jira Service Management Cloud (SaaS Atlassian)
-- **Catégorie** : ITSM / centre de services
+- **Catégorie** : [[Glossary:ITSM]] / centre de services
 - **Tags** : `jira-service-management`, `atlassian-cloud`, `itsm`, `saas`
 
 ---
@@ -20,7 +20,7 @@ Créer l'espace de service ITSM et y rattacher les bons agents.
    👉 Explication : utilise le modèle ITSM prévu.
 
 3. Renseigner nom, clé, description, responsable et fuseau horaire.
-   👉 Explication : la clé ne se change pas facilement; choisir un fuseau cohérent avec les SLA.
+   👉 Explication : la clé ne se change pas facilement; choisir un fuseau cohérent avec les [[Glossary:SLA]].
 
 4. Définir le groupe d'agents autorisé : **Paramètres de l'espace > Accès**.
    👉 Explication : seuls les agents désignés accèdent à l'espace.

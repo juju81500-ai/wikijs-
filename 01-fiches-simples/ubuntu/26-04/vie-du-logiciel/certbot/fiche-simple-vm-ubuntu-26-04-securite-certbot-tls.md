@@ -1,8 +1,8 @@
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Securite_Certbot_TLS
 
-- **Environnement** : VM Ubuntu publique avec nom de domaine pointant vers le serveur
-- **OS / Version** : Ubuntu Server 26-04 LTS
-- **Catégorie** : Sécurité / Certificats TLS
+- **Environnement** : [[Glossary:VM]] Ubuntu publique avec nom de domaine pointant vers le serveur
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]]
+- **Catégorie** : Sécurité / Certificats [[Glossary:TLS]]
 - **Tags** : `ubuntu2604`, `certbot`, `letsencrypt`, `tls`, `nginx`, `renouvellement`
 
 ---
@@ -17,7 +17,7 @@ Obtenir un certificat TLS Let's Encrypt valide pour un nom de domaine public ave
 ```bash
 dig +short <nom_de_domaine>
 ```
-👉 Explication : L'adresse retournée doit correspondre à l'IP publique du serveur. Let's Encrypt contrôle le domaine en joignant le port 80 (HTTP-01) ou un enregistrement DNS (DNS-01).
+👉 Explication : L'adresse retournée doit correspondre à l'[[Glossary:IP]] publique du serveur. Let's Encrypt contrôle le domaine en joignant le port 80 (HTTP-01) ou un enregistrement [[Glossary:DNS]] (DNS-01).
 
 2. Installer Certbot et le plugin Nginx :
 ```bash

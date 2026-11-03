@@ -13,7 +13,7 @@ Séparer les accès techniques (supervision, sauvegarde) des comptes humains.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Créer un jeton d'API pour la supervision ou la sauvegarde (GUI : **Datacenter > Permissions > API Tokens > Add**) :
+1. Créer un jeton d'[[Glossary:API]] pour la supervision ou la sauvegarde ([[Glossary:GUI]] : **Datacenter > Permissions > API Tokens > Add**) :
    ```bash
    pveum user add svc-supervision@pve
    pveum user token add svc-supervision@pve zabbix --privsep 1

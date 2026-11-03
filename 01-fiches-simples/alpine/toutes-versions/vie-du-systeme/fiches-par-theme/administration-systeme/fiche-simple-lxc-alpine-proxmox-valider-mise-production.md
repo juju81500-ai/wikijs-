@@ -1,6 +1,6 @@
 # fiche-simple-lxc-alpine-proxmox-valider-mise-production.md
 
-- **Environnement** : CT Alpine finalisé sur Proxmox VE et client de test autorisé
+- **Environnement** : [[Glossary:CT]] Alpine finalisé sur Proxmox VE et client de test autorisé
 - **OS / Version** : branche Alpine maintenue choisie pour le service
 - **Catégorie** : virtualisation / validation de production
 - **Tags** : `alpine`, `proxmox`, `lxc`, `backup`, `restore`, `validation`
@@ -29,9 +29,9 @@ Confirmer que le CT, son réseau, ses services et sa procédure de sauvegarde/re
    ```bash
    nc -zv IP_DU_CT PORT
    ```
-   👉 Explication : remplacer IP et port; le client autorisé réussit, l'autre est refusé.
+   👉 Explication : remplacer [[Glossary:IP]] et port; le client autorisé réussit, l'autre est refusé.
 
-3. Créer la tâche de sauvegarde : **Datacenter > Backup > Add** (Storage = PBS, Selection mode = Include selected VMs, choisir le CT, planification, rétention).
+3. Créer la tâche de sauvegarde : **Datacenter > Backup > Add** (Storage = [[Glossary:PBS]], Selection mode = Include selected VMs, choisir le CT, planification, rétention).
    👉 Explication : cible indépendante du nœud.
 
 4. Restaurer vers un ID temporaire et un réseau isolé pour prouver la sauvegarde (voir fiche de restauration isolée).

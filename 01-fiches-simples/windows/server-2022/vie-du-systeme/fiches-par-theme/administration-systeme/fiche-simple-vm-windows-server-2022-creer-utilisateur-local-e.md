@@ -1,6 +1,6 @@
 # 📄 VM_WinSrv_2022_Utilisateurs_Creer-Utilisateur-Local-Et-Admin.md
 
-- **Environnement** : VM / Serveur Physique (Windows Server 2022)
+- **Environnement** : [[Glossary:VM]] / Serveur Physique (Windows Server 2022)
 - **OS / Version** : Windows Server 2022 Standard / Datacenter - Famille Windows Server
 - **Catégorie** : Utilisateurs & Droits / Gestion des Comptes Locaux
 - **Tags** : `[winsrv2022]`, `[windows-server]`, `[utilisateurs]`, `[admin-local]`, `[gui]`, `[powershell]`, `[hardening]`
@@ -8,7 +8,7 @@
 ---
 
 ## 🎯 Problème précis à résoudre
-Créer un compte utilisateur local standard (sans privilèges) et un compte administrateur local sous Windows Server 2022 en utilisant l'interface graphique (GUI) ou la ligne de commande PowerShell, et attribuer/retirer les droits d'administration.
+Créer un compte utilisateur local standard (sans privilèges) et un compte administrateur local sous Windows Server 2022 en utilisant l'interface graphique ([[Glossary:GUI]]) ou la ligne de commande PowerShell, et attribuer/retirer les droits d'administration.
 
 ---
 
@@ -43,7 +43,7 @@ Créer un compte utilisateur local standard (sans privilèges) et un compte admi
    $Password = Read-Host "Mot de passe" -AsSecureString
    New-LocalUser -Name "jdupont" -Password $Password -FullName "Jean Dupont"
    ```
-2. **Création du compte administrateur local TSSR** :
+2. **Création du compte administrateur local [[Glossary:TSSR]]** :
    ```powershell
    $AdminPassword = Read-Host "Mot de passe administrateur" -AsSecureString
    New-LocalUser -Name "adm-jdupont" -Password $AdminPassword -FullName "ADM Jean Dupont"

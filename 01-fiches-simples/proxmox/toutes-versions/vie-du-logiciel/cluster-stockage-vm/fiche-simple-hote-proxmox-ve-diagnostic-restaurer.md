@@ -13,7 +13,7 @@ Corriger une seule cause à la fois et valider après chaque modification.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Commencer par le changement réversible le plus simple (réseau, montage, redémarrage d'une VM).
+1. Commencer par le changement réversible le plus simple (réseau, montage, redémarrage d'une [[Glossary:VM]]).
    👉 Explication : on limite le risque.
 
 2. Après chaque modification, relancer l'état du cluster et des stockages :

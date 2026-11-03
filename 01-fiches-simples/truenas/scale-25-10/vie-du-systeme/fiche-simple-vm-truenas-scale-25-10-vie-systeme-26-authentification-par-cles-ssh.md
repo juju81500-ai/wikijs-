@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Remplacer le mot de passe SSH par une clé.
+Remplacer le mot de passe [[Glossary:SSH]] par une clé.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -19,7 +19,7 @@ Remplacer le mot de passe SSH par une clé.
    ```
    👉 Explication : crée la paire de clés ; ADMIN1@POSTE est un commentaire.
 
-2. GUI : Identifiants > Utilisateurs > ADMIN1 > Modifier > Clé publique SSH (coller le contenu de `~/.ssh/id_ed25519.pub`).
+2. [[Glossary:GUI]] : Identifiants > Utilisateurs > ADMIN1 > Modifier > Clé publique SSH (coller le contenu de `~/.ssh/id_ed25519.pub`).
    ```bash
    sudo midclt call user.update ID_UTILISATEUR '{"sshpubkey": "CLE_PUBLIQUE"}'
    ```

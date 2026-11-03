@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Créer le premier jeton opérateur seulement lorsque l'API est prouvée locale et protéger immédiatement ce secret.
+Créer le premier jeton opérateur seulement lorsque l'[[Glossary:API]] est prouvée locale et protéger immédiatement ce secret.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -43,11 +43,11 @@ Créer le premier jeton opérateur seulement lorsque l'API est prouvée locale e
 
 ## 2. Production — Contrôles
 
-Avant mise en production, consigner le propriétaire, les sources et consommateurs, la rétention, la capacité, le RPO/RTO, les sauvegardes testées, les clients autorisés et la politique de jetons. Vérifier que les limites de l’édition Core répondent au besoin.
+Avant mise en production, consigner le propriétaire, les sources et consommateurs, la rétention, la capacité, le [[Glossary:RPO]]/RTO, les sauvegardes testées, les clients autorisés et la politique de jetons. Vérifier que les limites de l’édition Core répondent au besoin.
 
 ## 3. Production — Sécurité
 
-- Garder l’API liée à loopback tant qu’un proxy TLS et un filtrage réseau approuvés ne sont pas en place.
+- Garder l’API liée à loopback tant qu’un proxy [[Glossary:TLS]] et un filtrage réseau approuvés ne sont pas en place.
 - Ne jamais partager le jeton opérateur; stocker les secrets dans le coffre et les révoquer en cas d’exposition.
 - Utiliser uniquement des données synthétiques dans le pilote et protéger les copies de données/journaux.
 - Ne pas restaurer sur l’instance active sans copie préalable, validation de la cible et changement approuvé.

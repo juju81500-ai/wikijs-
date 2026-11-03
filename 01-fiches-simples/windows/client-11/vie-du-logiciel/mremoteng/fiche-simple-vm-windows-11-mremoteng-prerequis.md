@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Windows_11_mRemoteNG_Prerequis
 
-- **Environnement** : Poste Windows 11 x64 d'administration (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'administration ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; mRemoteNG VERSION_MREMOTENG (à remplacer)
 - **Catégorie** : gestionnaire de connexions distantes
 - **Tags** : `mremoteng`, `windows11`, `prerequis`
@@ -19,7 +19,7 @@ Préparer un poste Windows 11 pour mRemoteNG.
 2. Vérifier le prérequis .NET indiqué par la documentation de la version choisie : `Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\NET Framework Setup\NDP\v4\Full' | Select Release`.
    👉 Explication : la version .NET exigée dépend de la release ; à vérifier dans la documentation.
 
-3. Lister les protocoles requis (SSH, RDP, VNC) et tester : `Test-NetConnection HOTE_CIBLE -Port 3389` (HOTE_CIBLE à remplacer).
+3. Lister les protocoles requis ([[Glossary:SSH]], [[Glossary:RDP]], VNC) et tester : `Test-NetConnection HOTE_CIBLE -Port 3389` (HOTE_CIBLE à remplacer).
    👉 Explication : anticipe les blocages réseau.
 
 4. Vérifier winget : `winget --version`.

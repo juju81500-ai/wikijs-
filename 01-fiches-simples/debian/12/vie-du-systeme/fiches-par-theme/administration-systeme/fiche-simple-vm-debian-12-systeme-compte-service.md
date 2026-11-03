@@ -1,6 +1,6 @@
 # 📄 VM_Debian_12_Systeme_Compte-Service.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Sécurité & Comptes / Comptes de service isolés
 - **Tags** : `[debian12]`, `[debian-family]`, `[useradd]`, `[nologin]`, `[systemd]`, `[service-account]`, `[hardening]`

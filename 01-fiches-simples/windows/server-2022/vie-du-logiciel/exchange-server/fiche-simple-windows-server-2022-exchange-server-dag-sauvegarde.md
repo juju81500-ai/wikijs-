@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Mettre en place un groupe de disponibilité de bases de données (DAG) et une sauvegarde cohérente VSS des bases Exchange, avec test de restauration.
+Mettre en place un groupe de disponibilité de bases de données (DAG) et une sauvegarde cohérente [[Glossary:VSS]] des bases Exchange, avec test de restauration.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -23,7 +23,7 @@ Mettre en place un groupe de disponibilité de bases de données (DAG) et une sa
    ```powershell
    New-DatabaseAvailabilityGroup -Name DAG01 -WitnessServer FS01 -WitnessDirectory C:\DAGWitness -DatabaseAvailabilityGroupIpAddresses ([System.Net.IPAddress]::None)
    ```
-   👉 Explication : remplacer `DAG01`, `FS01` ; l'adresse `None` crée un DAG sans IP administrative (valeur à valider selon la topologie).
+   👉 Explication : remplacer `DAG01`, `FS01` ; l'adresse `None` crée un DAG sans [[Glossary:IP]] administrative (valeur à valider selon la topologie).
 
 3. Ajouter les membres :
    ```powershell

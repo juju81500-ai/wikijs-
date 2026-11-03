@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Sécuriser l'accès à NAKIVO : comptes, certificat TLS et pare-feu Windows.
+Sécuriser l'accès à NAKIVO : comptes, certificat [[Glossary:TLS]] et pare-feu Windows.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

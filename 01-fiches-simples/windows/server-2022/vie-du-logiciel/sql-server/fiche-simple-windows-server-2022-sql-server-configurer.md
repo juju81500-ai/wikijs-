@@ -1,6 +1,6 @@
 # Fiche_Simple_-_Windows_Server_2022_SQL-Server_Configurer
 
-- **Environnement** : VM Windows Server 2022 (SQL Server 2022 Standard ou Developer)
+- **Environnement** : [[Glossary:VM]] Windows Server 2022 ([[Glossary:SQL]] Server 2022 Standard ou Developer)
 - **OS / Version** : Windows Server 2022; SQL Server 2022 (instance par défaut MSSQLSERVER)
 - **Catégorie** : base de données / SQL Server / Configurer l'instance
 - **Tags** : `windows-server-2022`, `sql-server`, `sqlserver-2022`, `configuration`
@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Paramétrer la mémoire, le parallélisme, TCP/IP et créer une base et un accès applicatif.
+Paramétrer la mémoire, le parallélisme, [[Glossary:TCP]]/IP et créer une base et un accès applicatif.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI — activer TCP/IP : Gestionnaire de configuration SQL Server → Configuration du réseau SQL Server → Protocoles pour MSSQLSERVER → TCP/IP → Activé :
+1. [[Glossary:GUI]] — activer TCP/IP : Gestionnaire de configuration SQL Server → Configuration du réseau SQL Server → Protocoles pour MSSQLSERVER → TCP/IP → Activé :
    ```powershell
    Get-Service MSSQLSERVER
    Restart-Service MSSQLSERVER -Force

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_tcpdump_Valider
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à tcpdump
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à tcpdump
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : tcpdump / validation
 - **Tags** : `tcpdump`, `ubuntu24.04`, `vie-du-logiciel`, `valider`
@@ -25,7 +25,7 @@ Recetter l’installation et le comportement borné de tcpdump.
    ping -c 3 HOTE_AUTORISE
    wait
    ```
-   👉 Explication : Le ping vers un hôte autorisé produit des paquets ICMP visibles; `-c 5` termine la capture automatiquement.
+   👉 Explication : Le ping vers un hôte autorisé produit des paquets [[Glossary:ICMP]] visibles; `-c 5` termine la capture automatiquement.
 
 3. Vérifier l’absence de capture résiduelle :
    ```bash
@@ -44,7 +44,7 @@ Archiver la sortie de recette avec date, version et opérateur.
 ## Validation et retour arrière
 
 - **Validation** : Les paquets ICMP de test sont visibles et aucune capture ne reste active.
-- **Retour arrière** : Arrêter tout processus restant avec `kill PID_TCPDUMP` (PID à remplacer) et supprimer les fichiers de test.
+- **Retour arrière** : Arrêter tout processus restant avec `kill PID_TCPDUMP` ([[Glossary:PID]] à remplacer) et supprimer les fichiers de test.
 
 ## Si le problème n’est pas résolu
 

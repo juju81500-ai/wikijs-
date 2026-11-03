@@ -1,6 +1,6 @@
 # fiche-simple-vm-proxmox-pfsense-ce-deploiement-installer-pfsense-ce.md
 
-- **Environnement** : VM pfSense CE en laboratoire sur Proxmox VE, deux interfaces (WAN et LAN isolés)
+- **Environnement** : [[Glossary:VM]] pfSense CE en laboratoire sur Proxmox VE, deux interfaces ([[Glossary:WAN]] et [[Glossary:LAN]] isolés)
 - **OS / Version** : pfSense Community Edition 2.9.0 (VM x86-64 sur Proxmox VE)
 - **Catégorie** : pare-feu et routage
 - **Tags** : `pfsense`, `ce`, `proxmox`, `firewall`, `lab`
@@ -44,7 +44,7 @@ Conserver la capture de la version installée et de l'affectation des interfaces
 
 ## Validation et retour arrière
 
-- **Validation** : la console affiche WAN sur `vtnet0` et LAN sur `vtnet1` avec l'IP LAN `192.168.1.1`.
+- **Validation** : la console affiche WAN sur `vtnet0` et LAN sur `vtnet1` avec l'[[Glossary:IP]] LAN `192.168.1.1`.
 - **Retour arrière** : recréer la VM de test si l'installation est incorrecte; rien d'autre n'est touché.
 
 ## Si le problème n'est pas résolu

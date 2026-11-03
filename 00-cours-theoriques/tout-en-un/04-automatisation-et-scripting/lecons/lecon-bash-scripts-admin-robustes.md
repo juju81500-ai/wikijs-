@@ -14,7 +14,7 @@
 2. écrire des **fonctions** propres (`local`, `return`, messages sur stderr) ;
 3. expliquer `set -euo pipefail` **et ses limites** pour ne pas lui accorder une confiance aveugle ;
 4. nettoyer avec **`trap`** (fichiers temporaires, signaux) ;
-5. **journaliser** de façon lisible (horodatage, niveau, PID, `logger`) ;
+5. **journaliser** de façon lisible (horodatage, niveau, [[Glossary:PID]], `logger`) ;
 6. empêcher deux exécutions simultanées avec un **verrou** (`flock`) ;
 7. contrôler la qualité avec **ShellCheck** ;
 8. planifier avec **cron** ou un **timer systemd** et choisir entre les deux.
@@ -22,7 +22,7 @@
 ## Prérequis et durée
 
 - Leçon « Bash pour débuter » : [lecon-bash-debutant.md](lecon-bash-debutant.md).
-- Un **laboratoire jetable** : VM Linux (Debian, Ubuntu ou Rocky Linux), compte non privilégié, **instantané avant de commencer**, accès console de secours. Rien n'est modifié hors de votre dossier personnel, sauf mention explicite.
+- Un **laboratoire jetable** : [[Glossary:VM]] Linux (Debian, Ubuntu ou Rocky Linux), compte non privilégié, **instantané avant de commencer**, accès console de secours. Rien n'est modifié hors de votre dossier personnel, sauf mention explicite.
 - Valeurs de documentation uniquement (192.0.2.0/24, 198.51.100.0/24, 203.0.113.0/24, 2001:db8::/32, `example.com`, `example.test`).
 
 ## L'essentiel en bref

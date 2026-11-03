@@ -1,8 +1,8 @@
 # Administrer HashiCorp Packer sur Debian 13
 
-- **OS / Version** : Debian 13 Trixie; HashiCorp Packer installé depuis le dépôt APT officiel
+- **OS / Version** : Debian 13 Trixie; HashiCorp Packer installé depuis le dépôt [[Glossary:APT]] officiel
 - **Type de fiche** : Installation / automatisation d'images
-- **Périmètre** : installation CLI, template HCL2 local, initialisation du plugin Docker, validation et construction d'une image pilote locale
+- **Périmètre** : installation [[Glossary:CLI]], template HCL2 local, initialisation du plugin Docker, validation et construction d'une image pilote locale
 - **Catégorie** : automatisation / image as code
 - **Tags** : `packer`, `hashicorp`, `debian13`, `hcl2`, `docker`, `image-builder`
 
@@ -10,7 +10,7 @@
 
 Fiche simple de cette étape : [cadrer le pilote Packer](../../../../01-fiches-simples/debian/13/vie-du-logiciel/packer/fiche-simple-packer-debian-13-cadrer-pilote.md).
 
-Packer automatise la création d'images via des plugins de constructeurs. Cette fiche teste le constructeur Docker local sur un poste/VM de laboratoire; elle ne crée pas d'image de VM de production, de compte cloud ni de golden image Windows.
+Packer automatise la création d'images via des plugins de constructeurs. Cette fiche teste le constructeur Docker local sur un poste/VM de laboratoire; elle ne crée pas d'image de [[Glossary:VM]] de production, de compte cloud ni de golden image Windows.
 
 Prérequis : Debian 13 approuvé, accès Internet via dépôts autorisés, Docker installé et administré séparément, permission explicite d'utiliser le socket Docker et un registre de test. L'appartenance au groupe `docker` équivaut généralement à des privilèges root sur l'hôte; ne l'accorder qu'aux opérateurs approuvés. Utiliser uniquement des images de base et contenus non sensibles.
 
@@ -73,7 +73,7 @@ build {
 }
 ```
 
-L'exemple utilise un tag Debian mobile uniquement pour un pilote jetable. Pour une chaîne reproductible ou de production, sélectionner une image approuvée et fixer son digest, maîtriser la version du plugin, documenter les paquets et sources, et revoir chaque provisioner. Ne mettre dans HCL ni mot de passe, token, clé privée ni donnée personnelle.
+L'exemple utilise un tag Debian mobile uniquement pour un pilote jetable. Pour une chaîne reproductible ou de production, sélectionner une image approuvée et fixer son digest, maîtriser la version du plugin, documenter les paquets et sources, et revoir chaque provisioner. Ne mettre dans [[Glossary:HCL]] ni mot de passe, token, clé privée ni donnée personnelle.
 
 ## 4. Initialiser et valider le template sans construire
 

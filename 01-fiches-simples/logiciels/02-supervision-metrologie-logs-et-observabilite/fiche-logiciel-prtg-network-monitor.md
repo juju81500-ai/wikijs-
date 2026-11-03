@@ -2,7 +2,7 @@
 
 - **Catégorie** : Supervision, métrologie, logs et observabilité
 - **Plateforme** : Windows
-- **Produit (matrice)** : PRTG Network Monitor
+- **Produit (matrice)** : [[Glossary:PRTG]] Network Monitor
 - **Statut dans le pack** : Couvert
 - **Tags** : `logiciel`, `02-supervision-metrologie-logs-et-observabilite`, `couvert`
 

@@ -2,7 +2,7 @@
 
 - **Catégorie** : Gestion de parc, ticketing et inventaire
 - **Plateforme** : Linux / Windows
-- **Produit (matrice)** : GLPI
+- **Produit (matrice)** : [[Glossary:GLPI]]
 - **Statut dans le pack** : Couvert
 - **Tags** : `logiciel`, `01-gestion-de-parc-ticketing-et-inventaire`, `couvert`
 

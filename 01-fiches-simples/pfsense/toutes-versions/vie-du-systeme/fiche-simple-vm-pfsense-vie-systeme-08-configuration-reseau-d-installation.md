@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_08_Configuration_Reseau_D_Installation
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 08 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-08`
@@ -9,14 +9,14 @@
 
 ## Problème précis à résoudre
 
-Affecter les interfaces WAN et LAN pour joindre la console et l'interface web.
+Affecter les interfaces [[Glossary:WAN]] et [[Glossary:LAN]] pour joindre la console et l'interface web.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. À la fin de l'installation, répondre `n` à la question VLAN, puis saisir les noms d'interfaces (ex. `vtnet0` pour WAN, `vtnet1` pour LAN); ou depuis le menu console choisir l'option 1 « Assign Interfaces ».
+1. À la fin de l'installation, répondre `n` à la question [[Glossary:VLAN]], puis saisir les noms d'interfaces (ex. `vtnet0` pour WAN, `vtnet1` pour LAN); ou depuis le menu console choisir l'option 1 « Assign Interfaces ».
    👉 Explication : l'option 1 associe les cartes physiques aux rôles WAN et LAN.
 
-2. Définir les adresses : option 2 « Set interface(s) IP address » (LAN par défaut `192.168.1.1/24`, WAN en DHCP). Vérifier en shell (option 8) :
+2. Définir les adresses : option 2 « Set interface(s) [[Glossary:IP]] address » (LAN par défaut `192.168.1.1/24`, WAN en [[Glossary:DHCP]]). Vérifier en shell (option 8) :
    ```sh
    ifconfig -a | grep -E '^[a-z]|inet '
    netstat -rn | head

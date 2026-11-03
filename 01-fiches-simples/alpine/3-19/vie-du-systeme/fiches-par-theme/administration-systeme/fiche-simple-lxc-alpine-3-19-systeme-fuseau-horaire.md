@@ -1,6 +1,6 @@
 # 📄 fiche-simple-lxc-alpine-3-19-systeme-fuseau-horaire.md
 
-- **Environnement** : LXC (Proxmox VE)
+- **Environnement** : [[Glossary:LXC]] (Proxmox VE)
 - **OS / Version** : Alpine Linux 3-19 - Famille Alpine (OpenRC, apk)
 - **Catégorie** : Système & Services / Date et heure
 - **Tags** : `[alpine3.19]`, `[alpine]`, `[lxc]`, `[timezone]`, `[tzdata]`, `[ntp]`
@@ -43,7 +43,7 @@ Configurer le fuseau horaire d'un conteneur Alpine Linux avec le paquet `tzdata`
    ```sh
    timedatectl status
    ```
-   👉 Explication : À exécuter sur l'hôte Proxmox. Un conteneur ne règle pas l'heure matérielle; une dérive de l'hôte se répercute dans tous les CT.
+   👉 Explication : À exécuter sur l'hôte Proxmox. Un conteneur ne règle pas l'heure matérielle; une dérive de l'hôte se répercute dans tous les [[Glossary:CT]].
 
 2. Appliquer le fuseau dans le conteneur comme en laboratoire, puis vérifier :
    ```sh
@@ -56,7 +56,7 @@ Configurer le fuseau horaire d'un conteneur Alpine Linux avec le paquet `tzdata`
 ---
 
 ## 🔒 3. Production — Façon Sécurisée
-1. Conserver les horodatages transmis au SIEM et aux outils de corrélation en UTC pour éviter les ambiguïtés lors du passage à l'heure d'été :
+1. Conserver les horodatages transmis au [[Glossary:SIEM]] et aux outils de corrélation en UTC pour éviter les ambiguïtés lors du passage à l'heure d'été :
    ```sh
    date -u
    ```

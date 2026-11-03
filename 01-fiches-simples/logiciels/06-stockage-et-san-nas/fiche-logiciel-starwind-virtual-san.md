@@ -1,6 +1,6 @@
 # 📄 StarWind Virtual SAN
 
-- **Catégorie** : Stockage et SAN / NAS
+- **Catégorie** : Stockage et [[Glossary:SAN]] / [[Glossary:NAS]]
 - **Plateforme** : Windows; aucune série Linux/VM appliance dans ce pack
 - **Produit (matrice)** : StarWind Virtual SAN
 - **Statut dans le pack** : Partiel

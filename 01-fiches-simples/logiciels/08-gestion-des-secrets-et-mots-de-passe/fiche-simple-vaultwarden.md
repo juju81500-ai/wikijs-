@@ -1,6 +1,6 @@
 # 📄 Vaultwarden
 
-- **Environnement** : VM (Debian 13) avec Docker
+- **Environnement** : [[Glossary:VM]] (Debian 13) avec Docker
 - **OS / Version** : Debian 13 (trixie)
 - **Version** : Vaultwarden `<version_vaultwarden>` (image Docker `vaultwarden/server`, à vérifier sur la version déployée)
 - **Catégorie** : Gestion des secrets et mots de passe
@@ -63,11 +63,11 @@ sudo docker compose logs --tail 30 vaultwarden
 ```bash
 curl -I http://localhost:8080
 ```
-👉 Explication : Demande uniquement les en-têtes HTTP. Un code `HTTP/1.1 200 OK` confirme que l'interface web répond.
+👉 Explication : Demande uniquement les en-têtes [[Glossary:HTTP]]. Un code `HTTP/1.1 200 OK` confirme que l'interface web répond.
 
 6. Création d'un compte de test dans le navigateur :
 Ouvrir `http://localhost:8080` depuis la VM, puis créer un compte de test avec une adresse fictive et un mot de passe maître robuste.
-👉 Explication : Le coffre web n'est utilisable qu'en contexte sécurisé : `localhost` convient en lab, mais une connexion par adresse IP en HTTP sera refusée par le navigateur. Le mot de passe maître ne se récupère pas : le noter dans un endroit sûr.
+👉 Explication : Le coffre web n'est utilisable qu'en contexte sécurisé : `localhost` convient en lab, mais une connexion par adresse [[Glossary:IP]] en HTTP sera refusée par le navigateur. Le mot de passe maître ne se récupère pas : le noter dans un endroit sûr.
 
 ---
 
@@ -94,7 +94,7 @@ services:
     ports:
       - "127.0.0.1:8080:80"
 ```
-👉 Explication : `<domaine_vaultwarden>` est le nom DNS public du service. `SIGNUPS_ALLOWED: "false"` interdit l'inscription libre. Dans `<empreinte_argon2_doublee>`, chaque caractère `$` de l'empreinte doit être doublé en `$$` (Compose interprète sinon `$` comme une variable). Le port n'écoute que sur `127.0.0.1` : seul le proxy y accède.
+👉 Explication : `<domaine_vaultwarden>` est le nom [[Glossary:DNS]] public du service. `SIGNUPS_ALLOWED: "false"` interdit l'inscription libre. Dans `<empreinte_argon2_doublee>`, chaque caractère `$` de l'empreinte doit être doublé en `$$` (Compose interprète sinon `$` comme une variable). Le port n'écoute que sur `127.0.0.1` : seul le proxy y accède.
 
 3. Relance et contrôle :
 ```bash
@@ -104,7 +104,7 @@ sudo docker compose logs --tail 30 vaultwarden
 ```
 👉 Explication : Applique la nouvelle configuration et vérifie l'absence d'erreur au démarrage.
 
-4. Proxy Nginx et certificat TLS :
+4. Proxy Nginx et certificat [[Glossary:TLS]] :
 ```bash
 sudo apt install -y nginx certbot python3-certbot-nginx
 sudo nano /etc/nginx/sites-available/vaultwarden
@@ -129,7 +129,7 @@ sudo certbot --nginx -d <domaine_vaultwarden>
 ```
 👉 Explication : Nginx transmet le trafic HTTPS public au conteneur. `nginx -t` valide la configuration avant rechargement. Certbot obtient un certificat Let's Encrypt pour `<domaine_vaultwarden>`. Le domaine doit pointer vers ce serveur et le port 80 doit être joignable pour la validation.
 
-5. Pare-feu : seuls SSH (depuis l'administration) et HTTPS sont ouverts :
+5. Pare-feu : seuls [[Glossary:SSH]] (depuis l'administration) et HTTPS sont ouverts :
 ```bash
 sudo apt install -y ufw
 sudo ufw allow from <adresse_ip_admin> to any port 22 proto tcp
@@ -193,6 +193,6 @@ sudo mkdir -p /tmp/vw-test
 sudo cp /var/backups/vaultwarden/db-<date_sauvegarde>.sqlite3 /tmp/vw-test/db.sqlite3
 sudo sqlite3 /tmp/vw-test/db.sqlite3 "PRAGMA integrity_check;"
 ```
-👉 Explication : Copie la sauvegarde dans un dossier de test, puis vérifie son intégrité : la réponse attendue est `ok`. `<date_sauvegarde>` est la date du fichier sauvegardé (format AAAA-MM-JJ). Sur une VM de test, répéter aussi la restauration complète du dossier `vw-data` au moins une fois par trimestre, car une base saine ne suffit pas sans sa clé RSA.
+👉 Explication : Copie la sauvegarde dans un dossier de test, puis vérifie son intégrité : la réponse attendue est `ok`. `<date_sauvegarde>` est la date du fichier sauvegardé (format AAAA-MM-JJ). Sur une VM de test, répéter aussi la restauration complète du dossier `vw-data` au moins une fois par trimestre, car une base saine ne suffit pas sans sa clé [[Glossary:RSA]].
 
 ---

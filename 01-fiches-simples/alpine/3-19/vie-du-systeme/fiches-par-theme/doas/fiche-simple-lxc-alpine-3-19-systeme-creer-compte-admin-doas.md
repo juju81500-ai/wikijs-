@@ -1,6 +1,6 @@
 # 📄 fiche-simple-lxc-alpine-3-19-systeme-creer-compte-admin-doas.md
 
-- **Environnement** : LXC (Proxmox VE)
+- **Environnement** : [[Glossary:LXC]] (Proxmox VE)
 - **OS / Version** : Alpine Linux 3-19 - OpenRC
 - **Catégorie** : Création de compte / Sécurité
 - **Tags** : `[alpine3.19]`, `[alpine]`, `[lxc]`, `[comptes]`, `[doas]`, `[openrc]`, `[hardening]`

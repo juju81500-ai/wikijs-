@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_ownCloud_Securiser
 
-- **Environnement** : VM Ubuntu Server 24-04; ownCloud Infinite Scale (oCIS), binaire officiel
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04; ownCloud Infinite Scale (oCIS), binaire officiel
 - **OS / Version** : Ubuntu Server 24-04
 - **Catégorie** : Vie du logiciel / ownCloud — Sécuriser
 - **Tags** : `owncloud`, `serveur`, `vie-du-logiciel`, `securiser`
@@ -25,7 +25,7 @@ sudo ufw status verbose
 
 ## 2. Production — Contrôles
 
-Configurer certificat TLS valide et contrôler qu’aucune règle n’expose le backend.
+Configurer certificat [[Glossary:TLS]] valide et contrôler qu’aucune règle n’expose le backend.
 
 ## 3. Production — Sécurité
 

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_17_Resolution_De_Noms_Client
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 17 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-17`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Configurer les serveurs DNS du client.
+Configurer les serveurs [[Glossary:DNS]] du client.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

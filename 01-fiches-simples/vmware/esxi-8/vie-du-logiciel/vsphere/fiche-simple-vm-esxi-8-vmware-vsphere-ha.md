@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Activer vSphere HA pour redémarrer automatiquement les VM d'un hôte défaillant.
+Activer vSphere HA pour redémarrer automatiquement les [[Glossary:VM]] d'un hôte défaillant.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

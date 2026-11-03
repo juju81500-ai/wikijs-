@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-13-kea-cadrer.md
 
-- **Environnement** : VM Debian 13 serveur DHCPv4 sur un VLAN de test isolé
+- **Environnement** : [[Glossary:VM]] Debian 13 serveur DHCPv4 sur un [[Glossary:VLAN]] de test isolé
 - **OS / Version** : Debian 13 Trixie x86-64; ISC Kea (canal stable)
-- **Catégorie** : réseau / DHCP
+- **Catégorie** : réseau / [[Glossary:DHCP]]
 - **Tags** : `debian13`, `kea`, `dhcpv4`, `isc`, `reseau`
 
 ---
@@ -20,7 +20,7 @@ Définir le périmètre du serveur DHCPv4 et vérifier les prérequis avant tout
    ```
    👉 Explication : le serveur doit avoir une adresse statique dans le sous-réseau servi.
 
-2. Noter la plage approuvée, la passerelle et le DNS. Les adresses `192.0.2.0/24` sont réservées à la documentation et sont à remplacer par les valeurs validées.
+2. Noter la plage approuvée, la passerelle et le [[Glossary:DNS]]. Les adresses `192.0.2.0/24` sont réservées à la documentation et sont à remplacer par les valeurs validées.
    👉 Explication : les pools ne doivent pas chevaucher les adresses statiques ni les réservations.
 
 3. Confirmer dans le VLAN de test isolé qu'aucun autre serveur DHCP ne répond.
@@ -33,7 +33,7 @@ Obtenir l'autorisation et la fenêtre de changement; prévoir un accès console,
 ## 3. Production — Sécurité
 
 - Ne pas démarrer Kea sur un réseau de production sans autorisation.
-- Ne pas lancer de test DHCP sur un LAN partagé.
+- Ne pas lancer de test DHCP sur un [[Glossary:LAN]] partagé.
 
 ## Validation et retour arrière
 

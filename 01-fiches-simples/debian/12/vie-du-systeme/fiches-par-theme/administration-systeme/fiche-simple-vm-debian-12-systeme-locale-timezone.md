@@ -1,6 +1,6 @@
 # 📄 VM_Debian_12_Systeme_Locale-Timezone.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Système & Services / Localisation
 - **Tags** : `[debian12]`, `[debian-family]`, `[locale]`, `[timezone]`, `[timedatectl]`, `[utf-8]`
@@ -13,7 +13,7 @@ Configurer la locale système (UTF-8, français) et le fuseau horaire d'un serve
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Consultation de l'horloge et du fuseau actuels :
    `timedatectl status`
-   👉 Explication : Affiche le fuseau horaire, l'heure locale, l'état de la synchronisation NTP et le mode de l'horloge matérielle (RTC).
+   👉 Explication : Affiche le fuseau horaire, l'heure locale, l'état de la synchronisation [[Glossary:NTP]] et le mode de l'horloge matérielle (RTC).
 2. Consultation de la locale active :
    `localectl status`
    👉 Explication : Affiche les variables `LANG` et `LC_*` ainsi que la disposition du clavier de la console.

@@ -20,7 +20,7 @@ Valider le déploiement et les contrôles d'accès avant ouverture aux utilisate
    ```
    👉 Explication : les services attendus sont actifs.
 
-2. Vérifier que les ports internes ne sont pas joignables depuis le réseau (depuis une autre machine, IP d'exemple à remplacer) :
+2. Vérifier que les ports internes ne sont pas joignables depuis le réseau (depuis une autre machine, [[Glossary:IP]] d'exemple à remplacer) :
    ```bash
    nc -zv 192.0.2.10 8080
    nc -zv 192.0.2.10 4822
@@ -33,7 +33,7 @@ Valider le déploiement et les contrôles d'accès avant ouverture aux utilisate
 
 ## 2. Production — Contrôles
 
-Contrôler MFA/SSO et groupes, tester une connexion pilote vers un système de laboratoire autorisé.
+Contrôler [[Glossary:MFA]]/SSO et groupes, tester une connexion pilote vers un système de laboratoire autorisé.
 
 ## 3. Production — Sécurité
 

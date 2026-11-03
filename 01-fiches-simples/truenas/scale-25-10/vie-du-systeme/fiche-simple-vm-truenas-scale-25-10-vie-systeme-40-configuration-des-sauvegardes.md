@@ -13,7 +13,7 @@ Sauvegarder les données et la configuration.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Snapshots périodiques : GUI Protection des données > Tâches d'instantanés > Ajouter.
+1. Snapshots périodiques : [[Glossary:GUI]] Protection des données > Tâches d'instantanés > Ajouter.
    ```bash
    sudo zfs snapshot POOL/DATASET@MANUEL
    sudo zfs list -t snapshot -r POOL/DATASET
@@ -24,7 +24,7 @@ Sauvegarder les données et la configuration.
    ```bash
    sudo midclt call replication.query | python3 -m json.tool | head -30
    ```
-   👉 Explication : envoie les snapshots vers un autre NAS (ZFS send/recv).
+   👉 Explication : envoie les snapshots vers un autre [[Glossary:NAS]] ([[Glossary:ZFS]] send/recv).
 
 3. Configuration : GUI Système > Général > Gérer la configuration > Télécharger le fichier.
    ```bash

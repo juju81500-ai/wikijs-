@@ -1,7 +1,7 @@
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Securite_Fail2ban
 
-- **Environnement** : VM ou serveur Ubuntu exposant SSH ou un service web
-- **OS / Version** : Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu exposant [[Glossary:SSH]] ou un service web
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]]
 - **Catégorie** : Sécurité / Protection contre le brute-force
 - **Tags** : `ubuntu2604`, `fail2ban`, `ssh`, `brute-force`, `systemd`, `ufw`
 
@@ -9,7 +9,7 @@
 
 ## 🎯 Problème précis à résoudre
 
-Bloquer automatiquement, pendant une durée limitée, les adresses IP qui échouent répétitivement à s'authentifier sur SSH, sans bloquer les administrateurs légitimes.
+Bloquer automatiquement, pendant une durée limitée, les adresses [[Glossary:IP]] qui échouent répétitivement à s'authentifier sur SSH, sans bloquer les administrateurs légitimes.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 
@@ -58,7 +58,7 @@ sudo fail2ban-client status sshd
 ```text
 ignoreip = 127.0.0.1/8 ::1 <IP_ADMINISTRATION>
 ```
-👉 Explication : Empêche le bannissement d'un poste d'administration qui se trompe de mot de passe. Il faut lister l'IP fixe du bastion ou du VPN d'administration.
+👉 Explication : Empêche le bannissement d'un poste d'administration qui se trompe de mot de passe. Il faut lister l'IP fixe du bastion ou du [[Glossary:VPN]] d'administration.
 
 2. Recharger la configuration :
 ```bash
@@ -79,7 +79,7 @@ maxretry = 3
 ```
 👉 Explication : Une adresse bannie plusieurs fois par le filtre SSH est bloquée une semaine. Cela ralentit fortement les attaques distribuées lentes.
 
-2. Faire passer les bannissements par UFW plutôt que par des règles iptables directes, dans `/etc/fail2ban/jail.local`, sous `[DEFAULT]` :
+2. Faire passer les bannissements par [[Glossary:UFW]] plutôt que par des règles iptables directes, dans `/etc/fail2ban/jail.local`, sous `[DEFAULT]` :
 ```text
 banaction = ufw
 ```

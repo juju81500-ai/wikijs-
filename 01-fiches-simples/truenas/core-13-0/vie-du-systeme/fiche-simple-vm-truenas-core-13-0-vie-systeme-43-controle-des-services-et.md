@@ -13,7 +13,7 @@ Vérifier services et ports.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Services.
+1. [[Glossary:GUI]] : Services.
    ```sh
    service -e
    midclt call service.query | grep -E '"service"|"state"'

@@ -1,12 +1,12 @@
 # 📄 VM_Debian_12_Reseau_Fixer-IP-Statique.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Réseau
 - **Tags** : `[debian12]`, `[debian-family]`, `[reseau]`, `[ip-statique]`, `[systemd-networkd]`, `[nftables]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Fixer une adresse IP statique permanente, configurer le résolveur DNS et sécuriser la pile réseau sur une machine virtuelle Debian 12.
+Fixer une adresse [[Glossary:IP]] statique permanente, configurer le résolveur [[Glossary:DNS]] et sécuriser la pile réseau sur une machine virtuelle Debian 12.
 
 ---
 

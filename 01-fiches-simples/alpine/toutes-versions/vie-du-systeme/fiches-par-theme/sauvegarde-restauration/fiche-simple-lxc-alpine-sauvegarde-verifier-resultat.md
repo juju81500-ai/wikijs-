@@ -1,8 +1,8 @@
 # fiche-simple-lxc-alpine-sauvegarde-verifier-resultat.md
 
-- **Environnement** : job de sauvegarde CT sur PVE/PBS et accès aux journaux autorisés
-- **OS / Version** : Proxmox VE et PBS selon versions déployées
-- **Catégorie** : sauvegarde LXC / contrôle
+- **Environnement** : job de sauvegarde [[Glossary:CT]] sur PVE/PBS et accès aux journaux autorisés
+- **OS / Version** : Proxmox VE et [[Glossary:PBS]] selon versions déployées
+- **Catégorie** : sauvegarde [[Glossary:LXC]] / contrôle
 - **Tags** : `alpine`, `proxmox`, `pbs`, `backup`, `verification`
 
 ---

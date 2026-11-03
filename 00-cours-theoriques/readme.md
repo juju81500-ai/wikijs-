@@ -17,7 +17,7 @@ Parcours de compréhension pour relier les notions avant de passer aux fiches pr
 | Thème | Ressource | Apport |
 |---|---|---|
 | Linux | [Parcours Linux de Stéphane Robert](https://www.stephane-robert.info/docs/admin-serveurs/linux/parcours/) | Programme progressif, leçons, laboratoires et quiz, du terminal à l'administration serveur. |
-| Linux, Windows et réseau | [Modules ZenTSSR](https://zentssr.com/modules) | Révisions organisées par compétences et modules TSSR. |
+| Linux, Windows et réseau | [Modules ZenTSSR](https://zentssr.com/modules) | Révisions organisées par compétences et modules [[Glossary:TSSR]]. |
 | Systèmes et réseaux | [Cours TSSR sur GitHub](https://github.com/kipit/nivvlem-TSSR/blob/main/modules.md) | Index de modules Linux, Windows, réseau, virtualisation, scripting, sauvegarde et sécurité. |
 | Réseau | [Cours Root & Code](https://www.jousseaume.online/categorie/reseau/) | Cours illustrés, animations transcrites et questions de compréhension. |
 

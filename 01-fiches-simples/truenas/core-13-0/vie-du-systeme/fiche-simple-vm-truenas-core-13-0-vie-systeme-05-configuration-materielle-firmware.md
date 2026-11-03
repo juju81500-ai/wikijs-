@@ -9,14 +9,14 @@
 
 ## Problème précis à résoudre
 
-Préparer BIOS et contrôleurs pour ZFS.
+Préparer [[Glossary:BIOS]] et contrôleurs pour [[Glossary:ZFS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Activer UEFI ou BIOS selon le support, mettre à jour BIOS et BMC.
+1. Activer UEFI ou BIOS selon le support, mettre à jour BIOS et [[Glossary:BMC]].
    👉 Explication : menu BIOS/UEFI > Boot.
 
-2. Passer le contrôleur en mode HBA/IT, sans RAID matériel :
+2. Passer le contrôleur en mode [[Glossary:HBA]]/IT, sans [[Glossary:RAID]] matériel :
    ```sh
    pciconf -lv | grep -i -B3 -E 'sas|raid'
    sas2flash -listall
@@ -36,7 +36,7 @@ Ne jamais utiliser de RAID matériel avec ZFS ; mettre à jour le firmware en ma
 
 ## 3. Production — Sécurité
 
-Protéger BIOS et BMC par mot de passe, BMC sur VLAN d'administration.
+Protéger BIOS et BMC par mot de passe, BMC sur [[Glossary:VLAN]] d'administration.
 
 ## Validation et retour arrière
 

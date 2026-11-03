@@ -1,6 +1,6 @@
 # 📄 fiche-simple-lxc-alpine-3-19-journaux-logrotate-syslog.md
 
-- **Environnement** : LXC (Proxmox VE)
+- **Environnement** : [[Glossary:LXC]] (Proxmox VE)
 - **OS / Version** : Alpine Linux 3-19 - Famille Alpine (OpenRC, apk)
 - **Catégorie** : Système & Services / Journaux et centralisation
 - **Tags** : `[alpine3.19]`, `[alpine]`, `[lxc]`, `[syslog]`, `[logrotate]`, `[logs]`, `[openrc]`
@@ -39,7 +39,7 @@ Vérifier la journalisation d'un conteneur Alpine Linux (BusyBox `syslogd`), con
    ```text
    SYSLOGD_OPTS="-L -R <ip_collecteur>:514"
    ```
-   👉 Explication : `-R` transmet les messages en UDP au collecteur (SIEM ou rsyslog distant); `-L` conserve aussi l'écriture locale dans `/var/log/messages`.
+   👉 Explication : `-R` transmet les messages en [[Glossary:UDP]] au collecteur ([[Glossary:SIEM]] ou rsyslog distant); `-L` conserve aussi l'écriture locale dans `/var/log/messages`.
 
 2. Redémarrer le service et vérifier l'envoi :
    ```sh
@@ -78,4 +78,4 @@ Vérifier la journalisation d'un conteneur Alpine Linux (BusyBox `syslogd`), con
    ```sh
    ls -l /var/log/<nom_application>/
    ```
-   👉 Explication : Les journaux peuvent contenir des identifiants, des adresses IP ou des requêtes. Leurs droits doivent exclure les comptes non concernés (ex : `0640`).
+   👉 Explication : Les journaux peuvent contenir des identifiants, des adresses [[Glossary:IP]] ou des requêtes. Leurs droits doivent exclure les comptes non concernés (ex : `0640`).

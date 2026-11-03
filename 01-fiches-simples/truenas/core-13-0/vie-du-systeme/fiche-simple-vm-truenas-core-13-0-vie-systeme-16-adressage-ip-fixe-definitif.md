@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Fixer l'adresse IP.
+Fixer l'adresse [[Glossary:IP]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Réseau > Interfaces > interface > Modifier : désactiver DHCP, ajouter l'alias IPv4 ADRESSE/24 ; Tester les changements puis Enregistrer.
+1. [[Glossary:GUI]] : Réseau > Interfaces > interface > Modifier : désactiver [[Glossary:DHCP]], ajouter l'alias IPv4 ADRESSE/24 ; Tester les changements puis Enregistrer.
    ```sh
    midclt call interface.update INTERFACE '{"ipv4_dhcp": false, "aliases": [{"address": "ADRESSE", "netmask": 24}]}'
    midclt call interface.commit
@@ -36,15 +36,15 @@ Fixer l'adresse IP.
 
 ## 2. Production — Contrôles
 
-Adresse réservée dans l'IPAM ; interface séparée pour le stockage.
+Adresse réservée dans l'[[Glossary:IPAM]] ; interface séparée pour le stockage.
 
 ## 3. Production — Sécurité
 
-VLAN de stockage non routé.
+[[Glossary:VLAN]] de stockage non routé.
 
 ## Validation et retour arrière
 
-- **Validation** : Le NAS répond au ping.
+- **Validation** : Le [[Glossary:NAS]] répond au ping.
 - **Retour arrière** : restaurer le snapshot ou la sauvegarde pris avant l'étape; consigner l'écart avant de poursuivre.
 
 ## Si le problème n'est pas résolu

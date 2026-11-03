@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Configurer les serveurs DNS et les suffixes.
+Configurer les serveurs [[Glossary:DNS]] et les suffixes.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Ouvrir **Propriétés TCP/IPv4 > Avancé > DNS** pour les suffixes.
+1. Ouvrir **Propriétés [[Glossary:TCP]]/IPv4 > Avancé > DNS** pour les suffixes.
    ```powershell
    Get-DnsClientServerAddress -AddressFamily IPv4
    Get-DnsClientGlobalSetting
@@ -36,7 +36,7 @@ Configurer les serveurs DNS et les suffixes.
 
 ## 2. Production — Contrôles
 
-Utiliser les DNS internes du domaine, pas de résolveur public pour un serveur joint à AD.
+Utiliser les DNS internes du domaine, pas de résolveur public pour un serveur joint à [[Glossary:AD]].
 
 ## 3. Production — Sécurité
 

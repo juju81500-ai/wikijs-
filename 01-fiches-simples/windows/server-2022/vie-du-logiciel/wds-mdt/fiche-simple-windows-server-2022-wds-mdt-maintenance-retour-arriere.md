@@ -1,7 +1,7 @@
 # Fiche_Simple_-_Windows_Server_2022_WDS_MDT_Maintenance_Retour_arriere
 
-- **Environnement** : Windows Server 2022, WDS + MDT en service
-- **OS / Version** : Windows Server 2022; WDS, MDT, ADK : vérifier la version publiée
+- **Environnement** : Windows Server 2022, WDS + [[Glossary:MDT]] en service
+- **OS / Version** : Windows Server 2022; WDS, MDT, [[Glossary:ADK]] : vérifier la version publiée
 - **Catégorie** : Automatisation, déploiement et IaC
 - **Tags** : `windows-server-2022`, `wds`, `mdt`, `maintenance`, `retour-arriere`
 
@@ -28,13 +28,13 @@ Maintenir le service (images de démarrage, ADK, partage) et revenir en arrière
    ```
    👉 Explication : `-Force` régénère les images complètement. Les versions ADK/WinPE compatibles avec MDT sont à vérifier.
 
-3. Remplacer l'image publiée dans WDS. GUI : `Services de déploiement Windows > Images de démarrage > clic droit > Remplacer l'image`.
+3. Remplacer l'image publiée dans WDS. [[Glossary:GUI]] : `Services de déploiement Windows > Images de démarrage > clic droit > Remplacer l'image`.
    ```powershell
    wdsutil /Replace-Image /Image:"NOM-IMAGE-DEMARRAGE" /ImageType:Boot /Architecture:x64 /ReplacementImage /ImageFile:"$Share\Boot\LiteTouchPE_x64.wim"
    ```
    👉 Explication : `NOM-IMAGE-DEMARRAGE` à remplacer (visible avec `wdsutil /Get-AllImages /Show:Boot`). Syntaxe à vérifier avec `wdsutil /?`.
 
-4. Tester avec une VM en PXE (fiche Recette).
+4. Tester avec une [[Glossary:VM]] en [[Glossary:PXE]] (fiche Recette).
    👉 Explication : ne généraliser qu'après un test réussi.
 
 5. Retour arrière si l'image échoue :

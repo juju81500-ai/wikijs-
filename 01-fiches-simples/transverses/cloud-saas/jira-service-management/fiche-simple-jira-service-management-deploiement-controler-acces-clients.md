@@ -2,7 +2,7 @@
 
 - **Environnement** : Tenant Atlassian Cloud administré par l'organisation (SaaS, aucune machine locale)
 - **OS / Version** : Jira Service Management Cloud (SaaS Atlassian)
-- **Catégorie** : ITSM / centre de services
+- **Catégorie** : [[Glossary:ITSM]] / centre de services
 - **Tags** : `jira-service-management`, `atlassian-cloud`, `itsm`, `saas`
 
 ---
@@ -19,7 +19,7 @@ Empêcher un portail ouvert à tout Internet sans décision métier.
 2. Vérifier l'option de partage de demandes et les organisations clientes.
    👉 Explication : évite l'exposition de tickets entre organisations.
 
-3. Contrôler SSO/MFA dans **admin.atlassian.com > Sécurité**.
+3. Contrôler [[Glossary:SSO]]/MFA dans **admin.atlassian.com > Sécurité**.
    👉 Explication : renforce l'authentification des comptes.
 
 4. Vérifier le traitement des comptes désactivés.

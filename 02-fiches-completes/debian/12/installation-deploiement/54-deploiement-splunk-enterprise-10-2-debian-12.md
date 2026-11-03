@@ -3,16 +3,16 @@
 - **OS / Version** : Debian 12 Bookworm x86-64; Splunk Enterprise 10.2
 - **Type de fiche** : Installation/Déploiement
 - **Architecture** : instance autonome d'évaluation; dimensionnement production à calculer
-- **Catégorie** : SIEM / centralisation et recherche de journaux
+- **Catégorie** : [[Glossary:SIEM]] / centralisation et recherche de journaux
 - **Tags** : `splunk`, `debian12`, `siem`, `logs`, `enterprise`, `systemd`
 
 ## 1. Dimensionner et préparer
 
 Fiche simple : [dimensionner et préparer](../../../../01-fiches-simples/debian/12/vie-du-logiciel/splunk/fiche-simple-vm-debian-12-splunk-dimensionner-preparer.md).
 
-Confirmer que le système d'exploitation et l'architecture sont listés dans la matrice officielle Splunk 10.2. Calculer le débit journalier, le volume hot/warm/cold, la rétention, les recherches simultanées et les besoins IOPS avant de choisir CPU, RAM et disques. Pour une plateforme de production distribuée, appliquer les architectures validées Splunk au lieu de promouvoir cette instance autonome.
+Confirmer que le système d'exploitation et l'architecture sont listés dans la matrice officielle Splunk 10.2. Calculer le débit journalier, le volume hot/warm/cold, la rétention, les recherches simultanées et les besoins [[Glossary:IOPS]] avant de choisir [[Glossary:CPU]], [[Glossary:RAM]] et disques. Pour une plateforme de production distribuée, appliquer les architectures validées Splunk au lieu de promouvoir cette instance autonome.
 
-Préparer DNS/NTP, stockage local compatible, sauvegarde cohérente, accès d'administration restreint et plan réseau. Limiter l'accès aux ports explicitement requis par les composants du déploiement. Par défaut, l'interface Web écoute sur 8000, la gestion/API sur 8089; ne pas les exposer à Internet. Ne pas ouvrir 9997 ou d'autres ports d'ingestion sans configurer les inputs correspondants.
+Préparer [[Glossary:DNS]]/NTP, stockage local compatible, sauvegarde cohérente, accès d'administration restreint et plan réseau. Limiter l'accès aux ports explicitement requis par les composants du déploiement. Par défaut, l'interface Web écoute sur 8000, la gestion/API sur 8089; ne pas les exposer à Internet. Ne pas ouvrir 9997 ou d'autres ports d'ingestion sans configurer les inputs correspondants.
 
 ## 2. Télécharger et vérifier le paquet
 
@@ -47,7 +47,7 @@ Accepter la licence lors du premier démarrage et créer interactivement un nom 
 
 Fiche simple : [sécuriser le premier accès](../../../../01-fiches-simples/debian/12/vie-du-logiciel/splunk/fiche-simple-vm-debian-12-splunk-securiser-premier-acces.md).
 
-Au début, garder Splunk Web accessible uniquement en local ou via le réseau d'administration. Utiliser un reverse proxy HTTPS ou activer TLS selon la procédure Splunk avant tout accès utilisateur hors localhost. Vérifier certificats, nom DNS, contrôle d'accès et MFA/SSO disponible avant de connecter des sources réelles.
+Au début, garder Splunk Web accessible uniquement en local ou via le réseau d'administration. Utiliser un reverse proxy HTTPS ou activer [[Glossary:TLS]] selon la procédure Splunk avant tout accès utilisateur hors localhost. Vérifier certificats, nom DNS, contrôle d'accès et [[Glossary:MFA]]/SSO disponible avant de connecter des sources réelles.
 
 Configurer le démarrage système avec la méthode officielle pour Debian/systemd et l'utilisateur `splunk`. Examiner l'unité générée, ses limites de ressources et son utilisateur; ne pas lancer une seconde instance manuellement si le service systemd gère déjà le processus.
 

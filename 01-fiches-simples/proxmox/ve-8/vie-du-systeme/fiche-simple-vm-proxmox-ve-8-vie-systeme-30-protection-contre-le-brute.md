@@ -19,7 +19,7 @@ Bloquer les tentatives répétées de connexion.
    ```
    👉 Explication : bannit les adresses qui échouent plusieurs fois.
 
-2. Créer `/etc/fail2ban/jail.local` pour SSH et l'interface web Proxmox :
+2. Créer `/etc/fail2ban/jail.local` pour [[Glossary:SSH]] et l'interface web Proxmox :
    ```bash
    [sshd]
    enabled = true

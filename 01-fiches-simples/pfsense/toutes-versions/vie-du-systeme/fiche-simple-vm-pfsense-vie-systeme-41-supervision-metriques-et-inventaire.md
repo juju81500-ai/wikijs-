@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_41_Supervision_Metriques_Et_Inventaire
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 41 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-41`
@@ -13,11 +13,11 @@ Surveiller l'état et les performances.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Activer SNMP : Services > SNMP, renseigner la communauté et lier à l'interface LAN seulement.
+1. Activer [[Glossary:SNMP]] : Services > SNMP, renseigner la communauté et lier à l'interface [[Glossary:LAN]] seulement.
    👉 Explication : permet à la supervision de lire les métriques.
 
 2. Consulter Status > Monitoring et Status > Dashboard; ou installer `zabbix-agent` / `Telegraf` pour exporter les métriques.
-   👉 Explication : affiche CPU, mémoire, trafic et état des passerelles.
+   👉 Explication : affiche [[Glossary:CPU]], mémoire, trafic et état des passerelles.
 
 3. Contrôler en shell :
    ```sh

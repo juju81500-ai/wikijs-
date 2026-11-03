@@ -1,7 +1,7 @@
 # Leçon — Réseau et stockage virtuels : bridges, VLAN, datastores, snapshots, templates
 
 - **Tags** : `transverse`, `tout-en-un`, `lecon`, `virtualisation`, `reseau-virtuel`, `vlan`, `stockage`, `snapshot`, `sauvegarde`
-- **Niveau** : intermédiaire (technicien TSSR, administrateur systèmes en formation)
+- **Niveau** : intermédiaire (technicien [[Glossary:TSSR]], administrateur systèmes en formation)
 - **Durée estimée** : 3 h 30 (lecture 1 h 30, laboratoire 1 h, exercices et quiz 1 h)
 
 ---
@@ -10,9 +10,9 @@
 
 À la fin de cette leçon, tu sauras :
 
-1. décrire le chemin d'un paquet entre une VM, un bridge ou vSwitch, une carte physique et le réseau réel ;
-2. choisir entre mode ponté, NAT et réseau isolé, et configurer un VLAN (accès ou trunk) sans couper l'accès d'administration ;
-3. expliquer ce qu'est un datastore et comparer stockage local, NFS, iSCSI, SAN et stockage distribué ;
+1. décrire le chemin d'un paquet entre une [[Glossary:VM]], un bridge ou vSwitch, une carte physique et le réseau réel ;
+2. choisir entre mode ponté, [[Glossary:NAT]] et réseau isolé, et configurer un [[Glossary:VLAN]] (accès ou trunk) sans couper l'accès d'administration ;
+3. expliquer ce qu'est un datastore et comparer stockage local, [[Glossary:NFS]], iSCSI, [[Glossary:SAN]] et stockage distribué ;
 4. distinguer disque fin et disque épais, et surveiller le surengagement de capacité ;
 5. expliquer pourquoi un snapshot n'est pas une sauvegarde, et mettre en place une vraie stratégie de retour arrière ;
 6. utiliser templates et clones (complets ou liés) en évitant les doublons d'identité ;
@@ -21,7 +21,7 @@
 ## Prérequis et durée
 
 - Avoir suivi la leçon [Hyperviseurs, machines virtuelles et ressources](lecon-virtualisation-hyperviseurs.md), ou connaître hôte, invité, vCPU, disque virtuel.
-- Notions de réseau : adresse IP, masque, passerelle, commutateur, VLAN.
+- Notions de réseau : adresse [[Glossary:IP]], masque, passerelle, commutateur, VLAN.
 - Laboratoire sur une **VM Linux jetable** (Debian 12) ou un hôte de laboratoire ; jamais sur une production.
 - Adresses de documentation uniquement : 192.0.2.0/24, 198.51.100.0/24, 203.0.113.0/24, 2001:db8::/32 ; domaines `example.com` et `example.test`.
 - Durée : environ 3 h 30.
@@ -66,9 +66,9 @@ Un **VLAN** (IEEE 802.1Q) découpe un réseau physique en réseaux logiques : de
 Erreurs coûteuses :
 
 - **Trunk incomplet** : le VLAN existe sur l'hôte mais n'est pas autorisé sur le port physique : la VM ne parle à personne.
-- **Réseau de gestion modifié à distance** : la session coupe. **Console de secours (iLO, iDRAC, IPMI, console de l'hyperviseur) ouverte avant d'y toucher**, avec retour automatique si la plateforme en propose.
-- **MTU incohérente** (9000 d'un côté, 1500 de l'autre) : les petits paquets passent, les gros disparaissent ; typique du stockage iSCSI/NFS.
-- **Boucle** sans STP ni agrégation : tempête de diffusion.
+- **Réseau de gestion modifié à distance** : la session coupe. **Console de secours (iLO, iDRAC, [[Glossary:IPMI]], console de l'hyperviseur) ouverte avant d'y toucher**, avec retour automatique si la plateforme en propose.
+- **[[Glossary:MTU]] incohérente** (9000 d'un côté, 1500 de l'autre) : les petits paquets passent, les gros disparaissent ; typique du stockage iSCSI/NFS.
+- **Boucle** sans [[Glossary:STP]] ni agrégation : tempête de diffusion.
 - **MAC et promiscuité** : certains hyperviseurs bloquent par défaut les changements de MAC ; une VM de routage ou de capture doit être autorisée explicitement.
 
 ## 3. Le stockage virtuel : datastores et protocoles
@@ -77,12 +77,12 @@ Un **datastore** (« stockage », « pool ») est l'emplacement où l'hyperviseu
 
 | Type | Points forts | Points d'attention |
 |---|---|---|
-| **Local** (disques, RAID, ZFS) | Simple, rapide | Non partagé : pas de HA sans réplication. |
+| **Local** (disques, [[Glossary:RAID]], [[Glossary:ZFS]]) | Simple, rapide | Non partagé : pas de HA sans réplication. |
 | **NFS / SMB** | Facile, souple | Latence réseau, verrouillage, serveur de fichiers. |
 | **iSCSI / Fibre Channel** (SAN) | Performant, partagé | Dimensionnement, multipath, zonage. |
 | **Distribué** (Ceph, vSAN, Storage Spaces Direct) | Pas de baie centrale, évolutif | Réseau dédié, nombre minimal de nœuds, complexité. |
 
-Distingue **fichier** (l'hyperviseur voit des fichiers dans un partage) et **bloc** (il voit un disque brut). Trois indicateurs : la **capacité**, les **IOPS** (petites opérations aléatoires, typiques d'une base de données) et la **latence** (quelques millisecondes acceptables ; au-delà, les VM « ramollissent »). Une VM lente a souvent un problème de latence de stockage partagée avec une voisine gourmande (sauvegarde, réindexation), pas de CPU.
+Distingue **fichier** (l'hyperviseur voit des fichiers dans un partage) et **bloc** (il voit un disque brut). Trois indicateurs : la **capacité**, les **[[Glossary:IOPS]]** (petites opérations aléatoires, typiques d'une base de données) et la **latence** (quelques millisecondes acceptables ; au-delà, les VM « ramollissent »). Une VM lente a souvent un problème de latence de stockage partagée avec une voisine gourmande (sauvegarde, réindexation), pas de [[Glossary:CPU]].
 
 Le datastore est un **point unique de panne** : si dix VM en dépendent, sa panne les arrête toutes. Prévois redondance matérielle, réplication ou stockage distribué, supervision des disques et **sauvegardes hors de ce stockage**.
 
@@ -130,11 +130,11 @@ Un **template** est une VM préparée une fois (système à jour, outils invité
 Préparer un bon modèle :
 
 1. Installer système, correctifs et outils invités.
-2. **Retirer l'identité** : `machine-id`, clés d'hôte SSH, nom d'hôte, journaux, historique, secrets. Sous Windows, généraliser avec `sysprep` ; sous Linux, réinitialiser le `machine-id` et régénérer les clés SSH au premier démarrage.
+2. **Retirer l'identité** : `machine-id`, clés d'hôte [[Glossary:SSH]], nom d'hôte, journaux, historique, secrets. Sous Windows, généraliser avec `sysprep` ; sous Linux, réinitialiser le `machine-id` et régénérer les clés SSH au premier démarrage.
 3. Utiliser si possible une initialisation au premier démarrage (cloud-init) pour nom, réseau et clés.
 4. Verrouiller le modèle (nom explicite, version) et le mettre à jour de façon planifiée.
 
-Le piège classique : un clone démarré sans nouvelle identité provoque **doublons d'IP, de nom, de MAC, de SID** (Windows dans un domaine), **clés SSH identiques**, jetons ou licences enregistrés. Pour un test de restauration, **démarre le clone sur un réseau isolé** ou avec une adresse différente avant toute connexion à la production.
+Le piège classique : un clone démarré sans nouvelle identité provoque **doublons d'IP, de nom, de MAC, de [[Glossary:SID]]** (Windows dans un domaine), **clés SSH identiques**, jetons ou licences enregistrés. Pour un test de restauration, **démarre le clone sur un réseau isolé** ou avec une adresse différente avant toute connexion à la production.
 
 ## 7. Tableau des risques et contrôles
 
@@ -253,7 +253,7 @@ rm -rf ~/lab-stock
 5. **(Snapshots)** Un collègue laisse un snapshot « avant mise à jour » depuis trois mois sur un serveur de base de données. Quels risques ? Que fais-tu ?
 6. **(Stratégie)** Propose une stratégie de protection pour un serveur de fichiers en VM : snapshots, sauvegarde (règle 3-2-1), fréquence, test de restauration.
 7. **(Clones)** Tu clones un serveur Linux et un poste Windows pour des tests. Liste les éléments d'identité à renouveler dans chaque cas et la précaution réseau au premier démarrage.
-8. **(Choix)** Une PME hésite entre un stockage NFS sur un NAS unique et un stockage distribué sur trois hôtes. Compare avantages, risques et prérequis.
+8. **(Choix)** Une PME hésite entre un stockage NFS sur un [[Glossary:NAS]] unique et un stockage distribué sur trois hôtes. Compare avantages, risques et prérequis.
 
 ## Corrigés des exercices
 
@@ -330,7 +330,7 @@ rm -rf ~/lab-stock
 
 ### Réponses justifiées
 
-1. **B.** C'est un commutateur logiciel : il relie vNIC et carte physique. Il n'attribue pas d'IP (rôle du DHCP) ni ne chiffre.
+1. **B.** C'est un commutateur logiciel : il relie vNIC et carte physique. Il n'attribue pas d'IP (rôle du [[Glossary:DHCP]]) ni ne chiffre.
 2. **B.** Un trunk transporte plusieurs VLAN étiquetés ; un port d'accès n'en porte qu'un.
 3. **B.** Les VLAN isolent au niveau 2, même avec le même sous-réseau IP.
 4. **B.** L'allocation à la demande permet de promettre plus que la capacité ; si tout grossit, le datastore sature.

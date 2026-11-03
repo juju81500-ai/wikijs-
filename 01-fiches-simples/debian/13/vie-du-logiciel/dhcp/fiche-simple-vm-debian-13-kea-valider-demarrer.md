@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-13-kea-valider-demarrer.md
 
-- **Environnement** : VM Debian 13 serveur DHCPv4 sur un VLAN de test isolé
+- **Environnement** : [[Glossary:VM]] Debian 13 serveur DHCPv4 sur un [[Glossary:VLAN]] de test isolé
 - **OS / Version** : Debian 13 Trixie x86-64; ISC Kea (canal stable)
-- **Catégorie** : réseau / DHCP
+- **Catégorie** : réseau / [[Glossary:DHCP]]
 - **Tags** : `debian13`, `kea`, `dhcpv4`, `isc`, `reseau`
 
 ---
@@ -26,7 +26,7 @@ Valider la syntaxe et la configuration avant d'activer le service.
    ```
    👉 Explication : `-t` vérifie la syntaxe et la cohérence sans démarrer le service.
 
-3. Mode approfondi, seulement si des dépendances (base SQL, hooks) sont déclarées :
+3. Mode approfondi, seulement si des dépendances (base [[Glossary:SQL]], hooks) sont déclarées :
    ```bash
    sudo kea-dhcp4 -T /etc/kea/kea-dhcp4.conf
    ```

@@ -10,11 +10,11 @@
 
 Fiche simple de cette étape : [cadrer le pilote InfluxDB 3 Core](../../../../01-fiches-simples/debian/13/vie-du-logiciel/influxdb3-core/fiche-simple-influxdb3-core-debian-13-cadrer-pilote.md).
 
-Cette procédure installe InfluxDB 3 Core depuis le dépôt officiel InfluxData sur un serveur Debian 13. Elle prépare un pilote local avec stockage fichier. Elle ne configure pas Telegraf, Grafana, stockage objet, haute disponibilité, réplication, SSO, chiffrement TLS de bout en bout ni supervision de production.
+Cette procédure installe InfluxDB 3 Core depuis le dépôt officiel InfluxData sur un serveur Debian 13. Elle prépare un pilote local avec stockage fichier. Elle ne configure pas Telegraf, Grafana, stockage objet, haute disponibilité, réplication, [[Glossary:SSO]], chiffrement [[Glossary:TLS]] de bout en bout ni supervision de production.
 
 InfluxDB 3 Core est une édition distincte d'InfluxDB Enterprise. Vérifier les limites de l'édition avant conception : Core est mono-nœud, limite le nombre de bases et ne fournit pas les fonctionnalités Enterprise de haute disponibilité. Le stockage local exige une stratégie de capacité, sauvegarde et restauration soigneusement testée.
 
-Prérequis : VM Debian 13 approuvée, architecture prise en charge, accès administrateur, horloge synchronisée, espace disque dédié surveillé et procédure de changement. Ne pas exposer l'API sur un réseau avant d'avoir défini TLS, contrôle d'accès, sauvegarde, rétention et règles de pare-feu.
+Prérequis : [[Glossary:VM]] Debian 13 approuvée, architecture prise en charge, accès administrateur, horloge synchronisée, espace disque dédié surveillé et procédure de changement. Ne pas exposer l'[[Glossary:API]] sur un réseau avant d'avoir défini TLS, contrôle d'accès, sauvegarde, rétention et règles de pare-feu.
 
 ## 2. Ajouter le dépôt APT officiel
 
@@ -112,14 +112,14 @@ curl --fail --silent --show-error \
   --data-binary 'validation,source=pilote valeur=1i'
 ```
 
-Confirmer depuis la CLI ou l'API SQL que le point est lisible, puis exécuter `unset INFLUXDB3_AUTH_TOKEN` lorsque la session de test est terminée. Ne jamais activer le mode trace dans un terminal partagé; les arguments, environnements et sorties peuvent révéler des secrets.
+Confirmer depuis la [[Glossary:CLI]] ou l'API [[Glossary:SQL]] que le point est lisible, puis exécuter `unset INFLUXDB3_AUTH_TOKEN` lorsque la session de test est terminée. Ne jamais activer le mode trace dans un terminal partagé; les arguments, environnements et sorties peuvent révéler des secrets.
 
 ## 6. Exploitation et exposition réseau
 
 Fiche simple de cette étape : [contrôler l'exploitation](../../../../01-fiches-simples/debian/13/vie-du-logiciel/influxdb3-core/fiche-simple-influxdb3-core-debian-13-exploitation.md).
 
 - Laisser le service sous le compte système non privilégié et conserver les options de sandbox systemd livrées par le paquet.
-- Pour un pilote, garder loopback. Pour un accès distant, placer l'API derrière un proxy TLS approuvé, appliquer des règles réseau source/destination minimales et protéger les jetons; ne pas exposer directement TCP/8181.
+- Pour un pilote, garder loopback. Pour un accès distant, placer l'API derrière un proxy TLS approuvé, appliquer des règles réseau source/destination minimales et protéger les jetons; ne pas exposer directement [[Glossary:TCP]]/8181.
 - Créer des jetons séparés et limités aux usages nécessaires; conserver l'opérateur dans le coffre et ne pas le distribuer aux clients de collecte.
 - Définir une rétention explicite. Sans rétention, les données ne sont pas supprimées automatiquement. Contrôler les limites Core et la cardinalité des tables avant ingestion.
 - Surveiller espace libre, croissance des données, état du service, journaux systemd, échecs d'écriture et expiration/révocation des jetons.

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_12_Vie_Systeme_19_Configuration_Des_Depots_Logiciels
 
-- **Environnement** : VM Debian 12 « bookworm » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 12 « bookworm » (serveur)
 - **OS / Version** : Debian 12; étape 19 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian12`, `vie-du-systeme`, `cycle-de-vie`, `etape-19`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Définir les sources APT.
+Définir les sources [[Glossary:APT]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 

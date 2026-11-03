@@ -10,15 +10,15 @@
 
 Fiche simple : [cadrer l'auto-hébergement](../../../../01-fiches-simples/transverses/docker/bitwarden/fiche-simple-bitwarden-self-hosted-deploiement-cadrer-auto-hebergement.md).
 
-Comparer le besoin avec Bitwarden SaaS et vérifier les exigences de licence pour les fonctionnalités d'organisation. Prévoir un FQDN dédié, TLS valide, SMTP, stockage persistant, supervision, sauvegarde hors hôte et procédure de mise à jour. La procédure standard utilise une base MSSQL Express intégrée, limitée par ses spécifications; utiliser une base externe seulement selon les instructions Bitwarden.
+Comparer le besoin avec Bitwarden SaaS et vérifier les exigences de licence pour les fonctionnalités d'organisation. Prévoir un [[Glossary:FQDN]] dédié, [[Glossary:TLS]] valide, [[Glossary:SMTP]], stockage persistant, supervision, sauvegarde hors hôte et procédure de mise à jour. La procédure standard utilise une base MSSQL Express intégrée, limitée par ses spécifications; utiliser une base externe seulement selon les instructions Bitwarden.
 
-Le guide Bitwarden annonce pour le déploiement standard 2 vCPU/4 Go de RAM et 12/25 Go de stockage minimum/recommandé; dimensionner davantage selon comptes, pièces jointes, sauvegardes et journalisation. Ne pas exposer l'administration Docker ni l'interface d'administration de Bitwarden sur Internet.
+Le guide Bitwarden annonce pour le déploiement standard 2 vCPU/4 Go de [[Glossary:RAM]] et 12/25 Go de stockage minimum/recommandé; dimensionner davantage selon comptes, pièces jointes, sauvegardes et journalisation. Ne pas exposer l'administration Docker ni l'interface d'administration de Bitwarden sur Internet.
 
 ## 2. Préparer Linux et Docker
 
 Fiche simple : [préparer Linux et Docker](../../../../01-fiches-simples/transverses/docker/bitwarden/fiche-simple-bitwarden-self-hosted-deploiement-preparer-linux-docker.md).
 
-Installer une distribution Linux supportée, corriger le système, configurer DNS/NTP et Docker Engine 26+ avec Compose. Prévoir un compte local `bitwarden` et un chemin persistant `/opt/bitwarden`, protégé par des permissions strictes.
+Installer une distribution Linux supportée, corriger le système, configurer [[Glossary:DNS]]/NTP et Docker Engine 26+ avec Compose. Prévoir un compte local `bitwarden` et un chemin persistant `/opt/bitwarden`, protégé par des permissions strictes.
 
 Attention : appartenir au groupe `docker` confère généralement des privilèges équivalents à root sur l'hôte. Appliquer le modèle d'accès Docker approuvé et ne pas autoriser des utilisateurs ordinaires à contrôler le socket.
 
@@ -34,9 +34,9 @@ Lancer l'assistant d'installation et fournir le FQDN, l'option certificat (Let's
 
 Fiche simple : [configurer la messagerie et l'organisation](../../../../01-fiches-simples/transverses/docker/bitwarden/fiche-simple-bitwarden-self-hosted-deploiement-configurer-messagerie-organisation.md).
 
-Configurer SMTP dans `bwdata/env/global.override.env` pour les invitations et validations de compte. Si une organisation self-hosted est nécessaire, créer/lier la licence organisation selon les règles Bitwarden; régler explicitement inscription publique, communication cloud, rôles, collections, SSO/MFA et policy avant d'inviter les utilisateurs.
+Configurer SMTP dans `bwdata/env/global.override.env` pour les invitations et validations de compte. Si une organisation self-hosted est nécessaire, créer/lier la licence organisation selon les règles Bitwarden; régler explicitement inscription publique, communication cloud, rôles, collections, [[Glossary:SSO]]/MFA et policy avant d'inviter les utilisateurs.
 
-Appliquer les modifications par les commandes `restart` ou `rebuild` de l'installateur selon le type de configuration. Garder HTTP/HTTPS cohérent sur l'ensemble du déploiement et confirmer TLS pour l'accès client.
+Appliquer les modifications par les commandes `restart` ou `rebuild` de l'installateur selon le type de configuration. Garder [[Glossary:HTTP]]/HTTPS cohérent sur l'ensemble du déploiement et confirmer TLS pour l'accès client.
 
 ## 5. Démarrer et vérifier
 

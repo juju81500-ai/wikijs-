@@ -2,7 +2,7 @@
 
 - **Environnement** : OpenMediaVault 8 sur Debian 13 minimal
 - **OS / Version** : Debian 13; OpenMediaVault 8.0 Synchrony
-- **Catégorie** : stockage / NAS
+- **Catégorie** : stockage / [[Glossary:NAS]]
 - **Tags** : `debian13`, `openmediavault`, `cadrage`, `nas`
 
 ---
@@ -29,16 +29,16 @@ Décider si OMV s'installe sur une Debian 13 existante et vérifier les prérequ
    ```bash
    systemctl list-units --type=service --state=running --no-pager
    ```
-   👉 Explication : OMV peut remplacer la configuration réseau, SSH, Samba, Nginx et les montages.
+   👉 Explication : OMV peut remplacer la configuration réseau, [[Glossary:SSH]], Samba, Nginx et les montages.
 
 ## 2. Production — Contrôles
 
-Prévoir accès console hors bande, sauvegarde, fenêtre de maintenance, IP statique, DNS et Ethernet filaire. Pour du matériel dédié, l'ISO OMV est recommandée.
+Prévoir accès console hors bande, sauvegarde, fenêtre de maintenance, [[Glossary:IP]] statique, [[Glossary:DNS]] et Ethernet filaire. Pour du matériel dédié, l'ISO OMV est recommandée.
 
 ## 3. Production — Sécurité
 
 - Ne pas convertir un serveur Debian hébergeant des services critiques.
-- Ne pas installer OMV dans LXC.
+- Ne pas installer OMV dans [[Glossary:LXC]].
 
 ## Validation et retour arrière
 

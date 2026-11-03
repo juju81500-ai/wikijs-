@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Vie_Systeme_04_Preparation_Du_Support_D
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS « noble »
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] « noble »
 - **OS / Version** : Ubuntu 24-04; étape 04 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2404`, `vie-du-systeme`, `cycle-de-vie`, `etape-04`
@@ -13,7 +13,7 @@ Rendre l'ISO démarrable sur serveur physique ou VM.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Clé USB : repérer la clé, puis écrire l'image (remplacer `sdX` par la clé et `24-04.X` par la version de l'ISO; **efface tout**) :
+1. Clé [[Glossary:USB]] : repérer la clé, puis écrire l'image (remplacer `sdX` par la clé et `24-04.X` par la version de l'ISO; **efface tout**) :
    ```bash
    lsblk -o NAME,SIZE,MODEL,TRAN
    sudo dd if=~/iso/ubuntu-24.04.X-live-server-amd64.iso of=/dev/sdX bs=4M status=progress conv=fsync
@@ -29,7 +29,7 @@ Rendre l'ISO démarrable sur serveur physique ou VM.
 
 ## 2. Production — Contrôles
 
-Pour un serveur physique, utiliser la console distante (iDRAC, iLO, IPMI) pour monter l'image.
+Pour un serveur physique, utiliser la console distante (iDRAC, iLO, [[Glossary:IPMI]]) pour monter l'image.
 
 ## 3. Production — Sécurité
 

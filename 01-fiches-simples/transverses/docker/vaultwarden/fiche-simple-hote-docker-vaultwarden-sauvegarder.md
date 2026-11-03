@@ -17,7 +17,7 @@ Produire une sauvegarde cohérente des données Vaultwarden et la copier hors h�
    ```bash
    docker exec -it vaultwarden /vaultwarden backup
    ```
-   👉 Explication : la commande utilise l'API de sauvegarde SQLite et produit une copie cohérente.
+   👉 Explication : la commande utilise l'[[Glossary:API]] de sauvegarde SQLite et produit une copie cohérente.
 
 2. Vérifier le fichier produit :
    ```bash
@@ -28,7 +28,7 @@ Produire une sauvegarde cohérente des données Vaultwarden et la copier hors h�
 3. Copier hors hôte, sur un stockage chiffré, la sauvegarde ainsi que `attachments`, `sends`, `config.json` et les fichiers `rsa_key*`.
    👉 Explication : l'outil de copie peut être Restic ou Borg.
 
-4. Ne pas se reposer sur des snapshots de système de fichiers ou de VM.
+4. Ne pas se reposer sur des snapshots de système de fichiers ou de [[Glossary:VM]].
    👉 Explication : le projet les déconseille pour SQLite actif.
 
 ## 2. Production — Contrôles

@@ -1,6 +1,6 @@
 # Agrandir un volume logique LVM sur Debian 12
 
-- **Environnement** : VM ou serveur Debian 12 utilisant LVM
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 12 utilisant [[Glossary:LVM]]
 - **Catégorie** : Stockage / LVM
 - **Tags** : `debian12`, `lvm`, `disque`, `resize`, `ext4`, `xfs`
 
@@ -61,7 +61,7 @@ dmesg --level=err,warn | tail -50
 ```
    👉 Explication : confirme tailles attendues et absence d'erreur noyau.
 
-Confirmer que le LV et le système de fichiers ont la taille attendue et que les services restent sains. Les systèmes XFS se développent avec leurs outils propres ; `-r` est préférable à une commande `resize2fs` codée en dur.
+Confirmer que le LV et le système de fichiers ont la taille attendue et que les services restent sains. Les systèmes [[Glossary:XFS]] se développent avec leurs outils propres ; `-r` est préférable à une commande `resize2fs` codée en dur.
 
 ## Retour arrière
 

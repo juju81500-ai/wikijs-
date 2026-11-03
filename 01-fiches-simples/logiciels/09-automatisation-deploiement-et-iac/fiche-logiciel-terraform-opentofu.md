@@ -8,7 +8,7 @@
 
 ## 📚 Couverture dans le pack
 
-Couvert — Terraform et OpenTofu CLI Debian 13; fournisseurs/backends et environnements cloud doivent être validés séparément.
+Couvert — Terraform et OpenTofu [[Glossary:CLI]] Debian 13; fournisseurs/backends et environnements cloud doivent être validés séparément.
 
 ## 🧭 Utilisation
 

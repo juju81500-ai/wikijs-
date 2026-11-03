@@ -10,18 +10,18 @@
 
 À l'issue de cette leçon, vous saurez :
 
-1. distinguer **DAS, NAS et SAN**, et la différence fondamentale entre stockage **en mode fichier** et **en mode bloc** ;
-2. choisir le protocole adapté (SMB, NFS, iSCSI, Fibre Channel, NVMe over Fabrics) à un besoin donné ;
-3. décrire l'architecture iSCSI (initiateur, cible, portail, IQN, LUN, CHAP, masquage) et réaliser un montage iSCSI de laboratoire ;
+1. distinguer **DAS, [[Glossary:NAS]] et [[Glossary:SAN]]**, et la différence fondamentale entre stockage **en mode fichier** et **en mode bloc** ;
+2. choisir le protocole adapté (SMB, [[Glossary:NFS]], iSCSI, Fibre Channel, NVMe over Fabrics) à un besoin donné ;
+3. décrire l'architecture iSCSI (initiateur, cible, portail, IQN, [[Glossary:LUN]], CHAP, masquage) et réaliser un montage iSCSI de laboratoire ;
 4. expliquer le **multipath** (chemins redondants, bascule, politiques) et savoir le vérifier ;
-5. différencier **snapshot** et **réplication**, définir RPO et RTO, et placer ces mécanismes dans une stratégie de protection ;
-6. dimensionner un stockage (capacité, IOPS, débit, latence) et reconnaître les pièges de performance classiques.
+5. différencier **snapshot** et **réplication**, définir [[Glossary:RPO]] et [[Glossary:RTO]], et placer ces mécanismes dans une stratégie de protection ;
+6. dimensionner un stockage (capacité, [[Glossary:IOPS]], débit, latence) et reconnaître les pièges de performance classiques.
 
 ## Prérequis et durée
 
-- Notions de réseau IP (adresse, masque, VLAN, MTU) et de ligne de commande Linux.
-- Avoir lu les leçons voisines : [Stockage local](lecon-stockage-local.md) (RAID, LVM, systèmes de fichiers) et [Partage de fichiers](lecon-partage-fichiers.md) (SMB, NFS).
-- Une VM Linux **jetable** (Debian/Ubuntu Server récent, 2 Go de RAM, 3 Go de disque libre) pour la partie pratique.
+- Notions de réseau [[Glossary:IP]] (adresse, masque, [[Glossary:VLAN]], [[Glossary:MTU]]) et de ligne de commande Linux.
+- Avoir lu les leçons voisines : [Stockage local](lecon-stockage-local.md) ([[Glossary:RAID]], [[Glossary:LVM]], systèmes de fichiers) et [Partage de fichiers](lecon-partage-fichiers.md) (SMB, NFS).
+- Une [[Glossary:VM]] Linux **jetable** (Debian/Ubuntu Server récent, 2 Go de [[Glossary:RAM]], 3 Go de disque libre) pour la partie pratique.
 - Durée totale : environ 3 h 30.
 
 Convention : adresses de documentation (`192.0.2.0/24` pour les serveurs, `198.51.100.0/24` pour le réseau de stockage, `203.0.113.0/24` pour un site distant), domaine `example.test`. Les identifiants iSCSI (IQN) sont fictifs.
@@ -30,7 +30,7 @@ Convention : adresses de documentation (`192.0.2.0/24` pour les serveurs, `198.5
 
 - **NAS** (*Network Attached Storage*) : un équipement qui **partage des fichiers** (SMB, NFS). Le NAS gère le système de fichiers ; le client voit un dossier.
 - **SAN** (*Storage Area Network*) : un réseau dédié qui **présente des disques bruts** (LUN) à des serveurs en **mode bloc** (iSCSI, Fibre Channel). Le serveur crée et gère lui-même son système de fichiers.
-- **iSCSI** transporte les commandes SCSI sur TCP/IP (port 3260) : un SAN accessible avec du matériel Ethernet standard.
+- **iSCSI** transporte les commandes SCSI sur [[Glossary:TCP]]/IP (port 3260) : un SAN accessible avec du matériel Ethernet standard.
 - **Multipath** : plusieurs chemins entre serveur et baie, regroupés en un périphérique unique ; il protège d'une panne de carte, de câble, de commutateur ou de contrôleur.
 - **Snapshot** = photographie locale d'un état (protège des erreurs) ; **réplication** = copie vers un autre site (protège des sinistres) ; ni l'un ni l'autre n'est une sauvegarde complète.
 - Le dimensionnement se fait sur **quatre axes** : capacité, IOPS, débit, latence. Les pièges majeurs : réseau partagé ou mal configuré (MTU), chemin unique, RAID 5 sur charge d'écritures aléatoires, snapshots oubliés, sur-allocation (thin provisioning) non surveillée.
@@ -57,7 +57,7 @@ Le disque interne ne suffit plus dès qu'il faut partager, protéger, faire évo
 | Qui gère le système de fichiers | Le NAS | Le serveur client |
 | Protocoles | SMB, NFS | iSCSI, Fibre Channel, FCoE, NVMe-oF |
 | Partage simultané par plusieurs clients | Natif (verrous gérés par le serveur) | **Non** sans système de fichiers de cluster (VMFS, CSV, GFS2, OCFS2) |
-| Permissions | Utilisateurs/groupes, ACL | Masquage de LUN (qui voit quel volume), pas de notion de fichier |
+| Permissions | Utilisateurs/groupes, [[Glossary:ACL]] | Masquage de LUN (qui voit quel volume), pas de notion de fichier |
 | Usage typique | Dossiers utilisateurs, partages de service, sauvegardes | Bases de données, machines virtuelles, clusters |
 | Complexité | Faible | Plus élevée |
 | Latence | Plus élevée (couche de protocole fichier) | Plus faible |
@@ -79,7 +79,7 @@ SMB (TCP 445) et NFS (TCP 2049), vus dans la leçon sur le partage de fichiers. 
 Le **SCSI** est le langage historique des commandes de disque (« lis N blocs à l'adresse X ») ; le réseau ne fait que les **transporter** :
 
 - **SAS** : liaison directe point à point (DAS), non routable ;
-- **Fibre Channel (FC)** : réseau dédié à haute fiabilité (fibre optique, commutateurs FC, cartes HBA), très utilisé dans les grandes entreprises, avec des débits de 16, 32 ou 64 Gbit/s ; l'isolement des accès se fait par **zoning** ;
+- **Fibre Channel (FC)** : réseau dédié à haute fiabilité (fibre optique, commutateurs FC, cartes [[Glossary:HBA]]), très utilisé dans les grandes entreprises, avec des débits de 16, 32 ou 64 Gbit/s ; l'isolement des accès se fait par **zoning** ;
 - **FCoE** : Fibre Channel encapsulé dans Ethernet, en net recul ;
 - **iSCSI** : SCSI sur TCP/IP, normalisé par la **RFC 7143** ; il s'appuie sur l'Ethernet banalisé (10, 25, 100 GbE), d'où un coût moindre ;
 - **NVMe over Fabrics (NVMe-oF)** : prolonge le protocole NVMe (flash) sur le réseau (RDMA, Fibre Channel ou TCP) pour des latences très basses ; technologie récente, à envisager pour les charges les plus exigeantes.
@@ -103,7 +103,7 @@ Le **SCSI** est le langage historique des commandes de disque (« lis N blocs à
 
 ### 2.4 Sécurité d'un SAN iSCSI
 
-iSCSI n'est **pas chiffré** par défaut. Règles : **réseau dédié** (VLAN ou commutateurs séparés) non routé vers les postes ; **masquage de LUN** par IQN et CHAP (voire CHAP mutuel) ; aucune cible sur un réseau non maîtrisé ; IPsec ou VPN pour traverser un réseau non fiable (au prix de la performance).
+iSCSI n'est **pas chiffré** par défaut. Règles : **réseau dédié** (VLAN ou commutateurs séparés) non routé vers les postes ; **masquage de LUN** par IQN et CHAP (voire CHAP mutuel) ; aucune cible sur un réseau non maîtrisé ; IPsec ou [[Glossary:VPN]] pour traverser un réseau non fiable (au prix de la performance).
 
 Côté Fibre Channel, l'équivalent est le **zoning** sur les commutateurs et le masquage de LUN sur la baie.
 
@@ -207,11 +207,11 @@ Connect-IscsiTarget -NodeAddress "iqn.2026-11.test.example:labo.cible1" -IsPersi
 Get-Disk | Where-Object BusType -eq 'iSCSI'
 ```
 
-👉 Explication : ouvre la session de façon persistante (reconnexion au redémarrage) puis liste les disques arrivés par iSCSI ; ils doivent ensuite être initialisés (GPT), partitionnés et formatés comme tout disque.
+👉 Explication : ouvre la session de façon persistante (reconnexion au redémarrage) puis liste les disques arrivés par iSCSI ; ils doivent ensuite être initialisés ([[Glossary:GPT]]), partitionnés et formatés comme tout disque.
 
 ### 3.4 Le danger du volume partagé
 
-Présenter la même LUN à **deux** serveurs avec ext4 ou NTFS est le moyen le plus sûr de **détruire** les données : chacun corrompt les métadonnées de l'autre. Il faut un **système de fichiers de cluster** (VMFS, CSV, GFS2, OCFS2) ; d'où le masquage de LUN.
+Présenter la même LUN à **deux** serveurs avec ext4 ou [[Glossary:NTFS]] est le moyen le plus sûr de **détruire** les données : chacun corrompt les métadonnées de l'autre. Il faut un **système de fichiers de cluster** (VMFS, CSV, GFS2, OCFS2) ; d'où le masquage de LUN.
 
 ## 4. Multipath : plusieurs chemins, un seul disque
 
@@ -284,9 +284,9 @@ En **préproduction**, débranchez un chemin pendant une copie de gros fichier :
 Un **snapshot** (instantané) fige l'état d'un volume à un instant donné. Il n'occupe presque rien au départ ; l'espace consommé croît avec les modifications. Deux techniques principales :
 
 - **copie sur écriture** (*copy-on-write*) : avant d'écraser un bloc, on copie l'ancien dans une zone réservée ; les écritures sont plus lourdes tant que le snapshot existe ;
-- **redirection sur écriture** (*redirect-on-write*, ZFS, nombreuses baies) : les nouvelles données sont écrites ailleurs et le snapshot continue de pointer sur les anciens blocs ; l'impact sur les performances est faible.
+- **redirection sur écriture** (*redirect-on-write*, [[Glossary:ZFS]], nombreuses baies) : les nouvelles données sont écrites ailleurs et le snapshot continue de pointer sur les anciens blocs ; l'impact sur les performances est faible.
 
-Un snapshot est **cohérent après plantage** (*crash-consistent*). Pour une base de données, on veut un état **cohérent applicativement** : l'application vide ses tampons (VSS sous Windows, scripts de pré-gel sous Linux) juste avant.
+Un snapshot est **cohérent après plantage** (*crash-consistent*). Pour une base de données, on veut un état **cohérent applicativement** : l'application vide ses tampons ([[Glossary:VSS]] sous Windows, scripts de pré-gel sous Linux) juste avant.
 
 Utilité : retour arrière rapide, source figée pour une sauvegarde. Limites : même équipement (**pas une sauvegarde**), espace consommé, chaîne qui ralentit en vieillissant.
 
@@ -333,7 +333,7 @@ L'**allocation fine** (*thin provisioning*) promet plus d'espace que le physique
 3. **Débit** (Mo/s) : volume de données par seconde, pertinent pour les gros transferts séquentiels (sauvegardes, vidéo).
 4. **Latence** (ms) : temps de réponse d'une opération ; c'est ce que ressent l'application.
 
-Ordres de grandeur indicatifs (à valider par mesure) : plateaux 7 200 tr/min ≈ 80 à 100 IOPS aléatoires ; 15 000 tr/min ≈ 180 à 200 ; SSD SATA ≈ dizaines de milliers ; NVMe ≈ centaines de milliers.
+Ordres de grandeur indicatifs (à valider par mesure) : plateaux 7 200 tr/min ≈ 80 à 100 IOPS aléatoires ; 15 000 tr/min ≈ 180 à 200 ; [[Glossary:SSD]] [[Glossary:SATA]] ≈ dizaines de milliers ; NVMe ≈ centaines de milliers.
 
 Lien entre IOPS et débit : **débit ≈ IOPS × taille d'une opération**. Exemple : 5 000 IOPS en blocs de 8 Kio = 40 000 Kio/s, soit environ 40 Mo/s ; la même charge en blocs de 64 Kio demanderait ~320 Mo/s.
 
@@ -372,7 +372,7 @@ fio --name=test-aleatoire --filename=/mnt/san/fio.test --size=256M --rw=randrw -
 7. **Snapshots oubliés** : espace et performances dégradés. → rétention et suppression automatique.
 8. **Désalignement de partitions**. → partitions démarrant à 1 Mio.
 9. **Petits fichiers sur NAS**, antivirus ou indexation, chiffrement sans accélération matérielle.
-10. **DNS/NTP** défaillants (portail lent, Kerberos). → IP fixes pour les portails, heure synchronisée.
+10. **[[Glossary:DNS]]/NTP** défaillants (portail lent, Kerberos). → IP fixes pour les portails, heure synchronisée.
 11. **Aucun test de restauration** ni de plan de reprise joué.
 
 Supervisez ensemble **latence**, **occupation** (pool, volumes, snapshots), **santé des chemins** et **erreurs réseau** : une latence qui monte est souvent le premier signe d'un problème.
@@ -466,7 +466,7 @@ sudo rm -f /srv/iscsi/lun0.img
 ## Exercices
 
 1. **(Vocabulaire)** Définissez en une phrase chacun des termes : LUN, IQN, initiateur, portail.
-2. **(Classification)** Pour chaque cas, indiquez « NAS » ou « SAN » et justifiez : (a) dossiers personnels de 200 utilisateurs, (b) volume de base de données SQL en cluster, (c) répertoire partagé d'images pour une équipe graphique sur postes macOS et Windows, (d) disque d'un hyperviseur utilisant VMFS.
+2. **(Classification)** Pour chaque cas, indiquez « NAS » ou « SAN » et justifiez : (a) dossiers personnels de 200 utilisateurs, (b) volume de base de données [[Glossary:SQL]] en cluster, (c) répertoire partagé d'images pour une équipe graphique sur postes macOS et Windows, (d) disque d'un hyperviseur utilisant VMFS.
 3. **(Protocoles)** Pourquoi iSCSI est-il souvent choisi par les PME face au Fibre Channel ? Donnez deux avantages et deux précautions de sécurité.
 4. **(Danger)** Un technicien présente la même LUN (ext4) à deux serveurs « pour partager les données ». Expliquez le risque et proposez deux solutions correctes.
 5. **(Multipath)** Un serveur voit `/dev/sdb` et `/dev/sdc` de même taille et `multipath -ll` n'affiche rien. Que supposez-vous ? Quelles vérifications ?

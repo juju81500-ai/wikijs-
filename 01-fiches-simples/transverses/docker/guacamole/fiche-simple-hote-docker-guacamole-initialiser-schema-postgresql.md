@@ -24,7 +24,7 @@ Créer le schéma Guacamole dans une base PostgreSQL vide.
    ```bash
    docker run --rm guacamole/guacamole:1.6.0 /opt/guacamole/bin/initdb.sh --postgresql > initdb.sql
    ```
-   👉 Explication : l'outil `initdb.sh` fournit le SQL de la même version; le fichier ne contient aucun secret.
+   👉 Explication : l'outil `initdb.sh` fournit le [[Glossary:SQL]] de la même version; le fichier ne contient aucun secret.
 
 3. Importer dans la base neuve (adapter utilisateur et base si modifiés) :
    ```bash

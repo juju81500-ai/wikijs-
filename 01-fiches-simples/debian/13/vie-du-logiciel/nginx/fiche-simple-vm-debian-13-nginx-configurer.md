@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Nginx_Configurer
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; Nginx des dépôts Debian
 - **Catégorie** : serveur Web / Nginx / Configurer un site
 - **Tags** : `debian13`, `nginx`, `configuration`
@@ -35,7 +35,7 @@ Publier un site statique et un reverse proxy minimal avec un server block dédi�
    }
    EOF
    ```
-   👉 Explication : remplacer `SITE` et `SITE.example.net` (à remplacer par le nom DNS réel).
+   👉 Explication : remplacer `SITE` et `SITE.example.net` (à remplacer par le nom [[Glossary:DNS]] réel).
 
 3. Ajouter, si besoin, un reverse proxy vers une application locale :
    ```bash

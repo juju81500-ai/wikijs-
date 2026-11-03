@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Podman_Buildah_Configurer_Rootless
 
-- **Environnement** : VM Debian 13 de laboratoire, utilisateur sudoer et compte de service dédié
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire, utilisateur sudoer et compte de service dédié
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : conteneurs
 - **Tags** : `debian13`, `podman`, `buildah`, `conteneurs`, `rootless`, `oci`

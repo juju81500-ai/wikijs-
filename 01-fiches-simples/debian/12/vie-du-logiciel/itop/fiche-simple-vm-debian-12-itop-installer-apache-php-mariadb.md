@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-12-itop-installer-apache-php-mariadb.md
 
-- **Environnement** : VM Linux dédiée avec Apache, PHP 8.2 ou 8.3 et MariaDB 10.11 (serveur ITSM/CMDB)
-- **OS / Version** : Debian 12 Bookworm (ou Ubuntu Server 24-04 LTS); iTop Community 3.3.0
-- **Catégorie** : ITSM / CMDB / helpdesk
+- **Environnement** : [[Glossary:VM]] Linux dédiée avec Apache, PHP 8.2 ou 8.3 et MariaDB 10.11 (serveur [[Glossary:ITSM]]/CMDB)
+- **OS / Version** : Debian 12 Bookworm (ou Ubuntu Server 24-04 [[Glossary:LTS]]); iTop Community 3.3.0
+- **Catégorie** : ITSM / [[Glossary:CMDB]] / helpdesk
 - **Tags** : `debian12`, `itop`, `itsm`, `cmdb`, `apache`, `mariadb`
 
 ---
@@ -47,7 +47,7 @@ Installer la pile web et base de données requise par iTop.
    ```
    👉 Explication : toutes les extensions requises doivent apparaître.
 
-6. Configurer TLS et un VirtualHost Apache avec le nom DNS réel avant d'ouvrir l'application.
+6. Configurer [[Glossary:TLS]] et un VirtualHost Apache avec le nom [[Glossary:DNS]] réel avant d'ouvrir l'application.
    👉 Explication : le HTTPS doit être actif pour les utilisateurs.
 
 ## 2. Production — Contrôles

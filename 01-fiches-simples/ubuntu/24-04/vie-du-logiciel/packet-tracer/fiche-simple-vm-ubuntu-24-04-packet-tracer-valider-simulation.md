@@ -1,6 +1,6 @@
 # fiche-simple-vm-ubuntu-24-04-packet-tracer-valider-simulation.md
 
-- **Environnement** : Cisco Packet Tracer 9.0.1 sur Ubuntu Desktop 24-04 LTS
+- **Environnement** : Cisco Packet Tracer 9.0.1 sur Ubuntu Desktop 24-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 24-04 LTS amd64
 - **Catégorie** : simulation réseau / formation
 - **Tags** : `ubuntu2404`, `cisco`, `packettracer`, `simulation`, `validation`, `formation`
@@ -33,7 +33,7 @@ Vérifier qu'une topologie pédagogique locale se crée, se sauvegarde et foncti
 4. Créer la topologie : en bas à gauche, **End Devices** > glisser deux PC, **Network Devices > Switches** > un commutateur, puis **Connections** (câble droit) pour relier les PC au commutateur.
    👉 Explication : aucun nœud connecté au réseau physique.
 
-5. Configurer des IP (clic sur PC > **Desktop > IP Configuration**, ex. 192.0.2.1 et 192.0.2.2 /24), tester avec **Desktop > Command Prompt** : `ping 192.0.2.2`. Enregistrer : **File > Save**, puis **File > Open**.
+5. Configurer des [[Glossary:IP]] (clic sur PC > **Desktop > IP Configuration**, ex. 192.0.2.1 et 192.0.2.2 /24), tester avec **Desktop > Command Prompt** : `ping 192.0.2.2`. Enregistrer : **File > Save**, puis **File > Open**.
    👉 Explication : vérifier liens, adresses et résultat du ping après réouverture.
 
 ## 2. Production — Contrôles

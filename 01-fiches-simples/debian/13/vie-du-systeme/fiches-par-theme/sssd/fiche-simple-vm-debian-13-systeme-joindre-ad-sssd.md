@@ -1,12 +1,12 @@
 # 📄 Fiche_Simple_-_VM_Debian_13_Systeme_Joindre_AD_Sssd
 
-- **Environnement** : VM ou serveur Debian 13 membre d'un domaine Active Directory existant
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 13 membre d'un domaine Active Directory existant
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
 - **Catégorie** : Système & Services / Annuaire et authentification
 - **Tags** : `[debian13]`, `[debian]`, `[active-directory]`, `[realmd]`, `[sssd]`, `[kerberos]`
 
 ## 🎯 Problème précis à résoudre
-Joindre une machine Debian 13 à un domaine Active Directory avec `realmd` et `sssd`, afin que les comptes du domaine puissent se connecter localement et en SSH, sans créer manuellement chaque utilisateur.
+Joindre une machine Debian 13 à un domaine Active Directory avec `realmd` et `sssd`, afin que les comptes du domaine puissent se connecter localement et en [[Glossary:SSH]], sans créer manuellement chaque utilisateur.
 
 ---
 
@@ -18,12 +18,12 @@ Joindre une machine Debian 13 à un domaine Active Directory avec `realmd` et `s
    ```
    👉 Explication : `realmd` découvre et joint le domaine, `sssd` fournit l'authentification et la résolution des comptes, `adcli` et `samba-common-bin` effectuent la jonction, `krb5-user` gère Kerberos. Pendant l'installation de `krb5-user`, saisir le domaine en majuscules (par exemple `EXEMPLE.LOCAL`) comme royaume Kerberos.
 
-2. Vérifier que le domaine est découvert et que la résolution DNS fonctionne :
+2. Vérifier que le domaine est découvert et que la résolution [[Glossary:DNS]] fonctionne :
    ```bash
    sudo realm discover <domaine_ad>
    getent hosts <controleur_domaine>
    ```
-   👉 Explication : `realm discover` interroge les enregistrements DNS SRV du domaine. Sans résolution DNS vers le contrôleur de domaine, la jonction échoue ; le serveur DNS du client doit être le contrôleur AD.
+   👉 Explication : `realm discover` interroge les enregistrements DNS SRV du domaine. Sans résolution DNS vers le contrôleur de domaine, la jonction échoue ; le serveur DNS du client doit être le contrôleur [[Glossary:AD]].
 
 3. Joindre le domaine avec un compte autorisé à ajouter des machines :
    ```bash
@@ -55,7 +55,7 @@ Joindre une machine Debian 13 à un domaine Active Directory avec `realmd` et `s
    sudo pam-auth-update --enable mkhomedir
    id <utilisateur_ad>
    ```
-   👉 Explication : `pam-auth-update` est l'outil Debian qui active les modules PAM. `id` doit afficher les groupes du domaine, ce qui prouve que `sssd` répond.
+   👉 Explication : `pam-auth-update` est l'outil Debian qui active les modules [[Glossary:PAM]]. `id` doit afficher les groupes du domaine, ce qui prouve que `sssd` répond.
 
 ---
 

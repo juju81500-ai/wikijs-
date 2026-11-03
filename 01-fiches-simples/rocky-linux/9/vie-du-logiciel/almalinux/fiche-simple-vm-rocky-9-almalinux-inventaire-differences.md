@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_9_AlmaLinux_Inventaire_Differences
 
-- **Environnement** : VM Rocky Linux 9 comme repère documentaire; sujet AlmaLinux
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 comme repère documentaire; sujet AlmaLinux
 - **OS / Version** : AlmaLinux 8/9 selon la matrice officielle du chemin étudié; contrôles depuis clone Rocky Linux 9
 - **Catégorie** : Vie du logiciel / AlmaLinux — Inventorier les différences
 - **Tags** : `rocky9`, `almalinux`, `rhel`, `migration`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Identifier OS, dépôts, release RPM et support avant réemploi d’une procédure Rocky.
+Identifier OS, dépôts, release [[Glossary:RPM]] et support avant réemploi d’une procédure Rocky.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

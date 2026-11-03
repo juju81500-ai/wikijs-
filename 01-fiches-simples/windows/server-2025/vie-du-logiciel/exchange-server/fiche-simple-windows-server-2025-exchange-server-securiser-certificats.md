@@ -2,7 +2,7 @@
 
 - **Environnement** : Windows Server 2025 Standard ou Datacenter; Exchange Server Subscription Edition
 - **OS / Version** : Windows Server 2025; Exchange SE — valider le build et les prérequis publiés avant intervention
-- **Catégorie** : messagerie / sécurité TLS
+- **Catégorie** : messagerie / sécurité [[Glossary:TLS]]
 - **Tags** : `windows-server-2025`, `exchange-server-se`, `messagerie`, `securiser-certificats`
 
 ---
@@ -13,13 +13,13 @@ Installer et affecter un certificat TLS public ou interne valide aux services Ex
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Inventorier les noms DNS réellement utilisés par les clients et les services Exchange avant de demander le certificat.
+1. Inventorier les noms [[Glossary:DNS]] réellement utilisés par les clients et les services Exchange avant de demander le certificat.
    👉 Explication : seuls les noms nécessaires au service doivent être inclus; la liste est à valider avec les responsables DNS.
 
 2. Dans l’EAC, ouvrir **Serveurs > Certificats**, sélectionner le serveur Exchange SE et suivre l’action de création de demande ou d’import décrite par Microsoft.
    👉 Explication : adapter les intitulés à la version et ne pas transmettre la clé privée par un canal non approuvé.
 
-3. Affecter le certificat validé uniquement aux services requis (par exemple IIS et SMTP selon le scénario documenté).
+3. Affecter le certificat validé uniquement aux services requis (par exemple [[Glossary:IIS]] et [[Glossary:SMTP]] selon le scénario documenté).
    👉 Explication : une affectation erronée peut interrompre les connexions clientes ou le transport de courrier.
 
 4. Contrôler les certificats présents dans Exchange Management Shell :
@@ -30,7 +30,7 @@ Installer et affecter un certificat TLS public ou interne valide aux services Ex
 
 ## 2. Production — Contrôles
 
-Planifier une fenêtre de changement, sauvegarder les configurations concernées, vérifier l’état AD/DNS et Exchange, puis appliquer les étapes d’abord en environnement pilote.
+Planifier une fenêtre de changement, sauvegarder les configurations concernées, vérifier l’état [[Glossary:AD]]/DNS et Exchange, puis appliquer les étapes d’abord en environnement pilote.
 
 ## 3. Production — Sécurité
 

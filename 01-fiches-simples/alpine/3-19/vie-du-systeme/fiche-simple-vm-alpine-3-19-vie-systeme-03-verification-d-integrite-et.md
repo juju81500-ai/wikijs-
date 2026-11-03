@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_03_Verification_D_Integrite_Et
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 03 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-03`
@@ -43,7 +43,7 @@ Une empreinte qui ne correspond pas impose de supprimer l'ISO et de la retéléc
 
 ## Validation et retour arrière
 
-- **Validation** : `OK` pour le SHA-256 et `Good signature` pour GPG.
+- **Validation** : `OK` pour le SHA-256 et `Good signature` pour [[Glossary:GPG]].
 - **Retour arrière** : restaurer le snapshot ou la sauvegarde pris avant l'étape; consigner l'écart avant de poursuivre.
 
 ## Si le problème n'est pas résolu

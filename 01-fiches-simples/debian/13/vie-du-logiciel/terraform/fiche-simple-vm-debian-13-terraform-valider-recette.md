@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Terraform_Valider_Recette
 
-- **Environnement** : VM Debian 13 de laboratoire avec fournisseur sandbox
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire avec fournisseur sandbox
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : infrastructure as code
 - **Tags** : `debian13`, `terraform`, `iac`, `state`, `securite`
@@ -12,7 +12,7 @@ Inspecter chaque changement avant apply et vérifier l’état final dans un com
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Formater et valider HCL
+1. Formater et valider [[Glossary:HCL]]
    ```bash
    terraform fmt -check -recursive
    terraform validate

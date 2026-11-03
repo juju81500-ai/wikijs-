@@ -1,7 +1,7 @@
 # Fiche_Simple_-_Cloud_AWS_Supervision_Alertes
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — AWS CLI v2
+- **OS / Version** : Cloud/SaaS — AWS [[Glossary:CLI]] v2
 - **Catégorie** : cloud public / supervision et alertes
 - **Tags** : `aws`, `supervision_alertes`, `securite`, `procedure`
 
@@ -28,7 +28,7 @@ aws cloudwatch describe-alarms --region REGION
 
 ## 2. Production — Contrôles
 
-Définir propriétaire, sévérité, seuils fondés sur SLO, escalade, canal d’astreinte et comportement en absence de métriques.
+Définir propriétaire, sévérité, seuils fondés sur [[Glossary:SLO]], escalade, canal d’astreinte et comportement en absence de métriques.
 
 ## 3. Production — Sécurité
 

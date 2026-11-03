@@ -1,8 +1,8 @@
 # 📄 VM_Debian_12_Securite_SSH-Cle-Sshd.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
-- **Catégorie** : Sécurité & Accès distant / Authentification SSH
+- **Catégorie** : Sécurité & Accès distant / Authentification [[Glossary:SSH]]
 - **Tags** : `[debian12]`, `[debian-family]`, `[ssh]`, `[sshd]`, `[ed25519]`, `[authorized-keys]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre

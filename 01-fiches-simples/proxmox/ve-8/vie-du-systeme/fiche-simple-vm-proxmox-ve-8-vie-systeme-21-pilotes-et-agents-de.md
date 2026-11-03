@@ -13,7 +13,7 @@ Installer les agents pour les invités et vérifier les pilotes de l'hôte.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Sur chaque VM, installer l'agent QEMU (Debian/Ubuntu : `apt install qemu-guest-agent`; Windows : pilotes VirtIO). Côté hôte, l'activer (GUI : **VM > Options > QEMU Guest Agent > Edit > Enabled**) :
+1. Sur chaque [[Glossary:VM]], installer l'agent [[Glossary:QEMU]] (Debian/Ubuntu : `apt install qemu-guest-agent`; Windows : pilotes VirtIO). Côté hôte, l'activer ([[Glossary:GUI]] : **VM > Options > QEMU Guest Agent > Edit > Enabled**) :
    ```bash
    qm set VMID --agent enabled=1
    qm agent VMID ping
@@ -23,7 +23,7 @@ Installer les agents pour les invités et vérifier les pilotes de l'hôte.
 2. Utiliser les pilotes VirtIO pour disque et réseau (GUI : **VM > Hardware > Add > Network Device > Model: VirtIO**).
    👉 Explication : meilleures performances que les pilotes émulés.
 
-3. Contrôler le microcode CPU et les pilotes réseau de l'hôte :
+3. Contrôler le microcode [[Glossary:CPU]] et les pilotes réseau de l'hôte :
    ```bash
    apt install -y intel-microcode
    lspci -k | grep -A2 -i ethernet

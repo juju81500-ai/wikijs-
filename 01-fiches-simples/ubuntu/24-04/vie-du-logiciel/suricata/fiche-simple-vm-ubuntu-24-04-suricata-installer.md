@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Suricata_Installer
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Suricata
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Suricata
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Suricata / installation
 - **Tags** : `suricata`, `ubuntu24.04`, `vie-du-logiciel`, `installer`
@@ -26,7 +26,7 @@ Installer Suricata depuis les dépôts de Ubuntu 24-04 (universe).
    suricata --build-info | head -n 20
    suricata -V
    ```
-   👉 Explication : Installe le moteur, suricata-update et jq (lecture des journaux JSON). `--build-info` montre les fonctions compilées dont AF_PACKET.
+   👉 Explication : Installe le moteur, suricata-update et jq (lecture des journaux [[Glossary:JSON]]). `--build-info` montre les fonctions compilées dont AF_PACKET.
 
 3. Ne pas démarrer avant configuration :
    ```bash

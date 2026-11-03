@@ -1,6 +1,6 @@
 # Kali Linux et Parrot OS : laboratoire défensif isolé
 
-- **OS / Version** : Kali Linux et Parrot Security (VM de laboratoire)
+- **OS / Version** : Kali Linux et Parrot Security ([[Glossary:VM]] de laboratoire)
 - **Type de fiche** : Installation/Déploiement
 - **Périmètre** : Poste de laboratoire isolé pour valider ses propres détections et durcissements, sans usage hors lab
 - **Catégorie** : Laboratoire cybersécurité
@@ -9,7 +9,7 @@
 ## 1. Portée, hypothèses et licences
 
 - Ces distributions contiennent des outils d'audit pouvant être illégaux ou dommageables s'ils sont utilisés sans autorisation. Toute action décrite ici s'exécute uniquement sur des systèmes que vous possédez ou pour lesquels vous disposez d'une autorisation écrite (périmètre, dates, contacts). L'usage est limité à un réseau de laboratoire isolé, jamais sur le réseau de production ni sur Internet.
-- Objectif défensif : générer des événements contrôlés pour vérifier la détection (SIEM, EDR, journaux), contrôler le durcissement de cibles de lab, et former les équipes.
+- Objectif défensif : générer des événements contrôlés pour vérifier la détection ([[Glossary:SIEM]], EDR, journaux), contrôler le durcissement de cibles de lab, et former les équipes.
 - Licences : distributions libres avec des outils sous licences diverses ; consulter les conditions de chaque outil.
 - Interdit : analyse de réseaux tiers, attaque de comptes réels, déploiement sur un poste de travail de production. Les profils des équipes sont signalés dans la charte d'usage.
 
@@ -49,7 +49,7 @@ sudo apt full-upgrade
 
 ## 5. Scénarios défensifs autorisés
 
-- Générer un événement connu (tentative de connexion SSH échouée sur une cible de lab) et confirmer qu'il apparaît dans le SIEM.
+- Générer un événement connu (tentative de connexion [[Glossary:SSH]] échouée sur une cible de lab) et confirmer qu'il apparaît dans le SIEM.
 - Vérifier les ports exposés d'une cible de lab avec un scanner de ports, puis comparer à la politique de pare-feu.
 - Rejouer des tests de détection documentés dans un catalogue de techniques, sur des cibles de lab seulement.
 - Chaque scénario consigne : cible, heure, commande, résultat attendu, alerte observée.

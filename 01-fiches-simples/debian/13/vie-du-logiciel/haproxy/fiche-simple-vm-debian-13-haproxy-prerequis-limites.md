@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_HAProxy_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; HAProxy des dépôts Debian
 - **Catégorie** : répartiteur de charge / HAProxy / Prérequis et limites
 - **Tags** : `debian13`, `haproxy`, `prerequis`
@@ -21,7 +21,7 @@ Cadrer un HAProxy seul sur Debian 13 (répartiteur de charge / reverse proxy) av
    👉 Explication : 80/443 pour le trafic, 8404 (exemple) pour les statistiques.
 
 2. Lister les serveurs d'arrière-plan :
-   👉 Explication : dresser la liste des applications à publier (adresse IP, port, protocole, chemin de santé) ; chacun doit répondre depuis la VM.
+   👉 Explication : dresser la liste des applications à publier (adresse [[Glossary:IP]], port, protocole, chemin de santé) ; chacun doit répondre depuis la VM.
 
 3. Tester l'accessibilité d'un backend :
    ```bash
@@ -30,11 +30,11 @@ Cadrer un HAProxy seul sur Debian 13 (répartiteur de charge / reverse proxy) av
    👉 Explication : remplacer `IP_BACKEND` et `PORT_BACKEND` (à remplacer) ; sans réponse, corriger le réseau avant d'installer.
 
 4. Noter les limites :
-   👉 Explication : série pour un nœud unique (la haute disponibilité VRRP est dans la série Keepalived-HAProxy) ; version Debian à vérifier avec `apt-cache policy haproxy`.
+   👉 Explication : série pour un nœud unique (la haute disponibilité [[Glossary:VRRP]] est dans la série Keepalived-HAProxy) ; version Debian à vérifier avec `apt-cache policy haproxy`.
 
 ## 2. Production — Contrôles
 
-Consigner IP/DNS, backends, mode (HTTP ou TCP), certificats, responsable, fenêtre de maintenance.
+Consigner IP/DNS, backends, mode ([[Glossary:HTTP]] ou [[Glossary:TCP]]), certificats, responsable, fenêtre de maintenance.
 
 ## 3. Production — Sécurité
 

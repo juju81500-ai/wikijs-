@@ -1,13 +1,13 @@
 # 📄 MobaXterm
 
-- **Environnement** : VM (Windows Server 2022)
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022)
 - **OS / Version** : Windows Server 2022 (Desktop Experience), PowerShell 5.1
 - **Version** : MobaXterm 24.x (paquet winget `Mobatek.MobaXterm`, à vérifier sur la version déployée)
 - **Catégorie** : Scripting, développement et administration
 - **Tags** : `[windows-server-2022]`, `[mobaxterm]`, `[ssh]`, `[powershell]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer MobaXterm sur Windows Server 2022, ouvrir une session SSH de test vers un serveur Linux et contrôler l'empreinte de la clé d'hôte, puis activer un mot de passe maître et restreindre les sessions enregistrées pour l'administration en production. Les connexions ne ciblent que vos propres machines.
+Installer MobaXterm sur Windows Server 2022, ouvrir une session [[Glossary:SSH]] de test vers un serveur Linux et contrôler l'empreinte de la clé d'hôte, puis activer un mot de passe maître et restreindre les sessions enregistrées pour l'administration en production. Les connexions ne ciblent que vos propres machines.
 
 ---
 
@@ -30,7 +30,7 @@ Remote host : 192.168.10.20   Specify username : admin   Port : 22
 ```bash
 ssh-keygen -lf /etc/ssh/ssh_host_ed25519_key.pub
 ```
-👉 Explication : Exécutée sur le serveur Linux, cette commande affiche l'empreinte SHA-256 de la clé ED25519. Elle doit correspondre à celle affichée par MobaXterm.
+👉 Explication : Exécutée sur le serveur Linux, cette commande affiche l'empreinte SHA-256 de la clé [[Glossary:ED25519]]. Elle doit correspondre à celle affichée par MobaXterm.
 
 ---
 

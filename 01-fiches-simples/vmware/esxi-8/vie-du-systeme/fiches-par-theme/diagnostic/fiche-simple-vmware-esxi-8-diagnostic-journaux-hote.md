@@ -1,6 +1,6 @@
 # 📄 fiche-simple-vmware-esxi-8-diagnostic-journaux-hote.md
 
-- **Environnement** : Hôte physique VMware ESXi 8 (ESXi Shell ou SSH, serveur syslog distant)
+- **Environnement** : Hôte physique VMware ESXi 8 (ESXi Shell ou [[Glossary:SSH]], serveur syslog distant)
 - **OS / Version** : VMware ESXi 8.0 - Journaux et diagnostic
 - **Catégorie** : Diagnostic / Journaux et tâches de l'hôte
 - **Tags** : `[vmware-esxi-8]`, `[syslog]`, `[vmkernel]`, `[hostd]`, `[logs]`, `[diagnostic]`, `[hardening]`
@@ -18,7 +18,7 @@ Diagnostiquer un hôte ESXi 8 à partir de ses journaux (`hostd`, `vmkernel`, `v
 tail -n 100 /var/log/hostd.log
 grep -iE "error|warn|fail" /var/log/hostd.log | tail -n 50
 ```
-👉 Explication : `hostd` gère l'API de l'hôte et les opérations vSphere ; les lignes filtrées par `error`, `warn` ou `fail` concentrent les anomalies récentes.
+👉 Explication : `hostd` gère l'[[Glossary:API]] de l'hôte et les opérations vSphere ; les lignes filtrées par `error`, `warn` ou `fail` concentrent les anomalies récentes.
 
 2. Consulter les erreurs du noyau VMkernel :
 ```bash
@@ -36,7 +36,7 @@ tail -n 50 /var/log/vobd.log
 ```bash
 vim-cmd vimsvc/task_list
 ```
-👉 Explication : affiche les tâches vSphere en cours d'exécution (migration, snapshot, création de VM) avec leur état, utile avant un redémarrage ou une maintenance.
+👉 Explication : affiche les tâches vSphere en cours d'exécution (migration, snapshot, création de [[Glossary:VM]]) avec leur état, utile avant un redémarrage ou une maintenance.
 
 **Équivalent interface graphique :**
 
@@ -52,7 +52,7 @@ esxcli system syslog config set --loghost=tcp://<ip_serveur_syslog>:514
 esxcli system syslog reload
 esxcli system syslog config get
 ```
-👉 Explication : envoie les journaux de l'hôte en TCP vers `<ip_serveur_syslog>`, recharge la configuration puis affiche les paramètres actifs (`Remote Host`, `Log Dir`, `Log to Persistent Disk`).
+👉 Explication : envoie les journaux de l'hôte en [[Glossary:TCP]] vers `<ip_serveur_syslog>`, recharge la configuration puis affiche les paramètres actifs (`Remote Host`, `Log Dir`, `Log to Persistent Disk`).
 
 2. Valider la chaîne de transmission par un message de test :
 ```bash
@@ -94,8 +94,8 @@ vm-support -w /vmfs/volumes/<datastore_securise>
 ```
 👉 Explication : crée une archive complète des journaux et de la configuration dans le datastore indiqué ; le bundle contient des informations sensibles et doit être transmis uniquement au support autorisé.
 
-5. Contrôler la santé matérielle lorsque le BMC est présent :
+5. Contrôler la santé matérielle lorsque le [[Glossary:BMC]] est présent :
 ```bash
 esxcli hardware ipmi sdr list
 ```
-👉 Explication : affiche les capteurs de température, tension et ventilation remontés par le BMC (IPMI) ; sur un matériel sans BMC, la commande ne renvoie rien et la supervision matérielle passe par l'IPMI ou l'outil constructeur.
+👉 Explication : affiche les capteurs de température, tension et ventilation remontés par le BMC ([[Glossary:IPMI]]) ; sur un matériel sans BMC, la commande ne renvoie rien et la supervision matérielle passe par l'IPMI ou l'outil constructeur.

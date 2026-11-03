@@ -2,7 +2,7 @@
 
 - **OS / Version** : Debian 13 Trixie amd64; paquet Wireshark depuis les dépôts Debian configurés
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : installation APT, analyse hors ligne et capture locale ou explicitement autorisée
+- **Périmètre** : installation [[Glossary:APT]], analyse hors ligne et capture locale ou explicitement autorisée
 - **Catégorie** : analyse réseau / diagnostic
 - **Tags** : `wireshark`, `debian13`, `tshark`, `dumpcap`, `pcap`, `diagnostic-reseau`
 
@@ -29,7 +29,7 @@ wireshark --version
 tshark --version
 ```
 
-Utiliser uniquement les dépôts Debian approuvés et ne pas ajouter de dépôt tiers pour obtenir une version plus récente sans revue de compatibilité et de signature. À la question debconf « Should non-superusers be able to capture packets? », répondre **No** si l'usage est l'analyse de fichiers existants. L'application GUI et TShark peuvent lire ces fichiers en tant qu'utilisateur normal.
+Utiliser uniquement les dépôts Debian approuvés et ne pas ajouter de dépôt tiers pour obtenir une version plus récente sans revue de compatibilité et de signature. À la question debconf « Should non-superusers be able to capture packets? », répondre **No** si l'usage est l'analyse de fichiers existants. L'application [[Glossary:GUI]] et TShark peuvent lire ces fichiers en tant qu'utilisateur normal.
 
 ## 3. Autoriser la capture live avec des privilèges séparés
 
@@ -108,7 +108,7 @@ Un PCAP/PCAPNG peut contenir des adresses, noms d'hôtes, métadonnées, donnée
 - Enregistrer dans un dossier protégé, avec un nom de dossier et de fichier neutre; éviter `/tmp` partagé et les dépôts de code.
 - Ne pas joindre une capture à un ticket, message ou dépôt sans revue et anonymisation approuvée.
 - Chiffrer le stockage et le transfert suivant la politique locale; contrôler les copies automatiques et sauvegardes.
-- Supprimer les captures à expiration de leur finalité; la suppression classique ne garantit pas l'effacement sur SSD, snapshots ou sauvegardes.
+- Supprimer les captures à expiration de leur finalité; la suppression classique ne garantit pas l'effacement sur [[Glossary:SSD]], snapshots ou sauvegardes.
 - Mettre à jour Wireshark par APT et appliquer rapidement les mises à jour de sécurité, car les dissectors analysent des données réseau potentiellement hostiles.
 
 ## 7. Vérifications de réception
@@ -118,7 +118,7 @@ Fiche simple : [vérifier la réception](../../../../01-fiches-simples/debian/13
 - Wireshark, TShark et dumpcap proviennent du dépôt Debian attendu et leurs versions sont consignées.
 - L'analyse d'un fichier de capture approuvé fonctionne sous le compte standard.
 - Si la capture live est autorisée, les privilèges sont limités au groupe nominatif approuvé et une courte capture sur `lo` s'ouvre correctement.
-- L'interface graphique n'est pas exécutée comme root; le mode promiscuous et la capture WLAN ne sont pas activés par défaut.
+- L'interface graphique n'est pas exécutée comme root; le mode promiscuous et la capture [[Glossary:WLAN]] ne sont pas activés par défaut.
 - Le PCAP de test est protégé pendant l'analyse et supprimé après validation s'il ne doit pas être conservé.
 
 ## Sources

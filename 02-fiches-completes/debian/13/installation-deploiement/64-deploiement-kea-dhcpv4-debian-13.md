@@ -2,14 +2,14 @@
 
 - **OS / Version** : Debian 13 Trixie x86-64; canal stable ISC choisi et figé pour le service
 - **Type de fiche** : Installation/Déploiement
-- **Rôle** : Serveur DHCPv4 pour un VLAN autorisé
+- **Rôle** : Serveur DHCPv4 pour un [[Glossary:VLAN]] autorisé
 - **Tags** : `debian13`, `kea`, `dhcpv4`, `isc`, `networking`, `lab`
 
 ## 1. Périmètre et prérequis
 
 Fiche simple : [cadrer le périmètre Kea](../../../../01-fiches-simples/debian/13/vie-du-logiciel/dhcp/fiche-simple-vm-debian-13-kea-cadrer.md).
 
-Cette fiche installe Kea DHCPv4 avec le backend de baux `memfile`. Elle ne configure pas DHCPv6, haute disponibilité, base SQL ou DNS dynamique. Le serveur doit disposer d'une adresse statique, d'une interface dédiée au VLAN servi ou d'un relais DHCP déclaré, d'une plage IP approuvée et d'un accès console.
+Cette fiche installe Kea DHCPv4 avec le backend de baux `memfile`. Elle ne configure pas DHCPv6, haute disponibilité, base [[Glossary:SQL]] ou [[Glossary:DNS]] dynamique. Le serveur doit disposer d'une adresse statique, d'une interface dédiée au VLAN servi ou d'un relais [[Glossary:DHCP]] déclaré, d'une plage [[Glossary:IP]] approuvée et d'un accès console.
 
 **Ne pas démarrer Kea sur un réseau de production sans autorisation et fenêtre de changement.** Un serveur DHCP non prévu peut distribuer de mauvais paramètres aux clients. Dans un lab, isoler le VLAN virtuel et vérifier qu'aucun autre serveur DHCP ne répond.
 
@@ -83,7 +83,7 @@ Le backend `memfile` conserve les baux dans le répertoire de données Kea du pa
 
 Fiche simple : [valider puis démarrer Kea](../../../../01-fiches-simples/debian/13/vie-du-logiciel/dhcp/fiche-simple-vm-debian-13-kea-valider-demarrer.md).
 
-Vérifier l'interface, le routage, la syntaxe JSON et la configuration Kea avant d'activer le service :
+Vérifier l'interface, le routage, la syntaxe [[Glossary:JSON]] et la configuration Kea avant d'activer le service :
 
 ```bash
 ip -br address show dev ens18
@@ -118,9 +118,9 @@ sudo ss -lunp '( sport = :67 )'
 sudo journalctl -u isc-kea-dhcp4-server.service -b --no-pager
 ```
 
-Tester l'attribution seulement depuis une VM cliente attachée au VLAN isolé, en confirmant l'adresse, la passerelle, les DNS, le nom de domaine et le renouvellement du bail. Contrôler le bail côté serveur dans le fichier persistant Kea et la connectivité vers les services annoncés. Ne pas lancer un client DHCP de test sur un LAN partagé.
+Tester l'attribution seulement depuis une [[Glossary:VM]] cliente attachée au VLAN isolé, en confirmant l'adresse, la passerelle, les DNS, le nom de domaine et le renouvellement du bail. Contrôler le bail côté serveur dans le fichier persistant Kea et la connectivité vers les services annoncés. Ne pas lancer un client DHCP de test sur un [[Glossary:LAN]] partagé.
 
-Pour une infrastructure réelle, autoriser le trafic DHCP selon les règles réseau et relais validés. DHCPv4 utilise UDP/67 côté serveur et UDP/68 côté client. Kea peut employer des sockets bruts pour les clients directement connectés; ceux-ci peuvent contourner le filtrage local classique. Lire les journaux et tester depuis le réseau client réel avant de déclarer le service disponible.
+Pour une infrastructure réelle, autoriser le trafic DHCP selon les règles réseau et relais validés. DHCPv4 utilise [[Glossary:UDP]]/67 côté serveur et UDP/68 côté client. Kea peut employer des sockets bruts pour les clients directement connectés; ceux-ci peuvent contourner le filtrage local classique. Lire les journaux et tester depuis le réseau client réel avant de déclarer le service disponible.
 
 ## 6. Changer une plage ou revenir en arrière
 
@@ -143,7 +143,7 @@ En cas d'erreur, restaurer le fichier précédent, revalider avec `kea-dhcp4 -t`
 Fiche simple : [durcir et exploiter Kea](../../../../01-fiches-simples/debian/13/vie-du-logiciel/dhcp/fiche-simple-vm-debian-13-kea-durcir.md).
 
 - Limiter les interfaces d'écoute et les réseaux autorisés au strict besoin.
-- Ne pas exposer l'API de contrôle HTTP à un réseau non maîtrisé. Si elle est activée, utiliser HTTPS, authentification appropriée et filtrage réseau; le socket de contrôle UNIX est désactivé par défaut.
+- Ne pas exposer l'[[Glossary:API]] de contrôle [[Glossary:HTTP]] à un réseau non maîtrisé. Si elle est activée, utiliser HTTPS, authentification appropriée et filtrage réseau; le socket de contrôle UNIX est désactivé par défaut.
 - Restreindre les droits des fichiers de configuration et sauvegardes. Les secrets SQL sont généralement stockés en clair dans la configuration; protéger les fichiers et préférer un backend adapté seulement après étude.
 - N'activer ni hook ni composant inutile. Utiliser une base SQL et la haute disponibilité uniquement avec leurs procédures ISC propres, schémas validés et tests de bascule.
 - Maintenir le système et le canal stable Kea à jour, et tester toute mise à niveau sur un serveur pilote.

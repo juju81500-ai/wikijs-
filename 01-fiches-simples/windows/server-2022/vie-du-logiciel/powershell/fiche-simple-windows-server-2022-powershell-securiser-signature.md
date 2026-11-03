@@ -13,7 +13,7 @@ Durcir PowerShell sur Windows Server 2022 : stratégie d'exécution, signature d
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Définir la stratégie d'exécution de la machine. GUI : gpedit.msc > Configuration ordinateur > Modèles d'administration > Composants Windows > Windows PowerShell > Activer l'exécution des scripts. Ligne de commande (administrateur) :
+1. Définir la stratégie d'exécution de la machine. [[Glossary:GUI]] : gpedit.msc > Configuration ordinateur > Modèles d'administration > Composants Windows > Windows PowerShell > Activer l'exécution des scripts. Ligne de commande (administrateur) :
    ```powershell
    Get-ExecutionPolicy -List
    Set-ExecutionPolicy -ExecutionPolicy AllSigned -Scope LocalMachine
@@ -24,7 +24,7 @@ Durcir PowerShell sur Windows Server 2022 : stratégie d'exécution, signature d
    ```powershell
    $cert = New-SelfSignedCertificate -Type CodeSigningCert -Subject 'CN=Signature Scripts Lab' -CertStoreLocation Cert:\CurrentUser\My
    ```
-   👉 Explication : en production utiliser un certificat d'une autorité interne (AD CS) ou publique ; la clé privée doit être protégée.
+   👉 Explication : en production utiliser un certificat d'une autorité interne ([[Glossary:AD]] CS) ou publique ; la clé privée doit être protégée.
 
 3. Signer un script avec horodatage (CHEMIN_SCRIPT et URL_HORODATAGE à remplacer par une autorité d'horodatage approuvée) :
    ```powershell
@@ -45,7 +45,7 @@ Durcir PowerShell sur Windows Server 2022 : stratégie d'exécution, signature d
    ```powershell
    $ExecutionContext.SessionState.LanguageMode
    ```
-   👉 Explication : `ConstrainedLanguage` est imposé par WDAC/AppLocker ; ne pas l'activer sans plan de test.
+   👉 Explication : `ConstrainedLanguage` est imposé par [[Glossary:WDAC]]/AppLocker ; ne pas l'activer sans plan de test.
 
 ## 2. Production — Contrôles
 

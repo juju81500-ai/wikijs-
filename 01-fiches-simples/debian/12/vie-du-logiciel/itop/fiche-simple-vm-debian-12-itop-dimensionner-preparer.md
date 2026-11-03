@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-12-itop-dimensionner-preparer.md
 
-- **Environnement** : VM Linux dédiée avec Apache, PHP 8.2 ou 8.3 et MariaDB 10.11 (serveur ITSM/CMDB)
-- **OS / Version** : Debian 12 Bookworm (ou Ubuntu Server 24-04 LTS); iTop Community 3.3.0
-- **Catégorie** : ITSM / CMDB / helpdesk
+- **Environnement** : [[Glossary:VM]] Linux dédiée avec Apache, PHP 8.2 ou 8.3 et MariaDB 10.11 (serveur [[Glossary:ITSM]]/CMDB)
+- **OS / Version** : Debian 12 Bookworm (ou Ubuntu Server 24-04 [[Glossary:LTS]]); iTop Community 3.3.0
+- **Catégorie** : ITSM / [[Glossary:CMDB]] / helpdesk
 - **Tags** : `debian12`, `itop`, `itsm`, `cmdb`, `apache`, `mariadb`
 
 ---
@@ -19,7 +19,7 @@ Vérifier prérequis et ressources avant d'installer iTop.
    free -h
    df -h /var
    ```
-   👉 Explication : la recommandation éditeur (moins de 5 000 tickets/mois, 50 utilisateurs console, 200 000 CI) est 4 vCPU, 8 Go de RAM et 20 Go pour la base.
+   👉 Explication : la recommandation éditeur (moins de 5 000 tickets/mois, 50 utilisateurs console, 200 000 CI) est 4 vCPU, 8 Go de [[Glossary:RAM]] et 20 Go pour la base.
 
 2. Contrôler le système :
    ```bash
@@ -27,7 +27,7 @@ Vérifier prérequis et ressources avant d'installer iTop.
    ```
    👉 Explication : iTop 3.3 recommande Debian 12 ou Ubuntu 24-04.
 
-3. Préparer nom DNS, certificat TLS, IP fixe, SMTP, compte de service et sauvegarde testée.
+3. Préparer nom [[Glossary:DNS]], certificat [[Glossary:TLS]], [[Glossary:IP]] fixe, [[Glossary:SMTP]], compte de service et sauvegarde testée.
    👉 Explication : ces éléments doivent exister avant d'ouvrir l'application.
 
 4. Vérifier le nom DNS prévu (remplacer `itsm.example.net` par le nom réel) :

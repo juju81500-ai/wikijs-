@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Chercher les erreurs matérielles et ZFS.
+Chercher les erreurs matérielles et [[Glossary:ZFS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -26,7 +26,7 @@ Chercher les erreurs matérielles et ZFS.
    ```
    👉 Explication : erreurs de lecture, d'écriture ou de somme de contrôle.
 
-3. Contrôler SMART : GUI Stockage > Disques > Tests S.M.A.R.T.
+3. Contrôler [[Glossary:SMART]] : [[Glossary:GUI]] Stockage > Disques > Tests S.M.A.R.T.
    ```bash
    sudo smartctl -H /dev/sdX
    sudo smartctl -A /dev/sdX | grep -i -E 'reallocated|pending|crc'

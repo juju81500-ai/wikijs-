@@ -2,13 +2,13 @@
 
 - **Catégorie** : Services Web et bases de données
 - **Plateforme** : Linux / Windows
-- **Produit (matrice)** : Apache / Nginx / IIS
+- **Produit (matrice)** : Apache / Nginx / [[Glossary:IIS]]
 - **Statut dans le pack** : Couvert
 - **Tags** : `logiciel`, `14-services-web-et-bases-de-donnees`, `couvert`
 
 ## 📚 Couverture dans le pack
 
-Couvert — série par étape pour Debian 13 (prérequis, installation, configuration, sécurisation, recette, sauvegarde/restauration, mise à jour et retour arrière) ; [guide LEMP Debian 13](../../../02-fiches-completes/debian/13/installation-deploiement/02-pile-lemp-debian-13-nginx-php-mariadb.md). Autres familles d'OS non traitées ; la pile PHP-FPM est décrite dans le guide LEMP.
+Couvert — série par étape pour Debian 13 (prérequis, installation, configuration, sécurisation, recette, sauvegarde/restauration, mise à jour et retour arrière) ; [guide LEMP Debian 13](../../../02-fiches-completes/debian/13/installation-deploiement/02-pile-lemp-debian-13-nginx-php-mariadb.md). Autres familles d'OS non traitées ; la pile PHP-FPM est décrite dans le guide [[Glossary:LEMP]].
 
 ## 🧭 Utilisation
 

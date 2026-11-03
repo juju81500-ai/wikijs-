@@ -1,16 +1,16 @@
 # Pile Web sur Ubuntu Server 26-04 : Nginx, PHP-FPM et PostgreSQL
 
 - **Type de fiche** : Installation / Déploiement
-- **Environnement** : VM ou serveur dédié Ubuntu Server
-- **OS / Version** : Ubuntu Server 26-04 LTS (Resolute), Nginx, PHP 8.5 et PostgreSQL 18
-- **Rôle** : Héberger une application PHP avec base PostgreSQL locale et TLS
+- **Environnement** : [[Glossary:VM]] ou serveur dédié Ubuntu Server
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]] (Resolute), Nginx, PHP 8.5 et PostgreSQL 18
+- **Rôle** : Héberger une application PHP avec base PostgreSQL locale et [[Glossary:TLS]]
 - **Tags** : `ubuntu26.04`, `resolute`, `nginx`, `php8.5`, `postgresql18`, `web`, `tls`
 
 ## 1. Prérequis et versions
 
 Fiche simple : [prérequis et versions de la pile web](../../../../01-fiches-simples/ubuntu/26-04/vie-du-logiciel/pile-web/fiche-simple-vm-ubuntu-26-04-pile-web-prerequis-versions.md).
 
-Réserver hostname/FQDN, IP stable, volumes, accès SSH et méthode de sauvegarde. Ubuntu 26-04 fournit une base différente de Noble; vérifier les candidats avant installation :
+Réserver hostname/FQDN, [[Glossary:IP]] stable, volumes, accès [[Glossary:SSH]] et méthode de sauvegarde. Ubuntu 26-04 fournit une base différente de Noble; vérifier les candidats avant installation :
 
 ```bash
 cat /etc/os-release
@@ -94,7 +94,7 @@ sudo systemctl reload nginx
 
 Fiche simple : [déployer l'application et TLS](../../../../01-fiches-simples/ubuntu/26-04/vie-du-logiciel/pile-web/fiche-simple-vm-ubuntu-26-04-pile-web-deployer-application-tls.md).
 
-Déployer une version applicative compatible avec PHP 8.5, renseigner l'accès PostgreSQL via un secret protégé et limiter l'écriture aux seuls répertoires nécessaires. Configurer TLS avec l'outil ACME approuvé; tester le renouvellement.
+Déployer une version applicative compatible avec PHP 8.5, renseigner l'accès PostgreSQL via un secret protégé et limiter l'écriture aux seuls répertoires nécessaires. Configurer TLS avec l'outil [[Glossary:ACME]] approuvé; tester le renouvellement.
 
 Pour un essai FPM, créer un endpoint temporaire affichant `OK`, le tester via Nginx, puis le supprimer immédiatement; ne pas exposer `phpinfo()`.
 
@@ -102,7 +102,7 @@ Pour un essai FPM, créer un endpoint temporaire affichant `OK`, le tester via N
 
 Fiche simple : [filtrer et surveiller la pile web](../../../../01-fiches-simples/ubuntu/26-04/vie-du-logiciel/pile-web/fiche-simple-vm-ubuntu-26-04-pile-web-filtrer-surveiller.md).
 
-Autoriser uniquement les flux requis (généralement HTTPS et SSH depuis le réseau d'administration). Contrôler UFW/firewall effectivement actif, logs, espace disque, mises à jour et services.
+Autoriser uniquement les flux requis (généralement HTTPS et SSH depuis le réseau d'administration). Contrôler [[Glossary:UFW]]/firewall effectivement actif, logs, espace disque, mises à jour et services.
 
 ## 7. Validation, sauvegarde et retour arrière
 

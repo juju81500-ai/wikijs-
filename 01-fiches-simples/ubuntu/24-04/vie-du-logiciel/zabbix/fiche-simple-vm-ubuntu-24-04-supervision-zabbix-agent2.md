@@ -1,7 +1,7 @@
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Supervision_Zabbix_Agent2
 
-- **Environnement** : VM Ubuntu Server supervisée par un serveur Zabbix existant
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat) - Zabbix Agent 2 depuis le dépôt officiel Zabbix 7.0 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server supervisée par un serveur Zabbix existant
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble Numbat) - Zabbix Agent 2 depuis le dépôt officiel Zabbix 7.0 LTS
 - **Catégorie** : Supervision / Agent de métriques et d'inventaire
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[zabbix]`, `[zabbix-agent2]`, `[monitoring]`, `[ufw]`, `[port-10050]`
 
@@ -16,7 +16,7 @@ Installer Zabbix Agent 2 sur Ubuntu Server 24-04 LTS depuis le dépôt officiel,
    sudo dpkg -i zabbix-release_latest_7.0+ubuntu24.04_all.deb
    sudo apt update
    ```
-   👉 *Explication : Le paquet `zabbix-release` ajoute la source APT et la clé de signature. Le nom du fichier `.deb` change selon la version publiée ; vérifier l'URL sur repo.zabbix.com.*
+   👉 *Explication : Le paquet `zabbix-release` ajoute la source [[Glossary:APT]] et la clé de signature. Le nom du fichier `.deb` change selon la version publiée ; vérifier l'URL sur repo.zabbix.com.*
 2. Installer l'agent et tester une clé locale sans réseau :
    ```bash
    sudo apt install -y zabbix-agent2
@@ -39,7 +39,7 @@ Installer Zabbix Agent 2 sur Ubuntu Server 24-04 LTS depuis le dépôt officiel,
    sudo systemctl enable --now zabbix-agent2
    systemctl status zabbix-agent2 --no-pager
    ```
-   👉 *Explication : Le port 10050 ne doit jamais être ouvert à tout le réseau. La règle UFW précise limite l'accès à l'IP du serveur Zabbix.*
+   👉 *Explication : Le port 10050 ne doit jamais être ouvert à tout le réseau. La règle [[Glossary:UFW]] précise limite l'accès à l'[[Glossary:IP]] du serveur Zabbix.*
 
 ## 🔒 3. Production — Façon Sécurisée
 1. Vérifier la liste blanche des serveurs autorisés et les permissions du fichier de configuration :
@@ -47,7 +47,7 @@ Installer Zabbix Agent 2 sur Ubuntu Server 24-04 LTS depuis le dépôt officiel,
    grep -E '^(Server|ServerActive|Hostname)=' /etc/zabbix/zabbix_agent2.conf
    ls -l /etc/zabbix/zabbix_agent2.conf
    ```
-   👉 *Explication : Le fichier peut contenir des secrets TLS/PSK ; il doit appartenir à `root` et ne pas être lisible par tous selon la politique du site.*
+   👉 *Explication : Le fichier peut contenir des secrets [[Glossary:TLS]]/PSK ; il doit appartenir à `root` et ne pas être lisible par tous selon la politique du site.*
 2. Tester la connexion depuis le serveur Zabbix avec `zabbix_get` (paquet `zabbix-get`) :
    ```bash
    zabbix_get -s <ip_de_cette_vm> -p 10050 -k agent.ping

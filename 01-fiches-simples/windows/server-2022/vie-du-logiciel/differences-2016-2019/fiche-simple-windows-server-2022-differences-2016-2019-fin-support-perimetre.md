@@ -25,16 +25,16 @@ Identifier la version et l'édition en place, puis situer 2016 et 2019 dans leur
    ```powershell
    Get-WindowsFeature | Where-Object Installed
    ```
-   👉 Explication : un serveur à rôles nombreux (AD DS, DNS, DHCP, WSUS, RDS) demande un plan de migration dédié.
+   👉 Explication : un serveur à rôles nombreux ([[Glossary:AD]] DS, [[Glossary:DNS]], [[Glossary:DHCP]], [[Glossary:WSUS]], RDS) demande un plan de migration dédié.
 
 ## 2. Production — Contrôles
 
 - Inscrire la date de fin de support dans l'inventaire et planifier la migration au moins 12 mois avant.
-- Après la fin du support étendu, des mises à jour de sécurité ne sont disponibles que via un programme payant éventuel (ESU) : vérifier la disponibilité sur la page officielle.
+- Après la fin du support étendu, des mises à jour de sécurité ne sont disponibles que via un programme payant éventuel ([[Glossary:ESU]]) : vérifier la disponibilité sur la page officielle.
 
 ## 3. Production — Sécurité
 
-- Un serveur hors support exposé au réseau est un risque : isoler (VLAN, pare-feu) et réduire les rôles si la migration est reportée.
+- Un serveur hors support exposé au réseau est un risque : isoler ([[Glossary:VLAN]], pare-feu) et réduire les rôles si la migration est reportée.
 
 ## Validation et retour arrière
 

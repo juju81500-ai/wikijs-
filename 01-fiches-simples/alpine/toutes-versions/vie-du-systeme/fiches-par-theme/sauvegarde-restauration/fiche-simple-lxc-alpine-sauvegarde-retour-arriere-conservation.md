@@ -1,7 +1,7 @@
 # fiche-simple-lxc-alpine-sauvegarde-retour-arriere-conservation.md
 
-- **Environnement** : reprise LXC Alpine en période d'acceptation; CT source et restauration conservés
-- **OS / Version** : Proxmox VE, PBS et branche Alpine maintenue
+- **Environnement** : reprise [[Glossary:LXC]] Alpine en période d'acceptation; [[Glossary:CT]] source et restauration conservés
+- **OS / Version** : Proxmox VE, [[Glossary:PBS]] et branche Alpine maintenue
 - **Catégorie** : sauvegarde LXC / retour arrière
 - **Tags** : `alpine`, `proxmox`, `pbs`, `lxc`, `rollback`, `retention`
 
@@ -24,13 +24,13 @@ Revenir à l'instance antérieure après un échec de restauration tout en évit
    ```bash
    pct start CTID
    ```
-   👉 Explication : ne jamais avoir deux CT avec la même IP ni exécutant les mêmes tâches.
+   👉 Explication : ne jamais avoir deux CT avec la même [[Glossary:IP]] ni exécutant les mêmes tâches.
 
 3. Conserver ancienne instance et point de sauvegarde jusqu'à la fin de la période d'acceptation :
    ```bash
    pvesm list STOCKAGE_PBS --vmid CTID
    ```
-   👉 Explication : consigner le RPO/RTO réellement mesuré.
+   👉 Explication : consigner le [[Glossary:RPO]]/RTO réellement mesuré.
 
 ## 2. Production — Contrôles
 

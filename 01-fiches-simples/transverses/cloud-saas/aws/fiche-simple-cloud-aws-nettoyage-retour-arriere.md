@@ -1,7 +1,7 @@
 # Fiche_Simple_-_Cloud_AWS_Nettoyage_Retour_Arriere
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — AWS CLI v2
+- **OS / Version** : Cloud/SaaS — AWS [[Glossary:CLI]] v2
 - **Catégorie** : cloud public / nettoyage et retour arrière
 - **Tags** : `aws`, `nettoyage_retour_arriere`, `securite`, `procedure`
 

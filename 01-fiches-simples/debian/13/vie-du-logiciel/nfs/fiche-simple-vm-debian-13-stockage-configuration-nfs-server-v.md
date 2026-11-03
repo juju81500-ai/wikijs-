@@ -1,6 +1,6 @@
 # 📄 VM_Debian_13_Stockage_Configuration-NFS-Server-v4.md
 
-- **Environnement** : VM (Debian 13 Trixie / Proxmox Storage)
+- **Environnement** : [[Glossary:VM]] (Debian 13 Trixie / Proxmox Storage)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
 - **Catégorie** : Stockage / Partage de fichiers NFSv4
 - **Tags** : `[debian13]`, `[nfs]`, `[nfsv4]`, `[storage]`, `[partage-fichiers]`, `[hardening]`
@@ -11,7 +11,7 @@ Installer et configurer un serveur de fichiers NFSv4 exclusif sur Debian 13 (Tri
 ---
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
-1. Installation du serveur NFS :
+1. Installation du serveur [[Glossary:NFS]] :
    `apt-get update && apt-get install -y nfs-kernel-server`
    👉 Explication : Télécharge et installe les modules noyau et les démons du serveur NFS.
 
@@ -63,4 +63,4 @@ Installer et configurer un serveur de fichiers NFSv4 exclusif sur Debian 13 (Tri
    `sudo exportfs -v`
    👉 Explication : `root_squash` empêche le root distant de conserver ses privilèges. Ne pas utiliser `no_root_squash` sur un partage accessible par le réseau.
 
-4. Autoriser TCP/2049 aux seuls clients NFS dans le pare-feu persistant géré par le serveur ; valider et appliquer la règle via ce gestionnaire. Ne pas utiliser une règle nftables ajoutée en mémoire comme configuration de production.
+4. Autoriser [[Glossary:TCP]]/2049 aux seuls clients NFS dans le pare-feu persistant géré par le serveur ; valider et appliquer la règle via ce gestionnaire. Ne pas utiliser une règle nftables ajoutée en mémoire comme configuration de production.

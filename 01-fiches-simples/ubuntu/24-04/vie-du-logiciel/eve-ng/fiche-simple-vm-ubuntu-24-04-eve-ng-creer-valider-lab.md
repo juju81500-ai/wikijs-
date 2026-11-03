@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_EVE-NG_Creer_Valider_Lab
 
-- **Environnement** : VM EVE-NG (appliance basée sur Ubuntu Server 24-04 LTS) hébergée sur un poste ou serveur de virtualisation
+- **Environnement** : [[Glossary:VM]] EVE-NG (appliance basée sur Ubuntu Server 24-04 [[Glossary:LTS]]) hébergée sur un poste ou serveur de virtualisation
 - **OS / Version** : EVE-NG 7.x (7.2.0-18 au contrôle du 29/10/2026), Ubuntu 24-04 LTS embarqué; Community 6.2.0-4 (Ubuntu 22-04) en fin de support juin 2026
 - **Catégorie** : simulation réseau / validation
 - **Tags** : `ubuntu24.04`, `eve-ng`, `lab`, `vpcs`, `validation`, `gui`
@@ -41,7 +41,7 @@ Créer un premier lab minimal et prouver que l'interface, les nœuds et les lien
 
 ## 2. Production — Contrôles
 
-- Surveiller CPU et RAM de la VM pendant le test (menu **System > System status**).
+- Surveiller [[Glossary:CPU]] et [[Glossary:RAM]] de la VM pendant le test (menu **System > System status**).
 - Fermer le lab après usage pour libérer les ressources.
 - Respecter la limite de nœuds de l'édition utilisée (7 nœuds en Freemium d'après les notes de version).
 

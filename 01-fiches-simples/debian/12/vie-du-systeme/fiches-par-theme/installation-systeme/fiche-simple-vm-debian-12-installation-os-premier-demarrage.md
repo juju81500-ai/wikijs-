@@ -1,6 +1,6 @@
 # 📄 fiche-simple-vm-debian-12-installation-os-premier-demarrage.md
 
-- **Environnement** : VM sur Proxmox VE, KVM ou VMware
+- **Environnement** : [[Glossary:VM]] sur Proxmox VE, [[Glossary:KVM]] ou VMware
 - **OS / Version** : Debian GNU/Linux 12 (Bookworm)
 - **Catégorie** : Installation / Système
 - **Tags** : `[debian12]`, `[bookworm]`, `[debian]`, `[installation]`, `[vm]`, `[premier-demarrage]`
@@ -10,8 +10,8 @@ Installer Debian 12 Bookworm sur une VM, choisir stockage et réseau, créer un 
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Télécharger l'ISO depuis Debian et vérifier son empreinte publiée.
-2. Créer une VM avec firmware, disque, CPU, mémoire et carte réseau adaptés au lab; monter l'ISO.
-3. Dans l'installateur, choisir langue, hostname, réseau DHCP/statique et partitionnement guidé ou adapté au rôle.
+2. Créer une VM avec firmware, disque, [[Glossary:CPU]], mémoire et carte réseau adaptés au lab; monter l'ISO.
+3. Dans l'installateur, choisir langue, hostname, réseau [[Glossary:DHCP]]/statique et partitionnement guidé ou adapté au rôle.
 4. Créer un compte nominatif et installer OpenSSH si requis. Redémarrer sans l'ISO.
 5. Vérifier la machine :
    ```bash
@@ -24,9 +24,9 @@ Installer Debian 12 Bookworm sur une VM, choisir stockage et réseau, créer un 
    👉 *Explication : Debian 12 fournit les séries de paquets Bookworm; ne pas suivre automatiquement une fiche Debian 13.*
 
 ## ⚡ 2. Production — Façon Simplifiée
-1. Vérifier l'édition ISO, la cible disque, l'espace `/boot`, les ressources et le plan IP/DNS avant l'installation.
+1. Vérifier l'édition ISO, la cible disque, l'espace `/boot`, les ressources et le plan [[Glossary:IP]]/DNS avant l'installation.
 2. Configurer dépôts Bookworm officiels et appliquer les mises à jour de la version cible avant les rôles.
-3. Créer compte `sudo`, hostname, SSH par clé, réseau et heure avec les fiches Debian 12 correspondantes.
+3. Créer compte `sudo`, hostname, [[Glossary:SSH]] par clé, réseau et heure avec les fiches Debian 12 correspondantes.
 4. Installer uniquement les paquets nécessaires au rôle; relever les versions avec `apt-cache policy`.
 
 ## 🔒 3. Production — Façon Sécurisée
@@ -35,6 +35,6 @@ Installer Debian 12 Bookworm sur une VM, choisir stockage et réseau, créer un 
 3. Prévoir le cycle de support de Bookworm; utiliser les sources et correctifs adaptés à Debian 12.
 
 ## ✅ Validation et retour arrière
-- Confirmer Bookworm, les dépôts, compte, stockage, adresse, DNS, SSH et services systemd.
+- Confirmer Bookworm, les dépôts, compte, stockage, adresse, [[Glossary:DNS]], SSH et services systemd.
 - Prendre une sauvegarde initiale et vérifier sa présence avant d'installer les services critiques.
 - Si l'installation est incorrecte, conserver les journaux puis reconstruire depuis l'ISO vérifié.

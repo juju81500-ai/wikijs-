@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Installer StarWind Virtual SAN sur Windows Server 2022 avec le programme d'installation officiel.
+Installer StarWind Virtual [[Glossary:SAN]] sur Windows Server 2022 avec le programme d'installation officiel.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

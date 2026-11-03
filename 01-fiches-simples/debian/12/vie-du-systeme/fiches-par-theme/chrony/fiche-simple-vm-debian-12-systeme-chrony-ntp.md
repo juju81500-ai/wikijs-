@@ -1,12 +1,12 @@
 # 📄 VM_Debian_12_Systeme_Chrony-NTP.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Système & Services / Synchronisation horaire
 - **Tags** : `[debian12]`, `[debian-family]`, `[chrony]`, `[ntp]`, `[chronyc]`, `[timedatectl]`
 
 ## 🎯 Problème précis à résoudre
-Synchroniser l'horloge d'un serveur Debian 12 avec des sources NTP fiables au moyen de `chrony`, condition nécessaire à la validité des certificats, de Kerberos (AD) et à la corrélation des journaux.
+Synchroniser l'horloge d'un serveur Debian 12 avec des sources [[Glossary:NTP]] fiables au moyen de `chrony`, condition nécessaire à la validité des certificats, de Kerberos ([[Glossary:AD]]) et à la corrélation des journaux.
 
 ---
 
@@ -40,7 +40,7 @@ Synchroniser l'horloge d'un serveur Debian 12 avec des sources NTP fiables au mo
 1. Autorisation limitée des clients NTP du réseau d'administration :
    `sudoedit /etc/chrony/chrony.conf`
    👉 Explication : Ajouter `allow <reseau_clients_ntp>` (ex. `10.10.0.0/24`) ; sans cette directive, chrony ne répond à aucun client.
-2. Vérification de l'écoute UDP 123 restreinte :
+2. Vérification de l'écoute [[Glossary:UDP]] 123 restreinte :
    `sudo ss -ulpn | grep ':123'`
    👉 Explication : Confirme que le service n'écoute que sur les interfaces prévues et que le port NTP n'est pas exposé à tout le réseau.
 3. Vérification de la synchronisation système :

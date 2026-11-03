@@ -13,7 +13,7 @@ Limiter l'accès aux interfaces d'administration.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Réseau > Paramètres globaux > Accès à l'interface web (adresses IP d'écoute) et Système > Général > GUI SSL.
+1. [[Glossary:GUI]] : Réseau > Paramètres globaux > Accès à l'interface web (adresses [[Glossary:IP]] d'écoute) et Système > Général > GUI [[Glossary:SSL]].
    ```bash
    sudo midclt call system.general.update '{"ui_address": ["ADRESSE_NAS"]}'
    ```
@@ -23,11 +23,11 @@ Limiter l'accès aux interfaces d'administration.
    ```bash
    sudo ss -tulpn
    ```
-   👉 Explication : ports en écoute : 80/443 (GUI), 22 (SSH), 445 (SMB), 2049 (NFS), 3260 (iSCSI).
+   👉 Explication : ports en écoute : 80/443 (GUI), 22 ([[Glossary:SSH]]), 445 (SMB), 2049 ([[Glossary:NFS]]), 3260 (iSCSI).
 
 ## 2. Production — Contrôles
 
-Filtrer par pare-feu réseau (VLAN, règles IP source) ; le NAS n'a pas de pare-feu hôte configurable en GUI.
+Filtrer par pare-feu réseau ([[Glossary:VLAN]], règles IP source) ; le [[Glossary:NAS]] n'a pas de pare-feu hôte configurable en GUI.
 
 ## 3. Production — Sécurité
 

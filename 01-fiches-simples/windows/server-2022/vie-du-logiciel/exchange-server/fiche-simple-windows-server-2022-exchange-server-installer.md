@@ -20,7 +20,7 @@ Installer le rôle Mailbox Exchange Server avec préparation du schéma et de l'
    ```powershell
    D:\Setup.exe /IAcceptExchangeServerLicenseTerms_DiagnosticDataOFF /PrepareSchema
    ```
-   👉 Explication : étend le schéma AD ; attendre la réplication avant la suite.
+   👉 Explication : étend le schéma [[Glossary:AD]] ; attendre la réplication avant la suite.
 
 3. Préparer Active Directory et créer l'organisation :
    ```powershell
@@ -39,7 +39,7 @@ Installer le rôle Mailbox Exchange Server avec préparation du schéma et de l'
    ```powershell
    Get-ExchangeServer | Format-List Name, Edition, AdminDisplayVersion
    ```
-   👉 Explication : contrôle la version installée ; remplacer `EXCH01.CONTOSO.LOCAL` par le FQDN du serveur.
+   👉 Explication : contrôle la version installée ; remplacer `EXCH01.CONTOSO.LOCAL` par le [[Glossary:FQDN]] du serveur.
 
 ## 2. Production — Contrôles
 
@@ -54,7 +54,7 @@ Planifier une fenêtre de changement, exclure les chemins Exchange de l'antiviru
 ## Validation et retour arrière
 
 - **Validation** : Services Exchange démarrés (`Get-Service MSExchange*`), base montée (`Get-MailboxDatabase -Status`), EAC accessible en interne.
-- **Retour arrière** : avant mise en production : restaurer le snapshot de la VM ; après : `Setup.exe /Mode:Uninstall` ne retire pas les extensions AD, qui restent.
+- **Retour arrière** : avant mise en production : restaurer le snapshot de la [[Glossary:VM]] ; après : `Setup.exe /Mode:Uninstall` ne retire pas les extensions AD, qui restent.
 
 ## Si le problème n'est pas résolu
 

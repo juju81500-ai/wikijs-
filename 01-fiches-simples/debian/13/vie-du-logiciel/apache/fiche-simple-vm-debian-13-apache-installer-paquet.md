@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-apache-installer-paquet.md
 
-- **Environnement** : VM Debian 13 Trixie, dépôts Debian approuvés
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie, dépôts Debian approuvés
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : serveur Web / installation
 - **Tags** : `debian13`, `apache2`, `apt`, `installation`, `validation`
@@ -39,9 +39,9 @@ Consigner la version installée, le dépôt, le propriétaire du service et la p
 
 ## 3. Production — Sécurité
 
-- Ne pas ajouter de dépôt tiers ni désactiver la vérification des signatures APT.
+- Ne pas ajouter de dépôt tiers ni désactiver la vérification des signatures [[Glossary:APT]].
 - Garder le service sous son compte système et éviter de lancer Apache manuellement avec des privilèges non nécessaires.
-- Ne pas ouvrir de port réseau avant la revue du site, du TLS et du pare-feu.
+- Ne pas ouvrir de port réseau avant la revue du site, du [[Glossary:TLS]] et du pare-feu.
 - Conserver la configuration antérieure et la sauvegarde de la VM avant un changement.
 
 ## Validation et retour arrière

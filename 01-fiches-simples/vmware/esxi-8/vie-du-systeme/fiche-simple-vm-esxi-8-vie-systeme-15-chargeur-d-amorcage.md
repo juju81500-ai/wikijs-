@@ -20,7 +20,7 @@ Contrôler le démarrage de l'hôte.
    ```
    👉 Explication : montre le périphérique d'amorçage et la protection `execInstalledOnly`.
 
-2. Console de gestion : vérifier l'ordre de démarrage (BIOS : **Boot Settings**), disque système en premier.
+2. Console de gestion : vérifier l'ordre de démarrage ([[Glossary:BIOS]] : **Boot Settings**), disque système en premier.
    👉 Explication : un ordre erroné fait démarrer l'ISO à chaque redémarrage.
 
 3. Sauvegarder la configuration avant un changement de démarrage :

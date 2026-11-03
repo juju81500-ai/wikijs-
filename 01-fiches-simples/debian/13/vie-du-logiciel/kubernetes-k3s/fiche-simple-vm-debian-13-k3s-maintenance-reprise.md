@@ -29,7 +29,7 @@ Mettre à jour ou restaurer K3s sans perdre le datastore, les secrets, les manif
    ```
    👉 Explication : l'archive contient des secrets; la chiffrer et la copier hors machine.
 
-3. Tester la restauration sur une VM isolée (jamais sur le datastore actif) :
+3. Tester la restauration sur une [[Glossary:VM]] isolée (jamais sur le datastore actif) :
    ```bash
    sudo systemctl stop k3s
    sudo tar -xzf /var/backups/k3s/k3s-AAAA-MM-JJ.tar.gz -C /

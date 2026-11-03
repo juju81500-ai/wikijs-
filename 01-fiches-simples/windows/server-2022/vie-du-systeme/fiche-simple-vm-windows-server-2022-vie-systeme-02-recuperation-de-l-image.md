@@ -21,7 +21,7 @@ Obtenir l'image officielle de Windows Server 2022.
    ```
    👉 Explication : crée le dossier d'accueil et confirme que l'image est présente avec une taille cohérente.
 
-2. Ranger l'image dans la bibliothèque de l'hyperviseur (Hyper-V : **Gestionnaire Hyper-V > Paramètres de la VM > Contrôleur SCSI/IDE > Lecteur de DVD > Fichier image** ; Proxmox : **Datacenter > Stockage > ISO Images > Upload**).
+2. Ranger l'image dans la bibliothèque de l'hyperviseur (Hyper-V : **Gestionnaire Hyper-V > Paramètres de la [[Glossary:VM]] > Contrôleur SCSI/IDE > Lecteur de DVD > Fichier image** ; Proxmox : **Datacenter > Stockage > ISO Images > Upload**).
    👉 Explication : l'image devient sélectionnable à la création de la VM.
 
 ## 2. Production — Contrôles

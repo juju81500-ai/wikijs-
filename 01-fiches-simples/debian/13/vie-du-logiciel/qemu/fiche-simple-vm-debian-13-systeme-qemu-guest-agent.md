@@ -1,12 +1,12 @@
 # 📄 Fiche_Simple_-_VM_Debian_13_Systeme_Qemu_Guest_Agent
 
-- **Environnement** : VM Debian 13 sur KVM / QEMU, Proxmox VE ou hyperviseur compatible virtio
+- **Environnement** : [[Glossary:VM]] Debian 13 sur [[Glossary:KVM]] / [[Glossary:QEMU]], Proxmox VE ou hyperviseur compatible virtio
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
 - **Catégorie** : Système & Services / Agent de virtualisation
 - **Tags** : `[debian13]`, `[debian]`, `[qemu]`, `[kvm]`, `[virtio]`, `[proxmox]`, `[virtualisation]`
 
 ## 🎯 Problème précis à résoudre
-Installer et activer l'agent invité QEMU (`qemu-guest-agent`) sur Debian 13 pour permettre à l'hyperviseur de lire les adresses IP de la VM, de geler les systèmes de fichiers lors des snapshots cohérents et de demander un arrêt propre.
+Installer et activer l'agent invité QEMU (`qemu-guest-agent`) sur Debian 13 pour permettre à l'hyperviseur de lire les adresses [[Glossary:IP]] de la VM, de geler les systèmes de fichiers lors des snapshots cohérents et de demander un arrêt propre.
 
 ---
 

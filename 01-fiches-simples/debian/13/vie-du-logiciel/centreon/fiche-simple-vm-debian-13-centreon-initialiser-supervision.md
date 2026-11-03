@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-centreon-initialiser-supervision.md
 
-- **Environnement** : VM Debian 13 dédiée, serveur Centreon Central avec MariaDB locale
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée, serveur Centreon Central avec MariaDB locale
 - **OS / Version** : Debian 13 Trixie; Centreon 26.10
 - **Catégorie** : supervision / hôtes
 - **Tags** : `debian13`, `centreon`, `supervision`, `poller`, `snmp`
@@ -27,11 +27,11 @@ Exporter la configuration et superviser d'abord localhost puis un hôte pilote.
 
 ## 2. Production — Contrôles
 
-Limiter UDP/161 aux pollers; les identifiants de supervision doivent être distincts des comptes d'administration.
+Limiter [[Glossary:UDP]]/161 aux pollers; les identifiants de supervision doivent être distincts des comptes d'administration.
 
 ## 3. Production — Sécurité
 
-- Pas de communauté SNMP publique.
+- Pas de communauté [[Glossary:SNMP]] publique.
 - Comptes de supervision en lecture seule.
 - Pas de cibles non autorisées.
 

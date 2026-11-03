@@ -1,12 +1,12 @@
 # 📄 fiche-simple-vm-rocky-9-systeme-hostname-fqdn.md
 
-- **Environnement** : VM ou serveur Rocky Linux
-- **OS / Version** : Rocky Linux 9 / RHEL 9 avec systemd
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 avec systemd
 - **Catégorie** : Système & Services / Identité de la machine
 - **Tags** : `[rocky9]`, `[rhel9]`, `[hostname]`, `[fqdn]`, `[systemd]`, `[dns]`
 
 ## 🎯 Problème précis à résoudre
-Définir le nom d'hôte statique et le FQDN d'une VM Rocky Linux 9 avec `hostnamectl`, afin que les journaux, les certificats, l'annuaire et le DNS utilisent le même nom.
+Définir le nom d'hôte statique et le [[Glossary:FQDN]] d'une VM Rocky Linux 9 avec `hostnamectl`, afin que les journaux, les certificats, l'annuaire et le [[Glossary:DNS]] utilisent le même nom.
 
 ---
 
@@ -54,4 +54,4 @@ Définir le nom d'hôte statique et le FQDN d'une VM Rocky Linux 9 avec `hostnam
    ```bash
    sudo realm list
    ```
-   👉 Explication : Si la commande affiche un domaine, le compte machine Active Directory est lié au nom actuel. Il faut le recréer ou le réinitialiser avant de changer le nom (voir la fiche jonction AD et sssd).
+   👉 Explication : Si la commande affiche un domaine, le compte machine Active Directory est lié au nom actuel. Il faut le recréer ou le réinitialiser avant de changer le nom (voir la fiche jonction [[Glossary:AD]] et sssd).

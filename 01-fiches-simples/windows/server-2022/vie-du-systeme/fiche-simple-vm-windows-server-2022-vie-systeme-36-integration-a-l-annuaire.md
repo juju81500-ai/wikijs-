@@ -17,7 +17,7 @@ Joindre le serveur au domaine Active Directory.
    ```powershell
    Add-Computer -DomainName EXEMPLE.LOCAL -OUPath 'OU=Serveurs,DC=EXEMPLE,DC=LOCAL' -Credential (Get-Credential) -Restart
    ```
-   👉 Explication : `EXEMPLE.LOCAL` est le domaine; le compte demandé doit avoir le droit de joindre des machines; le DNS du serveur doit pointer vers un contrôleur de domaine.
+   👉 Explication : `EXEMPLE.LOCAL` est le domaine; le compte demandé doit avoir le droit de joindre des machines; le [[Glossary:DNS]] du serveur doit pointer vers un contrôleur de domaine.
 
 2. Après redémarrage, contrôler l'appartenance :
    ```powershell
@@ -31,11 +31,11 @@ Joindre le serveur au domaine Active Directory.
    gpupdate /force
    gpresult /r
    ```
-   👉 Explication : télécharge et affiche les GPO appliquées.
+   👉 Explication : télécharge et affiche les [[Glossary:GPO]] appliquées.
 
 ## 2. Production — Contrôles
 
-Placer le serveur dans l'OU adaptée et gérer le mot de passe administrateur par Windows LAPS.
+Placer le serveur dans l'[[Glossary:OU]] adaptée et gérer le mot de passe administrateur par Windows [[Glossary:LAPS]].
 
 ## 3. Production — Sécurité
 

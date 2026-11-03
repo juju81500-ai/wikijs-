@@ -8,7 +8,7 @@
 
 ## Problème précis à résoudre
 
-Configurer compte, MFA, verrouillage et récupération depuis interface officielle.
+Configurer compte, [[Glossary:MFA]], verrouillage et récupération depuis interface officielle.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

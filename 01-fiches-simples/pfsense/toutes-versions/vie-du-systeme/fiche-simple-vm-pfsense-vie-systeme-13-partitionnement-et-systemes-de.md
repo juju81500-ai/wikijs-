@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_13_Partitionnement_Et_Systemes_De
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 13 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-13`
@@ -14,7 +14,7 @@ Choisir le système de fichiers de l'installation.
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Dans l'installateur, écran « Partitioning » : choisir `Auto (ZFS)` (recommandé) ou `Auto (UFS)` pour du matériel très limité.
-   👉 Explication : ZFS permet les environnements de démarrage (System > Boot Environments) pour annuler une mise à jour.
+   👉 Explication : [[Glossary:ZFS]] permet les environnements de démarrage (System > Boot Environments) pour annuler une mise à jour.
 
 2. Choisir la disposition `stripe` (un disque) ou `mirror` (deux disques) et confirmer l'effacement du disque.
    👉 Explication : le miroir protège contre la panne d'un disque.

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_30_Protection_Contre_Le_Brute
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 30 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-30`
@@ -13,7 +13,7 @@ Bloquer les tentatives répétées de connexion.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Vérifier dans System > Advanced > Admin Access que la protection contre le brute-force (« Login Protection ») est active pour le GUI et SSH.
+1. Vérifier dans System > Advanced > Admin Access que la protection contre le brute-force (« Login Protection ») est active pour le [[Glossary:GUI]] et [[Glossary:SSH]].
    👉 Explication : les adresses fautives sont placées dans une table de blocage.
 
 2. Lister et débloquer les adresses (Diagnostics > Tables > `sshguard`) ou en shell :

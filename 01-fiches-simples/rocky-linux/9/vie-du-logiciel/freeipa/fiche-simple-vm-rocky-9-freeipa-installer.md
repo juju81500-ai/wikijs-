@@ -1,6 +1,6 @@
 # fiche-simple-vm-rocky-9-freeipa-installer.md
 
-- **Environnement** : VM Rocky Linux 9 dédiée au premier serveur FreeIPA/IdM
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée au premier serveur FreeIPA/IdM
 - **OS / Version** : Rocky Linux 9 x86_64; paquets `ipa-server` des dépôts de la distribution
 - **Catégorie** : annuaire / installation
 - **Tags** : `rocky9`, `freeipa`, `idm`, `kerberos`
@@ -17,7 +17,7 @@ Installer les paquets FreeIPA, ouvrir le pare-feu et lancer l'assistant d'instal
    ```bash
    sudo dnf install ipa-server
    ```
-   👉 Explication : Installe le serveur IdM sans DNS intégré. Avec DNS intégré, installer aussi `ipa-server-dns`.
+   👉 Explication : Installe le serveur IdM sans [[Glossary:DNS]] intégré. Avec DNS intégré, installer aussi `ipa-server-dns`.
 
 2. Ouvrir le pare-feu :
    ```bash
@@ -45,7 +45,7 @@ Utiliser le mode interactif; avec un DNS externe, publier dans la zone existante
 ## 3. Production — Sécurité
 
 - Ne pas utiliser le mode non interactif en production : les mots de passe seraient visibles dans l'historique et la liste des processus.
-- `--no-dnssec-validation` seulement si DNSSEC n'est pas requis.
+- `--no-dnssec-validation` seulement si [[Glossary:DNSSEC]] n'est pas requis.
 
 ## Validation et retour arrière
 

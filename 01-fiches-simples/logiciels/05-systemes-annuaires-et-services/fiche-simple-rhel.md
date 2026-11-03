@@ -1,6 +1,6 @@
 # 📄 RHEL
 
-- **Environnement** : VM (RHEL 9)
+- **Environnement** : [[Glossary:VM]] ([[Glossary:RHEL]] 9)
 - **OS / Version** : Red Hat Enterprise Linux 9.x
 - **Version** : RHEL 9 (abonnement Red Hat requis, à vérifier sur la version déployée)
 - **Catégorie** : Systèmes, annuaires et services
@@ -105,7 +105,7 @@ sudo grep -rH "^enabled" /etc/yum.repos.d/redhat.repo
 ```
 👉 Explication : Tous les dépôts actifs doivent avoir `gpgcheck=1`. Le fichier `redhat.repo` est géré par `subscription-manager` : ne pas le modifier à la main.
 
-2. Limitation de SSH au réseau d'administration :
+2. Limitation de [[Glossary:SSH]] au réseau d'administration :
 ```bash
 sudo firewall-cmd --list-services
 sudo firewall-cmd --permanent --remove-service=ssh

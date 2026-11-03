@@ -1,7 +1,7 @@
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Diagnostic_Journalctl_Erreurs
 
-- **Environnement** : VM Ubuntu Server
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat) - systemd 255 (journalctl, systemctl)
+- **Environnement** : [[Glossary:VM]] Ubuntu Server
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble Numbat) - systemd 255 (journalctl, systemctl)
 - **Catégorie** : Diagnostic / Analyse des erreurs système
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[journalctl]`, `[dmesg]`, `[systemd]`, `[troubleshooting]`, `[logs]`
 

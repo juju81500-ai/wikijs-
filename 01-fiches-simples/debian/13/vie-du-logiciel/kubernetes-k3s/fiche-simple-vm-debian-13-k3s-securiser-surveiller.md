@@ -13,7 +13,7 @@ Réduire l'exposition du plan de contrôle et détecter les défaillances, déri
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Lister l'exposition réseau de l'API et du kubelet :
+1. Lister l'exposition réseau de l'[[Glossary:API]] et du kubelet :
    ```bash
    sudo ss -tlnp | grep -E ':(6443|10250)\b'
    sudo nft list ruleset | grep -E '6443|10250' || echo "aucune règle dédiée"

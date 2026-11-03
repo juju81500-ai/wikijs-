@@ -1,12 +1,12 @@
 # 📄 VM_Debian_13_Services_Installation-DNS-BIND9.md
 
-- **Environnement** : VM (Debian 13 Trixie)
+- **Environnement** : [[Glossary:VM]] (Debian 13 Trixie)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
-- **Catégorie** : Services Réseau / DNS (BIND9)
+- **Catégorie** : Services Réseau / [[Glossary:DNS]] (BIND9)
 - **Tags** : `[debian13]`, `[bind9]`, `[dns]`, `[chroot]`, `[hardening]`, `[secnumcloud]`
 
 ## 🎯 Problème précis à résoudre
-Installer et sécuriser BIND sur Debian 13 pour une zone DNS autoritaire, contrôler les transferts et n'activer la récursion que dans une architecture séparée pour les clients internes.
+Installer et sécuriser [[Glossary:BIND]] sur Debian 13 pour une zone DNS autoritaire, contrôler les transferts et n'activer la récursion que dans une architecture séparée pour les clients internes.
 
 ---
 
@@ -35,7 +35,7 @@ Installer et sécuriser BIND sur Debian 13 pour une zone DNS autoritaire, contr�
    👉 Explication : Déclare la zone `lab.example.test` comme zone primaire et interdit son transfert vers d'autres serveurs.
 
 2. Fichier de zone de données `/etc/bind/db.lab.example.test` :
-   $TTL 86400
+   $[[Glossary:TTL]] 86400
    @ IN SOA ns1.lab.example.test. hostmaster.lab.example.test. ( 2026102701 3600 1800 604800 86400 )
    @ IN NS ns1.lab.example.test.
    ns1 IN A 192.0.2.53
@@ -71,4 +71,4 @@ Installer et sécuriser BIND sur Debian 13 pour une zone DNS autoritaire, contr�
    `sudo named-checkconf && sudo systemctl reload bind9`
    👉 Explication : Une modification récursive de propriétaire peut rendre les fichiers de configuration modifiables par le service.
 
-4. Autoriser UDP et TCP 53 uniquement depuis les clients prévus dans le pare-feu persistant. Pour les transferts de zone, autoriser uniquement les secondaires déclarés et utiliser TSIG ; ne pas utiliser une règle nftables ajoutée en mémoire.
+4. Autoriser [[Glossary:UDP]] et [[Glossary:TCP]] 53 uniquement depuis les clients prévus dans le pare-feu persistant. Pour les transferts de zone, autoriser uniquement les secondaires déclarés et utiliser TSIG ; ne pas utiliser une règle nftables ajoutée en mémoire.

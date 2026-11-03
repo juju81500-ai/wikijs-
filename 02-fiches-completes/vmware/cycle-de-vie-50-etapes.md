@@ -14,7 +14,7 @@ Versions présentes dans le pack : ESXi-8. Vérifier chaque étape sur la versio
 
 ### 01. Definition des besoins (Sizing)
 
-- **Tous OS** : Allocation vCPU/CPU, RAM, IOPS stockage, architecture (x86_64, ARM64).
+- **Tous OS** : Allocation vCPU/CPU, [[Glossary:RAM]], [[Glossary:IOPS]] stockage, architecture (x86_64, ARM64).
 
 ### 02. Recuperation de l'image systeme
 
@@ -26,12 +26,12 @@ Versions présentes dans le pack : ESXi-8. Vérifier chaque étape sur la versio
 
 ### 04. Preparation du support d'amorcage
 
-- **Bare-metal** : Cle USB bootable (dd, Rufus, Ventoy) ou montage IPMI/iDRAC/iLO
+- **Bare-metal** : Cle [[Glossary:USB]] bootable (dd, Rufus, Ventoy) ou montage [[Glossary:IPMI]]/iDRAC/iLO
 - **Virtuel** : Stockage ISO dans le datastore (Proxmox VE, VMware ESXi, Hyper-V, XCP-ng)
 
 ### 05. Configuration materielle / Firmware
 
-- **Tous OS** : Choix BIOS Legacy ou UEFI, Secure Boot (On/Off selon OS), Virtualisation (VT-x/AMD-V), controleur de stockage (AHCI, VirtIO SCSI, MegaRAID).
+- **Tous OS** : Choix [[Glossary:BIOS]] Legacy ou UEFI, Secure Boot (On/Off selon OS), Virtualisation (VT-x/AMD-V), controleur de stockage ([[Glossary:AHCI]], VirtIO SCSI, MegaRAID).
 
 
 ## Phase 2 : installation de base (étapes 6 à 15)
@@ -117,7 +117,7 @@ Versions présentes dans le pack : ESXi-8. Vérifier chaque étape sur la versio
 
 ### 25. Validation de l'etat initial (Baseline)
 
-- **Tous OS** : Nettoyage des caches, arret propre et creation du Snapshot VM "01-CLEAN-INSTALL" ou capture Sysprep/Template.
+- **Tous OS** : Nettoyage des caches, arret propre et creation du Snapshot [[Glossary:VM]] "01-CLEAN-INSTALL" ou capture Sysprep/Template.
 
 
 ## Phase 4 : sécurisation et hardening (étapes 26 à 35)
@@ -184,7 +184,7 @@ Versions présentes dans le pack : ESXi-8. Vérifier chaque étape sur la versio
 ### 40. Configuration des sauvegardes (Backup)
 
 - **Niveau VM** : Proxmox Backup Server (vzdump), Veeam Backup & Replication
-- **Niveau OS** : BorgBackup, Restic, Rclone, cron dumps SQL (Linux/BSD) | Windows Server Backup (wbadmin), VSS
+- **Niveau OS** : BorgBackup, Restic, Rclone, cron dumps [[Glossary:SQL]] (Linux/BSD) | Windows Server Backup (wbadmin), [[Glossary:VSS]]
 
 ### 41. Supervision, metriques et inventaire (Monitoring)
 
@@ -223,7 +223,7 @@ Versions présentes dans le pack : ESXi-8. Vérifier chaque étape sur la versio
 
 ### 49. Enregistrement CMDB et Gestion des acces
 
-- **Tous OS** : Integration dans l'inventaire (GLPI, NetBox), documentation IPAM, enregistrement des secrets dans le coffre-fort (Vaultwarden / Bitwarden, KeePass, HashiCorp Vault) et configuration SSH/RDP.
+- **Tous OS** : Integration dans l'inventaire ([[Glossary:GLPI]], NetBox), documentation [[Glossary:IPAM]], enregistrement des secrets dans le coffre-fort (Vaultwarden / Bitwarden, KeePass, HashiCorp Vault) et configuration [[Glossary:SSH]]/RDP.
 
 ### 50. Documentation d'exploitation (Runbook / Dossier d'Architecture Technique)
 

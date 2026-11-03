@@ -1,12 +1,12 @@
 # 📄 fiche-simple-lxc-alpine-migrer-3-19-version-maintenue.md
 
-- **Environnement** : LXC Proxmox VE existant et nouveau LXC de remplacement
+- **Environnement** : [[Glossary:LXC]] Proxmox VE existant et nouveau LXC de remplacement
 - **OS / Version** : Alpine Linux 3-19 vers une branche Alpine maintenue
 - **Catégorie** : Système / Migration
 - **Tags** : `[alpine]`, `[alpine3.19]`, `[lxc]`, `[proxmox]`, `[migration]`, `[maintenance]`
 
 ## 🎯 Problème précis à résoudre
-Remplacer un conteneur Alpine Linux 3-19 ancien par un nouveau CT créé avec une version maintenue, en transférant services et données avec une possibilité de retour arrière.
+Remplacer un conteneur Alpine Linux 3-19 ancien par un nouveau [[Glossary:CT]] créé avec une version maintenue, en transférant services et données avec une possibilité de retour arrière.
 
 > Préférer une migration côte à côte à une mise à niveau majeure en place. Vérifier la branche Alpine maintenue et la compatibilité des applications au moment de la migration.
 
@@ -23,13 +23,13 @@ Remplacer un conteneur Alpine Linux 3-19 ancien par un nouveau CT créé avec un
    vzdump <CTID_SOURCE> --mode stop --compress zstd --storage <STOCKAGE_SAUVEGARDE>
    ```
 3. Créer un nouveau CT à partir d'un template Alpine maintenu, restaurer les configurations nécessaires et recopier les données applicatives après arrêt cohérent des services.
-   👉 *Explication : ne pas réutiliser l'adresse IP de production tant que l'ancien CT est encore actif.*
+   👉 *Explication : ne pas réutiliser l'adresse [[Glossary:IP]] de production tant que l'ancien CT est encore actif.*
 
 ## ⚡ 2. Production — Façon Simplifiée
 1. Vérifier la restauration de la sauvegarde et noter l'IP, le bridge/VLAN, les points de montage, les services OpenRC et les paquets du CT source.
 2. Créer le nouveau CT avec la version Alpine maintenue, des ressources équivalentes ou ajustées, un accès console et une adresse temporaire.
 3. Installer les paquets depuis les dépôts de la nouvelle branche, migrer les configurations une par une et copier les données avec les propriétaires et permissions requis.
-4. Tester les services, DNS, routes, journaux et intégrations depuis un réseau de test; planifier ensuite une bascule d'IP/DNS pendant une fenêtre de maintenance.
+4. Tester les services, [[Glossary:DNS]], routes, journaux et intégrations depuis un réseau de test; planifier ensuite une bascule d'IP/DNS pendant une fenêtre de maintenance.
    👉 *Explication : ne pas copier aveuglément tout `/etc` d'une version à l'autre; les fichiers de configuration et paquets peuvent avoir changé.*
 
 ## 🔒 3. Production — Façon Sécurisée

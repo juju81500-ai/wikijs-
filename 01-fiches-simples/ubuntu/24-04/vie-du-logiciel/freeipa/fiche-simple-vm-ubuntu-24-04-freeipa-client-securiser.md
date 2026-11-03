@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_FreeIPA_Client_Securiser
 
-- **Environnement** : VM Ubuntu 24-04 cliente d'un domaine FreeIPA existant
-- **OS / Version** : Ubuntu 24-04 LTS Noble; paquet freeipa-client des dépôts, version à vérifier
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 cliente d'un domaine FreeIPA existant
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; paquet freeipa-client des dépôts, version à vérifier
 - **Catégorie** : FreeIPA client / sécuriser
 - **Tags** : `freeipa`, `ubuntu24-04`, `vie-du-logiciel`, `securiser`
 
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Durcir l'accès du client Ubuntu inscrit : droits, accès SSH, politiques centralisées.
+Durcir l'accès du client Ubuntu inscrit : droits, accès [[Glossary:SSH]], politiques centralisées.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

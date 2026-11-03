@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-12-znuny-apache.md
 
-- **Environnement** : VM Debian 12 dédiée (Apache/mod_perl, MariaDB 10.11), Znuny 7.3.8
+- **Environnement** : [[Glossary:VM]] Debian 12 dédiée (Apache/mod_perl, MariaDB 10.11), Znuny 7.3.8
 - **OS / Version** : Debian 12 Bookworm; Znuny 7.3.8
-- **Catégorie** : ITSM / ticketing
+- **Catégorie** : [[Glossary:ITSM]] / ticketing
 - **Tags** : `debian12`, `znuny`, `apache`, `mod_perl`
 
 ---
@@ -43,7 +43,7 @@ Activer mod_perl, charger la configuration Znuny et appliquer les permissions.
 
 ## 2. Production — Contrôles
 
-Configurer un VirtualHost dédié avec nom DNS et TLS; si Apache héberge d'autres sites, valider l'impact du passage à prefork.
+Configurer un VirtualHost dédié avec nom [[Glossary:DNS]] et [[Glossary:TLS]]; si Apache héberge d'autres sites, valider l'impact du passage à prefork.
 
 ## 3. Production — Sécurité
 

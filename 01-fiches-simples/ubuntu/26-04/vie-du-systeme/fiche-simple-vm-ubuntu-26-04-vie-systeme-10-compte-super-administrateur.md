@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_10_Compte_Super_Administrateur
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 10 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-10`
@@ -32,7 +32,7 @@ Stocker tout mot de passe root de secours dans le coffre d'entreprise.
 
 ## 3. Production — Sécurité
 
-Interdire root en SSH (étape 27).
+Interdire root en [[Glossary:SSH]] (étape 27).
 
 ## Validation et retour arrière
 

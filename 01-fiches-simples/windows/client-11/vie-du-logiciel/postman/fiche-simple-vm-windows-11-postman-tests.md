@@ -2,7 +2,7 @@
 
 - **Environnement** : Poste Windows 11 géré, compte standard, Postman Desktop et Newman
 - **OS / Version** : Windows 11 Client
-- **Catégorie** : API / tests automatisés
+- **Catégorie** : [[Glossary:API]] / tests automatisés
 - **Tags** : `windows-11`, `postman`, `api`, `newman`, `vie-du-logiciel`
 
 ---
@@ -25,7 +25,7 @@ Ajouter des tests Postman (scripts de test) vérifiant statut, temps de réponse
    pm.test('Temps de réponse < 800 ms', function () { pm.expect(pm.response.responseTime).to.be.below(800); });
    pm.test('Corps JSON', function () { pm.response.to.be.json; });
    ```
-   👉 Explication : Vérifie le statut, le temps de réponse (seuil à adapter) et le format JSON.
+   👉 Explication : Vérifie le statut, le temps de réponse (seuil à adapter) et le format [[Glossary:JSON]].
 
 3. Lancer la recette dans le Collection Runner :
    ```text

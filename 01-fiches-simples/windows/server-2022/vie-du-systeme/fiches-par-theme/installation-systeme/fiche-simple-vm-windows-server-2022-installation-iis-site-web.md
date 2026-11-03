@@ -1,12 +1,12 @@
 # 📄 fiche-simple-vm-windows-server-2022-installation-iis-site-web.md
 
-- **Environnement** : VM Windows Server
+- **Environnement** : [[Glossary:VM]] Windows Server
 - **OS / Version** : Windows Server 2022
 - **Catégorie** : Installation / Services Web
 - **Tags** : `[windows-server-2022]`, `[iis]`, `[web]`, `[installation]`, `[gui]`, `[powershell]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer le rôle IIS sur Windows Server 2022, vérifier le site par défaut et préparer une ouverture réseau limitée aux flux web réellement nécessaires.
+Installer le rôle [[Glossary:IIS]] sur Windows Server 2022, vérifier le site par défaut et préparer une ouverture réseau limitée aux flux web réellement nécessaires.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Dans PowerShell lancé en administrateur, installer IIS avec les outils de gestion :
@@ -40,8 +40,8 @@ Get-Service W3SVC
 👉 *Explication : `Web-Server` installe le rôle; les modules d'application et l'ouverture réseau restent à adapter au besoin réel.*
 
 ## 🔒 3. Production — Façon Sécurisée
-1. Dans **Pare-feu Windows Defender avec fonctions avancées de sécurité**, créer ou vérifier une règle entrante TCP limitée à la source, au profil réseau et aux ports réellement nécessaires (généralement 443; 80 uniquement si le scénario l'exige).
-2. Pour un site public, configurer un certificat TLS valide et vérifier le binding HTTPS dans IIS avant d'exposer le service. Ne pas considérer le site de démonstration par défaut comme une application prête pour la production.
+1. Dans **Pare-feu Windows Defender avec fonctions avancées de sécurité**, créer ou vérifier une règle entrante [[Glossary:TCP]] limitée à la source, au profil réseau et aux ports réellement nécessaires (généralement 443; 80 uniquement si le scénario l'exige).
+2. Pour un site public, configurer un certificat [[Glossary:TLS]] valide et vérifier le binding HTTPS dans IIS avant d'exposer le service. Ne pas considérer le site de démonstration par défaut comme une application prête pour la production.
 3. Installer uniquement les fonctionnalités IIS utilisées, maintenir Windows et l'application à jour, et appliquer des permissions minimales au répertoire de contenu.
 4. Avant modification, sauvegarder la configuration IIS et le contenu du site; ne pas désactiver globalement le pare-feu pour résoudre un problème de connectivité.
 

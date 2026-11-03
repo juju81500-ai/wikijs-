@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_38_Isolation_Des_Comptes_De
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 38 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-38`
@@ -20,7 +20,7 @@ Utiliser des identifiants dédiés pour les automatisations.
    ```sh
    curl -sk -u ADMIN-API:MOT_DE_PASSE_API https://IP_LAN/api/v2/status/system
    ```
-   👉 Explication : `MOT_DE_PASSE_API` est le secret du compte dédié; la réponse JSON prouve l'accès (selon le paquet API installé).
+   👉 Explication : `MOT_DE_PASSE_API` est le secret du compte dédié; la réponse [[Glossary:JSON]] prouve l'accès (selon le paquet [[Glossary:API]] installé).
 
 ## 2. Production — Contrôles
 

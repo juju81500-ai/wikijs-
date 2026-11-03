@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_42_Journaux_Rotation_Et_Centralisation
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 42 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-42`
@@ -27,7 +27,7 @@ Maîtriser et exporter les journaux.
    echo '*.* @@collecteur.exemple.lan:514' | sudo tee /etc/rsyslog.d/90-forward.conf
    sudo systemctl restart rsyslog
    ```
-   👉 Explication : `@@` = TCP; utiliser TLS selon la politique.
+   👉 Explication : `@@` = [[Glossary:TCP]]; utiliser [[Glossary:TLS]] selon la politique.
 
 ## 2. Production — Contrôles
 

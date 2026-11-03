@@ -28,13 +28,13 @@ Mettre à jour un Transporter NAKIVO installé sur Debian 13 (avec son Director)
    ```
    👉 Explication : remplacer `X.X.X` par la version téléchargée (à remplacer); utiliser le nom exact du fichier publié.
 
-5. Vérifier qu'aucun job ni tâche de maintenance de dépôt n'est en cours, créer un snapshot de la VM si l'hôte est virtualisé, puis exécuter l'updater avec les privilèges root :
+5. Vérifier qu'aucun job ni tâche de maintenance de dépôt n'est en cours, créer un snapshot de la [[Glossary:VM]] si l'hôte est virtualisé, puis exécuter l'updater avec les privilèges root :
    ```bash
    sudo ./NAKIVO_Backup_Replication_vX.X.X_Updater.sh
    ```
    👉 Explication : lire la licence (Espace pour paginer), répondre « Y » puis Entrée, et de nouveau « Y » pour confirmer l'arrêt des services; répéter sur chaque machine où un Transporter est déployé séparément.
 
-6. Si un dépôt CIFS/NFS reste monté sur l'OS, arrêter les services Transporter concernés, vérifier les montages, démonter, puis lancer la mise à jour :
+6. Si un dépôt [[Glossary:CIFS]]/NFS reste monté sur l'OS, arrêter les services Transporter concernés, vérifier les montages, démonter, puis lancer la mise à jour :
    ```bash
    mount | grep -E 'cifs|nfs'
    sudo umount CHEMIN_DU_POINT_DE_MONTAGE

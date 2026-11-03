@@ -1,6 +1,6 @@
 # 📄 Fiche_Simple_-_VM_Debian_13_Journaux_Journald_Logrotate
 
-- **Environnement** : VM ou serveur Debian 13 avec systemd
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 13 avec systemd
 - **OS / Version** : Debian 13 (Trixie) avec systemd-journald et logrotate - Famille Debian
 - **Catégorie** : Système & Services / Journaux et rotation
 - **Tags** : `[debian13]`, `[debian]`, `[journald]`, `[logrotate]`, `[logs]`, `[systemd]`

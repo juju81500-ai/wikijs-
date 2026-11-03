@@ -8,7 +8,7 @@
 
 Fiche simple : [concevoir avant d'installer](../../../../01-fiches-simples/transverses/multi-os/stockage-reseau/fiche-simple-hote-multi-os-stockage-reseau-concevoir.md).
 
-Définir les clients, les droits, le plan d'adressage, le protocole, la capacité, les snapshots, la sauvegarde et le scénario de restauration. Ne pas présenter simultanément un même système de fichiers en NFS/SMB et en LUN iSCSI sans conception explicite : un montage concurrent non compatible peut corrompre les données.
+Définir les clients, les droits, le plan d'adressage, le protocole, la capacité, les snapshots, la sauvegarde et le scénario de restauration. Ne pas présenter simultanément un même système de fichiers en [[Glossary:NFS]]/SMB et en [[Glossary:LUN]] iSCSI sans conception explicite : un montage concurrent non compatible peut corrompre les données.
 
 Créer des volumes et points de montage dédiés, avec supervision de l'espace et protection contre la saturation. Chiffrer les flux sur les réseaux non fiables.
 
@@ -24,7 +24,7 @@ sudo systemctl enable --now smbd
 sudo systemctl --no-pager status smbd
 ```
 
-Ouvrir TCP/445 uniquement aux sous-réseaux clients prévus. Vérifier depuis un client avec un compte non administrateur.
+Ouvrir [[Glossary:TCP]]/445 uniquement aux sous-réseaux clients prévus. Vérifier depuis un client avec un compte non administrateur.
 
 ## 3. Déployer NFSv4
 
@@ -44,7 +44,7 @@ N'autoriser que les clients attendus et les flux nécessaires à la version NFS 
 
 Fiche simple : [présenter une cible iSCSI](../../../../01-fiches-simples/transverses/multi-os/stockage-reseau/fiche-simple-hote-multi-os-stockage-reseau-iscsi.md).
 
-Réserver une adresse sur un réseau de stockage isolé, configurer l'initiateur IQN autorisé, le LUN et les ACL de la cible. Utiliser l'outil maintenu par la distribution (par exemple `targetcli` avec LIO) et vérifier chaque identifiant avant d'exporter le volume.
+Réserver une adresse sur un réseau de stockage isolé, configurer l'initiateur IQN autorisé, le LUN et les [[Glossary:ACL]] de la cible. Utiliser l'outil maintenu par la distribution (par exemple `targetcli` avec LIO) et vérifier chaque identifiant avant d'exporter le volume.
 
 Une LUN brute doit avoir un initiateur propriétaire clair. Pour le multi-accès, utiliser un système de fichiers en cluster et un mécanisme de réservation compatibles ; ne pas monter le même système de fichiers classique en écriture depuis plusieurs hôtes.
 

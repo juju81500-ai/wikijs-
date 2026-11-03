@@ -1,7 +1,7 @@
 # fiche-simple-vm-ubuntu-ceph-limites-validation.md
 
 - **Environnement** : Cluster Ceph de laboratoire à trois nœuds (ceph01, ceph02, ceph03) géré par cephadm
-- **OS / Version** : Ubuntu Server 22-04 LTS; Ceph Tentacle 20.2.4
+- **OS / Version** : Ubuntu Server 22-04 [[Glossary:LTS]]; Ceph Tentacle 20.2.4
 - **Catégorie** : stockage / cluster Ceph
 - **Tags** : `ubuntu2204`, `ceph`, `tentacle`, `cephadm`
 
@@ -20,7 +20,7 @@ Connaître les limites du guide avant d'utiliser la procédure.
    👉 Explication : ils doivent être remplacés par votre plan réel.
 
 3. Retenir qu'aucune commande de cluster n'a été exécutée dans ce workspace.
-   👉 Explication : installation, placement CRUSH, OSD et restauration doivent être testés sur des VM et disques vierges dédiés.
+   👉 Explication : installation, placement CRUSH, OSD et restauration doivent être testés sur des [[Glossary:VM]] et disques vierges dédiés.
 
 4. Vérifier la version installée :
    ```bash

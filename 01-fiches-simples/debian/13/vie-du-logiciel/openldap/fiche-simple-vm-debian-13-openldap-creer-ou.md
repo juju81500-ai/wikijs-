@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-openldap-creer-ou.md
 
-- **Environnement** : annuaire LDAP pilote avec suffixe confirmé
+- **Environnement** : annuaire [[Glossary:LDAP]] pilote avec suffixe confirmé
 - **OS / Version** : Debian 13; OpenLDAP 2.6
 - **Catégorie** : annuaire / structure des données
 - **Tags** : `debian13`, `openldap`, `ldapadd`, `ldif`, `ou`
@@ -44,7 +44,7 @@ Créer les unités organisationnelles de test sous le suffixe vérifié.
 
 ## 2. Production — Contrôles
 
-Valider la nomenclature, le propriétaire des branches, les droits de délégation et le processus de revue avant de créer des OU métier.
+Valider la nomenclature, le propriétaire des branches, les droits de délégation et le processus de revue avant de créer des [[Glossary:OU]] métier.
 
 ## 3. Production — Sécurité
 

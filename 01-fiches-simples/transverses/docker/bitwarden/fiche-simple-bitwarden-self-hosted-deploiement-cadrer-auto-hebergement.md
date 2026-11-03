@@ -16,7 +16,7 @@ Décider si l'auto-hébergement est adapté et réunir les prérequis.
 1. Comparer le besoin avec Bitwarden SaaS et vérifier les licences d'organisation.
    👉 Explication : certaines fonctions d'organisation exigent une licence.
 
-2. Prévoir un FQDN dédié, TLS valide, SMTP, stockage persistant, supervision, sauvegarde hors hôte et procédure de mise à jour.
+2. Prévoir un [[Glossary:FQDN]] dédié, [[Glossary:TLS]] valide, [[Glossary:SMTP]], stockage persistant, supervision, sauvegarde hors hôte et procédure de mise à jour.
    👉 Explication : éléments indispensables avant installation.
 
 3. Contrôler les ressources de l'hôte :
@@ -25,7 +25,7 @@ Décider si l'auto-hébergement est adapté et réunir les prérequis.
    free -h
    df -h /opt
    ```
-   👉 Explication : le déploiement standard annonce 2 vCPU, 4 Go de RAM et 12 Go de stockage minimum (25 Go recommandés).
+   👉 Explication : le déploiement standard annonce 2 vCPU, 4 Go de [[Glossary:RAM]] et 12 Go de stockage minimum (25 Go recommandés).
 
 4. Retenir que la base MSSQL Express intégrée est limitée; une base externe suit les instructions Bitwarden.
    👉 Explication : dimensionner selon comptes, pièces jointes, sauvegardes et journaux.

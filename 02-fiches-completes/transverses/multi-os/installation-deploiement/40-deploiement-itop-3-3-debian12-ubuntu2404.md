@@ -1,19 +1,19 @@
 # Déployer iTop 3.3 sur Debian 12 ou Ubuntu 24-04
 
-- **OS / Version** : Debian 12 Bookworm ou Ubuntu Server 24-04 LTS; iTop Community 3.3.0
+- **OS / Version** : Debian 12 Bookworm ou Ubuntu Server 24-04 [[Glossary:LTS]]; iTop Community 3.3.0
 - **Type de fiche** : Installation/Déploiement
-- **Environnement** : VM Linux avec Apache, PHP 8.2/8.3 et MariaDB 10.11
-- **Machine ciblée** : Serveur ITSM/CMDB
-- **Catégorie** : ITSM / CMDB / helpdesk
+- **Environnement** : [[Glossary:VM]] Linux avec Apache, PHP 8.2/8.3 et MariaDB 10.11
+- **Machine ciblée** : Serveur [[Glossary:ITSM]]/CMDB
+- **Catégorie** : ITSM / [[Glossary:CMDB]] / helpdesk
 - **Tags** : `itop`, `itsm`, `cmdb`, `debian12`, `ubuntu2404`, `apache`, `mariadb`
 
 ## 1. Dimensionner et préparer
 
 Fiche simple : [dimensionner et préparer](../../../../01-fiches-simples/debian/12/vie-du-logiciel/itop/fiche-simple-vm-debian-12-itop-dimensionner-preparer.md).
 
-iTop 3.3 prend en charge PHP 8.2 à 8.4, MariaDB 10.6 à 11.8 et recommande Debian 12 ou Ubuntu 24-04. Adapter les ressources au volume : la recommandation constructeur pour moins de 5 000 tickets/mois, moins de 50 utilisateurs console et moins de 200 000 CI est 4 vCPU, 8 Go de RAM et 20 Go pour la base.
+iTop 3.3 prend en charge PHP 8.2 à 8.4, MariaDB 10.6 à 11.8 et recommande Debian 12 ou Ubuntu 24-04. Adapter les ressources au volume : la recommandation constructeur pour moins de 5 000 tickets/mois, moins de 50 utilisateurs console et moins de 200 000 CI est 4 vCPU, 8 Go de [[Glossary:RAM]] et 20 Go pour la base.
 
-Préparer un nom DNS, TLS, IP fixe, SMTP, compte de service et sauvegarde testée. Installer l'application sur un hôte dédié; ne pas exposer directement le chemin `/setup` à Internet après l'assistant.
+Préparer un nom [[Glossary:DNS]], [[Glossary:TLS]], [[Glossary:IP]] fixe, [[Glossary:SMTP]], compte de service et sauvegarde testée. Installer l'application sur un hôte dédié; ne pas exposer directement le chemin `/setup` à Internet après l'assistant.
 
 ## 2. Installer Apache, PHP et MariaDB
 
@@ -78,13 +78,13 @@ Fiche simple : [exécuter l'assistant initial](../../../../01-fiches-simples/deb
 
 Vérifier Apache puis ouvrir `https://itsm.example.net/setup`. Sélectionner la base iTop dédiée, renseigner l'utilisateur et le secret, vérifier les contrôles PHP/Graphviz, choisir les modules réellement nécessaires, configurer le premier compte administrateur et terminer l'installation.
 
-Après validation, appliquer la procédure officielle de protection de l'assistant setup et confirmer qu'il n'est plus accessible aux utilisateurs non autorisés. Configurer les notifications SMTP, l'annuaire LDAP/AD si requis, les profils et les premières données CMDB.
+Après validation, appliquer la procédure officielle de protection de l'assistant setup et confirmer qu'il n'est plus accessible aux utilisateurs non autorisés. Configurer les notifications SMTP, l'annuaire [[Glossary:LDAP]]/AD si requis, les profils et les premières données CMDB.
 
 ## 6. Activer les tâches planifiées
 
 Fiche simple : [activer les tâches planifiées](../../../../01-fiches-simples/debian/12/vie-du-logiciel/itop/fiche-simple-vm-debian-12-itop-activer-taches-planifiees.md).
 
-Les SLA, notifications, sauvegardes automatiques et tâches asynchrones dépendent de `webservices/cron.php`. Créer son planificateur avec un compte d'administration iTop, stocker ses paramètres dans un fichier hors du DocumentRoot et suivre la fiche simple Debian dédiée.
+Les [[Glossary:SLA]], notifications, sauvegardes automatiques et tâches asynchrones dépendent de `webservices/cron.php`. Créer son planificateur avec un compte d'administration iTop, stocker ses paramètres dans un fichier hors du DocumentRoot et suivre la fiche simple Debian dédiée.
 
 ## 7. Vérifier, sauvegarder et mettre à jour
 

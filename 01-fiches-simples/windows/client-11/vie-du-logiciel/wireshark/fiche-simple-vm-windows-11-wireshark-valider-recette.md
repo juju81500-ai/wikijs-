@@ -19,7 +19,7 @@ Prouver que Wireshark capture et analyse correctement.
 ```
    👉 Explication : Confirme l'installation.
 
-2. Capturer 10 paquets ICMP.
+2. Capturer 10 paquets [[Glossary:ICMP]].
 ```powershell
 & "$env:ProgramFiles\Wireshark\tshark.exe" -i NUMERO_INTERFACE -c 10 -f icmp -w C:\Captures\recette.pcapng
 ```
@@ -31,7 +31,7 @@ Prouver que Wireshark capture et analyse correctement.
 ```
    👉 Explication : Prouve l'écriture et la lecture.
 
-4. GUI : ouvrir le fichier avec Wireshark, **Statistiques > Résumé**.
+4. [[Glossary:GUI]] : ouvrir le fichier avec Wireshark, **Statistiques > Résumé**.
    👉 Explication : Contrôle l'affichage graphique.
 
 ## 2. Production — Contrôles

@@ -12,8 +12,8 @@
 
 1. distinguer serveur web, proxy direct et **proxy inverse** ;
 2. installer Apache ou Nginx et repérer configuration, journaux et service `systemd` ;
-3. publier **plusieurs sites sur une seule IP** avec des hôtes virtuels ;
-4. activer HTTPS, choisir des versions de TLS raisonnables et rediriger HTTP vers HTTPS ;
+3. publier **plusieurs sites sur une seule [[Glossary:IP]]** avec des hôtes virtuels ;
+4. activer HTTPS, choisir des versions de [[Glossary:TLS]] raisonnables et rediriger [[Glossary:HTTP]] vers HTTPS ;
 5. ajouter des **en-têtes de sécurité** de base sans casser l'application ;
 6. lire les journaux pour diagnostiquer un incident ;
 7. placer un proxy inverse devant une application et répartir la charge ;
@@ -21,7 +21,7 @@
 
 ## Prérequis et durée
 
-- Savoir utiliser un terminal Linux, un éditeur, `systemctl` et `journalctl` ; notions d'IP, de port, de DNS et de HTTP/HTTPS.
+- Savoir utiliser un terminal Linux, un éditeur, `systemctl` et `journalctl` ; notions d'IP, de port, de [[Glossary:DNS]] et de HTTP/HTTPS.
 - Une **machine virtuelle jetable** (Debian 12 ou Ubuntu 22-04/24-04) sans donnée réelle, avec `sudo`. Durée : 4 à 5 heures.
 
 Les adresses de documentation (`192.0.2.0/24`, `203.0.113.0/24`) et les noms `example.com` / `example.test` remplacent vos vraies valeurs.
@@ -100,7 +100,7 @@ sudo ss -lntp | grep -E ':(80|443)\b'
 curl -I http://127.0.0.1/
 ```
 
-👉 Explication : `systemctl status` donne l'état du service ; `ss -lntp` liste les sockets TCP en écoute avec le processus propriétaire ; `curl -I` demande uniquement les en-têtes de la page d'accueil locale. Un `200 OK` prouve que le serveur répond **localement**, pas qu'il est joignable depuis un autre poste.
+👉 Explication : `systemctl status` donne l'état du service ; `ss -lntp` liste les sockets [[Glossary:TCP]] en écoute avec le processus propriétaire ; `curl -I` demande uniquement les en-têtes de la page d'accueil locale. Un `200 OK` prouve que le serveur répond **localement**, pas qu'il est joignable depuis un autre poste.
 
 ### 2.3 Où se trouve quoi ?
 
@@ -240,7 +240,7 @@ sudo openssl req -x509 -newkey ec -pkeyopt ec_paramgen_curve:P-256 -nodes \
 sudo chmod 600 /etc/ssl/lab/www.example.test.key
 ```
 
-👉 Explication : génère une clé EC P-256 et un certificat auto-signé de 30 jours avec un SAN ; `-nodes` = sans phrase de passe (laboratoire seulement) ; `chmod 600` protège la clé. Un navigateur avertira : aucune autorité n'a signé.
+👉 Explication : génère une clé EC P-256 et un certificat auto-signé de 30 jours avec un [[Glossary:SAN]] ; `-nodes` = sans phrase de passe (laboratoire seulement) ; `chmod 600` protège la clé. Un navigateur avertira : aucune autorité n'a signé.
 
 ### 4.3 Bloc HTTPS Nginx
 
@@ -320,7 +320,7 @@ Les en-têtes de réponse sont des **consignes** au navigateur : ils réduisent 
 | `Referrer-Policy` | Limite les informations d'origine envoyées | `strict-origin-when-cross-origin` |
 | `Content-Security-Policy` | Liste les sources autorisées | À bâtir **avec les développeurs** |
 
-Deux précautions : **HSTS est difficile à annuler** (le navigateur refuse HTTP pendant toute la durée), donc commencez court et n'ajoutez ni `includeSubDomains` ni `preload` sans audit ; une **CSP trop stricte casse le site**, commencez par `Content-Security-Policy-Report-Only`.
+Deux précautions : **[[Glossary:HSTS]] est difficile à annuler** (le navigateur refuse HTTP pendant toute la durée), donc commencez court et n'ajoutez ni `includeSubDomains` ni `preload` sans audit ; une **CSP trop stricte casse le site**, commencez par `Content-Security-Policy-Report-Only`.
 
 Nginx :
 
@@ -454,7 +454,7 @@ Deux serveurs identiques valent mieux qu'un : plus de capacité, et la panne de 
 
 ![Schéma d'un répartiteur de charge placé entre un commutateur relié à plusieurs postes clients et deux serveurs situés sur un réseau privé](images/serveur-web-reverse-proxy-1.svg)
 
-*Figure 3 — Principe d'un répartiteur de charge entre plusieurs clients et deux serveurs (légendes en anglais : Terminal = poste client, Switch = commutateur, Loading Balancer = répartiteur de charge, Server = serveur). Image « Load Balancing Cluster (NAT).svg » par HFWMan, Wikimedia Commons, licence CC BY-SA 4.0 ; voir les crédits en fin de leçon.*
+*Figure 3 — Principe d'un répartiteur de charge entre plusieurs clients et deux serveurs (légendes en anglais : Terminal = poste client, Switch = commutateur, Loading Balancer = répartiteur de charge, Server = serveur). Image « Load Balancing Cluster ([[Glossary:NAT]]).svg » par HFWMan, Wikimedia Commons, licence CC BY-SA 4.0 ; voir les crédits en fin de leçon.*
 
 ### 8.2 Configuration Nginx
 
@@ -507,7 +507,7 @@ Si la session est en mémoire locale, un visiteur renvoyé vers l'autre serveur 
 
 ## Mise en pratique guidée
 
-**Objectif** : Nginx en HTTPS relaie une « application » factice vers deux serveurs locaux. **Contexte** : VM Debian 12 jetable ; toutes les connexions restent sur `127.0.0.1`.
+**Objectif** : Nginx en HTTPS relaie une « application » factice vers deux serveurs locaux. **Contexte** : [[Glossary:VM]] Debian 12 jetable ; toutes les connexions restent sur `127.0.0.1`.
 
 ### Étape 1 — Installer Nginx et Python (pour les applications factices)
 

@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-13-netbox-installer-postgresql-redis.md
 
-- **Environnement** : VM Debian 13 dédiée; PostgreSQL, Redis et NetBox locaux
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée; PostgreSQL, Redis et NetBox locaux
 - **OS / Version** : Debian 13; PostgreSQL 17, Redis depuis les dépôts Debian
-- **Catégorie** : IPAM / DCIM / dépendances de base de données
+- **Catégorie** : [[Glossary:IPAM]] / [[Glossary:DCIM]] / dépendances de base de données
 - **Tags** : `debian13`, `netbox`, `postgresql`, `redis`, `installation`
 
 ---
@@ -64,7 +64,7 @@ Définir capacité, sauvegarde PostgreSQL, rétention, supervision et responsabl
 
 - Utiliser un mot de passe aléatoire unique stocké dans un coffre approuvé; ne pas le conserver dans le shell ou le dépôt.
 - Limiter les rôles et privilèges à la base NetBox.
-- Ne pas exposer TCP/5432 ou TCP/6379 sur des interfaces externes.
+- Ne pas exposer [[Glossary:TCP]]/5432 ou TCP/6379 sur des interfaces externes.
 - Ne pas réutiliser une base partagée sans plan de droits et de sauvegarde.
 
 ## Validation et retour arrière

@@ -1,8 +1,8 @@
 # 📄 fiche-simple-vm-rocky-9-reseau-ip-statique-networkmanager-nmcli.md
 
-- **Environnement** : VM ou serveur Rocky Linux
-- **OS / Version** : Rocky Linux 9 / RHEL 9 - NetworkManager
-- **Catégorie** : Réseau / Configuration IP
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 - NetworkManager
+- **Catégorie** : Réseau / Configuration [[Glossary:IP]]
 - **Tags** : `[rocky9]`, `[rhel9]`, `[networkmanager]`, `[nmcli]`, `[ip-statique]`, `[dns]`
 
 ## 🎯 Problème précis à résoudre
@@ -37,12 +37,12 @@ Configurer une adresse IPv4 statique persistante avec un profil NetworkManager s
    ip route
    getent hosts <nom-interne-a-tester>
    ```
-   👉 *Explication : `nmcli connection modify` persiste le profil; `connection up` le réactive et peut couper la session SSH.*
+   👉 *Explication : `nmcli connection modify` persiste le profil; `connection up` le réactive et peut couper la session [[Glossary:SSH]].*
 
 ## 🔒 3. Production — Façon Sécurisée
 1. Garder une console hors bande pendant le changement. Ne pas exécuter `connection up` à distance sans accès de secours.
-2. Saisir uniquement les DNS internes de l'organisation si le serveur doit résoudre des noms internes; configurer les redirecteurs sur les résolveurs de l'infrastructure.
-3. Ne pas supprimer ni recréer le profil réseau en production avant d'avoir vérifié les routes, les VLAN et les dépendances des services.
+2. Saisir uniquement les [[Glossary:DNS]] internes de l'organisation si le serveur doit résoudre des noms internes; configurer les redirecteurs sur les résolveurs de l'infrastructure.
+3. Ne pas supprimer ni recréer le profil réseau en production avant d'avoir vérifié les routes, les [[Glossary:VLAN]] et les dépendances des services.
 
 ## ✅ Validation et retour arrière
 - Confirmer l'adresse, la route par défaut et la résolution DNS; tester ensuite l'accès SSH dans une seconde session.

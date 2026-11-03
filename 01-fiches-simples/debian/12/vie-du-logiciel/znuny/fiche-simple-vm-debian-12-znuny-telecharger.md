@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-12-znuny-telecharger.md
 
-- **Environnement** : VM Debian 12 dédiée (Apache/mod_perl, MariaDB 10.11), Znuny 7.3.8
+- **Environnement** : [[Glossary:VM]] Debian 12 dédiée (Apache/mod_perl, MariaDB 10.11), Znuny 7.3.8
 - **OS / Version** : Debian 12 Bookworm; Znuny 7.3.8
-- **Catégorie** : ITSM / ticketing
+- **Catégorie** : [[Glossary:ITSM]] / ticketing
 - **Tags** : `debian12`, `znuny`, `archive`, `compte-service`
 
 ---

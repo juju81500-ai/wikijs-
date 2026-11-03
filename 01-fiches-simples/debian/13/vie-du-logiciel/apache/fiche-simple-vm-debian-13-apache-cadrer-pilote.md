@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-apache-cadrer-pilote.md
 
-- **Environnement** : VM Debian 13 Trixie dédiée, test Apache statique sans données métier
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie dédiée, test Apache statique sans données métier
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : serveur Web / cadrage
 - **Tags** : `debian13`, `apache`, `cadrage`, `pilote`, `securite`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Vérifier que le serveur, le nom DNS, le certificat, les règles réseau et le plan de retour arrière sont prêts avant d'installer ou publier Apache.
+Vérifier que le serveur, le nom [[Glossary:DNS]], le certificat, les règles réseau et le plan de retour arrière sont prêts avant d'installer ou publier Apache.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -24,14 +24,14 @@ Vérifier que le serveur, le nom DNS, le certificat, les règles réseau et le p
    ```bash
    getent hosts www.example.net
    ```
-   👉 Explication : remplacer par le FQDN validé; il doit pointer vers la VM.
+   👉 Explication : remplacer par le [[Glossary:FQDN]] validé; il doit pointer vers la VM.
 
 3. Vérifier la présence du certificat et de la clé fournis par l'organisation :
    ```bash
    sudo ls -l /etc/ssl/certs/www.example.net.crt /etc/ssl/private/www.example.net.key
    sudo openssl x509 -in /etc/ssl/certs/www.example.net.crt -noout -subject -enddate
    ```
-   👉 Explication : le périmètre est un site statique; ni application, ni base, ni proxy, ni ACME, ni WAF.
+   👉 Explication : le périmètre est un site statique; ni application, ni base, ni proxy, ni [[Glossary:ACME]], ni [[Glossary:WAF]].
 
 ## 2. Production — Contrôles
 
@@ -41,7 +41,7 @@ Pour la production, identifier l'application et son propriétaire, la capacité 
 
 - Ne pas utiliser de données métier ou personnelles dans le site pilote.
 - Ne pas copier de clé privée dans le wiki, un dépôt, un ticket ou une capture.
-- Ne pas publier de port avant validation du DNS, TLS, filtrage réseau et contrôle d'accès.
+- Ne pas publier de port avant validation du DNS, [[Glossary:TLS]], filtrage réseau et contrôle d'accès.
 - Garder une sauvegarde de la VM et un état de référence de la configuration existante.
 
 ## Validation et retour arrière

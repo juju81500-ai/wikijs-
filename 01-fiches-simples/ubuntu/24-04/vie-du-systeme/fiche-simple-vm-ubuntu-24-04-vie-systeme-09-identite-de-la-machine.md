@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Vie_Systeme_09_Identite_De_La_Machine
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS « noble »
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] « noble »
 - **OS / Version** : Ubuntu 24-04; étape 09 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2404`, `vie-du-systeme`, `cycle-de-vie`, `etape-09`
@@ -19,7 +19,7 @@ Nommer la machine.
    hostnamectl
    hostname -f
    ```
-   👉 Explication : fixe le nom d'hôte; `hostname -f` doit renvoyer le FQDN.
+   👉 Explication : fixe le nom d'hôte; `hostname -f` doit renvoyer le [[Glossary:FQDN]].
 
 2. Empêcher cloud-init de réécrire le nom à chaque démarrage, puis aligner `/etc/hosts` :
    ```bash
@@ -30,7 +30,7 @@ Nommer la machine.
 
 ## 2. Production — Contrôles
 
-Respecter la convention de nommage de l'organisation et inscrire le nom au DNS.
+Respecter la convention de nommage de l'organisation et inscrire le nom au [[Glossary:DNS]].
 
 ## 3. Production — Sécurité
 

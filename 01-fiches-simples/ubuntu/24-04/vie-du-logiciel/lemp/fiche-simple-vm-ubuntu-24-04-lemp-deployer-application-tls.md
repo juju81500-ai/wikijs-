@@ -1,8 +1,8 @@
 # fiche-simple-vm-ubuntu-24-04-lemp-deployer-application-tls.md
 
-- **Environnement** : VM Ubuntu Server 24-04 dédiée à une application Web PHP
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble); Nginx, PHP 8.3, MariaDB 10.11
-- **Catégorie** : web / TLS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 dédiée à une application Web PHP
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble); Nginx, PHP 8.3, MariaDB 10.11
+- **Catégorie** : web / [[Glossary:TLS]]
 - **Tags** : `ubuntu24.04`, `nginx`, `php8.3`, `mariadb`, `lemp`, `tls`, `acme`
 
 ---
@@ -19,7 +19,7 @@ Déployer l'application, valider PHP-FPM sans exposer d'information et activer T
    ```
    👉 Explication : vérifie la chaîne Nginx vers PHP-FPM.
 
-2. Le tester via Nginx (FQDN d'exemple à remplacer) :
+2. Le tester via Nginx ([[Glossary:FQDN]] d'exemple à remplacer) :
    ```bash
    curl -fsS http://app.example.net/health-tmp.php
    ```
@@ -31,7 +31,7 @@ Déployer l'application, valider PHP-FPM sans exposer d'information et activer T
    ```
    👉 Explication : ne pas laisser de fichier de test accessible.
 
-4. Configurer TLS avec l'autorité ou l'outil ACME retenu et vérifier le renouvellement :
+4. Configurer TLS avec l'autorité ou l'outil [[Glossary:ACME]] retenu et vérifier le renouvellement :
    ```bash
    curl -fsSI https://app.example.net/
    ```
@@ -49,7 +49,7 @@ Déployer une version applicative prise en charge et protéger son fichier de co
 ## Validation et retour arrière
 
 - **Validation** : HTTPS répond et le fichier de test est supprimé.
-- **Retour arrière** : retirer le certificat ou revenir au server block HTTP précédent, tester et recharger Nginx.
+- **Retour arrière** : retirer le certificat ou revenir au server block [[Glossary:HTTP]] précédent, tester et recharger Nginx.
 
 ## Si le problème n'est pas résolu
 

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_24_Personnalisation_Et_Bannieres
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 24 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-24`
@@ -17,7 +17,7 @@ Afficher un avertissement légal.
    ```bash
    echo 'Accès réservé aux personnes autorisées. Les actions sont journalisées.' | sudo tee /etc/issue.net
    ```
-   👉 Explication : texte affiché avant l'authentification SSH.
+   👉 Explication : texte affiché avant l'authentification [[Glossary:SSH]].
 
 2. L'activer dans sshd :
    ```bash

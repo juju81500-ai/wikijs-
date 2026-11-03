@@ -1,7 +1,7 @@
 # 📄 fiche-simple-vm-rocky-9-diagnostic-journalctl-erreurs.md
 
-- **Environnement** : VM ou serveur Rocky Linux
-- **OS / Version** : Rocky Linux 9 / RHEL 9 avec systemd
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 avec systemd
 - **Catégorie** : Diagnostic / Analyse des erreurs système
 - **Tags** : `[rocky9]`, `[rhel9]`, `[journalctl]`, `[dmesg]`, `[diagnostic]`, `[systemd]`
 
@@ -66,7 +66,7 @@ Identifier rapidement les erreurs de la session de démarrage courante, les unit
    ```
    👉 Explication : Un message `denied` peut expliquer un service qui échoue sans erreur applicative. `ausearch` provient du paquet `audit`, installé par défaut sur Rocky Linux 9.
 
-3. Filtrer les avertissements d'un service exposé, par exemple SSH :
+3. Filtrer les avertissements d'un service exposé, par exemple [[Glossary:SSH]] :
    ```bash
    sudo journalctl _SYSTEMD_UNIT=sshd.service -p warning --no-pager -n 100
    ```

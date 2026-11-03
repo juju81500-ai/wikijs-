@@ -2,7 +2,7 @@
 
 - **Environnement** : Hôte Docker avec Docker Compose v2 et réseau Traefik existant
 - **OS / Version** : Hôte Linux maintenu; Snipe-IT 8.8.3; MariaDB 11.4.7
-- **Catégorie** : ITSM / gestion des actifs
+- **Catégorie** : [[Glossary:ITSM]] / gestion des actifs
 - **Tags** : `snipe-it`, `docker`, `mariadb`, `traefik`, `inventaire`
 
 ---
@@ -21,7 +21,7 @@ Valider l'architecture avant de déployer Snipe-IT derrière Traefik.
    ```
    👉 Explication : Vérifie Docker, Compose v2 et la présence du réseau proxy Traefik existant.
 
-2. Prévoir le DNS (exemple `assets.example.net`, à remplacer), TLS terminé par Traefik, volumes sauvegardés hors hôte et envoi SMTP.
+2. Prévoir le [[Glossary:DNS]] (exemple `assets.example.net`, à remplacer), [[Glossary:TLS]] terminé par Traefik, volumes sauvegardés hors hôte et envoi [[Glossary:SMTP]].
    👉 Explication : ces éléments conditionnent la suite du déploiement.
 
 3. Retenir l'image officielle `snipe/snipe-it` épinglée à `v8.8.3`; revalider la dernière version maintenue avant un nouveau déploiement.

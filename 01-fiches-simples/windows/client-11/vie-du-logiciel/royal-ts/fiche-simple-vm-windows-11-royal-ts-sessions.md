@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Windows_11_Royal_TS_Sessions
 
-- **Environnement** : Poste Windows 11 x64 d'administration (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'administration ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; Royal TS VERSION_ROYAL_TS (à remplacer)
 - **Catégorie** : gestionnaire de connexions distantes
 - **Tags** : `royal-ts`, `windows11`, `session`, `connexions`
@@ -35,7 +35,7 @@ Convention de nommage et propriétaire du document.
 ## 3. Production — Sécurité
 
 - Pas de mot de passe saisi directement dans la connexion.
-- Exiger NLA (RDP) / SSH v2.
+- Exiger [[Glossary:NLA]] ([[Glossary:RDP]]) / [[Glossary:SSH]] v2.
 
 ## Validation et retour arrière
 

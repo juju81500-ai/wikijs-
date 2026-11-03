@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Garder l'heure exacte (indispensable pour Kerberos et AD).
+Garder l'heure exacte (indispensable pour Kerberos et [[Glossary:AD]]).
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Général > Serveurs NTP > Ajouter (serveur interne ou pool).
+1. [[Glossary:GUI]] : Système > Général > Serveurs [[Glossary:NTP]] > Ajouter (serveur interne ou pool).
    ```bash
    sudo midclt call system.ntpserver.create '{"address": "SERVEUR_NTP", "prefer": true}'
    ```

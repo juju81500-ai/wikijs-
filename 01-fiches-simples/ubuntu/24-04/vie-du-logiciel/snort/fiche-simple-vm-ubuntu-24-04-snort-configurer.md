@@ -1,8 +1,8 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Snort_Configurer
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Snort
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Snort
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
-- **Catégorie** : Snort / configuration IDS passif
+- **Catégorie** : Snort / configuration [[Glossary:IDS]] passif
 - **Tags** : `snort`, `ubuntu24.04`, `vie-du-logiciel`, `configurer`
 
 ---
@@ -35,7 +35,7 @@ Configurer Snort 3 en détection passive avec HOME_NET et des règles approuvée
    ```bash
    echo 'alert icmp any any -> any any (msg:"TEST Snort ICMP lab"; sid:1000001; rev:1;)' | sudo tee /opt/snort3/rules/local.rules
    ```
-   👉 Explication : Alerte sur ICMP pour la recette; sid ≥ 1000000 est réservé aux règles locales. Retirer cette règle après la recette.
+   👉 Explication : Alerte sur [[Glossary:ICMP]] pour la recette; sid ≥ 1000000 est réservé aux règles locales. Retirer cette règle après la recette.
 
 5. Tester la configuration :
    ```bash

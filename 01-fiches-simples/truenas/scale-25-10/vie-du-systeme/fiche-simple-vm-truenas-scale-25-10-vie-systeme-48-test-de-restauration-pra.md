@@ -13,7 +13,7 @@ Prouver que les données et la configuration sont récupérables.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Restaurer un fichier depuis un snapshot : GUI Jeux de données > dataset > `.zfs/snapshot` (SMB : Versions précédentes).
+1. Restaurer un fichier depuis un snapshot : [[Glossary:GUI]] Jeux de données > dataset > `.zfs/snapshot` (SMB : Versions précédentes).
    ```bash
    ls /mnt/POOL/DATASET/.zfs/snapshot/
    cp /mnt/POOL/DATASET/.zfs/snapshot/NOM_SNAP/FICHIER /mnt/POOL/DATASET/FICHIER_RESTAURE
@@ -30,7 +30,7 @@ Prouver que les données et la configuration sont récupérables.
    ```bash
    sudo midclt call config.upload
    ```
-   👉 Explication : à tester sur un NAS de test (redémarre).
+   👉 Explication : à tester sur un [[Glossary:NAS]] de test (redémarre).
 
 ## 2. Production — Contrôles
 

@@ -2,7 +2,7 @@
 
 - **Environnement** : Suricata 8.0.7 depuis Debian 13 Backports, sonde passive autorisée
 - **OS / Version** : Debian 13 Trixie
-- **Catégorie** : Détection réseau / IDS
+- **Catégorie** : Détection réseau / [[Glossary:IDS]]
 - **Tags** : `debian13`, `suricata`, `backports`, `ids`, `af-packet`, `eve-json`, `test`
 
 ---
@@ -18,7 +18,7 @@ Vérifier que Suricata reçoit du trafic d'une interface miroir approuvée, char
    ip -br link
    ip -s link show INTERFACE_MIROIR
    ```
-   👉 Explication : remplacer l'interface; consigner VLAN et CIDR surveillés.
+   👉 Explication : remplacer l'interface; consigner [[Glossary:VLAN]] et [[Glossary:CIDR]] surveillés.
 
 2. Vérifier version, configuration et unité :
    ```bash
@@ -53,13 +53,13 @@ Vérifier que Suricata reçoit du trafic d'une interface miroir approuvée, char
 
 ## 2. Production — Contrôles
 
-Surveiller perte de paquets, CPU, rotation/rétention, règles, événements EVE et stabilité de l'interface de capture. Mettre à jour les règles après revue et test de chargement.
+Surveiller perte de paquets, [[Glossary:CPU]], rotation/rétention, règles, événements EVE et stabilité de l'interface de capture. Mettre à jour les règles après revue et test de chargement.
 
 ## 3. Production — Sécurité
 
 - Capturer exclusivement les réseaux approuvés et limiter les droits sur PCAP, EVE et journaux.
 - Éviter la journalisation de payload et l'extraction de fichiers par défaut.
-- Transporter EVE JSON vers le SIEM avec TLS et compte de service minimal.
+- Transporter EVE [[Glossary:JSON]] vers le [[Glossary:SIEM]] avec [[Glossary:TLS]] et compte de service minimal.
 - Un IDS passif alerte mais n'est ni un IPS ni une preuve isolée d'incident.
 
 ## Validation et retour arrière

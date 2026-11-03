@@ -1,6 +1,6 @@
 # 📄 Fiche_Simple_-_VM_Debian_13_Systeme_Locale_Timezone
 
-- **Environnement** : VM ou LXC Debian 13
+- **Environnement** : [[Glossary:VM]] ou [[Glossary:LXC]] Debian 13
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
 - **Catégorie** : Système & Services / Locale et fuseau horaire
 - **Tags** : `[debian13]`, `[debian]`, `[locale]`, `[timezone]`, `[systemd]`, `[configuration]`
@@ -16,7 +16,7 @@ Définir une locale UTF-8 française et le fuseau `Europe/Paris` sur Debian 13 (
    localectl status
    timedatectl status
    ```
-   👉 Explication : `localectl` affiche la locale système et la disposition clavier ; `timedatectl` affiche le fuseau, l'état de la synchronisation NTP et le mode de l'horloge matérielle (RTC).
+   👉 Explication : `localectl` affiche la locale système et la disposition clavier ; `timedatectl` affiche le fuseau, l'état de la synchronisation [[Glossary:NTP]] et le mode de l'horloge matérielle (RTC).
 
 2. Installer le support des locales et générer la locale `fr_FR.UTF-8` :
    ```bash
@@ -69,7 +69,7 @@ Définir une locale UTF-8 française et le fuseau `Europe/Paris` sur Debian 13 (
    ```bash
    timedatectl show -p NTPSynchronized --value
    ```
-   👉 Explication : La valeur `yes` confirme la synchronisation NTP. Une dérive de plus de quelques minutes casse l'authentification Kerberos (Active Directory) et la validité des certificats TLS. La configuration du client NTP est décrite dans la fiche Chrony de Debian 13.
+   👉 Explication : La valeur `yes` confirme la synchronisation NTP. Une dérive de plus de quelques minutes casse l'authentification Kerberos (Active Directory) et la validité des certificats [[Glossary:TLS]]. La configuration du client NTP est décrite dans la fiche Chrony de Debian 13.
 
 2. Documenter la locale réellement appliquée et vérifier que le fuseau pointe vers la bonne zone :
    ```bash

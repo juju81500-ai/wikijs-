@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-openldap-cadrer.md
 
-- **Environnement** : VM Debian 13 dédiée; annuaire LDAP pilote autonome
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée; annuaire [[Glossary:LDAP]] pilote autonome
 - **OS / Version** : Debian 13 Trixie; slapd 2.6
 - **Catégorie** : annuaire / identité / cadrage
 - **Tags** : `debian13`, `openldap`, `ldap`, `cadrage`, `pilote`
@@ -13,12 +13,12 @@ Confirmer qu'OpenLDAP correspond au besoin et préparer le périmètre avant d'i
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Vérifier le nom d'hôte FQDN et la résolution DNS :
+1. Vérifier le nom d'hôte [[Glossary:FQDN]] et la résolution [[Glossary:DNS]] :
    ```bash
    hostname -f
    getent hosts $(hostname -f)
    ```
-   👉 Explication : le FQDN doit être stable et résolu; il sert de base au suffixe et au certificat TLS.
+   👉 Explication : le FQDN doit être stable et résolu; il sert de base au suffixe et au certificat [[Glossary:TLS]].
 
 2. Vérifier l'heure et les ressources :
    ```bash
@@ -35,11 +35,11 @@ Confirmer qu'OpenLDAP correspond au besoin et préparer le périmètre avant d'i
    👉 Explication : évite un conflit avec un autre annuaire.
 
 4. Prendre un snapshot de la VM (interface de l'hyperviseur, par exemple Proxmox : **VM > Snapshots > Take Snapshot**) puis consigner suffixe prévu, applications clientes et responsable.
-   👉 Explication : si Active Directory, Kerberos intégré ou CA/DNS intégrés sont requis, choisir Samba AD DC ou FreeIPA plutôt qu'OpenLDAP.
+   👉 Explication : si Active Directory, Kerberos intégré ou [[Glossary:CA]]/DNS intégrés sont requis, choisir Samba [[Glossary:AD]] [[Glossary:DC]] ou FreeIPA plutôt qu'OpenLDAP.
 
 ## 2. Production — Contrôles
 
-Faire approuver les flux, le propriétaire de l'annuaire, le schéma, les comptes de service, les ACL, le plan de continuité, les objectifs de restauration et la procédure de changement.
+Faire approuver les flux, le propriétaire de l'annuaire, le schéma, les comptes de service, les [[Glossary:ACL]], le plan de continuité, les objectifs de restauration et la procédure de changement.
 
 ## 3. Production — Sécurité
 

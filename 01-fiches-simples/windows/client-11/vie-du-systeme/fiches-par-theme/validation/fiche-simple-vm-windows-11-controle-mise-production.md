@@ -9,7 +9,7 @@
 Vérifier un poste Windows 11 avant remise à l'utilisateur : mises à jour, identité, accès, chiffrement, pare-feu, protection et capacité de récupération.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
-1. Relever édition, build et redémarrage en attente : GUI **Paramètres > Système > À propos**, ou :
+1. Relever édition, build et redémarrage en attente : [[Glossary:GUI]] **Paramètres > Système > À propos**, ou :
    ```powershell
    Get-ComputerInfo | Select-Object WindowsProductName, WindowsVersion, OsBuildNumber
    Get-WindowsUpdateLog
@@ -28,13 +28,13 @@ Vérifier un poste Windows 11 avant remise à l'utilisateur : mises à jour, ide
    ```powershell
    Test-NetConnection NOM_SERVEUR -Port 443
    ```
-   👉 Explication : remplacer le serveur; tester aussi VPN et impression avec le profil de l'utilisateur.
+   👉 Explication : remplacer le serveur; tester aussi [[Glossary:VPN]] et impression avec le profil de l'utilisateur.
 
 
 ## ⚡ 2. Production — Façon Simplifiée
 1. **Identité :** nom de poste, utilisateur, domaine/gestion centrale et groupe de support documentés.
 2. **Protection :** correctifs appliqués, Defender actif, pare-feu actif, BitLocker protégé et clé de récupération déposée dans le coffre approuvé.
-3. **Accès :** compte utilisateur standard, administrateur local géré, RDP/OpenSSH désactivés sauf besoin autorisé.
+3. **Accès :** compte utilisateur standard, administrateur local géré, [[Glossary:RDP]]/OpenSSH désactivés sauf besoin autorisé.
 4. **Récupération :** fichiers utilisateur couverts par la stratégie de sauvegarde/synchronisation; méthode de réinstallation ou de restauration connue.
 5. **Acceptation :** périphériques, réseau, applications, VPN et impression testés avec le profil de l'utilisateur.
 

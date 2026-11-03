@@ -1,6 +1,6 @@
 # fiche-simple-vm-rocky-9-freeipa-prerequis.md
 
-- **Environnement** : VM Rocky Linux 9 dédiée au premier serveur FreeIPA/IdM
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée au premier serveur FreeIPA/IdM
 - **OS / Version** : Rocky Linux 9 x86_64; paquets `ipa-server` des dépôts de la distribution
 - **Catégorie** : annuaire / prérequis
 - **Tags** : `rocky9`, `freeipa`, `idm`, `kerberos`
@@ -18,14 +18,14 @@ Vérifier nom d'hôte, heure, ressources et ports avant de lancer l'installation
    hostnamectl status
    hostname -f
    ```
-   👉 Explication : Affiche le FQDN statique; il ne doit jamais valoir `localhost`.
+   👉 Explication : Affiche le [[Glossary:FQDN]] statique; il ne doit jamais valoir `localhost`.
 
 2. Vérifier la résolution et la mémoire :
    ```bash
    getent hosts "$(hostname -f)"
    free -h
    ```
-   👉 Explication : Le FQDN doit se résoudre vers l'IP du serveur (dans `/etc/hosts`, le FQDN vient en premier); la RAM doit couvrir le minimum du guide (au moins 2 Go en test).
+   👉 Explication : Le FQDN doit se résoudre vers l'[[Glossary:IP]] du serveur (dans `/etc/hosts`, le FQDN vient en premier); la [[Glossary:RAM]] doit couvrir le minimum du guide (au moins 2 Go en test).
 
 3. Vérifier la synchronisation de l'heure :
    ```bash
@@ -36,7 +36,7 @@ Vérifier nom d'hôte, heure, ressources et ports avant de lancer l'installation
 4. Noter par écrit le domaine, le realm Kerberos et le FQDN, et prendre un snapshot de la VM.
    👉 Explication : ces trois valeurs sont définitives; utiliser un domaine que l'organisation possède, pas `example.com`.
 
-5. Lister les ports à ouvrir : 80/tcp, 443/tcp, 389/tcp, 636/tcp, 88/tcp+udp, 464/tcp+udp, plus 53/tcp+udp avec DNS intégré.
+5. Lister les ports à ouvrir : 80/tcp, 443/tcp, 389/tcp, 636/tcp, 88/tcp+udp, 464/tcp+udp, plus 53/tcp+udp avec [[Glossary:DNS]] intégré.
    👉 Explication : le pare-feu sera configuré à l'étape suivante.
 
 ## 2. Production — Contrôles

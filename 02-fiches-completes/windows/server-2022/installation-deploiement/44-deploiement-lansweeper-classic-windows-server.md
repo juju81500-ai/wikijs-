@@ -2,7 +2,7 @@
 
 - **OS / Version** : Windows Server 2022 recommandé; Lansweeper Classic maintenu selon la matrice officielle
 - **Type de fiche** : Installation/Déploiement
-- **Environnement** : Serveur Windows x64, SQL LocalDB ou SQL Server selon l'échelle
+- **Environnement** : Serveur Windows x64, [[Glossary:SQL]] LocalDB ou SQL Server selon l'échelle
 - **Machine ciblée** : Serveur d'inventaire Windows
 - **Catégorie** : Inventaire de parc / découverte réseau
 - **Tags** : `lansweeper`, `windows-server-2022`, `inventaire`, `wmi`, `snmp`, `sql-server`
@@ -13,7 +13,7 @@ Fiche simple : [choisir la variante et préparer les droits](../../../../01-fich
 
 Cette fiche porte sur **Lansweeper Classic on-premises**; le produit Lansweeper Platform est une offre distincte. Vérifier que la version Classic et la licence conviennent au besoin. L'édition Easy installe web, service de scan et SQL LocalDB sur une machine et convient aux petits environnements; SQL LocalDB est limité à 10 Go. Utiliser SQL Server et une architecture distribuée si le volume/scanning l'exige.
 
-La machine d'installation doit être Windows 64 bits, non-Home/non-Core/non-Starter, avec .NET Framework 4.8 à jour. Windows Server est recommandé au-delà de 1 000 actifs. Prévoir sauvegarde, DNS, certificat HTTPS et un compte d'administration nominatif.
+La machine d'installation doit être Windows 64 bits, non-Home/non-Core/non-Starter, avec .NET Framework 4.8 à jour. Windows Server est recommandé au-delà de 1 000 actifs. Prévoir sauvegarde, [[Glossary:DNS]], certificat HTTPS et un compte d'administration nominatif.
 
 ## 2. Installer le serveur
 
@@ -29,16 +29,16 @@ Fiche simple : [installer le serveur Lansweeper](../../../../01-fiches-simples/w
 
 Fiche simple : [définir un périmètre pilote](../../../../01-fiches-simples/windows/toutes-versions/vie-du-logiciel/lansweeper/fiche-simple-vm-windows-server-lansweeper-definir-perimetre-pilote.md).
 
-Dans le First Run Wizard, commencer par une petite plage IP explicitement autorisée, appartenant à l'organisation et validée par l'équipe réseau. Ne pas scanner des réseaux tiers ou non approuvés.
+Dans le First Run Wizard, commencer par une petite plage [[Glossary:IP]] explicitement autorisée, appartenant à l'organisation et validée par l'équipe réseau. Ne pas scanner des réseaux tiers ou non approuvés.
 
-Créer des identifiants de découverte distincts et à privilèges minimaux. Pour Windows, préférer un compte de lecture/découverte dédié aux droits administrateur de domaine; l'accès WMI et la lecture AD doivent être limités aux systèmes concernés. Pour SNMP, utiliser SNMPv3 en lecture seule lorsque disponible. Garder les secrets dans le coffre du produit et limiter leur portée par domaine/plage.
+Créer des identifiants de découverte distincts et à privilèges minimaux. Pour Windows, préférer un compte de lecture/découverte dédié aux droits administrateur de domaine; l'accès [[Glossary:WMI]] et la lecture [[Glossary:AD]] doivent être limités aux systèmes concernés. Pour [[Glossary:SNMP]], utiliser SNMPv3 en lecture seule lorsque disponible. Garder les secrets dans le coffre du produit et limiter leur portée par domaine/plage.
 
 ## 4. Configurer les méthodes de scan
 
 Fiche simple : [configurer les méthodes de scan](../../../../01-fiches-simples/windows/toutes-versions/vie-du-logiciel/lansweeper/fiche-simple-vm-windows-server-lansweeper-configurer-methodes-scan.md).
 
 - Pour les postes Windows, choisir scan agentless WMI ou LsAgent. L'agent réduit les besoins d'ouverture de ports entrants et peut servir aux appareils hors site.
-- Pour Linux/macOS, privilégier les agents ou SSH avec compte restreint.
+- Pour Linux/macOS, privilégier les agents ou [[Glossary:SSH]] avec compte restreint.
 - Pour les équipements réseau/NAS, configurer SNMPv3 lecture seule et une liste de cibles définie.
 - Espacer et limiter le volume des scans; ne pas lancer de découverte large sans fenêtre approuvée.
 

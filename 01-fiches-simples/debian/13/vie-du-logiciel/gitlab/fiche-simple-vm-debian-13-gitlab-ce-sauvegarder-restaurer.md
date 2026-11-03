@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_GitLab_CE_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13 de préproduction; FQDN et ressources confirmés
+- **Environnement** : [[Glossary:VM]] Debian 13 de préproduction; [[Glossary:FQDN]] et ressources confirmés
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : forge Git / administration
 - **Tags** : `debian13`, `gitlab-ce`, `forge-git`, `tls`, `sauvegarde`
@@ -40,7 +40,7 @@ Sauvegarder les données GitLab et séparément configuration/secrets puis valid
 
 ## 2. Production — Contrôles
 
-Définir RPO/RTO, rétention, chiffrement et restauration périodique indépendante du serveur source.
+Définir [[Glossary:RPO]]/RTO, rétention, chiffrement et restauration périodique indépendante du serveur source.
 
 ## 3. Production — Sécurité
 

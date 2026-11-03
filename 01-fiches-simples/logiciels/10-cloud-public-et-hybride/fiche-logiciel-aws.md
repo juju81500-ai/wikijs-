@@ -8,7 +8,7 @@
 
 ## 📚 Couverture dans le pack
 
-Couvert — série d’exploitation sur compte/organisation, réseau, VM, stockage, sauvegarde, audit, supervision, coûts et réversibilité. Procédures de laboratoire ; confirmer les menus, versions CLI, quotas, tarifs et fonctions selon le tenant et l’offre.
+Couvert — série d’exploitation sur compte/organisation, réseau, [[Glossary:VM]], stockage, sauvegarde, audit, supervision, coûts et réversibilité. Procédures de laboratoire ; confirmer les menus, versions [[Glossary:CLI]], quotas, tarifs et fonctions selon le tenant et l’offre.
 
 ## 🧭 Utilisation
 

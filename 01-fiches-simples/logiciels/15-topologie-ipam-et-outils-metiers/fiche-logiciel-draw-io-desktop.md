@@ -1,6 +1,6 @@
 # 📄 draw-io Desktop
 
-- **Catégorie** : Topologie, IPAM et outils métiers
+- **Catégorie** : Topologie, [[Glossary:IPAM]] et outils métiers
 - **Plateforme** : Multiplateforme
 - **Produit (matrice)** : draw-io Desktop
 - **Statut dans le pack** : Couvert

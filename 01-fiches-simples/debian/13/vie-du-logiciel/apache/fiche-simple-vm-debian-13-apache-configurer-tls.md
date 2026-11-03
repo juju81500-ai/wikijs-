@@ -1,15 +1,15 @@
 # fiche-simple-vm-debian-13-apache-configurer-tls.md
 
-- **Environnement** : VM Debian 13 Trixie, certificat existant fourni par l'organisation
-- **OS / Version** : Debian 13 Trixie; Apache HTTP Server 2.4.x
-- **Catégorie** : serveur Web / TLS
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie, certificat existant fourni par l'organisation
+- **OS / Version** : Debian 13 Trixie; Apache [[Glossary:HTTP]] Server 2.4.x
+- **Catégorie** : serveur Web / [[Glossary:TLS]]
 - **Tags** : `debian13`, `apache`, `tls`, `certificat`, `https`
 
 ---
 
 ## Problème précis à résoudre
 
-Servir le site pilote en HTTPS avec un certificat correspondant au FQDN et sans exposer sa clé privée.
+Servir le site pilote en HTTPS avec un certificat correspondant au [[Glossary:FQDN]] et sans exposer sa clé privée.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -17,7 +17,7 @@ Servir le site pilote en HTTPS avec un certificat correspondant au FQDN et sans 
    ```bash
    sudo ls -l /etc/ssl/certs/www.example.net.crt /etc/ssl/private/www.example.net.key
    ```
-   👉 Explication : la clé privée doit être restreinte (0600/0640 root:ssl-cert) et le nom DNS correspondre au certificat.
+   👉 Explication : la clé privée doit être restreinte (0600/0640 root:ssl-cert) et le nom [[Glossary:DNS]] correspondre au certificat.
 
 2. Activer le module TLS :
    ```bash
@@ -64,7 +64,7 @@ Consigner le propriétaire du certificat, le processus de renouvellement, les no
 
 - Ne pas générer ou partager de clé privée dans le cadre de cette fiche.
 - N'accepter que des certificats provisionnés par un mécanisme approuvé.
-- Ne pas ouvrir TCP/443 avant validation du certificat, du nom et des règles réseau.
+- Ne pas ouvrir [[Glossary:TCP]]/443 avant validation du certificat, du nom et des règles réseau.
 - Ne rediriger HTTP vers HTTPS qu'après validation de toutes les dépendances du site TLS.
 
 ## Validation et retour arrière

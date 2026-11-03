@@ -1,7 +1,7 @@
 # fiche-simple-vm-ubuntu-24-04-lemp-verifier-prerequis-versions.md
 
-- **Environnement** : VM Ubuntu Server 24-04 dédiée à une application Web PHP
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble); Nginx, PHP 8.3, MariaDB 10.11
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 dédiée à une application Web PHP
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble); Nginx, PHP 8.3, MariaDB 10.11
 - **Catégorie** : web / prérequis
 - **Tags** : `ubuntu24.04`, `nginx`, `php8.3`, `mariadb`, `lemp`, `apt`
 
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Contrôler le système et les versions candidates avant d'installer la pile LEMP.
+Contrôler le système et les versions candidates avant d'installer la pile [[Glossary:LEMP]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -18,7 +18,7 @@ Contrôler le système et les versions candidates avant d'installer la pile LEMP
    cat /etc/os-release
    sudo apt update
    ```
-   👉 Explication : confirme Ubuntu 24-04 et des sources APT à jour.
+   👉 Explication : confirme Ubuntu 24-04 et des sources [[Glossary:APT]] à jour.
 
 2. Contrôler les versions candidates :
    ```bash
@@ -28,7 +28,7 @@ Contrôler le système et les versions candidates avant d'installer la pile LEMP
 
 ## 2. Production — Contrôles
 
-Réserver hostname/FQDN, IP stable, volumes, accès SSH, sauvegarde et flux avant l'installation.
+Réserver hostname/FQDN, [[Glossary:IP]] stable, volumes, accès [[Glossary:SSH]], sauvegarde et flux avant l'installation.
 
 ## 3. Production — Sécurité
 

@@ -25,7 +25,7 @@ Restaurer l'export complet sur une release compatible.
 4. Redémarrer si demandé : **Power > Reboot**.
    👉 Explication : certaines restaurations demandent un redémarrage.
 
-5. Valider WAN/LAN, règles, DNS, VPN, certificats et administration avant de reconnecter au réseau.
+5. Valider [[Glossary:WAN]]/LAN, règles, [[Glossary:DNS]], [[Glossary:VPN]], certificats et administration avant de reconnecter au réseau.
    👉 Explication : on évite d'exposer un pare-feu mal configuré.
 
 ## 2. Production — Contrôles
@@ -39,7 +39,7 @@ Privilégier la restauration complète : les partielles créent des incohérence
 ## Validation et retour arrière
 
 - **Validation** : Interfaces, règles et services conformes à l'export.
-- **Retour arrière** : Réinstaller et restaurer la sauvegarde précédente ou revenir au snapshot ZFS (**System > Snapshots**).
+- **Retour arrière** : Réinstaller et restaurer la sauvegarde précédente ou revenir au snapshot [[Glossary:ZFS]] (**System > Snapshots**).
 
 ## Si le problème n'est pas résolu
 

@@ -1,6 +1,6 @@
 # fiche-simple-vm-windows-server-2022-reprise-foret-ad-ds-determiner-necessite.md
 
-- **Environnement** : Forêt AD DS d'entreprise; laboratoire isolé recommandé
+- **Environnement** : Forêt [[Glossary:AD]] DS d'entreprise; laboratoire isolé recommandé
 - **OS / Version** : Windows Server 2022 pour les contrôleurs de domaine concernés
 - **Catégorie** : Active Directory / reprise après sinistre
 - **Tags** : `windows-server-2022`, `active-directory`, `ad-ds`, `forest-recovery`
@@ -20,13 +20,13 @@ Décider si une restauration de forêt est vraiment justifiée avant toute actio
    ```
    👉 Explication : Résume l'état de la réplication entre contrôleurs de domaine (lecture seule).
 
-2. Lister les DC :
+2. Lister les [[Glossary:DC]] :
    ```powershell
    Get-ADDomainController -Filter * | Select-Object Name, Site, IsGlobalCatalog, OperatingSystem
    ```
    👉 Explication : Liste les contrôleurs de domaine disponibles (lecture seule, module ActiveDirectory requis).
 
-3. Diagnostiquer les DC et le DNS :
+3. Diagnostiquer les DC et le [[Glossary:DNS]] :
    ```powershell
    dcdiag /q
    ```

@@ -14,9 +14,9 @@ Sauvegarder la configuration du VCSA par la VAMI et savoir la restaurer.
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Ouvrir `https://VCSA_FQDN:5480`, se connecter en `root`, puis **Sauvegarde > Configurer**.
-   👉 Explication : la VAMI propose la sauvegarde sur un serveur externe ; les protocoles pris en charge (par exemple FTPS, HTTPS, SFTP, NFS, SMB) sont listés dans la documentation de la version.
+   👉 Explication : la VAMI propose la sauvegarde sur un serveur externe ; les protocoles pris en charge (par exemple FTPS, HTTPS, SFTP, [[Glossary:NFS]], SMB) sont listés dans la documentation de la version.
 2. Renseigner l'emplacement `PROTOCOLE://SERVEUR_SAUVEGARDE/CHEMIN`, un compte dédié à écriture seule, les éléments à inclure (stats, événements, tâches) et un chiffrement optionnel : valider avec **Créer**. Les mots de passe sont saisis dans l'interface.
-   👉 Explication : la sauvegarde est de type « fichier » du VCSA : elle ne remplace pas la sauvegarde des VM.
+   👉 Explication : la sauvegarde est de type « fichier » du VCSA : elle ne remplace pas la sauvegarde des [[Glossary:VM]].
 3. Planifier : **Sauvegarde > Planification**, fréquence, rétention, puis lancer une sauvegarde immédiate **Sauvegarder maintenant**.
    👉 Explication : une sauvegarde non testée n'est pas une garantie.
 4. Restauration : monter l'ISO d'installation, lancer l'installateur et choisir **Restaurer**, indiquer l'emplacement et la sauvegarde, puis valider.

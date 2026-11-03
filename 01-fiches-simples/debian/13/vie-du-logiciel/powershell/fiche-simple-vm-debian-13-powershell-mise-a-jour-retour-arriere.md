@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_PowerShell_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Debian 13 de laboratoire avec dépôts Microsoft officiels
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire avec dépôts Microsoft officiels
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : shell / scripting
 - **Tags** : `debian13`, `powershell`, `pwsh`, `scripting`, `securite`
@@ -37,11 +37,11 @@ Gérer version PowerShell et modules avec test de compatibilité avant déploiem
    ```text
    Navigateur > ouvrir la documentation officielle : https://learn.microsoft.com/powershell/scripting/install/install-debian
    ```
-   👉 Explication : ne pas downgrader vers version vulnérable sans dérogation. Détail à confirmer dans la documentation officielle avant application : Conserver version/package approuvé et restaurer le profil/modules compatibles selon gestion APT.
+   👉 Explication : ne pas downgrader vers version vulnérable sans dérogation. Détail à confirmer dans la documentation officielle avant application : Conserver version/package approuvé et restaurer le profil/modules compatibles selon gestion [[Glossary:APT]].
 
 ## 2. Production — Contrôles
 
-Pinner CLI/modules dans automatisation; tester puis déployer par anneaux.
+Pinner [[Glossary:CLI]]/modules dans automatisation; tester puis déployer par anneaux.
 
 ## 3. Production — Sécurité
 

@@ -13,7 +13,7 @@ Créer le tunnel client et transmettre sa clé publique.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : ouvrir WireGuard > Ajouter un tunnel > Ajouter un tunnel vide.
+1. [[Glossary:GUI]] : ouvrir WireGuard > Ajouter un tunnel > Ajouter un tunnel vide.
    👉 Explication : L'application génère la paire de clés; la clé privée reste dans l'application.
 
 2. Compléter la configuration affichée :
@@ -28,7 +28,7 @@ Créer le tunnel client et transmettre sa clé publique.
    AllowedIPs = ALLOWED_NETWORKS
    PersistentKeepalive = 25
    ```
-   👉 Explication : Remplacer les valeurs en majuscules par celles de l'administrateur; limiter ALLOWED_NETWORKS aux réseaux approuvés (pas 0.0.0.0/0 sans accord). PersistentKeepalive n'est utile que derrière un NAT.
+   👉 Explication : Remplacer les valeurs en majuscules par celles de l'administrateur; limiter ALLOWED_NETWORKS aux réseaux approuvés (pas 0.0.0.0/0 sans accord). PersistentKeepalive n'est utile que derrière un [[Glossary:NAT]].
 
 3. Copier uniquement la Clé publique affichée par l'application et la transmettre à l'administrateur par un canal approuvé.
    👉 Explication : L'administrateur l'ajoute comme pair (CLIENT_PUBLIC_KEY) sur le serveur.

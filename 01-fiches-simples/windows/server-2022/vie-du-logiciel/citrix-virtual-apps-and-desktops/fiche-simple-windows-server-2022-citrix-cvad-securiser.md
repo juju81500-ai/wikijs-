@@ -1,15 +1,15 @@
 # Fiche_Simple_-_Windows_Server_2022_Citrix_CVAD_Securiser
 
-- **Environnement** : Serveurs Windows Server 2022 (Delivery Controller, StoreFront, licences, SQL) et VM VDA, compte administrateur nominatif
+- **Environnement** : Serveurs Windows Server 2022 (Delivery Controller, StoreFront, licences, [[Glossary:SQL]]) et [[Glossary:VM]] VDA, compte administrateur nominatif
 - **OS / Version** : Windows Server 2022; version CVAD à vérifier auprès de l'éditeur
-- **Catégorie** : VDI / virtualisation d'applications / Citrix
+- **Catégorie** : [[Glossary:VDI]] / virtualisation d'applications / Citrix
 - **Tags** : `citrix`, `cvad`, `windows-server`, `securite`
 
 ---
 
 ## Problème précis à résoudre
 
-Sécuriser CVAD : TLS, comptes, pare-feu, rôles d'administration.
+Sécuriser CVAD : [[Glossary:TLS]], comptes, pare-feu, rôles d'administration.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -19,7 +19,7 @@ Get-ChildItem Cert:\LocalMachine\My | Where-Object Subject -like '*STORE_FQDN*' 
 ```
    👉 Explication : STORE_FQDN est à remplacer ; contrôler la date d'expiration et la chaîne.
 
-2. Lier le certificat dans IIS : GUI **Gestionnaire des services Internet > Sites > Default Web Site > Liaisons > https > Modifier**, puis passer l'URL de base StoreFront en HTTPS (**StoreFront > Server Group > Change Base URL**).
+2. Lier le certificat dans [[Glossary:IIS]] : [[Glossary:GUI]] **Gestionnaire des services Internet > Sites > Default Web Site > Liaisons > https > Modifier**, puis passer l'URL de base StoreFront en HTTPS (**StoreFront > Server Group > Change Base URL**).
    👉 Explication : évite l'authentification en clair sur le portail.
 
 3. Activer HTTPS entre StoreFront et Controller et restreindre les ports avec le pare-feu Windows. PowerShell :
@@ -39,7 +39,7 @@ New-NetFirewallRule -DisplayName 'CVAD StoreFront HTTPS' -Direction Inbound -Pro
 ## 3. Production — Sécurité
 
 - Aucun mot de passe en clair dans les scripts ; utiliser un compte de service géré.
-- Désactiver HTTP sur StoreFront une fois HTTPS validé.
+- Désactiver [[Glossary:HTTP]] sur StoreFront une fois HTTPS validé.
 - Appliquer les durcissements de la section 05-hardening-ais-cyber.
 
 ## Validation et retour arrière

@@ -1,7 +1,7 @@
 # Leçon — Git et Ansible pour automatiser : versionner ses scripts et configurer des machines
 
 - **Tags** : `transverse`, `tout-en-un`, `lecon`, `automatisation`, `git`, `ansible`, `idempotence`, `vault`, `secrets`
-- **Niveau** : Intermédiaire (ligne de commande et SSH de base)
+- **Niveau** : Intermédiaire (ligne de commande et [[Glossary:SSH]] de base)
 - **Durée estimée** : 4 h (cours 1 h 45, laboratoire 1 h 15, exercices et quiz 1 h)
 
 ---
@@ -20,7 +20,7 @@
 ## Prérequis et durée
 
 - Terminal Linux et SSH par clé (notions).
-- Un laboratoire **jetable** : un nœud de contrôle Linux (VM) et deux machines cibles Debian/Ubuntu de test, par exemple 192.0.2.11 et 192.0.2.12. Prenez des instantanés avant d'appliquer.
+- Un laboratoire **jetable** : un nœud de contrôle Linux ([[Glossary:VM]]) et deux machines cibles Debian/Ubuntu de test, par exemple 192.0.2.11 et 192.0.2.12. Prenez des instantanés avant d'appliquer.
 - Aucune adresse réelle, aucun compte réel : cette leçon n'emploie que des valeurs de documentation (192.0.2.0/24, 198.51.100.0/24, 203.0.113.0/24, 2001:db8::/32, `example.com`, `example.test`).
 - Durée : environ 4 h.
 
@@ -116,7 +116,7 @@ git pull --ff-only
 
 ## 3. Secrets : ne jamais les versionner
 
-Un mot de passe, une clé privée SSH, un jeton d'API, un fichier d'environnement ou une chaîne de connexion avec identifiants **ne doivent jamais** entrer dans un dépôt. Même supprimé plus tard, il reste dans l'**historique** et dans chaque copie du dépôt déjà clonée.
+Un mot de passe, une clé privée SSH, un jeton d'[[Glossary:API]], un fichier d'environnement ou une chaîne de connexion avec identifiants **ne doivent jamais** entrer dans un dépôt. Même supprimé plus tard, il reste dans l'**historique** et dans chaque copie du dépôt déjà clonée.
 
 ### 3.1 Le fichier .gitignore
 

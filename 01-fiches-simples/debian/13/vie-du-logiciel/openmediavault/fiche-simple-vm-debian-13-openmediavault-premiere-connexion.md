@@ -13,13 +13,13 @@ Sécuriser la première connexion et fixer le réseau depuis OMV.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Ouvrir l'adresse IP affichée par la console depuis le réseau d'administration, puis changer immédiatement le mot de passe du compte `admin`.
+1. Ouvrir l'adresse [[Glossary:IP]] affichée par la console depuis le réseau d'administration, puis changer immédiatement le mot de passe du compte `admin`.
    👉 Explication : Le mot de passe initial est public dans la documentation.
 
-2. Configurer IPv4 statique et DNS : **Network > Interfaces**, puis appliquer depuis la console locale.
-   👉 Explication : Une session SSH peut être coupée quand le réseau est redéployé.
+2. Configurer IPv4 statique et [[Glossary:DNS]] : **Network > Interfaces**, puis appliquer depuis la console locale.
+   👉 Explication : Une session [[Glossary:SSH]] peut être coupée quand le réseau est redéployé.
 
-3. Vérifier adresse et passerelle depuis la VM, puis l'accès Web depuis une seconde machine :
+3. Vérifier adresse et passerelle depuis la [[Glossary:VM]], puis l'accès Web depuis une seconde machine :
    ```bash
    sudo ip -br address
    sudo ip route

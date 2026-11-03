@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_BlueMind_Valider
 
-- **Environnement** : VM Debian 13; BlueMind 5.7; guide public
+- **Environnement** : [[Glossary:VM]] Debian 13; BlueMind 5.7; guide public
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Vie du logiciel / BlueMind — Valider (recette)
 - **Tags** : `bluemind`, `serveur`, `vie-du-logiciel`, `valider`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Recetter interface, DNS et services mail avec des comptes de test.
+Recetter interface, [[Glossary:DNS]] et services mail avec des comptes de test.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

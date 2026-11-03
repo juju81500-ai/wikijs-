@@ -13,7 +13,7 @@ Définir le clavier de la console locale.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Général > Localisation > Disposition du clavier (Français - fr).
+1. [[Glossary:GUI]] : Système > Général > Localisation > Disposition du clavier (Français - fr).
    ```bash
    sudo midclt call system.general.update '{"kbdmap": "fr"}'
    ```
@@ -27,7 +27,7 @@ Définir le clavier de la console locale.
 
 ## 2. Production — Contrôles
 
-Documenter la disposition utilisée pour la console et le BMC.
+Documenter la disposition utilisée pour la console et le [[Glossary:BMC]].
 
 ## 3. Production — Sécurité
 

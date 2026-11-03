@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_MariaDB_Valider
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; MariaDB des dépôts Debian
 - **Catégorie** : base de données / MariaDB / Valider (recette)
 - **Tags** : `debian13`, `mariadb`, `recette`
@@ -27,7 +27,7 @@ Prouver que MariaDB est opérationnel, sécurisé et supervisable.
    ```
    👉 Explication : pas de compte anonyme ni `root@%` ; seule l'adresse prévue écoute.
 
-3. Tester une connexion applicative avec TLS :
+3. Tester une connexion applicative avec [[Glossary:TLS]] :
    ```bash
    mariadb -h IP_SERVEUR -u APPUSER -p --ssl -e "SHOW STATUS LIKE 'Ssl_cipher';"
    ```

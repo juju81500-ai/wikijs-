@@ -4,7 +4,7 @@
 - **Niveau** : intermédiaire (suite de la leçon sur les fondamentaux Docker)
 - **Durée estimée** : 4 h (cours 1 h 45, labo guidé 1 h 30, exercices et quiz 45 min)
 
-> **Avertissement de test** : Docker, Compose et Kubernetes n'étaient pas installés sur la machine de rédaction et rien n'y a été installé. **Toutes les commandes et tous les fichiers de cette leçon sont non testés sur la plateforme cible.** Validez-les dans une VM jetable avant tout usage.
+> **Avertissement de test** : Docker, Compose et Kubernetes n'étaient pas installés sur la machine de rédaction et rien n'y a été installé. **Toutes les commandes et tous les fichiers de cette leçon sont non testés sur la plateforme cible.** Validez-les dans une [[Glossary:VM]] jetable avant tout usage.
 
 ---
 
@@ -22,7 +22,7 @@
 
 - Avoir suivi la leçon [Docker : images, conteneurs, couches, volumes, réseaux, Dockerfile et registres](lecon-docker-fondamentaux.md).
 - Savoir lire du YAML (indentation par espaces, listes avec `-`, jamais de tabulations).
-- Une VM Linux jetable avec accès console de secours, Docker Engine et le plugin Compose ; pour Kubernetes, minikube ou kind dans cette VM (4 Go de RAM conseillés).
+- Une VM Linux jetable avec accès console de secours, Docker Engine et le plugin Compose ; pour Kubernetes, minikube ou kind dans cette VM (4 Go de [[Glossary:RAM]] conseillés).
 - Durée : 4 h.
 
 ## L'essentiel en bref
@@ -121,7 +121,7 @@ server {
 }
 ```
 
-👉 Explication : nginx écoute sur le port 8080 (non privilégié, indispensable en non-root) et relaie vers le service `app`, résolu par le DNS interne du réseau `front`.
+👉 Explication : nginx écoute sur le port 8080 (non privilégié, indispensable en non-root) et relaie vers le service `app`, résolu par le [[Glossary:DNS]] interne du réseau `front`.
 
 À retenir sur la structure : `services` (un bloc par conteneur), `networks` (`internal: true` coupe l'accès extérieur), `volumes` (volumes nommés), `secrets` (fichiers montés en lecture seule dans `/run/secrets/<nom>`, absents de l'image). Pas de clé `version:` : elle est obsolète.
 
@@ -265,11 +265,11 @@ Kubernetes est puissant mais **complexe** (apprentissage, surface d'attaque, exp
 ![Un Ingress route vers un Service qui sélectionne par étiquette trois Pods web gérés par un ReplicaSet lui-même piloté par un Deployment](images/compose-securite-kubernetes-4.svg)
 *Figure 4 — Deployment, ReplicaSet, Pods et Service : qui crée quoi, qui route vers qui.*
 
-**Pod** : plus petite unité déployable, un ou plusieurs conteneurs partageant IP et volumes. Il est **éphémère** : s'il disparaît, son adresse change. On le crée rarement à la main.
+**Pod** : plus petite unité déployable, un ou plusieurs conteneurs partageant [[Glossary:IP]] et volumes. Il est **éphémère** : s'il disparaît, son adresse change. On le crée rarement à la main.
 
 **Deployment** : état voulu d'une application sans état (image, réplicas, stratégie de mise à jour). Il crée un **ReplicaSet** qui maintient le bon nombre de Pods ; à chaque nouvelle version, un nouveau ReplicaSet prend progressivement le relais (*rolling update*).
 
-**Service** : **adresse et nom DNS stables** devant des Pods choisis par **étiquettes**. Types : `ClusterIP` (interne, défaut), `NodePort`, `LoadBalancer` (fourni par le cloud). Un **Ingress** ajoute un routage HTTP par nom d'hôte et chemin.
+**Service** : **adresse et nom DNS stables** devant des Pods choisis par **étiquettes**. Types : `ClusterIP` (interne, défaut), `NodePort`, `LoadBalancer` (fourni par le cloud). Un **Ingress** ajoute un routage [[Glossary:HTTP]] par nom d'hôte et chemin.
 
 Manifeste `web.yaml` (noms fictifs) :
 
@@ -366,7 +366,7 @@ kubectl -n demo rollout undo deploy/web
 
 👉 Explication : passe à cinq réplicas ; déploie une nouvelle image progressivement ; suit l'avancement ; `undo` revient à la révision précédente si la nouvelle version pose problème. En pratique, on modifie le manifeste versionné et on le réapplique.
 
-À connaître ensuite : **ConfigMap** (configuration non sensible), **Secret** (encodé en base64, **non chiffré par défaut** dans etcd : activez le chiffrement au repos et restreignez l'accès), **Namespace**, **PersistentVolumeClaim**, **NetworkPolicy** (pare-feu entre Pods) et **RBAC** (qui peut faire quoi sur l'API).
+À connaître ensuite : **ConfigMap** (configuration non sensible), **Secret** (encodé en base64, **non chiffré par défaut** dans etcd : activez le chiffrement au repos et restreignez l'accès), **Namespace**, **PersistentVolumeClaim**, **NetworkPolicy** (pare-feu entre Pods) et **[[Glossary:RBAC]]** (qui peut faire quoi sur l'[[Glossary:API]]).
 
 ---
 

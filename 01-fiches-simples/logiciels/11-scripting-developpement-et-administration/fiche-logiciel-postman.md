@@ -8,7 +8,7 @@
 
 ## 📚 Couverture dans le pack
 
-Couvert — Windows 11 Client et Debian 13 (installation, workspace, collections, environnements et secrets, tests, Newman CLI, mise à jour et retour arrière). Fiche historique Debian 12 conservée.
+Couvert — Windows 11 Client et Debian 13 (installation, workspace, collections, environnements et secrets, tests, Newman [[Glossary:CLI]], mise à jour et retour arrière). Fiche historique Debian 12 conservée.
 
 ## 🧭 Utilisation
 

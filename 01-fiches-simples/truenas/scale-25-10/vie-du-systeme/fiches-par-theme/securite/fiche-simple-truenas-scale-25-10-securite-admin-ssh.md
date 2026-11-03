@@ -1,8 +1,8 @@
 # 📄 fiche-simple-truenas-scale-25-10-securite-admin-ssh.md
 
-- **Environnement** : TrueNAS SCALE 25.10 (Goldeye), NAS de lab ou de production sur réseau de gestion
+- **Environnement** : TrueNAS SCALE 25.10 (Goldeye), [[Glossary:NAS]] de lab ou de production sur réseau de gestion
 - **OS / Version** : TrueNAS SCALE 25.10 Goldeye (base Debian)
-- **Catégorie** : Sécurité / Comptes et accès SSH
+- **Catégorie** : Sécurité / Comptes et accès [[Glossary:SSH]]
 - **Tags** : `truenas`, `scale2510`, `debian`, `ssh`, `sudo`, `hardening`
 
 ---
@@ -36,7 +36,7 @@ Créer un compte administrateur nominatif, déposer sa clé SSH, désactiver la 
    `System Settings > Services > SSH` (paramètres) : Log in as Root with Password = désactivé
    👉 Explication : Le root ne peut plus se connecter avec un mot de passe ; seul l'accès par clé ou via le compte nominatif reste possible.
 2. Restreindre le port et les interfaces d'écoute SSH :
-   `System Settings > Services > SSH` : TCP Port = `22`, Bind Interfaces = `<interface_gestion>`
+   `System Settings > Services > SSH` : [[Glossary:TCP]] Port = `22`, Bind Interfaces = `<interface_gestion>`
    👉 Explication : sshd n'écoute que sur le réseau de gestion.
 3. Vérifier la configuration appliquée :
    `midclt call ssh.config`
@@ -49,11 +49,11 @@ Créer un compte administrateur nominatif, déposer sa clé SSH, désactiver la 
    `System Settings > Services > SSH` : Allow Password Authentication = désactivé, Password Login Groups = vide
    👉 Explication : Seules les clés déposées peuvent ouvrir une session SSH.
 2. Limiter l'interface web au réseau de gestion et forcer HTTPS :
-   `System Settings > General > GUI` : Web Interface IPv4 Address = `<adresse_ip_gestion>`, Web Interface HTTP -> HTTPS Redirect = activé (libellés à vérifier sur la version déployée)
+   `System Settings > General > GUI` : Web Interface IPv4 Address = `<adresse_ip_gestion>`, Web Interface [[Glossary:HTTP]] -> HTTPS Redirect = activé (libellés à vérifier sur la version déployée)
    👉 Explication : Empêche l'accès au Web UI depuis les réseaux utilisateurs et évite l'échange de mots de passe en clair.
 3. Vérifier qu'aucun accès SSH n'est ouvert depuis l'extérieur :
    `sudo ss -tlnp | grep ':22 '` (sur TrueNAS) et règle pare-feu amont limitée à `<reseau_gestion>`
    👉 Explication : Confirme l'écoute locale et le filtrage par le pare-feu périphérique.
 4. Garder un compte de secours hors bande :
-   `System Settings > Services > IPMI` ou console BMC `<acces_bmc>` (si disponible)
+   `System Settings > Services > IPMI` ou console [[Glossary:BMC]] `<acces_bmc>` (si disponible)
    👉 Explication : Permet de rétablir l'accès si la configuration SSH ou réseau est erronée.

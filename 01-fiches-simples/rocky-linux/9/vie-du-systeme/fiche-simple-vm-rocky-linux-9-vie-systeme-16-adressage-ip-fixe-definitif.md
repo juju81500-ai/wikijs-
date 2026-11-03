@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_16_Adressage_Ip_Fixe_Definitif
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 16 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-16`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Fixer l'adresse IP du serveur.
+Fixer l'adresse [[Glossary:IP]] du serveur.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -23,7 +23,7 @@ Fixer l'adresse IP du serveur.
    ```bash
    sudo nmcli connection modify CONN ipv4.method manual ipv4.addresses 192.0.2.10/24 ipv4.gateway 192.0.2.1 ipv4.dns 192.0.2.53
    ```
-   👉 Explication : `CONN` est le profil NetworkManager; adresse, passerelle et DNS sont à adapter.
+   👉 Explication : `CONN` est le profil NetworkManager; adresse, passerelle et [[Glossary:DNS]] sont à adapter.
 
 3. Appliquer puis contrôler :
    ```bash
@@ -31,11 +31,11 @@ Fixer l'adresse IP du serveur.
    ip -br a
    ip r
    ```
-   👉 Explication : réactive le profil; risque de coupure SSH, utiliser la console.
+   👉 Explication : réactive le profil; risque de coupure [[Glossary:SSH]], utiliser la console.
 
 ## 2. Production — Contrôles
 
-Réserver l'adresse dans l'IPAM.
+Réserver l'adresse dans l'[[Glossary:IPAM]].
 
 ## 3. Production — Sécurité
 

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_08_Configuration_Reseau_D_Installation
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 08 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-08`
@@ -13,7 +13,7 @@ Disposer d'un réseau pendant l'installation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Dans le programme d'installation (Subiquity), écran **Network connections** : laisser le DHCP ou choisir **Edit IPv4 > Manual** pour une IP statique temporaire. Après démarrage, contrôler :
+1. Dans le programme d'installation (Subiquity), écran **Network connections** : laisser le [[Glossary:DHCP]] ou choisir **Edit IPv4 > Manual** pour une [[Glossary:IP]] statique temporaire. Après démarrage, contrôler :
    ```bash
    ip -br address
    ip route
@@ -23,7 +23,7 @@ Disposer d'un réseau pendant l'installation.
 
 ## 2. Production — Contrôles
 
-Utiliser un VLAN d'installation si le réseau de production n'a pas de DHCP.
+Utiliser un [[Glossary:VLAN]] d'installation si le réseau de production n'a pas de DHCP.
 
 ## 3. Production — Sécurité
 

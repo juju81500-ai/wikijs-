@@ -1,8 +1,8 @@
 # Fiche_Simple_-_Windows_Server_2022_Citrix_CVAD_Sauvegarder_Restaurer
 
-- **Environnement** : Serveurs Windows Server 2022 (Delivery Controller, StoreFront, licences, SQL) et VM VDA, compte administrateur nominatif
+- **Environnement** : Serveurs Windows Server 2022 (Delivery Controller, StoreFront, licences, [[Glossary:SQL]]) et [[Glossary:VM]] VDA, compte administrateur nominatif
 - **OS / Version** : Windows Server 2022; version CVAD à vérifier auprès de l'éditeur
-- **Catégorie** : VDI / virtualisation d'applications / Citrix
+- **Catégorie** : [[Glossary:VDI]] / virtualisation d'applications / Citrix
 - **Tags** : `citrix`, `cvad`, `windows-server`, `sauvegarde`
 
 ---
@@ -28,7 +28,7 @@ Backup-SqlDatabase -ServerInstance 'SQL_CITRIX' -Database 'SITE_DB' -BackupFile 
 ```
    👉 Explication : SQL_CITRIX, SITE_DB et CHEMIN_SAUVEGARDE sont à remplacer ; répéter pour les bases de supervision et de journalisation ; privilégier un plan SQL Agent planifié.
 
-3. Exporter la configuration StoreFront : GUI console StoreFront **Server Group > Export Configuration** (libellé à vérifier selon version), enregistrer le fichier ZIP hors du serveur.
+3. Exporter la configuration StoreFront : [[Glossary:GUI]] console StoreFront **Server Group > Export Configuration** (libellé à vérifier selon version), enregistrer le fichier ZIP hors du serveur.
    👉 Explication : ce fichier peut contenir des éléments sensibles ; le chiffrer et le stocker sécurisé.
 
 4. Copier les fichiers de licence et noter les certificats (export avec clé privée protégé par mot de passe saisi, jamais écrit).
@@ -39,12 +39,12 @@ Backup-SqlDatabase -ServerInstance 'SQL_CITRIX' -Database 'SITE_DB' -BackupFile 
 
 ## 2. Production — Contrôles
 
-- Planifier les sauvegardes complètes et journaux selon le RPO.
+- Planifier les sauvegardes complètes et journaux selon le [[Glossary:RPO]].
 - Copie hors site et test de restauration trimestriel.
 
 ## 3. Production — Sécurité
 
-- Chiffrer les sauvegardes et limiter l'accès NTFS/SQL.
+- Chiffrer les sauvegardes et limiter l'accès [[Glossary:NTFS]]/SQL.
 - Séparer le stockage des sauvegardes du serveur SQL.
 
 ## Validation et retour arrière

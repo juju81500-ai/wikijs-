@@ -1,7 +1,7 @@
 # 📄 fiche-simple-hote-docker-securite-activer-mode-rootless.md
 
 - **Environnement** : Hôte Docker Debian 12 ou Ubuntu 24-04
-- **OS / Version** : Debian 12 / Ubuntu 24-04 LTS avec Docker Engine officiel déjà installé
+- **OS / Version** : Debian 12 / Ubuntu 24-04 [[Glossary:LTS]] avec Docker Engine officiel déjà installé
 - **Catégorie** : Sécurité / Conteneurs
 - **Tags** : `[docker]`, `[rootless]`, `[debian]`, `[ubuntu]`, `[hardening]`, `[conteneurs]`
 
@@ -43,8 +43,8 @@ Exécuter le démon Docker sous un compte utilisateur non privilégié avec le m
 
 ## 🔒 3. Production — Façon Sécurisée
 1. Utiliser un compte dédié à l'exploitation et éviter son ajout au groupe `docker` du démon système : ce groupe permet généralement un contrôle équivalent à root.
-2. Ne pas exposer le socket rootless sur TCP sans authentification et filtrage adaptés. Limiter les montages hôte et les capacités des conteneurs selon leur besoin.
-3. Rootless réduit les privilèges du démon, mais ne remplace ni les mises à jour, ni l'isolation d'une VM pour des charges non fiables. Vérifier les limites réseau et de stockage avant migration.
+2. Ne pas exposer le socket rootless sur [[Glossary:TCP]] sans authentification et filtrage adaptés. Limiter les montages hôte et les capacités des conteneurs selon leur besoin.
+3. Rootless réduit les privilèges du démon, mais ne remplace ni les mises à jour, ni l'isolation d'une [[Glossary:VM]] pour des charges non fiables. Vérifier les limites réseau et de stockage avant migration.
 
 ## ✅ Validation et retour arrière
 - Confirmer le contexte avec `docker context ls`, l'état avec `systemctl --user status docker` et l'option `rootless` dans `docker info`.

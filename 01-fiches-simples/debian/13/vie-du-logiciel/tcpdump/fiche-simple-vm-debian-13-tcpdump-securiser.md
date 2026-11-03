@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_tcpdump_Securiser
 
-- **Environnement** : VM Debian 13 dédiée à tcpdump
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à tcpdump
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : tcpdump / sécuriser
 - **Tags** : `tcpdump`, `debian13`, `vie-du-logiciel`, `securiser`

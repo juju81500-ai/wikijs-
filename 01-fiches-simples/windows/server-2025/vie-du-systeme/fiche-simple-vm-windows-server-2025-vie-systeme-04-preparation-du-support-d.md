@@ -18,15 +18,15 @@ Préparer le support qui démarrera l'installation.
    Set-VMDvdDrive -VMName NOM_VM -Path C:\ISO\FICHIER.iso
    Set-VMFirmware -VMName NOM_VM -FirstBootDevice (Get-VMDvdDrive -VMName NOM_VM)
    ```
-   👉 Explication : `NOM_VM` est le nom de la VM; le lecteur DVD devient le premier périphérique d'amorçage (VM de génération 2).
+   👉 Explication : `NOM_VM` est le nom de la [[Glossary:VM]]; le lecteur DVD devient le premier périphérique d'amorçage (VM de génération 2).
 
-2. Serveur physique : créer une clé USB amorçable avec **Rufus** (schéma de partition GPT, système cible UEFI) ou avec l'outil du constructeur. En PowerShell, repérer d'abord la clé :
+2. Serveur physique : créer une clé [[Glossary:USB]] amorçable avec **Rufus** (schéma de partition [[Glossary:GPT]], système cible UEFI) ou avec l'outil du constructeur. En PowerShell, repérer d'abord la clé :
    ```powershell
    Get-Disk | Where-Object BusType -eq 'USB' | Select-Object Number, FriendlyName, @{n='Taille_Go';e={[math]::Round($_.Size/1GB)}}
    ```
    👉 Explication : identifie le numéro de disque USB pour éviter d'écraser un autre disque; Rufus formate la clé entièrement.
 
-3. Si l'image dépasse 4 Go, utiliser une clé formatée en NTFS (option Rufus) ou en FAT32 avec `install.wim` fractionné :
+3. Si l'image dépasse 4 Go, utiliser une clé formatée en [[Glossary:NTFS]] (option Rufus) ou en FAT32 avec `install.wim` fractionné :
    ```powershell
    Dism /Split-Image /ImageFile:D:\sources\install.wim /SWMFile:E:\sources\install.swm /FileSize:3800
    ```

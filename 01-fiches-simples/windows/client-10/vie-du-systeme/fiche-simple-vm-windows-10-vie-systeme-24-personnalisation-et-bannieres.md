@@ -21,7 +21,7 @@ Afficher un message légal à l'ouverture de session et appliquer la charte grap
    ```
    👉 Explication : crée la bannière affichée avant l'ouverture de session.
 
-2. Définir le fond d'écran et l'écran de verrouillage par GPO : **Configuration utilisateur > Modèles d'administration > Bureau > Papier peint du Bureau**, ou Intune **Personnalisation**.
+2. Définir le fond d'écran et l'écran de verrouillage par [[Glossary:GPO]] : **Configuration utilisateur > Modèles d'administration > Bureau > Papier peint du Bureau**, ou Intune **Personnalisation**.
    👉 Explication : uniformise l'identité visuelle du parc.
 
 3. Régler le verrouillage automatique : **Paramètres > Comptes > Options de connexion > Exiger la connexion**, ou par stratégie (`InactivityTimeoutSecs`).

@@ -2,7 +2,7 @@
 
 - **Tags** : `transverse`, `tout-en-un`, `support`, `itsm`
 
-Fiches de triage, transfert, inventaire, compte rendu d'incident et pratiques ITSM.
+Fiches de triage, transfert, inventaire, compte rendu d'incident et pratiques [[Glossary:ITSM]].
 
 - [Qualifier un incident exploitable](tout-en-un-qualifier-incident.md)
 

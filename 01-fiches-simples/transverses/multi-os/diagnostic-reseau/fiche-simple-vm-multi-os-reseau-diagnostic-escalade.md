@@ -1,6 +1,6 @@
 # fiche-simple-vm-multi-os-reseau-diagnostic-escalade.md
 
-- **Environnement** : VM, poste, serveur, LXC Proxmox ou hôte Docker (Linux ou Windows)
+- **Environnement** : [[Glossary:VM]], poste, serveur, [[Glossary:LXC]] Proxmox ou hôte Docker (Linux ou Windows)
 - **OS / Version** : Debian 12/13, Ubuntu 24-04/26-04, Rocky Linux 9, Alpine Linux, Windows 10/11, Windows Server 2022/2025
 - **Catégorie** : réseau / escalade
 - **Tags** : `reseau`, `diagnostic`, `multi-os`, `depannage`
@@ -26,7 +26,7 @@ Rassembler les informations utiles pour transmettre l'incident.
    Get-ComputerInfo -Property CsName, OsName, OsVersion
    Get-NetIPConfiguration
    ```
-   👉 Explication : nom, version d'OS et configuration IP.
+   👉 Explication : nom, version d'OS et configuration [[Glossary:IP]].
 
 3. Noter destination, port, heure du test et message d'erreur exact.
    👉 Explication : le support peut ainsi reproduire le test.

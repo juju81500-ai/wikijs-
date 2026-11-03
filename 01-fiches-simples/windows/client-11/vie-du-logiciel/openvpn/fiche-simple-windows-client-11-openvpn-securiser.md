@@ -19,11 +19,11 @@ Protéger le profil, la clé et le poste.
    ```
    👉 Explication : Seuls Administrateurs et SYSTEM doivent pouvoir modifier; aucun droit d'écriture pour les utilisateurs standard.
 
-2. GUI : vérifier que le pare-feu Windows est actif (Sécurité Windows > Pare-feu et protection du réseau).
-   👉 Explication : Le profil VPN ne doit pas désactiver le pare-feu.
+2. [[Glossary:GUI]] : vérifier que le pare-feu Windows est actif (Sécurité Windows > Pare-feu et protection du réseau).
+   👉 Explication : Le profil [[Glossary:VPN]] ne doit pas désactiver le pare-feu.
 
 3. Révoquer en cas de perte : prévenir immédiatement l'administrateur du serveur.
-   👉 Explication : La révocation se fait côté PKI/serveur (CRL); supprimer ensuite le profil du poste.
+   👉 Explication : La révocation se fait côté [[Glossary:PKI]]/serveur ([[Glossary:CRL]]); supprimer ensuite le profil du poste.
 
 ## 2. Production — Contrôles
 

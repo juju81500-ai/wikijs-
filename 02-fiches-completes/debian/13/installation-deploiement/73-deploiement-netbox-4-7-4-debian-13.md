@@ -2,8 +2,8 @@
 
 - **OS / Version** : Debian 13 Trixie x86-64; NetBox 4.7.4
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : application NetBox, PostgreSQL, Redis local, Gunicorn, Nginx et pilote IPAM/DCIM
-- **Catégorie** : IPAM, DCIM et source de vérité réseau
+- **Périmètre** : application NetBox, PostgreSQL, Redis local, Gunicorn, Nginx et pilote [[Glossary:IPAM]]/DCIM
+- **Catégorie** : IPAM, [[Glossary:DCIM]] et source de vérité réseau
 - **Tags** : `netbox`, `ipam`, `dcim`, `debian13`, `postgresql`, `redis`, `nginx`
 
 ## 1. Cadrer l'installation
@@ -14,7 +14,7 @@ NetBox est une source de vérité IPAM/DCIM, pas un outil qui découvre automati
 
 Au 27 octobre 2026, la release stable publiée est NetBox 4.7.4. Les exigences de la documentation stable sont Python 3.12+, PostgreSQL 15+ et Redis 6+; Debian 13 fournit Python 3.13 et PostgreSQL 17. Cette procédure choisit une archive de version fixe, une base PostgreSQL locale, Redis lié localement et Nginx devant Gunicorn. Elle vise une petite instance dédiée, pas une architecture haute disponibilité.
 
-Définir avant l'installation le FQDN, l'adresse de gestion, le réseau d'administration, les propriétaires du service, les règles de conservation et l'emplacement des sauvegardes. N'exposer l'interface et l'API qu'en HTTPS sur le réseau autorisé.
+Définir avant l'installation le [[Glossary:FQDN]], l'adresse de gestion, le réseau d'administration, les propriétaires du service, les règles de conservation et l'emplacement des sauvegardes. N'exposer l'interface et l'[[Glossary:API]] qu'en HTTPS sur le réseau autorisé.
 
 ## 2. Installer PostgreSQL et Redis
 
@@ -144,7 +144,7 @@ Les unités prévues par NetBox utilisent l'utilisateur et le groupe `netbox`. S
 
 Fiche simple : [publier NetBox avec Nginx et TLS](../../../../01-fiches-simples/debian/13/vie-du-logiciel/netbox/fiche-simple-vm-debian-13-netbox-nginx-tls.md).
 
-Installer un certificat TLS valide et protéger sa clé privée. Copier la configuration Nginx de NetBox, puis remplacer le nom de serveur par le FQDN autorisé dans `ALLOWED_HOSTS` :
+Installer un certificat [[Glossary:TLS]] valide et protéger sa clé privée. Copier la configuration Nginx de NetBox, puis remplacer le nom de serveur par le FQDN autorisé dans `ALLOWED_HOSTS` :
 
 ```bash
 sudo cp /opt/netbox/contrib/nginx.conf /etc/nginx/sites-available/netbox

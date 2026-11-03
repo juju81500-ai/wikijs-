@@ -1,10 +1,10 @@
 # Leçon — Docker : images, conteneurs, couches, volumes, réseaux, Dockerfile et registres
 
 - **Tags** : `transverse`, `tout-en-un`, `lecon`, `virtualisation`, `conteneurs`, `docker`, `dockerfile`, `registre`
-- **Niveau** : débutant à intermédiaire (administrateur système ou technicien TSSR)
+- **Niveau** : débutant à intermédiaire (administrateur système ou technicien [[Glossary:TSSR]])
 - **Durée estimée** : 3 h 30 (cours 1 h 30, labo guidé 1 h 30, exercices et quiz 30 min)
 
-> **Avertissement de test** : au moment de la rédaction, Docker n'était pas installé sur la machine de rédaction et aucune installation n'a été tentée. **Toutes les commandes de cette leçon sont donc présentées comme non testées sur la plateforme cible.** Exécutez-les d'abord dans une VM jetable, jamais en premier en production.
+> **Avertissement de test** : au moment de la rédaction, Docker n'était pas installé sur la machine de rédaction et aucune installation n'a été tentée. **Toutes les commandes de cette leçon sont donc présentées comme non testées sur la plateforme cible.** Exécutez-les d'abord dans une [[Glossary:VM]] jetable, jamais en premier en production.
 
 ---
 
@@ -22,7 +22,7 @@
 
 ## Prérequis et durée
 
-- Ligne de commande Linux (fichiers, droits, processus) et réseau de base (IP, port, DNS).
+- Ligne de commande Linux (fichiers, droits, processus) et réseau de base ([[Glossary:IP]], port, [[Glossary:DNS]]).
 - Une **VM Linux jetable** (Debian ou Ubuntu) avec accès console de secours, environ 2 Go libres.
 - Durée : 3 h 30. Aucune connaissance préalable de Docker.
 
@@ -88,7 +88,7 @@ docker run -d --name web1 -p 8080:80 nginx:1.27
 curl -sI http://127.0.0.1:8080
 ```
 
-👉 Explication : démarre nginx en arrière-plan et publie son port 80 sur le port 8080 de l'hôte ; `curl -sI` récupère les en-têtes HTTP pour prouver que le service répond. Le port est accessible depuis le réseau de l'hôte : en laboratoire, c'est acceptable, ailleurs vérifiez le pare-feu.
+👉 Explication : démarre nginx en arrière-plan et publie son port 80 sur le port 8080 de l'hôte ; `curl -sI` récupère les en-têtes [[Glossary:HTTP]] pour prouver que le service répond. Le port est accessible depuis le réseau de l'hôte : en laboratoire, c'est acceptable, ailleurs vérifiez le pare-feu.
 
 ## 3. Les couches : comprendre le cache et la taille
 
@@ -145,7 +145,7 @@ CMD ["python", "main.py"]
 
 Pièges fréquents : `FROM …:latest` (non reproductible), copier tout le dossier (secrets compris), placer un secret dans `ENV` ou `ARG` (il reste dans l'image), oublier `USER` (tout tourne en root), croire qu'`EXPOSE` ouvre un port, préférer `ADD` à `COPY` (moins prévisible).
 
-**ENTRYPOINT et CMD** : `ENTRYPOINT` définit le programme fixe, `CMD` ses arguments par défaut, que l'utilisateur peut remplacer à la fin de `docker run`. Préférez toujours la forme tableau JSON (`["prog","arg"]`) qui lance directement le processus, sans shell intermédiaire : le processus reçoit alors correctement les signaux d'arrêt.
+**ENTRYPOINT et CMD** : `ENTRYPOINT` définit le programme fixe, `CMD` ses arguments par défaut, que l'utilisateur peut remplacer à la fin de `docker run`. Préférez toujours la forme tableau [[Glossary:JSON]] (`["prog","arg"]`) qui lance directement le processus, sans shell intermédiaire : le processus reçoit alors correctement les signaux d'arrêt.
 
 **Le contexte de build et `.dockerignore`** : la commande de build envoie au démon tout le dossier indiqué (le « contexte »). Pour éviter d'y inclure l'historique Git, des clés ou des dépendances locales, créez un fichier `.dockerignore` :
 
@@ -421,7 +421,7 @@ Résultat attendu : `docker ps -a` ne liste plus aucun objet du labo ; `docker v
 **Q7. Pourquoi éviter `latest` en production ?** A) Payante B) Inexistante C) Étiquette mobile, déploiements non reproductibles D) Supprime le cache
 **Réponse : C.** Elle désigne la dernière version publiée, qui change dans le temps.
 
-**Q8. Où se retrouve un secret écrit par `ENV` dans un Dockerfile ?** A) Nulle part B) Seulement dans le conteneur C) Dans l'image (`docker history`/`inspect`) D) En RAM uniquement
+**Q8. Où se retrouve un secret écrit par `ENV` dans un Dockerfile ?** A) Nulle part B) Seulement dans le conteneur C) Dans l'image (`docker history`/`inspect`) D) En [[Glossary:RAM]] uniquement
 **Réponse : C.** `ENV` et `ARG` sont enregistrés dans les métadonnées de l'image.
 
 **Q9. Que fait `docker volume prune` ?** A) Compresse B) Supprime les volumes non utilisés par un conteneur C) Sauvegarde D) Liste
@@ -472,7 +472,7 @@ Méthode : `docker ps -a` (état), `docker logs` (symptômes), `docker inspect` 
 |---|---|---|---|---|
 | `images/docker-fondamentaux-1.svg` à `-4.svg` | Création originale, aucune source externe | Projet Pack Master | CC0 1.0 — <https://creativecommons.org/publicdomain/zero/1.0/> | Sans objet |
 
-Mention : « Création originale du projet Pack Master, dédiée au domaine public (CC0) ». Aucune image libre n'a pu être vérifiée sur Wikimedia Commons (API indisponible, limitation de débit) ; des schémas originaux ont donc été créés.
+Mention : « Création originale du projet Pack Master, dédiée au domaine public (CC0) ». Aucune image libre n'a pu être vérifiée sur Wikimedia Commons ([[Glossary:API]] indisponible, limitation de débit) ; des schémas originaux ont donc été créés.
 
 ## Historique de vérification
 

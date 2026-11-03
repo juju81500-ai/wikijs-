@@ -1,6 +1,6 @@
 # Dépanner un réseau : diagnostic complet multi-OS
 
-- **Environnement** : VM, poste, serveur, LXC Proxmox ou hôte/conteneur Docker
+- **Environnement** : [[Glossary:VM]], poste, serveur, [[Glossary:LXC]] Proxmox ou hôte/conteneur Docker
 - **OS / Version** : Debian 12/13, Ubuntu 24-04/26-04, Rocky Linux 9, Alpine Linux, Windows 10/11, Windows Server 2022/2025
 - **Catégorie** : Réseau / Diagnostic / Dépannage
 - **Tags** : `reseau`, `diagnostic`, `debian`, `ubuntu`, `rocky`, `alpine`, `windows`, `docker`, `dns`, `routage`
@@ -9,7 +9,7 @@
 
 Fiche simple : [cadrer l'objectif et le périmètre](../../../../01-fiches-simples/transverses/multi-os/diagnostic-reseau/fiche-simple-vm-multi-os-reseau-diagnostic-cadrer-perimetre.md).
 
-Isoler une panne réseau sans appliquer de changement au hasard. Le parcours va de l'interface au service : **Lien → Adresse → Passerelle → Route → DNS → Port → Application**.
+Isoler une panne réseau sans appliquer de changement au hasard. Le parcours va de l'interface au service : **Lien → Adresse → Passerelle → Route → [[Glossary:DNS]] → Port → Application**.
 
 Cette fiche concerne le diagnostic d'un poste ou serveur. La configuration persistante se fait ensuite avec le gestionnaire propre à l'OS : Netplan, NetworkManager, systemd-networkd, OpenRC, paramètres Windows ou configuration Proxmox/Docker.
 
@@ -17,8 +17,8 @@ Cette fiche concerne le diagnostic d'un poste ou serveur. La configuration persi
 
 Fiche simple : [sécuriser le diagnostic](../../../../01-fiches-simples/transverses/multi-os/diagnostic-reseau/fiche-simple-vm-multi-os-reseau-diagnostic-securiser-diagnostic.md).
 
-1. Noter l'heure, la machine, l'interface, le VLAN, l'adresse source, la destination et le port concerné.
-2. Comparer avec une machine fonctionnelle du même segment et avec les changements récents (IP, DHCP, DNS, firewall, switch, hyperviseur).
+1. Noter l'heure, la machine, l'interface, le [[Glossary:VLAN]], l'adresse source, la destination et le port concerné.
+2. Comparer avec une machine fonctionnelle du même segment et avec les changements récents ([[Glossary:IP]], [[Glossary:DHCP]], DNS, firewall, switch, hyperviseur).
 3. Garder une console/hyperviseur ou un accès hors bande avant une modification réseau distante.
 4. Ne pas vider les règles firewall, désactiver le pare-feu, remplacer tous les DNS ou redémarrer toute la pile réseau pour « tester ».
 5. Tester uniquement une adresse et un port autorisés, pas un balayage réseau.
@@ -53,7 +53,7 @@ ip route
 rc-status
 ```
 
-Pour un LXC Proxmox, vérifier aussi la configuration réseau du CT sur l'hôte; l'adresse, la passerelle, le bridge et le VLAN sont souvent gérés par Proxmox.
+Pour un LXC Proxmox, vérifier aussi la configuration réseau du [[Glossary:CT]] sur l'hôte; l'adresse, la passerelle, le bridge et le VLAN sont souvent gérés par Proxmox.
 
 ### Windows 10/11 et Windows Server
 
@@ -62,7 +62,7 @@ Get-NetAdapter | Format-Table Name, Status, LinkSpeed, MacAddress
 Get-NetIPConfiguration
 ```
 
-En GUI, ouvrir `ncpa.cpl` et vérifier que la bonne carte est activée. Ne pas supprimer/recréer la carte virtuelle avant d'avoir noté ses paramètres.
+En [[Glossary:GUI]], ouvrir `ncpa.cpl` et vérifier que la bonne carte est activée. Ne pas supprimer/recréer la carte virtuelle avant d'avoir noté ses paramètres.
 
 ### Interprétation
 
@@ -70,7 +70,7 @@ En GUI, ouvrir `ncpa.cpl` et vérifier que la bonne carte est activée. Ne pas s
 |---|---|
 | Interface `DOWN` ou `Disconnected` | Câble, carte, port switch, état de la vNIC/bridge et VLAN |
 | Interface active mais sans adresse attendue | DHCP, réservation, configuration du gestionnaire réseau ou configuration PVE |
-| Plusieurs interfaces/routes inattendues | VPN, bridge, bonding, VLAN, Docker ou routes statiques |
+| Plusieurs interfaces/routes inattendues | [[Glossary:VPN]], bridge, bonding, VLAN, Docker ou routes statiques |
 
 ## 4. Étape 2 — Vérifier adresse, masque et passerelle
 
@@ -93,7 +93,7 @@ Get-NetRoute -DestinationPrefix 0.0.0.0/0
 
 Vérifier que l'adresse et le préfixe correspondent au plan réseau, qu'il n'y a pas de conflit IP et qu'une route permet d'atteindre la destination. Ne pas attribuer une IP de documentation (`192.0.2.0/24`) à une machine de production.
 
-Tester la passerelle si ICMP est autorisé :
+Tester la passerelle si [[Glossary:ICMP]] est autorisé :
 
 ```bash
 ping -c 3 <IP_PASSERELLE>
@@ -118,7 +118,7 @@ Fiche simple : [vérifier le chemin vers la destination](../../../../01-fiches-s
    ```powershell
    tracert -d <IP_DESTINATION>
    ```
-3. Si la passerelle locale est joignable mais pas le réseau distant, vérifier routage, ACL, VPN, VLAN et routes de retour auprès du propriétaire du réseau.
+3. Si la passerelle locale est joignable mais pas le réseau distant, vérifier routage, [[Glossary:ACL]], VPN, VLAN et routes de retour auprès du propriétaire du réseau.
 
 Ne pas conclure qu'un routeur est en panne uniquement parce qu'un saut intermédiaire ne répond pas; les équipements peuvent filtrer les sondes de traceroute.
 
@@ -160,7 +160,7 @@ Get-DnsClientServerAddress
 Resolve-DnsName <NOM_DNS>
 ```
 
-Vérifier que les DNS configurés sont ceux du réseau attendu. Un poste joint à Active Directory doit utiliser les DNS AD internes; ne pas ajouter un DNS public comme secours pour un domaine privé.
+Vérifier que les DNS configurés sont ceux du réseau attendu. Un poste joint à Active Directory doit utiliser les DNS [[Glossary:AD]] internes; ne pas ajouter un DNS public comme secours pour un domaine privé.
 
 ## 7. Étape 5 — Vérifier le port et le service
 
@@ -188,7 +188,7 @@ Test-NetConnection <HOTE_CIBLE> -Port <PORT>
 Get-NetFirewallProfile | Select-Object Name, Enabled, DefaultInboundAction
 ```
 
-Vérifier ensuite le service et ses journaux; une connexion TCP réussie ne valide pas à elle seule l'application ou son authentification.
+Vérifier ensuite le service et ses journaux; une connexion [[Glossary:TCP]] réussie ne valide pas à elle seule l'application ou son authentification.
 
 ## 8. Cas particuliers des conteneurs
 

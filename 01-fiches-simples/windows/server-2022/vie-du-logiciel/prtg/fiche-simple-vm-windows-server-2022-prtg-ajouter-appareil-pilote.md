@@ -1,6 +1,6 @@
 # 📄 fiche-simple-vm-windows-server-2022-prtg-ajouter-appareil-pilote.md
 
-- **Environnement** : Serveur Windows exécutant PRTG Network Monitor
+- **Environnement** : Serveur Windows exécutant [[Glossary:PRTG]] Network Monitor
 - **OS / Version** : Windows Server 2022/2025; PRTG version maintenue
 - **Catégorie** : Supervision / configuration
 - **Tags** : `windows-server`, `prtg`, `supervision`, `snmp`, `wmi`, `scan-pilote`
@@ -18,12 +18,12 @@ Ajouter un actif autorisé dans PRTG et valider un nombre réduit de capteurs av
    Test-NetConnection IP_APPAREIL -Port 161
    ping IP_APPAREIL
    ```
-   👉 Explication : le port 161 (UDP) ne se teste pas par `Test-NetConnection`; ping confirme au moins la joignabilité, SNMP se valide par le capteur.
+   👉 Explication : le port 161 ([[Glossary:UDP]]) ne se teste pas par `Test-NetConnection`; ping confirme au moins la joignabilité, [[Glossary:SNMP]] se valide par le capteur.
 
 2. Créer l'objet Device : **Devices > clic droit sur le groupe de test > Add Device**, nom, **IPv4 Address/DNS Name**, puis dans **Credentials for SNMP Devices** (v3, authPriv, lecture seule) ou **Credentials for Windows Systems**.
    👉 Explication : credentials en lecture seule, héritées du groupe de test.
 
-3. Ajouter les capteurs : clic droit sur le device > **Add Sensor** > **Ping**, puis un seul capteur adapté (**SNMP System Uptime** ou **WMI Memory**).
+3. Ajouter les capteurs : clic droit sur le device > **Add Sensor** > **Ping**, puis un seul capteur adapté (**SNMP System Uptime** ou **[[Glossary:WMI]] Memory**).
    👉 Explication : un capteur à la fois.
 
 4. Vérifier : onglets **Overview** et **Log** du device (valeurs, état `Up`), puis supprimer l'objet de test (**Delete**).
@@ -41,7 +41,7 @@ Ajouter un actif autorisé dans PRTG et valider un nombre réduit de capteurs av
 
 ## 🔒 3. Production — Façon Sécurisée
 
-- Désactiver l'auto-discovery générale; limiter chaque tâche à un ensemble d'IP/hosts autorisé.
+- Désactiver l'auto-discovery générale; limiter chaque tâche à un ensemble d'[[Glossary:IP]]/hosts autorisé.
 - Restreindre SNMP/WMI depuis les cibles au Core/Probe PRTG; ne pas désactiver le pare-feu endpoint.
 - Éviter les secrets réutilisés et les comptes Domain Admin. Protéger les credentials dans PRTG et auditer les droits de modification.
 - Ne pas activer packet sniffing ou NetFlow sans accord réseau et définition du volume de données.

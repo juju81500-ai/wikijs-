@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Restaurer des données ou une machine depuis un point de sauvegarde NAKIVO via la GUI, en test.
+Restaurer des données ou une machine depuis un point de sauvegarde NAKIVO via la [[Glossary:GUI]], en test.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Créer réseaux, datastores et premières VM.
+Créer réseaux, datastores et premières [[Glossary:VM]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -18,7 +18,7 @@ Créer réseaux, datastores et premières VM.
    esxcli network vswitch standard portgroup add -p NOM_GP -v vSwitch0
    esxcli network vswitch standard portgroup set -p NOM_GP --vlan-id ID_VLAN
    ```
-   👉 Explication : `NOM_GP` = nom du groupe de ports; `ID_VLAN` = VLAN.
+   👉 Explication : `NOM_GP` = nom du groupe de ports; `ID_VLAN` = [[Glossary:VLAN]].
 
 2. Créer une VM (Host Client : **Machines virtuelles > Créer/enregistrer une VM**) et la lister :
    ```sh
@@ -27,7 +27,7 @@ Créer réseaux, datastores et premières VM.
    ```
    👉 Explication : `VMID` = numéro de la VM; la création se fait de préférence par le Host Client ou vCenter.
 
-3. Ajouter l'hôte à vCenter pour les fonctions avancées (vMotion, HA, DRS) (vSphere Client : **Centre de données > Ajouter un hôte**).
+3. Ajouter l'hôte à vCenter pour les fonctions avancées (vMotion, HA, [[Glossary:DRS]]) (vSphere Client : **Centre de données > Ajouter un hôte**).
    👉 Explication : vCenter est nécessaire pour la gestion de plusieurs hôtes.
 
 ## 2. Production — Contrôles

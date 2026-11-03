@@ -1,6 +1,6 @@
 # 📄 GNS3
 
-- **Catégorie** : Topologie, IPAM et outils métiers
+- **Catégorie** : Topologie, [[Glossary:IPAM]] et outils métiers
 - **Plateforme** : Multiplateforme
 - **Produit (matrice)** : GNS3
 - **Statut dans le pack** : Couvert

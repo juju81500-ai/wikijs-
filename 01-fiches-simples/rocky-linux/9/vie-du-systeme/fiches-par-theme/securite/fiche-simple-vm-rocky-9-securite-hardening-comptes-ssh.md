@@ -1,8 +1,8 @@
 # fiche-simple-vm-rocky-9-securite-hardening-comptes-ssh.md
 
-- **Environnement** : VM ou serveur dédié Rocky Linux 9 avant ouverture en production
-- **OS / Version** : Rocky Linux 9 / famille RHEL 9
-- **Catégorie** : sécurité / SSH
+- **Environnement** : [[Glossary:VM]] ou serveur dédié Rocky Linux 9 avant ouverture en production
+- **OS / Version** : Rocky Linux 9 / famille [[Glossary:RHEL]] 9
+- **Catégorie** : sécurité / [[Glossary:SSH]]
 - **Tags** : `rocky9`, `rhel9`, `hardening`, `ssh`, `sudo`, `wheel`
 
 ---

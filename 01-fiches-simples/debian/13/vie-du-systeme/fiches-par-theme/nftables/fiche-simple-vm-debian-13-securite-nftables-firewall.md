@@ -1,19 +1,19 @@
 # 📄 VM_Debian_13_Securite_Configuration-NFTables-Firewall.md
 
-- **Environnement** : VM (Debian 13 Trixie / Kernel 6.x)
+- **Environnement** : [[Glossary:VM]] (Debian 13 Trixie / Kernel 6.x)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
 - **Catégorie** : Sécurité / Pare-feu Kernel (nftables)
 - **Tags** : `[debian13]`, `[nftables]`, `[firewall]`, `[security]`, `[hardening]`, `[stateful]`
 
 ## 🎯 Problème précis à résoudre
-Configurer le pare-feu natif `nftables` sur Debian 13 (Trixie) avec une politique par défaut fermée (Zero Trust drop), filtrer les flux entrants SSH et HTTP/HTTPS, et assurer la persistance des règles au redémarrage.
+Configurer le pare-feu natif `nftables` sur Debian 13 (Trixie) avec une politique par défaut fermée (Zero Trust drop), filtrer les flux entrants [[Glossary:SSH]] et [[Glossary:HTTP]]/HTTPS, et assurer la persistance des règles au redémarrage.
 
 ---
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Installation du paquet nftables :
    `apt-get update && apt-get install -y nftables`
-   👉 Explication : Installe l'outil CLI et le service d'administration des règles du filtre paquet Linux kernel.
+   👉 Explication : Installe l'outil [[Glossary:CLI]] et le service d'administration des règles du filtre paquet Linux kernel.
 
 2. Ajout temporaire d'une table et d'une chaîne de filtrage en mémoire :
    `nft add table inet filter && nft add chain inet filter input { type filter hook input priority 0 \; policy accept \; }`

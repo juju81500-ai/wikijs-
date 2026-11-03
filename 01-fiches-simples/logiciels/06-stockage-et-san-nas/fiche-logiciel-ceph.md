@@ -1,6 +1,6 @@
 # 📄 Ceph
 
-- **Catégorie** : Stockage et SAN / NAS
+- **Catégorie** : Stockage et [[Glossary:SAN]] / [[Glossary:NAS]]
 - **Plateforme** : Linux
 - **Produit (matrice)** : Ceph
 - **Statut dans le pack** : Couvert

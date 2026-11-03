@@ -21,7 +21,7 @@
 ## Prérequis et durée
 
 - Savoir ouvrir un terminal Linux et se déplacer (`cd`, `ls`, `pwd`).
-- Un **laboratoire jetable** : une VM Linux (Debian, Ubuntu ou Rocky Linux), compte **non privilégié**. **Prenez un instantané avant de commencer** et gardez un accès console de secours : aucune commande n'exige `sudo`, mais l'instantané permet de repartir de zéro.
+- Un **laboratoire jetable** : une [[Glossary:VM]] Linux (Debian, Ubuntu ou Rocky Linux), compte **non privilégié**. **Prenez un instantané avant de commencer** et gardez un accès console de secours : aucune commande n'exige `sudo`, mais l'instantané permet de repartir de zéro.
 - Aucune adresse ni compte réels : uniquement des valeurs de documentation (192.0.2.0/24, 198.51.100.0/24, 203.0.113.0/24, 2001:db8::/32, `example.com`, `example.test`).
 
 ## L'essentiel en bref
@@ -580,7 +580,7 @@ a) c'est plus joli b) `for` est interdit c) `read` lit ligne par ligne, alors qu
 | `images/bash-debutant-3.svg` | Création originale du projet Pack Master | Projet Pack Master | CC0 1.0 — <https://creativecommons.org/publicdomain/zero/1.0/deed.fr> | Aucune |
 | `images/bash-debutant-4.svg` | Création originale du projet Pack Master | Projet Pack Master | CC0 1.0 — <https://creativecommons.org/publicdomain/zero/1.0/deed.fr> | Aucune |
 
-Création originale du projet Pack Master, dédiée au domaine public (CC0). Licence de `bash-debutant-2.svg` vérifiée par l'API de Wikimedia Commons le 2026-11-01 (« Public domain », attribution non requise mais indiquée).
+Création originale du projet Pack Master, dédiée au domaine public (CC0). Licence de `bash-debutant-2.svg` vérifiée par l'[[Glossary:API]] de Wikimedia Commons le 2026-11-01 (« Public domain », attribution non requise mais indiquée).
 
 ## Historique de vérification
 

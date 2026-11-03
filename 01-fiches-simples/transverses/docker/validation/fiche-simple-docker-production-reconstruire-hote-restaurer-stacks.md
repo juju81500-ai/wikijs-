@@ -9,7 +9,7 @@
 Reconstruire un hôte Docker et restaurer ses stacks à partir des fichiers de déploiement, des secrets récupérés de façon contrôlée et des sauvegardes de données testées.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
-1. Préparer une VM isolée avec la distribution et les versions moteur/Compose documentées.
+1. Préparer une [[Glossary:VM]] isolée avec la distribution et les versions moteur/Compose documentées.
 2. Restaurer les fichiers Compose depuis leur dépôt, puis récupérer les secrets depuis le coffre prévu; ne pas mettre les secrets dans Git ou dans le YAML.
 3. Restaurer volumes et bases de données dans un projet isolé, adapter les ports/DNS de test, puis lancer :
    ```bash
@@ -18,13 +18,13 @@ Reconstruire un hôte Docker et restaurer ses stacks à partir des fichiers de d
    docker compose ps
    ```
 4. Tester les fonctions métiers, données, healthchecks et journaux.
-   👉 *Explication : un test isolé valide les sauvegardes sans créer de conflit d'IP, de DNS ou de nom de service avec la production.*
+   👉 *Explication : un test isolé valide les sauvegardes sans créer de conflit d'[[Glossary:IP]], de [[Glossary:DNS]] ou de nom de service avec la production.*
 
 ## ⚡ 2. Production — Façon Simplifiée
 1. Installer un hôte propre et à jour; appliquer la fiche existante d'installation Docker Engine et valider le stockage, le réseau et le pare-feu.
 2. Restaurer les dossiers Compose, données et configurations depuis des sources authentifiées; contrôler propriétaires, permissions, versions et espace disponible.
 3. Restaurer les bases avec leurs outils natifs et les volumes arrêtés, puis démarrer les services selon l'ordre des dépendances.
-4. Valider chaque service en local et depuis un client autorisé avant de basculer IP, DNS, proxy ou VIP.
+4. Valider chaque service en local et depuis un client autorisé avant de basculer IP, DNS, proxy ou [[Glossary:VIP]].
    👉 *Explication : ne pas restaurer des fichiers de `/var/lib/docker` directement sur un moteur neuf, sauf procédure explicitement testée pour cette version.*
 
 ## 🔒 3. Production — Façon Sécurisée

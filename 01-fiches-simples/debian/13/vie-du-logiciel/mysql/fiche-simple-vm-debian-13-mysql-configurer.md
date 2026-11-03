@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_MySQL_Configurer
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; MySQL Community (dépôt officiel Oracle)
 - **Catégorie** : base de données / MySQL / Configurer
 - **Tags** : `debian13`, `mysql`, `configuration`

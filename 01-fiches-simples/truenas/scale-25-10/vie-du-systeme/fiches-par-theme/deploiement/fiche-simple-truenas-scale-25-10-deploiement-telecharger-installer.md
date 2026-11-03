@@ -1,6 +1,6 @@
 # fiche-simple-truenas-scale-25-10-deploiement-telecharger-installer.md
 
-- **Environnement** : NAS autonome pilote (matériel x86-64 ou VM de laboratoire)
+- **Environnement** : [[Glossary:NAS]] autonome pilote (matériel x86-64 ou [[Glossary:VM]] de laboratoire)
 - **OS / Version** : TrueNAS SCALE 25.10 Community Edition
 - **Catégorie** : stockage NAS / installation
 - **Tags** : `truenas`, `scale2510`, `zfs`, `nas`, `smb`, `sauvegarde`
@@ -28,7 +28,7 @@ Installer SCALE 25.10 à partir d'une ISO vérifiée.
 3. Démarrer l'ISO en UEFI et choisir le périphérique de boot.
    👉 Explication : l'installateur efface le disque choisi.
 
-4. Après redémarrage, ouvrir l'adresse de la console, définir un compte admin dédié, un mot de passe unique, le nom d'hôte, une IP statique, DNS et NTP.
+4. Après redémarrage, ouvrir l'adresse de la console, définir un compte admin dédié, un mot de passe unique, le nom d'hôte, une [[Glossary:IP]] statique, [[Glossary:DNS]] et [[Glossary:NTP]].
    👉 Explication : configuration minimale de gestion.
 
 5. Passer l'interface en HTTPS avec un certificat approuvé.

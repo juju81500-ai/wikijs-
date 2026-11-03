@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Snort_Valider
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Snort
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Snort
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Snort / validation
 - **Tags** : `snort`, `ubuntu24.04`, `vie-du-logiciel`, `valider`
@@ -19,7 +19,7 @@ Recetter Snort sur un fichier pcap autorisé, puis en capture bornée.
    ping -c 3 HOTE_AUTORISE
    wait
    ```
-   👉 Explication : Génère 5 paquets ICMP vers un hôte autorisé; `tcpdump` est requis (voir la série tcpdump).
+   👉 Explication : Génère 5 paquets [[Glossary:ICMP]] vers un hôte autorisé; `tcpdump` est requis (voir la série tcpdump).
 
 2. Analyser hors ligne :
    ```bash

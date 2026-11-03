@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_36_Integration_A_L_Annuaire
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 36 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-36`
@@ -23,7 +23,7 @@ Joindre le serveur à l'annuaire.
    ```bash
    realm discover EXEMPLE.LAN
    ```
-   👉 Explication : vérifie DNS et contrôleurs; `EXEMPLE.LAN` est le domaine.
+   👉 Explication : vérifie [[Glossary:DNS]] et contrôleurs; `EXEMPLE.LAN` est le domaine.
 
 3. Joindre le domaine avec un compte autorisé (`ADMINAD`) :
    ```bash
@@ -33,7 +33,7 @@ Joindre le serveur à l'annuaire.
 
 ## 2. Production — Contrôles
 
-Joindre dans l'unité d'organisation prévue et ajouter le compte machine à la CMDB.
+Joindre dans l'unité d'organisation prévue et ajouter le compte machine à la [[Glossary:CMDB]].
 
 ## 3. Production — Sécurité
 

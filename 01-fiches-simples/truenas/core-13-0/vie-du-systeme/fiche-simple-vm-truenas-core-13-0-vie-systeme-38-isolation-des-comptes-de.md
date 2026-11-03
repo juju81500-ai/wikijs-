@@ -13,7 +13,7 @@ Séparer les accès par application.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Compte > Utilisateurs > Ajouter un compte sans shell.
+1. [[Glossary:GUI]] : Compte > Utilisateurs > Ajouter un compte sans shell.
    ```sh
    midclt call user.create '{"username":"SVC_SAUVEGARDE","full_name":"Service","password_disabled":true,"shell":"/usr/sbin/nologin","group_create":true}'
    ```

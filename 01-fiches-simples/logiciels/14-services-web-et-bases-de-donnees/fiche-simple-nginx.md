@@ -1,6 +1,6 @@
 # 📄 Nginx
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : Nginx 1.22.x (paquet des dépôts Debian 12, à vérifier sur la version déployée)
 - **Catégorie** : Services Web et bases de données
@@ -71,7 +71,7 @@ sudo systemctl reload nginx
 ```
 👉 Explication : Le lien symbolique active le site ; sa suppression désactive le site par défaut. `nginx -t` valide la syntaxe avant le rechargement.
 
-3. Ouverture du pare-feu pour HTTP, HTTPS et administration :
+3. Ouverture du pare-feu pour [[Glossary:HTTP]], HTTPS et administration :
 ```bash
 sudo apt install -y ufw
 sudo ufw allow from <adresse_ip_admin> to any port 22 proto tcp
@@ -79,7 +79,7 @@ sudo ufw allow 'Nginx Full'
 sudo ufw enable
 sudo ufw status verbose
 ```
-👉 Explication : Ouvre SSH seulement pour `<adresse_ip_admin>` avant d'activer le pare-feu. Le profil `Nginx Full` ouvre les ports 80 et 443. Vérifier la présence du profil avec `sudo ufw app list`.
+👉 Explication : Ouvre [[Glossary:SSH]] seulement pour `<adresse_ip_admin>` avant d'activer le pare-feu. Le profil `Nginx Full` ouvre les ports 80 et 443. Vérifier la présence du profil avec `sudo ufw app list`.
 
 ---
 
@@ -99,7 +99,7 @@ server_tokens off;
 sudo nano /etc/nginx/sites-available/<nom_site>
 ```
 Ajouter un bloc `server` sur le port 443 avec `ssl_certificate /etc/ssl/certs/<certificat_web>.crt;`, `ssl_certificate_key /etc/ssl/private/<certificat_web>.key;` et `ssl_protocols TLSv1.2 TLSv1.3;`. Dans le bloc port 80, ajouter `return 301 https://$host$request_uri;`.
-👉 Explication : Force le chiffrement et refuse les anciens protocoles TLS. `<certificat_web>` est le nom du certificat émis pour le site, à vérifier sur la version déployée.
+👉 Explication : Force le chiffrement et refuse les anciens protocoles [[Glossary:TLS]]. `<certificat_web>` est le nom du certificat émis pour le site, à vérifier sur la version déployée.
 
 3. Ajout des en-têtes de sécurité :
 ```bash

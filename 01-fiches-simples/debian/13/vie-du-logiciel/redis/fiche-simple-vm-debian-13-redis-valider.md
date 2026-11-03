@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Redis_Valider
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; Redis des dépôts Debian
 - **Catégorie** : base clé-valeur / Redis / Valider (recette)
 - **Tags** : `debian13`, `redis`, `recette`

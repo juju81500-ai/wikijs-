@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_18_Table_D_Hotes_Locale
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 18 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-18`
@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Déclarer les noms locaux sans serveur DNS dédié.
+Déclarer les noms locaux sans serveur [[Glossary:DNS]] dédié.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Ajouter un enregistrement dans Services > DNS Resolver > General Settings > Host Overrides > Add : Host `srv01`, Domain `exemple.lan`, IP `IP_SERVEUR`.
+1. Ajouter un enregistrement dans Services > DNS Resolver > General Settings > Host Overrides > Add : Host `srv01`, Domain `exemple.lan`, [[Glossary:IP]] `IP_SERVEUR`.
    👉 Explication : `IP_SERVEUR` est l'adresse de la machine nommée.
 
 2. Contrôler la résolution :

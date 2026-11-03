@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_OpenVPN_Sauvegarder_Restaurer
 
-- **Environnement** : VM Ubuntu 24-04 dédiée à OpenVPN Community Edition (serveur)
-- **OS / Version** : Ubuntu 24-04 LTS Noble; version des dépôts à vérifier sur l'hôte
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 dédiée à OpenVPN Community Edition (serveur)
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; version des dépôts à vérifier sur l'hôte
 - **Catégorie** : OpenVPN Community Edition / sauvegarder / restaurer
 - **Tags** : `openvpn`, `ubuntu24-04`, `vie-du-logiciel`, `sauvegarder-restaurer`
 
@@ -28,8 +28,8 @@ Sauvegarder et restaurer la configuration du serveur sans exposer les clés.
    ```
    👉 Explication : DATE est la date de l'archive à restaurer (à remplacer).
 
-3. Sauvegarder séparément la PKI :
-   👉 Explication : La PKI (CA hors ligne, base d'émission) est sauvegardée par la procédure de la CA, jamais dans cette archive.
+3. Sauvegarder séparément la [[Glossary:PKI]] :
+   👉 Explication : La PKI ([[Glossary:CA]] hors ligne, base d'émission) est sauvegardée par la procédure de la CA, jamais dans cette archive.
 
 ## 2. Production — Contrôles
 

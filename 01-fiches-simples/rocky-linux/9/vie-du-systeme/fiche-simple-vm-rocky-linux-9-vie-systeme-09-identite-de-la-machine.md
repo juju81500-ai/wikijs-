@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_09_Identite_De_La_Machine
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 09 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-09`
@@ -13,7 +13,7 @@ Donner un nom stable et complet.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Définir le nom complet (remplacer `SRV01.EXEMPLE.LAN` par le FQDN voulu) :
+1. Définir le nom complet (remplacer `SRV01.EXEMPLE.LAN` par le [[Glossary:FQDN]] voulu) :
    ```bash
    sudo hostnamectl set-hostname SRV01.EXEMPLE.LAN
    ```
@@ -26,7 +26,7 @@ Donner un nom stable et complet.
    ```
    👉 Explication : affiche le nom statique et le FQDN.
 
-3. Déclarer le nom dans le DNS et la CMDB.
+3. Déclarer le nom dans le [[Glossary:DNS]] et la [[Glossary:CMDB]].
    👉 Explication : le nom doit se résoudre depuis le réseau.
 
 ## 2. Production — Contrôles

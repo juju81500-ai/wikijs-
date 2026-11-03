@@ -20,9 +20,9 @@ Inscrire l'hôte dans l'inventaire et revoir les accès.
    dmidecode -s system-serial-number
    ip -br a
    ```
-   👉 Explication : nom, version, numéro de série et IP : à saisir dans la CMDB.
+   👉 Explication : nom, version, numéro de série et [[Glossary:IP]] : à saisir dans la [[Glossary:CMDB]].
 
-2. Lister les comptes et droits Proxmox (GUI : **Datacenter > Permissions**) :
+2. Lister les comptes et droits Proxmox ([[Glossary:GUI]] : **Datacenter > Permissions**) :
    ```bash
    pveum user list
    pveum acl list

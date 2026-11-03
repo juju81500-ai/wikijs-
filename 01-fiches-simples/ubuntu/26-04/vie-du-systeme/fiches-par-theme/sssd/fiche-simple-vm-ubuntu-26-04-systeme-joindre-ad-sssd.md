@@ -1,7 +1,7 @@
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Systeme_Joindre_AD_Sssd
 
-- **Environnement** : VM Ubuntu intégrée à un domaine Active Directory existant
-- **OS / Version** : Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu intégrée à un domaine Active Directory existant
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]]
 - **Catégorie** : Système / Annuaire / Jonction de domaine
 - **Tags** : `ubuntu2604`, `realmd`, `sssd`, `active-directory`, `kerberos`, `adcli`
 
@@ -9,16 +9,16 @@
 
 ## 🎯 Problème précis à résoudre
 
-Joindre un serveur Ubuntu 26-04 à un domaine Active Directory avec `realmd` et `sssd`, pour que les comptes du domaine puissent se connecter en SSH et que seuls les groupes autorisés accèdent à la machine.
+Joindre un serveur Ubuntu 26-04 à un domaine Active Directory avec `realmd` et `sssd`, pour que les comptes du domaine puissent se connecter en [[Glossary:SSH]] et que seuls les groupes autorisés accèdent à la machine.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 
-1. Vérifier la résolution DNS du domaine (le DNS doit pointer vers un contrôleur de domaine) :
+1. Vérifier la résolution [[Glossary:DNS]] du domaine (le DNS doit pointer vers un contrôleur de domaine) :
 ```bash
 resolvectl query <domaine_ad>
 resolvectl query _ldap._tcp.<domaine_ad>
 ```
-👉 Explication : La jonction échoue si le serveur ne trouve pas les enregistrements SRV du contrôleur. Sur Ubuntu 26-04, la résolution passe par systemd-resolved, qu'il faut configurer avec le DNS AD (Netplan ou `resolvectl dns`).
+👉 Explication : La jonction échoue si le serveur ne trouve pas les enregistrements SRV du contrôleur. Sur Ubuntu 26-04, la résolution passe par systemd-resolved, qu'il faut configurer avec le DNS [[Glossary:AD]] (Netplan ou `resolvectl dns`).
 
 2. Installer les paquets nécessaires :
 ```bash
@@ -31,13 +31,13 @@ sudo apt install -y realmd sssd sssd-tools adcli krb5-user samba-common-bin oddj
 ```bash
 sudo realm discover <domaine_ad>
 ```
-👉 Explication : Affiche le type de domaine, le contrôleur détecté et les logiciels requis. Une sortie vide signale un problème DNS ou réseau (ports 88, 389, 445 vers le DC).
+👉 Explication : Affiche le type de domaine, le contrôleur détecté et les logiciels requis. Une sortie vide signale un problème DNS ou réseau (ports 88, 389, 445 vers le [[Glossary:DC]]).
 
 4. Joindre le domaine :
 ```bash
 sudo realm join -U <compte_admin_ad> <domaine_ad>
 ```
-👉 Explication : Crée le compte ordinateur dans l'OU par défaut et génère `/etc/sssd/sssd.conf`. Le mot de passe est demandé de façon interactive, sans l'écrire dans la commande.
+👉 Explication : Crée le compte ordinateur dans l'[[Glossary:OU]] par défaut et génère `/etc/sssd/sssd.conf`. Le mot de passe est demandé de façon interactive, sans l'écrire dans la commande.
 
 5. Vérifier la jonction :
 ```bash
@@ -52,7 +52,7 @@ id <utilisateur_ad>@<domaine_ad>
 ```bash
 sudo pam-auth-update --enable mkhomedir
 ```
-👉 Explication : Ajoute le module PAM qui crée le `$HOME` au premier login d'un utilisateur du domaine, sans intervention manuelle.
+👉 Explication : Ajoute le module [[Glossary:PAM]] qui crée le `$HOME` au premier login d'un utilisateur du domaine, sans intervention manuelle.
 
 2. Restreindre les ouvertures de session à un groupe autorisé :
 ```bash
@@ -75,7 +75,7 @@ sudo ls -l /etc/sssd/sssd.conf
 use_fully_qualified_names = False
 ad_gpo_access_control = enforcing
 ```
-👉 Explication : Ces options se placent dans la section `[domain/<domaine_ad>]` générée par `realm join`, et non dans `[sssd]`. `ad_gpo_access_control = enforcing` applique les GPO de connexion d'AD au serveur Linux. Le nom court (sans domaine) simplifie les ACL, mais vérifier les conflits d'homonymes.
+👉 Explication : Ces options se placent dans la section `[domain/<domaine_ad>]` générée par `realm join`, et non dans `[sssd]`. `ad_gpo_access_control = enforcing` applique les [[Glossary:GPO]] de connexion d'AD au serveur Linux. Le nom court (sans domaine) simplifie les [[Glossary:ACL]], mais vérifier les conflits d'homonymes.
 
 3. Redémarrer sssd et contrôler son état :
 ```bash

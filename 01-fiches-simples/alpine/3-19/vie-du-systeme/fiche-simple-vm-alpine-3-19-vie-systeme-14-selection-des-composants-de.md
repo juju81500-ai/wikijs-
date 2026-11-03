@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_14_Selection_Des_Composants_De
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 14 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-14`
@@ -13,7 +13,7 @@ Installer l'ensemble minimal utile, sans paquet inutile.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Installer le serveur SSH et l'enregistrer au démarrage :
+1. Installer le serveur [[Glossary:SSH]] et l'enregistrer au démarrage :
    ```sh
    setup-sshd -c openssh
    ```
@@ -37,7 +37,7 @@ Garder l'ensemble minimal; chaque paquet est une surface d'attaque et un correct
 
 ## 3. Production — Sécurité
 
-Ne pas installer de compilateur, de client FTP ou de telnet sans besoin.
+Ne pas installer de compilateur, de client [[Glossary:FTP]] ou de telnet sans besoin.
 
 ## Validation et retour arrière
 

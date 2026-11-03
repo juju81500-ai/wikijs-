@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Redis_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; Redis des dépôts Debian
 - **Catégorie** : base clé-valeur / Redis / Prérequis et limites
 - **Tags** : `debian13`, `redis`, `prerequis`
@@ -19,7 +19,7 @@ Cadrer l'usage de Redis sur Debian 13 (cache, file, sessions) avant installation
    apt-cache policy redis-server
    free -h
    ```
-   👉 Explication : Redis stocke ses données en mémoire : dimensionner la RAM avec une marge pour la persistance (fork) ; vérifier la version publiée dans Debian.
+   👉 Explication : Redis stocke ses données en mémoire : dimensionner la [[Glossary:RAM]] avec une marge pour la persistance (fork) ; vérifier la version publiée dans Debian.
 
 2. Contrôler le port :
    ```bash

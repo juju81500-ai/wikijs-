@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_31_Reduction_De_La_Surface
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 31 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-31`
@@ -13,7 +13,7 @@ Désactiver les services inutiles.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Vérifier les services actifs dans Status > Services et désactiver DHCP, DNS Resolver ou SSH s'ils ne servent pas.
+1. Vérifier les services actifs dans Status > Services et désactiver [[Glossary:DHCP]], [[Glossary:DNS]] Resolver ou [[Glossary:SSH]] s'ils ne servent pas.
    👉 Explication : moins de services signifie moins de vulnérabilités.
 
 2. Lister les ports en écoute :
@@ -32,7 +32,7 @@ Comparer la liste à la baseline à chaque revue.
 
 ## 3. Production — Sécurité
 
-Aucun service d'administration ne doit écouter sur le WAN.
+Aucun service d'administration ne doit écouter sur le [[Glossary:WAN]].
 
 ## Validation et retour arrière
 

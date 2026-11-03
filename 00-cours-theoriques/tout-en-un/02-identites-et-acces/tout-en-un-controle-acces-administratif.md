@@ -32,9 +32,9 @@ Vérifier quels comptes locaux et membres des groupes administrateurs existent, 
    $Administrateurs = Get-LocalGroup -SID 'S-1-5-32-544'
    Get-LocalGroupMember -Group $Administrateurs.Name
    ```
-   👉 Explication : affiche l'état des comptes locaux et les membres du groupe Administrateurs local, identifié par son SID afin d'éviter les différences de langue.
+   👉 Explication : affiche l'état des comptes locaux et les membres du groupe Administrateurs local, identifié par son [[Glossary:SID]] afin d'éviter les différences de langue.
 
-4. Contrôler la politique effective SSH si le service est installé :
+4. Contrôler la politique effective [[Glossary:SSH]] si le service est installé :
    ```bash
    sudo sshd -T | grep -E '^(permitrootlogin|passwordauthentication|pubkeyauthentication) '
    ```
@@ -42,7 +42,7 @@ Vérifier quels comptes locaux et membres des groupes administrateurs existent, 
 
 ## 2. Production — Contrôles
 
-Comparer les résultats avec la CMDB, les groupes approuvés et la politique d'accès de l'organisation. Faire examiner les appartenances privilégiées par une seconde personne.
+Comparer les résultats avec la [[Glossary:CMDB]], les groupes approuvés et la politique d'accès de l'organisation. Faire examiner les appartenances privilégiées par une seconde personne.
 
 ## 3. Production — Sécurité
 

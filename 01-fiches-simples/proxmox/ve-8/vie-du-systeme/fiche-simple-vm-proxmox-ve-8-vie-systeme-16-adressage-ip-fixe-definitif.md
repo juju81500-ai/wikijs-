@@ -9,16 +9,16 @@
 
 ## Problème précis à résoudre
 
-Fixer l'IP de gestion et le pont réseau `vmbr0`.
+Fixer l'[[Glossary:IP]] de gestion et le pont réseau `vmbr0`.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : **Nœud > System > Network > vmbr0 > Edit** (adresse CIDR, passerelle, ports du pont = interface physique), puis **Apply Configuration**. En ligne de commande, éditer le fichier :
+1. [[Glossary:GUI]] : **Nœud > System > Network > vmbr0 > Edit** (adresse [[Glossary:CIDR]], passerelle, ports du pont = interface physique), puis **Apply Configuration**. En ligne de commande, éditer le fichier :
    ```bash
    nano /etc/network/interfaces
    ifreload -a
    ```
-   👉 Explication : le pont `vmbr0` porte l'IP de l'hôte et relie les VM au réseau physique; `ifreload -a` applique sans redémarrer.
+   👉 Explication : le pont `vmbr0` porte l'IP de l'hôte et relie les [[Glossary:VM]] au réseau physique; `ifreload -a` applique sans redémarrer.
 
 2. Exemple de contenu pour `vmbr0` (remplacer les placeholders) :
    ```bash
@@ -45,7 +45,7 @@ Faire la modification avec un accès console hors bande : une erreur coupe l'acc
 
 ## 3. Production — Sécurité
 
-Documenter l'IP dans l'IPAM; VLAN de gestion séparé des VM.
+Documenter l'IP dans l'[[Glossary:IPAM]]; [[Glossary:VLAN]] de gestion séparé des VM.
 
 ## Validation et retour arrière
 

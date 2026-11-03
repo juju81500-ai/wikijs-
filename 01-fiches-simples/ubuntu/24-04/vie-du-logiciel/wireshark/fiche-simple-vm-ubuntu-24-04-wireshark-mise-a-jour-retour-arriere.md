@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Wireshark_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Wireshark
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Wireshark
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Wireshark / mise à jour et retour arrière
 - **Tags** : `wireshark`, `ubuntu24.04`, `vie-du-logiciel`, `mise-a-jour-retour-arriere`

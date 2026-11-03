@@ -17,7 +17,7 @@ Déterminer pourquoi un appareil pilote ne reçoit plus de données/graphes dans
    ```bash
    ping -c 3 IP_HOTE
    ```
-   👉 Explication : remplacer par l'IP de l'appareil pilote; vérifier l'adresse saisie dans **Console > Management > Devices**.
+   👉 Explication : remplacer par l'[[Glossary:IP]] de l'appareil pilote; vérifier l'adresse saisie dans **Console > Management > Devices**.
 
 2. Vérifier horloge et services :
    ```bash
@@ -27,7 +27,7 @@ Déterminer pourquoi un appareil pilote ne reçoit plus de données/graphes dans
    ```
    👉 Explication : une horloge décalée ou un service arrêté suffit à interrompre les graphes.
 
-3. Consulter le journal et l'état SNMP : **Console > Utilities > System Utilities > View Cacti Log File**, filtre `POLLER`, puis **Console > Management > Devices > hôte** (état, dernière collecte).
+3. Consulter le journal et l'état [[Glossary:SNMP]] : **Console > Utilities > System Utilities > View Cacti Log File**, filtre `POLLER`, puis **Console > Management > Devices > hôte** (état, dernière collecte).
    👉 Explication : repérer l'heure de la dernière collecte réussie.
 
 4. Tester SNMPv3 en lecture seule sans secret en argument :

@@ -1,6 +1,6 @@
 # 📄 fiche-simple-vm-debian-12-verifier-scheduler-znuny.md
 
-- **Environnement** : VM Debian 12 hébergeant Znuny 7.3.x
+- **Environnement** : [[Glossary:VM]] Debian 12 hébergeant Znuny 7.3.x
 - **OS / Version** : Debian 12 Bookworm
 - **Catégorie** : Supervision / diagnostic
 - **Tags** : `debian12`, `znuny`, `scheduler`, `logs`, `itsm`
@@ -13,7 +13,7 @@ Vérifier que le scheduler Znuny est lancé et que les tâches de fond ne resten
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 
-1. Vérifier l'accès à la CLI :
+1. Vérifier l'accès à la [[Glossary:CLI]] :
    ```bash
    sudo -u znuny /opt/znuny/bin/znuny.Console.pl List | head -5
    ```

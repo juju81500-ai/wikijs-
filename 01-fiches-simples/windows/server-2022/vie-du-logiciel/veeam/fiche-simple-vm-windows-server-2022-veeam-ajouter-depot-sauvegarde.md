@@ -2,7 +2,7 @@
 
 - **Environnement** : Serveur Windows Server 2022 dédié au serveur de sauvegarde Veeam (pilote autonome) et hôte Hyper-V autorisé
 - **OS / Version** : Windows Server 2022; Veeam Backup & Replication 13.1.2.57
-- **Catégorie** : sauvegarde VM / dépôt
+- **Catégorie** : sauvegarde [[Glossary:VM]] / dépôt
 - **Tags** : `windows-server-2022`, `veeam`, `backup-replication`, `hyper-v`, `repository`, `immutabilite`
 
 ---
@@ -17,7 +17,7 @@ Ajouter un dépôt dédié, de préférence immuable pour les données critiques
    ```powershell
    Get-Volume | Select-Object DriveLetter, SizeRemaining, Size
    ```
-   👉 Explication : dimensionner capacité, IOPS, rétention et espace de restauration.
+   👉 Explication : dimensionner capacité, [[Glossary:IOPS]], rétention et espace de restauration.
 
 2. Ajouter le dépôt : **Console Veeam > Backup Infrastructure > Backup Repositories > Add Repository**
    👉 Explication : choisir un chemin qui ne recoupe pas un autre dépôt Veeam.

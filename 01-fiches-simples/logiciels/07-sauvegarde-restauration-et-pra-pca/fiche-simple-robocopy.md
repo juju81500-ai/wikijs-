@@ -1,6 +1,6 @@
 # 📄 Robocopy
 
-- **Environnement** : VM (Windows Server 2022)
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022)
 - **OS / Version** : Windows Server 2022 (Desktop Experience ou Server Core)
 - **Version** : Robocopy intégré à Windows Server 2022 ; `robocopy /?` affiche l'aide de la version installée
 - **Catégorie** : Sauvegarde, restauration et PRA / PCA
@@ -74,7 +74,7 @@ Get-LocalGroupMember -Group "Backup Operators"
 ```
 👉 Explication : Ajoute le compte de service au groupe `Backup Operators`, nécessaire au mode `/B`. Ce compte ne doit servir qu'à la sauvegarde et ne pas être administrateur de domaine. Le nom `TSSR\svc-sauvegarde` est un exemple de domaine à adapter. Point à vérifier : sur un contrôleur de domaine, le groupe s'appelle `Opérateurs de sauvegarde` selon la langue du système.
 
-2. Copie en mode sauvegarde, avec ACL et journal daté :
+2. Copie en mode sauvegarde, avec [[Glossary:ACL]] et journal daté :
 ```powershell
 $date = Get-Date -Format yyyy-MM-dd
 robocopy D:\Partages\Compta \\srv-sauv01\Sauvegardes\Compta /MIR /B /R:2 /W:5 /COPY:DATSO /DCOPY:T /LOG:"C:\Journaux\robocopy-compta-$date.log" /NP

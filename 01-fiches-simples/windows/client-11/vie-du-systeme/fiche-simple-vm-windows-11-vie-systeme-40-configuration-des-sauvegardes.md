@@ -19,7 +19,7 @@ Sauvegarder les données et l'état du poste.
    ```
    👉 Explication : le service d'historique des fichiers doit être disponible.
 
-2. Rediriger les dossiers Documents, Bureau et Images vers OneDrive Entreprise (Known Folder Move) par GPO ou Intune.
+2. Rediriger les dossiers Documents, Bureau et Images vers OneDrive Entreprise (Known Folder Move) par [[Glossary:GPO]] ou Intune.
    ```powershell
    Get-ItemProperty 'HKCU:\Software\Microsoft\Windows\CurrentVersion\Explorer\User Shell Folders' | Select-Object Personal,Desktop
    ```

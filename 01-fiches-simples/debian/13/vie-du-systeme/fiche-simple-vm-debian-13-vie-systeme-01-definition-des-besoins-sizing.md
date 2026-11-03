@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Vie_Systeme_01_Definition_Des_Besoins_Sizing
 
-- **Environnement** : VM Debian 13 « trixie » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 13 « trixie » (serveur)
 - **OS / Version** : Debian 13; étape 01 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian13`, `vie-du-systeme`, `cycle-de-vie`, `etape-01`
@@ -20,7 +20,7 @@ Dimensionner la machine avant de la créer.
    lsblk -o NAME,SIZE,TYPE
    uname -m
    ```
-   👉 Explication : nombre de vCPU, RAM, disques et architecture (`x86_64` ou `aarch64`) pour comparer au besoin.
+   👉 Explication : nombre de vCPU, [[Glossary:RAM]], disques et architecture (`x86_64` ou `aarch64`) pour comparer au besoin.
 
 2. Mesurer les entrées/sorties d'une machine comparable :
    ```bash
@@ -29,7 +29,7 @@ Dimensionner la machine avant de la créer.
    ```
    👉 Explication : `%util` et `await` élevés indiquent un stockage à surdimensionner.
 
-3. Noter vCPU, RAM, disque, IOPS, réseau et architecture dans le dossier du projet.
+3. Noter vCPU, RAM, disque, [[Glossary:IOPS]], réseau et architecture dans le dossier du projet.
    👉 Explication : ce tableau sert de référence pour l'hyperviseur et pour la recette.
 
 ## 2. Production — Contrôles

@@ -13,7 +13,7 @@ Vérifier les services et ports ouverts.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Services (état et démarrage automatique).
+1. [[Glossary:GUI]] : Système > Services (état et démarrage automatique).
    ```bash
    sudo midclt call service.query | python3 -m json.tool | grep -E '"service"|"state"'
    ```

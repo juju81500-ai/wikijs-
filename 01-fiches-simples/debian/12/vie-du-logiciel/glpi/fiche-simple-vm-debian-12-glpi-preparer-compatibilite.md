@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-12-glpi-preparer-compatibilite.md
 
-- **Environnement** : VM Debian dédiée pour GLPI avec serveur Web, PHP-FPM et MariaDB
+- **Environnement** : [[Glossary:VM]] Debian dédiée pour [[Glossary:GLPI]] avec serveur Web, PHP-FPM et MariaDB
 - **OS / Version** : Debian 12 ou 13; version GLPI maintenue à confirmer
 - **Catégorie** : GLPI / préparation et compatibilité
 - **Tags** : `debian12`, `debian13`, `glpi`, `itsm`, `compatibilite`
@@ -27,12 +27,12 @@ Préparer le déploiement GLPI en validant les versions supportées, le stockage
    ```
    👉 Explication : installer les extensions supplémentaires exigées par la version de GLPI retenue.
 
-3. Contrôler DNS, espace disque et préparer la sauvegarde :
+3. Contrôler [[Glossary:DNS]], espace disque et préparer la sauvegarde :
    ```bash
    getent hosts glpi.example.net
    df -h /var/www
    ```
-   👉 Explication : prévoir TLS, stockage des documents, fenêtre de maintenance; ne jamais exposer le répertoire de données ni la configuration au Web.
+   👉 Explication : prévoir [[Glossary:TLS]], stockage des documents, fenêtre de maintenance; ne jamais exposer le répertoire de données ni la configuration au Web.
 
 ## 2. Production — Contrôles
 

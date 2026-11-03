@@ -7,7 +7,7 @@
 
 Fiche simple : [préparer le basculement](../../../../01-fiches-simples/opnsense/toutes-versions/vie-du-logiciel/carp-pfsync-ha/fiche-simple-appliance-opnsense-carp-pfsync-preparer-basculement.md).
 
-Attribuer à chaque appliance une IP propre sur chaque interface, puis une VIP CARP distincte. Prévoir un réseau dédié pour pfsync et un réseau de synchronisation de configuration. Vérifier que les commutateurs autorisent les adresses MAC virtuelles CARP et que les deux appliances utilisent une version compatible.
+Attribuer à chaque appliance une [[Glossary:IP]] propre sur chaque interface, puis une [[Glossary:VIP]] [[Glossary:CARP]] distincte. Prévoir un réseau dédié pour pfsync et un réseau de synchronisation de configuration. Vérifier que les commutateurs autorisent les adresses MAC virtuelles CARP et que les deux appliances utilisent une version compatible.
 
 Exporter et chiffrer les configurations actuelles. Conserver un accès console local aux deux appliances : une erreur de VIP ou de règle peut couper l'administration.
 
@@ -17,7 +17,7 @@ Fiche simple : [configurer les interfaces et la synchronisation](../../../../01-
 
 Dans l'interface Web OPNsense, configurer les IP fixes et les rôles d'interface sur les deux équipements. Sur le nœud principal, activer la synchronisation de configuration vers l'adresse de l'interface dédiée du secondaire et sélectionner uniquement les composants à synchroniser. Définir un compte de synchronisation dédié, protégé par secret.
 
-Configurer pfsync sur l'interface privée dédiée. Ne pas utiliser le réseau WAN/public pour transporter la synchronisation d'état.
+Configurer pfsync sur l'interface privée dédiée. Ne pas utiliser le réseau [[Glossary:WAN]]/public pour transporter la synchronisation d'état.
 
 ## 3. Créer les VIP CARP
 
@@ -35,7 +35,7 @@ Fiche simple : [tester le basculement](../../../../01-fiches-simples/opnsense/to
 - Confirmer que les états de sessions sont synchronisés.
 - Depuis un client de test, couper proprement le nœud actif et mesurer le basculement.
 - Restaurer le nœud et observer le comportement de préemption.
-- Vérifier que DHCP, DNS, VPN, NAT et règles nécessaires restent fonctionnels.
+- Vérifier que [[Glossary:DHCP]], [[Glossary:DNS]], [[Glossary:VPN]], [[Glossary:NAT]] et règles nécessaires restent fonctionnels.
 
 ## 5. Exploitation et retour arrière
 

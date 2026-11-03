@@ -34,12 +34,12 @@ Restaurer un fichier ou un service sans écraser la production et prouver que le
    ```
    👉 Explication : contrôler contenu, permissions et propriétaire.
 
-4. Pour un service complet : restaurer sur une VM isolée, remettre les données (dump compris), démarrer et tester le parcours métier.
+4. Pour un service complet : restaurer sur une [[Glossary:VM]] isolée, remettre les données (dump compris), démarrer et tester le parcours métier.
    👉 Explication : un fichier restauré n'est pas un service restauré.
 
 ## 2. Production — Contrôles
 
-Faire approuver archive, chemins de restauration, responsable métier, fenêtre, RPO/RTO et vérification après reprise.
+Faire approuver archive, chemins de restauration, responsable métier, fenêtre, [[Glossary:RPO]]/RTO et vérification après reprise.
 
 ## 3. Production — Sécurité
 

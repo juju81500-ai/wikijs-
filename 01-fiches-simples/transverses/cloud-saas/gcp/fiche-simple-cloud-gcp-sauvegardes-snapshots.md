@@ -1,7 +1,7 @@
 # Fiche_Simple_-_Cloud_GCP_Sauvegardes_Snapshots
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — Google Cloud CLI (gcloud ; version publiée à vérifier)
+- **OS / Version** : Cloud/SaaS — Google Cloud [[Glossary:CLI]] (gcloud ; version publiée à vérifier)
 - **Catégorie** : cloud public / sauvegardes et snapshots
 - **Tags** : `gcp`, `sauvegardes_snapshots`, `securite`, `procedure`
 
@@ -22,7 +22,7 @@ Les valeurs écrites en MAJUSCULES sont des placeholders à remplacer par les va
    gcloud compute disks snapshot ID_DISQUE --zone=ZONE --snapshot-names=NOM_SNAPSHOT
 gcloud compute snapshots list --project=ID_PROJET
    ```
-   👉 Explication : Définir RPO/RTO, rétention, chiffrement et plan de restauration ; tester la récupération sur une ressource isolée. Les snapshots disques seuls ne garantissent pas la cohérence applicative.
+   👉 Explication : Définir [[Glossary:RPO]]/RTO, rétention, chiffrement et plan de restauration ; tester la récupération sur une ressource isolée. Les snapshots disques seuls ne garantissent pas la cohérence applicative.
 3. Console et CLI : comparer la configuration affichée avec l’état attendu, puis valider sur une ressource pilote non sensible.
    👉 Explication : les interfaces évoluent ; vérifier l’aide/version officielle et les quotas/licences avant généralisation.
 
@@ -36,7 +36,7 @@ Restreindre suppression/altération, chiffrer les sauvegardes et protéger leurs
 
 ## Validation et retour arrière
 
-- **Validation** : Restauration isolée testée, intégrité confirmée et temps mesuré comparé au RTO.
+- **Validation** : Restauration isolée testée, intégrité confirmée et temps mesuré comparé au [[Glossary:RTO]].
 - **Retour arrière** : Revenir à la dernière configuration approuvée ; préserver les sauvegardes et journaux. Ne supprimer la ressource de test qu’après validation des dépendances et du propriétaire.
 
 ## Si le problème n'est pas résolu

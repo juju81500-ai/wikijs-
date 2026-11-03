@@ -8,7 +8,7 @@
 
 ## Problème précis à résoudre
 
-Sécuriser le compte GitHub, activer MFA et limiter les sessions et applications autorisées.
+Sécuriser le compte GitHub, activer [[Glossary:MFA]] et limiter les sessions et applications autorisées.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

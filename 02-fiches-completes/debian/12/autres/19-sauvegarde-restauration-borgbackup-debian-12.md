@@ -1,7 +1,7 @@
 # Sauvegarde et restauration BorgBackup sur Debian 12
 
 - **Type de fiche** : Autres — sauvegarde / reprise
-- **Environnement** : VM ou serveur Debian 12 Bookworm, dépôt Borg distant ou disque dédié
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 12 Bookworm, dépôt Borg distant ou disque dédié
 - **OS / Version** : Debian 12 (Bookworm) avec BorgBackup
 - **Rôle** : Sauvegarder configurations/données et tester une restauration isolée
 - **Tags** : `debian12`, `bookworm`, `borgbackup`, `sauvegarde`, `restauration`, `chiffrement`
@@ -10,7 +10,7 @@
 
 Fiche simple : [cadrer le besoin Borg](../../../../01-fiches-simples/debian/12/vie-du-logiciel/borgbackup/fiche-simple-vm-debian-12-borg-cadrer-besoin.md).
 
-Définir les données, fréquence, rétention, RPO/RTO, destination indépendante et accès aux clés. Pour les bases actives, compléter l'archive fichier par un dump ou une méthode cohérente au moteur; une copie des fichiers de base en cours d'écriture n'est pas forcément restaurable.
+Définir les données, fréquence, rétention, [[Glossary:RPO]]/RTO, destination indépendante et accès aux clés. Pour les bases actives, compléter l'archive fichier par un dump ou une méthode cohérente au moteur; une copie des fichiers de base en cours d'écriture n'est pas forcément restaurable.
 
 ## 2. Installer Borg et préparer un dépôt
 
@@ -22,7 +22,7 @@ sudo apt install borgbackup
 borg --version
 ```
 
-Créer le compte dédié et préparer la destination selon le modèle d'accès choisi (SSH vers un dépôt distant ou volume monté réservé aux sauvegardes). Garder la clé et la phrase de passe hors du serveur protégé.
+Créer le compte dédié et préparer la destination selon le modèle d'accès choisi ([[Glossary:SSH]] vers un dépôt distant ou volume monté réservé aux sauvegardes). Garder la clé et la phrase de passe hors du serveur protégé.
 
 Initialiser une seule fois un dépôt chiffré, sur la destination réelle :
 

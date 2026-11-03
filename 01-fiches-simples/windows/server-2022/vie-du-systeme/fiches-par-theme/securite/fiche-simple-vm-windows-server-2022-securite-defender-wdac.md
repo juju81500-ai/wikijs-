@@ -1,12 +1,12 @@
 # 📄 Fiche_Simple_-_VM_Windows_Server_2022_Securite_Defender_WDAC
 
-- **Environnement** : VM (Windows Server 2022)
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022)
 - **OS / Version** : Windows Server 2022 - Famille Windows Server
 - **Catégorie** : Sécurité / Antivirus et contrôle d'applications
 - **Tags** : `[windows-server-2022]`, `[defender]`, `[wdac]`, `[applocker]`, `[code-integrity]`, `[powershell]`
 
 ## 🎯 Problème précis à résoudre
-Vérifier et renforcer Microsoft Defender Antivirus sur un serveur Windows Server 2022, puis mettre en place un contrôle des applications exécutables (WDAC ou AppLocker) en commençant par un mode audit qui ne bloque rien.
+Vérifier et renforcer Microsoft Defender Antivirus sur un serveur Windows Server 2022, puis mettre en place un contrôle des applications exécutables ([[Glossary:WDAC]] ou AppLocker) en commençant par un mode audit qui ne bloque rien.
 
 ---
 

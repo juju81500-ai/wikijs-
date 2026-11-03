@@ -3,7 +3,7 @@
 - **Catégorie** : Systèmes, annuaires et services
 - **Plateforme** : Cloud
 - **Produit (matrice)** : Microsoft Entra ID
-- **Statut dans le pack** : Couvert — Entra Connect, MFA et accès conditionnel avec portail et Microsoft Graph PowerShell.
+- **Statut dans le pack** : Couvert — Entra Connect, [[Glossary:MFA]] et accès conditionnel avec portail et Microsoft Graph PowerShell.
 - **Tags** : `logiciel`, `05-systemes-annuaires-et-services`, `couvert`
 
 ## 📚 Couverture dans le pack

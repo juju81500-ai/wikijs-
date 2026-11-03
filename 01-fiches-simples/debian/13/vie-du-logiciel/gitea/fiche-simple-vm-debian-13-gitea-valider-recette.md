@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Gitea_Valider_Recette
 
-- **Environnement** : VM Debian 13 isolée; domaine et stockage définis
+- **Environnement** : [[Glossary:VM]] Debian 13 isolée; domaine et stockage définis
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : forge Git / administration
 - **Tags** : `debian13`, `gitea`, `forge-git`, `tls`, `sauvegarde`
@@ -8,7 +8,7 @@
 
 ## Problème précis à résoudre
 
-Valider service, accès HTTP(S), clonage Git et contrôle d’accès avant ouverture.
+Valider service, accès [[Glossary:HTTP]](S), clonage Git et contrôle d’accès avant ouverture.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -24,7 +24,7 @@ Valider service, accès HTTP(S), clonage Git et contrôle d’accès avant ouver
    curl -I https://forge.example.com/
    git ls-remote https://forge.example.com/ORG/DEPOT.git
    ```
-   👉 Explication : remplacer FQDN, ORG et DEPOT par les valeurs à remplacer; ne pas intégrer de jeton dans l’URL.
+   👉 Explication : remplacer [[Glossary:FQDN]], ORG et DEPOT par les valeurs à remplacer; ne pas intégrer de jeton dans l’URL.
 
 3. Tester refus d’un utilisateur sans droit
    ```text

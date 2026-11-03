@@ -1,6 +1,6 @@
 # fiche-simple-appliance-opnsense-installation-preparer-architecture.md
 
-- **Environnement** : Appliance physique ou VM dédiée avec interfaces réseau identifiées
+- **Environnement** : Appliance physique ou [[Glossary:VM]] dédiée avec interfaces réseau identifiées
 - **OS / Version** : OPNsense Community ou Business Edition, release maintenue compatible avec la plateforme
 - **Catégorie** : pare-feu / préparation
 - **Tags** : `opnsense`, `installation`, `pare-feu`, `wan`, `lan`
@@ -13,7 +13,7 @@ Définir l'architecture et préparer un média d'installation vérifié avant to
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Définir par écrit WAN, LAN, VLAN, réseau de gestion, adresses, passerelle, DNS, règles, NAT, VPN, journaux et accès de secours.
+1. Définir par écrit [[Glossary:WAN]], [[Glossary:LAN]], [[Glossary:VLAN]], réseau de gestion, adresses, passerelle, [[Glossary:DNS]], règles, [[Glossary:NAT]], [[Glossary:VPN]], journaux et accès de secours.
    👉 Explication : sans plan, les règles et l'adressage seront improvisés.
 
 2. Prévoir une console locale ou série; pour une VM, affecter des cartes réseau dédiées et noter leur correspondance avec les interfaces virtuelles.

@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Remplacer le mot de passe SSH par des clés.
+Remplacer le mot de passe [[Glossary:SSH]] par des clés.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

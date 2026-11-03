@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-13-kea-durcir.md
 
-- **Environnement** : VM Debian 13 serveur DHCPv4 sur un VLAN de test isolé
+- **Environnement** : [[Glossary:VM]] Debian 13 serveur DHCPv4 sur un [[Glossary:VLAN]] de test isolé
 - **OS / Version** : Debian 13 Trixie x86-64; ISC Kea (canal stable)
-- **Catégorie** : réseau / DHCP
+- **Catégorie** : réseau / [[Glossary:DHCP]]
 - **Tags** : `debian13`, `kea`, `dhcpv4`, `isc`, `reseau`
 
 ---
@@ -20,9 +20,9 @@ Réduire la surface d'exposition de Kea et cadrer son exploitation.
    ```bash
    sudo ls -l /etc/kea/
    ```
-   👉 Explication : les secrets SQL éventuels sont en clair dans la configuration; vérifier qu'ils ne sont pas lisibles par tous.
+   👉 Explication : les secrets [[Glossary:SQL]] éventuels sont en clair dans la configuration; vérifier qu'ils ne sont pas lisibles par tous.
 
-3. Ne pas exposer l'API de contrôle HTTP; si elle est activée, utiliser HTTPS, authentification et filtrage réseau.
+3. Ne pas exposer l'[[Glossary:API]] de contrôle [[Glossary:HTTP]]; si elle est activée, utiliser HTTPS, authentification et filtrage réseau.
    👉 Explication : le socket de contrôle UNIX est désactivé par défaut.
 
 4. Tenir le système et le canal stable à jour :

@@ -38,7 +38,7 @@ Protéger extension, poste, presse-papiers et session Bitwarden.
 
 ## 2. Production — Contrôles
 
-Vérifier chiffrement poste, verrouillage écran, extension approuvée, MFA et partage par rôles nominatifs.
+Vérifier chiffrement poste, verrouillage écran, extension approuvée, [[Glossary:MFA]] et partage par rôles nominatifs.
 
 ## 3. Production — Sécurité
 

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_23_Outils_D_Administration_Fondamentaux
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 23 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-23`
@@ -17,7 +17,7 @@ Disposer des outils de diagnostic usuels (BusyBox est limité).
    ```sh
    doas apk add curl vim htop bind-tools tcpdump lsof iproute2 util-linux
    ```
-   👉 Explication : ajoute le client HTTP, l'éditeur, le moniteur, DNS, capture, fichiers ouverts, `ip` complet et les outils système (`lsblk`, `dmesg`).
+   👉 Explication : ajoute le client [[Glossary:HTTP]], l'éditeur, le moniteur, [[Glossary:DNS]], capture, fichiers ouverts, `ip` complet et les outils système (`lsblk`, `dmesg`).
 
 2. Installer l'aide en ligne :
    ```sh

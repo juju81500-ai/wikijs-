@@ -18,7 +18,7 @@ Périmètre limité à QGIS Desktop sur Debian 13 amd64. QGIS Server, les plugin
 
 Fiche simple : [ajouter la clé et le dépôt officiels](../../../../01-fiches-simples/debian/13/vie-du-logiciel/qgis/fiche-simple-vm-debian-13-qgis-depot-apt.md).
 
-Installer les outils, télécharger la clé publique depuis le site officiel et contrôler son empreinte avant de la référencer dans APT :
+Installer les outils, télécharger la clé publique depuis le site officiel et contrôler son empreinte avant de la référencer dans [[Glossary:APT]] :
 
 ```bash
 sudo apt update

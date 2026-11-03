@@ -2,7 +2,7 @@
 
 - **Environnement** : Poste Windows 11 x64 d'administration
 - **OS / Version** : Windows 11 x64; PuTTY 0.85 Stable
-- **Catégorie** : client SSH / clés
+- **Catégorie** : client [[Glossary:SSH]] / clés
 - **Tags** : `putty`, `windows11`, `ssh`, `puttygen`, `host-key`
 
 ---

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Dovecot_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13; Dovecot depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Debian 13; Dovecot depuis les dépôts de la distribution
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / Dovecot — Sauvegarder / restaurer
 - **Tags** : `debian13`, `dovecot`, `imap`, `messagerie`, `sauvegarder-restaurer`
@@ -23,7 +23,7 @@ Sauvegarder et restaurer la configuration et les boîtes Maildir gérées par Do
    ```bash
    sudo doveadm backup -u UTILISATEUR_TEST maildir:/var/backups/mail/UTILISATEUR_TEST
    ```
-   👉 Explication : synchronise la boîte vers un Maildir de sauvegarde en conservant les métadonnées IMAP (UIDs, drapeaux). Répéter par utilisateur ou boucler sur `doveadm user '*'`.
+   👉 Explication : synchronise la boîte vers un Maildir de sauvegarde en conservant les métadonnées [[Glossary:IMAP]] (UIDs, drapeaux). Répéter par utilisateur ou boucler sur `doveadm user '*'`.
 
 3. Sauvegarder l'ensemble des Maildir (alternative, à froid ou avec snapshot) :
    ```bash

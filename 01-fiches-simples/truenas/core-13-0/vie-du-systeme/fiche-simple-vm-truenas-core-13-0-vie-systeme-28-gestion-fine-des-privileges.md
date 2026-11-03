@@ -13,7 +13,7 @@ Limiter les droits.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Compte > Utilisateurs > Modifier > Permettre sudo (ou groupe wheel).
+1. [[Glossary:GUI]] : Compte > Utilisateurs > Modifier > Permettre sudo (ou groupe wheel).
    ```sh
    midclt call user.query '[["username","=","ADMIN1"]]' | grep -i sudo
    ```

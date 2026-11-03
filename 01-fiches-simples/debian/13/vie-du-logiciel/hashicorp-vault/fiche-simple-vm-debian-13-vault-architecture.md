@@ -20,19 +20,19 @@ Décider de l'édition, du nombre de nœuds et des règles d'exploitation avant 
    ```
    👉 Explication : on vérifie Debian 13 et la capacité disponible; trois nœuds dans des domaines de panne distincts sont visés pour la production.
 
-2. Vérifier la résolution DNS et l'heure (exemple de nom à remplacer par le vôtre) :
+2. Vérifier la résolution [[Glossary:DNS]] et l'heure (exemple de nom à remplacer par le vôtre) :
    ```bash
    getent hosts vault1.example.invalid
    timedatectl status | grep -E 'synchronized|NTP'
    ```
-   👉 Explication : chaque nœud doit avoir un nom DNS stable et une heure synchronisée, nécessaires aux certificats TLS et au quorum Raft.
+   👉 Explication : chaque nœud doit avoir un nom DNS stable et une heure synchronisée, nécessaires aux certificats [[Glossary:TLS]] et au quorum Raft.
 
-3. Rédiger sur papier ou dans le dossier de projet : édition Community ou Enterprise, propriétaires, méthodes d'authentification, engines, politiques, TTL, audit et plan de reprise.
+3. Rédiger sur papier ou dans le dossier de projet : édition Community ou Enterprise, propriétaires, méthodes d'authentification, engines, politiques, [[Glossary:TTL]], audit et plan de reprise.
    👉 Explication : ces décisions doivent exister avant le premier secret; une instance unique n'est qu'un lab, pas un service HA.
 
 ## 2. Production — Contrôles
 
-Valider licence, trois nœuds Raft, DNS, NTP, certificats TLS par nœud, supervision, sauvegarde des snapshots et propriétaires.
+Valider licence, trois nœuds Raft, DNS, [[Glossary:NTP]], certificats TLS par nœud, supervision, sauvegarde des snapshots et propriétaires.
 
 ## 3. Production — Sécurité
 

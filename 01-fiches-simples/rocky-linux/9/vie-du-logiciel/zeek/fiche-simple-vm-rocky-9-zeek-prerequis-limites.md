@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Rocky_9_Zeek_Prerequis_Limites
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Zeek
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Zeek
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Zeek / prérequis et limites
 - **Tags** : `zeek`, `rocky9`, `vie-du-logiciel`, `prerequis-limites`
 
@@ -14,7 +14,7 @@ Cadrer un capteur Zeek passif (journaux de métadonnées réseau) sur VM Rocky L
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Obtenir l’autorisation d’analyse (propriétaire, interface INTERFACE_AUTORISEE, réseaux LOCAL_NET_AUTORISE, rétention des logs).
-   👉 Explication : Zeek enregistre des métadonnées de connexions, DNS, HTTP, TLS; elles sont sensibles. Les valeurs en majuscules sont des placeholders à remplacer.
+   👉 Explication : Zeek enregistre des métadonnées de connexions, [[Glossary:DNS]], [[Glossary:HTTP]], [[Glossary:TLS]]; elles sont sensibles. Les valeurs en majuscules sont des placeholders à remplacer.
 
 2. Contrôler les ressources :
    ```bash
@@ -24,7 +24,7 @@ Cadrer un capteur Zeek passif (journaux de métadonnées réseau) sur VM Rocky L
    ip -br link
    df -h /opt /var
    ```
-   👉 Explication : Zeek est gourmand en CPU/RAM et disque selon le débit; prévoir une interface de capture dédiée.
+   👉 Explication : Zeek est gourmand en [[Glossary:CPU]]/RAM et disque selon le débit; prévoir une interface de capture dédiée.
 
 3. Choisir le mode d’installation.
    👉 Explication : Rocky 9 : le dépôt OBS de Zeek ne propose pas de répertoire RHEL/Rocky dans sa liste actuelle (vérifier avant de commencer). Cette série utilise l’image conteneur officielle `zeek/zeek` avec Podman; la compilation depuis les sources reste l’alternative (documentation officielle).
@@ -34,12 +34,12 @@ Cadrer un capteur Zeek passif (journaux de métadonnées réseau) sur VM Rocky L
 
 ## 2. Production — Contrôles
 
-Faire valider architecture (SPAN/TAP), volumétrie et propriétaire des journaux.
+Faire valider architecture ([[Glossary:SPAN]]/TAP), volumétrie et propriétaire des journaux.
 
 ## 3. Production — Sécurité
 
 - Capture passive uniquement.
-- Interface de capture sans IP de service si possible.
+- Interface de capture sans [[Glossary:IP]] de service si possible.
 
 ## Validation et retour arrière
 

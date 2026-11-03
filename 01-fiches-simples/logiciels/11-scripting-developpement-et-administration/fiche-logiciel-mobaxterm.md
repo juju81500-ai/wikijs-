@@ -8,7 +8,7 @@
 
 ## 📚 Couverture dans le pack
 
-Série Windows Client 11 couvrant prérequis, installation, sessions SSH, sécurité, validation, sauvegarde/restauration et mise à jour. Une ancienne fiche ciblant Windows Server 2022 reste disponible séparément.
+Série Windows Client 11 couvrant prérequis, installation, sessions [[Glossary:SSH]], sécurité, validation, sauvegarde/restauration et mise à jour. Une ancienne fiche ciblant Windows Server 2022 reste disponible séparément.
 
 ## 🧭 Utilisation
 

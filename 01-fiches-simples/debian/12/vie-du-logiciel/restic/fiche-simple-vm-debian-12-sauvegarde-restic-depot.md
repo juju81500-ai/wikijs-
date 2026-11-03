@@ -1,6 +1,6 @@
 # 📄 VM_Debian_12_Sauvegarde_Restic-Depot.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Sauvegarde & Données / Dépôt Restic chiffré
 - **Tags** : `[debian12]`, `[debian-family]`, `[restic]`, `[backup]`, `[chiffrement]`, `[retention]`
@@ -19,7 +19,7 @@ Créer un dépôt de sauvegarde chiffré avec `restic` sur Debian 12, y enregist
    👉 Explication : Confirme la version installée, à noter dans la fiche serveur.
 3. Création du répertoire du dépôt de test :
    `sudo install -d -m 700 <chemin_depot>`
-   👉 Explication : Crée le dossier de destination (disque secondaire, NFS ou point de montage dédié) avec des droits réservés à root.
+   👉 Explication : Crée le dossier de destination (disque secondaire, [[Glossary:NFS]] ou point de montage dédié) avec des droits réservés à root.
 
 ---
 

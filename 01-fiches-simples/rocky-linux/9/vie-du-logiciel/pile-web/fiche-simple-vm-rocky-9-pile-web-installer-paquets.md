@@ -1,7 +1,7 @@
 # fiche-simple-vm-rocky-9-pile-web-installer-paquets.md
 
-- **Environnement** : VM ou serveur Rocky Linux 9 hébergeant une application PHP avec MariaDB locale
-- **OS / Version** : Rocky Linux 9 / RHEL 9; Nginx, PHP-FPM et MariaDB des dépôts actifs
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux 9 hébergeant une application PHP avec MariaDB locale
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9; Nginx, PHP-FPM et MariaDB des dépôts actifs
 - **Catégorie** : services web / installation
 - **Tags** : `rocky9`, `nginx`, `php-fpm`, `mariadb`, `selinux`
 
@@ -39,7 +39,7 @@ Vérifier le chemin du socket PHP-FPM réellement fourni.
 
 ## 3. Production — Sécurité
 
-- Aucun service ne doit être publié avant la configuration TLS et pare-feu.
+- Aucun service ne doit être publié avant la configuration [[Glossary:TLS]] et pare-feu.
 
 ## Validation et retour arrière
 

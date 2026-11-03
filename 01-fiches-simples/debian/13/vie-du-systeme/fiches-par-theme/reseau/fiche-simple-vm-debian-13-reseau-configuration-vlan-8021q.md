@@ -1,8 +1,8 @@
 # 📄 VM_Debian_13_Reseau_Configuration-VLAN-8021q.md
 
-- **Environnement** : VM (Debian 13)
+- **Environnement** : [[Glossary:VM]] (Debian 13)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
-- **Catégorie** : Réseau / VLAN 802.1Q
+- **Catégorie** : Réseau / [[Glossary:VLAN]] 802.1Q
 - **Tags** : `[debian13]`, `[vlan]`, `[systemd-networkd]`, `[8021q]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
@@ -17,7 +17,7 @@ Configurer un trunk VLAN 802.1Q (ex: VLAN 10 Administration) sur une interface r
 
 2. Assignation d'adresse et activation du lien :
    `ip addr add 10.10.0.50/24 dev eth0.10 && ip link set dev eth0.10 up`
-   👉 Explication : Attribue une adresse IP de test et monte l'interface VLAN.
+   👉 Explication : Attribue une adresse [[Glossary:IP]] de test et monte l'interface VLAN.
 
 3. Test de communication sur le sous-réseau VLAN :
    `ping -c 2 10.10.0.1`
@@ -61,7 +61,7 @@ Configurer un trunk VLAN 802.1Q (ex: VLAN 10 Administration) sur une interface r
 ---
 
 ## 🔒 3. Production — Façon Sécurisée (Hardening & Isolation Enterprise)
-1. Ne modifier ICMP Redirects que si le rôle de routage et la politique réseau l'exigent ; ne pas utiliser la clé sysctl `net.ipv4.conf.eth0/10`, qui ne correspond pas à un chemin sysctl valide.
+1. Ne modifier [[Glossary:ICMP]] Redirects que si le rôle de routage et la politique réseau l'exigent ; ne pas utiliser la clé sysctl `net.ipv4.conf.eth0/10`, qui ne correspond pas à un chemin sysctl valide.
 
 2. Verrouillage des permissions sur les fichiers de configuration réseau :
    `chmod 600 /etc/systemd/network/*.netdev /etc/systemd/network/*.network`

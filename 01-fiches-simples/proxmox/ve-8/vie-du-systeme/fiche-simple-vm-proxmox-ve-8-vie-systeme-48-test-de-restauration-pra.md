@@ -13,24 +13,24 @@ Prouver qu'une sauvegarde est restaurable.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : **Stockage PBS > Content > sélectionner la sauvegarde > Restore** (nouvel VMID). En ligne de commande :
+1. [[Glossary:GUI]] : **Stockage [[Glossary:PBS]] > Content > sélectionner la sauvegarde > Restore** (nouvel [[Glossary:VMID]]). En ligne de commande :
    ```bash
    qmrestore PBS:backup/vm/100/DATE 9100 --storage local-lvm
    ```
-   👉 Explication : restaure sous un nouveau numéro (`9100`) pour ne pas écraser la VM d'origine; `DATE` = horodatage de la sauvegarde.
+   👉 Explication : restaure sous un nouveau numéro (`9100`) pour ne pas écraser la [[Glossary:VM]] d'origine; `DATE` = horodatage de la sauvegarde.
 
 2. Démarrer la VM restaurée sans réseau de production (GUI : retirer la carte réseau) et contrôler son contenu :
    ```bash
    qm start 9100
    qm status 9100
    ```
-   👉 Explication : évite un conflit d'adresse IP avec la VM d'origine.
+   👉 Explication : évite un conflit d'adresse [[Glossary:IP]] avec la VM d'origine.
 
 3. Mesurer la durée et noter le résultat; supprimer la VM de test :
    ```bash
    qm destroy 9100
    ```
-   👉 Explication : la durée donne le RTO réel.
+   👉 Explication : la durée donne le [[Glossary:RTO]] réel.
 
 ## 2. Production — Contrôles
 

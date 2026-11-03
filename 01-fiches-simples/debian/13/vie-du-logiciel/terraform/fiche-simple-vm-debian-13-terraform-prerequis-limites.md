@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Terraform_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 de laboratoire avec fournisseur sandbox
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire avec fournisseur sandbox
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : infrastructure as code
 - **Tags** : `debian13`, `terraform`, `iac`, `state`, `securite`
@@ -8,7 +8,7 @@
 
 ## Problème précis à résoudre
 
-Définir fournisseur cloud, sandbox, coût, état et version CLI avant toute application Terraform.
+Définir fournisseur cloud, sandbox, coût, état et version [[Glossary:CLI]] avant toute application Terraform.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -40,7 +40,7 @@ Faire valider identité cloud, coût, état, sauvegarde, verrouillage et approba
 
 - Ne pas appliquer sans revue du plan et sandbox.
 - Traiter état et plans comme des secrets.
-- Limiter droits IAM du compte Terraform.
+- Limiter droits [[Glossary:IAM]] du compte Terraform.
 
 ## Validation et retour arrière
 

@@ -1,6 +1,6 @@
 # fiche-simple-vm-rocky-9-freeipa-restaurer.md
 
-- **Environnement** : VM Rocky Linux 9 dédiée au premier serveur FreeIPA/IdM
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée au premier serveur FreeIPA/IdM
 - **OS / Version** : Rocky Linux 9 x86_64; paquets `ipa-server` des dépôts de la distribution
 - **Catégorie** : annuaire / restauration
 - **Tags** : `rocky9`, `freeipa`, `idm`, `kerberos`
@@ -13,10 +13,10 @@ Préparer et tester une restauration FreeIPA sans risque pour la production.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Créer une VM isolée de même nom d'hôte et de même version de paquets, sans accès au DNS ni aux clients de production.
+1. Créer une VM isolée de même nom d'hôte et de même version de paquets, sans accès au [[Glossary:DNS]] ni aux clients de production.
    👉 Explication : la restauration remplace données et configuration de l'hôte; elle se répète d'abord en isolation.
 
-2. Suivre la procédure « Preparing for disaster recovery with Identity Management » de la documentation RHEL 9 pour jouer `ipa-restore` sur cette VM.
+2. Suivre la procédure « Preparing for disaster recovery with Identity Management » de la documentation [[Glossary:RHEL]] 9 pour jouer `ipa-restore` sur cette VM.
    👉 Explication : la procédure détaillée de référence est celle de Red Hat; ce guide ne reprend pas les options.
 
 3. Valider ensuite `kinit admin` et `ipa user-find` sur la VM isolée.

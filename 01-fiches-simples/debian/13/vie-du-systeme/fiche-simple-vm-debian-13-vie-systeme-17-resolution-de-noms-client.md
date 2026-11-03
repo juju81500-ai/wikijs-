@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Vie_Systeme_17_Resolution_De_Noms_Client
 
-- **Environnement** : VM Debian 13 « trixie » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 13 « trixie » (serveur)
 - **OS / Version** : Debian 13; étape 17 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian13`, `vie-du-systeme`, `cycle-de-vie`, `etape-17`
@@ -9,15 +9,15 @@
 
 ## Problème précis à résoudre
 
-Configurer les serveurs DNS.
+Configurer les serveurs [[Glossary:DNS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Définir les DNS (remplacer l'IP) :
+1. Définir les DNS (remplacer l'[[Glossary:IP]]) :
    ```bash
    sudoedit /etc/resolv.conf
    ```
-   👉 Explication : ligne `nameserver 192.0.2.53`; si le fichier est géré (DHCP, resolvconf), configurer la source (`dns-nameservers` dans `/etc/network/interfaces`).
+   👉 Explication : ligne `nameserver 192.0.2.53`; si le fichier est géré ([[Glossary:DHCP]], resolvconf), configurer la source (`dns-nameservers` dans `/etc/network/interfaces`).
 
 2. Tester :
    ```bash

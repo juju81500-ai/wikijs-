@@ -26,7 +26,7 @@ Contrôler les niveaux fonctionnels et préparer la forêt avant d'introduire un
    dcdiag /q
    ```
    👉 Explication : ne rien faire sur une forêt en erreur de réplication.
-3. Préparer le schéma (nécessite Administrateur de l'entreprise et Administrateur du schéma) : l'assistant de promotion d'un DC 2022 l'exécute automatiquement ; à défaut, lancer manuellement depuis le média 2022 (dossier `support\adprep`) :
+3. Préparer le schéma (nécessite Administrateur de l'entreprise et Administrateur du schéma) : l'assistant de promotion d'un [[Glossary:DC]] 2022 l'exécute automatiquement ; à défaut, lancer manuellement depuis le média 2022 (dossier `support\adprep`) :
    ```powershell
    adprep.exe /forestprep
    adprep.exe /domainprep
@@ -40,7 +40,7 @@ Contrôler les niveaux fonctionnels et préparer la forêt avant d'introduire un
 
 ## 2. Production — Contrôles
 
-- Sauvegarder l'état système de chaque DC et noter le rôle FSMO de chacun avant l'extension du schéma.
+- Sauvegarder l'état système de chaque DC et noter le rôle [[Glossary:FSMO]] de chacun avant l'extension du schéma.
 - Considérer l'élévation de niveau comme non réversible en pratique.
 
 ## 3. Production — Sécurité

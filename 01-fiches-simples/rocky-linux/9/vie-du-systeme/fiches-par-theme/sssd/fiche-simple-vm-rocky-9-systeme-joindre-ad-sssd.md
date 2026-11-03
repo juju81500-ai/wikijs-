@@ -1,7 +1,7 @@
 # 📄 fiche-simple-vm-rocky-9-systeme-joindre-ad-sssd.md
 
-- **Environnement** : VM ou serveur Rocky Linux membre d'un domaine Active Directory
-- **OS / Version** : Rocky Linux 9 / RHEL 9 (realmd, sssd, authselect)
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux membre d'un domaine Active Directory
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 (realmd, sssd, authselect)
 - **Catégorie** : Système & Services / Authentification centralisée
 - **Tags** : `[rocky9]`, `[rhel9]`, `[realmd]`, `[sssd]`, `[active-directory]`, `[kerberos]`
 
@@ -21,13 +21,13 @@ Joindre un serveur Rocky Linux 9 à un domaine Active Directory avec `realmd` et
    ```bash
    sudo realm discover <domaine.local>
    ```
-   👉 Explication : Interroge les enregistrements DNS SRV du contrôleur de domaine. Si rien n'est retourné, corriger d'abord le DNS (voir la fiche Reseau_DNS_Et_Hosts).
+   👉 Explication : Interroge les enregistrements [[Glossary:DNS]] SRV du contrôleur de domaine. Si rien n'est retourné, corriger d'abord le DNS (voir la fiche Reseau_DNS_Et_Hosts).
 
 3. Joindre le domaine avec un compte autorisé à créer des objets machine :
    ```bash
    sudo realm join --user=<admin_ad> <domaine.local>
    ```
-   👉 Explication : Le mot de passe est demandé de façon interactive. Le compte machine est créé dans l'OU par défaut `Computers`.
+   👉 Explication : Le mot de passe est demandé de façon interactive. Le compte machine est créé dans l'[[Glossary:OU]] par défaut `Computers`.
 
 ---
 
@@ -43,7 +43,7 @@ Joindre un serveur Rocky Linux 9 à un domaine Active Directory avec `realmd` et
    sudo authselect select sssd with-mkhomedir --force
    sudo systemctl enable --now oddjobd
    ```
-   👉 Explication : `authselect` configure PAM pour `sssd`. Sans `with-mkhomedir`, l'utilisateur AD se connecte mais n'a pas de répertoire personnel.
+   👉 Explication : `authselect` configure [[Glossary:PAM]] pour `sssd`. Sans `with-mkhomedir`, l'utilisateur [[Glossary:AD]] se connecte mais n'a pas de répertoire personnel.
 
 3. Vérifier la jonction et la résolution d'un compte du domaine :
    ```bash
@@ -67,13 +67,13 @@ Joindre un serveur Rocky Linux 9 à un domaine Active Directory avec `realmd` et
    sudo sssctl domain-status <domaine.local>
    sudo journalctl -u sssd -p warning --no-pager -n 50
    ```
-   👉 Explication : `domain-status` indique si le serveur est en ligne et quel contrôleur est utilisé. Le journal `sssd` révèle les erreurs Kerberos ou LDAP.
+   👉 Explication : `domain-status` indique si le serveur est en ligne et quel contrôleur est utilisé. Le journal `sssd` révèle les erreurs Kerberos ou [[Glossary:LDAP]].
 
 3. Imposer le chiffrement des échanges LDAP en gardant `ldap_id_use_start_tls` et la validation des certificats dans `/etc/sssd/sssd.conf` (voir la documentation sssd de la version installée) :
    ```bash
    sudo grep -E '^(ad_domain|use_fully_qualified_names|ldap_id_mapping|ldap_tls)' /etc/sssd/sssd.conf
    ```
-   👉 Explication : Les identifiants et le trafic Kerberos ne doivent jamais transiter en clair. Vérifier que les options TLS ne sont pas désactivées.
+   👉 Explication : Les identifiants et le trafic Kerberos ne doivent jamais transiter en clair. Vérifier que les options [[Glossary:TLS]] ne sont pas désactivées.
 
 ---
 

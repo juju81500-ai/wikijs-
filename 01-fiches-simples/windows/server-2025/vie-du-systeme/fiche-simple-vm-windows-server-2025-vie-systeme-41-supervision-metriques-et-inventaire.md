@@ -13,11 +13,11 @@ Surveiller la disponibilité et la capacité.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Ouvrir **Analyseur de performances** (`perfmon`) ou la sonde de supervision (PRTG, Zabbix).
+1. Ouvrir **Analyseur de performances** (`perfmon`) ou la sonde de supervision ([[Glossary:PRTG]], Zabbix).
    ```powershell
    Get-Counter '\Processor(_Total)\% Processor Time','\Memory\% Committed Bytes In Use' -SampleInterval 2 -MaxSamples 5
    ```
-   👉 Explication : relève la charge CPU et mémoire.
+   👉 Explication : relève la charge [[Glossary:CPU]] et mémoire.
 
 2. Vérifier le stockage et les services critiques :
    ```powershell
@@ -26,7 +26,7 @@ Surveiller la disponibilité et la capacité.
    ```
    👉 Explication : alertes à 15 % d'espace libre.
 
-3. Inscrire le serveur dans la supervision avec les seuils CPU, RAM, disque et services.
+3. Inscrire le serveur dans la supervision avec les seuils CPU, [[Glossary:RAM]], disque et services.
    👉 Explication : les alertes doivent atteindre l'équipe d'astreinte.
 
 ## 2. Production — Contrôles

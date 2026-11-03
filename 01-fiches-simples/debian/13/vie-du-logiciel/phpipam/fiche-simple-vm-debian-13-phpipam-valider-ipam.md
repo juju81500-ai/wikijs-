@@ -2,7 +2,7 @@
 
 - **Environnement** : phpIPAM 1.8.3 sur Debian 13, MariaDB locale et HTTPS
 - **OS / Version** : Debian 13 Trixie
-- **Catégorie** : IPAM
+- **Catégorie** : [[Glossary:IPAM]]
 - **Tags** : `debian13`, `phpipam`, `ipam`, `validation`, `backup`, `securite`
 
 ---
@@ -42,13 +42,13 @@ Vérifier qu'un pilote d'adressage est cohérent, que les rôles sont limités e
 
 ## 2. Production — Contrôles
 
-Documenter propriétaires, sources d'autorité, processus de modification, sections, VLAN, conventions de préfixes et fréquence de rapprochement avant d'importer des données réelles.
+Documenter propriétaires, sources d'autorité, processus de modification, sections, [[Glossary:VLAN]], conventions de préfixes et fréquence de rapprochement avant d'importer des données réelles.
 
 ## 3. Production — Sécurité
 
 - HTTPS et accès réseau réservés aux administrateurs et utilisateurs approuvés.
 - Compte MariaDB applicatif limité à la base `phpipam`; secret protégé dans `config.php`.
-- Assistant d'installation désactivé après initialisation; compte initial changé; comptes nominatifs et API à privilèges minimaux.
+- Assistant d'installation désactivé après initialisation; compte initial changé; comptes nominatifs et [[Glossary:API]] à privilèges minimaux.
 - Ne pas activer ping/discovery ni suppression automatique dans le cadre de ce contrôle.
 - Sauvegardes chiffrées hors hôte et restauration périodiquement testée.
 

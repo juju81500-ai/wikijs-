@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Rocky_9_Zeek_Installer
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Zeek
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Zeek
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Zeek / installation
 - **Tags** : `zeek`, `rocky9`, `vie-du-logiciel`, `installer`
 
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Installer Zeek 8.0 LTS sur VM Rocky Linux 9.
+Installer Zeek 8.0 [[Glossary:LTS]] sur VM Rocky Linux 9.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

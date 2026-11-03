@@ -1,6 +1,6 @@
 # fiche-simple-vm-windows-server-2022-reprise-foret-ad-ds-restaurer-premiers-dc.md
 
-- **Environnement** : Forêt AD DS d'entreprise; laboratoire isolé recommandé
+- **Environnement** : Forêt [[Glossary:AD]] DS d'entreprise; laboratoire isolé recommandé
 - **OS / Version** : Windows Server 2022 pour les contrôleurs de domaine concernés
 - **Catégorie** : Active Directory / reprise après sinistre
 - **Tags** : `windows-server-2022`, `active-directory`, `ad-ds`, `forest-recovery`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Restaurer les premiers DC en réseau isolé en suivant le runbook Microsoft.
+Restaurer les premiers [[Glossary:DC]] en réseau isolé en suivant le runbook Microsoft.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -19,7 +19,7 @@ Restaurer les premiers DC en réseau isolé en suivant le runbook Microsoft.
 2. Restaurer d'abord un DC inscriptible du domaine racine de forêt, isolé du réseau de production, puis les domaines parents avant les enfants, avec une sauvegarde AD-aware.
    👉 Explication : ordre prévu par la procédure officielle.
 
-3. Appliquer les consignes précises relatives à AD DS et SYSVOL; la procédure autoritative SYSVOL ne s'applique qu'au DC désigné.
+3. Appliquer les consignes précises relatives à AD DS et [[Glossary:SYSVOL]]; la procédure autoritative SYSVOL ne s'applique qu'au DC désigné.
    👉 Explication : une mauvaise restauration introduit des conflits de réplication.
 
 ## 2. Production — Contrôles

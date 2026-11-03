@@ -1,8 +1,8 @@
 # Fiche_Simple_-_Windows_Server_2022_Citrix_CVAD_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : Serveurs Windows Server 2022 (Delivery Controller, StoreFront, licences, SQL) et VM VDA, compte administrateur nominatif
+- **Environnement** : Serveurs Windows Server 2022 (Delivery Controller, StoreFront, licences, [[Glossary:SQL]]) et [[Glossary:VM]] VDA, compte administrateur nominatif
 - **OS / Version** : Windows Server 2022; version CVAD à vérifier auprès de l'éditeur
-- **Catégorie** : VDI / virtualisation d'applications / Citrix
+- **Catégorie** : [[Glossary:VDI]] / virtualisation d'applications / Citrix
 - **Tags** : `citrix`, `cvad`, `windows-server`, `mise-a-jour`
 
 ---
@@ -19,7 +19,7 @@ Mettre à jour CVAD et prévoir le retour arrière.
 2. Faire une sauvegarde SQL complète des bases et un snapshot des VM Controller et StoreFront (voir fiche sauvegarde).
    👉 Explication : c'est le point de retour.
 
-3. Passer en mode maintenance les catalogues : GUI **Studio > Machine Catalogs** ou PowerShell :
+3. Passer en mode maintenance les catalogues : [[Glossary:GUI]] **Studio > Machine Catalogs** ou PowerShell :
 ```powershell
 Set-BrokerMachine -MachineName 'DOMAINE\VDA01' -InMaintenanceMode $true
 ```

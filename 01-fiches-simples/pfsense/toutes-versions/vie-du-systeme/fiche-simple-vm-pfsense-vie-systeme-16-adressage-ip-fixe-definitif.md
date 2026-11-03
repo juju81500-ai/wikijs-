@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_16_Adressage_Ip_Fixe_Definitif
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 16 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-16`
@@ -13,10 +13,10 @@ Fixer les adresses définitives des interfaces.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Aller dans Interfaces > LAN : IPv4 Configuration Type = `Static IPv4`, IPv4 Address `IP_LAN/24` (ex. `10.0.0.1/24`), Save puis Apply Changes.
+1. Aller dans Interfaces > [[Glossary:LAN]] : IPv4 Configuration Type = `Static IPv4`, IPv4 Address `IP_LAN/24` (ex. `10.0.0.1/24`), Save puis Apply Changes.
    👉 Explication : `IP_LAN` est l'adresse du pare-feu sur le réseau interne.
 
-2. Interfaces > WAN : `DHCP` ou `Static IPv4`, avec une passerelle `IP_PASSERELLE` (fournie par le FAI) ajoutée via Add a new gateway.
+2. Interfaces > [[Glossary:WAN]] : `DHCP` ou `Static IPv4`, avec une passerelle `IP_PASSERELLE` (fournie par le FAI) ajoutée via Add a new gateway.
    👉 Explication : définit la sortie vers Internet.
 
 3. Contrôler en shell :
@@ -29,7 +29,7 @@ Fixer les adresses définitives des interfaces.
 
 ## 2. Production — Contrôles
 
-Réserver les adresses dans le plan d'adressage (IPAM).
+Réserver les adresses dans le plan d'adressage ([[Glossary:IPAM]]).
 
 ## 3. Production — Sécurité
 

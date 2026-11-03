@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Appliquer l'adressage réseau définitif : DHCP réservé ou IP statique.
+Appliquer l'adressage réseau définitif : [[Glossary:DHCP]] réservé ou [[Glossary:IP]] statique.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Interface graphique : **Paramètres > Réseau et Internet > Ethernet > Modification de l'attribution IP > Manuel > IPv4**; saisir adresse, longueur du préfixe, passerelle et DNS.
+1. Interface graphique : **Paramètres > Réseau et Internet > Ethernet > Modification de l'attribution IP > Manuel > IPv4**; saisir adresse, longueur du préfixe, passerelle et [[Glossary:DNS]].
    ```powershell
    Get-NetAdapter | Select-Object Name,Status
    ```
@@ -42,11 +42,11 @@ Appliquer l'adressage réseau définitif : DHCP réservé ou IP statique.
 
 ## 2. Production — Contrôles
 
-Un poste utilisateur reste en DHCP; l'IP fixe est réservée aux postes spéciaux, enregistrée dans l'IPAM.
+Un poste utilisateur reste en DHCP; l'IP fixe est réservée aux postes spéciaux, enregistrée dans l'[[Glossary:IPAM]].
 
 ## 3. Production — Sécurité
 
-Éviter les doublons d'adresse; documenter le VLAN et les règles de filtrage associées.
+Éviter les doublons d'adresse; documenter le [[Glossary:VLAN]] et les règles de filtrage associées.
 
 ## Validation et retour arrière
 

@@ -1,7 +1,7 @@
 # 📄 VM_Debian_12_Utilisateurs_Creer-Utilisateur-Standard-Et-Sudo.md
 
-- **Environnement** : VM / LXC (Debian 12 / Ubuntu 24-04)
-- **OS / Version** : Debian 12 (Bookworm) / Ubuntu 24-04 LTS - Famille Debian
+- **Environnement** : [[Glossary:VM]] / [[Glossary:LXC]] (Debian 12 / Ubuntu 24-04)
+- **OS / Version** : Debian 12 (Bookworm) / Ubuntu 24-04 [[Glossary:LTS]] - Famille Debian
 - **Catégorie** : Utilisateurs & Droits / Gestion des Comptes
 - **Tags** : `[debian12]`, `[ubuntu24.04]`, `[utilisateurs]`, `[sudo]`, `[droits]`, `[useradd]`, `[hardening]`
 
@@ -32,7 +32,7 @@ Créer un utilisateur système classique (sans privilèges particuliers) ainsi q
    `adduser jdupont`
    👉 *Explication : Tu réponds à l'assistant interactif qui crée le répertoire /home/jdupont, impose la saisie sécurisée du mot de passe et configure les informations de profil.*
 
-2. **Création interactive d'un utilisateur administrateur d'exploitation TSSR** :
+2. **Création interactive d'un utilisateur administrateur d'exploitation [[Glossary:TSSR]]** :
    `adduser adm-jdupont && usermod -aG sudo adm-jdupont`
    👉 *Explication : Tu crées le compte d'administration nommé distinct du compte standard et lui attribues l'élévation Sudo.*
 

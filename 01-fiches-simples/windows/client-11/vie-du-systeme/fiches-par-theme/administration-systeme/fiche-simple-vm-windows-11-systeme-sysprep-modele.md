@@ -1,12 +1,12 @@
 # 📄 Fiche_Simple_-_VM_Windows_11_Systeme_Sysprep_Modele
 
-- **Environnement** : VM (Windows 11, poste modèle destiné au clonage)
+- **Environnement** : [[Glossary:VM]] (Windows 11, poste modèle destiné au clonage)
 - **OS / Version** : Windows 11 - Famille Windows Client
 - **Catégorie** : Système & Services / Images et modèles
 - **Tags** : `[windows-11]`, `[sysprep]`, `[template]`, `[appx]`, `[dism]`, `[powershell]`
 
 ## 🎯 Problème précis à résoudre
-Préparer un poste Windows 11 modèle, supprimer les applications Store qui bloquent Sysprep, puis généraliser la machine pour qu'elle puisse être clonée sans conflit de SID ni de nom.
+Préparer un poste Windows 11 modèle, supprimer les applications Store qui bloquent Sysprep, puis généraliser la machine pour qu'elle puisse être clonée sans conflit de [[Glossary:SID]] ni de nom.
 
 ---
 

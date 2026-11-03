@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Limiter SSH.
+Limiter [[Glossary:SSH]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Services > SSH > Actions > décocher « Connexion root avec mot de passe » et « Authentification par mot de passe ».
+1. [[Glossary:GUI]] : Services > SSH > Actions > décocher « Connexion root avec mot de passe » et « Authentification par mot de passe ».
    ```sh
    midclt call ssh.update '{"rootlogin": false, "passwordauth": false}'
    ```

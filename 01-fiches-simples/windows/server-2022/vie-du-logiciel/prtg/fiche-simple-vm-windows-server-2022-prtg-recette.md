@@ -1,8 +1,8 @@
 # fiche-simple-vm-windows-server-2022-prtg-recette.md
 
-- **Environnement** : Serveur Windows dédié ou VM, accès d'administration restreint
-- **OS / Version** : Windows Server 2022 ou 2025 en Desktop Experience; PRTG Network Monitor maintenu
-- **Catégorie** : supervision / SNMP / WMI
+- **Environnement** : Serveur Windows dédié ou [[Glossary:VM]], accès d'administration restreint
+- **OS / Version** : Windows Server 2022 ou 2025 en Desktop Experience; [[Glossary:PRTG]] Network Monitor maintenu
+- **Catégorie** : supervision / [[Glossary:SNMP]] / [[Glossary:WMI]]
 - **Tags** : `prtg`, `windows-server`, `supervision`, `recette`
 
 ---
@@ -25,7 +25,7 @@ Valider le service, l'alerte et les permissions.
 3. Tester une alerte de seuil sur un capteur de test, son destinataire et sa résolution.
    👉 Explication : on prouve la chaîne de notification.
 
-4. Examiner CPU/RAM/disque, durée des scans et journaux système : **Setup > System Administration > System Status** ou **Logs**.
+4. Examiner [[Glossary:CPU]]/RAM/disque, durée des scans et journaux système : **Setup > System Administration > System Status** ou **Logs**.
    👉 Explication : on détecte une surcharge.
 
 5. Valider les permissions avec un compte opérateur non administrateur.

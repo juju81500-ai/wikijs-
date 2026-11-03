@@ -38,7 +38,7 @@ Planifier fenêtres de maintenance et lire les notes de version par version.
 
 ## Validation et retour arrière
 
-- **Validation** : Quorum rétabli et nœuds à jour, VM fonctionnelles.
+- **Validation** : Quorum rétabli et nœuds à jour, [[Glossary:VM]] fonctionnelles.
 - **Retour arrière** : Restaurer les invités depuis les sauvegardes; réinstaller un nœud en échec selon la procédure officielle.
 
 ## Si le problème n'est pas résolu

@@ -39,7 +39,7 @@ Disposer d'une sauvegarde restaurable des données et d'un accès console avant 
 ## 3. Production — Sécurité
 
 - Ne pas éditer directement les portions gérées de `/etc/fstab` ni de `smb.conf`.
-- Ces procédures n'ont pas été testées sur une VM : valider en environnement de test.
+- Ces procédures n'ont pas été testées sur une [[Glossary:VM]] : valider en environnement de test.
 
 ## Validation et retour arrière
 

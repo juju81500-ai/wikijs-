@@ -2,7 +2,7 @@
 
 - **Tags** : `transverse`, `tout-en-un`, `referentiel`, `nivvlem`, `tssr`
 
-Dépôt : https://github.com/kipit/nivvlem-TSSR — notes de cours et fiches de référence TSSR (331 documents Markdown). Le dépôt ne déclare pas de licence : seuls les titres et liens sont repris, aucun texte n'est recopié.
+Dépôt : https://github.com/kipit/nivvlem-TSSR — notes de cours et fiches de référence [[Glossary:TSSR]] (331 documents Markdown). Le dépôt ne déclare pas de licence : seuls les titres et liens sont repris, aucun texte n'est recopié.
 
 Ce référentiel ne reproduit **aucun contenu pédagogique** : il liste uniquement les titres publics, les catégories et les liens, à des fins de navigation. Les droits sur les cours restent à leurs auteurs ; pour les lire, utiliser le lien vers le site d'origine. Les titres sont relevés le 2026-11-01 ; ils peuvent évoluer côté éditeur.
 

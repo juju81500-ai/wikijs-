@@ -2,13 +2,13 @@
 
 - **Catégorie** : Systèmes, annuaires et services
 - **Plateforme** : Windows
-- **Produit (matrice)** : Windows Server 2016 / 2019 / 2022 : AD DS, DNS, DHCP, GPO, WSUS, DFS, RDS
+- **Produit (matrice)** : Windows Server 2016 / 2019 / 2022 : [[Glossary:AD]] DS, [[Glossary:DNS]], [[Glossary:DHCP]], [[Glossary:GPO]], [[Glossary:WSUS]], DFS, RDS
 - **Statut dans le pack** : Couvert — différences et adaptations 2016/2019 par rapport à 2022, et parcours système 2022/2025.
 - **Tags** : `logiciel`, `05-systemes-annuaires-et-services`, `couvert`
 
 ## 📚 Couverture dans le pack
 
-Couvert — parcours système Windows Server 2022 et 2025 ([2022](../../windows/server-2022/vie-du-systeme/cycle-de-vie-50-etapes.md), [2025](../../windows/server-2025/vie-du-systeme/cycle-de-vie-50-etapes.md)) et 8 fiches de différences pour 2016 et 2019 : fin de support, cmdlets, SMB1, TLS 1.2, Windows Admin Center, niveaux fonctionnels, mise à niveau en place vers 2022 et retour arrière. Les rôles détaillés (AD DS, DNS, DHCP, GPO, WSUS, DFS, RDS) restent décrits dans les dossiers de version ; vérifier les dates de support sur Microsoft Lifecycle.
+Couvert — parcours système Windows Server 2022 et 2025 ([2022](../../windows/server-2022/vie-du-systeme/cycle-de-vie-50-etapes.md), [2025](../../windows/server-2025/vie-du-systeme/cycle-de-vie-50-etapes.md)) et 8 fiches de différences pour 2016 et 2019 : fin de support, cmdlets, SMB1, [[Glossary:TLS]] 1.2, Windows Admin Center, niveaux fonctionnels, mise à niveau en place vers 2022 et retour arrière. Les rôles détaillés (AD DS, DNS, DHCP, GPO, WSUS, DFS, RDS) restent décrits dans les dossiers de version ; vérifier les dates de support sur Microsoft Lifecycle.
 
 ## 🧭 Utilisation
 

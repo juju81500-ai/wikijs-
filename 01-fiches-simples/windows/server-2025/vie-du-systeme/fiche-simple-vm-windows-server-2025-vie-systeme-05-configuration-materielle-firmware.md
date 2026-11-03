@@ -9,11 +9,11 @@
 
 ## Problème précis à résoudre
 
-Régler UEFI, Secure Boot et TPM avant l'installation.
+Régler UEFI, Secure Boot et [[Glossary:TPM]] avant l'installation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. VM Hyper-V génération 2 : activer Secure Boot et le TPM virtuel (**Paramètres > Sécurité > Activer Secure Boot** et **Activer le module de plateforme sécurisée**) :
+1. [[Glossary:VM]] Hyper-V génération 2 : activer Secure Boot et le TPM virtuel (**Paramètres > Sécurité > Activer Secure Boot** et **Activer le module de plateforme sécurisée**) :
    ```powershell
    Set-VMFirmware -VMName NOM_VM -EnableSecureBoot On -SecureBootTemplate MicrosoftWindows
    Set-VMKeyProtector -VMName NOM_VM -NewLocalKeyProtector
@@ -29,12 +29,12 @@ Régler UEFI, Secure Boot et TPM avant l'installation.
    ```
    👉 Explication : `True` pour Secure Boot, `TpmPresent` et `TpmReady` à `True`, et virtualisation activée.
 
-3. Mettre à jour le firmware/BIOS et le BMC (iDRAC, iLO, IPMI) selon la procédure du constructeur et changer les mots de passe par défaut.
+3. Mettre à jour le firmware/BIOS et le [[Glossary:BMC]] (iDRAC, iLO, [[Glossary:IPMI]]) selon la procédure du constructeur et changer les mots de passe par défaut.
    👉 Explication : un firmware à jour corrige des failles et des incompatibilités avec Windows Server.
 
 ## 2. Production — Contrôles
 
-Documenter la version du firmware et les réglages dans la CMDB.
+Documenter la version du firmware et les réglages dans la [[Glossary:CMDB]].
 
 ## 3. Production — Sécurité
 

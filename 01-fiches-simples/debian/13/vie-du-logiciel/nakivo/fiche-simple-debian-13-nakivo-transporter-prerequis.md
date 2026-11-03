@@ -21,7 +21,7 @@ Vérifier qu’un hôte Debian 13 x64 remplit les prérequis publiés par NAKIVO
    ```
    👉 Explication : la matrice de déploiement NAKIVO liste explicitement Debian 13 64-bit; l’architecture doit correspondre.
 
-2. Vérifier la présence de SSH et l’accès réseau requis avant d’ajouter le Transporter :
+2. Vérifier la présence de [[Glossary:SSH]] et l’accès réseau requis avant d’ajouter le Transporter :
    ```bash
    systemctl is-active ssh
    ```

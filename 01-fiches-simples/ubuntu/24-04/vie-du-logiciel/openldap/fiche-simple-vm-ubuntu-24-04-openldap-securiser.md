@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_OpenLDAP_Securiser
 
-- **Environnement** : VM Ubuntu 24-04 avec FQDN stable, serveur OpenLDAP (slapd)
-- **OS / Version** : Ubuntu 24-04 LTS Noble; slapd 2.6 des dépôts, version à vérifier
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 avec [[Glossary:FQDN]] stable, serveur OpenLDAP (slapd)
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; slapd 2.6 des dépôts, version à vérifier
 - **Catégorie** : annuaire OpenLDAP / sécuriser
 - **Tags** : `openldap`, `ubuntu24-04`, `vie-du-logiciel`, `securiser`
 
@@ -13,14 +13,14 @@ Limiter l'exposition d'OpenLDAP sur Ubuntu : pare-feu, accès anonyme et chiffre
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Autoriser LDAP/LDAPS seulement depuis les réseaux clients :
+1. Autoriser [[Glossary:LDAP]]/LDAPS seulement depuis les réseaux clients :
    ```bash
    sudo ufw allow from ADMIN_NETWORK to any port 22 proto tcp
    sudo ufw allow from CLIENT_NETWORK to any port 389,636 proto tcp
    sudo ufw enable
    sudo ufw status verbose
    ```
-   👉 Explication : ADMIN_NETWORK et CLIENT_NETWORK sont des CIDR approuvés (à remplacer); autoriser SSH avant l'activation d'ufw.
+   👉 Explication : ADMIN_NETWORK et CLIENT_NETWORK sont des [[Glossary:CIDR]] approuvés (à remplacer); autoriser [[Glossary:SSH]] avant l'activation d'ufw.
 
 2. Vérifier l'accès anonyme :
    ```bash
@@ -32,7 +32,7 @@ Limiter l'exposition d'OpenLDAP sur Ubuntu : pare-feu, accès anonyme et chiffre
    ```bash
    sudo ls -l /etc/ldap/tls /var/lib/ldap
    ```
-   👉 Explication : Clé TLS en 0600; données lisibles par openldap seulement.
+   👉 Explication : Clé [[Glossary:TLS]] en 0600; données lisibles par openldap seulement.
 
 ## 2. Production — Contrôles
 

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Windows_11_Visio_Prerequis_Limites
 
-- **Environnement** : Poste Windows 11 x64 d'un utilisateur ou administrateur (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'un utilisateur ou administrateur ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; version Visio à vérifier auprès de l'éditeur
 - **Catégorie** : outil de diagrammes / poste de travail
 - **Tags** : `visio`, `windows11`, `microsoft-365`, `prerequis`
@@ -16,7 +16,7 @@ Cadrer édition, licence et limites avant de déployer Microsoft Visio sur Windo
 1. Choisir l'offre : Visio Plan 2 (application de bureau, abonnement), Visio Plan 1 (web uniquement), ou Visio perpétuel (Standard/Professional VERSION_VISIO à remplacer). Vérifier le catalogue actuel de Microsoft.
    👉 Explication : seules les offres desktop installent VISIO.EXE ; les offres évoluent, ne pas supposer.
 
-2. Vérifier la licence du compte : GUI **Centre d'administration Microsoft 365 > Utilisateurs > Utilisateurs actifs > UTILISATEUR > Licences et applications**.
+2. Vérifier la licence du compte : [[Glossary:GUI]] **Centre d'administration Microsoft 365 > Utilisateurs > Utilisateurs actifs > UTILISATEUR > Licences et applications**.
    👉 Explication : UTILISATEUR est à remplacer ; la licence Visio doit être cochée pour l'utilisateur.
 
 3. Contrôler le poste. PowerShell :

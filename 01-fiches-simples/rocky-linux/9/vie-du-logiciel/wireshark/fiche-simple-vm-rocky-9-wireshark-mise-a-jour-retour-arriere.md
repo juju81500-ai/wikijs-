@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Rocky_9_Wireshark_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Wireshark
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Wireshark
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Wireshark / mise à jour et retour arrière
 - **Tags** : `wireshark`, `rocky9`, `vie-du-logiciel`, `mise-a-jour-retour-arriere`
 

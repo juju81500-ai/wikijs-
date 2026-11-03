@@ -2,7 +2,7 @@
 
 - **Catégorie** : Réseau et cybersécurité
 - **Plateforme** : Multi-OS / pare-feu
-- **Produit (matrice)** : DMZ / segmentation des zones
+- **Produit (matrice)** : [[Glossary:DMZ]] / segmentation des zones
 - **Statut dans le pack** : Couvert
 - **Tags** : `logiciel`, `04-reseau-et-cybersecurite`, `couvert`
 

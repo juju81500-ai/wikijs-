@@ -1,6 +1,6 @@
 # 📄 Bitwarden
 
-- **Environnement** : VM (Debian 12) avec Docker
+- **Environnement** : [[Glossary:VM]] (Debian 12) avec Docker
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : Bitwarden self-hosted, script `bitwarden.sh` officiel (version à vérifier sur la version déployée)
 - **Catégorie** : Gestion des secrets et mots de passe
@@ -60,7 +60,7 @@ sudo ufw allow 443/tcp
 sudo ufw enable
 sudo ufw status verbose
 ```
-👉 Explication : Autorise SSH seulement depuis `<adresse_ip_admin>` avant d'activer le pare-feu, pour ne pas se couper l'accès. Le port 443 TCP sert au coffre web et aux clients. `ufw status verbose` liste les règles actives.
+👉 Explication : Autorise [[Glossary:SSH]] seulement depuis `<adresse_ip_admin>` avant d'activer le pare-feu, pour ne pas se couper l'accès. Le port 443 [[Glossary:TCP]] sert au coffre web et aux clients. `ufw status verbose` liste les règles actives.
 
 2. Certificat HTTPS signé par une autorité de confiance, à placer dans le dossier de données puis à relancer la pile :
 ```bash
@@ -94,7 +94,7 @@ sudo tar czf /root/bwdata-$(date +%F).tgz /opt/bitwarden/bwdata
 sudo /opt/bitwarden/bitwarden.sh start
 sudo ls -l /root/bwdata-*.tgz
 ```
-👉 Explication : Arrête la pile pour une copie cohérente, crée une archive datée, puis relance le service. L'archive contient la base chiffrée et la configuration : la transférer hors du serveur et la protéger (chiffrement GPG ou coffre distinct). La commande `stop` est à vérifier dans la version déployée.
+👉 Explication : Arrête la pile pour une copie cohérente, crée une archive datée, puis relance le service. L'archive contient la base chiffrée et la configuration : la transférer hors du serveur et la protéger (chiffrement [[Glossary:GPG]] ou coffre distinct). La commande `stop` est à vérifier dans la version déployée.
 
 4. Contrôle des journaux et des tentatives de connexion :
 ```bash

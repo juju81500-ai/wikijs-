@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_OpenLDAP_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Ubuntu 24-04 avec FQDN stable, serveur OpenLDAP (slapd)
-- **OS / Version** : Ubuntu 24-04 LTS Noble; slapd 2.6 des dépôts, version à vérifier
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 avec [[Glossary:FQDN]] stable, serveur OpenLDAP (slapd)
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; slapd 2.6 des dépôts, version à vérifier
 - **Catégorie** : annuaire OpenLDAP / mise à jour / retour arrière
 - **Tags** : `openldap`, `ubuntu24-04`, `vie-du-logiciel`, `mise-a-jour-retour-arriere`
 

@@ -1,13 +1,13 @@
 # 📄 WDS + MDT
 
-- **Environnement** : VM (Windows Server 2022), disque de données dédié au partage de déploiement
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022), disque de données dédié au partage de déploiement
 - **OS / Version** : Windows Server 2022 (Standard ou Datacenter), PowerShell 5.1
-- **Version** : WDS (rôle Windows Server), MDT 8456 et Windows ADK (versions à vérifier sur la version déployée)
+- **Version** : WDS (rôle Windows Server), [[Glossary:MDT]] 8456 et Windows [[Glossary:ADK]] (versions à vérifier sur la version déployée)
 - **Catégorie** : Automatisation, déploiement et IaC
 - **Tags** : `[windows-server-2022]`, `[wds]`, `[mdt]`, `[pxe]`, `[deploiement]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer WDS et MDT sur Windows Server 2022, créer un partage de déploiement, intégrer une image Windows 11, publier le démarrage PXE via WDS, puis durcir le partage (compte de lecture dédié, pare-feu restreint) et sauvegarder le partage avant d'installer les postes de l'entreprise.
+Installer WDS et MDT sur Windows Server 2022, créer un partage de déploiement, intégrer une image Windows 11, publier le démarrage [[Glossary:PXE]] via WDS, puis durcir le partage (compte de lecture dédié, pare-feu restreint) et sauvegarder le partage avant d'installer les postes de l'entreprise.
 
 ---
 

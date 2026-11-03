@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_9_RHEL_Subscription_Manager
 
-- **Environnement** : VM Rocky Linux 9 comme repère documentaire; sujet RHEL
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 comme repère documentaire; sujet [[Glossary:RHEL]]
 - **OS / Version** : Red Hat Enterprise Linux 9; commandes RHSM sur RHEL autorisé
 - **Catégorie** : Vie du logiciel / RHEL — Contrôler subscription-manager
 - **Tags** : `rocky9`, `rhel`, `rhel`, `migration`

@@ -26,7 +26,7 @@ Mettre à jour en sécurité et traiter une dépendance manquante.
    ```
    👉 Explication : remplacer `NOUVELLE_VERSION` par la version validée (fichier vérifié comme à l'étape de téléchargement).
 
-3. Si APT signale une dépendance manquante :
+3. Si [[Glossary:APT]] signale une dépendance manquante :
    ```bash
    sudo apt --fix-broken install
    dpkg --print-architecture

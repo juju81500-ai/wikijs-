@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-12-splunk-securiser-premier-acces.md
 
-- **Environnement** : VM Debian 12 dédiée à Splunk Enterprise autonome (laboratoire)
+- **Environnement** : [[Glossary:VM]] Debian 12 dédiée à Splunk Enterprise autonome (laboratoire)
 - **OS / Version** : Debian 12 Bookworm; Splunk Enterprise 10.2
 - **Catégorie** : journaux / sécurité
 - **Tags** : `debian12`, `splunk`, `logs`, `tls`, `systemd`
@@ -33,7 +33,7 @@ Restreindre l'accès Web et configurer le démarrage systemd.
 
 ## 2. Production — Contrôles
 
-Utiliser un reverse proxy HTTPS ou activer TLS selon la procédure Splunk avant tout accès hors localhost; vérifier certificats, DNS, MFA/SSO.
+Utiliser un reverse proxy HTTPS ou activer [[Glossary:TLS]] selon la procédure Splunk avant tout accès hors localhost; vérifier certificats, [[Glossary:DNS]], [[Glossary:MFA]]/SSO.
 
 ## 3. Production — Sécurité
 

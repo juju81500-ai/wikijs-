@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Wireshark_Securiser
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Wireshark
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Wireshark
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Wireshark / sécurisation
 - **Tags** : `wireshark`, `ubuntu24.04`, `vie-du-logiciel`, `securiser`
@@ -28,7 +28,7 @@ Réduire les risques liés aux privilèges, aux dissecteurs et aux captures Wire
    ```
    👉 Explication : Les captures peuvent contenir des mots de passe en clair; accès limité au propriétaire.
 
-3. Ne pas conserver de clés TLS :
+3. Ne pas conserver de clés [[Glossary:TLS]] :
    ```bash
    ls -l ~/.config/wireshark 2>/dev/null
    ```

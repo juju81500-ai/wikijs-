@@ -14,19 +14,19 @@ Vérifier qu'un serveur Windows Server 2022 et l'annuaire Active Directory sont 
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Contrôler la version supportée : Exchange 2016 n'est pas supporté sur Windows Server 2022 ; retenir Exchange 2019 CU14 ou ultérieur, ou Subscription Edition, après lecture de la matrice officielle.
-   👉 Explication : la combinaison OS / CU / .NET / niveau fonctionnel AD doit figurer dans la matrice de support avant tout déploiement.
+   👉 Explication : la combinaison OS / CU / .NET / niveau fonctionnel [[Glossary:AD]] doit figurer dans la matrice de support avant tout déploiement.
 
-2. Contrôler le niveau fonctionnel de la forêt et du domaine, et le rôle FSMO :
+2. Contrôler le niveau fonctionnel de la forêt et du domaine, et le rôle [[Glossary:FSMO]] :
    ```powershell
    Get-ADForest | Select-Object ForestMode, SchemaMaster
    Get-ADDomain | Select-Object DomainMode, PDCEmulator
    ```
    👉 Explication : relever les niveaux ; les comparer au minimum exigé par la matrice (à vérifier).
 
-3. Dimensionner la VM (RAM, CPU, disques séparés pour système, bases et journaux) : ouvrir Gestionnaire Hyper-V > Paramètres de la VM, ou consulter l'outil de dimensionnement Microsoft.
-   👉 Explication : ne pas activer la mémoire dynamique ; prévoir un volume de bases et un volume de journaux distincts (ReFS ou NTFS selon recommandation officielle).
+3. Dimensionner la [[Glossary:VM]] ([[Glossary:RAM]], [[Glossary:CPU]], disques séparés pour système, bases et journaux) : ouvrir Gestionnaire Hyper-V > Paramètres de la VM, ou consulter l'outil de dimensionnement Microsoft.
+   👉 Explication : ne pas activer la mémoire dynamique ; prévoir un volume de bases et un volume de journaux distincts (ReFS ou [[Glossary:NTFS]] selon recommandation officielle).
 
-4. Joindre le serveur au domaine, fixer une IP statique et un nom DNS : Gestionnaire de serveur > Serveur local > Nom de l'ordinateur ; ou :
+4. Joindre le serveur au domaine, fixer une [[Glossary:IP]] statique et un nom [[Glossary:DNS]] : Gestionnaire de serveur > Serveur local > Nom de l'ordinateur ; ou :
    ```powershell
    Add-Computer -DomainName CONTOSO.LOCAL -NewName EXCH01 -Restart
    ```
@@ -36,7 +36,7 @@ Vérifier qu'un serveur Windows Server 2022 et l'annuaire Active Directory sont 
    ```powershell
    Install-WindowsFeature Server-Media-Foundation, NET-Framework-45-Features, RPC-over-HTTP-proxy, RSAT-Clustering, RSAT-Clustering-CmdInterface, RSAT-Clustering-Mgmt, RSAT-Clustering-PowerShell, WAS-Process-Model, Web-Asp-Net45, Web-Basic-Auth, Web-Client-Auth, Web-Digest-Auth, Web-Dir-Browsing, Web-Dyn-Compression, Web-Http-Errors, Web-Http-Logging, Web-Http-Redirect, Web-Http-Tracing, Web-ISAPI-Ext, Web-ISAPI-Filter, Web-Lgcy-Mgmt-Console, Web-Metabase, Web-Mgmt-Console, Web-Mgmt-Service, Web-Net-Ext45, Web-Request-Monitor, Web-Server, Web-Stat-Compression, Web-Static-Content, Web-Windows-Auth, Web-WMI, Windows-Identity-Foundation, RSAT-ADDS
    ```
-   👉 Explication : installe IIS, clustering et outils AD requis par le rôle Mailbox.
+   👉 Explication : installe [[Glossary:IIS]], clustering et outils AD requis par le rôle Mailbox.
 
 6. Installer les composants tiers depuis les sources officielles Microsoft : .NET Framework (version exigée par le CU), Visual C++ Redistributable (versions exigées par le CU), et UCMA 4.0 si le CU 2019 le demande. Vérifier les hachages des installeurs.
    👉 Explication : les versions exactes dépendent du CU : vérifier la page « prérequis » publiée.

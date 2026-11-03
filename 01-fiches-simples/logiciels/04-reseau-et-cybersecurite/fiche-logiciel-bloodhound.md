@@ -20,7 +20,7 @@ Avant toute modification, consigner le propriétaire du service, les actifs et u
 
 ## 🔎 Validation
 
-Vérifier l’autorisation, la minimisation, l’accès aux données et la purge prévue; faire relire les conclusions par l’équipe AD avant remédiation. Si des données dépassent le périmètre, suspendre le traitement, préserver les journaux utiles et notifier le responsable sécurité. Vérifier aussi l’horodatage, la journalisation et l’absence de secrets dans les tickets ou exports; faire approuver le résultat par le propriétaire du service.
+Vérifier l’autorisation, la minimisation, l’accès aux données et la purge prévue; faire relire les conclusions par l’équipe [[Glossary:AD]] avant remédiation. Si des données dépassent le périmètre, suspendre le traitement, préserver les journaux utiles et notifier le responsable sécurité. Vérifier aussi l’horodatage, la journalisation et l’absence de secrets dans les tickets ou exports; faire approuver le résultat par le propriétaire du service.
 
 ## ↩️ Retour arrière
 

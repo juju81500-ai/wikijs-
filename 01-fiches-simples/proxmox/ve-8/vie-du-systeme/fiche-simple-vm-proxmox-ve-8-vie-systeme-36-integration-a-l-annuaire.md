@@ -9,16 +9,16 @@
 
 ## Problème précis à résoudre
 
-Authentifier les administrateurs via l'annuaire (LDAP/AD).
+Authentifier les administrateurs via l'annuaire ([[Glossary:LDAP]]/AD).
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : **Datacenter > Permissions > Realms > Add > Active Directory** (serveur, domaine, port 636 avec SSL). En ligne de commande :
+1. [[Glossary:GUI]] : **Datacenter > Permissions > Realms > Add > Active Directory** (serveur, domaine, port 636 avec [[Glossary:SSL]]). En ligne de commande :
    ```bash
    pveum realm add AD --type ad --domain DOMAINE --server1 IP_AD --secure 1
    pveum realm sync AD
    ```
-   👉 Explication : `DOMAINE` = domaine AD; `IP_AD` = contrôleur; la synchro importe utilisateurs et groupes.
+   👉 Explication : `DOMAINE` = domaine [[Glossary:AD]]; `IP_AD` = contrôleur; la synchro importe utilisateurs et groupes.
 
 2. Donner un rôle à un groupe de l'annuaire (remplacer `GROUPE`) :
    ```bash
@@ -26,7 +26,7 @@ Authentifier les administrateurs via l'annuaire (LDAP/AD).
    ```
    👉 Explication : les droits suivent l'appartenance au groupe.
 
-3. Placer l'hôte dans le VLAN d'administration et l'inscrire dans l'IPAM.
+3. Placer l'hôte dans le [[Glossary:VLAN]] d'administration et l'inscrire dans l'[[Glossary:IPAM]].
    👉 Explication : accès réservé aux postes d'administration.
 
 ## 2. Production — Contrôles

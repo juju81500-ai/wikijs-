@@ -1,6 +1,6 @@
 # fiche-simple-vm-proxmox-pfsense-ce-deploiement-perimetre-prerequis-reseau.md
 
-- **Environnement** : VM pfSense CE en laboratoire sur Proxmox VE, deux interfaces (WAN et LAN isolés)
+- **Environnement** : [[Glossary:VM]] pfSense CE en laboratoire sur Proxmox VE, deux interfaces ([[Glossary:WAN]] et [[Glossary:LAN]] isolés)
 - **OS / Version** : pfSense Community Edition 2.9.0 (VM x86-64 sur Proxmox VE)
 - **Catégorie** : pare-feu et routage
 - **Tags** : `pfsense`, `ce`, `proxmox`, `firewall`, `lab`

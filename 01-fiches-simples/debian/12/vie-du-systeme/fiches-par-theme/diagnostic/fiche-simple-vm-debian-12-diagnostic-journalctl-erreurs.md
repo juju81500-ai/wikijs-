@@ -1,6 +1,6 @@
 # 📄 VM_Debian_12_Diagnostic-Journalctl-Erreurs.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Supervision & Diagnostic / Analyse des erreurs système
 - **Tags** : `[debian12]`, `[debian-family]`, `[journalctl]`, `[systemd]`, `[dmesg]`, `[diagnostic]`, `[logs]`
@@ -40,9 +40,9 @@ Identifier rapidement les erreurs système d'un serveur Debian 12 : messages de 
 1. Synthèse des erreurs des 24 dernières heures :
    `sudo journalctl --since "24 hours ago" -p err --no-pager | tail -n 50`
    👉 Explication : Produit la liste des 50 dernières erreurs, à joindre au rapport d'exploitation quotidien.
-2. Détection de tentatives d'authentification SSH échouées :
+2. Détection de tentatives d'authentification [[Glossary:SSH]] échouées :
    `sudo journalctl -u ssh --since today | grep -i 'Failed password'`
-   👉 Explication : Repère les attaques par mot de passe ; à croiser avec Fail2ban ou nftables si des IP répétées apparaissent.
+   👉 Explication : Repère les attaques par mot de passe ; à croiser avec Fail2ban ou nftables si des [[Glossary:IP]] répétées apparaissent.
 3. Vérification de l'intégrité des fichiers journal :
    `sudo journalctl --verify`
    👉 Explication : Contrôle la cohérence cryptographique des fichiers journaux persistants et signale toute altération.

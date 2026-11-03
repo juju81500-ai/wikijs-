@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Podman_Buildah_Securiser
 
-- **Environnement** : VM Debian 13 de laboratoire, utilisateur sudoer et compte de service dédié
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire, utilisateur sudoer et compte de service dédié
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : conteneurs
 - **Tags** : `debian13`, `podman`, `buildah`, `conteneurs`, `rootless`, `oci`
@@ -23,7 +23,7 @@ Durcir l'exécution des conteneurs Podman : rootless, capacités, système de fi
    ```bash
    cat /etc/containers/policy.json
    ```
-   👉 Explication : la politique par défaut peut accepter toute image ; la durcir (signatures GPG ou sigstore, registres listés) suivant `containers-policy.json(5)`.
+   👉 Explication : la politique par défaut peut accepter toute image ; la durcir (signatures [[Glossary:GPG]] ou sigstore, registres listés) suivant `containers-policy.json(5)`.
 
 3. Utiliser les secrets Podman plutôt que des variables d'environnement (NOM_SECRET à remplacer ; le mot de passe est saisi, jamais écrit en dur) :
    ```bash

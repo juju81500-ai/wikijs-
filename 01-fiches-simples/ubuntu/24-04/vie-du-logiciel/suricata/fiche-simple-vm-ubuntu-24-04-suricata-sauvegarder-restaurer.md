@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Suricata_Sauvegarder_Restaurer
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Suricata
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Suricata
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Suricata / sauvegarde et restauration
 - **Tags** : `suricata`, `ubuntu24.04`, `vie-du-logiciel`, `sauvegarder-restaurer`

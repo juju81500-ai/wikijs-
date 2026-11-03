@@ -2,7 +2,7 @@
 
 - **Environnement** : Poste Windows 11 géré, compte standard, Postman Desktop et Newman
 - **OS / Version** : Windows 11 Client
-- **Catégorie** : API / prérequis
+- **Catégorie** : [[Glossary:API]] / prérequis
 - **Tags** : `windows-11`, `postman`, `api`, `newman`, `vie-du-logiciel`
 
 ---
@@ -39,7 +39,7 @@ Valider les prérequis et les limites de Postman Desktop et Newman sur un poste 
 
 ## 2. Production — Contrôles
 
-Inventorier les postes concernés, la version cible, le besoin d'un compte Postman (licence/équipe), la politique d'accès au cloud Postman et la conformité RGPD des données envoyées dans les collections.
+Inventorier les postes concernés, la version cible, le besoin d'un compte Postman (licence/équipe), la politique d'accès au cloud Postman et la conformité [[Glossary:RGPD]] des données envoyées dans les collections.
 
 ## 3. Production — Sécurité
 

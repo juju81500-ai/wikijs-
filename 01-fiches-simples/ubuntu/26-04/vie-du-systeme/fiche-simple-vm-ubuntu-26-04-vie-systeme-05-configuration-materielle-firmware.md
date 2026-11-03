@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_05_Configuration_Materielle_Firmware
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 05 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-05`
@@ -13,7 +13,7 @@ Choisir UEFI/BIOS, Secure Boot et pilotes de stockage.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Choisir UEFI (OVMF) pour une VM neuve (Proxmox : **VM > Hardware > BIOS > OVMF (UEFI)**), contrôleur **VirtIO SCSI single**, CPU de type `host` :
+1. Choisir UEFI ([[Glossary:OVMF]]) pour une VM neuve (Proxmox : **VM > Hardware > [[Glossary:BIOS]] > OVMF (UEFI)**), contrôleur **VirtIO SCSI single**, [[Glossary:CPU]] de type `host` :
    ```bash
    qm set VMID --bios ovmf --machine q35 --scsihw virtio-scsi-single --cpu host
    qm set VMID --efidisk0 local-lvm:1,efitype=4m

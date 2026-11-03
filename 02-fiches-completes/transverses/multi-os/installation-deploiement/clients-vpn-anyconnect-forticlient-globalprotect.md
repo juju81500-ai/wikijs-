@@ -2,7 +2,7 @@
 
 - **OS / Version** : Windows, macOS, Linux (selon produit), iOS et Android
 - **Type de fiche** : Installation/Déploiement
-- **Environnement** : Parc nomade connecté à une passerelle VPN existante
+- **Environnement** : Parc nomade connecté à une passerelle [[Glossary:VPN]] existante
 - **Machine ciblée** : Postes clients
 - **Catégorie** : Accès distant / VPN
 - **Tags** : `vpn`, `anyconnect`, `cisco-secure-client`, `forticlient`, `globalprotect`, `nomades`
@@ -13,11 +13,11 @@ Déployer et valider les clients VPN d'une passerelle déjà en service. La conf
 
 ## 2. Prérequis
 
-- Passerelle VPN fonctionnelle, avec certificat serveur valide et authentification (annuaire, MFA, certificat).
+- Passerelle VPN fonctionnelle, avec certificat serveur valide et authentification (annuaire, [[Glossary:MFA]], certificat).
 - Licences clientes actives : AnyConnect/Secure Client et FortiClient (certaines fonctions) ou GlobalProtect (abonnement selon fonctions).
 - Paquets obtenus sur les portails éditeurs ou sur la passerelle si le produit le permet.
-- Outil de déploiement (Intune, GPO, MDM, Ansible).
-- Politique d'accès : split tunnel ou tunnel complet, DNS, posture du poste.
+- Outil de déploiement (Intune, [[Glossary:GPO]], MDM, Ansible).
+- Politique d'accès : split tunnel ou tunnel complet, [[Glossary:DNS]], posture du poste.
 
 ## 3. Variantes éditeur à distinguer
 

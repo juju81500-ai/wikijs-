@@ -2,7 +2,7 @@
 
 - **Environnement** : NetBox 4.7.4 pilote, client du réseau d'administration
 - **OS / Version** : Debian 13; NetBox 4.7.4
-- **Catégorie** : IPAM / DCIM / validation fonctionnelle
+- **Catégorie** : [[Glossary:IPAM]] / [[Glossary:DCIM]] / validation fonctionnelle
 - **Tags** : `debian13`, `netbox`, `ipam`, `api`, `validation`
 
 ---
@@ -22,7 +22,7 @@ Vérifier un petit jeu de données IPAM et la tâche de fond avant d'importer de
 2. Interface NetBox : ouvrir `https://FQDN/`, puis **Organization > Sites > Add** (site de lab), **IPAM > Aggregates > Add** (aggregate détenu), **IPAM > Prefixes > Add** (parent puis enfant, avec rôle et statut).
    👉 Explication : respecter le plan d'adressage approuvé; ne pas importer le plan complet avant de définir conventions, VRF, tenants et propriétaires.
 
-3. **IPAM > IP Addresses > Add** : créer une adresse de test dans le préfixe enfant.
+3. **IPAM > [[Glossary:IP]] Addresses > Add** : créer une adresse de test dans le préfixe enfant.
    👉 Explication : la hiérarchie et le calcul d'utilisation du préfixe doivent s'afficher; vérifier l'absence de chevauchement hors VRF.
 
 4. Vérifier la tâche de fond : **Jobs** (menu Admin) après un petit import `IPAM > Prefixes > Import`, ou en ligne de commande :
@@ -32,7 +32,7 @@ Vérifier un petit jeu de données IPAM et la tâche de fond avant d'importer de
    ```
    👉 Explication : la tâche doit se terminer sans erreur.
 
-5. Tester l'API avec un compte à privilèges limités :
+5. Tester l'[[Glossary:API]] avec un compte à privilèges limités :
    ```bash
    read -rsp 'Jeton API : ' NB_TOKEN; echo
    curl -sk -H "Authorization: Bearer $NB_TOKEN" -H 'Accept: application/json' https://FQDN/api/ipam/prefixes/ | head -c 300

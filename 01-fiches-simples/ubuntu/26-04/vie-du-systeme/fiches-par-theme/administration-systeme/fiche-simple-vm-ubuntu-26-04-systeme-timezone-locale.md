@@ -1,7 +1,7 @@
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Systeme_Timezone_Locale
 
-- **Environnement** : VM ou serveur Ubuntu (installation Subiquity ou image cloud-init)
-- **OS / Version** : Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu (installation Subiquity ou image cloud-init)
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]]
 - **Catégorie** : Système / Fuseau horaire et langue
 - **Tags** : `ubuntu2604`, `timezone`, `locale`, `timedatectl`, `localectl`, `chrony`
 
@@ -9,7 +9,7 @@
 
 ## 🎯 Problème précis à résoudre
 
-Régler le fuseau horaire (Europe/Paris), la synchronisation NTP et la locale française UTF-8 d'un serveur Ubuntu 26-04, pour que les journaux, les tâches planifiées et les messages des services soient horodatés et lisibles de façon cohérente.
+Régler le fuseau horaire (Europe/Paris), la synchronisation [[Glossary:NTP]] et la locale française UTF-8 d'un serveur Ubuntu 26-04, pour que les journaux, les tâches planifiées et les messages des services soient horodatés et lisibles de façon cohérente.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 
@@ -38,7 +38,7 @@ sudo locale-gen fr_FR.UTF-8
 sudo localectl set-locale LANG=fr_FR.UTF-8
 localectl status
 ```
-👉 Explication : `localectl` écrit la variable `LANG` dans `/etc/default/locale`. La nouvelle valeur est effective pour les prochaines sessions (ouvrir une nouvelle connexion SSH).
+👉 Explication : `localectl` écrit la variable `LANG` dans `/etc/default/locale`. La nouvelle valeur est effective pour les prochaines sessions (ouvrir une nouvelle connexion [[Glossary:SSH]]).
 
 ## ⚡ 2. Production — Façon Simplifiée
 
@@ -71,6 +71,6 @@ locale -a | grep -i fr
 
 ## ✅ Validation et retour arrière
 
-- **Précontrôles** : accès console, serveur NTP interne ou externe autorisé par le pare-feu (UDP 123).
+- **Précontrôles** : accès console, serveur NTP interne ou externe autorisé par le pare-feu ([[Glossary:UDP]] 123).
 - **Validation** : `timedatectl status` affiche `Europe/Paris`, `System clock synchronized: yes`, et `chronyc tracking` indique une référence valide.
 - **Retour arrière** : `sudo timedatectl set-timezone <ancien_fuseau>` ; `sudo localectl set-locale LANG=<ancienne_locale>`.

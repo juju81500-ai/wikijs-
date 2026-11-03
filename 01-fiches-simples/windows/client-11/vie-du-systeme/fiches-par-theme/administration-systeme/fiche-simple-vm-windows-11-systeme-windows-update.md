@@ -1,6 +1,6 @@
 # 📄 Fiche_Simple_-_VM_Windows_11_Systeme_Windows_Update
 
-- **Environnement** : VM / Poste de travail (Windows 11)
+- **Environnement** : [[Glossary:VM]] / Poste de travail (Windows 11)
 - **OS / Version** : Windows 11 - Famille Windows Client
 - **Catégorie** : Système & Services / Mises à jour
 - **Tags** : `[windows-11]`, `[windows-update]`, `[gpo]`, `[powershell]`, `[hardening]`
@@ -40,7 +40,7 @@ Contrôler l'état de Windows Update sur un poste Windows 11, lancer une recherc
    Set-ItemProperty -Path $wu -Name "DeferQualityUpdatesPeriodInDays" -Value 7 -Type DWord
    Set-ItemProperty -Path $wu -Name "DeferFeatureUpdatesPeriodInDays" -Value 30 -Type DWord
    ```
-   👉 Explication : Écrit les clés équivalentes à la stratégie « Gestion des mises à jour pour Windows ». En production, appliquer par GPO pour éviter les écarts entre postes.
+   👉 Explication : Écrit les clés équivalentes à la stratégie « Gestion des mises à jour pour Windows ». En production, appliquer par [[Glossary:GPO]] pour éviter les écarts entre postes.
 2. Forcer une nouvelle analyse après application :
    ```powershell
    gpupdate /force

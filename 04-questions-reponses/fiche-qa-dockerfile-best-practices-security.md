@@ -32,7 +32,7 @@ Comment rédiger un Dockerfile sécurisé et optimisé pour la production ?
    ```dockerfile
    # NE PAS FAIRE : ENV DB_PASSWORD=<SECRET>
    ```
-   👉 *Explication : Tu empêches la fuite de mots de passe ou clés API dans l'historique des calques (`docker history`).*
+   👉 *Explication : Tu empêches la fuite de mots de passe ou clés [[Glossary:API]] dans l'historique des calques (`docker history`).*
 
 5. **Définir un Check de Santé natif (`HEALTHCHECK`)** :
    ```dockerfile

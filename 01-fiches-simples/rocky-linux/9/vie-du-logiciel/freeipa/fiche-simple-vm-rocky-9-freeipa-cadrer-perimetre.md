@@ -1,6 +1,6 @@
 # fiche-simple-vm-rocky-9-freeipa-cadrer-perimetre.md
 
-- **Environnement** : VM Rocky Linux 9 dédiée au premier serveur FreeIPA/IdM
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée au premier serveur FreeIPA/IdM
 - **OS / Version** : Rocky Linux 9 x86_64; paquets `ipa-server` des dépôts de la distribution
 - **Catégorie** : annuaire / cadrage
 - **Tags** : `rocky9`, `freeipa`, `idm`, `kerberos`
@@ -18,17 +18,17 @@ Savoir si FreeIPA est le bon outil et s'il est supporté sur Rocky Linux 9 avant
    cat /etc/os-release
    systemctl list-units --type=service --state=running | grep -Ei "named|slapd|dirsrv|httpd|nginx|krb5"
    ```
-   👉 Explication : Contrôle la version de Rocky Linux et l'absence d'un annuaire, DNS, serveur web ou CA déjà présents sur la VM.
+   👉 Explication : Contrôle la version de Rocky Linux et l'absence d'un annuaire, [[Glossary:DNS]], serveur web ou [[Glossary:CA]] déjà présents sur la VM.
 
-2. Lire dans le guide le statut de support : Rocky Linux 9 est compatible RHEL mais la procédure n'a pas été testée sur Rocky.
+2. Lire dans le guide le statut de support : Rocky Linux 9 est compatible [[Glossary:RHEL]] mais la procédure n'a pas été testée sur Rocky.
    👉 Explication : le projet FreeIPA supporte officiellement Fedora et RHEL; la compatibilité Rocky est une hypothèse à valider sur une VM pilote.
 
-3. Noter par écrit ce qui n'est pas couvert : réplicas, confiance AD, CA externe, migration OpenLDAP/NIS.
+3. Noter par écrit ce qui n'est pas couvert : réplicas, confiance [[Glossary:AD]], CA externe, migration OpenLDAP/NIS.
    👉 Explication : ces cas demandent une procédure dédiée; ne pas les improviser.
 
 ## 2. Production — Contrôles
 
-Décider si le besoin est un annuaire complet (LDAP + Kerberos + CA) ou un simple LDAP; valider avec le responsable sécurité; prévoir une VM dédiée.
+Décider si le besoin est un annuaire complet ([[Glossary:LDAP]] + Kerberos + CA) ou un simple LDAP; valider avec le responsable sécurité; prévoir une VM dédiée.
 
 ## 3. Production — Sécurité
 

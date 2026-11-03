@@ -1,6 +1,6 @@
 # fiche-simple-vm-rocky-9-podman-quadlet-valider-image.md
 
-- **Environnement** : VM Rocky Linux 9 avec Podman rootless, systemd et Quadlet (pilote local)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 avec Podman rootless, systemd et Quadlet (pilote local)
 - **OS / Version** : Rocky Linux 9; Podman des dépôts maintenus
 - **Catégorie** : conteneurs / image
 - **Tags** : `rocky9`, `podman`, `quadlet`, `rootless`, `systemd`, `image`, `registre`

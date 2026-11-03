@@ -1,6 +1,6 @@
 # 📄 Wireshark
 
-- **Environnement** : Poste d'analyse ou VM (Debian 12)
+- **Environnement** : Poste d'analyse ou [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : Wireshark 4.0.x et TShark du paquet `wireshark` de bookworm (à vérifier sur la version déployée)
 - **Catégorie** : Réseau et cybersécurité
@@ -46,7 +46,7 @@ tshark -i ens33 -c 50 -w /var/tmp/wireshark-lab/capture-lab.pcapng
 tshark -r /var/tmp/wireshark-lab/capture-lab.pcapng -c 10
 tshark -r /var/tmp/wireshark-lab/capture-lab.pcapng -q -z io,phs
 ```
-👉 Explication : La première commande affiche les 10 premiers paquets. La seconde donne la répartition des protocoles (`io,phs`). Les paquets ICMP du ping doivent apparaître.
+👉 Explication : La première commande affiche les 10 premiers paquets. La seconde donne la répartition des protocoles (`io,phs`). Les paquets [[Glossary:ICMP]] du ping doivent apparaître.
 
 6. Ouverture graphique du même fichier (poste de bureau uniquement) :
 ```bash
@@ -64,7 +64,7 @@ dumpcap -D
 ```
 👉 Explication : `getcap` doit montrer les capacités `cap_net_admin` et `cap_net_raw` sur `dumpcap`, ce qui permet la capture sans root. Ce réglage est posé par le paquet ; à vérifier sur la version installée.
 
-2. Capture filtrée en rotation, hors session SSH d'administration :
+2. Capture filtrée en rotation, hors session [[Glossary:SSH]] d'administration :
 ```bash
 sudo install -d -m 0750 -o julien -g wireshark /var/capture/wireshark
 tshark -i ens33 -f "not port 22" -b filesize:100000 -b files:5 -w /var/capture/wireshark/ens33.pcapng
@@ -76,7 +76,7 @@ tshark -i ens33 -f "not port 22" -b filesize:100000 -b files:5 -w /var/capture/w
 ls -lh /var/capture/wireshark/
 tshark -r "$(ls /var/capture/wireshark/ens33_*.pcapng | head -n 1)" -q -z conv,ip
 ```
-👉 Explication : Liste les fichiers produits, puis affiche les conversations IP du premier fichier. Les noms exacts (`ens33_00001_...pcapng`) dépendent de la version de TShark, à vérifier.
+👉 Explication : Liste les fichiers produits, puis affiche les conversations [[Glossary:IP]] du premier fichier. Les noms exacts (`ens33_00001_...pcapng`) dépendent de la version de TShark, à vérifier.
 
 ---
 

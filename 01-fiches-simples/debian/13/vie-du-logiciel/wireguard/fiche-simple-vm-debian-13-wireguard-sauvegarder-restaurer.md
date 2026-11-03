@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_WireGuard_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13 dédiée à WireGuard natif
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à WireGuard natif
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : WireGuard natif / sauvegarder / restaurer
 - **Tags** : `wireguard`, `debian13`, `vie-du-logiciel`, `sauvegarder_restaurer`
@@ -29,7 +29,7 @@ Préserver configuration et clés WireGuard avec permissions et stockage adapté
 
 ## 2. Production — Contrôles
 
-Définir RPO/RTO, rétention, accès nominatif, chiffrement et test de restauration.
+Définir [[Glossary:RPO]]/RTO, rétention, accès nominatif, chiffrement et test de restauration.
 
 ## 3. Production — Sécurité
 

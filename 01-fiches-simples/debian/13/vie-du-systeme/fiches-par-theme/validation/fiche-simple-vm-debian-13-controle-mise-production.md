@@ -1,6 +1,6 @@
 # 📄 fiche-simple-vm-debian-13-controle-mise-production.md
 
-- **Environnement** : VM ou serveur Debian 13
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 13
 - **OS / Version** : Debian 13 (Trixie)
 - **Catégorie** : Production / Validation / Exploitation
 - **Tags** : `[debian13]`, `[debian]`, `[production]`, `[validation]`, `[sauvegarde]`, `[securite]`
@@ -17,13 +17,13 @@ Valider une VM Debian 13 avant ouverture en production : accès, mises à jour, 
    ```
    👉 Explication : aucun service en échec; mises à jour en attente documentées.
 
-2. Tester DNS, routes et ports depuis un client autorisé :
+2. Tester [[Glossary:DNS]], routes et ports depuis un client autorisé :
    ```bash
    ip route
    resolvectl query example.net
    nc -zv IP_SERVEUR PORT
    ```
-   👉 Explication : remplacer IP et port.
+   👉 Explication : remplacer [[Glossary:IP]] et port.
 
 3. Restaurer une sauvegarde sur une VM ou un répertoire isolé et tester l'application :
    ```bash
@@ -34,7 +34,7 @@ Valider une VM Debian 13 avant ouverture en production : accès, mises à jour, 
 
 ## ⚡ 2. Production — Façon Simplifiée
 1. **Système :** hostname/IP documentés, dépôts cohérents, correctifs appliqués, heure synchronisée et redémarrage planifié si nécessaire.
-2. **Accès et sécurité :** compte nominatif `sudo`, SSH par clé, pare-feu persistant identifié, AppArmor et services inutiles contrôlés.
+2. **Accès et sécurité :** compte nominatif `sudo`, [[Glossary:SSH]] par clé, pare-feu persistant identifié, AppArmor et services inutiles contrôlés.
 3. **Rôle et supervision :** ports attendus uniquement, service actif au démarrage, journaux collectés et alertes de disponibilité/espace configurées.
 4. **Données :** sauvegarde vers une cible distincte, rétention définie, résultat récent vérifié et restauration testée.
 5. **Bascule :** responsable, fenêtre, dépendances, critères de réussite et retour arrière consignés.

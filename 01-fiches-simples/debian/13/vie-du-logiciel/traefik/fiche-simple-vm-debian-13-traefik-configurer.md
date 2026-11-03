@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Traefik_Configurer
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; Traefik v3 (binaire officiel)
 - **Catégorie** : reverse proxy / Traefik / Configurer (statique, dynamique, premier service)
 - **Tags** : `debian13`, `traefik`, `configuration`
@@ -31,7 +31,7 @@
    EOF
    sudo chown root:traefik /etc/traefik/traefik.yml && sudo chmod 0640 /etc/traefik/traefik.yml
    ```
-   👉 Explication : aucun tableau de bord ni API n'est activé.
+   👉 Explication : aucun tableau de bord ni [[Glossary:API]] n'est activé.
 
 2. Déclarer un routeur et un service :
    ```bash

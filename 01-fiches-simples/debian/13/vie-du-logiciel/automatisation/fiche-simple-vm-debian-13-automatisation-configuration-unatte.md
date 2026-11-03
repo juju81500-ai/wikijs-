@@ -1,6 +1,6 @@
 # 📄 VM_Debian_13_Automatisation_Configuration-Unattended-Upgrades.md
 
-- **Environnement** : VM / LXC (Debian 13)
+- **Environnement** : [[Glossary:VM]] / [[Glossary:LXC]] (Debian 13)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
 - **Catégorie** : Maintenance & Automatisation / Updates
 - **Tags** : `[debian13]`, `[unattended-upgrades]`, `[apt]`, `[maintenance]`, `[hardening]`

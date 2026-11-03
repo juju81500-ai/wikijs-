@@ -1,8 +1,8 @@
 # 📄 Fiche_Simple_-_VM_Debian_13_Securite_Certbot_TLS
 
-- **Environnement** : VM ou serveur Debian 13 avec Nginx et nom de domaine public
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 13 avec Nginx et nom de domaine public
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
-- **Catégorie** : Sécurité / Chiffrement TLS (Let's Encrypt)
+- **Catégorie** : Sécurité / Chiffrement [[Glossary:TLS]] (Let's Encrypt)
 - **Tags** : `[debian13]`, `[debian]`, `[certbot]`, `[tls]`, `[letsencrypt]`, `[nginx]`
 
 ## 🎯 Problème précis à résoudre
@@ -35,12 +35,12 @@ Obtenir et renouveler automatiquement un certificat TLS Let's Encrypt pour un si
 ---
 
 ## ⚡ 2. Production — Façon Simplifiée
-1. Vérifier les prérequis réseau : le DNS public doit pointer vers le serveur, et les ports 80 et 443 doivent être ouverts :
+1. Vérifier les prérequis réseau : le [[Glossary:DNS]] public doit pointer vers le serveur, et les ports 80 et 443 doivent être ouverts :
    ```bash
    dig +short <domaine_public>
    sudo ss -tlnp | grep -E ":(80|443) "
    ```
-   👉 Explication : Let's Encrypt contacte le serveur sur le port 80 pour valider le domaine. Une adresse DNS différente de l'IP du serveur fait échouer la demande.
+   👉 Explication : Let's Encrypt contacte le serveur sur le port 80 pour valider le domaine. Une adresse DNS différente de l'[[Glossary:IP]] du serveur fait échouer la demande.
 
 2. Demander le certificat de production :
    ```bash

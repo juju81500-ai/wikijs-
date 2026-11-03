@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_41_Supervision_Metriques_Et_Inventaire
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 41 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-41`
@@ -25,7 +25,7 @@ Superviser la machine.
    ```bash
    sudo ufw allow from 192.0.2.50 to any port 9100 proto tcp
    ```
-   👉 Explication : remplacer l'IP du serveur de supervision.
+   👉 Explication : remplacer l'[[Glossary:IP]] du serveur de supervision.
 
 ## 2. Production — Contrôles
 

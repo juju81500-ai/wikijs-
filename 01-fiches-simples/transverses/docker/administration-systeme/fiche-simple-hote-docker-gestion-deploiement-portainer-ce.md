@@ -6,14 +6,14 @@
 - **Tags** : `[docker]`, `[portainer]`, `[conteneurs]`, `[webui]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Déployer l'interface Web d'administration Portainer CE (Community Edition) via un conteneur Docker isolé avec persistance des données et sécurisation TLS.
+Déployer l'interface Web d'administration Portainer CE (Community Edition) via un conteneur Docker isolé avec persistance des données et sécurisation [[Glossary:TLS]].
 
 ---
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. En lab isolé, lancer une version validée avec l'interface HTTPS limitée à loopback :
    `docker run -d -p 127.0.0.1:9443:9443 --name portainer-lab --restart=unless-stopped -v /var/run/docker.sock:/var/run/docker.sock -v portainer_lab_data:/data portainer/portainer-ce:<VERSION_VALIDEE>`
-   👉 Explication : Le socket Docker donne à Portainer des privilèges équivalents à root sur l'hôte. Ne déployer que sur un hôte d'administration isolé et ne pas publier l'interface sans VPN/proxy authentifié.
+   👉 Explication : Le socket Docker donne à Portainer des privilèges équivalents à root sur l'hôte. Ne déployer que sur un hôte d'administration isolé et ne pas publier l'interface sans [[Glossary:VPN]]/proxy authentifié.
 2. Vérification de l'état du conteneur :
    `docker ps`
    👉 Explication : Vérifie que le conteneur tourne correctement.
@@ -33,10 +33,10 @@ Déployer l'interface Web d'administration Portainer CE (Community Edition) via 
 ## 🔒 3. Production — Façon Sécurisée (Hardening Enterprise & Socket Protection)
 1. Créer une pile Compose avec version épinglée, volume de données et publication limitée à loopback. Garder l'accès au socket Docker uniquement sur un hôte dédié :
    `docker compose config`
-   👉 Explication : `docker compose config` valide la pile. Un montage `:ro` du socket n'est pas une barrière d'autorisation à l'API Docker.
+   👉 Explication : `docker compose config` valide la pile. Un montage `:ro` du socket n'est pas une barrière d'autorisation à l'[[Glossary:API]] Docker.
 2. Lancement de la pile sécurisée avec montage restreint :
    `docker compose up -d`
    👉 Explication : Lance le service Portainer en arrière-plan avec isolation et redémarrage automatique en cas de panne.
-3. Vérification de la réponse HTTPS, activation du MFA et suppression de l'accès initial non nécessaire :
+3. Vérification de la réponse HTTPS, activation du [[Glossary:MFA]] et suppression de l'accès initial non nécessaire :
    `docker logs portainer`
    👉 Explication : Inspecte les journaux d'initialisation pour valider la première connexion administrateur HTTPS.

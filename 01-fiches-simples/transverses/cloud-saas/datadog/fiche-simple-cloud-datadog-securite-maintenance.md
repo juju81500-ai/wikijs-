@@ -20,10 +20,10 @@ Appliquer les contrôles de sécurité et de maintenance de l'Agent.
    ```
    👉 Explication : le fichier peut contenir des identifiants; vérifier d'abord propriétaire et groupe (`dd-agent`) pour ne pas bloquer l'Agent.
 
-2. Dans Datadog, suivre l'usage des clés API et les faire tourner selon la politique interne : **Organization Settings > API Keys**.
+2. Dans Datadog, suivre l'usage des clés [[Glossary:API]] et les faire tourner selon la politique interne : **Organization Settings > API Keys**.
    👉 Explication : une clé ancienne ou inutilisée est un risque.
 
-3. Si un proxy sortant est requis, renseigner la section `proxy:` de `datadog.yaml` et n'autoriser que les FQDN/ports du site Datadog.
+3. Si un proxy sortant est requis, renseigner la section `proxy:` de `datadog.yaml` et n'autoriser que les [[Glossary:FQDN]]/ports du site Datadog.
    👉 Explication : on limite les destinations.
 
 4. Mettre à jour l'Agent avec le gestionnaire de paquets (Debian/Ubuntu ; adapter à la distribution), d'abord sur un groupe pilote :

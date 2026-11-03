@@ -1,6 +1,6 @@
 # fiche-simple-vm-debian-13-rsync-cadrer-besoin.md
 
-- **Environnement** : Debian 13 Trixie; copie locale ou transfert SSH vers une destination autorisée
+- **Environnement** : Debian 13 Trixie; copie locale ou transfert [[Glossary:SSH]] vers une destination autorisée
 - **OS / Version** : Debian 13; rsync depuis les dépôts Debian
 - **Catégorie** : sauvegarde de fichiers / cadrage
 - **Tags** : `debian13`, `rsync`, `sauvegarde`, `cadrage`, `rpo`
@@ -20,14 +20,14 @@ Définir le périmètre et les limites de la copie avant toute synchronisation a
    ```
    👉 Explication : la destination doit pouvoir contenir la source et sa croissance.
 
-2. Relever propriétaires, ACL et attributs à préserver :
+2. Relever propriétaires, [[Glossary:ACL]] et attributs à préserver :
    ```bash
    getfacl -R /srv/data | head
    lsattr -R /srv/data 2>/dev/null | head
    ```
    👉 Explication : détermine l'usage de `-A` (ACL) et `-X` (attributs étendus) à l'étape de copie.
 
-3. Consigner : source, destination, fréquence, RPO/RTO, besoin d'historique.
+3. Consigner : source, destination, fréquence, [[Glossary:RPO]]/RTO, besoin d'historique.
    👉 Explication : `rsync` produit une copie miroir et non une sauvegarde historisée; une suppression ou un chiffrement par ransomware se propage au passage suivant. Pour des versions, déduplication et chiffrement, utiliser BorgBackup.
 
 ## 2. Production — Contrôles

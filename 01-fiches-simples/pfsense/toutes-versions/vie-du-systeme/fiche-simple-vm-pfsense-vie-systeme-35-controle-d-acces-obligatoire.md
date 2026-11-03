@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_35_Controle_D_Acces_Obligatoire
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 35 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-35`
@@ -13,7 +13,7 @@ Il n'existe pas de SELinux sur FreeBSD : renforcer le contrôle d'accès de l'in
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Activer le 2FA : installer le paquet `Google-Authenticator` (System > Package Manager), puis System > User Manager > Authentication Servers pour y exiger le code TOTP.
+1. Activer le 2FA : installer le paquet `Google-Authenticator` (System > Package Manager), puis System > User Manager > Authentication Servers pour y exiger le code [[Glossary:TOTP]].
    👉 Explication : un code à usage unique s'ajoute au mot de passe pour l'accès web.
 
 2. Contrôler l'isolation de FreeBSD en shell :

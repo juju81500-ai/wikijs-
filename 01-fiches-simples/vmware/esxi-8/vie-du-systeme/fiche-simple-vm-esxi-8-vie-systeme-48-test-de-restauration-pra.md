@@ -13,7 +13,7 @@ Prouver qu'une sauvegarde est restaurable.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Veeam : console **Home > Backups > clic droit sur la VM > Restore entire VM** vers un nouvel emplacement ou un nouveau nom (sans réseau de production).
+1. Veeam : console **Home > Backups > clic droit sur la [[Glossary:VM]] > Restore entire VM** vers un nouvel emplacement ou un nouveau nom (sans réseau de production).
    👉 Explication : ne jamais écraser la VM d'origine pour un test.
 
 2. Restauration de la configuration de l'hôte (hôte de test) :
@@ -24,7 +24,7 @@ Prouver qu'une sauvegarde est restaurable.
    👉 Explication : le build doit être identique; l'hôte redémarre.
 
 3. Mesurer la durée, noter le résultat, supprimer la VM de test (Host Client : **VM > Actions > Supprimer**).
-   👉 Explication : la durée donne le RTO réel.
+   👉 Explication : la durée donne le [[Glossary:RTO]] réel.
 
 ## 2. Production — Contrôles
 

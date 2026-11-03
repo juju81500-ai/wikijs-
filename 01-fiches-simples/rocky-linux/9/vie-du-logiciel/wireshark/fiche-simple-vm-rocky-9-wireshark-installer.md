@@ -1,7 +1,7 @@
 # Fiche_Simple_-_VM_Rocky_9_Wireshark_Installer
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Wireshark
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Wireshark
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Wireshark / installation
 - **Tags** : `wireshark`, `rocky9`, `vie-du-logiciel`, `installer`
 
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Installer Wireshark (GUI) et TShark (CLI) depuis les dépôts Rocky.
+Installer Wireshark ([[Glossary:GUI]]) et TShark ([[Glossary:CLI]]) depuis les dépôts Rocky.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

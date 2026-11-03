@@ -1,7 +1,7 @@
 # 📄 fiche-simple-vm-rocky-9-sauvegarde-test-restauration.md
 
-- **Environnement** : VM ou serveur Rocky Linux dans un environnement isolé de test
-- **OS / Version** : Rocky Linux 9 / RHEL 9 avec Restic (EPEL)
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux dans un environnement isolé de test
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 avec Restic (EPEL)
 - **Catégorie** : Sauvegarde / Test de restauration PRA
 - **Tags** : `[rocky9]`, `[rhel9]`, `[restic]`, `[pra]`, `[restauration]`, `[validation]`
 
@@ -55,7 +55,7 @@ Vérifier qu'une sauvegarde Restic est réellement restaurable, dans un réperto
    ```
    👉 Explication : Seul `root` peut lire les données restaurées. Le test doit être réalisé sur une VM sans route vers le réseau de production.
 
-3. Mesurer le temps de restauration pour valider le RTO, puis supprimer les données de test :
+3. Mesurer le temps de restauration pour valider le [[Glossary:RTO]], puis supprimer les données de test :
    ```bash
    date
    sudo env RESTIC_PASSWORD_FILE=/root/.restic_pass restic -r /srv/restic/<nom_du_serveur> restore latest --target /srv/restore-test

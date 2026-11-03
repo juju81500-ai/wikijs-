@@ -1,6 +1,6 @@
 # fiche-simple-appliance-opnsense-diagnostic-reseau-corriger-valider.md
 
-- **Environnement** : Appliance OPNsense seule ou paire CARP; accès console recommandé
+- **Environnement** : Appliance OPNsense seule ou paire [[Glossary:CARP]]; accès console recommandé
 - **OS / Version** : OPNsense Community ou Business Edition maintenue
 - **Catégorie** : pare-feu / correction
 - **Tags** : `opnsense`, `diagnostic`, `reseau`, `firewall`, `dns`, `vpn`
@@ -16,7 +16,7 @@ Appliquer un correctif minimal et le valider.
 1. **System > Configuration > Backups > Download configuration**.
    👉 Explication : sauvegarde avant changement.
 
-2. Corriger une seule chose : route, règle précise ou configuration DNS; garder un accès console.
+2. Corriger une seule chose : route, règle précise ou configuration [[Glossary:DNS]]; garder un accès console.
    👉 Explication : limite le risque de coupure.
 
 3. Tester succès et refus attendus depuis des postes représentatifs.

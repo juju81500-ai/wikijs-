@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_22_Synchronisation_Horaire_Ntp
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 22 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-22`
@@ -43,7 +43,7 @@ Utiliser au moins deux sources internes.
 
 ## 3. Production — Sécurité
 
-Ne pas ouvrir le port NTP du serveur vers l'extérieur sans besoin.
+Ne pas ouvrir le port [[Glossary:NTP]] du serveur vers l'extérieur sans besoin.
 
 ## Validation et retour arrière
 

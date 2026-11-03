@@ -30,7 +30,7 @@ Restaurer des fichiers sans détruire ceux qui existent déjà.
 
 ## 2. Production — Contrôles
 
-Ne pas écraser en bloc `AppData`, les profils système ou les ACL sans procédure propre à l'application.
+Ne pas écraser en bloc `AppData`, les profils système ou les [[Glossary:ACL]] sans procédure propre à l'application.
 
 ## 3. Production — Sécurité
 

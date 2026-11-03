@@ -26,8 +26,8 @@ Définir l'architecture et le plan de sauvegarde avant d'installer Bareos ou d'i
    ```
    👉 Explication : 9101 Director, 9102 File Daemon, 9103 Storage Daemon; les restreindre aux composants concernés.
 
-3. Consigner : clients, FileSets, schedules, pools/volumes, rétention du catalogue, RPO/RTO.
-   👉 Explication : chiffrer les communications (TLS) et prévoir le stockage hors site.
+3. Consigner : clients, FileSets, schedules, pools/volumes, rétention du catalogue, [[Glossary:RPO]]/RTO.
+   👉 Explication : chiffrer les communications ([[Glossary:TLS]]) et prévoir le stockage hors site.
 
 ## 2. Production — Contrôles
 

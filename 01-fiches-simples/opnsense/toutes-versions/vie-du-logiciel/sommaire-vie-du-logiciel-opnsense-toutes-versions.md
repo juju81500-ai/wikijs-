@@ -59,4 +59,4 @@ Cliquer sur le nom pour voir l'état de couverture ; une procédure détaillée 
 
 - [Nutanix-AHV](../../../logiciels/03-virtualisation-et-conteneurisation/fiche-logiciel-nutanix-ahv.md) — Matériel/éditeur propriétaire — hors périmètre pas à pas
 - [Proxmox-VE](../../../logiciels/03-virtualisation-et-conteneurisation/fiche-logiciel-proxmox-ve.md) — Couvert
-- [VMware-vSphere](../../../logiciels/03-virtualisation-et-conteneurisation/fiche-logiciel-vmware-vsphere.md) — Couvert — vSphere 8 : ESXi, vCenter Server Appliance (installation, sauvegarde/restauration VAMI, mises à jour, certificats), HA/DRS, réseau, datastore NFS, snapshots, maintenance. Hors périmètre : vSAN, NSX, Lifecycle Manager avancé.
+- [VMware-vSphere](../../../logiciels/03-virtualisation-et-conteneurisation/fiche-logiciel-vmware-vsphere.md) — Couvert — vSphere 8 : ESXi, vCenter Server Appliance (installation, sauvegarde/restauration VAMI, mises à jour, certificats), HA/DRS, réseau, datastore [[Glossary:NFS]], snapshots, maintenance. Hors périmètre : vSAN, NSX, Lifecycle Manager avancé.

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Windows_11_Royal_TS_Installer
 
-- **Environnement** : Poste Windows 11 x64 d'administration (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'administration ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; Royal TS VERSION_ROYAL_TS (à remplacer)
 - **Catégorie** : gestionnaire de connexions distantes
 - **Tags** : `royal-ts`, `windows11`, `installation`, `winget`
@@ -16,7 +16,7 @@ Installer Royal TS sur Windows 11.
 1. Télécharger l'installateur depuis https://www.royalapps.com/ts/win/download.
    👉 Explication : source officielle.
 
-2. GUI : exécuter l'installateur et suivre l'assistant.
+2. [[Glossary:GUI]] : exécuter l'installateur et suivre l'assistant.
    👉 Explication : installation de référence.
 
 3. Dans PowerShell, chercher le nom exact : `winget search "Royal TS" --source winget`. Relever l'ID exact affiché (colonne Id) et le noter comme ID_PAQUET_VERIFIE (à remplacer ; ne jamais le deviner). Puis, ID vérifié seulement : `winget install --id ID_PAQUET_VERIFIE --exact`. Si la recherche ne renvoie rien, utiliser le GUI.

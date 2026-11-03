@@ -1,6 +1,6 @@
 # 📄 fiche-simple-lxc-alpine-3-19-systeme-compte-service.md
 
-- **Environnement** : LXC (Proxmox VE)
+- **Environnement** : [[Glossary:LXC]] (Proxmox VE)
 - **OS / Version** : Alpine Linux 3-19 - Famille Alpine (OpenRC, apk)
 - **Catégorie** : Système & Services / Comptes de service
 - **Tags** : `[alpine3.19]`, `[alpine]`, `[lxc]`, `[comptes]`, `[service-account]`, `[openrc]`, `[hardening]`

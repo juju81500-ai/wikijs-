@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_PowerShell_Installer
 
-- **Environnement** : VM Debian 13 de laboratoire avec dépôts Microsoft officiels
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire avec dépôts Microsoft officiels
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : shell / scripting
 - **Tags** : `debian13`, `powershell`, `pwsh`, `scripting`, `securite`
@@ -21,7 +21,7 @@ Installer PowerShell 7 à partir du dépôt Microsoft authentifié pour Debian 1
    ```
    👉 Explication : vérifier métadonnées, architecture et provenance avant installation.
 
-2. Ajouter dépôt et contrôler origine APT
+2. Ajouter dépôt et contrôler origine [[Glossary:APT]]
    ```bash
    sudo dpkg -i /tmp/packages-microsoft-prod.deb
    sudo apt update

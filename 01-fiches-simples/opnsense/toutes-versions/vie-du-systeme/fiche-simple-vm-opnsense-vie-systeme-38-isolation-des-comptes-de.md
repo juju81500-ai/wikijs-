@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_38_Isolation_Des_Comptes_De
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 38 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-38`
@@ -13,14 +13,14 @@ Utiliser des identifiants dédiés pour les automatisations.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Créer un utilisateur API : Système > Accès > Utilisateurs > ADMIN-API > Clés API > `+` (télécharge un fichier contenant clé et secret).
+1. Créer un utilisateur [[Glossary:API]] : Système > Accès > Utilisateurs > ADMIN-API > Clés API > `+` (télécharge un fichier contenant clé et secret).
    👉 Explication : permet d'automatiser sans utiliser de mot de passe humain.
 
 2. Limiter ses droits via un groupe restreint (Système > Accès > Groupes) et tester :
    ```sh
    curl -sk -u CLE_API:SECRET_API https://IP_LAN/api/core/firmware/status
    ```
-   👉 Explication : `CLE_API` et `SECRET_API` proviennent du fichier téléchargé; la réponse JSON prouve l'accès.
+   👉 Explication : `CLE_API` et `SECRET_API` proviennent du fichier téléchargé; la réponse [[Glossary:JSON]] prouve l'accès.
 
 ## 2. Production — Contrôles
 

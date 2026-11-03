@@ -2,7 +2,7 @@
 
 - **Environnement** : Serveurs Windows Server 2022 (Connection Server), vCenter, UAG, compte administrateur nominatif
 - **OS / Version** : Windows Server 2022; version Horizon à vérifier auprès de l'éditeur
-- **Catégorie** : VDI / Horizon
+- **Catégorie** : [[Glossary:VDI]] / Horizon
 - **Tags** : `vmware-horizon`, `horizon`, `windows-server`, `prerequis`
 
 ---
@@ -17,7 +17,7 @@ Cadrer prérequis, licences et limites avant de déployer VMware Horizon (Connec
    👉 Explication : le support dépend de la version ; ne pas supposer.
 
 2. Lister les éléments : CS1_HORIZON (Connection Server), VCENTER_FQDN (vCenter), VM_MODELE (image parente), UAG1_HORIZON (Unified Access Gateway), DOMAINE_AD.
-   👉 Explication : placeholders à remplacer par vos noms DNS.
+   👉 Explication : placeholders à remplacer par vos noms [[Glossary:DNS]].
 
 3. Contrôler le réseau et le DNS depuis CS1_HORIZON. PowerShell :
 ```powershell

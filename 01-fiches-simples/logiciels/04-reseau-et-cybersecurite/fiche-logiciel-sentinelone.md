@@ -12,7 +12,7 @@ Fiche défensive d’administration et de gouvernance. Elle ne remplace pas le g
 
 ## 🧭 Périmètre
 
-Protéger l’accès à la console par MFA, RBAC et comptes nominatifs; suivre la couverture et l’état des agents dans les seuls groupes de parc autorisés. Promouvoir les politiques de prévention via pilote puis changement approuvé; tester les exclusions au cas par cas et les documenter. Une isolation, suppression ou action de remédiation est réservée au processus incident autorisé.
+Protéger l’accès à la console par [[Glossary:MFA]], [[Glossary:RBAC]] et comptes nominatifs; suivre la couverture et l’état des agents dans les seuls groupes de parc autorisés. Promouvoir les politiques de prévention via pilote puis changement approuvé; tester les exclusions au cas par cas et les documenter. Une isolation, suppression ou action de remédiation est réservée au processus incident autorisé.
 
 ## ✅ Autorisation et préparation
 

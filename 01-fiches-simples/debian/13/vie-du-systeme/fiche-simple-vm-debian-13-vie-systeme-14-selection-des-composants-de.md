@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Vie_Systeme_14_Selection_Des_Composants_De
 
-- **Environnement** : VM Debian 13 « trixie » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 13 « trixie » (serveur)
 - **OS / Version** : Debian 13; étape 14 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian13`, `vie-du-systeme`, `cycle-de-vie`, `etape-14`
@@ -13,7 +13,7 @@ Installer le strict nécessaire.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. À l'étape « Sélection des logiciels » de l'installateur, cocher seulement **serveur SSH** et **utilitaires usuels du système**. Après installation, contrôler :
+1. À l'étape « Sélection des logiciels » de l'installateur, cocher seulement **serveur [[Glossary:SSH]]** et **utilitaires usuels du système**. Après installation, contrôler :
    ```bash
    systemctl list-units --type=service --state=running
    apt list --installed 2>/dev/null | wc -l

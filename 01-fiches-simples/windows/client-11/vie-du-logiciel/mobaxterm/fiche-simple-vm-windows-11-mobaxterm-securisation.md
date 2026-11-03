@@ -1,8 +1,8 @@
 # Fiche_Simple_-_VM_Windows_11_MobaXterm_Securisation
 
-- **Environnement** : Poste Windows 11 x64 d'administration (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'administration ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; MobaXterm Home/Professional, version VERSION_MOBAXTERM (à remplacer)
-- **Catégorie** : client SSH/RDP multi-sessions
+- **Catégorie** : client [[Glossary:SSH]]/RDP multi-sessions
 - **Tags** : `mobaxterm`, `windows11`, `securite`, `credentials`
 
 ---

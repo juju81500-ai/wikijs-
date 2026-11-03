@@ -1,8 +1,8 @@
 # 📄 VM_Debian_12_Services_Installation-GLPI-Serveur.md
 
-- **Environnement** : VM (Debian 12 Bookworm)
+- **Environnement** : [[Glossary:VM]] (Debian 12 Bookworm)
 - **OS / Version** : Debian 12 - Famille Debian
-- **Catégorie** : Gestion de Parc & Helpdesk / GLPI
+- **Catégorie** : Gestion de Parc & Helpdesk / [[Glossary:GLPI]]
 - **Tags** : `[debian12]`, `[glpi]`, `[apache2]`, `[mariadb]`, `[php8.2]`, `[helpdesk]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
@@ -43,7 +43,7 @@ Installer la plateforme de gestion de parc et helpdesk GLPI sur Debian 12 avec l
 ## 🔒 3. Production — Façon Sécurisée (Hardening & Isolation Enterprise)
 1. Relocalisation des dossiers sensibles (files, config, log) HORS du VirtualHost web racine :
    `mkdir -p /var/glpi/{config,files,log} && mv /var/www/html/glpi/config/* /var/glpi/config/`
-   👉 Explication : Sort les données de configuration et fichiers joints du chemin d'accès HTTP direct.
+   👉 Explication : Sort les données de configuration et fichiers joints du chemin d'accès [[Glossary:HTTP]] direct.
 
 2. Configuration du fichier de redirection interne :
    `echo "<?php define('GLPI_CONFIG_DIR', '/var/glpi/config');" > /var/www/html/glpi/inc/downstream.php`

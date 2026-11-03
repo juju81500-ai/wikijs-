@@ -1,7 +1,7 @@
 # 📄 fiche-simple-truenas-scale-25-10-sauvegarde-snapshots-repl.md
 
-- **Environnement** : TrueNAS SCALE 25.10 (Goldeye), NAS source et second NAS ou pool de réplication
-- **OS / Version** : TrueNAS SCALE 25.10 Goldeye (base Debian, système de fichiers ZFS)
+- **Environnement** : TrueNAS SCALE 25.10 (Goldeye), [[Glossary:NAS]] source et second NAS ou pool de réplication
+- **OS / Version** : TrueNAS SCALE 25.10 Goldeye (base Debian, système de fichiers [[Glossary:ZFS]])
 - **Catégorie** : Sauvegarde / Snapshots et réplication
 - **Tags** : `truenas`, `scale2510`, `zfs`, `snapshot`, `replication`, `backup`
 
@@ -33,7 +33,7 @@ Planifier des snapshots ZFS automatiques, puis répliquer ces snapshots vers un 
 
 ## ⚡ 2. Production — Façon Simplifiée
 1. Créer une tâche de réplication automatique :
-   `Data Protection > Replication Tasks > Add` : Source = `<pool>/<dataset>`, Destination = `<hote_cible>` (connexion SSH enregistrée), Schedule = `quotidien`, Retention = `identique à la source` (libellés à vérifier sur la version déployée)
+   `Data Protection > Replication Tasks > Add` : Source = `<pool>/<dataset>`, Destination = `<hote_cible>` (connexion [[Glossary:SSH]] enregistrée), Schedule = `quotidien`, Retention = `identique à la source` (libellés à vérifier sur la version déployée)
    👉 Explication : Les snapshots sont envoyés vers le second emplacement selon le planning, sans commande manuelle.
 2. Vérifier l'état de la dernière réplication :
    `Data Protection > Replication Tasks` : état et date de la dernière exécution

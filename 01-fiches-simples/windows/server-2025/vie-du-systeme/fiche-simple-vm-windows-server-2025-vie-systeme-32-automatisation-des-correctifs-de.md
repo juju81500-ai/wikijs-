@@ -38,7 +38,7 @@ Installer automatiquement les correctifs selon une fenêtre définie.
 
 ## 2. Production — Contrôles
 
-Tester les correctifs sur un groupe pilote avant la production (anneaux WSUS).
+Tester les correctifs sur un groupe pilote avant la production (anneaux [[Glossary:WSUS]]).
 
 ## 3. Production — Sécurité
 

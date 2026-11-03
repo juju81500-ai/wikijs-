@@ -1,12 +1,12 @@
 # 📄 VM_Rocky_9_Services_Installation-Et-Configuration-Cockpit.md
 
-- **Environnement** : VM (Rocky Linux 9 / RHEL 9)
+- **Environnement** : [[Glossary:VM]] (Rocky Linux 9 / [[Glossary:RHEL]] 9)
 - **OS / Version** : Rocky Linux 9 - Famille RedHat
 - **Catégorie** : Administration & Web Console / Cockpit
 - **Tags** : `[rocky9]`, `[redhat-family]`, `[cockpit]`, `[firewalld]`, `[selinux]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer la console d'administration Web Cockpit sur Rocky Linux 9, autoriser les flux dans firewalld, configurer l'accès sécurisé et la gestion des abonnements/stockage LVM.
+Installer la console d'administration Web Cockpit sur Rocky Linux 9, autoriser les flux dans firewalld, configurer l'accès sécurisé et la gestion des abonnements/stockage [[Glossary:LVM]].
 
 ---
 
@@ -37,7 +37,7 @@ Installer la console d'administration Web Cockpit sur Rocky Linux 9, autoriser l
 1. Restriction du port d'accès Cockpit à un sous-réseau d'administration dédié via firewalld Rich Rules :
    `firewall-cmd --permanent --remove-service=cockpit && firewall-cmd --permanent --add-rich-rule='rule family="ipv4" source address="192.168.1.0/24" service name="cockpit" accept' && firewall-cmd --reload`
    👉 Explication : Interdit toute tentative de connexion à la console Web hors du sous-réseau des techniciens.
-2. Surcharge des permissions sur le répertoire des certificats SSL Cockpit :
+2. Surcharge des permissions sur le répertoire des certificats [[Glossary:SSL]] Cockpit :
    `chmod 600 /etc/cockpit/ws-certs.d/*.crt`
    👉 Explication : Sécurise la chaîne de confiance et les clés privées du serveur Web.
 3. Configuration du délai d'expiration automatique des sessions inactives :

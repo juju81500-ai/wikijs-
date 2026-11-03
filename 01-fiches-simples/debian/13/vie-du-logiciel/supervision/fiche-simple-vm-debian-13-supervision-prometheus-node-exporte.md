@@ -1,12 +1,12 @@
 # 📄 VM_Debian_13_Supervision_Installation-Prometheus-Node-Exporter.md
 
-- **Environnement** : VM (Debian 13 Trixie)
+- **Environnement** : [[Glossary:VM]] (Debian 13 Trixie)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
 - **Catégorie** : Supervision & Métriques / Prometheus Node Exporter
 - **Tags** : `[debian13]`, `[prometheus]`, `[node-exporter]`, `[metrics]`, `[supervision]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer et configurer l'agent de collecte de métriques système Prometheus Node Exporter sur Debian 13 (Trixie), créer un compte système dédié sans privilèges, et sécuriser le métrique HTTP d'exposition (port 9100).
+Installer et configurer l'agent de collecte de métriques système Prometheus Node Exporter sur Debian 13 (Trixie), créer un compte système dédié sans privilèges, et sécuriser le métrique [[Glossary:HTTP]] d'exposition (port 9100).
 
 ---
 
@@ -33,7 +33,7 @@ Installer et configurer l'agent de collecte de métriques système Prometheus No
    ```
    👉 Explication : Ne pas créer un second compte concurrent ; si l'agent est installé depuis un binaire tiers, suivre les instructions de ce paquet.
 
-2. Configurer `/etc/default/prometheus-node-exporter` pour écouter sur l'IP privée assignée à la VM :
+2. Configurer `/etc/default/prometheus-node-exporter` pour écouter sur l'[[Glossary:IP]] privée assignée à la VM :
    ```text
    ARGS="--web.listen-address=192.0.2.10:9100"
    ```
@@ -46,7 +46,7 @@ Installer et configurer l'agent de collecte de métriques système Prometheus No
 ---
 
 ## 🔒 3. Production — Façon Sécurisée (Hardening & Isolation Enterprise)
-1. Si le transport TLS est nécessaire de bout en bout, créer un fichier web config et le passer explicitement à Node Exporter via `ARGS` :
+1. Si le transport [[Glossary:TLS]] est nécessaire de bout en bout, créer un fichier web config et le passer explicitement à Node Exporter via `ARGS` :
    tls_server_config:
      cert_file: /etc/ssl/certs/node-exporter.crt
      key_file: /etc/ssl/private/node-exporter.key
@@ -62,4 +62,4 @@ Installer et configurer l'agent de collecte de métriques système Prometheus No
    `echo -e "[Service]\nProtectSystem=strict\nProtectHome=true\nPrivateTmp=true\nNoNewPrivileges=true" > /etc/systemd/system/prometheus-node-exporter.service.d/hardening.conf && systemctl daemon-reload && systemctl restart prometheus-node-exporter`
    👉 Explication : Verrouille le service en lecture seule sur le reste du système de fichiers et isole ses répertoires temporaires.
 
-4. Autoriser TCP/9100 uniquement depuis l'adresse du serveur Prometheus dans le pare-feu persistant géré par l'hôte. Valider et appliquer la règle par ce gestionnaire ; ne pas utiliser `nft add rule` seul comme règle de production.
+4. Autoriser [[Glossary:TCP]]/9100 uniquement depuis l'adresse du serveur Prometheus dans le pare-feu persistant géré par l'hôte. Valider et appliquer la règle par ce gestionnaire ; ne pas utiliser `nft add rule` seul comme règle de production.

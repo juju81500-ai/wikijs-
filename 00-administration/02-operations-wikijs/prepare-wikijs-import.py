@@ -306,10 +306,10 @@ def link_glossary_terms(pages: list[Page]) -> tuple[list[Page], int]:
     pattern = re.compile(r"(?<![\w/.\-])(" + "|".join(map(re.escape, acronyms)) + r")(?![\w\-])")
     result, total = [], 0
     for page in pages:
-        if page.source.startswith("[") or page.route.endswith("/glossaire") or "/06-documentation-ext/" in page.route:
+        if page.source.startswith("[") or page.source.endswith("glossaire.md") or page.source.startswith("06-documentation-ext/"):
             result.append(page)
             continue
-        seen: set[str] = set()
+        seen: set[str] = set(re.findall(r"\[\[Glossary:([^\]]+)\]\]", page.content))
         in_code = False
         lines = []
         for line in page.content.split("\n"):
@@ -491,6 +491,11 @@ def main() -> int:
         help="actualiser les pages generees dans un dossier de sortie existant",
     )
     parser.add_argument(
+        "--glossary-in-sources",
+        action="store_true",
+        help="ecrire les liens [[Glossary:SIGLE]] directement dans les fichiers sources (idempotent)",
+    )
+    parser.add_argument(
         "--glossary-links",
         action="store_true",
         help="lier la premiere mention de chaque sigle du glossaire avec [[Glossary:SIGLE]]",
@@ -513,6 +518,14 @@ def main() -> int:
 
     try:
         source, skipped = source_pages()
+        if args.glossary_in_sources:
+            linked, count = link_glossary_terms(source)
+            if not args.dry_run:
+                for before, after in zip(source, linked):
+                    if before.content != after.content:
+                        (ROOT / after.source).write_text(after.content, encoding="utf-8", newline="\n")
+            source = linked
+            print(f"Liens glossaire ecrits dans les sources : {count}")
         source, links_rewritten = rewrite_internal_links(source)
         pages = generated_pages(source)
         if args.locale:

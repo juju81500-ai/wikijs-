@@ -2,7 +2,7 @@
 
 - **Environnement** : Tenant Atlassian Cloud administré par l'organisation (SaaS, aucune machine locale)
 - **OS / Version** : Jira Service Management Cloud (SaaS Atlassian)
-- **Catégorie** : ITSM / centre de services
+- **Catégorie** : [[Glossary:ITSM]] / centre de services
 - **Tags** : `jira-service-management`, `atlassian-cloud`, `itsm`, `saas`
 
 ---
@@ -19,11 +19,11 @@ Tester chaque parcours avant d'ouvrir le portail.
 2. Vérifier visibilité des demandes, pièces jointes, notifications, permissions et partage inter-organisation.
    👉 Explication : détecte les fuites d'information.
 
-3. Contrôler files, rapports et SLA pendant les horaires de test.
+3. Contrôler files, rapports et [[Glossary:SLA]] pendant les horaires de test.
    👉 Explication : vérifie le calcul réel des délais.
 
 4. Consulter le journal d'audit : **admin.atlassian.com > Sécurité > Journal d'audit** (selon le plan).
-   👉 Explication : confirme que les actions sensibles sont tracées; vérifier aussi SSO/MFA et arrivée/départ des agents.
+   👉 Explication : confirme que les actions sensibles sont tracées; vérifier aussi [[Glossary:SSO]]/MFA et arrivée/départ des agents.
 
 5. Publier le portail seulement après approbation du propriétaire du service.
    👉 Explication : évite une ouverture non validée.

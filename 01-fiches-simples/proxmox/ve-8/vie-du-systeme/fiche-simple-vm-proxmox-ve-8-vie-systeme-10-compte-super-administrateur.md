@@ -14,7 +14,7 @@ Définir le mot de passe root de l'hôte.
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Dans l'installateur : champ **Password** et **Email** (l'adresse reçoit les alertes).
-   👉 Explication : ce compte est `root@pam`; il se connecte à l'interface web avec le domaine **Linux PAM**.
+   👉 Explication : ce compte est `root@pam`; il se connecte à l'interface web avec le domaine **Linux [[Glossary:PAM]]**.
 
 2. Après installation, changer le mot de passe au besoin :
    ```bash
@@ -22,7 +22,7 @@ Définir le mot de passe root de l'hôte.
    ```
    👉 Explication : demande le nouveau mot de passe deux fois.
 
-3. Stocker le mot de passe dans le coffre-fort de l'équipe et activer le 2FA sur le compte (GUI : **Datacenter > Permissions > Two Factor**).
+3. Stocker le mot de passe dans le coffre-fort de l'équipe et activer le 2FA sur le compte ([[Glossary:GUI]] : **Datacenter > Permissions > Two Factor**).
    👉 Explication : le 2FA protège l'accès à l'interface web.
 
 ## 2. Production — Contrôles

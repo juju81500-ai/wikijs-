@@ -1,7 +1,7 @@
 # fiche-simple-vm-ubuntu-24-04-graylog-preflight-entrees.md
 
 - **Environnement** : Ubuntu Server 24-04: nœud Graylog + MongoDB et Data Node (laboratoire)
-- **OS / Version** : Ubuntu Server 24-04 LTS; Graylog 7.2; MongoDB 8.0
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]]; Graylog 7.2; MongoDB 8.0
 - **Catégorie** : journaux / entrées
 - **Tags** : `ubuntu2404`, `graylog`, `datanode`, `mongodb`, `preflight`, `syslog`
 
@@ -22,8 +22,8 @@ Terminer l'assistant initial et créer un premier input de test.
 2. Ouvrir l'interface depuis le réseau d'administration (URL d'exemple à remplacer) et terminer le preflight : **http://192.0.2.10:9000 > Preflight**
    👉 Explication : l'assistant configure le Data Node; supprimer ensuite toute note du mot de passe temporaire.
 
-3. Créer un input pour un flux de test autorisé : **System > Inputs > Select input > Syslog TCP/TLS > Launch new input**
-   👉 Explication : ouvrir un seul hôte source, avec TLS pour les données sensibles; documenter port, format et règle de pare-feu.
+3. Créer un input pour un flux de test autorisé : **System > Inputs > Select input > Syslog [[Glossary:TCP]]/TLS > Launch new input**
+   👉 Explication : ouvrir un seul hôte source, avec [[Glossary:TLS]] pour les données sensibles; documenter port, format et règle de pare-feu.
 
 ## 2. Production — Contrôles
 

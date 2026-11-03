@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_13_Partitionnement_Et_Systemes_De
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 13 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-13`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Choisir le mode d'installation (sys, data, diskless) et préparer les disques (LVM, ext4).
+Choisir le mode d'installation (sys, data, diskless) et préparer les disques ([[Glossary:LVM]], ext4).
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -23,7 +23,7 @@ Choisir le mode d'installation (sys, data, diskless) et préparer les disques (L
    ```sh
    setup-disk -m sys -L /dev/DISQUE
    ```
-   👉 Explication : `sys` installe le système sur disque avec persistance complète; `-L` crée des volumes LVM (racine, swap, `/boot` séparé); `data` ne ferait que préparer un disque de données et le mode `diskless` charge tout en RAM, avec `lbu` pour sauvegarder la configuration.
+   👉 Explication : `sys` installe le système sur disque avec persistance complète; `-L` crée des volumes LVM (racine, swap, `/boot` séparé); `data` ne ferait que préparer un disque de données et le mode `diskless` charge tout en [[Glossary:RAM]], avec `lbu` pour sauvegarder la configuration.
 
 3. Vérifier les volumes et les systèmes de fichiers créés :
    ```sh

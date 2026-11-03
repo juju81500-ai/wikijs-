@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_37_Deploiement_Des_Roles_Metiers
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 37 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-37`
@@ -9,17 +9,17 @@
 
 ## Problème précis à résoudre
 
-Activer les rôles du pare-feu : DHCP, NAT, VPN.
+Activer les rôles du pare-feu : [[Glossary:DHCP]], [[Glossary:NAT]], [[Glossary:VPN]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. DHCP : Services > DHCP Server > LAN > Enable, plage `IP_DEBUT` à `IP_FIN`, passerelle `IP_LAN`, Save.
+1. DHCP : Services > DHCP Server > [[Glossary:LAN]] > Enable, plage `IP_DEBUT` à `IP_FIN`, passerelle `IP_LAN`, Save.
    👉 Explication : `IP_DEBUT` et `IP_FIN` délimitent la plage distribuée.
 
-2. NAT : Firewall > NAT > Outbound (mode automatique pour le LAN vers le WAN) et Firewall > NAT > Port Forward pour publier un service.
+2. NAT : Firewall > NAT > Outbound (mode automatique pour le LAN vers le [[Glossary:WAN]]) et Firewall > NAT > Port Forward pour publier un service.
    👉 Explication : traduit les adresses internes vers l'adresse WAN et publie un service si besoin.
 
-3. VPN : VPN > OpenVPN > Wizards (ou VPN > IPsec), puis Firewall > Rules > WAN pour autoriser UDP 1194.
+3. VPN : VPN > OpenVPN > Wizards (ou VPN > IPsec), puis Firewall > Rules > WAN pour autoriser [[Glossary:UDP]] 1194.
    👉 Explication : crée un accès distant chiffré.
 
 4. Vérifier en shell :

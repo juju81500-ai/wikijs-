@@ -32,7 +32,7 @@ Vérifier que les fichiers copiés sont exploitables et que la procédure de res
    ```
    👉 Explication : on retire seulement `--dry-run`.
 
-4. Contrôler propriétaires, ACL et échantillon de fichiers :
+4. Contrôler propriétaires, [[Glossary:ACL]] et échantillon de fichiers :
    ```bash
    ls -la /tmp/restore-test | head
    getfacl -R /tmp/restore-test | head
@@ -42,7 +42,7 @@ Vérifier que les fichiers copiés sont exploitables et que la procédure de res
 
 ## 2. Production — Contrôles
 
-Planifier des restaurations périodiques et vérifier fichiers, métadonnées, RPO/RTO, compte rendu et capacité de la destination.
+Planifier des restaurations périodiques et vérifier fichiers, métadonnées, [[Glossary:RPO]]/RTO, compte rendu et capacité de la destination.
 
 ## 3. Production — Sécurité
 

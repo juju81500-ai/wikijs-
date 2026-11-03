@@ -1,6 +1,6 @@
 # 📄 Fiche_Simple_-_VM_Windows_Server_2022_Systeme_WSUS_Maj
 
-- **Environnement** : VM (Windows Server 2022, serveur WSUS) / Postes et serveurs clients du domaine
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022, serveur [[Glossary:WSUS]]) / Postes et serveurs clients du domaine
 - **OS / Version** : Windows Server 2022 - Famille Windows Server
 - **Catégorie** : Système & Services / Mises à jour
 - **Tags** : `[windows-server-2022]`, `[wsus]`, `[windows-update]`, `[gpo]`, `[powershell]`
@@ -22,7 +22,7 @@ Installer un serveur WSUS sur Windows Server 2022 pour distribuer les mises à j
    & "$env:ProgramFiles\Update Services\Tools\wsusutil.exe" postinstall CONTENT_DIR=D:\WSUS
    ```
    👉 Explication : Lance la post-installation, qui configure le répertoire de contenu et les services WSUS.
-3. Vérifier que les services WSUS et IIS sont démarrés :
+3. Vérifier que les services WSUS et [[Glossary:IIS]] sont démarrés :
    ```powershell
    Get-Service -Name WSUSService, W3SVC | Select-Object Name, Status, StartType
    ```
@@ -44,7 +44,7 @@ Installer un serveur WSUS sur Windows Server 2022 pour distribuer les mises à j
    Set-ItemProperty -Path $wu -Name "WUStatusServer" -Value "http://<nom_serveur_wsus>:8530" -Type String
    Set-ItemProperty -Path "$wu\AU" -Name "UseWUServer" -Value 1 -Type DWord
    ```
-   👉 Explication : Écrit les clés de stratégie équivalentes à la GPO « Spécifier l'emplacement intranet du service de mise à jour Microsoft ». En production, appliquer ces valeurs par GPO plutôt que localement.
+   👉 Explication : Écrit les clés de stratégie équivalentes à la [[Glossary:GPO]] « Spécifier l'emplacement intranet du service de mise à jour Microsoft ». En production, appliquer ces valeurs par GPO plutôt que localement.
 2. Forcer une analyse sur le client et contrôler le résultat :
    ```powershell
    UsoClient.exe StartScan

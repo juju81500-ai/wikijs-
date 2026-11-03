@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Wireshark_Installer
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Wireshark
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Wireshark
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Wireshark / installation
 - **Tags** : `wireshark`, `ubuntu24.04`, `vie-du-logiciel`, `installer`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Installer Wireshark (GUI) et TShark (CLI) depuis les dépôts Ubuntu.
+Installer Wireshark ([[Glossary:GUI]]) et TShark ([[Glossary:CLI]]) depuis les dépôts Ubuntu.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

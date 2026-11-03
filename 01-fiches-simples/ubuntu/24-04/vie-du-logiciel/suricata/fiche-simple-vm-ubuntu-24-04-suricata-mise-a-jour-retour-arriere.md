@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Suricata_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Suricata
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Suricata
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Suricata / mise à jour et retour arrière
 - **Tags** : `suricata`, `ubuntu24.04`, `vie-du-logiciel`, `mise-a-jour-retour-arriere`

@@ -13,7 +13,7 @@ Créer des comptes nominatifs.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Compte > Utilisateurs > Ajouter (nom, mot de passe, groupe `wheel` pour sudo).
+1. [[Glossary:GUI]] : Compte > Utilisateurs > Ajouter (nom, mot de passe, groupe `wheel` pour sudo).
    ```sh
    midclt call user.create '{"username":"ADMIN1","full_name":"Prénom Nom","password":"MOT_DE_PASSE","group_create":true,"sudo":true}'
    ```

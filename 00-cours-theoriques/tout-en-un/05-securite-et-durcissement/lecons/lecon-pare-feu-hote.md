@@ -19,8 +19,8 @@
 
 ## Prérequis et durée
 
-- Notions de TCP/IP (adresse, port, connexion établie) ; aisance avec un terminal Linux et PowerShell.
-- Laboratoire : **deux VM jetables** (serveur Debian 12 ou Ubuntu Server LTS `198.51.100.20`, poste d'administration `192.0.2.10`), avec **snapshot** et **console de l'hyperviseur** ; facultatif : une VM Windows `198.51.100.50`. Adresses de documentation uniquement (`192.0.2.0/24`, `198.51.100.0/24`, `203.0.113.0/24`, `2001:db8::/32`).
+- Notions de [[Glossary:TCP]]/IP (adresse, port, connexion établie) ; aisance avec un terminal Linux et PowerShell.
+- Laboratoire : **deux [[Glossary:VM]] jetables** (serveur Debian 12 ou Ubuntu Server [[Glossary:LTS]] `198.51.100.20`, poste d'administration `192.0.2.10`), avec **snapshot** et **console de l'hyperviseur** ; facultatif : une VM Windows `198.51.100.50`. Adresses de documentation uniquement (`192.0.2.0/24`, `198.51.100.0/24`, `203.0.113.0/24`, `2001:db8::/32`).
 - Durée : environ 3 h 30.
 
 > ⚠️ **Périmètre.** Une règle de pare-feu peut vous couper de votre propre machine en une seconde. Ne l'essayez que sur un laboratoire, avec la console de secours ouverte.
@@ -49,7 +49,7 @@ Le pare-feu **hôte** s'exécute sur la machine elle-même. Il complète le pare
 **Les trois idées clés :**
 
 1. **Suivi d'état** (*stateful*) : le pare-feu mémorise les connexions ; la réponse à une connexion que **vous** avez ouverte est acceptée automatiquement (`established,related`).
-2. **Entrée refusée, sortie permissive** : sur un serveur ordinaire, on refuse l'entrée et on autorise la sortie (mises à jour, DNS, NTP). Restreindre la sortie est plus lourd à maintenir.
+2. **Entrée refusée, sortie permissive** : sur un serveur ordinaire, on refuse l'entrée et on autorise la sortie (mises à jour, [[Glossary:DNS]], [[Glossary:NTP]]). Restreindre la sortie est plus lourd à maintenir.
 3. **Règles minimales** : une règle = *qui* (source), *quoi* (protocole, port), *vers où* (interface/adresse). Plus elle est précise, plus la surface exposée est faible. `tcp dport 22 accept` autorise le monde entier ; `ip saddr 192.0.2.0/24 tcp dport 22 accept` autorise le seul réseau d'administration.
 
 **Ordre des règles.** Les règles sont lues de haut en bas ; la première qui correspond s'applique (en nftables, `accept` ou `drop` met fin à l'évaluation de la chaîne). Une règle `drop` trop haute annule les règles `accept` qui suivent.
@@ -58,7 +58,7 @@ Le pare-feu **hôte** s'exécute sur la machine elle-même. Il complète le pare
 
 ## 2. La règle d'or : ne pas s'enfermer dehors
 
-Activez `policy drop` sans règle SSH : la session en cours survit grâce au suivi d'état (fausse impression de réussite), mais la suivante échoue.
+Activez `policy drop` sans règle [[Glossary:SSH]] : la session en cours survit grâce au suivi d'état (fausse impression de réussite), mais la suivante échoue.
 
 ![Schéma original de la chronologie anti-lockout : session A ouverte, minuterie de retour arrière, application des règles, session B de test, puis annulation de la minuterie ou restauration automatique](images/pare-feu-hote-2.svg)
 
@@ -68,7 +68,7 @@ Activez `policy drop` sans règle SSH : la session en cours survit grâce au sui
 
 1. **Snapshot préalable** de la VM, et sauvegarde des règles actuelles dans un fichier.
 2. **Accès console de secours** testé : la console de l'hyperviseur fonctionne sans réseau.
-3. **Session A ouverte** (SSH ou RDP) et conservée jusqu'à la fin.
+3. **Session A ouverte** (SSH ou [[Glossary:RDP]]) et conservée jusqu'à la fin.
 4. **Minuterie de retour arrière** armée avant d'appliquer (voir ci-dessous).
 5. **Application** des règles, puis **session B de test** ouverte depuis le poste d'administration (`192.0.2.10`).
 6. Si B réussit : **annuler la minuterie** et rendre persistant. Si B échoue : attendre la minuterie (ou la console) et corriger.
@@ -347,7 +347,7 @@ sudo nft list chain inet filtre entree | grep -n 'policy\|dport'
 2. **Service de démonstration.** Installez `nginx` (80) sur `srv-lab` ; vérifiez que `ext-lab` l'atteint.
 3. **Sauvegarde et minuterie.** Section 2 : fichier `avant.nft`, minuterie de 300 secondes.
 4. **Application.** Écrivez le fichier de la section 3, validez avec `nft -c`, appliquez avec `nft -f`.
-5. **Tests.** Depuis `adm-lab` : session B SSH réussie ; depuis `ext-lab` : SSH échoue, HTTP réussit. Lisez les refus : `sudo journalctl -k --since "5 min ago" | grep nft-refus`.
+5. **Tests.** Depuis `adm-lab` : session B SSH réussie ; depuis `ext-lab` : SSH échoue, [[Glossary:HTTP]] réussit. Lisez les refus : `sudo journalctl -k --since "5 min ago" | grep nft-refus`.
 6. **Confirmation.** Si tout est correct : `sudo systemctl stop retour-pare-feu.timer`, puis `sudo systemctl enable --now nftables` pour la persistance.
 7. **Simulation d'erreur (bien utile).** Rearmez la minuterie, **retirez** volontairement la règle SSH, appliquez, constatez que la session B échoue, puis **ne faites rien** : après 5 minutes, l'ancien état revient. Vous venez de vérifier que votre filet de sécurité fonctionne.
 8. **Variantes.** Restaurez le snapshot et refaites l'exercice avec ufw (section 4), firewalld (section 5) ou, sur une VM Windows, avec la section 7.
@@ -388,7 +388,7 @@ a) tout est autorisé sauf ce qui est interdit b) tout est refusé sauf ce qui e
 **Réponse : b.** C'est la liste d'invités : on n'entre que si une règle l'autorise.
 
 **Q2. Quelle règle doit venir en premier dans une chaîne d'entrée ?**
-a) le journal b) l'acceptation des connexions établies et du bouclage c) le refus final d) le NAT
+a) le journal b) l'acceptation des connexions établies et du bouclage c) le refus final d) le [[Glossary:NAT]]
 **Réponse : b.** Elle laisse passer les réponses légitimes et le trafic local avant les règles spécifiques.
 
 **Q3. `nft -c -f fichier` fait quoi ?**
@@ -460,7 +460,7 @@ a) c'est interdit b) ils écrivent chacun dans le même noyau et créent des rè
 - Pare-feu Windows (Microsoft Learn) : <https://learn.microsoft.com/fr-fr/windows/security/operating-system-security/network-security/windows-firewall/>
 - RFC 4890, *Recommendations for Filtering ICMPv6 Messages in Firewalls* : <https://www.rfc-editor.org/rfc/rfc4890>
 - RFC 5737 (adresses IPv4 de documentation) : <https://www.rfc-editor.org/rfc/rfc5737> et RFC 3849 (adresses IPv6 de documentation) : <https://www.rfc-editor.org/rfc/rfc3849>
-- NIST SP 800-41 Rev. 1, *Guidelines on Firewalls and Firewall Policy* : <https://csrc.nist.gov/pubs/sp/800/41/r1/final>
+- [[Glossary:NIST]] SP 800-41 Rev. 1, *Guidelines on Firewalls and Firewall Policy* : <https://csrc.nist.gov/pubs/sp/800/41/r1/final>
 
 *Si une adresse a changé, cherchez le titre de la page sur le site officiel.*
 

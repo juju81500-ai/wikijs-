@@ -11,9 +11,9 @@ OUT="${1:-fiche-machine_${HOST}.md}"
 . /etc/os-release 2>/dev/null
 virt="$(systemd-detect-virt 2>/dev/null)"
 case "$virt" in
-  lxc|lxc-libvirt|openvz) type="LXC" ;;
+  lxc|lxc-libvirt|openvz) type="[[Glossary:LXC]]" ;;
   none|"") type="Physique" ;;
-  *) type="VM ($virt)" ;;
+  *) type="[[Glossary:VM]] ($virt)" ;;
 esac
 
 ips="$(ip -o -4 addr show scope global 2>/dev/null | awk '{print $2": "$4}' | paste -sd', ' -)"
@@ -53,9 +53,9 @@ cat > "$OUT" <<EOF
 * **Rôle et Utilisation** : ${TODO}
 * **Besoins (Allocation ressources)** :
   * **vCPU** : $(nproc)
-  * **RAM** : $(free -h | awk '/^Mem:/{print $2}')
+  * **[[Glossary:RAM]]** : $(free -h | awk '/^Mem:/{print $2}')
   * **Stockage** : ${disks:-$TODO}
-  * **Adresse IP** : ${ips:-$TODO}
+  * **Adresse [[Glossary:IP]]** : ${ips:-$TODO}
 
 ---
 

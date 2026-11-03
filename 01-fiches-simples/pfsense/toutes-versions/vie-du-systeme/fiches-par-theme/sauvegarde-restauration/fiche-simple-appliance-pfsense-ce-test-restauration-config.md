@@ -1,6 +1,6 @@
 # 📄 fiche-simple-appliance-pfsense-ce-test-restauration-config.md
 
-- **Environnement** : pfSense CE en VM Proxmox VE, clone de test isolé de la production
+- **Environnement** : pfSense CE en [[Glossary:VM]] Proxmox VE, clone de test isolé de la production
 - **OS / Version** : pfSense CE 2.x (base FreeBSD) - Toutes-versions
 - **Catégorie** : Sauvegarde / Test de restauration (PRA)
 - **Tags** : `pfsense`, `ce`, `backup`, `restore`, `proxmox`, `pra`
@@ -25,12 +25,12 @@ Prouver qu'une sauvegarde chiffrée de configuration pfSense CE se restaure corr
 4. Placer le clone sur un bridge sans routage vers la production :
    `qm set <vmid_test> --net0 virtio,bridge=<bridge_isole>`
    `qm set <vmid_test> --net1 virtio,bridge=<bridge_isole_2>`
-   👉 Explication : Empêche le clone de répondre sur les réseaux réels ou d'utiliser les mêmes adresses IP.
+   👉 Explication : Empêche le clone de répondre sur les réseaux réels ou d'utiliser les mêmes adresses [[Glossary:IP]].
 5. Démarrer le clone et restaurer l'export :
    `Diagnostics > Backup & Restore > Restore Configuration` : Choose File = `<fichier_chiffre>`, mot de passe de chiffrement, Restore area = `All configuration`
    👉 Explication : La restauration se termine par un redémarrage du clone.
 6. Comparer le clone à la source :
-   `grep -c '<rule>' /cf/conf/config.xml` (sur le clone) et `Interfaces > Assignments` (correspondance WAN/LAN)
+   `grep -c '<rule>' /cf/conf/config.xml` (sur le clone) et `Interfaces > Assignments` (correspondance [[Glossary:WAN]]/LAN)
    👉 Explication : Le nombre de règles et l'affectation des interfaces doivent correspondre.
 7. Détruire le clone après validation :
    `qm stop <vmid_test> && qm destroy <vmid_test>` (sur l'hôte Proxmox)

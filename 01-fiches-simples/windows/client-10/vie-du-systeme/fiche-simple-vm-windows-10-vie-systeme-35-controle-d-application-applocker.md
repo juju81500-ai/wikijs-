@@ -13,7 +13,7 @@ N'autoriser que les applications approuvées.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Ouvrir AppLocker : **Stratégie de sécurité locale (secpol.msc) > Stratégies de contrôle de l'application > AppLocker** (édition Entreprise, ou WDAC pour les autres éditions), puis **Créer les règles par défaut**.
+1. Ouvrir AppLocker : **Stratégie de sécurité locale (secpol.msc) > Stratégies de contrôle de l'application > AppLocker** (édition Entreprise, ou [[Glossary:WDAC]] pour les autres éditions), puis **Créer les règles par défaut**.
    ```powershell
    Get-Service AppIDSvc | Select-Object Name,Status
    Set-Service AppIDSvc -StartupType Automatic

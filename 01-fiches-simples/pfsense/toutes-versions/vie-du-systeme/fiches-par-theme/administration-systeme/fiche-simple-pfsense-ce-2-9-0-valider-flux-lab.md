@@ -1,6 +1,6 @@
 # fiche-simple-pfsense-ce-2-9-0-valider-flux-lab.md
 
-- **Environnement** : pfSense CE 2.9.0 en VM Proxmox VE, réseaux WAN/LAN de laboratoire
+- **Environnement** : pfSense CE 2.9.0 en [[Glossary:VM]] Proxmox VE, réseaux [[Glossary:WAN]]/LAN de laboratoire
 - **OS / Version** : pfSense CE 2.9.0
 - **Catégorie** : Pare-feu / validation de configuration
 - **Tags** : `pfsense`, `ce`, `2.9.0`, `proxmox`, `firewall`, `lab`, `restore`
@@ -13,7 +13,7 @@ Valider la séparation WAN/LAN et prouver qu'un backup de configuration chiffré
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Confirmer WAN et LAN sur deux bridges Proxmox distincts, isolés de la production : sur le nœud Proxmox :
+1. Confirmer WAN et [[Glossary:LAN]] sur deux bridges Proxmox distincts, isolés de la production : sur le nœud Proxmox :
    ```bash
    qm config VMID | grep net
    ip -br link show type bridge
@@ -23,7 +23,7 @@ Valider la séparation WAN/LAN et prouver qu'un backup de configuration chiffré
 2. Vérifier l'assignation `vtnet0` WAN / `vtnet1` LAN et l'absence de chevauchement : **Interfaces > Assignments**, puis **Interfaces > WAN** et **Interfaces > LAN**.
    👉 Explication : les sous-réseaux WAN et LAN doivent être distincts.
 
-3. Changer les identifiants initiaux : **System > User Manager > admin > Edit** (nouveau mot de passe fort). Limiter le GUI au LAN : **System > Advanced > Admin Access** et **Firewall > Rules > WAN** (aucune règle autorisant 443/22).
+3. Changer les identifiants initiaux : **System > User Manager > admin > Edit** (nouveau mot de passe fort). Limiter le [[Glossary:GUI]] au LAN : **System > Advanced > Admin Access** et **Firewall > Rules > WAN** (aucune règle autorisant 443/22).
    👉 Explication : le mot de passe par défaut `pfsense` doit être remplacé dès la première connexion.
 
 4. Tester un flux LAN autorisé, un flux non autorisé et l'accès entrant GUI/SSH depuis WAN :

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_44_Audit_D_Exposition_Reseau
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 44 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-44`
@@ -23,7 +23,7 @@ Vérifier ce qu'un tiers voit de la machine.
    ```sh
    nc -zv ADRESSE_IP 22
    ```
-   👉 Explication : confirme que SSH est joignable depuis le réseau d'administration.
+   👉 Explication : confirme que [[Glossary:SSH]] est joignable depuis le réseau d'administration.
 
 3. Comparer avec les règles du pare-feu :
    ```sh

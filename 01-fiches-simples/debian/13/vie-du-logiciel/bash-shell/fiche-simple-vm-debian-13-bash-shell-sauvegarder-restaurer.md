@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Bash_Shell_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13 de laboratoire, compte utilisateur non privilégié
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire, compte utilisateur non privilégié
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : shell / scripting
 - **Tags** : `debian13`, `bash`, `shell`, `scripting`, `securite`

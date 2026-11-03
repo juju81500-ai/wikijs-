@@ -1,7 +1,7 @@
 # Fiche_Simple_-_Cloud_Azure_Couts
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — Azure CLI (az ; version publiée à vérifier)
+- **OS / Version** : Cloud/SaaS — Azure [[Glossary:CLI]] (az ; version publiée à vérifier)
 - **Catégorie** : cloud public / maîtrise des coûts
 - **Tags** : `azure`, `couts`, `securite`, `procedure`
 

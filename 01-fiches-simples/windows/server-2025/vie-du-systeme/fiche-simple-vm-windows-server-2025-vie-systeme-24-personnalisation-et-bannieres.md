@@ -19,7 +19,7 @@ Afficher un avertissement légal à la connexion.
    Set-ItemProperty $k legalnoticecaption 'Accès restreint'
    Set-ItemProperty $k legalnoticetext 'Système réservé aux personnes autorisées. Les actions sont journalisées.'
    ```
-   👉 Explication : affiche un avertissement avant l'ouverture de session (console et RDP).
+   👉 Explication : affiche un avertissement avant l'ouverture de session (console et [[Glossary:RDP]]).
 
 2. Contrôler :
    ```powershell
@@ -32,7 +32,7 @@ Afficher un avertissement légal à la connexion.
 
 ## 2. Production — Contrôles
 
-Faire valider le texte par le juridique et l'appliquer par GPO en domaine.
+Faire valider le texte par le juridique et l'appliquer par [[Glossary:GPO]] en domaine.
 
 ## 3. Production — Sécurité
 

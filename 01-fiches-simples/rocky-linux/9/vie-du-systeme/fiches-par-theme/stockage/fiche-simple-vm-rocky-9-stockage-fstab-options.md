@@ -1,7 +1,7 @@
 # 📄 fiche-simple-vm-rocky-9-stockage-fstab-options.md
 
-- **Environnement** : VM ou serveur Rocky Linux
-- **OS / Version** : Rocky Linux 9 / RHEL 9 (util-linux, systemd)
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 (util-linux, systemd)
 - **Catégorie** : Stockage / Montages et options de sécurité
 - **Tags** : `[rocky9]`, `[rhel9]`, `[fstab]`, `[mount]`, `[tmp]`, `[hardening]`
 
@@ -62,7 +62,7 @@ Vérifier les options de montage de `/tmp`, `/var/tmp` et `/dev/shm`, puis ajout
    ```bash
    findmnt -R -o TARGET,FSTYPE,OPTIONS /
    ```
-   👉 Explication : Repérer les montages qui ne portent pas `nodev` ou `nosuid` alors qu'ils ne doivent contenir ni périphérique ni binaire SUID.
+   👉 Explication : Repérer les montages qui ne portent pas `nodev` ou `nosuid` alors qu'ils ne doivent contenir ni périphérique ni binaire [[Glossary:SUID]].
 
 3. Ne pas appliquer `noexec` sur `/tmp` sans test, car de nombreux outils y compilent ou exécutent des fichiers temporaires.
    ```bash

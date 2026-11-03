@@ -1,7 +1,7 @@
 # Fiche_Simple_-_Cloud_Azure_Journalisation_Audit
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — Azure CLI (az ; version publiée à vérifier)
+- **OS / Version** : Cloud/SaaS — Azure [[Glossary:CLI]] (az ; version publiée à vérifier)
 - **Catégorie** : cloud public / journalisation et audit
 - **Tags** : `azure`, `journalisation_audit`, `securite`, `procedure`
 

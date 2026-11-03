@@ -1,7 +1,7 @@
 # fiche-simple-vm-ubuntu-24-04-lemp-retour-arriere.md
 
-- **Environnement** : VM Ubuntu Server 24-04 dédiée à une application Web PHP
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble); Nginx, PHP 8.3, MariaDB 10.11
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 dédiée à une application Web PHP
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble); Nginx, PHP 8.3, MariaDB 10.11
 - **Catégorie** : web / retour arrière
 - **Tags** : `ubuntu24.04`, `nginx`, `php8.3`, `mariadb`, `lemp`, `rollback`
 

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_27_Durcissement_De_L_Acces
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 27 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-27`
@@ -9,14 +9,14 @@
 
 ## Problème précis à résoudre
 
-Limiter l'accès SSH et web.
+Limiter l'accès [[Glossary:SSH]] et web.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Dans Système > Paramètres > Administration > Shell sécurisé : activer SSH, décocher « Autoriser la connexion root » et « Autoriser l'authentification par mot de passe », choisir le port et les interfaces (LAN uniquement).
+1. Dans Système > Paramètres > Administration > Shell sécurisé : activer SSH, décocher « Autoriser la connexion root » et « Autoriser l'authentification par mot de passe », choisir le port et les interfaces ([[Glossary:LAN]] uniquement).
    👉 Explication : seules les clés sont acceptées et seulement depuis le réseau interne.
 
-2. Dans la même page, forcer HTTPS, changer le port du GUI, restreindre l'écoute au LAN et activer la protection contre les attaques par force brute.
+2. Dans la même page, forcer HTTPS, changer le port du [[Glossary:GUI]], restreindre l'écoute au LAN et activer la protection contre les attaques par force brute.
    👉 Explication : réduit l'exposition de l'interface web.
 
 3. Contrôler :
@@ -32,7 +32,7 @@ Conserver un accès console en cas d'erreur.
 
 ## 3. Production — Sécurité
 
-Ne jamais ouvrir SSH ou le GUI sur le WAN.
+Ne jamais ouvrir SSH ou le GUI sur le [[Glossary:WAN]].
 
 ## Validation et retour arrière
 

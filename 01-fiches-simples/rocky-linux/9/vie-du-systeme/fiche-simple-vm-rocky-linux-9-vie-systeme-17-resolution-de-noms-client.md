@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_17_Resolution_De_Noms_Client
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 17 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-17`
@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Configurer les serveurs DNS.
+Configurer les serveurs [[Glossary:DNS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 

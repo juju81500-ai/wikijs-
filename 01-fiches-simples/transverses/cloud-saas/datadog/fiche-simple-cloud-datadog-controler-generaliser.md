@@ -35,7 +35,7 @@ Définir des critères de passage (aucune erreur, consommation conforme) avant c
 
 ## 3. Production — Sécurité
 
-- Autoriser seulement les FQDN/ports publiés pour le site Datadog concerné.
+- Autoriser seulement les [[Glossary:FQDN]]/ports publiés pour le site Datadog concerné.
 - Examiner le contenu des flares avant partage.
 
 ## Validation et retour arrière

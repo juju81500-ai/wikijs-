@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_BlueMind_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13; BlueMind 5.7; guide public
+- **Environnement** : [[Glossary:VM]] Debian 13; BlueMind 5.7; guide public
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Vie du logiciel / BlueMind — Sauvegarder / restaurer
 - **Tags** : `bluemind`, `serveur`, `vie-du-logiciel`, `sauvegarder_restaurer`

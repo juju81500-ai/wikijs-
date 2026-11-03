@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Sauvegarder et restaurer profils, inventaire de modules et configuration SSH de PowerShell sur Windows Server 2022.
+Sauvegarder et restaurer profils, inventaire de modules et configuration [[Glossary:SSH]] de PowerShell sur Windows Server 2022.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -41,7 +41,7 @@ Intégrer ces fichiers à la sauvegarde habituelle du serveur et la chiffrer. Co
 
 ## 3. Production — Sécurité
 
-- Protéger l'accès au dossier (ACL restreintes).
+- Protéger l'accès au dossier ([[Glossary:ACL]] restreintes).
 - Ne pas sauvegarder de clés privées en clair.
 
 ## Validation et retour arrière

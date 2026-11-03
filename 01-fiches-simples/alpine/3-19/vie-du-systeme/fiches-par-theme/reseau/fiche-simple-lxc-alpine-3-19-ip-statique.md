@@ -1,12 +1,12 @@
 # 📄 LXC_Alpine_3.19_Reseau_Fixer-IP-OpenRC.md
 
-- **Environnement** : LXC (Proxmox VE / PXC)
+- **Environnement** : [[Glossary:LXC]] (Proxmox VE / PXC)
 - **OS / Version** : Alpine Linux 3-19 - Famille Alpine
 - **Catégorie** : Réseau
 - **Tags** : `[alpine3.19]`, `[alpine]`, `[reseau]`, `[ip-statique]`, `[openrc]`, `[apk]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Fixer une adresse IP statique permanente, configurer le résolveur DNS et sécuriser la pile réseau sur un conteneur LXC Alpine Linux 3-19 sous OpenRC.
+Fixer une adresse [[Glossary:IP]] statique permanente, configurer le résolveur [[Glossary:DNS]] et sécuriser la pile réseau sur un conteneur LXC Alpine Linux 3-19 sous OpenRC.
 
 ---
 
@@ -26,7 +26,7 @@ Fixer une adresse IP statique permanente, configurer le résolveur DNS et sécur
 ---
 
 ## ⚡ 2. Production — Façon Simplifiée
-1. Sur l'hôte Proxmox, relever la configuration du CT :
+1. Sur l'hôte Proxmox, relever la configuration du [[Glossary:CT]] :
    ```bash
    pct config CTID
    ```
@@ -46,7 +46,7 @@ Fixer une adresse IP statique permanente, configurer le résolveur DNS et sécur
 
 ## 🔒 3. Production — Façon Sécurisée
 
-1. Réserver l'adresse dans le plan IP ou DHCP et conserver Proxmox comme source unique de configuration.
+1. Réserver l'adresse dans le plan IP ou [[Glossary:DHCP]] et conserver Proxmox comme source unique de configuration.
 2. Définir les règles de filtrage au niveau Proxmox/routeur selon les flux requis. Ne pas activer Awall/iptables dans le CT sans vérifier les capacités et la politique de l'hôte.
 3. Ne pas désactiver IPv6 globalement ni rendre `/etc/resolv.conf` immuable. Si IPv6 est interdit par la politique, le désactiver au niveau réseau approprié et vérifier que DNS, routage et supervision restent opérationnels.
-4. Tester SSH et les services depuis un second terminal et garder la console Proxmox accessible. En cas de perte d'accès, corriger la configuration réseau du CT depuis l'hôte.
+4. Tester [[Glossary:SSH]] et les services depuis un second terminal et garder la console Proxmox accessible. En cas de perte d'accès, corriger la configuration réseau du CT depuis l'hôte.

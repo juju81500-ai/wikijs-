@@ -81,5 +81,5 @@ sudo docker compose start wiki
 ## Références du pack
 
 - Déploiement Docker : `02-fiches-completes/Docker/Installation-Deploiement/28-installation-wikijs-docker-postgresql-traefik.md`
-- Import par SSH : `00-administration/02-operations-wikijs/guide-import-wikijs-2-5-317-par-ssh-docker.md`
+- Import par [[Glossary:SSH]] : `00-administration/02-operations-wikijs/guide-import-wikijs-2-5-317-par-ssh-docker.md`
 - Import manuel : `wikijs-copier-coller/IMPORT-MANIFEST.csv`

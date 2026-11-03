@@ -1,6 +1,6 @@
 # 📄 fiche-simple-vmware-esxi-8-sauvegarde-configuration-hote.md
 
-- **Environnement** : Hôte physique VMware ESXi 8 (ESXi Shell ou SSH, poste d'administration avec vCLI ou PowerCLI)
+- **Environnement** : Hôte physique VMware ESXi 8 (ESXi Shell ou [[Glossary:SSH]], poste d'administration avec vCLI ou PowerCLI)
 - **OS / Version** : VMware ESXi 8.0 - Sauvegarde de configuration
 - **Catégorie** : Sauvegarde / Configuration de l'hôte
 - **Tags** : `[vmware-esxi-8]`, `[vim-cmd]`, `[vicfg-cfgbackup]`, `[sauvegarde]`, `[pra]`, `[hardening]`
@@ -18,7 +18,7 @@ Sauvegarder la configuration complète d'un hôte ESXi 8 (réseau, stockage, com
 vim-cmd vmsvc/getallvms
 esxcli storage filesystem list
 ```
-👉 Explication : liste les VM enregistrées sur l'hôte avec leur identifiant, et les datastores montés avec leur taille et leur espace libre.
+👉 Explication : liste les [[Glossary:VM]] enregistrées sur l'hôte avec leur identifiant, et les datastores montés avec leur taille et leur espace libre.
 
 2. Générer la sauvegarde de configuration depuis l'ESXi Shell :
 ```bash
@@ -37,7 +37,7 @@ ls -lh /scratch/downloads/
 - **Host Client > Virtual Machines** (inventaire des VM) et **Storage > Datastores** (taille et espace libre).
   👉 Explication : équivalent de `vim-cmd vmsvc/getallvms` et `esxcli storage filesystem list`.
 - Télécharger l'archive depuis le navigateur à l'URL affichée par la commande de sauvegarde (`http://<nom_de_l_hote>/scratch/downloads/...`).
-  👉 Explication : la génération de l'archive se fait en shell ou en PowerCLI; le téléchargement peut se faire en GUI.
+  👉 Explication : la génération de l'archive se fait en shell ou en PowerCLI; le téléchargement peut se faire en [[Glossary:GUI]].
 
 ## ⚡ 2. Production — Façon Simplifiée
 1. Sauvegarder la configuration depuis un poste d'administration :

@@ -1,6 +1,6 @@
 # 📄 Fiche_Simple_-_VM_Windows_Server_2022_Securite_Lockout_Audit
 
-- **Environnement** : VM (Windows Server 2022, contrôleur de domaine ou serveur membre)
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022, contrôleur de domaine ou serveur membre)
 - **OS / Version** : Windows Server 2022 - Famille Windows Server
 - **Catégorie** : Sécurité / Authentification et audit
 - **Tags** : `[windows-server-2022]`, `[lockout]`, `[audit]`, `[auditpol]`, `[active-directory]`, `[powershell]`
@@ -39,7 +39,7 @@ Définir une politique de verrouillage de compte qui freine les attaques par for
    ```powershell
    net accounts /lockoutthreshold:5 /lockoutduration:30 /lockoutwindow:30
    ```
-   👉 Explication : Règle le seuil, la durée et la fenêtre de verrouillage. En domaine, ces valeurs doivent passer par la GPO « Stratégie de verrouillage du compte » du domaine.
+   👉 Explication : Règle le seuil, la durée et la fenêtre de verrouillage. En domaine, ces valeurs doivent passer par la [[Glossary:GPO]] « Stratégie de verrouillage du compte » du domaine.
 2. Activer l'audit de la sous-catégorie « Verrouillage du compte » (identifiant indépendant de la langue) :
    ```powershell
    auditpol /set /subcategory:{0CCE9217-69AE-11D9-BED3-505054503030} /success:enable /failure:enable
@@ -54,7 +54,7 @@ Définir une politique de verrouillage de compte qui freine les attaques par for
    ```powershell
    wevtutil sl Security /ms:1073741824
    ```
-   👉 Explication : Évite que les événements de verrouillage soient écrasés avant d'être collectés par WEF ou un SIEM.
+   👉 Explication : Évite que les événements de verrouillage soient écrasés avant d'être collectés par [[Glossary:WEF]] ou un [[Glossary:SIEM]].
 2. Vérifier les derniers verrouillages enregistrés :
    ```powershell
    Get-WinEvent -FilterHashtable @{ LogName = 'Security'; Id = 4740 } -MaxEvents 20 -ErrorAction SilentlyContinue | Select-Object TimeCreated, Message

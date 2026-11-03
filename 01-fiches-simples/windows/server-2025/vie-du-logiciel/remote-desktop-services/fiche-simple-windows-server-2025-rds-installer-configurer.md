@@ -1,6 +1,6 @@
 # Fiche_Simple_-_Windows_Server_2025_RDS_Installer_Configurer
 
-- **Environnement** : VM Windows Server 2025 de lab, contrôleur de domaine exclu
+- **Environnement** : [[Glossary:VM]] Windows Server 2025 de lab, contrôleur de domaine exclu
 - **OS / Version** : Windows Server 2025 Desktop Experience
 - **Catégorie** : Vie du logiciel / Installation et configuration RDS
 - **Tags** : `windows-server-2025`, `rds`, `session-host`, `licences`, `powershell`
@@ -21,17 +21,17 @@ Installer l'hôte de session RDS et configurer le serveur de licences sur un ser
    Get-WindowsFeature RDS-RD-Server
    ```
    👉 Explication : Ajoute uniquement le rôle hôte de session; ne crée ni collection, ni Broker, ni licences. Redémarrer si demandé.
-3. Installer le rôle de licences sur le serveur désigné (GUI : même assistant, service de rôle **Gestionnaire de licences Bureau à distance**) :
+3. Installer le rôle de licences sur le serveur désigné ([[Glossary:GUI]] : même assistant, service de rôle **Gestionnaire de licences Bureau à distance**) :
    ```powershell
    Install-WindowsFeature -Name RDS-Licensing -IncludeManagementTools
    ```
    👉 Explication : Ajoute le serveur de licences RDS; l'activation et l'ajout des CAL se font ensuite dans **Outils d'administration** > **Services Bureau à distance** > **Gestionnaire de licences Bureau à distance** (`licmgr.msc`).
-4. Déclarer le mode de licence et le serveur sur l'hôte de session, via GPO ou `gpedit.msc` : **Configuration ordinateur** > **Modèles d'administration** > **Composants Windows** > **Services Bureau à distance** > **Hôte de session Bureau à distance** > **Licences** > **Utiliser les serveurs de licence spécifiés** et **Définir le mode de gestion des licences**. Pour un déploiement RDS avec Broker :
+4. Déclarer le mode de licence et le serveur sur l'hôte de session, via [[Glossary:GPO]] ou `gpedit.msc` : **Configuration ordinateur** > **Modèles d'administration** > **Composants Windows** > **Services Bureau à distance** > **Hôte de session Bureau à distance** > **Licences** > **Utiliser les serveurs de licence spécifiés** et **Définir le mode de gestion des licences**. Pour un déploiement RDS avec Broker :
    ```powershell
    Set-RDLicenseConfiguration -LicenseServer NOM_SERVEUR_LICENCES -Mode PerUser -ConnectionBroker NOM_BROKER
    Get-RDLicenseConfiguration -ConnectionBroker NOM_BROKER
    ```
-   👉 Explication : NOM_SERVEUR_LICENCES et NOM_BROKER sont à remplacer par les FQDN réels; `PerUser` est à remplacer par `PerDevice` selon les CAL achetées. Cette cmdlet exige un Broker existant.
+   👉 Explication : NOM_SERVEUR_LICENCES et NOM_BROKER sont à remplacer par les [[Glossary:FQDN]] réels; `PerUser` est à remplacer par `PerDevice` selon les CAL achetées. Cette cmdlet exige un Broker existant.
 5. Contrôler le rôle et le service :
    ```powershell
    Get-WindowsFeature RDS-RD-Server

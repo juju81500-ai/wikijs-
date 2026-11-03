@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_13_Partitionnement_Et_Systemes_De
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 13 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-13`
@@ -13,7 +13,7 @@ Choisir une disposition disque saine.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Contrôler la disposition obtenue (l'installateur crée par défaut un volume LVM `ubuntu-vg/ubuntu-lv`, souvent plus petit que le disque) :
+1. Contrôler la disposition obtenue (l'installateur crée par défaut un volume [[Glossary:LVM]] `ubuntu-vg/ubuntu-lv`, souvent plus petit que le disque) :
    ```bash
    lsblk -o NAME,SIZE,FSTYPE,MOUNTPOINTS
    df -hT

@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_Passbolt_Securiser_TLS
 
-- **Environnement** : VM Debian 13 dédiée avec domaine, base et SMTP définis
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée avec domaine, base et [[Glossary:SMTP]] définis
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : gestionnaire de secrets / serveur
 - **Tags** : `debian13`, `passbolt`, `secrets`, `tls`, `sauvegarde`
@@ -17,13 +17,13 @@ Installer certificat valide, restreindre base et protéger clés cryptographique
    getent hosts passbolt.example.com
    sudo ss -lntp
    ```
-   👉 Explication : remplacer le FQDN; confirmer l’interface attendue.
+   👉 Explication : remplacer le [[Glossary:FQDN]]; confirmer l’interface attendue.
 
-2. Configurer TLS dans Nginx ou proxy choisi
+2. Configurer [[Glossary:TLS]] dans Nginx ou proxy choisi
    ```text
    Navigateur > ouvrir la documentation officielle : https://www.passbolt.com/docs/hosting/install/ce/debian/
    ```
-   👉 Explication : suivre doc correspondant au point de terminaison TLS. Détail à confirmer dans la documentation officielle avant application : Configurer certificat avec nom DNS, chaîne complète et renouvellement. Rediriger HTTP vers HTTPS après validation.
+   👉 Explication : suivre doc correspondant au point de terminaison TLS. Détail à confirmer dans la documentation officielle avant application : Configurer certificat avec nom [[Glossary:DNS]], chaîne complète et renouvellement. Rediriger [[Glossary:HTTP]] vers HTTPS après validation.
 
 3. Valider certificat
    ```bash
@@ -36,11 +36,11 @@ Installer certificat valide, restreindre base et protéger clés cryptographique
    ```text
    Navigateur > ouvrir la documentation officielle : https://www.passbolt.com/docs/hosting/install/ce/debian/
    ```
-   👉 Explication : faire valider règles par réseau. Détail à confirmer dans la documentation officielle avant application : Autoriser HTTPS aux segments utilisateurs approuvés. Limiter SSH à l’administration et refuser base depuis les clients.
+   👉 Explication : faire valider règles par réseau. Détail à confirmer dans la documentation officielle avant application : Autoriser HTTPS aux segments utilisateurs approuvés. Limiter [[Glossary:SSH]] à l’administration et refuser base depuis les clients.
 
 ## 2. Production — Contrôles
 
-Faire valider TLS, pare-feu, MFA, journaux, rotation de clés et séparation des rôles.
+Faire valider TLS, pare-feu, [[Glossary:MFA]], journaux, rotation de clés et séparation des rôles.
 
 ## 3. Production — Sécurité
 

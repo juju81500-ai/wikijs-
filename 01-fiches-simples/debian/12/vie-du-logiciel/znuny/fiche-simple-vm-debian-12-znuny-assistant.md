@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-12-znuny-assistant.md
 
-- **Environnement** : VM Debian 12 dédiée (Apache/mod_perl, MariaDB 10.11), Znuny 7.3.8
+- **Environnement** : [[Glossary:VM]] Debian 12 dédiée (Apache/mod_perl, MariaDB 10.11), Znuny 7.3.8
 - **OS / Version** : Debian 12 Bookworm; Znuny 7.3.8
-- **Catégorie** : ITSM / ticketing
+- **Catégorie** : [[Glossary:ITSM]] / ticketing
 - **Tags** : `debian12`, `znuny`, `installer`, `assistant`
 
 ---
@@ -13,7 +13,7 @@ Terminer l'installation de Znuny via l'assistant web, puis fermer l'accès à l'
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Depuis le réseau d'administration, ouvrir temporairement `https://support.example.net/znuny/installer.pl` (remplacer par le vrai nom DNS).
+1. Depuis le réseau d'administration, ouvrir temporairement `https://support.example.net/znuny/installer.pl` (remplacer par le vrai nom [[Glossary:DNS]]).
    👉 Explication : l'assistant web configure la base, le courriel et le propriétaire du service.
 
 2. Dans l'assistant, choisir la base `znuny` et le compte dédié créé à l'étape MariaDB.

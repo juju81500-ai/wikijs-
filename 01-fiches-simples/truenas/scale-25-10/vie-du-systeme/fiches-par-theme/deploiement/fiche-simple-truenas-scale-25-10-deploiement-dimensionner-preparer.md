@@ -1,6 +1,6 @@
 # fiche-simple-truenas-scale-25-10-deploiement-dimensionner-preparer.md
 
-- **Environnement** : NAS autonome pilote (matériel x86-64 ou VM de laboratoire)
+- **Environnement** : [[Glossary:NAS]] autonome pilote (matériel x86-64 ou [[Glossary:VM]] de laboratoire)
 - **OS / Version** : TrueNAS SCALE 25.10 Community Edition
 - **Catégorie** : stockage NAS / cadrage
 - **Tags** : `truenas`, `scale2510`, `zfs`, `nas`, `smb`, `sauvegarde`
@@ -13,16 +13,16 @@ Valider matériel, disques et réseau avant l'installation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Confirmer 8 Go de RAM minimum, au moins deux disques de même capacité pour un miroir, un support de boot dédié (20 Go recommandé) et un accès console/IPMI.
+1. Confirmer 8 Go de [[Glossary:RAM]] minimum, au moins deux disques de même capacité pour un miroir, un support de boot dédié (20 Go recommandé) et un accès console/IPMI.
    👉 Explication : conditions de la documentation TrueNAS.
 
 2. Sur un hôte Linux de préparation ou depuis le Shell TrueNAS, lister les disques vus :
    ```bash
    lsblk -o NAME,SIZE,MODEL,SERIAL
    ```
-   👉 Explication : les disques de données doivent être visibles directement (HBA/JBOD), sans RAID matériel masquant SMART.
+   👉 Explication : les disques de données doivent être visibles directement ([[Glossary:HBA]]/JBOD), sans [[Glossary:RAID]] matériel masquant [[Glossary:SMART]].
 
-3. Définir VLANs, DNS, NTP, certificats TLS, administrateurs, partage prévu et stratégie de chiffrement des datasets.
+3. Définir VLANs, [[Glossary:DNS]], [[Glossary:NTP]], certificats [[Glossary:TLS]], administrateurs, partage prévu et stratégie de chiffrement des datasets.
    👉 Explication : évite de redécouvrir ces choix après création du pool.
 
 ## 2. Production — Contrôles

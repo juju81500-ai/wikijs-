@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Ubuntu_24.04_Zeek_Prerequis_Limites
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Zeek
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Zeek
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Zeek / prérequis et limites
 - **Tags** : `zeek`, `ubuntu24.04`, `vie-du-logiciel`, `prerequis-limites`
@@ -14,7 +14,7 @@ Cadrer un capteur Zeek passif (journaux de métadonnées réseau) sur VM Ubuntu 
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Obtenir l’autorisation d’analyse (propriétaire, interface INTERFACE_AUTORISEE, réseaux LOCAL_NET_AUTORISE, rétention des logs).
-   👉 Explication : Zeek enregistre des métadonnées de connexions, DNS, HTTP, TLS; elles sont sensibles. Les valeurs en majuscules sont des placeholders à remplacer.
+   👉 Explication : Zeek enregistre des métadonnées de connexions, [[Glossary:DNS]], [[Glossary:HTTP]], [[Glossary:TLS]]; elles sont sensibles. Les valeurs en majuscules sont des placeholders à remplacer.
 
 2. Contrôler les ressources :
    ```bash
@@ -24,7 +24,7 @@ Cadrer un capteur Zeek passif (journaux de métadonnées réseau) sur VM Ubuntu 
    ip -br link
    df -h /opt /var
    ```
-   👉 Explication : Zeek est gourmand en CPU/RAM et disque selon le débit; prévoir une interface de capture dédiée.
+   👉 Explication : Zeek est gourmand en [[Glossary:CPU]]/RAM et disque selon le débit; prévoir une interface de capture dédiée.
 
 3. Choisir le mode d’installation.
    👉 Explication : Ubuntu 24-04 : paquets binaires OBS de l’éditeur (ligne LTS `zeek-8.0`, préfixe `/opt/zeek`); vérifier la ligne publiée. Le dépôt Ubuntu peut contenir une version plus ancienne.
@@ -34,12 +34,12 @@ Cadrer un capteur Zeek passif (journaux de métadonnées réseau) sur VM Ubuntu 
 
 ## 2. Production — Contrôles
 
-Faire valider architecture (SPAN/TAP), volumétrie et propriétaire des journaux.
+Faire valider architecture ([[Glossary:SPAN]]/TAP), volumétrie et propriétaire des journaux.
 
 ## 3. Production — Sécurité
 
 - Capture passive uniquement.
-- Interface de capture sans IP de service si possible.
+- Interface de capture sans [[Glossary:IP]] de service si possible.
 
 ## Validation et retour arrière
 

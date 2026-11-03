@@ -1,8 +1,8 @@
 # fiche-simple-vm-debian-13-ocs-inventory-postgresql.md
 
-- **Environnement** : VM Debian 13 dédiée, OCS Inventory 3.0 (Nginx, uWSGI, PostgreSQL local)
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée, OCS Inventory 3.0 (Nginx, uWSGI, PostgreSQL local)
 - **OS / Version** : Debian 13 Trixie; OCS Inventory 3.0; PostgreSQL 17
-- **Catégorie** : inventaire de parc / ITSM
+- **Catégorie** : inventaire de parc / [[Glossary:ITSM]]
 - **Tags** : `debian13`, `ocs-inventory`, `ocs3`, `postgresql`, `nginx`, `base-de-donnees`
 
 ---
@@ -27,7 +27,7 @@ Installer PostgreSQL 17 et créer un rôle et une base dédiés à OCS Inventory
    ```bash
    sudo -u postgres psql
    ```
-   👉 Explication : le script SQL suivant se saisit dans cette invite interactive.
+   👉 Explication : le script [[Glossary:SQL]] suivant se saisit dans cette invite interactive.
 
 3. Dans `psql`, créer le rôle, saisir son mot de passe à l'invite, puis créer la base (`ocsuser` et `ocsdb` sont des noms d'exemple à adapter) :
    ```bash

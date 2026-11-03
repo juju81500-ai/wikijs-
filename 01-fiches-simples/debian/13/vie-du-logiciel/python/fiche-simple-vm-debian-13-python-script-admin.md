@@ -33,7 +33,7 @@ Lancer un script Python d'administration sans élévation excessive.
 
 ## 2. Production — Contrôles
 
-Préférer un compte de service dédié, des droits ciblés ou une opération APT documentée; limiter fichiers accessibles et capabilities.
+Préférer un compte de service dédié, des droits ciblés ou une opération [[Glossary:APT]] documentée; limiter fichiers accessibles et capabilities.
 
 ## 3. Production — Sécurité
 

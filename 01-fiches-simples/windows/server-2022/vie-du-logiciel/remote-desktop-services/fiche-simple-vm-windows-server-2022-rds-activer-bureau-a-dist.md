@@ -1,15 +1,15 @@
 # Fiche_Simple_-_VM_Windows_Server_2022_RDS_Activer_Bureau_a_Dist
 
-- **Environnement** : VM ou serveur pilote Windows Server 2022 avec accès console
+- **Environnement** : [[Glossary:VM]] ou serveur pilote Windows Server 2022 avec accès console
 - **OS / Version** : Windows Server 2022 Desktop Experience
-- **Catégorie** : Vie du logiciel / Activation RDP
+- **Catégorie** : Vie du logiciel / Activation [[Glossary:RDP]]
 - **Tags** : `windows-server-2022`, `rds`, `rdp`, `nla`, `powershell`
 
 ---
 
 ## Problème précis à résoudre
 
-Activer l'accès Bureau à distance sur un serveur pilote uniquement après approbation, conserver NLA et limiter les flux au réseau d'administration.
+Activer l'accès Bureau à distance sur un serveur pilote uniquement après approbation, conserver [[Glossary:NLA]] et limiter les flux au réseau d'administration.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -23,13 +23,13 @@ Activer l'accès Bureau à distance sur un serveur pilote uniquement après appr
    👉 Explication : Autorise les connexions et impose NLA. Utiliser uniquement sur le serveur approuvé et prévoir un accès console.
 3. Dans `wf.msc` > **Règles de trafic entrant**, activer les règles Bureau à distance uniquement sur les profils Domain/Private requis; dans **Étendue**, limiter les adresses distantes au réseau d'administration de lab.
    👉 Explication : Le profil et le sous-réseau sont à remplacer par le périmètre réellement autorisé; ne pas autoriser le profil Public par défaut.
-4. Depuis un poste pilote, lancer `mstsc`, saisir le nom DNS approuvé et tester un compte utilisateur autorisé.
+4. Depuis un poste pilote, lancer `mstsc`, saisir le nom [[Glossary:DNS]] approuvé et tester un compte utilisateur autorisé.
    👉 Explication : Confirme le chemin client et l'authentification NLA; le simple test du port ne valide pas l'accès utilisateur.
 
 ## 2. Production — Contrôles
 
 - Valider l'usage métier, les groupes autorisés, les règles réseau, le certificat et la stratégie de journalisation.
-- Préférer un VPN ou RD Gateway approuvée; ne pas exposer TCP/UDP 3389 directement à Internet.
+- Préférer un [[Glossary:VPN]] ou RD Gateway approuvée; ne pas exposer [[Glossary:TCP]]/UDP 3389 directement à Internet.
 - Confirmer l'édition serveur et les exigences de licence RDS si des sessions multi-utilisateurs sont prévues.
 
 ## 3. Production — Sécurité

@@ -1,6 +1,6 @@
 # 📄 Fiche_Simple_-_VM_Debian_13_Securite_SSH_Cle_Sshd
 
-- **Environnement** : VM ou serveur Debian 13 accessible en SSH
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 13 accessible en [[Glossary:SSH]]
 - **OS / Version** : Debian 13 (Trixie) - OpenSSH 10.x - Famille Debian
 - **Catégorie** : Sécurité / Accès distant (SSH)
 - **Tags** : `[debian13]`, `[debian]`, `[ssh]`, `[sshd]`, `[cle-ssh]`, `[hardening]`

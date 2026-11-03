@@ -2,16 +2,16 @@
 
 - **OS / Version** : Debian 13 Trixie, Samba 4.22 depuis les dépôts Debian
 - **Type de fiche** : Installation/Déploiement
-- **Rôle** : Contrôleur de domaine Active Directory Samba, DNS interne SAMBA_INTERNAL
+- **Rôle** : Contrôleur de domaine Active Directory Samba, [[Glossary:DNS]] interne SAMBA_INTERNAL
 - **Tags** : `debian13`, `samba`, `active-directory`, `domain-controller`, `dns`, `lab`
 
 ## 1. Limites et prérequis
 
 Fiche simple : [cadrer les limites et prérequis](../../../../01-fiches-simples/debian/13/vie-du-logiciel/samba-ad-dc/fiche-simple-vm-debian-13-samba-ad-dc-prerequis.md).
 
-Cette procédure est un parcours de laboratoire pour un domaine neuf. Elle n'est ni une procédure de migration d'une forêt Microsoft existante, ni une garantie de compatibilité complète avec tous les rôles et GPO Microsoft. Vérifier la matrice de compatibilité Samba et valider les applications avant toute adoption en production.
+Cette procédure est un parcours de laboratoire pour un domaine neuf. Elle n'est ni une procédure de migration d'une forêt Microsoft existante, ni une garantie de compatibilité complète avec tous les rôles et [[Glossary:GPO]] Microsoft. Vérifier la matrice de compatibilité Samba et valider les applications avant toute adoption en production.
 
-Pour une mise en service réelle, prévoir au minimum plusieurs DC dans des domaines de panne distincts, sauvegardes testées, supervision, NTP, procédures de reprise, revue de sécurité et validation de chaque fonctionnalité requise. Une seule VM DC ci-dessous sert uniquement à l'apprentissage.
+Pour une mise en service réelle, prévoir au minimum plusieurs [[Glossary:DC]] dans des domaines de panne distincts, sauvegardes testées, supervision, [[Glossary:NTP]], procédures de reprise, revue de sécurité et validation de chaque fonctionnalité requise. Une seule [[Glossary:VM]] DC ci-dessous sert uniquement à l'apprentissage.
 
 Les noms et adresses `AD.LAB.TEST`, `ADLAB` et `192.0.2.10` sont des exemples réservés à la documentation. Choisir un domaine DNS contrôlé par l'organisation, un nom NetBIOS et une adresse statique avant le provisionnement. Une fois la forêt créée, les renommer n'est pas une opération courante.
 
@@ -26,7 +26,7 @@ Configurer l'adresse statique, le nom court `dc1`, l'heure et une résolution lo
 192.0.2.10 dc1.ad.lab.test dc1
 ```
 
-Ne pas associer le FQDN du DC à `127.0.1.1`. Vérifier que le système utilise une source NTP fiable et que l'adresse statique est celle prévue pour le domaine :
+Ne pas associer le [[Glossary:FQDN]] du DC à `127.0.1.1`. Vérifier que le système utilise une source NTP fiable et que l'adresse statique est celle prévue pour le domaine :
 
 ```bash
 hostnamectl
@@ -34,7 +34,7 @@ timedatectl status
 ip -br address
 ```
 
-Installer le paquet du rôle AD DC et ses outils d'administration :
+Installer le paquet du rôle [[Glossary:AD]] DC et ses outils d'administration :
 
 ```bash
 sudo apt update
@@ -50,7 +50,7 @@ Si des services Samba autonomes sont déjà installés, ne pas les laisser concu
 
 Fiche simple : [provisionner le domaine de laboratoire](../../../../01-fiches-simples/debian/13/vie-du-logiciel/samba-ad-dc/fiche-simple-vm-debian-13-samba-ad-dc-provisionner.md).
 
-Le provisionnement crée la base AD, le partage SYSVOL, le domaine Kerberos et la configuration DNS. Il s'agit d'une opération d'initialisation, pas d'une commande à relancer sur un DC déjà provisionné.
+Le provisionnement crée la base AD, le partage [[Glossary:SYSVOL]], le domaine Kerberos et la configuration DNS. Il s'agit d'une opération d'initialisation, pas d'une commande à relancer sur un DC déjà provisionné.
 
 ```bash
 sudo samba-tool domain provision \
@@ -108,7 +108,7 @@ kinit Administrator@AD.LAB.TEST
 klist
 ```
 
-Tester les commandes d'administration et les ACL SYSVOL :
+Tester les commandes d'administration et les [[Glossary:ACL]] SYSVOL :
 
 ```bash
 sudo samba-tool domain info 127.0.0.1
@@ -123,9 +123,9 @@ sudo samba-tool dbcheck
 
 Fiche simple : [ouvrir uniquement les flux AD nécessaires](../../../../01-fiches-simples/debian/13/vie-du-logiciel/samba-ad-dc/fiche-simple-vm-debian-13-samba-ad-dc-reseau-securite.md).
 
-Autoriser les flux AD uniquement entre les clients/serveurs approuvés et les contrôleurs de domaine. Le besoin comprend notamment DNS TCP/UDP 53, Kerberos TCP/UDP 88, NTP UDP 123, RPC endpoint mapper TCP 135, LDAP TCP/UDP 389, SMB TCP 445, changement de mot de passe Kerberos TCP/UDP 464 et RPC dynamique TCP (plage définie par la politique système). NetBIOS 137-139 et Global Catalog 3268/3269 ne sont à ouvrir que si le scénario les requiert.
+Autoriser les flux AD uniquement entre les clients/serveurs approuvés et les contrôleurs de domaine. Le besoin comprend notamment DNS [[Glossary:TCP]]/UDP 53, Kerberos TCP/UDP 88, NTP [[Glossary:UDP]] 123, RPC endpoint mapper TCP 135, [[Glossary:LDAP]] TCP/UDP 389, SMB TCP 445, changement de mot de passe Kerberos TCP/UDP 464 et RPC dynamique TCP (plage définie par la politique système). NetBIOS 137-139 et Global Catalog 3268/3269 ne sont à ouvrir que si le scénario les requiert.
 
-Ne jamais publier LDAP, SMB, RPC, Kerberos ou l'interface d'administration sur Internet. Restreindre SSH et l'accès console, activer les mises à jour Debian, protéger les bases et secrets, surveiller les échecs Kerberos et les changements AD. Évaluer les algorithmes hérités et les besoins NTLM à partir des clients réels; ne pas activer de compatibilité faible sans exception approuvée.
+Ne jamais publier LDAP, SMB, RPC, Kerberos ou l'interface d'administration sur Internet. Restreindre [[Glossary:SSH]] et l'accès console, activer les mises à jour Debian, protéger les bases et secrets, surveiller les échecs Kerberos et les changements AD. Évaluer les algorithmes hérités et les besoins [[Glossary:NTLM]] à partir des clients réels; ne pas activer de compatibilité faible sans exception approuvée.
 
 ## 7. Sauvegarde et reprise
 

@@ -9,7 +9,7 @@
 
 ## Problème précis à résoudre
 
-Enregistrer le poste dans le CMDB et valider qui peut l'administrer.
+Enregistrer le poste dans le [[Glossary:CMDB]] et valider qui peut l'administrer.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -21,7 +21,7 @@ Enregistrer le poste dans le CMDB et valider qui peut l'administrer.
    ```
    👉 Explication : nom, série, modèle, système et date d'installation pour la fiche CMDB.
 
-2. Créer la fiche dans le CMDB (GLPI : **Parc > Ordinateurs > Ajouter**) avec le propriétaire, le site, le service, la criticité et la date de fin de support.
+2. Créer la fiche dans le CMDB ([[Glossary:GLPI]] : **Parc > Ordinateurs > Ajouter**) avec le propriétaire, le site, le service, la criticité et la date de fin de support.
    👉 Explication : le CMDB est la référence du parc.
 
 3. Revoir qui a accès : groupe d'administrateurs et accès distants.
@@ -31,7 +31,7 @@ Enregistrer le poste dans le CMDB et valider qui peut l'administrer.
    ```
    👉 Explication : valide que seuls les comptes prévus ont des droits.
 
-4. Lier la fiche à l'inventaire automatique, aux clés BitLocker et à la gestion LAPS.
+4. Lier la fiche à l'inventaire automatique, aux clés BitLocker et à la gestion [[Glossary:LAPS]].
    ```powershell
    Get-BitLockerVolume C: | Select-Object -ExpandProperty KeyProtector | Select-Object KeyProtectorType,KeyProtectorId
    ```

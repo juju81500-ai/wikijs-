@@ -1,8 +1,8 @@
 # Fiche_Simple_-_Windows_Server_2022_Citrix_CVAD_Configurer
 
-- **Environnement** : Serveurs Windows Server 2022 (Delivery Controller, StoreFront, licences, SQL) et VM VDA, compte administrateur nominatif
+- **Environnement** : Serveurs Windows Server 2022 (Delivery Controller, StoreFront, licences, [[Glossary:SQL]]) et [[Glossary:VM]] VDA, compte administrateur nominatif
 - **OS / Version** : Windows Server 2022; version CVAD à vérifier auprès de l'éditeur
-- **Catégorie** : VDI / virtualisation d'applications / Citrix
+- **Catégorie** : [[Glossary:VDI]] / virtualisation d'applications / Citrix
 - **Tags** : `citrix`, `cvad`, `windows-server`, `configuration`
 
 ---
@@ -13,7 +13,7 @@ Configurer licences, catalogues de machines, groupes de mise à disposition et S
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Configurer le serveur de licences : GUI **Studio > Configuration > Licensing > Add license** puis **Add** le serveur LIC_CITRIX:27000 (port par défaut à vérifier), choisir l'édition et importer le fichier de licence CHEMIN_LICENCE.
+1. Configurer le serveur de licences : [[Glossary:GUI]] **Studio > Configuration > Licensing > Add license** puis **Add** le serveur LIC_CITRIX:27000 (port par défaut à vérifier), choisir l'édition et importer le fichier de licence CHEMIN_LICENCE.
    👉 Explication : CHEMIN_LICENCE est à remplacer ; le fichier de licence vient du compte Citrix et n'est jamais stocké dans la fiche.
 
 2. Créer un catalogue : GUI **Studio > Machine Catalogs > Create Machine Catalog** ; choisir le type de système (multi-session ou session unique), le mode d'alimentation, le mode de gestion et sélectionner les machines VDA.
@@ -27,7 +27,7 @@ New-BrokerMachine -MachineName 'DOMAINE\VDA01' -CatalogUid (Get-BrokerCatalog -N
 ```
    👉 Explication : CAT_SERVEURS, DOMAINE et VDA01 sont à remplacer ; vérifier les paramètres avec Get-Help New-BrokerCatalog pour votre version.
 
-4. Créer le groupe de mise à disposition : GUI **Studio > Delivery Groups > Create Delivery Group**, choisir le catalogue, les utilisateurs autorisés (groupe AD GROUPE_UTILISATEURS) et les applications ou bureaux publiés.
+4. Créer le groupe de mise à disposition : GUI **Studio > Delivery Groups > Create Delivery Group**, choisir le catalogue, les utilisateurs autorisés (groupe [[Glossary:AD]] GROUPE_UTILISATEURS) et les applications ou bureaux publiés.
    👉 Explication : GROUPE_UTILISATEURS est un groupe de sécurité AD à remplacer.
 
 5. Ajouter le Controller à StoreFront : console StoreFront **Stores > Manage Delivery Controllers > Add** avec DC1_CITRIX, type XenDesktop, transport HTTPS si le certificat du Controller est en place.

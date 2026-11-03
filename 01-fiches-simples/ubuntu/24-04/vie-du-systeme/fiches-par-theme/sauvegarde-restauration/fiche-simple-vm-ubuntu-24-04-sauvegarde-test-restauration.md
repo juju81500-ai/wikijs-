@@ -1,7 +1,7 @@
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Sauvegarde_Test_Restauration
 
-- **Environnement** : VM Ubuntu Server (dépôt de sauvegarde BorgBackup accessible)
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat) - BorgBackup 1.2.x depuis le dépôt Noble
+- **Environnement** : [[Glossary:VM]] Ubuntu Server (dépôt de sauvegarde BorgBackup accessible)
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble Numbat) - BorgBackup 1.2.x depuis le dépôt Noble
 - **Catégorie** : Sauvegarde / Validation PRA-DRP par restauration
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[borgbackup]`, `[sauvegarde]`, `[restauration]`, `[pra]`, `[sha256sum]`
 
@@ -42,7 +42,7 @@ Prouver qu'une sauvegarde BorgBackup d'un serveur Ubuntu Server 24-04 LTS est ex
    ```bash
    time sudo borg extract <chemin_depot_borg>::<nom_archive> <chemin_des_donnees>
    ```
-   👉 *Explication : Le temps mesuré doit être comparé au RTO (délai maximal de reprise) défini par le plan de reprise.*
+   👉 *Explication : Le temps mesuré doit être comparé au [[Glossary:RTO]] (délai maximal de reprise) défini par le plan de reprise.*
 2. Consigner le résultat dans le dossier d'exploitation : nom de l'archive, date du test, empreintes comparées, durée mesurée et opérateur.
    👉 *Explication : Une restauration non tracée ne prouve pas la capacité de reprise à l'audit.*
 

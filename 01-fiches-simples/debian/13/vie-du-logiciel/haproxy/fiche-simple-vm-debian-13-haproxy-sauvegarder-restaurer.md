@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_HAProxy_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; HAProxy des dépôts Debian
 - **Catégorie** : répartiteur de charge / HAProxy / Sauvegarder et restaurer
 - **Tags** : `debian13`, `haproxy`, `sauvegarde`

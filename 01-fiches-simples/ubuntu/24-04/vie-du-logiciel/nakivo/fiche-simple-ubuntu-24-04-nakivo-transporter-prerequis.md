@@ -1,6 +1,6 @@
 # Fiche_Simple_-_Ubuntu_24.04_Nakivo_Transporter_Prerequis
 
-- **Environnement** : Ubuntu Server 24-04 LTS x64; NAKIVO Backup & Replication Transporter
+- **Environnement** : Ubuntu Server 24-04 [[Glossary:LTS]] x64; NAKIVO Backup & Replication Transporter
 - **OS / Version** : Ubuntu Server 24-04 LTS — explicitement listé dans les exigences NAKIVO consultées; valider la version du produit
 - **Catégorie** : sauvegarde / prérequis
 - **Tags** : `ubuntu-24.04`, `nakivo`, `transporter`, `transporter-prerequis`
@@ -20,7 +20,7 @@ Vérifier qu’un hôte Ubuntu Server 24-04 LTS x64 remplit les prérequis publi
    ```
    👉 Explication : la matrice NAKIVO de déploiement liste explicitement Ubuntu 24-04 Server LTS x64; `x86_64` est l’architecture attendue.
 
-2. Vérifier la présence de SSH et l’accès réseau requis avant d’ajouter le Transporter :
+2. Vérifier la présence de [[Glossary:SSH]] et l’accès réseau requis avant d’ajouter le Transporter :
    ```bash
    systemctl is-active ssh
    ```

@@ -13,7 +13,7 @@ Garder l'heure exacte.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Serveurs NTP > Ajouter.
+1. [[Glossary:GUI]] : Système > Serveurs [[Glossary:NTP]] > Ajouter.
    ```sh
    midclt call system.ntpserver.create '{"address": "SERVEUR_NTP", "prefer": true}'
    ```

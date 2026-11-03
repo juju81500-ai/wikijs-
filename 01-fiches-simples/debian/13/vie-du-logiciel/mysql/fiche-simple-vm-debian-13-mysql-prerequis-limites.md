@@ -1,6 +1,6 @@
 # Fiche_Simple_-_VM_Debian_13_MySQL_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; MySQL Community (dépôt officiel Oracle)
 - **Catégorie** : base de données / MySQL / Prérequis et limites
 - **Tags** : `debian13`, `mysql`, `prerequis`
@@ -28,7 +28,7 @@ Vérifier qu'un MySQL Community peut être installé sur Debian 13 et connaître
    👉 Explication : MariaDB et MySQL ne cohabitent pas sur les mêmes paquets ni le même port.
 
 3. Vérifier la prise en charge de Debian 13 par le dépôt Oracle :
-   👉 Explication : Debian 13 ne distribue pas MySQL : il faut le dépôt APT officiel MySQL (paquet `mysql-apt-config`). Vérifier sur la page de téléchargement que Debian 13 est prise en charge pour la version visée (8.4 LTS) ; sinon utiliser MariaDB, une VM Ubuntu LTS ou un conteneur officiel.
+   👉 Explication : Debian 13 ne distribue pas MySQL : il faut le dépôt [[Glossary:APT]] officiel MySQL (paquet `mysql-apt-config`). Vérifier sur la page de téléchargement que Debian 13 est prise en charge pour la version visée (8.4 [[Glossary:LTS]]) ; sinon utiliser MariaDB, une VM Ubuntu LTS ou un conteneur officiel.
 
 ## 2. Production — Contrôles
 
