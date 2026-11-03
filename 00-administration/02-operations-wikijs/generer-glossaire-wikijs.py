@@ -11,6 +11,7 @@ SOURCE = ROOT / "00-cours-theoriques" / "glossaire.md"
 OUT_DIR = Path(__file__).resolve().parent
 LOCALE = "fr"
 DOC_PAGE = f"/{LOCALE}/00-cours-theoriques/glossaire"
+LINK_LABEL = "Voir le glossaire complet"
 ENTRY = re.compile(r"^- \*\*(.+?)\*\*(?: \(([^)]+)\))?(?: \([^)]*\))? ?: (.+)$")
 
 
@@ -37,11 +38,25 @@ def parse() -> list[dict]:
                 "aliases": names[1:],
                 "category": category,
                 "documentationPage": DOC_PAGE,
+                "linkLabel": LINK_LABEL,
+                "externalReferences": [],
+                "relatedTerms": [],
                 "caseSensitive": names[0].isupper(),
                 "autoLink": False,
             }
         )
+    link_related_terms(terms)
     return terms
+
+
+def link_related_terms(terms: list[dict]) -> None:
+    known = {t["term"] for t in terms if re.fullmatch(r"[A-Z][A-Z0-9]{1,7}", t["term"])}
+    for item in terms:
+        text = f"{item['expansion']} {item['definition']}"
+        found = dict.fromkeys(
+            word for word in re.findall(r"(?<![\w-])[A-Z][A-Z0-9]{1,7}(?![\w-])", text) if word in known
+        )
+        item["relatedTerms"] = [w for w in found if w != item["term"]][:5]
 
 
 def main() -> None:
@@ -51,11 +66,12 @@ def main() -> None:
     )
     with (OUT_DIR / "glossaire-wikijs.csv").open("w", encoding="utf-8", newline="") as handle:
         writer = csv.writer(handle)
-        writer.writerow(("term", "expansion", "definition", "aliases", "category", "documentationPage", "caseSensitive", "autoLink"))
+        writer.writerow(("term", "expansion", "definition", "aliases", "category", "documentationPage", "linkLabel", "relatedTerms", "caseSensitive", "autoLink"))
         for item in terms:
             writer.writerow(
                 (item["term"], item["expansion"], item["definition"], "|".join(item["aliases"]),
-                 item["category"], item["documentationPage"], item["caseSensitive"], item["autoLink"])
+                 item["category"], item["documentationPage"], item["linkLabel"], "|".join(item["relatedTerms"]),
+                 item["caseSensitive"], item["autoLink"])
             )
     print(f"{len(terms)} termes écrits dans {OUT_DIR}")
 
