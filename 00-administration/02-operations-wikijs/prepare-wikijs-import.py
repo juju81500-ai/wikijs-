@@ -288,6 +288,57 @@ def localize_pages(pages: list[Page], locale: str) -> list[Page]:
     ]
 
 
+def glossary_acronyms() -> list[str]:
+    path = Path(__file__).resolve().parent / "glossaire-wikijs.json"
+    terms = json.loads(path.read_text(encoding="utf-8"))
+    return sorted(
+        {t["term"] for t in terms if re.fullmatch(r"[A-Z][A-Z0-9]{1,7}", t["term"])},
+        key=len,
+        reverse=True,
+    )
+
+
+PROTECTED = re.compile(r"`[^`]*`|!?\[[^\]]*\]\([^)]*\)|\[\[[^\]]*\]\]|https?://\S+|<[^>]+>")
+
+
+def link_glossary_terms(pages: list[Page]) -> tuple[list[Page], int]:
+    acronyms = glossary_acronyms()
+    pattern = re.compile(r"(?<![\w/.\-])(" + "|".join(map(re.escape, acronyms)) + r")(?![\w\-])")
+    result, total = [], 0
+    for page in pages:
+        if page.source.startswith("[") or page.route.endswith("/glossaire") or "/06-documentation-ext/" in page.route:
+            result.append(page)
+            continue
+        seen: set[str] = set()
+        in_code = False
+        lines = []
+        for line in page.content.split("\n"):
+            if line.lstrip().startswith(("```", "~~~")):
+                in_code = not in_code
+            if in_code or line.lstrip().startswith("#"):
+                lines.append(line)
+                continue
+            parts, last = [], 0
+            for protected in PROTECTED.finditer(line):
+                parts.append((line[last:protected.start()], True))
+                parts.append((protected.group(0), False))
+                last = protected.end()
+            parts.append((line[last:], True))
+
+            def link(match: re.Match[str]) -> str:
+                nonlocal total
+                term = match.group(1)
+                if term in seen:
+                    return term
+                seen.add(term)
+                total += 1
+                return f"[[Glossary:{term}]]"
+
+            lines.append("".join(pattern.sub(link, text) if editable else text for text, editable in parts))
+        result.append(replace(page, content="\n".join(lines)))
+    return result, total
+
+
 def validate_pages(pages: list[Page]) -> list[str]:
     errors: list[str] = []
     routes: dict[str, str] = {}
@@ -440,6 +491,11 @@ def main() -> int:
         help="actualiser les pages generees dans un dossier de sortie existant",
     )
     parser.add_argument(
+        "--glossary-links",
+        action="store_true",
+        help="lier la premiere mention de chaque sigle du glossaire avec [[Glossary:SIGLE]]",
+    )
+    parser.add_argument(
         "--locale",
         help="prefixer routes et liens par une langue Wiki.js (ex. fr) ; l'accueil devient <langue>/home",
     )
@@ -461,6 +517,9 @@ def main() -> int:
         pages = generated_pages(source)
         if args.locale:
             pages = localize_pages(pages, args.locale)
+        if args.glossary_links:
+            pages, glossary_links = link_glossary_terms(pages)
+            print(f"Liens glossaire inseres : {glossary_links}")
     except (OSError, ValueError) as error:
         print(f"ERREUR : {error}")
         return 1
