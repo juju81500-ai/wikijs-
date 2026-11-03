@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TSSR - Nivvlem</title>
+
+  <!-- Thème sombre Docsify -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/docsify-themeable/dist/css/theme-simple-dark.css">
+
+  <!-- Thème Prism.js (coloration syntaxique foncée) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/themes/prism-tomorrow.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+<style>
+  body {
+    background-color: #1e1e20;
+    color: #dcd7ba;
+    font-family: 'Segoe UI', 'Inter', sans-serif;
+    font-size: 15px;
+    line-height: 1.6;
+  }
+
+  /* Lien Accueil */
+  [href="#/"] {
+    background: #2a2a2d;
+    padding: 8px 12px;
+    border-radius: 4px;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  /* Sidebar */
+  .sidebar {
+    background-color: #1c1c1e;
+    color: #dcd7ba;
+  }
+
+  .sidebar ul li a {
+    color: #c586c0;
+    text-decoration: none;
+  }
+
+  .sidebar ul li a:hover {
+    color: #d4bfff;
+  }
+
+  /* Titre repliables */
+  details summary {
+    font-size: 1em;
+    font-weight: 500;
+    color: #d4bfff;
+    cursor: pointer;
+    padding: 6px 0;
+    position: relative;
+    list-style: none;
+  }
+
+  details summary::before {
+    content: "▶";
+    position: absolute;
+    left: -1em;
+    color: #c586c0;
+    transition: transform 0.3s ease;
+  }
+
+  details[open] summary::before {
+    transform: rotate(90deg);
+  }
+
+  /* Code inline */
+  code {
+    background-color: #2d3142;
+    color: #81a1c1;
+    border-radius: 4px;
+    padding: 2px 4px;
+    font-family: monospace;
+    font-size: 0.95em;
+  }
+
+  /* Blocs de code */
+  pre {
+    background-color: #2d3142 !important;
+    color: #81a1c1;
+    border-radius: 6px;
+    padding: 1em;
+    overflow-x: auto;
+  }
+
+  /* Blocs info (comme ::: tip, ::: info) */
+  .markdown-section blockquote {
+    background-color: #232326;
+    border-left: 3px solid #c586c0;
+    padding: 0.5em 1em;
+    color: #dcd7ba;
+  }
+</style>
+
+</head>
+<body>
+  <div id="app">
+    <a href="#/" style="position: fixed; top: 10px; right: 10px; z-index: 100;">🏠 Accueil</a>
+  </div>
+
+  <!-- Configuration Docsify -->
+  <script>
+    window.$docsify = {
+      name: 'TSSR',
+      repo: '',
+      loadSidebar: true,
+      loadNavbar: true,
+      subMaxLevel: 2,
+      auto2top: true,
+      relativePath: true,
+      homepage: 'README.md',
+      sidebarDisplayLevel: 0,
+      search: {
+        maxAge: 86400000,
+        placeholder: '🔍 Rechercher...',
+        noData: 'Aucun résultat trouvé',
+        depth: 4,
+        paths: 'auto',
+        hideOtherSidebarContent: false
+      },
+      copyCode: {
+        buttonText: '📋 Copier',
+        errorText: 'Erreur',
+        successText: 'Copié !'
+      }
+    };
+  </script>
+
+  <!-- Docsify Core + Plugins -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify@4"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify/lib/plugins/search.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/docsify-copy-code"></script>
+
+  <!-- ✅ Plugin pour sidebar repliable persistante -->
+  <script src="https://cdn.jsdelivr.net/npm/docsify-sidebar-collapse/dist/docsify-sidebar-collapse.min.js">  </script>
+
+  <!-- Prism.js Core -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/prism.min.js"></script>
+  <!-- Langages supplémentaires -->
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-bash.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-powershell.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/prismjs@1.29.0/components/prism-json.min.js"></script>
+
+  <!-- Forcer la coloration Prism si nécessaire -->
+  <script>
+    window.$docsify = window.$docsify || {};
+    window.$docsify.plugins = [].concat(function(hook) {
+      hook.doneEach(function() {
+        Prism.highlightAll();
+      });
+    }, window.$docsify.plugins || []);
+  </script>
+</body>
+</html>
