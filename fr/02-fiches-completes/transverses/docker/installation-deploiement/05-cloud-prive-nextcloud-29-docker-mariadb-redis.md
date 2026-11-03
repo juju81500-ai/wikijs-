@@ -2,11 +2,11 @@
 title: "Migrer un cloud Nextcloud 29 conteneurisé"
 description: "Fiche simple : [préparer la migration](../../../../01-fiches-simples/transverses/docker/nextcloud/fiche-simple-docker-nextcloud29-migration-preparer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["nextcloud", "docker", "migration", "mariadb", "redis", "tls"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Migrer un cloud Nextcloud 29 conteneurisé

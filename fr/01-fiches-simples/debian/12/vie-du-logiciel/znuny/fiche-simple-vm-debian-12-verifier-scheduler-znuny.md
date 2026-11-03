@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-verifier-scheduler-znuny"
 description: "Vérifier que le scheduler Znuny est lancé et que les tâches de fond ne restent pas bloquées."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "znuny", "scheduler", "logs", "itsm"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-debian-12-verifier-scheduler-znuny.md

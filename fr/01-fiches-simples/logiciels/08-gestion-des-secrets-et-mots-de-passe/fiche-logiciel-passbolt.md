@@ -1,12 +1,12 @@
 ---
 title: "Passbolt"
-description: "Couvert — Passbolt Community Edition Debian 13 avec TLS, sauvegarde et reprise."
+description: "Couvert — Passbolt Community Edition Debian 13 avec [[Glossary:TLS]], sauvegarde et reprise."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "08-gestion-des-secrets-et-mots-de-passe", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Passbolt

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows 11 mRemoteNG Mise A Jour Rollback"
 description: "Mettre à jour mRemoteNG avec retour arrière possible."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["mremoteng", "windows11", "mise-a-jour", "rollback"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_11_mRemoteNG_Mise_A_Jour_Rollback

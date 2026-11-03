@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-cloud-datadog-installer-agent-linux-pilote"
-description: "Enrôler un seul hôte pilote dans Datadog et confirmer la remontée des métriques sans exposer de clé API."
+description: "Enrôler un seul hôte pilote dans Datadog et confirmer la remontée des métriques sans exposer de clé [[Glossary:API]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["datadog", "saas", "agent", "linux", "observabilite", "api-key"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-cloud-datadog-installer-agent-linux-pilote.md

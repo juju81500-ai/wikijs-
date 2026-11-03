@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-server-2025-production-retour-arriere"
 description: "Prévoir et appliquer le retour arrière en cas d'échec."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows-server-2025", "installation", "production", "uefi", "openssh"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # fiche-simple-vm-windows-server-2025-production-retour-arriere.md

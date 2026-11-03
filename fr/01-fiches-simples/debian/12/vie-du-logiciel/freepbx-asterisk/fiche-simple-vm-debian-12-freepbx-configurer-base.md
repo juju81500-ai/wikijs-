@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-freepbx-configurer-base"
 description: "Configurer les accès, trunks et routes d'appel de base sans exposer de secrets ni permettre les appels non autorisés."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "freepbx", "asterisk", "sip", "tls", "srtp"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-freepbx-configurer-base.md

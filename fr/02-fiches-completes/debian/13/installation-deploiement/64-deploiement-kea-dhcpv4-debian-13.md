@@ -2,11 +2,11 @@
 title: "Déployer Kea DHCPv4 sur Debian 13"
 description: "Fiche simple : [cadrer le périmètre Kea](../../../../01-fiches-simples/debian/13/vie-du-logiciel/dhcp/fiche-simple-vm-debian-13-kea-cadrer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["debian13", "kea", "dhcpv4", "isc", "networking", "lab"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Kea DHCPv4 sur Debian 13

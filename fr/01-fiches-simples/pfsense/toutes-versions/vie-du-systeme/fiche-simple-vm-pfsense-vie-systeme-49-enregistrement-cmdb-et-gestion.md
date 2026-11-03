@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM pfSense Vie Systeme 49 Enregistrement Cmdb Et Gestion"
 description: "Déclarer le pare-feu dans l'inventaire."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["pfsense", "vie-du-systeme", "cycle-de-vie", "etape-49"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_49_Enregistrement_Cmdb_Et_Gestion

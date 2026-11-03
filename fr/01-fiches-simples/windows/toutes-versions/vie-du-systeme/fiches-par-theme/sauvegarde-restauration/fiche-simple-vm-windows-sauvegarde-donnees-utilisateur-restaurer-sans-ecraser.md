@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-sauvegarde-donnees-utilisateur-restaurer-sans-ecraser"
 description: "Restaurer des fichiers sans détruire ceux qui existent déjà."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows", "windows10", "windows11", "sauvegarde", "restauration", "robocopy"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # fiche-simple-vm-windows-sauvegarde-donnees-utilisateur-restaurer-sans-ecraser.md

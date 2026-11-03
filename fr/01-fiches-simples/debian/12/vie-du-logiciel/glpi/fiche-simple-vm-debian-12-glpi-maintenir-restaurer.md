@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-glpi-maintenir-restaurer"
 description: "Mettre à niveau ou revenir en arrière en conservant la cohérence entre la base GLPI et ses fichiers."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "glpi", "backup", "upgrade", "restore", "rollback"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-glpi-maintenir-restaurer.md

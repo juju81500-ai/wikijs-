@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Rocky Linux 9 Vie Systeme 13 Partitionnement Et Systemes De"
 description: "Découper le disque de façon extensible."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "vie-du-systeme", "cycle-de-vie", "etape-13"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_13_Partitionnement_Et_Systemes_De

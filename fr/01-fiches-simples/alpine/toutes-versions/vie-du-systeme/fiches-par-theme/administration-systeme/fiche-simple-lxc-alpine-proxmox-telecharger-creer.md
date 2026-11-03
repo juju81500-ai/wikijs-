@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-lxc-alpine-proxmox-telecharger-creer"
-description: "Télécharger un template Alpine maintenu et créer un CT LXC avec configuration minimale, non privilégiée et adaptée au service."
+description: "Télécharger un template Alpine maintenu et créer un [[Glossary:CT]] LXC avec configuration minimale, non privilégiée et adaptée au service."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine", "proxmox", "lxc", "template", "unprivileged"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-lxc-alpine-proxmox-telecharger-creer.md

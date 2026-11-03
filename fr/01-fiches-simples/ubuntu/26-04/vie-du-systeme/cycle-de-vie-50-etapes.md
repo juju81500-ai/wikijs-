@@ -2,11 +2,11 @@
 title: "Cycle de vie 50 étapes : Ubuntu 26-04"
 description: "Cycle complet multi-OS : [Cycle de vie 50 étapes](../../../../00-administration/01-gouvernance-architecture/cycle-de-vie-50-etapes.md)."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["cycle-de-vie", "checklist", "ubuntu", "installation", "production", "verification"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Cycle de vie 50 étapes : Ubuntu 26-04

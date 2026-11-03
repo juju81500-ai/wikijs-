@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-bind9-autoritatif-politique-zones"
-description: "Configurer BIND en autoritatif strict et déclarer la zone directe et inverse."
+description: "Configurer [[Glossary:BIND]] en autoritatif strict et déclarer la zone directe et inverse."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "bind9", "zone", "acl"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-bind9-autoritatif-politique-zones.md

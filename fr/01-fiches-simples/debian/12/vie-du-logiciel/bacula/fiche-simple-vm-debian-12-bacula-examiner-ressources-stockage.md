@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-bacula-examiner-ressources-stockage"
 description: "Identifier les noms exacts de ressources Bacula et vérifier le répertoire de stockage."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "bacula", "backports", "postgresql", "storage", "director"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-bacula-examiner-ressources-stockage.md

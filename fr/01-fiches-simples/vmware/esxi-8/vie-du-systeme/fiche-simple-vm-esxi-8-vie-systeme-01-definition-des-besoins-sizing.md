@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM ESXi 8 Vie Systeme 01 Definition Des Besoins Sizing"
 description: "Dimensionner l'hôte ESXi avant l'achat ou l'installation."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["esxi8", "vie-du-systeme", "cycle-de-vie", "etape-01"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_ESXi_8_Vie_Systeme_01_Definition_Des_Besoins_Sizing

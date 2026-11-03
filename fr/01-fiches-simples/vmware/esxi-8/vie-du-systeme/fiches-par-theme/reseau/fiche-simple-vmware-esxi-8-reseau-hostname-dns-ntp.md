@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vmware-esxi-8-reseau-hostname-dns-ntp"
-description: "Définir le nom d'hôte complet (FQDN), les serveurs DNS et la synchronisation NTP d'un hôte ESXi 8 avec esxcli, puis restreindre le client NTP aux seuls serveurs autorisés."
+description: "Définir le nom d'hôte complet ([[Glossary:FQDN]]), les serveurs [[Glossary:DNS]] et la synchronisation [[Glossary:NTP]] d'un hôte ESXi 8 avec esxcli, puis restreindre le client NTP aux seuls serveurs autorisés."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["vmware-esxi-8", "esxcli", "reseau", "dns", "ntp", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vmware-esxi-8-reseau-hostname-dns-ntp.md

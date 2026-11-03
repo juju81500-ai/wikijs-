@@ -1,12 +1,12 @@
 ---
 title: "LXC_Alpine_3.19_Reseau_Fixer-IP-OpenRC"
-description: "Fixer une adresse IP statique permanente, configurer le résolveur DNS et sécuriser la pile réseau sur un conteneur LXC Alpine Linux 3-19 sous OpenRC."
+description: "Fixer une adresse [[Glossary:IP]] statique permanente, configurer le résolveur [[Glossary:DNS]] et sécuriser la pile réseau sur un conteneur LXC Alpine Linux 3-19 sous OpenRC."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine3-19", "alpine", "reseau", "ip-statique", "openrc", "apk", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 LXC_Alpine_3.19_Reseau_Fixer-IP-OpenRC.md

@@ -1,12 +1,12 @@
 ---
 title: "Packer : builders VM et cloud, publication d'images"
-description: "- Périmètre : création d'images dorées via builders VM (par exemple QEMU, VirtualBox, VMware, vSphere, Proxmox) et cloud (par exemple AWS, Azure, GCP, OpenStack), puis publication."
+description: "- Périmètre : création d'images dorées via builders [[Glossary:VM]] (par exemple [[Glossary:QEMU]], VirtualBox, VMware, vSphere, Proxmox) et cloud (par exemple AWS, Azure, GCP, OpenStack), puis publication."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["packer", "image", "qemu", "vsphere", "aws", "golden-image"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Packer : builders VM et cloud, publication d'images

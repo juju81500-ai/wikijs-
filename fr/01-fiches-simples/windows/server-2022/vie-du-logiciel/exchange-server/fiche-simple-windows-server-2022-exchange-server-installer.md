@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 Exchange Server Installer"
 description: "Installer le rôle Mailbox Exchange Server avec préparation du schéma et de l'organisation Active Directory."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "exchange-server", "messagerie", "installation", "setup"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_Exchange_Server_Installer

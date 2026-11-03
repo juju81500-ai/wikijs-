@@ -2,11 +2,11 @@
 title: "Déployer Bitwarden self-hosted sur Linux avec Docker"
 description: "Fiche simple : [cadrer l'auto-hébergement](../../../../01-fiches-simples/transverses/docker/bitwarden/fiche-simple-bitwarden-self-hosted-deploiement-cadrer-auto-hebergement.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["bitwarden", "self-hosted", "docker", "linux", "tls", "secrets", "backup"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Bitwarden self-hosted sur Linux avec Docker

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 26.04 Sauvegarde Test Restauration"
 description: "Prouver qu'une sauvegarde Ubuntu 26-04 est exploitable en la restaurant dans un répertoire isolé, puis en comparant les données restaurées avec la source, avant de compter dessus pour un incident réel."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "borgbackup", "restauration", "pra", "sauvegarde", "integrite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Sauvegarde_Test_Restauration

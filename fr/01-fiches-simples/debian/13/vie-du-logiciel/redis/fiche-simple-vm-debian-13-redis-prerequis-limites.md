@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Redis Prerequis Limites"
 description: "Cadrer l'usage de Redis sur Debian 13 (cache, file, sessions) avant installation."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "redis", "prerequis"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Redis_Prerequis_Limites

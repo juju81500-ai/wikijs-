@@ -2,11 +2,11 @@
 title: "Fiche Simple - Debian 13 Nakivo Transporter Mettre A Jour Retour Arriere"
 description: "Mettre à jour un Transporter NAKIVO installé sur Debian 13 (avec son Director) et savoir revenir en arrière ou le désinstaller proprement."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian-13", "nakivo", "transporter", "mettre-a-jour-retour-arriere"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Debian_13_Nakivo_Transporter_Mettre_A_Jour_Retour_Arriere

@@ -1,12 +1,12 @@
 ---
 title: "LXC_Debian_13_Reseau_Modifier-Hostname-Et-Hosts"
-description: "Modifier le nom d'hôte d'un conteneur LXC Debian 13 en conservant Proxmox VE comme source de configuration et en gardant cohérents le DNS et /etc/hosts."
+description: "Modifier le nom d'hôte d'un conteneur LXC Debian 13 en conservant Proxmox VE comme source de configuration et en gardant cohérents le [[Glossary:DNS]] et /etc/hosts."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "lxc", "hostname", "hosts", "proxmox", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 LXC_Debian_13_Reseau_Modifier-Hostname-Et-Hosts.md

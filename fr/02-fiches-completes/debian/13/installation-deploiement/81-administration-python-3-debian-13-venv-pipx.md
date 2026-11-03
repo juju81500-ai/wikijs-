@@ -2,11 +2,11 @@
 title: "Administrer Python 3 sur Debian 13 avec venv et pipx"
 description: "Fiche simple : [choisir le mode d'installation](../../../../01-fiches-simples/debian/13/vie-du-logiciel/python/fiche-simple-vm-debian-13-python-choisir-mode.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["python", "debian13", "venv", "pipx", "pip", "pep668", "dependances"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Administrer Python 3 sur Debian 13 avec venv et pipx

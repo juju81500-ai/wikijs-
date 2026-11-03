@@ -1,12 +1,12 @@
 ---
 title: "Cadrer et durcir un pare-feu FortiGate, Palo Alto, Cisco ASA/Firepower ou Stormshield"
-description: "Fiche de cadrage défensif multi-appliance : identifier la variante, préparer l'accès d'administration, sauvegarder, appliquer une politique de base, journaliser et prévoir le retour arrière. Elle ne remplace pas le guide du constructeur et ne fournit pas de syntaxe CLI unique : chaque famille a sa p"
+description: "Fiche de cadrage défensif multi-appliance : identifier la variante, préparer l'accès d'administration, sauvegarder, appliquer une politique de base, journaliser et prévoir le retour arrière. Elle ne remplace pas le guide du constructeur et ne fournit pas de syntaxe [[Glossary:CLI]] unique : chaque f"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["fortigate", "fortios", "pan-os", "palo-alto", "cisco-asa", "firepower", "stormshield", "durcissement"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Cadrer et durcir un pare-feu FortiGate, Palo Alto, Cisco ASA/Firepower ou Stormshield

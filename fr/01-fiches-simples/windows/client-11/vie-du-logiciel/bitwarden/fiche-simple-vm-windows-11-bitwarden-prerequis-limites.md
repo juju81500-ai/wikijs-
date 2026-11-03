@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Windows 11 Bitwarden Prerequis Limites"
-description: "Définir client, compte autorisé, MFA, récupération et poste géré avant d’y placer des secrets."
+description: "Définir client, compte autorisé, [[Glossary:MFA]], récupération et poste géré avant d’y placer des secrets."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-11", "bitwarden", "mots-de-passe", "mfa", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_11_Bitwarden_Prerequis_Limites

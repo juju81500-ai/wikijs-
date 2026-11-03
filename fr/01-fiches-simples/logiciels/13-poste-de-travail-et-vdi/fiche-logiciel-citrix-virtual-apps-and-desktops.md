@@ -1,12 +1,12 @@
 ---
 title: "Citrix Virtual Apps and Desktops"
-description: "Couvert pour Windows Server 2022 (Delivery Controller, StoreFront, licences, VDA, catalogues, sauvegarde SQL, mise à jour) — série de 7 fiches simples ; Linux VDA non couvert"
+description: "Couvert pour Windows Server 2022 (Delivery Controller, StoreFront, licences, VDA, catalogues, sauvegarde [[Glossary:SQL]], mise à jour) — série de 7 fiches simples ; Linux VDA non couvert"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "13-poste-de-travail-et-vdi", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Citrix Virtual Apps and Desktops

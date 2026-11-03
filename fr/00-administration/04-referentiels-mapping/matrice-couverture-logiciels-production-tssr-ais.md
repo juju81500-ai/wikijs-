@@ -2,11 +2,11 @@
 title: "Matrice de couverture des logiciels de production TSSR / AIS"
 description: "Cette matrice reprend la liste maximale fournie et la compare au contenu actuellement présent dans 01-fiches-simples et 02-fiches-completes. Elle sert de registre de travail : un produit cité dans un guide générique n'est pas considéré comme ayant une fiche dédiée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: []
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Matrice de couverture des logiciels de production TSSR / AIS

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 26.04 Journaux Journald Logrotate"
 description: "Limiter la taille et la durée de conservation du journal systemd (journald) et faire tourner les journaux des applications avec logrotate, pour éviter qu'un disque se remplisse tout en gardant les événements nécessaires à l'analyse."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "journald", "logrotate", "systemd", "retention", "journaux"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Journaux_Journald_Logrotate

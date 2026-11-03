@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-hote-vmware-esxi-8-esxi-ajouter-vcenter-premier-invite"
-description: "Intégrer l'hôte à vCenter et déployer une VM de test."
+description: "Intégrer l'hôte à vCenter et déployer une [[Glossary:VM]] de test."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["vmware", "esxi", "vsphere8", "hyperviseur", "vcenter", "vm-pilote"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-vmware-esxi-8-esxi-ajouter-vcenter-premier-invite.md

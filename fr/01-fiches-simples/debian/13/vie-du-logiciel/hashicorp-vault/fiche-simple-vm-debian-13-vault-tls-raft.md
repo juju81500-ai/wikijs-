@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-vault-tls-raft"
-description: "Chiffrer l'API et le cluster et configurer le stockage Raft persistant sur chaque nœud."
+description: "Chiffrer l'[[Glossary:API]] et le cluster et configurer le stockage Raft persistant sur chaque nœud."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "vault", "tls", "raft", "configuration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-vault-tls-raft.md

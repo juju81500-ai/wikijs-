@@ -2,11 +2,11 @@
 title: "Fiche simple — Installer Packer depuis le dépôt officiel"
 description: "Installer le binaire Packer de l'éditeur via APT, après vérification de la provenance du dépôt et de sa clé."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "packer", "hashicorp", "apt", "signature"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche simple — Installer Packer depuis le dépôt officiel

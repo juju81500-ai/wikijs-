@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-ubuntu-24-04-packet-tracer-topologie-isolee"
 description: "Valider l'outil avec deux postes et un commutateur."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu24-04", "cisco", "packet-tracer", "netacad", "topologie", "simulation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-ubuntu-24-04-packet-tracer-topologie-isolee.md

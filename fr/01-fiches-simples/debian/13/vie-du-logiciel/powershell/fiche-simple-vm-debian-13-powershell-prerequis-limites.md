@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 PowerShell Prerequis Limites"
 description: "Confirmer support Debian 13, architecture, scripts et modules avant installation de PowerShell 7."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "powershell", "pwsh", "scripting", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_PowerShell_Prerequis_Limites

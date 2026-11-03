@@ -2,11 +2,11 @@
 title: "AlmaLinux"
 description: "Partiel — utiliser les fiches Rocky Linux 9 comme référence opérationnelle commune, puis appliquer les différences AlmaLinux indiquées ci-dessous. Aucune nouvelle version/dossier OS AlmaLinux n’est créée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "05-systemes-annuaires-et-services", "partiel"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 AlmaLinux

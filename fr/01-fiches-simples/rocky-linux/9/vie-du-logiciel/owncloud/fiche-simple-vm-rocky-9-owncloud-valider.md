@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Rocky 9 ownCloud Valider"
-description: "Vérifier service, logs et URL TLS."
+description: "Vérifier service, logs et URL [[Glossary:TLS]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["owncloud", "serveur", "vie-du-logiciel", "valider"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_9_ownCloud_Valider

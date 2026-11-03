@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 26.04 Vie Systeme 05 Configuration Materielle Firmware"
 description: "Choisir UEFI/BIOS, Secure Boot et pilotes de stockage."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "vie-du-systeme", "cycle-de-vie", "etape-05"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_05_Configuration_Materielle_Firmware

@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-apache-configurer-tls"
-description: "Servir le site pilote en HTTPS avec un certificat correspondant au FQDN et sans exposer sa clé privée."
+description: "Servir le site pilote en HTTPS avec un certificat correspondant au [[Glossary:FQDN]] et sans exposer sa clé privée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "apache", "tls", "certificat", "https"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-apache-configurer-tls.md

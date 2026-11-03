@@ -2,11 +2,11 @@
 title: "Leçon — Active Directory Domain Services : domaine, forêt, DNS, Kerberos et sites"
 description: "À la fin de cette leçon, vous saurez :"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "lecon", "identites", "active-directory", "kerberos", "dns", "windows-server"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Leçon — Active Directory Domain Services : domaine, forêt, DNS, Kerberos et sites

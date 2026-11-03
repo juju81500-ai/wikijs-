@@ -2,11 +2,11 @@
 title: "fiche-simple-lxc-alpine-3-19-systeme-mise-a-jour-paquets-apk"
 description: "Contrôler les dépôts et appliquer les mises à jour de paquets Alpine avec apk, sans mélanger les branches de versions ni confondre le noyau du conteneur avec celui de l'hôte."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine3-19", "alpine", "lxc", "apk", "mises-a-jour", "maintenance"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-lxc-alpine-3-19-systeme-mise-a-jour-paquets-apk.md

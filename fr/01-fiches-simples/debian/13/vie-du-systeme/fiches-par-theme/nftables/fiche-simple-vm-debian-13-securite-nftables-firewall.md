@@ -1,12 +1,12 @@
 ---
 title: "VM_Debian_13_Securite_Configuration-NFTables-Firewall"
-description: "Configurer le pare-feu natif nftables sur Debian 13 (Trixie) avec une politique par défaut fermée (Zero Trust drop), filtrer les flux entrants SSH et HTTP/HTTPS, et assurer la persistance des règles au redémarrage."
+description: "Configurer le pare-feu natif nftables sur Debian 13 (Trixie) avec une politique par défaut fermée (Zero Trust drop), filtrer les flux entrants [[Glossary:SSH]] et [[Glossary:HTTP]]/HTTPS, et assurer la persistance des règles au redémarrage."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "nftables", "firewall", "security", "hardening", "stateful"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_13_Securite_Configuration-NFTables-Firewall.md

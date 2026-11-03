@@ -2,11 +2,11 @@
 title: "Sauvegarder et restaurer une stack Docker Compose"
 description: "Fiche simple : [inventorier la stack](../../../../01-fiches-simples/transverses/docker/sauvegarde-restauration/fiche-simple-hote-docker-stack-inventorier.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["docker", "compose", "sauvegarde", "restauration", "volumes", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Sauvegarder et restaurer une stack Docker Compose

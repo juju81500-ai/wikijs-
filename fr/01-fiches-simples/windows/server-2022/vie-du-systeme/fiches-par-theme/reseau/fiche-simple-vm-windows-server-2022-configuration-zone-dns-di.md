@@ -2,11 +2,11 @@
 title: "VM_WinSrv_2022_DNS_Configuration-Zone-Directe-Inverse"
 description: "Installer le rôle Serveur DNS sur Windows Server 2022, créer une zone de recherche directe (lab.local), une zone de recherche inversée (1.168.192.in-addr.arpa), ajouter des enregistrements de type A et PTR, et sécuriser le service DNS contre le cache poisoning et les transferts de zone non autorisés"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "windows-family", "dns", "zone-directe", "zone-inverse", "gui", "powershell", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_WinSrv_2022_DNS_Configuration-Zone-Directe-Inverse.md

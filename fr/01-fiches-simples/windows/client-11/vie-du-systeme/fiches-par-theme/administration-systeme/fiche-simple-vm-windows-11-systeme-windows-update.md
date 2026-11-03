@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows 11 Systeme Windows Update"
 description: "Contrôler l'état de Windows Update sur un poste Windows 11, lancer une recherche de mises à jour, puis appliquer une politique de report et de redémarrage qui évite les interruptions de travail."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-11", "windows-update", "gpo", "powershell", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Windows_11_Systeme_Windows_Update

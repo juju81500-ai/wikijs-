@@ -1,12 +1,12 @@
 ---
 title: "Nakivo / Altaro"
-description: "NAKIVO : procédures Windows Server 2022 existantes et séries Linux Transporter Debian 13 et Ubuntu Server 24-04 LTS (5 fiches par OS : prérequis, installation, configuration, sécurité, validation/maintenance). La page NAKIVO « Deployment Requirements » liste explicitement Debian 13 64-bit et Ubuntu "
+description: "NAKIVO : procédures Windows Server 2022 existantes et séries Linux Transporter Debian 13 et Ubuntu Server 24-04 [[Glossary:LTS]] (5 fiches par OS : prérequis, installation, configuration, sécurité, validation/maintenance). La page NAKIVO « Deployment Requirements » liste explicitement Debian 13 64-b"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "07-sauvegarde-restauration-et-pra-pca", "partiel"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Nakivo / Altaro

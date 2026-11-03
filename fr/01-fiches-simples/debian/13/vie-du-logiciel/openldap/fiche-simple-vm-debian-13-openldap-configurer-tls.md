@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-openldap-configurer-tls"
-description: "Configurer TLS pour protéger les échanges LDAP, sans exposer ou rendre illisible la clé privée."
+description: "Configurer TLS pour protéger les échanges [[Glossary:LDAP]], sans exposer ou rendre illisible la clé privée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "openldap", "tls", "ldaps", "starttls", "certificat"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-openldap-configurer-tls.md

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-11-putty-version-perimetre"
 description: "Confirmer la version Stable et la source officielle avant de télécharger."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["putty", "windows11", "ssh", "puttygen", "host-key"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-windows-11-putty-version-perimetre.md

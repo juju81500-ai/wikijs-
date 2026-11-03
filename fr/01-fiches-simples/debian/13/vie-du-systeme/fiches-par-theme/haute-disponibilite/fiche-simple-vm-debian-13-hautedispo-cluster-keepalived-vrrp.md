@@ -1,12 +1,12 @@
 ---
 title: "VM_Debian_13_HauteDispo_Cluster-Keepalived-VRRP"
-description: "Mettre en place une adresse IP virtuelle flottante (VIP) partagée entre deux nœuds Debian 13 (Trixie) à l'aide du protocole VRRP avec keepalived, assurer le basculement automatique en cas de panne et sécuriser les échanges d'état."
+description: "Mettre en place une adresse IP virtuelle flottante ([[Glossary:VIP]]) partagée entre deux nœuds Debian 13 (Trixie) à l'aide du protocole VRRP avec keepalived, assurer le basculement automatique en cas de panne et sécuriser les échanges d'état."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "keepalived", "vrrp", "ha", "vip", "high-availability", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_13_HauteDispo_Cluster-Keepalived-VRRP.md

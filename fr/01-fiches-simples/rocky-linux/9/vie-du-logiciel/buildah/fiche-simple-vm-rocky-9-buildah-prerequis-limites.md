@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-buildah-prerequis-limites"
 description: "Contrôler que l'hôte et le compte de build conviennent avant d'installer Buildah."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["buildah", "oci", "rocky9", "rootless", "containerfile", "registre"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-rocky-9-buildah-prerequis-limites.md

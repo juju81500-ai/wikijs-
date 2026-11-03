@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-server-2022-prtg-acces"
 description: "Séparer les droits administrateur, opérateur et comptes de scan."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["prtg", "windows-server", "supervision", "acces", "rbac", "snmpv3"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-windows-server-2022-prtg-acces.md

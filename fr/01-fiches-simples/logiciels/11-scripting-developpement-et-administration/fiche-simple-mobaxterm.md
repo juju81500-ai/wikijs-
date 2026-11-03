@@ -1,12 +1,12 @@
 ---
 title: "MobaXterm"
-description: "Installer MobaXterm sur Windows Server 2022, ouvrir une session SSH de test vers un serveur Linux et contrôler l'empreinte de la clé d'hôte, puis activer un mot de passe maître et restreindre les sessions enregistrées pour l'administration en production. Les connexions ne ciblent que vos propres mac"
+description: "Installer MobaXterm sur Windows Server 2022, ouvrir une session [[Glossary:SSH]] de test vers un serveur Linux et contrôler l'empreinte de la clé d'hôte, puis activer un mot de passe maître et restreindre les sessions enregistrées pour l'administration en production. Les connexions ne ciblent que vo"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "mobaxterm", "ssh", "powershell", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 MobaXterm

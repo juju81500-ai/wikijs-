@@ -2,11 +2,11 @@
 title: "BIND 9"
 description: "Couvert — [guide autoritatif Debian 13](../../../02-fiches-completes/debian/13/installation-deploiement/63-deploiement-bind9-autoritatif-debian-13.md) et fiche simple Debian existante"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "05-systemes-annuaires-et-services", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 BIND 9

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 24.04 Stockage Fstab Options"
 description: "Vérifier les montages déclarés dans /etc/fstab sur Ubuntu Server 24-04 LTS, ajouter les options nodev, nosuid et noexec sur /tmp, /var/tmp et /dev/shm, puis valider le fichier avant tout redémarrage."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu24-04", "ubuntu", "fstab", "mount", "tmpfs", "nodev", "nosuid", "noexec"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Stockage_Fstab_Options

@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Ubuntu 24.04 Systeme Joindre AD Sssd"
-description: "Joindre un serveur Ubuntu Server 24-04 LTS à un domaine Active Directory avec realmd et sssd, autoriser des groupes AD précis à se connecter et contrôler la résolution des comptes du domaine."
+description: "Joindre un serveur Ubuntu Server 24-04 LTS à un domaine Active Directory avec realmd et sssd, autoriser des groupes [[Glossary:AD]] précis à se connecter et contrôler la résolution des comptes du domaine."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu24-04", "ubuntu", "active-directory", "realmd", "sssd", "kerberos", "pam"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Systeme_Joindre_AD_Sssd

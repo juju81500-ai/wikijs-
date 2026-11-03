@@ -2,11 +2,11 @@
 title: "Leçon — Stockage local : disques, partitions, systèmes de fichiers, RAID et LVM"
 description: "À l'issue de cette leçon, vous saurez :"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "lecon", "stockage", "raid", "lvm", "partitions", "systeme-de-fichiers"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Leçon — Stockage local : disques, partitions, systèmes de fichiers, RAID et LVM

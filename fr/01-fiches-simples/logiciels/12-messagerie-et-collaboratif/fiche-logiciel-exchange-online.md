@@ -1,12 +1,12 @@
 ---
 title: "Exchange Online"
-description: "Cloud/SaaS — administration défensive : série de fiches simples (domaine, MFA, SPF/DKIM/DMARC, rétention, recette). Pas de guide complet dédié ; aucune installation, service géré par l'éditeur."
+description: "Cloud/SaaS — administration défensive : série de fiches simples (domaine, [[Glossary:MFA]], [[Glossary:SPF]]/DKIM/DMARC, rétention, recette). Pas de guide complet dédié ; aucune installation, service géré par l'éditeur."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "12-messagerie-et-collaboratif", "cloud-saas"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Exchange Online

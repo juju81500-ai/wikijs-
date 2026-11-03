@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-proxmox-pfsense-ce-deploiement-sauvegarder-restaurer"
 description: "Disposer d'une sauvegarde chiffrée et prouver qu'elle se restaure."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["pfsense", "ce", "proxmox", "firewall", "lab"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-proxmox-pfsense-ce-deploiement-sauvegarder-restaurer.md

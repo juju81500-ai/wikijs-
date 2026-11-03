@@ -2,11 +2,11 @@
 title: "fiche-simple-hote-windows-11-deploiement-inscrire-configurer-poste"
 description: "Nommer, inscrire et configurer le poste selon le mécanisme de gestion."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows11", "deploiement", "oobe", "bitlocker", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-windows-11-deploiement-inscrire-configurer-poste.md

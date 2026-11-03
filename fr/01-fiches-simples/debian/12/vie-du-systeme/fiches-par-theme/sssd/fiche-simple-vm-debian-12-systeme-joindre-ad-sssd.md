@@ -2,11 +2,11 @@
 title: "VM_Debian_12_Systeme_Joindre-AD-Sssd"
 description: "Joindre un serveur Debian 12 à un domaine Active Directory avec realmd et sssd, authentifier les comptes du domaine et restreindre l'ouverture de session aux seuls groupes autorisés."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "debian-family", "realmd", "sssd", "active-directory", "kerberos", "adcli"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_12_Systeme_Joindre-AD-Sssd.md

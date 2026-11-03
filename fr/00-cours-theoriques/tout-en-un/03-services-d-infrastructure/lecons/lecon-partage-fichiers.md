@@ -2,11 +2,11 @@
 title: "Leçon — Partage de fichiers : SMB/CIFS, NFS, droits, montages persistants et quotas"
 description: "À l'issue de cette leçon, vous saurez :"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "lecon", "partage-de-fichiers", "smb", "samba", "nfs", "quotas", "fstab"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Leçon — Partage de fichiers : SMB/CIFS, NFS, droits, montages persistants et quotas

@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Debian 13 ownCloud Configurer"
-description: "Configurer ownCloud Infinite Scale derrière un reverse proxy Nginx avec TLS terminé par le proxy."
+description: "Configurer ownCloud Infinite Scale derrière un reverse proxy Nginx avec [[Glossary:TLS]] terminé par le proxy."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "owncloud", "ocis", "cloud", "configurer"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_ownCloud_Configurer

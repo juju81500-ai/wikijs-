@@ -2,11 +2,11 @@
 title: "00 — Cours théoriques"
 description: "Parcours de compréhension pour relier les notions avant de passer aux fiches pratiques. Le contenu rédigé dans ce dossier est une synthèse originale du pack. Les animations, illustrations et cours externes restent chez leurs auteurs : les liens ouvrent les pages d'origine."
 published: true
-date: 2026-11-03T10:12:11Z
+date: 2026-11-03T14:22:28Z
 tags: ["cours", "theorie", "tssr", "reseau", "systeme"]
 editor: markdown
-dateCreated: 2026-11-03T10:12:11Z
-dateModified: 2026-11-03T10:12:11Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 00 — Cours théoriques

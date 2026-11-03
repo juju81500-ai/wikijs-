@@ -1,12 +1,12 @@
 ---
 title: "Terraform / OpenTofu"
-description: "Couvert — Terraform et OpenTofu CLI Debian 13; fournisseurs/backends et environnements cloud doivent être validés séparément."
+description: "Couvert — Terraform et OpenTofu [[Glossary:CLI]] Debian 13; fournisseurs/backends et environnements cloud doivent être validés séparément."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "09-automatisation-deploiement-et-iac", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Terraform / OpenTofu

@@ -2,11 +2,11 @@
 title: "fiche-simple-lxc-alpine-3-19-stockage-fstab-options"
 description: "Vérifier et durcir les montages persistants d'un conteneur Alpine Linux (/etc/fstab) avec les options nodev, nosuid et noexec, tout en tenant compte de la gestion des disques par Proxmox pour un LXC."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine3-19", "alpine", "lxc", "fstab", "mount", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-lxc-alpine-3-19-stockage-fstab-options.md

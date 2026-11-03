@@ -2,11 +2,11 @@
 title: "Rocky Linux"
 description: "Couvert — fiches système Rocky Linux 9 couvrant le cycle de vie de l’hôte. La couverture logicielle FreeIPA est référencée séparément; les versions Rocky ultérieures ne sont pas présumées."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "05-systemes-annuaires-et-services", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Rocky Linux

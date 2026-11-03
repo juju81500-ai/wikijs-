@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - Cloud Entra ID Acces Conditionnel Report Only"
-description: "Créer une politique d'accès conditionnel exigeant le MFA en mode report-only, la valider avec What If et les journaux, puis seulement l'activer sur pilote."
+description: "Créer une politique d'accès conditionnel exigeant le [[Glossary:MFA]] en mode report-only, la valider avec What If et les journaux, puis seulement l'activer sur pilote."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["entra-id", "acces-conditionnel", "report-only", "what-if", "graph"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Cloud_Entra_ID_Acces_Conditionnel_Report_Only

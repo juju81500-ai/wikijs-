@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-hote-docker-vaultwarden-perimetre"
-description: "Confirmer que Vaultwarden (serveur communautaire) est le bon choix et que les prérequis Docker, DNS et HTTPS sont réunis."
+description: "Confirmer que Vaultwarden (serveur communautaire) est le bon choix et que les prérequis Docker, [[Glossary:DNS]] et HTTPS sont réunis."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["docker", "vaultwarden", "perimetre"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-docker-vaultwarden-perimetre.md

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-cacti-base-et-credential"
 description: "Créer la base cacti et un compte dédié sans mot de passe d'exemple."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "cacti", "snmp", "rrdtool", "mariadb"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-cacti-base-et-credential.md

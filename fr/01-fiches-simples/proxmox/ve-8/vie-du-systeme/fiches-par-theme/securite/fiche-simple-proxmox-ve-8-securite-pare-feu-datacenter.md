@@ -2,11 +2,11 @@
 title: "fiche-simple-proxmox-ve-8-securite-pare-feu-datacenter"
 description: "Activer le pare-feu Proxmox au niveau datacenter, n'ouvrir que les flux d'administration et de cluster nécessaires, puis passer la politique entrante en refus par défaut sans couper l'accès à l'hôte."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmox-ve-8", "pve-firewall", "datacenter", "reseau", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-proxmox-ve-8-securite-pare-feu-datacenter.md

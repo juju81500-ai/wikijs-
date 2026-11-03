@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-gns3-deploiement-dependances"
-description: "Installer les prérequis APT et vérifier KVM."
+description: "Installer les prérequis [[Glossary:APT]] et vérifier [[Glossary:KVM]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["gns3", "debian13", "qemu", "kvm"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-gns3-deploiement-dependances.md

@@ -2,11 +2,11 @@
 title: "Déployer Snipe-IT 8.8.3 avec Docker, MariaDB et Traefik"
 description: "Fiche simple : [préparer l'architecture Snipe-IT](../../../../01-fiches-simples/transverses/docker/snipe-it/fiche-simple-docker-snipe-it-preparer-architecture.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["snipe-it", "docker", "mariadb", "traefik", "inventaire", "itsm"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Snipe-IT 8.8.3 avec Docker, MariaDB et Traefik

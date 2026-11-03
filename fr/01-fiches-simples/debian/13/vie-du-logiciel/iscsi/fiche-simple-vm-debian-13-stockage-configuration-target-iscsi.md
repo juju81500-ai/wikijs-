@@ -1,12 +1,12 @@
 ---
 title: "VM_Debian_13_Stockage_Configuration-Target-iSCSI-LIO"
-description: "Configurer un serveur de stockage iSCSI Target (SAN) sous Debian 13 à l'aide du sous-système LIO et targetcli-fb, créer un LUN et sécuriser l'accès par authentification CHAP."
+description: "Configurer un serveur de stockage iSCSI Target (SAN) sous Debian 13 à l'aide du sous-système LIO et targetcli-fb, créer un [[Glossary:LUN]] et sécuriser l'accès par authentification CHAP."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "iscsi", "targetcli", "storage", "san", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_13_Stockage_Configuration-Target-iSCSI-LIO.md

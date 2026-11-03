@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM ESXi 8 Vie Systeme 08 Configuration Reseau D Installation"
-description: "Donner à l'hôte une adresse IP de gestion temporaire."
+description: "Donner à l'hôte une adresse [[Glossary:IP]] de gestion temporaire."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["esxi8", "vie-du-systeme", "cycle-de-vie", "etape-08"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_ESXi_8_Vie_Systeme_08_Configuration_Reseau_D_Installation

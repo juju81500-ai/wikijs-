@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Proxmox VE 8 Proxmox OpenStack Nettoyer Retour Arriere"
 description: "Retirer un lab et révoquer les accès sans affecter l’hôte Proxmox ni les réseaux partagés."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmox-ve", "openstack", "devstack", "nettoyage", "rollback"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Proxmox_VE_8_Proxmox_OpenStack_Nettoyer_Retour_Arriere

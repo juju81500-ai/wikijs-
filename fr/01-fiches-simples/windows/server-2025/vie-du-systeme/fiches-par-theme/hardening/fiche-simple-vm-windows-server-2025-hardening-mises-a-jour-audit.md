@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-server-2025-hardening-mises-a-jour-audit"
 description: "Maîtriser les mises à jour et centraliser les journaux d'audit."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows-server-2025", "hardening", "smb", "ldap", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # fiche-simple-vm-windows-server-2025-hardening-mises-a-jour-audit.md

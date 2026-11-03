@@ -1,12 +1,12 @@
 ---
 title: "Traefik"
-description: "Installer Traefik sur Debian 12 comme reverse proxy HTTP devant deux serveurs web, vérifier qu'il route une requête selon le nom d'hôte, puis le durcir (tableau de bord protégé, utilisateur de service dédié, pare-feu restreint) avant de l'exposer à un service de l'entreprise. Les tests ne se font qu"
+description: "Installer Traefik sur Debian 12 comme reverse proxy [[Glossary:HTTP]] devant deux serveurs web, vérifier qu'il route une requête selon le nom d'hôte, puis le durcir (tableau de bord protégé, utilisateur de service dédié, pare-feu restreint) avant de l'exposer à un service de l'entreprise. Les tests "
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian-12", "traefik", "reverse-proxy", "load-balancer", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Traefik

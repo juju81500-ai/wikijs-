@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-phpipam-initialiser-durcir"
 description: "Initialiser le schéma puis désactiver l'installateur et durcir la console."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "phpipam", "ipam", "nginx", "mariadb", "installateur", "durcissement"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-phpipam-initialiser-durcir.md

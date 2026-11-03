@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM ESXi 8 VMware vSphere VCSA Installer"
 description: "Déployer un vCenter Server Appliance (VCSA) 8.x depuis l'ISO officiel."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["vmware-vsphere", "vsphere8", "vcenter", "vcsa", "installation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_ESXi_8_VMware_vSphere_VCSA_Installer

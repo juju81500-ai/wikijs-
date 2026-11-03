@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-hote-proxmox-ve-8-cluster-securiser"
-description: "Restreindre et durcir l'accès à l'interface Web, à l'API et à SSH."
+description: "Restreindre et durcir l'accès à l'interface Web, à l'[[Glossary:API]] et à [[Glossary:SSH]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmox-ve", "pve8", "cluster", "corosync", "securite", "mfa", "firewall"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-proxmox-ve-8-cluster-securiser.md

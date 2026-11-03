@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-ubuntu-ceph-ajouter-noeuds-monitors"
 description: "Ajouter ceph02 et ceph03 au cluster et étendre les Monitors à trois hôtes."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2204", "ceph", "tentacle", "cephadm"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-ubuntu-ceph-ajouter-noeuds-monitors.md

@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM OPNsense Vie Systeme 37 Deploiement Des Roles Metiers"
-description: "Activer les rôles du pare-feu : DHCP, NAT, VPN."
+description: "Activer les rôles du pare-feu : [[Glossary:DHCP]], [[Glossary:NAT]], [[Glossary:VPN]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["opnsense", "vie-du-systeme", "cycle-de-vie", "etape-37"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_37_Deploiement_Des_Roles_Metiers

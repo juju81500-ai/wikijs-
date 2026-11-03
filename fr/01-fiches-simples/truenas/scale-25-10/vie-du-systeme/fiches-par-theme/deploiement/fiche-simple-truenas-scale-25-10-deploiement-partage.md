@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-truenas-scale-25-10-deploiement-partage"
-description: "Publier un partage SMB ou NFS contrôlé et le tester avec un client pilote."
+description: "Publier un partage SMB ou [[Glossary:NFS]] contrôlé et le tester avec un client pilote."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenas", "scale2510", "zfs", "nas", "smb", "sauvegarde"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-truenas-scale-25-10-deploiement-partage.md

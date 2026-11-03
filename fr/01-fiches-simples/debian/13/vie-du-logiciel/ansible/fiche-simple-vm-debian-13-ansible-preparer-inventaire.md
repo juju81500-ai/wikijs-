@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-ansible-preparer-inventaire"
-description: "Préparer un inventaire minimal et vérifier l'identité SSH de l'hôte avant toute opération distante."
+description: "Préparer un inventaire minimal et vérifier l'identité [[Glossary:SSH]] de l'hôte avant toute opération distante."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "ansible", "inventory", "ssh", "known-hosts"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-ansible-preparer-inventaire.md

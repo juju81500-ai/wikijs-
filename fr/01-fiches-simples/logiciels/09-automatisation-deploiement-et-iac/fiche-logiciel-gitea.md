@@ -1,12 +1,12 @@
 ---
 title: "Gitea"
-description: "Couvert — Gitea auto-hébergé Debian 13, installation, TLS, sauvegarde et mise à jour."
+description: "Couvert — Gitea auto-hébergé Debian 13, installation, [[Glossary:TLS]], sauvegarde et mise à jour."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "09-automatisation-deploiement-et-iac", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Gitea

@@ -2,11 +2,11 @@
 title: "Fiche Simple - Debian 13 Nakivo Transporter Securiser"
 description: "Réduire l’exposition du serveur Debian 13 utilisé par le Transporter et protéger les communications et les comptes de service."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian-13", "nakivo", "transporter", "securiser"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Debian_13_Nakivo_Transporter_Securiser

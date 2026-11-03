@@ -2,11 +2,11 @@
 title: "Déployer HashiCorp Vault avec stockage intégré Raft"
 description: "Fiche simple : [cadrer l'architecture Vault Raft](../../../../01-fiches-simples/debian/13/vie-du-logiciel/hashicorp-vault/fiche-simple-vm-debian-13-vault-architecture.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["vault", "hashicorp", "debian13", "raft", "secrets", "tls", "iam"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer HashiCorp Vault avec stockage intégré Raft

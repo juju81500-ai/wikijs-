@@ -2,11 +2,11 @@
 title: "VM_Debian_12_Supervision_Installation-Zabbix-Serveur"
 description: "Installer le serveur de supervision central Zabbix Server avec base de données MariaDB et frontend Web Apache sur Debian 12 à partir des dépôts officiels, et sécuriser l'accès à la console web et à la base de données."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "zabbix-server", "mariadb", "apache2", "supervision", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_12_Supervision_Installation-Zabbix-Serveur.md

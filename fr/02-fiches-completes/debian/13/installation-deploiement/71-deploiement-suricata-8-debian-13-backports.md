@@ -2,11 +2,11 @@
 title: "Déployer Suricata 8.0.7 en IDS passif sur Debian 13"
 description: "Fiche simple : [définir le périmètre de capture](../../../../01-fiches-simples/debian/13/vie-du-logiciel/suricata/fiche-simple-vm-debian-13-suricata-ids-cadrer-capture.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["suricata", "debian13", "backports", "ids", "af-packet", "eve-json", "et-open"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Suricata 8.0.7 en IDS passif sur Debian 13

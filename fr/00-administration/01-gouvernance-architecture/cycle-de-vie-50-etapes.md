@@ -1,12 +1,12 @@
 ---
 title: "Cycle de vie d'un système d'exploitation : 50 étapes (multi-OS)"
-description: "Nomenclature du cycle : [DEBIAN/UBUNTU] | [RHEL/ALMA/ROCKY] | [WINDOWS SERVER] | [FREEBSD]. Les pages par OS reprennent ce cycle avec les seules commandes de la famille."
+description: "Nomenclature du cycle : [DEBIAN/UBUNTU] | [[[Glossary:RHEL]]/ALMA/ROCKY] | [WINDOWS SERVER] | [FREEBSD]. Les pages par OS reprennent ce cycle avec les seules commandes de la famille."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["cycle-de-vie", "checklist", "installation", "production", "reparation", "verification"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Cycle de vie d'un système d'exploitation : 50 étapes (multi-OS)

@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 Differences 2016 2019 Fin Support Perimetre"
 description: "Identifier la version et l'édition en place, puis situer 2016 et 2019 dans leur cycle de support avant toute décision de maintien ou de migration."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server", "windows-server-2016", "windows-server-2019", "windows-server-2022", "fin-de-support", "cycle-de-vie"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_Differences_2016_2019_Fin_Support_Perimetre

@@ -2,11 +2,11 @@
 title: "fiche-simple-truenas-core-13-0-deploiement-pool-partage-smb"
 description: "Créer un pool redondant, un dataset et un partage SMB avec compte de service."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenas-core", "truenas", "freebsd", "zfs", "smb", "nas"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-truenas-core-13-0-deploiement-pool-partage-smb.md

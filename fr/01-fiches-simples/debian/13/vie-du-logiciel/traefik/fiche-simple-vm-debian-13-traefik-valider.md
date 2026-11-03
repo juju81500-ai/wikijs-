@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Traefik Valider"
 description: "Prouver que Traefik route correctement, présente un certificat valide et résiste au redémarrage."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "traefik", "recette"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Traefik_Valider

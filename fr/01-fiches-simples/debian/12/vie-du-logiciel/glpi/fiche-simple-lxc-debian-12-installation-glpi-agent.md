@@ -1,12 +1,12 @@
 ---
 title: "LXC_Debian_12_Services_Installation-GLPI-Agent"
-description: "Installer, configurer et sécuriser l'agent officiel GLPI (glpi-agent) sur un conteneur LXC Debian 12 pour remonter l'inventaire matériel et logiciel vers le serveur GLPI central."
+description: "Installer, configurer et sécuriser l'agent officiel [[Glossary:GLPI]] (glpi-agent) sur un conteneur LXC Debian 12 pour remonter l'inventaire matériel et logiciel vers le serveur GLPI central."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "debian-family", "glpi", "glpi-agent", "inventaire", "lxc", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 LXC_Debian_12_Services_Installation-GLPI-Agent.md

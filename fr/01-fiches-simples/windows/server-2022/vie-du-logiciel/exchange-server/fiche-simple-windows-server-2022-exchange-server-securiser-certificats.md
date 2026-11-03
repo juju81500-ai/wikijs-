@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - Windows Server 2022 Exchange Server Securiser Certificats"
-description: "Remplacer le certificat auto-signé par un certificat d'une autorité de confiance pour IIS et SMTP."
+description: "Remplacer le certificat auto-signé par un certificat d'une autorité de confiance pour [[Glossary:IIS]] et [[Glossary:SMTP]]."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "exchange-server", "messagerie", "certificat", "tls", "iis", "smtp"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_Exchange_Server_Securiser_Certificats

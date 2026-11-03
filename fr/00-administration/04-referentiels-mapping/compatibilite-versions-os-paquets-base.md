@@ -2,11 +2,11 @@
 title: "Compatibilité des versions d'OS et des paquets de base"
 description: "Référence vérifiée le : 2026-10-27"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: []
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Compatibilité des versions d'OS et des paquets de base

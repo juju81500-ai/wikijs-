@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-znuny-recette"
 description: "Valider le fonctionnement de Znuny et préparer l'exploitation (sauvegarde, mises à jour)."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "znuny", "recette", "sauvegarde"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-znuny-recette.md

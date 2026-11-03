@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Ubuntu 26.04 Vie Systeme 19 Configuration Des Depots Logiciels"
-description: "Définir les sources APT."
+description: "Définir les sources [[Glossary:APT]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "vie-du-systeme", "cycle-de-vie", "etape-19"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_19_Configuration_Des_Depots_Logiciels

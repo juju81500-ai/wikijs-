@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-ansible-installer-core"
 description: "Installer Ansible Core depuis les dépôts Debian et consigner sa version et sa provenance."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "ansible-core", "apt", "installation", "version"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-ansible-installer-core.md

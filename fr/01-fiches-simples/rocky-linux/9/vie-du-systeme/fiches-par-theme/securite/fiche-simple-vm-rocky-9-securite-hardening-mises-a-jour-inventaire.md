@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-securite-hardening-mises-a-jour-inventaire"
 description: "Appliquer les correctifs de sécurité et dresser l'état initial."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "rhel9", "hardening", "dnf"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-rocky-9-securite-hardening-mises-a-jour-inventaire.md

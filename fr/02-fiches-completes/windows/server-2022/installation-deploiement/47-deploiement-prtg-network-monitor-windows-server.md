@@ -2,11 +2,11 @@
 title: "Déployer PRTG Network Monitor sur Windows Server"
 description: "Fiche simple : [dimensionner et préparer](../../../../01-fiches-simples/windows/server-2022/vie-du-logiciel/prtg/fiche-simple-vm-windows-server-2022-prtg-dimensionner.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["prtg", "windows-server", "supervision", "snmp", "wmi", "monitoring"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer PRTG Network Monitor sur Windows Server

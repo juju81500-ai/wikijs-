@@ -1,12 +1,12 @@
 ---
 title: "Microsoft RDS"
-description: "Les procédures RDS couvrent les prérequis, l’installation/configuration, la sécurisation, la recette, la sauvegarde/restauration et la maintenance sous Windows Server 2022, et sous Windows Server 2025 (prérequis et licences RDS CAL, installation GUI/PowerShell, TLS/comptes/pare-feu, recette, sauvega"
+description: "Les procédures RDS couvrent les prérequis, l’installation/configuration, la sécurisation, la recette, la sauvegarde/restauration et la maintenance sous Windows Server 2022, et sous Windows Server 2025 (prérequis et licences RDS CAL, installation [[Glossary:GUI]]/PowerShell, [[Glossary:TLS]]/comptes/"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "13-poste-de-travail-et-vdi", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Microsoft RDS

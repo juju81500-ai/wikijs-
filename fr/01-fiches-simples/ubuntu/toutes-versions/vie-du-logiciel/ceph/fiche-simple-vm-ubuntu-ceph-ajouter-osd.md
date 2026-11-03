@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-ubuntu-ceph-ajouter-osd"
 description: "Créer un OSD par nœud sur un disque de données explicitement choisi, sans effacer un mauvais disque."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2204", "ceph", "tentacle", "cephadm"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-ubuntu-ceph-ajouter-osd.md

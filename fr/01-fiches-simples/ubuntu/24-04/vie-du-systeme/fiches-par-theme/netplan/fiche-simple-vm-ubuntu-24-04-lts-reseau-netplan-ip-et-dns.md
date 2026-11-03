@@ -1,12 +1,12 @@
 ---
 title: "VM_Ubuntu_24.04_Reseau_Fixer-IP-Et-DNS"
-description: "Fixer une adresse IP statique, la passerelle et les serveurs DNS sous Ubuntu Server 24-04 LTS avec l'outil Netplan et le backend systemd-networkd."
+description: "Fixer une adresse [[Glossary:IP]] statique, la passerelle et les serveurs [[Glossary:DNS]] sous Ubuntu Server 24-04 LTS avec l'outil Netplan et le backend systemd-networkd."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu24-04", "debian-family", "netplan", "ip-statique", "dns", "systemd-networkd"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Ubuntu_24.04_Reseau_Fixer-IP-Et-DNS.md

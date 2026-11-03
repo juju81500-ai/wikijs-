@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple : Sécurisation & Hardening Hôte Docker"
-description: "Installer le moteur Docker Engine, sécuriser la configuration du démon (/etc/docker/daemon.json), restreindre le socket Unix et auditer les conteneurs contre les vulnérabilités CVE avec Trivy."
+description: "Installer le moteur Docker Engine, sécuriser la configuration du démon (/etc/docker/daemon.json), restreindre le socket Unix et auditer les conteneurs contre les vulnérabilités [[Glossary:CVE]] avec Trivy."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["docker", "hardening", "trivy", "security"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # 📄 Fiche Simple : Sécurisation & Hardening Hôte Docker

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 PuTTY Securiser"
 description: "Utiliser PuTTY en ligne de commande sans affaiblir la sécurité SSH."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["putty", "putty-tools", "plink", "puttygen", "ssh", "securite", "hostkey"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_PuTTY_Securiser

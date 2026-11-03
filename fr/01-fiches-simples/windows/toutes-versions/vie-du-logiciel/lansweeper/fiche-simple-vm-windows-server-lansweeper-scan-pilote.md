@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-server-lansweeper-scan-pilote"
 description: "Valider un scan pilote d'actifs appartenant à l'organisation avec une plage restreinte et des comptes de lecture seule."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["lansweeper", "windows-server", "inventaire", "scan-pilote", "wmi", "snmp"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # 📄 fiche-simple-vm-windows-server-lansweeper-scan-pilote.md

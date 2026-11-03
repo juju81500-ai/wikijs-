@@ -1,12 +1,12 @@
 ---
 title: "VM_WinSrv_2022_DHCP_Creer-Etendue-Et-Reservation-IP"
-description: "Créer une étendue DHCP IPv4 (plage d'adresses dynamiques, masque, passerelle, DNS) et attribuer une réservation d'adresse IP fixe basée sur la carte adresse MAC d'un équipement."
+description: "Créer une étendue DHCP IPv4 (plage d'adresses dynamiques, masque, passerelle, [[Glossary:DNS]]) et attribuer une réservation d'adresse [[Glossary:IP]] fixe basée sur la carte adresse MAC d'un équipement."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["winsrv2022", "dhcp", "etendue", "reservation-ip", "gui", "powershell", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_WinSrv_2022_DHCP_Creer-Etendue-Et-Reservation-IP.md

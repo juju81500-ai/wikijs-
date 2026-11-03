@@ -2,11 +2,11 @@
 title: "Apache"
 description: "Couvert — série par étape pour Debian 13 (prérequis, installation, configuration, sécurisation, recette, sauvegarde/restauration, mise à jour et retour arrière) ; [guide Apache HTTP Server sur Debian 13](../../../02-fiches-completes/debian/13/installation-deploiement/124-deploiement-apache-http-serv"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "14-services-web-et-bases-de-donnees", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Apache

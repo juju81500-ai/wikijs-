@@ -1,12 +1,12 @@
 ---
 title: "Postman"
-description: "Couvert — Windows 11 Client et Debian 13 (installation, workspace, collections, environnements et secrets, tests, Newman CLI, mise à jour et retour arrière). Fiche historique Debian 12 conservée."
+description: "Couvert — Windows 11 Client et Debian 13 (installation, workspace, collections, environnements et secrets, tests, Newman [[Glossary:CLI]], mise à jour et retour arrière). Fiche historique Debian 12 conservée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "11-scripting-developpement-et-administration", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Postman

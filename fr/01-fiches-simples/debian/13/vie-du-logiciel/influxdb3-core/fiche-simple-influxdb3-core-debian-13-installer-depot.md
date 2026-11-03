@@ -2,11 +2,11 @@
 title: "Fiche simple — Installer InfluxDB 3 Core depuis le dépôt officiel"
 description: "Installer le paquet InfluxDB 3 Core uniquement après validation de la clé et de la provenance APT."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "influxdb3-core", "apt", "signature", "installation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche simple — Installer InfluxDB 3 Core depuis le dépôt officiel

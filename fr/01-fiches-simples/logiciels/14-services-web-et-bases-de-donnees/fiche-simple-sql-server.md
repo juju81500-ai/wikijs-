@@ -2,11 +2,11 @@
 title: "SQL Server"
 description: "Sur une instance SQL Server 2022 déjà installée sous Windows Server 2022, vérifier qu'une sauvegarde complète est produite et restaurable, contrôler les comptes de service, et ouvrir le port SQL uniquement aux clients prévus. L'installation de SQL Server n'est pas traitée ici. Les tests ne se font q"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "sql-server", "base-de-donnees", "sauvegarde", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 SQL Server

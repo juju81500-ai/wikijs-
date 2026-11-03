@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM ESXi 8 VMware vSphere Snapshots"
 description: "Créer et gérer un snapshot temporaire avant un test réversible sans le confondre avec une sauvegarde."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["vmware-vsphere", "vsphere8", "snapshot", "vm", "restauration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_ESXi_8_VMware_vSphere_Snapshots

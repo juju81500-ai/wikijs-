@@ -2,11 +2,11 @@
 title: "Vie du logiciel : Ubuntu Toutes versions"
 description: "Logiciels qui s'installent et se gèrent sur Ubuntu Toutes versions. Pour chaque logiciel : fiche d'entrée du catalogue, puis les fiches simples (installation, configuration, sécurité, sauvegarde, mise à jour). Le système lui-même se trouve dans le dossier Vie-du-systeme."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["vie-du-logiciel", "sommaire", "ubuntutoutesversions"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Vie du logiciel : Ubuntu Toutes versions

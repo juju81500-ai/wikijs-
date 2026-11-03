@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-lemp-deployer-nginx-php"
 description: "Configurer un hôte Nginx et le relier au socket PHP-FPM réellement installé, avec un test temporaire non sensible."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "lemp", "nginx", "php-fpm", "virtual-host"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-lemp-deployer-nginx-php.md

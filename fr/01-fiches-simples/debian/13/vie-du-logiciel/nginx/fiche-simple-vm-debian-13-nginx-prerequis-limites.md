@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Nginx Prerequis Limites"
 description: "Vérifier que la VM peut accueillir Nginx seul (serveur Web statique ou reverse proxy) et connaître les limites du périmètre avant de l'installer."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "nginx", "prerequis"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Nginx_Prerequis_Limites

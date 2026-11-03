@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Bash Shell Prerequis Limites"
 description: "Identifier version, dépendances, shell/endpoint et périmètre avant usage de Bash."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "bash", "shell", "scripting", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Bash_Shell_Prerequis_Limites

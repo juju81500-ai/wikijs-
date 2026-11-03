@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-splunk-telecharger-verifier-paquet"
 description: "Obtenir le paquet officiel et contrôler son intégrité."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "splunk", "logs", "sha512", "deb"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-splunk-telecharger-verifier-paquet.md

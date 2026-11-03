@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-ocs-inventory-comptes"
 description: "Créer des comptes nominatifs et un compte agent distinct avec le minimum de permissions."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "ocs-inventory", "ocs3", "postgresql", "nginx", "rbac"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-ocs-inventory-comptes.md

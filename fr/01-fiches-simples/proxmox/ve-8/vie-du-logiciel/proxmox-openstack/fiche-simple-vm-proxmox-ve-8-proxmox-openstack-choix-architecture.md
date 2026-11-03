@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Proxmox VE 8 Proxmox OpenStack Choix Architecture"
 description: "Définir une manière d’étudier Proxmox VE 8 et OpenStack sans prétendre qu’il existe une intégration native officiellement prise en charge."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmox-ve", "pve8", "openstack", "architecture", "lab"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Proxmox_VE_8_Proxmox_OpenStack_Choix_Architecture

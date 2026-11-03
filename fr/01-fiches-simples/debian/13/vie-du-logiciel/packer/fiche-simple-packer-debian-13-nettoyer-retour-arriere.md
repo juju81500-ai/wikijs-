@@ -2,11 +2,11 @@
 title: "Fiche simple — Nettoyer un pilote Packer et préparer le retour arrière"
 description: "Retirer uniquement l'image de test inutilisée et pouvoir revenir à un template/plugin connu."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "packer", "docker", "nettoyage", "rollback"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche simple — Nettoyer un pilote Packer et préparer le retour arrière

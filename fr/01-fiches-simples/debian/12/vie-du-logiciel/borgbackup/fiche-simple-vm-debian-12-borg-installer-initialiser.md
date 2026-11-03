@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-borg-installer-initialiser"
 description: "Installer Borg et initialiser une seule fois un dépôt chiffré sans risquer d'écraser un dépôt existant."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "borgbackup", "apt", "repository", "encryption"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-borg-installer-initialiser.md

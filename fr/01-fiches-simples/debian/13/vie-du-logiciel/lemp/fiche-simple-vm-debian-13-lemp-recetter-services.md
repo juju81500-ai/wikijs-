@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-lemp-recetter-services"
 description: "Vérifier que Nginx, MariaDB et PHP-FPM fonctionnent ensemble sans masquer d'erreur ni laisser l'endpoint de test en place."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "lemp", "nginx", "mariadb", "php-fpm", "recette"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-lemp-recetter-services.md

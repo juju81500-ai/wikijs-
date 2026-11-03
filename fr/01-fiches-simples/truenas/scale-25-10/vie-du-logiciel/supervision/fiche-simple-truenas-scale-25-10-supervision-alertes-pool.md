@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-truenas-scale-25-10-supervision-alertes-pool"
-description: "Configurer l'envoi des alertes ZFS et SMART par courriel, planifier les scrubs et les tests SMART, puis vérifier que chaque alerte est réellement reçue."
+description: "Configurer l'envoi des alertes ZFS et [[Glossary:SMART]] par courriel, planifier les scrubs et les tests SMART, puis vérifier que chaque alerte est réellement reçue."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenas", "scale2510", "zfs", "pool", "scrub", "smart", "alerts"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-truenas-scale-25-10-supervision-alertes-pool.md

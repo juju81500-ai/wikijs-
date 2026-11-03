@@ -2,11 +2,11 @@
 title: "Choisir et déployer Keycloak, Authelia ou Authentik pour le SSO"
 description: "Comparer les trois solutions, choisir selon le besoin, puis déployer de façon sécurisée. Chaque produit a son modèle de configuration; ne pas copier la configuration de l'un vers l'autre."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["keycloak", "authelia", "authentik", "sso", "oidc", "saml", "mfa"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Choisir et déployer Keycloak, Authelia ou Authentik pour le SSO

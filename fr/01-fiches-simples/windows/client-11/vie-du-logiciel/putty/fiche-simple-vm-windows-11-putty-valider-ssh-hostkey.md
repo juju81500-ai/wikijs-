@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-11-putty-valider-ssh-hostkey"
 description: "Valider une session PuTTY vers un serveur SSH autorisé en vérifiant le logiciel, l'empreinte hôte et l'authentification sans exposer de clé privée."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows11", "putty", "ssh", "host-key", "puttygen", "validation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-windows-11-putty-valider-ssh-hostkey.md

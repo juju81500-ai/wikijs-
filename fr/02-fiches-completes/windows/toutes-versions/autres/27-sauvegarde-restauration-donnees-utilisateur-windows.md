@@ -2,11 +2,11 @@
 title: "Sauvegarder et restaurer les données utilisateur Windows"
 description: "Fiche simple : [définir le périmètre](../../../../01-fiches-simples/windows/toutes-versions/vie-du-systeme/fiches-par-theme/sauvegarde-restauration/fiche-simple-vm-windows-sauvegarde-donnees-utilisateur-definir-perimetre.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows", "windows10", "windows11", "sauvegarde", "restauration", "profil-utilisateur", "migration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Sauvegarder et restaurer les données utilisateur Windows

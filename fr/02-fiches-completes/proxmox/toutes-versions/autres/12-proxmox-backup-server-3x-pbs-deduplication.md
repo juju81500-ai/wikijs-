@@ -2,11 +2,11 @@
 title: "Déployer Proxmox Backup Server 3.x"
 description: "Fiche simple : [préparer l'infrastructure PBS](../../../../01-fiches-simples/proxmox/toutes-versions/vie-du-logiciel/proxmox-backup-server/fiche-simple-hote-proxmox-backup-server-preparer-infrastructure.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["proxmox-backup-server", "pbs3", "proxmox", "sauvegarde", "restauration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Proxmox Backup Server 3.x

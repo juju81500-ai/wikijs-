@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows 11 Postman Newman CLI"
 description: "Installer Newman et exécuter une collection Postman exportée en ligne de commande PowerShell, avec rapport JUnit et secret injecté par variable."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-11", "postman", "api", "newman", "vie-du-logiciel"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_11_Postman_Newman_CLI

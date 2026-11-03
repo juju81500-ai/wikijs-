@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-sauvegarde-test-restauration"
 description: "Vérifier qu'une sauvegarde Restic est réellement restaurable, dans un répertoire isolé, et que les fichiers restaurés sont identiques aux originaux sur Rocky Linux 9."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "rhel9", "restic", "pra", "restauration", "validation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-rocky-9-sauvegarde-test-restauration.md

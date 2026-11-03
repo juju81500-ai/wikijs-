@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Windows Server 2022 Securite Defender WDAC"
-description: "Vérifier et renforcer Microsoft Defender Antivirus sur un serveur Windows Server 2022, puis mettre en place un contrôle des applications exécutables (WDAC ou AppLocker) en commençant par un mode audit qui ne bloque rien."
+description: "Vérifier et renforcer Microsoft Defender Antivirus sur un serveur Windows Server 2022, puis mettre en place un contrôle des applications exécutables ([[Glossary:WDAC]] ou AppLocker) en commençant par un mode audit qui ne bloque rien."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows-server-2022", "defender", "wdac", "applocker", "code-integrity", "powershell"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Windows_Server_2022_Securite_Defender_WDAC

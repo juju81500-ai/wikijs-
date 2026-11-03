@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-automatisation-creer-timer-systemd"
 description: "Planifier une tâche récurrente avec une unité .timer systemd plutôt qu'un cron dispersé, et consulter ses exécutions dans journald."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "debian", "systemd", "timer", "automatisation", "maintenance"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-debian-13-automatisation-creer-timer-systemd.md

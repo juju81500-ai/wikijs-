@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Rocky 9 AlmaLinux ELevate"
 description: "Utiliser ELevate/Leapp uniquement pour un chemin source→cible présent dans la matrice officielle courante."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "almalinux", "rhel", "migration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_9_AlmaLinux_ELevate

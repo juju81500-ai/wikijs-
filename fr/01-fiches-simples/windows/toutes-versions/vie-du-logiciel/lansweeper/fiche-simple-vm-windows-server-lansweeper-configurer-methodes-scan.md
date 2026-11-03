@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-server-lansweeper-configurer-methodes-scan"
 description: "Choisir la méthode de scan adaptée à chaque type d'actif."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["lansweeper", "windows-server-2022", "inventaire", "wmi", "snmp"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # fiche-simple-vm-windows-server-lansweeper-configurer-methodes-scan.md

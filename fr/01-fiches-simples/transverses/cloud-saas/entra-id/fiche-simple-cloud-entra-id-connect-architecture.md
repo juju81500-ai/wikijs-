@@ -2,11 +2,11 @@
 title: "Fiche Simple - Cloud Entra ID Connect Architecture"
 description: "Choisir et documenter l'architecture de synchronisation d'identités hybrides avec le produit actuel, Microsoft Entra Connect (Connect Sync) ou Entra Cloud Sync."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["entra-id", "entra-connect", "hybride", "architecture", "synchronisation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Cloud_Entra_ID_Connect_Architecture

@@ -2,11 +2,11 @@
 title: "StarWind Virtual SAN : stockage répliqué sur deux nœuds"
 description: "- Périmètre : stockage haute disponibilité à deux nœuds (réplication synchrone) pour hyperviseurs. Ne couvre pas la plateforme complète HCI propriétaire ni les appliances livrées clé en main."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["starwind", "vsan", "stockage", "ha", "iscsi", "hyperv"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # StarWind Virtual SAN : stockage répliqué sur deux nœuds

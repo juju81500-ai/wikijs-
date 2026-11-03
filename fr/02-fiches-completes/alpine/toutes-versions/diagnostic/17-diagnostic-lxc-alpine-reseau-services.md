@@ -2,11 +2,11 @@
 title: "Diagnostiquer un LXC Alpine : réseau et services OpenRC"
 description: "Fiche simple : [préparer l'intervention](../../../../01-fiches-simples/alpine/toutes-versions/vie-du-systeme/fiches-par-theme/diagnostic/fiche-simple-lxc-alpine-diagnostic-preparer-intervention.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["alpine", "proxmox", "lxc", "diagnostic", "openrc", "reseau"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Diagnostiquer un LXC Alpine : réseau et services OpenRC

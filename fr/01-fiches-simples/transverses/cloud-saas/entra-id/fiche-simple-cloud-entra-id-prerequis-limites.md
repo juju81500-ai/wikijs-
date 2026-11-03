@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - Cloud Entra ID Prerequis Limites"
-description: "Valider licences, rôles et outils avant de toucher MFA, accès conditionnel ou synchronisation."
+description: "Valider licences, rôles et outils avant de toucher [[Glossary:MFA]], accès conditionnel ou synchronisation."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["entra-id", "cloud-saas", "prerequis", "licences", "graph"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Cloud_Entra_ID_Prerequis_Limites

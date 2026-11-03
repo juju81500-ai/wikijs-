@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-gns3-deploiement-projet-isole"
 description: "Lancer GNS3 avec un serveur local et un projet fermé."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["gns3", "debian13", "projet", "isolation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-gns3-deploiement-projet-isole.md

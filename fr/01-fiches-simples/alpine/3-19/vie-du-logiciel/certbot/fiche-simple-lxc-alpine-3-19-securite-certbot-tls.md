@@ -2,11 +2,11 @@
 title: "fiche-simple-lxc-alpine-3-19-securite-certbot-tls"
 description: "Obtenir et renouveler automatiquement un certificat TLS Let's Encrypt sur un conteneur Alpine Linux avec le paquet certbot (dépôt community) et le démon crond d'OpenRC, sans systemd timer."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine3-19", "alpine", "lxc", "certbot", "letsencrypt", "tls", "crond"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-lxc-alpine-3-19-securite-certbot-tls.md

@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Debian 13 Systeme Test Redemarrage"
-description: "Vérifier qu'une VM ou un serveur Debian 13 redémarre proprement : montages, pile réseau, résolution DNS, pare-feu et services métier doivent revenir automatiquement, sans intervention manuelle."
+description: "Vérifier qu'une VM ou un serveur Debian 13 redémarre proprement : montages, pile réseau, résolution [[Glossary:DNS]], pare-feu et services métier doivent revenir automatiquement, sans intervention manuelle."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "debian", "reboot", "systemd", "validation", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Debian_13_Systeme_Test_Redemarrage

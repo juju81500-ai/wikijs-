@@ -1,12 +1,12 @@
 ---
 title: "Git"
-description: "Configurer Git sur un poste d'administration Debian 12 (identité, clé SSH, branches), puis héberger un dépôt nu de sauvegarde sur un serveur Linux accessible en SSH. La procédure ne couvre pas GitHub (SaaS)."
+description: "Configurer Git sur un poste d'administration Debian 12 (identité, clé [[Glossary:SSH]], branches), puis héberger un dépôt nu de sauvegarde sur un serveur Linux accessible en SSH. La procédure ne couvre pas GitHub (SaaS)."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian-12", "git", "ssh", "depot", "sauvegarde"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Git

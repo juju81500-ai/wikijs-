@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-caddy-configurer-proxy"
 description: "Configurer un reverse proxy Caddy vers un service amont local après sauvegarde de la configuration."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "caddy", "reverse-proxy", "caddyfile", "https"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-caddy-configurer-proxy.md

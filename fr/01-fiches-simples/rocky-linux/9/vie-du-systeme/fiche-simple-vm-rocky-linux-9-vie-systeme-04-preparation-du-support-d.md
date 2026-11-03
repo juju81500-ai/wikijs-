@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Rocky Linux 9 Vie Systeme 04 Preparation Du Support D"
 description: "Rendre l'ISO amorçable sur la machine ou l'hyperviseur."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "vie-du-systeme", "cycle-de-vie", "etape-04"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_04_Preparation_Du_Support_D

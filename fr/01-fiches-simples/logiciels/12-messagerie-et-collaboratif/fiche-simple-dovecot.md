@@ -1,12 +1,12 @@
 ---
 title: "Dovecot"
-description: "Installer le serveur IMAP Dovecot sur Debian 12, vérifier sur ce même serveur qu'une authentification de test réussit et qu'un client IMAP peut se connecter, puis le durcir (authentification interdite en clair, TLS obligatoire) avant de l'exposer aux postes de l'entreprise. Les tests ne se font que "
+description: "Installer le serveur [[Glossary:IMAP]] Dovecot sur Debian 12, vérifier sur ce même serveur qu'une authentification de test réussit et qu'un client IMAP peut se connecter, puis le durcir (authentification interdite en clair, [[Glossary:TLS]] obligatoire) avant de l'exposer aux postes de l'entreprise."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian-12", "dovecot", "imap", "messagerie", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Dovecot

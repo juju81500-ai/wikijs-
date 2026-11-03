@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-lemp-sauvegarder-retour-arriere"
 description: "Pouvoir revenir à une configuration cohérente après un changement Nginx ou une modification de données MariaDB."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "lemp", "backup", "restore", "rollback", "mariadb"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-lemp-sauvegarder-retour-arriere.md

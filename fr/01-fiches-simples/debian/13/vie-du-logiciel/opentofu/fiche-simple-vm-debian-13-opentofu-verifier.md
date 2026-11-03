@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-opentofu-verifier"
-description: "Vérifier la version, le dépôt, le format HCL et la stabilité du plan du pilote OpenTofu."
+description: "Vérifier la version, le dépôt, le format [[Glossary:HCL]] et la stabilité du plan du pilote OpenTofu."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "opentofu", "validate", "format", "plan"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-opentofu-verifier.md

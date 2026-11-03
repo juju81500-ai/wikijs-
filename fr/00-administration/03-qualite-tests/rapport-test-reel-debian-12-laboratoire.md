@@ -2,11 +2,11 @@
 title: "Rapport de test réel — Debian 12 en laboratoire"
 description: "- La copie rclone vers un dépôt distant reste non testée faute de remote configuré ; le test a utilisé un chemin local uniquement avec --dry-run."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["test-reel", "debian-12", "laboratoire", "qualite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Rapport de test réel — Debian 12 en laboratoire

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-buildah-sauvegarder-etat-initial"
 description: "Conserver l'état des paquets et la configuration avant toute installation."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["buildah", "oci", "rocky9", "rootless", "containerfile", "registre"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-rocky-9-buildah-sauvegarder-etat-initial.md

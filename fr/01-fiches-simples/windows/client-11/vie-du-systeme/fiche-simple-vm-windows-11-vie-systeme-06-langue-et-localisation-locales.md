@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows 11 Vie Systeme 06 Langue Et Localisation Locales"
 description: "Régler la langue d'affichage, le format régional et la localisation en français."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows11", "vie-du-systeme", "cycle-de-vie", "etape-06"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_11_Vie_Systeme_06_Langue_Et_Localisation_Locales

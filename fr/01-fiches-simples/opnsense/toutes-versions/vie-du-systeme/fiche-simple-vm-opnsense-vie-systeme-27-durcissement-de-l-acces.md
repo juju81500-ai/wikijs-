@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM OPNsense Vie Systeme 27 Durcissement De L Acces"
-description: "Limiter l'accès SSH et web."
+description: "Limiter l'accès [[Glossary:SSH]] et web."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["opnsense", "vie-du-systeme", "cycle-de-vie", "etape-27"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_27_Durcissement_De_L_Acces

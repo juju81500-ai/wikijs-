@@ -1,12 +1,12 @@
 ---
 title: "Support et gestion de service"
-description: "Fiches de triage, transfert, inventaire, compte rendu d'incident et pratiques ITSM."
+description: "Fiches de triage, transfert, inventaire, compte rendu d'incident et pratiques [[Glossary:ITSM]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "support", "itsm"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Support et gestion de service

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-conteneurs-podman-rootless-quadlet"
 description: "Déployer un conteneur Podman rootless et le gérer comme un service utilisateur systemd avec Quadlet."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "rhel9", "podman", "rootless", "quadlet", "systemd", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-rocky-9-conteneurs-podman-rootless-quadlet.md

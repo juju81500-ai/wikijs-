@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 HAProxy Prerequis Limites"
 description: "Cadrer un HAProxy seul sur Debian 13 (répartiteur de charge / reverse proxy) avant installation."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "haproxy", "prerequis"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_HAProxy_Prerequis_Limites

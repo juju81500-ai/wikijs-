@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2025 Exchange Server Securiser Certificats"
 description: "Installer et affecter un certificat TLS public ou interne valide aux services Exchange nécessaires."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows-server-2025", "exchange-server-se", "messagerie", "securiser-certificats"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2025_Exchange_Server_Securiser_Certificats

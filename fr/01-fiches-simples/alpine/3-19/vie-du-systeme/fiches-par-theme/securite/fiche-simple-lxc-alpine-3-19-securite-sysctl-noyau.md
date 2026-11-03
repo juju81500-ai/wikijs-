@@ -2,11 +2,11 @@
 title: "fiche-simple-lxc-alpine-3-19-securite-sysctl-noyau"
 description: "Lire, tester et rendre persistants des paramètres sysctl de durcissement réseau sur un conteneur Alpine Linux, en distinguant les paramètres propres au conteneur de ceux qui relèvent du noyau de l'hôte Proxmox."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine3-19", "alpine", "lxc", "sysctl", "kernel", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-lxc-alpine-3-19-securite-sysctl-noyau.md

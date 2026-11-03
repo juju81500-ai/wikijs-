@@ -1,12 +1,12 @@
 ---
 title: "Suricata"
-description: "Couvert — Suricata IDS passif sur Debian 13, Ubuntu 24-04 et Rocky Linux 9 (EPEL). L’IPS/inline n’est pas couvert; vérifier la version publiée par chaque dépôt."
+description: "Couvert — Suricata [[Glossary:IDS]] passif sur Debian 13, Ubuntu 24-04 et Rocky Linux 9 (EPEL). L’IPS/inline n’est pas couvert; vérifier la version publiée par chaque dépôt."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "04-reseau-et-cybersecurite", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Suricata

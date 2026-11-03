@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-openldap-verifier-olc"
-description: "Lire le suffixe et le DN administrateur depuis OLC avant d'ajouter des entrées ou modifier l'annuaire."
+description: "Lire le suffixe et le [[Glossary:DN]] administrateur depuis OLC avant d'ajouter des entrées ou modifier l'annuaire."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "openldap", "olc", "cn-config", "ldapsearch"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-openldap-verifier-olc.md

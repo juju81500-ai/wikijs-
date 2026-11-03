@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-freeipa-installer"
 description: "Installer les paquets FreeIPA, ouvrir le pare-feu et lancer l'assistant d'installation."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "freeipa", "idm", "kerberos"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-rocky-9-freeipa-installer.md

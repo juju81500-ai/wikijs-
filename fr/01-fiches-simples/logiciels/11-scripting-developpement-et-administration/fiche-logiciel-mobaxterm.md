@@ -1,12 +1,12 @@
 ---
 title: "MobaXterm"
-description: "Série Windows Client 11 couvrant prérequis, installation, sessions SSH, sécurité, validation, sauvegarde/restauration et mise à jour. Une ancienne fiche ciblant Windows Server 2022 reste disponible séparément."
+description: "Série Windows Client 11 couvrant prérequis, installation, sessions [[Glossary:SSH]], sécurité, validation, sauvegarde/restauration et mise à jour. Une ancienne fiche ciblant Windows Server 2022 reste disponible séparément."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "11-scripting-developpement-et-administration", "partiel"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 MobaXterm

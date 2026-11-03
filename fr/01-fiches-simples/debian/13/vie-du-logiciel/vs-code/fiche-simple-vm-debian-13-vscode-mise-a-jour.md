@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-vscode-mise-a-jour"
 description: "Mettre à jour VS Code par APT et sauvegarder le profil."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "vscode", "apt", "maj", "sauvegarde"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-vscode-mise-a-jour.md

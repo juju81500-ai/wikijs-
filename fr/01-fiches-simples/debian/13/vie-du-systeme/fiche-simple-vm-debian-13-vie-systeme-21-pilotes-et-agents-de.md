@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Vie Systeme 21 Pilotes Et Agents De"
 description: "Installer l'agent adapté à l'hyperviseur."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "vie-du-systeme", "cycle-de-vie", "etape-21"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Vie_Systeme_21_Pilotes_Et_Agents_De

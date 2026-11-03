@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Rocky Linux 9 Vie Systeme 15 Chargeur D Amorcage"
 description: "Contrôler GRUB2 et l'amorçage."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "vie-du-systeme", "cycle-de-vie", "etape-15"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_15_Chargeur_D_Amorcage

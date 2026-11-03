@@ -2,11 +2,11 @@
 title: "Reverse proxy Traefik et certificats ACME avec Docker"
 description: "Fiche simple : [préparer DNS et exposition](../../../../01-fiches-simples/transverses/docker/traefik/fiche-simple-docker-conteneur-traefik-preparer-dns.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["traefik", "docker", "reverse-proxy", "acme", "tls"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Reverse proxy Traefik et certificats ACME avec Docker

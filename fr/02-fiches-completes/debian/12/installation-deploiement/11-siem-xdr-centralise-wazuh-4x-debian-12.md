@@ -2,11 +2,11 @@
 title: "Déployer une plateforme Wazuh 4.x sur Debian 12"
 description: "Fiche simple : [dimensionner et préparer la plateforme](../../../../01-fiches-simples/debian/12/vie-du-logiciel/wazuh/fiche-simple-vm-debian-12-wazuh-dimensionner-preparer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["wazuh", "siem", "xdr", "debian12", "logs", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer une plateforme Wazuh 4.x sur Debian 12

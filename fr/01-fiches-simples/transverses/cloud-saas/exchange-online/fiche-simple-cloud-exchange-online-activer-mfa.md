@@ -2,11 +2,11 @@
 title: "Fiche Simple - Cloud Exchange Online Activer MFA"
 description: "Imposer l'authentification multifacteur aux comptes du tenant, administrateurs en priorité."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["exchange-online", "microsoft-365", "cloud-saas", "administration-defensive", "messagerie", "tssr"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Cloud_Exchange_Online_Activer_MFA

@@ -2,11 +2,11 @@
 title: "fiche-simple-appliance-opnsense-diagnostic-reseau-cas-particuliers"
 description: "Diagnostiquer les pannes spécifiques sans tout recréer."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["opnsense", "diagnostic", "reseau", "firewall", "dns", "vpn"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-appliance-opnsense-diagnostic-reseau-cas-particuliers.md

@@ -2,11 +2,11 @@
 title: "VM_Debian_12_Sauvegarde_Configuration-Rclone-S3"
 description: "Installer l'outil officiel Rclone, configurer un dépôt de stockage distant compatible S3 / Cloud, et automatiser une sauvegarde chiffrée avec rotation et journalisation."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "debian-family", "rclone", "sauvegarde", "s3", "cron", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_12_Sauvegarde_Configuration-Rclone-S3.md

@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Debian 13 Securite Sysctl Noyau"
-description: "Durcir les paramètres du noyau Linux et de la pile réseau IPv4 / IPv6 sur Debian 13 (protection contre les redirections ICMP, le spoofing et l'usurpation de liens), via un fichier persistant dans /etc/sysctl.d/, sans casser les services qui dépendent du routage."
+description: "Durcir les paramètres du noyau Linux et de la pile réseau IPv4 / IPv6 sur Debian 13 (protection contre les redirections [[Glossary:ICMP]], le spoofing et l'usurpation de liens), via un fichier persistant dans /etc/sysctl.d/, sans casser les services qui dépendent du routage."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "debian", "sysctl", "kernel", "reseau", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Debian_13_Securite_Sysctl_Noyau

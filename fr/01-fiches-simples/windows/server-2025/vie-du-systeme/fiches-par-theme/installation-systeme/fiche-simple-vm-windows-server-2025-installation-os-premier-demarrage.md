@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-server-2025-installation-os-premier-demarrage"
 description: "Installer Windows Server 2025 en choisissant l'expérience Core/Desktop adaptée et vérifier les prérequis matériels et différences par défaut avant d'appliquer les fiches Windows Server 2022."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows-server-2025", "installation", "vm", "server-core", "compatibilite", "premier-demarrage"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # 📄 fiche-simple-vm-windows-server-2025-installation-os-premier-demarrage.md

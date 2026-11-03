@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Ubuntu 24.04 OpenLDAP Configurer"
-description: "Configurer TLS sur Ubuntu en tenant compte d'AppArmor et des droits de la clé."
+description: "Configurer [[Glossary:TLS]] sur Ubuntu en tenant compte d'AppArmor et des droits de la clé."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["openldap", "ubuntu24-04", "vie-du-logiciel", "configurer"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_OpenLDAP_Configurer

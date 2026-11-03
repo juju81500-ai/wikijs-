@@ -2,11 +2,11 @@
 title: "Leçon — Réseau et stockage virtuels : bridges, VLAN, datastores, snapshots, templates"
 description: "À la fin de cette leçon, tu sauras :"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "lecon", "virtualisation", "reseau-virtuel", "vlan", "stockage", "snapshot", "sauvegarde"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Leçon — Réseau et stockage virtuels : bridges, VLAN, datastores, snapshots, templates

@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 WDS MDT Maintenance Retour arriere"
 description: "Maintenir le service (images de démarrage, ADK, partage) et revenir en arrière si une modification échoue. L'installation initiale est dans la [procédure historique WDS + MDT](../../../../logiciels/09-automatisation-deploiement-et-iac/fiche-simple-wds-mdt.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "wds", "mdt", "maintenance", "retour-arriere"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_WDS_MDT_Maintenance_Retour_arriere

@@ -2,11 +2,11 @@
 title: "VM_Debian_12_Securite_AppArmor"
 description: "Installer AppArmor sur Debian 12, charger les profils fournis par la distribution, passer les services exposés en mode enforce après une phase d'observation en complain, et analyser les refus éventuels."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "debian-family", "apparmor", "mac", "profils", "enforce", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_12_Securite_AppArmor.md

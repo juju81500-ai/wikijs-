@@ -1,12 +1,12 @@
 ---
 title: "Samba / Samba4"
-description: "Couvert pour un lab AD DC — [guide Samba AD DC Debian 13](../../../02-fiches-completes/debian/13/installation-deploiement/65-deploiement-samba-ad-dc-debian-13.md); partage SMB traité séparément dans [NAS/SAN](../../../02-fiches-completes/transverses/multi-os/installation-deploiement/07-stockage-rese"
+description: "Couvert pour un lab [[Glossary:AD]] [[Glossary:DC]] — [guide Samba AD DC Debian 13](../../../02-fiches-completes/debian/13/installation-deploiement/65-deploiement-samba-ad-dc-debian-13.md); partage SMB traité séparément dans [NAS/SAN](../../../02-fiches-completes/transverses/multi-os/installation-de"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "05-systemes-annuaires-et-services", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Samba / Samba4

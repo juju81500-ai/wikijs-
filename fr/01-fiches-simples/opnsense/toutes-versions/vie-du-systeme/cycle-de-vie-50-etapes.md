@@ -2,11 +2,11 @@
 title: "Cycle de vie 50 étapes : OPNsense"
 description: "Cette checklist suit les 50 étapes du [cycle complet OPNsense](../../../../02-fiches-completes/opnsense/toutes-versions/cycle-de-vie-50-etapes.md) et du [cycle de référence](../../../../00-administration/01-gouvernance-architecture/cycle-de-vie-50-etapes.md). Utiliser la documentation officielle cor"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["cycle-de-vie", "opnsense", "pare-feu", "appliance", "installation", "production", "verification"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Cycle de vie 50 étapes : OPNsense

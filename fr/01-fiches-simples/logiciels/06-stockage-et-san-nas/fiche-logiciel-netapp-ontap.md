@@ -2,11 +2,11 @@
 title: "NetApp ONTAP"
 description: "Matériel/éditeur propriétaire — hors périmètre pas à pas. Documentation officielle : [documentation NetApp ONTAP](https://docs.netapp.com/us-en/ontap/)."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "06-stockage-et-san-nas", "hors-perimetre"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 NetApp ONTAP

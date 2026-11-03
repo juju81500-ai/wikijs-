@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM ESXi 8 Vie Systeme 40 Configuration Des Sauvegardes"
-description: "Sauvegarder les VM et la configuration de l'hôte."
+description: "Sauvegarder les [[Glossary:VM]] et la configuration de l'hôte."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["esxi8", "vie-du-systeme", "cycle-de-vie", "etape-40"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_ESXi_8_Vie_Systeme_40_Configuration_Des_Sauvegardes

@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-multi-os-reseau-diagnostic-cadrer-perimetre"
-description: "Poser le parcours de diagnostic (Lien → Adresse → Passerelle → Route → DNS → Port → Application) avant de toucher à la configuration."
+description: "Poser le parcours de diagnostic (Lien → Adresse → Passerelle → Route → [[Glossary:DNS]] → Port → Application) avant de toucher à la configuration."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["reseau", "diagnostic", "multi-os", "depannage"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-multi-os-reseau-diagnostic-cadrer-perimetre.md

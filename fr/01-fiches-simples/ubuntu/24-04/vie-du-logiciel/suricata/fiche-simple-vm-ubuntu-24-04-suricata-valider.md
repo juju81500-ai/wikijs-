@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 24.04 Suricata Valider"
 description: "Recetter le capteur : moteur actif, règles chargées, événements écrits."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["suricata", "ubuntu24-04", "vie-du-logiciel", "valider"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_Suricata_Valider

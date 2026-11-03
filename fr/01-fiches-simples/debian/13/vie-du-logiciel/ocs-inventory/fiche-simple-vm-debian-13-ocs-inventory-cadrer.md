@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-ocs-inventory-cadrer"
-description: "Valider l'architecture (backend API + console), les noms DNS, les ressources et les accès avant d'installer OCS Inventory 3."
+description: "Valider l'architecture (backend [[Glossary:API]] + console), les noms [[Glossary:DNS]], les ressources et les accès avant d'installer OCS Inventory 3."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "ocs-inventory", "ocs3", "postgresql", "nginx", "prerequis"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-ocs-inventory-cadrer.md

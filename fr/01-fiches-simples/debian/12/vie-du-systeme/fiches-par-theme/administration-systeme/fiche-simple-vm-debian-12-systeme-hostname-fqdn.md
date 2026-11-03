@@ -1,12 +1,12 @@
 ---
 title: "VM_Debian_12_Systeme_Hostname-FQDN"
-description: "Définir le nom d'hôte statique et le FQDN d'un serveur Debian 12 de façon cohérente entre systemd (hostnamectl), /etc/hosts et le DNS, afin que hostname -f et les services (Zabbix, Samba, certificats, journaux) renvoient le même nom."
+description: "Définir le nom d'hôte statique et le [[Glossary:FQDN]] d'un serveur Debian 12 de façon cohérente entre systemd (hostnamectl), /etc/hosts et le [[Glossary:DNS]], afin que hostname -f et les services (Zabbix, Samba, certificats, journaux) renvoient le même nom."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "debian-family", "hostname", "fqdn", "hosts", "systemd"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_12_Systeme_Hostname-FQDN.md

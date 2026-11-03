@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-openmediavault-premiere-connexion"
 description: "Sécuriser la première connexion et fixer le réseau depuis OMV."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "openmediavault", "interface-web", "reseau", "nginx"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-openmediavault-premiere-connexion.md

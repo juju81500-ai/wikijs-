@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-glpi-preparer-compatibilite"
 description: "Préparer le déploiement GLPI en validant les versions supportées, le stockage, le réseau et la stratégie de reprise avant installation."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "debian13", "glpi", "itsm", "compatibilite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-glpi-preparer-compatibilite.md

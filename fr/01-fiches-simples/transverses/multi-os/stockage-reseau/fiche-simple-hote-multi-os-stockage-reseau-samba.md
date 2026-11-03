@@ -2,11 +2,11 @@
 title: "fiche-simple-hote-multi-os-stockage-reseau-samba"
 description: "Publier un partage SMB limité à un groupe."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["stockage", "samba", "smb"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-multi-os-stockage-reseau-samba.md

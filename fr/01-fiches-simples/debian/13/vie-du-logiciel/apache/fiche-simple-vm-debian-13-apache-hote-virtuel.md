@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-apache-hote-virtuel"
 description: "Servir une page statique de test depuis un hôte virtuel dédié avec un répertoire non inscriptible par le serveur Web."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "apache", "virtual-host", "document-root", "validation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-apache-hote-virtuel.md

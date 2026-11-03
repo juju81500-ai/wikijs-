@@ -2,11 +2,11 @@
 title: "fiche-simple-pfsense-ce-2-9-0-valider-flux-lab"
 description: "Valider la séparation WAN/LAN et prouver qu'un backup de configuration chiffré peut être restauré sans raccorder la VM de test à la production."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["pfsense", "ce", "2-9-0", "proxmox", "firewall", "lab", "restore"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-pfsense-ce-2-9-0-valider-flux-lab.md

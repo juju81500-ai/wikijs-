@@ -2,11 +2,11 @@
 title: "fiche-simple-appliance-opnsense-systeme-mise-a-jour"
 description: "Mettre à jour OPNsense (correctifs et version) avec sauvegarde préalable, point de retour arrière et vérification après redémarrage."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["opnsense", "freebsd", "update", "firmware", "pkg", "maintenance"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-appliance-opnsense-systeme-mise-a-jour.md

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 24.04 PowerShell Configurer Profils Modules"
 description: "Configurer les profils PowerShell 7 et l'installation de modules (PSResourceGet / PowerShellGet) de façon maîtrisée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2404", "powershell", "pwsh", "scripting"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_PowerShell_Configurer_Profils_Modules

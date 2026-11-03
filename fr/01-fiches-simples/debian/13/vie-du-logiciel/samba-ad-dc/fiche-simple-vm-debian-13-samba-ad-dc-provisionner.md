@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-samba-ad-dc-provisionner"
 description: "Créer un nouveau domaine AD avec samba-tool (une seule fois par DC)."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "samba", "active-directory", "lab", "provision", "samba-tool"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-samba-ad-dc-provisionner.md

@@ -2,11 +2,11 @@
 title: "fiche-simple-appliance-opnsense-carp-pfsync-preparer-basculement"
 description: "Préparer deux appliances avant de configurer CARP et pfsync."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["opnsense", "carp", "pfsync", "ha", "firewall"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-appliance-opnsense-carp-pfsync-preparer-basculement.md

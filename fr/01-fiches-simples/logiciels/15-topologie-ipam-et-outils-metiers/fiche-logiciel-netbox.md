@@ -2,11 +2,11 @@
 title: "NetBox"
 description: "Couvert pour NetBox 4.7.4 sur Debian 13 — [guide](../../../02-fiches-completes/debian/13/installation-deploiement/73-deploiement-netbox-4-7-4-debian-13.md), [fiche pilote IPAM](../../debian/13/vie-du-logiciel/netbox/fiche-simple-vm-debian-13-netbox-valider-ipam.md) et fiches simples par étape"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "15-topologie-ipam-et-outils-metiers", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 NetBox

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-bareos-installer-paquets"
 description: "Installer les composants Bareos depuis un dépôt vérifié sans exécuter aveuglément un script téléchargé."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "bareos", "apt", "postgresql", "installation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-bareos-installer-paquets.md

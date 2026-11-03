@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Windows 11 Vie Systeme 49 Enregistrement Cmdb Et Gestion"
-description: "Enregistrer le poste dans le CMDB et valider qui peut l'administrer."
+description: "Enregistrer le poste dans le [[Glossary:CMDB]] et valider qui peut l'administrer."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows11", "vie-du-systeme", "cycle-de-vie", "etape-49"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_11_Vie_Systeme_49_Enregistrement_Cmdb_Et_Gestion

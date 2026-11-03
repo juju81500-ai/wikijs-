@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 24.04 EVE-NG Mettre A Jour Retour"
 description: "Mettre à jour EVE-NG 7.x avec un point de retour, et planifier la migration depuis 6.x/Community en fin de support."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu24-04", "eve-ng", "mise-a-jour", "snapshot", "retour-arriere", "upgrade"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_EVE-NG_Mettre_A_Jour_Retour

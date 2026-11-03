@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-netbox-installer-release"
 description: "Installer la release NetBox versionnée sans écraser une instance existante ni donner au serveur Web l'écriture sur le code."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "netbox", "release", "archive", "permissions"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-netbox-installer-release.md

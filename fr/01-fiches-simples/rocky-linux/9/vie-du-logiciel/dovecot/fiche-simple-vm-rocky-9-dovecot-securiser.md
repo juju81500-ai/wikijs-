@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Rocky 9 Dovecot Securiser"
-description: "Limiter connexions réseau et protéger TLS et comptes de Dovecot."
+description: "Limiter connexions réseau et protéger [[Glossary:TLS]] et comptes de Dovecot."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["dovecot", "serveur", "vie-du-logiciel", "securiser"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_9_Dovecot_Securiser

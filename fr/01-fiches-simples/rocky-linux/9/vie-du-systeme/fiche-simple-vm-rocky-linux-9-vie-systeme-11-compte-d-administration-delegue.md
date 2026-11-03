@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Rocky Linux 9 Vie Systeme 11 Compte D Administration Delegue"
 description: "Créer un administrateur nominatif."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "vie-du-systeme", "cycle-de-vie", "etape-11"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_11_Compte_D_Administration_Delegue

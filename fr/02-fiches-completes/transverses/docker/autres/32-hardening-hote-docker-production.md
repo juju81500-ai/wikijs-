@@ -2,11 +2,11 @@
 title: "Hardening d'un hôte Docker en production"
 description: "Fiche simple : [inventorier et protéger le plan de contrôle](../../../../01-fiches-simples/transverses/docker/securite/fiche-simple-hote-docker-securite-hardening-inventaire-plan-controle.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["docker", "hardening", "securite", "compose", "conteneurs", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Hardening d'un hôte Docker en production

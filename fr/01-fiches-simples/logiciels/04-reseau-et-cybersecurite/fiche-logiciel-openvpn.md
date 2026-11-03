@@ -1,12 +1,12 @@
 ---
 title: "OpenVPN"
-description: "Couvert — OpenVPN Community Edition : serveur Debian 13, Ubuntu 24-04 et Rocky Linux 9 (EPEL); client Windows 11. PKI, comptes, routes et révocation sont à adapter à l’organisation; OpenVPN Access Server non couvert. Procédures non testées sur chaque OS."
+description: "Couvert — OpenVPN Community Edition : serveur Debian 13, Ubuntu 24-04 et Rocky Linux 9 (EPEL); client Windows 11. [[Glossary:PKI]], comptes, routes et révocation sont à adapter à l’organisation; OpenVPN Access Server non couvert. Procédures non testées sur chaque OS."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "04-reseau-et-cybersecurite", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 OpenVPN

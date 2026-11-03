@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2025 Exchange Server Mise A Jour CU"
 description: "Planifier et valider l’application d’une mise à jour cumulative (CU) ou de sécurité (SU) Exchange SE sur Windows Server 2025."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows-server-2025", "exchange-server-se", "messagerie", "mise-a-jour-cu"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2025_Exchange_Server_Mise_A_Jour_CU

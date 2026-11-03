@@ -2,11 +2,11 @@
 title: "Nextcloud"
 description: "Installer Nextcloud sur Debian 12 avec Apache, MariaDB et PHP, vérifier sur ce même serveur que l'interface répond et que la commande d'état occ est saine, puis le durcir (domaines de confiance, HTTPS, dossier de données hors racine web) avant de l'ouvrir aux utilisateurs. Les tests ne se font que s"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian-12", "nextcloud", "cloud", "php", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Nextcloud

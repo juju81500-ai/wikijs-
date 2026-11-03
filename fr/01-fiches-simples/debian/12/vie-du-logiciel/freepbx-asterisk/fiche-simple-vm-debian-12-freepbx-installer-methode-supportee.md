@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-freepbx-installer-methode-supportee"
 description: "Installer FreePBX selon la méthode officielle compatible sans exécuter de script tiers ou de paquets incompatibles."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "freepbx", "asterisk", "installation", "integrity"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-freepbx-installer-methode-supportee.md

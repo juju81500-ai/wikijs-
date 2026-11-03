@@ -1,12 +1,12 @@
 ---
 title: "Réparation : un serveur Linux ne résout plus les noms DNS"
-description: "Les connexions par adresse IP fonctionnent, mais les noms de domaine échouent, ou bien les applications signalent des erreurs de résolution."
+description: "Les connexions par adresse [[Glossary:IP]] fonctionnent, mais les noms de domaine échouent, ou bien les applications signalent des erreurs de résolution."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["reparation", "linux", "dns", "systemd-resolved", "reseau"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Réparation : un serveur Linux ne résout plus les noms DNS

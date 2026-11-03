@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-server-2022-sauvegarder-restaurer-etat-systeme"
 description: "Installer Windows Server Backup, effectuer une sauvegarde de l'état système sur une cible dédiée et vérifier qu'une version exploitable est disponible avant une procédure de restauration."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "windows-server-backup", "wbadmin", "sauvegarde", "restauration", "system-state"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-windows-server-2022-sauvegarder-restaurer-etat-systeme.md

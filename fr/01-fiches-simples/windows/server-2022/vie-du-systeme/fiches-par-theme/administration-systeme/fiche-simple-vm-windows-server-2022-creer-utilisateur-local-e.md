@@ -1,12 +1,12 @@
 ---
 title: "VM_WinSrv_2022_Utilisateurs_Creer-Utilisateur-Local-Et-Admin"
-description: "Créer un compte utilisateur local standard (sans privilèges) et un compte administrateur local sous Windows Server 2022 en utilisant l'interface graphique (GUI) ou la ligne de commande PowerShell, et attribuer/retirer les droits d'administration."
+description: "Créer un compte utilisateur local standard (sans privilèges) et un compte administrateur local sous Windows Server 2022 en utilisant l'interface graphique ([[Glossary:GUI]]) ou la ligne de commande PowerShell, et attribuer/retirer les droits d'administration."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["winsrv2022", "windows-server", "utilisateurs", "admin-local", "gui", "powershell", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_WinSrv_2022_Utilisateurs_Creer-Utilisateur-Local-Et-Admin.md

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-controle-mise-production"
 description: "Effectuer la réception technique d'un serveur Rocky Linux avant ouverture en production : réseau, mises à jour, accès, SELinux/firewalld, stockage, sauvegarde et supervision."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "rhel9", "production", "validation", "selinux", "sauvegarde"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-rocky-9-controle-mise-production.md

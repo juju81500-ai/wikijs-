@@ -2,11 +2,11 @@
 title: "Déployer OpenMediaVault 8 sur Debian 13"
 description: "Fiche simple : [choisir le mode de déploiement](../../../../01-fiches-simples/debian/13/vie-du-logiciel/openmediavault/fiche-simple-vm-debian-13-openmediavault-choisir-mode.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["debian13", "openmediavault", "omv8", "nas", "smb", "storage"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer OpenMediaVault 8 sur Debian 13

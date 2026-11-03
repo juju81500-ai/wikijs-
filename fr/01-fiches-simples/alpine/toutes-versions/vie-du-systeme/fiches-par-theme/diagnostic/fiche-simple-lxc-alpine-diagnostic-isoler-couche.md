@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-lxc-alpine-diagnostic-isoler-couche"
-description: "Localiser si la panne provient du lien, de l'IP, de la route, du DNS, du port ou du service applicatif."
+description: "Localiser si la panne provient du lien, de l'[[Glossary:IP]], de la route, du [[Glossary:DNS]], du port ou du service applicatif."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine", "lxc", "diagnostic", "dns", "route", "service"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-lxc-alpine-diagnostic-isoler-couche.md

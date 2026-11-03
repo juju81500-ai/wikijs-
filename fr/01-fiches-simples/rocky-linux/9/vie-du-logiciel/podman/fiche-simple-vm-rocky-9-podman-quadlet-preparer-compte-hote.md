@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-podman-quadlet-preparer-compte-hote"
 description: "Préparer l'hôte et un compte de service pour Podman rootless (svcpodman est un nom d'exemple à remplacer)."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "podman", "quadlet", "rootless", "systemd", "subuid", "cgroups"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-rocky-9-podman-quadlet-preparer-compte-hote.md

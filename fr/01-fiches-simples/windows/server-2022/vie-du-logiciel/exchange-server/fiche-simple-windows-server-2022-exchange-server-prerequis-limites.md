@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 Exchange Server Prerequis Limites"
 description: "Vérifier qu'un serveur Windows Server 2022 et l'annuaire Active Directory sont prêts à recevoir Exchange Server, et connaître les limites de support."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "exchange-server", "messagerie", "prerequis", "active-directory"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_Exchange_Server_Prerequis_Limites

@@ -2,11 +2,11 @@
 title: "Déployer Splunk Enterprise 10.2 sur Debian 12"
 description: "Fiche simple : [dimensionner et préparer](../../../../01-fiches-simples/debian/12/vie-du-logiciel/splunk/fiche-simple-vm-debian-12-splunk-dimensionner-preparer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["splunk", "debian12", "siem", "logs", "enterprise", "systemd"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Splunk Enterprise 10.2 sur Debian 12

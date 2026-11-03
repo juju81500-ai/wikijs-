@@ -2,11 +2,11 @@
 title: "fiche-simple-truenas-scale-25-10-deploiement-sauvegarder-recuperer"
 description: "Exporter la configuration et prévoir une copie indépendante."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenas", "scale2510", "zfs", "nas", "smb", "sauvegarde"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-truenas-scale-25-10-deploiement-sauvegarder-recuperer.md

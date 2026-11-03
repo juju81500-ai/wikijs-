@@ -2,11 +2,11 @@
 title: "Déployer iTop 3.3 sur Debian 12 ou Ubuntu 24-04"
 description: "Fiche simple : [dimensionner et préparer](../../../../01-fiches-simples/debian/12/vie-du-logiciel/itop/fiche-simple-vm-debian-12-itop-dimensionner-preparer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["itop", "itsm", "cmdb", "debian12", "ubuntu2404", "apache", "mariadb"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer iTop 3.3 sur Debian 12 ou Ubuntu 24-04

@@ -1,12 +1,12 @@
 ---
 title: "Sécuriser un accès OpenSSH avec clés ED25519 et Fail2ban"
-description: "Comment réduire les tentatives de connexion SSH sans perdre l'accès d'administration ?"
+description: "Comment réduire les tentatives de connexion [[Glossary:SSH]] sans perdre l'accès d'administration ?"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["linux", "ssh", "ed25519", "fail2ban", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Sécuriser un accès OpenSSH avec clés ED25519 et Fail2ban

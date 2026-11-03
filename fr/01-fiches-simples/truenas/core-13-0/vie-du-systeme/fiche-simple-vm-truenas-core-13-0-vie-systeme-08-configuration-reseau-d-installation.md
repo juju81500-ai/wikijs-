@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM TrueNAS CORE 13.0 Vie Systeme 08 Configuration Reseau D Installation"
-description: "Donner une adresse au NAS pour atteindre l'interface web."
+description: "Donner une adresse au [[Glossary:NAS]] pour atteindre l'interface web."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenascore130", "vie-du-systeme", "cycle-de-vie", "etape-08"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_TrueNAS_CORE_13.0_Vie_Systeme_08_Configuration_Reseau_D_Installation

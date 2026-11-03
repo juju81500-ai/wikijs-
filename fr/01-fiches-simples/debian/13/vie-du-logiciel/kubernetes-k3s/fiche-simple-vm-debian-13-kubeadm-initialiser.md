@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-kubeadm-initialiser"
 description: "Initialiser le plan de contrôle avec une adresse de terminaison et un CIDR de pods correspondant au CNI."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "kubeadm", "control-plane", "cni", "kubeconfig"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-kubeadm-initialiser.md

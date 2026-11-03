@@ -2,11 +2,11 @@
 title: "Déployer un contrôleur de domaine Samba AD DC sur Debian 13"
 description: "Fiche simple : [cadrer les limites et prérequis](../../../../01-fiches-simples/debian/13/vie-du-logiciel/samba-ad-dc/fiche-simple-vm-debian-13-samba-ad-dc-prerequis.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["debian13", "samba", "active-directory", "domain-controller", "dns", "lab"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer un contrôleur de domaine Samba AD DC sur Debian 13

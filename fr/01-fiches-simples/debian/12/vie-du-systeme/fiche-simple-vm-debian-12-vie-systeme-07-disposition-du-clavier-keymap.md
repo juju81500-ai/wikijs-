@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 12 Vie Systeme 07 Disposition Du Clavier Keymap"
 description: "Régler le clavier de la console."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "vie-du-systeme", "cycle-de-vie", "etape-07"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_12_Vie_Systeme_07_Disposition_Du_Clavier_Keymap

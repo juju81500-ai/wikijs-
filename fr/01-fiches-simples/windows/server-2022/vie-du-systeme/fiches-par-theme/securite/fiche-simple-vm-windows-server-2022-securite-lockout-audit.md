@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows Server 2022 Securite Lockout Audit"
 description: "Définir une politique de verrouillage de compte qui freine les attaques par force brute sans bloquer les utilisateurs légitimes, puis activer l'audit des verrouillages pour pouvoir les tracer."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows-server-2022", "lockout", "audit", "auditpol", "active-directory", "powershell"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Windows_Server_2022_Securite_Lockout_Audit

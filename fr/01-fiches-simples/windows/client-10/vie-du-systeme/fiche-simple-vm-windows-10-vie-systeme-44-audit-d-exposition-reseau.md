@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows 10 Vie Systeme 44 Audit D Exposition Reseau"
 description: "Vérifier de l'extérieur ce que le poste expose."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows10", "vie-du-systeme", "cycle-de-vie", "etape-44"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_10_Vie_Systeme_44_Audit_D_Exposition_Reseau

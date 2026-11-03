@@ -1,12 +1,12 @@
 ---
 title: "Kea DHCPv4"
-description: "Couvert — guide complet et série de fiches simples Kea DHCPv4 sur Debian 13. Kea est l’alternative retenue ici à ISC DHCP; les migrations depuis dhcpd doivent être planifiées et testées."
+description: "Couvert — guide complet et série de fiches simples Kea DHCPv4 sur Debian 13. Kea est l’alternative retenue ici à ISC [[Glossary:DHCP]]; les migrations depuis dhcpd doivent être planifiées et testées."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "05-systemes-annuaires-et-services", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Kea DHCPv4

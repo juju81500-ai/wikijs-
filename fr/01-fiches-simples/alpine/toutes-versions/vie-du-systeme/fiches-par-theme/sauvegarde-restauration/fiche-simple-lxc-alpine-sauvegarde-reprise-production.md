@@ -2,11 +2,11 @@
 title: "fiche-simple-lxc-alpine-sauvegarde-reprise-production"
 description: "Reprendre le service depuis une sauvegarde après validation, sans écritures concurrentes ni conflit d'identité réseau."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine", "proxmox", "pbs", "lxc", "reprise", "rpo", "rto"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-lxc-alpine-sauvegarde-reprise-production.md

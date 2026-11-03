@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-openldap-retour-arriere"
-description: "Annuler un changement OLC, TLS ou ACL sans perdre les données ni verrouiller l'accès à l'annuaire."
+description: "Annuler un changement OLC, [[Glossary:TLS]] ou [[Glossary:ACL]] sans perdre les données ni verrouiller l'accès à l'annuaire."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "openldap", "rollback", "olc", "snapshot"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-openldap-retour-arriere.md

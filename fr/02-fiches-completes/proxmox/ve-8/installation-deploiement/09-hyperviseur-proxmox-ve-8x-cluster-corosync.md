@@ -2,11 +2,11 @@
 title: "Mettre en place un cluster Proxmox VE 8.x"
 description: "Fiche simple : [préparer les nœuds](../../../../01-fiches-simples/proxmox/ve-8/vie-du-logiciel/cluster-corosync/fiche-simple-hote-proxmox-ve-8-cluster-preparer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["proxmox-ve", "pve8", "cluster", "corosync", "ha"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Mettre en place un cluster Proxmox VE 8.x

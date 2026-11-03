@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 PowerShell Configurer Profils Modules"
 description: "Configurer les profils et les modules pour Windows PowerShell 5.1 et PowerShell 7 sur Windows Server 2022."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "powershell", "pwsh", "scripting", "remoting"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_PowerShell_Configurer_Profils_Modules

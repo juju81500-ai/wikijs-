@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Debian 13 cURL Mise A Jour Retour Arriere"
-description: "Mettre à jour cURL via APT et rejouer les contrôles représentatifs."
+description: "Mettre à jour cURL via [[Glossary:APT]] et rejouer les contrôles représentatifs."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "curl", "http", "tls", "api"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_cURL_Mise_A_Jour_Retour_Arriere

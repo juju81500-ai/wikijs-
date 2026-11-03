@@ -2,11 +2,11 @@
 title: "Agrandir un volume logique LVM sur Debian 12"
 description: "Agrandir un système de fichiers après augmentation du disque virtuel. Une extension n'est pas une sauvegarde et ne peut pas être annulée en restaurant un snapshot LVM de 1 Gio. Faire une sauvegarde vérifiée avant modification et garder la console hyperviseur accessible."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "lvm", "disque", "resize", "ext4", "xfs"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Agrandir un volume logique LVM sur Debian 12

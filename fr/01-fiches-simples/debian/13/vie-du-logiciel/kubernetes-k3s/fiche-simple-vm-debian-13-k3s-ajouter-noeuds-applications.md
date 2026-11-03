@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-k3s-ajouter-noeuds-applications"
 description: "Joindre des nœuds au cluster et déployer une première application sans exposer de secrets ni perturber de workloads existants."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "k3s", "kubernetes", "agents", "workloads"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-k3s-ajouter-noeuds-applications.md

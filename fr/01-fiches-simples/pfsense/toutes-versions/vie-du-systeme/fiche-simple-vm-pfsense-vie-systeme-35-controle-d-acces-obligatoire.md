@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM pfSense Vie Systeme 35 Controle D Acces Obligatoire"
 description: "Il n'existe pas de SELinux sur FreeBSD : renforcer le contrôle d'accès de l'interface par l'authentification forte et la restriction des pages."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["pfsense", "vie-du-systeme", "cycle-de-vie", "etape-35"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_35_Controle_D_Acces_Obligatoire

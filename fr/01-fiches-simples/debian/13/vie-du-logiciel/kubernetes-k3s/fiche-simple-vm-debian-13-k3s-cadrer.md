@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-k3s-cadrer"
-description: "Définir une topologie K3s cohérente avant installation : nombre de serveurs et d'agents, datastore, réseaux, CNI, stockage, ingress, sauvegarde et accès API."
+description: "Définir une topologie K3s cohérente avant installation : nombre de serveurs et d'agents, datastore, réseaux, CNI, stockage, ingress, sauvegarde et accès [[Glossary:API]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "k3s", "kubernetes", "cadrage", "architecture"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-k3s-cadrer.md

@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - Tout-en-un Diagnostic DNS"
-description: "Déterminer si un échec d'accès par nom vient de la résolution DNS, du résolveur configuré ou d'une donnée DNS incorrecte, sans modifier la configuration."
+description: "Déterminer si un échec d'accès par nom vient de la résolution [[Glossary:DNS]], du résolveur configuré ou d'une donnée DNS incorrecte, sans modifier la configuration."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "dns", "diagnostic"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Tout-en-un_Diagnostic_DNS

@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM TrueNAS CORE 13.0 Vie Systeme 09 Identite De La Machine"
-description: "Nommer le NAS de façon cohérente avec le DNS."
+description: "Nommer le [[Glossary:NAS]] de façon cohérente avec le [[Glossary:DNS]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenascore130", "vie-du-systeme", "cycle-de-vie", "etape-09"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_TrueNAS_CORE_13.0_Vie_Systeme_09_Identite_De_La_Machine

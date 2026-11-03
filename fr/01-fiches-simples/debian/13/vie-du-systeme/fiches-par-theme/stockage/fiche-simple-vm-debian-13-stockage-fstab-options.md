@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Stockage Fstab Options"
 description: "Appliquer les options de montage nodev, nosuid et noexec sur /tmp et /dev/shm de Debian 13, via /etc/fstab, pour empêcher l'exécution de binaires déposés dans les répertoires temporaires, sans casser les applications qui en ont besoin."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "debian", "fstab", "mount", "tmpfs", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Debian_13_Stockage_Fstab_Options

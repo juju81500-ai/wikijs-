@@ -1,12 +1,12 @@
 ---
 title: "Packer"
-description: "Guide pilote couvrant l'installation, le template HCL2, l'initialisation et la validation, la construction d'une image Docker locale, son inspection et le nettoyage. Les images de production, builders VM/cloud et publications vers registre ne sont pas couverts."
+description: "Guide pilote couvrant l'installation, le template HCL2, l'initialisation et la validation, la construction d'une image Docker locale, son inspection et le nettoyage. Les images de production, builders [[Glossary:VM]]/cloud et publications vers registre ne sont pas couverts."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "09-automatisation-deploiement-et-iac", "guide-complet", "debian13", "docker"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Packer

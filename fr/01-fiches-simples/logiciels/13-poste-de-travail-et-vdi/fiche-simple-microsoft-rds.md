@@ -1,12 +1,12 @@
 ---
 title: "Microsoft RDS"
-description: "Installer le rôle Hôte Session Bureau à distance sur Windows Server 2022, activer RDP avec authentification NLA, limiter le pare-feu au réseau d'administration et valider une connexion. Le broker, les collections et les licences RDS (serveur de licences, CAL) sont hors périmètre de cette fiche simpl"
+description: "Installer le rôle Hôte Session Bureau à distance sur Windows Server 2022, activer [[Glossary:RDP]] avec authentification [[Glossary:NLA]], limiter le pare-feu au réseau d'administration et valider une connexion. Le broker, les collections et les licences RDS (serveur de licences, CAL) sont hors péri"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["winsrv2022", "rds", "rdp", "session-host", "nla", "powershell", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Microsoft RDS

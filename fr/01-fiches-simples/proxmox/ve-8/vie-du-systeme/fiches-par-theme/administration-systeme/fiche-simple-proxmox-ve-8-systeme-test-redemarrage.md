@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-proxmox-ve-8-systeme-test-redemarrage"
-description: "Vérifier que l'hyperviseur Proxmox VE 8 redémarre proprement : montages, stockages, réseau, cluster et démarrage automatique des VM et conteneurs, avant sa mise en production ou après une maintenance."
+description: "Vérifier que l'hyperviseur Proxmox VE 8 redémarre proprement : montages, stockages, réseau, cluster et démarrage automatique des [[Glossary:VM]] et conteneurs, avant sa mise en production ou après une maintenance."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmox-ve-8", "debian-bookworm", "reboot-test", "zfs", "pve-guests", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-proxmox-ve-8-systeme-test-redemarrage.md

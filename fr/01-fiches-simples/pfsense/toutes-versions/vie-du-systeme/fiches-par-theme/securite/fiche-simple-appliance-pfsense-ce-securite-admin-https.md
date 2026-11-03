@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-appliance-pfsense-ce-securite-admin-https"
-description: "Restreindre l'interface web (webConfigurator) et l'accès SSH de pfSense CE à un seul réseau d'administration, imposer HTTPS et l'authentification par clé SSH, sans se verrouiller hors de l'appliance."
+description: "Restreindre l'interface web (webConfigurator) et l'accès [[Glossary:SSH]] de pfSense CE à un seul réseau d'administration, imposer HTTPS et l'authentification par clé SSH, sans se verrouiller hors de l'appliance."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["pfsense", "ce", "freebsd", "https", "ssh", "hardening", "firewall"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-appliance-pfsense-ce-securite-admin-https.md

@@ -1,12 +1,12 @@
 ---
 title: "ISC DHCP Server"
-description: "Couvert — Debian 13 (série legacy de 7 fiches). ISC DHCP est EOL upstream et le paquet Debian 13 est déprécié; réserver ces fiches à la maintenance transitoire et planifier Kea."
+description: "Couvert — Debian 13 (série legacy de 7 fiches). ISC DHCP est [[Glossary:EOL]] upstream et le paquet Debian 13 est déprécié; réserver ces fiches à la maintenance transitoire et planifier Kea."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "05-systemes-annuaires-et-services", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 ISC DHCP Server

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-samba-ad-dc-preparer-debian"
 description: "Configurer l'hôte et installer les paquets du rôle AD DC."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "samba", "active-directory", "lab", "apt", "kerberos"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-samba-ad-dc-preparer-debian.md

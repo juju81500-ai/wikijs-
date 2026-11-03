@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 MongoDB Prerequis Limites"
 description: "Vérifier qu'un MongoDB Community peut être installé sur Debian 13 et cadrer les limites."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "mongodb", "prerequis"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_MongoDB_Prerequis_Limites

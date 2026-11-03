@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 26.04 Stockage Fstab Options"
 description: "Monter un disque de données de façon persistante via son UUID dans /etc/fstab, avec des options de sécurité (nodev, nosuid, noexec selon l'usage) sans bloquer le démarrage si le disque est absent."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "fstab", "uuid", "mount", "nodev", "nosuid", "noexec"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Stockage_Fstab_Options

@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-database-installation-postgresql-17"
-description: "Installer PostgreSQL 17 depuis les dépôts Debian 13, créer un rôle applicatif limité et n'autoriser les connexions distantes qu'avec TLS et scram-sha-256."
+description: "Installer PostgreSQL 17 depuis les dépôts Debian 13, créer un rôle applicatif limité et n'autoriser les connexions distantes qu'avec [[Glossary:TLS]] et scram-sha-256."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "trixie", "postgresql17", "database", "sql", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-debian-13-database-installation-postgresql-17.md

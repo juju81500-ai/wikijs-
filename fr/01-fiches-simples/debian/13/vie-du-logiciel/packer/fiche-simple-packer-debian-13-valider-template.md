@@ -2,11 +2,11 @@
 title: "Fiche simple — Initialiser et valider un template Packer"
 description: "Initialiser les plugins déclarés et vérifier le format et la configuration sans construire d'image."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "packer", "init", "validate", "lock-file"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche simple — Initialiser et valider un template Packer

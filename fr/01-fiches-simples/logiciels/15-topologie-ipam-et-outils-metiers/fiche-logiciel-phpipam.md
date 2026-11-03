@@ -2,11 +2,11 @@
 title: "phpIPAM"
 description: "Couvert pour phpIPAM 1.8.3 sur Debian 13 — [guide](../../../02-fiches-completes/debian/13/installation-deploiement/74-deploiement-phpipam-1-8-3-debian-13.md) et [fiche pilote IPAM](../../debian/13/vie-du-logiciel/phpipam/fiche-simple-vm-debian-13-phpipam-valider-ipam.md)"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "15-topologie-ipam-et-outils-metiers", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 phpIPAM

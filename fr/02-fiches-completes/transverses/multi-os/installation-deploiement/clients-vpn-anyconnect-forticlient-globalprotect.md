@@ -2,11 +2,11 @@
 title: "Déployer les clients VPN Cisco AnyConnect/Secure Client, FortiClient et GlobalProtect"
 description: "Déployer et valider les clients VPN d'une passerelle déjà en service. La configuration de la passerelle (ASA/FTD, FortiGate, PAN-OS) est hors périmètre et se trouve dans la fiche pare-feu associée."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["vpn", "anyconnect", "cisco-secure-client", "forticlient", "globalprotect", "nomades"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer les clients VPN Cisco AnyConnect/Secure Client, FortiClient et GlobalProtect

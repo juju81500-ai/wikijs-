@@ -2,11 +2,11 @@
 title: "fiche-simple-debian-13-hashicorp-vault-valider-politique"
 description: "Vérifier qu'une identité applicative ne peut lire que le chemin de secrets explicitement autorisé."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "vault", "secrets", "policy", "tls", "audit"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-debian-13-hashicorp-vault-valider-politique.md

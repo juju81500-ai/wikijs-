@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-caddy-cadrer-pilote"
-description: "Vérifier les prérequis DNS, service amont, TLS et réseau avant de publier un reverse proxy Caddy."
+description: "Vérifier les prérequis [[Glossary:DNS]], service amont, [[Glossary:TLS]] et réseau avant de publier un reverse proxy Caddy."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "caddy", "cadrage", "reverse-proxy", "tls"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-caddy-cadrer-pilote.md

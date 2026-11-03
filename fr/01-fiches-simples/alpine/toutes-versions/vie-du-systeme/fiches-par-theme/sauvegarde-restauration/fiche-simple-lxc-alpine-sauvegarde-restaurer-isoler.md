@@ -2,11 +2,11 @@
 title: "fiche-simple-lxc-alpine-sauvegarde-restaurer-isoler"
 description: "Prouver qu'un point de sauvegarde restaure correctement le CT sans créer de conflit d'adresse ou lancer deux instances actives."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine", "proxmox", "pbs", "lxc", "restore", "isolation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-lxc-alpine-sauvegarde-restaurer-isoler.md

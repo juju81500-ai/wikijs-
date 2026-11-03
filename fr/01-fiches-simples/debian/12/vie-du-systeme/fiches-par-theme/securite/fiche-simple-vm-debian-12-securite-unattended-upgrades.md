@@ -2,11 +2,11 @@
 title: "VM_Debian_12_Securite_Unattended-Upgrades"
 description: "Automatiser l'installation des correctifs de sécurité Debian 12 via unattended-upgrades, limiter l'automatisation aux mises à jour de sécurité et empêcher tout redémarrage automatique non planifié."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "debian-family", "unattended-upgrades", "apt", "patch", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_12_Securite_Unattended-Upgrades.md

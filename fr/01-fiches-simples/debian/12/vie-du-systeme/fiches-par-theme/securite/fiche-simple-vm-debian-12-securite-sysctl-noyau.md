@@ -1,12 +1,12 @@
 ---
 title: "VM_Debian_12_Securite_Sysctl-Noyau"
-description: "Durcir les paramètres du noyau Linux de Debian 12 via sysctl : protection contre le spoofing et les redirections ICMP, SYN flood, fuite d'adresses noyau et abus de liens symboliques, en persistant la configuration dans /etc/sysctl.d/."
+description: "Durcir les paramètres du noyau Linux de Debian 12 via sysctl : protection contre le spoofing et les redirections [[Glossary:ICMP]], SYN flood, fuite d'adresses noyau et abus de liens symboliques, en persistant la configuration dans /etc/sysctl.d/."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "debian-family", "sysctl", "kernel", "tcp-syncookies", "rp-filter", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_12_Securite_Sysctl-Noyau.md

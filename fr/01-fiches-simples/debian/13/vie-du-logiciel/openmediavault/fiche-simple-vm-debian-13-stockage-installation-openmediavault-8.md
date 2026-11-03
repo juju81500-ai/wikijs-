@@ -1,12 +1,12 @@
 ---
 title: "Fiche simple — Debian 13 : installer OpenMediaVault 8"
-description: "Cette installation prend la main sur plusieurs services Debian, notamment le réseau, SSH, Nginx et Samba. L'utiliser sur un hôte dédié, sans environnement graphique ni serveur Web existant, avec accès console et sauvegarde. OpenMediaVault n'est pas pris en charge dans LXC."
+description: "Cette installation prend la main sur plusieurs services Debian, notamment le réseau, [[Glossary:SSH]], Nginx et Samba. L'utiliser sur un hôte dédié, sans environnement graphique ni serveur Web existant, avec accès console et sauvegarde. OpenMediaVault n'est pas pris en charge dans [[Glossary:LXC]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "openmediavault8", "omv", "nas", "smb", "stockage"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche simple — Debian 13 : installer OpenMediaVault 8

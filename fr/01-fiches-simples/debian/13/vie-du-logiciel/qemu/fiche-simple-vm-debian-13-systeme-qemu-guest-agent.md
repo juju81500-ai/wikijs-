@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Debian 13 Systeme Qemu Guest Agent"
-description: "Installer et activer l'agent invité QEMU (qemu-guest-agent) sur Debian 13 pour permettre à l'hyperviseur de lire les adresses IP de la VM, de geler les systèmes de fichiers lors des snapshots cohérents et de demander un arrêt propre."
+description: "Installer et activer l'agent invité QEMU (qemu-guest-agent) sur Debian 13 pour permettre à l'hyperviseur de lire les adresses [[Glossary:IP]] de la VM, de geler les systèmes de fichiers lors des snapshots cohérents et de demander un arrêt propre."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "debian", "qemu", "kvm", "virtio", "proxmox", "virtualisation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Debian_13_Systeme_Qemu_Guest_Agent

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows 10 Vie Systeme 02 Recuperation De L Image"
 description: "Obtenir l'image officielle de Windows 10 depuis la source Microsoft ou le catalogue interne."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows10", "vie-du-systeme", "cycle-de-vie", "etape-02"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_10_Vie_Systeme_02_Recuperation_De_L_Image

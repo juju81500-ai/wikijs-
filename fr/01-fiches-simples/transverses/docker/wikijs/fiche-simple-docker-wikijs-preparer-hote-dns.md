@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-docker-wikijs-preparer-hote-dns"
-description: "Vérifier que l'hôte, le DNS et le réseau Traefik sont prêts avant de déployer Wiki.js."
+description: "Vérifier que l'hôte, le [[Glossary:DNS]] et le réseau Traefik sont prêts avant de déployer Wiki.js."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["wikijs", "docker", "compose", "postgresql", "traefik", "tls"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-docker-wikijs-preparer-hote-dns.md

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows 11 Postman Prerequis Limites"
 description: "Valider les prérequis et les limites de Postman Desktop et Newman sur un poste Windows 11 avant installation : compte, réseau, architecture, périmètre de test."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-11", "postman", "api", "newman", "vie-du-logiciel"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_11_Postman_Prerequis_Limites

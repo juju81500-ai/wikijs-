@@ -2,11 +2,11 @@
 title: "VMware Horizon"
 description: "Couvert pour Windows Server 2022 (Connection Server, agent, pools, UAG, certificats, sauvegarde) — série de 7 fiches simples"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "13-poste-de-travail-et-vdi", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VMware Horizon

@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Debian 13 Dovecot Prerequis Limites"
-description: "Vérifier qu'une VM Debian 13 peut héberger Dovecot (IMAP/LMTP) et identifier la limite majeure : Debian 13 fournit la branche 2.4, dont la syntaxe diffère de la 2.3."
+description: "Vérifier qu'une VM Debian 13 peut héberger Dovecot ([[Glossary:IMAP]]/LMTP) et identifier la limite majeure : Debian 13 fournit la branche 2.4, dont la syntaxe diffère de la 2.3."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "dovecot", "imap", "messagerie", "prerequis-limites"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Dovecot_Prerequis_Limites

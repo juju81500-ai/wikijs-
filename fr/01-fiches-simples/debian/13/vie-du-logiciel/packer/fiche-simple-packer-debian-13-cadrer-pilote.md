@@ -2,11 +2,11 @@
 title: "Fiche simple — Cadrer un pilote Packer sur Debian 13"
 description: "Confirmer que le pilote Packer est autorisé, isolé et limité à une image Docker non sensible."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "packer", "cadrage", "docker", "pilote"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche simple — Cadrer un pilote Packer sur Debian 13

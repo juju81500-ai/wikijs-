@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 26.04 Supervision Zabbix Agent2"
 description: "Installer l'agent Zabbix 2 sur un serveur Ubuntu 26-04, le déclarer auprès du serveur Zabbix et restreindre l'accès au port 10050 aux seules adresses de supervision."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "zabbix", "zabbix-agent2", "supervision", "port-10050"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Supervision_Zabbix_Agent2

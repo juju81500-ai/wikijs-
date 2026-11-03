@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-hote-proxmox-ve-8-cluster-valider"
-description: "Vérifier le quorum, les liens Corosync et la cohérence des VM et du stockage."
+description: "Vérifier le quorum, les liens Corosync et la cohérence des [[Glossary:VM]] et du stockage."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmox-ve", "pve8", "cluster", "corosync", "quorum", "ha"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-proxmox-ve-8-cluster-valider.md

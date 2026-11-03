@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Rocky 9 PowerShell Remoting SSH"
-description: "Activer le remoting PowerShell via SSH sur Rocky Linux 9 (sous-système powershell de sshd)."
+description: "Activer le remoting PowerShell via [[Glossary:SSH]] sur Rocky Linux 9 (sous-système powershell de sshd)."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "powershell", "pwsh", "scripting"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_9_PowerShell_Remoting_SSH

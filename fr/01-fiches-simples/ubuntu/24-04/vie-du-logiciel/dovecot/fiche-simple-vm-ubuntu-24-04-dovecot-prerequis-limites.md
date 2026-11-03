@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 24.04 Dovecot Prerequis Limites"
 description: "Vérifier rôle, paquets et flux nécessaires à Dovecot."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["dovecot", "serveur", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_Dovecot_Prerequis_Limites

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-opnsense-config-preparer"
 description: "Inventorier la configuration et garantir un accès console avant toute sauvegarde ou restauration."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["opnsense", "sauvegarde", "configuration", "preparation", "ha"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-opnsense-config-preparer.md

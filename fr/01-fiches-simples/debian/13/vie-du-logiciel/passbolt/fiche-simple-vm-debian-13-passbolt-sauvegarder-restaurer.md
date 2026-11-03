@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Passbolt Sauvegarder Restaurer"
 description: "Sauvegarder base, configuration, pièces jointes et clés en jeu cohérent."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "passbolt", "secrets", "tls", "sauvegarde"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Passbolt_Sauvegarder_Restaurer

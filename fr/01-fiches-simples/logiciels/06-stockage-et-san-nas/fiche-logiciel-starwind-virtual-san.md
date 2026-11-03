@@ -2,11 +2,11 @@
 title: "StarWind Virtual SAN"
 description: "Partiel — série Windows Server 2022 uniquement. Une ancienne publication StarWind évoque une VSA Linux, mais les sources publiques officielles consultées ne fournissent pas de parcours d’installation Linux/VM appliance courant suffisamment publié pour rédiger une série fiable; la fiche reste limitée"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "06-stockage-et-san-nas", "partiel"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 StarWind Virtual SAN

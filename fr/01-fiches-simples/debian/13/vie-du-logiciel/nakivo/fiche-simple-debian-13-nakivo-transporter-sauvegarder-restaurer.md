@@ -2,11 +2,11 @@
 title: "Fiche Simple - Debian 13 Nakivo Transporter Sauvegarder Restaurer"
 description: "Protéger la configuration NAKIVO (self-backup du Director) et prouver qu'une restauration fonctionne, pour un nœud Transporter hébergé sur Debian 13."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian-13", "nakivo", "transporter", "sauvegarder-restaurer"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Debian_13_Nakivo_Transporter_Sauvegarder_Restaurer

@@ -2,11 +2,11 @@
 title: "Déployer PuTTY 0.85 sur Windows 11"
 description: "Fiche simple : [vérifier la version et le périmètre](../../../../01-fiches-simples/windows/client-11/vie-du-logiciel/putty/fiche-simple-vm-windows-11-putty-version-perimetre.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["putty", "windows11", "ssh", "puttygen", "pageant", "host-key"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer PuTTY 0.85 sur Windows 11

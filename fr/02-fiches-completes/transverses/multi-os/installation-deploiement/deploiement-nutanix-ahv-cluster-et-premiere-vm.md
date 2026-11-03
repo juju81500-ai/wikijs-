@@ -1,12 +1,12 @@
 ---
 title: "Nutanix AHV : cluster, Prism et première VM"
-description: "- Périmètre : création d'un cluster AHV, accès Prism, réseau, stockage, première VM, sauvegarde et retour arrière. Hors périmètre : Nutanix Cloud Clusters, Flow, DR multi-sites."
+description: "- Périmètre : création d'un cluster AHV, accès Prism, réseau, stockage, première [[Glossary:VM]], sauvegarde et retour arrière. Hors périmètre : Nutanix Cloud Clusters, Flow, DR multi-sites."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["nutanix", "ahv", "hyperviseur", "hci", "prism"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Nutanix AHV : cluster, Prism et première VM

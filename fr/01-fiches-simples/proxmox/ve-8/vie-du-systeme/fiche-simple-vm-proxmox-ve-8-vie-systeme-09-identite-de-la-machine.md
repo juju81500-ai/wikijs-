@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Proxmox VE 8 Vie Systeme 09 Identite De La Machine"
-description: "Nommer l'hôte avec un FQDN résolvable (obligatoire sous Proxmox)."
+description: "Nommer l'hôte avec un [[Glossary:FQDN]] résolvable (obligatoire sous Proxmox)."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmoxve8", "vie-du-systeme", "cycle-de-vie", "etape-09"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Proxmox_VE_8_Vie_Systeme_09_Identite_De_La_Machine

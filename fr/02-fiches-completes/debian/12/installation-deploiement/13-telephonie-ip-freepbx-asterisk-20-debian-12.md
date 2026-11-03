@@ -2,11 +2,11 @@
 title: "Déployer FreePBX et Asterisk pour une téléphonie de laboratoire"
 description: "Fiche simple : [préparer la téléphonie](../../../../01-fiches-simples/debian/12/vie-du-logiciel/freepbx-asterisk/fiche-simple-vm-debian-12-freepbx-preparer-telephonie.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["freepbx", "asterisk", "voip", "debian12", "sip", "telephonie"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer FreePBX et Asterisk pour une téléphonie de laboratoire

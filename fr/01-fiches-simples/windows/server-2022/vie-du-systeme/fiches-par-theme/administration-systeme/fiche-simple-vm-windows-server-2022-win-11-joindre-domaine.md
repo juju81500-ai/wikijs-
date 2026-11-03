@@ -2,11 +2,11 @@
 title: "VM_WinSrv_2022_ADDS_Joindre-Domaine"
 description: "Joindre un serveur ou un poste client à un domaine Active Directory (ex: lab.local) via l'interface graphique système (sysdm.cpl) ou en ligne de commande PowerShell."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server", "windows-11", "active-directory", "domain-join", "gui", "powershell"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_WinSrv_2022_ADDS_Joindre-Domaine.md

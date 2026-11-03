@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - Windows Server 2022 Citrix CVAD Securiser"
-description: "Sécuriser CVAD : TLS, comptes, pare-feu, rôles d'administration."
+description: "Sécuriser CVAD : [[Glossary:TLS]], comptes, pare-feu, rôles d'administration."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["citrix", "cvad", "windows-server", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_Citrix_CVAD_Securiser

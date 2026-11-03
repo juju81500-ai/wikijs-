@@ -2,11 +2,11 @@
 title: "fiche-simple-hote-proxmox-ve-diagnostic-cloturer"
 description: "Consigner l'incident et les actions préventives."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmox-ve", "diagnostic", "cloture", "retex"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-proxmox-ve-diagnostic-cloturer.md

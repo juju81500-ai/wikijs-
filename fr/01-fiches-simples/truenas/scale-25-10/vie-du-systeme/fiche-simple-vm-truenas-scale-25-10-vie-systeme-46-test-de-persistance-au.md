@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM TrueNAS SCALE 25.10 Vie Systeme 46 Test De Persistance Au"
 description: "Vérifier que tout redémarre seul."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenasscale2510", "vie-du-systeme", "cycle-de-vie", "etape-46"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_TrueNAS_SCALE_25.10_Vie_Systeme_46_Test_De_Persistance_Au

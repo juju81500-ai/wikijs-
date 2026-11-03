@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-ubuntu-restic-definir-donnees-depot"
 description: "Décider quoi sauvegarder et où, avant toute commande."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu", "restic", "sauvegarde", "restauration", "retention"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-ubuntu-restic-definir-donnees-depot.md

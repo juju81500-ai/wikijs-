@@ -2,11 +2,11 @@
 title: "OpenStack : plateforme de laboratoire et contrôles"
 description: "- Périmètre : conception, déploiement initial de laboratoire (méthode documentée par le projet), contrôles par client openstack, premier projet et instance. Hors périmètre : exploitation multi-région, CI/CD de cloud."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["openstack", "cloud", "keystone", "nova", "neutron", "cinder"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # OpenStack : plateforme de laboratoire et contrôles

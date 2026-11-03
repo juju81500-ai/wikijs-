@@ -1,12 +1,12 @@
 ---
 title: "TrueNAS Core"
-description: "Mettre en service un NAS TrueNAS CORE, créer un pool ZFS et un jeu de données partagé, vérifier l'état du pool et les instantanés, puis durcir l'accès d'administration. Les tests ne se font que sur votre propre appliance. Les commandes s'exécutent dans le shell de l'interface (System > Shell), en ro"
+description: "Mettre en service un NAS TrueNAS CORE, créer un pool [[Glossary:ZFS]] et un jeu de données partagé, vérifier l'état du pool et les instantanés, puis durcir l'accès d'administration. Les tests ne se font que sur votre propre appliance. Les commandes s'exécutent dans le shell de l'interface (System > "
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenas-core", "freebsd", "zfs", "nas", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 TrueNAS Core

@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-python-choisir-mode"
-description: "Choisir entre paquet APT, venv par projet ou pipx."
+description: "Choisir entre paquet [[Glossary:APT]], venv par projet ou pipx."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "python", "pep668", "cadrage"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-python-choisir-mode.md

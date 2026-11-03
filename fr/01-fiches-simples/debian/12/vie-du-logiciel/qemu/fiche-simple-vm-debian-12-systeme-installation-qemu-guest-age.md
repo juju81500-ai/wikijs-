@@ -1,12 +1,12 @@
 ---
 title: "VM_Debian_12_Systeme_Installation-Qemu-Guest-Agent"
-description: "Installer et activer l'agent QEMU Guest Agent sur une machine virtuelle Debian 12 sous Proxmox VE / KVM pour permettre la remontée exacte de l'adresse IP, la création de snapshots cohérents du système de fichiers (FS-Freeze) et l'extinction propre de la VM depuis l'interface d'administration."
+description: "Installer et activer l'agent QEMU Guest Agent sur une machine virtuelle Debian 12 sous Proxmox VE / KVM pour permettre la remontée exacte de l'adresse [[Glossary:IP]], la création de snapshots cohérents du système de fichiers (FS-Freeze) et l'extinction propre de la VM depuis l'interface d'administr"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "proxmox", "qemu-guest-agent", "kvm", "hyperviseur", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_12_Systeme_Installation-Qemu-Guest-Agent.md

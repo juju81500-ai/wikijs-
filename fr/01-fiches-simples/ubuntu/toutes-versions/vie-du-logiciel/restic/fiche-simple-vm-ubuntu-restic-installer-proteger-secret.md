@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-ubuntu-restic-installer-proteger-secret"
 description: "Installer Restic et créer le mot de passe du dépôt dans un fichier protégé."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu", "restic", "sauvegarde", "restauration", "retention"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-ubuntu-restic-installer-proteger-secret.md

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-zeek-depot-installer"
 description: "Installer Zeek 8.0 LTS depuis le dépôt OBS officiel pour Debian 13."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "zeek", "zeekctl", "af-packet", "network-monitoring"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-zeek-depot-installer.md

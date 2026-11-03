@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-bacula-preparer-debian12-version"
 description: "Installer Bacula 15.0.3 depuis bookworm-backports sans mélanger les versions."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "bacula", "backports", "postgresql", "apt"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-bacula-preparer-debian12-version.md

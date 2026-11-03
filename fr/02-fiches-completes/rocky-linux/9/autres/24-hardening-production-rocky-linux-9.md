@@ -2,11 +2,11 @@
 title: "Hardening d'un serveur Rocky Linux 9 avant production"
 description: "Fiche simple : [périmètre et accès de secours](../../../../01-fiches-simples/rocky-linux/9/vie-du-systeme/fiches-par-theme/securite/fiche-simple-vm-rocky-9-securite-hardening-perimetre-acces-secours.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["rocky9", "rhel9", "hardening", "selinux", "firewalld", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Hardening d'un serveur Rocky Linux 9 avant production

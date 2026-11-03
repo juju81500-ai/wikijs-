@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-git-valider-clone-commit"
 description: "Vérifier le client Git, l'identité de commit et le parcours clone, revue, commit et push sans exposer de secrets ni écraser une branche distante."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "git", "validation", "ssh", "secrets", "workflow"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-git-valider-clone-commit.md

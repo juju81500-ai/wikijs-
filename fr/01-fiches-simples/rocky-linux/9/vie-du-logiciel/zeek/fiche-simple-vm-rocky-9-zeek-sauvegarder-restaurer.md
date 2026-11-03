@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Rocky 9 Zeek Sauvegarder Restaurer"
 description: "Sauvegarder et restaurer la configuration de Zeek."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["zeek", "rocky9", "vie-du-logiciel", "sauvegarder-restaurer"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_9_Zeek_Sauvegarder_Restaurer

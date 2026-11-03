@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 24.04 PowerShell Installer"
 description: "Installer PowerShell 7 sur Ubuntu 24-04 LTS depuis le dépôt Microsoft."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2404", "powershell", "pwsh", "scripting"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_PowerShell_Installer

@@ -2,11 +2,11 @@
 title: "Fiche simple — Sauvegarder et restaurer InfluxDB 3 Core"
 description: "Préparer une sauvegarde cohérente des données et démontrer la restauration dans un environnement isolé."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "influxdb3-core", "backup", "restore", "stockage-local"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche simple — Sauvegarder et restaurer InfluxDB 3 Core

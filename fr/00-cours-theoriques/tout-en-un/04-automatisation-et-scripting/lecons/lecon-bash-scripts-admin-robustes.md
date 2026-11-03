@@ -2,11 +2,11 @@
 title: "Leçon — Scripts d'administration Bash robustes : arguments, fonctions, mode strict, trap, journaux, verrous, ShellCheck, cron et timers systemd"
 description: "À la fin de cette leçon, vous serez capable de :"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "lecon", "automatisation", "bash", "shell", "trap", "shellcheck", "cron", "systemd", "journalisation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Leçon — Scripts d'administration Bash robustes : arguments, fonctions, mode strict, trap, journaux, verrous, ShellCheck, cron et timers systemd

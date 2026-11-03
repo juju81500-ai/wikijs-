@@ -2,11 +2,11 @@
 title: "Déployer un poste Windows 11 en production"
 description: "Fiche simple : [choisir le mode de déploiement](../../../../01-fiches-simples/windows/client-11/vie-du-systeme/fiches-par-theme/deploiement-production/fiche-simple-hote-windows-11-deploiement-choisir-mode.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows11", "deploiement", "oobe", "intune", "active-directory", "bitlocker", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer un poste Windows 11 en production

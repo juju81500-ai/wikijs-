@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - Windows Server 2022 Nakivo Restaurer Interface"
-description: "Restaurer des données ou une machine depuis un point de sauvegarde NAKIVO via la GUI, en test."
+description: "Restaurer des données ou une machine depuis un point de sauvegarde NAKIVO via la [[Glossary:GUI]], en test."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["nakivo", "restauration", "interface-web", "windows-server"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_Nakivo_Restaurer_Interface

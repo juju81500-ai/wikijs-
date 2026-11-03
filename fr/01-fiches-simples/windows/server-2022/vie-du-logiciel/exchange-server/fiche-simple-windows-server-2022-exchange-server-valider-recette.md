@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 Exchange Server Valider Recette"
 description: "Valider le bon fonctionnement d'Exchange avant ouverture aux utilisateurs."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "exchange-server", "messagerie", "recette", "validation", "test"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_Exchange_Server_Valider_Recette

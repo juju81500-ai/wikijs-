@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-rocky-9-journaux-journald-logrotate"
-description: "Rendre les journaux systemd persistants avec une taille et une durée de rétention maîtrisées, configurer la rotation des fichiers texte avec logrotate, puis transmettre les journaux à un SIEM."
+description: "Rendre les journaux systemd persistants avec une taille et une durée de rétention maîtrisées, configurer la rotation des fichiers texte avec logrotate, puis transmettre les journaux à un [[Glossary:SIEM]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "rhel9", "journald", "logrotate", "rsyslog", "logs"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-rocky-9-journaux-journald-logrotate.md

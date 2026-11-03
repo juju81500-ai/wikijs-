@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Client 11 WireGuard Prerequis Limites"
 description: "Valider le poste et les paramètres avant d'installer le client WireGuard."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["wireguard", "windows11", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Client_11_WireGuard_Prerequis_Limites

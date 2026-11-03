@@ -2,11 +2,11 @@
 title: "Ceph"
 description: "Couvert pour un lab Tentacle 20.2.4 / Ubuntu 22-04 — [guide cephadm](../../../02-fiches-completes/ubuntu/22-04/installation-deploiement/67-deploiement-ceph-tentacle-20-2-4-ubuntu-22-04.md). Debian 13 n'est pas listé comme plateforme testée par Ceph; revue et essais de production manquants"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "06-stockage-et-san-nas", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Ceph

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-systeme-timezone-locale"
 description: "Régler le fuseau horaire (Europe/Paris), conserver l'horloge matérielle en UTC et définir la locale système française frFR.UTF-8 sur Rocky Linux 9."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "rhel9", "timedatectl", "localectl", "locale", "systemd"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-rocky-9-systeme-timezone-locale.md

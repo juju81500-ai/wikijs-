@@ -2,11 +2,11 @@
 title: "Fiche Simple - Tout-en-un Qualifier Incident"
 description: "Transformer un signalement en incident exploitable, avec impact, périmètre, éléments observables et prochaine action clairement attribués."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "support", "incident", "itsm"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Tout-en-un_Qualifier_Incident

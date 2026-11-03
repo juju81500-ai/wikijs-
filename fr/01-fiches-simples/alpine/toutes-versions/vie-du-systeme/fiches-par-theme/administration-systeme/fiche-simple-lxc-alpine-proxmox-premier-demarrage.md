@@ -2,11 +2,11 @@
 title: "fiche-simple-lxc-alpine-proxmox-premier-demarrage"
 description: "Vérifier le démarrage et initialiser l'identité, les paquets et les services du CT Alpine avant d'y déployer un rôle applicatif."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine", "proxmox", "lxc", "openrc", "apk"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-lxc-alpine-proxmox-premier-demarrage.md

@@ -2,11 +2,11 @@
 title: "fiche-simple-lxc-alpine-diagnostic-retour-arriere"
 description: "Récupérer l'accès au CT ou au service après une correction réseau infructueuse en préservant configuration, données et journaux."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine", "proxmox", "lxc", "rollback", "backup"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-lxc-alpine-diagnostic-retour-arriere.md

@@ -2,11 +2,11 @@
 title: "PostgreSQL"
 description: "Couvert — série par étape pour Debian 13 (prérequis, installation, configuration, sécurisation, recette, sauvegarde/restauration, mise à jour et retour arrière). Installation initiale : fiche existante DatabaseInstallationPostgreSQL17 ; réplication/haute disponibilité non traitées."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "14-services-web-et-bases-de-donnees", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 PostgreSQL

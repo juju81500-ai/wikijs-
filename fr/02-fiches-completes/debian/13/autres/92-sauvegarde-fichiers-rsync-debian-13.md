@@ -2,11 +2,11 @@
 title: "Copier et sauvegarder des fichiers avec rsync sur Debian 13"
 description: "Fiche simple : [cadrer le besoin](../../../../01-fiches-simples/debian/13/vie-du-logiciel/rsync/fiche-simple-vm-debian-13-rsync-cadrer-besoin.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["rsync", "debian13", "sauvegarde", "ssh", "dry-run", "delete"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Copier et sauvegarder des fichiers avec rsync sur Debian 13

@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Debian 13 FOG Project Securiser"
-description: "Durcir l'instance FOG : comptes, TLS, exposition réseau et secrets."
+description: "Durcir l'instance FOG : comptes, [[Glossary:TLS]], exposition réseau et secrets."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "fog-project", "securite", "tls", "durcissement"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_FOG_Project_Securiser

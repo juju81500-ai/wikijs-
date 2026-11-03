@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-bind9-autoritatif-valider"
-description: "Contrôler la syntaxe et les réponses DNS avant et après le rechargement."
+description: "Contrôler la syntaxe et les réponses [[Glossary:DNS]] avant et après le rechargement."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "bind9", "named-checkconf", "dig"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-bind9-autoritatif-valider.md

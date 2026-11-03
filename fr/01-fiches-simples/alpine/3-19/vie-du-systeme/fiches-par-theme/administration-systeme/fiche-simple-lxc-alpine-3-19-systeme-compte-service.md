@@ -2,11 +2,11 @@
 title: "fiche-simple-lxc-alpine-3-19-systeme-compte-service"
 description: "Créer un compte système dédié, sans shell de connexion ni mot de passe, pour exécuter un service applicatif sous Alpine Linux, afin d'isoler ce service du compte administrateur et du compte root."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine3-19", "alpine", "lxc", "comptes", "service-account", "openrc", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-lxc-alpine-3-19-systeme-compte-service.md

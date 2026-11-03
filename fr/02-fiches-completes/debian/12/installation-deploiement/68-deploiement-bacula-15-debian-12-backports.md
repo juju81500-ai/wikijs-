@@ -2,11 +2,11 @@
 title: "Déployer Bacula Community 15.0.3 sur Debian 12"
 description: "Fiche simple : [cadrer le périmètre Bacula](../../../../01-fiches-simples/debian/12/vie-du-logiciel/bacula/fiche-simple-vm-debian-12-bacula-cadrer-perimetre.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["bacula", "debian12", "backports", "postgresql", "backup", "restore"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Bacula Community 15.0.3 sur Debian 12

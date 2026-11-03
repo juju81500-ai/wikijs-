@@ -2,11 +2,11 @@
 title: "Fiche Simple - Snort"
 description: "Accéder aux fiches opérationnelles Debian 13 pour Snort IDS en mode passif sur Debian 13; la branche dépend des paquets disponibles. Cette page est un index; suivre les limites d’autorisation, de sécurité et de retour arrière de chaque étape."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["snort", "debian13", "guide", "sommaire"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Snort

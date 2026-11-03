@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM TrueNAS SCALE 25.10 Vie Systeme 01 Definition Des Besoins Sizing"
-description: "Dimensionner le NAS (capacité utile, RAM, niveau de redondance) avant d'acheter ou de créer la machine."
+description: "Dimensionner le [[Glossary:NAS]] (capacité utile, [[Glossary:RAM]], niveau de redondance) avant d'acheter ou de créer la machine."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenasscale2510", "vie-du-systeme", "cycle-de-vie", "etape-01"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_TrueNAS_SCALE_25.10_Vie_Systeme_01_Definition_Des_Besoins_Sizing

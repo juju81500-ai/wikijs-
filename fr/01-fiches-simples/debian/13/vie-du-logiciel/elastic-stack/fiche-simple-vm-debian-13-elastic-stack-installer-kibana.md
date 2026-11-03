@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-elastic-stack-installer-kibana"
 description: "Installer Kibana et le relier à Elasticsearch avec un enrollment token."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "elastic", "kibana", "enrollment", "tls"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-elastic-stack-installer-kibana.md

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-borg-depanner-retour-arriere"
 description: "Diagnostiquer un échec Borg sans supprimer les archives nécessaires ni aggraver une erreur de dépôt."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "borgbackup", "diagnostic", "rollback", "recovery"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-borg-depanner-retour-arriere.md

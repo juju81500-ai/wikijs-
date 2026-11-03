@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Debian 13 FOG Project Configurer"
-description: "Configurer le démarrage réseau et les paramètres de base de FOG sans impacter le DHCP existant."
+description: "Configurer le démarrage réseau et les paramètres de base de FOG sans impacter le [[Glossary:DHCP]] existant."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "fog-project", "configuration", "pxe", "dhcp"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_FOG_Project_Configurer

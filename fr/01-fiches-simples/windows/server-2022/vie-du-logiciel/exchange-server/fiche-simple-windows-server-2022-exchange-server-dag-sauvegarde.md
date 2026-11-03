@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - Windows Server 2022 Exchange Server DAG Sauvegarde"
-description: "Mettre en place un groupe de disponibilité de bases de données (DAG) et une sauvegarde cohérente VSS des bases Exchange, avec test de restauration."
+description: "Mettre en place un groupe de disponibilité de bases de données (DAG) et une sauvegarde cohérente [[Glossary:VSS]] des bases Exchange, avec test de restauration."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "exchange-server", "messagerie", "dag", "sauvegarde", "wbadmin", "vss"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_Exchange_Server_DAG_Sauvegarde

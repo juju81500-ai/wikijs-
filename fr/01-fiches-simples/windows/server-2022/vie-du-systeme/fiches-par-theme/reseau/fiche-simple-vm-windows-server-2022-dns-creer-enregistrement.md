@@ -1,12 +1,12 @@
 ---
 title: "VM_WinSrv_2022_DNS_Creer-Enregistrement-A-Et-CNAME"
-description: "Créer un enregistrement DNS hôte (A) pour associer un nom à une adresse IP, et créer un alias (CNAME) dans une zone DNS principale (lab.local)."
+description: "Créer un enregistrement DNS hôte (A) pour associer un nom à une adresse [[Glossary:IP]], et créer un alias ([[Glossary:CNAME]]) dans une zone DNS principale (lab.local)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["winsrv2022", "dns", "enregistrement-a", "cname", "gui", "powershell", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_WinSrv_2022_DNS_Creer-Enregistrement-A-Et-CNAME.md

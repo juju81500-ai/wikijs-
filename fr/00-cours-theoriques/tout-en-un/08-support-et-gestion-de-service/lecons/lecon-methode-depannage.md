@@ -2,11 +2,11 @@
 title: "Leçon — Méthode de dépannage structurée : questionner, reproduire, isoler, tester, documenter"
 description: "À l'issue de cette leçon, vous saurez :"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "lecon", "support", "depannage", "methode", "diagnostic"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Leçon — Méthode de dépannage structurée : questionner, reproduire, isoler, tester, documenter

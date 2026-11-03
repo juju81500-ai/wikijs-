@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM ESXi 8 VMware vSphere Certificats"
 description: "Remplacer ou renouveler les certificats du vCenter pour obtenir une chaîne de confiance valide."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["vmware-vsphere", "vsphere8", "vcenter", "certificats", "tls", "vmca"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_ESXi_8_VMware_vSphere_Certificats

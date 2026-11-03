@@ -2,11 +2,11 @@
 title: "fiche-simple-hote-docker-securite-hardening-inventaire-plan-controle"
 description: "Savoir qui contrôle Docker et ce qui est exposé."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["docker", "hardening", "securite", "compose", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-docker-securite-hardening-inventaire-plan-controle.md

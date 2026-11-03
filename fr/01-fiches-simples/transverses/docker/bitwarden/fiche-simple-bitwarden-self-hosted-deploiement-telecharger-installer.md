@@ -2,11 +2,11 @@
 title: "fiche-simple-bitwarden-self-hosted-deploiement-telecharger-installer"
 description: "Télécharger le script officiel, le contrôler puis lancer l'installation sous le bon compte."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["bitwarden", "self-hosted", "docker", "linux", "secrets"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-bitwarden-self-hosted-deploiement-telecharger-installer.md

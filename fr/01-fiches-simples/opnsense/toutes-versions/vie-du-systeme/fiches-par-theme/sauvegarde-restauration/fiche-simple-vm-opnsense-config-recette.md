@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-opnsense-config-recette"
 description: "Valider le fonctionnement et consigner l'opération."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["opnsense", "sauvegarde", "configuration", "recette", "ha"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-opnsense-config-recette.md

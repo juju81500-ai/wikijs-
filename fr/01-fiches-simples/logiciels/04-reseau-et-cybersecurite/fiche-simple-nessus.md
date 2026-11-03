@@ -2,11 +2,11 @@
 title: "Nessus"
 description: "Installer Nessus sur Debian 12, l'activer avec un code de licence, vérifier que le moteur répond et que les plugins sont chargés, puis le durcir (interface restreinte, comptes nominatifs, sauvegarde). Ne lancer des analyses que sur des cibles autorisées par écrit, uniquement sur votre réseau de test"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian-12", "nessus", "tenable", "scan-vulnerabilites", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Nessus

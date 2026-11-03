@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM ESXi 8 VMware vSphere vSwitch Standard"
 description: "Créer un vSwitch standard de laboratoire sans déconnecter la gestion ni détourner un uplink utilisé."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["vmware-vsphere", "vsphere8", "vswitch", "reseau", "standard-switch"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_ESXi_8_VMware_vSphere_vSwitch_Standard

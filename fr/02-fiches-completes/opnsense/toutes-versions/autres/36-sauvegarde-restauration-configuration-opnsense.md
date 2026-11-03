@@ -2,11 +2,11 @@
 title: "Sauvegarder et restaurer la configuration OPNsense"
 description: "Fiche simple : [préparer l'accès et le périmètre](../../../../01-fiches-simples/opnsense/toutes-versions/vie-du-systeme/fiches-par-theme/sauvegarde-restauration/fiche-simple-vm-opnsense-config-preparer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["opnsense", "sauvegarde", "restauration", "configuration", "ha", "reprise"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Sauvegarder et restaurer la configuration OPNsense

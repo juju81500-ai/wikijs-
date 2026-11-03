@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Proxmox VE 8 Vie Systeme 04 Preparation Du Support D"
-description: "Rendre l'ISO démarrable sur un serveur physique, via clé USB ou iDRAC/iLO."
+description: "Rendre l'ISO démarrable sur un serveur physique, via clé [[Glossary:USB]] ou iDRAC/iLO."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmoxve8", "vie-du-systeme", "cycle-de-vie", "etape-04"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Proxmox_VE_8_Vie_Systeme_04_Preparation_Du_Support_D

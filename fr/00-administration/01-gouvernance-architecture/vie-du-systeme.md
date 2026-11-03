@@ -1,12 +1,12 @@
 ---
 title: "Vie du système : cycle de vie d'un système d'exploitation (50 étapes, multi-OS)"
-description: "Nomenclature : Debian/Ubuntu | RHEL/Alma/Rocky | Windows Server | FreeBSD."
+description: "Nomenclature : Debian/Ubuntu | [[Glossary:RHEL]]/Alma/Rocky | Windows Server | FreeBSD."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["vie-du-systeme", "cycle-de-vie", "os", "checklist", "installation", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Vie du système : cycle de vie d'un système d'exploitation (50 étapes, multi-OS)

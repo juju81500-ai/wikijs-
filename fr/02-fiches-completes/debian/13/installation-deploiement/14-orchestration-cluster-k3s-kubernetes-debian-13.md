@@ -2,11 +2,11 @@
 title: "Cluster Kubernetes léger avec K3s sur Debian"
 description: "Fiche simple : [cadrer le cluster](../../../../01-fiches-simples/debian/13/vie-du-logiciel/kubernetes-k3s/fiche-simple-vm-debian-13-k3s-cadrer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["k3s", "kubernetes", "debian", "cluster", "containerd", "cni"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Cluster Kubernetes léger avec K3s sur Debian

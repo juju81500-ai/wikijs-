@@ -2,11 +2,11 @@
 title: "Déployer Apache Guacamole 1.6.0 avec Docker Compose"
 description: "Fiche simple : [cadrer le périmètre et les prérequis](../../../../01-fiches-simples/transverses/docker/guacamole/fiche-simple-hote-docker-guacamole-cadrer-prerequis.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["apache-guacamole", "docker", "compose", "postgresql", "remote-access", "https", "mfa"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Apache Guacamole 1.6.0 avec Docker Compose

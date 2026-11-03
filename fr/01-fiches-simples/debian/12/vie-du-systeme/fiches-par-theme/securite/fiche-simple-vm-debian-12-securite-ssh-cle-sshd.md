@@ -2,11 +2,11 @@
 title: "VM_Debian_12_Securite_SSH-Cle-Sshd"
 description: "Passer un serveur Debian 12 à l'authentification SSH par clé cryptographique ed25519 uniquement, interdire la connexion directe de root et le mot de passe, en conservant une configuration sshd modulaire et validée avant rechargement."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "debian-family", "ssh", "sshd", "ed25519", "authorized-keys", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_12_Securite_SSH-Cle-Sshd.md

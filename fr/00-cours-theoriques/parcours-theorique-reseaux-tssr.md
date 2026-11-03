@@ -1,12 +1,12 @@
 ---
 title: "Réseaux TCP/IP : du paquet au pare-feu"
-description: "Comprendre comment un poste obtient sa configuration, trouve une destination et échange des données avec un service, puis savoir où interviennent le switch, le routeur, le DNS et le pare-feu."
+description: "Comprendre comment un poste obtient sa configuration, trouve une destination et échange des données avec un service, puis savoir où interviennent le switch, le routeur, le [[Glossary:DNS]] et le pare-feu."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["cours", "theorie", "reseau", "tcp-ip", "tssr"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Réseaux TCP/IP : du paquet au pare-feu

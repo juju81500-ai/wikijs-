@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 26.04 Vie Systeme 37 Deploiement Des Roles Metiers"
 description: "Installer le service attendu."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "vie-du-systeme", "cycle-de-vie", "etape-37"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_37_Deploiement_Des_Roles_Metiers

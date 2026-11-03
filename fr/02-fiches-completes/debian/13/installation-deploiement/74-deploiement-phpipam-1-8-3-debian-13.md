@@ -2,11 +2,11 @@
 title: "Déployer phpIPAM 1.8.3 sur Debian 13"
 description: "Fiche simple : [cadrer le périmètre phpIPAM](../../../../01-fiches-simples/debian/13/vie-du-logiciel/phpipam/fiche-simple-vm-debian-13-phpipam-perimetre.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["phpipam", "ipam", "debian13", "mariadb", "php84", "nginx"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer phpIPAM 1.8.3 sur Debian 13

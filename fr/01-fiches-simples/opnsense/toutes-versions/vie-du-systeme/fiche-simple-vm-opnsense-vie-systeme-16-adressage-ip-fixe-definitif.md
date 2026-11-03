@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM OPNsense Vie Systeme 16 Adressage Ip Fixe Definitif"
 description: "Fixer les adresses définitives des interfaces."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["opnsense", "vie-du-systeme", "cycle-de-vie", "etape-16"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_16_Adressage_Ip_Fixe_Definitif

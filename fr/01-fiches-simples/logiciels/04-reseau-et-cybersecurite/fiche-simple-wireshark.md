@@ -2,11 +2,11 @@
 title: "Wireshark"
 description: "Installer Wireshark et TShark sur Debian 12, autoriser la capture sans root, réaliser une capture de test sur une interface autorisée puis relire le fichier produit. Les captures contiennent des données sensibles : elles ne se font que sur votre propre réseau de laboratoire ou avec une autorisation "
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian-12", "wireshark", "tshark", "analyse-reseau", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Wireshark

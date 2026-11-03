@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-bitwarden-self-hosted-deploiement-configurer-messagerie-organisation"
-description: "Configurer SMTP et les paramètres d'organisation avant d'inviter des utilisateurs."
+description: "Configurer [[Glossary:SMTP]] et les paramètres d'organisation avant d'inviter des utilisateurs."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["bitwarden", "self-hosted", "docker", "linux", "secrets"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-bitwarden-self-hosted-deploiement-configurer-messagerie-organisation.md

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-lemp-configurer-tls-filtrage"
 description: "Publier l'application en HTTPS avec un filtrage cohérent sans perdre l'accès d'administration ni exposer MariaDB."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "lemp", "tls", "nginx", "firewall", "network"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-lemp-configurer-tls-filtrage.md

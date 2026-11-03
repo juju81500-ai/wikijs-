@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM ESXi 8 VMware vSphere VCSA Sauvegarde Restauration VAMI"
 description: "Sauvegarder la configuration du VCSA par la VAMI et savoir la restaurer."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["vmware-vsphere", "vsphere8", "vcenter", "vcsa", "vami", "sauvegarde", "restauration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_ESXi_8_VMware_vSphere_VCSA_Sauvegarde_Restauration_VAMI

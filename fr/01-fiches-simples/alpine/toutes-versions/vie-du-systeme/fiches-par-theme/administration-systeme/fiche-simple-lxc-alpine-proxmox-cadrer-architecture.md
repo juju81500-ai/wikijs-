@@ -2,11 +2,11 @@
 title: "fiche-simple-lxc-alpine-proxmox-cadrer-architecture"
 description: "Définir l'isolation, le réseau et les ressources d'un conteneur Alpine en tenant compte du noyau partagé avec l'hôte Proxmox."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine", "proxmox", "lxc", "architecture", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-lxc-alpine-proxmox-cadrer-architecture.md

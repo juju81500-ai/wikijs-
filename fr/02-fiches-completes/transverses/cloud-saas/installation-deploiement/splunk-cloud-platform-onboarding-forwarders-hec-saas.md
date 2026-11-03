@@ -2,11 +2,11 @@
 title: "Déployer l'ingestion de données vers Splunk Cloud Platform (Universal Forwarder et HEC)"
 description: "- Couvre l'usage d'un tenant Splunk Cloud Platform (service géré par Splunk). Le déploiement logiciel autohébergé est traité dans le [guide Splunk Enterprise Debian 12](../../../debian/12/installation-deploiement/54-deploiement-splunk-enterprise-10-2-debian-12.md) et ne s'applique pas ici : vous n'i"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["splunk-cloud", "saas", "universal-forwarder", "hec", "siem"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer l'ingestion de données vers Splunk Cloud Platform (Universal Forwarder et HEC)

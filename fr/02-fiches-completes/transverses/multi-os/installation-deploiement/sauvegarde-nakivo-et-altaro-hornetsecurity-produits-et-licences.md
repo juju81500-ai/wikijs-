@@ -2,11 +2,11 @@
 title: "Sauvegarde Nakivo et Altaro / Hornetsecurity : produits et licences"
 description: "Deux éditeurs, deux produits : ne pas mélanger."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["nakivo", "altaro", "hornetsecurity", "sauvegarde", "vmware", "hyperv"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Sauvegarde Nakivo et Altaro / Hornetsecurity : produits et licences

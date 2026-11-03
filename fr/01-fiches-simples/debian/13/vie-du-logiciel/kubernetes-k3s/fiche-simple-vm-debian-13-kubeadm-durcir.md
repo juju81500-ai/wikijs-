@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-kubeadm-durcir"
 description: "Vérifier les contrôles d'accès, réseau, secrets et certificats avant toute utilisation opérationnelle du cluster."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "kubernetes", "rbac", "network-policy", "certificats"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-kubeadm-durcir.md

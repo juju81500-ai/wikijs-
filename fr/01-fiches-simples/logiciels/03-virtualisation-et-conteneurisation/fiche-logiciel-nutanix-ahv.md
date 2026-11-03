@@ -2,11 +2,11 @@
 title: "Nutanix AHV"
 description: "Matériel/éditeur propriétaire — hors périmètre pas à pas. Documentation officielle : [documentation Nutanix AHV](https://portal.nutanix.com/page/documents/list?type=software&filterKey=software&filterVal=AHV)."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "03-virtualisation-et-conteneurisation", "hors-perimetre"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Nutanix AHV

@@ -2,11 +2,11 @@
 title: "Réplication et haute disponibilité : OpenLDAP et FreeIPA (guide comparatif)"
 description: "Deux variantes distinctes, à ne pas mélanger :"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["ldap", "openldap", "freeipa", "replication", "ha", "syncrepl"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Réplication et haute disponibilité : OpenLDAP et FreeIPA (guide comparatif)

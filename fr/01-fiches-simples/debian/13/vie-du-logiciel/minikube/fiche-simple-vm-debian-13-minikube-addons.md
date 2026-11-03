@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-minikube-addons"
 description: "Activer uniquement les add-ons nécessaires et exposer un service de façon contrôlée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "minikube", "docker", "kubernetes", "lab"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-minikube-addons.md

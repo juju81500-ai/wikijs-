@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Windows 10 Vie Systeme 13 Partitionnement Et Systemes De"
-description: "Définir la disposition des disques : GPT, partition système EFI, partition de récupération, volume NTFS."
+description: "Définir la disposition des disques : [[Glossary:GPT]], partition système [[Glossary:EFI]], partition de récupération, volume [[Glossary:NTFS]]."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows10", "vie-du-systeme", "cycle-de-vie", "etape-13"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_10_Vie_Systeme_13_Partitionnement_Et_Systemes_De

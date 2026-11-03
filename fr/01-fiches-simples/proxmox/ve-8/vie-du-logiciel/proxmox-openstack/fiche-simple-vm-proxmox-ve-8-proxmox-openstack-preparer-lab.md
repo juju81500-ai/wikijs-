@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Proxmox VE 8 Proxmox OpenStack Preparer Lab"
 description: "Préparer une VM isolée pour DevStack avant d’installer les services ou d’autoriser du trafic externe."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmox-ve", "pve8", "openstack", "prerequis", "reseau-isole"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Proxmox_VE_8_Proxmox_OpenStack_Preparer_Lab

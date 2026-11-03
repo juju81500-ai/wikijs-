@@ -1,12 +1,12 @@
 ---
 title: "Fiche simple — Debian 13 : préparer un lab Samba AD DC"
-description: "Créer un domaine Samba AD DC neuf dans un environnement de laboratoire isolé. Cette fiche ne décrit pas une migration ou une reprise de forêt existante."
+description: "Créer un domaine Samba [[Glossary:AD]] [[Glossary:DC]] neuf dans un environnement de laboratoire isolé. Cette fiche ne décrit pas une migration ou une reprise de forêt existante."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "samba", "ad-dc", "dns", "lab"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche simple — Debian 13 : préparer un lab Samba AD DC

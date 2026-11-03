@@ -2,11 +2,11 @@
 title: "Microsoft Entra ID"
 description: "Série cloud dédiée à Entra Connect, comptes d’urgence, MFA et accès conditionnel. Les changements de stratégie sont guidés en portail et en Microsoft Graph PowerShell; vérifier les licences et tester en report-only/pilote."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "05-systemes-annuaires-et-services", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Microsoft Entra ID

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows Server 2022 Systeme Nom Et Fuseau"
 description: "Donner à un serveur Windows Server 2022 un nom d'hôte conforme à la convention de nommage (15 caractères maximum pour le nom NetBIOS), régler le fuseau horaire et vérifier que l'horloge suit bien ce fuseau et la source de temps du domaine."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "powershell", "rename-computer", "timezone", "w32tm"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Windows_Server_2022_Systeme_Nom_Et_Fuseau

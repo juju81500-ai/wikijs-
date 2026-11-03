@@ -1,12 +1,12 @@
 ---
 title: "VM_WinSrv_2022_Reseau_Fixer-IP-PowerShell"
-description: "Fixer une adresse IP statique, configurer les serveurs DNS et sécuriser la carte réseau sur Windows Server 2022 en ligne de commande PowerShell."
+description: "Fixer une adresse [[Glossary:IP]] statique, configurer les serveurs [[Glossary:DNS]] et sécuriser la carte réseau sur Windows Server 2022 en ligne de commande PowerShell."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["winsrv2022", "windows-server", "reseau", "ip-statique", "powershell", "firewall-windows", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_WinSrv_2022_Reseau_Fixer-IP-PowerShell.md

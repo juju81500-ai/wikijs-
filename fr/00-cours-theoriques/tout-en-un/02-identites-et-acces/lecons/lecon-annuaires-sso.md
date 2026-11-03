@@ -2,11 +2,11 @@
 title: "Leçon — Annuaires et SSO : LDAP, SSSD, OIDC/SAML, MFA, moindre privilège et revue des accès"
 description: "À la fin de cette leçon, vous saurez :"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "lecon", "identites", "ldap", "sssd", "oidc", "saml", "sso", "mfa", "iam", "moindre-privilege"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Leçon — Annuaires et SSO : LDAP, SSSD, OIDC/SAML, MFA, moindre privilège et revue des accès

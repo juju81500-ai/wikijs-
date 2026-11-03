@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-appliance-opnsense-securite-admin-https"
-description: "Restreindre l'interface web et l'accès SSH d'OPNsense à un réseau d'administration, imposer HTTPS et l'authentification par clé SSH, sans se verrouiller hors de l'appliance."
+description: "Restreindre l'interface web et l'accès [[Glossary:SSH]] d'OPNsense à un réseau d'administration, imposer HTTPS et l'authentification par clé SSH, sans se verrouiller hors de l'appliance."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["opnsense", "freebsd", "https", "ssh", "hardening", "firewall"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-appliance-opnsense-securite-admin-https.md

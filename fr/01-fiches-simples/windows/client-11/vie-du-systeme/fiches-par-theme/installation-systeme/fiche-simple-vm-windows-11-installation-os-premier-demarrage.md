@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-11-installation-os-premier-demarrage"
 description: "Installer Windows 11 sur un nouveau poste, vérifier l'édition et les prérequis matériels, puis préparer le premier démarrage avant l'inscription dans le domaine ou la gestion centralisée."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-11", "installation", "oobe", "uefi", "tpm", "premier-demarrage"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-windows-11-installation-os-premier-demarrage.md

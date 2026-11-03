@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-cacti-installer-cacti"
 description: "Déployer les fichiers Cacti 1.2.31 de façon vérifiée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "cacti", "snmp", "rrdtool", "mariadb"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-cacti-installer-cacti.md

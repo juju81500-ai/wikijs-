@@ -2,11 +2,11 @@
 title: "segmentation des zones"
 description: "Couvert pour la conception et la validation en laboratoire — [guide DMZ](../../../02-fiches-completes/transverses/multi-os/autres/86-conception-dmz-segmentation-flux-multi-os.md) et [checklist de flux](../../pfsense/toutes-versions/vie-du-systeme/fiches-par-theme/administration-systeme/fiche-simple-"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "04-reseau-et-cybersecurite", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 segmentation des zones

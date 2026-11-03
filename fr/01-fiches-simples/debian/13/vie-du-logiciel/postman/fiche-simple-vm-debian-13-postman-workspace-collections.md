@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Postman Workspace Collections"
 description: "Créer un workspace Postman maîtrisé et une première collection de requêtes de lab sur Debian 13, organisée en dossiers et exportable."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "postman", "api", "newman", "vie-du-logiciel"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Postman_Workspace_Collections

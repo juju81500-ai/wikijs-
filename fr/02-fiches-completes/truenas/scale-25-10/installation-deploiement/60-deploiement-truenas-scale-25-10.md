@@ -2,11 +2,11 @@
 title: "Déployer TrueNAS SCALE 25.10"
 description: "Fiche simple : [dimensionner et préparer](../../../../01-fiches-simples/truenas/scale-25-10/vie-du-systeme/fiches-par-theme/deploiement/fiche-simple-truenas-scale-25-10-deploiement-dimensionner-preparer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["truenas", "scale2510", "zfs", "nas", "smb", "nfs", "sauvegarde"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer TrueNAS SCALE 25.10

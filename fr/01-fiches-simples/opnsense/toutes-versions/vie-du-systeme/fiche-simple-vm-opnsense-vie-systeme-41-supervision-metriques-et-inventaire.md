@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM OPNsense Vie Systeme 41 Supervision Metriques Et Inventaire"
 description: "Surveiller l'état et les performances."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["opnsense", "vie-du-systeme", "cycle-de-vie", "etape-41"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_41_Supervision_Metriques_Et_Inventaire

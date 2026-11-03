@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Windows 11 Vie Systeme 32 Automatisation Des Correctifs De"
-description: "Automatiser les mises à jour avec WSUS, Windows Update for Business ou Intune."
+description: "Automatiser les mises à jour avec [[Glossary:WSUS]], Windows Update for Business ou Intune."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows11", "vie-du-systeme", "cycle-de-vie", "etape-32"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_11_Vie_Systeme_32_Automatisation_Des_Correctifs_De

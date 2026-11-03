@@ -1,12 +1,12 @@
 ---
 title: "Windows Server 2016 / 2019 / 2022"
-description: "Couvert — parcours système Windows Server 2022 et 2025 ([2022](../../windows/server-2022/vie-du-systeme/cycle-de-vie-50-etapes.md), [2025](../../windows/server-2025/vie-du-systeme/cycle-de-vie-50-etapes.md)) et 8 fiches de différences pour 2016 et 2019 : fin de support, cmdlets, SMB1, TLS 1.2, Windo"
+description: "Couvert — parcours système Windows Server 2022 et 2025 ([2022](../../windows/server-2022/vie-du-systeme/cycle-de-vie-50-etapes.md), [2025](../../windows/server-2025/vie-du-systeme/cycle-de-vie-50-etapes.md)) et 8 fiches de différences pour 2016 et 2019 : fin de support, cmdlets, SMB1, [[Glossary:TLS"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "05-systemes-annuaires-et-services", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Windows Server 2016 / 2019 / 2022

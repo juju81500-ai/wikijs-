@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-opentofu-mise-a-jour-rollback"
 description: "Mettre à jour OpenTofu sans perdre l'état ni accepter une dérive non comprise."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "opentofu", "upgrade", "backup", "rollback"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-opentofu-mise-a-jour-rollback.md

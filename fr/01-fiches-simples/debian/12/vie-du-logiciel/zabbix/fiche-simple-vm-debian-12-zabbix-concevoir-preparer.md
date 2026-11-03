@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-zabbix-concevoir-preparer"
 description: "Préparer la supervision Zabbix en déterminant capacité, versions, flux réseau et stratégie de sauvegarde avant installation."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "zabbix", "supervision", "capacity", "network"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-zabbix-concevoir-preparer.md

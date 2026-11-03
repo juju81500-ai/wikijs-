@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-windows-server-2022-reprise-foret-ad-ds-lab"
-description: "Répéter et valider le plan de récupération d'une forêt AD DS en laboratoire, sans connecter les DC restaurés au réseau de production."
+description: "Répéter et valider le plan de récupération d'une forêt AD DS en laboratoire, sans connecter les [[Glossary:DC]] restaurés au réseau de production."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "ad-ds", "forest-recovery", "dsrm", "sauvegarde", "lab"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-windows-server-2022-reprise-foret-ad-ds-lab.md

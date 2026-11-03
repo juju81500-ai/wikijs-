@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-windows-11-securite-activer-bitlocker-tpm"
-description: "Activer le chiffrement BitLocker du volume système Windows 11, vérifier l'état du TPM et sauvegarder la clé de récupération dans un emplacement distinct et contrôlé."
+description: "Activer le chiffrement BitLocker du volume système Windows 11, vérifier l'état du [[Glossary:TPM]] et sauvegarder la clé de récupération dans un emplacement distinct et contrôlé."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-11", "bitlocker", "tpm", "chiffrement", "recovery-key", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-windows-11-securite-activer-bitlocker-tpm.md

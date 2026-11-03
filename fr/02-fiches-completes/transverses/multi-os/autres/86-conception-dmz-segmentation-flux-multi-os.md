@@ -2,11 +2,11 @@
 title: "Concevoir et valider une DMZ réseau"
 description: "Une DMZ est une zone de confiance distincte destinée aux services qui doivent communiquer avec des réseaux moins fiables, notamment Internet. Elle limite les chemins de communication vers le réseau interne; elle ne rend pas à elle seule un service exposé sûr et ne remplace ni le durcissement des hôt"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["dmz", "segmentation", "firewall", "reseau", "ipv4", "ipv6", "durcissement"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Concevoir et valider une DMZ réseau

@@ -2,11 +2,11 @@
 title: "Déployer Veeam Backup & Replication 13 sur Windows Server 2022"
 description: "Fiche simple : [dimensionner l'infrastructure](../../../../01-fiches-simples/windows/server-2022/vie-du-logiciel/veeam/fiche-simple-vm-windows-server-2022-veeam-dimensionner-infrastructure.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["veeam", "backup-replication", "windows-server-2022", "hyper-v", "sauvegarde", "immutabilite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Veeam Backup & Replication 13 sur Windows Server 2022

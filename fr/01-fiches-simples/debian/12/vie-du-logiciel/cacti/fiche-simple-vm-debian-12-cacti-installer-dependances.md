@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-12-cacti-installer-dependances"
-description: "Installer Apache, MariaDB, RRDtool, SNMP, PHP et ses extensions."
+description: "Installer Apache, MariaDB, RRDtool, [[Glossary:SNMP]], PHP et ses extensions."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "cacti", "snmp", "rrdtool", "mariadb"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-cacti-installer-dependances.md

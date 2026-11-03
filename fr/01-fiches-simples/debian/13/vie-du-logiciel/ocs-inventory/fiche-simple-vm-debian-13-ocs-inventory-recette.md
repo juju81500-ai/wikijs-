@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-ocs-inventory-recette"
-description: "Vérifier que les services, la console, l'API et un agent de test fonctionnent."
+description: "Vérifier que les services, la console, l'[[Glossary:API]] et un agent de test fonctionnent."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "ocs-inventory", "ocs3", "postgresql", "nginx", "recette"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-ocs-inventory-recette.md

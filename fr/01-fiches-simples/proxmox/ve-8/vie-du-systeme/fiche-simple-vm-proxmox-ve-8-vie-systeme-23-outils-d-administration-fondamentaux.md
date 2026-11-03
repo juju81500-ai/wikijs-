@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Proxmox VE 8 Vie Systeme 23 Outils D Administration Fondamentaux"
 description: "Installer les outils de diagnostic courants."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmoxve8", "vie-du-systeme", "cycle-de-vie", "etape-23"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Proxmox_VE_8_Vie_Systeme_23_Outils_D_Administration_Fondamentaux

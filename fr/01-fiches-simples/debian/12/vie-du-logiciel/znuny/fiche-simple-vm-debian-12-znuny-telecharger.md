@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-znuny-telecharger"
 description: "Télécharger l'archive officielle, l'installer dans /opt et créer le compte de service."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "znuny", "archive", "compte-service"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-znuny-telecharger.md

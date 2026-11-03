@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-buildah-publier-retour-arriere"
 description: "Publier un tag immuable vers le registre interne."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["buildah", "oci", "rocky9", "rootless", "containerfile", "registre"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-rocky-9-buildah-publier-retour-arriere.md

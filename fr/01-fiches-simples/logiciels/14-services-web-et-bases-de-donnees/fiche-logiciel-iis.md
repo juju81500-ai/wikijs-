@@ -2,11 +2,11 @@
 title: "IIS"
 description: "Guide d'installation IIS sur Windows Server 2022 avec site statique pilote et sauvegarde de configuration. Le déploiement Apache, les runtimes applicatifs et les architectures IIS de production restent à couvrir."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "14-services-web-et-bases-de-donnees", "partiel"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 IIS

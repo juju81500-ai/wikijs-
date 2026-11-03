@@ -2,11 +2,11 @@
 title: "Installer et utiliser Wireshark sur Debian 13"
 description: "Fiche simple : [cadrer périmètre et version](../../../../01-fiches-simples/debian/13/vie-du-logiciel/wireshark/fiche-simple-vm-debian-13-wireshark-analyse-perimetre-version.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["wireshark", "debian13", "tshark", "dumpcap", "pcap", "diagnostic-reseau"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Installer et utiliser Wireshark sur Debian 13

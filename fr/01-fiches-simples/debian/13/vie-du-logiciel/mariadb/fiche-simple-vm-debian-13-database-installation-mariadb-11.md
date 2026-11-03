@@ -2,11 +2,11 @@
 title: "VM_Debian_13_Database_Installation-MariaDB-11"
 description: "Installer le SGBD MariaDB 11 sur Debian 13, initialiser la sécurité d'accès, créer une base et un utilisateur applicatif restreint, et chiffrer les flux réseau."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "mariadb", "database", "sql", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_13_Database_Installation-MariaDB-11.md

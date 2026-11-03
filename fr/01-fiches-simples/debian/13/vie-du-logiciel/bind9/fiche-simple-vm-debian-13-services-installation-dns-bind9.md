@@ -1,12 +1,12 @@
 ---
 title: "VM_Debian_13_Services_Installation-DNS-BIND9"
-description: "Installer et sécuriser BIND sur Debian 13 pour une zone DNS autoritaire, contrôler les transferts et n'activer la récursion que dans une architecture séparée pour les clients internes."
+description: "Installer et sécuriser [[Glossary:BIND]] sur Debian 13 pour une zone DNS autoritaire, contrôler les transferts et n'activer la récursion que dans une architecture séparée pour les clients internes."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "bind9", "dns", "chroot", "hardening", "secnumcloud"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_13_Services_Installation-DNS-BIND9.md

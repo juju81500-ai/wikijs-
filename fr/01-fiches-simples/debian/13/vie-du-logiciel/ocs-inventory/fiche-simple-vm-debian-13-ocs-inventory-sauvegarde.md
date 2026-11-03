@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-ocs-inventory-sauvegarde"
 description: "Sauvegarder base, configuration et clé d'encryption OCS, puis cadrer les mises à jour."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "ocs-inventory", "ocs3", "postgresql", "nginx", "sauvegarde"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-ocs-inventory-sauvegarde.md

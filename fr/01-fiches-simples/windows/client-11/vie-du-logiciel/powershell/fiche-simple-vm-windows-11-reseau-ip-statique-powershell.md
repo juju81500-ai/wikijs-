@@ -1,12 +1,12 @@
 ---
 title: "VM_Win11_Reseau_Fixer-IP-PowerShell"
-description: "Fixer une adresse IP statique, la passerelle et les serveurs DNS sur un poste client Windows 11 via PowerShell, puis sécuriser la pile réseau client."
+description: "Fixer une adresse IP statique, la passerelle et les serveurs [[Glossary:DNS]] sur un poste client Windows 11 via PowerShell, puis sécuriser la pile réseau client."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-11", "windows-client", "powershell", "ip-statique", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Win11_Reseau_Fixer-IP-PowerShell.md

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-ubuntu-24-04-migration-26-04-preparer-noble"
 description: "Mettre Noble à jour et corriger les blocages avant l'upgrade."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu24-04", "ubuntu26-04", "migration", "preparation", "noble"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-ubuntu-24-04-migration-26-04-preparer-noble.md

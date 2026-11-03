@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-server-2022-veeam-dimensionner-infrastructure"
 description: "Vérifier que le futur serveur Veeam respecte les minimums annoncés."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "veeam", "backup-replication", "hyper-v", "dimensionnement"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-windows-server-2022-veeam-dimensionner-infrastructure.md

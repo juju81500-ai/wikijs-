@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-gns3-deploiement-installer-gui-serveur"
-description: "Installer GNS3 GUI et serveur 2.2.61 par pipx."
+description: "Installer GNS3 [[Glossary:GUI]] et serveur 2.2.61 par pipx."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["gns3", "debian13", "pipx", "gns3-server"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-gns3-deploiement-installer-gui-serveur.md

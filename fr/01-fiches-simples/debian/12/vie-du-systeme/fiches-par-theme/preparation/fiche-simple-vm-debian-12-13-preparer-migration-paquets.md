@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-13-preparer-migration-paquets"
 description: "Préparer la migration majeure Debian 12 vers 13, vérifier les dépôts et les paquets applicatifs affectés, et éviter les changements non maîtrisés de stockage, réseau ou services."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "debian13", "bookworm", "trixie", "migration", "apt", "maintenance"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-debian-12-13-preparer-migration-paquets.md

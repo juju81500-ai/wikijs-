@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM ESXi 8 Vie Systeme 22 Synchronisation Horaire Ntp"
 description: "Garder l'heure exacte."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["esxi8", "vie-du-systeme", "cycle-de-vie", "etape-22"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_ESXi_8_Vie_Systeme_22_Synchronisation_Horaire_Ntp

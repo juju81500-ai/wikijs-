@@ -2,11 +2,11 @@
 title: "Leçon — Panorama Proxmox VE, VMware vSphere et Hyper-V : concepts, haute disponibilité, migration à chaud, licences, exploitation"
 description: "À la fin de cette leçon, tu sauras :"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "lecon", "virtualisation", "proxmox", "vsphere", "hyper-v", "haute-disponibilite", "migration", "licences"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Leçon — Panorama Proxmox VE, VMware vSphere et Hyper-V : concepts, haute disponibilité, migration à chaud, licences, exploitation

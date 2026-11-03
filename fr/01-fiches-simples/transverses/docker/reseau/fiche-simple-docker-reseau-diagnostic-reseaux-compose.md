@@ -2,11 +2,11 @@
 title: "fiche-simple-docker-reseau-diagnostic-reseaux-compose"
 description: "Diagnostiquer la connectivité et la résolution de noms entre services Docker Compose et l'hôte, sans supprimer ni contourner les règles de pare-feu du moteur."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["docker", "compose", "reseau", "dns", "diagnostic"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-docker-reseau-diagnostic-reseaux-compose.md

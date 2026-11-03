@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM ESXi 8 Vie Systeme 41 Supervision Metriques Et Inventaire"
-description: "Superviser l'hôte et les VM."
+description: "Superviser l'hôte et les [[Glossary:VM]]."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["esxi8", "vie-du-systeme", "cycle-de-vie", "etape-41"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_ESXi_8_Vie_Systeme_41_Supervision_Metriques_Et_Inventaire

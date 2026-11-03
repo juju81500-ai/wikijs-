@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-server-2022-adds-dns-dhcp-sauvegarde-securite-retour"
 description: "Protéger l'annuaire et prévoir la reprise."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "active-directory", "dns", "dhcp", "gpo"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-windows-server-2022-adds-dns-dhcp-sauvegarde-securite-retour.md

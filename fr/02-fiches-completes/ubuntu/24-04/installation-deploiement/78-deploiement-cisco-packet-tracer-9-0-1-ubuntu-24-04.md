@@ -2,11 +2,11 @@
 title: "Déployer Cisco Packet Tracer 9.0.1 sur Ubuntu 24-04"
 description: "Fiche simple : [vérifier la version et les prérequis](../../../../01-fiches-simples/ubuntu/24-04/vie-du-logiciel/packet-tracer/fiche-simple-vm-ubuntu-24-04-packet-tracer-version-prerequis.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["cisco", "packettracer", "ubuntu2404", "simulation", "reseau", "formation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Cisco Packet Tracer 9.0.1 sur Ubuntu 24-04

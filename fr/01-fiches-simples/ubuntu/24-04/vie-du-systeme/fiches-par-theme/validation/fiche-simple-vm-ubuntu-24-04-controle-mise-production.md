@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-ubuntu-24-04-controle-mise-production"
-description: "Valider un serveur Ubuntu avant sa mise en production : réseau, cloud-init, mises à jour, SSH, AppArmor, pare-feu, sauvegarde et supervision."
+description: "Valider un serveur Ubuntu avant sa mise en production : réseau, cloud-init, mises à jour, [[Glossary:SSH]], AppArmor, pare-feu, sauvegarde et supervision."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu24-04", "ubuntu", "production", "validation", "sauvegarde", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-ubuntu-24-04-controle-mise-production.md

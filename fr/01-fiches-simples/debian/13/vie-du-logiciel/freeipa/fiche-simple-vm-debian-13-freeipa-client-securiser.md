@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Debian 13 FreeIPA Client Securiser"
-description: "Durcir l'accès du client Debian inscrit : droits, accès SSH, politiques centralisées."
+description: "Durcir l'accès du client Debian inscrit : droits, accès [[Glossary:SSH]], politiques centralisées."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["freeipa", "debian13", "vie-du-logiciel", "securiser"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_FreeIPA_Client_Securiser

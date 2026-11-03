@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-openmediavault-disque-donnees"
 description: "Ajouter un disque de données sans toucher au disque système."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "openmediavault", "disque", "raid", "filesystem"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-openmediavault-disque-donnees.md

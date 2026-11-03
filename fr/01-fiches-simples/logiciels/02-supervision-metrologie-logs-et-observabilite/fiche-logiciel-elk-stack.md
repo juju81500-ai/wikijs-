@@ -2,11 +2,11 @@
 title: "ELK Stack"
 description: "Couvert — [guide Elastic Stack](../../../02-fiches-completes/debian/13/installation-deploiement/50-deploiement-elastic-stack-9-5-debian-13.md)"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "02-supervision-metrologie-logs-et-observabilite", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 ELK Stack

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Rocky 9 PowerShell Securiser Signature"
 description: "Durcir l'usage de PowerShell 7 sur Linux et traiter la signature de scripts selon ce qui s'applique."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "powershell", "pwsh", "scripting"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_9_PowerShell_Securiser_Signature

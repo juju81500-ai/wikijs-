@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 24.04 Vie Systeme 08 Configuration Reseau D Installation"
 description: "Disposer d'un réseau pendant l'installation."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2404", "vie-du-systeme", "cycle-de-vie", "etape-08"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_Vie_Systeme_08_Configuration_Reseau_D_Installation

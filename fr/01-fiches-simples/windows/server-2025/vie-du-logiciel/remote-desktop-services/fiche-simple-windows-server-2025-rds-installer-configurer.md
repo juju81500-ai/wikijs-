@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2025 RDS Installer Configurer"
 description: "Installer l'hôte de session RDS et configurer le serveur de licences sur un serveur pilote Windows Server 2025, sans confondre rôle isolé et déploiement multi-serveurs."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows-server-2025", "rds", "session-host", "licences", "powershell"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2025_RDS_Installer_Configurer

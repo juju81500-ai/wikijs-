@@ -2,11 +2,11 @@
 title: "Fiche Simple - Cloud AWS VPC Firewall"
 description: "VPC et pare-feu dans AWS en limitant les risques de sécurité, de disponibilité et de coût."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["aws", "vpc-firewall", "securite", "procedure"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Cloud_AWS_VPC_Firewall

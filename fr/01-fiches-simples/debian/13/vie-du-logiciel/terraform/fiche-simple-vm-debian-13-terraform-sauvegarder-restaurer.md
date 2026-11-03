@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Terraform Sauvegarder Restaurer"
 description: "Établir un mécanisme backend versionné puis prouver une restauration isolée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "terraform", "iac", "state", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Terraform_Sauvegarder_Restaurer

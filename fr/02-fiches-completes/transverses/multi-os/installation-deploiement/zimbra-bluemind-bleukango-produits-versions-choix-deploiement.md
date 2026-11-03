@@ -2,11 +2,11 @@
 title: "Messageries libres Zimbra, BlueMind et BleuKango : distinguer produits et versions, puis déployer en laboratoire"
 description: "- Ce document compare des produits distincts de messagerie et de collaboration ; ils ne partagent ni installateur, ni procédure de mise à jour, ni modèle de licence."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["zimbra", "bluemind", "bluekango", "messagerie", "linux"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Messageries libres Zimbra, BlueMind et BleuKango : distinguer produits et versions, puis déployer en laboratoire

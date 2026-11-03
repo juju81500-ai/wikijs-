@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-hote-vmware-esxi-8-esxi-configurer-services-essentiels"
-description: "Configurer heure, DNS, réseau, stockage et journaux."
+description: "Configurer heure, [[Glossary:DNS]], réseau, stockage et journaux."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["vmware", "esxi", "vsphere8", "hyperviseur", "ntp", "dns", "syslog", "vswitch"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-vmware-esxi-8-esxi-configurer-services-essentiels.md

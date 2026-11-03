@@ -2,11 +2,11 @@
 title: "VM_Debian_12_Systeme_Compte-Service"
 description: "Créer un compte système dédié à une application sur Debian 12, sans shell interactif ni mot de passe, avec un répertoire de travail isolé, et l'exécuter via une unité systemd durcie."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "debian-family", "useradd", "nologin", "systemd", "service-account", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_12_Systeme_Compte-Service.md

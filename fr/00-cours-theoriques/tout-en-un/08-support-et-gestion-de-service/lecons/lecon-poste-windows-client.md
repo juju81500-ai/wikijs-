@@ -2,11 +2,11 @@
 title: "Leçon — Le poste Windows client : profils, impression, mises à jour, pilotes, réseau, démarrage et prise en main à distance"
 description: "À l'issue de cette leçon, vous saurez :"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "lecon", "support", "windows", "poste-client", "diagnostic", "prise-en-main-a-distance"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Leçon — Le poste Windows client : profils, impression, mises à jour, pilotes, réseau, démarrage et prise en main à distance

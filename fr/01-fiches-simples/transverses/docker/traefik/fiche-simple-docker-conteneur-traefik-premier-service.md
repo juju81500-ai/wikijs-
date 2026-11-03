@@ -2,11 +2,11 @@
 title: "fiche-simple-docker-conteneur-traefik-premier-service"
 description: "Publier une application de test non sensible en HTTPS."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["traefik", "docker", "reverse-proxy", "acme", "tls"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-docker-conteneur-traefik-premier-service.md

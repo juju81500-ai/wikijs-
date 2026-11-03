@@ -2,11 +2,11 @@
 title: "Fiche Simple : GPO Hardening & Baseline Sécurité Windows Server 2022"
 description: "Déployer une baseline de sécurité par GPO Active Directory : désactiver LLMNR/NetBIOS, forcer le Pare-feu Windows et sécuriser Kerberos."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["winsrv2022", "gpo", "hardening", "active-directory"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # 📄 Fiche Simple : GPO Hardening & Baseline Sécurité Windows Server 2022

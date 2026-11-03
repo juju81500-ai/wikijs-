@@ -2,11 +2,11 @@
 title: "Déployer Caddy sur Debian 13"
 description: "Fiche simple : [cadrer le pilote Caddy](../../../../01-fiches-simples/debian/13/vie-du-logiciel/caddy/fiche-simple-vm-debian-13-caddy-cadrer-pilote.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["caddy", "debian13", "reverse-proxy", "https", "tls", "systemd"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Caddy sur Debian 13

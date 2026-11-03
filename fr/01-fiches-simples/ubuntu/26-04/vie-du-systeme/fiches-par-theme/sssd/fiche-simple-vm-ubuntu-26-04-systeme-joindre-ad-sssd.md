@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Ubuntu 26.04 Systeme Joindre AD Sssd"
-description: "Joindre un serveur Ubuntu 26-04 à un domaine Active Directory avec realmd et sssd, pour que les comptes du domaine puissent se connecter en SSH et que seuls les groupes autorisés accèdent à la machine."
+description: "Joindre un serveur Ubuntu 26-04 à un domaine Active Directory avec realmd et sssd, pour que les comptes du domaine puissent se connecter en [[Glossary:SSH]] et que seuls les groupes autorisés accèdent à la machine."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "realmd", "sssd", "active-directory", "kerberos", "adcli"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Systeme_Joindre_AD_Sssd

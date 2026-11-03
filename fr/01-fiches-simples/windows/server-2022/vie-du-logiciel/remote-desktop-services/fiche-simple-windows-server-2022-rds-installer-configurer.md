@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 RDS Installer Configurer"
 description: "Installer le rôle hôte de session RDS sur un serveur pilote, sans confondre ce rôle avec un déploiement RDS multi-serveurs complet."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "rds", "session-host", "powershell"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_RDS_Installer_Configurer

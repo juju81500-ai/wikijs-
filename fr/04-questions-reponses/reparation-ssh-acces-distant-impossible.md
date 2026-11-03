@@ -1,12 +1,12 @@
 ---
 title: "Réparation : accès SSH impossible après un changement de configuration"
-description: "Garder une session SSH existante ouverte et disposer d'un accès console avant toute correction. Ne pas désactiver le pare-feu ni réactiver globalement les mots de passe comme premier réflexe."
+description: "Garder une session [[Glossary:SSH]] existante ouverte et disposer d'un accès console avant toute correction. Ne pas désactiver le pare-feu ni réactiver globalement les mots de passe comme premier réflexe."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["reparation", "linux", "ssh", "acces-distant", "pare-feu"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Réparation : accès SSH impossible après un changement de configuration

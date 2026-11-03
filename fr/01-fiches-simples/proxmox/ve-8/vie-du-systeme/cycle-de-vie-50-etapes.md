@@ -2,11 +2,11 @@
 title: "Cycle de vie 50 étapes : Proxmox VE 8"
 description: "Cette checklist suit les 50 étapes du [cycle complet Proxmox](../../../../02-fiches-completes/proxmox/ve-8/cycle-de-vie-50-etapes.md) et du [cycle de référence](../../../../00-administration/01-gouvernance-architecture/cycle-de-vie-50-etapes.md). Elle ne remplace pas la documentation Proxmox corresp"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["cycle-de-vie", "proxmox", "pve8", "hyperviseur", "installation", "production", "verification"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Cycle de vie 50 étapes : Proxmox VE 8

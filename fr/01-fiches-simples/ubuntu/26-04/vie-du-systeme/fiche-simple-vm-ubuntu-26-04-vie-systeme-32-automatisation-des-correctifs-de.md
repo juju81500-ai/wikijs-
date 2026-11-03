@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 26.04 Vie Systeme 32 Automatisation Des Correctifs De"
 description: "Appliquer les correctifs de sécurité."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "vie-du-systeme", "cycle-de-vie", "etape-32"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_32_Automatisation_Des_Correctifs_De

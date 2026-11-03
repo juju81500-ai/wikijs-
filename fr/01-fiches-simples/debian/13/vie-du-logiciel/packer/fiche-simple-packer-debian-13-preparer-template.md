@@ -2,11 +2,11 @@
 title: "Fiche simple — Préparer un template Packer HCL2"
 description: "Créer un template HCL2 minimal qui déclare explicitement un plugin et une source de construction de laboratoire."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "packer", "hcl2", "template", "docker"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche simple — Préparer un template Packer HCL2

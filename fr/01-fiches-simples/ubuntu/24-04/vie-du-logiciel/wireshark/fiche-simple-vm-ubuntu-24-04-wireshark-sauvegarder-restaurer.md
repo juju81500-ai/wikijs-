@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 24.04 Wireshark Sauvegarder Restaurer"
 description: "Sauvegarder les profils/préférences Wireshark et les captures de preuve."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["wireshark", "ubuntu24-04", "vie-du-logiciel", "sauvegarder-restaurer"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_Wireshark_Sauvegarder_Restaurer

@@ -2,11 +2,11 @@
 title: "Déployer KeePassXC 2.8.0 sur Debian 13"
 description: "Fiche simple : [vérifier version et périmètre](../../../../01-fiches-simples/debian/13/vie-du-logiciel/keepassxc/fiche-simple-vm-debian-13-keepassxc-version-perimetre.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["keepassxc", "debian13", "gestionnaire-mots-de-passe", "kdbx", "argon2id", "sauvegarde"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer KeePassXC 2.8.0 sur Debian 13

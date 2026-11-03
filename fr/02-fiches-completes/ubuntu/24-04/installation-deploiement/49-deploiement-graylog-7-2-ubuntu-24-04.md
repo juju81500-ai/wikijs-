@@ -2,11 +2,11 @@
 title: "Déployer Graylog 7.2 sur Ubuntu Server 24-04"
 description: "Fiche simple : [cadrer et vérifier les prérequis](../../../../01-fiches-simples/ubuntu/24-04/vie-du-logiciel/graylog/fiche-simple-vm-ubuntu-24-04-graylog-cadrer-prerequis.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["graylog", "ubuntu2404", "logs", "siem", "datanode", "mongodb"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Graylog 7.2 sur Ubuntu Server 24-04

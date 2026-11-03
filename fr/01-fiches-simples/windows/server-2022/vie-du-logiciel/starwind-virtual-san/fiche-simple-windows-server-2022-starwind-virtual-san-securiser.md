@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 StarWind Virtual SAN Securiser"
 description: "Réduire la surface d'exposition de StarWind : comptes, pare-feu, réseau et chiffrement des accès de gestion."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["starwind", "virtual-san", "windows-server", "securite", "pare-feu", "comptes"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_StarWind_Virtual_SAN_Securiser

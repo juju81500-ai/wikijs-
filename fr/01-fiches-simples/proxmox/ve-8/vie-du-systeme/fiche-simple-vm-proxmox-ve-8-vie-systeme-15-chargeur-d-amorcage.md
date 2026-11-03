@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Proxmox VE 8 Vie Systeme 15 Chargeur D Amorcage"
-description: "Contrôler le démarrage de l'hôte (GRUB ou systemd-boot)."
+description: "Contrôler le démarrage de l'hôte ([[Glossary:GRUB]] ou systemd-boot)."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmoxve8", "vie-du-systeme", "cycle-de-vie", "etape-15"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Proxmox_VE_8_Vie_Systeme_15_Chargeur_D_Amorcage

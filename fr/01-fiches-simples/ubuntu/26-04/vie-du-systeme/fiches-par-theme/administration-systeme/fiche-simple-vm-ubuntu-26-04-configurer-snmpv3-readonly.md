@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-ubuntu-26-04-configurer-snmpv3-readonly"
 description: "Activer SNMPv3 en lecture seule sur un serveur Linux et n'accepter les requêtes que depuis un poller autorisé."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "snmpv3", "snmpd", "supervision", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-ubuntu-26-04-configurer-snmpv3-readonly.md

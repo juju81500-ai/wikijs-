@@ -2,11 +2,11 @@
 title: "Déployer Bareos 25 sur Debian 13"
 description: "Fiche simple : [cadrer l'architecture Bareos](../../../../01-fiches-simples/debian/13/vie-du-logiciel/bareos/fiche-simple-vm-debian-13-bareos-cadrer-architecture.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["bareos", "debian13", "postgresql", "backup", "restore", "catalogue"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Bareos 25 sur Debian 13

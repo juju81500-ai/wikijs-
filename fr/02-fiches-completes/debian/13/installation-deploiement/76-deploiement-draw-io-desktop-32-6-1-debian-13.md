@@ -2,11 +2,11 @@
 title: "Déployer draw-io Desktop 32.6.1 sur Debian 13"
 description: "Fiche simple : [cadrer le choix draw-io Desktop](../../../../01-fiches-simples/debian/13/vie-du-logiciel/draw-io/fiche-simple-vm-debian-13-draw-io-cadrer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["drawio", "diagramsnet", "debian13", "diagramme", "offline", "documentation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer draw-io Desktop 32.6.1 sur Debian 13

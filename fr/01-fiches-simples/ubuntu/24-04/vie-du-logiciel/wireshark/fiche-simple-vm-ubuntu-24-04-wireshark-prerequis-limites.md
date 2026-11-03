@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 24.04 Wireshark Prerequis Limites"
 description: "Cadrer l’usage autorisé de Wireshark/TShark sur VM Ubuntu Server 24-04 LTS : analyse de fichiers et captures bornées, sans capture non autorisée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["wireshark", "ubuntu24-04", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_Wireshark_Prerequis_Limites

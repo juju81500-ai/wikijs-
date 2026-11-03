@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-splunk-verifier-service-ingestion"
 description: "Contrôler l'état de Splunk et d'une ingestion pilote sans exposer de secrets ni relancer la collecte générale."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "splunk", "siem", "logs", "systemd", "diagnostic"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-debian-12-splunk-verifier-service-ingestion.md

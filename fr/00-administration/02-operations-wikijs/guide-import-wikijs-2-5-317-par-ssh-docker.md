@@ -2,11 +2,11 @@
 title: "Importer des fiches dans Wiki.js 2.5.317 avec SSH et Docker"
 description: "Le module SFTP de Wiki.js est une cible de stockage pour conserver une copie des pages; deposer des fichiers par SFTP ne les cree pas automatiquement dans la base Wiki.js. Pour importer un depot de Markdown, utiliser le module Git avec une URI SSH et l'action Import Everything."
 published: true
-date: 2026-11-03T09:38:30Z
+date: 2026-11-03T14:22:28Z
 tags: ["wikijs", "docker", "git", "ssh", "import", "markdown"]
 editor: markdown
-dateCreated: 2026-11-03T09:38:30Z
-dateModified: 2026-11-03T09:38:30Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Importer des fiches dans Wiki.js 2.5.317 avec SSH et Docker

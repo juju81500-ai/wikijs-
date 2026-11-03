@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Ubuntu 26.04 Systeme Timezone Locale"
-description: "Régler le fuseau horaire (Europe/Paris), la synchronisation NTP et la locale française UTF-8 d'un serveur Ubuntu 26-04, pour que les journaux, les tâches planifiées et les messages des services soient horodatés et lisibles de façon cohérente."
+description: "Régler le fuseau horaire (Europe/Paris), la synchronisation [[Glossary:NTP]] et la locale française UTF-8 d'un serveur Ubuntu 26-04, pour que les journaux, les tâches planifiées et les messages des services soient horodatés et lisibles de façon cohérente."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "timezone", "locale", "timedatectl", "localectl", "chrony"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Systeme_Timezone_Locale

@@ -2,11 +2,11 @@
 title: "VM_WinSrv_2022_Depannage_Reinitialiser-Mot-De-Passe-Local"
 description: "Réinitialiser le mot de passe d'un compte utilisateur local ou du compte Administrateur local sur Windows Server 2022 lorsqu'il est perdu ou expiré, et déverrouiller le compte."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "depannage", "mot-de-passe", "gui", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_WinSrv_2022_Depannage_Reinitialiser-Mot-De-Passe-Local.md

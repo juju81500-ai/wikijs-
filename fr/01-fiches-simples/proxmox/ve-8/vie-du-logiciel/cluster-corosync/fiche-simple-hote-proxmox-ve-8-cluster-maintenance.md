@@ -2,11 +2,11 @@
 title: "fiche-simple-hote-proxmox-ve-8-cluster-maintenance"
 description: "Mettre à jour en sécurité et réagir à une perte de quorum."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmox-ve", "pve8", "cluster", "corosync", "maintenance", "quorum"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-proxmox-ve-8-cluster-maintenance.md

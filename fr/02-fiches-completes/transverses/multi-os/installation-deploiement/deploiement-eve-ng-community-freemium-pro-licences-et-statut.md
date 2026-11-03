@@ -2,11 +2,11 @@
 title: "EVE-NG : éditions Community, Freemium et Pro, licences et statut"
 description: "- Périmètre : plateforme de laboratoire réseau multi-éditeurs, installation en VM, accès web, import d'images et premier laboratoire. Usage : formation et validation ; ne pas l'utiliser comme environnement de production."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["eve-ng", "laboratoire", "reseau", "emulation", "licence"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # EVE-NG : éditions Community, Freemium et Pro, licences et statut

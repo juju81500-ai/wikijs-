@@ -2,11 +2,11 @@
 title: "fiche-simple-appliance-opnsense-carp-pfsync-configurer-interfaces-synchronisation"
 description: "Configurer interfaces, pfsync et synchronisation de configuration sur les deux nœuds."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["opnsense", "carp", "pfsync", "ha", "firewall"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-appliance-opnsense-carp-pfsync-configurer-interfaces-synchronisation.md

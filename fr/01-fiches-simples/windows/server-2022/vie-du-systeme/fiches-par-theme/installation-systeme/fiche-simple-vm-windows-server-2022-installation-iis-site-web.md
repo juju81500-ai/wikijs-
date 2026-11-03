@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-windows-server-2022-installation-iis-site-web"
-description: "Installer le rôle IIS sur Windows Server 2022, vérifier le site par défaut et préparer une ouverture réseau limitée aux flux web réellement nécessaires."
+description: "Installer le rôle [[Glossary:IIS]] sur Windows Server 2022, vérifier le site par défaut et préparer une ouverture réseau limitée aux flux web réellement nécessaires."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "iis", "web", "installation", "gui", "powershell", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-windows-server-2022-installation-iis-site-web.md

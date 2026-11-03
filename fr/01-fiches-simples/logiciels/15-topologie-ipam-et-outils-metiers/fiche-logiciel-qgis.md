@@ -2,11 +2,11 @@
 title: "QGIS"
 description: "Couvert pour QGIS 3.44.15 LTR sur Debian 13 — [guide](../../../02-fiches-completes/debian/13/installation-deploiement/75-deploiement-qgis-3-44-ltr-debian-13.md) et [fiche projet](../../debian/13/vie-du-logiciel/qgis/fiche-simple-vm-debian-13-qgis-valider-projet.md)"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "15-topologie-ipam-et-outils-metiers", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 QGIS

@@ -2,11 +2,11 @@
 title: "Créer et installer un LXC Alpine sur Proxmox"
 description: "Fiche simple : [cadrer l'architecture](../../../../01-fiches-simples/alpine/toutes-versions/vie-du-systeme/fiches-par-theme/administration-systeme/fiche-simple-lxc-alpine-proxmox-cadrer-architecture.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["alpine", "proxmox", "lxc", "installation", "template", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Créer et installer un LXC Alpine sur Proxmox

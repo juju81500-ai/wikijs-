@@ -2,11 +2,11 @@
 title: "fiche-simple-lxc-alpine-diagnostic-valider"
 description: "Confirmer qu'une correction rétablit le service attendu et que le filtrage continue de refuser les accès non autorisés."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine", "lxc", "diagnostic", "validation", "firewall"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-lxc-alpine-diagnostic-valider.md

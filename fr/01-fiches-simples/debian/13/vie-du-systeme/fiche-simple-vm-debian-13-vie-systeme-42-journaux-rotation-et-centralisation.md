@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Vie Systeme 42 Journaux Rotation Et Centralisation"
 description: "Maîtriser et exporter les journaux."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "vie-du-systeme", "cycle-de-vie", "etape-42"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Vie_Systeme_42_Journaux_Rotation_Et_Centralisation

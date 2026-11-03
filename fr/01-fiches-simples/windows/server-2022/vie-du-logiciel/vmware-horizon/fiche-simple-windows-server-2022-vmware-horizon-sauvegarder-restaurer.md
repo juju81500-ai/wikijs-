@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - Windows Server 2022 VMware Horizon Sauvegarder Restaurer"
-description: "Sauvegarder et restaurer la configuration Horizon (LDAP du Connection Server, base d'événements, UAG)."
+description: "Sauvegarder et restaurer la configuration Horizon ([[Glossary:LDAP]] du Connection Server, base d'événements, UAG)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["vmware-horizon", "horizon", "windows-server", "sauvegarde"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_VMware_Horizon_Sauvegarder_Restaurer

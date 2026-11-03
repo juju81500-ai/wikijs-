@@ -2,11 +2,11 @@
 title: "Administrer des hôtes avec Ansible Core sur Debian 13"
 description: "Fiche simple : [cadrer le pilote Ansible](../../../../01-fiches-simples/debian/13/vie-du-logiciel/ansible/fiche-simple-vm-debian-13-ansible-cadrer-pilote.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["ansible", "ansible-core", "debian13", "automatisation", "ssh", "inventory", "playbook"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Administrer des hôtes avec Ansible Core sur Debian 13

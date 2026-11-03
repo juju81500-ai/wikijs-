@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 SQL-Server Mettre A Jour"
 description: "Appliquer une mise à jour cumulative (CU) de SQL Server 2022 et savoir revenir en arrière."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "sql-server", "sqlserver-2022", "mise-a-jour"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_SQL-Server_Mettre_A_Jour

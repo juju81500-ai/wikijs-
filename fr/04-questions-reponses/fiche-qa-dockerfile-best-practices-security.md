@@ -2,11 +2,11 @@
 title: "Fiche Q&A : Quelles sont les bonnes pratiques pour sécuriser la création d'un Dockerfile ?"
 description: "Comment rédiger un Dockerfile sécurisé et optimisé pour la production ?"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["docker", "dockerfile", "securite", "conteneurs", "ci-cd"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # 📄 Fiche Q&A : Quelles sont les bonnes pratiques pour sécuriser la création d'un Dockerfile ?

@@ -2,11 +2,11 @@
 title: "Déployer Bitdefender GravityZone ou Kaspersky Endpoint Security"
 description: "Installer la console de gestion, créer les politiques et déployer les agents de manière contrôlée. Les deux produits sont distincts : leurs consoles, paquets et paramètres ne sont pas interchangeables."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["bitdefender", "gravityzone", "kaspersky", "endpoint-security", "antimalware"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Bitdefender GravityZone ou Kaspersky Endpoint Security

@@ -2,11 +2,11 @@
 title: "fiche-simple-lxc-alpine-proxmox-valider-mise-production"
 description: "Confirmer que le CT, son réseau, ses services et sa procédure de sauvegarde/restauration sont prêts avant la mise en service."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine", "proxmox", "lxc", "backup", "restore", "validation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-lxc-alpine-proxmox-valider-mise-production.md

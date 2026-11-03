@@ -1,12 +1,12 @@
 ---
 title: "OpenLDAP"
-description: "Installer un annuaire OpenLDAP (slapd) sur Debian 12, créer un domaine et un utilisateur de test, vérifier les liaisons (bind) et les requêtes LDAP, puis le durcir (anonymat désactivé, LDAPS, pare-feu restreint) avant de le rendre utilisable par un service de l'entreprise. Les tests ne se font que s"
+description: "Installer un annuaire OpenLDAP (slapd) sur Debian 12, créer un domaine et un utilisateur de test, vérifier les liaisons (bind) et les requêtes [[Glossary:LDAP]], puis le durcir (anonymat désactivé, LDAPS, pare-feu restreint) avant de le rendre utilisable par un service de l'entreprise. Les tests ne "
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian-12", "openldap", "slapd", "ldap", "annuaire", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 OpenLDAP

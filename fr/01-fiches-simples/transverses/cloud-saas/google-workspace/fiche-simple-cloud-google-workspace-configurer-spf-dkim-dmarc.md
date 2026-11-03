@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - Cloud Google Workspace Configurer SPF DKIM DMARC"
-description: "Publier SPF, activer DKIM et publier DMARC pour DOMAINE afin de limiter l'usurpation d'identité."
+description: "Publier [[Glossary:SPF]], activer [[Glossary:DKIM]] et publier [[Glossary:DMARC]] pour DOMAINE afin de limiter l'usurpation d'identité."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["google-workspace", "gmail", "cloud-saas", "administration-defensive", "messagerie", "tssr"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Cloud_Google_Workspace_Configurer_SPF_DKIM_DMARC

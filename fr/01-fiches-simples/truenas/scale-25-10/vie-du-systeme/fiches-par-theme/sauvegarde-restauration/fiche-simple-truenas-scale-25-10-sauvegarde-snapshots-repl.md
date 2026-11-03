@@ -2,11 +2,11 @@
 title: "fiche-simple-truenas-scale-25-10-sauvegarde-snapshots-repl"
 description: "Planifier des snapshots ZFS automatiques, puis répliquer ces snapshots vers un second emplacement, pour qu'une copie des données survive à la perte ou à la compromission du NAS source."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenas", "scale2510", "zfs", "snapshot", "replication", "backup"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-truenas-scale-25-10-sauvegarde-snapshots-repl.md

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-draw-io-telecharger"
 description: "Télécharger le .deb officiel et contrôler son empreinte SHA-256."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "drawio", "deb", "sha256", "verification"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-draw-io-telecharger.md

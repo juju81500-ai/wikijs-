@@ -2,11 +2,11 @@
 title: "Mettre en service Jira Service Management Cloud pour l'ITSM"
 description: "Fiche simple : [préparer le tenant et la gouvernance](../../../../01-fiches-simples/transverses/cloud-saas/jira-service-management/fiche-simple-jira-service-management-deploiement-preparer-tenant-gouvernance.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["jira-service-management", "atlassian-cloud", "itsm", "ticketing", "saas"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Mettre en service Jira Service Management Cloud pour l'ITSM

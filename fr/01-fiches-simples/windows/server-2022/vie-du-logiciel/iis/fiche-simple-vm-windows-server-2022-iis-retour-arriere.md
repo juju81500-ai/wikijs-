@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-server-2022-iis-retour-arriere"
 description: "Restaurer la configuration IIS après un changement raté."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["iis", "windows-server-2022", "web-server", "tls", "application-pool"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-windows-server-2022-iis-retour-arriere.md

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows 10 Vie Systeme 26 Authentification Forte Et Windows"
 description: "Remplacer le mot de passe seul par le code PIN, Windows Hello Entreprise ou une clé de sécurité."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows10", "vie-du-systeme", "cycle-de-vie", "etape-26"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_10_Vie_Systeme_26_Authentification_Forte_Et_Windows

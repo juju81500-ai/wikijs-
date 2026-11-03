@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Rocky 9 Zeek Installer"
-description: "Installer Zeek 8.0 LTS sur VM Rocky Linux 9."
+description: "Installer Zeek 8.0 [[Glossary:LTS]] sur VM Rocky Linux 9."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["zeek", "rocky9", "vie-du-logiciel", "installer"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_9_Zeek_Installer

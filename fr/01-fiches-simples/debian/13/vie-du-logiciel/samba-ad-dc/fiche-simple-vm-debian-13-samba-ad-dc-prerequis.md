@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-samba-ad-dc-prerequis"
 description: "Cadrer ce que couvre un domaine Samba AD DC de laboratoire avant de l'installer."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "samba", "active-directory", "lab", "prerequis"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-samba-ad-dc-prerequis.md

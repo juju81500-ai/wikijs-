@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM pfSense Vie Systeme 23 Outils D Administration Fondamentaux"
 description: "Disposer des outils d'exploitation de base."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["pfsense", "vie-du-systeme", "cycle-de-vie", "etape-23"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_23_Outils_D_Administration_Fondamentaux

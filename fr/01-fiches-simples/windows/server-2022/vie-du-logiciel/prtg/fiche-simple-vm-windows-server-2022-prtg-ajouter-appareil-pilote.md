@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-server-2022-prtg-ajouter-appareil-pilote"
 description: "Ajouter un actif autorisé dans PRTG et valider un nombre réduit de capteurs avant d'étendre la supervision."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server", "prtg", "supervision", "snmp", "wmi", "scan-pilote"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-windows-server-2022-prtg-ajouter-appareil-pilote.md

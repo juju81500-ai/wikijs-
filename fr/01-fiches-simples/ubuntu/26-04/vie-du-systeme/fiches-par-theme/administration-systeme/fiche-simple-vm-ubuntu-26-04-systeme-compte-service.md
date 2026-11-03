@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 26.04 Systeme Compte Service"
 description: "Créer un compte système dédié, sans shell interactif et sans mot de passe, pour exécuter un service (par exemple une application web) avec les privilèges minimum, au lieu de le lancer sous root ou sous un compte personnel."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "useradd", "nologin", "service-account", "systemd", "moindre-privilege"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Systeme_Compte_Service

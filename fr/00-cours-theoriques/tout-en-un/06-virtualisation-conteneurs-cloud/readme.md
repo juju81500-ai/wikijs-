@@ -1,12 +1,12 @@
 ---
 title: "Virtualisation, conteneurs et cloud"
-description: "Fiches de tâches communes aux hyperviseurs, VM, conteneurs et plateformes cloud. Les procédures propres au fournisseur restent séparées."
+description: "Fiches de tâches communes aux hyperviseurs, [[Glossary:VM]], conteneurs et plateformes cloud. Les procédures propres au fournisseur restent séparées."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "virtualisation", "conteneurs", "cloud"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Virtualisation, conteneurs et cloud

@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Client 11 OpenVPN Mise A Jour Retour Arriere"
 description: "Mettre à jour le client OpenVPN avec retour arrière."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["openvpn", "windows11", "vie-du-logiciel", "mise-a-jour-retour-arriere"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Client_11_OpenVPN_Mise_A_Jour_Retour_Arriere

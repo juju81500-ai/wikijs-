@@ -2,11 +2,11 @@
 title: "fiche-simple-lxc-alpine-installation-creation-ct-proxmox"
 description: "Créer un conteneur LXC Alpine sur Proxmox à partir d'un template maintenu, avec les ressources, le stockage et le réseau adaptés au rôle prévu."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine", "proxmox", "lxc", "installation", "template", "unprivileged"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-lxc-alpine-installation-creation-ct-proxmox.md

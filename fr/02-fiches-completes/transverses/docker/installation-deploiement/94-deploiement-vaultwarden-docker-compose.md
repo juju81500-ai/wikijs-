@@ -2,11 +2,11 @@
 title: "Déployer Vaultwarden avec Docker Compose"
 description: "Fiche simple : [périmètre et distinction avec Bitwarden](../../../../01-fiches-simples/transverses/docker/vaultwarden/fiche-simple-hote-docker-vaultwarden-perimetre.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["vaultwarden", "docker", "compose", "bitwarden-compatible", "secrets", "sqlite", "sauvegarde"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Vaultwarden avec Docker Compose

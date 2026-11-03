@@ -2,11 +2,11 @@
 title: "Fiche Simple - AlmaLinux"
 description: "Réutiliser les procédures Rocky Linux 9 pertinentes sans créer une nouvelle série OS AlmaLinux dans ce pack."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["almalinux", "rocky-linux-9", "renvoi", "systeme"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_AlmaLinux

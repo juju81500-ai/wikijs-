@@ -2,11 +2,11 @@
 title: "fiche-simple-lxc-alpine-diagnostic-preparer-intervention"
 description: "Préparer un diagnostic réseau/service en préservant l'accès console et en évitant les actions globales risquées."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine", "proxmox", "lxc", "diagnostic", "reseau"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-lxc-alpine-diagnostic-preparer-intervention.md

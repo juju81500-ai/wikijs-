@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - Windows Server 2022 PowerShell Remoting SSH"
-description: "Activer le remoting PowerShell via SSH vers un Windows Server 2022, en complément de WinRM pour 5.1."
+description: "Activer le remoting PowerShell via [[Glossary:SSH]] vers un Windows Server 2022, en complément de WinRM pour 5.1."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "powershell", "pwsh", "scripting", "remoting"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_PowerShell_Remoting_SSH

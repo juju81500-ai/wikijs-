@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - GitHub Compte"
-description: "Sécuriser le compte GitHub, activer MFA et limiter les sessions et applications autorisées."
+description: "Sécuriser le compte GitHub, activer [[Glossary:MFA]] et limiter les sessions et applications autorisées."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["github", "cloud-saas", "compte-securite", "mfa"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_GitHub_Compte

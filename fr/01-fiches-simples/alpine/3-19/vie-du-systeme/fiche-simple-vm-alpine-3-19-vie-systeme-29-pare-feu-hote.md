@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Alpine 3.19 Vie Systeme 29 Pare Feu Hote"
-description: "Ne laisser entrer que SSH et le service prévu."
+description: "Ne laisser entrer que [[Glossary:SSH]] et le service prévu."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine319", "vie-du-systeme", "cycle-de-vie", "etape-29"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_29_Pare_Feu_Hote

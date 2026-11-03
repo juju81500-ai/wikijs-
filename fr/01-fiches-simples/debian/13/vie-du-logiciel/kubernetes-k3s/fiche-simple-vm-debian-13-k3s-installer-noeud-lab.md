@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-k3s-installer-noeud-lab"
 description: "Installer un premier nœud K3s de laboratoire avec une version vérifiée, une configuration minimale et un accès limité."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "k3s", "kubernetes", "installation", "lab"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-k3s-installer-noeud-lab.md

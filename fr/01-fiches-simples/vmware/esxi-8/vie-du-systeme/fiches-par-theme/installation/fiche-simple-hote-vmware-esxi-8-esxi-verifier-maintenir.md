@@ -2,11 +2,11 @@
 title: "fiche-simple-hote-vmware-esxi-8-esxi-verifier-maintenir"
 description: "Vérifier l'état et organiser la maintenance."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["vmware", "esxi", "vsphere8", "hyperviseur", "maintenance", "correctifs"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-vmware-esxi-8-esxi-verifier-maintenir.md

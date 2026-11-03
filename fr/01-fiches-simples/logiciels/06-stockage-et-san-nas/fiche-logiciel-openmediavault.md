@@ -2,11 +2,11 @@
 title: "OpenMediaVault"
 description: "Couvert — [guide OpenMediaVault 8 sur Debian 13](../../../02-fiches-completes/debian/13/installation-deploiement/66-deploiement-openmediavault-8-debian-13.md)"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "06-stockage-et-san-nas", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 OpenMediaVault

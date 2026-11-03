@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 tcpdump Prerequis Limites"
 description: "Cadrer une capture réseau limitée à un périmètre autorisé et à une durée définie."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["tcpdump", "debian13", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_tcpdump_Prerequis_Limites

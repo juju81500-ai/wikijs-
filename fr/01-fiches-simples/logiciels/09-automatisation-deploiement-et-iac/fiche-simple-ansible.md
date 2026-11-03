@@ -2,11 +2,11 @@
 title: "Ansible"
 description: "Installer Ansible sur un nœud de contrôle Debian 13, vérifier sa version, joindre des hôtes cibles en SSH, puis lancer un premier playbook en simulation (--check) avant toute modification. Le parcours sécurisé isole le compte d'automatisation, utilise une clé SSH dédiée et chiffre les secrets avec A"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "debian-family", "ansible", "automation", "ssh-keys", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Ansible

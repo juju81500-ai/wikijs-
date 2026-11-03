@@ -2,11 +2,11 @@
 title: "Administrer Windows 11 avec PowerShell 7.6.9"
 description: "Fiche simple : [comprendre versions et périmètre](../../../../01-fiches-simples/windows/client-11/vie-du-logiciel/powershell/fiche-simple-vm-windows-11-powershell7-versions-perimetre.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["powershell", "windows11", "administration", "diagnostic", "scripts", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Administrer Windows 11 avec PowerShell 7.6.9

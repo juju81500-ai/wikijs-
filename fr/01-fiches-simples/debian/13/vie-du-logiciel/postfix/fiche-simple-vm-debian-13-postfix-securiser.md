@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Debian 13 Postfix Securiser"
-description: "Activer TLS, limiter l'exposition (SMTP/Submission) et réduire les abus sur Postfix."
+description: "Activer [[Glossary:TLS]], limiter l'exposition ([[Glossary:SMTP]]/Submission) et réduire les abus sur Postfix."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "postfix", "smtp", "messagerie", "securiser"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Postfix_Securiser

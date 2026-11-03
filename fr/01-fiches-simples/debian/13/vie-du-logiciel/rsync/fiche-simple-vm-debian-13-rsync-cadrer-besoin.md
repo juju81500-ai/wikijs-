@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-rsync-cadrer-besoin"
 description: "Définir le périmètre et les limites de la copie avant toute synchronisation afin de ne pas confondre miroir et sauvegarde historisée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "rsync", "sauvegarde", "cadrage", "rpo"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-rsync-cadrer-besoin.md

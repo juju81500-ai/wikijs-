@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Terraform Valider Recette"
 description: "Inspecter chaque changement avant apply et vérifier l’état final dans un compte sandbox."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "terraform", "iac", "state", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Terraform_Valider_Recette

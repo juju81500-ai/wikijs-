@@ -2,11 +2,11 @@
 title: "fiche-simple-vmware-esxi-8-sauvegarde-configuration-hote"
 description: "Sauvegarder la configuration complète d'un hôte ESXi 8 (réseau, stockage, comptes, paramètres avancés) hors de l'hôte, la protéger par chiffrement, et s'assurer qu'elle peut être restaurée."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["vmware-esxi-8", "vim-cmd", "vicfg-cfgbackup", "sauvegarde", "pra", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vmware-esxi-8-sauvegarde-configuration-hote.md

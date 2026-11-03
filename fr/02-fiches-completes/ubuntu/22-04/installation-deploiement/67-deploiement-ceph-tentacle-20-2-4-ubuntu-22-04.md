@@ -2,11 +2,11 @@
 title: "Déployer un cluster Ceph Tentacle avec cephadm sur Ubuntu 22-04"
 description: "Fiche simple : [cadrer le périmètre Ceph](../../../../01-fiches-simples/ubuntu/toutes-versions/vie-du-logiciel/ceph/fiche-simple-vm-ubuntu-ceph-cadrer-perimetre.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["ubuntu2204", "ceph", "tentacle", "cephadm", "rados", "rbd", "storage"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer un cluster Ceph Tentacle avec cephadm sur Ubuntu 22-04

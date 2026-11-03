@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM TrueNAS CORE 13.0 Vie Systeme 13 Partitionnement Et Systemes De"
-description: "Choisir les disques de démarrage ; ZFS gère le reste."
+description: "Choisir les disques de démarrage ; [[Glossary:ZFS]] gère le reste."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenascore130", "vie-du-systeme", "cycle-de-vie", "etape-13"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_TrueNAS_CORE_13.0_Vie_Systeme_13_Partitionnement_Et_Systemes_De

@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 MECM Mise a jour Retour arriere"
 description: "Appliquer une mise à jour de Configuration Manager et savoir comment revenir en arrière : il n'existe pas de désinstallation d'une mise à jour in-console, le retour se fait par restauration."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "mecm", "sccm", "mise-a-jour", "retour-arriere"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_MECM_Mise_a_jour_Retour_arriere

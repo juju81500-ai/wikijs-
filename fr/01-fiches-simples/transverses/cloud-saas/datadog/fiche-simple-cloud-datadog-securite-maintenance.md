@@ -2,11 +2,11 @@
 title: "fiche-simple-cloud-datadog-securite-maintenance"
 description: "Appliquer les contrôles de sécurité et de maintenance de l'Agent."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["datadog", "agent", "linux", "saas", "fleet-automation", "observabilite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-cloud-datadog-securite-maintenance.md

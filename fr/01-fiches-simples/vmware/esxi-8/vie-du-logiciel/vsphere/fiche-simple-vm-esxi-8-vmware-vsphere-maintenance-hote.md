@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM ESXi 8 VMware vSphere Maintenance Hote"
-description: "Passer un hôte ESXi de laboratoire en maintenance puis le réintégrer sans supposer que les VM ont été migrées ou arrêtées."
+description: "Passer un hôte ESXi de laboratoire en maintenance puis le réintégrer sans supposer que les [[Glossary:VM]] ont été migrées ou arrêtées."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["vmware-vsphere", "vsphere8", "maintenance", "esxi", "powercli"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_ESXi_8_VMware_vSphere_Maintenance_Hote

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-freepbx-configurer-reseau-tester"
 description: "Valider les appels et les flux SIP/RTP tout en limitant l'exposition aux seuls terminaux et opérateurs attendus."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "freepbx", "asterisk", "voip", "firewall", "testing"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-freepbx-configurer-reseau-tester.md

@@ -1,12 +1,12 @@
 ---
 title: "VM_WinSrv_2022_Reseau_Fixer-IP-Et-DNS"
-description: "Fixer une adresse IP statique, configurer la passerelle et les serveurs DNS sous Windows Server 2022 en utilisant l'interface graphique (GUI) pas-à-pas ou la ligne de commande PowerShell."
+description: "Fixer une adresse IP statique, configurer la passerelle et les serveurs DNS sous Windows Server 2022 en utilisant l'interface graphique ([[Glossary:GUI]]) pas-à-pas ou la ligne de commande PowerShell."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["winsrv2022", "windows-server", "reseau", "ip-statique", "dns", "gui", "powershell", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_WinSrv_2022_Reseau_Fixer-IP-Et-DNS.md

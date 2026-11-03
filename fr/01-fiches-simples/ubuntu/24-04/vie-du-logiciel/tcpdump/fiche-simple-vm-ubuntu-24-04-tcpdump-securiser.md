@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 24.04 tcpdump Securiser"
 description: "Réduire les risques liés aux privilèges et aux fichiers de capture tcpdump."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["tcpdump", "ubuntu24-04", "vie-du-logiciel", "securiser"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_tcpdump_Securiser

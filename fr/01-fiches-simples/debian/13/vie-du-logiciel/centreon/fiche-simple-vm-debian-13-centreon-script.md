@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-centreon-script"
 description: "Récupérer le script d'installation officiel Centreon et le lire avant de l'exécuter."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "centreon", "supervision", "script", "verification"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-centreon-script.md

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 24.04 OpenLDAP Prerequis Limites"
 description: "Valider les prérequis Ubuntu 24-04 avant d'installer slapd, sans répéter le cadrage Debian."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["openldap", "ubuntu24-04", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_OpenLDAP_Prerequis_Limites

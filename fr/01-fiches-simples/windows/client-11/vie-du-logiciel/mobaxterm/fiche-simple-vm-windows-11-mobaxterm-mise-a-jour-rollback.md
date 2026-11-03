@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows 11 MobaXterm Mise A Jour Rollback"
 description: "Mettre à jour MobaXterm et pouvoir revenir à la version précédente."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["mobaxterm", "windows11", "mise-a-jour", "rollback"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_11_MobaXterm_Mise_A_Jour_Rollback

@@ -2,11 +2,11 @@
 title: "Fiche Simple - Cloud GCP Sauvegardes Snapshots"
 description: "Sauvegardes et snapshots dans Google Cloud Platform en limitant les risques de sécurité, de disponibilité et de coût."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["gcp", "sauvegardes-snapshots", "securite", "procedure"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Cloud_GCP_Sauvegardes_Snapshots

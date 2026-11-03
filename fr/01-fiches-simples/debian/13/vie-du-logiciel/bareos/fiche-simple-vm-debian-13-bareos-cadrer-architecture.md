@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-bareos-cadrer-architecture"
 description: "Définir l'architecture et le plan de sauvegarde avant d'installer Bareos ou d'intégrer des données réelles."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "bareos", "backup", "architecture", "rpo", "rto"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-bareos-cadrer-architecture.md

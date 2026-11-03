@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-draw-io-maj-depannage"
 description: "Mettre à jour en sécurité et traiter une dépendance manquante."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "drawio", "mise-a-jour", "depannage"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-draw-io-maj-depannage.md

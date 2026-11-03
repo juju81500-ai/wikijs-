@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Ubuntu 24.04 PowerShell Remoting SSH"
-description: "Activer le remoting PowerShell via SSH sur Ubuntu 24-04 LTS (sous-système powershell de sshd)."
+description: "Activer le remoting PowerShell via [[Glossary:SSH]] sur Ubuntu 24-04 LTS (sous-système powershell de sshd)."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2404", "powershell", "pwsh", "scripting"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_PowerShell_Remoting_SSH

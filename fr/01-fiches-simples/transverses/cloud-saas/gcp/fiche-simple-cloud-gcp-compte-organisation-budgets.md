@@ -2,11 +2,11 @@
 title: "Fiche Simple - Cloud GCP Compte Organisation Budgets"
 description: "Compte, organisation sécurisée et budgets dans Google Cloud Platform en limitant les risques de sécurité, de disponibilité et de coût."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["gcp", "compte-organisation-budgets", "securite", "procedure"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Cloud_GCP_Compte_Organisation_Budgets

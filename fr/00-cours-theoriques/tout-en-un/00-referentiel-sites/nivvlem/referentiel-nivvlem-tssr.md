@@ -1,12 +1,12 @@
 ---
 title: "Référentiel — nivvlem-tssr (GitHub)"
-description: "Dépôt : https://github.com/kipit/nivvlem-TSSR — notes de cours et fiches de référence TSSR (331 documents Markdown). Le dépôt ne déclare pas de licence : seuls les titres et liens sont repris, aucun texte n'est recopié."
+description: "Dépôt : https://github.com/kipit/nivvlem-TSSR — notes de cours et fiches de référence [[Glossary:TSSR]] (331 documents Markdown). Le dépôt ne déclare pas de licence : seuls les titres et liens sont repris, aucun texte n'est recopié."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "referentiel", "nivvlem", "tssr"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Référentiel — nivvlem-tssr (GitHub)

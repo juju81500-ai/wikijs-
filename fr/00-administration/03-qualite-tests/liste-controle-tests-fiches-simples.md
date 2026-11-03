@@ -2,11 +2,11 @@
 title: "Liste de contrôle stricte — tests des fiches simples avant usage en production"
 description: "Aucune fiche du pack n'a été exécutée sur un système réel. Cette liste impose dans quel ordre les rejouer et ce qui prouve qu'une fiche est fiable. Une fiche non testée garde le statut « non éprouvée » et ne doit pas servir en production."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["controle", "tests", "recette", "production", "checklist"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Liste de contrôle stricte — tests des fiches simples avant usage en production

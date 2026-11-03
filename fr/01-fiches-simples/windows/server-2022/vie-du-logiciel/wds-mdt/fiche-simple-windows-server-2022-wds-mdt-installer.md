@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - Windows Server 2022 WDS MDT Installer"
-description: "Installer le rôle WDS, Windows ADK (avec WinPE) et MDT sur Windows Server 2022. Limite documentée par Microsoft : sur Windows 11 et les versions futures de Windows Server (dont Windows Server 2025), le déploiement WDS depuis le boot.wim des médias d'installation est bloqué ; le PXE vers des images d"
+description: "Installer le rôle WDS, Windows ADK (avec WinPE) et MDT sur Windows Server 2022. Limite documentée par Microsoft : sur Windows 11 et les versions futures de Windows Server (dont Windows Server 2025), le déploiement WDS depuis le boot.wim des médias d'installation est bloqué ; le [[Glossary:PXE]] vers"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "wds", "mdt", "installation", "adk"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_WDS_MDT_Installer

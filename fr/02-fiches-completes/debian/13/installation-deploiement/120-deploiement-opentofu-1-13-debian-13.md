@@ -2,11 +2,11 @@
 title: "Déployer OpenTofu 1.13 sur Debian 13"
 description: "Fiche simple : [cadrer version et périmètre](../../../../01-fiches-simples/debian/13/vie-du-logiciel/opentofu/fiche-simple-vm-debian-13-opentofu-cadrer-version.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["opentofu", "tofu", "iac", "debian13", "state", "plan", "apply"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer OpenTofu 1.13 sur Debian 13

@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM TrueNAS CORE 13.0 Vie Systeme 45 Analyse Des Journaux D"
-description: "Chercher les erreurs matérielles et ZFS."
+description: "Chercher les erreurs matérielles et [[Glossary:ZFS]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenascore130", "vie-du-systeme", "cycle-de-vie", "etape-45"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_TrueNAS_CORE_13.0_Vie_Systeme_45_Analyse_Des_Journaux_D

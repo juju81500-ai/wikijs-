@@ -2,11 +2,11 @@
 title: "Déployer Znuny 7.3.8 sur Debian 12"
 description: "Fiche simple : [préparer l'installation](../../../../01-fiches-simples/debian/12/vie-du-logiciel/znuny/fiche-simple-vm-debian-12-znuny-preparer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["znuny", "debian12", "itsm", "ticketing", "apache", "mariadb"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Znuny 7.3.8 sur Debian 12

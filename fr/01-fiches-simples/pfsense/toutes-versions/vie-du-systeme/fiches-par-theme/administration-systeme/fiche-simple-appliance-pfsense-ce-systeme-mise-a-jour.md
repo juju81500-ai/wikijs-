@@ -2,11 +2,11 @@
 title: "fiche-simple-appliance-pfsense-ce-systeme-mise-a-jour"
 description: "Mettre à jour pfSense CE (système de base et paquets) sans rupture de filtrage, avec un point de retour arrière et une vérification après redémarrage."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["pfsense", "ce", "freebsd", "update", "pkg", "maintenance"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-appliance-pfsense-ce-systeme-mise-a-jour.md

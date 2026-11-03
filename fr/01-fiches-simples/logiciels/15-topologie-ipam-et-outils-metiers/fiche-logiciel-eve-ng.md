@@ -2,11 +2,11 @@
 title: "EVE-NG"
 description: "Partiel — 7 fiches simples pour EVE-NG 7.x (Ubuntu 24-04 embarqué) : prérequis et licence, installation par ISO en VM, import d'images autorisées, validation de lab, sauvegarde/restauration, sécurité, mise à jour. Non couvert : bare-metal, cloud, cluster/satellites, édition Community 6.2.0-4 (fin de"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "15-topologie-ipam-et-outils-metiers", "partiel"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 EVE-NG

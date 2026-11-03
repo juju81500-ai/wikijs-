@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-11-wireshark-valider-recette"
 description: "Prouver que Wireshark capture et analyse correctement."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["wireshark", "npcap", "windows11", "capture", "pcap"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-windows-11-wireshark-valider-recette.md

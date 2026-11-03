@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - Windows Server 2025 RDS Securiser TLS Comptes Pare-feu"
-description: "Limiter l'exposition et les droits des connexions RDS : certificat TLS approuvé, NLA, groupe d'accès restreint et règle de pare-feu bornée."
+description: "Limiter l'exposition et les droits des connexions RDS : certificat TLS approuvé, [[Glossary:NLA]], groupe d'accès restreint et règle de pare-feu bornée."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows-server-2025", "rds", "tls", "nla", "pare-feu", "comptes"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2025_RDS_Securiser_TLS_Comptes_Pare-feu

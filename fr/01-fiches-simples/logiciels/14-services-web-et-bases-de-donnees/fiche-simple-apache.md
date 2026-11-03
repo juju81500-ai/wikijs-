@@ -2,11 +2,11 @@
 title: "Apache"
 description: "Installer le serveur web Apache 2.4 sur Debian 12, vérifier sur ce même serveur qu'une page de test répond, puis le durcir (HTTPS obligatoire, masquage de la version, modules inutiles désactivés) avant de le publier. Les tests ne se font que sur votre propre serveur."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian-12", "apache", "serveur-web", "https", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Apache

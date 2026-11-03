@@ -1,12 +1,12 @@
 ---
 title: "Fiche simple — Créer et protéger le jeton opérateur InfluxDB"
-description: "Créer le premier jeton opérateur seulement lorsque l'API est prouvée locale et protéger immédiatement ce secret."
+description: "Créer le premier jeton opérateur seulement lorsque l'[[Glossary:API]] est prouvée locale et protéger immédiatement ce secret."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "influxdb3-core", "token", "secret", "loopback"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche simple — Créer et protéger le jeton opérateur InfluxDB

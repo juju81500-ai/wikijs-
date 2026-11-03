@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Proxmox VE 8 Proxmox OpenStack Mise A Jour Retour Arriere"
 description: "Renouveler un lab DevStack sans appliquer une procédure de mise à niveau de production non documentée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmox", "openstack", "devstack", "mise-a-jour", "retour-arriere", "lab"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Proxmox_VE_8_Proxmox_OpenStack_Mise_A_Jour_Retour_Arriere

@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-rocky-9-systeme-qemu-guest-agent"
-description: "Installer l'agent invité QEMU sur Rocky Linux 9 pour remonter les adresses IP à l'hyperviseur, permettre l'arrêt propre de la VM et créer des snapshots cohérents."
+description: "Installer l'agent invité QEMU sur Rocky Linux 9 pour remonter les adresses [[Glossary:IP]] à l'hyperviseur, permettre l'arrêt propre de la VM et créer des snapshots cohérents."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "rhel9", "qemu", "kvm", "virtio", "proxmox"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-rocky-9-systeme-qemu-guest-agent.md

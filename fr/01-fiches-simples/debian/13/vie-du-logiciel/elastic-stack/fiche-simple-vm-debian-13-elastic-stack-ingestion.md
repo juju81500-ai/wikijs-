@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-elastic-stack-ingestion"
 description: "Valider la santé du nœud et préparer une ingestion pilote."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "elastic", "ingestion", "index", "health"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-elastic-stack-ingestion.md

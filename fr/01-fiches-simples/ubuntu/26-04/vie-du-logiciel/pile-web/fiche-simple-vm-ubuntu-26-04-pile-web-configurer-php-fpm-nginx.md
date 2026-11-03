@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-ubuntu-26-04-pile-web-configurer-php-fpm-nginx"
 description: "Créer le server block Nginx et l'activer après validation."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "nginx", "php8-5", "postgresql18", "tls"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-ubuntu-26-04-pile-web-configurer-php-fpm-nginx.md

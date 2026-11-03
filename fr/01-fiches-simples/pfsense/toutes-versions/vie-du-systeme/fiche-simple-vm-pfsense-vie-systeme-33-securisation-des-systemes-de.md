@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM pfSense Vie Systeme 33 Securisation Des Systemes De"
 description: "Protéger la configuration et les points de restauration."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["pfsense", "vie-du-systeme", "cycle-de-vie", "etape-33"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_33_Securisation_Des_Systemes_De

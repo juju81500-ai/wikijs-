@@ -2,11 +2,11 @@
 title: "LXC_Alpine_3.19_Systeme_Gestion-Services-OpenRC"
 description: "Gérer le démarrage, l'arrêt, le redémarrage et le statut des services d'arrière-plan sous Alpine Linux avec le système d'initialisation ultraléger OpenRC."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine-3-19", "openrc", "rc-service", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 LXC_Alpine_3.19_Systeme_Gestion-Services-OpenRC.md

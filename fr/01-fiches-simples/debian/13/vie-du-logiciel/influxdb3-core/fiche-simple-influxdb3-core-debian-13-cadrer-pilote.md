@@ -2,11 +2,11 @@
 title: "Fiche simple — Cadrer un pilote InfluxDB 3 Core sur Debian 13"
 description: "Décider si InfluxDB 3 Core convient au besoin et préparer un pilote sans le confondre avec InfluxDB Enterprise."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "influxdb3-core", "cadrage", "pilote", "limites"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche simple — Cadrer un pilote InfluxDB 3 Core sur Debian 13

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-server-2025-compatibilite-fonctionnalites-2022"
 description: "Vérifier les différences de prérequis et de valeurs par défaut avant d'installer Windows Server 2025, d'ajouter un rôle, de migrer un serveur 2022 ou de connecter des clients SMB/LDAP anciens."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows-server-2022", "windows-server-2025", "compatibilite", "smb", "openssh", "active-directory"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # 📄 fiche-simple-vm-windows-server-2025-compatibilite-fonctionnalites-2022.md

@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-observium-dependances"
-description: "Installer depuis Debian 13 la pile Apache, PHP, MariaDB et les outils SNMP nécessaires."
+description: "Installer depuis Debian 13 la pile Apache, PHP, MariaDB et les outils [[Glossary:SNMP]] nécessaires."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "observium", "apache", "php", "mariadb", "apt"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-observium-dependances.md

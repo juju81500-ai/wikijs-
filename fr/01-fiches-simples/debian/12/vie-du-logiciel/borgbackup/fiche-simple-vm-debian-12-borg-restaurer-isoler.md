@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-borg-restaurer-isoler"
 description: "Restaurer un fichier ou un service sans écraser la production et prouver que les données récupérées sont utilisables."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "borgbackup", "restore", "isolation", "validation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-borg-restaurer-isoler.md

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Securite Certbot TLS"
 description: "Obtenir et renouveler automatiquement un certificat TLS Let's Encrypt pour un site Nginx sur Debian 13, à partir des paquets Debian, avec un renouvellement vérifié par systemd."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "debian", "certbot", "tls", "letsencrypt", "nginx"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Debian_13_Securite_Certbot_TLS

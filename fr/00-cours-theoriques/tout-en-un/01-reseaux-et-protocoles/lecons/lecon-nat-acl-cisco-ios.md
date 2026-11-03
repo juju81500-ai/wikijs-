@@ -2,11 +2,11 @@
 title: "Leçon — NAT/PAT, listes de contrôle d'accès (ACL) et bases de la ligne de commande de type Cisco IOS"
 description: "À l'issue de cette leçon, vous saurez :"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "lecon", "reseaux", "nat", "pat", "acl", "cisco-ios", "cli", "pare-feu"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Leçon — NAT/PAT, listes de contrôle d'accès (ACL) et bases de la ligne de commande de type Cisco IOS

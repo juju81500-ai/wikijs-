@@ -2,11 +2,11 @@
 title: "GNS3"
 description: "Couvert pour GNS3 2.2.61 stable sur Debian 13, lab local isolé — [guide](../../../02-fiches-completes/debian/13/installation-deploiement/77-deploiement-gns3-2-2-61-debian-13.md) et [fiche de contrôle](../../debian/13/vie-du-logiciel/gns3/fiche-simple-vm-debian-13-gns3-valider-lab-isole.md)"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "15-topologie-ipam-et-outils-metiers", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 GNS3

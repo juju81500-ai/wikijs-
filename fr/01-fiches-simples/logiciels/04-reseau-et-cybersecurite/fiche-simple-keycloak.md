@@ -1,12 +1,12 @@
 ---
 title: "Keycloak"
-description: "Installer Keycloak sur Debian 12 comme fournisseur d'identité (SSO, OIDC, SAML), vérifier la console d'administration sur ce même serveur, puis le durcir (compte administrateur dédié, HTTPS, exposition restreinte). Les tests ne se font que sur votre propre serveur."
+description: "Installer Keycloak sur Debian 12 comme fournisseur d'identité ([[Glossary:SSO]], [[Glossary:OIDC]], [[Glossary:SAML]]), vérifier la console d'administration sur ce même serveur, puis le durcir (compte administrateur dédié, HTTPS, exposition restreinte). Les tests ne se font que sur votre propre serv"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian-12", "keycloak", "sso", "oidc", "java", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Keycloak

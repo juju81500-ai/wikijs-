@@ -2,11 +2,11 @@
 title: "fiche-simple-appliance-opnsense-diagnostic-journaux"
 description: "Identifier les erreurs système et les blocages de pare-feu d'OPNsense depuis l'interface web et le shell, et contrôler les services et ports actifs."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["opnsense", "freebsd", "logs", "diagnostic", "firewall"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-appliance-opnsense-diagnostic-journaux.md

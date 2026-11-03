@@ -2,11 +2,11 @@
 title: "fiche-simple-vmware-esxi-8-configurer-hote-pilote"
 description: "Finaliser les paramètres d'un hôte ESXi pilote avant de le rattacher à une plateforme de production."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["vmware", "esxi", "vsphere8", "reseau", "datastore", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vmware-esxi-8-configurer-hote-pilote.md

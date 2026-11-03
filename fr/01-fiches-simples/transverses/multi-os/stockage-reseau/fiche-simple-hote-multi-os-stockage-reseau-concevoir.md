@@ -2,11 +2,11 @@
 title: "fiche-simple-hote-multi-os-stockage-reseau-concevoir"
 description: "Définir clients, droits, protocole et protection avant de créer le moindre partage."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["stockage", "conception"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-multi-os-stockage-reseau-concevoir.md

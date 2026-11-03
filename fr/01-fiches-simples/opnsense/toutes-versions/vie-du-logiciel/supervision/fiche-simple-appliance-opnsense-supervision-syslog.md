@@ -2,11 +2,11 @@
 title: "fiche-simple-appliance-opnsense-supervision-syslog"
 description: "Envoyer les journaux d'OPNsense vers un serveur syslog distant, vérifier leur réception et protéger le transport, pour conserver les événements hors de l'appliance."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["opnsense", "freebsd", "syslog", "logs", "siem", "tls"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-appliance-opnsense-supervision-syslog.md

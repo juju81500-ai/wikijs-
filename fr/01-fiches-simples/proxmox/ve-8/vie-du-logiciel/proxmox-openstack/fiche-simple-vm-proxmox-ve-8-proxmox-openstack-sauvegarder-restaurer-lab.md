@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Proxmox VE 8 Proxmox OpenStack Sauvegarder Restaurer Lab"
 description: "Restaurer un lab OpenStack jetable sans confondre snapshot VM, sauvegarde indépendante et protection de production."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmox", "openstack", "devstack", "sauvegarde", "restauration", "lab"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Proxmox_VE_8_Proxmox_OpenStack_Sauvegarder_Restaurer_Lab

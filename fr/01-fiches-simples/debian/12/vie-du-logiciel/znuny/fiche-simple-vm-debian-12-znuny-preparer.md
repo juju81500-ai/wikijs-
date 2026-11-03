@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-12-znuny-preparer"
-description: "Vérifier les prérequis (OS, Perl, espace, DNS, sauvegarde) avant d'installer Znuny 7.3.8."
+description: "Vérifier les prérequis (OS, Perl, espace, [[Glossary:DNS]], sauvegarde) avant d'installer Znuny 7.3.8."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "znuny", "preparation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-znuny-preparer.md

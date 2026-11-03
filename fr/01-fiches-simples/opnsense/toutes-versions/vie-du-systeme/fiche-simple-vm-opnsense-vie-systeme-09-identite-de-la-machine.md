@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM OPNsense Vie Systeme 09 Identite De La Machine"
 description: "Donner un nom et un domaine cohérents au pare-feu."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["opnsense", "vie-du-systeme", "cycle-de-vie", "etape-09"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_09_Identite_De_La_Machine

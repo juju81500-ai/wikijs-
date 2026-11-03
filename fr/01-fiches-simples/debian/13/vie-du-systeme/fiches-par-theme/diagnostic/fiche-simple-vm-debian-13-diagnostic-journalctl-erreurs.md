@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Diagnostic Journalctl Erreurs"
 description: "Identifier rapidement les erreurs système, les services en échec et les messages critiques du noyau sur Debian 13, en filtrant par niveau de gravité, par unité et par démarrage avec journalctl et dmesg."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "debian", "journalctl", "diagnostic", "systemd", "dmesg"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Debian_13_Diagnostic_Journalctl_Erreurs

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows 11 mRemoteNG Prerequis"
 description: "Préparer un poste Windows 11 pour mRemoteNG."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["mremoteng", "windows11", "prerequis"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_11_mRemoteNG_Prerequis

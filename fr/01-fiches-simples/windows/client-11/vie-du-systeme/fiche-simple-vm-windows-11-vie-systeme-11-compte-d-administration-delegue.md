@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows 11 Vie Systeme 11 Compte D Administration Delegue"
 description: "Donner des droits d'administration limités et nominatifs au support, sans partager de compte."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows11", "vie-du-systeme", "cycle-de-vie", "etape-11"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_11_Vie_Systeme_11_Compte_D_Administration_Delegue

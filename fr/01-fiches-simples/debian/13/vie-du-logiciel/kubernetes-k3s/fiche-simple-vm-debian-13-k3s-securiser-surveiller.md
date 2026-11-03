@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-k3s-securiser-surveiller"
 description: "Réduire l'exposition du plan de contrôle et détecter les défaillances, dérives de capacité et erreurs des workloads."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "k3s", "kubernetes", "securite", "supervision"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-k3s-securiser-surveiller.md

@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM TrueNAS SCALE 25.10 Vie Systeme 05 Configuration Materielle Firmware"
-description: "Préparer le BIOS/UEFI et les contrôleurs de disques pour ZFS."
+description: "Préparer le [[Glossary:BIOS]]/UEFI et les contrôleurs de disques pour [[Glossary:ZFS]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenasscale2510", "vie-du-systeme", "cycle-de-vie", "etape-05"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_TrueNAS_SCALE_25.10_Vie_Systeme_05_Configuration_Materielle_Firmware

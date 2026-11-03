@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-phpipam-paquets"
 description: "Installer Nginx, MariaDB, PHP-FPM et les extensions PHP requises."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "phpipam", "ipam", "nginx", "mariadb", "apt", "php"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-phpipam-paquets.md

@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - Windows Server 2022 RDS Securiser Acces"
-description: "Limiter l'exposition et les droits des connexions RDS, en privilégiant une passerelle et des certificats approuvés plutôt qu'un port RDP exposé."
+description: "Limiter l'exposition et les droits des connexions RDS, en privilégiant une passerelle et des certificats approuvés plutôt qu'un port [[Glossary:RDP]] exposé."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "rds", "nla", "tls", "pare-feu"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_RDS_Securiser_Acces

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Rocky 9 tcpdump Sauvegarder Restaurer"
 description: "Conserver et restaurer ce qui est utile : captures de preuve et liste de commandes validées (tcpdump n’a pas de configuration serveur)."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["tcpdump", "rocky9", "vie-du-logiciel", "sauvegarder-restaurer"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_9_tcpdump_Sauvegarder_Restaurer

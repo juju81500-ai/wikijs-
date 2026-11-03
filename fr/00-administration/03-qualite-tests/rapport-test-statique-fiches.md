@@ -2,11 +2,11 @@
 title: "Rapport du test statique de toutes les fiches"
 description: "Test automatique du 29 octobre 2026 sur les 2 854 documents de 01-fiches-simples et 02-fiches-completes (hors 06-documentation-ext, 05-Referentiel et export/). Ce n'est pas un test d'exécution : aucune commande n'a été lancée sur un OS réel. Il détecte seulement les erreurs visibles sans exécuter. L"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["controle", "tests", "rapport", "qualite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Rapport du test statique de toutes les fiches

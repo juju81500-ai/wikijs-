@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-phpipam-base"
 description: "Créer une base UTF-8 et un utilisateur limité à cette base."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "phpipam", "ipam", "nginx", "mariadb", "secret"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-phpipam-base.md

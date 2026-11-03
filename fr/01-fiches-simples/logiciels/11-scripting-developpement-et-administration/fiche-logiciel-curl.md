@@ -1,12 +1,12 @@
 ---
 title: "cURL"
-description: "Couvert — cURL Debian 13 pour transfert HTTP(S), TLS et recette API; Postman reste distinct."
+description: "Couvert — cURL Debian 13 pour transfert [[Glossary:HTTP]](S), [[Glossary:TLS]] et recette [[Glossary:API]]; Postman reste distinct."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "11-scripting-developpement-et-administration", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 cURL

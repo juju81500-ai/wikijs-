@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 ownCloud Prerequis Limites"
 description: "Choisir la variante ownCloud adaptée à Debian 13 : ownCloud Infinite Scale (oCIS, binaire unique) car la compatibilité d'ownCloud Classic 10 (PHP 8.4 de Debian 13) n'est pas confirmée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "owncloud", "ocis", "cloud", "prerequis-limites"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_ownCloud_Prerequis_Limites

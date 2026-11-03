@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 24.04 Securite Sysctl Noyau"
 description: "Appliquer un jeu de paramètres sysctl de durcissement au noyau et à la pile réseau d'Ubuntu Server 24-04 LTS, dans un fichier dédié de /etc/sysctl.d/, sans écraser la configuration fournie par le système."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu24-04", "ubuntu", "sysctl", "kernel", "tcp-syncookies", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Securite_Sysctl_Noyau

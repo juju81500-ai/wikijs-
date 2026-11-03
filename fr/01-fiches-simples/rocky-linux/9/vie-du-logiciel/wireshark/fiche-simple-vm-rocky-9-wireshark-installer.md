@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Rocky 9 Wireshark Installer"
-description: "Installer Wireshark (GUI) et TShark (CLI) depuis les dépôts Rocky."
+description: "Installer Wireshark ([[Glossary:GUI]]) et TShark ([[Glossary:CLI]]) depuis les dépôts Rocky."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["wireshark", "rocky9", "vie-du-logiciel", "installer"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_9_Wireshark_Installer

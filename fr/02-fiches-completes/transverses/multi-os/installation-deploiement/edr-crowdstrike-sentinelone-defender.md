@@ -2,11 +2,11 @@
 title: "Déployer et gérer un EDR : CrowdStrike Falcon, SentinelOne ou Microsoft Defender for Endpoint"
 description: "Préparer, piloter et exploiter le déploiement d'un agent EDR de manière défensive et autorisée, sur des machines dont l'organisation est propriétaire. Le parcours se fait par console propriétaire; les noms de paquets, jetons et paramètres d'installation sont fournis par le portail de l'éditeur et ne"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["edr", "crowdstrike", "falcon", "sentinelone", "defender-endpoint", "agent"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer et gérer un EDR : CrowdStrike Falcon, SentinelOne ou Microsoft Defender for Endpoint

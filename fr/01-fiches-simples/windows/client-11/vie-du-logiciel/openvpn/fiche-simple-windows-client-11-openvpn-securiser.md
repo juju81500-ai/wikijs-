@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Client 11 OpenVPN Securiser"
 description: "Protéger le profil, la clé et le poste."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["openvpn", "windows11", "vie-du-logiciel", "securiser"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Client_11_OpenVPN_Securiser

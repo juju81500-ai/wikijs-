@@ -2,11 +2,11 @@
 title: "fiche-simple-truenas-scale-25-10-systeme-mise-a-jour"
 description: "Mettre à jour TrueNAS SCALE 25.10 sans perdre la configuration ni les pools, avec un environnement de démarrage précédent disponible pour revenir en arrière."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenas", "scale2510", "debian", "update", "boot-environment", "maintenance"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-truenas-scale-25-10-systeme-mise-a-jour.md

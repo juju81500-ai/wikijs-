@@ -2,11 +2,11 @@
 title: "🏗️ Synthèse Master - Architecture, Familles OS et Templates Officiels Wiki.js"
 description: "5. Docker-LXC/"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: []
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 5. **Docker-LXC/**

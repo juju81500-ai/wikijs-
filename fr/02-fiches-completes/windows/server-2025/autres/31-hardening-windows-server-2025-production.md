@@ -2,11 +2,11 @@
 title: "Hardening de Windows Server 2025 avant production"
 description: "Fiche simple : [préparer la baseline de hardening](../../../../01-fiches-simples/windows/server-2025/vie-du-systeme/fiches-par-theme/hardening/fiche-simple-vm-windows-server-2025-hardening-preparer-baseline.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows-server-2025", "hardening", "smb", "ldap", "openssh", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Hardening de Windows Server 2025 avant production

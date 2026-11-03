@@ -2,11 +2,11 @@
 title: "Bitwarden"
 description: "Installer Bitwarden auto-hébergé sur Debian 12 avec Docker, vérifier qu'il répond en HTTPS, puis le durcir (inscriptions fermées, pare-feu restreint, sauvegarde chiffrée du dossier de données) avant de confier à l'équipe les mots de passe de l'entreprise. Les tests ne se font que sur votre propre se"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian-12", "bitwarden", "docker", "secrets", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Bitwarden

@@ -2,11 +2,11 @@
 title: "Déployer Cacti 1.2.31 sur Debian 12"
 description: "Fiche simple : [cadrer et préparer le déploiement](../../../../01-fiches-simples/debian/12/vie-du-logiciel/cacti/fiche-simple-vm-debian-12-cacti-cadrer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["cacti", "debian12", "snmp", "rrdtool", "supervision", "mariadb"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Cacti 1.2.31 sur Debian 12

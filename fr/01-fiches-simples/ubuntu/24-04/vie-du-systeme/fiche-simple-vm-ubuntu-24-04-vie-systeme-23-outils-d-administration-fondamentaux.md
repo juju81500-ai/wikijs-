@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 24.04 Vie Systeme 23 Outils D Administration Fondamentaux"
 description: "Installer la boîte à outils."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2404", "vie-du-systeme", "cycle-de-vie", "etape-23"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_Vie_Systeme_23_Outils_D_Administration_Fondamentaux

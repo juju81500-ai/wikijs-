@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-kea-installer"
 description: "Installer Kea DHCPv4 depuis le dépôt stable ISC et repérer l'unité systemd Debian."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "kea", "dhcpv4", "isc", "reseau"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-kea-installer.md

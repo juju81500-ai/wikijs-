@@ -2,11 +2,11 @@
 title: "Sauvegarde et restauration BorgBackup sur Debian 12"
 description: "Fiche simple : [cadrer le besoin Borg](../../../../01-fiches-simples/debian/12/vie-du-logiciel/borgbackup/fiche-simple-vm-debian-12-borg-cadrer-besoin.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["debian12", "bookworm", "borgbackup", "sauvegarde", "restauration", "chiffrement"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Sauvegarde et restauration BorgBackup sur Debian 12

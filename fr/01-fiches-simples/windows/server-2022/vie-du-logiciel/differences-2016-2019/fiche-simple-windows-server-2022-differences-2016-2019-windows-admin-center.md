@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 Differences 2016 2019 Windows Admin Center"
 description: "Administrer des serveurs 2016 et 2019 avec Windows Admin Center (WAC) depuis une passerelle."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server", "windows-server-2016", "windows-server-2019", "windows-server-2022", "windows-admin-center", "wac", "administration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_Differences_2016_2019_Windows_Admin_Center

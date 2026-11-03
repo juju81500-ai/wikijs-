@@ -2,11 +2,11 @@
 title: "Déployer QGIS 3.44 LTR sur Debian 13"
 description: "Fiche simple : [choisir la version et le périmètre](../../../../01-fiches-simples/debian/13/vie-du-logiciel/qgis/fiche-simple-vm-debian-13-qgis-choisir-version.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["qgis", "gis", "debian13", "ltr", "cartographie", "crs"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer QGIS 3.44 LTR sur Debian 13

@@ -2,11 +2,11 @@
 title: "Fiche Simple - Ubuntu 24.04 Nakivo Transporter Installer"
 description: "Installer uniquement le composant Transporter NAKIVO sur Ubuntu Server 24-04 LTS x64 avec la procédure Linux publiée par l’éditeur."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu-24-04", "nakivo", "transporter", "transporter-installer"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Ubuntu_24.04_Nakivo_Transporter_Installer

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-python-installer-outils"
 description: "Installer Python, pip, venv et pipx depuis les dépôts Debian."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "python", "apt", "pip", "pipx"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-python-installer-outils.md

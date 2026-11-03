@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 26.04 Vie Systeme 02 Recuperation De L Image"
 description: "Obtenir l'image officielle d'Ubuntu Server 26-04 LTS."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "vie-du-systeme", "cycle-de-vie", "etape-02"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_02_Recuperation_De_L_Image

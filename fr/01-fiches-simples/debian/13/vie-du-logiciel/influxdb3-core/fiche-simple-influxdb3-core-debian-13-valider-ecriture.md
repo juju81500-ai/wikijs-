@@ -2,11 +2,11 @@
 title: "Fiche simple — Valider une écriture InfluxDB 3 Core"
 description: "Créer une base de test à rétention définie, écrire un point synthétique et confirmer sa lecture sans exposer de jeton."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "influxdb3-core", "ecriture", "validation", "token"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche simple — Valider une écriture InfluxDB 3 Core

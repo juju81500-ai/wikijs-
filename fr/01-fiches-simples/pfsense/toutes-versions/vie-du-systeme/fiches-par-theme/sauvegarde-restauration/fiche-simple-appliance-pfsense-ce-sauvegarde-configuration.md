@@ -2,11 +2,11 @@
 title: "fiche-simple-appliance-pfsense-ce-sauvegarde-configuration"
 description: "Exporter la configuration complète de pfSense CE sous forme chiffrée, conserver la copie hors de l'appliance, et disposer d'une procédure de restauration qui ne compromet pas la production."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["pfsense", "ce", "backup", "xml", "restore", "freebsd"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-appliance-pfsense-ce-sauvegarde-configuration.md

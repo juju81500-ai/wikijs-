@@ -1,12 +1,12 @@
 ---
 title: "PowerShell"
-description: "Couvert — PowerShell 7 documenté sur Debian 13, Ubuntu 24-04, Rocky Linux 9, Windows Server 2022 et Windows 11 (installation, profils, remoting SSH, modules, signature là où elle s'applique). Windows PowerShell 5.1 (intégré à Windows) est traité en comparaison de PowerShell 7 : WinRM, modules et str"
+description: "Couvert — PowerShell 7 documenté sur Debian 13, Ubuntu 24-04, Rocky Linux 9, Windows Server 2022 et Windows 11 (installation, profils, remoting [[Glossary:SSH]], modules, signature là où elle s'applique). Windows PowerShell 5.1 (intégré à Windows) est traité en comparaison de PowerShell 7 : WinRM, m"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "11-scripting-developpement-et-administration", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 PowerShell

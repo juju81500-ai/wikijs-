@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-phpipam-valider-ipam"
 description: "Vérifier qu'un pilote d'adressage est cohérent, que les rôles sont limités et que la base peut être restaurée sans découvrir ni sonder le réseau."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "phpipam", "ipam", "validation", "backup", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-phpipam-valider-ipam.md

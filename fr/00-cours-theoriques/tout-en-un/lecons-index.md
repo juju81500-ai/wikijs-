@@ -2,11 +2,11 @@
 title: "Leçons tout-en-un — index"
 description: "51 leçons, environ 231214 mots, 184 illustrations (18 images libres tierces, 166 créations originales)."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "lecon", "index"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Leçons tout-en-un — index

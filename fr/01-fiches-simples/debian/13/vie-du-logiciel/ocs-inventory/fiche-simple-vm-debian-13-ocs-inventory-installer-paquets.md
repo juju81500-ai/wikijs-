@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-ocs-inventory-installer-paquets"
 description: "Ajouter le dépôt officiel OCS Inventory 3 pour trixie et installer le serveur."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "ocs-inventory", "ocs3", "postgresql", "nginx", "apt"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-ocs-inventory-installer-paquets.md

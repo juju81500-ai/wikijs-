@@ -2,11 +2,11 @@
 title: "fiche-simple-proxmox-ve-8-supervision-zabbix-snmp"
 description: "Superviser l'état de l'hyperviseur Proxmox VE 8 (charge, mémoire, disques, services) depuis un serveur Zabbix, avec l'agent Zabbix en premier choix et SNMPv3 en alternative sécurisée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmox-ve-8", "debian-bookworm", "zabbix", "snmp", "supervision", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-proxmox-ve-8-supervision-zabbix-snmp.md

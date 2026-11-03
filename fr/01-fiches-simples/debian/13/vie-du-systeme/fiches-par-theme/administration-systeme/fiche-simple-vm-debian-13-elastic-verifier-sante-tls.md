@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-elastic-verifier-sante-tls"
-description: "Vérifier l'état des services et l'accès TLS à Elasticsearch/Kibana après l'installation."
+description: "Vérifier l'état des services et l'accès [[Glossary:TLS]] à Elasticsearch/Kibana après l'installation."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "elasticsearch", "kibana", "tls", "logs", "diagnostic"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-debian-13-elastic-verifier-sante-tls.md

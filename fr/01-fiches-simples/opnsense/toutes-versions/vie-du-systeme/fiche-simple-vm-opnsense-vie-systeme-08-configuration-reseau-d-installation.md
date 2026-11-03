@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM OPNsense Vie Systeme 08 Configuration Reseau D Installation"
-description: "Affecter les interfaces WAN et LAN pour que la console et l'interface web soient joignables."
+description: "Affecter les interfaces [[Glossary:WAN]] et [[Glossary:LAN]] pour que la console et l'interface web soient joignables."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["opnsense", "vie-du-systeme", "cycle-de-vie", "etape-08"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_08_Configuration_Reseau_D_Installation

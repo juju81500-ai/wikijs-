@@ -2,11 +2,11 @@
 title: "Leçon — Traitement de texte pour l'administrateur : grep, sed, awk, cut, sort, uniq, find et xargs sur journaux et inventaires"
 description: "À la fin de cette leçon, vous serez capable de :"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "lecon", "automatisation", "bash", "grep", "sed", "awk", "find", "xargs", "journaux", "inventaire"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Leçon — Traitement de texte pour l'administrateur : grep, sed, awk, cut, sort, uniq, find et xargs sur journaux et inventaires

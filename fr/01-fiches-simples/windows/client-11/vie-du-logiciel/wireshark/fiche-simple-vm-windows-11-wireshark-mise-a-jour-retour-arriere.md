@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-11-wireshark-mise-a-jour-retour-arriere"
 description: "Mettre à jour Wireshark/Npcap et savoir revenir en arrière."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["wireshark", "npcap", "windows11", "capture", "pcap"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-windows-11-wireshark-mise-a-jour-retour-arriere.md

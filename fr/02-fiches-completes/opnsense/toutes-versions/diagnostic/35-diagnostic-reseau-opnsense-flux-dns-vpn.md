@@ -2,11 +2,11 @@
 title: "Diagnostiquer un incident réseau sur OPNsense"
 description: "Fiche simple : [délimiter le symptôme](../../../../01-fiches-simples/opnsense/toutes-versions/vie-du-systeme/fiches-par-theme/diagnostic/fiche-simple-appliance-opnsense-diagnostic-reseau-delimiter-symptome.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["opnsense", "diagnostic", "reseau", "firewall", "dns", "vpn"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Diagnostiquer un incident réseau sur OPNsense

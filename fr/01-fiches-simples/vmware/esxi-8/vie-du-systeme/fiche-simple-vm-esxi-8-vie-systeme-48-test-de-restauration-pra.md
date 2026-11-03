@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM ESXi 8 Vie Systeme 48 Test De Restauration Pra"
 description: "Prouver qu'une sauvegarde est restaurable."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["esxi8", "vie-du-systeme", "cycle-de-vie", "etape-48"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_ESXi_8_Vie_Systeme_48_Test_De_Restauration_Pra

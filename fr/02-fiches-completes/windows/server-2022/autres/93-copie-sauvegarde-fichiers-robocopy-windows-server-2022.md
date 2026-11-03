@@ -2,11 +2,11 @@
 title: "Copier et sauvegarder des fichiers avec Robocopy sur Windows Server 2022"
 description: "Fiche simple : [périmètre et limites](../../../../01-fiches-simples/windows/server-2022/vie-du-logiciel/robocopy/fiche-simple-vm-windows-server-2022-robocopy-perimetre.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["robocopy", "windows-server-2022", "sauvegarde", "mir", "purge", "dry-run", "ntfs"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Copier et sauvegarder des fichiers avec Robocopy sur Windows Server 2022

@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Ubuntu 26.04 Securite Fail2ban"
-description: "Bloquer automatiquement, pendant une durée limitée, les adresses IP qui échouent répétitivement à s'authentifier sur SSH, sans bloquer les administrateurs légitimes."
+description: "Bloquer automatiquement, pendant une durée limitée, les adresses [[Glossary:IP]] qui échouent répétitivement à s'authentifier sur SSH, sans bloquer les administrateurs légitimes."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "fail2ban", "ssh", "brute-force", "systemd", "ufw"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Securite_Fail2ban

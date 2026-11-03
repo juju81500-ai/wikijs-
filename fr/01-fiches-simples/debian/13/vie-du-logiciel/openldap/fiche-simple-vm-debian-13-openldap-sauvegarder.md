@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-openldap-sauvegarder"
-description: "Exporter configuration et données LDAP en LDIF et protéger les fichiers hors hôte."
+description: "Exporter configuration et données [[Glossary:LDAP]] en LDIF et protéger les fichiers hors hôte."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "openldap", "slapcat", "backup", "ldif"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-openldap-sauvegarder.md

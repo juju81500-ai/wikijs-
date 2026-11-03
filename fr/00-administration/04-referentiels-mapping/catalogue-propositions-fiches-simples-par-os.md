@@ -2,11 +2,11 @@
 title: "Catalogue des fiches simples par OS"
 description: "Ce catalogue suit l'ajout de fiches simples par famille. Les commandes et interfaces doivent rester spécifiques à la version et au rôle de la machine; une fiche transversale ne doit pas masquer les différences entre OpenRC, systemd, NetworkManager, Netplan, Docker et Windows Server."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: []
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Catalogue des fiches simples par OS

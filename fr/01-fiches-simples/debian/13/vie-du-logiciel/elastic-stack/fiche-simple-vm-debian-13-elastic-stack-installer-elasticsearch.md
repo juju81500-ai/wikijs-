@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-elastic-stack-installer-elasticsearch"
-description: "Installer Elasticsearch, démarrer le service et sécuriser l'accès à l'API HTTPS."
+description: "Installer Elasticsearch, démarrer le service et sécuriser l'accès à l'[[Glossary:API]] HTTPS."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "elastic", "elasticsearch", "systemd", "tls"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-elastic-stack-installer-elasticsearch.md

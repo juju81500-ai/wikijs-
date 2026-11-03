@@ -2,11 +2,11 @@
 title: "fiche-simple-hote-windows-11-deploiement-retour-arriere"
 description: "Savoir quoi faire si enrôlement, chiffrement ou applications échouent."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows11", "deploiement", "oobe", "bitlocker", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-windows-11-deploiement-retour-arriere.md

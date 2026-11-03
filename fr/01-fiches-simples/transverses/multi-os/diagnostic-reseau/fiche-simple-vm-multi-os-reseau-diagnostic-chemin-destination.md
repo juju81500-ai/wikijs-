@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-multi-os-reseau-diagnostic-chemin-destination"
 description: "Savoir par où passent les paquets vers la destination et où ils s'arrêtent."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["reseau", "diagnostic", "multi-os", "depannage"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-multi-os-reseau-diagnostic-chemin-destination.md

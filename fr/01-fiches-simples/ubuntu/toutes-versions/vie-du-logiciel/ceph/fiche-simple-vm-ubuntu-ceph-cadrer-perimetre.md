@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-ubuntu-ceph-cadrer-perimetre"
 description: "Définir ce que le cluster de test couvre (ou non) et réunir les prérequis avant de toucher aux nœuds."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2204", "ceph", "tentacle", "cephadm"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-ubuntu-ceph-cadrer-perimetre.md

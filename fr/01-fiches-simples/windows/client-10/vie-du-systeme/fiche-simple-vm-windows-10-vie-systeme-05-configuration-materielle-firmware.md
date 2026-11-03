@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Windows 10 Vie Systeme 05 Configuration Materielle Firmware"
-description: "Régler l'UEFI : démarrage sécurisé, TPM 2.0, virtualisation."
+description: "Régler l'UEFI : démarrage sécurisé, [[Glossary:TPM]] 2.0, virtualisation."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows10", "vie-du-systeme", "cycle-de-vie", "etape-05"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_10_Vie_Systeme_05_Configuration_Materielle_Firmware

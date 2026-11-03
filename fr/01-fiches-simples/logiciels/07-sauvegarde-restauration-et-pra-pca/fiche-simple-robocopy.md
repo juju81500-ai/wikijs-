@@ -2,11 +2,11 @@
 title: "Robocopy"
 description: "Copier un dossier de données vers un volume ou un partage de sauvegarde avec Robocopy, contrôler le résultat (code de sortie, journal, empreintes), planifier la tâche, puis durcir son exécution. Attention : /MIR supprime dans la destination les fichiers absents de la source ; ne l'utiliser que vers "
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "powershell", "robocopy", "sauvegarde", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Robocopy

@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Ubuntu 24.04 OpenVPN Installer"
-description: "Installer OpenVPN Community Edition et l'outil PKI depuis les dépôts de Ubuntu sans démarrer de service non configuré."
+description: "Installer OpenVPN Community Edition et l'outil [[Glossary:PKI]] depuis les dépôts de Ubuntu sans démarrer de service non configuré."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["openvpn", "ubuntu24-04", "vie-du-logiciel", "installer"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_OpenVPN_Installer

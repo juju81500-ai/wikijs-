@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Debian 13 Vie Systeme 36 Integration A L Annuaire"
-description: "Joindre le domaine ou le VPN."
+description: "Joindre le domaine ou le [[Glossary:VPN]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "vie-du-systeme", "cycle-de-vie", "etape-36"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Vie_Systeme_36_Integration_A_L_Annuaire

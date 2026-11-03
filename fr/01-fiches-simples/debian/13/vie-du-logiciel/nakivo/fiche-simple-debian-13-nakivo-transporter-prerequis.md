@@ -2,11 +2,11 @@
 title: "Fiche Simple - Debian 13 Nakivo Transporter Prerequis"
 description: "Vérifier qu’un hôte Debian 13 x64 remplit les prérequis publiés par NAKIVO pour héberger un Transporter Linux."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian-13", "nakivo", "transporter", "prerequis"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Debian_13_Nakivo_Transporter_Prerequis

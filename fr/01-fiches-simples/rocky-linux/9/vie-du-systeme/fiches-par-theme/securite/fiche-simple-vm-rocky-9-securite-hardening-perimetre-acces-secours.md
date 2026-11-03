@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-securite-hardening-perimetre-acces-secours"
 description: "Se garantir un accès de secours avant de durcir le serveur."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "rhel9", "hardening", "acces-secours"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-rocky-9-securite-hardening-perimetre-acces-secours.md

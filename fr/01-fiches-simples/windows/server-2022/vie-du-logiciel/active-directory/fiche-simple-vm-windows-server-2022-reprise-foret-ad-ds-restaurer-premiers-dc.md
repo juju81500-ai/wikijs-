@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-windows-server-2022-reprise-foret-ad-ds-restaurer-premiers-dc"
-description: "Restaurer les premiers DC en réseau isolé en suivant le runbook Microsoft."
+description: "Restaurer les premiers [[Glossary:DC]] en réseau isolé en suivant le runbook Microsoft."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "active-directory", "ad-ds", "forest-recovery"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-windows-server-2022-reprise-foret-ad-ds-restaurer-premiers-dc.md

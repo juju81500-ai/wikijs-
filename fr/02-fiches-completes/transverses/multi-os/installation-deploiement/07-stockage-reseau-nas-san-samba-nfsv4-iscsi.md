@@ -2,11 +2,11 @@
 title: "Services de stockage : Samba, NFSv4 et cible iSCSI"
 description: "Fiche simple : [concevoir avant d'installer](../../../../01-fiches-simples/transverses/multi-os/stockage-reseau/fiche-simple-hote-multi-os-stockage-reseau-concevoir.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["stockage", "samba", "nfs4", "iscsi", "debian", "sauvegarde"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Services de stockage : Samba, NFSv4 et cible iSCSI

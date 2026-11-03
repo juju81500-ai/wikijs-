@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Debian 13 HAProxy Configurer"
-description: "Écrire une configuration HAProxy minimale répartissant le trafic HTTP sur deux backends avec contrôle de santé."
+description: "Écrire une configuration HAProxy minimale répartissant le trafic [[Glossary:HTTP]] sur deux backends avec contrôle de santé."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "haproxy", "configuration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_HAProxy_Configurer

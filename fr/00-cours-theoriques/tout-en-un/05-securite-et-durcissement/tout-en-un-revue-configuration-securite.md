@@ -2,11 +2,11 @@
 title: "Fiche Simple - Tout-en-un Revue Configuration Securite"
 description: "Collecter un état de sécurité de base en lecture seule et comparer les écarts à une référence approuvée, sans scanner d'autres hôtes ni modifier le système."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "securite", "durcissement", "audit-defensif"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Tout-en-un_Revue_Configuration_Securite

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows 11 Visio Prerequis Limites"
 description: "Cadrer édition, licence et limites avant de déployer Microsoft Visio sur Windows 11."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["visio", "windows11", "microsoft-365", "prerequis"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_11_Visio_Prerequis_Limites

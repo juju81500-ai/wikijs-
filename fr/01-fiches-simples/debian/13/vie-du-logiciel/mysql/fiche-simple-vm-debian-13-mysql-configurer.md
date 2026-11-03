@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 MySQL Configurer"
 description: "Configurer MySQL (écoute, jeu de caractères, journaux) et créer une base et un compte applicatif."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "mysql", "configuration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_MySQL_Configurer

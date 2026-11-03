@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 BlueMind Configurer"
 description: "Configurer domaines et comptes dans les outils BlueMind documentés."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["bluemind", "serveur", "vie-du-logiciel", "configurer"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_BlueMind_Configurer

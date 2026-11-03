@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 12 Vie Systeme 32 Automatisation Des Correctifs De"
 description: "Appliquer les correctifs de sécurité."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "vie-du-systeme", "cycle-de-vie", "etape-32"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_12_Vie_Systeme_32_Automatisation_Des_Correctifs_De

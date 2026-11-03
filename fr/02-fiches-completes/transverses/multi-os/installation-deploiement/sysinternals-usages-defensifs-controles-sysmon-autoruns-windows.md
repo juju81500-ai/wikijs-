@@ -2,11 +2,11 @@
 title: "Sysinternals : usages défensifs contrôlés (Sysmon, Autoruns, Sigcheck) sur Windows"
 description: "- Complète la fiche [Administration Microsoft Sysinternals Windows 11](../../../windows/client-11/installation-deploiement/123-administration-microsoft-sysinternals-windows-11.md), qui reste la référence du diagnostic sur poste. Ici : outils qui installent un pilote/service (Sysmon) ou peuvent chang"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["sysinternals", "sysmon", "autoruns", "sigcheck", "windows", "blue-team"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Sysinternals : usages défensifs contrôlés (Sysmon, Autoruns, Sigcheck) sur Windows

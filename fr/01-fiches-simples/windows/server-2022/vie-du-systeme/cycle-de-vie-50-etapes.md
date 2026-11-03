@@ -2,11 +2,11 @@
 title: "Cycle de vie 50 étapes : Windows Server-2022"
 description: "Cycle complet multi-OS : [Cycle de vie 50 étapes](../../../../00-administration/01-gouvernance-architecture/cycle-de-vie-50-etapes.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["cycle-de-vie", "checklist", "windows", "installation", "production", "verification"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Cycle de vie 50 étapes : Windows Server-2022

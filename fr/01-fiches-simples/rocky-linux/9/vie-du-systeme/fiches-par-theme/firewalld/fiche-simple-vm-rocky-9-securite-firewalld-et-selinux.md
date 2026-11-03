@@ -2,11 +2,11 @@
 title: "VM_Rocky_9_Securite_Configuration-Firewalld-Et-SELinux"
 description: "Configurer et verrouiller le pare-feu local firewalld et ajuster les politiques SELinux en mode applicatif strict sans désactiver le contrôle d'accès obligatoire."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "rhel-family", "firewalld", "selinux", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Rocky_9_Securite_Configuration-Firewalld-Et-SELinux.md

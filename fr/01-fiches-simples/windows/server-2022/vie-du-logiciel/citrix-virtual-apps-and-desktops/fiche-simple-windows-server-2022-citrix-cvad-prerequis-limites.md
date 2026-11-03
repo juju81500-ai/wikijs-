@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 Citrix CVAD Prerequis Limites"
 description: "Cadrer les prérequis, licences et limites avant de déployer Citrix Virtual Apps and Desktops (CVAD) sur Windows Server 2022."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["citrix", "cvad", "windows-server", "prerequis"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_Citrix_CVAD_Prerequis_Limites

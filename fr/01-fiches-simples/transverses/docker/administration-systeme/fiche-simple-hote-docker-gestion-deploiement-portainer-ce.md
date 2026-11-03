@@ -1,12 +1,12 @@
 ---
 title: "Docker_Conteneur_Gestion_Deploiement-Portainer-CE"
-description: "Déployer l'interface Web d'administration Portainer CE (Community Edition) via un conteneur Docker isolé avec persistance des données et sécurisation TLS."
+description: "Déployer l'interface Web d'administration Portainer CE (Community Edition) via un conteneur Docker isolé avec persistance des données et sécurisation [[Glossary:TLS]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["docker", "portainer", "conteneurs", "webui", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Docker_Conteneur_Gestion_Deploiement-Portainer-CE.md

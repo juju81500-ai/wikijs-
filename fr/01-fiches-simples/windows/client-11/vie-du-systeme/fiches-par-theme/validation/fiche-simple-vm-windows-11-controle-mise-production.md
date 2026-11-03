@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-11-controle-mise-production"
 description: "Vérifier un poste Windows 11 avant remise à l'utilisateur : mises à jour, identité, accès, chiffrement, pare-feu, protection et capacité de récupération."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-11", "production", "validation", "bitlocker", "defender", "support"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-windows-11-controle-mise-production.md

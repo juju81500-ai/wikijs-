@@ -2,11 +2,11 @@
 title: "Fiche Simple - Cloud Entra ID Comptes Urgence"
 description: "Préparer deux comptes d'accès d'urgence à exclure des politiques d'accès conditionnel pilotes sans perdre l'accès au tenant."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["entra-id", "comptes-urgence", "break-glass", "acces-conditionnel", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Cloud_Entra_ID_Comptes_Urgence

@@ -2,11 +2,11 @@
 title: "Déployer TrueNAS CORE 13.0 (FreeBSD)"
 description: "Fiche simple : [décider du statut du produit](../../../../01-fiches-simples/truenas/core-13-0/vie-du-systeme/fiches-par-theme/deploiement/fiche-simple-truenas-core-13-0-deploiement-statut-decision.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["truenas-core", "truenas", "freebsd", "zfs", "smb", "snapshots", "nas"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer TrueNAS CORE 13.0 (FreeBSD)

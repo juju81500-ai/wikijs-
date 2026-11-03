@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-controle-mise-production"
 description: "Valider une VM Debian 13 avant ouverture en production : accès, mises à jour, réseau, services, sécurité, supervision et capacité réelle de restauration."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "debian", "production", "validation", "sauvegarde", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-debian-13-controle-mise-production.md

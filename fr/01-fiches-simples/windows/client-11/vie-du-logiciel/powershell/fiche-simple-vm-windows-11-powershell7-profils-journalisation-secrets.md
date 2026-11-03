@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-11-powershell7-profils-journalisation-secrets"
 description: "Contrôler le profil PowerShell et la journalisation sans exposer de secret."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-11", "powershell", "pwsh", "administration", "scripts", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-windows-11-powershell7-profils-journalisation-secrets.md

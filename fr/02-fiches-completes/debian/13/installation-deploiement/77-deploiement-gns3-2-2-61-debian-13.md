@@ -2,11 +2,11 @@
 title: "Déployer GNS3 2.2.61 sur Debian 13"
 description: "Fiche simple : [cadrer version et périmètre](../../../../01-fiches-simples/debian/13/vie-du-logiciel/gns3/fiche-simple-vm-debian-13-gns3-deploiement-version-perimetre.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["gns3", "debian13", "qemu", "kvm", "lab", "simulation-reseau"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer GNS3 2.2.61 sur Debian 13

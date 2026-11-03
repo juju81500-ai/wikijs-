@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-itop-installer-paquet-officiel"
 description: "Déployer l'archive officielle iTop 3.3.0 avec des droits stricts."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "itop", "itsm", "cmdb", "apache", "mariadb"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-itop-installer-paquet-officiel.md

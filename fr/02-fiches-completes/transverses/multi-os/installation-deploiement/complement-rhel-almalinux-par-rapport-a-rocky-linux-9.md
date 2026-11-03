@@ -2,11 +2,11 @@
 title: "RHEL et AlmaLinux : compléments par rapport à Rocky Linux 9"
 description: "- Périmètre : différences d'enregistrement, de dépôts, de support, de migration et de cycle de vie entre RHEL, AlmaLinux et Rocky Linux. Les procédures communes (dnf, SELinux, firewalld, systemd) restent celles des fiches [Rocky Linux 9](../../../rocky-linux/9/installation-deploiement/88-deploiement"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["rhel", "almalinux", "rocky", "dnf", "selinux", "subscription"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # RHEL et AlmaLinux : compléments par rapport à Rocky Linux 9

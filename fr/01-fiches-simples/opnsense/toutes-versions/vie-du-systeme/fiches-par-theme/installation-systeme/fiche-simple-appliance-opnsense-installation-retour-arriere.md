@@ -2,11 +2,11 @@
 title: "fiche-simple-appliance-opnsense-installation-retour-arriere"
 description: "Retrouver un accès ou revenir à une configuration valide."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["opnsense", "installation", "pare-feu", "wan", "lan"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-appliance-opnsense-installation-retour-arriere.md

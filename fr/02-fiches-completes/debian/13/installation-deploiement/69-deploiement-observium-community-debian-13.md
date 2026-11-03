@@ -2,11 +2,11 @@
 title: "Déployer Observium Community sur Debian 13"
 description: "Fiche simple : [cadrer et dimensionner Observium](../../../../01-fiches-simples/debian/13/vie-du-logiciel/observium/fiche-simple-vm-debian-13-observium-cadrer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["observium", "community", "debian13", "snmpv3", "supervision", "mariadb"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Observium Community sur Debian 13

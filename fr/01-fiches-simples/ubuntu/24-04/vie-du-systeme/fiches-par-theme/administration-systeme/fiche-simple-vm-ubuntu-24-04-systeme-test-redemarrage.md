@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Ubuntu 24.04 Systeme Test Redemarrage"
-description: "Vérifier qu'un serveur Ubuntu Server 24-04 LTS redémarre sans intervention : montages, réseau, DNS, horloge et services métier doivent revenir à l'état attendu, avant toute mise en production définitive."
+description: "Vérifier qu'un serveur Ubuntu Server 24-04 LTS redémarre sans intervention : montages, réseau, [[Glossary:DNS]], horloge et services métier doivent revenir à l'état attendu, avant toute mise en production définitive."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu24-04", "ubuntu", "reboot", "systemd", "fstab", "netplan", "validation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Systeme_Test_Redemarrage

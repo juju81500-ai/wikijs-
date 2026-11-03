@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-diagnostic-journalctl-erreurs"
 description: "Identifier rapidement les erreurs de la session de démarrage courante, les unités systemd en échec et les messages noyau critiques sur Rocky Linux 9."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "rhel9", "journalctl", "dmesg", "diagnostic", "systemd"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-rocky-9-diagnostic-journalctl-erreurs.md

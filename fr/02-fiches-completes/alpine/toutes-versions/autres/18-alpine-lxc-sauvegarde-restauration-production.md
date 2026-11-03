@@ -2,11 +2,11 @@
 title: "Sauvegarder et restaurer un LXC Alpine en production"
 description: "Fiche simple : [cadrer la protection](../../../../01-fiches-simples/alpine/toutes-versions/vie-du-systeme/fiches-par-theme/sauvegarde-restauration/fiche-simple-lxc-alpine-sauvegarde-cadrer-protection.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["alpine", "proxmox", "lxc", "sauvegarde", "restauration", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Sauvegarder et restaurer un LXC Alpine en production

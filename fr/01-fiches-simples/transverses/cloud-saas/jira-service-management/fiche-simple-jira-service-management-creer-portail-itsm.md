@@ -2,11 +2,11 @@
 title: "fiche-simple-jira-service-management-creer-portail-itsm"
 description: "Créer un portail de service ITSM opérationnel sans ouvrir l'accès client par défaut à tout Internet."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["jira-service-management", "cloud", "itsm", "portail", "permissions"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-jira-service-management-creer-portail-itsm.md

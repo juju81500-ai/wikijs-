@@ -2,11 +2,11 @@
 title: "Déployer Lansweeper Classic sur Windows Server"
 description: "Fiche simple : [choisir la variante et préparer les droits](../../../../01-fiches-simples/windows/toutes-versions/vie-du-logiciel/lansweeper/fiche-simple-vm-windows-server-lansweeper-choisir-variante-droits.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["lansweeper", "windows-server-2022", "inventaire", "wmi", "snmp", "sql-server"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Lansweeper Classic sur Windows Server

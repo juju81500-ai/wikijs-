@@ -1,12 +1,12 @@
 ---
 title: "VMware vSphere"
-description: "Couvert — [guide ESXi 8.0](../../../02-fiches-completes/vmware/esxi-8/installation-deploiement/56-deploiement-vmware-esxi-8-0.md) et série vSphere 8 : installation du VCSA, sauvegarde/restauration VAMI, mises à jour, certificats, HA, DRS, datastore NFS, vSwitch standard, réseau vMotion, snapshots et"
+description: "Couvert — [guide ESXi 8.0](../../../02-fiches-completes/vmware/esxi-8/installation-deploiement/56-deploiement-vmware-esxi-8-0.md) et série vSphere 8 : installation du VCSA, sauvegarde/restauration VAMI, mises à jour, certificats, HA, [[Glossary:DRS]], datastore NFS, vSwitch standard, réseau vMotion,"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "03-virtualisation-et-conteneurisation", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VMware vSphere

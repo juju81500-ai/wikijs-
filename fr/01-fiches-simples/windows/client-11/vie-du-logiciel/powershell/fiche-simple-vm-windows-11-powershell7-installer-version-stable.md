@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-windows-11-powershell7-installer-version-stable"
-description: "Installer PowerShell 7.6.9 depuis le MSI officiel après vérification de signature et de hash."
+description: "Installer PowerShell 7.6.9 depuis le [[Glossary:MSI]] officiel après vérification de signature et de hash."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-11", "powershell", "pwsh", "administration", "scripts", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-windows-11-powershell7-installer-version-stable.md

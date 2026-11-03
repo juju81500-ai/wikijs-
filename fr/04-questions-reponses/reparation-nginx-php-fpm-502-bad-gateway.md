@@ -2,11 +2,11 @@
 title: "Réparation : Nginx renvoie une erreur 502 avec PHP-FPM"
 description: "sudo nginx -t"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["reparation", "nginx", "php-fpm", "502", "web"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Réparation : Nginx renvoie une erreur 502 avec PHP-FPM

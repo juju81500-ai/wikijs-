@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-netbox-valider-ipam-pilote"
 description: "Vérifier un petit jeu de données IPAM et la tâche de fond avant d'importer des données d'autorité."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "netbox", "ipam", "api", "validation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-netbox-valider-ipam-pilote.md

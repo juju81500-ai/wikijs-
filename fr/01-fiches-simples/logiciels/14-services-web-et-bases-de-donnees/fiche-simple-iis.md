@@ -2,11 +2,11 @@
 title: "IIS"
 description: "Installer le rôle Serveur Web (IIS) sur Windows Server 2022 avec PowerShell, vérifier sur ce même serveur qu'un site de test répond, puis le durcir (HTTPS, en-tête X-Powered-By supprimé, site par défaut retiré) avant de le publier. Les tests ne se font que sur votre propre serveur."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "iis", "powershell", "serveur-web", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 IIS

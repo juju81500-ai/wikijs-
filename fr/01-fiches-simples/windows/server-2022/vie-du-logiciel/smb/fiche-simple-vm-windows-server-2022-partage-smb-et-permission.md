@@ -1,12 +1,12 @@
 ---
 title: "VM_WinSrv_2022_Stockage_Partage-SMB-Permissions-NTFS"
-description: "Créer un répertoire sur un volume de données, configurer un partage SMB réseau, cumuler et ajuster les autorisations de partage SMB et les autorisations de sécurité NTFS (ACL), et activer l'Abe (Access-Based Enumeration) pour masquer les dossiers non autorisés."
+description: "Créer un répertoire sur un volume de données, configurer un partage SMB réseau, cumuler et ajuster les autorisations de partage SMB et les autorisations de sécurité [[Glossary:NTFS]] ([[Glossary:ACL]]), et activer l'Abe (Access-Based Enumeration) pour masquer les dossiers non autorisés."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "smb", "ntfs", "acl", "partage-fichiers", "powershell", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_WinSrv_2022_Stockage_Partage-SMB-Permissions-NTFS.md

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-ubuntu-26-04-librenms-installer-paquets"
 description: "Installer les paquets système, PHP, MariaDB, Nginx et SNMP requis par LibreNMS."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "librenms", "snmpv3", "nginx", "mariadb"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-ubuntu-26-04-librenms-installer-paquets.md

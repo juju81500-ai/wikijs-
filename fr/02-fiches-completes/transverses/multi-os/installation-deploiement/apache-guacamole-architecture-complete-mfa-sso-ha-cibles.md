@@ -2,11 +2,11 @@
 title: "Architecture complète Apache Guacamole : MFA, SSO, haute disponibilité et connexions cibles"
 description: "- Prolonge la fiche de base [Déploiement Apache Guacamole 1.6 Docker](../../docker/installation-deploiement/121-deploiement-apache-guacamole-1-6-docker.md), qu'il faut avoir réalisée ou lue : instance simple avec PostgreSQL, guacd et reverse proxy. Aucun de ses contenus n'est répété ici."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["guacamole", "mfa", "sso", "ha", "rdp", "ssh", "bastion"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Architecture complète Apache Guacamole : MFA, SSO, haute disponibilité et connexions cibles

@@ -2,11 +2,11 @@
 title: "Microsoft Visio"
 description: "Couvert pour Windows 11 (ODT/Intune, licences, mise à jour, sauvegarde des fichiers) — série de 7 fiches simples ; alternative libre : [draw-io Desktop](fiche-logiciel-draw-io-desktop.md)"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "15-topologie-ipam-et-outils-metiers", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Microsoft Visio

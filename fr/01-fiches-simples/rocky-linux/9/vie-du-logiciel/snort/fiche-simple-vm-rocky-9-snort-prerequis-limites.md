@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Rocky 9 Snort Prerequis Limites"
-description: "Cadrer un capteur Snort IDS passif sur VM Rocky Linux 9 : détection et journalisation uniquement, dans un périmètre autorisé."
+description: "Cadrer un capteur Snort [[Glossary:IDS]] passif sur VM Rocky Linux 9 : détection et journalisation uniquement, dans un périmètre autorisé."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["snort", "rocky9", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_9_Snort_Prerequis_Limites

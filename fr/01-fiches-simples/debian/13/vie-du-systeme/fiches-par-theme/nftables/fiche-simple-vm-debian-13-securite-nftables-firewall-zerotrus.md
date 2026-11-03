@@ -2,11 +2,11 @@
 title: "Politique nftables stricte pour une VM Debian 13"
 description: "Ce document est un profil strict complémentaire de la fiche [pare-feu nftables Debian 13](./fiche-simple-vm-debian-13-securite-nftables-firewall.md). Ne choisir qu'une seule configuration comme source persistante ; ne pas charger les deux l'une après l'autre."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "nftables", "firewall", "zero-trust", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Politique nftables stricte pour une VM Debian 13

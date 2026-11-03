@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 WireGuard Sauvegarder Restaurer"
 description: "Préserver configuration et clés WireGuard avec permissions et stockage adaptés."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["wireguard", "debian13", "vie-du-logiciel", "sauvegarder-restaurer"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_WireGuard_Sauvegarder_Restaurer

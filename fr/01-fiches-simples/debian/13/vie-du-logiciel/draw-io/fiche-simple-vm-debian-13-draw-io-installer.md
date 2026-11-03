@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-draw-io-installer"
-description: "Installer le paquet vérifié avec APT, qui résout ses dépendances."
+description: "Installer le paquet vérifié avec [[Glossary:APT]], qui résout ses dépendances."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "drawio", "apt", "deb", "installation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-draw-io-installer.md

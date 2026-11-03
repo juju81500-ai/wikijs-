@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows 10 Vie Systeme 12 Fuseau Horaire"
 description: "Régler le fuseau horaire correct, Europe/Paris, et l'heure d'été automatique."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows10", "vie-du-systeme", "cycle-de-vie", "etape-12"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_10_Vie_Systeme_12_Fuseau_Horaire

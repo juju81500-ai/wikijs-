@@ -1,12 +1,12 @@
 ---
 title: "VM_WinSrv_2022_DHCP_Installation-Et-Etendue-Scope"
-description: "Installer le rôle Serveur DHCP sous Windows Server 2022, autoriser le serveur dans Active Directory et configurer une étendue d'adresses IP sécurisée avec réserves."
+description: "Installer le rôle Serveur DHCP sous Windows Server 2022, autoriser le serveur dans Active Directory et configurer une étendue d'adresses [[Glossary:IP]] sécurisée avec réserves."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["winsrv2022", "windows-family", "dhcp", "active-directory", "gui", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_WinSrv_2022_DHCP_Installation-Et-Etendue-Scope.md

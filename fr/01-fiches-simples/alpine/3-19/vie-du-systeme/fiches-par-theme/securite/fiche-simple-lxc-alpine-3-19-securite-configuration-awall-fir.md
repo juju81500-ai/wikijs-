@@ -2,11 +2,11 @@
 title: "Filtrer un conteneur LXC Alpine sur Proxmox"
 description: "Filtrer les flux entrants d'un conteneur sans casser sa connectivité. Dans un LXC, le pare-feu s'appuie sur le noyau de l'hôte et les capacités accordées au conteneur. Le filtrage Proxmox est généralement le point de contrôle adapté ; ne pas supposer qu'Awall/iptables peut charger des règles dans un"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine", "lxc", "proxmox", "firewall", "awall", "reseau"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Filtrer un conteneur LXC Alpine sur Proxmox

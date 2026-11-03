@@ -2,11 +2,11 @@
 title: "Administrer HashiCorp Packer sur Debian 13"
 description: "Fiche simple de cette étape : [cadrer le pilote Packer](../../../../01-fiches-simples/debian/13/vie-du-logiciel/packer/fiche-simple-packer-debian-13-cadrer-pilote.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["packer", "hashicorp", "debian13", "hcl2", "docker", "image-builder"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Administrer HashiCorp Packer sur Debian 13

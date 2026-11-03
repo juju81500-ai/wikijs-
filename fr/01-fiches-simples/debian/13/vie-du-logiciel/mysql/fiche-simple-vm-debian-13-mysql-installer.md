@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Debian 13 MySQL Installer"
-description: "Installer MySQL Community (version LTS) depuis le dépôt APT officiel Oracle avec vérification de la source."
+description: "Installer MySQL Community (version [[Glossary:LTS]]) depuis le dépôt [[Glossary:APT]] officiel Oracle avec vérification de la source."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "mysql", "installation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_MySQL_Installer

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-centreon-verifier-services"
 description: "Contrôler que les services Centreon et la base tournent correctement."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "centreon", "supervision", "systemd", "journal"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-centreon-verifier-services.md

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-openmediavault-choisir-mode"
 description: "Décider si OMV s'installe sur une Debian 13 existante et vérifier les prérequis."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "openmediavault", "cadrage", "nas"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-openmediavault-choisir-mode.md

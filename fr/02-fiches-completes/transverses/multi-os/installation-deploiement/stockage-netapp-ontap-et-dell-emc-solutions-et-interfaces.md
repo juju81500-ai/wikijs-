@@ -2,11 +2,11 @@
 title: "Stockage NetApp ONTAP et Dell EMC : solutions et interfaces"
 description: "Ce guide distingue des solutions de constructeurs différents ; ne pas appliquer les commandes de l'une à l'autre."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["netapp", "ontap", "dell-emc", "powerstore", "powerscale", "nas", "san"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Stockage NetApp ONTAP et Dell EMC : solutions et interfaces

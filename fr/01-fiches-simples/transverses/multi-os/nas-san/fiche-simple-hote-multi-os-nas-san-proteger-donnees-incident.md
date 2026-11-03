@@ -2,11 +2,11 @@
 title: "fiche-simple-hote-multi-os-nas-san-proteger-donnees-incident"
 description: "Limiter le risque de corruption et cadrer l'incident avant tout diagnostic."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["nas", "san", "samba", "nfs", "iscsi", "multipath", "diagnostic"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-multi-os-nas-san-proteger-donnees-incident.md

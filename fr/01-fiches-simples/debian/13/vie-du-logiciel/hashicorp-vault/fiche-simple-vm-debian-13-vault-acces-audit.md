@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-vault-acces-audit"
 description: "Limiter l'usage du token root, créer des politiques à moindre privilège et activer l'audit."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "vault", "policy", "audit", "token"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-vault-acces-audit.md

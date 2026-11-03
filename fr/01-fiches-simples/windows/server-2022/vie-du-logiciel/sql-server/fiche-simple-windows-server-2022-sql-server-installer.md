@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 SQL-Server Installer"
 description: "Installer le moteur de base de données SQL Server 2022 puis SSMS, de façon assistée ou automatisée."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "sql-server", "sqlserver-2022", "installation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_SQL-Server_Installer

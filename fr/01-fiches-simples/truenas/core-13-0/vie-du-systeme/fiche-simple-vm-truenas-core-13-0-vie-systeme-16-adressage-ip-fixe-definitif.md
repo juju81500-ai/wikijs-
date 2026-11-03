@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM TrueNAS CORE 13.0 Vie Systeme 16 Adressage Ip Fixe Definitif"
-description: "Fixer l'adresse IP."
+description: "Fixer l'adresse [[Glossary:IP]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenascore130", "vie-du-systeme", "cycle-de-vie", "etape-16"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_TrueNAS_CORE_13.0_Vie_Systeme_16_Adressage_Ip_Fixe_Definitif

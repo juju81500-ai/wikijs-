@@ -2,11 +2,11 @@
 title: "Leçon — SSH : authentification par clés, configuration, durcissement et bastion"
 description: "À la fin de cette leçon, vous saurez :"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "lecon", "identites", "ssh", "cles", "durcissement", "bastion"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Leçon — SSH : authentification par clés, configuration, durcissement et bastion

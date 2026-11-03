@@ -2,11 +2,11 @@
 title: "Réinitialiser Wiki.js sous Docker et configurer le stockage local"
 description: "Le module Local File System de Wiki.js conserve une copie des pages créées dans Wiki.js. Copier des fichiers .md dans un dossier du conteneur ne les crée pas dans la base. Après une réinitialisation, il faudra créer ou importer à nouveau les pages, puis configurer le stockage local pour conserver le"
 published: true
-date: 2026-11-03T09:38:30Z
+date: 2026-11-03T14:22:28Z
 tags: []
 editor: markdown
-dateCreated: 2026-11-03T09:38:30Z
-dateModified: 2026-11-03T09:38:30Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Réinitialiser Wiki.js sous Docker et configurer le stockage local

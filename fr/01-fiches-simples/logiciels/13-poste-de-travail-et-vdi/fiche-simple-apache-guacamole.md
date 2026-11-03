@@ -2,11 +2,11 @@
 title: "Apache Guacamole"
 description: "Déployer Apache Guacamole en Docker Compose sur Debian 13 avec ses trois conteneurs (guacd, PostgreSQL, interface web), vérifier l'accès au portail, remplacer le compte administrateur par défaut, puis restreindre l'exposition réseau et la sauvegarde de la base."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "debian-family", "guacamole", "docker", "docker-compose", "rdp", "ssh", "vnc", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Apache Guacamole

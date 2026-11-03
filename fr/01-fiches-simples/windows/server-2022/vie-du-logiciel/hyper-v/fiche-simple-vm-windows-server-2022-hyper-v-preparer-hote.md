@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-server-2022-hyper-v-preparer-hote"
 description: "Vérifier matériel, licence et correctifs avant d'installer Hyper-V."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["hyper-v", "windows-server-2022", "virtualisation", "vm", "powershell"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-windows-server-2022-hyper-v-preparer-hote.md

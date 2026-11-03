@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-kubeadm-valider-cluster"
-description: "Confirmer que nœuds, CNI, DNS interne et déploiement de test fonctionnent avant d'accueillir des charges réelles."
+description: "Confirmer que nœuds, CNI, [[Glossary:DNS]] interne et déploiement de test fonctionnent avant d'accueillir des charges réelles."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "kubeadm", "validation", "nodes", "cni", "dns"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-kubeadm-valider-cluster.md

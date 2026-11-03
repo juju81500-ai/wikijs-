@@ -2,11 +2,11 @@
 title: "Kismet : détection sans fil passive et autorisée en laboratoire"
 description: "- Kismet est un outil de détection passive (écoute des trames, sans émission) sous licence GPL. L'usage couvre l'inventaire de votre environnement radio."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["kismet", "wifi", "passif", "rogue-ap", "laboratoire"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Kismet : détection sans fil passive et autorisée en laboratoire

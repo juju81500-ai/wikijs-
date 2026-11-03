@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 PostgreSQL Mettre A Jour"
 description: "Mettre à jour PostgreSQL (mineure ou majeure) avec un retour arrière fondé sur la sauvegarde."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "postgresql", "mise-a-jour"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_PostgreSQL_Mettre_A_Jour

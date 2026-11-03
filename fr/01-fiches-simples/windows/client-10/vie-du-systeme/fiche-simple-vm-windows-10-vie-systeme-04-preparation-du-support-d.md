@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Windows 10 Vie Systeme 04 Preparation Du Support D"
-description: "Créer la clé USB d'installation ou le support de démarrage."
+description: "Créer la clé [[Glossary:USB]] d'installation ou le support de démarrage."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows10", "vie-du-systeme", "cycle-de-vie", "etape-04"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_10_Vie_Systeme_04_Preparation_Du_Support_D

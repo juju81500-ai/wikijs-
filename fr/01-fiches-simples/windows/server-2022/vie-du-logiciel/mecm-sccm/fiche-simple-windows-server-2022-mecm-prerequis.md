@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - Windows Server 2022 MECM Prerequis"
-description: "Vérifier que l'architecture (AD DS, SQL Server, ADK/WinPE, rôles Windows) est prête et supportée avant toute installation de MECM/SCCM. Cette fiche n'installe pas le produit."
+description: "Vérifier que l'architecture (AD DS, [[Glossary:SQL]] Server, [[Glossary:ADK]]/WinPE, rôles Windows) est prête et supportée avant toute installation de MECM/SCCM. Cette fiche n'installe pas le produit."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "mecm", "sccm", "prerequis"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_MECM_Prerequis

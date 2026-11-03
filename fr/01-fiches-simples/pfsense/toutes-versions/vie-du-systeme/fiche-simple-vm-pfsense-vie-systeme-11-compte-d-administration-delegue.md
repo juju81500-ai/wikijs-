@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM pfSense Vie Systeme 11 Compte D Administration Delegue"
 description: "Éviter l'usage quotidien de admin."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["pfsense", "vie-du-systeme", "cycle-de-vie", "etape-11"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_11_Compte_D_Administration_Delegue

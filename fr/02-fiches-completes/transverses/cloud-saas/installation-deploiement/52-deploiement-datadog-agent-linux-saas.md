@@ -2,11 +2,11 @@
 title: "Déployer Datadog Agent sur Linux avec Fleet Automation"
 description: "Fiche simple : [préparer l'enrôlement](../../../../01-fiches-simples/transverses/cloud-saas/datadog/fiche-simple-cloud-datadog-preparer-enrolement.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["datadog", "agent", "linux", "saas", "fleet-automation", "observabilite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Datadog Agent sur Linux avec Fleet Automation

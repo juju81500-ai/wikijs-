@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Dovecot Configurer"
 description: "Configurer les boîtes Maildir et la remise LMTP de Dovecot 2.4 via un fichier local séparé."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "dovecot", "imap", "messagerie", "configurer"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Dovecot_Configurer

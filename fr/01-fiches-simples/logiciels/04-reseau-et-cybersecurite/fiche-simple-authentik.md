@@ -1,12 +1,12 @@
 ---
 title: "Authentik"
-description: "Déployer Authentik sur Debian 12 avec Docker Compose comme fournisseur d'identité (SSO, double facteur), vérifier l'assistant de première configuration sur ce même serveur, puis le durcir (secrets forts, accès d'administration restreint, sauvegarde). Les tests ne se font que sur votre propre serveur"
+description: "Déployer Authentik sur Debian 12 avec Docker Compose comme fournisseur d'identité ([[Glossary:SSO]], double facteur), vérifier l'assistant de première configuration sur ce même serveur, puis le durcir (secrets forts, accès d'administration restreint, sauvegarde). Les tests ne se font que sur votre p"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian-12", "authentik", "sso", "mfa", "docker", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Authentik

@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Debian 13 Bash Shell Mise A Jour Retour Arriere"
-description: "Mettre à jour Bash via APT et rejouer les contrôles représentatifs."
+description: "Mettre à jour Bash via [[Glossary:APT]] et rejouer les contrôles représentatifs."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "bash", "shell", "scripting", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Bash_Shell_Mise_A_Jour_Retour_Arriere

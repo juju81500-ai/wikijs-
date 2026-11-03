@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-podman-quadlet-declarer-service"
 description: "Écrire le fichier .container et démarrer l'unité utilisateur (monservice est un nom d'exemple)."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "podman", "quadlet", "rootless", "systemd", "container-unit", "linger"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-rocky-9-podman-quadlet-declarer-service.md

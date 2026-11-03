@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-opnsense-config-restaurer"
 description: "Restaurer l'export complet sur une release compatible."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["opnsense", "sauvegarde", "configuration", "restauration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-opnsense-config-restaurer.md

@@ -1,12 +1,12 @@
 ---
 title: "SQL Server"
-description: "Couvert — série par étape pour Windows Server 2022 (SQL Server 2022, GUI SSMS et PowerShell/sqlcmd) (prérequis, installation, configuration, sécurisation, recette, sauvegarde/restauration, mise à jour et retour arrière). Always On, clusters de basculement et SQL Server sur Linux non traités."
+description: "Couvert — série par étape pour Windows Server 2022 (SQL Server 2022, [[Glossary:GUI]] SSMS et PowerShell/sqlcmd) (prérequis, installation, configuration, sécurisation, recette, sauvegarde/restauration, mise à jour et retour arrière). Always On, clusters de basculement et SQL Server sur Linux non tra"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "14-services-web-et-bases-de-donnees", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 SQL Server

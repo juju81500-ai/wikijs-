@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-zeek-valider-capteur"
 description: "Confirmer que Zeek reçoit les paquets d'une interface miroir approuvée, tourne sous un compte dédié et génère des logs lisibles sans modifier le trafic."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "zeek", "zeekctl", "af-packet", "network-monitoring", "lab"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-zeek-valider-capteur.md

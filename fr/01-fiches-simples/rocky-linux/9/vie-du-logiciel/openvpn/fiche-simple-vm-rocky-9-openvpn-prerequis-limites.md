@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Rocky 9 OpenVPN Prerequis Limites"
-description: "Valider le cadre avant d'installer un serveur OpenVPN Community Edition : OS, réseau, PKI, périmètre."
+description: "Valider le cadre avant d'installer un serveur OpenVPN Community Edition : OS, réseau, [[Glossary:PKI]], périmètre."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["openvpn", "rocky9", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_9_OpenVPN_Prerequis_Limites

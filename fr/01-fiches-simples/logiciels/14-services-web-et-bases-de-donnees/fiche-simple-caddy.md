@@ -2,11 +2,11 @@
 title: "Caddy"
 description: "Installer le serveur web et reverse proxy Caddy 2 sur Debian 12, vérifier sur ce même serveur qu'une réponse de test est servie, puis le durcir (HTTPS automatique, masquage de l'en-tête Server, en-têtes de sécurité) avant de le publier. Les tests ne se font que sur votre propre serveur."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian-12", "caddy", "reverse-proxy", "https", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Caddy

@@ -2,11 +2,11 @@
 title: "Référentiel — ZenTSSR"
 description: "Méthode. Ce référentiel recense la structure du site public <https://zentssr.com> (application monopage) à la date du 2026-11-01. Les pages viennent du [sitemap](https://zentssr.com/sitemap.xml) ; les titres, catégories et comptes viennent du bundle JavaScript public https://zentssr.com/assets/index"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "referentiel", "zentssr"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Référentiel — ZenTSSR

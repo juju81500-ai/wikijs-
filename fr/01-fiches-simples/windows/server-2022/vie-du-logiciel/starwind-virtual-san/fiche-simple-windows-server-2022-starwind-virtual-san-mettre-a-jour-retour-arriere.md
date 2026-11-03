@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 StarWind Virtual SAN Mettre A Jour Retour Arriere"
 description: "Préparer une mise à jour StarWind contrôlée et un retour arrière vérifié."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["starwind", "virtual-san", "windows-server", "mise-a-jour", "retour-arriere"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_StarWind_Virtual_SAN_Mettre_A_Jour_Retour_Arriere

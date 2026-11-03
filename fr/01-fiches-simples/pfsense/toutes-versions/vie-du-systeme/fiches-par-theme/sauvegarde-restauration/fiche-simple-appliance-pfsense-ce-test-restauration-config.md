@@ -2,11 +2,11 @@
 title: "fiche-simple-appliance-pfsense-ce-test-restauration-config"
 description: "Prouver qu'une sauvegarde chiffrée de configuration pfSense CE se restaure correctement, dans un environnement isolé, en comparant règles, interfaces et accès avant toute restauration en production."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["pfsense", "ce", "backup", "restore", "proxmox", "pra"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-appliance-pfsense-ce-test-restauration-config.md

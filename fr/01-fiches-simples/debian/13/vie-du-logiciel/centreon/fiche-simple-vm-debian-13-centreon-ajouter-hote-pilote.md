@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-centreon-ajouter-hote-pilote"
 description: "Ajouter un hôte autorisé dans Centreon et vérifier une collecte minimale avant généralisation."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "centreon", "supervision", "snmpv3", "hote-pilote"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-debian-13-centreon-ajouter-hote-pilote.md

@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-proxmox-ve-8-systeme-depots-mises-a-jour"
-description: "Configurer les dépôts APT de Proxmox VE 8 (abonnement entreprise ou dépôt sans abonnement), appliquer les mises à jour du système et du catalogue des modèles de conteneurs LXC, sans interrompre les machines virtuelles en cours."
+description: "Configurer les dépôts [[Glossary:APT]] de Proxmox VE 8 (abonnement entreprise ou dépôt sans abonnement), appliquer les mises à jour du système et du catalogue des modèles de conteneurs [[Glossary:LXC]], sans interrompre les machines virtuelles en cours."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmox-ve-8", "debian-bookworm", "apt", "depots", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-proxmox-ve-8-systeme-depots-mises-a-jour.md

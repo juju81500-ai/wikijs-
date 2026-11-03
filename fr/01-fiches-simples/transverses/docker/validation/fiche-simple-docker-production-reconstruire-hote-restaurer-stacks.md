@@ -2,11 +2,11 @@
 title: "fiche-simple-docker-production-reconstruire-hote-restaurer-stacks"
 description: "Reconstruire un hôte Docker et restaurer ses stacks à partir des fichiers de déploiement, des secrets récupérés de façon contrôlée et des sauvegardes de données testées."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["docker", "reprise", "restauration", "compose", "sauvegarde", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-docker-production-reconstruire-hote-restaurer-stacks.md

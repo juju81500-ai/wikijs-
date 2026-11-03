@@ -2,11 +2,11 @@
 title: "pfSense"
 description: "Couvert pour pfSense CE 2.9.0 en laboratoire Proxmox — [guide](../../../02-fiches-completes/pfsense/toutes-versions/installation-deploiement/70-deploiement-pfsense-ce-2-9-0-proxmox-lab.md) et [fiche de validation](../../pfsense/toutes-versions/vie-du-systeme/fiches-par-theme/administration-systeme/f"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "04-reseau-et-cybersecurite", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 pfSense

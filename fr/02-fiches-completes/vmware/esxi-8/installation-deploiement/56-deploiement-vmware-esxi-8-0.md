@@ -2,11 +2,11 @@
 title: "Installer et préparer un hôte VMware ESXi 8.0"
 description: "Fiche simple : [valider le matériel et le droit d'usage](../../../../01-fiches-simples/vmware/esxi-8/vie-du-systeme/fiches-par-theme/installation/fiche-simple-hote-vmware-esxi-8-esxi-valider-materiel-droits.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["vmware", "esxi", "vsphere8", "hyperviseur", "datastore", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Installer et préparer un hôte VMware ESXi 8.0

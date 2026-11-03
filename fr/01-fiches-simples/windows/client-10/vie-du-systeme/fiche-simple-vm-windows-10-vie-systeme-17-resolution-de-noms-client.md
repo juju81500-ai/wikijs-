@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Windows 10 Vie Systeme 17 Resolution De Noms Client"
-description: "Configurer et tester le client DNS et les suffixes de recherche."
+description: "Configurer et tester le client [[Glossary:DNS]] et les suffixes de recherche."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows10", "vie-du-systeme", "cycle-de-vie", "etape-17"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_10_Vie_Systeme_17_Resolution_De_Noms_Client

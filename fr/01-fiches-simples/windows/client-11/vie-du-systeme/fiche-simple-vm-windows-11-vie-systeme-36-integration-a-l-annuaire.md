@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Windows 11 Vie Systeme 36 Integration A L Annuaire"
-description: "Rattacher le poste à l'annuaire et à l'outil de gestion (GPO, Intune)."
+description: "Rattacher le poste à l'annuaire et à l'outil de gestion ([[Glossary:GPO]], Intune)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows11", "vie-du-systeme", "cycle-de-vie", "etape-36"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_11_Vie_Systeme_36_Integration_A_L_Annuaire

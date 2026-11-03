@@ -2,11 +2,11 @@
 title: "Reprise d'une forêt Active Directory Domain Services"
 description: "Fiche simple : [déterminer si la reprise de forêt est nécessaire](../../../../01-fiches-simples/windows/server-2022/vie-du-logiciel/active-directory/fiche-simple-vm-windows-server-2022-reprise-foret-ad-ds-determiner-necessite.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows-server-2022", "active-directory", "ad-ds", "forest-recovery", "backup", "disaster-recovery"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Reprise d'une forêt Active Directory Domain Services

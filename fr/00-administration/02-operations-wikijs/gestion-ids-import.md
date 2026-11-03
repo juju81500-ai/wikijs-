@@ -2,11 +2,11 @@
 title: "Gestion des IDs d'import des commandes"
 description: "Ce guide concerne les données commandblocks de txt.txt. Il ne concerne pas les identifiants internes des pages Wiki.js."
 published: true
-date: 2026-11-03T09:38:30Z
+date: 2026-11-03T14:22:28Z
 tags: []
 editor: markdown
-dateCreated: 2026-11-03T09:38:30Z
-dateModified: 2026-11-03T09:38:30Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Gestion des IDs d'import des commandes

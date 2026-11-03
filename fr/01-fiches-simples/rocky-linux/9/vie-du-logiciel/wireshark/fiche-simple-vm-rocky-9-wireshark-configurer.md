@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Rocky 9 Wireshark Configurer"
 description: "Autoriser une capture minimale via dumpcap et analyser un fichier hors ligne."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["wireshark", "rocky9", "vie-du-logiciel", "configurer"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_9_Wireshark_Configurer

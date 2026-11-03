@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 WDS MDT Securisation"
 description: "Contrôler et compléter la sécurisation du serveur de déploiement. La création du compte de lecture MDT et le durcissement du partage sont décrits dans la [procédure historique WDS + MDT](../../../../logiciels/09-automatisation-deploiement-et-iac/fiche-simple-wds-mdt.md) (section sécurisée) : ne pas "
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "wds", "mdt", "securisation", "pxe"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_WDS_MDT_Securisation

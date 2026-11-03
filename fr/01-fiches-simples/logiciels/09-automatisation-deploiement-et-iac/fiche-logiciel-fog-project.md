@@ -2,11 +2,11 @@
 title: "FOG Project"
 description: "Série Debian 13 couvrant prérequis, installation, configuration, sécurisation, validation, sauvegarde/restauration et mise à jour. La compatibilité de Debian 13 doit être confirmée auprès du projet FOG avant déploiement."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "09-automatisation-deploiement-et-iac", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 FOG Project

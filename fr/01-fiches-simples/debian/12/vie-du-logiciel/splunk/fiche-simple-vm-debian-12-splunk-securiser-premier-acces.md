@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-splunk-securiser-premier-acces"
 description: "Restreindre l'accès Web et configurer le démarrage systemd."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "splunk", "logs", "tls", "systemd"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-splunk-securiser-premier-acces.md

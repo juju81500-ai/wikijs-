@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-wireshark-analyse-capture-locale"
 description: "Réaliser une capture courte limitée à la boucle locale."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["wireshark", "debian13", "dumpcap", "loopback"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-wireshark-analyse-capture-locale.md

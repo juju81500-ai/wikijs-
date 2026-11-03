@@ -2,11 +2,11 @@
 title: "Bash / Shell"
 description: "Vérifier la version de Bash et installer l'analyseur shellcheck sur une VM Debian 12, écrire un script d'administration qui s'arrête à la première erreur (set -euo pipefail), le valider par analyse statique, puis le déployer avec des droits restreints. Les tests ne se font que sur votre propre VM."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian-12", "bash", "shell", "scripting", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Bash / Shell

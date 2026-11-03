@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-caddy-maintenance"
 description: "Maintenir le Caddyfile, les certificats et le paquet sans perdre le renouvellement ou exposer des clés."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "caddy", "maintenance", "certificat", "sauvegarde"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-caddy-maintenance.md

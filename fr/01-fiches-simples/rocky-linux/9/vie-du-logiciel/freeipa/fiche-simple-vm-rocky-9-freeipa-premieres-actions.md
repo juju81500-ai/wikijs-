@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-freeipa-premieres-actions"
 description: "Obtenir un ticket Kerberos, créer un compte de test et contrôler la santé du serveur."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "freeipa", "idm", "kerberos"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-rocky-9-freeipa-premieres-actions.md

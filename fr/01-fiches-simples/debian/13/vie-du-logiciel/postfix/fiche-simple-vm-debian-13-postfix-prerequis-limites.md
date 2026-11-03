@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Debian 13 Postfix Prerequis Limites"
-description: "Vérifier qu'une VM Debian 13 peut héberger un serveur SMTP Postfix avant toute installation, et connaître les limites (relais ouvert, port 25 filtré, réputation d'IP)."
+description: "Vérifier qu'une VM Debian 13 peut héberger un serveur [[Glossary:SMTP]] Postfix avant toute installation, et connaître les limites (relais ouvert, port 25 filtré, réputation d'[[Glossary:IP]])."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "postfix", "smtp", "messagerie", "prerequis-limites"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Postfix_Prerequis_Limites

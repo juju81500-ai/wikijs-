@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-proxmox-ve-8-securite-ssh-et-2fa"
-description: "Restreindre l'accès SSH à l'authentification par clé cryptographique, interdire la connexion root par mot de passe, puis imposer un second facteur (TOTP) aux comptes administrateurs de l'interface web Proxmox."
+description: "Restreindre l'accès SSH à l'authentification par clé cryptographique, interdire la connexion root par mot de passe, puis imposer un second facteur ([[Glossary:TOTP]]) aux comptes administrateurs de l'interface web Proxmox."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmox-ve-8", "debian-bookworm", "ssh", "2fa", "totp", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-proxmox-ve-8-securite-ssh-et-2fa.md

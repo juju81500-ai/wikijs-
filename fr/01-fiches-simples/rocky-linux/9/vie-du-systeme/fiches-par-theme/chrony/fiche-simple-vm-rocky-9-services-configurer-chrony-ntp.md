@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-rocky-9-services-configurer-chrony-ntp"
-description: "Configurer Chrony comme client NTP sur Rocky Linux 9, vérifier la synchronisation avec chronyc et n'ouvrir UDP/123 que si le serveur doit répondre à des clients."
+description: "Configurer Chrony comme client [[Glossary:NTP]] sur Rocky Linux 9, vérifier la synchronisation avec chronyc et n'ouvrir [[Glossary:UDP]]/123 que si le serveur doit répondre à des clients."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "rhel9", "chrony", "ntp", "systemd", "time"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-rocky-9-services-configurer-chrony-ntp.md

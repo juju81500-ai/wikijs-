@@ -2,11 +2,11 @@
 title: "VM_Debian_13_Automatisation_Configuration-Unattended-Upgrades"
 description: "Automatiser l'installation silencieuse des correctifs de sécurité critiques sous Debian 13 avec unattended-upgrades, configurer les notifications par e-mail et planifier les redémarrages automatiques contrôlés."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "unattended-upgrades", "apt", "maintenance", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_13_Automatisation_Configuration-Unattended-Upgrades.md

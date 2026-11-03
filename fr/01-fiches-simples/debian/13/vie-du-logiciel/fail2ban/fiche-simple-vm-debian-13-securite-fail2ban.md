@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Debian 13 Securite Fail2ban"
-description: "Installer Fail2ban sur Debian 13 pour bannir temporairement les adresses IP qui échouent répétitivement à s'authentifier sur SSH, en lisant les journaux systemd, sans modifier le fichier de configuration d'origine."
+description: "Installer Fail2ban sur Debian 13 pour bannir temporairement les adresses [[Glossary:IP]] qui échouent répétitivement à s'authentifier sur SSH, en lisant les journaux systemd, sans modifier le fichier de configuration d'origine."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "debian", "fail2ban", "ssh", "brute-force", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Debian_13_Securite_Fail2ban

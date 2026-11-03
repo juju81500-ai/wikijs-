@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-suricata-valider-capteur-ids"
 description: "Vérifier que Suricata reçoit du trafic d'une interface miroir approuvée, charge les règles et écrit des événements sans bloquer ni modifier les flux."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "suricata", "backports", "ids", "af-packet", "eve-json", "test"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-suricata-valider-capteur-ids.md

@@ -2,11 +2,11 @@
 title: "fiche-simple-bitwarden-self-hosted-deploiement-preparer-linux-docker"
 description: "Préparer l'hôte, Docker et le compte de service Bitwarden."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["bitwarden", "self-hosted", "docker", "linux", "secrets"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-bitwarden-self-hosted-deploiement-preparer-linux-docker.md

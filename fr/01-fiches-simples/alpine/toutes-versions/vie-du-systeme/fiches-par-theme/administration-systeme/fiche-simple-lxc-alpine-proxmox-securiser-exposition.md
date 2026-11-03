@@ -2,11 +2,11 @@
 title: "fiche-simple-lxc-alpine-proxmox-securiser-exposition"
 description: "Exposer uniquement les services indispensables et appliquer les contrôles au niveau qui possède effectivement les capacités réseau requises."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine", "proxmox", "lxc", "firewall", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-lxc-alpine-proxmox-securiser-exposition.md

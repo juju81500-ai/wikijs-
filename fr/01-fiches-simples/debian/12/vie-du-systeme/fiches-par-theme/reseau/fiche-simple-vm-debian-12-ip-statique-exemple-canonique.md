@@ -1,12 +1,12 @@
 ---
 title: "VM_Debian_12_Reseau_Fixer-IP-Statique"
-description: "Fixer une adresse IP statique permanente, configurer le résolveur DNS et sécuriser la pile réseau sur une machine virtuelle Debian 12."
+description: "Fixer une adresse [[Glossary:IP]] statique permanente, configurer le résolveur [[Glossary:DNS]] et sécuriser la pile réseau sur une machine virtuelle Debian 12."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "debian-family", "reseau", "ip-statique", "systemd-networkd", "nftables", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_12_Reseau_Fixer-IP-Statique.md

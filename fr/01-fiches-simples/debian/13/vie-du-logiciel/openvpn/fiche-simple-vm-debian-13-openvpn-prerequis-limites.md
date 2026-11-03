@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Debian 13 OpenVPN Prerequis Limites"
-description: "Définir un service VPN autorisé et ses dépendances avant toute installation."
+description: "Définir un service [[Glossary:VPN]] autorisé et ses dépendances avant toute installation."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["openvpn", "debian13", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_OpenVPN_Prerequis_Limites

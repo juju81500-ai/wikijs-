@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 HAProxy Installer"
 description: "Installer HAProxy depuis le dépôt Debian et vérifier la version et le service."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "haproxy", "installation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_HAProxy_Installer

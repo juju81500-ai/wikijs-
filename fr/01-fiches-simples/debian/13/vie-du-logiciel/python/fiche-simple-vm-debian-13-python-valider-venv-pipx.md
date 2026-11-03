@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-python-valider-venv-pipx"
 description: "Confirmer qu'un projet ou outil Python utilise son environnement isolé et ne modifie pas les paquets système Debian."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "python", "venv", "pipx", "pip", "validation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-python-valider-venv-pipx.md

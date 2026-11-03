@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 ownCloud Installer"
 description: "Installer le binaire officiel ownCloud Infinite Scale sous un compte système dédié, avec un service systemd."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "owncloud", "ocis", "cloud", "installer"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_ownCloud_Installer

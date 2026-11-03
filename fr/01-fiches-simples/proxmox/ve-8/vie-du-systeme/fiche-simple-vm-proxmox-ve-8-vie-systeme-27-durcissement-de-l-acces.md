@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Proxmox VE 8 Vie Systeme 27 Durcissement De L Acces"
-description: "Réduire l'exposition de SSH et de l'interface web."
+description: "Réduire l'exposition de [[Glossary:SSH]] et de l'interface web."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmoxve8", "vie-du-systeme", "cycle-de-vie", "etape-27"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Proxmox_VE_8_Vie_Systeme_27_Durcissement_De_L_Acces

@@ -2,11 +2,11 @@
 title: "FreePBX / Asterisk"
 description: "Guide de [déploiement FreePBX/Asterisk](../../../02-fiches-completes/debian/12/installation-deploiement/13-telephonie-ip-freepbx-asterisk-20-debian-12.md); utiliser uniquement une combinaison OS/versions officiellement supportée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "voip", "freepbx", "asterisk", "lab"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 FreePBX / Asterisk

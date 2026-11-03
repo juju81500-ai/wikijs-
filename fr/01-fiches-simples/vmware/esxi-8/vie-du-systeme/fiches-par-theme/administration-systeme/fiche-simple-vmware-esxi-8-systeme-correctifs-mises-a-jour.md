@@ -2,11 +2,11 @@
 title: "fiche-simple-vmware-esxi-8-systeme-correctifs-mises-a-jour"
 description: "Identifier la version et le profil d'image d'un hôte ESXi 8, appliquer un correctif signé depuis un dépôt hors ligne avec esxcli ou vSphere Lifecycle Manager, et contrôler le résultat après redémarrage."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["vmware-esxi-8", "esxcli", "lifecycle", "correctifs", "maintenance", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vmware-esxi-8-systeme-correctifs-mises-a-jour.md

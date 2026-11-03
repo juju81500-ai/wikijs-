@@ -2,11 +2,11 @@
 title: "fiche-simple-hote-docker-stack-verifier-sauvegarde"
 description: "S'assurer que la sauvegarde est complète, chiffrée et restaurable."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["docker", "compose", "sauvegarde", "verification"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-docker-stack-verifier-sauvegarde.md

@@ -1,12 +1,12 @@
 ---
 title: "AWS"
-description: "Couvert — série d’exploitation sur compte/organisation, réseau, VM, stockage, sauvegarde, audit, supervision, coûts et réversibilité. Procédures de laboratoire ; confirmer les menus, versions CLI, quotas, tarifs et fonctions selon le tenant et l’offre."
+description: "Couvert — série d’exploitation sur compte/organisation, réseau, [[Glossary:VM]], stockage, sauvegarde, audit, supervision, coûts et réversibilité. Procédures de laboratoire ; confirmer les menus, versions [[Glossary:CLI]], quotas, tarifs et fonctions selon le tenant et l’offre."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "10-cloud-public-et-hybride", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 AWS

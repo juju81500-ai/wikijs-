@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 PuTTY Sauvegarder Restaurer"
 description: "Sauvegarder et restaurer les clés .ppk et la configuration PuTTY de l'utilisateur."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["putty", "putty-tools", "plink", "puttygen", "ssh", "sauvegarde", "restauration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_PuTTY_Sauvegarder_Restaurer

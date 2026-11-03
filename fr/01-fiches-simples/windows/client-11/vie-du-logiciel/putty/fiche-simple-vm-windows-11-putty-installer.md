@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-windows-11-putty-installer"
-description: "Installer PuTTY avec le MSI vérifié."
+description: "Installer PuTTY avec le [[Glossary:MSI]] vérifié."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["putty", "windows11", "ssh", "puttygen", "host-key"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-windows-11-putty-installer.md

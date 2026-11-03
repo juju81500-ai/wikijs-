@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-12-itop-cron-taches-arriere-plan"
-description: "Activer les tâches de fond iTop (SLA, notifications, sauvegardes planifiées) sans exposer de mot de passe dans la ligne de commande."
+description: "Activer les tâches de fond iTop ([[Glossary:SLA]], notifications, sauvegardes planifiées) sans exposer de mot de passe dans la ligne de commande."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "itop", "cron", "itsm", "maintenance"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-debian-12-itop-cron-taches-arriere-plan.md

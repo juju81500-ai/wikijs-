@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Rocky 9 PowerShell Mise A Jour Retour Arriere"
 description: "Mettre à jour PowerShell 7 de façon contrôlée et savoir revenir à la version précédente."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "powershell", "pwsh", "scripting"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_9_PowerShell_Mise_A_Jour_Retour_Arriere

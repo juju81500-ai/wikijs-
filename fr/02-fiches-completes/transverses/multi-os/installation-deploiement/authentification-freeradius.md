@@ -1,12 +1,12 @@
 ---
 title: "Installer et sécuriser FreeRADIUS pour l'authentification réseau"
-description: "Installer FreeRADIUS, déclarer les clients RADIUS, brancher une source d'authentification (annuaire LDAP/AD ou fichier de test) et vérifier le fonctionnement en mode debug. Pour 802.1x/EAP, les certificats sont un prérequis."
+description: "Installer FreeRADIUS, déclarer les clients RADIUS, brancher une source d'authentification (annuaire [[Glossary:LDAP]]/AD ou fichier de test) et vérifier le fonctionnement en mode debug. Pour 802.1x/EAP, les certificats sont un prérequis."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["freeradius", "radius", "802-1x", "aaa", "wifi", "vpn"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Installer et sécuriser FreeRADIUS pour l'authentification réseau

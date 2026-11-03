@@ -2,11 +2,11 @@
 title: "Déployer Windows Server 2025 en production"
 description: "Fiche simple : [préparer l'installation](../../../../01-fiches-simples/windows/server-2025/vie-du-systeme/fiches-par-theme/installation-systeme/fiche-simple-vm-windows-server-2025-production-preparer-installation.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows-server-2025", "installation", "production", "uefi", "openssh", "serveur"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Windows Server 2025 en production

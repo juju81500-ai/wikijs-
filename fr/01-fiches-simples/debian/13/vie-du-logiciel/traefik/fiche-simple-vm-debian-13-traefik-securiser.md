@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Debian 13 Traefik Securiser"
-description: "Activer HTTPS (certificat ACME ou fichier), rediriger HTTP vers HTTPS et limiter l'exposition."
+description: "Activer HTTPS (certificat [[Glossary:ACME]] ou fichier), rediriger [[Glossary:HTTP]] vers HTTPS et limiter l'exposition."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "traefik", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Traefik_Securiser

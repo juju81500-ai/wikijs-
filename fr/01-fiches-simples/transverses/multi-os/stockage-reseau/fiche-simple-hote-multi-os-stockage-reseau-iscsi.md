@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-hote-multi-os-stockage-reseau-iscsi"
-description: "Exporter un LUN vers un initiateur autorisé."
+description: "Exporter un [[Glossary:LUN]] vers un initiateur autorisé."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["stockage", "iscsi", "targetcli"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-multi-os-stockage-reseau-iscsi.md

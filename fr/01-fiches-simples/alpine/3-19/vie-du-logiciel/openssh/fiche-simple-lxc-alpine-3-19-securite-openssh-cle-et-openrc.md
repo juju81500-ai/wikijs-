@@ -2,11 +2,11 @@
 title: "fiche-simple-lxc-alpine-3-19-securite-openssh-cle-et-openrc"
 description: "Installer le serveur OpenSSH dans un conteneur Alpine, vérifier un accès par clé Ed25519, puis réduire l'authentification distante sans perdre l'accès d'administration."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine3-19", "alpine", "openssh", "ssh", "openrc", "ed25519", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-lxc-alpine-3-19-securite-openssh-cle-et-openrc.md

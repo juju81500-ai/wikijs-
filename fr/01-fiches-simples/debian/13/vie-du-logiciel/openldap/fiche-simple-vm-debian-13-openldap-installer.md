@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-openldap-installer"
-description: "Installer slapd et les utilitaires LDAP Debian sans remplacer une base existante ni exposer un secret."
+description: "Installer slapd et les utilitaires [[Glossary:LDAP]] Debian sans remplacer une base existante ni exposer un secret."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "openldap", "slapd", "apt", "installation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-openldap-installer.md

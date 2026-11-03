@@ -2,11 +2,11 @@
 title: "Kali Linux et Parrot OS : laboratoire défensif isolé"
 description: "- Ces distributions contiennent des outils d'audit pouvant être illégaux ou dommageables s'ils sont utilisés sans autorisation. Toute action décrite ici s'exécute uniquement sur des systèmes que vous possédez ou pour lesquels vous disposez d'une autorisation écrite (périmètre, dates, contacts). L'us"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["kali", "parrot", "laboratoire", "blue-team", "isolation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Kali Linux et Parrot OS : laboratoire défensif isolé

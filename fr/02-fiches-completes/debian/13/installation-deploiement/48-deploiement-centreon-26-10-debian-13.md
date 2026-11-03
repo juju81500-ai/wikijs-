@@ -2,11 +2,11 @@
 title: "Déployer Centreon 26.10 sur Debian 13"
 description: "Fiche simple : [préparer le serveur Centreon](../../../../01-fiches-simples/debian/13/vie-du-logiciel/centreon/fiche-simple-vm-debian-13-centreon-preparer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["centreon", "debian13", "supervision", "snmp", "monitoring", "tls"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Centreon 26.10 sur Debian 13

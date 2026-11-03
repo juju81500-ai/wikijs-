@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-kubeadm-ajouter-workers"
 description: "Joindre un worker autorisé au cluster avec un jeton d'enrôlement à durée et périmètre contrôlés."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "kubeadm", "worker", "join", "token"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-kubeadm-ajouter-workers.md

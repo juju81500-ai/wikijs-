@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-lxc-alpine-sauvegarde-configurer-pbs"
-description: "Relier PVE à PBS et planifier la sauvegarde du CT avec identité et privilèges minimaux."
+description: "Relier PVE à PBS et planifier la sauvegarde du [[Glossary:CT]] avec identité et privilèges minimaux."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine", "proxmox", "pbs", "lxc", "backup"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-lxc-alpine-sauvegarde-configurer-pbs.md

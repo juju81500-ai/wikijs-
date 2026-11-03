@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 24.04 PowerShell Securiser Signature"
 description: "Durcir l'usage de PowerShell 7 sur Linux et traiter la signature de scripts selon ce qui s'applique."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2404", "powershell", "pwsh", "scripting"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_PowerShell_Securiser_Signature

@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Windows Server 2022 RDS Activer Bureau a Dist"
-description: "Activer l'accès Bureau à distance sur un serveur pilote uniquement après approbation, conserver NLA et limiter les flux au réseau d'administration."
+description: "Activer l'accès Bureau à distance sur un serveur pilote uniquement après approbation, conserver [[Glossary:NLA]] et limiter les flux au réseau d'administration."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "rds", "rdp", "nla", "powershell"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_Server_2022_RDS_Activer_Bureau_a_Dist

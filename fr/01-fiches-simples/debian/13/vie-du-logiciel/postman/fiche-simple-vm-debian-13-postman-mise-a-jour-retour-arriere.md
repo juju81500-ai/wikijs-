@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Postman Mise A Jour Retour Arriere"
 description: "Mettre à jour Postman et Newman sur Debian 13 de manière contrôlée, avec sauvegarde de l'archive en place et retour arrière possible."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "postman", "api", "newman", "vie-du-logiciel"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Postman_Mise_A_Jour_Retour_Arriere

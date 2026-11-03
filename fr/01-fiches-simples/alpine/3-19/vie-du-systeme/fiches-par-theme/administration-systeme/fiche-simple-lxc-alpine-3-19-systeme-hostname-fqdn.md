@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-lxc-alpine-3-19-systeme-hostname-fqdn"
-description: "Définir le nom d'hôte court et le nom de domaine complet (FQDN) d'un conteneur Alpine Linux, en gardant cohérents /etc/hostname, /etc/hosts et la configuration du conteneur sur Proxmox."
+description: "Définir le nom d'hôte court et le nom de domaine complet ([[Glossary:FQDN]]) d'un conteneur Alpine Linux, en gardant cohérents /etc/hostname, /etc/hosts et la configuration du conteneur sur Proxmox."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine3-19", "alpine", "lxc", "hostname", "fqdn", "openrc"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-lxc-alpine-3-19-systeme-hostname-fqdn.md

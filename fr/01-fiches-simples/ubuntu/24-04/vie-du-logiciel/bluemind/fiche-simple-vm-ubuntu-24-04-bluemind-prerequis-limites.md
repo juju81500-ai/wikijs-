@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 24.04 BlueMind Prerequis Limites"
 description: "Confirmer OS, capacité et prérequis de la version BlueMind visée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["bluemind", "serveur", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_BlueMind_Prerequis_Limites

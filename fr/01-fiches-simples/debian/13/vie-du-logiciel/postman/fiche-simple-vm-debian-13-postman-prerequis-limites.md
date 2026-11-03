@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Postman Prerequis Limites"
 description: "Valider les prérequis et limites de Postman Desktop et Newman sur Debian 13 avant installation : architecture, bibliothèques graphiques, compte, périmètre de test, compatibilité à vérifier."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "postman", "api", "newman", "vie-du-logiciel"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Postman_Prerequis_Limites

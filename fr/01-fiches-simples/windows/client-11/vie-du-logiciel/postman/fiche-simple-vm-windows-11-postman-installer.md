@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows 11 Postman Installer"
 description: "Installer Postman Desktop depuis la source officielle sur Windows 11 et vérifier l'éditeur avant le premier lancement."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-11", "postman", "api", "newman", "vie-du-logiciel"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_11_Postman_Installer

@@ -2,11 +2,11 @@
 title: "Haute disponibilité d'un service avec HAProxy et Keepalived"
 description: "Fiche simple : [préparer l'architecture](../../../../01-fiches-simples/transverses/multi-os/keepalived-haproxy/fiche-simple-vm-linux-keepalived-haproxy-preparer-architecture.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["ha", "keepalived", "vrrp", "haproxy", "linux", "reseau"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Haute disponibilité d'un service avec HAProxy et Keepalived

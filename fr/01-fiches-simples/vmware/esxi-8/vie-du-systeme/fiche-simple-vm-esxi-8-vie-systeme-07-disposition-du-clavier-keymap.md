@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM ESXi 8 Vie Systeme 07 Disposition Du Clavier Keymap"
 description: "Que les touches saisies correspondent au clavier physique."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["esxi8", "vie-du-systeme", "cycle-de-vie", "etape-07"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_ESXi_8_Vie_Systeme_07_Disposition_Du_Clavier_Keymap

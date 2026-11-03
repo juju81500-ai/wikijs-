@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM ESXi 8 VMware vSphere DRS"
-description: "Activer DRS pour équilibrer la charge des VM entre les hôtes d'un cluster."
+description: "Activer [[Glossary:DRS]] pour équilibrer la charge des [[Glossary:VM]] entre les hôtes d'un cluster."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["vmware-vsphere", "vsphere8", "vcenter", "drs", "cluster", "equilibrage"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_ESXi_8_VMware_vSphere_DRS

@@ -2,11 +2,11 @@
 title: "Parcours d'installation à la mise en production par OS"
 description: "Ce document indique, pour chaque famille, les étapes de l'installation à la production et les fiches simples correspondantes. EXISTE signifie qu'une fiche traite l'étape; PARTIEL signale une couverture répartie entre plusieurs fiches ou plusieurs versions. Les trois manques Windows suivis plus bas s"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: []
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Parcours d'installation à la mise en production par OS

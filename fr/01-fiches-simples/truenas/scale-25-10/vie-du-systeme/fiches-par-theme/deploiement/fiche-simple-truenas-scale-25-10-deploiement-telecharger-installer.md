@@ -2,11 +2,11 @@
 title: "fiche-simple-truenas-scale-25-10-deploiement-telecharger-installer"
 description: "Installer SCALE 25.10 à partir d'une ISO vérifiée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenas", "scale2510", "zfs", "nas", "smb", "sauvegarde"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-truenas-scale-25-10-deploiement-telecharger-installer.md

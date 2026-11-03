@@ -2,11 +2,11 @@
 title: "Docker_Hote_Installation_Docker-Et-Compose"
 description: "Installer le moteur officiel Docker Engine et le plugin Docker Compose v2 depuis les dépôts de l'éditeur, et sécuriser l'accès au socket local."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["docker", "docker-compose", "debian-family", "conteneurs", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Docker_Hote_Installation_Docker-Et-Compose.md

@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Ubuntu 26.04 Systeme Hostname FQDN"
-description: "Donner au serveur un nom d'hôte court et un FQDN cohérents, résolus localement et stables après redémarrage, afin que SSH, la supervision, l'annuaire et les certificats identifient la machine de la même façon."
+description: "Donner au serveur un nom d'hôte court et un [[Glossary:FQDN]] cohérents, résolus localement et stables après redémarrage, afin que [[Glossary:SSH]], la supervision, l'annuaire et les certificats identifient la machine de la même façon."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "hostname", "fqdn", "hosts", "systemd", "cloud-init"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Systeme_Hostname_FQDN

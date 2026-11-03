@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-glpi-installer-recetter"
 description: "Terminer l'installation GLPI et valider les fonctions essentielles sans laisser l'installateur ou les comptes initiaux accessibles."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "glpi", "itsm", "https", "validation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-glpi-installer-recetter.md

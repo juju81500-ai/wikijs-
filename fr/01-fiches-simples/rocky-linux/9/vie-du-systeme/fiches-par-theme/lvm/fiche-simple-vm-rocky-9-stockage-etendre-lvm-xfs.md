@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-stockage-etendre-lvm-xfs"
 description: "Étendre un système de fichiers existant après l'agrandissement du disque virtuel, en distinguant un PV sur disque entier d'un PV dans une partition."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "rhel9", "lvm", "xfs", "stockage", "maintenance"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-rocky-9-stockage-etendre-lvm-xfs.md

@@ -2,11 +2,11 @@
 title: "Leçon — NAS, SAN et iSCSI : stockage réseau en mode fichier et en mode bloc"
 description: "À l'issue de cette leçon, vous saurez :"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "lecon", "nas", "san", "iscsi", "multipath", "snapshots", "replication", "dimensionnement"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Leçon — NAS, SAN et iSCSI : stockage réseau en mode fichier et en mode bloc

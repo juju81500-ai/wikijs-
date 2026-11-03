@@ -2,11 +2,11 @@
 title: "fiche-simple-hote-docker-vaultwarden-sauvegarder"
 description: "Produire une sauvegarde cohérente des données Vaultwarden et la copier hors hôte."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["docker", "vaultwarden", "sauvegarde", "sqlite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-docker-vaultwarden-sauvegarder.md

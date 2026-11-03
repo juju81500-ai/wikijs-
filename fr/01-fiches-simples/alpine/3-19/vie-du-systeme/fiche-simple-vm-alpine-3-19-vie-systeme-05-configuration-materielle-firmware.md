@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Alpine 3.19 Vie Systeme 05 Configuration Materielle Firmware"
 description: "Régler le firmware avant l'installation."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine319", "vie-du-systeme", "cycle-de-vie", "etape-05"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_05_Configuration_Materielle_Firmware

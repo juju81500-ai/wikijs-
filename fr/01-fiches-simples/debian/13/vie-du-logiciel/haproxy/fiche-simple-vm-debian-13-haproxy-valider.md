@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 HAProxy Valider"
 description: "Prouver la répartition de charge, le contrôle de santé et la tolérance à la perte d'un backend."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "haproxy", "recette"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_HAProxy_Valider

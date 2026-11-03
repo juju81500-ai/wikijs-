@@ -2,11 +2,11 @@
 title: "Fiche Simple - Cloud Google Workspace Prerequis Limites"
 description: "Cadrer l'administration défensive de Google Workspace : rôles, outils et limites SaaS."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["google-workspace", "gmail", "cloud-saas", "administration-defensive", "messagerie", "tssr"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Cloud_Google_Workspace_Prerequis_Limites

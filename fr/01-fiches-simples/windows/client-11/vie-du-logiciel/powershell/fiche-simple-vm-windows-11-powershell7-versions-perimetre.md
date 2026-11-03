@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-11-powershell7-versions-perimetre"
 description: "Identifier les shells PowerShell présents et le périmètre de l'administration locale."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-11", "powershell", "pwsh", "administration", "scripts", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-windows-11-powershell7-versions-perimetre.md

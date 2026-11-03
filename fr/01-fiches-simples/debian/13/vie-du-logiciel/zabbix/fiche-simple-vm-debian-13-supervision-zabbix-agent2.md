@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Supervision Zabbix Agent2"
 description: "Installer l'agent Zabbix 2 sur Debian 13 à partir des dépôts Debian, le relier au serveur Zabbix, et vérifier la communication sur le port 10050 sans autoriser l'exécution de commandes à distance."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "debian", "zabbix", "zabbix-agent2", "supervision", "monitoring"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Debian_13_Supervision_Zabbix_Agent2

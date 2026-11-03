@@ -2,11 +2,11 @@
 title: "Lecture seule : relève les infos de la machine Windows locale et écrit une fiche machine pré-remplie."
 description: "param([string]$Out = \"fiche-machine$env:COMPUTERNAME.md\")"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["fiche-machine", "windows"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Lecture seule : relève les infos de la machine Windows locale et écrit une fiche machine pré-remplie.

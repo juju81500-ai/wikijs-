@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Alpine 3.19 Vie Systeme 13 Partitionnement Et Systemes De"
-description: "Choisir le mode d'installation (sys, data, diskless) et préparer les disques (LVM, ext4)."
+description: "Choisir le mode d'installation (sys, data, diskless) et préparer les disques ([[Glossary:LVM]], ext4)."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine319", "vie-du-systeme", "cycle-de-vie", "etape-13"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_13_Partitionnement_Et_Systemes_De

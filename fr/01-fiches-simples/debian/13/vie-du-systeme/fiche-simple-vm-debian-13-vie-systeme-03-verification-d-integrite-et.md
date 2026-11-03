@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Vie Systeme 03 Verification D Integrite Et"
 description: "S'assurer que l'ISO n'est ni corrompue ni modifiée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "vie-du-systeme", "cycle-de-vie", "etape-03"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Vie_Systeme_03_Verification_D_Integrite_Et

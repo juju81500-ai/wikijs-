@@ -2,11 +2,11 @@
 title: "MySQL"
 description: "Couvert — série par étape pour Debian 13 (dépôt officiel Oracle) (prérequis, installation, configuration, sécurisation, recette, sauvegarde/restauration, mise à jour et retour arrière). Prise en charge de Debian 13 par le dépôt Oracle à vérifier avant installation ; réplication non traitée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "14-services-web-et-bases-de-donnees", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 MySQL

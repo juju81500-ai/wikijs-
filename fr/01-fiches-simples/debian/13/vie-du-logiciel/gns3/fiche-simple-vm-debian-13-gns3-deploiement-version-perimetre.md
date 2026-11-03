@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-gns3-deploiement-version-perimetre"
 description: "Choisir la version stable et définir le périmètre d'un laboratoire isolé."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["gns3", "debian13", "cadrage", "lab"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-gns3-deploiement-version-perimetre.md

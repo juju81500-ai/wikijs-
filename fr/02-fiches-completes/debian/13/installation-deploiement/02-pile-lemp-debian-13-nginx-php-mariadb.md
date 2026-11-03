@@ -2,11 +2,11 @@
 title: "Pile LEMP sur Debian 13 : Nginx, PHP-FPM et MariaDB"
 description: "Fiche simple : [préparer la pile LEMP](../../../../01-fiches-simples/debian/13/vie-du-logiciel/lemp/fiche-simple-vm-debian-13-lemp-preparer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["debian13", "nginx", "php-fpm", "mariadb", "lemp", "tls"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Pile LEMP sur Debian 13 : Nginx, PHP-FPM et MariaDB

@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-12-glpi-creer-base"
-description: "Créer une base GLPI dédiée et un compte SQL dont les accès sont limités à cette base."
+description: "Créer une base GLPI dédiée et un compte [[Glossary:SQL]] dont les accès sont limités à cette base."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "glpi", "mariadb", "database", "least-privilege"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-glpi-creer-base.md

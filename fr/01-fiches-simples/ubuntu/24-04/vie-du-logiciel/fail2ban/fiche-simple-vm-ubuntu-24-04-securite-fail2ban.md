@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Ubuntu 24.04 Securite Fail2ban"
-description: "Bloquer temporairement les adresses IP qui échouent répétitivement à s'authentifier sur SSH, sur Ubuntu Server 24-04 LTS, avec Fail2ban configuré via le journal systemd."
+description: "Bloquer temporairement les adresses [[Glossary:IP]] qui échouent répétitivement à s'authentifier sur [[Glossary:SSH]], sur Ubuntu Server 24-04 LTS, avec Fail2ban configuré via le journal systemd."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu24-04", "ubuntu", "fail2ban", "ssh", "brute-force", "jail", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Securite_Fail2ban

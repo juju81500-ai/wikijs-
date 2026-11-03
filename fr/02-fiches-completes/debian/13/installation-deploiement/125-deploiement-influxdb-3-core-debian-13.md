@@ -2,11 +2,11 @@
 title: "Déployer InfluxDB 3 Core sur Debian 13"
 description: "Fiche simple de cette étape : [cadrer le pilote InfluxDB 3 Core](../../../../01-fiches-simples/debian/13/vie-du-logiciel/influxdb3-core/fiche-simple-influxdb3-core-debian-13-cadrer-pilote.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["influxdb3", "influxdb3-core", "debian13", "timeseries", "systemd", "token", "backup"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer InfluxDB 3 Core sur Debian 13

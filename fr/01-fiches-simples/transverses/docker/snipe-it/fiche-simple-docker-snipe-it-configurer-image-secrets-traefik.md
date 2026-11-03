@@ -2,11 +2,11 @@
 title: "fiche-simple-docker-snipe-it-configurer-image-secrets-traefik"
 description: "Renseigner .env, générer APPKEY et relier le service à Traefik."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["snipe-it", "docker", "mariadb", "traefik", "inventaire"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-docker-snipe-it-configurer-image-secrets-traefik.md

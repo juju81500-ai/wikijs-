@@ -1,12 +1,12 @@
 ---
 title: "Apache Guacamole"
-description: "Guide borné à un déploiement Docker Compose avec authentification PostgreSQL et publication locale derrière un reverse proxy HTTPS. MFA/SSO, haute disponibilité, connexions aux systèmes cibles et exigences de production restent à valider séparément."
+description: "Guide borné à un déploiement Docker Compose avec authentification PostgreSQL et publication locale derrière un reverse proxy HTTPS. [[Glossary:MFA]]/SSO, haute disponibilité, connexions aux systèmes cibles et exigences de production restent à valider séparément."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "13-poste-de-travail-et-vdi", "guide-complet", "docker", "administration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Apache Guacamole

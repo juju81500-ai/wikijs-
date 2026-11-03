@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-lemp-depanner"
 description: "Diagnostiquer un défaut Nginx, PHP-FPM ou MariaDB sans exposer d'informations de configuration ou modifier les données à l'aveugle."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "lemp", "nginx", "mariadb", "php-fpm", "diagnostic"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-lemp-depanner.md

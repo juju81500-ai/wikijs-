@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-11-restaurer-fichiers-file-history-onedrive"
 description: "Récupérer un fichier supprimé ou une version précédente sans écraser d'abord l'original."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows11", "restauration", "file-history", "onedrive", "fichiers"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-windows-11-restaurer-fichiers-file-history-onedrive.md

@@ -2,11 +2,11 @@
 title: "fiche-simple-hote-proxmox-ve-diagnostic-restaurer"
 description: "Corriger une seule cause à la fois et valider après chaque modification."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmox-ve", "diagnostic", "restauration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-proxmox-ve-diagnostic-restaurer.md

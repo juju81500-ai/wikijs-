@@ -2,11 +2,11 @@
 title: "Déployer LibreNMS 26.10.2 sur Ubuntu Server 26-04"
 description: "Fiche simple : [préparer le serveur LibreNMS](../../../../01-fiches-simples/ubuntu/26-04/vie-du-logiciel/librenms/fiche-simple-vm-ubuntu-26-04-librenms-preparer-serveur.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["librenms", "ubuntu2604", "supervision", "snmpv3", "nginx", "mariadb"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer LibreNMS 26.10.2 sur Ubuntu Server 26-04

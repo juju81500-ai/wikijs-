@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-caddy-installer"
-description: "Installer Caddy depuis le dépôt APT officiel et confirmer la version et l'origine du paquet."
+description: "Installer Caddy depuis le dépôt [[Glossary:APT]] officiel et confirmer la version et l'origine du paquet."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "caddy", "apt", "installation", "signature"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-caddy-installer.md

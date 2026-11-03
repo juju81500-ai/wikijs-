@@ -1,12 +1,12 @@
 ---
 title: "Suricata"
-description: "Installer Suricata en IDS passif sur une interface miroir autorisée, mettre à jour les règles, vérifier la configuration et la remontée d'une alerte de test. Cette fiche ne configure ni NFQUEUE ni mode inline, et ne crée aucune règle drop ou reject. Les tests ne se font que sur votre propre réseau d"
+description: "Installer Suricata en [[Glossary:IDS]] passif sur une interface miroir autorisée, mettre à jour les règles, vérifier la configuration et la remontée d'une alerte de test. Cette fiche ne configure ni NFQUEUE ni mode inline, et ne crée aucune règle drop ou reject. Les tests ne se font que sur votre pr"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian-12", "suricata", "ids", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Suricata

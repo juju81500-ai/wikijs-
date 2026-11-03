@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM TrueNAS SCALE 25.10 Vie Systeme 22 Synchronisation Horaire Ntp"
-description: "Garder l'heure exacte (indispensable pour Kerberos et AD)."
+description: "Garder l'heure exacte (indispensable pour Kerberos et [[Glossary:AD]])."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenasscale2510", "vie-du-systeme", "cycle-de-vie", "etape-22"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_TrueNAS_SCALE_25.10_Vie_Systeme_22_Synchronisation_Horaire_Ntp

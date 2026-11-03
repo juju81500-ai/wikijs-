@@ -2,11 +2,11 @@
 title: "fiche-simple-appliance-pfsense-ce-diagnostic-journaux"
 description: "Identifier les erreurs système et les blocages de pare-feu sur pfSense CE, à partir de l'interface web et du shell, puis centraliser les journaux pour conservation."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["pfsense", "ce", "freebsd", "logs", "syslog", "diagnostic"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-appliance-pfsense-ce-diagnostic-journaux.md

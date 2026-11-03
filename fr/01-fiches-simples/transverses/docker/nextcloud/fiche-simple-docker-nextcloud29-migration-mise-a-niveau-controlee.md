@@ -2,11 +2,11 @@
 title: "fiche-simple-docker-nextcloud29-migration-mise-a-niveau-controlee"
 description: "Mettre à niveau Nextcloud version par version avec des images épinglées."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["nextcloud", "docker", "migration", "mariadb", "redis", "tls"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-docker-nextcloud29-migration-mise-a-niveau-controlee.md

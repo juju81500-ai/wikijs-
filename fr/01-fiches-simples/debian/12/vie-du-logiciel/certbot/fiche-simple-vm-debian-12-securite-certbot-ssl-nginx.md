@@ -1,12 +1,12 @@
 ---
 title: "VM_Debian_12_Securite_Certbot-SSL-Nginx"
-description: "Générer et installer un certificat SSL/TLS gratuit Let's Encrypt avec Certbot pour un serveur Web Nginx sous Debian 12, automatiser le renouvellement et renforcer la suite cryptographique (TLS 1.3, HSTS)."
+description: "Générer et installer un certificat [[Glossary:SSL]]/TLS gratuit Let's Encrypt avec Certbot pour un serveur Web Nginx sous Debian 12, automatiser le renouvellement et renforcer la suite cryptographique ([[Glossary:TLS]] 1.3, [[Glossary:HSTS]])."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "certbot", "letsencrypt", "nginx", "ssl", "tls", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_12_Securite_Certbot-SSL-Nginx.md

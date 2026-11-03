@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-caddy-valider-service"
 description: "Vérifier la réponse HTTPS de Caddy, son certificat, son journal et l'absence d'exposition directe non désirée de l'amont."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "caddy", "https", "certificat", "validation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-caddy-valider-service.md

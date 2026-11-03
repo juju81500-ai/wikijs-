@@ -1,12 +1,12 @@
 ---
 title: "Docker_Conteneur_VPN_Deploiement-Wireguard"
-description: "Déployer un serveur VPN moderne et haute performance WireGuard dans un conteneur Docker avec l'interface d'administration Web wg-easy, configurer la persistance des clés et sécuriser l'accès au port UDP."
+description: "Déployer un serveur VPN moderne et haute performance WireGuard dans un conteneur Docker avec l'interface d'administration Web wg-easy, configurer la persistance des clés et sécuriser l'accès au port [[Glossary:UDP]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["docker", "wireguard", "vpn", "docker-compose", "wg-easy", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Docker_Conteneur_VPN_Deploiement-Wireguard.md

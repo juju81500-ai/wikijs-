@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-znuny-apache"
 description: "Activer modperl, charger la configuration Znuny et appliquer les permissions."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "znuny", "apache", "mod-perl"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-znuny-apache.md

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-services-dnf-automatic"
 description: "Appliquer automatiquement les correctifs de sécurité sur Rocky Linux 9 via dnf-automatic, sans redémarrage non maîtrisé du serveur."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "rhel9", "dnf", "dnf-automatic", "systemd", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-rocky-9-services-dnf-automatic.md

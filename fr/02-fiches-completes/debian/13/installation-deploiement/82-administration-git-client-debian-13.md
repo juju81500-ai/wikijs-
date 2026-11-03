@@ -2,11 +2,11 @@
 title: "Administrer Git en client sur Debian 13"
 description: "Fiche simple : [cadrer le périmètre du client Git](../../../../01-fiches-simples/debian/13/vie-du-logiciel/git/fiche-simple-vm-debian-13-git-perimetre.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["git", "debian13", "gestion-versions", "ssh", "secrets", "workflow"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Administrer Git en client sur Debian 13

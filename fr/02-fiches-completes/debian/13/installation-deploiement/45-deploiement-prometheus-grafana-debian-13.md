@@ -2,11 +2,11 @@
 title: "Déployer Prometheus 3.15.1 et Grafana sur Debian 13"
 description: "Fiche simple : [cadrer la collecte](../../../../01-fiches-simples/debian/13/vie-du-logiciel/prometheus-grafana/fiche-simple-vm-debian-13-prometheus-grafana-cadrer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["debian13", "prometheus", "grafana", "node-exporter", "monitoring", "metrics"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Prometheus 3.15.1 et Grafana sur Debian 13

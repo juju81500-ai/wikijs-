@@ -2,11 +2,11 @@
 title: "Leçon — Déploiement et inventaire des postes : images, MDT/WDS/Autopilot/Intune, automatisation et cycle de vie"
 description: "À l'issue de cette leçon, vous saurez :"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "lecon", "support", "deploiement", "inventaire", "autopilot", "intune", "cycle-de-vie"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Leçon — Déploiement et inventaire des postes : images, MDT/WDS/Autopilot/Intune, automatisation et cycle de vie

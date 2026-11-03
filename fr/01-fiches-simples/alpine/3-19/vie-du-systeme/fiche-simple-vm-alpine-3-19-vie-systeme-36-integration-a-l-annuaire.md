@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Alpine 3.19 Vie Systeme 36 Integration A L Annuaire"
 description: "Rattacher la machine à l'exploitation (Alpine n'a pas de realm join)."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine319", "vie-du-systeme", "cycle-de-vie", "etape-36"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_36_Integration_A_L_Annuaire

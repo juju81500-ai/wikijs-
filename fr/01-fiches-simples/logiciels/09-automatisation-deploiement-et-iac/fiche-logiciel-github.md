@@ -1,12 +1,12 @@
 ---
 title: "GitHub"
-description: "Couvert — périmètre SaaS demandé : compte, clés SSH et secrets chiffrés GitHub Actions; aucun déploiement OS."
+description: "Couvert — périmètre SaaS demandé : compte, clés [[Glossary:SSH]] et secrets chiffrés GitHub Actions; aucun déploiement OS."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "09-automatisation-deploiement-et-iac", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 GitHub

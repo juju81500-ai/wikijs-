@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-supervision-zabbix-agent2"
 description: "Installer l'agent Zabbix 2 sur Rocky Linux 9, le déclarer auprès du serveur Zabbix, n'autoriser que le serveur de supervision à l'interroger et chiffrer les échanges."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "rhel9", "zabbix", "monitoring", "firewalld", "psk"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-rocky-9-supervision-zabbix-agent2.md

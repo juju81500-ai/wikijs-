@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows 10 mRemoteNG Differences"
 description: "Décrire uniquement les différences liées à Windows Client-10 par rapport aux procédures mRemoteNG déjà disponibles pour Windows Client-11, sans dupliquer les étapes d’installation et d’exploitation."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-client-10", "mremoteng", "cycle-de-vie", "limites"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_10_mRemoteNG_Differences

@@ -2,11 +2,11 @@
 title: "Déployer Minikube avec le driver Docker sur Debian 13"
 description: "Fiche simple : [vérifier les prérequis Minikube](../../../../01-fiches-simples/debian/13/vie-du-logiciel/minikube/fiche-simple-vm-debian-13-minikube-prerequis.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["minikube", "kubernetes", "debian13", "docker", "lab", "kubectl"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Minikube avec le driver Docker sur Debian 13

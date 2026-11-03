@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-bareos-catalogue-secrets"
 description: "Vérifier le catalogue PostgreSQL et remplacer les secrets de ressources par des valeurs uniques et protégées."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "bareos", "postgresql", "catalogue", "tls", "secrets"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-bareos-catalogue-secrets.md

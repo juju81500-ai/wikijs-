@@ -2,11 +2,11 @@
 title: "Nettoyer l'espace disque d'un hôte Docker"
 description: "Récupérer de l'espace occupé par des ressources Docker inutilisées sans supprimer des données persistantes ni interrompre des services actifs."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["docker", "maintenance", "stockage", "prune", "journaux"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Nettoyer l'espace disque d'un hôte Docker

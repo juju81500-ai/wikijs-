@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-ubuntu-24-04-graylog-preflight-entrees"
 description: "Terminer l'assistant initial et créer un premier input de test."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2404", "graylog", "datanode", "mongodb", "preflight", "syslog"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-ubuntu-24-04-graylog-preflight-entrees.md

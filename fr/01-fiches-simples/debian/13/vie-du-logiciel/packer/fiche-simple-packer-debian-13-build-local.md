@@ -2,11 +2,11 @@
 title: "Fiche simple — Construire une image Packer locale"
 description: "Construire une seule image locale à partir d'un template validé, sans publication vers un registre."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "packer", "docker", "build", "image"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche simple — Construire une image Packer locale

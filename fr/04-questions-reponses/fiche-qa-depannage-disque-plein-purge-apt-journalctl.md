@@ -2,11 +2,11 @@
 title: "Réparer un disque Linux presque plein"
 description: "Comment retrouver la cause d'une saturation et libérer de l'espace sans supprimer de données utiles ?"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["reparation", "linux", "disque", "apt", "journald", "stockage"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Réparer un disque Linux presque plein

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Passbolt Mise A Jour Retour Arriere"
 description: "Mettre à jour paquet CE et suivre migrations compatibles en protégeant clés/base."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "passbolt", "secrets", "tls", "sauvegarde"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Passbolt_Mise_A_Jour_Retour_Arriere

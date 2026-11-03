@@ -2,11 +2,11 @@
 title: "fiche-simple-jira-service-management-deploiement-preparer-tenant-gouvernance"
 description: "Valider tenant, licences et règles de gouvernance avant d'activer le portail."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["jira-service-management", "atlassian-cloud", "itsm", "saas"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-jira-service-management-deploiement-preparer-tenant-gouvernance.md

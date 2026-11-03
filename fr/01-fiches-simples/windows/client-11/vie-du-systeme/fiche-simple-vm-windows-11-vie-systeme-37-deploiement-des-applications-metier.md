@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows 11 Vie Systeme 37 Deploiement Des Applications Metier"
 description: "Installer les logiciels métier de manière standardisée."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows11", "vie-du-systeme", "cycle-de-vie", "etape-37"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_11_Vie_Systeme_37_Deploiement_Des_Applications_Metier

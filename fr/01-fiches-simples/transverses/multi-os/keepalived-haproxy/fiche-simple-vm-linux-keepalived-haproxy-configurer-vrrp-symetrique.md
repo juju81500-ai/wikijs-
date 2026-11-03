@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-linux-keepalived-haproxy-configurer-vrrp-symetrique"
 description: "Configurer Keepalived identiquement sur les deux nœuds avec des priorités différentes."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ha", "keepalived", "vrrp", "haproxy", "linux"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-linux-keepalived-haproxy-configurer-vrrp-symetrique.md

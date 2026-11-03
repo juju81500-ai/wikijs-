@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM pfSense Vie Systeme 19 Configuration Des Depots Logiciels"
 description: "Choisir la branche des mises à jour."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["pfsense", "vie-du-systeme", "cycle-de-vie", "etape-19"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_19_Configuration_Des_Depots_Logiciels

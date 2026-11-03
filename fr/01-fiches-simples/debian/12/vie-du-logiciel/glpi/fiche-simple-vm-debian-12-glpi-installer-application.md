@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-glpi-installer-application"
 description: "Déployer l'archive GLPI officielle dans un répertoire versionné et configurer le serveur Web sans rendre toute l'installation modifiable."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "glpi", "php", "nginx", "deployment"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-glpi-installer-application.md

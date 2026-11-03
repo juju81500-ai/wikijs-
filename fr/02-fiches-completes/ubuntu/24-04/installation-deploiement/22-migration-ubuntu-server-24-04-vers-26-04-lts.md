@@ -2,11 +2,11 @@
 title: "Migrer Ubuntu Server 24-04 vers 26-04 LTS"
 description: "Fiche simple : [évaluer la migration](../../../../01-fiches-simples/ubuntu/24-04/vie-du-systeme/fiches-par-theme/migration-26-04/fiche-simple-vm-ubuntu-24-04-migration-26-04-evaluer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["ubuntu24-04", "ubuntu26-04", "noble", "resolute", "migration", "apt", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Migrer Ubuntu Server 24-04 vers 26-04 LTS

@@ -2,11 +2,11 @@
 title: "Exchange : choisir et déployer entre Exchange Server (sur site) et Exchange Online (Microsoft 365)"
 description: "- Les deux produits sont différents : Exchange Server est un logiciel installé et exploité par vous ; Exchange Online est un service SaaS inclus dans des abonnements Microsoft 365/Office 365. Ne pas mélanger leurs procédures."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["exchange-server", "exchange-online", "microsoft-365", "messagerie", "hybride"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Exchange : choisir et déployer entre Exchange Server (sur site) et Exchange Online (Microsoft 365)

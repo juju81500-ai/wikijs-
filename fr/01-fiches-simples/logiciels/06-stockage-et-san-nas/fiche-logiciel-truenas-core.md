@@ -2,11 +2,11 @@
 title: "TrueNAS Core"
 description: "Couvert pour un laboratoire TrueNAS CORE 13.0 : les fiches liées couvrent les prérequis, l’installation, la création d’un pool et d’un partage SMB, les snapshots, la sauvegarde de configuration, la validation et le retour arrière. Vérifier la disponibilité du build et le statut de support avant tout"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "06-stockage-et-san-nas", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 TrueNAS Core

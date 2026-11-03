@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Windows Server 2022 Securite ADCS Certs"
-description: "Installer une autorité de certification Active Directory Certificate Services (AD CS) pour émettre les certificats TLS et de machine du domaine, puis demander un certificat serveur et publier les listes de révocation (CRL)."
+description: "Installer une autorité de certification Active Directory Certificate Services (AD CS) pour émettre les certificats [[Glossary:TLS]] et de machine du domaine, puis demander un certificat serveur et publier les listes de révocation ([[Glossary:CRL]])."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "ad-cs", "pki", "certificats", "certutil", "powershell"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Windows_Server_2022_Securite_ADCS_Certs

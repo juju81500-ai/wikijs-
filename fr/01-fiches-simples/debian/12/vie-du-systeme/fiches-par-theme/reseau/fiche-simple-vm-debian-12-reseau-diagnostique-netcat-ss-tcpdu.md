@@ -2,11 +2,11 @@
 title: "VM_Debian_12_Reseau_Diagnostique-Netcat-SS-Tcpdump"
 description: "Diagnostiquer les pannes de connectivité réseau, analyser les sockets en écoute et capturer le trafic paquet par paquet sur Debian 12 avec les outils ss, netcat (nc), tcpdump et traceroute."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "netcat", "ss", "tcpdump", "reseau", "depannage", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_12_Reseau_Diagnostique-Netcat-SS-Tcpdump.md

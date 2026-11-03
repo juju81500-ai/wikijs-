@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 24.04 Podman Buildah Construire Image Buildah"
 description: "Construire une image OCI reproductible avec Buildah à partir d'un Containerfile."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2404", "podman", "buildah", "conteneurs", "rootless", "oci"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_Podman_Buildah_Construire_Image_Buildah

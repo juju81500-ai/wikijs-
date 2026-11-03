@@ -2,11 +2,11 @@
 title: "Architectures de production Apache, Nginx et IIS : fiche comparative Linux/Windows"
 description: "- Fiche de comparaison et d'architecture, qui complète sans les remplacer : [Apache HTTP Server sur Debian 13](../../../debian/13/installation-deploiement/124-deploiement-apache-http-server-debian-13.md), [pile LEMP Nginx sur Debian 13](../../../debian/13/installation-deploiement/02-pile-lemp-debian"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["apache", "nginx", "iis", "reverse-proxy", "tls", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Architectures de production Apache, Nginx et IIS : fiche comparative Linux/Windows

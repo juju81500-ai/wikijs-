@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows 11 Royal TS Sauvegarde Config"
 description: "Sauvegarder et restaurer documents et paramètres Royal TS."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["royal-ts", "windows11", "sauvegarde", "restauration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_11_Royal_TS_Sauvegarde_Config

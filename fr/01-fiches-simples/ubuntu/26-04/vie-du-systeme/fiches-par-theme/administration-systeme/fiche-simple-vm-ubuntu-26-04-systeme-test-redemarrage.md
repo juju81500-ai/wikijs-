@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Ubuntu 26.04 Systeme Test Redemarrage"
-description: "Vérifier qu'un serveur Ubuntu 26-04 redémarre proprement et que tout ce qui a été configuré (disques, réseau, DNS, services) est rétabli automatiquement, sans intervention manuelle, avant sa mise en production."
+description: "Vérifier qu'un serveur Ubuntu 26-04 redémarre proprement et que tout ce qui a été configuré (disques, réseau, [[Glossary:DNS]], services) est rétabli automatiquement, sans intervention manuelle, avant sa mise en production."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "reboot", "systemd", "persistance", "fstab", "netplan"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Systeme_Test_Redemarrage

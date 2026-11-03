@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 tcpdump Valider"
 description: "Valider une capture locale et son intégrité sans réémettre le trafic capturé."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["tcpdump", "debian13", "vie-du-logiciel", "valider"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_tcpdump_Valider

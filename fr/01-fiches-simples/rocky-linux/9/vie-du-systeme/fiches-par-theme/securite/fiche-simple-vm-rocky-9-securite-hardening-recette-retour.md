@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-securite-hardening-recette-retour"
 description: "Valider le durcissement et savoir revenir en arrière."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "rhel9", "hardening", "recette", "rollback"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-rocky-9-securite-hardening-recette-retour.md

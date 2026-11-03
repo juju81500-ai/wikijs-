@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM ESXi 8 Vie Systeme 27 Durcissement De L Acces"
-description: "Réduire l'exposition de SSH et de la console."
+description: "Réduire l'exposition de [[Glossary:SSH]] et de la console."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["esxi8", "vie-du-systeme", "cycle-de-vie", "etape-27"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_ESXi_8_Vie_Systeme_27_Durcissement_De_L_Acces

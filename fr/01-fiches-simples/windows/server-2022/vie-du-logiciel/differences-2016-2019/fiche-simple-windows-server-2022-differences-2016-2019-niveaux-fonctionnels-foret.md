@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 Differences 2016 2019 Niveaux Fonctionnels Foret"
 description: "Contrôler les niveaux fonctionnels et préparer la forêt avant d'introduire un contrôleur de domaine 2022 dans un annuaire 2016/2019."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server", "windows-server-2016", "windows-server-2019", "windows-server-2022", "active-directory", "niveaux-fonctionnels", "adprep"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_Differences_2016_2019_Niveaux_Fonctionnels_Foret

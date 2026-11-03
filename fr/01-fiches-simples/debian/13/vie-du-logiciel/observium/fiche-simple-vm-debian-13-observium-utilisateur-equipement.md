@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-observium-utilisateur-equipement"
 description: "Créer l'administrateur nominatif et ajouter un équipement pilote en SNMPv3 authPriv."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "observium", "snmpv3", "equipement", "utilisateur"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-observium-utilisateur-equipement.md

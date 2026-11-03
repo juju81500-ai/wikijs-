@@ -2,11 +2,11 @@
 title: "fiche-simple-truenas-core-13-0-deploiement-snapshots-config"
 description: "Protéger les données par snapshots et sauvegarder la configuration hors machine."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenas-core", "truenas", "freebsd", "zfs", "smb", "nas"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-truenas-core-13-0-deploiement-snapshots-config.md

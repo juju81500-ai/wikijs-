@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM ESXi 8 Vie Systeme 05 Configuration Materielle Firmware"
-description: "Préparer le BIOS/UEFI et le matériel."
+description: "Préparer le [[Glossary:BIOS]]/UEFI et le matériel."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["esxi8", "vie-du-systeme", "cycle-de-vie", "etape-05"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_ESXi_8_Vie_Systeme_05_Configuration_Materielle_Firmware

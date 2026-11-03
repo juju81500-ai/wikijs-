@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Windows Server 2022 RDS Configuration Bureau"
-description: "Limiter les connexions RDP aux utilisateurs et adresses réseau approuvés sans modifier inutilement le port RDP par défaut."
+description: "Limiter les connexions [[Glossary:RDP]] aux utilisateurs et adresses réseau approuvés sans modifier inutilement le port RDP par défaut."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "rds", "groupes", "pare-feu", "powershell"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_Server_2022_RDS_Configuration_Bureau_

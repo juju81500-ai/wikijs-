@@ -2,11 +2,11 @@
 title: "🏗️ Architecture & READMEs Officiels (Mis à jour - Familles d OS) - Wiki.js Lab & TSSR"
 description: "/ (Racine de Wiki.js)"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: []
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 🏗️ Architecture & READMEs Officiels (Mis à jour - Familles d OS) - Wiki.js Lab & TSSR

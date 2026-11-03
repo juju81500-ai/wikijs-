@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Windows 11 Bitwarden Configurer"
-description: "Configurer compte, MFA, verrouillage et récupération depuis interface officielle."
+description: "Configurer compte, [[Glossary:MFA]], verrouillage et récupération depuis interface officielle."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-11", "bitwarden", "mots-de-passe", "mfa", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_11_Bitwarden_Configurer

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 PowerShell Mise A Jour Retour Arriere"
 description: "Gérer version PowerShell et modules avec test de compatibilité avant déploiement."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "powershell", "pwsh", "scripting", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_PowerShell_Mise_A_Jour_Retour_Arriere

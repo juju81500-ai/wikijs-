@@ -2,11 +2,11 @@
 title: "Fiche simple — Inspecter un artefact Packer avant promotion"
 description: "Vérifier le contenu et la traçabilité d'une image construite avant toute proposition de publication."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "packer", "docker", "artefact", "inspection"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche simple — Inspecter un artefact Packer avant promotion

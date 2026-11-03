@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-wazuh-controles-operationnels"
 description: "Vérifier la santé de la plateforme Wazuh, protéger les communications et maintenir l'observabilité des files et index."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "wazuh", "siem", "tls", "monitoring", "least-privilege"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-wazuh-controles-operationnels.md

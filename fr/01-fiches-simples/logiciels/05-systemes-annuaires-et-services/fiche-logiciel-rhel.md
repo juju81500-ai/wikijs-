@@ -2,11 +2,11 @@
 title: "RHEL"
 description: "Partiel — utiliser les fiches système Rocky Linux 9 comme repère d’exploitation uniquement. Les abonnements, dépôts, support éditeur et particularités RHEL ne sont pas couverts par ces fiches."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "05-systemes-annuaires-et-services", "partiel"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 RHEL

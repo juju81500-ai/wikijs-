@@ -2,11 +2,11 @@
 title: "Haute disponibilité de pare-feu OPNsense avec CARP et pfsync"
 description: "Fiche simple : [préparer le basculement](../../../../01-fiches-simples/opnsense/toutes-versions/vie-du-logiciel/carp-pfsync-ha/fiche-simple-appliance-opnsense-carp-pfsync-preparer-basculement.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["opnsense", "carp", "pfsync", "ha", "firewall", "reseau"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Haute disponibilité de pare-feu OPNsense avec CARP et pfsync

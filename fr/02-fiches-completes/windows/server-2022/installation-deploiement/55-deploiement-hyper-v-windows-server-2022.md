@@ -2,11 +2,11 @@
 title: "Déployer Hyper-V sur Windows Server 2022"
 description: "Fiche simple : [préparer l'hôte](../../../../01-fiches-simples/windows/server-2022/vie-du-logiciel/hyper-v/fiche-simple-vm-windows-server-2022-hyper-v-preparer-hote.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["hyper-v", "windows-server-2022", "virtualisation", "vm", "powershell"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Hyper-V sur Windows Server 2022

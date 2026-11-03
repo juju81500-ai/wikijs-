@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Proxmox VE 8 Vie Systeme 28 Gestion Fine Des Privileges"
 description: "Donner des droits d'administration précis sans partager root."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmoxve8", "vie-du-systeme", "cycle-de-vie", "etape-28"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Proxmox_VE_8_Vie_Systeme_28_Gestion_Fine_Des_Privileges

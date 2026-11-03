@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-kubeadm-sauvegarde-mise-a-jour"
 description: "Protéger l'état du cluster et organiser les mises à niveau/migrations selon la documentation de la version."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "kubeadm", "etcd", "backup", "upgrade"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-kubeadm-sauvegarde-mise-a-jour.md

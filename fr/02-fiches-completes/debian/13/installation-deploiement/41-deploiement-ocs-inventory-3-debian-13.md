@@ -2,11 +2,11 @@
 title: "Déployer OCS Inventory 3.0 sur Debian 13"
 description: "Fiche simple : [cadrer l'architecture OCS](../../../../01-fiches-simples/debian/13/vie-du-logiciel/ocs-inventory/fiche-simple-vm-debian-13-ocs-inventory-cadrer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["ocs-inventory", "ocs3", "debian13", "postgresql17", "inventaire", "nginx"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer OCS Inventory 3.0 sur Debian 13

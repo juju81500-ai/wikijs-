@@ -2,11 +2,11 @@
 title: "Déployer BIND 9 comme serveur DNS autoritatif sur Debian 13"
 description: "Fiche simple : [cadrer le périmètre autoritatif](../../../../01-fiches-simples/debian/13/vie-du-logiciel/bind9/fiche-simple-vm-debian-13-bind9-autoritatif-cadrer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["debian13", "bind9", "dns", "authoritative", "hardening", "lab"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer BIND 9 comme serveur DNS autoritatif sur Debian 13

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-12-borg-securiser-verifier"
 description: "Protéger l'accès au dépôt et vérifier son intégrité sans perturber les sauvegardes et services en production."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "borgbackup", "borg-check", "encryption", "offsite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-12-borg-securiser-verifier.md

@@ -2,11 +2,11 @@
 title: "fiche-simple-hote-proxmox-backup-server-tester-restauration"
 description: "Prouver qu'une sauvegarde est restaurable."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmox-backup-server", "pbs3", "proxmox", "sauvegarde", "restauration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-proxmox-backup-server-tester-restauration.md

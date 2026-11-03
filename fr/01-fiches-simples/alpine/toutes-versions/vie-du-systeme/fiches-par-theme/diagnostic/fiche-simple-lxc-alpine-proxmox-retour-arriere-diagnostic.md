@@ -2,11 +2,11 @@
 title: "fiche-simple-lxc-alpine-proxmox-retour-arriere-diagnostic"
 description: "Rétablir l'accès ou le service après un problème réseau ou applicatif sans supprimer de CT, volume ou sauvegarde par erreur."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine", "proxmox", "lxc", "rollback", "diagnostic"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-lxc-alpine-proxmox-retour-arriere-diagnostic.md

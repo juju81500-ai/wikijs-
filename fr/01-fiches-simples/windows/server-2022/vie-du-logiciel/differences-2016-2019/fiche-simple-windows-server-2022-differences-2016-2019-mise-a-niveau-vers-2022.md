@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 Differences 2016 2019 Mise A Niveau Vers 2022"
 description: "Réaliser une mise à niveau en place de Windows Server 2016 ou 2019 vers 2022 en limitant le risque."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server", "windows-server-2016", "windows-server-2019", "windows-server-2022", "mise-a-niveau", "in-place-upgrade", "migration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_Differences_2016_2019_Mise_A_Niveau_Vers_2022

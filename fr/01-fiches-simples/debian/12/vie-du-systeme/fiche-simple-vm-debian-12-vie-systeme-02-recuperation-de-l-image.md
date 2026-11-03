@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 12 Vie Systeme 02 Recuperation De L Image"
 description: "Obtenir l'image officielle de Debian 12."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "vie-du-systeme", "cycle-de-vie", "etape-02"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_12_Vie_Systeme_02_Recuperation_De_L_Image

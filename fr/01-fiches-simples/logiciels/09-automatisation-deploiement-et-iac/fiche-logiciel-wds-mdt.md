@@ -1,12 +1,12 @@
 ---
 title: "WDS + MDT"
-description: "Série Windows Server 2022 en 7 fiches : prérequis, installation, configuration, sécurisation, recette PXE, sauvegarde et maintenance. La [procédure historique WDS/MDT](fiche-simple-wds-mdt.md) reste disponible et n’est pas dupliquée. Windows Server 2025 : non couvert — Microsoft documente que le dép"
+description: "Série Windows Server 2022 en 7 fiches : prérequis, installation, configuration, sécurisation, recette [[Glossary:PXE]], sauvegarde et maintenance. La [procédure historique WDS/MDT](fiche-simple-wds-mdt.md) reste disponible et n’est pas dupliquée. Windows Server 2025 : non couvert — Microsoft documen"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "09-automatisation-deploiement-et-iac", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 WDS + MDT

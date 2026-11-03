@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-ubuntu-24-04-securite-diagnostic-apparmor"
 description: "Identifier un refus AppArmor affectant une application Ubuntu et corriger le profil de façon ciblée sans désactiver le contrôle."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu24-04", "ubuntu", "apparmor", "securite", "audit", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-ubuntu-24-04-securite-diagnostic-apparmor.md

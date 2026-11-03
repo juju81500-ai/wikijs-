@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Nextcloud Prerequis Limites"
 description: "Vérifier la compatibilité d'une VM Debian 13 avec Nextcloud installé depuis l'archive officielle (le paquet n'est pas fourni par Debian 13)."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "nextcloud", "cloud", "apache", "php", "prerequis-limites"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Nextcloud_Prerequis_Limites

@@ -1,12 +1,12 @@
 ---
 title: "Snort"
-description: "Couvert — Snort IDS passif sur Debian 13, Ubuntu 24-04 et Rocky Linux 9 (Snort 3 compilé depuis les sources officielles sur Ubuntu/Rocky; disponibilité des paquets à vérifier). Le mode inline/IPS et le blocage ne sont pas couverts."
+description: "Couvert — Snort [[Glossary:IDS]] passif sur Debian 13, Ubuntu 24-04 et Rocky Linux 9 (Snort 3 compilé depuis les sources officielles sur Ubuntu/Rocky; disponibilité des paquets à vérifier). Le mode inline/IPS et le blocage ne sont pas couverts."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "04-reseau-et-cybersecurite", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Snort

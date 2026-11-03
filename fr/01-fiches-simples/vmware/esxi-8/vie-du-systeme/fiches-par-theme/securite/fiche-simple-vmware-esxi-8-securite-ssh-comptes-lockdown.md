@@ -2,11 +2,11 @@
 title: "fiche-simple-vmware-esxi-8-securite-ssh-comptes-lockdown"
 description: "Activer SSH et l'ESXi Shell uniquement le temps d'une intervention, créer des comptes d'administration nominatifs avec droits limités, restreindre le service SSH aux postes d'administration et activer le mode lockdown."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["vmware-esxi-8", "ssh", "esxi-shell", "lockdown", "comptes", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vmware-esxi-8-securite-ssh-comptes-lockdown.md

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Alpine 3.19 Vie Systeme 35 Controle D Acces Obligatoire"
 description: "Alpine n'active ni SELinux ni AppArmor par défaut; vérifier l'état et compenser."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine319", "vie-du-systeme", "cycle-de-vie", "etape-35"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_35_Controle_D_Acces_Obligatoire

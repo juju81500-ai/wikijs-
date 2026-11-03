@@ -2,11 +2,11 @@
 title: "Fiche Simple - GitHub Actions Secrets"
 description: "Stocker un secret Actions au périmètre minimal puis le consommer sans l’inclure dans le dépôt ou les logs."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["github", "cloud-saas", "actions-secrets", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_GitHub_Actions_Secrets

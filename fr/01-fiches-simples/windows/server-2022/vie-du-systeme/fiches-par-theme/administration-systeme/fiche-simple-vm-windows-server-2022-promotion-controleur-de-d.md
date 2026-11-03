@@ -1,12 +1,12 @@
 ---
 title: "VM_WinSrv_2022_ADDS_Promotion-Controleur-Domaine"
-description: "Installer le rôle AD DS (Services de domaine Active Directory), promouvoir la machine en premier Contrôleur de Domaine (DC) de la forêt et sécuriser l'annuaire."
+description: "Installer le rôle AD DS (Services de domaine Active Directory), promouvoir la machine en premier Contrôleur de Domaine ([[Glossary:DC]]) de la forêt et sécuriser l'annuaire."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["winsrv2022", "windows-family", "active-directory", "adds", "dns", "gui", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_WinSrv_2022_ADDS_Promotion-Controleur-Domaine.md

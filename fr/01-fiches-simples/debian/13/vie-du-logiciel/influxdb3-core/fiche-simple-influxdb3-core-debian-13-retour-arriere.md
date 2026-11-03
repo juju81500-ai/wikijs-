@@ -2,11 +2,11 @@
 title: "Fiche simple — Préparer le retour arrière InfluxDB 3 Core"
 description: "Éviter qu'une mise à jour ou configuration défectueuse ne rende les données et le service irrécupérables."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "influxdb3-core", "rollback", "upgrade", "changement"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche simple — Préparer le retour arrière InfluxDB 3 Core

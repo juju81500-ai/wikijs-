@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Ubuntu 24.04 OpenStack DevStack Installer Lab"
-description: "Installer un OpenStack mono-nœud de développement pour tester concepts et API, sans exposition ni charge de production."
+description: "Installer un OpenStack mono-nœud de développement pour tester concepts et [[Glossary:API]], sans exposition ni charge de production."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["openstack", "devstack", "ubuntu2404", "lab", "non-production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_OpenStack_DevStack_Installer_Lab

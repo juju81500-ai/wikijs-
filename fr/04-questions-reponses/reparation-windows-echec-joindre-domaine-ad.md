@@ -2,11 +2,11 @@
 title: "Réparation : un poste Windows ne peut pas joindre le domaine Active Directory"
 description: "Ouvrir PowerShell en administrateur :"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["reparation", "windows", "active-directory", "dns", "domaine"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Réparation : un poste Windows ne peut pas joindre le domaine Active Directory

@@ -2,11 +2,11 @@
 title: "Déployer FreeIPA (Identity Management) sur Rocky Linux 9"
 description: "Fiche simple : [cadrer le périmètre FreeIPA](../../../../01-fiches-simples/rocky-linux/9/vie-du-logiciel/freeipa/fiche-simple-vm-rocky-9-freeipa-cadrer-perimetre.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["freeipa", "idm", "rocky-linux-9", "kerberos", "ldap", "ipa-server-install", "ipa-backup"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer FreeIPA (Identity Management) sur Rocky Linux 9

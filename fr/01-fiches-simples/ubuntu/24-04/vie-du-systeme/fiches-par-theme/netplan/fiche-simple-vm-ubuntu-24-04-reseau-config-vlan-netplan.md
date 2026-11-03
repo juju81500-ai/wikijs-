@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-ubuntu-24-04-reseau-config-vlan-netplan"
 description: "Configurer une interface VLAN 802.1Q persistante avec Netplan sous Ubuntu Server, après validation du VLAN côté hyperviseur ou switch."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu24-04", "ubuntu", "netplan", "vlan", "8021q", "networkd"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-ubuntu-24-04-reseau-config-vlan-netplan.md

@@ -2,11 +2,11 @@
 title: "fiche-simple-appliance-opnsense-carp-pfsync-creer-vip-carp"
 description: "Créer les adresses virtuelles CARP identiques sur les deux pare-feu."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["opnsense", "carp", "pfsync", "ha", "firewall"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-appliance-opnsense-carp-pfsync-creer-vip-carp.md

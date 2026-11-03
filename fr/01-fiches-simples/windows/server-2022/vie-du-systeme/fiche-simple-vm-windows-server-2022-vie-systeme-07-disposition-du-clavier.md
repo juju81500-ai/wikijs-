@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows Server 2022 Vie Systeme 07 Disposition Du Clavier"
 description: "Configurer la disposition de clavier correcte, y compris à l'écran de connexion."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windowsserver2022", "vie-du-systeme", "cycle-de-vie", "etape-07"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_Server_2022_Vie_Systeme_07_Disposition_Du_Clavier

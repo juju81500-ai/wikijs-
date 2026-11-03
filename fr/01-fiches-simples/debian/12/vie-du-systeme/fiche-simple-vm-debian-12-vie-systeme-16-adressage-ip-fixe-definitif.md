@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 12 Vie Systeme 16 Adressage Ip Fixe Definitif"
 description: "Configurer une adresse IPv4 statique avec le gestionnaire réseau réellement utilisé par le serveur, sans perdre l'accès d'administration."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "vie-du-systeme", "cycle-de-vie", "etape-16"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_12_Vie_Systeme_16_Adressage_Ip_Fixe_Definitif

@@ -1,12 +1,12 @@
 ---
 title: "VM_Win10_Systeme_Activer-Bureau-A-Distance-RDP"
-description: "Activer le service Bureau à distance (RDP) sur un poste client Windows 10, autoriser les connexions dans le pare-feu local et imposer l'authentification NLA (Network Level Authentication)."
+description: "Activer le service Bureau à distance (RDP) sur un poste client Windows 10, autoriser les connexions dans le pare-feu local et imposer l'authentification [[Glossary:NLA]] (Network Level Authentication)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-10", "rdp", "bureau-a-distance", "gui", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Win10_Systeme_Activer-Bureau-A-Distance-RDP.md

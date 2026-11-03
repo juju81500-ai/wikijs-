@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Ubuntu 26.04 Diagnostic Journalctl Erreurs"
 description: "Identifier rapidement les erreurs critiques d'un serveur Ubuntu 26-04 (services en échec, erreurs du noyau, erreurs de disque) à partir du journal systemd et des messages du noyau, avant de corriger la cause."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "journalctl", "dmesg", "systemd", "diagnostic", "erreurs"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Diagnostic_Journalctl_Erreurs

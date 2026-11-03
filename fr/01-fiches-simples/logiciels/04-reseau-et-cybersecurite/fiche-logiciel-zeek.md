@@ -1,12 +1,12 @@
 ---
 title: "Zeek"
-description: "Couvert — Zeek 8.0 LTS en capteur passif/standalone sur Debian 13 et Ubuntu 24-04 (dépôt OBS), et sur Rocky Linux 9 via image conteneur Podman officielle. Cluster et haute disponibilité non couverts."
+description: "Couvert — Zeek 8.0 [[Glossary:LTS]] en capteur passif/standalone sur Debian 13 et Ubuntu 24-04 (dépôt OBS), et sur Rocky Linux 9 via image conteneur Podman officielle. Cluster et haute disponibilité non couverts."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "04-reseau-et-cybersecurite", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Zeek

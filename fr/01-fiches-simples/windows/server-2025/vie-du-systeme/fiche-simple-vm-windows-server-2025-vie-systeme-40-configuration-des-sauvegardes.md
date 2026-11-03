@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows Server 2025 Vie Systeme 40 Configuration Des Sauvegardes"
 description: "Mettre en place la sauvegarde du serveur."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windowsserver2025", "vie-du-systeme", "cycle-de-vie", "etape-40"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Fiche_Simple_-_VM_Windows_Server_2025_Vie_Systeme_40_Configuration_Des_Sauvegardes

@@ -2,11 +2,11 @@
 title: "Déployer Visual Studio Code Stable 1.143.1 sur Debian 13"
 description: "Fiche simple : [cadrer version et périmètre](../../../../01-fiches-simples/debian/13/vie-du-logiciel/vs-code/fiche-simple-vm-debian-13-vscode-version.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["vscode", "visual-studio-code", "debian13", "apt", "workspace-trust", "extensions"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer Visual Studio Code Stable 1.143.1 sur Debian 13

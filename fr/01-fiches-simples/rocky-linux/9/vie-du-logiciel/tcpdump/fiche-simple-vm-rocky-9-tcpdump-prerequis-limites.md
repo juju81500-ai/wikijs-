@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Rocky 9 tcpdump Prerequis Limites"
 description: "Cadrer l’usage autorisé de tcpdump sur VM Rocky Linux 9 avant toute capture : périmètre, durée, données concernées et limites techniques."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["tcpdump", "rocky9", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_9_tcpdump_Prerequis_Limites

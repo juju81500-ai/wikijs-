@@ -1,12 +1,12 @@
 ---
 title: "Proxmox / OpenStack"
-description: "Partiel — Proxmox VE est couvert par ses fiches dédiées; OpenStack est limité ici à un lab DevStack jetable sur Ubuntu Server 24-04 LTS et à des repères d’architecture/API. Aucune intégration native/supportée entre Proxmox VE et OpenStack n’est revendiquée; aucune procédure de production OpenStack n"
+description: "Partiel — Proxmox VE est couvert par ses fiches dédiées; OpenStack est limité ici à un lab DevStack jetable sur Ubuntu Server 24-04 [[Glossary:LTS]] et à des repères d’architecture/API. Aucune intégration native/supportée entre Proxmox VE et OpenStack n’est revendiquée; aucune procédure de productio"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "10-cloud-public-et-hybride", "partiel"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Proxmox / OpenStack

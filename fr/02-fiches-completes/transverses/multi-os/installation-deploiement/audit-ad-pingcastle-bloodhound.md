@@ -1,12 +1,12 @@
 ---
 title: "Auditer Active Directory avec PingCastle et BloodHound en mode défensif"
-description: "Évaluer l'hygiène et les chemins d'attaque d'un domaine pour corriger les faiblesses, sans exploitation. La collecte ne se fait que sur un domaine autorisé, avec accord du responsable de l'annuaire et du RSSI."
+description: "Évaluer l'hygiène et les chemins d'attaque d'un domaine pour corriger les faiblesses, sans exploitation. La collecte ne se fait que sur un domaine autorisé, avec accord du responsable de l'annuaire et du [[Glossary:RSSI]]."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["pingcastle", "bloodhound", "active-directory", "audit", "defensif"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Auditer Active Directory avec PingCastle et BloodHound en mode défensif

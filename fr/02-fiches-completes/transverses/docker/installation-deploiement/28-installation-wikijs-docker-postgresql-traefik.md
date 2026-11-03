@@ -2,11 +2,11 @@
 title: "Installer Wiki.js avec PostgreSQL et Traefik"
 description: "Fiche simple : [préparer l'hôte et le DNS](../../../../01-fiches-simples/transverses/docker/wikijs/fiche-simple-docker-wikijs-preparer-hote-dns.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["wikijs", "docker", "compose", "postgresql", "traefik", "tls", "installation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Installer Wiki.js avec PostgreSQL et Traefik

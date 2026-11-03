@@ -2,11 +2,11 @@
 title: "Déployer NetBox 4.7.4 sur Debian 13"
 description: "Fiche simple : [cadrer le pilote NetBox](../../../../01-fiches-simples/debian/13/vie-du-logiciel/netbox/fiche-simple-vm-debian-13-netbox-cadrer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["netbox", "ipam", "dcim", "debian13", "postgresql", "redis", "nginx"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer NetBox 4.7.4 sur Debian 13

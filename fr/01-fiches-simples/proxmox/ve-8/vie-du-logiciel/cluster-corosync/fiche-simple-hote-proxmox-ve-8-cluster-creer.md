@@ -2,11 +2,11 @@
 title: "fiche-simple-hote-proxmox-ve-8-cluster-creer"
 description: "Créer le cluster sur un premier nœud puis y joindre les autres."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["proxmox-ve", "pve8", "cluster", "corosync", "creation", "pvecm"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-proxmox-ve-8-cluster-creer.md

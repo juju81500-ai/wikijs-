@@ -2,11 +2,11 @@
 title: "Sauvegarder et restaurer Ubuntu Server avec Restic"
 description: "Fiche simple : [définir les données et le dépôt](../../../../01-fiches-simples/ubuntu/toutes-versions/vie-du-logiciel/restic/fiche-simple-vm-ubuntu-restic-definir-donnees-depot.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["ubuntu-server", "ubuntu-24-04", "ubuntu-26-04", "restic", "sauvegarde", "restauration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Sauvegarder et restaurer Ubuntu Server avec Restic

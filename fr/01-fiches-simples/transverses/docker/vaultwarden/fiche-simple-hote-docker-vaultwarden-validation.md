@@ -2,11 +2,11 @@
 title: "fiche-simple-hote-docker-vaultwarden-validation"
 description: "Contrôler que le service est joignable en HTTPS, fermé aux tiers et restaurable."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["docker", "vaultwarden", "validation", "recette"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-docker-vaultwarden-validation.md

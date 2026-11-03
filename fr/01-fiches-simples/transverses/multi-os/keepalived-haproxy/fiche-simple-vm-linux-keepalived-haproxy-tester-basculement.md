@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-linux-keepalived-haproxy-tester-basculement"
-description: "Vérifier que l'IP virtuelle bascule correctement."
+description: "Vérifier que l'[[Glossary:IP]] virtuelle bascule correctement."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ha", "keepalived", "vrrp", "haproxy", "linux"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-linux-keepalived-haproxy-tester-basculement.md

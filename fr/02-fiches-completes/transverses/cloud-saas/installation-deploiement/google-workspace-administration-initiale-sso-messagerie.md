@@ -1,12 +1,12 @@
 ---
 title: "Administrer Google Workspace : mise en service, sécurité, SSO et messagerie"
-description: "- Couvre l'administration d'un tenant Google Workspace via la console d'administration. Google Cloud Platform (projets, IAM) est un produit distinct."
+description: "- Couvre l'administration d'un tenant Google Workspace via la console d'administration. Google Cloud Platform (projets, [[Glossary:IAM]]) est un produit distinct."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["google-workspace", "saas", "sso", "gmail", "2sv"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Administrer Google Workspace : mise en service, sécurité, SSO et messagerie

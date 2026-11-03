@@ -1,12 +1,12 @@
 ---
 title: "Réseaux et protocoles"
-description: "Diagnostics partagés pour adressage, ports, DNS, DHCP, VLAN, VPN et proxy. Les changements de configuration restent dans les procédures par OS."
+description: "Diagnostics partagés pour adressage, ports, [[Glossary:DNS]], [[Glossary:DHCP]], [[Glossary:VLAN]], [[Glossary:VPN]] et proxy. Les changements de configuration restent dans les procédures par OS."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["transverse", "tout-en-un", "reseau"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Réseaux et protocoles

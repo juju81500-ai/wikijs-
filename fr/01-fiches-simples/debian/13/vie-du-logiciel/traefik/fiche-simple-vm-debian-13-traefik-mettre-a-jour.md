@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Traefik Mettre A Jour"
 description: "Mettre à jour le binaire Traefik et revenir à la version précédente si nécessaire."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "traefik", "mise-a-jour"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Traefik_Mettre_A_Jour

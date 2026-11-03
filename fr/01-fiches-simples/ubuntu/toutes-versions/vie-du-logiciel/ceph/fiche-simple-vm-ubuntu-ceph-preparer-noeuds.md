@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-ubuntu-ceph-preparer-noeuds"
-description: "Préparer chaque hôte (paquets, NTP, conteneurs, pare-feu) avant l'installation de cephadm."
+description: "Préparer chaque hôte (paquets, [[Glossary:NTP]], conteneurs, pare-feu) avant l'installation de cephadm."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2204", "ceph", "tentacle", "cephadm"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-ubuntu-ceph-preparer-noeuds.md

@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-rocky-9-systeme-hostname-fqdn"
-description: "Définir le nom d'hôte statique et le FQDN d'une VM Rocky Linux 9 avec hostnamectl, afin que les journaux, les certificats, l'annuaire et le DNS utilisent le même nom."
+description: "Définir le nom d'hôte statique et le [[Glossary:FQDN]] d'une VM Rocky Linux 9 avec hostnamectl, afin que les journaux, les certificats, l'annuaire et le [[Glossary:DNS]] utilisent le même nom."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "rhel9", "hostname", "fqdn", "systemd", "dns"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-rocky-9-systeme-hostname-fqdn.md

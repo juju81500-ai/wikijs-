@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-ubuntu-26-04-installation-os-premier-demarrage"
 description: "Installer Ubuntu Server 26-04 LTS sur une nouvelle VM et vérifier les changements de base par rapport à 24-04 avant de reprendre une fiche ou un script plus ancien."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu26-04", "ubuntu", "resolute", "installation", "apt3", "systemd259"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-ubuntu-26-04-installation-os-premier-demarrage.md

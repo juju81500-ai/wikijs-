@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Ubuntu 24.04 Systeme Hostname FQDN"
-description: "Définir le nom d'hôte statique et le FQDN d'un serveur Ubuntu 24-04 LTS, vérifier leur résolution locale et éviter qu'une réécriture de /etc/hosts par cloud-init ne les annule."
+description: "Définir le nom d'hôte statique et le [[Glossary:FQDN]] d'un serveur Ubuntu 24-04 LTS, vérifier leur résolution locale et éviter qu'une réécriture de /etc/hosts par cloud-init ne les annule."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu24-04", "ubuntu", "hostname", "fqdn", "hostnamectl", "etc-hosts"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Systeme_Hostname_FQDN

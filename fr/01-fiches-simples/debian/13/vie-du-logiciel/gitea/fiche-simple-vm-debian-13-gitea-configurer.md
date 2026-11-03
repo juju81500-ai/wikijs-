@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Gitea Configurer"
 description: "Configurer URL canonique, écoute locale et compte administrateur pour une première instance isolée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "gitea", "forge-git", "tls", "sauvegarde"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Gitea_Configurer

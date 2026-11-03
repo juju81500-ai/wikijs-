@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 WDS MDT Configurer"
 description: "Initialiser WDS, créer le partage de déploiement MDT, importer un système, générer l'image de démarrage LiteTouch, la publier dans WDS et créer une séquence de tâches. Installation préalable : [fiche Installer](./fiche-simple-windows-server-2022-wds-mdt-installer.md). Le durcissement est traité dans"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "wds", "mdt", "configuration", "pxe"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_WDS_MDT_Configurer

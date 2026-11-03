@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - Cloud AWS VM Linux Windows Cles"
-description: "VM Linux et Windows avec accès par clé dans AWS en limitant les risques de sécurité, de disponibilité et de coût."
+description: "[[Glossary:VM]] Linux et Windows avec accès par clé dans AWS en limitant les risques de sécurité, de disponibilité et de coût."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["aws", "vm-linux-windows-cles", "securite", "procedure"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Cloud_AWS_VM_Linux_Windows_Cles

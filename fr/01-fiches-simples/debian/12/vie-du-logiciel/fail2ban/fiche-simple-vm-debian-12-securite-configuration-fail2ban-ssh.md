@@ -1,12 +1,12 @@
 ---
 title: "VM_Debian_12_Securite_Configuration-Fail2ban-SSH"
-description: "Installer et configurer Fail2ban sur Debian 12 pour détecter et bannir automatiquement les adresses IP effectuant des attaques par force brute SSH via nftables."
+description: "Installer et configurer Fail2ban sur Debian 12 pour détecter et bannir automatiquement les adresses [[Glossary:IP]] effectuant des attaques par force brute [[Glossary:SSH]] via nftables."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "debian-family", "fail2ban", "ssh", "nftables", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_12_Securite_Configuration-Fail2ban-SSH.md

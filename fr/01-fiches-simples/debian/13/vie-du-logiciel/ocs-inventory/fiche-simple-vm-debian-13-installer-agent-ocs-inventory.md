@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-vm-debian-13-installer-agent-ocs-inventory"
-description: "Installer l'agent OCS 3 depuis le dépôt officiel et le configurer pour remonter un inventaire vers une API autorisée."
+description: "Installer l'agent OCS 3 depuis le dépôt officiel et le configurer pour remonter un inventaire vers une [[Glossary:API]] autorisée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "ocs-inventory", "agent", "inventaire", "https"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-debian-13-installer-agent-ocs-inventory.md

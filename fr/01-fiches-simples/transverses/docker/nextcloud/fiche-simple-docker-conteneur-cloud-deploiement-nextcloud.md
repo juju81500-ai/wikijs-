@@ -2,11 +2,11 @@
 title: "Docker_Conteneur_Cloud_Deploiement-Nextcloud"
 description: "Déployer la plateforme de cloud privé Nextcloud en conteneurs Docker avec base de données MariaDB et cache mémoire Redis pour les performances de verrouillage de fichiers, configurer les volumes de persistance et sécuriser l'instance."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["docker", "nextcloud", "mariadb", "redis", "cloud-prive", "docker-compose", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Docker_Conteneur_Cloud_Deploiement-Nextcloud.md

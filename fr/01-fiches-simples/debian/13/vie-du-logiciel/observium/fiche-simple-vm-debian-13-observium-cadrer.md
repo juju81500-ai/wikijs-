@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-observium-cadrer"
 description: "Vérifier le périmètre Community, les prérequis et le dimensionnement avant d'installer."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "observium", "community", "dimensionnement"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-observium-cadrer.md

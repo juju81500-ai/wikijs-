@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 SQL-Server Prerequis Limites"
 description: "Vérifier que le serveur Windows est prêt pour SQL Server 2022 et connaître les limites du périmètre avant l'installation."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "sql-server", "sqlserver-2022", "prerequis"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_SQL-Server_Prerequis_Limites

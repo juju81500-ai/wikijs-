@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows 11 MobaXterm Prerequis"
 description: "Vérifier qu'un poste Windows 11 est prêt à recevoir MobaXterm (édition, droits, réseau, politique de sécurité)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["mobaxterm", "windows11", "prerequis"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_11_MobaXterm_Prerequis

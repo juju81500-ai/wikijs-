@@ -2,11 +2,11 @@
 title: "Installer et préparer IIS sur Windows Server 2022"
 description: "Fiche simple : [vérifier périmètre et prérequis](../../../../01-fiches-simples/windows/server-2022/vie-du-logiciel/iis/fiche-simple-vm-windows-server-2022-iis-perimetre-prerequis.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["iis", "windows-server-2022", "web-server", "tls", "application-pool", "installation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Installer et préparer IIS sur Windows Server 2022

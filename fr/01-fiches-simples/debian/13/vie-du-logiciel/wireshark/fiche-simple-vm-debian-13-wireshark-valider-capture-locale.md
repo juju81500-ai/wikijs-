@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-wireshark-valider-capture-locale"
 description: "Vérifier l'installation et l'analyse d'une capture de test sans lancer Wireshark en root ni enregistrer des paquets hors du périmètre autorisé."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "wireshark", "dumpcap", "pcapng", "diagnostic", "confidentialite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-wireshark-valider-capture-locale.md

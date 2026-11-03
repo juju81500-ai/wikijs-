@@ -2,11 +2,11 @@
 title: "fiche-simple-truenas-scale-25-10-securite-admin-ssh"
 description: "Créer un compte administrateur nominatif, déposer sa clé SSH, désactiver la connexion root par mot de passe et vérifier la configuration effective de sshd, sans perdre l'accès à l'interface web."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenas", "scale2510", "debian", "ssh", "sudo", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-truenas-scale-25-10-securite-admin-ssh.md

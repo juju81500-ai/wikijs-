@@ -1,12 +1,12 @@
 ---
 title: "Microsoft MECM / SCCM"
-description: "Série de fiches de mise en œuvre, d’exploitation et de maintenance MECM/SCCM sous Windows Server 2022. Les matrices de prise en charge SQL, ADK/WinPE et versions Configuration Manager doivent être vérifiées sur Microsoft Learn avant déploiement. Windows Server 2025 : la page Microsoft Learn « Suppor"
+description: "Série de fiches de mise en œuvre, d’exploitation et de maintenance MECM/SCCM sous Windows Server 2022. Les matrices de prise en charge [[Glossary:SQL]], [[Glossary:ADK]]/WinPE et versions Configuration Manager doivent être vérifiées sur Microsoft Learn avant déploiement. Windows Server 2025 : la pag"
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["logiciel", "09-automatisation-deploiement-et-iac", "couvert"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Microsoft MECM / SCCM

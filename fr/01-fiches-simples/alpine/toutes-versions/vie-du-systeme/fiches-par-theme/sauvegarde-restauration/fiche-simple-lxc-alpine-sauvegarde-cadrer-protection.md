@@ -2,11 +2,11 @@
 title: "fiche-simple-lxc-alpine-sauvegarde-cadrer-protection"
 description: "Définir ce qui doit être protégé et comment restaurer un CT Alpine sans confondre sauvegarde du conteneur et sauvegarde cohérente de l'application."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine", "proxmox", "lxc", "backup", "rpo", "rto"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-lxc-alpine-sauvegarde-cadrer-protection.md

@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 FOG Project Prerequis Limites"
 description: "Vérifier, avant toute installation, que FOG est supporté sur Debian 13 et qu'il ne perturbera pas le réseau existant."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "fog-project", "prerequis", "limites", "pxe"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_FOG_Project_Prerequis_Limites

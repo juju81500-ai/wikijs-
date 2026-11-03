@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 MongoDB Securiser"
 description: "Activer l'authentification et TLS sur MongoDB et filtrer le port 27017."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "mongodb", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_MongoDB_Securiser

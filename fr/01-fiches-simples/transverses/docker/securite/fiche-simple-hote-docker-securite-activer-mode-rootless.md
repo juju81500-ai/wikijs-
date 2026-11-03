@@ -2,11 +2,11 @@
 title: "fiche-simple-hote-docker-securite-activer-mode-rootless"
 description: "Exécuter le démon Docker sous un compte utilisateur non privilégié avec le mode rootless, sans donner à ce compte l'accès au socket système rootful."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["docker", "rootless", "debian", "ubuntu", "hardening", "conteneurs"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-hote-docker-securite-activer-mode-rootless.md

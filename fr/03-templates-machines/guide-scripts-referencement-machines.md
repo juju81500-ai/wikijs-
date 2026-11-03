@@ -2,11 +2,11 @@
 title: "Guide — scripts de référencement des machines"
 description: "Trois scripts de ce dossier facilitent le référencement. Ils sont en lecture seule : ils ne modifient ni la machine ni le dépôt, hormis le fichier de sortie qu'ils écrivent. Les champs qu'ils ne peuvent pas détecter restent à compléter à la main."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["template", "fiche-machine", "script", "referentiel"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Guide — scripts de référencement des machines

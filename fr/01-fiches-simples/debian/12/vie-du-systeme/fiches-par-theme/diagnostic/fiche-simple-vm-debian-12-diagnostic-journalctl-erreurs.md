@@ -2,11 +2,11 @@
 title: "VM_Debian_12_Diagnostic-Journalctl-Erreurs"
 description: "Identifier rapidement les erreurs système d'un serveur Debian 12 : messages de niveau err et plus, unités systemd en échec, erreurs noyau et historique du démarrage précédent, pour diagnostiquer un incident sans parcourir les fichiers bruts."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian12", "debian-family", "journalctl", "systemd", "dmesg", "diagnostic", "logs"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 VM_Debian_12_Diagnostic-Journalctl-Erreurs.md

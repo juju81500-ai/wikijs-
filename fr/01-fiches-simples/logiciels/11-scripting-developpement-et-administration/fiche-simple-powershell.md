@@ -2,11 +2,11 @@
 title: "PowerShell"
 description: "Installer et valider PowerShell 7.6.9 sur Windows 11 (et sur Debian 13 pour PowerShell 7), vérifier quel shell est actif, puis exécuter des contrôles en lecture seule sans affaiblir la stratégie d'exécution."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-11", "debian13", "powershell", "pwsh", "diagnostic", "administration", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 PowerShell

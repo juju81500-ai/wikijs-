@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-windows-server-2022-controle-mise-production"
 description: "Effectuer la recette d'un serveur Windows Server 2022 avant mise en production : rôle, réseau, accès, pare-feu, journaux, supervision, sauvegarde et reprise."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows-server-2022", "production", "validation", "sauvegarde", "roles", "securite"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # 📄 fiche-simple-vm-windows-server-2022-controle-mise-production.md

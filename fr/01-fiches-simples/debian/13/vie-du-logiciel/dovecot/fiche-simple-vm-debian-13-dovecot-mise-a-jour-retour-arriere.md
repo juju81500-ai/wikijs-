@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 Dovecot Mise A Jour Retour Arriere"
 description: "Mettre à jour Dovecot via Debian 13 et gérer le passage Debian 12 (2.3) vers Debian 13 (2.4) avec retour arrière."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "dovecot", "imap", "messagerie", "mise-a-jour-retour-arriere"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_Dovecot_Mise_A_Jour_Retour_Arriere

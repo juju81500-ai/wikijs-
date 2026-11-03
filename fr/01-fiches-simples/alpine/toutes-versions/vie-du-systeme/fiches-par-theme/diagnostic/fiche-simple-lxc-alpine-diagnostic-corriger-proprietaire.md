@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-lxc-alpine-diagnostic-corriger-proprietaire"
-description: "Corriger uniquement la couche responsable de la panne, sans appliquer au LXC des changements destinés à une VM."
+description: "Corriger uniquement la couche responsable de la panne, sans appliquer au [[Glossary:LXC]] des changements destinés à une [[Glossary:VM]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["alpine", "proxmox", "lxc", "openrc", "firewall", "rollback"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-lxc-alpine-diagnostic-corriger-proprietaire.md

@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-securite-hardening-selinux-enforcing"
 description: "Maintenir SELinux en mode Enforcing et traiter les refus."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "rhel9", "hardening", "selinux", "avc"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-rocky-9-securite-hardening-selinux-enforcing.md

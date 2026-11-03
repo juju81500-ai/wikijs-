@@ -1,12 +1,12 @@
 ---
 title: "Fiche simple — Restreindre l'écoute InfluxDB avant initialisation"
-description: "Empêcher toute exposition réseau de l'API avant la création du premier jeton administrateur."
+description: "Empêcher toute exposition réseau de l'[[Glossary:API]] avant la création du premier jeton administrateur."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "influxdb3-core", "loopback", "systemd", "durcissement"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche simple — Restreindre l'écoute InfluxDB avant initialisation

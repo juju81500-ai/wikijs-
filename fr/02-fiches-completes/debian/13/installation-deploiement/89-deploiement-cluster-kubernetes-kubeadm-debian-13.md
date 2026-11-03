@@ -2,11 +2,11 @@
 title: "Déployer un cluster Kubernetes générique avec kubeadm sur Debian 13"
 description: "Fiche simple : [cadrer le cluster kubeadm](../../../../01-fiches-simples/debian/13/vie-du-logiciel/kubernetes-k3s/fiche-simple-vm-debian-13-kubeadm-cadrer.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["kubernetes", "kubeadm", "kubelet", "containerd", "debian13", "cluster", "cni"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Déployer un cluster Kubernetes générique avec kubeadm sur Debian 13

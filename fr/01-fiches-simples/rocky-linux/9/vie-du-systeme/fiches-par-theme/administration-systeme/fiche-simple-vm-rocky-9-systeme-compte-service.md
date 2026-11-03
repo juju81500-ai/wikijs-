@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-rocky-9-systeme-compte-service"
 description: "Créer un compte système sans shell interactif pour exécuter un service sous Rocky Linux 9, avec un répertoire de données dédié et des droits limités, puis lancer ce service avec systemd sous ce compte."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["rocky9", "rhel9", "useradd", "nologin", "systemd", "hardening"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-vm-rocky-9-systeme-compte-service.md

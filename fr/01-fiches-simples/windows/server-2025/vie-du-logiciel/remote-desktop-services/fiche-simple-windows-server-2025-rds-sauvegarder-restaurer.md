@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2025 RDS Sauvegarder Restaurer"
 description: "Sauvegarder et restaurer la configuration RDS (collections, certificats, base des licences) d'un serveur Windows Server 2025."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows-server-2025", "rds", "sauvegarde", "restauration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2025_RDS_Sauvegarder_Restaurer

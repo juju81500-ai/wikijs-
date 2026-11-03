@@ -2,11 +2,11 @@
 title: "Pile Web sur Rocky Linux 9 : Nginx, PHP-FPM et MariaDB"
 description: "Fiche simple : [prérequis et choix des versions de la pile web](../../../../01-fiches-simples/rocky-linux/9/vie-du-logiciel/pile-web/fiche-simple-vm-rocky-9-pile-web-prerequis-versions.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["rocky9", "rhel9", "nginx", "php-fpm", "mariadb", "lemp", "selinux"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Pile Web sur Rocky Linux 9 : Nginx, PHP-FPM et MariaDB

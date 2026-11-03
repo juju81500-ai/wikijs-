@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Rocky 9 ownCloud Sauvegarder Restaurer"
 description: "Sauvegarder ensemble configuration et données oCIS."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["owncloud", "serveur", "vie-du-logiciel", "sauvegarder-restaurer"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_9_ownCloud_Sauvegarder_Restaurer

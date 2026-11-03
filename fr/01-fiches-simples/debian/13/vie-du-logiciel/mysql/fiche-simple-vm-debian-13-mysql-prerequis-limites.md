@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Debian 13 MySQL Prerequis Limites"
 description: "Vérifier qu'un MySQL Community peut être installé sur Debian 13 et connaître les limites avant de commencer."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "mysql", "prerequis"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Debian_13_MySQL_Prerequis_Limites

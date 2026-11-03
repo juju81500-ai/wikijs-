@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Windows Server 2022 Vie Systeme 15 Chargeur D Amorcage"
 description: "Vérifier l'amorçage UEFI et la partition de démarrage."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windowsserver2022", "vie-du-systeme", "cycle-de-vie", "etape-15"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Windows_Server_2022_Vie_Systeme_15_Chargeur_D_Amorcage

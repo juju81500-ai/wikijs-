@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Rocky 9 Snort Installer"
 description: "Installer Snort 3 et libdaq depuis les sources officielles sur VM Rocky Linux 9."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["snort", "rocky9", "vie-du-logiciel", "installer"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_9_Snort_Installer

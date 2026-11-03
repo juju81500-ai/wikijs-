@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-multi-os-reseau-diagnostic-escalade"
 description: "Rassembler les informations utiles pour transmettre l'incident."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["reseau", "diagnostic", "multi-os", "depannage"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-multi-os-reseau-diagnostic-escalade.md

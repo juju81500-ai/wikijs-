@@ -2,11 +2,11 @@
 title: "fiche-simple-docker-wikijs-sauvegarder-restaurer"
 description: "Sauvegarder la base Wiki.js et préparer une restauration testée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["wikijs", "docker", "compose", "postgresql", "traefik", "tls"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-docker-wikijs-sauvegarder-restaurer.md

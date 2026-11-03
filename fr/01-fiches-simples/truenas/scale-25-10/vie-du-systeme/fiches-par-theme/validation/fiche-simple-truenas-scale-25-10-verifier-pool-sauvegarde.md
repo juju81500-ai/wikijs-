@@ -2,11 +2,11 @@
 title: "fiche-simple-truenas-scale-25-10-verifier-pool-sauvegarde"
 description: "Contrôler la santé d'un pool et prouver qu'un fichier de test peut être restauré."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenas", "scale2510", "zfs", "pool", "snapshot", "restore"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 fiche-simple-truenas-scale-25-10-verifier-pool-sauvegarde.md

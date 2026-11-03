@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Ubuntu 26.04 Systeme Qemu Guest Agent"
-description: "Installer l'agent invité QEMU sur une VM Ubuntu 26-04 pour que l'hyperviseur reçoive l'adresse IP, l'état du système et permette un arrêt propre ou une sauvegarde cohérente du système de fichiers."
+description: "Installer l'agent invité [[Glossary:QEMU]] sur une VM Ubuntu 26-04 pour que l'hyperviseur reçoive l'adresse [[Glossary:IP]], l'état du système et permette un arrêt propre ou une sauvegarde cohérente du système de fichiers."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2604", "qemu-guest-agent", "kvm", "proxmox", "virtualisation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Systeme_Qemu_Guest_Agent

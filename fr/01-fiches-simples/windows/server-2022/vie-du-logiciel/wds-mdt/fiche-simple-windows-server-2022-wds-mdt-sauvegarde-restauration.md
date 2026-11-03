@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 WDS MDT Sauvegarde Restauration"
 description: "Sauvegarder et restaurer la configuration WDS, RemoteInstall et le partage MDT. Une sauvegarde simple du partage figure déjà dans la [procédure historique WDS + MDT](../../../../logiciels/09-automatisation-deploiement-et-iac/fiche-simple-wds-mdt.md); cette fiche ajoute la configuration WDS et la res"
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "wds", "mdt", "sauvegarde", "restauration"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_WDS_MDT_Sauvegarde_Restauration

@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2025 RDS Mise A Jour Retour Arriere"
 description: "Appliquer les mises à jour d'un hôte RDS Windows Server 2025 avec point de retour, vérification et possibilité de revenir en arrière."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["windows-server-2025", "rds", "mise-a-jour", "retour-arriere"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2025_RDS_Mise_A_Jour_Retour_Arriere

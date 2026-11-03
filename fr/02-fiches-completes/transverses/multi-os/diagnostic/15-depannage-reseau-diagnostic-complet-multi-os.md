@@ -2,11 +2,11 @@
 title: "Dépanner un réseau : diagnostic complet multi-OS"
 description: "Fiche simple : [cadrer l'objectif et le périmètre](../../../../01-fiches-simples/transverses/multi-os/diagnostic-reseau/fiche-simple-vm-multi-os-reseau-diagnostic-cadrer-perimetre.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["reseau", "diagnostic", "debian", "ubuntu", "rocky", "alpine", "windows", "docker", "dns", "routage"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Dépanner un réseau : diagnostic complet multi-OS

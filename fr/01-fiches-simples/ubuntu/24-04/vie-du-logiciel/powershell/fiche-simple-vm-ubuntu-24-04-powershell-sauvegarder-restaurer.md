@@ -1,12 +1,12 @@
 ---
 title: "Fiche Simple - VM Ubuntu 24.04 PowerShell Sauvegarder Restaurer"
-description: "Sauvegarder et restaurer l'état de PowerShell 7 : profils, inventaire des modules, configuration SSH."
+description: "Sauvegarder et restaurer l'état de PowerShell 7 : profils, inventaire des modules, configuration [[Glossary:SSH]]."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["ubuntu2404", "powershell", "pwsh", "scripting"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_PowerShell_Sauvegarder_Restaurer

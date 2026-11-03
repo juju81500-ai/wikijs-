@@ -2,11 +2,11 @@
 title: "Diagnostiquer un incident NAS/SAN : SMB, NFS et iSCSI"
 description: "Fiche simple : [protéger les données et cadrer l'incident](../../../../01-fiches-simples/transverses/multi-os/nas-san/fiche-simple-hote-multi-os-nas-san-proteger-donnees-incident.md)."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:29Z
 tags: ["nas", "san", "diagnostic", "samba", "nfs4", "iscsi", "stockage"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:29Z
+dateModified: 2026-11-03T14:22:29Z
 ---
 
 # Diagnostiquer un incident NAS/SAN : SMB, NFS et iSCSI

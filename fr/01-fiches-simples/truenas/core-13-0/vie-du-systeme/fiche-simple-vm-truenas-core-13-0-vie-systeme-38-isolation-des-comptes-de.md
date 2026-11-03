@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM TrueNAS CORE 13.0 Vie Systeme 38 Isolation Des Comptes De"
 description: "Séparer les accès par application."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["truenascore130", "vie-du-systeme", "cycle-de-vie", "etape-38"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_TrueNAS_CORE_13.0_Vie_Systeme_38_Isolation_Des_Comptes_De

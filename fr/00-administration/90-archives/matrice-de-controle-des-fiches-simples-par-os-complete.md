@@ -1,12 +1,12 @@
 ---
 title: "Matrice de Contrôle des Fiches Simples par OS et Actions TSSR"
-description: "Cette matrice récapitule les fiches d'actions simples du Référentiel TSSR et leur état documentaire par environnement."
+description: "Cette matrice récapitule les fiches d'actions simples du Référentiel [[Glossary:TSSR]] et leur état documentaire par environnement."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: []
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Matrice de Contrôle des Fiches Simples par OS et Actions TSSR

@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 MECM Installation"
 description: "Installer un site primaire autonome MECM/SCCM, uniquement après validation de la [fiche Prérequis](./fiche-simple-windows-server-2022-mecm-prerequis.md). Le produit ne s'installe pas sans AD DS, SQL et ADK/WinPE conformes."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "mecm", "sccm", "installation", "site-primaire"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_MECM_Installation

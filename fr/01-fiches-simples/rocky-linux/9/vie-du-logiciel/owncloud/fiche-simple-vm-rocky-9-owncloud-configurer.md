@@ -2,11 +2,11 @@
 title: "Fiche Simple - VM Rocky 9 ownCloud Configurer"
 description: "Initialiser oCIS et l’exécuter via systemd en compte non privilégié."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["owncloud", "serveur", "vie-du-logiciel", "configurer"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_VM_Rocky_9_ownCloud_Configurer

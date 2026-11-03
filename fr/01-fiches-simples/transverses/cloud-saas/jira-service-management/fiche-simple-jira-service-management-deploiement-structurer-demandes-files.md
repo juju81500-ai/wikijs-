@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-jira-service-management-deploiement-structurer-demandes-files"
-description: "Créer request types, files, workflows et SLA alignés sur le processus réel."
+description: "Créer request types, files, workflows et [[Glossary:SLA]] alignés sur le processus réel."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["jira-service-management", "atlassian-cloud", "itsm", "saas"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-jira-service-management-deploiement-structurer-demandes-files.md

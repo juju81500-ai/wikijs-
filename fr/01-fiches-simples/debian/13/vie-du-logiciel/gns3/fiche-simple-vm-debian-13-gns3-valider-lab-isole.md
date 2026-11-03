@@ -2,11 +2,11 @@
 title: "fiche-simple-vm-debian-13-gns3-valider-lab-isole"
 description: "Vérifier qu'un projet GNS3 s'ouvre et s'enregistre sur le serveur local sans pont vers le réseau physique ni image dont l'utilisation n'est pas autorisée."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["debian13", "gns3", "lab", "simulation", "validation", "isolation"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-vm-debian-13-gns3-valider-lab-isole.md

@@ -2,11 +2,11 @@
 title: "Fiche Simple - Windows Server 2022 Exchange Server Mise A Jour CU"
 description: "Appliquer un Cumulative Update (ou une mise à jour de sécurité) sans perte de service et savoir comment revenir en arrière."
 published: true
-date: 2026-11-03T09:36:14Z
+date: 2026-11-03T14:22:28Z
 tags: ["windows-server-2022", "exchange-server", "messagerie", "mise-a-jour", "cumulative-update", "cu"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:14Z
-dateModified: 2026-11-03T09:36:14Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # Fiche_Simple_-_Windows_Server_2022_Exchange_Server_Mise_A_Jour_CU

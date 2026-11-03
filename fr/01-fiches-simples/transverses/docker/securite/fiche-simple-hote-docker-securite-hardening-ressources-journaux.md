@@ -1,12 +1,12 @@
 ---
 title: "fiche-simple-hote-docker-securite-hardening-ressources-journaux"
-description: "Éviter qu'un conteneur sature CPU, mémoire ou disque."
+description: "Éviter qu'un conteneur sature [[Glossary:CPU]], mémoire ou disque."
 published: true
-date: 2026-11-03T09:36:13Z
+date: 2026-11-03T14:22:28Z
 tags: ["docker", "hardening", "securite", "compose", "production"]
 editor: markdown
-dateCreated: 2026-11-03T09:36:13Z
-dateModified: 2026-11-03T09:36:13Z
+dateCreated: 2026-11-03T14:22:28Z
+dateModified: 2026-11-03T14:22:28Z
 ---
 
 # fiche-simple-hote-docker-securite-hardening-ressources-journaux.md
