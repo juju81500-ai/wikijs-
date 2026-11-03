@@ -1,0 +1,4301 @@
+[
+  {
+    "locale": "fr",
+    "term": "AIS",
+    "expansion": "Administrateur d'Infrastructures Sécurisées",
+    "definition": "Titre professionnel de niveau 6 (RNCP37680, ministère du Travail). L'AIS met en œuvre, administre et sécurise les infrastructures locales et cloud, conçoit et met en production des évolutions, déploie la supervision et participe à la gestion de la cybersécurité. Il est responsable du MCO et du MCS et assure un support de niveaux 2 et 3. Trois blocs de compétences : administrer et sécuriser les infrastructures (BC01), concevoir et mettre en œuvre une solution en réponse à un besoin d'évolution (BC02), participer à la gestion de la cybersécurité (BC03).",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "TSSR",
+    "expansion": "Technicien Supérieur Systèmes et Réseaux",
+    "definition": "Titre professionnel de niveau 5 (RNCP37682, remplacé par RNCP42463 pour les sessions postérieures à septembre 2026). Le technicien assure le support aux utilisateurs, l'exploitation quotidienne des serveurs Windows et Linux et du réseau IP, la maintenance de l'infrastructure virtualisée, l'automatisation par scripts, les sauvegardes et le déploiement des postes. Deux blocs : exploiter l'infrastructure et assurer le support (BC01), maintenir l'infrastructure et contribuer à son évolution et à sa sécurisation (BC02).",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "RNCP",
+    "expansion": "Répertoire National des Certifications Professionnelles",
+    "definition": "Registre public tenu par France compétences qui recense les certifications reconnues par l'État, avec leur niveau de qualification et leurs blocs de compétences.",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CCP",
+    "expansion": "Certificat de Compétences Professionnelles / Certificat Complémentaire de Spécialisation",
+    "definition": "Blocs de compétences d'un titre professionnel, validés séparément ; les CCS complètent un titre par une spécialisation.",
+    "aliases": [
+      "CCS"
+    ],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "MCO",
+    "expansion": "Maintien en Condition Opérationnelle",
+    "definition": "Ensemble des actions qui conservent un système en état de fonctionnement (supervision, correctifs, maintenance, support).",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "MCS",
+    "expansion": "Maintien en Condition de Sécurité",
+    "definition": "Ensemble des actions qui conservent le niveau de sécurité d'un système dans le temps (correctifs de sécurité, veille sur les vulnérabilités, revue des configurations).",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "PRI",
+    "expansion": "Plan de Reprise Informatique / Plan de Continuité Informatique",
+    "definition": "Déclinaisons informatiques du PRA et du PCA.",
+    "aliases": [
+      "PCI"
+    ],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Support de niveau 1, 2, 3",
+    "expansion": "",
+    "definition": "Organisation du support en paliers ; le niveau 1 enregistre et traite les demandes courantes, le niveau 2 traite les incidents techniques complexes, le niveau 3 mobilise les experts et les éditeurs pour les problèmes de fond.",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "ESN",
+    "expansion": "Entreprise de Services du Numérique",
+    "definition": "Société de services informatiques qui intervient chez ses clients en projet ou en infogérance.",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Infogérance",
+    "expansion": "",
+    "definition": "Externalisation de l'exploitation d'un système d'information à un prestataire, encadrée par un contrat de service.",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "On-premise",
+    "expansion": "",
+    "definition": "Infrastructure hébergée dans les locaux de l'organisation, par opposition au cloud.",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Cloud public",
+    "expansion": "",
+    "definition": "Modèle de mise à disposition de ressources informatiques à la demande, chez un fournisseur tiers (public), dédié à une organisation (privé) ou combinant les deux (hybride).",
+    "aliases": [
+      "privé",
+      "hybride"
+    ],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "IaaS",
+    "expansion": "Infrastructure / Platform / Software as a Service",
+    "definition": "Niveaux de service cloud qui fournissent respectivement l'infrastructure, une plateforme d'exécution ou une application complète.",
+    "aliases": [
+      "PaaS",
+      "SaaS"
+    ],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Veille technologique",
+    "expansion": "",
+    "definition": "Surveillance organisée des évolutions techniques, des vulnérabilités et des menaces pour actualiser ses compétences et ses systèmes.",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CECRL",
+    "expansion": "Cadre Européen Commun de Référence pour les Langues",
+    "definition": "Échelle de niveaux de langue de A1 à C2 ; les titres TSSR et AIS exigent le niveau B1 en anglais écrit.",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "RSSI",
+    "expansion": "Responsable de la Sécurité des Systèmes d'Information",
+    "definition": "Responsable de la définition et du pilotage de la politique de sécurité du système d'information.",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "RSI",
+    "expansion": "Responsable des Systèmes d'Information",
+    "definition": "Responsable de l'exploitation et de l'évolution du système d'information.",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Fiche simple",
+    "expansion": "",
+    "definition": "Procédure courte et ciblée qui décrit une opération unique (installation, configuration, vérification) avec ses prérequis, ses étapes, ses contrôles et son retour arrière.",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Fiche complète",
+    "expansion": "",
+    "definition": "Document de référence qui traite un sujet de bout en bout (conception, installation, configuration, exploitation, sécurisation, dépannage).",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Fiche tout-en-un",
+    "expansion": "",
+    "definition": "Fiche de cours qui regroupe sur une seule page la théorie, les commandes, les pièges courants et les exercices d'un thème.",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Retour arrière",
+    "expansion": "rollback",
+    "definition": "Ensemble d'actions qui rétablit l'état antérieur d'un système après une modification ou un déploiement échoué.",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "POC",
+    "expansion": "Proof of Concept, preuve de concept",
+    "definition": "Réalisation limitée et jetable qui démontre la faisabilité d'une solution sans modifier la production.",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Production",
+    "expansion": "",
+    "definition": "Environnement qui supporte l'activité réelle des utilisateurs, par opposition aux environnements de test, de recette ou de laboratoire.",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Laboratoire",
+    "expansion": "lab",
+    "definition": "Environnement isolé de la production, utilisé pour s'entraîner, tester ou valider une procédure.",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Prérequis",
+    "expansion": "",
+    "definition": "Conditions techniques et organisationnelles à réunir avant d'exécuter une procédure.",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Runbook",
+    "expansion": "",
+    "definition": "Procédure d'exploitation documentée et rejouable, utilisée pour traiter un incident ou une opération courante.",
+    "aliases": [],
+    "category": "Formation et démarche",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "AAAA (enregistrement)",
+    "expansion": "",
+    "definition": "Enregistrement DNS qui associe un nom à une adresse IPv6.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "A (enregistrement)",
+    "expansion": "",
+    "definition": "Enregistrement DNS qui associe un nom à une adresse IPv4.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "ARP",
+    "expansion": "Address Resolution Protocol",
+    "definition": "Protocole qui associe une adresse IPv4 à l'adresse MAC correspondante sur un segment de niveau 2.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "BIND",
+    "expansion": "Berkeley Internet Name Domain",
+    "definition": "Serveur DNS libre de référence, utilisé pour l'autorité de zones et la résolution récursive.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CARP",
+    "expansion": "Common Address Redundancy Protocol",
+    "definition": "Protocole libre de redondance d'adresse IP virtuelle entre pare-feu, utilisé notamment par OPNsense et pfSense.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CIDR",
+    "expansion": "Classless Inter-Domain Routing",
+    "definition": "Notation qui exprime un réseau IP par son adresse et la longueur de son préfixe, par exemple `192.168.10.0/24`.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CNAME",
+    "expansion": "",
+    "definition": "Enregistrement DNS qui définit un alias vers un autre nom canonique.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "DHCP",
+    "expansion": "Dynamic Host Configuration Protocol",
+    "definition": "Protocole qui attribue automatiquement une configuration IP (adresse, masque, passerelle, DNS) aux clients d'un réseau.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "DMZ",
+    "expansion": "zone démilitarisée",
+    "definition": "Segment réseau intermédiaire, isolé du réseau interne et d'Internet, qui héberge les services exposés.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "DNS",
+    "expansion": "Domain Name System",
+    "definition": "Service distribué qui traduit des noms de domaine en adresses IP et publie d'autres informations de zone.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "DNSSEC",
+    "expansion": "DNS Security Extensions",
+    "definition": "Extensions qui signent cryptographiquement les réponses DNS afin d'en garantir l'authenticité et l'intégrité.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "FQDN",
+    "expansion": "Fully Qualified Domain Name",
+    "definition": "Nom de domaine complet qui désigne sans ambiguïté un hôte, par exemple `srv01.exemple.local`.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "FTP",
+    "expansion": "File Transfer Protocol",
+    "definition": "Protocole historique de transfert de fichiers, sans chiffrement natif.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "HSTS",
+    "expansion": "HTTP Strict Transport Security",
+    "definition": "En-tête HTTP qui impose au navigateur l'usage exclusif de HTTPS pour un site.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "HTTP",
+    "expansion": "HyperText Transfer Protocol / Secure",
+    "definition": "Protocole applicatif du web ; HTTPS l'encapsule dans une session TLS.",
+    "aliases": [
+      "HTTPS"
+    ],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "ICMP",
+    "expansion": "Internet Control Message Protocol",
+    "definition": "Protocole de diagnostic et de contrôle de la couche IP, utilisé par `ping` et `traceroute`.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "IMAP",
+    "expansion": "Internet Message Access Protocol",
+    "definition": "Protocole d'accès à une boîte aux lettres qui laisse les messages sur le serveur ; IMAPS le protège par TLS.",
+    "aliases": [
+      "IMAPS"
+    ],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "IP",
+    "expansion": "Internet Protocol",
+    "definition": "Protocole de la couche réseau qui adresse et achemine les paquets.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "IPAM",
+    "expansion": "IP Address Management",
+    "definition": "Outil ou processus de planification et de suivi des plans d'adressage, des sous-réseaux et des adresses affectées.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "IPv4",
+    "expansion": "",
+    "definition": "Versions du protocole IP, respectivement sur 32 et 128 bits.",
+    "aliases": [
+      "IPv6"
+    ],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "LAN",
+    "expansion": "Local Area Network",
+    "definition": "Réseau local couvrant un site restreint.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "LDAP",
+    "expansion": "",
+    "definition": "Voir la section Identités, annuaires et accès.",
+    "aliases": [
+      "LDAPS"
+    ],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "MAC (adresse)",
+    "expansion": "Media Access Control",
+    "definition": "Identifiant de 48 bits d'une interface réseau, utilisé au niveau 2.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "MTU",
+    "expansion": "Maximum Transmission Unit",
+    "definition": "Taille maximale, en octets, d'une trame ou d'un paquet transmissible sans fragmentation sur un lien.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "MX (enregistrement)",
+    "expansion": "",
+    "definition": "Enregistrement DNS qui désigne les serveurs de messagerie d'un domaine et leur priorité.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "NAT",
+    "expansion": "Network Address Translation",
+    "definition": "Traduction d'adresses IP, utilisée pour partager une adresse publique ou publier un service interne.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "NTP",
+    "expansion": "Network Time Protocol",
+    "definition": "Protocole de synchronisation de l'horloge des systèmes sur une source de temps de référence.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "OSI (modèle)",
+    "expansion": "",
+    "definition": "Modèle de référence en sept couches (physique, liaison, réseau, transport, session, présentation, application) qui structure l'analyse des communications réseau.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "PTR (enregistrement)",
+    "expansion": "",
+    "definition": "Enregistrement DNS de résolution inverse, qui associe une adresse IP à un nom.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "PXE",
+    "expansion": "Preboot Execution Environment",
+    "definition": "Mécanisme de démarrage par le réseau, utilisé pour déployer des systèmes.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "RADIUS",
+    "expansion": "Remote Authentication Dial-In User Service",
+    "definition": "Protocole d'authentification, d'autorisation et de traçabilité des accès réseau (Wi-Fi 802.1X, VPN).",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SMTP",
+    "expansion": "Simple Mail Transfer Protocol",
+    "definition": "Protocole d'envoi et de relais des courriers électroniques.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SNMP",
+    "expansion": "Simple Network Management Protocol",
+    "definition": "Protocole de supervision et d'administration d'équipements réseau par interrogation (get) ou notification (trap).",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SPAN",
+    "expansion": "Switched Port Analyzer",
+    "definition": "Duplication du trafic d'un ou plusieurs ports d'un commutateur vers un port d'analyse.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SSH",
+    "expansion": "Secure Shell",
+    "definition": "Protocole d'administration à distance chiffré, qui authentifie par mot de passe ou par clé.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "STP",
+    "expansion": "Spanning Tree Protocol",
+    "definition": "Protocole de niveau 2 qui évite les boucles dans un réseau commuté redondant.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "TCP",
+    "expansion": "Transmission Control Protocol",
+    "definition": "Protocole de transport orienté connexion, fiable et ordonné.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "TFTP",
+    "expansion": "Trivial File Transfer Protocol",
+    "definition": "Protocole simplifié de transfert de fichiers, employé pour le démarrage PXE et la configuration d'équipements.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "TLS",
+    "expansion": "Transport Layer Security",
+    "definition": "Protocole qui chiffre et authentifie les échanges réseau ; successeur de SSL.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "TTL",
+    "expansion": "Time To Live",
+    "definition": "Durée de vie d'un paquet IP (nombre de sauts) ou d'une réponse DNS en cache (secondes).",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "TXT (enregistrement)",
+    "expansion": "",
+    "definition": "Enregistrement DNS de texte libre, utilisé notamment pour SPF, DKIM et DMARC.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "UDP",
+    "expansion": "User Datagram Protocol",
+    "definition": "Protocole de transport sans connexion, léger et sans garantie de livraison.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "VIP",
+    "expansion": "Virtual IP",
+    "definition": "Adresse IP flottante partagée entre plusieurs nœuds et portée par celui qui est actif.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "VLAN",
+    "expansion": "Virtual LAN",
+    "definition": "Segmentation logique d'un réseau de niveau 2, identifiée par une étiquette 802.1Q.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "VPN",
+    "expansion": "Virtual Private Network",
+    "definition": "Tunnel chiffré qui relie des postes ou des sites à travers un réseau non maîtrisé.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "VRRP",
+    "expansion": "Virtual Router Redundancy Protocol",
+    "definition": "Protocole de redondance de passerelle par adresse IP virtuelle.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "WAN",
+    "expansion": "Wide Area Network",
+    "definition": "Réseau étendu qui relie des sites distants ou donne accès à Internet.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "WireGuard",
+    "expansion": "",
+    "definition": "Protocole VPN moderne, léger, fondé sur des clés publiques et une cryptographie récente.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "802.1X",
+    "expansion": "",
+    "definition": "Norme de contrôle d'accès au réseau par port, qui authentifie un équipement ou un utilisateur (via RADIUS) avant de l'autoriser à communiquer.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Agrégation de liens (LACP)",
+    "expansion": "",
+    "definition": "Regroupement de plusieurs liens physiques en un lien logique pour la bande passante et la redondance (norme 802.3ad).",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "BGP",
+    "expansion": "Border Gateway Protocol",
+    "definition": "Protocole de routage entre systèmes autonomes, fondement du routage sur Internet.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Commutateur (switch)",
+    "expansion": "",
+    "definition": "Équipement de niveau 2 qui transfère les trames selon la table d'adresses MAC.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Dual stack",
+    "expansion": "",
+    "definition": "Exploitation simultanée d'IPv4 et d'IPv6 sur un même réseau.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "EVE-NG",
+    "expansion": "",
+    "definition": "Plateformes d'émulation de réseaux qui exécutent des images d'équipements réels pour simuler des topologies en laboratoire.",
+    "aliases": [
+      "GNS3"
+    ],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "IPsec",
+    "expansion": "",
+    "definition": "Suite de protocoles qui authentifie et chiffre le trafic IP, utilisée pour les VPN de site à site et d'accès distant.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Load balancer (répartiteur de charge)",
+    "expansion": "",
+    "definition": "Équipement ou service qui distribue les requêtes entre plusieurs serveurs.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "NAT",
+    "expansion": "",
+    "definition": "Le PAT (Port Address Translation) traduit aussi les ports pour partager une adresse publique entre plusieurs hôtes.",
+    "aliases": [
+      "PAT"
+    ],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "OpenVPN",
+    "expansion": "",
+    "definition": "Solution VPN libre fondée sur TLS.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "OSPF",
+    "expansion": "Open Shortest Path First",
+    "definition": "Protocole de routage dynamique à état de liens, utilisé à l'intérieur d'un système autonome.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "QoS",
+    "expansion": "Quality of Service",
+    "definition": "Mécanismes qui priorisent certains flux pour garantir un niveau de service.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Routage statique",
+    "expansion": "",
+    "definition": "Définition manuelle des routes, ou apprentissage automatique par un protocole de routage.",
+    "aliases": [
+      "dynamique"
+    ],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Sous-réseau (subnet)",
+    "expansion": "",
+    "definition": "Portion d'un réseau IP définie par un masque ou un préfixe.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Trunk",
+    "expansion": "",
+    "definition": "Lien qui transporte plusieurs VLAN grâce à l'étiquetage 802.1Q.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "VLSM",
+    "expansion": "Variable Length Subnet Mask",
+    "definition": "Découpage d'un réseau en sous-réseaux de tailles différentes.",
+    "aliases": [],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "WLAN",
+    "expansion": "",
+    "definition": "Réseau local sans fil, normalisé IEEE 802.11 ; WPA2 et WPA3 en sont les protocoles de sécurité.",
+    "aliases": [
+      "Wi-Fi"
+    ],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Zone DNS (directe",
+    "expansion": "",
+    "definition": "Base d'enregistrements d'un domaine, qui résout les noms en adresses (directe) ou les adresses en noms (inverse).",
+    "aliases": [
+      "inverse)"
+    ],
+    "category": "Réseaux et protocoles",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "AHV",
+    "expansion": "Acropolis Hypervisor",
+    "definition": "Hyperviseur KVM de la plateforme Nutanix.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Alpine Linux",
+    "expansion": "",
+    "definition": "Distribution Linux minimale, fondée sur musl libc et BusyBox, très utilisée pour les conteneurs et les systèmes légers.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "APK",
+    "expansion": "Alpine Package Keeper",
+    "definition": "Gestionnaire de paquets d'Alpine Linux.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "APT",
+    "expansion": "Advanced Package Tool",
+    "definition": "Gestionnaire de paquets des familles Debian et Ubuntu.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "BSD",
+    "expansion": "Berkeley Software Distribution",
+    "definition": "Famille de systèmes Unix libres (FreeBSD, OpenBSD) et licence permissive associée ; base d'OPNsense, de pfSense et de TrueNAS CORE.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Cgroups",
+    "expansion": "",
+    "definition": "Mécanisme du noyau Linux qui limite et comptabilise les ressources (processeur, mémoire, entrées-sorties) d'un groupe de processus.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CLI",
+    "expansion": "Command-Line Interface",
+    "definition": "Interface d'administration en ligne de commande.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Conteneur",
+    "expansion": "",
+    "definition": "Unité d'exécution isolée qui partage le noyau de l'hôte et embarque une application avec ses dépendances.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Core (installation Server Core)",
+    "expansion": "",
+    "definition": "Mode d'installation minimal de Windows Server, sans interface graphique complète.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CT",
+    "expansion": "Container / Container ID",
+    "definition": "Conteneur LXC et son identifiant numérique dans Proxmox VE.",
+    "aliases": [
+      "CTID"
+    ],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Debian",
+    "expansion": "",
+    "definition": "Distribution Linux communautaire réputée pour sa stabilité ; base d'Ubuntu et de Proxmox VE.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "DNF",
+    "expansion": "Dandified YUM",
+    "definition": "Gestionnaire de paquets des familles Red Hat (RHEL, Rocky Linux).",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Docker",
+    "expansion": "",
+    "definition": "Plateforme de création et d'exécution de conteneurs à partir d'images.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Docker Compose",
+    "expansion": "",
+    "definition": "Outil qui décrit et pilote une application multi-conteneurs à partir d'un fichier YAML.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "EOL",
+    "expansion": "End Of Life",
+    "definition": "Fin de vie d'un produit, après laquelle il ne reçoit plus de correctifs.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "ESU",
+    "expansion": "Extended Security Updates",
+    "definition": "Mises à jour de sécurité étendues, payantes, proposées après la fin du support standard.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "ESXi",
+    "expansion": "",
+    "definition": "Hyperviseur de type 1 de VMware.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "GUI",
+    "expansion": "Graphical User Interface",
+    "definition": "Interface graphique d'administration.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Hyperviseur",
+    "expansion": "",
+    "definition": "Logiciel qui crée et exécute des machines virtuelles ; de type 1 (directement sur le matériel) ou de type 2 (sur un système hôte).",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Hyper-V",
+    "expansion": "",
+    "definition": "Hyperviseur de type 1 de Microsoft intégré à Windows Server.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "IIS",
+    "expansion": "Internet Information Services",
+    "definition": "Serveur web et d'applications de Windows Server.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "ISO (image)",
+    "expansion": "",
+    "definition": "Fichier image d'un disque optique, utilisé pour installer un système.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Kubernetes (K8s)",
+    "expansion": "",
+    "definition": "Orchestrateur de conteneurs qui automatise le déploiement, la mise à l'échelle et la reprise des applications.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "K3s",
+    "expansion": "",
+    "definition": "Distribution Kubernetes légère, adaptée aux petites infrastructures et à la périphérie.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "KVM",
+    "expansion": "Kernel-based Virtual Machine",
+    "definition": "Module de virtualisation du noyau Linux ; avec QEMU, il fournit l'hyperviseur de Proxmox VE.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "LEMP",
+    "expansion": "",
+    "definition": "Pile web composée de Linux, Nginx (« Engine X »), MariaDB ou MySQL et PHP.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "LTS",
+    "expansion": "Long Term Support",
+    "definition": "Version à support prolongé d'un logiciel ou d'un système.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "LVM",
+    "expansion": "Logical Volume Manager",
+    "definition": "Couche de gestion de volumes logiques qui permet de redimensionner et d'agréger des disques.",
+    "aliases": [
+      "LVM2"
+    ],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "LXC",
+    "expansion": "Linux Containers",
+    "definition": "Technologie de conteneurs système Linux, utilisée par Proxmox VE.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Nginx",
+    "expansion": "",
+    "definition": "Serveur web et proxy inverse hautes performances.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "OPNsense",
+    "expansion": "",
+    "definition": "Distributions de pare-feu et de routage fondées sur FreeBSD.",
+    "aliases": [
+      "pfSense"
+    ],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "OVMF",
+    "expansion": "Open Virtual Machine Firmware",
+    "definition": "Micrologiciel UEFI libre pour les machines virtuelles.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "PHP-FPM",
+    "expansion": "FastCGI Process Manager",
+    "definition": "Gestionnaire de processus PHP, associé à un serveur web.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Proxmox VE",
+    "expansion": "Virtual Environment",
+    "definition": "Plateforme libre de virtualisation qui combine KVM, LXC, stockage et haute disponibilité.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "QEMU",
+    "expansion": "",
+    "definition": "Émulateur et virtualiseur qui fournit les périphériques des machines virtuelles KVM.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "RHEL",
+    "expansion": "Red Hat Enterprise Linux",
+    "definition": "Distribution Linux commerciale de Red Hat ; Rocky Linux en est un dérivé compatible.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Rocky Linux",
+    "expansion": "",
+    "definition": "Distribution communautaire compatible RHEL, successeur de CentOS.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "RPM",
+    "expansion": "RPM Package Manager",
+    "definition": "Format de paquets des familles Red Hat.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Snapshot",
+    "expansion": "instantané",
+    "definition": "Capture de l'état d'une machine virtuelle ou d'un volume à un instant donné, qui permet un retour rapide.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "systemd",
+    "expansion": "",
+    "definition": "Gestionnaire de système et de services de la plupart des distributions Linux.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Template (modèle)",
+    "expansion": "",
+    "definition": "Machine virtuelle ou conteneur préparé qui sert de base de clonage.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Ubuntu",
+    "expansion": "",
+    "definition": "Distribution Linux dérivée de Debian, publiée avec des versions LTS tous les deux ans.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "UFW",
+    "expansion": "Uncomplicated Firewall",
+    "definition": "Interface simplifiée de configuration du pare-feu Netfilter sous Linux.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "VM",
+    "expansion": "Virtual Machine",
+    "definition": "Machine virtuelle, qui émule un ordinateur complet exécuté par un hyperviseur.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "VMID",
+    "expansion": "",
+    "definition": "Identifiant numérique unique d'une machine virtuelle dans Proxmox VE.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "vSphere",
+    "expansion": "",
+    "definition": "Suite de virtualisation VMware et serveur de gestion centralisée (vCenter Server Appliance).",
+    "aliases": [
+      "vCenter (VCSA)"
+    ],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "WSL",
+    "expansion": "Windows Subsystem for Linux",
+    "definition": "Couche de compatibilité qui exécute un environnement Linux dans Windows.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Cluster",
+    "expansion": "",
+    "definition": "Groupe de serveurs qui fonctionnent de concert pour assurer la haute disponibilité ou la répartition de charge.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "DRS",
+    "expansion": "Distributed Resource Scheduler",
+    "definition": "Fonction VMware qui répartit automatiquement les machines virtuelles entre les hôtes d'un cluster.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Live migration (vMotion)",
+    "expansion": "",
+    "definition": "Déplacement d'une machine virtuelle en fonctionnement d'un hôte à un autre sans interruption.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Hyper-V (rôle)",
+    "expansion": "",
+    "definition": "Cluster de basculement Windows Server, qui redémarre les machines virtuelles sur un autre nœud en cas de panne.",
+    "aliases": [
+      "Failover Cluster"
+    ],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Overcommit",
+    "expansion": "",
+    "definition": "Allocation de plus de ressources virtuelles (processeur, mémoire) que l'hôte n'en possède physiquement.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Pare-feu de zone",
+    "expansion": "",
+    "definition": "Filtrage fondé sur des zones de confiance (LAN, WAN, DMZ) plutôt que sur des interfaces isolées.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Registre Windows (Registry)",
+    "expansion": "",
+    "definition": "Base hiérarchique de configuration de Windows ; `HKLM` désigne la ruche de la machine locale.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Service Windows",
+    "expansion": "",
+    "definition": "Processus d'arrière-plan démarré par le système, sans session utilisateur.",
+    "aliases": [
+      "daemon"
+    ],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Sysprep",
+    "expansion": "",
+    "definition": "Outil Microsoft qui généralise une installation Windows avant de la capturer comme modèle.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "VDI",
+    "expansion": "Virtual Desktop Infrastructure",
+    "definition": "Infrastructure de bureaux virtuels hébergés sur des serveurs et accessibles à distance.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "WinRM",
+    "expansion": "Windows Remote Management",
+    "definition": "Service d'administration à distance de Windows fondé sur WS-Management, utilisé par PowerShell Remoting.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "WMI",
+    "expansion": "Windows Management Instrumentation",
+    "definition": "Interface d'administration et de collecte d'informations système de Windows.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "chmod",
+    "expansion": "",
+    "definition": "Commandes Linux qui modifient les droits d'accès et le propriétaire d'un fichier.",
+    "aliases": [
+      "chown"
+    ],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Droits POSIX",
+    "expansion": "",
+    "definition": "Modèle Unix de permissions lecture, écriture, exécution pour le propriétaire, le groupe et les autres.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "FHS",
+    "expansion": "Filesystem Hierarchy Standard",
+    "definition": "Norme d'organisation des répertoires des systèmes Linux (`/etc`, `/var`, `/usr`).",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Image de conteneur",
+    "expansion": "",
+    "definition": "Modèle immuable d'un conteneur et dépôt qui le stocke et le distribue (Docker Hub, registre privé).",
+    "aliases": [
+      "registre"
+    ],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Inode",
+    "expansion": "",
+    "definition": "Structure d'un système de fichiers Unix qui décrit un fichier (droits, taille, emplacement des données).",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "journalctl",
+    "expansion": "",
+    "definition": "Commande de consultation des journaux collectés par systemd-journald.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Namespaces",
+    "expansion": "",
+    "definition": "Mécanisme du noyau Linux qui isole la vue d'un processus (processus, réseau, montages, utilisateurs).",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "PID",
+    "expansion": "Process ID",
+    "definition": "Identifiant numérique d'un processus.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Pool de stockage",
+    "expansion": "",
+    "definition": "Espace de stockage logique déclaré dans un hyperviseur ou un système de stockage.",
+    "aliases": [
+      "datastore"
+    ],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Sudo",
+    "expansion": "",
+    "definition": "Mécanisme qui délègue des droits administrateurs à un utilisateur selon une politique.",
+    "aliases": [
+      "sudoers"
+    ],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SUID",
+    "expansion": "",
+    "definition": "Bits de permission qui font exécuter un programme avec les droits de son propriétaire ou groupe.",
+    "aliases": [
+      "SGID"
+    ],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Swap",
+    "expansion": "",
+    "definition": "Espace disque qui complète la mémoire vive.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Volume (conteneur)",
+    "expansion": "",
+    "definition": "Espace persistant monté dans un conteneur pour conserver des données hors de sa couche éphémère.",
+    "aliases": [],
+    "category": "Systèmes et virtualisation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "AHCI",
+    "expansion": "Advanced Host Controller Interface",
+    "definition": "Interface standard de contrôleur SATA.",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "AMD64",
+    "expansion": "",
+    "definition": "Architecture 64 bits des processeurs Intel et AMD.",
+    "aliases": [
+      "x86-64"
+    ],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "ARM64 (AArch64)",
+    "expansion": "",
+    "definition": "Architecture 64 bits ARM.",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "BIOS",
+    "expansion": "Basic Input/Output System",
+    "definition": "Micrologiciel de démarrage historique, remplacé par UEFI.",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "BMC",
+    "expansion": "Baseboard Management Controller",
+    "definition": "Contrôleur matériel qui permet l'administration à distance d'un serveur hors système.",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CMOS",
+    "expansion": "",
+    "definition": "Mémoire du firmware qui conserve les paramètres matériels ; par extension, sa réinitialisation.",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CPU",
+    "expansion": "Central Processing Unit / virtual CPU",
+    "definition": "Processeur, et cœur virtuel alloué à une machine virtuelle.",
+    "aliases": [
+      "vCPU"
+    ],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "EFI",
+    "expansion": "Unified Extensible Firmware Interface",
+    "definition": "Micrologiciel moderne de démarrage qui prend en charge GPT, le démarrage sécurisé et les disques volumineux.",
+    "aliases": [
+      "UEFI"
+    ],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "GPT",
+    "expansion": "GUID Partition Table",
+    "definition": "Schéma de partitionnement moderne qui remplace MBR.",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "GRUB",
+    "expansion": "",
+    "definition": "Chargeur d'amorçage standard des systèmes Linux.",
+    "aliases": [
+      "GRUB2"
+    ],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "HBA",
+    "expansion": "Host Bus Adapter",
+    "definition": "Carte qui relie un serveur à un bus de stockage (SAS, Fibre Channel).",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "IPMI",
+    "expansion": "Intelligent Platform Management Interface",
+    "definition": "Interface de gestion matérielle à distance (alimentation, capteurs, console).",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "iDRAC",
+    "expansion": "",
+    "definition": "Contrôleurs BMC des serveurs Dell et HPE.",
+    "aliases": [
+      "iLO"
+    ],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "MBR",
+    "expansion": "Master Boot Record",
+    "definition": "Schéma de partitionnement historique, limité à 2 To.",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "NIC",
+    "expansion": "Network Interface Card",
+    "definition": "Carte d'interface réseau.",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "NVMe",
+    "expansion": "Non-Volatile Memory Express",
+    "definition": "Protocole d'accès aux SSD sur bus PCIe.",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "OEM",
+    "expansion": "Original Equipment Manufacturer",
+    "definition": "Licence ou image fournie par le constructeur du matériel.",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "PCIe",
+    "expansion": "",
+    "definition": "Bus d'extension haut débit des ordinateurs.",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "RAID",
+    "expansion": "Redundant Array of Independent Disks",
+    "definition": "Regroupement de disques pour améliorer la tolérance aux pannes ou les performances (niveaux 0, 1, 5, 6, 10).",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "RAM",
+    "expansion": "Random Access Memory",
+    "definition": "Mémoire vive.",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SATA",
+    "expansion": "",
+    "definition": "Interfaces de connexion de disques ; SAS est la version série de SCSI, destinée aux serveurs.",
+    "aliases": [
+      "SAS",
+      "SCSI"
+    ],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SMART",
+    "expansion": "Self-Monitoring, Analysis and Reporting Technology",
+    "definition": "Mécanisme d'auto-diagnostic des disques.",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SSD",
+    "expansion": "Solid-State Drive",
+    "definition": "Disque à mémoire flash, sans pièce mécanique.",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "TPM",
+    "expansion": "Trusted Platform Module",
+    "definition": "Composant de sécurité qui stocke des clés et atteste de l'intégrité du démarrage.",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Secure Boot",
+    "expansion": "",
+    "definition": "Fonction UEFI qui n'exécute que des chargeurs d'amorçage signés.",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "USB",
+    "expansion": "Universal Serial Bus",
+    "definition": "Bus standard de périphériques externes.",
+    "aliases": [],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "VT-x",
+    "expansion": "",
+    "definition": "Extensions processeur d'assistance à la virtualisation.",
+    "aliases": [
+      "AMD-V"
+    ],
+    "category": "Matériel et démarrage",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "3-2-1 (règle)",
+    "expansion": "",
+    "definition": "Bonne pratique de sauvegarde qui impose trois copies des données, sur deux supports différents, dont une hors site.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CIFS",
+    "expansion": "Common Internet File System / Server Message Block",
+    "definition": "Protocole de partage de fichiers de Windows ; CIFS désigne une ancienne variante de SMB.",
+    "aliases": [
+      "SMB"
+    ],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Déduplication",
+    "expansion": "",
+    "definition": "Technique qui supprime les blocs de données identiques afin de réduire l'espace occupé.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "DRP",
+    "expansion": "Disaster Recovery Plan / Plan de Reprise d'Activité",
+    "definition": "Plan qui décrit comment rétablir les services après un sinistre majeur.",
+    "aliases": [
+      "PRA"
+    ],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "BCP",
+    "expansion": "Business Continuity Plan / Plan de Continuité d'Activité",
+    "definition": "Plan qui maintient l'activité essentielle pendant une perturbation.",
+    "aliases": [
+      "PCA"
+    ],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Haute disponibilité (HA)",
+    "expansion": "",
+    "definition": "Architecture redondante qui limite l'interruption de service lors de la panne d'un composant.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "iSCSI",
+    "expansion": "",
+    "definition": "Protocole qui transporte des commandes SCSI sur TCP/IP pour exposer des volumes de stockage en réseau.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "IOPS",
+    "expansion": "Input/Output Operations Per Second",
+    "definition": "Nombre d'opérations d'entrée-sortie par seconde, mesure de performance d'un stockage.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "LUN",
+    "expansion": "Logical Unit Number",
+    "definition": "Volume logique présenté par une baie de stockage à un ou plusieurs serveurs.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "NAS",
+    "expansion": "Network Attached Storage",
+    "definition": "Serveur de fichiers dédié, accessible par le réseau (SMB, NFS).",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "NFS",
+    "expansion": "Network File System",
+    "definition": "Protocole de partage de fichiers des systèmes Unix et Linux.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "NTFS",
+    "expansion": "New Technology File System",
+    "definition": "Système de fichiers de Windows, avec droits, journalisation et chiffrement.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "PBS",
+    "expansion": "Proxmox Backup Server",
+    "definition": "Serveur de sauvegarde incrémentale et dédupliquée pour Proxmox VE.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Quorum",
+    "expansion": "",
+    "definition": "Nombre minimal de nœuds qui doivent être d'accord pour qu'un cluster fonctionne et évite le « split-brain ».",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "RPO",
+    "expansion": "Recovery Point Objective",
+    "definition": "Perte de données maximale tolérée, exprimée en durée.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "RTO",
+    "expansion": "Recovery Time Objective",
+    "definition": "Durée maximale tolérée d'interruption avant la reprise du service.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SAN",
+    "expansion": "Storage Area Network",
+    "definition": "Réseau dédié qui expose du stockage en mode bloc.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Sauvegarde complète",
+    "expansion": "",
+    "definition": "Sauvegarde de toutes les données, des seules modifications depuis la dernière sauvegarde, ou depuis la dernière complète.",
+    "aliases": [
+      "incrémentale",
+      "différentielle"
+    ],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Scrub",
+    "expansion": "",
+    "definition": "Vérification périodique de l'intégrité des données d'un pool ZFS.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "VSS",
+    "expansion": "Volume Shadow Copy Service",
+    "definition": "Service Windows qui produit des copies cohérentes de volumes en cours d'utilisation.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "XFS",
+    "expansion": "",
+    "definition": "Système de fichiers journalisé hautes performances, par défaut sous RHEL.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "ZFS",
+    "expansion": "",
+    "definition": "Système de fichiers et gestionnaire de volumes avec sommes de contrôle, instantanés, réplication et RAID logiciel intégrés.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "TrueNAS (CORE",
+    "expansion": "",
+    "definition": "Système de stockage fondé sur ZFS ; CORE repose sur FreeBSD et SCALE sur Debian.",
+    "aliases": [
+      "SCALE)"
+    ],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Bloc",
+    "expansion": "",
+    "definition": "Trois modes d'accès au stockage ; le mode bloc expose des volumes bruts, le mode fichier des arborescences (SMB, NFS), le mode objet des données adressées par identifiant (S3).",
+    "aliases": [
+      "fichier",
+      "objet"
+    ],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Chiffrement au repos",
+    "expansion": "",
+    "definition": "Protection des données stockées sur un support, ou pendant leur transmission.",
+    "aliases": [
+      "en transit"
+    ],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Quota",
+    "expansion": "",
+    "definition": "Limite d'espace attribuée à un utilisateur, un groupe ou un volume.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Réplication",
+    "expansion": "",
+    "definition": "Copie continue ou périodique de données vers un autre système pour la reprise après sinistre.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Rétention",
+    "expansion": "",
+    "definition": "Durée de conservation d'une sauvegarde avant sa suppression.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Test de restauration",
+    "expansion": "",
+    "definition": "Vérification régulière qu'une sauvegarde est exploitable ; une sauvegarde non testée n'est pas garantie.",
+    "aliases": [],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Thin",
+    "expansion": "",
+    "definition": "Allocation d'un volume à la demande (thin) ou entièrement réservée dès la création (thick).",
+    "aliases": [
+      "thick provisioning"
+    ],
+    "category": "Stockage, sauvegarde et continuité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "AD",
+    "expansion": "Active Directory / Domain Services",
+    "definition": "Service d'annuaire de Microsoft qui centralise utilisateurs, ordinateurs, groupes et stratégies d'un domaine.",
+    "aliases": [
+      "AD DS"
+    ],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "ADK",
+    "expansion": "Assessment and Deployment Kit",
+    "definition": "Outils de Microsoft pour personnaliser et déployer Windows.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "AGDLP",
+    "expansion": "Account, Global, Domain Local, Permission",
+    "definition": "Modèle d'affectation de droits qui place les comptes dans des groupes globaux, eux-mêmes membres de groupes de domaine local qui portent les permissions.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "ACL",
+    "expansion": "Access Control List",
+    "definition": "Liste de règles qui précise qui peut accéder à une ressource et avec quels droits.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Authentification",
+    "expansion": "",
+    "definition": "Vérification de l'identité d'un utilisateur ou d'un système.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Autorisation",
+    "expansion": "",
+    "definition": "Détermination des droits d'une identité authentifiée.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "DC",
+    "expansion": "Domain Controller",
+    "definition": "Serveur qui héberge l'annuaire Active Directory et authentifie les accès du domaine.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "DN",
+    "expansion": "Distinguished Name",
+    "definition": "Nom unique d'un objet dans un annuaire LDAP.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "DSRM",
+    "expansion": "Directory Services Restore Mode",
+    "definition": "Mode de démarrage d'un contrôleur de domaine pour la restauration de l'annuaire.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "FIDO2",
+    "expansion": "",
+    "definition": "Standard d'authentification forte sans mot de passe, fondé sur des clés matérielles ou des passkeys.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "FSMO",
+    "expansion": "Flexible Single Master Operations",
+    "definition": "Rôles uniques d'un domaine Active Directory (maître de schéma, maître d'attribution de noms, émulateur PDC, maître RID, maître d'infrastructure).",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "GID",
+    "expansion": "Group ID / User ID",
+    "definition": "Identifiants numériques d'un groupe et d'un utilisateur sous Unix et Linux.",
+    "aliases": [
+      "UID"
+    ],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "GPO",
+    "expansion": "Group Policy Object",
+    "definition": "Objet de stratégie de groupe qui applique des paramètres de configuration et de sécurité aux utilisateurs et ordinateurs d'un domaine.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "IAM",
+    "expansion": "Identity and Access Management",
+    "definition": "Gestion des identités et des accès.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Kerberos",
+    "expansion": "",
+    "definition": "Protocole d'authentification par tickets, utilisé par Active Directory.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "LAPS",
+    "expansion": "Local Administrator Password Solution",
+    "definition": "Solution qui génère et fait tourner un mot de passe d'administrateur local unique par machine.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "LDAP",
+    "expansion": "Lightweight Directory Access Protocol",
+    "definition": "Protocole d'interrogation et de mise à jour d'annuaires ; LDAPS le protège par TLS.",
+    "aliases": [
+      "LDAPS"
+    ],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "MFA",
+    "expansion": "Multi-Factor Authentication",
+    "definition": "Authentification qui exige au moins deux facteurs de natures différentes (connaissance, possession, inhérence).",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "NLA",
+    "expansion": "Network Level Authentication",
+    "definition": "Authentification préalable à l'ouverture d'une session RDP.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "NTLM",
+    "expansion": "",
+    "definition": "Ancien protocole d'authentification Windows par challenge-réponse, supplanté par Kerberos.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "OIDC",
+    "expansion": "OpenID Connect",
+    "definition": "Couche d'identité au-dessus d'OAuth 2.0 pour l'authentification unique.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "OU",
+    "expansion": "Organizational Unit",
+    "definition": "Conteneur d'un annuaire qui regroupe des objets et sur lequel on applique des GPO ou une délégation.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "PAM",
+    "expansion": "",
+    "definition": "Selon le contexte, Pluggable Authentication Modules (Linux) ou Privileged Access Management (gestion des accès à privilèges).",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "RBAC",
+    "expansion": "Role-Based Access Control",
+    "definition": "Contrôle d'accès fondé sur des rôles.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "RDP",
+    "expansion": "Remote Desktop Protocol / Services",
+    "definition": "Protocole et services de bureau à distance de Windows.",
+    "aliases": [
+      "RDS"
+    ],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SAML",
+    "expansion": "Security Assertion Markup Language",
+    "definition": "Standard d'échange d'assertions d'authentification pour l'authentification unique.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SID",
+    "expansion": "Security Identifier",
+    "definition": "Identifiant unique d'un compte ou d'un groupe de sécurité Windows.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SSO",
+    "expansion": "Single Sign-On",
+    "definition": "Authentification unique, qui donne accès à plusieurs applications après une seule connexion.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SSSD",
+    "expansion": "System Security Services Daemon",
+    "definition": "Service Linux qui relie le système à des annuaires distants (AD, LDAP, FreeIPA).",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SYSVOL",
+    "expansion": "",
+    "definition": "Dossier partagé des contrôleurs de domaine, qui contient les stratégies de groupe et les scripts.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "TOTP",
+    "expansion": "Time-based One-Time Password",
+    "definition": "Mot de passe à usage unique dérivé de l'heure, utilisé en MFA.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "UAC",
+    "expansion": "User Account Control",
+    "definition": "Mécanisme de Windows qui demande une élévation pour les actions administratives.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Compte de service",
+    "expansion": "",
+    "definition": "Compte non interactif dédié à l'exécution d'une application ou d'un service.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Contrôleur de domaine en lecture seule (RODC)",
+    "expansion": "",
+    "definition": "Contrôleur de domaine qui ne réplique l'annuaire qu'en lecture, destiné aux sites peu sûrs.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Forêt",
+    "expansion": "",
+    "definition": "Structures logiques d'Active Directory ; la forêt regroupe un ou plusieurs domaines qui partagent un schéma.",
+    "aliases": [
+      "domaine",
+      "arbre"
+    ],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Relation d'approbation (trust)",
+    "expansion": "",
+    "definition": "Lien qui permet aux utilisateurs d'un domaine d'accéder aux ressources d'un autre.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Schéma (annuaire)",
+    "expansion": "",
+    "definition": "Définition des classes d'objets et attributs possibles dans un annuaire.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Tiering (modèle en niveaux)",
+    "expansion": "",
+    "definition": "Segmentation des comptes et postes d'administration en niveaux pour empêcher le vol d'identifiants privilégiés.",
+    "aliases": [],
+    "category": "Identités, annuaires et accès",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "ACME",
+    "expansion": "Automatic Certificate Management Environment",
+    "definition": "Protocole d'obtention et de renouvellement automatiques de certificats (Let's Encrypt).",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "AES",
+    "expansion": "Advanced Encryption Standard",
+    "definition": "Algorithme de chiffrement symétrique par blocs, standard actuel.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "ANSSI",
+    "expansion": "Agence nationale de la sécurité des systèmes d'information",
+    "definition": "Autorité française de cybersécurité, qui publie guides et référentiels.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CA",
+    "expansion": "Certificate Authority",
+    "definition": "Autorité de certification qui émet et signe les certificats.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CIS Benchmarks",
+    "expansion": "",
+    "definition": "Guides de configuration sécurisée publiés par le Center for Internet Security.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CRL",
+    "expansion": "Certificate Revocation List",
+    "definition": "Liste des certificats révoqués avant leur expiration.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CVE",
+    "expansion": "Common Vulnerabilities and Exposures",
+    "definition": "Identifiant normalisé d'une vulnérabilité connue, par exemple `CVE-2024-3094`.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CVSS",
+    "expansion": "Common Vulnerability Scoring System",
+    "definition": "Échelle de 0 à 10 qui note la gravité d'une vulnérabilité.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "DKIM",
+    "expansion": "DomainKeys Identified Mail",
+    "definition": "Signature cryptographique des messages qui authentifie le domaine émetteur.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "DMARC",
+    "expansion": "Domain-based Message Authentication, Reporting and Conformance",
+    "definition": "Politique qui précise le traitement des messages dont SPF ou DKIM échoue.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "ED25519",
+    "expansion": "",
+    "definition": "Algorithme de signature à courbe elliptique, recommandé pour les clés SSH.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Fail2ban",
+    "expansion": "",
+    "definition": "Outil qui bannit temporairement les adresses sources après des échecs d'authentification répétés.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Durcissement",
+    "expansion": "hardening",
+    "definition": "Réduction de la surface d'attaque d'un système par configuration restrictive, suppression du superflu et application de correctifs.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "GPG",
+    "expansion": "GNU Privacy Guard",
+    "definition": "Implémentation libre d'OpenPGP pour le chiffrement et la signature.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Hachage",
+    "expansion": "",
+    "definition": "Fonction à sens unique qui produit une empreinte de taille fixe, utilisée pour vérifier l'intégrité et stocker des mots de passe.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "IDS",
+    "expansion": "Intrusion Detection / Prevention System",
+    "definition": "Système qui détecte, ou détecte et bloque, les activités malveillantes.",
+    "aliases": [
+      "IPS"
+    ],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "MITRE ATT&CK",
+    "expansion": "",
+    "definition": "Base de connaissances des tactiques et techniques d'attaque observées.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Moindre privilège",
+    "expansion": "",
+    "definition": "Principe qui n'accorde que les droits strictement nécessaires.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "NIST",
+    "expansion": "National Institute of Standards and Technology",
+    "definition": "Organisme américain de normalisation, auteur de référentiels de cybersécurité.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Pare-feu",
+    "expansion": "firewall",
+    "definition": "Équipement ou logiciel qui filtre les flux selon des règles.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "PKI",
+    "expansion": "Public Key Infrastructure",
+    "definition": "Infrastructure à clés publiques qui gère l'émission, la distribution et la révocation de certificats.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "RSA",
+    "expansion": "",
+    "definition": "Algorithme de cryptographie asymétrique fondé sur la factorisation de grands entiers.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SELinux",
+    "expansion": "",
+    "definition": "Modules de contrôle d'accès obligatoire du noyau Linux.",
+    "aliases": [
+      "AppArmor"
+    ],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SHA-256",
+    "expansion": "Secure Hash Algorithm",
+    "definition": "Fonction de hachage de 256 bits.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SIEM",
+    "expansion": "Security Information and Event Management",
+    "definition": "Plateforme qui centralise, corrèle et analyse les journaux pour détecter les incidents.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SPF",
+    "expansion": "Sender Policy Framework",
+    "definition": "Enregistrement DNS qui liste les serveurs autorisés à envoyer du courrier pour un domaine.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SSL",
+    "expansion": "Secure Sockets Layer",
+    "definition": "Ancêtre de TLS, obsolète.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "STARTTLS",
+    "expansion": "",
+    "definition": "Commande qui bascule une connexion en clair vers TLS (SMTP, IMAP).",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Surface d'attaque",
+    "expansion": "",
+    "definition": "Ensemble des points par lesquels un attaquant peut tenter d'accéder à un système.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "WDAC",
+    "expansion": "Windows Defender Application Control",
+    "definition": "Fonction de Windows qui limite l'exécution aux applications et pilotes approuvés.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Vulnérabilité",
+    "expansion": "",
+    "definition": "Faiblesse d'un système exploitable pour compromettre la confidentialité, l'intégrité ou la disponibilité.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "WAF",
+    "expansion": "Web Application Firewall",
+    "definition": "Pare-feu applicatif qui filtre le trafic HTTP.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "XDR",
+    "expansion": "Extended Detection and Response",
+    "definition": "Détection et réponse étendues à plusieurs sources (postes, réseau, messagerie, cloud).",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Zero trust",
+    "expansion": "confiance zéro",
+    "definition": "Modèle de sécurité qui vérifie chaque accès sans considérer le réseau interne comme sûr.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Analyse de risques",
+    "expansion": "",
+    "definition": "Démarche qui identifie les menaces, les vulnérabilités et les impacts pour prioriser les mesures de sécurité.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Bastion",
+    "expansion": "",
+    "definition": "Serveur d'administration durci, point de passage unique et tracé vers les ressources sensibles.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CERT",
+    "expansion": "",
+    "definition": "Équipe de réponse aux incidents de sécurité ; le CERT-FR est celui de l'ANSSI.",
+    "aliases": [
+      "CSIRT"
+    ],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Chiffrement symétrique",
+    "expansion": "",
+    "definition": "Méthode qui utilise la même clé pour chiffrer et déchiffrer, ou une paire de clés publique et privée.",
+    "aliases": [
+      "asymétrique"
+    ],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Cyber Kill Chain",
+    "expansion": "",
+    "definition": "Modèle qui décrit les étapes d'une attaque, de la reconnaissance à l'action sur l'objectif.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "EBIOS Risk Manager",
+    "expansion": "",
+    "definition": "Méthode d'analyse de risques numériques publiée par l'ANSSI.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Hygiène informatique",
+    "expansion": "",
+    "definition": "Règles de base de sécurité formalisées par l'ANSSI dans son guide des bonnes pratiques.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Journaux d'audit",
+    "expansion": "",
+    "definition": "Traces des accès et des actions, conservées pour l'investigation et la conformité.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Pentest",
+    "expansion": "test d'intrusion",
+    "definition": "Simulation d'attaque autorisée pour évaluer la sécurité d'un système.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Phishing",
+    "expansion": "hameçonnage",
+    "definition": "Tentative de tromper un utilisateur par un message frauduleux pour obtenir des identifiants ou lui faire exécuter une action.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Ransomware",
+    "expansion": "rançongiciel",
+    "definition": "Logiciel malveillant qui chiffre les données et exige une rançon.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SecNumCloud",
+    "expansion": "",
+    "definition": "Qualification de l'ANSSI pour les services de cloud de confiance.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Segmentation réseau",
+    "expansion": "",
+    "definition": "Découpage du réseau en zones isolées pour limiter la propagation d'une attaque.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SOC",
+    "expansion": "Security Operations Center",
+    "definition": "Centre qui surveille, détecte et traite les événements de sécurité.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Sel (salt)",
+    "expansion": "",
+    "definition": "Valeur aléatoire ajoutée à un mot de passe avant hachage pour éviter les attaques par tables précalculées.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Sandbox (bac à sable)",
+    "expansion": "",
+    "definition": "Environnement isolé pour exécuter ou analyser du code non fiable.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Shadow IT",
+    "expansion": "",
+    "definition": "Usage de services ou de matériels informatiques sans validation de la DSI.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "WEF",
+    "expansion": "Windows Event Forwarding",
+    "definition": "Mécanisme de collecte centralisée des événements Windows.",
+    "aliases": [],
+    "category": "Sécurité et durcissement",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CMDB",
+    "expansion": "Configuration Management Database",
+    "definition": "Base qui recense les éléments de configuration du système d'information (CI) et leurs relations.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "DCIM",
+    "expansion": "Data Center Infrastructure Management",
+    "definition": "Gestion de l'infrastructure physique d'un centre de données (baies, énergie, câblage).",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "ELK",
+    "expansion": "Elasticsearch, Logstash, Kibana",
+    "definition": "Pile de collecte, d'indexation et de visualisation de journaux.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "GLPI",
+    "expansion": "Gestion Libre de Parc Informatique",
+    "definition": "Application libre de gestion de parc et de service d'assistance.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Helpdesk",
+    "expansion": "",
+    "definition": "Service d'assistance qui reçoit et traite les demandes et incidents des utilisateurs.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Incident",
+    "expansion": "",
+    "definition": "Interruption ou dégradation non planifiée d'un service.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Inventaire",
+    "expansion": "",
+    "definition": "Relevé du matériel et des logiciels d'un parc, manuel ou automatisé.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "ITIL",
+    "expansion": "Information Technology Infrastructure Library",
+    "definition": "Référentiel de bonnes pratiques de gestion des services informatiques.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "ITSM",
+    "expansion": "IT Service Management",
+    "definition": "Gestion des services informatiques selon une approche processus.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Journalisation",
+    "expansion": "logging",
+    "definition": "Enregistrement horodaté des événements d'un système.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Journald",
+    "expansion": "",
+    "definition": "Mécanismes de collecte des journaux sous Linux ; syslog est aussi un protocole de transmission.",
+    "aliases": [
+      "syslog"
+    ],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "MTTR",
+    "expansion": "Mean Time To Repair",
+    "definition": "Durée moyenne de rétablissement d'un service après une panne.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "OCS Inventory",
+    "expansion": "",
+    "definition": "Outil libre d'inventaire matériel et logiciel.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "PRTG",
+    "expansion": "",
+    "definition": "Sonde de supervision commerciale de Paessler, fondée sur des capteurs.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Problème",
+    "expansion": "",
+    "definition": "Cause sous-jacente d'un ou plusieurs incidents, traitée par une analyse de cause racine.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SLA",
+    "expansion": "Service Level Agreement",
+    "definition": "Accord de niveau de service qui fixe des engagements de disponibilité et de délai.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Supervision",
+    "expansion": "",
+    "definition": "Surveillance continue de l'état et de la performance des systèmes, avec alertes.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Ticket",
+    "expansion": "",
+    "definition": "Enregistrement d'une demande ou d'un incident dans un outil ITSM.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Zabbix",
+    "expansion": "",
+    "definition": "Outils libres de supervision.",
+    "aliases": [
+      "Nagios",
+      "Centreon"
+    ],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Alerte",
+    "expansion": "",
+    "definition": "Notification émise quand un indicateur franchit un seuil défini.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Baseline (référence)",
+    "expansion": "",
+    "definition": "Niveau normal de performance ou de configuration, auquel on compare les mesures.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Disponibilité",
+    "expansion": "",
+    "definition": "Proportion du temps pendant laquelle un service est utilisable, souvent exprimée en pourcentage (99,9 %).",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "KPI",
+    "expansion": "Key Performance Indicator",
+    "definition": "Indicateur clé de performance qui mesure l'atteinte d'un objectif.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Gestion des actifs (asset management)",
+    "expansion": "",
+    "definition": "Suivi du cycle de vie des matériels et logiciels, de l'acquisition à la mise au rebut.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Gestion des problèmes",
+    "expansion": "",
+    "definition": "Processus ITIL qui traitent respectivement les causes d'incidents, les évolutions planifiées et la tenue de la CMDB.",
+    "aliases": [
+      "des changements",
+      "des configurations"
+    ],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Prometheus",
+    "expansion": "",
+    "definition": "Outils de collecte de métriques et de tableaux de bord.",
+    "aliases": [
+      "Grafana"
+    ],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Sonde (probe)",
+    "expansion": "",
+    "definition": "Composant qui mesure l'état d'un équipement ou d'un service.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SLO",
+    "expansion": "Service Level Objective / Indicator",
+    "definition": "Objectif visé et indicateur mesuré qui sert à le vérifier.",
+    "aliases": [
+      "SLI"
+    ],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Astreinte",
+    "expansion": "",
+    "definition": "Période pendant laquelle un technicien doit pouvoir intervenir à distance ou sur site en dehors des heures de travail.",
+    "aliases": [],
+    "category": "Supervision, ITSM et exploitation",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Ansible",
+    "expansion": "",
+    "definition": "Outil d'automatisation sans agent, qui décrit l'état souhaité en playbooks YAML exécutés par SSH.",
+    "aliases": [],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "API",
+    "expansion": "Application Programming Interface",
+    "definition": "Interface qui permet à des programmes d'échanger des données et d'invoquer des fonctions.",
+    "aliases": [],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Bash",
+    "expansion": "",
+    "definition": "Interpréteur de commandes et langage de script standard des systèmes Linux.",
+    "aliases": [],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CI/CD",
+    "expansion": "Continuous Integration / Continuous Delivery",
+    "definition": "Chaîne d'intégration et de livraison continues, qui automatise tests et déploiements.",
+    "aliases": [],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Cloud-init",
+    "expansion": "",
+    "definition": "Outil d'initialisation de machines virtuelles au premier démarrage à partir de métadonnées.",
+    "aliases": [],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Cron",
+    "expansion": "",
+    "definition": "Planificateur de tâches périodiques sous Unix et Linux.",
+    "aliases": [],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Dockerfile",
+    "expansion": "",
+    "definition": "Fichier de description de la construction d'une image de conteneur.",
+    "aliases": [],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Git",
+    "expansion": "",
+    "definition": "Système de gestion de versions décentralisé.",
+    "aliases": [],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "HCL",
+    "expansion": "HashiCorp Configuration Language",
+    "definition": "Langage de configuration de Terraform et de Packer.",
+    "aliases": [
+      "HCL2"
+    ],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Idempotence",
+    "expansion": "",
+    "definition": "Propriété d'une opération qui produit le même résultat quand elle est exécutée plusieurs fois.",
+    "aliases": [],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Infrastructure as Code (IaC)",
+    "expansion": "",
+    "definition": "Gestion de l'infrastructure par des fichiers versionnés plutôt que par des actions manuelles.",
+    "aliases": [],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "JSON",
+    "expansion": "",
+    "definition": "Formats d'échange et de configuration de données structurées ou tabulaires.",
+    "aliases": [
+      "YAML",
+      "XML",
+      "CSV"
+    ],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "MDT",
+    "expansion": "",
+    "definition": "Outils Microsoft de déploiement de systèmes (Microsoft Deployment Toolkit, Windows Deployment Services) et de gestion de parc (Configuration Manager).",
+    "aliases": [
+      "WDS",
+      "MECM (SCCM)"
+    ],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "MariaDB",
+    "expansion": "",
+    "definition": "Systèmes de gestion de bases de données relationnelles libres.",
+    "aliases": [
+      "MySQL",
+      "PostgreSQL"
+    ],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "MSI",
+    "expansion": "",
+    "definition": "Format de paquet d'installation Windows.",
+    "aliases": [],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Packer",
+    "expansion": "",
+    "definition": "Outil de HashiCorp qui construit des images de machines de façon reproductible.",
+    "aliases": [],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "PowerShell",
+    "expansion": "",
+    "definition": "Interpréteur et langage de script orientés objets de Microsoft.",
+    "aliases": [],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Proxy inverse",
+    "expansion": "reverse proxy",
+    "definition": "Serveur frontal qui reçoit les requêtes et les transmet à des serveurs applicatifs.",
+    "aliases": [],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Terraform",
+    "expansion": "",
+    "definition": "Outil d'Infrastructure as Code déclaratif.",
+    "aliases": [],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "SQL",
+    "expansion": "Structured Query Language",
+    "definition": "Langage d'interrogation et de manipulation de bases relationnelles.",
+    "aliases": [],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "WSUS",
+    "expansion": "Windows Server Update Services",
+    "definition": "Service de gestion centralisée des mises à jour Windows.",
+    "aliases": [],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "WinGet",
+    "expansion": "",
+    "definition": "Gestionnaires de paquets pour Windows.",
+    "aliases": [
+      "Chocolatey"
+    ],
+    "category": "Déploiement, automatisation et services applicatifs",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Audit",
+    "expansion": "",
+    "definition": "Examen indépendant et documenté d'un système au regard d'un référentiel.",
+    "aliases": [],
+    "category": "Gouvernance et conformité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "DSI",
+    "expansion": "Direction des systèmes d'information",
+    "definition": "Direction responsable du système d'information d'une organisation.",
+    "aliases": [],
+    "category": "Gouvernance et conformité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Gestion des correctifs",
+    "expansion": "patch management",
+    "definition": "Processus d'évaluation, de test et de déploiement des mises à jour.",
+    "aliases": [],
+    "category": "Gouvernance et conformité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Gestion du changement",
+    "expansion": "",
+    "definition": "Processus qui encadre la demande, l'évaluation, l'approbation et le suivi des modifications.",
+    "aliases": [],
+    "category": "Gouvernance et conformité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "ISO/IEC 27001",
+    "expansion": "",
+    "definition": "Norme de système de management de la sécurité de l'information.",
+    "aliases": [],
+    "category": "Gouvernance et conformité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "PSSI",
+    "expansion": "Politique de sécurité des systèmes d'information",
+    "definition": "Document qui fixe les objectifs et règles de sécurité d'une organisation.",
+    "aliases": [],
+    "category": "Gouvernance et conformité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "RGPD",
+    "expansion": "Règlement général sur la protection des données",
+    "definition": "Règlement européen qui encadre le traitement des données personnelles.",
+    "aliases": [],
+    "category": "Gouvernance et conformité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Traçabilité",
+    "expansion": "",
+    "definition": "Capacité à reconstituer l'historique d'une action ou d'une donnée.",
+    "aliases": [],
+    "category": "Gouvernance et conformité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "DIC",
+    "expansion": "Disponibilité, Intégrité, Confidentialité",
+    "definition": "Trois critères fondamentaux de la sécurité de l'information.",
+    "aliases": [],
+    "category": "Gouvernance et conformité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Charte informatique",
+    "expansion": "",
+    "definition": "Document qui fixe les règles d'usage du système d'information par les utilisateurs.",
+    "aliases": [],
+    "category": "Gouvernance et conformité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "CNIL",
+    "expansion": "Commission nationale de l'informatique et des libertés",
+    "definition": "Autorité française de protection des données personnelles.",
+    "aliases": [],
+    "category": "Gouvernance et conformité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "DPO",
+    "expansion": "Data Protection Officer / Délégué à la protection des données",
+    "definition": "Personne chargée de veiller à la conformité au RGPD.",
+    "aliases": [
+      "DPD"
+    ],
+    "category": "Gouvernance et conformité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Donnée personnelle",
+    "expansion": "",
+    "definition": "Information qui permet d'identifier directement ou indirectement une personne physique.",
+    "aliases": [],
+    "category": "Gouvernance et conformité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Gouvernance",
+    "expansion": "",
+    "definition": "Ensemble des règles, rôles et processus de décision qui encadrent le système d'information.",
+    "aliases": [],
+    "category": "Gouvernance et conformité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "HDS",
+    "expansion": "Hébergeur de Données de Santé",
+    "definition": "Certification obligatoire pour héberger des données de santé en France.",
+    "aliases": [],
+    "category": "Gouvernance et conformité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "NIS 2",
+    "expansion": "",
+    "definition": "Directive européenne qui renforce les obligations de cybersécurité des entités essentielles et importantes.",
+    "aliases": [],
+    "category": "Gouvernance et conformité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": true,
+    "autoLink": false
+  },
+  {
+    "locale": "fr",
+    "term": "Registre des traitements",
+    "expansion": "",
+    "definition": "Inventaire des traitements de données personnelles exigé par le RGPD.",
+    "aliases": [],
+    "category": "Gouvernance et conformité",
+    "documentationPage": "/fr/00-cours-theoriques/glossaire",
+    "caseSensitive": false,
+    "autoLink": false
+  }
+]
