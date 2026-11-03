@@ -3,7 +3,7 @@ title: "MongoDB"
 description: "Installer MongoDB 7.0 sur Debian 12 depuis le dépôt officiel, vérifier qu'il répond et qu'il enregistre un document, puis le préparer pour la production : authentification obligatoire, écoute limitée, compte applicatif restreint, sauvegarde testée. Les tests ne se font que sur votre propre serveur."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[mongodb]", "[base-de-donnees]", "[sauvegarde]", "[hardening]"]
+tags: ["debian-12", "mongodb", "base-de-donnees", "sauvegarde", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

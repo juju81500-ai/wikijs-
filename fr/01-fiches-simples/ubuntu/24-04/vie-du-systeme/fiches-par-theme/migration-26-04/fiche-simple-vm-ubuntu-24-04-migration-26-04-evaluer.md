@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-migration-26-04-evaluer"
 description: "Mesurer l'impact de la mise à niveau avant toute action."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu24.04", "ubuntu26.04", "migration", "evaluation"]
+tags: ["ubuntu24-04", "ubuntu26-04", "migration", "evaluation"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "VM_WinSrv_2022_GPO_Forcer-Et-Auditer-Mise-A-Jour-GPUpdate"
 description: "Forcer l'application immédiate des stratégies de groupe Active Directory (GPO) sur une machine sans attendre le délai de rafraîchissement automatique (90 min), et générer un rapport d'audit d'application des GPO."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[winsrv2022]", "[win11]", "[gpo]", "[gpupdate]", "[gpresult]", "[gui]", "[cmd]", "[powershell]"]
+tags: ["winsrv2022", "win11", "gpo", "gpupdate", "gpresult", "gui", "cmd", "powershell"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

@@ -3,7 +3,7 @@ title: "Docker_Conteneur_Gestion_Deploiement-Traefik-Reverse-Proxy"
 description: "Déployer le Reverse Proxy cloud-native Traefik v3 en conteneur Docker, configurer la découverte automatique des conteneurs via le socket Docker et sécuriser la génération des certificats Let's Encrypt SSL/TLS."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[docker]", "[traefik]", "[reverse-proxy]", "[letsencrypt]", "[docker-compose]", "[hardening]"]
+tags: ["docker", "traefik", "reverse-proxy", "letsencrypt", "docker-compose", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

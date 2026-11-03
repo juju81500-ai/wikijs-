@@ -3,7 +3,7 @@ title: "📝 Templates Officiels Markdown - Wiki.js Lab & TSSR"
 description: "1. Commande d'exécution :"
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[tag1]", "[tag2]", "[tag3]"]
+tags: ["tag1", "tag2", "tag3"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

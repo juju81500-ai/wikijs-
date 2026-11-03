@@ -3,7 +3,7 @@ title: "Fiche Simple - Cloud GCP Stockage Objet Chiffre"
 description: "Stockage objet chiffré dans Google Cloud Platform en limitant les risques de sécurité, de disponibilité et de coût."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["gcp", "stockage_objet_chiffre", "securite", "procedure"]
+tags: ["gcp", "stockage-objet-chiffre", "securite", "procedure"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

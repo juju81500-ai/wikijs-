@@ -3,7 +3,7 @@ title: "Pile Web sur Ubuntu Server 26-04 : Nginx, PHP-FPM et PostgreSQL"
 description: "Fiche simple : [prérequis et versions de la pile web](../../../../01-fiches-simples/ubuntu/26-04/vie-du-logiciel/pile-web/fiche-simple-vm-ubuntu-26-04-pile-web-prerequis-versions.md)."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["ubuntu26.04", "resolute", "nginx", "php8.5", "postgresql18", "web", "tls"]
+tags: ["ubuntu26-04", "resolute", "nginx", "php8-5", "postgresql18", "web", "tls"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

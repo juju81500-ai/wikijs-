@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Windows Server 2022 Securite gMSA"
 description: "Remplacer un compte de service à mot de passe fixe par un compte gMSA (Group Managed Service Account) dont le mot de passe est généré et renouvelé automatiquement par Active Directory, et restreindre les serveurs autorisés à l'utiliser."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[windows-server-2022]", "[gmsa]", "[active-directory]", "[service-account]", "[powershell]"]
+tags: ["windows-server-2022", "gmsa", "active-directory", "service-account", "powershell"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

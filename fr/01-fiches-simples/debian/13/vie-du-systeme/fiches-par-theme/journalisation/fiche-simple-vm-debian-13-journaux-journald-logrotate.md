@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 Journaux Journald Logrotate"
 description: "Rendre le journal systemd persistant avec une taille et une durée de rétention maîtrisées sur Debian 13, et configurer la rotation des journaux applicatifs dans /var/log avec logrotate, pour que le disque ne se remplisse pas sans perdre l'historique utile."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[debian]", "[journald]", "[logrotate]", "[logs]", "[systemd]"]
+tags: ["debian13", "debian", "journald", "logrotate", "logs", "systemd"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

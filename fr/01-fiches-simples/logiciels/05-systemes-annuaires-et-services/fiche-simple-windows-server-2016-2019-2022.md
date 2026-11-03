@@ -3,7 +3,7 @@ title: "Windows Server 2016 / 2019 / 2022"
 description: "Mettre en place les rôles de base d'un serveur Windows : AD DS (forêt et contrôleur de domaine), DNS, DHCP, GPO, WSUS, DFS et RDS. Les étapes sont données en PowerShell, exécuté en administrateur. Les tests se font uniquement sur votre propre domaine de lab."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[windows-server-2022]", "[powershell]", "[ad-ds]", "[dns]", "[dhcp]", "[gpo]", "[wsus]", "[dfs]", "[rds]", "[hardening]"]
+tags: ["windows-server-2022", "powershell", "ad-ds", "dns", "dhcp", "gpo", "wsus", "dfs", "rds", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

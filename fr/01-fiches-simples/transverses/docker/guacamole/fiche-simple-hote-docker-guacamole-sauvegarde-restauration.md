@@ -3,7 +3,7 @@ title: "fiche-simple-hote-docker-guacamole-sauvegarde-restauration"
 description: "Sauvegarder la base et la configuration, et tester la restauration."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["docker", "apache-guacamole", "compose", "postgresql", "pg_dump", "restauration"]
+tags: ["docker", "apache-guacamole", "compose", "postgresql", "pg-dump", "restauration"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "VM_WinSrv_2022_ADDS_Creation-Utilisateur-Et-OU"
 description: "Structurer l'annuaire Active Directory en créant une Unité d'Organisation (OU), y ajouter un utilisateur, configurer la réinitialisation de mot de passe à la première connexion et sécuriser le compte selon les règles de complexité d'entreprise."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[windows-server-2022]", "[active-directory]", "[ou]", "[user-management]", "[gui]", "[powershell]", "[hardening]", "[gpo]"]
+tags: ["windows-server-2022", "active-directory", "ou", "user-management", "gui", "powershell", "hardening", "gpo"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

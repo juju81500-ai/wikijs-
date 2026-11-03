@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Systeme Qemu Guest Agent"
 description: "Installer et activer qemu-guest-agent sur une VM Ubuntu Server 24-04 LTS pour que l'hyperviseur puisse lire l'adresse IP, arrêter proprement la VM et figer le système de fichiers lors des sauvegardes."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[ubuntu24.04]", "[ubuntu]", "[qemu]", "[guest-agent]", "[proxmox]", "[virtio]", "[kvm]"]
+tags: ["ubuntu24-04", "ubuntu", "qemu", "guest-agent", "proxmox", "virtio", "kvm"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

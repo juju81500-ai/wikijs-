@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Zeek Mise A Jour Retour Arriere"
 description: "Mettre à jour Zeek dans la ligne LTS et revenir en arrière en cas de régression."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["zeek", "ubuntu24.04", "vie-du-logiciel", "mise-a-jour-retour-arriere"]
+tags: ["zeek", "ubuntu24-04", "vie-du-logiciel", "mise-a-jour-retour-arriere"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

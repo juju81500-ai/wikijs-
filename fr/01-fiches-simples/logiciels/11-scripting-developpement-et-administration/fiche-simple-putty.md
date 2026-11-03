@@ -3,7 +3,7 @@ title: "PuTTY"
 description: "Installer PuTTY sur Windows Server 2022, vérifier la connexion SSH vers une machine Linux de test, valider l'empreinte de la clé d'hôte, puis imposer une connexion par clé et une validation stricte des clés d'hôte pour l'administration en production. Les tests ne se font que sur vos propres machines"
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[windows-server-2022]", "[putty]", "[ssh]", "[powershell]", "[hardening]"]
+tags: ["windows-server-2022", "putty", "ssh", "powershell", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

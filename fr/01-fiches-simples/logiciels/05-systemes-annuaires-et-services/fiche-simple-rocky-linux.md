@@ -3,7 +3,7 @@ title: "Rocky Linux"
 description: "Gérer les paquets d'un serveur Rocky Linux 9 déjà installé : vérifier la version et les dépôts, appliquer les mises à jour, ouvrir un port de service dans firewalld et l'autoriser dans SELinux, puis durcir la gestion des paquets et du pare-feu. L'installation du système n'est pas reprise ici (voir l"
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky-linux-9]", "[dnf]", "[firewalld]", "[selinux]", "[paquets]", "[hardening]"]
+tags: ["rocky-linux-9", "dnf", "firewalld", "selinux", "paquets", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "VM_Win11_Reseau_Fixer-IP-Et-DNS"
 description: "Fixer l'adresse IP statique et changer les serveurs DNS sous Windows 11 via la nouvelle interface Paramètres, le classique ncpa.cpl, ou en ligne de commande PowerShell."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[windows-11]", "[windows-client]", "[reseau]", "[ip-statique]", "[dns]", "[gui]", "[powershell]"]
+tags: ["windows-11", "windows-client", "reseau", "ip-statique", "dns", "gui", "powershell"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Windows 11 Systeme Nom Et Fuseau"
 description: "Donner à un poste Windows 11 un nom conforme à la convention de nommage (15 caractères maximum pour le nom NetBIOS), régler le fuseau horaire et vérifier que l'horloge suit ce fuseau."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[windows-11]", "[powershell]", "[rename-computer]", "[timezone]", "[w32tm]", "[gui]"]
+tags: ["windows-11", "powershell", "rename-computer", "timezone", "w32tm", "gui"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

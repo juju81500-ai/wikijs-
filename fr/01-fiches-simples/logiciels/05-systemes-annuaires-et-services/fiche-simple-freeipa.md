@@ -3,7 +3,7 @@ title: "FreeIPA"
 description: "Installer un serveur FreeIPA sur Rocky Linux 9 avec son DNS intégré, créer un utilisateur de test, vérifier l'authentification Kerberos, puis le durcir (politique de mots de passe, sauvegarde, pare-feu restreint) avant de l'utiliser comme annuaire de l'entreprise. Le nom d'hôte doit être un FQDN rés"
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky-linux-9]", "[freeipa]", "[ipa]", "[kerberos]", "[ldap]", "[dns]", "[hardening]"]
+tags: ["rocky-linux-9", "freeipa", "ipa", "kerberos", "ldap", "dns", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

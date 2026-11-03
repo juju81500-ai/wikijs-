@@ -3,7 +3,7 @@ title: "fiche-simple-vm-debian-12-installation-os-premier-demarrage"
 description: "Installer Debian 12 Bookworm sur une VM, choisir stockage et réseau, créer un compte d'administration et vérifier la version réelle avant l'installation de rôles."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian12]", "[bookworm]", "[debian]", "[installation]", "[vm]", "[premier-demarrage]"]
+tags: ["debian12", "bookworm", "debian", "installation", "vm", "premier-demarrage"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

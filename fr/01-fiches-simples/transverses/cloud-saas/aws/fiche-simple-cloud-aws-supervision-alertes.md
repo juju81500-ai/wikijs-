@@ -3,7 +3,7 @@ title: "Fiche Simple - Cloud AWS Supervision Alertes"
 description: "Supervision et alertes dans AWS en limitant les risques de sécurité, de disponibilité et de coût."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["aws", "supervision_alertes", "securite", "procedure"]
+tags: ["aws", "supervision-alertes", "securite", "procedure"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

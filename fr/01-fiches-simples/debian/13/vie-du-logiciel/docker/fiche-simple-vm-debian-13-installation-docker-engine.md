@@ -3,7 +3,7 @@ title: "VM_Debian_13_Services_Installation-Docker-Engine"
 description: "Installer le moteur Docker Engine officiel, le plugin Docker Compose v2 et containerd sur Debian 13 (Trixie), configurer le démarrage automatique et sécuriser le socket Unix."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[docker]", "[docker-compose]", "[containerd]", "[hardening]", "[security]"]
+tags: ["debian13", "docker", "docker-compose", "containerd", "hardening", "security"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

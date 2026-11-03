@@ -3,7 +3,7 @@ title: "fiche-simple-vm-rocky-9-securite-ssh-cle-sshd"
 description: "Déployer une clé cryptographique ed25519 pour l'administrateur, puis durcir sshd (pas de mot de passe, pas de connexion root) sans perdre l'accès au serveur."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky9]", "[rhel9]", "[ssh]", "[sshd]", "[cles]", "[hardening]"]
+tags: ["rocky9", "rhel9", "ssh", "sshd", "cles", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

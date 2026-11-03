@@ -3,7 +3,7 @@ title: "Nginx"
 description: "Installer le serveur web Nginx sur Debian 12, vérifier sur ce même serveur qu'une page de test répond, puis le durcir (HTTPS obligatoire, masquage de la version, en-têtes de sécurité) avant de le publier. Les tests ne se font que sur votre propre serveur."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[nginx]", "[serveur-web]", "[reverse-proxy]", "[hardening]"]
+tags: ["debian-12", "nginx", "serveur-web", "reverse-proxy", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

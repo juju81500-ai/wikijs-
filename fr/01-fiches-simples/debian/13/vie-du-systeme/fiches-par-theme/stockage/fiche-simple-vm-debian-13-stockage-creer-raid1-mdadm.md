@@ -3,7 +3,7 @@ title: "fiche-simple-vm-debian-13-stockage-creer-raid1-mdadm"
 description: "Créer un miroir logiciel RAID 1 avec deux partitions dédiées sous Debian, persister la configuration et surveiller l'état de synchronisation."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[debian]", "[raid1]", "[mdadm]", "[stockage]", "[maintenance]"]
+tags: ["debian13", "debian", "raid1", "mdadm", "stockage", "maintenance"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

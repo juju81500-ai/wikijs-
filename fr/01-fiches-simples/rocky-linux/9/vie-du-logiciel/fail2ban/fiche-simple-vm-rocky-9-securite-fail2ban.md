@@ -3,7 +3,7 @@ title: "fiche-simple-vm-rocky-9-securite-fail2ban"
 description: "Bloquer automatiquement les adresses IP qui échouent répétitivement à l'authentification SSH sur Rocky Linux 9, avec un blocage géré par firewalld."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky9]", "[rhel9]", "[fail2ban]", "[epel]", "[ssh]", "[firewalld]"]
+tags: ["rocky9", "rhel9", "fail2ban", "epel", "ssh", "firewalld"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

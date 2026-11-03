@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Suricata Configurer"
 description: "Configurer Suricata en IDS passif sur l’interface autorisée et mettre à jour les règles."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["suricata", "ubuntu24.04", "vie-du-logiciel", "configurer"]
+tags: ["suricata", "ubuntu24-04", "vie-du-logiciel", "configurer"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

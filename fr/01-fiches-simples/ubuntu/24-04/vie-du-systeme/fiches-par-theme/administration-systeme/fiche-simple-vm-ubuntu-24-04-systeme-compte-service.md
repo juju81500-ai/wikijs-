@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Systeme Compte Service"
 description: "Créer un compte système sans session interactive pour exécuter un service sur Ubuntu Server 24-04 LTS, limiter ses droits sur ses répertoires et le faire tourner depuis une unité systemd dédiée."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[ubuntu24.04]", "[ubuntu]", "[useradd]", "[nologin]", "[systemd]", "[service-account]", "[hardening]"]
+tags: ["ubuntu24-04", "ubuntu", "useradd", "nologin", "systemd", "service-account", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

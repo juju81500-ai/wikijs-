@@ -3,7 +3,7 @@ title: "fiche-simple-lxc-alpine-3-19-securite-fail2ban"
 description: "Installer Fail2ban sur un conteneur Alpine Linux pour bloquer temporairement les adresses qui échouent répétitivement à l'authentification SSH, sans se verrouiller soi-même hors du conteneur."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[alpine3.19]", "[alpine]", "[lxc]", "[fail2ban]", "[ssh]", "[openrc]", "[hardening]"]
+tags: ["alpine3-19", "alpine", "lxc", "fail2ban", "ssh", "openrc", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

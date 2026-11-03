@@ -3,7 +3,7 @@ title: "VM_Win11_Utilisateurs_Creer-Compte-Local-Et-Admin"
 description: "Créer un compte utilisateur local standard et un compte administrateur local sous Windows 11/10 via la nouvelle interface Paramètres, la console classique lusrmgr.msc ou en ligne de commande PowerShell."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[windows-11]", "[windows-10]", "[windows-client]", "[utilisateurs]", "[admin-local]", "[gui]", "[powershell]"]
+tags: ["windows-11", "windows-10", "windows-client", "utilisateurs", "admin-local", "gui", "powershell"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

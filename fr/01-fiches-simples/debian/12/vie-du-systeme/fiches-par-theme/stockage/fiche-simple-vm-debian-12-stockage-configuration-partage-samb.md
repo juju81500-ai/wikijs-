@@ -3,7 +3,7 @@ title: "VM_Debian_12_Stockage_Configuration-Partage-Samba"
 description: "Installer le service Samba sur Debian 12, créer un partage réseau compatible Windows/Linux, gérer les utilisateurs Samba et restreindre l'accès par sous-réseau et chiffrement du protocole."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian12]", "[samba]", "[smb]", "[cifs]", "[partage-fichiers]", "[hardening]"]
+tags: ["debian12", "samba", "smb", "cifs", "partage-fichiers", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

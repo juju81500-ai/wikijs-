@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-packet-tracer-sauvegarder-maintenir"
 description: "Conserver les fichiers sources et mettre à jour proprement."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu24.04", "cisco", "packet-tracer", "netacad", "sauvegarde", "mise-a-jour"]
+tags: ["ubuntu24-04", "cisco", "packet-tracer", "netacad", "sauvegarde", "mise-a-jour"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

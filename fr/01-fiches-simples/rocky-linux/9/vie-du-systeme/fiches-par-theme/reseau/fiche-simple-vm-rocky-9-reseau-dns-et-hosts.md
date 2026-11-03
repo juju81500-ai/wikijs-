@@ -3,7 +3,7 @@ title: "fiche-simple-vm-rocky-9-reseau-dns-et-hosts"
 description: "Configurer les serveurs DNS et le domaine de recherche d'une connexion NetworkManager sous Rocky Linux 9, puis fixer la résolution locale dans /etc/hosts, sans que le DHCP écrase les réglages."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky9]", "[rhel9]", "[dns]", "[networkmanager]", "[hosts]", "[resolv]"]
+tags: ["rocky9", "rhel9", "dns", "networkmanager", "hosts", "resolv"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

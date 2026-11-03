@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Rocky 9 Dovecot Prerequis Limites"
 description: "Vérifier rôle, paquets et flux nécessaires à Dovecot."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["dovecot", "serveur", "vie-du-logiciel", "prerequis_limites"]
+tags: ["dovecot", "serveur", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Securite Certbot TLS"
 description: "Obtenir, installer et renouveler automatiquement un certificat TLS Let's Encrypt pour un nom de domaine public servi par Nginx sur Ubuntu Server 24-04 LTS, et vérifier que le renouvellement fonctionne avant l'échéance."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[ubuntu24.04]", "[ubuntu]", "[certbot]", "[letsencrypt]", "[tls]", "[nginx]", "[renouvellement]"]
+tags: ["ubuntu24-04", "ubuntu", "certbot", "letsencrypt", "tls", "nginx", "renouvellement"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

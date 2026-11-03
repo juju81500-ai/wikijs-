@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-packet-tracer-premier-lancement-auth"
 description: "Se connecter avec le compte propriétaire et ranger les fichiers correctement."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu24.04", "cisco", "packet-tracer", "netacad", "authentification"]
+tags: ["ubuntu24-04", "cisco", "packet-tracer", "netacad", "authentification"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

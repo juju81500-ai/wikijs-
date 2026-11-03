@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Suricata Sauvegarder Restaurer"
 description: "Sauvegarder et restaurer configuration et règles locales de Suricata."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["suricata", "ubuntu24.04", "vie-du-logiciel", "sauvegarder-restaurer"]
+tags: ["suricata", "ubuntu24-04", "vie-du-logiciel", "sauvegarder-restaurer"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

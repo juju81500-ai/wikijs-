@@ -3,7 +3,7 @@ title: "VM_Rocky_9_Services_Gestion-Paquets-DNF"
 description: "Gérer l'installation, la recherche, la mise à jour et la suppression de logiciels sous Rocky Linux 9 / RHEL 9 via le gestionnaire de paquets DNF/RPM, et activer les dépôts d'entreprise EPEL."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky-9]", "[redhat-family]", "[dnf]", "[rpm]", "[hardening]"]
+tags: ["rocky-9", "redhat-family", "dnf", "rpm", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

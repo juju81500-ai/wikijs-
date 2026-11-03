@@ -3,7 +3,7 @@ title: "Serveur Zabbix 7.0 LTS sur Debian 12"
 description: "Fiche simple : [concevoir et préparer Zabbix](../../../../01-fiches-simples/debian/12/vie-du-logiciel/zabbix/fiche-simple-vm-debian-12-zabbix-concevoir-preparer.md)."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["zabbix", "7.0-lts", "debian12", "supervision", "mariadb"]
+tags: ["zabbix", "7-0-lts", "debian12", "supervision", "mariadb"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

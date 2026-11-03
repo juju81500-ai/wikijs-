@@ -3,7 +3,7 @@ title: "Fiche Simple - Ubuntu 24.04 Nakivo Transporter Configurer"
 description: "Rattacher le Transporter Linux installé à une configuration NAKIVO et utiliser le nœud prévu pour les tâches de sauvegarde."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu-24.04", "nakivo", "transporter", "transporter-configurer"]
+tags: ["ubuntu-24-04", "nakivo", "transporter", "transporter-configurer"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "VM_Debian_12_Supervision_Installation-Zabbix-Agent"
 description: "Installer l'agent de supervision Zabbix Agent 2 sur Debian 12 à partir des dépôts officiels Zabbix, le connecter au serveur de supervision central et restreindre la communication via chiffrement PSK."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian12]", "[zabbix]", "[zabbix-agent2]", "[supervision]", "[monitoring]", "[hardening]"]
+tags: ["debian12", "zabbix", "zabbix-agent2", "supervision", "monitoring", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

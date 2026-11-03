@@ -3,7 +3,7 @@ title: "VM_Debian_13_Securite_Configuration-Sudo-Chroot-Restreint"
 description: "Administrer les règles de privilèges sudo sous Debian 13, autoriser des commandes ciblées pour les techniciens d'exploitation et bloquer l'évasion de shell."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[sudo]", "[security]", "[privileges]", "[hardening]"]
+tags: ["debian13", "sudo", "security", "privileges", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

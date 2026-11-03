@@ -3,7 +3,7 @@ title: "Redis"
 description: "Installer Redis sur Debian 12, vérifier qu'il répond et qu'il enregistre une valeur, puis le préparer pour la production : écoute limitée, authentification obligatoire, utilisateur applicatif restreint, sauvegarde testée. Les tests ne se font que sur votre propre serveur."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[redis]", "[cache]", "[sauvegarde]", "[hardening]"]
+tags: ["debian-12", "redis", "cache", "sauvegarde", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

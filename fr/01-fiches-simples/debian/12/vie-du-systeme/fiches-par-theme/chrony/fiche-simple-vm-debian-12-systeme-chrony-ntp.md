@@ -3,7 +3,7 @@ title: "VM_Debian_12_Systeme_Chrony-NTP"
 description: "Synchroniser l'horloge d'un serveur Debian 12 avec des sources NTP fiables au moyen de chrony, condition nécessaire à la validité des certificats, de Kerberos (AD) et à la corrélation des journaux."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian12]", "[debian-family]", "[chrony]", "[ntp]", "[chronyc]", "[timedatectl]"]
+tags: ["debian12", "debian-family", "chrony", "ntp", "chronyc", "timedatectl"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

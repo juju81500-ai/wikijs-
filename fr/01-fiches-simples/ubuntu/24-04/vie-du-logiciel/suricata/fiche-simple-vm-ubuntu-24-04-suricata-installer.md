@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Suricata Installer"
 description: "Installer Suricata depuis les dépôts de Ubuntu 24-04 (universe)."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["suricata", "ubuntu24.04", "vie-du-logiciel", "installer"]
+tags: ["suricata", "ubuntu24-04", "vie-du-logiciel", "installer"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

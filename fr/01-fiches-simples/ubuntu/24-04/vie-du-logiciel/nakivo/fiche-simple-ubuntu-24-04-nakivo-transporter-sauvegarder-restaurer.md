@@ -3,7 +3,7 @@ title: "Fiche Simple - Ubuntu 24.04 Nakivo Transporter Sauvegarder Restaurer"
 description: "Protéger la configuration NAKIVO (self-backup du Director) et prouver qu'une restauration fonctionne, pour un nœud Transporter hébergé sur Ubuntu 24-04."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu-24.04", "nakivo", "transporter", "sauvegarder-restaurer"]
+tags: ["ubuntu-24-04", "nakivo", "transporter", "sauvegarder-restaurer"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

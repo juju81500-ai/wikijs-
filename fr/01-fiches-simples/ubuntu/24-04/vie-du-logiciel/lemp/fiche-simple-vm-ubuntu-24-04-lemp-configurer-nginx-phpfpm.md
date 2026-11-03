@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-lemp-configurer-nginx-phpfpm"
 description: "Créer un server block Nginx qui transmet les fichiers PHP au socket FPM."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu24.04", "nginx", "php8.3", "mariadb", "lemp", "server-block", "php-fpm"]
+tags: ["ubuntu24-04", "nginx", "php8-3", "mariadb", "lemp", "server-block", "php-fpm"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

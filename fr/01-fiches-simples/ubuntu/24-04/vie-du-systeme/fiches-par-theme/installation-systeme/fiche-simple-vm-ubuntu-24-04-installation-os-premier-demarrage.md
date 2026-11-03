@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-installation-os-premier-demarrage"
 description: "Installer Ubuntu Server 24-04 LTS sur une nouvelle VM, configurer stockage et réseau initial, et identifier si cloud-init restera propriétaire des paramètres réseau."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[ubuntu24.04]", "[ubuntu]", "[installation]", "[vm]", "[netplan]", "[premier-demarrage]"]
+tags: ["ubuntu24-04", "ubuntu", "installation", "vm", "netplan", "premier-demarrage"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "HAProxy"
 description: "Installer HAProxy sur Debian 12 comme répartiteur de charge HTTP devant deux serveurs web, vérifier qu'il redistribue les requêtes, puis le durcir (statistiques protégées, pare-feu restreint, certificat TLS) avant de le mettre devant un service de l'entreprise. Les tests ne se font que sur votre pro"
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[haproxy]", "[reverse-proxy]", "[load-balancer]", "[hardening]"]
+tags: ["debian-12", "haproxy", "reverse-proxy", "load-balancer", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

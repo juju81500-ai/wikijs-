@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-securite-creer-profil-apparmor"
 description: "Générer puis resserrer un profil AppArmor pour une application locale afin de limiter ses accès aux seuls fichiers et opérations nécessaires."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[ubuntu24.04]", "[ubuntu]", "[apparmor]", "[profil]", "[hardening]", "[securite]"]
+tags: ["ubuntu24-04", "ubuntu", "apparmor", "profil", "hardening", "securite"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

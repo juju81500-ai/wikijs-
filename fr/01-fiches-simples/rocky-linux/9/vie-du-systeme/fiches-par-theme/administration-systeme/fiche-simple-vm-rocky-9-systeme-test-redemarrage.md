@@ -3,7 +3,7 @@ title: "fiche-simple-vm-rocky-9-systeme-test-redemarrage"
 description: "Vérifier qu'un serveur Rocky Linux 9 redémarre proprement et que les montages, le réseau, l'heure, SELinux, le pare-feu et les services métiers reviennent sans intervention manuelle."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky9]", "[rhel9]", "[reboot]", "[persistance]", "[systemd]", "[validation]"]
+tags: ["rocky9", "rhel9", "reboot", "persistance", "systemd", "validation"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

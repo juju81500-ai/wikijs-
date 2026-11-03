@@ -3,7 +3,7 @@ title: "fiche-simple-vm-rocky-9-securite-certbot-tls"
 description: "Obtenir un certificat TLS Let's Encrypt avec Certbot sur Rocky Linux 9, vérifier le renouvellement automatique et protéger la clé privée."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky9]", "[rhel9]", "[certbot]", "[tls]", "[letsencrypt]", "[epel]"]
+tags: ["rocky9", "rhel9", "certbot", "tls", "letsencrypt", "epel"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "Fiche Simple - Cloud AWS Compte Organisation Budgets"
 description: "Compte, organisation sécurisée et budgets dans AWS en limitant les risques de sécurité, de disponibilité et de coût."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["aws", "compte_organisation_budgets", "securite", "procedure"]
+tags: ["aws", "compte-organisation-budgets", "securite", "procedure"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

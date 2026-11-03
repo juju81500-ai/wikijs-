@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Windows Server 2022 Systeme Sysprep Modele"
 description: "Préparer une VM Windows Server 2022 propre, puis la généraliser avec Sysprep pour en faire un modèle de référence réutilisable : chaque copie reçoit alors un SID, un nom et une configuration de premier démarrage distincts."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[windows-server-2022]", "[sysprep]", "[template]", "[dism]", "[hyper-v]", "[powershell]"]
+tags: ["windows-server-2022", "sysprep", "template", "dism", "hyper-v", "powershell"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

@@ -3,7 +3,7 @@ title: "VM_Ubuntu_24.04_Systeme_Mise-A-Jour-APT-Auto"
 description: "Effectuer la mise à jour complète des paquets logiciels du système sous Ubuntu 24-04 LTS via APT, nettoyer les dépendances obsolètes et configurer les mises à jour automatiques des vulnérabilités critiques."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[ubuntu-24.04]", "[apt]", "[mises-a-jour]", "[hardening]"]
+tags: ["ubuntu-24-04", "apt", "mises-a-jour", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Rocky 9 Dovecot Sauvegarder Restaurer"
 description: "Sauvegarder configuration de Dovecot et tester restauration."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["dovecot", "serveur", "vie-du-logiciel", "sauvegarder_restaurer"]
+tags: ["dovecot", "serveur", "vie-du-logiciel", "sauvegarder-restaurer"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

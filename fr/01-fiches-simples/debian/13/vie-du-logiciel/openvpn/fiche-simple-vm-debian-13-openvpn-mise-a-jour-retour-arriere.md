@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 OpenVPN Mise A Jour Retour Arriere"
 description: "Mettre OpenVPN à jour de façon contrôlée et rétablir le service si la validation échoue."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["openvpn", "debian13", "vie-du-logiciel", "mise_a_jour_retour_arriere"]
+tags: ["openvpn", "debian13", "vie-du-logiciel", "mise-a-jour-retour-arriere"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

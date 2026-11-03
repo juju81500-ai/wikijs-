@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Zeek Configurer"
 description: "Configurer et exploiter Zeek en capteur passif standalone sur l’interface autorisée."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["zeek", "ubuntu24.04", "vie-du-logiciel", "configurer"]
+tags: ["zeek", "ubuntu24-04", "vie-du-logiciel", "configurer"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

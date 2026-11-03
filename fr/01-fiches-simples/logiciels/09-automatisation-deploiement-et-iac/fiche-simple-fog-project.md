@@ -3,7 +3,7 @@ title: "FOG Project"
 description: "Installer le serveur FOG Project sur Debian 12 avec son script officiel, vérifier les services d'imagerie (web, TFTP, NFS, base), préparer le démarrage PXE des postes, puis durcir l'accès à l'interface d'administration et sauvegarder la base et les images."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[fog]", "[pxe]", "[imagerie]", "[deploiement]", "[hardening]"]
+tags: ["debian-12", "fog", "pxe", "imagerie", "deploiement", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

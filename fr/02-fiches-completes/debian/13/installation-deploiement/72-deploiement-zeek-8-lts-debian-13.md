@@ -3,7 +3,7 @@ title: "Déployer Zeek 8.0 LTS en capteur passif sur Debian 13"
 description: "Fiche simple : [définir périmètre et source réseau](../../../../01-fiches-simples/debian/13/vie-du-logiciel/zeek/fiche-simple-vm-debian-13-zeek-cadrer.md)."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["zeek", "debian13", "lTS", "network-monitoring", "af-packet", "zeekctl", "lab"]
+tags: ["zeek", "debian13", "lts", "network-monitoring", "af-packet", "zeekctl", "lab"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

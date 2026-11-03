@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Windows 11 Securite Defender WDAC"
 description: "Vérifier et durcir Microsoft Defender Antivirus sur un poste Windows 11, puis mettre en place un contrôle des applications (WDAC) en commençant par un mode audit qui journalise sans bloquer."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[windows-11]", "[defender]", "[wdac]", "[applocker]", "[code-integrity]", "[powershell]"]
+tags: ["windows-11", "defender", "wdac", "applocker", "code-integrity", "powershell"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

@@ -3,7 +3,7 @@ title: "fiche-simple-lxc-alpine-controle-mise-production"
 description: "Vérifier qu'un LXC Alpine est prêt à être mis en production : accès d'administration, réseau, services OpenRC, sécurité, sauvegarde et retour arrière."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[alpine]", "[lxc]", "[production]", "[validation]", "[sauvegarde]", "[openrc]"]
+tags: ["alpine", "lxc", "production", "validation", "sauvegarde", "openrc"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

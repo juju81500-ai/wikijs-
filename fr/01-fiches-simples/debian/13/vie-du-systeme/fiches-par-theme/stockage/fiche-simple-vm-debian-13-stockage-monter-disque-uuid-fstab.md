@@ -3,7 +3,7 @@ title: "fiche-simple-vm-debian-13-stockage-monter-disque-uuid-fstab"
 description: "Formater une partition de données explicitement identifiée, la monter de façon persistante par UUID via /etc/fstab, puis vérifier la configuration avant redémarrage."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[debian]", "[stockage]", "[fstab]", "[uuid]", "[ext4]"]
+tags: ["debian13", "debian", "stockage", "fstab", "uuid", "ext4"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

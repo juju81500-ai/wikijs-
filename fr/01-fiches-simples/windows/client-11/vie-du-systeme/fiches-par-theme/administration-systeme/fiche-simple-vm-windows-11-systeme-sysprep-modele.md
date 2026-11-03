@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Windows 11 Systeme Sysprep Modele"
 description: "Préparer un poste Windows 11 modèle, supprimer les applications Store qui bloquent Sysprep, puis généraliser la machine pour qu'elle puisse être clonée sans conflit de SID ni de nom."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[windows-11]", "[sysprep]", "[template]", "[appx]", "[dism]", "[powershell]"]
+tags: ["windows-11", "sysprep", "template", "appx", "dism", "powershell"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

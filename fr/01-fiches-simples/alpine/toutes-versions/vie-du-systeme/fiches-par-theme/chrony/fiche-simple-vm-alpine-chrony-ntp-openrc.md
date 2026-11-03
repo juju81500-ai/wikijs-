@@ -3,7 +3,7 @@ title: "fiche-simple-vm-alpine-chrony-ntp-openrc"
 description: "Installer Chrony comme client NTP sur une VM Alpine, le gérer avec OpenRC et vérifier la synchronisation sans exposer inutilement un service NTP serveur."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[alpine]", "[chrony]", "[ntp]", "[openrc]", "[time]", "[services]"]
+tags: ["alpine", "chrony", "ntp", "openrc", "time", "services"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

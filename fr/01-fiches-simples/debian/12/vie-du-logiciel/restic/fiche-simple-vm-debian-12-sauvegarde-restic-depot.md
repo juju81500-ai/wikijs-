@@ -3,7 +3,7 @@ title: "VM_Debian_12_Sauvegarde_Restic-Depot"
 description: "Créer un dépôt de sauvegarde chiffré avec restic sur Debian 12, y enregistrer les répertoires de configuration et de données, contrôler son intégrité et appliquer une politique de rétention."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian12]", "[debian-family]", "[restic]", "[backup]", "[chiffrement]", "[retention]"]
+tags: ["debian12", "debian-family", "restic", "backup", "chiffrement", "retention"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

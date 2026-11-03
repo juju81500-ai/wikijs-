@@ -3,7 +3,7 @@ title: "Podman / Buildah"
 description: "Installer Podman et Buildah sur Rocky Linux 9, vérifier qu'un conteneur s'exécute en mode rootless, construire une image à partir d'un Containerfile, puis durcir l'exécution (compte de service dédié, capacités réduites, politique de confiance des registres). Les tests ne se font que sur votre propre"
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky-9]", "[podman]", "[buildah]", "[conteneurs]", "[rootless]", "[hardening]"]
+tags: ["rocky-9", "podman", "buildah", "conteneurs", "rootless", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

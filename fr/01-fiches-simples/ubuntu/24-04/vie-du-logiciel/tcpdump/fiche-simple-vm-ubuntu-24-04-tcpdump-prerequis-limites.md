@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 tcpdump Prerequis Limites"
 description: "Cadrer l’usage autorisé de tcpdump sur VM Ubuntu Server 24-04 LTS avant toute capture : périmètre, durée, données concernées et limites techniques."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["tcpdump", "ubuntu24.04", "vie-du-logiciel", "prerequis-limites"]
+tags: ["tcpdump", "ubuntu24-04", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

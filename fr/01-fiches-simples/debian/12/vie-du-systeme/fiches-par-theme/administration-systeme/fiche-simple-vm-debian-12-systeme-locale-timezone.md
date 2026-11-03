@@ -3,7 +3,7 @@ title: "VM_Debian_12_Systeme_Locale-Timezone"
 description: "Configurer la locale système (UTF-8, français) et le fuseau horaire d'un serveur Debian 12, avec une horloge matérielle en UTC, pour que les journaux, les sauvegardes planifiées et les accents s'affichent de façon cohérente."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian12]", "[debian-family]", "[locale]", "[timezone]", "[timedatectl]", "[utf-8]"]
+tags: ["debian12", "debian-family", "locale", "timezone", "timedatectl", "utf-8"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

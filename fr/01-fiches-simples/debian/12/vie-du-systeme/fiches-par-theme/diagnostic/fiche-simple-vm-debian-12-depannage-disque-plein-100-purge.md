@@ -3,7 +3,7 @@ title: "VM_Debian_12_Depannage_Disque-Plein-100-Purge"
 description: "Diagnostiquer un disque système plein à 100%, identifier les répertoires volumineux, purger les journaux système de systemd-journald et les anciens noyaux pour rétablir le fonctionnement des services."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian12]", "[depannage]", "[disque-plein]", "[hardening]"]
+tags: ["debian12", "depannage", "disque-plein", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

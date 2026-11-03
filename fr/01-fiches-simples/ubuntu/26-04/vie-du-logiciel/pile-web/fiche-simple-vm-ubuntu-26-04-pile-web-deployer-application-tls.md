@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-26-04-pile-web-deployer-application-tls"
 description: "Déployer l'application, la relier à PostgreSQL et activer TLS."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu2604", "nginx", "php8.5", "postgresql18", "tls"]
+tags: ["ubuntu2604", "nginx", "php8-5", "postgresql18", "tls"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

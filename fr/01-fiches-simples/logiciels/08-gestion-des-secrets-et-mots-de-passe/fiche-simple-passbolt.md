@@ -3,7 +3,7 @@ title: "Passbolt"
 description: "Déployer Passbolt CE (gestionnaire de mots de passe partagés) sur une VM Debian 13 avec Docker, créer le premier compte administrateur, vérifier que l'interface répond, puis le publier derrière HTTPS avec des sauvegardes et des secrets protégés. Passbolt repose sur une clé GPG serveur : sa perte ren"
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-13]", "[docker]", "[passbolt]", "[gestionnaire-mots-de-passe]", "[hardening]"]
+tags: ["debian-13", "docker", "passbolt", "gestionnaire-mots-de-passe", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

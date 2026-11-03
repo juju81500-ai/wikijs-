@@ -3,7 +3,7 @@ title: "fiche-simple-lxc-alpine-3-19-diagnostic-journaux-erreurs"
 description: "Identifier les services en échec, les erreurs consignées par syslog et les messages noyau d'un conteneur Alpine Linux, à partir des outils disponibles par défaut (OpenRC, BusyBox, dmesg)."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[alpine3.19]", "[alpine]", "[lxc]", "[diagnostic]", "[logs]", "[openrc]", "[dmesg]"]
+tags: ["alpine3-19", "alpine", "lxc", "diagnostic", "logs", "openrc", "dmesg"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

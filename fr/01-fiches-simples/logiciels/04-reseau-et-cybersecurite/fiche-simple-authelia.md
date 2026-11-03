@@ -3,7 +3,7 @@ title: "Authelia"
 description: "Installer Authelia sur Debian 12 comme portail d'authentification et de double facteur devant une application web, vérifier l'ouverture de session sur ce même serveur, puis le durcir (secrets forts, règles d'accès par domaine, TLS). Les tests ne se font que sur votre propre serveur."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[authelia]", "[sso]", "[mfa]", "[hardening]"]
+tags: ["debian-12", "authelia", "sso", "mfa", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

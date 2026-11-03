@@ -3,7 +3,7 @@ title: "VM_WinSrv_2022_Stockage_Creer-Partage-SMB-Et-Droits-NTFS"
 description: "Créer un dossier partagé réseau (Partage SMB), attribuer les autorisations de partage et combiner les autorisations de sécurité NTFS fines selon le modèle AGDLP."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[winsrv2022]", "[smb]", "[partage]", "[ntfs]", "[acl]", "[gui]", "[powershell]", "[hardening]"]
+tags: ["winsrv2022", "smb", "partage", "ntfs", "acl", "gui", "powershell", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

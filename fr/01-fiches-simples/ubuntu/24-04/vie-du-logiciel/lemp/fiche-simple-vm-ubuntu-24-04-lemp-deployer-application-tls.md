@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-lemp-deployer-application-tls"
 description: "Déployer l'application, valider PHP-FPM sans exposer d'information et activer TLS."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu24.04", "nginx", "php8.3", "mariadb", "lemp", "tls", "acme"]
+tags: ["ubuntu24-04", "nginx", "php8-3", "mariadb", "lemp", "tls", "acme"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

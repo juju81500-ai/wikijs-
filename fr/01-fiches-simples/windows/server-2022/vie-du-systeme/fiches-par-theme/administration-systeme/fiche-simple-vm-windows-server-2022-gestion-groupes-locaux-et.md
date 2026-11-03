@@ -3,7 +3,7 @@ title: "VM_WinSrv_2022_Utilisateurs_Gestion-Groupes-Locaux-Et-AD"
 description: "Créer des groupes de sécurité locaux et Active Directory (Global / Local de Domaine), ajouter et retirer des membres, et implémenter la stratégie d'attribution des droits selon le modèle AGDLP."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[winsrv2022]", "[active-directory]", "[groupes]", "[agdlp]", "[gui]", "[powershell]"]
+tags: ["winsrv2022", "active-directory", "groupes", "agdlp", "gui", "powershell"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

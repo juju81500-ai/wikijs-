@@ -3,7 +3,7 @@ title: "fiche-simple-vm-rocky-9-systeme-joindre-ad-sssd"
 description: "Joindre un serveur Rocky Linux 9 à un domaine Active Directory avec realmd et sssd, puis vérifier que les comptes du domaine se connectent et que leur répertoire personnel est créé automatiquement."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky9]", "[rhel9]", "[realmd]", "[sssd]", "[active-directory]", "[kerberos]"]
+tags: ["rocky9", "rhel9", "realmd", "sssd", "active-directory", "kerberos"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

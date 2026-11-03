@@ -3,7 +3,7 @@ title: "fiche-simple-vm-rocky-9-securite-autoriser-port-web-selinux-firewalld"
 description: "Autoriser un service HTTP sur un port TCP personnalisé en déclarant le port SELinux approprié et une règle firewalld persistante et limitée."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky9]", "[rhel9]", "[selinux]", "[firewalld]", "[port]", "[hardening]"]
+tags: ["rocky9", "rhel9", "selinux", "firewalld", "port", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

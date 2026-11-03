@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Windows Server 2022 Journaux WEF"
 description: "Centraliser les journaux d'événements de plusieurs serveurs Windows sur un collecteur unique grâce à Windows Event Forwarding (WEF), afin de disposer d'une vue unifiée des connexions et des erreurs système."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[windows-server-2022]", "[wef]", "[wecutil]", "[event-forwarding]", "[winrm]", "[powershell]"]
+tags: ["windows-server-2022", "wef", "wecutil", "event-forwarding", "winrm", "powershell"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

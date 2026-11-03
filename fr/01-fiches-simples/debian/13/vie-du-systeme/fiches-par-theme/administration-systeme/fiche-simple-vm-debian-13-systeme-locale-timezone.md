@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 Systeme Locale Timezone"
 description: "Définir une locale UTF-8 française et le fuseau Europe/Paris sur Debian 13 (Trixie), avec l'horloge matérielle en UTC, afin que les journaux, les sauvegardes et la supervision utilisent des horodatages cohérents et comparables."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[debian]", "[locale]", "[timezone]", "[systemd]", "[configuration]"]
+tags: ["debian13", "debian", "locale", "timezone", "systemd", "configuration"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

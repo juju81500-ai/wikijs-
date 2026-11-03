@@ -3,7 +3,7 @@ title: "fiche-simple-docker-compose-healthcheck-secrets-rotation-journaux"
 description: "Ajouter un contrôle de santé, une rotation des journaux Docker et un secret monté en fichier à un service Compose, sans inscrire de mot de passe dans le YAML."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[docker]", "[compose]", "[healthcheck]", "[secrets]", "[journaux]", "[hardening]"]
+tags: ["docker", "compose", "healthcheck", "secrets", "journaux", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

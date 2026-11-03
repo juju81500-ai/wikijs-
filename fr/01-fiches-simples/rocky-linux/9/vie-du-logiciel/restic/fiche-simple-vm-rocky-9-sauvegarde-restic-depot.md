@@ -3,7 +3,7 @@ title: "fiche-simple-vm-rocky-9-sauvegarde-restic-depot"
 description: "Créer un dépôt Restic chiffré, lancer une sauvegarde des répertoires système et métier, appliquer une politique de rétention et programmer l'exécution sur Rocky Linux 9."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky9]", "[rhel9]", "[restic]", "[sauvegarde]", "[epel]", "[chiffrement]"]
+tags: ["rocky9", "rhel9", "restic", "sauvegarde", "epel", "chiffrement"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

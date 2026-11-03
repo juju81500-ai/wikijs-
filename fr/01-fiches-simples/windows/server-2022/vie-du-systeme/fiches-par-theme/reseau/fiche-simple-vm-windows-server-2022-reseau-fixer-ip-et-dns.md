@@ -3,7 +3,7 @@ title: "VM_WinSrv_2022_Reseau_Fixer-IP-Et-DNS"
 description: "Fixer une adresse IP statique, définir la passerelle par défaut, configurer les serveurs DNS préférés et auxiliaires, et vider le cache DNS sous Windows Server 2022 via l'interface graphique (GUI) pas-à-pas ou la ligne de commande PowerShell."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[winsrv2022]", "[windows-server]", "[reseau]", "[ip-statique]", "[dns]", "[gui]", "[powershell]", "[hardening]"]
+tags: ["winsrv2022", "windows-server", "reseau", "ip-statique", "dns", "gui", "powershell", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

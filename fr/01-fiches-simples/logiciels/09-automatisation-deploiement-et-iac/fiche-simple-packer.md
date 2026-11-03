@@ -3,7 +3,7 @@ title: "Packer"
 description: "Installer Packer sur Debian 13, valider un modèle de construction d'image (format HCL) sans VM réelle, puis préparer un build reproductible : version figée, variables externalisées, binaire vérifié par empreinte. Packer construit des images (template de VM) à partir d'un modèle ; une image mal const"
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-13]", "[packer]", "[hashicorp]", "[image-template]", "[hardening]"]
+tags: ["debian-13", "packer", "hashicorp", "image-template", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

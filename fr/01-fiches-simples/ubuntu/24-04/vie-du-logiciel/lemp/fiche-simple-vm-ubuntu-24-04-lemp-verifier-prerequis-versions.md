@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-lemp-verifier-prerequis-versions"
 description: "Contrôler le système et les versions candidates avant d'installer la pile LEMP."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu24.04", "nginx", "php8.3", "mariadb", "lemp", "apt"]
+tags: ["ubuntu24-04", "nginx", "php8-3", "mariadb", "lemp", "apt"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

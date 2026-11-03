@@ -3,7 +3,7 @@ title: "MySQL"
 description: "Installer MySQL 8.0 sur Debian 12 depuis le dépôt officiel, créer une base et un compte de test, puis le préparer pour la production : écoute limitée, compte applicatif restreint à son serveur, comptes nettoyés, sauvegarde testée. Les tests ne se font que sur votre propre serveur."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[mysql]", "[base-de-donnees]", "[sauvegarde]", "[hardening]"]
+tags: ["debian-12", "mysql", "base-de-donnees", "sauvegarde", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

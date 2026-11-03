@@ -3,7 +3,7 @@ title: "Pile LEMP sur Ubuntu Server 24-04 : Nginx, PHP-FPM et MariaDB"
 description: "Fiche simple : [vérifier prérequis et versions](../../../../01-fiches-simples/ubuntu/24-04/vie-du-logiciel/lemp/fiche-simple-vm-ubuntu-24-04-lemp-verifier-prerequis-versions.md)."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["ubuntu24.04", "noble", "nginx", "php8.3", "mariadb", "lemp", "tls"]
+tags: ["ubuntu24-04", "noble", "nginx", "php8-3", "mariadb", "lemp", "tls"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

@@ -15,7 +15,7 @@ Catalogue de ressources hébergées hors du pack. Les liens externes sont des pi
 
 ## Catalogues disponibles
 
-- [Cours théoriques](../00-cours-theoriques/readme.md) : parcours originaux du pack et redirections vers les cours et médias d'origine.
+- [Cours théoriques](/fr/00-cours-theoriques/readme) : parcours originaux du pack et redirections vers les cours et médias d'origine.
 - [Fiches d'aide informatique](/fr/06-documentation-ext/01-aide-memoire/fiches-aide-informatique) : références rapides et aide-mémoire avec précautions d'exécution.
 - [Documentation officielle des logiciels](/fr/06-documentation-ext/02-documentation-officielle/liens-docs-logicielles) : références éditeurs et projets, avec le [guide des méthodes d'installation officielles](/fr/06-documentation-ext/02-documentation-officielle/methodes-installation-logiciels) par OS, version et produit.
 - [Sites et communautés de référence](/fr/06-documentation-ext/03-sites-communautes/sites-web) : portails officiels, forums, communautés et apprentissage.

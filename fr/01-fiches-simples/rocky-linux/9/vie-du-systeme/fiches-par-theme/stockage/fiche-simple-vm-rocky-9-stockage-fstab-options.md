@@ -3,7 +3,7 @@ title: "fiche-simple-vm-rocky-9-stockage-fstab-options"
 description: "Vérifier les options de montage de /tmp, /var/tmp et /dev/shm, puis ajouter nodev, nosuid et noexec dans /etc/fstab sans rendre le serveur non démarrable."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky9]", "[rhel9]", "[fstab]", "[mount]", "[tmp]", "[hardening]"]
+tags: ["rocky9", "rhel9", "fstab", "mount", "tmp", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

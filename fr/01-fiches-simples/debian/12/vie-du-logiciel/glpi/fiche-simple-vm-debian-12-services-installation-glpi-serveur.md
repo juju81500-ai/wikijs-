@@ -3,7 +3,7 @@ title: "VM_Debian_12_Services_Installation-GLPI-Serveur"
 description: "Installer la plateforme de gestion de parc et helpdesk GLPI sur Debian 12 avec la pile LAMP, configurer la base de données et sécuriser le répertoire d'installation web."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian12]", "[glpi]", "[apache2]", "[mariadb]", "[php8.2]", "[helpdesk]", "[hardening]"]
+tags: ["debian12", "glpi", "apache2", "mariadb", "php8-2", "helpdesk", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

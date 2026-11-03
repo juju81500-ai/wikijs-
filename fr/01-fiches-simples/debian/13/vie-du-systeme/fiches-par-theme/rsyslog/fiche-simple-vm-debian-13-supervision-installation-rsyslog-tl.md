@@ -3,7 +3,7 @@ title: "VM_Debian_13_Supervision_Installation-Rsyslog-TLS"
 description: "Configurer le démon rsyslog sous Debian 13 pour expédier tous les journaux système vers un serveur de logs centralisé en utilisant le chiffrement TLS et le protocole TCP fiable."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[rsyslog]", "[syslog]", "[logs]", "[tls]", "[hardening]"]
+tags: ["debian13", "rsyslog", "syslog", "logs", "tls", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

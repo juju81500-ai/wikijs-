@@ -3,7 +3,7 @@ title: "Cadrer le déploiement de Cisco Identity Services Engine (ISE)"
 description: "Préparer et valider un déploiement ISE (AAA, 802.1X, profilage, posture, TACACS+). La plateforme est propriétaire et licenciée; les paramètres et menus sont propres à la version. Aucune commande n'est inventée ici."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["cisco-ise", "nac", "802.1x", "radius", "tacacs", "posture"]
+tags: ["cisco-ise", "nac", "802-1x", "radius", "tacacs", "posture"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

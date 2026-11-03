@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Snort Prerequis Limites"
 description: "Cadrer un capteur Snort IDS passif sur VM Ubuntu Server 24-04 LTS : détection et journalisation uniquement, dans un périmètre autorisé."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["snort", "ubuntu24.04", "vie-du-logiciel", "prerequis-limites"]
+tags: ["snort", "ubuntu24-04", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

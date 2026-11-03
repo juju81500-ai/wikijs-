@@ -3,7 +3,7 @@ title: "GitLab"
 description: "Installer une forge GitLab CE sur Debian 12, vérifier l'accès web et la création d'un projet, puis la durcir (inscriptions fermées, pare-feu restreint, sauvegarde régulière) avant de la mettre à disposition des équipes d'administration."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[gitlab]", "[forge]", "[git]", "[sauvegarde]", "[hardening]"]
+tags: ["debian-12", "gitlab", "forge", "git", "sauvegarde", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

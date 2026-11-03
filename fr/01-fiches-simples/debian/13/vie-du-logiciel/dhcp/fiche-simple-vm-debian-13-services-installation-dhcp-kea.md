@@ -3,7 +3,7 @@ title: "Fiche simple — Debian 13 : installer et contrôler Kea DHCPv4"
 description: "Installer Kea DHCPv4 pour un VLAN autorisé, vérifier la configuration et effectuer un test client sans perturber un réseau partagé."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[kea]", "[dhcpv4]", "[reseau]", "[lab]"]
+tags: ["debian13", "kea", "dhcpv4", "reseau", "lab"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

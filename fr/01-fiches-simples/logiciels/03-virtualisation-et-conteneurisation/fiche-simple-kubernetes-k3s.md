@@ -3,7 +3,7 @@ title: "Kubernetes / K3s"
 description: "Installer un cluster K3s à un seul nœud serveur sur Debian 12, vérifier que l'API répond et que les pods démarrent, puis le durcir (kubeconfig restreint, pare-feu limité, chiffrement des secrets, namespace isolé). Les tests ne se font que sur votre propre serveur."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[k3s]", "[kubernetes]", "[conteneurs]", "[hardening]"]
+tags: ["debian-12", "k3s", "kubernetes", "conteneurs", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

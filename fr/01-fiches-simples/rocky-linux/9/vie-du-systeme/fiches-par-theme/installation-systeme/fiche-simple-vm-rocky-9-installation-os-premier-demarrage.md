@@ -3,7 +3,7 @@ title: "fiche-simple-vm-rocky-9-installation-os-premier-demarrage"
 description: "Installer Rocky Linux 9 sur une nouvelle VM depuis une image officielle, préparer le disque et créer un accès d'administration sans exposer le système avant les premiers contrôles."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky9]", "[rhel9]", "[installation]", "[vm]", "[dnf]", "[premier-demarrage]"]
+tags: ["rocky9", "rhel9", "installation", "vm", "dnf", "premier-demarrage"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

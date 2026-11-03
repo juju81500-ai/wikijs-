@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 Snort Prerequis Limites"
 description: "Définir un capteur IDS passif sur une source de trafic autorisée."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["snort", "debian13", "vie-du-logiciel", "prerequis_limites"]
+tags: ["snort", "debian13", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

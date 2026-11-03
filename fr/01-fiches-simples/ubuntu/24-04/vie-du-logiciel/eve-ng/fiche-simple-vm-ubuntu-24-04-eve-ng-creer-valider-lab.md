@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 EVE-NG Creer Valider Lab"
 description: "Créer un premier lab minimal et prouver que l'interface, les nœuds et les liens fonctionnent."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu24.04", "eve-ng", "lab", "vpcs", "validation", "gui"]
+tags: ["ubuntu24-04", "eve-ng", "lab", "vpcs", "validation", "gui"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

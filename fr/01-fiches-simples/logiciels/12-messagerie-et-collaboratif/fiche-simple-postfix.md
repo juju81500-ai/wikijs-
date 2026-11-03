@@ -3,7 +3,7 @@ title: "Postfix"
 description: "Installer le serveur SMTP Postfix sur Debian 12, vérifier sur ce même serveur qu'il accepte et remet un message de test, puis le durcir (chiffrement TLS obligatoire, relais restreint aux réseaux autorisés) avant de l'exposer à l'entreprise. Les tests ne se font que sur votre propre serveur."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[postfix]", "[smtp]", "[messagerie]", "[hardening]"]
+tags: ["debian-12", "postfix", "smtp", "messagerie", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "Fiche Simple - Cloud Azure VPC Firewall"
 description: "VNet et pare-feu dans Microsoft Azure en limitant les risques de sécurité, de disponibilité et de coût."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["azure", "vpc_firewall", "securite", "procedure"]
+tags: ["azure", "vpc-firewall", "securite", "procedure"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

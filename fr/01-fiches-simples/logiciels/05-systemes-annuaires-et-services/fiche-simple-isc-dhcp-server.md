@@ -3,7 +3,7 @@ title: "ISC DHCP Server"
 description: "Installer un serveur DHCP ISC (dhcpd) sur Debian 12 pour distribuer des baux sur un sous-réseau de test, vérifier qu'un client obtient bien une adresse, puis le durcir (réservations fixes, pare-feu restreint). ISC DHCP est en fin de vie : pour un nouveau déploiement, privilégier Kea (voir la fiche K"
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[isc-dhcp]", "[dhcp]", "[reseau]", "[legacy]"]
+tags: ["debian-12", "isc-dhcp", "dhcp", "reseau", "legacy"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

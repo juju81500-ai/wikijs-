@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-lemp-retour-arriere"
 description: "Pouvoir revenir à l'état précédent après un changement applicatif ou PHP."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu24.04", "nginx", "php8.3", "mariadb", "lemp", "rollback"]
+tags: ["ubuntu24-04", "nginx", "php8-3", "mariadb", "lemp", "rollback"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

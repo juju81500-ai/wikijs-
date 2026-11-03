@@ -3,7 +3,7 @@ title: "VM_Debian_13_Supervision_Installation-Prometheus-Node-Exporter"
 description: "Installer et configurer l'agent de collecte de métriques système Prometheus Node Exporter sur Debian 13 (Trixie), créer un compte système dédié sans privilèges, et sécuriser le métrique HTTP d'exposition (port 9100)."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[prometheus]", "[node-exporter]", "[metrics]", "[supervision]", "[hardening]"]
+tags: ["debian13", "prometheus", "node-exporter", "metrics", "supervision", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

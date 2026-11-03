@@ -3,7 +3,7 @@ title: "fiche-simple-docker-sauvegarder-stack-compose-base-donnees"
 description: "Créer une sauvegarde cohérente d'une application Compose avec base de données et fichiers persistants, puis vérifier sa restauration dans un projet isolé."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[docker]", "[compose]", "[postgresql]", "[sauvegarde]", "[restauration]", "[maintenance]"]
+tags: ["docker", "compose", "postgresql", "sauvegarde", "restauration", "maintenance"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "VM_WinSrv_2022_ADDS_Joindre-Ou-Sortir-Domaine"
 description: "Joindre un serveur Windows Server ou un poste de travail à un domaine Active Directory (lab.local), ou en sortir proprement pour revenir en groupe de travail (Workgroup)."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[winsrv2022]", "[win11]", "[active-directory]", "[joindre-domaine]", "[gui]", "[powershell]", "[hardening]"]
+tags: ["winsrv2022", "win11", "active-directory", "joindre-domaine", "gui", "powershell", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

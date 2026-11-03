@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 ISC-DHCP-Server Sauvegarder Restaurer"
 description: "Sauvegarder configuration et baux avant transition Kea."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["isc-dhcp", "serveur", "vie-du-logiciel", "sauvegarder_restaurer"]
+tags: ["isc-dhcp", "serveur", "vie-du-logiciel", "sauvegarder-restaurer"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

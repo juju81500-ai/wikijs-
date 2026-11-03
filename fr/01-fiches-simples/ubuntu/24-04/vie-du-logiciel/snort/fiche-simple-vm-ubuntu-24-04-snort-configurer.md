@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Snort Configurer"
 description: "Configurer Snort 3 en détection passive avec HOMENET et des règles approuvées."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["snort", "ubuntu24.04", "vie-du-logiciel", "configurer"]
+tags: ["snort", "ubuntu24-04", "vie-du-logiciel", "configurer"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

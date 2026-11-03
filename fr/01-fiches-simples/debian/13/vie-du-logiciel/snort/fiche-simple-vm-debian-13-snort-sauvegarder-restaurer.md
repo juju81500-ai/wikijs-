@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 Snort Sauvegarder Restaurer"
 description: "Sauvegarder configuration et règles locales, puis tester une restauration isolée."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["snort", "debian13", "vie-du-logiciel", "sauvegarder_restaurer"]
+tags: ["snort", "debian13", "vie-du-logiciel", "sauvegarder-restaurer"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

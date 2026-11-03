@@ -3,7 +3,7 @@ title: "Postman"
 description: "Installer Postman Desktop et Newman (exécution en ligne de commande) sur Debian 12, tester une API de lab avec une collection et un environnement, puis lancer les mêmes tests en production sans secret en clair ni synchronisation non maîtrisée. Les tests ne ciblent que vos propres API."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[postman]", "[newman]", "[api]", "[hardening]"]
+tags: ["debian-12", "postman", "newman", "api", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

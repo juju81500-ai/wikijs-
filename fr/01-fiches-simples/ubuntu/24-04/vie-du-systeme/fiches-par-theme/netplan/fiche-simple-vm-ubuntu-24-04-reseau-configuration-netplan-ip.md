@@ -3,7 +3,7 @@ title: "Diagnostic et dépannage Netplan sur Ubuntu 24-04"
 description: "Diagnostiquer une configuration Netplan qui ne s'applique pas ou qui est écrasée au redémarrage, sans perdre l'accès à la VM."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu24.04", "netplan", "diagnostic", "cloud-init", "reseau"]
+tags: ["ubuntu24-04", "netplan", "diagnostic", "cloud-init", "reseau"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

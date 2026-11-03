@@ -3,7 +3,7 @@ title: "VM_Debian_13_Securite_Hardening-SSH-ED25519"
 description: "Durcir le service d'accès distant OpenSSH sur Debian 13 (Trixie), imposer la connexion par clé asymétrique moderne ED25519, désactiver l'authentification par mot de passe et masquer l'accès du compte root."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[debian13]", "[ssh]", "[ed25519]", "[hardening]", "[security]", "[openssh]"]
+tags: ["debian13", "ssh", "ed25519", "hardening", "security", "openssh"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

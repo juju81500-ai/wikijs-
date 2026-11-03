@@ -3,7 +3,7 @@ title: "VM_Debian_12_Securite_Sudoers-Privileges"
 description: "Déléguer les droits d'administration sous Debian 12 via /etc/sudoers.d/ avec visudo, en accordant le moindre privilège (commandes précises plutôt que ALL) et en auditant les règles NOPASSWD."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian12]", "[debian-family]", "[sudo]", "[sudoers]", "[visudo]", "[moindre-privilege]", "[hardening]"]
+tags: ["debian12", "debian-family", "sudo", "sudoers", "visudo", "moindre-privilege", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

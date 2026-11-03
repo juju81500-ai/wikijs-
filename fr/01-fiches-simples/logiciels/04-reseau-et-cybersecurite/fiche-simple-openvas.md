@@ -3,7 +3,7 @@ title: "OpenVAS"
 description: "Installer la plateforme OpenVAS (Greenbone) sur Debian 12, vérifier qu'elle démarre et que ses flux de vulnérabilités sont chargés, puis la durcir (interface accessible uniquement en interne, mot de passe administrateur changé). Ne lancer des analyses que sur des cibles autorisées par écrit, et uniq"
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[openvas]", "[gvm]", "[scan-vulnerabilites]", "[hardening]"]
+tags: ["debian-12", "openvas", "gvm", "scan-vulnerabilites", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Rocky 9 Postfix Prerequis Limites"
 description: "Vérifier rôle, paquets et flux nécessaires à Postfix."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["postfix", "serveur", "vie-du-logiciel", "prerequis_limites"]
+tags: ["postfix", "serveur", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "fiche-simple-vm-rocky-9-securite-sysctl-noyau"
 description: "Appliquer un durcissement sysctl persistant (redirections ICMP, SYN cookies, filtrage anti-spoofing, ASLR, accès aux logs noyau) via /etc/sysctl.d/ sur Rocky Linux 9, sans casser le routage ou les conteneurs."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky9]", "[rhel9]", "[sysctl]", "[kernel]", "[reseau]", "[hardening]"]
+tags: ["rocky9", "rhel9", "sysctl", "kernel", "reseau", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "fiche-simple-docker-production-mise-a-jour-rollback-compose"
 description: "Mettre à jour une stack Compose avec des images versionnées, sauvegarder les données, valider le service puis revenir en arrière sans détruire les volumes."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[docker]", "[compose]", "[mise-a-jour]", "[rollback]", "[production]", "[maintenance]"]
+tags: ["docker", "compose", "mise-a-jour", "rollback", "production", "maintenance"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

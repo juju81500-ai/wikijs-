@@ -3,7 +3,7 @@ title: "Fiche Simple - Ubuntu 24.04 Nakivo Transporter Valider Mettre A Jour"
 description: "Contrôler que le Transporter fonctionne correctement et appliquer ses mises à jour en suivant la documentation NAKIVO actuelle."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu-24.04", "nakivo", "transporter", "transporter-valider-mettre-a-jour"]
+tags: ["ubuntu-24-04", "nakivo", "transporter", "transporter-valider-mettre-a-jour"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

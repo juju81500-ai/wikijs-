@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-reseau-diagnostic-systemdresolved-dns-split
 description: "Diagnostiquer et configurer la résolution DNS par interface sur Ubuntu Server, notamment pour séparer les noms internes d'entreprise des noms publics."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[ubuntu24.04]", "[ubuntu]", "[netplan]", "[systemd-resolved]", "[dns]", "[diagnostic]"]
+tags: ["ubuntu24-04", "ubuntu", "netplan", "systemd-resolved", "dns", "diagnostic"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

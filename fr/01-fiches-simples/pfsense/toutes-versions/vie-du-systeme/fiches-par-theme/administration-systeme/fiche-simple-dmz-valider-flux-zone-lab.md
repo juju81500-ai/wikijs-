@@ -3,7 +3,7 @@ title: "fiche-simple-dmz-valider-flux-zone-lab"
 description: "Vérifier qu'une DMZ de laboratoire n'autorise que les flux nécessaires entre WAN simulé, DMZ, LAN de test et administration."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[dmz]", "[firewall]", "[segmentation]", "[lab]", "[flux]", "[validation]"]
+tags: ["dmz", "firewall", "segmentation", "lab", "flux", "validation"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "VM_Win11_Systeme_Joindre-Domaine-Active-Directory"
 description: "Joindre un poste client Windows 11 à un domaine Active Directory d'entreprise (lab.local), placer l'ordinateur dans la bonne Unité d'Organisation (OU) et sécuriser la jonction."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[windows-11]", "[active-directory]", "[domain-join]", "[gui]", "[hardening]"]
+tags: ["windows-11", "active-directory", "domain-join", "gui", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-packet-tracer-installer-paquet"
 description: "Installer Packet Tracer sans contourner les dépendances."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu24.04", "cisco", "packet-tracer", "netacad", "deb", "installation"]
+tags: ["ubuntu24-04", "cisco", "packet-tracer", "netacad", "deb", "installation"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

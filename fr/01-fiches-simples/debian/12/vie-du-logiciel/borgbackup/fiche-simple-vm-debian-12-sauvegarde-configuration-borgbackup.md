@@ -3,7 +3,7 @@ title: "VM_Debian_12_Sauvegarde_Configuration-BorgBackup"
 description: "Mettre en place une stratégie de sauvegarde chiffrée, dédupliquée et compressée avec BorgBackup sur Debian 12, et automatiser l'archivage quotidien des répertoires critiques."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian12]", "[borgbackup]", "[sauvegarde]", "[chiffrement]", "[deduplication]", "[hardening]"]
+tags: ["debian12", "borgbackup", "sauvegarde", "chiffrement", "deduplication", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

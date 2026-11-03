@@ -3,7 +3,7 @@ title: "Fiche Simple - Cloud Azure Stockage Objet Chiffre"
 description: "Stockage objet chiffré dans Microsoft Azure en limitant les risques de sécurité, de disponibilité et de coût."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["azure", "stockage_objet_chiffre", "securite", "procedure"]
+tags: ["azure", "stockage-objet-chiffre", "securite", "procedure"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "Fiche Simple - Cloud GCP VM Linux Windows Cles"
 description: "VM Linux et Windows avec accès par clé dans Google Cloud Platform en limitant les risques de sécurité, de disponibilité et de coût."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["gcp", "vm_linux_windows_cles", "securite", "procedure"]
+tags: ["gcp", "vm-linux-windows-cles", "securite", "procedure"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

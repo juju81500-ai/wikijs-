@@ -3,7 +3,7 @@ title: "fiche-simple-vm-rocky-9-reseau-ip-statique-networkmanager-nmcli"
 description: "Configurer une adresse IPv4 statique persistante avec un profil NetworkManager sous Rocky Linux 9, sans modifier directement des fichiers générés par NetworkManager."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky9]", "[rhel9]", "[networkmanager]", "[nmcli]", "[ip-statique]", "[dns]"]
+tags: ["rocky9", "rhel9", "networkmanager", "nmcli", "ip-statique", "dns"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

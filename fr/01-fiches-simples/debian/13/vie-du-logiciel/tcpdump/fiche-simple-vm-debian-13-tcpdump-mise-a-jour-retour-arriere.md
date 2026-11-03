@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 tcpdump Mise A Jour Retour Arriere"
 description: "Mettre tcpdump à jour tout en préservant les captures existantes et la possibilité de diagnostic."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["tcpdump", "debian13", "vie-du-logiciel", "mise_a_jour_retour_arriere"]
+tags: ["tcpdump", "debian13", "vie-du-logiciel", "mise-a-jour-retour-arriere"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

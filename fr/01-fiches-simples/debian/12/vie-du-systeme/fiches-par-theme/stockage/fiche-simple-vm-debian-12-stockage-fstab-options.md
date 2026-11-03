@@ -3,7 +3,7 @@ title: "VM_Debian_12_Stockage_Fstab-Options"
 description: "Déclarer les montages persistants d'un serveur Debian 12 dans /etc/fstab par UUID, et appliquer les options nodev, nosuid et noexec sur les zones d'écriture publiques (/tmp, /var/tmp, /dev/shm) pour bloquer l'exécution de binaires déposés par un attaquant."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian12]", "[debian-family]", "[fstab]", "[mount]", "[uuid]", "[nodev]", "[nosuid]", "[noexec]", "[hardening]"]
+tags: ["debian12", "debian-family", "fstab", "mount", "uuid", "nodev", "nosuid", "noexec", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

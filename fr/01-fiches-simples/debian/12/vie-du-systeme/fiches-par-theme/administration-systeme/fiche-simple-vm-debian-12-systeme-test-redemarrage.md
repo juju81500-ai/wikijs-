@@ -3,7 +3,7 @@ title: "VM_Debian_12_Systeme_Test-Redemarrage"
 description: "Vérifier qu'un serveur Debian 12 redémarre proprement et que tous ses éléments persistants reviennent seuls : montages /etc/fstab, pile réseau, horloge, pare-feu, SSH et services métier, sans unité systemd en échec."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian12]", "[debian-family]", "[reboot]", "[systemd]", "[fstab]", "[validation]", "[production]"]
+tags: ["debian12", "debian-family", "reboot", "systemd", "fstab", "validation", "production"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "fiche-simple-vm-debian-13-web-installation-nginx-php8-4-fpm"
 description: "Installer Nginx et PHP-FPM 8.4 sur Debian 13, relier le serveur au socket FPM de Trixie et vérifier les paquets disponibles avant l'installation."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[trixie]", "[nginx]", "[php8.4]", "[php-fpm]", "[web]", "[hardening]"]
+tags: ["debian13", "trixie", "nginx", "php8-4", "php-fpm", "web", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

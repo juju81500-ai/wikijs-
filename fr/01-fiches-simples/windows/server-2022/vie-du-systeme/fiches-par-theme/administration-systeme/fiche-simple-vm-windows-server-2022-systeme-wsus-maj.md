@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Windows Server 2022 Systeme WSUS Maj"
 description: "Installer un serveur WSUS sur Windows Server 2022 pour distribuer les mises à jour Microsoft aux machines du parc, puis pointer les clients vers ce serveur au lieu de Windows Update Internet, et contrôler l'approbation des correctifs."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[windows-server-2022]", "[wsus]", "[windows-update]", "[gpo]", "[powershell]"]
+tags: ["windows-server-2022", "wsus", "windows-update", "gpo", "powershell"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

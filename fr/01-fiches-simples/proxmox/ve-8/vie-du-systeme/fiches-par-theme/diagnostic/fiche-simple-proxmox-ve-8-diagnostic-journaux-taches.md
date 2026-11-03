@@ -3,7 +3,7 @@ title: "fiche-simple-proxmox-ve-8-diagnostic-journaux-taches"
 description: "Identifier les erreurs de l'hôte Proxmox VE 8 (services en échec, erreurs noyau, tâches échouées des VM et conteneurs), puis centraliser et limiter les journaux pour l'exploitation."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[proxmox-ve-8]", "[debian-bookworm]", "[journalctl]", "[logs]", "[taches]", "[hardening]"]
+tags: ["proxmox-ve-8", "debian-bookworm", "journalctl", "logs", "taches", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "fiche-simple-vm-windows-server-2022-installation-os-premier-demarrage"
 description: "Installer Windows Server 2022 sur une nouvelle VM, sélectionner Server Core ou Desktop Experience selon le rôle et préparer l'administration avant l'installation des rôles."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[windows-server-2022]", "[installation]", "[vm]", "[uefi]", "[premier-demarrage]", "[powershell]"]
+tags: ["windows-server-2022", "installation", "vm", "uefi", "premier-demarrage", "powershell"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

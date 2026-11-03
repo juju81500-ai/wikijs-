@@ -3,7 +3,7 @@ title: "VM_Debian_13_Services_Installation-Chronyc-NTP"
 description: "Installer et configurer le démon chrony sur Debian 13 pour assurer la synchronisation horaire précise et sécuriser le service NTP."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[ntp]", "[chrony]", "[time]", "[hardening]"]
+tags: ["debian13", "ntp", "chrony", "time", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

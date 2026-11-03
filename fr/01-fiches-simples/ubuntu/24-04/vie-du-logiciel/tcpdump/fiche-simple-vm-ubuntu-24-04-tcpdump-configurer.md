@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 tcpdump Configurer"
 description: "Réaliser une capture courte, filtrée et bornée avec tcpdump, puis la relire hors ligne."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["tcpdump", "ubuntu24.04", "vie-du-logiciel", "configurer"]
+tags: ["tcpdump", "ubuntu24-04", "vie-du-logiciel", "configurer"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

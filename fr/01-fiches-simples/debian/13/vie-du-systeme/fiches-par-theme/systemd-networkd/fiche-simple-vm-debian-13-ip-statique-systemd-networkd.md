@@ -3,7 +3,7 @@ title: "VM_Debian_13_Reseau_Fixer-IP-Systemd-Networkd"
 description: "Configurer une adresse IP statique permanente, les serveurs DNS et la passerelle par défaut sur Debian 13 (Trixie) en utilisant le moteur natif systemd-networkd et systemd-resolved, tout en désactivant la configuration automatique via DHCP et IPv6 Router Advertisement."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[debian-family]", "[reseau]", "[ip-statique]", "[systemd-networkd]", "[systemd-resolved]", "[hardening]"]
+tags: ["debian13", "debian-family", "reseau", "ip-statique", "systemd-networkd", "systemd-resolved", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

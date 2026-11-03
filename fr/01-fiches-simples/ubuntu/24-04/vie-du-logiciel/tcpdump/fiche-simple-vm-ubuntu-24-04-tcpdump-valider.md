@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 tcpdump Valider"
 description: "Recetter l’installation et le comportement borné de tcpdump."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["tcpdump", "ubuntu24.04", "vie-du-logiciel", "valider"]
+tags: ["tcpdump", "ubuntu24-04", "vie-du-logiciel", "valider"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

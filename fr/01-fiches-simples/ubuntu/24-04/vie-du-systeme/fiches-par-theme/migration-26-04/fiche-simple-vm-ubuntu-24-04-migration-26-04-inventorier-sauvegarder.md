@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-migration-26-04-inventorier-sauvegarder"
 description: "Inventorier l'état du système et sauvegarder avant l'intervention."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu24.04", "ubuntu26.04", "migration", "inventaire", "sauvegarde"]
+tags: ["ubuntu24-04", "ubuntu26-04", "migration", "inventaire", "sauvegarde"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Windows 11 Diagnostic Journal Evenements"
 description: "Diagnostiquer un poste Windows 11 qui présente des erreurs, des plantages d'applications ou des arrêts inattendus, en utilisant l'Observateur d'événements (interface graphique) puis PowerShell pour filtrer et exporter les événements."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[windows-11]", "[observateur-evenements]", "[get-winevent]", "[diagnostic]", "[gui]", "[powershell]"]
+tags: ["windows-11", "observateur-evenements", "get-winevent", "diagnostic", "gui", "powershell"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

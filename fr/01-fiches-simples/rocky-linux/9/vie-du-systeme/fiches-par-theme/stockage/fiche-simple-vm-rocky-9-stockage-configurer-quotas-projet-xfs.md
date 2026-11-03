@@ -3,7 +3,7 @@ title: "fiche-simple-vm-rocky-9-stockage-configurer-quotas-projet-xfs"
 description: "Définir un quota de projet XFS pour limiter l'espace utilisé par un répertoire partagé, sans confondre les quotas de projet avec les quotas par utilisateur."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky9]", "[rhel9]", "[xfs]", "[quotas]", "[stockage]", "[administration]"]
+tags: ["rocky9", "rhel9", "xfs", "quotas", "stockage", "administration"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

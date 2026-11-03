@@ -3,7 +3,7 @@ title: "fiche-simple-docker-sauvegarder-restaurer-volume"
 description: "Sauvegarder et restaurer un volume Docker nommé en arrêtant les écritures applicatives, sans copier directement les répertoires internes du démon Docker."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[docker]", "[volumes]", "[sauvegarde]", "[restauration]", "[maintenance]"]
+tags: ["docker", "volumes", "sauvegarde", "restauration", "maintenance"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 Systeme Reduction Services"
 description: "Identifier les services systemd en écoute ou démarrés automatiquement mais inutiles au rôle du serveur, puis les désactiver, les masquer et retirer leurs paquets sur Debian 13, sans couper les services nécessaires (SSH, journald, chrony, pare-feu)."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[debian]", "[systemd]", "[services]", "[surface-attaque]", "[hardening]"]
+tags: ["debian13", "debian", "systemd", "services", "surface-attaque", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

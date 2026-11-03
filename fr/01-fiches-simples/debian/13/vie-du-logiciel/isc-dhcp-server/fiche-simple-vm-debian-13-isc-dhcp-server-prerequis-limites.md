@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 ISC-DHCP-Server Prerequis Limites"
 description: "Maintenir un ISC DHCP existant à titre transitoire et planifier Kea."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["isc-dhcp", "serveur", "vie-du-logiciel", "prerequis_limites"]
+tags: ["isc-dhcp", "serveur", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

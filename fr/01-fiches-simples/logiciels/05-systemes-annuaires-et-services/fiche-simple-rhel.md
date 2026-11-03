@@ -3,7 +3,7 @@ title: "RHEL"
 description: "Gérer les paquets d'un serveur RHEL 9 déjà installé : vérifier l'abonnement et les dépôts, appliquer les mises à jour, ouvrir un port de service dans firewalld et l'autoriser dans SELinux, puis durcir la gestion des paquets et du pare-feu. L'installation du système n'est pas reprise ici. Sans abonne"
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rhel-9]", "[subscription-manager]", "[dnf]", "[firewalld]", "[selinux]", "[paquets]", "[hardening]"]
+tags: ["rhel-9", "subscription-manager", "dnf", "firewalld", "selinux", "paquets", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

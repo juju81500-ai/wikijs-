@@ -3,7 +3,7 @@ title: "VM_Debian_13_Systeme_Creation-Swapfile-LVM"
 description: "Créer et configurer un espace de mémoire virtuelle d'échange (Swap) sécurisé sous Debian 13, ajuster le paramètre swappiness et chiffrer l'espace swap au démarrage."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[swap]", "[memory]", "[lvm]", "[hardening]"]
+tags: ["debian13", "swap", "memory", "lvm", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

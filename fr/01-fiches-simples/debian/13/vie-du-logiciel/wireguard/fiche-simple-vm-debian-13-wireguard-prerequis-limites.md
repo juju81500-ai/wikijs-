@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 WireGuard Prerequis Limites"
 description: "Préparer un endpoint WireGuard natif sur Debian 13, sans déploiement Docker."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["wireguard", "debian13", "vie-du-logiciel", "prerequis_limites"]
+tags: ["wireguard", "debian13", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

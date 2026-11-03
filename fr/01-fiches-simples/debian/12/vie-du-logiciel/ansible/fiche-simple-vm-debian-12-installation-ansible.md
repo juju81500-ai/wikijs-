@@ -3,7 +3,7 @@ title: "VM_Debian_12_Automatisation_Installation-Ansible"
 description: "Installer le moteur d'automatisation Ansible, générer une paire de clés SSH dédiées et sécuriser le nœud de contrôle sur Debian 12."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian12]", "[debian-family]", "[ansible]", "[automation]", "[ssh-keys]", "[hardening]"]
+tags: ["debian12", "debian-family", "ansible", "automation", "ssh-keys", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

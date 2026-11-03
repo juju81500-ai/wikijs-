@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Zeek Sauvegarder Restaurer"
 description: "Sauvegarder et restaurer la configuration de Zeek."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["zeek", "ubuntu24.04", "vie-du-logiciel", "sauvegarder-restaurer"]
+tags: ["zeek", "ubuntu24-04", "vie-du-logiciel", "sauvegarder-restaurer"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

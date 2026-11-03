@@ -3,7 +3,7 @@ title: "ownCloud"
 description: "Installer ownCloud Classic sur Debian 12 avec Apache, MariaDB et PHP, vérifier sur ce même serveur que l'instance est installée et répond, puis la durcir (domaines de confiance, dossier de données hors racine web, HTTPS) avant de l'ouvrir aux utilisateurs. Les tests ne se font que sur votre propre s"
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[owncloud]", "[cloud]", "[php]", "[hardening]"]
+tags: ["debian-12", "owncloud", "cloud", "php", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

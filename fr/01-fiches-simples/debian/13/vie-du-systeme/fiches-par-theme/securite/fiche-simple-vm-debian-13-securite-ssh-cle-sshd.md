@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 Securite SSH Cle Sshd"
 description: "Remplacer l'authentification SSH par mot de passe par une authentification par clé ed25519 sur Debian 13, interdire la connexion directe de root et limiter l'accès SSH aux comptes autorisés, sans se verrouiller hors du serveur."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[debian]", "[ssh]", "[sshd]", "[cle-ssh]", "[hardening]"]
+tags: ["debian13", "debian", "ssh", "sshd", "cle-ssh", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

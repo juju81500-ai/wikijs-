@@ -3,7 +3,7 @@ title: "VM_WinSrv_2022_GPO_Configuration-Strategie-Groupe-Securite"
 description: "Créer, configurer et lier une Stratégie de Groupe (GPO) dans Active Directory sous Windows Server 2022 pour durcir la politique de mots de passe, restreindre le Pare-feu Windows et bloquer l'exécution d'outils d'administration non autorisés."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[windows-server-2022]", "[gpo]", "[active-directory]", "[hardening]", "[security-policy]", "[gui]", "[powershell]"]
+tags: ["windows-server-2022", "gpo", "active-directory", "hardening", "security-policy", "gui", "powershell"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

@@ -3,7 +3,7 @@ title: "Fiche Simple - Cloud Azure Journalisation Audit"
 description: "Journalisation et audit dans Microsoft Azure en limitant les risques de sécurité, de disponibilité et de coût."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["azure", "journalisation_audit", "securite", "procedure"]
+tags: ["azure", "journalisation-audit", "securite", "procedure"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

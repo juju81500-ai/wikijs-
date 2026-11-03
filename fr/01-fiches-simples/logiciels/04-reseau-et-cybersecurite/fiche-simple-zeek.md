@@ -3,7 +3,7 @@ title: "Zeek"
 description: "Installer Zeek 8.0 LTS en capteur passif standalone sur une interface miroir autorisée, le déployer avec ZeekControl et vérifier la production de journaux (conn.log). Zeek ne bloque pas le trafic et ne remplace pas un IDS à signatures. Les tests ne se font que sur votre propre réseau de laboratoire."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[zeek]", "[network-monitoring]", "[hardening]"]
+tags: ["debian-12", "zeek", "network-monitoring", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

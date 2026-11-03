@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Diagnostic Journalctl Erreurs"
 description: "Identifier rapidement les services en échec et les erreurs noyau ou système d'un serveur Ubuntu Server 24-04 LTS, sur le démarrage courant comme sur le démarrage précédent, avec systemctl et journalctl."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[ubuntu24.04]", "[ubuntu]", "[journalctl]", "[dmesg]", "[systemd]", "[troubleshooting]", "[logs]"]
+tags: ["ubuntu24-04", "ubuntu", "journalctl", "dmesg", "systemd", "troubleshooting", "logs"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

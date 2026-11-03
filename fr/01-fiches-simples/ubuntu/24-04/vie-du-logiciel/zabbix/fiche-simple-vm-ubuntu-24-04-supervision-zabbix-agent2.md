@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Supervision Zabbix Agent2"
 description: "Installer Zabbix Agent 2 sur Ubuntu Server 24-04 LTS depuis le dépôt officiel, le relier à un serveur Zabbix précis, limiter les connexions entrantes et vérifier que l'hôte remonte ses métriques."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[ubuntu24.04]", "[ubuntu]", "[zabbix]", "[zabbix-agent2]", "[monitoring]", "[ufw]", "[port-10050]"]
+tags: ["ubuntu24-04", "ubuntu", "zabbix", "zabbix-agent2", "monitoring", "ufw", "port-10050"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

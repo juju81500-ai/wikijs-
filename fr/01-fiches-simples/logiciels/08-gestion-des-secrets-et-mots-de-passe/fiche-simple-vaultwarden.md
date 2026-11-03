@@ -3,7 +3,7 @@ title: "Vaultwarden"
 description: "Déployer Vaultwarden, serveur compatible avec les clients Bitwarden, sur une VM Debian 13 avec Docker, vérifier qu'il répond, puis le publier en HTTPS avec inscription fermée, page d'administration protégée et sauvegardes testées. Les coffres chiffrés sont côté client, mais la perte de la base et de"
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-13]", "[docker]", "[vaultwarden]", "[bitwarden-compatible]", "[hardening]"]
+tags: ["debian-13", "docker", "vaultwarden", "bitwarden-compatible", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "Fiche Simple - Ubuntu 24.04 Nakivo Transporter Prerequis"
 description: "Vérifier qu’un hôte Ubuntu Server 24-04 LTS x64 remplit les prérequis publiés par NAKIVO pour héberger un Transporter Linux."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu-24.04", "nakivo", "transporter", "transporter-prerequis"]
+tags: ["ubuntu-24-04", "nakivo", "transporter", "transporter-prerequis"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

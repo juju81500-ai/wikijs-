@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 EVE-NG Installer ISO VM"
 description: "Installer EVE-NG dans une VM à partir de l'ISO officiel. EVE-NG installe son propre Ubuntu Server 24-04 : il n'existe pas de procédure documentée consistant à ajouter EVE-NG par apt sur une Ubuntu existante."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu24.04", "eve-ng", "installation", "iso", "vmware-workstation", "vm"]
+tags: ["ubuntu24-04", "eve-ng", "installation", "iso", "vmware-workstation", "vm"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

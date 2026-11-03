@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Zeek Securiser"
 description: "Durcir le capteur Zeek : droits, privilèges, journaux et exposition."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["zeek", "ubuntu24.04", "vie-du-logiciel", "securiser"]
+tags: ["zeek", "ubuntu24-04", "vie-du-logiciel", "securiser"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

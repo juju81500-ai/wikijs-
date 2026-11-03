@@ -3,7 +3,7 @@ title: "VM_Debian_12_Reseau_Hosts-Resolv"
 description: "Gérer la résolution de noms d'un serveur Debian 12 : table locale /etc/hosts, serveurs DNS dans /etc/resolv.conf et ordre de résolution défini par /etc/nsswitch.conf, pour joindre les machines du domaine sans dépendre d'une requête DNS externe."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian12]", "[debian-family]", "[reseau]", "[dns]", "[etc-hosts]", "[resolv-conf]", "[nsswitch]"]
+tags: ["debian12", "debian-family", "reseau", "dns", "etc-hosts", "resolv-conf", "nsswitch"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

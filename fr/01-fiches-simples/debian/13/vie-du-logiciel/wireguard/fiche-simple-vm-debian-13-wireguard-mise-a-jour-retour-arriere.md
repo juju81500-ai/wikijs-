@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 WireGuard Mise A Jour Retour Arriere"
 description: "Mettre à jour outils/noyau sans perdre la connectivité d’administration."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["wireguard", "debian13", "vie-du-logiciel", "mise_a_jour_retour_arriere"]
+tags: ["wireguard", "debian13", "vie-du-logiciel", "mise-a-jour-retour-arriere"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "Terraform / OpenTofu"
 description: "Installer Terraform ou OpenTofu sur Debian 13, valider le cycle init, plan, apply sur une configuration de test qui ne crée aucune ressource réelle, puis préparer un usage d'équipe : version figée, état distant protégé, aucun secret dans le code. Un apply lancé sans plan relu peut modifier une infra"
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-13]", "[terraform]", "[opentofu]", "[iac]", "[hardening]"]
+tags: ["debian-13", "terraform", "opentofu", "iac", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

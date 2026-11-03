@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 BlueMind Mise A Jour Retour Arriere"
 description: "Mettre à jour BlueMind selon la procédure éditeur et OS supporté."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["bluemind", "serveur", "vie-du-logiciel", "mise_a_jour_retour_arriere"]
+tags: ["bluemind", "serveur", "vie-du-logiciel", "mise-a-jour-retour-arriere"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

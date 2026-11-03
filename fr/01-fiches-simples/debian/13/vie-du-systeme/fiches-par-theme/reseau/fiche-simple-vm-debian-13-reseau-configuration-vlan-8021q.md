@@ -3,7 +3,7 @@ title: "VM_Debian_13_Reseau_Configuration-VLAN-8021q"
 description: "Configurer un trunk VLAN 802.1Q (ex: VLAN 10 Administration) sur une interface réseau physique sous Debian 13 avec systemd-networkd."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[vlan]", "[systemd-networkd]", "[8021q]", "[hardening]"]
+tags: ["debian13", "vlan", "systemd-networkd", "8021q", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

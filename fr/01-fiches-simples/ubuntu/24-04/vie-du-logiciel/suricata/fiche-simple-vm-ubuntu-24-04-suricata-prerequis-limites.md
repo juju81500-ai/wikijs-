@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Suricata Prerequis Limites"
 description: "Cadrer un capteur Suricata IDS passif (détection et journalisation uniquement) sur VM Ubuntu Server 24-04 LTS, dans un périmètre autorisé."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["suricata", "ubuntu24.04", "vie-du-logiciel", "prerequis-limites"]
+tags: ["suricata", "ubuntu24-04", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

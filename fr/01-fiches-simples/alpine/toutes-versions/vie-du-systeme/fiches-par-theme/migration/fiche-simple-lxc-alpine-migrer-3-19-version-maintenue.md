@@ -3,7 +3,7 @@ title: "fiche-simple-lxc-alpine-migrer-3-19-version-maintenue"
 description: "Remplacer un conteneur Alpine Linux 3-19 ancien par un nouveau CT créé avec une version maintenue, en transférant services et données avec une possibilité de retour arrière."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[alpine]", "[alpine3.19]", "[lxc]", "[proxmox]", "[migration]", "[maintenance]"]
+tags: ["alpine", "alpine3-19", "lxc", "proxmox", "migration", "maintenance"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

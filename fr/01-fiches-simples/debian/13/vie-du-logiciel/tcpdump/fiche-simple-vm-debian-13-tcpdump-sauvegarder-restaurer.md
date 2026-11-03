@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 tcpdump Sauvegarder Restaurer"
 description: "Préserver seulement les pcap nécessaires et restaurer leur intégrité dans un stockage protégé."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["tcpdump", "debian13", "vie-du-logiciel", "sauvegarder_restaurer"]
+tags: ["tcpdump", "debian13", "vie-du-logiciel", "sauvegarder-restaurer"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

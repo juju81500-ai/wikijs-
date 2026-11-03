@@ -3,7 +3,7 @@ title: "VM_Debian_12_Utilisateurs_Gestion-Groupes-Et-Permissions"
 description: "Créer des groupes d'utilisateurs d'entreprise, y ajouter ou supprimer des membres, et ajuster les autorisations POSIX (chmod, chown) et les bits spéciaux (SGID) sur les répertoires partagés."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian12]", "[groupes]", "[chmod]", "[chown]", "[permissions]", "[hardening]"]
+tags: ["debian12", "groupes", "chmod", "chown", "permissions", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

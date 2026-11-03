@@ -3,7 +3,7 @@ title: "Fiche simple — Ubuntu : vérifier la santé d'un cluster Ceph"
 description: "Exécuter les commandes depuis un hôte d'administration disposant du CLI et d'une identité Ceph autorisée. Protéger client.admin et les keyrings; ne pas les copier dans un ticket ou une session partagée."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[ceph]", "[cephadm]", "[ubuntu]", "[diagnostic]", "[stockage]"]
+tags: ["ceph", "cephadm", "ubuntu", "diagnostic", "stockage"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

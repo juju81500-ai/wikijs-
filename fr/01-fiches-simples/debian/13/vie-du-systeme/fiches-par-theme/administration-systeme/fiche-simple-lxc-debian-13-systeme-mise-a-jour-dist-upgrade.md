@@ -3,7 +3,7 @@ title: "LXC_Debian_13_Systeme_Mise-A-Jour-Dist-Upgrade"
 description: "Effectuer la maintenance, la mise à jour complète des paquets logiciels et la purge des dépendances orphelines sur un conteneur LXC Debian 13 (Trixie) de façon totalement non-interactive."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[lxc]", "[apt]", "[upgrade]", "[maintenance]", "[hardening]"]
+tags: ["debian13", "lxc", "apt", "upgrade", "maintenance", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

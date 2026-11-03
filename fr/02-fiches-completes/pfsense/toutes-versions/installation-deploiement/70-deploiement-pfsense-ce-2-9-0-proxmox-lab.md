@@ -3,7 +3,7 @@ title: "Déployer pfSense CE 2.9.0 en laboratoire Proxmox VE"
 description: "Fiche simple : [périmètre, prérequis et réseau](../../../../01-fiches-simples/pfsense/toutes-versions/vie-du-systeme/fiches-par-theme/deploiement-ce-lab/fiche-simple-vm-proxmox-pfsense-ce-deploiement-perimetre-prerequis-reseau.md)."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["pfsense", "ce", "2.9.0", "proxmox", "virtualisation", "firewall", "lab"]
+tags: ["pfsense", "ce", "2-9-0", "proxmox", "virtualisation", "firewall", "lab"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

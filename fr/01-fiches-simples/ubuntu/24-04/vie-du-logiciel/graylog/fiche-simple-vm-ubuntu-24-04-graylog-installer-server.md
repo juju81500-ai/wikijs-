@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-graylog-installer-server"
 description: "Installer et configurer Graylog Server."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu2404", "graylog", "datanode", "mongodb", "graylog-server", "password_secret"]
+tags: ["ubuntu2404", "graylog", "datanode", "mongodb", "graylog-server", "password-secret"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

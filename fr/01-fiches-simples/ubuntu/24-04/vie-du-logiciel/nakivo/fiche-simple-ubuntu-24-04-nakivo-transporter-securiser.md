@@ -3,7 +3,7 @@ title: "Fiche Simple - Ubuntu 24.04 Nakivo Transporter Securiser"
 description: "Réduire l’exposition du serveur Ubuntu 24-04 utilisé par le Transporter et protéger les communications et les comptes de service."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu-24.04", "nakivo", "transporter", "transporter-securiser"]
+tags: ["ubuntu-24-04", "nakivo", "transporter", "transporter-securiser"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Journaux Journald Logrotate"
 description: "Rendre persistants les journaux systemd, borner leur taille et leur durée de conservation, et configurer la rotation des journaux d'une application dans /var/log sur Ubuntu Server 24-04 LTS, sans risquer de saturer le disque."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[ubuntu24.04]", "[ubuntu]", "[journald]", "[journalctl]", "[logrotate]", "[logs]", "[retention]"]
+tags: ["ubuntu24-04", "ubuntu", "journald", "journalctl", "logrotate", "logs", "retention"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

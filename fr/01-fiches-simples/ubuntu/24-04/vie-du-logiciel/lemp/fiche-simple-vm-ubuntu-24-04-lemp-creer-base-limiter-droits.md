@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-lemp-creer-base-limiter-droits"
 description: "Créer la base applicative avec un compte aux droits minimaux."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu24.04", "nginx", "php8.3", "mariadb", "lemp", "sql"]
+tags: ["ubuntu24-04", "nginx", "php8-3", "mariadb", "lemp", "sql"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

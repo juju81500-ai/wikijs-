@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Snort Securiser"
 description: "Durcir Snort : compte dédié, droits minimaux, règles et journaux protégés."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["snort", "ubuntu24.04", "vie-du-logiciel", "securiser"]
+tags: ["snort", "ubuntu24-04", "vie-du-logiciel", "securiser"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

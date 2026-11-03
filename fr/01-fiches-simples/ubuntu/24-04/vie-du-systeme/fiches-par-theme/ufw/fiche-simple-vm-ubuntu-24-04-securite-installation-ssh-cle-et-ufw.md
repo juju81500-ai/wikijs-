@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-securite-installation-ssh-cle-et-ufw"
 description: "Installer OpenSSH Server sur Ubuntu Server 24-04, préparer un accès par clé Ed25519 et désactiver l'authentification SSH par mot de passe seulement après validation de la clé."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[ubuntu24.04]", "[ubuntu]", "[openssh]", "[ssh]", "[ufw]", "[ed25519]", "[hardening]"]
+tags: ["ubuntu24-04", "ubuntu", "openssh", "ssh", "ufw", "ed25519", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

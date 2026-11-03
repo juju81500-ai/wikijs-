@@ -3,7 +3,7 @@ title: "Lecture seule : relève les infos de la machine locale et écrit une fic
 description: "set -u"
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["fiche-machine\\", "${type%% *}\\", "${ID:-linux}\\"]
+tags: ["fiche-machine", "type", "id-linux"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

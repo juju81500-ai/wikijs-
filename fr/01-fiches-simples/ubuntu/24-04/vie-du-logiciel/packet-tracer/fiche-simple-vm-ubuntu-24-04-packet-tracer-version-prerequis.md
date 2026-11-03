@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-packet-tracer-version-prerequis"
 description: "Vérifier que le poste est compatible avec Packet Tracer 9.0.1."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu24.04", "cisco", "packet-tracer", "netacad", "prerequis"]
+tags: ["ubuntu24-04", "cisco", "packet-tracer", "netacad", "prerequis"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

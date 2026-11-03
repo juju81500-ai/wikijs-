@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Windows Server 2022 Diagnostic WinEvent"
 description: "Identifier rapidement les erreurs et avertissements récents des journaux System et Application d'un serveur Windows Server 2022 avec Get-WinEvent, puis exporter les résultats pour analyse ou preuve."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[windows-server-2022]", "[get-winevent]", "[event-log]", "[diagnostic]", "[powershell]"]
+tags: ["windows-server-2022", "get-winevent", "event-log", "diagnostic", "powershell"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

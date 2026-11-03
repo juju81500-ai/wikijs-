@@ -3,7 +3,7 @@ title: "VM_Rocky_9_Services_Installation-Et-Configuration-Cockpit"
 description: "Installer la console d'administration Web Cockpit sur Rocky Linux 9, autoriser les flux dans firewalld, configurer l'accès sécurisé et la gestion des abonnements/stockage LVM."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky9]", "[redhat-family]", "[cockpit]", "[firewalld]", "[selinux]", "[hardening]"]
+tags: ["rocky9", "redhat-family", "cockpit", "firewalld", "selinux", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

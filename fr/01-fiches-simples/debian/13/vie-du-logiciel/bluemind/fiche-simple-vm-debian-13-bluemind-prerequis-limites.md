@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 BlueMind Prerequis Limites"
 description: "Confirmer OS, capacité et prérequis de la version BlueMind visée."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["bluemind", "serveur", "vie-du-logiciel", "prerequis_limites"]
+tags: ["bluemind", "serveur", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

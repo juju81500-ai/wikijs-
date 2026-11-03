@@ -3,7 +3,7 @@ title: "Fiche Simple - Cloud GCP Nettoyage Retour Arriere"
 description: "Nettoyage et retour arrière dans Google Cloud Platform en limitant les risques de sécurité, de disponibilité et de coût."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["gcp", "nettoyage_retour_arriere", "securite", "procedure"]
+tags: ["gcp", "nettoyage-retour-arriere", "securite", "procedure"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

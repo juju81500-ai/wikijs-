@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 OpenVPN Sauvegarder Restaurer"
 description: "Sauvegarder la configuration et les artefacts nécessaires au rétablissement sans exposer les clés privées."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["openvpn", "debian13", "vie-du-logiciel", "sauvegarder_restaurer"]
+tags: ["openvpn", "debian13", "vie-du-logiciel", "sauvegarder-restaurer"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

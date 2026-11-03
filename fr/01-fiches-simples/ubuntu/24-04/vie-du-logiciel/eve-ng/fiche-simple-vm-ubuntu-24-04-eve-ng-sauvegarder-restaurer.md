@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 EVE-NG Sauvegarder Restaurer"
 description: "Exporter des labs et sauvegarder EVE-NG vers un serveur SFTP/FTP externe, puis restaurer."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu24.04", "eve-ng", "sauvegarde", "restauration", "sftp", "backup-manager"]
+tags: ["ubuntu24-04", "eve-ng", "sauvegarde", "restauration", "sftp", "backup-manager"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

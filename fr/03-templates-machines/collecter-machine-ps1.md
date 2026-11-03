@@ -3,7 +3,7 @@ title: "Lecture seule : relève les infos de la machine Windows locale et écrit
 description: "param([string]$Out = \"fiche-machine$env:COMPUTERNAME.md\")"
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["fiche-machine", ",", "windows"]
+tags: ["fiche-machine", "windows"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

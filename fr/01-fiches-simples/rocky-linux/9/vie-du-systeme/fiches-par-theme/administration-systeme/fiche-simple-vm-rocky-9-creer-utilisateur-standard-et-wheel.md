@@ -3,7 +3,7 @@ title: "VM_Rocky_9_Utilisateurs_Creer-Utilisateur-Standard-Et-Wheel"
 description: "Créer un utilisateur restreint et un utilisateur administrateur appartenant au groupe wheel sous Rocky Linux 9 / RHEL 9, et restreindre l'usage de Sudo aux seuls membres du groupe wheel."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[rocky9]", "[rhel-family]", "[utilisateurs]", "[wheel]", "[sudo]", "[hardening]"]
+tags: ["rocky9", "rhel-family", "utilisateurs", "wheel", "sudo", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

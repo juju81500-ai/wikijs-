@@ -3,7 +3,7 @@ title: "mRemoteNG"
 description: "Installer mRemoteNG sur Windows Server 2022, créer un jeu de connexions de test (RDP et SSH) dans un fichier de connexions chiffré, puis le protéger et le sauvegarder pour l'exploitation en production. Les connexions ne ciblent que vos propres machines."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[windows-server-2022]", "[mremoteng]", "[rdp]", "[ssh]", "[hardening]"]
+tags: ["windows-server-2022", "mremoteng", "rdp", "ssh", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

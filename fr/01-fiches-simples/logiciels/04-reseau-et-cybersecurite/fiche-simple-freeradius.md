@@ -3,7 +3,7 @@ title: "FreeRADIUS"
 description: "Installer un serveur RADIUS FreeRADIUS sur Debian 13, vérifier sur ce même serveur qu'il accepte une authentification de test, puis le durcir (secret partagé propre, équipements réseau autorisés, pare-feu restreint) avant de le raccorder à un équipement réseau de l'entreprise (commutateur, borne Wi-"
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-13]", "[freeradius]", "[radius]", "[aaa]", "[hardening]"]
+tags: ["debian-13", "freeradius", "radius", "aaa", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

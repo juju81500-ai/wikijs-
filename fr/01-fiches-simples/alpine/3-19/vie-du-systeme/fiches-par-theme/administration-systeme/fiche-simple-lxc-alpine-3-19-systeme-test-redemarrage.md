@@ -3,7 +3,7 @@ title: "fiche-simple-lxc-alpine-3-19-systeme-test-redemarrage"
 description: "Vérifier qu'un conteneur Alpine Linux redémarre proprement : montages, réseau et services OpenRC doivent revenir dans l'état attendu sans intervention manuelle."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[alpine3.19]", "[alpine]", "[lxc]", "[reboot]", "[openrc]", "[persistance]", "[validation]"]
+tags: ["alpine3-19", "alpine", "lxc", "reboot", "openrc", "persistance", "validation"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

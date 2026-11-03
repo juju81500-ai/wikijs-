@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 Snort Mise A Jour Retour Arriere"
 description: "Mettre Snort et ses règles à jour en contrôlant compatibilité et restauration."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["snort", "debian13", "vie-du-logiciel", "mise_a_jour_retour_arriere"]
+tags: ["snort", "debian13", "vie-du-logiciel", "mise-a-jour-retour-arriere"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

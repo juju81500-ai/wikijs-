@@ -3,7 +3,7 @@ title: "LXC_Alpine_3.19_Services_Installation-Et-Configuration-Nginx"
 description: "Installer le serveur HTTP ultraléger Nginx sur un conteneur LXC Alpine Linux, configurer le démarrage OpenRC et sécuriser la configuration Web."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[alpine3.19]", "[alpine-family]", "[lxc]", "[nginx]", "[openrc]", "[apk]", "[hardening]"]
+tags: ["alpine3-19", "alpine-family", "lxc", "nginx", "openrc", "apk", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

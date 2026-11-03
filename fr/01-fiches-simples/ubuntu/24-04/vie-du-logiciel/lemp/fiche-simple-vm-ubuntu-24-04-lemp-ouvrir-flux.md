@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-lemp-ouvrir-flux"
 description: "Autoriser seulement les flux Web utiles."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu24.04", "nginx", "php8.3", "mariadb", "lemp", "ufw", "firewall"]
+tags: ["ubuntu24-04", "nginx", "php8-3", "mariadb", "lemp", "ufw", "firewall"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

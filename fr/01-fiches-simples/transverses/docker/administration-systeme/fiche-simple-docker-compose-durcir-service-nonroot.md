@@ -3,7 +3,7 @@ title: "fiche-simple-docker-compose-durcir-service-nonroot"
 description: "Réduire les privilèges d'un service Compose avec un utilisateur non-root, un système de fichiers racine en lecture seule et les seules capacités nécessaires."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[docker]", "[compose]", "[non-root]", "[hardening]", "[read-only]", "[conteneurs]"]
+tags: ["docker", "compose", "non-root", "hardening", "read-only", "conteneurs"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

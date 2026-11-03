@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Wireshark Valider"
 description: "Recetter une capture locale bornée et sa relecture."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["wireshark", "ubuntu24.04", "vie-du-logiciel", "valider"]
+tags: ["wireshark", "ubuntu24-04", "vie-du-logiciel", "valider"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

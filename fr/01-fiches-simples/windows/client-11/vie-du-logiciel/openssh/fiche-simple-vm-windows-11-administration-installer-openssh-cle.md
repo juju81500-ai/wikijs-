@@ -3,7 +3,7 @@ title: "fiche-simple-vm-windows-11-administration-installer-openssh-cle"
 description: "Installer OpenSSH Server sur Windows 11, autoriser l'administration par clé et limiter l'accès réseau avant de réduire l'authentification par mot de passe."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[windows-11]", "[openssh]", "[ssh]", "[cle-ed25519]", "[powershell]", "[hardening]"]
+tags: ["windows-11", "openssh", "ssh", "cle-ed25519", "powershell", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

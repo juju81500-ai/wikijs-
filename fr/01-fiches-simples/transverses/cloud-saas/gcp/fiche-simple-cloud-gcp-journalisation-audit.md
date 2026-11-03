@@ -3,7 +3,7 @@ title: "Fiche Simple - Cloud GCP Journalisation Audit"
 description: "Journalisation et audit dans Google Cloud Platform en limitant les risques de sécurité, de disponibilité et de coût."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["gcp", "journalisation_audit", "securite", "procedure"]
+tags: ["gcp", "journalisation-audit", "securite", "procedure"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

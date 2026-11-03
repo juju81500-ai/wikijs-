@@ -3,7 +3,7 @@ title: "fiche-simple-vm-debian-13-services-creer-service-systemd-durci"
 description: "Créer une unité systemd pour une application déjà installée, l'exécuter sous un compte dédié non privilégié et limiter ses accès en écriture."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[debian]", "[systemd]", "[service]", "[least-privilege]", "[hardening]"]
+tags: ["debian13", "debian", "systemd", "service", "least-privilege", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "VM_Debian_13_Stockage_Configuration-NFS-Server-v4"
 description: "Installer et configurer un serveur de fichiers NFSv4 exclusif sur Debian 13 (Trixie), exporter un répertoire de données partagé, désactiver le protocole obsolète et vulnérable NFSv3, et sécuriser le filtrage des clients."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[nfs]", "[nfsv4]", "[storage]", "[partage-fichiers]", "[hardening]"]
+tags: ["debian13", "nfs", "nfsv4", "storage", "partage-fichiers", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

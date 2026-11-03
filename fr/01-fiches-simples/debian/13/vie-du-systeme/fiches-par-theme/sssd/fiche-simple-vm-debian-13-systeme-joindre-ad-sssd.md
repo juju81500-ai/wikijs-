@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 Systeme Joindre AD Sssd"
 description: "Joindre une machine Debian 13 à un domaine Active Directory avec realmd et sssd, afin que les comptes du domaine puissent se connecter localement et en SSH, sans créer manuellement chaque utilisateur."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[debian]", "[active-directory]", "[realmd]", "[sssd]", "[kerberos]"]
+tags: ["debian13", "debian", "active-directory", "realmd", "sssd", "kerberos"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

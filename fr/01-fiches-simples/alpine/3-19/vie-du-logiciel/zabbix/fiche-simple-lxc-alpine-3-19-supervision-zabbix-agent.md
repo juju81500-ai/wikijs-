@@ -3,7 +3,7 @@ title: "fiche-simple-lxc-alpine-3-19-supervision-zabbix-agent"
 description: "Installer l'agent Zabbix sur un conteneur Alpine Linux, le déclarer auprès du serveur de supervision et limiter les connexions entrantes au seul serveur Zabbix."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[alpine3.19]", "[alpine]", "[lxc]", "[zabbix]", "[zabbix-agent]", "[supervision]", "[openrc]"]
+tags: ["alpine3-19", "alpine", "lxc", "zabbix", "zabbix-agent", "supervision", "openrc"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

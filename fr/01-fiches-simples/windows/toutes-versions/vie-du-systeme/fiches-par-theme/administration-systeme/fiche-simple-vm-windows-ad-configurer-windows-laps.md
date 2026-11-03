@@ -3,7 +3,7 @@ title: "fiche-simple-vm-windows-ad-configurer-windows-laps"
 description: "Déployer Windows LAPS pour gérer le mot de passe d'un compte administrateur local, sauvegarder ce secret dans Active Directory et déléguer sa lecture à un groupe autorisé."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[windows-laps]", "[active-directory]", "[windows-server-2022]", "[gpo]", "[securite]", "[delegation]"]
+tags: ["windows-laps", "active-directory", "windows-server-2022", "gpo", "securite", "delegation"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

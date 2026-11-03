@@ -3,7 +3,7 @@ title: "VM_Ubuntu_24.04_Securite_Configuration-UFW-Firewall"
 description: "Configurer et activer le pare-feu simplifié UFW (Uncomplicated Firewall) sous Ubuntu Server 24-04 LTS, appliquer une politique de sécurité fermée par défaut et filtrer les accès SSH et HTTP/HTTPS."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[ubuntu-24.04]", "[ufw]", "[pare-feu]", "[security]", "[hardening]"]
+tags: ["ubuntu-24-04", "ufw", "pare-feu", "security", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

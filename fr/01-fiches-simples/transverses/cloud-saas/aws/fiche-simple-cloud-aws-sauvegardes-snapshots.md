@@ -3,7 +3,7 @@ title: "Fiche Simple - Cloud AWS Sauvegardes Snapshots"
 description: "Sauvegardes et snapshots dans AWS en limitant les risques de sécurité, de disponibilité et de coût."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["aws", "sauvegardes_snapshots", "securite", "procedure"]
+tags: ["aws", "sauvegardes-snapshots", "securite", "procedure"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

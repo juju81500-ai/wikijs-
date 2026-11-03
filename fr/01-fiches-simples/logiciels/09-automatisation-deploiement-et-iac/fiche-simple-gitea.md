@@ -3,7 +3,7 @@ title: "Gitea"
 description: "Installer la forge Git Gitea sur Debian 12 avec son binaire officiel, SQLite en lab, la créer comme service systemd, vérifier l'accès web, puis la durcir (inscriptions fermées, pare-feu restreint, sauvegarde gitea dump) avant mise à disposition des équipes."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[gitea]", "[forge]", "[git]", "[sauvegarde]", "[hardening]"]
+tags: ["debian-12", "gitea", "forge", "git", "sauvegarde", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

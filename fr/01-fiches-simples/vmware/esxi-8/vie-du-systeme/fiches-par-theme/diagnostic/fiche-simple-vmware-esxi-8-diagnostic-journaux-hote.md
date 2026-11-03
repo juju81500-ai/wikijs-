@@ -3,7 +3,7 @@ title: "fiche-simple-vmware-esxi-8-diagnostic-journaux-hote"
 description: "Diagnostiquer un hôte ESXi 8 à partir de ses journaux (hostd, vmkernel, vobd), suivre les tâches en cours, puis centraliser les journaux vers un serveur syslog avec une rotation maîtrisée."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[vmware-esxi-8]", "[syslog]", "[vmkernel]", "[hostd]", "[logs]", "[diagnostic]", "[hardening]"]
+tags: ["vmware-esxi-8", "syslog", "vmkernel", "hostd", "logs", "diagnostic", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

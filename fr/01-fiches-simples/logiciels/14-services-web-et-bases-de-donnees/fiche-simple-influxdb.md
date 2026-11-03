@@ -3,7 +3,7 @@ title: "InfluxDB"
 description: "Installer InfluxDB 2.x sur Debian 12 depuis le dépôt officiel, écrire une mesure de test, puis le préparer pour la production : écoute limitée, jeton d'accès restreint à un seul bucket, sauvegarde testée. Les tests ne se font que sur votre propre serveur."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[influxdb]", "[series-temporelles]", "[sauvegarde]", "[hardening]"]
+tags: ["debian-12", "influxdb", "series-temporelles", "sauvegarde", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

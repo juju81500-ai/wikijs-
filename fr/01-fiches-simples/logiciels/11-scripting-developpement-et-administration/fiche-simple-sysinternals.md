@@ -3,7 +3,7 @@ title: "Sysinternals"
 description: "Auditer localement un poste Windows 11 à l'aide des outils Microsoft Sysinternals signés : lister les éléments de démarrage automatique (Autoruns) et examiner les processus en cours (Process Explorer), afin de repérer des éléments inattendus. Ce parcours est uniquement un audit en lecture seule ; il"
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[windows-11]", "[sysinternals]", "[autoruns]", "[process-explorer]", "[audit]", "[diagnostic]", "[securite]"]
+tags: ["windows-11", "sysinternals", "autoruns", "process-explorer", "audit", "diagnostic", "securite"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

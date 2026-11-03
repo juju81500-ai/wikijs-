@@ -3,7 +3,7 @@ title: "fiche-simple-vm-debian-13-stockage-diagnostic-sante-disque-smart"
 description: "Installer smartmontools, identifier un disque compatible et consulter ses informations de santé sous Debian 13, sans confondre un résultat SMART avec une garantie contre les pannes."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian13]", "[debian]", "[stockage]", "[smartmontools]", "[smart]", "[maintenance]"]
+tags: ["debian13", "debian", "stockage", "smartmontools", "smart", "maintenance"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Wireshark Installer"
 description: "Installer Wireshark (GUI) et TShark (CLI) depuis les dépôts Ubuntu."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["wireshark", "ubuntu24.04", "vie-du-logiciel", "installer"]
+tags: ["wireshark", "ubuntu24-04", "vie-du-logiciel", "installer"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Postfix Mise A Jour Retour Arriere"
 description: "Mettre à jour Postfix depuis dépôts configurés."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["postfix", "serveur", "vie-du-logiciel", "mise_a_jour_retour_arriere"]
+tags: ["postfix", "serveur", "vie-du-logiciel", "mise-a-jour-retour-arriere"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

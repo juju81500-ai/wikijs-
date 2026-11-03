@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Snort Mise A Jour Retour Arriere"
 description: "Mettre à jour Snort 3 (nouvelle release) et revenir en arrière."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["snort", "ubuntu24.04", "vie-du-logiciel", "mise-a-jour-retour-arriere"]
+tags: ["snort", "ubuntu24-04", "vie-du-logiciel", "mise-a-jour-retour-arriere"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

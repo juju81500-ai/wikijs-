@@ -3,7 +3,7 @@ title: "cURL"
 description: "Installer cURL sur Debian 12, vérifier qu'un service web interne répond et que son certificat est valide, tester une API avec un jeton lu depuis un fichier protégé, puis appliquer des options TLS et de sécurité strictes pour les scripts de production. Les tests ne ciblent que vos propres services."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[curl]", "[http]", "[tls]", "[api]", "[hardening]"]
+tags: ["debian-12", "curl", "http", "tls", "api", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "Fiche Simple - Cloud Azure VM Linux Windows Cles"
 description: "VM Linux et Windows avec accès par clé dans Microsoft Azure en limitant les risques de sécurité, de disponibilité et de coût."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["azure", "vm_linux_windows_cles", "securite", "procedure"]
+tags: ["azure", "vm-linux-windows-cles", "securite", "procedure"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

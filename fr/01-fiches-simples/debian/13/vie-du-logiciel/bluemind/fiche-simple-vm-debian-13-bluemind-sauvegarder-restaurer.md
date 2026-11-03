@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Debian 13 BlueMind Sauvegarder Restaurer"
 description: "Définir une sauvegarde/restauration cohérente selon la release BlueMind."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["bluemind", "serveur", "vie-du-logiciel", "sauvegarder_restaurer"]
+tags: ["bluemind", "serveur", "vie-du-logiciel", "sauvegarder-restaurer"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

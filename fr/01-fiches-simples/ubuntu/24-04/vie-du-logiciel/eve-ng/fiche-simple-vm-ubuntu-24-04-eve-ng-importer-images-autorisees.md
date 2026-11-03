@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 EVE-NG Importer Images Autorisees"
 description: "Ajouter à EVE-NG des images d'équipements que vous avez le droit d'utiliser, sans télécharger d'image propriétaire depuis ce guide."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu24.04", "eve-ng", "images", "sftp", "qemu", "licence"]
+tags: ["ubuntu24-04", "eve-ng", "images", "sftp", "qemu", "licence"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

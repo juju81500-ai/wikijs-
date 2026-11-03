@@ -3,7 +3,7 @@ title: "fiche-simple-lxc-alpine-3-19-journaux-logrotate-syslog"
 description: "Vérifier la journalisation d'un conteneur Alpine Linux (BusyBox syslogd), configurer la rotation des journaux avec logrotate et transmettre les événements à un collecteur distant."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[alpine3.19]", "[alpine]", "[lxc]", "[syslog]", "[logrotate]", "[logs]", "[openrc]"]
+tags: ["alpine3-19", "alpine", "lxc", "syslog", "logrotate", "logs", "openrc"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

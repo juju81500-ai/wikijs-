@@ -3,7 +3,7 @@ title: "WDS + MDT"
 description: "Installer WDS et MDT sur Windows Server 2022, créer un partage de déploiement, intégrer une image Windows 11, publier le démarrage PXE via WDS, puis durcir le partage (compte de lecture dédié, pare-feu restreint) et sauvegarder le partage avant d'installer les postes de l'entreprise."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[windows-server-2022]", "[wds]", "[mdt]", "[pxe]", "[deploiement]", "[hardening]"]
+tags: ["windows-server-2022", "wds", "mdt", "pxe", "deploiement", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

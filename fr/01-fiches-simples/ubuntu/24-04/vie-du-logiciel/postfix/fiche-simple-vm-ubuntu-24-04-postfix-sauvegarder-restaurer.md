@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Postfix Sauvegarder Restaurer"
 description: "Sauvegarder configuration de Postfix et tester restauration."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["postfix", "serveur", "vie-du-logiciel", "sauvegarder_restaurer"]
+tags: ["postfix", "serveur", "vie-du-logiciel", "sauvegarder-restaurer"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

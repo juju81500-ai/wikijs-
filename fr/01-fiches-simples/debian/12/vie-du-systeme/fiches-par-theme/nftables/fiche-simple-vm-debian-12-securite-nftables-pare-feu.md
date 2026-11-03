@@ -3,7 +3,7 @@ title: "VM_Debian_12_Securite_NFTables-Pare-Feu"
 description: "Mettre en place un pare-feu hôte persistant sur Debian 12 avec nftables : politique par défaut drop sur l'entrée, ouverture limitée aux flux nécessaires et SSH restreint au réseau d'administration."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian12]", "[debian-family]", "[nftables]", "[firewall]", "[systemd]", "[hardening]"]
+tags: ["debian12", "debian-family", "nftables", "firewall", "systemd", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

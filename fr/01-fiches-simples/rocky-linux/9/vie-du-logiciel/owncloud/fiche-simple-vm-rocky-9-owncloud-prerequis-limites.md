@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Rocky 9 ownCloud Prerequis Limites"
 description: "Distinguer oCIS (binaire Infinite Scale) de ownCloud Classic 10 et confirmer l’architecture."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["owncloud", "serveur", "vie-du-logiciel", "prerequis_limites"]
+tags: ["owncloud", "serveur", "vie-du-logiciel", "prerequis-limites"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

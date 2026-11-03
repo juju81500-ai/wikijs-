@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-lemp-installer-pile"
 description: "Installer Nginx, MariaDB et PHP-FPM 8.3 et les activer."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["ubuntu24.04", "nginx", "php8.3", "mariadb", "lemp", "systemd"]
+tags: ["ubuntu24-04", "nginx", "php8-3", "mariadb", "lemp", "systemd"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

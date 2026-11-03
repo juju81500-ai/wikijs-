@@ -3,7 +3,7 @@ title: "fiche-simple-vm-ubuntu-24-04-systeme-gerer-netplan-cloudinit"
 description: "Identifier si cloud-init régénère la configuration réseau Netplan et transférer proprement cette responsabilité à une configuration locale persistante."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[ubuntu24.04]", "[ubuntu]", "[cloud-init]", "[netplan]", "[reseau]", "[systeme]"]
+tags: ["ubuntu24-04", "ubuntu", "cloud-init", "netplan", "reseau", "systeme"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "Fiche Simple - VM Ubuntu 24.04 Suricata Mise A Jour Retour Arriere"
 description: "Mettre à jour Suricata et ses règles, avec retour arrière."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["suricata", "ubuntu24.04", "vie-du-logiciel", "mise-a-jour-retour-arriere"]
+tags: ["suricata", "ubuntu24-04", "vie-du-logiciel", "mise-a-jour-retour-arriere"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

@@ -3,7 +3,7 @@ title: "Fiche Simple - Cloud Azure Supervision Alertes"
 description: "Supervision et alertes dans Microsoft Azure en limitant les risques de sécurité, de disponibilité et de coût."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["azure", "supervision_alertes", "securite", "procedure"]
+tags: ["azure", "supervision-alertes", "securite", "procedure"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

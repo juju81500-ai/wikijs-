@@ -3,7 +3,7 @@ title: "VM_Debian_12_Systeme_Reduction-Services"
 description: "Identifier et désactiver les services Debian 12 inutiles au rôle du serveur (ex. avahi-daemon, cups-browsed, bluetooth) afin de réduire la surface d'attaque, sans couper les services indispensables (SSH, réseau, horloge, pare-feu)."
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian12]", "[debian-family]", "[systemd]", "[services]", "[surface-attaque]", "[hardening]"]
+tags: ["debian12", "debian-family", "systemd", "services", "surface-attaque", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

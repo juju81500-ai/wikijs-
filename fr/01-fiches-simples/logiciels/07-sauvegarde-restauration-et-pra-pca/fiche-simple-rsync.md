@@ -3,7 +3,7 @@ title: "rsync"
 description: "Copier un dossier de données vers un serveur de sauvegarde par SSH avec rsync, vérifier le résultat, tester une restauration, planifier la copie, puis durcir l'accès (clé SSH dédiée, commande forcée côté serveur). Cette fiche couvre Linux ; l'usage de rsync sous Windows n'est pas traité. Les tests n"
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[debian-12]", "[rsync]", "[sauvegarde]", "[ssh]", "[hardening]"]
+tags: ["debian-12", "rsync", "sauvegarde", "ssh", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z

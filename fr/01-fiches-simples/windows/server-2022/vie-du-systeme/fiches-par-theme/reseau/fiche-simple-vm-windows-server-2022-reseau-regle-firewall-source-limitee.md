@@ -3,7 +3,7 @@ title: "fiche-simple-vm-windows-server-2022-reseau-regle-firewall-source-limitee
 description: "Autoriser un port TCP entrant uniquement sur les profils réseau et depuis les adresses sources nécessaires, avec le pare-feu Microsoft Defender actif."
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["[windows-server-2022]", "[firewall]", "[reseau]", "[powershell]", "[gui]", "[hardening]"]
+tags: ["windows-server-2022", "firewall", "reseau", "powershell", "gui", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

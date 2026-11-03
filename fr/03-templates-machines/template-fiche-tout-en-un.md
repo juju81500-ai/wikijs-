@@ -3,7 +3,7 @@ title: "Modèle — fiche tout-en-un transverse"
 description: "Ce modèle sert à documenter une tâche pour un OS et une version ciblés. Il ne remplace pas le modèle d'une fiche simple ou complète. Ranger chaque fiche dans 01-fiches-simples/<OS>/<version>/Tout-en-un/<categorie>/. Créer une copie distincte pour chaque OS/version concerné, même si plusieurs fiches "
 published: true
 date: 2026-11-03T09:36:14Z
-tags: ["template", "OS-spécifique", "tout-en-un"]
+tags: ["template", "os-specifique", "tout-en-un"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:14Z
 dateModified: 2026-11-03T09:36:14Z

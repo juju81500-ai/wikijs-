@@ -3,7 +3,7 @@ title: "PingCastle"
 description: "Installer PingCastle sur un serveur d'administration Windows Server 2022, lancer un contrôle de santé de l'Active Directory de test, puis le durcir (compte de service à droits de lecture, rapports protégés, exécution planifiée). PingCastle ne modifie pas l'annuaire : il lit et produit un rapport. Ne"
 published: true
 date: 2026-11-03T09:36:13Z
-tags: ["[windows-server-2022]", "[pingcastle]", "[active-directory]", "[audit]", "[powershell]", "[hardening]"]
+tags: ["windows-server-2022", "pingcastle", "active-directory", "audit", "powershell", "hardening"]
 editor: markdown
 dateCreated: 2026-11-03T09:36:13Z
 dateModified: 2026-11-03T09:36:13Z
