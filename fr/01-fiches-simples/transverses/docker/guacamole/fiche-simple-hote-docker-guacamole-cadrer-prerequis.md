@@ -39,7 +39,7 @@ Vérifier que l'hôte Docker est prêt avant de déployer la passerelle d'accès
 
 ## 2. Production — Contrôles
 
-Prévoir DNS dédié, reverse proxy HTTPS géré, stockage persistant sauvegardé, comptes personnels, MFA ou SSO approuvé et liste des cibles autorisées.
+Prévoir [[Glossary:DNS]] dédié, reverse proxy HTTPS géré, stockage persistant sauvegardé, comptes personnels, [[Glossary:MFA]] ou [[Glossary:SSO]] approuvé et liste des cibles autorisées.
 
 ## 3. Production — Sécurité
 

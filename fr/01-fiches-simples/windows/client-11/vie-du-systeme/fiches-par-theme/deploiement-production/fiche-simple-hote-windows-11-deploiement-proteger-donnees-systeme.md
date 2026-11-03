@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-hote-windows-11-deploiement-proteger-donnees-systeme.md
 
-- **Environnement** : Parc de postes utilisateur: poste physique ou VM de test
+- **Environnement** : Parc de postes utilisateur: poste physique ou [[Glossary:VM]] de test
 - **OS / Version** : Windows 11 Pro ou Enterprise selon la gestion prévue
 - **Catégorie** : déploiement de poste de travail
 - **Tags** : `windows11`, `deploiement`, `oobe`, `bitlocker`, `production`
@@ -28,7 +28,7 @@ Vérifier Defender, pare-feu et BitLocker avant remise.
    ```powershell
    Get-MpComputerStatus | Select-Object AntivirusEnabled, RealTimeProtectionEnabled
    ```
-   👉 Explication : les deux valeurs doivent être vraies; GUI: **Sécurité Windows > Protection contre les virus et menaces**.
+   👉 Explication : les deux valeurs doivent être vraies; [[Glossary:GUI]]: **Sécurité Windows > Protection contre les virus et menaces**.
 
 2. Vérifier le pare-feu :
    ```powershell
@@ -36,7 +36,7 @@ Vérifier Defender, pare-feu et BitLocker avant remise.
    ```
    👉 Explication : les profils requis doivent être activés; GUI: **Sécurité Windows > Pare-feu**.
 
-3. Contrôler le TPM :
+3. Contrôler le [[Glossary:TPM]] :
    ```powershell
    Get-Tpm
    ```
@@ -51,7 +51,7 @@ Vérifier Defender, pare-feu et BitLocker avant remise.
    ```
    👉 Explication : la protection doit être activée et le chiffrement terminé.
 
-6. Limiter RDP, OpenSSH et les règles entrantes au besoin approuvé.
+6. Limiter [[Glossary:RDP]], OpenSSH et les règles entrantes au besoin approuvé.
    👉 Explication : réduit la surface d'attaque.
 
 ## 2. Production — Contrôles

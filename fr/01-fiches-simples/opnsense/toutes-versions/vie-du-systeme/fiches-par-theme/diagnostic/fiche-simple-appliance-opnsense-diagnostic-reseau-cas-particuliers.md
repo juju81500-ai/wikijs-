@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-appliance-opnsense-diagnostic-reseau-cas-particuliers.md
 
-- **Environnement** : Appliance OPNsense seule ou paire CARP; accès console recommandé
+- **Environnement** : Appliance OPNsense seule ou paire [[Glossary:CARP]]; accès console recommandé
 - **OS / Version** : OPNsense Community ou Business Edition maintenue
 - **Catégorie** : pare-feu / cas particuliers
 - **Tags** : `opnsense`, `diagnostic`, `reseau`, `firewall`, `dns`, `vpn`
@@ -24,22 +24,22 @@ Diagnostiquer les pannes spécifiques sans tout recréer.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. DNS : comparer la résolution depuis le client et depuis OPNsense (**Interfaces > Diagnostics > DNS Lookup**). Équivalent shell (nom d'exemple à remplacer) :
+1. [[Glossary:DNS]] : comparer la résolution depuis le client et depuis OPNsense (**Interfaces > Diagnostics > DNS Lookup**). Équivalent shell (nom d'exemple à remplacer) :
    ```sh
    drill srv1.example.test
    ```
-   👉 Explication : (dérivé) vérifie règles DNS, redirecteurs, DNSSEC et service choisi.
+   👉 Explication : (dérivé) vérifie règles DNS, redirecteurs, [[Glossary:DNSSEC]] et service choisi.
 
-2. VPN : vérifier négociation, SA/phase, routes et sélecteurs (**VPN > IPsec > Status Overview** ou **VPN > WireGuard**).
+2. [[Glossary:VPN]] : vérifier négociation, SA/phase, routes et sélecteurs (**VPN > IPsec > Status Overview** ou **VPN > WireGuard**).
    👉 Explication : avant de recréer un tunnel.
 
-3. CARP/pfsync : contrôler VIP et lien de synchronisation sur les deux nœuds :
+3. CARP/pfsync : contrôler [[Glossary:VIP]] et lien de synchronisation sur les deux nœuds :
    ```sh
    ifconfig | grep -A1 carp
    ```
    👉 Explication : (dérivé) un seul nœud doit être MASTER pour une VIP donnée.
 
-4. MTU : tester avec bit DF et tailles progressives (adresse d'exemple à remplacer) :
+4. [[Glossary:MTU]] : tester avec bit DF et tailles progressives (adresse d'exemple à remplacer) :
    ```sh
    ping -D -s 1472 -c 3 192.0.2.10
    ```

@@ -36,7 +36,7 @@ Test-NetConnection -ComputerName ADRESSE_IP_ISCSI -Port PORT_ISCSI
 ```
    👉 Explication : ADRESSE_IP_ISCSI et PORT_ISCSI sont à remplacer (port iSCSI à confirmer dans la doc) ; `TcpTestSucceeded` doit valoir True.
 
-3. Contrôler la session iSCSI. GUI : **Initiateur iSCSI > Cibles** ; PowerShell :
+3. Contrôler la session iSCSI. [[Glossary:GUI]] : **Initiateur iSCSI > Cibles** ; PowerShell :
 ```powershell
 Get-IscsiSession
 Get-Disk

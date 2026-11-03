@@ -24,7 +24,7 @@ Vérifier la connexion du tunnel.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : sélectionner le tunnel > Activer.
+1. [[Glossary:GUI]] : sélectionner le tunnel > Activer.
    👉 Explication : Le statut passe à Actif et la ligne Dernière poignée de main apparaît.
 
 2. Contrôler l'interface et une ressource autorisée :

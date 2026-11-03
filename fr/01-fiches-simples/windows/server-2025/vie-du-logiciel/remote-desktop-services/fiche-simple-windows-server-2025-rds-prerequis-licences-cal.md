@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_Windows_Server_2025_RDS_Prerequis_Licences_CAL
 
-- **Environnement** : VM ou serveur Windows dédié aux services Bureau à distance
+- **Environnement** : [[Glossary:VM]] ou serveur Windows dédié aux services Bureau à distance
 - **OS / Version** : Windows Server 2025 Desktop Experience
 - **Catégorie** : Vie du logiciel / Prérequis et licences RDS
 - **Tags** : `windows-server-2025`, `rds`, `prerequis`, `licences`, `cal`
@@ -42,13 +42,13 @@ Définir périmètre, rôles RDS et licences (Windows Server + RDS CAL) avant d'
 
 ## 2. Production — Contrôles
 
-- Documenter sessions simultanées, capacité, DNS, certificats, dépendance Active Directory et réseau d'administration.
+- Documenter sessions simultanées, capacité, [[Glossary:DNS]], certificats, dépendance Active Directory et réseau d'administration.
 - Prévoir le serveur de licences RDS (rôle RDS-Licensing) sur un serveur membre du domaine, jamais par défaut sur un contrôleur de domaine.
 - Sans serveur de licences ni CAL, un hôte de session n'accepte les connexions que pendant la période de grâce; ne pas s'en servir en production.
 
 ## 3. Production — Sécurité
 
-- Ne pas publier TCP/UDP 3389 sur Internet; privilégier VPN ou RD Gateway approuvée.
+- Ne pas publier [[Glossary:TCP]]/UDP 3389 sur Internet; privilégier [[Glossary:VPN]] ou RD Gateway approuvée.
 - Prévoir un accès console hors bande et un point de restauration avant tout changement de rôle.
 - Limiter l'accès aux groupes ayant un besoin métier documenté.
 

@@ -45,12 +45,12 @@ Publier un dossier SMB réservé à un groupe, sans accès invité.
 
 ## 2. Production — Contrôles
 
-Autoriser TCP 445 uniquement depuis les clients prévus; désactiver anciens protocoles et invité.
+Autoriser [[Glossary:TCP]] 445 uniquement depuis les clients prévus; désactiver anciens protocoles et invité.
 
 ## 3. Production — Sécurité
 
 - Ne jamais utiliser guest ni permissions 777 pour résoudre un problème d'accès.
-- N'exposer aucun service NAS sur Internet; VPN approuvé pour l'accès distant.
+- N'exposer aucun service [[Glossary:NAS]] sur Internet; [[Glossary:VPN]] approuvé pour l'accès distant.
 
 ## Validation et retour arrière
 

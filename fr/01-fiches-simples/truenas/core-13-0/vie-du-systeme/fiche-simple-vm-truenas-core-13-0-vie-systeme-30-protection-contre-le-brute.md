@@ -24,7 +24,7 @@ Limiter les tentatives de connexion.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Services > SSH > Options : limiter les tentatives et activer la journalisation.
+1. [[Glossary:GUI]] : Services > [[Glossary:SSH]] > Options : limiter les tentatives et activer la journalisation.
    ```sh
    midclt call ssh.config
    ```

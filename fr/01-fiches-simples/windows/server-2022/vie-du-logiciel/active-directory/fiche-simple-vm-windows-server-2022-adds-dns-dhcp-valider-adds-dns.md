@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-2022-adds-dns-dhcp-valider-adds-dns.md
 
-- **Environnement** : VM ou serveur dédié Windows Server 2022, domaine de laboratoire ou d'entreprise
-- **OS / Version** : Windows Server 2022; rôles AD DS, DNS et DHCP
+- **Environnement** : [[Glossary:VM]] ou serveur dédié Windows Server 2022, domaine de laboratoire ou d'entreprise
+- **OS / Version** : Windows Server 2022; rôles [[Glossary:AD]] DS, [[Glossary:DNS]] et [[Glossary:DHCP]]
 - **Catégorie** : annuaire / services réseau
 - **Tags** : `windows-server-2022`, `active-directory`, `dns`, `dhcp`, `gpo`
 
@@ -33,7 +33,7 @@ Contrôler l'état du domaine et de la résolution DNS.
    ```
    👉 Explication : les enregistrements SRV du contrôleur doivent résoudre.
 
-2. GUI : **Gestionnaire de serveur > Outils > DNS** pour inspecter les zones.
+2. [[Glossary:GUI]] : **Gestionnaire de serveur > Outils > DNS** pour inspecter les zones.
    👉 Explication : vue graphique des zones.
 
 3. Configurer les redirecteurs DNS uniquement vers des résolveurs approuvés (**DNS > Propriétés du serveur > Redirecteurs**).
@@ -48,7 +48,7 @@ Conserver les sorties de `dcdiag` dans le dossier de recette.
 
 ## 3. Production — Sécurité
 
-- Ne pas exposer LDAP, Kerberos ni DNS à Internet.
+- Ne pas exposer [[Glossary:LDAP]], Kerberos ni DNS à Internet.
 
 ## Validation et retour arrière
 

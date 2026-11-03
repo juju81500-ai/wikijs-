@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-wireshark-valider-capture-locale.md
 
-- **Environnement** : Wireshark/TShark depuis APT Debian 13, fichier PCAPNG de test ou capture loopback autorisée
+- **Environnement** : Wireshark/TShark depuis [[Glossary:APT]] Debian 13, fichier PCAPNG de test ou capture loopback autorisée
 - **OS / Version** : Debian 13 Trixie amd64
 - **Catégorie** : diagnostic réseau / analyse de capture
 - **Tags** : `debian13`, `wireshark`, `dumpcap`, `pcapng`, `diagnostic`, `confidentialite`
@@ -37,7 +37,7 @@ Vérifier l'installation et l'analyse d'une capture de test sans lancer Wireshar
    wireshark -r exemple.pcapng -Y 'tcp'
    tshark -r exemple.pcapng -Y 'dns' | head
    ```
-   👉 Explication : remplacer le fichier; en GUI : **Fichier > Ouvrir**, puis saisir le filtre dans la barre.
+   👉 Explication : remplacer le fichier; en [[Glossary:GUI]] : **Fichier > Ouvrir**, puis saisir le filtre dans la barre.
 
 3. Si la capture live est nécessaire et autorisée, contrôler les droits :
    ```bash

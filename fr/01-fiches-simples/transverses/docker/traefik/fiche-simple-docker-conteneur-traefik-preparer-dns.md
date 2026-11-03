@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Vérifier que le DNS et les ports 80/443 pointent bien vers l'hôte.
+Vérifier que le [[Glossary:DNS]] et les ports 80/443 pointent bien vers l'hôte.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -37,7 +37,7 @@ Vérifier que le DNS et les ports 80/443 pointent bien vers l'hôte.
    ```
    👉 Explication : aucun autre service ne doit déjà les utiliser.
 
-3. Créer le fichier de stockage ACME avec des droits stricts :
+3. Créer le fichier de stockage [[Glossary:ACME]] avec des droits stricts :
    ```bash
    touch acme.json
    chmod 600 acme.json

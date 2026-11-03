@@ -30,7 +30,7 @@ Nommer le serveur selon la convention.
    ```
    👉 Explication : `NOM_SERVEUR` respecte la convention (15 caractères maximum, lettres, chiffres, tiret); le redémarrage applique le nom.
 
-2. Définir le suffixe DNS principal si le serveur n'est pas encore dans un domaine (**Nom de l'ordinateur > Modifier > Autres > Suffixe DNS principal**) :
+2. Définir le suffixe [[Glossary:DNS]] principal si le serveur n'est pas encore dans un domaine (**Nom de l'ordinateur > Modifier > Autres > Suffixe DNS principal**) :
    ```powershell
    Set-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters' -Name 'NV Domain' -Value 'EXEMPLE.LOCAL'
    Set-DnsClientGlobalSetting -SuffixSearchList @('EXEMPLE.LOCAL')
@@ -42,11 +42,11 @@ Nommer le serveur selon la convention.
    hostname
    [System.Net.Dns]::GetHostByName($env:COMPUTERNAME).HostName
    ```
-   👉 Explication : affiche le nom court puis le nom complet (FQDN).
+   👉 Explication : affiche le nom court puis le nom complet ([[Glossary:FQDN]]).
 
 ## 2. Production — Contrôles
 
-Enregistrer le nom dans le DNS et la CMDB avant la mise en service.
+Enregistrer le nom dans le DNS et la [[Glossary:CMDB]] avant la mise en service.
 
 ## 3. Production — Sécurité
 

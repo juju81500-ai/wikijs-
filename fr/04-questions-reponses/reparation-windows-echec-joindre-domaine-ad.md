@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Réparation : un poste Windows ne peut pas joindre le domaine Active Directory
 
-- **Périmètre** : Windows 10/11 et Windows Server membre d'un domaine AD DS
+- **Périmètre** : Windows 10/11 et Windows Server membre d'un domaine [[Glossary:AD]] DS
 - **Tags** : `reparation`, `windows`, `active-directory`, `dns`, `domaine`
 
 ## 1. Vérifier le réseau et le DNS
@@ -25,7 +25,7 @@ nltest /dsgetdc:ad.example.net
 Test-NetConnection dc01.ad.example.net -Port 389
 ```
 
-Remplacer le domaine et le contrôleur par les valeurs réelles. Le poste doit utiliser les DNS des contrôleurs de domaine, pas un DNS public configuré directement sur sa carte réseau.
+Remplacer le domaine et le contrôleur par les valeurs réelles. Le poste doit utiliser les [[Glossary:DNS]] des contrôleurs de domaine, pas un DNS public configuré directement sur sa carte réseau.
 
 ## 2. Distinguer les causes
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_tcpdump_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Debian 13 dédiée à tcpdump
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à tcpdump
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : tcpdump / mise à jour et retour arrière
 - **Tags** : `tcpdump`, `debian13`, `vie-du-logiciel`, `mise_a_jour_retour_arriere`

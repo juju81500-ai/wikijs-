@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-minikube-addons.md
 
-- **Environnement** : VM Debian 13 de laboratoire avec Docker Engine, Minikube mono-nœud
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire avec Docker Engine, Minikube mono-nœud
 - **OS / Version** : Debian 13 Trixie; Minikube (driver Docker)
 - **Catégorie** : conteneurs / Kubernetes de laboratoire
 - **Tags** : `debian13`, `minikube`, `docker`, `kubernetes`, `lab`
@@ -48,7 +48,7 @@ Documenter les add-ons activés et leur justification.
 
 ## 3. Production — Sécurité
 
-- Ne pas publier l'API ni les services de lab sur un réseau non maîtrisé.
+- Ne pas publier l'[[Glossary:API]] ni les services de lab sur un réseau non maîtrisé.
 - N'activer que les add-ons nécessaires.
 
 ## Validation et retour arrière

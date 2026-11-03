@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-truenas-scale-25-10-supervision-alertes-pool.md
 
-- **Environnement** : TrueNAS SCALE 25.10 (Goldeye), NAS de lab ou de production avec pools ZFS
+- **Environnement** : TrueNAS SCALE 25.10 (Goldeye), [[Glossary:NAS]] de lab ou de production avec pools [[Glossary:ZFS]]
 - **OS / Version** : TrueNAS SCALE 25.10 Goldeye (base Debian)
 - **Catégorie** : Supervision / Alertes et surveillance des pools
 - **Tags** : `truenas`, `scale2510`, `zfs`, `pool`, `scrub`, `smart`, `alerts`
@@ -19,14 +19,14 @@ dateModified: 2026-11-03T09:36:13Z
 ---
 
 ## 🎯 Problème précis à résoudre
-Configurer l'envoi des alertes ZFS et SMART par courriel, planifier les scrubs et les tests SMART, puis vérifier que chaque alerte est réellement reçue.
+Configurer l'envoi des alertes ZFS et [[Glossary:SMART]] par courriel, planifier les scrubs et les tests SMART, puis vérifier que chaque alerte est réellement reçue.
 
 ---
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Configurer le serveur de messagerie :
    `System Settings > Email` : Send Mail Method = `SMTP`, From Email = `<adresse_expediteur>`, Outgoing Mail Server = `<serveur_smtp>`, Port = `587`
-   👉 Explication : Les alertes sont envoyées par ce canal ; sans serveur SMTP valide, aucune notification n'arrive.
+   👉 Explication : Les alertes sont envoyées par ce canal ; sans serveur [[Glossary:SMTP]] valide, aucune notification n'arrive.
 2. Activer le service d'alerte par courriel :
    `Alerts (icône cloche) > Alert Settings` : ajouter le service E-Mail, niveau minimal = `WARNING` (à vérifier sur la version déployée)
    👉 Explication : Définit qui reçoit quelles alertes et à partir de quel niveau.

@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Synchroniser l'horloge avec le domaine ou une source NTP fiable.
+Synchroniser l'horloge avec le domaine ou une source [[Glossary:NTP]] fiable.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

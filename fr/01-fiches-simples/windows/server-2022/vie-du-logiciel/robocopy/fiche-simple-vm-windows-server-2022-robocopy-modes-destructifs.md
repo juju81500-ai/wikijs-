@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-2022-robocopy-modes-destructifs.md
 
-- **Environnement** : Windows Server 2022 (Robocopy intégré); partages SMB et volumes NTFS
+- **Environnement** : Windows Server 2022 (Robocopy intégré); partages SMB et volumes [[Glossary:NTFS]]
 - **OS / Version** : Windows Server 2022 (Robocopy; non testé sur d'autres versions)
 - **Catégorie** : copie / sauvegarde de fichiers
 - **Tags** : `windows-server-2022`, `robocopy`, `mir`, `purge`
@@ -54,7 +54,7 @@ Exiger une approbation écrite avant tout `/MIR` ou `/PURGE`.
 
 ## 3. Production — Sécurité
 
-- `/B` et `/ZB` contournent les ACL : réservés aux comptes autorisés.
+- `/B` et `/ZB` contournent les [[Glossary:ACL]] : réservés aux comptes autorisés.
 - Ne jamais lancer `/MIR` sur une destination non dédiée.
 
 ## Validation et retour arrière

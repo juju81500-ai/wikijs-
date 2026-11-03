@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 LXC_Alpine_3.19_Systeme_Gestion-Services-OpenRC.md
 
-- **Environnement** : Conteneur LXC / VM (Alpine Linux 3-19)
+- **Environnement** : Conteneur [[Glossary:LXC]] / [[Glossary:VM]] (Alpine Linux 3-19)
 - **OS / Version** : Alpine Linux 3-19 - Famille Alpine
 - **Catégorie** : Système / Gestionnaire de Services OpenRC
 - **Tags** : `[alpine-3.19]`, `[openrc]`, `[rc-service]`, `[hardening]`
@@ -24,7 +24,7 @@ Gérer le démarrage, l'arrêt, le redémarrage et le statut des services d'arri
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Affichage du statut d'un service sous OpenRC :
    `rc-service sshd status`
-   👉 Explication : Indique si le démon SSH est démarré ou arrêté.
+   👉 Explication : Indique si le démon [[Glossary:SSH]] est démarré ou arrêté.
 2. Démarrage manuel temporaire d'un service :
    `rc-service sshd start`
    👉 Explication : Lance le service pour la session courante sans l'activer au boot.

@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Leçon — Hyperviseurs, machines virtuelles et ressources : comprendre la virtualisation
 
 - **Tags** : `transverse`, `tout-en-un`, `lecon`, `virtualisation`, `hyperviseur`, `vm`, `kvm`, `overcommit`
-- **Niveau** : débutant à intermédiaire (technicien TSSR, administrateur systèmes en formation)
+- **Niveau** : débutant à intermédiaire (technicien [[Glossary:TSSR]], administrateur systèmes en formation)
 - **Durée estimée** : 3 h 30 (lecture 1 h 30, laboratoire 1 h, exercices et quiz 1 h)
 
 ---
@@ -22,10 +22,10 @@ dateModified: 2026-11-03T09:36:13Z
 À la fin de cette leçon, tu sauras :
 
 1. expliquer pourquoi la virtualisation a remplacé « un serveur physique par application » ;
-2. distinguer hyperviseurs de type 1 et de type 2, avec leurs nuances (KVM, Hyper-V) ;
-3. décrire une VM : configuration, disque virtuel, mémoire, vCPU, carte réseau ;
+2. distinguer hyperviseurs de type 1 et de type 2, avec leurs nuances ([[Glossary:KVM]], Hyper-V) ;
+3. décrire une [[Glossary:VM]] : configuration, disque virtuel, mémoire, vCPU, carte réseau ;
 4. dimensionner une VM sans la sur-doter ni la sous-doter ;
-5. expliquer l'overcommit CPU et mémoire, et en mesurer les effets ;
+5. expliquer l'overcommit [[Glossary:CPU]] et mémoire, et en mesurer les effets ;
 6. vérifier la virtualisation matérielle d'un hôte Linux ;
 7. justifier les pilotes invités (virtio, outils de l'invité) ;
 8. monter une VM jetable et l'observer de l'intérieur comme de l'extérieur.
@@ -33,7 +33,7 @@ dateModified: 2026-11-03T09:36:13Z
 ## Prérequis et durée
 
 - Notions sur processeur, mémoire, disque, carte réseau ; aisance minimale en ligne de commande Linux.
-- Aucune production : le laboratoire se fait sur un poste personnel ou une VM jetable (Debian 12, processeur Intel ou AMD récent, 8 Go de RAM) ou sur un hôte Proxmox VE jetable.
+- Aucune production : le laboratoire se fait sur un poste personnel ou une VM jetable (Debian 12, processeur Intel ou AMD récent, 8 Go de [[Glossary:RAM]]) ou sur un hôte Proxmox VE jetable.
 - Adresses de documentation uniquement (192.0.2.0/24, 198.51.100.0/24).
 - Durée : environ 3 h (lecture 1 h 15, laboratoire 1 h, exercices et quiz 45 min).
 
@@ -69,7 +69,7 @@ L'**hôte** fournit les ressources ; l'**invité** est le système qui tourne da
 
 **Les nuances.** La classification est pédagogique :
 
-- **KVM** est un module du noyau Linux : le noyau devient hyperviseur et QEMU fournit les périphériques. On le range en type 1, mais l'hôte est un Linux complet.
+- **KVM** est un module du noyau Linux : le noyau devient hyperviseur et [[Glossary:QEMU]] fournit les périphériques. On le range en type 1, mais l'hôte est un Linux complet.
 - **Hyper-V**, même activé sur un Windows de poste, démarre **avant** Windows, qui tourne alors dans une « partition parente ».
 - Un type 2 accéléré par le matériel exécute le code invité presque nativement : l'écart se réduit.
 
@@ -90,9 +90,9 @@ On peut donc voir une VM dans la liste des processus, la limiter et la surveille
 
 **vCPU.** Un vCPU n'est pas un cœur réservé : c'est un fil que l'hyperviseur place sur un cœur libre. Commence petit (1 à 2 vCPU pour un service léger) : une VM de 8 vCPU qui en utilise 20 % complique l'ordonnancement de tout l'hôte, et un second vCPU ne sert à rien à une application mono-thread. Le total des vCPU rapporté aux cœurs physiques donne le ratio d'overcommit CPU.
 
-**RAM.** Le CPU se partage dans le temps, la mémoire dans l'espace. L'allocation *statique* réserve la quantité configurée (prévisible, gaspilleuse) ; l'allocation *dynamique* ajuste entre un minimum et un maximum (ballooning, mémoire dynamique Hyper-V : économe, moins prévisible). Linux utilise la mémoire libre comme cache disque : regarde « disponible », pas « libre ». Garde une marge pour l'hôte lui-même (et pour ZFS ou Ceph).
+**RAM.** Le CPU se partage dans le temps, la mémoire dans l'espace. L'allocation *statique* réserve la quantité configurée (prévisible, gaspilleuse) ; l'allocation *dynamique* ajuste entre un minimum et un maximum (ballooning, mémoire dynamique Hyper-V : économe, moins prévisible). Linux utilise la mémoire libre comme cache disque : regarde « disponible », pas « libre ». Garde une marge pour l'hôte lui-même (et pour [[Glossary:ZFS]] ou Ceph).
 
-**Disque.** La taille déclarée n'est pas l'espace occupé (voir la leçon sur le stockage). Pense aux **IOPS** et à la **latence** : dix VM sur un disque lent se gênent, quelle que soit la capacité. Utilise un contrôleur paravirtualisé (virtio-scsi, virtio-blk).
+**Disque.** La taille déclarée n'est pas l'espace occupé (voir la leçon sur le stockage). Pense aux **[[Glossary:IOPS]]** et à la **latence** : dix VM sur un disque lent se gênent, quelle que soit la capacité. Utilise un contrôleur paravirtualisé (virtio-scsi, virtio-blk).
 
 **Exemple.** Petit serveur web de test : 1 à 2 vCPU, 1 à 2 Go, 20 Go de disque, carte réseau paravirtualisée, outils invités. Une base de production se dimensionne sur des mesures. Règle d'or : **mesurer, ajuster, recontrôler**.
 
@@ -121,16 +121,16 @@ Virtualiser un x86 sans aide était pénible : certaines instructions sensibles 
 - **EPT** (Intel) et **NPT/RVI** (AMD), dits SLAT : traduction d'adresses assistée, qui réduit le coût de la mémoire des invités ;
 - **IOMMU** (VT-d, AMD-Vi) : isole les accès directs des périphériques à la mémoire, indispensable au **passthrough** (donner une carte PCI à une VM).
 
-Ces fonctions doivent souvent être **activées** dans le BIOS/UEFI. La **virtualisation imbriquée** (un hyperviseur dans une VM) n'est pas activée partout par défaut ; elle sert à tester Proxmox VE ou ESXi dans une VM de laboratoire, avec des performances réduites. Dans un invité Linux, l'indicateur `hypervisor` de `/proc/cpuinfo` et `systemd-detect-virt` révèlent la virtualisation.
+Ces fonctions doivent souvent être **activées** dans le [[Glossary:BIOS]]/UEFI. La **virtualisation imbriquée** (un hyperviseur dans une VM) n'est pas activée partout par défaut ; elle sert à tester Proxmox VE ou ESXi dans une VM de laboratoire, avec des performances réduites. Dans un invité Linux, l'indicateur `hypervisor` de `/proc/cpuinfo` et `systemd-detect-virt` révèlent la virtualisation.
 
 ## 8. Les pilotes invités : pourquoi les installer
 
 ![Schéma comparant le chemin d'un accès disque ou réseau avec un périphérique émulé et avec un pilote virtio paravirtualisé](images/virtualisation-hyperviseurs-3.svg)
 *Un périphérique émulé impose une sortie de VM à chaque accès ; virtio échange par files partagées et par lots.*
 
-Par défaut, une VM peut présenter du matériel **émulé** ancien et répandu (carte Intel e1000, disque IDE ou SATA) : l'installation se passe sans surprise, mais chaque opération coûte cher. Les **pilotes paravirtualisés** font mieux : **virtio** (disque, réseau, ballon mémoire, console) est inclus dans les noyaux Linux récents ; sous Windows on charge les pilotes depuis une image dédiée.
+Par défaut, une VM peut présenter du matériel **émulé** ancien et répandu (carte Intel e1000, disque IDE ou [[Glossary:SATA]]) : l'installation se passe sans surprise, mais chaque opération coûte cher. Les **pilotes paravirtualisés** font mieux : **virtio** (disque, réseau, ballon mémoire, console) est inclus dans les noyaux Linux récents ; sous Windows on charge les pilotes depuis une image dédiée.
 
-Les **outils invités** (`qemu-guest-agent`, `open-vm-tools`, services d'intégration Hyper-V) apportent l'**arrêt propre**, la **synchronisation de l'heure** (sans conflit avec NTP), la **remontée d'informations** (IP, nom, état) et le **gel du système de fichiers** pour des sauvegardes cohérentes. Sans eux : disque et réseau lents, arrêt « à la prise » après délai, sauvegardes incohérentes, IP invisible dans la console.
+Les **outils invités** (`qemu-guest-agent`, `open-vm-tools`, services d'intégration Hyper-V) apportent l'**arrêt propre**, la **synchronisation de l'heure** (sans conflit avec [[Glossary:NTP]]), la **remontée d'informations** ([[Glossary:IP]], nom, état) et le **gel du système de fichiers** pour des sauvegardes cohérentes. Sans eux : disque et réseau lents, arrêt « à la prise » après délai, sauvegardes incohérentes, IP invisible dans la console.
 
 Attention : changer le contrôleur disque d'une VM installée peut l'empêcher de démarrer si l'invité n'a pas le pilote dans son image de démarrage. On teste sur un clone, avec un instantané préalable.
 
@@ -260,7 +260,7 @@ rm -rf ~/lab-virt
 5. (1) `vmx`/`svm` présent ? (2) virtualisation activée dans le BIOS/UEFI ? (3) `/dev/kvm` et modules `kvm`, `kvm_intel` ou `kvm_amd` ? (4) si l'hôte est une VM, imbrication activée chez son hyperviseur ? (5) type de CPU configuré compatible ? (6) journaux de l'hôte.
 6. L'IDE émulé impose beaucoup de sorties de VM et une file courte ; virtio échange par files partagées. Procédure : sauvegarde ou instantané, charger le pilote virtio dans Windows via un petit disque virtio temporaire, vérifier sa détection, arrêter la VM, changer le contrôleur du disque système, redémarrer ; sinon revenir à l'ancien contrôleur ou restaurer. D'abord sur un clone.
 7. Exemples : serveur de fichiers (2 vCPU, 4 Go, 40 Go + données) ; contrôleur de domaine de labo (2 vCPU, 4 Go, 60 Go) ; supervision (2–4 vCPU, 4–8 Go, disque selon la rétention). On mesure ensuite la charge sur une période représentative et on ajuste.
-8. Propriétaire prévenu ; activité réseau et connexions vérifiées ; dépendances (DNS, tâches planifiées) examinées ; sauvegarde testée ; arrêt d'observation avant suppression ; inventaire et supervision mis à jour.
+8. Propriétaire prévenu ; activité réseau et connexions vérifiées ; dépendances ([[Glossary:DNS]], tâches planifiées) examinées ; sauvegarde testée ; arrêt d'observation avant suppression ; inventaire et supervision mis à jour.
 
 ## Quiz
 

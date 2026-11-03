@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-rocky-9-services-dnf-automatic.md
 
-- **Environnement** : VM ou serveur Rocky Linux
-- **OS / Version** : Rocky Linux 9 / RHEL 9 (dnf-automatic fourni par BaseOS)
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 (dnf-automatic fourni par BaseOS)
 - **Catégorie** : Services / Correctifs de sécurité automatiques
 - **Tags** : `[rocky9]`, `[rhel9]`, `[dnf]`, `[dnf-automatic]`, `[systemd]`, `[hardening]`
 

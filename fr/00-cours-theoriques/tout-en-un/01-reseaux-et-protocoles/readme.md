@@ -13,6 +13,6 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Tags** : `transverse`, `tout-en-un`, `reseau`
 
-Diagnostics partagés pour adressage, ports, DNS, DHCP, VLAN, VPN et proxy. Les changements de configuration restent dans les procédures par OS.
+Diagnostics partagés pour adressage, ports, [[Glossary:DNS]], [[Glossary:DHCP]], [[Glossary:VLAN]], [[Glossary:VPN]] et proxy. Les changements de configuration restent dans les procédures par OS.
 
 - [Leçons illustrées de cette catégorie](/fr/00-cours-theoriques/tout-en-un/01-reseaux-et-protocoles/lecons/readme)

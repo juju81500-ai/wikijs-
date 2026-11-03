@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-appliance-opnsense-installation-installer-systeme.md
 
-- **Environnement** : Appliance physique ou VM dédiée avec interfaces réseau identifiées
+- **Environnement** : Appliance physique ou [[Glossary:VM]] dédiée avec interfaces réseau identifiées
 - **OS / Version** : OPNsense Community ou Business Edition, release maintenue compatible avec la plateforme
 - **Catégorie** : pare-feu / installation
 - **Tags** : `opnsense`, `installation`, `pare-feu`, `wan`, `lan`
@@ -30,10 +30,10 @@ Installer OPNsense sur le disque réservé et attribuer les interfaces.
 2. Dans l'installateur, sélectionner le disque réservé après double vérification du périphérique.
    👉 Explication : l'opération efface le disque choisi.
 
-3. Retirer le média et redémarrer, puis dans le menu console choisir **1) Assign interfaces** et attribuer WAN et LAN.
+3. Retirer le média et redémarrer, puis dans le menu console choisir **1) Assign interfaces** et attribuer [[Glossary:WAN]] et [[Glossary:LAN]].
    👉 Explication : associe chaque carte réseau à son rôle.
 
-4. Dans le menu console, choisir **2) Set interface IP address** pour une adresse de gestion temporaire isolée.
+4. Dans le menu console, choisir **2) Set interface [[Glossary:IP]] address** pour une adresse de gestion temporaire isolée.
    👉 Explication : permet de vérifier l'accès local avant raccordement au réseau réel.
 
 5. Contrôler les interfaces :

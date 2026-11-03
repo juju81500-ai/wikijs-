@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Apache Guacamole
 
-- **Catégorie** : Poste de travail et VDI
+- **Catégorie** : Poste de travail et [[Glossary:VDI]]
 - **Plateforme** : Linux
 - **Produit (matrice)** : Apache Guacamole
 - **Statut dans le pack** : Guide complet — Guacamole 1.6.0 avec Docker Compose, PostgreSQL et reverse proxy HTTPS
@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 📚 Couverture dans le pack
 
-Guide borné à un déploiement Docker Compose avec authentification PostgreSQL et publication locale derrière un reverse proxy HTTPS. MFA/SSO, haute disponibilité, connexions aux systèmes cibles et exigences de production restent à valider séparément.
+Guide borné à un déploiement Docker Compose avec authentification PostgreSQL et publication locale derrière un reverse proxy HTTPS. [[Glossary:MFA]]/SSO, haute disponibilité, connexions aux systèmes cibles et exigences de production restent à valider séparément.
 
 ## 🧭 Utilisation
 

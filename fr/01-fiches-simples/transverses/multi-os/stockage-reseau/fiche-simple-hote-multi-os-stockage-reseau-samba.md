@@ -54,7 +54,7 @@ Publier un partage SMB limité à un groupe.
    ```
    👉 Explication : le serveur démarre au boot.
 
-6. Ouvrir TCP/445 uniquement aux sous-réseaux clients prévus, puis tester depuis un client avec un compte non administrateur.
+6. Ouvrir [[Glossary:TCP]]/445 uniquement aux sous-réseaux clients prévus, puis tester depuis un client avec un compte non administrateur.
    👉 Explication : on valide l'accès réel et on limite l'exposition.
 
 ## 2. Production — Contrôles

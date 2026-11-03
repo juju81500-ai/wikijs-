@@ -20,12 +20,12 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Donner une adresse au NAS pour pouvoir accéder à l'interface web.
+Donner une adresse au [[Glossary:NAS]] pour pouvoir accéder à l'interface web.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Dans l'installateur, ne pas configurer le réseau ; au premier démarrage, le menu console propose `1) Configure network interfaces`.
-   👉 Explication : choisir l'interface et saisir l'adresse IP, le masque et la passerelle.
+   👉 Explication : choisir l'interface et saisir l'adresse [[Glossary:IP]], le masque et la passerelle.
 
 2. Contrôler l'adresse reçue :
    ```bash
@@ -43,7 +43,7 @@ Donner une adresse au NAS pour pouvoir accéder à l'interface web.
 
 ## 2. Production — Contrôles
 
-Utiliser une adresse fixe réservée dans l'IPAM dès l'installation.
+Utiliser une adresse fixe réservée dans l'[[Glossary:IPAM]] dès l'installation.
 
 ## 3. Production — Sécurité
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_10_Compte_Super_Administrateur
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 10 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-10`
@@ -36,7 +36,7 @@ Sécuriser le compte root.
    ```
    👉 Explication : `PS` signifie mot de passe défini, `LK` verrouillé.
 
-3. Interdire la connexion SSH directe de root :
+3. Interdire la connexion [[Glossary:SSH]] directe de root :
    ```bash
    echo 'PermitRootLogin no' | sudo tee /etc/ssh/sshd_config.d/10-root.conf
    sudo sshd -t && sudo systemctl reload sshd

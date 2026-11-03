@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_Postfix_Sauvegarder_Restaurer
 
-- **Environnement** : VM Rocky Linux 9; Postfix depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9; Postfix depuis les dépôts de la distribution
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : Vie du logiciel / Postfix — Sauvegarder / restaurer
 - **Tags** : `postfix`, `serveur`, `vie-du-logiciel`, `sauvegarder_restaurer`
@@ -34,7 +34,7 @@ sudo chmod 600 /root/postfix-config-*.tgz
 
 ## 2. Production — Contrôles
 
-Dovecot : inclure boîtes et métadonnées selon backend; Postfix : traiter la file séparément si nécessaire. Définir RPO/RTO.
+Dovecot : inclure boîtes et métadonnées selon backend; Postfix : traiter la file séparément si nécessaire. Définir [[Glossary:RPO]]/RTO.
 
 ## 3. Production — Sécurité
 

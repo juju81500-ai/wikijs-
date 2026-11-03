@@ -29,15 +29,15 @@ Donner un accès réseau provisoire pour l'installation et les mises à jour.
    Get-NetAdapter | Select-Object Name, Status, LinkSpeed, MacAddress
    Get-NetIPConfiguration
    ```
-   👉 Explication : liste les cartes, leur état et leur adresse (DHCP par défaut).
+   👉 Explication : liste les cartes, leur état et leur adresse ([[Glossary:DHCP]] par défaut).
 
-2. Vérifier l'accès à la passerelle, au DNS et à Internet :
+2. Vérifier l'accès à la passerelle, au [[Glossary:DNS]] et à Internet :
    ```powershell
    Test-NetConnection 8.8.8.8
    Test-NetConnection www.microsoft.com -Port 443
    Resolve-DnsName www.microsoft.com
    ```
-   👉 Explication : confirme la connectivité IP, la résolution et l'accès HTTPS nécessaire à Windows Update.
+   👉 Explication : confirme la connectivité [[Glossary:IP]], la résolution et l'accès HTTPS nécessaire à Windows Update.
 
 3. Si le DHCP est absent, fixer provisoirement l'adresse (remplacer `ALIAS`, `IP`, `PASSERELLE`) :
    ```powershell
@@ -47,11 +47,11 @@ Donner un accès réseau provisoire pour l'installation et les mises à jour.
 
 ## 2. Production — Contrôles
 
-Réserver l'adresse définitive dans l'IPAM avant la mise en production.
+Réserver l'adresse définitive dans l'[[Glossary:IPAM]] avant la mise en production.
 
 ## 3. Production — Sécurité
 
-Installer sur un VLAN de préparation isolé et limiter les flux sortants aux sites de mise à jour.
+Installer sur un [[Glossary:VLAN]] de préparation isolé et limiter les flux sortants aux sites de mise à jour.
 
 ## Validation et retour arrière
 

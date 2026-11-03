@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_Dovecot_Securiser
 
-- **Environnement** : VM Ubuntu Server 24-04; Dovecot depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04; Dovecot depuis les dépôts de la distribution
 - **OS / Version** : Ubuntu Server 24-04
 - **Catégorie** : Vie du logiciel / Dovecot — Sécuriser
 - **Tags** : `dovecot`, `serveur`, `vie-du-logiciel`, `securiser`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Limiter connexions réseau et protéger TLS et comptes de Dovecot.
+Limiter connexions réseau et protéger [[Glossary:TLS]] et comptes de Dovecot.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -45,7 +45,7 @@ sudo ufw status verbose
 
 ## 2. Production — Contrôles
 
-Ubuntu : UFW si prévu; Rocky : firewalld et SELinux enforcing. Autoriser uniquement les flux documentés.
+Ubuntu : [[Glossary:UFW]] si prévu; Rocky : firewalld et SELinux enforcing. Autoriser uniquement les flux documentés.
 
 ## 3. Production — Sécurité
 

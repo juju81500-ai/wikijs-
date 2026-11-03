@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_09_Identite_De_La_Machine
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 09 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-09`
@@ -31,14 +31,14 @@ Nommer la machine de façon unique et cohérente.
    ```
    👉 Explication : écrit `/etc/hostname` et applique le nom immédiatement.
 
-2. Associer le nom court au FQDN dans `/etc/hosts` (remplacer `ADRESSE_IP`, `NOM_MACHINE`, `DOMAINE`) :
+2. Associer le nom court au [[Glossary:FQDN]] dans `/etc/hosts` (remplacer `ADRESSE_IP`, `NOM_MACHINE`, `DOMAINE`) :
    ```sh
    doas sh -c 'cat >> /etc/hosts <<EOF
    ADRESSE_IP NOM_MACHINE.DOMAINE NOM_MACHINE
    EOF'
    hostname -f
    ```
-   👉 Explication : l'adresse de la machine est résolue localement, même sans DNS.
+   👉 Explication : l'adresse de la machine est résolue localement, même sans [[Glossary:DNS]].
 
 3. Redémarrer le service pour que le nom soit relu :
    ```sh

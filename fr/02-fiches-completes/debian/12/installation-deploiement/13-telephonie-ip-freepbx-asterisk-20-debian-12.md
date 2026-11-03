@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Déployer FreePBX et Asterisk pour une téléphonie de laboratoire
 
-- **Environnement** : VM ou serveur dédié, réseau voix segmenté
+- **Environnement** : [[Glossary:VM]] ou serveur dédié, réseau voix segmenté
 - **Version** : Asterisk 20 / FreePBX selon leur matrice de compatibilité et le statut de support actuel
 - **Tags** : `freepbx`, `asterisk`, `voip`, `debian12`, `sip`, `telephonie`
 
@@ -21,7 +21,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [préparer la téléphonie](/fr/01-fiches-simples/debian/12/vie-du-logiciel/freepbx-asterisk/fiche-simple-vm-debian-12-freepbx-preparer-telephonie).
 
-Réserver une adresse IP et un DNS, définir les extensions, numéros, trunks, plages RTP, codecs et plan d'appel. Coordonner les paramètres SIP/RTP avec l'opérateur. Isoler les téléphones et le PBX dans un VLAN voix ; ne jamais publier l'interface d'administration ni SIP directement à Internet sans architecture opérateur sécurisée.
+Réserver une adresse [[Glossary:IP]] et un [[Glossary:DNS]], définir les extensions, numéros, trunks, plages RTP, codecs et plan d'appel. Coordonner les paramètres SIP/RTP avec l'opérateur. Isoler les téléphones et le PBX dans un [[Glossary:VLAN]] voix ; ne jamais publier l'interface d'administration ni SIP directement à Internet sans architecture opérateur sécurisée.
 
 Sauvegarder la configuration et établir un accès console local avant toute règle réseau.
 
@@ -43,7 +43,7 @@ Depuis l'interface locale protégée :
 2. Créer un trunk avec les paramètres fournis par l'opérateur et secrets uniques.
 3. Créer deux extensions de test et un plan d'appel restreint.
 4. Configurer les routes entrantes/sortantes avec restrictions de destination et limite de coût.
-5. Activer TLS/SRTP si tous les terminaux et l'opérateur les prennent en charge.
+5. Activer [[Glossary:TLS]]/SRTP si tous les terminaux et l'opérateur les prennent en charge.
 
 ## 4. Réseau et tests
 

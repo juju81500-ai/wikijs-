@@ -35,7 +35,7 @@ Valider la communication Ansible et recueillir des facts sur un seul hôte sans 
    ```bash
    ansible linux_lab -i inventory.ini -m ansible.builtin.ping
    ```
-   👉 Explication : `ping` vérifie SSH et l'interpréteur Python; ce n'est pas un test ICMP. Réponse attendue : `pong`.
+   👉 Explication : `ping` vérifie [[Glossary:SSH]] et l'interpréteur Python; ce n'est pas un test [[Glossary:ICMP]]. Réponse attendue : `pong`.
 
 3. Collecter les faits sur un seul hôte :
    ```bash

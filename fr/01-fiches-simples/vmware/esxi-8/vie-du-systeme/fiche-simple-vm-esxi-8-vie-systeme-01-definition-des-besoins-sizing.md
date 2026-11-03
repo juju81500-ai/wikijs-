@@ -24,7 +24,7 @@ Dimensionner l'hôte ESXi avant l'achat ou l'installation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Lister les VM à héberger avec vCPU, RAM et disque. Sur un hôte existant, relever les ressources (Host Client : **Hôte > Surveiller > Performances**; SSH) :
+1. Lister les [[Glossary:VM]] à héberger avec vCPU, [[Glossary:RAM]] et disque. Sur un hôte existant, relever les ressources (Host Client : **Hôte > Surveiller > Performances**; [[Glossary:SSH]]) :
    ```sh
    esxcli hardware cpu global get
    esxcli hardware memory get
@@ -35,7 +35,7 @@ Dimensionner l'hôte ESXi avant l'achat ou l'installation.
 2. Calculer le total : vCPU (ratio de sur-allocation 3:1 à 5:1 selon la charge), RAM des VM + environ 4 Go pour l'hyperviseur.
    👉 Explication : ESXi peut sur-allouer la RAM (ballooning) mais les performances chutent.
 
-3. Prévoir réseau et stockage : 2 cartes minimum pour la gestion (redondance), cartes dédiées vMotion/stockage, datastore local SSD/NVMe ou stockage partagé.
+3. Prévoir réseau et stockage : 2 cartes minimum pour la gestion (redondance), cartes dédiées vMotion/stockage, datastore local [[Glossary:SSD]]/NVMe ou stockage partagé.
    👉 Explication : un hôte à 1 seule carte réseau n'a aucune redondance.
 
 ## 2. Production — Contrôles

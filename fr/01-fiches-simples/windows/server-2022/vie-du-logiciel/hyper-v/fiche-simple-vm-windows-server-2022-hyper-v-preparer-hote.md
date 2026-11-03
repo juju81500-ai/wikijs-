@@ -36,12 +36,12 @@ Vérifier matériel, licence et correctifs avant d'installer Hyper-V.
    Get-PhysicalDisk | Format-Table FriendlyName, Size, HealthStatus
    Get-NetAdapter
    ```
-   👉 Explication : confirme capacité, santé du stockage et NIC disponibles.
+   👉 Explication : confirme capacité, santé du stockage et [[Glossary:NIC]] disponibles.
 
-3. **Paramètres > Windows Update** (ou WSUS) : installer les correctifs et pilotes certifiés.
+3. **Paramètres > Windows Update** (ou [[Glossary:WSUS]]) : installer les correctifs et pilotes certifiés.
    👉 Explication : hôte à jour avant le rôle.
 
-4. Décider Server Core ou Desktop Experience, planifier console hors bande, VLANs, adresses de gestion, espace VM et protection des sauvegardes.
+4. Décider Server Core ou Desktop Experience, planifier console hors bande, VLANs, adresses de gestion, espace [[Glossary:VM]] et protection des sauvegardes.
    👉 Explication : ces choix sont documentés avant l'installation.
 
 ## 2. Production — Contrôles

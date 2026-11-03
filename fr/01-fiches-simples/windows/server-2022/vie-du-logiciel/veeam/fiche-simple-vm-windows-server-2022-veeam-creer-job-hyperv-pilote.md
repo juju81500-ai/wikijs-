@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **Environnement** : Serveur Windows Server 2022 dédié au serveur de sauvegarde Veeam (pilote autonome) et hôte Hyper-V autorisé
 - **OS / Version** : Windows Server 2022; Veeam Backup & Replication 13.1.2.57
-- **Catégorie** : sauvegarde VM / job
+- **Catégorie** : sauvegarde [[Glossary:VM]] / job
 - **Tags** : `windows-server-2022`, `veeam`, `backup-replication`, `hyper-v`, `job`, `hyper-v`
 
 ---
@@ -31,7 +31,7 @@ Créer un premier job de sauvegarde sur une VM pilote non critique.
    👉 Explication : sélectionner une VM pilote non critique, le dépôt dédié, le calendrier, la rétention et éviter les chevauchements.
 
 3. Activer le traitement cohérent avec les applications lorsqu'il est supporté : **Guest Processing > Enable application-aware processing**
-   👉 Explication : examiner les journaux VSS et les identifiants invités.
+   👉 Explication : examiner les journaux [[Glossary:VSS]] et les identifiants invités.
 
 4. Prévoir une copie indépendante selon la stratégie 3-2-1-1-0 :
    👉 Explication : destination distincte du serveur principal (Backup Copy Job).

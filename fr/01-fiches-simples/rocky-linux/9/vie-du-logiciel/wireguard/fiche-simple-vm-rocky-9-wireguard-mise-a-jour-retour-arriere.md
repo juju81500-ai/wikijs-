@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_WireGuard_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Rocky Linux 9 dédiée à un serveur WireGuard natif
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à un serveur WireGuard natif
 - **OS / Version** : Rocky Linux 9; wireguard-tools issu d'EPEL, module noyau à vérifier sur l'hôte
 - **Catégorie** : WireGuard natif / mise à jour / retour arrière
 - **Tags** : `wireguard`, `rocky9`, `vie-du-logiciel`, `mise-a-jour-retour-arriere`

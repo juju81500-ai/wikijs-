@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Proxmox_VE_8_Proxmox_OpenStack_Nettoyer_Retour_Arriere
 
-- **Environnement** : VM OpenStack DevStack jetable sur Proxmox VE 8.x
-- **OS / Version** : Ubuntu Server 24-04 LTS / DevStack
+- **Environnement** : [[Glossary:VM]] OpenStack DevStack jetable sur Proxmox VE 8.x
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] / DevStack
 - **Catégorie** : cloud privé / nettoyage de lab
 - **Tags** : `proxmox-ve`, `openstack`, `devstack`, `nettoyage`, `rollback`
 
@@ -26,7 +26,7 @@ Retirer un lab et révoquer les accès sans affecter l’hôte Proxmox ni les r�
 
 1. Inventorier dans Horizon/CLI instances, volumes, images, réseaux, routeurs, règles et ressources; confirmer projet/propriétaires avant suppression.
    👉 Explication : suppressions irréversibles; aucun wildcard ou commande globale n’est donné.
-2. Supprimer uniquement les ressources créées pour le POC, dans l’ordre des dépendances indiqué par documentation; vérifier les volumes/snapshots à conserver.
+2. Supprimer uniquement les ressources créées pour le [[Glossary:POC]], dans l’ordre des dépendances indiqué par documentation; vérifier les volumes/snapshots à conserver.
    👉 Explication : mauvaise identification détruit des données même en environnement partagé.
 3. Révoquer les jetons de test et supprimer les fichiers secrets après accord du propriétaire.
    👉 Explication : supprimer le fichier ne remplace pas la révocation d’un secret exposé.

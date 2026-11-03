@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_Windows_Server_2022_SQL-Server_Valider
 
-- **Environnement** : VM Windows Server 2022 (SQL Server 2022 Standard ou Developer)
+- **Environnement** : [[Glossary:VM]] Windows Server 2022 ([[Glossary:SQL]] Server 2022 Standard ou Developer)
 - **OS / Version** : Windows Server 2022; SQL Server 2022 (instance par défaut MSSQLSERVER)
 - **Catégorie** : base de données / SQL Server / Valider (recette)
 - **Tags** : `windows-server-2022`, `sql-server`, `sqlserver-2022`, `recette`
@@ -37,7 +37,7 @@ Prouver que SQL Server est opérationnel, chiffré, accessible aux seuls clients
    ```
    👉 Explication : `TcpTestSucceeded : True` depuis un client autorisé, `False` depuis un client non autorisé. Remplacer `NOM_SERVEUR` (à remplacer).
 
-3. GUI — SSMS : Se connecter au serveur, Options → Chiffrement : Obligatoire, ne pas cocher « Approuver le certificat du serveur » :
+3. [[Glossary:GUI]] — SSMS : Se connecter au serveur, Options → Chiffrement : Obligatoire, ne pas cocher « Approuver le certificat du serveur » :
    ```powershell
    sqlcmd -S NOM_SERVEUR -E -N -Q "SELECT encrypt_option FROM sys.dm_exec_connections WHERE session_id = @@SPID;"
    ```

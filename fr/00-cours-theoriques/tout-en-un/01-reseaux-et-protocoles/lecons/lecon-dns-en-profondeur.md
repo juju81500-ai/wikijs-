@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Leçon — DNS en profondeur : hiérarchie, résolution, enregistrements, cache et dépannage
 
 - **Tags** : `transverse`, `tout-en-un`, `lecon`, `reseaux`, `dns`, `dig`, `nslookup`, `resolve-dnsname`, `diagnostic`
-- **Niveau** : intermédiaire (après les bases d'adressage IP)
+- **Niveau** : intermédiaire (après les bases d'adressage [[Glossary:IP]])
 - **Durée estimée** : 3 h 30 (lecture 1 h 30, laboratoire 1 h 15, exercices et quiz 45 min)
 - **Catégorie** : Tout-en-un / Réseaux et protocoles
 
@@ -22,19 +22,19 @@ dateModified: 2026-11-03T09:36:13Z
 
 À la fin de cette leçon, vous saurez :
 
-1. lire un nom complet (FQDN) de droite à gauche et décrire la hiérarchie racine, TLD, zone, délégation ;
+1. lire un nom complet ([[Glossary:FQDN]]) de droite à gauche et décrire la hiérarchie racine, TLD, zone, délégation ;
 2. distinguer client léger (stub resolver), résolveur récursif et serveur faisant autorité ;
 3. comparer résolution récursive et itérative ;
-4. écrire et reconnaître les enregistrements A, AAAA, CNAME, MX, TXT, PTR, NS et SOA ;
-5. raisonner sur le cache, le TTL et le cache négatif ;
-6. interroger le DNS avec `dig`, `nslookup` et `Resolve-DnsName`, et interpréter les codes de réponse ;
+4. écrire et reconnaître les enregistrements A, AAAA, [[Glossary:CNAME]], MX, TXT, PTR, NS et SOA ;
+5. raisonner sur le cache, le [[Glossary:TTL]] et le cache négatif ;
+6. interroger le [[Glossary:DNS]] avec `dig`, `nslookup` et `Resolve-DnsName`, et interpréter les codes de réponse ;
 7. appliquer une méthode de dépannage qui isole le poste, le résolveur et la zone.
 
 ## Prérequis et durée
 
 - Savoir lire une adresse IPv4 avec son masque et comprendre ce qu'est un port.
 - Savoir ouvrir un terminal Linux ou PowerShell.
-- Pour le laboratoire : une VM Debian ou Ubuntu jetable (avec instantané), sans accès à la production.
+- Pour le laboratoire : une [[Glossary:VM]] Debian ou Ubuntu jetable (avec instantané), sans accès à la production.
 - Durée totale : environ 3 h 30.
 
 Tous les noms et adresses sont réservés à la documentation : `example.com`, `example.test`, `192.0.2.0/24`, `198.51.100.0/24`, `203.0.113.0/24`, `2001:db8::/32`. Aucun secret ni donnée réelle n'est employé.
@@ -114,7 +114,7 @@ Conséquence : `nslookup` affiche « Réponse ne faisant pas autorité » quand 
 3. Un serveur de `com` renvoie vers les NS de `example.com`.
 4. Un NS de `example.com` **fait autorité** : `www.example.com. 300 IN A 192.0.2.10`.
 5. Le résolveur met en cache 300 s, répond au client avec le drapeau RA (récursion disponible).
-6. Le client transmet l'adresse à l'application, qui ouvre une connexion TCP vers `192.0.2.10`.
+6. Le client transmet l'adresse à l'application, qui ouvre une connexion [[Glossary:TCP]] vers `192.0.2.10`.
 
 Les renvois de la racine et des TLD restent en cache longtemps : un résolveur actif ne contacte presque jamais la racine.
 
@@ -130,7 +130,7 @@ Un enregistrement (RR) a la forme `nom  TTL  classe  type  données`, la classe 
 | **AAAA** | adresse IPv6 | `www 300 IN AAAA 2001:db8::10` |
 | **CNAME** | alias | `blog 300 IN CNAME www.example.com.` |
 | **MX** | messagerie, priorité la plus basse préférée | `@ 3600 IN MX 10 mail.example.com.` |
-| **TXT** | texte (SPF, vérifications) | `@ 3600 IN TXT "v=spf1 mx -all"` |
+| **TXT** | texte ([[Glossary:SPF]], vérifications) | `@ 3600 IN TXT "v=spf1 mx -all"` |
 | **PTR** | nom d'une adresse (inverse) | `10.2.0.192.in-addr.arpa. IN PTR www.example.com.` |
 | **NS** | serveur de noms de la zone | `@ 86400 IN NS ns1.example.com.` |
 | **SOA** | autorité : série, durées, TTL négatif | `@ IN SOA ns1.example.com. admin.example.com. (…)` |
@@ -184,9 +184,9 @@ Rien ne « se propage » : une modification est **visible immédiatement** sur l
 
 ## 7. Transport et sécurité en bref
 
-- **UDP/53** : transport par défaut. **TCP/53** : réponses tronquées (bit TC), transferts de zone ; le filtrer provoque des pannes intermittentes sur les grosses réponses.
-- **DoT** (TLS, port 853) et **DoH** (HTTPS, port 443) chiffrent le trajet client-résolveur.
-- **DNSSEC** signe les enregistrements ; un échec de validation donne `SERVFAIL` alors que l'autorité répond (test : `dig +cd`).
+- **[[Glossary:UDP]]/53** : transport par défaut. **TCP/53** : réponses tronquées (bit TC), transferts de zone ; le filtrer provoque des pannes intermittentes sur les grosses réponses.
+- **DoT** ([[Glossary:TLS]], port 853) et **DoH** (HTTPS, port 443) chiffrent le trajet client-résolveur.
+- **[[Glossary:DNSSEC]]** signe les enregistrements ; un échec de validation donne `SERVFAIL` alors que l'autorité répond (test : `dig +cd`).
 - Le DNS classique est **en clair** : un observateur lit les noms demandés.
 
 ## 8. Les outils d'interrogation
@@ -240,7 +240,7 @@ EOF
 sudo dnsmasq --conf-file=lab.conf --keep-in-foreground --log-facility=- --pid-file=
 ```
 
-👉 Explication : démarre `dnsmasq` au premier plan et affiche les requêtes. `sudo` est employé dans la VM car `dnsmasq` abandonne ses privilèges au démarrage ; `--pid-file=` (vide) évite d'écrire un fichier PID. Laissez ce terminal ouvert, travaillez dans un second. Arrêt : `Ctrl+C`.
+👉 Explication : démarre `dnsmasq` au premier plan et affiche les requêtes. `sudo` est employé dans la VM car `dnsmasq` abandonne ses privilèges au démarrage ; `--pid-file=` (vide) évite d'écrire un fichier [[Glossary:PID]]. Laissez ce terminal ouvert, travaillez dans un second. Arrêt : `Ctrl+C`.
 
 ### Étape 4 — Interroger les types
 

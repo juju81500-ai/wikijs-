@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_Suricata_Installer
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Suricata
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Suricata
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Suricata / installation
 - **Tags** : `suricata`, `rocky9`, `vie-du-logiciel`, `installer`
 
@@ -38,7 +38,7 @@ Installer Suricata depuis les dépôts de Rocky Linux 9 avec EPEL.
    suricata --build-info | head -n 20
    suricata -V
    ```
-   👉 Explication : Installe le moteur, suricata-update et jq (lecture des journaux JSON). `--build-info` montre les fonctions compilées dont AF_PACKET.
+   👉 Explication : Installe le moteur, suricata-update et jq (lecture des journaux [[Glossary:JSON]]). `--build-info` montre les fonctions compilées dont AF_PACKET.
 
 3. Ne pas démarrer avant configuration :
    ```bash

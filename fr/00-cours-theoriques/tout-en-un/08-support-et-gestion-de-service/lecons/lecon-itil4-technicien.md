@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Leçon — ITIL 4 pour le technicien : valeur, incident, demande, problème, changement, priorités, SLA et CMDB
 
 - **Tags** : `transverse`, `tout-en-un`, `lecon`, `support`, `itil`, `itsm`, `incident`, `sla`, `cmdb`
-- **Niveau** : débutant à intermédiaire (technicien support N1/N2, étudiant TSSR)
+- **Niveau** : débutant à intermédiaire (technicien support N1/N2, étudiant [[Glossary:TSSR]])
 - **Durée estimée** : 3 h 30 (lecture 1 h 30, laboratoire 1 h, exercices et quiz 1 h)
 
 ---
@@ -21,11 +21,11 @@ dateModified: 2026-11-03T09:36:13Z
 
 À l'issue de cette leçon, vous saurez :
 
-1. Expliquer la notion de **valeur** et de **service** telle que la présente ITIL 4, et la relier à votre travail quotidien de technicien.
+1. Expliquer la notion de **valeur** et de **service** telle que la présente [[Glossary:ITIL]] 4, et la relier à votre travail quotidien de technicien.
 2. Citer les **quatre dimensions** de la gestion d'un service et les **principes directeurs** utiles au support.
 3. **Distinguer** sans hésiter un incident, une demande de service, un problème et un changement, et choisir le bon type de dossier.
-4. Calculer une **priorité** à partir de l'impact et de l'urgence, et en déduire des échéances de **SLA**.
-5. Décrire le rôle d'une **CMDB** et l'utiliser pour estimer l'impact d'une panne.
+4. Calculer une **priorité** à partir de l'impact et de l'urgence, et en déduire des échéances de **[[Glossary:SLA]]**.
+5. Décrire le rôle d'une **[[Glossary:CMDB]]** et l'utiliser pour estimer l'impact d'une panne.
 6. Reproduire, dans un laboratoire local sans risque, une petite chaîne de calcul de priorité et d'analyse d'impact.
 
 ## Prérequis et durée
@@ -51,7 +51,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 1. De quoi parle-t-on ? Un cadre de bonnes pratiques, pas une religion
 
-ITIL est un **ensemble de bonnes pratiques** pour organiser la gestion des services informatiques (on parle d'ITSM, *IT Service Management*). Il ne vous dit pas quel logiciel installer, ni combien de personnes embaucher : il propose un **vocabulaire commun** et des pratiques éprouvées que chaque organisation adapte à sa taille.
+ITIL est un **ensemble de bonnes pratiques** pour organiser la gestion des services informatiques (on parle d'[[Glossary:ITSM]], *IT Service Management*). Il ne vous dit pas quel logiciel installer, ni combien de personnes embaucher : il propose un **vocabulaire commun** et des pratiques éprouvées que chaque organisation adapte à sa taille.
 
 Une analogie : dans un **restaurant**, la salle (accueil, commandes, réclamations) est le **service desk**, la cuisine ce sont les équipes techniques, le menu est le **catalogue de services**, le plan de la cuisine avec ses dépendances est la **CMDB**, et la réunion qui analyse pourquoi le même plat revient trois fois est la **gestion des problèmes**. Le technicien est le visage du service pour l'utilisateur **et** le relais vers les experts.
 
@@ -211,7 +211,7 @@ Chaque élément porte au minimum : identifiant unique, nom et type, propriétai
 
 Objectif : manipuler, en local, **trois petits outils en lecture seule ou auto-contenus** — calcul de priorité et d'échéances, analyse d'impact d'une CMDB sous forme de fichier CSV. Aucun service réseau n'est installé et rien n'est modifié sur le système.
 
-> **Précautions** : travaillez dans une **machine virtuelle jetable**. Avant toute modification sensible dans une autre situation (installer des paquets, changer un service), prenez un **instantané** de la VM, gardez un **accès console de secours**, testez, et sachez **revenir en arrière**. Ici, vous ne créez que des fichiers dans un dossier dédié que vous supprimez à la fin (retour arrière).
+> **Précautions** : travaillez dans une **machine virtuelle jetable**. Avant toute modification sensible dans une autre situation (installer des paquets, changer un service), prenez un **instantané** de la [[Glossary:VM]], gardez un **accès console de secours**, testez, et sachez **revenir en arrière**. Ici, vous ne créez que des fichiers dans un dossier dédié que vous supprimez à la fin (retour arrière).
 
 ### Étape 1 — Créer un dossier de travail
 

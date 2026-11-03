@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_Snort_Prerequis_Limites
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Snort
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Snort
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Snort / prérequis et limites
 - **Tags** : `snort`, `ubuntu24.04`, `vie-du-logiciel`, `prerequis-limites`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Cadrer un capteur Snort IDS passif sur VM Ubuntu Server 24-04 LTS : détection et journalisation uniquement, dans un périmètre autorisé.
+Cadrer un capteur Snort [[Glossary:IDS]] passif sur VM Ubuntu Server 24-04 LTS : détection et journalisation uniquement, dans un périmètre autorisé.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -35,7 +35,7 @@ Cadrer un capteur Snort IDS passif sur VM Ubuntu Server 24-04 LTS : détection e
    ip -br link
    df -h /var/log /opt
    ```
-   👉 Explication : Snort a besoin de CPU/RAM proportionnels au débit et aux règles; prévoir une interface de capture dédiée (SPAN/TAP).
+   👉 Explication : Snort a besoin de [[Glossary:CPU]]/RAM proportionnels au débit et aux règles; prévoir une interface de capture dédiée ([[Glossary:SPAN]]/TAP).
 
 3. Choisir la branche.
    👉 Explication : Ubuntu 24-04 : le paquet `snort` des dépôts peut correspondre à l’ancienne branche 2.9 (fin de vie) ou à une version packagée spécifique; contrôler `apt-cache policy snort` avant de décider. Cette série privilégie Snort 3 compilé depuis les sources officielles (préfixe `/opt/snort3`).

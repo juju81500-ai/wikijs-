@@ -23,7 +23,7 @@ Fiche défensive d’administration et de gouvernance. Elle ne remplace pas le g
 
 ## 🧭 Périmètre
 
-Complément aux fiches existantes: déployer avec la configuration de production documentée, TLS via le frontal approuvé, stockage durable et sauvegardes protégées; utiliser comptes nominatifs, MFA et rôles minimaux. Protéger les clés, tokens et exports, maintenir les images/packages officiels et examiner les journaux d’administration. Limiter les connecteurs et applications aux besoins autorisés.
+Complément aux fiches existantes: déployer avec la configuration de production documentée, [[Glossary:TLS]] via le frontal approuvé, stockage durable et sauvegardes protégées; utiliser comptes nominatifs, [[Glossary:MFA]] et rôles minimaux. Protéger les clés, tokens et exports, maintenir les images/packages officiels et examiner les journaux d’administration. Limiter les connecteurs et applications aux besoins autorisés.
 
 ## ✅ Autorisation et préparation
 

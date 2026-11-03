@@ -23,7 +23,7 @@ Fiche défensive d’administration et de gouvernance. Elle ne remplace pas le g
 
 ## 🧭 Périmètre
 
-Complément de gouvernance à la fiche GVM existante; aucun flux, cible, tâche ou lancement d’analyse n’est décrit ici. Restreindre la console au réseau d’administration, appliquer RBAC et comptes nominatifs, protéger les sauvegardes et rapports qui peuvent révéler des vulnérabilités internes. Vérifier l’origine et l’état des flux selon la documentation et l’édition réellement déployée; ne pas supposer qu’un type de flux, support ou licence s’applique à toutes les éditions.
+Complément de gouvernance à la fiche GVM existante; aucun flux, cible, tâche ou lancement d’analyse n’est décrit ici. Restreindre la console au réseau d’administration, appliquer [[Glossary:RBAC]] et comptes nominatifs, protéger les sauvegardes et rapports qui peuvent révéler des vulnérabilités internes. Vérifier l’origine et l’état des flux selon la documentation et l’édition réellement déployée; ne pas supposer qu’un type de flux, support ou licence s’applique à toutes les éditions.
 
 ## ✅ Autorisation et préparation
 

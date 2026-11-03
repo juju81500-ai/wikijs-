@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Configurer les serveurs DNS de l'hôte.
+Configurer les serveurs [[Glossary:DNS]] de l'hôte.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Host Client : **Réseau > Pile TCP/IP > Pile TCP/IP par défaut > Modifier les paramètres** (DNS primaire/secondaire, domaine). En ligne de commande :
+1. Host Client : **Réseau > Pile [[Glossary:TCP]]/IP > Pile TCP/IP par défaut > Modifier les paramètres** (DNS primaire/secondaire, domaine). En ligne de commande :
    ```sh
    esxcli network ip dns server add --server=IP_DNS
    esxcli network ip dns search add --domain=domaine.local
@@ -37,7 +37,7 @@ Configurer les serveurs DNS de l'hôte.
    nslookup vcenter.domaine.local
    nslookup esx01.domaine.local
    ```
-   👉 Explication : le FQDN de l'hôte et de vCenter doivent se résoudre.
+   👉 Explication : le [[Glossary:FQDN]] de l'hôte et de vCenter doivent se résoudre.
 
 3. Prévoir deux serveurs DNS.
    👉 Explication : évite une panne totale si un serveur tombe.

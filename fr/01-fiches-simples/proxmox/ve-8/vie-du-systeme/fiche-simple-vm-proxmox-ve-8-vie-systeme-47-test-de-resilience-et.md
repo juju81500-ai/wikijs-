@@ -24,14 +24,14 @@ Vérifier que la panne est détectée et que l'alerte part.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Provoquer une alerte contrôlée (par exemple arrêter une VM de test ou un service non critique) :
+1. Provoquer une alerte contrôlée (par exemple arrêter une [[Glossary:VM]] de test ou un service non critique) :
    ```bash
    qm stop 9000
    systemctl stop pvestatd
    ```
    👉 Explication : `9000` = VM de test; remettre ensuite en route (`qm start 9000`, `systemctl start pvestatd`).
 
-2. En cluster avec HA, tester la bascule sur une VM de test (GUI : **Datacenter > HA > Add**, puis éteindre le nœud de test).
+2. En cluster avec HA, tester la bascule sur une VM de test ([[Glossary:GUI]] : **Datacenter > HA > Add**, puis éteindre le nœud de test).
    ```bash
    ha-manager status
    ```

@@ -31,7 +31,7 @@ Contrôle d'accès obligatoire : sans objet sur TrueNAS SCALE.
    ```
    👉 Explication : l'absence de commande est normale.
 
-2. À la place, utiliser les ACL ZFS, les rôles et l'isolation par jeu de données : GUI Jeux de données > Permissions.
+2. À la place, utiliser les [[Glossary:ACL]] [[Glossary:ZFS]], les rôles et l'isolation par jeu de données : [[Glossary:GUI]] Jeux de données > Permissions.
    ```bash
    sudo zfs get acltype POOL/DATASET
    ```

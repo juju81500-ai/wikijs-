@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-rocky-9-securite-ssh-cle-sshd.md
 
-- **Environnement** : VM ou serveur Rocky Linux
-- **OS / Version** : Rocky Linux 9 / RHEL 9 (OpenSSH 8.7 et supérieur)
-- **Catégorie** : Sécurité / Accès distant SSH
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 (OpenSSH 8.7 et supérieur)
+- **Catégorie** : Sécurité / Accès distant [[Glossary:SSH]]
 - **Tags** : `[rocky9]`, `[rhel9]`, `[ssh]`, `[sshd]`, `[cles]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre

@@ -28,10 +28,10 @@ Configurer Keepalived identiquement sur les deux nœuds avec des priorités diff
    ```bash
    sudo apt install keepalived
    ```
-   👉 Explication : fournit VRRP.
+   👉 Explication : fournit [[Glossary:VRRP]].
 
 2. Éditer `/etc/keepalived/keepalived.conf` : même `virtual_router_id`, même interface et même groupe d'adresses, avec des priorités distinctes.
-   👉 Explication : le nœud de plus forte priorité détient l'IP virtuelle.
+   👉 Explication : le nœud de plus forte priorité détient l'[[Glossary:IP]] virtuelle.
 
 3. Ajouter une sonde (`vrrp_script`) qui retire l'éligibilité si HAProxy est indisponible.
    👉 Explication : évite de garder l'IP sur un nœud sans service.

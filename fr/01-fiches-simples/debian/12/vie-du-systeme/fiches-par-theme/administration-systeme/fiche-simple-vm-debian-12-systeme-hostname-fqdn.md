@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Debian_12_Systeme_Hostname-FQDN.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Système & Services / Identité de la machine
 - **Tags** : `[debian12]`, `[debian-family]`, `[hostname]`, `[fqdn]`, `[hosts]`, `[systemd]`
 
 ## 🎯 Problème précis à résoudre
-Définir le nom d'hôte statique et le FQDN d'un serveur Debian 12 de façon cohérente entre systemd (`hostnamectl`), `/etc/hosts` et le DNS, afin que `hostname -f` et les services (Zabbix, Samba, certificats, journaux) renvoient le même nom.
+Définir le nom d'hôte statique et le [[Glossary:FQDN]] d'un serveur Debian 12 de façon cohérente entre systemd (`hostnamectl`), `/etc/hosts` et le [[Glossary:DNS]], afin que `hostname -f` et les services (Zabbix, Samba, certificats, journaux) renvoient le même nom.
 
 ---
 
@@ -47,10 +47,10 @@ Définir le nom d'hôte statique et le FQDN d'un serveur Debian 12 de façon coh
 ## 🔒 3. Production — Façon Sécurisée (Cohérence DNS & Traçabilité)
 1. Contrôle de la résolution directe du FQDN :
    `getent hosts <nom_du_serveur>.<nom_du_domaine>`
-   👉 Explication : Interroge la chaîne NSS (fichiers puis DNS) et vérifie que l'adresse IP publiée correspond à la machine.
+   👉 Explication : Interroge la chaîne NSS (fichiers puis DNS) et vérifie que l'adresse [[Glossary:IP]] publiée correspond à la machine.
 2. Contrôle de la résolution inverse (PTR) :
    `getent hosts <adresse_ip_du_serveur>`
    👉 Explication : Vérifie que la recherche inverse renvoie le même FQDN, condition attendue par Kerberos, les certificats et les journaux centralisés.
-3. Relevé du nom statique pour la CMDB :
+3. Relevé du nom statique pour la [[Glossary:CMDB]] :
    `hostnamectl hostname`
    👉 Explication : Affiche uniquement le nom statique à reporter dans l'inventaire (étape 49 du cycle de vie).

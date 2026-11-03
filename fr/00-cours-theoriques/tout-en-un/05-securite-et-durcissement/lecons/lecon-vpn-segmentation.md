@@ -21,17 +21,17 @@ dateModified: 2026-11-03T09:36:13Z
 
 À la fin de cette leçon, vous serez capable de :
 
-1. **expliquer** ce qu'apporte un VPN (confidentialité, intégrité, authentification des extrémités) et ce qu'il n'apporte pas ;
+1. **expliquer** ce qu'apporte un [[Glossary:VPN]] (confidentialité, intégrité, authentification des extrémités) et ce qu'il n'apporte pas ;
 2. **comparer** WireGuard, IPsec/IKEv2 et OpenVPN : principes, ports, identités, cas d'usage ;
 3. **distinguer** VPN site à site et accès distant, tunnel complet et tunnel partiel ;
-4. **concevoir** des zones (Internet, DMZ, interne, administration) et une **matrice de flux** en « tout refuser sauf » ;
-5. **décrire** le rôle d'un bastion et configurer un saut SSH propre ;
+4. **concevoir** des zones (Internet, [[Glossary:DMZ]], interne, administration) et une **matrice de flux** en « tout refuser sauf » ;
+5. **décrire** le rôle d'un bastion et configurer un saut [[Glossary:SSH]] propre ;
 6. **analyser**, côté sécurité, ce qu'apporte et ce que risque un reverse proxy ;
-7. **mener** un laboratoire sur deux VM jetables (WireGuard, nftables, saut SSH) avec snapshot, console de secours, test et retour arrière.
+7. **mener** un laboratoire sur deux [[Glossary:VM]] jetables (WireGuard, nftables, saut SSH) avec snapshot, console de secours, test et retour arrière.
 
 ## Prérequis et durée
 
-- Bases TCP/IP (adresses, routage, NAT, ports) et pratique d'un shell Linux (`ip`, `ss`).
+- Bases [[Glossary:TCP]]/IP (adresses, routage, [[Glossary:NAT]], ports) et pratique d'un shell Linux (`ip`, `ss`).
 - Notions de clés et de certificats : voir [Cryptographie appliquée](/fr/00-cours-theoriques/tout-en-un/05-securite-et-durcissement/lecons/lecon-cryptographie-appliquee). Suite logique : [Menaces et défense](/fr/00-cours-theoriques/tout-en-un/05-securite-et-durcissement/lecons/lecon-menaces-defense).
 - Matériel : un hyperviseur et deux VM Linux jetables sur un réseau de laboratoire isolé, avec snapshots.
 - Durée : environ 3 h 30. Adresses de documentation (`192.0.2.0/24`, `198.51.100.0/24`, `203.0.113.0/24`, `2001:db8::/32`), domaines `example.com` et `example.test`. Les clés sont des étiquettes `<CLE_PRIVEE_...>` : générez les vôtres.
@@ -39,7 +39,7 @@ dateModified: 2026-11-03T09:36:13Z
 ## L'essentiel en bref
 
 - Un **VPN** crée un tunnel chiffré et authentifié à travers un réseau non fiable ; il protège le **transport**, pas ce qu'il y a au bout.
-- **WireGuard** : minimaliste, clés publiques et adresses autorisées par pair. **IPsec/IKEv2** : standard interopérable. **OpenVPN** : basé sur TLS, passe bien les pare-feu.
+- **WireGuard** : minimaliste, clés publiques et adresses autorisées par pair. **IPsec/IKEv2** : standard interopérable. **OpenVPN** : basé sur [[Glossary:TLS]], passe bien les pare-feu.
 - **Segmenter**, c'est découper en zones de confiance et n'autoriser que les flux nécessaires, en commençant par **tout refuser**.
 - La **DMZ** héberge ce qui est exposé : un serveur compromis ne doit pas rebondir librement vers l'interne.
 - Le **bastion** est l'unique porte d'administration, avec authentification forte et journalisation.
@@ -75,13 +75,13 @@ Côté client : **tunnel complet** (tout le trafic passe par l'entreprise : visi
 
 IPsec est une **famille** de protocoles normalisés :
 
-- **IKEv2** (RFC 7296) négocie : authentification des pairs (certificats, clé pré-partagée, EAP) et établissement des clés, en **UDP 500**, ou **UDP 4500** avec traversée de NAT ;
+- **IKEv2** (RFC 7296) négocie : authentification des pairs (certificats, clé pré-partagée, EAP) et établissement des clés, en **[[Glossary:UDP]] 500**, ou **UDP 4500** avec traversée de NAT ;
 - **ESP** (RFC 4303) transporte et chiffre les paquets ;
 - la **SA** est le « contrat » unidirectionnel (algorithmes, clés, durée) ;
 - le **mode tunnel** encapsule le paquet entier (réseau à réseau), le **mode transport** protège seulement le contenu (hôte à hôte) ;
 - les **sélecteurs de trafic** définissent quels réseaux passent dans le tunnel.
 
-**Forces** : présent partout, interopérable, intégré aux PKI. **Attention** : nombreux paramètres à faire **correspondre exactement** des deux côtés (propositions, sélecteurs, durées), clés pré-partagées faibles, MTU.
+**Forces** : présent partout, interopérable, intégré aux [[Glossary:PKI]]. **Attention** : nombreux paramètres à faire **correspondre exactement** des deux côtés (propositions, sélecteurs, durées), clés pré-partagées faibles, [[Glossary:MTU]].
 
 Extrait strongSwan (`swanctl.conf`), à lire et à adapter :
 
@@ -114,7 +114,7 @@ Contrôles usuels : `sudo swanctl --list-sas` et `ip xfrm state` ; pas de SA apr
 
 OpenVPN s'appuie sur **TLS** pour l'authentification et l'échange de clés, puis chiffre les données (AES-GCM ou ChaCha20-Poly1305), en **UDP** (1194, recommandé) ou en **TCP** (souvent 443, pour traverser des pare-feu restrictifs).
 
-**Forces** : très configurable, certificats, identifiants et second facteur, routes et DNS poussés aux clients. **Attention** : une **PKI** à gérer (émission, expiration, révocation par CRL) ; le **TCP dans TCP** dégrade les performances en cas de perte, à réserver aux contournements ; évitez les réglages historiques (CBC, compression) ; activez `tls-crypt` pour authentifier et masquer la négociation TLS.
+**Forces** : très configurable, certificats, identifiants et second facteur, routes et [[Glossary:DNS]] poussés aux clients. **Attention** : une **PKI** à gérer (émission, expiration, révocation par [[Glossary:CRL]]) ; le **TCP dans TCP** dégrade les performances en cas de perte, à réserver aux contournements ; évitez les réglages historiques (CBC, compression) ; activez `tls-crypt` pour authentifier et masquer la négociation TLS.
 
 ```bash
 port 1194
@@ -182,7 +182,7 @@ PersistentKeepalive = 25
 | Critère | WireGuard | IPsec / IKEv2 | OpenVPN |
 |---|---|---|---|
 | Transport | UDP | UDP 500/4500 + ESP | UDP 1194 ou TCP 443 |
-| Authentification | Clés publiques | Certificats, PSK, EAP | Certificats, identifiants, MFA |
+| Authentification | Clés publiques | Certificats, PSK, EAP | Certificats, identifiants, [[Glossary:MFA]] |
 | Complexité | Faible | Élevée | Moyenne |
 | Interopérabilité | WireGuard seulement | Excellente | Clients OpenVPN |
 | Cas typique | Petits réseaux, nomades, labo | Site à site multi-constructeurs | Accès distant avec identités |
@@ -192,7 +192,7 @@ Pas de gagnant universel : le choix dépend de l'**existant**, des identités à
 ## 7. Accès distant : bonnes pratiques
 
 1. **Authentification forte** : certificat ou clé plus second facteur.
-2. **Moindre privilège** : le VPN place l'utilisateur dans une **zone dédiée** filtrée, jamais directement dans le LAN.
+2. **Moindre privilège** : le VPN place l'utilisateur dans une **zone dédiée** filtrée, jamais directement dans le [[Glossary:LAN]].
 3. **Postes de confiance** (disque chiffré, correctifs) et **DNS maîtrisé**.
 4. **Journalisation** des connexions et origines inhabituelles, **suppression des accès** au départ.
 
@@ -233,7 +233,7 @@ La matrice sert de cahier des charges et d'outil de revue (« pourquoi ce flux e
 
 ### 8.4 Mettre en œuvre
 
-Moyens : **VLAN** routés **via le pare-feu**, pare-feu **à états**, filtrage sur l'hôte pour le trafic *est-ouest*, groupes de sécurité en cloud. Exemple nftables pour une passerelle de laboratoire :
+Moyens : **[[Glossary:VLAN]]** routés **via le pare-feu**, pare-feu **à états**, filtrage sur l'hôte pour le trafic *est-ouest*, groupes de sécurité en cloud. Exemple nftables pour une passerelle de laboratoire :
 
 ```bash
 table inet filtre {
@@ -254,11 +254,11 @@ table inet filtre {
 }
 ```
 
-👉 Explication : politique `drop` par défaut en entrée et en transfert ; acceptés : flux établis, boucle locale, ICMP, port WireGuard, SSH depuis le seul bastion `192.0.2.20` et, depuis `wg0`, HTTPS vers un serveur précis ; le reste est journalisé avec limitation de débit. **Danger** : une règle `drop` mal posée coupe votre propre session SSH, d'où la procédure de la section 11.
+👉 Explication : politique `drop` par défaut en entrée et en transfert ; acceptés : flux établis, boucle locale, [[Glossary:ICMP]], port WireGuard, SSH depuis le seul bastion `192.0.2.20` et, depuis `wg0`, HTTPS vers un serveur précis ; le reste est journalisé avec limitation de débit. **Danger** : une règle `drop` mal posée coupe votre propre session SSH, d'où la procédure de la section 11.
 
 ## 9. Le bastion d'administration
 
-Si chaque serveur expose SSH ou RDP à plusieurs réseaux, la surface d'attaque est énorme et personne ne sait qui s'est connecté. Un **bastion** concentre l'administration en **un point** durci : seul hôte autorisé par le pare-feu à ouvrir des sessions d'administration, **authentification forte** et **comptes nominatifs** (pas de compte partagé), **journalisation** voire enregistrement des sessions, système minimal et à jour, accès lui-même précédé d'un VPN d'administration.
+Si chaque serveur expose SSH ou [[Glossary:RDP]] à plusieurs réseaux, la surface d'attaque est énorme et personne ne sait qui s'est connecté. Un **bastion** concentre l'administration en **un point** durci : seul hôte autorisé par le pare-feu à ouvrir des sessions d'administration, **authentification forte** et **comptes nominatifs** (pas de compte partagé), **journalisation** voire enregistrement des sessions, système minimal et à jour, accès lui-même précédé d'un VPN d'administration.
 
 ![Deux chaînes de contrôle : l'administrateur se connecte au bastion qui journalise puis atteint les serveurs ; le visiteur web arrive sur le reverse proxy en DMZ qui relaie vers l'application interne](images/vpn-segmentation-3.svg)
 
@@ -291,7 +291,7 @@ sudo sshd -T | grep -Ei 'permitrootlogin|passwordauthentication|allowusers|allow
 
 Un reverse proxy se place **devant** les applications : les clients lui parlent, il relaie ensuite. 
 
-**Apports** : **terminaison TLS** centralisée ; **masquage** de l'architecture ; **filtrage** (taille de requête, débit par client, méthodes autorisées, éventuellement WAF) ; **en-têtes de sécurité** uniformes ; **journalisation** centralisée utile à la corrélation ; répartition de charge.
+**Apports** : **terminaison TLS** centralisée ; **masquage** de l'architecture ; **filtrage** (taille de requête, débit par client, méthodes autorisées, éventuellement [[Glossary:WAF]]) ; **en-têtes de sécurité** uniformes ; **journalisation** centralisée utile à la corrélation ; répartition de charge.
 
 **Risques** : il **ne corrige pas** une application vulnérable ; il est lui-même **exposé** (mise à jour, durcissement) ; l'application ne doit faire confiance à `X-Forwarded-For` que s'il vient **du proxy**, sinon un client peut usurper une adresse ; un proxy mal configuré peut devenir un **relais ouvert** vers l'interne (définissez précisément les *upstreams*) ; après terminaison TLS, le tronçon interne est **en clair** s'il n'est ni chiffré ni isolé.
 
@@ -472,7 +472,7 @@ shred -u ~/wg-privee.key 2>/dev/null; rm -f ~/wg-publique.key ~/filtre.nft
 | Pas de `latest handshake` | Clés croisées erronées, UDP bloqué, `Endpoint` faux | Revérifier les clés, `ss -lun`, pare-feu, adresse du pair |
 | Tunnel IPsec « up » sans trafic | Sélecteurs incohérents, MTU, filtrage | `swanctl --list-sas`, `ping -M do -s 1400`, pare-feu |
 | SSH coupé après des règles `drop` | Règle `established` ou port 22 oublié | Console de secours, minuterie de retour, `nft flush ruleset` |
-| L'application voit l'IP du proxy | En-têtes de transmission non utilisés | Configurer `X-Forwarded-For` et les proxys de confiance |
+| L'application voit l'[[Glossary:IP]] du proxy | En-têtes de transmission non utilisés | Configurer `X-Forwarded-For` et les proxys de confiance |
 
 Règle : **changer une seule chose à la fois**, consigner l'heure, savoir revenir en arrière.
 
@@ -495,8 +495,8 @@ Règle : **changer une seule chose à la fois**, consigner l'heure, savoir reven
 - nftables — wiki : <https://wiki.nftables.org/>
 - OpenSSH : <https://man.openbsd.org/ssh_config> et <https://man.openbsd.org/sshd_config>
 - nginx — module proxy : <https://nginx.org/en/docs/http/ngx_http_proxy_module.html>
-- NIST SP 800-77 Rev. 1 (IPsec) : <https://csrc.nist.gov/pubs/sp/800/77/r1/final> ; SP 800-207 (Zero Trust) : <https://csrc.nist.gov/pubs/sp/800/207/final>
-- ANSSI : <https://cyber.gouv.fr/>
+- [[Glossary:NIST]] SP 800-77 Rev. 1 (IPsec) : <https://csrc.nist.gov/pubs/sp/800/77/r1/final> ; SP 800-207 (Zero Trust) : <https://csrc.nist.gov/pubs/sp/800/207/final>
+- [[Glossary:ANSSI]] : <https://cyber.gouv.fr/>
 
 ## Crédits des images
 

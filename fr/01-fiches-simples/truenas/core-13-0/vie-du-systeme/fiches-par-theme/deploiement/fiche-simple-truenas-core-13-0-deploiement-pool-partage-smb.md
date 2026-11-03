@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-truenas-core-13-0-deploiement-pool-partage-smb.md
 
-- **Environnement** : Appliance TrueNAS CORE (FreeBSD) en VM de laboratoire ou NAS existant
+- **Environnement** : Appliance TrueNAS CORE (FreeBSD) en [[Glossary:VM]] de laboratoire ou [[Glossary:NAS]] existant
 - **OS / Version** : TrueNAS CORE, branche 13.0 (build exact à relever sur l'ISO)
-- **Catégorie** : stockage NAS / ZFS et SMB
+- **Catégorie** : stockage NAS / [[Glossary:ZFS]] et SMB
 - **Tags** : `truenas-core`, `truenas`, `freebsd`, `zfs`, `smb`, `nas`
 
 ---
@@ -34,7 +34,7 @@ Créer un pool redondant, un dataset et un partage SMB avec compte de service.
    👉 Explication : `root` n'est pas utilisé pour les partages.
 
 4. **Sharing > Windows Shares (SMB) > Add** : choisir le chemin du dataset, activer le service SMB, tester depuis un client de test.
-   👉 Explication : ACL et intégration Active Directory se traitent dans une procédure distincte.
+   👉 Explication : [[Glossary:ACL]] et intégration Active Directory se traitent dans une procédure distincte.
 
 5. Contrôler dans le Shell le pool et les datasets (remplacer `tank` par le nom de votre pool) :
    ```sh

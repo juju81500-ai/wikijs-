@@ -43,7 +43,7 @@ Créer l'administrateur nominatif et ajouter un équipement pilote en SNMPv3 aut
    ```
    👉 Explication : `snmpget` lit le nom système; les phrases de passe sont demandées en saisie masquée. Préférer SHA-2/AES si l'équipement les gère.
 
-3. Dans l'interface HTTPS : **Devices > Add Device**, saisir le nom, la version SNMP v3 et les identifiants SNMPv3.
+3. Dans l'interface HTTPS : **Devices > Add Device**, saisir le nom, la version [[Glossary:SNMP]] v3 et les identifiants SNMPv3.
    👉 Explication : l'ajout par l'interface évite d'exposer les secrets en arguments de commande.
 
 4. Contrôler le nom canonique, le modèle, le sysObjectID, les interfaces et la date de dernière interrogation dans la fiche de l'équipement.
@@ -51,7 +51,7 @@ Créer l'administrateur nominatif et ajouter un équipement pilote en SNMPv3 aut
 
 ## 2. Production — Contrôles
 
-Compte administrateur nominatif unique, utilisateur SNMPv3 en lecture seule limité à l'IP de supervision.
+Compte administrateur nominatif unique, utilisateur SNMPv3 en lecture seule limité à l'[[Glossary:IP]] de supervision.
 
 ## 3. Production — Sécurité
 

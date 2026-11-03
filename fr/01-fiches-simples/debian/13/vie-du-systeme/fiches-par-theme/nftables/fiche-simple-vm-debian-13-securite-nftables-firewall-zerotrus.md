@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Politique nftables stricte pour une VM Debian 13
 
-- **Environnement** : VM Debian 13 dédiée
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée
 - **Catégorie** : Sécurité / Pare-feu
 - **Tags** : `debian13`, `nftables`, `firewall`, `zero-trust`, `hardening`
 
@@ -21,7 +21,7 @@ Ce document est un profil strict complémentaire de la fiche [pare-feu nftables 
 
 ## 🧪 1. Préparer l'accès
 
-Avant de filtrer, confirmer l'adresse du poste d'administration, le port réel de SSH, les services publiés, IPv4/IPv6 et la console hyperviseur. Garder une session de secours ouverte.
+Avant de filtrer, confirmer l'adresse du poste d'administration, le port réel de [[Glossary:SSH]], les services publiés, IPv4/IPv6 et la console hyperviseur. Garder une session de secours ouverte.
 
 ```bash
 sudo nft list ruleset

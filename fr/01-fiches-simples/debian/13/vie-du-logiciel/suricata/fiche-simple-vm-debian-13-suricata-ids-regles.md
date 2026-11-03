@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-suricata-ids-regles.md
 
-- **Environnement** : VM Debian 13 avec Suricata configuré
+- **Environnement** : [[Glossary:VM]] Debian 13 avec Suricata configuré
 - **OS / Version** : Debian 13 Trixie; Suricata 8.0.7 et suricata-update (Debian Backports)
 - **Catégorie** : detection reseau / regles
 - **Tags** : `suricata`, `debian13`, `suricata-update`, `regles`
@@ -40,7 +40,7 @@ Télécharger les règles et tester la configuration avant démarrage.
    ```bash
    sudo suricata -T -c /etc/suricata/suricata.yaml
    ```
-   👉 Explication : aucune erreur YAML, SID invalide, fichier de règles absent ou interface inconnue ne doit apparaître avant de continuer.
+   👉 Explication : aucune erreur YAML, [[Glossary:SID]] invalide, fichier de règles absent ou interface inconnue ne doit apparaître avant de continuer.
 
 ## 2. Production — Contrôles
 

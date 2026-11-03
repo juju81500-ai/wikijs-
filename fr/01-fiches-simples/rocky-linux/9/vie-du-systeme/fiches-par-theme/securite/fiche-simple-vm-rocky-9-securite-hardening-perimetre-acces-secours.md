@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-rocky-9-securite-hardening-perimetre-acces-secours.md
 
-- **Environnement** : VM ou serveur dédié Rocky Linux 9 avant ouverture en production
-- **OS / Version** : Rocky Linux 9 / famille RHEL 9
+- **Environnement** : [[Glossary:VM]] ou serveur dédié Rocky Linux 9 avant ouverture en production
+- **OS / Version** : Rocky Linux 9 / famille [[Glossary:RHEL]] 9
 - **Catégorie** : sécurité / cadrage
 - **Tags** : `rocky9`, `rhel9`, `hardening`, `acces-secours`
 
@@ -31,7 +31,7 @@ Se garantir un accès de secours avant de durcir le serveur.
    ```
    👉 Explication : confirme le périmètre (hôte, utilisateurs connectés).
 
-2. Sauvegarder la configuration SSH avant toute modification :
+2. Sauvegarder la configuration [[Glossary:SSH]] avant toute modification :
    ```bash
    sudo cp -a /etc/ssh /etc/ssh.avant-hardening
    ```

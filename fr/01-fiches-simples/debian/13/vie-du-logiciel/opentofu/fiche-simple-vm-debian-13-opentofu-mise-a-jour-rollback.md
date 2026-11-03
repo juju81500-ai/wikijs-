@@ -71,7 +71,7 @@ Approuver la fenêtre, la sauvegarde, les changements de provider, le plan de re
 - Ne pas mettre à niveau directement un projet de production sans clone.
 - Ne pas supposer qu'un état migré est lisible par l'ancienne version.
 - Protéger séparément les sauvegardes d'état et clés; tester leur restauration.
-- Ne pas supprimer le dépôt ou les clés APT tant que d'autres paquets en dépendent.
+- Ne pas supprimer le dépôt ou les clés [[Glossary:APT]] tant que d'autres paquets en dépendent.
 
 ## Validation et retour arrière
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_47_Test_De_Resilience_Et
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 47 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-47`
@@ -51,7 +51,7 @@ Tester en dehors des heures de production, avec l'équipe prévenue.
 
 ## 3. Production — Sécurité
 
-Ne pas tester sur le service SSH sans accès de secours.
+Ne pas tester sur le service [[Glossary:SSH]] sans accès de secours.
 
 ## Validation et retour arrière
 

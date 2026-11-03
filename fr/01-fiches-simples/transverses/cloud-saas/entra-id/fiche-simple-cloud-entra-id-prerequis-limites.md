@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Valider licences, rôles et outils avant de toucher MFA, accès conditionnel ou synchronisation.
+Valider licences, rôles et outils avant de toucher [[Glossary:MFA]], accès conditionnel ou synchronisation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

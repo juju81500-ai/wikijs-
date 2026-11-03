@@ -11,14 +11,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Authelia
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : Authelia 4.38.x (binaire officiel GitHub, à vérifier sur la version déployée)
 - **Catégorie** : Réseau et cybersécurité
 - **Tags** : `[debian-12]`, `[authelia]`, `[sso]`, `[mfa]`, `[hardening]`
 
 ## 🎯 Objectif
-Installer Authelia sur Debian 12 comme portail d'authentification et de double facteur devant une application web, vérifier l'ouverture de session sur ce même serveur, puis le durcir (secrets forts, règles d'accès par domaine, TLS). Les tests ne se font que sur votre propre serveur.
+Installer Authelia sur Debian 12 comme portail d'authentification et de double facteur devant une application web, vérifier l'ouverture de session sur ce même serveur, puis le durcir (secrets forts, règles d'accès par domaine, [[Glossary:TLS]]). Les tests ne se font que sur votre propre serveur.
 
 ---
 
@@ -130,7 +130,7 @@ sudo ufw allow from <adresse_ip_admin> to any port 22 proto tcp
 sudo ufw enable
 sudo ufw status verbose
 ```
-👉 Explication : Le port 9091 n'est accessible que depuis le reverse proxy. SSH reste limité à l'administration. Autoriser SSH avant `ufw enable` évite de perdre l'accès.
+👉 Explication : Le port 9091 n'est accessible que depuis le reverse proxy. [[Glossary:SSH]] reste limité à l'administration. Autoriser SSH avant `ufw enable` évite de perdre l'accès.
 
 2. Règle d'accès en production (deux facteurs pour le domaine applicatif) dans `configuration.yml` :
 ```yaml

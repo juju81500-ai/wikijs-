@@ -24,7 +24,7 @@ Cadrer PowerShell sur Windows Server 2022 : Windows PowerShell 5.1 intégré, Po
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Identifier le shell et la version actifs. GUI : menu Démarrer > Windows PowerShell (5.1) ; PowerShell 7 n'apparaît qu'après installation. Ligne de commande :
+1. Identifier le shell et la version actifs. [[Glossary:GUI]] : menu Démarrer > Windows PowerShell (5.1) ; PowerShell 7 n'apparaît qu'après installation. Ligne de commande :
    ```powershell
    $PSVersionTable | Select-Object PSVersion,PSEdition
    Get-Command powershell,pwsh -ErrorAction SilentlyContinue | Select-Object Name,Source
@@ -32,7 +32,7 @@ Cadrer PowerShell sur Windows Server 2022 : Windows PowerShell 5.1 intégré, Po
    👉 Explication : Windows PowerShell 5.1 (`powershell.exe`, édition Desktop) est livré avec Windows Server 2022 ; PowerShell 7 (`pwsh.exe`, édition Core) est un produit distinct, installé à côté, qui ne le remplace pas.
 
 2. Noter les différences utiles :
-   👉 Explication : 5.1 : basé sur .NET Framework, modules Windows historiques (ServerManager, ActiveDirectory, etc.), remoting WinRM (`-ComputerName`). 7 : basé sur .NET, multiplateforme, remoting SSH (`-HostName`) en plus de WinRM ; certains modules Windows ne se chargent que via la couche de compatibilité (`Import-Module -UseWindowsPowerShell`) — vérifier module par module.
+   👉 Explication : 5.1 : basé sur .NET Framework, modules Windows historiques (ServerManager, ActiveDirectory, etc.), remoting WinRM (`-ComputerName`). 7 : basé sur .NET, multiplateforme, remoting [[Glossary:SSH]] (`-HostName`) en plus de WinRM ; certains modules Windows ne se chargent que via la couche de compatibilité (`Import-Module -UseWindowsPowerShell`) — vérifier module par module.
 
 3. Vérifier le type d'installation du serveur (Server Core ou Desktop Experience) :
    ```powershell

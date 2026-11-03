@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-lemp-configurer-tls-filtrage.md
 
-- **Environnement** : serveur Web Debian 13 avec DNS validé et gestionnaire de pare-feu identifié
+- **Environnement** : serveur Web Debian 13 avec [[Glossary:DNS]] validé et gestionnaire de pare-feu identifié
 - **OS / Version** : Debian 13 Trixie; Nginx, PHP-FPM, MariaDB
-- **Catégorie** : pile Web LEMP / TLS et réseau
+- **Catégorie** : pile Web [[Glossary:LEMP]] / [[Glossary:TLS]] et réseau
 - **Tags** : `debian13`, `lemp`, `tls`, `nginx`, `firewall`, `network`
 
 ---
@@ -24,7 +24,7 @@ Publier l'application en HTTPS avec un filtrage cohérent sans perdre l'accès d
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Vérifier le DNS et l'accès HTTP avant de publier :
+1. Vérifier le DNS et l'accès [[Glossary:HTTP]] avant de publier :
    ```bash
    getent hosts app.example.net
    curl -fsSI http://app.example.net/
@@ -38,14 +38,14 @@ Publier l'application en HTTPS avec un filtrage cohérent sans perdre l'accès d
    ```
    👉 Explication : ne pas ajouter de règle sans connaître le gestionnaire et sans accès de secours.
 
-3. Autoriser 80/443 et limiter SSH au réseau d'administration (exemple nftables, à adapter à l'existant) :
+3. Autoriser 80/443 et limiter [[Glossary:SSH]] au réseau d'administration (exemple nftables, à adapter à l'existant) :
    ```bash
    sudo nft add rule inet filter input tcp dport { 80, 443 } accept
    sudo nft add rule inet filter input ip saddr 192.0.2.0/24 tcp dport 22 accept
    ```
    👉 Explication : remplacer `192.0.2.0/24` par le réseau d'administration; table et chaîne `inet filter input` supposées existantes. Rendre persistant via `/etc/nftables.conf`.
 
-4. Déployer le certificat avec l'outil ACME approuvé (exemple certbot) et vérifier le renouvellement :
+4. Déployer le certificat avec l'outil [[Glossary:ACME]] approuvé (exemple certbot) et vérifier le renouvellement :
    ```bash
    sudo apt install certbot python3-certbot-nginx
    sudo certbot --nginx -d app.example.net

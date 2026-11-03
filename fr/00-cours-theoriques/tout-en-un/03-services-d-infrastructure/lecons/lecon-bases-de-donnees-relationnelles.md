@@ -25,14 +25,14 @@ dateModified: 2026-11-03T09:36:13Z
 2. installer MariaDB ou PostgreSQL sur Debian/Ubuntu et situer données, configuration et journaux ;
 3. créer des **comptes et des droits** selon le principe du moindre privilège ;
 4. limiter l'écoute réseau et contrôler les accès distants ;
-5. écrire les **requêtes SQL de base** : `SELECT`, `INSERT`, `UPDATE`, `DELETE`, jointures, regroupements ;
+5. écrire les **requêtes [[Glossary:SQL]] de base** : `SELECT`, `INSERT`, `UPDATE`, `DELETE`, jointures, regroupements ;
 6. réaliser et **tester** une sauvegarde logique, puis une restauration ;
 7. superviser simplement le service : connexions, espace disque, requêtes lentes, état de santé.
 
 ## Prérequis et durée
 
-- Terminal Linux, `sudo`, `systemctl`, notions de réseau (port, adresse IP).
-- Une **VM jetable** Debian 12 ou Ubuntu 22-04/24-04 sans donnée réelle. Durée : 4 à 5 heures.
+- Terminal Linux, `sudo`, `systemctl`, notions de réseau (port, adresse [[Glossary:IP]]).
+- Une **[[Glossary:VM]] jetable** Debian 12 ou Ubuntu 22-04/24-04 sans donnée réelle. Durée : 4 à 5 heures.
 - Les adresses `192.0.2.0/24`, `203.0.113.0/24` et les noms `example.test` sont des valeurs de documentation. **Aucun mot de passe réel n'apparaît** : les valeurs entre chevrons (`<mot_de_passe>`) sont à remplacer par un secret généré par vous et jamais enregistré dans un document.
 
 ## L'essentiel en bref

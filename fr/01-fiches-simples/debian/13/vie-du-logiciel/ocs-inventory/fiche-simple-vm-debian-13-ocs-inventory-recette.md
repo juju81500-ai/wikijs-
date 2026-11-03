@@ -11,16 +11,16 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-ocs-inventory-recette.md
 
-- **Environnement** : VM Debian 13 dédiée, OCS Inventory 3.0 (Nginx, uWSGI, PostgreSQL local)
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée, OCS Inventory 3.0 (Nginx, uWSGI, PostgreSQL local)
 - **OS / Version** : Debian 13 Trixie; OCS Inventory 3.0; PostgreSQL 17
-- **Catégorie** : inventaire de parc / ITSM
+- **Catégorie** : inventaire de parc / [[Glossary:ITSM]]
 - **Tags** : `debian13`, `ocs-inventory`, `ocs3`, `postgresql`, `nginx`, `recette`
 
 ---
 
 ## Problème précis à résoudre
 
-Vérifier que les services, la console, l'API et un agent de test fonctionnent.
+Vérifier que les services, la console, l'[[Glossary:API]] et un agent de test fonctionnent.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -37,7 +37,7 @@ Vérifier que les services, la console, l'API et un agent de test fonctionnent.
    ```
    👉 Explication : repère les erreurs de démarrage ou de base de données.
 
-3. Vérifier l'accès TLS à la console puis tester l'API avec un compte habilité.
+3. Vérifier l'accès [[Glossary:TLS]] à la console puis tester l'API avec un compte habilité.
    👉 Explication : une réponse `401 Unauthorized` à la racine de l'API peut être attendue et confirme sa disponibilité.
 
 4. Installer un agent de test depuis la fiche simple « Installer Agent OCS Inventory » et vérifier qu'un inventaire apparaît.

@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Fiche_Simple_-_Cloud_AWS_Sauvegardes_Snapshots
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — AWS CLI v2
+- **OS / Version** : Cloud/SaaS — AWS [[Glossary:CLI]] v2
 - **Catégorie** : cloud public / sauvegardes et snapshots
 - **Tags** : `aws`, `sauvegardes_snapshots`, `securite`, `procedure`
 
@@ -33,7 +33,7 @@ Les valeurs écrites en MAJUSCULES sont des placeholders à remplacer par les va
    aws backup list-backup-vaults --region REGION
 aws ec2 create-snapshot --volume-id ID_VOLUME --description "Snapshot de test"
    ```
-   👉 Explication : Définir fréquence, RPO/RTO, rétention, chiffrement et ressource de test ; restaurer dans un périmètre isolé. Un snapshot seul ne remplace pas un test de restauration.
+   👉 Explication : Définir fréquence, [[Glossary:RPO]]/RTO, rétention, chiffrement et ressource de test ; restaurer dans un périmètre isolé. Un snapshot seul ne remplace pas un test de restauration.
 3. Console et CLI : comparer la configuration affichée avec l’état attendu, puis valider sur une ressource pilote non sensible.
    👉 Explication : les interfaces évoluent ; vérifier l’aide/version officielle et les quotas/licences avant généralisation.
 
@@ -47,7 +47,7 @@ Restreindre suppression/altération, chiffrer les sauvegardes et protéger leurs
 
 ## Validation et retour arrière
 
-- **Validation** : Restauration isolée testée, intégrité confirmée et temps mesuré comparé au RTO.
+- **Validation** : Restauration isolée testée, intégrité confirmée et temps mesuré comparé au [[Glossary:RTO]].
 - **Retour arrière** : Revenir à la dernière configuration approuvée ; préserver les sauvegardes et journaux. Ne supprimer la ressource de test qu’après validation des dépendances et du propriétaire.
 
 ## Si le problème n'est pas résolu

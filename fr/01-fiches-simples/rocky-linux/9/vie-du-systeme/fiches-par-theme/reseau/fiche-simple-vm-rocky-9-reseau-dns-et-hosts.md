@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-rocky-9-reseau-dns-et-hosts.md
 
-- **Environnement** : VM ou serveur Rocky Linux
-- **OS / Version** : Rocky Linux 9 / RHEL 9 avec NetworkManager
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 avec NetworkManager
 - **Catégorie** : Réseau / Résolution de noms
 - **Tags** : `[rocky9]`, `[rhel9]`, `[dns]`, `[networkmanager]`, `[hosts]`, `[resolv]`
 
 ## 🎯 Problème précis à résoudre
-Configurer les serveurs DNS et le domaine de recherche d'une connexion NetworkManager sous Rocky Linux 9, puis fixer la résolution locale dans `/etc/hosts`, sans que le DHCP écrase les réglages.
+Configurer les serveurs [[Glossary:DNS]] et le domaine de recherche d'une connexion NetworkManager sous Rocky Linux 9, puis fixer la résolution locale dans `/etc/hosts`, sans que le [[Glossary:DHCP]] écrase les réglages.
 
 ---
 
@@ -43,7 +43,7 @@ Configurer les serveurs DNS et le domaine de recherche d'une connexion NetworkMa
    sudo nmcli connection modify "<nom_connexion>" ipv4.dns "<dns_primaire>,<dns_secondaire>" ipv4.dns-search "<domaine>"
    sudo nmcli connection up "<nom_connexion>"
    ```
-   👉 Explication : `ipv4.dns` accepte une liste séparée par des virgules. NetworkManager régénère `/etc/resolv.conf`. Une connexion SSH passant par cette interface peut être coupée brièvement lors du `up`.
+   👉 Explication : `ipv4.dns` accepte une liste séparée par des virgules. NetworkManager régénère `/etc/resolv.conf`. Une connexion [[Glossary:SSH]] passant par cette interface peut être coupée brièvement lors du `up`.
 
 2. Ajouter la ligne de la machine dans `/etc/hosts` :
    ```bash

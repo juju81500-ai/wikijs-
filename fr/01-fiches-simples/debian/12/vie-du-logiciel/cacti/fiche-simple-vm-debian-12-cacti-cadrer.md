@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-12-cacti-cadrer.md
 
-- **Environnement** : VM Debian 12 dédiée (Apache, PHP, MariaDB, poller local)
+- **Environnement** : [[Glossary:VM]] Debian 12 dédiée (Apache, PHP, MariaDB, poller local)
 - **OS / Version** : Debian 12 Bookworm; Cacti 1.2.31
 - **Catégorie** : supervision / cadrage
 - **Tags** : `debian12`, `cacti`, `snmp`, `rrdtool`, `mariadb`
@@ -30,7 +30,7 @@ Valider dimensionnement et prérequis avant d'installer Cacti 1.2.31.
    free -h
    df -h /var
    ```
-   👉 Explication : CPU, RAM et espace pour les fichiers RRD et la base doivent correspondre au nombre d'équipements et de graphes prévus.
+   👉 Explication : [[Glossary:CPU]], [[Glossary:RAM]] et espace pour les fichiers RRD et la base doivent correspondre au nombre d'équipements et de graphes prévus.
 
 2. Vérifier la version de Debian :
    ```bash
@@ -41,7 +41,7 @@ Valider dimensionnement et prérequis avant d'installer Cacti 1.2.31.
 3. Consulter la page des prérequis Cacti 1.2.31 (PHP, extensions, MariaDB, RRDtool, Composer) : https://docs.cacti.net/Requirements.md
    👉 Explication : on fige les versions de paquets sur ce que la release exige.
 
-4. Préparer DNS, NTP, certificat TLS, stratégie de sauvegarde et un compte SNMP en lecture seule.
+4. Préparer [[Glossary:DNS]], [[Glossary:NTP]], certificat [[Glossary:TLS]], stratégie de sauvegarde et un compte [[Glossary:SNMP]] en lecture seule.
    👉 Explication : la collecte par polling impose une connectivité explicite vers les équipements autorisés.
 
 ## 2. Production — Contrôles
@@ -51,7 +51,7 @@ Choisir une release identifiée (pas de branche mobile) et vérifier sa provenan
 ## 3. Production — Sécurité
 
 - Ne pas utiliser un dépôt de branche mobile en production.
-- Limiter UDP/161 aux sources nécessaires.
+- Limiter [[Glossary:UDP]]/161 aux sources nécessaires.
 
 ## Validation et retour arrière
 

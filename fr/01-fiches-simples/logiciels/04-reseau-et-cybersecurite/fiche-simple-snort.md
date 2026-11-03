@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_Snort
 
-- **Environnement** : Snort IDS en mode passif sur Debian 13; la branche dépend des paquets disponibles
+- **Environnement** : Snort [[Glossary:IDS]] en mode passif sur Debian 13; la branche dépend des paquets disponibles
 - **OS / Version** : Debian 13 Trixie; version à vérifier sur l’hôte
 - **Catégorie** : réseau et cybersécurité
 - **Tags** : `snort`, `debian13`, `guide`, `sommaire`

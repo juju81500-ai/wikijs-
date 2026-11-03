@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Snort_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13 dédiée à Snort IDS passif
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à Snort [[Glossary:IDS]] passif
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : Snort IDS passif / sauvegarder / restaurer
 - **Tags** : `snort`, `debian13`, `vie-du-logiciel`, `sauvegarder_restaurer`
@@ -40,7 +40,7 @@ Sauvegarder configuration et règles locales, puis tester une restauration isol�
 
 ## 2. Production — Contrôles
 
-Définir RPO/RTO, rétention, intégrité, accès au dépôt et test périodique de restauration.
+Définir [[Glossary:RPO]]/RTO, rétention, intégrité, accès au dépôt et test périodique de restauration.
 
 ## 3. Production — Sécurité
 

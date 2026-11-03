@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Régler l'UEFI : démarrage sécurisé, TPM 2.0, virtualisation.
+Régler l'UEFI : démarrage sécurisé, [[Glossary:TPM]] 2.0, virtualisation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -36,7 +36,7 @@ Régler l'UEFI : démarrage sécurisé, TPM 2.0, virtualisation.
 3. Définir un mot de passe d'administrateur du firmware (`MOT_DE_PASSE_UEFI`, stocké dans le coffre de l'entreprise, jamais dans la fiche) et placer le disque système en premier dans l'ordre de démarrage.
    👉 Explication : empêche la modification du firmware et le démarrage sur support externe.
 
-4. Après installation, contrôler l'état depuis Windows : **Informations système (msinfo32) > Mode BIOS = UEFI, État du démarrage sécurisé = Activé**.
+4. Après installation, contrôler l'état depuis Windows : **Informations système (msinfo32) > Mode [[Glossary:BIOS]] = UEFI, État du démarrage sécurisé = Activé**.
    ```powershell
    Confirm-SecureBootUEFI
    Get-Tpm | Select-Object TpmPresent,TpmReady,TpmEnabled
@@ -50,7 +50,7 @@ Mettre le firmware à jour via l'outil du constructeur (Dell Command Update, HP 
 
 ## 3. Production — Sécurité
 
-Mot de passe firmware, désactivation du démarrage USB hors maintenance, TPM actif.
+Mot de passe firmware, désactivation du démarrage [[Glossary:USB]] hors maintenance, TPM actif.
 
 ## Validation et retour arrière
 

@@ -61,7 +61,7 @@ Consigner le dépôt, versions, architecture des composants, fenêtre de mise à
 ## 3. Production — Sécurité
 
 - Ne pas exécuter en root un script réseau non inspecté.
-- Ne pas désactiver APT Secure ni utiliser une clé d'origine incertaine.
+- Ne pas désactiver [[Glossary:APT]] Secure ni utiliser une clé d'origine incertaine.
 - Ne pas installer les paquets si la version candidate ou le dépôt n'est pas celui attendu.
 - Ne pas purger les paquets PostgreSQL ou Bareos en présence de données sans sauvegarde vérifiée.
 

@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:14Z
 # Migrer Ubuntu Server 24-04 vers 26-04 LTS
 
 - **Type de fiche** : Autres — migration de version
-- **Environnement** : VM ou serveur Ubuntu Server LTS
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu Server [[Glossary:LTS]]
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble) vers Ubuntu Server 26-04 LTS (Resolute)
 - **Rôle** : Préparer, exécuter et valider une mise à niveau majeure
 - **Tags** : `ubuntu24.04`, `ubuntu26.04`, `noble`, `resolute`, `migration`, `apt`, `production`
@@ -21,7 +21,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [évaluer la migration](/fr/01-fiches-simples/ubuntu/24-04/vie-du-systeme/fiches-par-theme/migration-26-04/fiche-simple-vm-ubuntu-24-04-migration-26-04-evaluer).
 
-Lire les notes officielles 26-04 pour le chemin LTS exact, les intervening releases et les applications installées. Ubuntu 26-04 change les versions de PHP, PostgreSQL, OpenSSH, systemd, Netplan, APT et plusieurs services; une mise à niveau de l'OS ne garantit pas la compatibilité des applications.
+Lire les notes officielles 26-04 pour le chemin LTS exact, les intervening releases et les applications installées. Ubuntu 26-04 change les versions de PHP, PostgreSQL, OpenSSH, systemd, Netplan, [[Glossary:APT]] et plusieurs services; une mise à niveau de l'OS ne garantit pas la compatibilité des applications.
 
 ## 2. Inventorier et sauvegarder
 
@@ -36,7 +36,7 @@ systemctl --failed
 df -h / /boot /var
 ```
 
-Inventorier dépôts externes/PPAs, services, extensions, clés SSH, montages, tâches planifiées et fichiers de configuration. Faire une sauvegarde complète vers une cible distincte et restaurer une copie dans une VM isolée avant l'intervention réelle.
+Inventorier dépôts externes/PPAs, services, extensions, clés [[Glossary:SSH]], montages, tâches planifiées et fichiers de configuration. Faire une sauvegarde complète vers une cible distincte et restaurer une copie dans une VM isolée avant l'intervention réelle.
 
 ## 3. Tester l'impact des changements de base
 
@@ -57,7 +57,7 @@ Fiche simple : [préparer Noble](/fr/01-fiches-simples/ubuntu/24-04/vie-du-syste
 
 1. Installer toutes les mises à jour disponibles de Noble et redémarrer si nécessaire.
 2. Corriger `dpkg --audit`, dépôts externes non compatibles, paquets retenus et espace insuffisant.
-3. Vérifier cloud-init/Netplan, DNS, accès console et session SSH de secours.
+3. Vérifier cloud-init/Netplan, [[Glossary:DNS]], accès console et session SSH de secours.
 4. Pour une base MariaDB ou PostgreSQL, confirmer sauvegarde cohérente et procédure de mise à niveau du moteur séparée.
 
 ## 5. Exécuter l'upgrade

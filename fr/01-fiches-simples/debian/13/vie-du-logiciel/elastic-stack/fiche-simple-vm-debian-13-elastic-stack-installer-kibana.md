@@ -54,7 +54,7 @@ Installer Kibana et le relier à Elasticsearch avec un enrollment token.
 
 ## 2. Production — Contrôles
 
-Contrôler TLS/proxy et pare-feu avant toute ouverture réseau de Kibana.
+Contrôler [[Glossary:TLS]]/proxy et pare-feu avant toute ouverture réseau de Kibana.
 
 ## 3. Production — Sécurité
 

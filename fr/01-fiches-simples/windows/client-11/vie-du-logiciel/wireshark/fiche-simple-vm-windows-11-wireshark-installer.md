@@ -24,7 +24,7 @@ Installer Wireshark et Npcap depuis les sources officielles.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Télécharger l'installeur depuis https://www.wireshark.org/download.html (GUI : navigateur).
+1. Télécharger l'installeur depuis https://www.wireshark.org/download.html ([[Glossary:GUI]] : navigateur).
    👉 Explication : Source officielle uniquement; pas de site tiers.
 
 2. Vérifier le hash SHA256 publié sur la page de téléchargement.
@@ -33,20 +33,20 @@ Get-FileHash "$env:USERPROFILE\Downloads\FICHIER_INSTALLEUR.exe" -Algorithm SHA2
 ```
    👉 Explication : Remplacer FICHIER_INSTALLEUR par le nom téléchargé; comparer au hash officiel.
 
-3. GUI : double-cliquer l'installeur (UAC > Oui), accepter la licence, garder Wireshark et TShark, puis à l'écran Npcap laisser l'installation de Npcap.
+3. GUI : double-cliquer l'installeur ([[Glossary:UAC]] > Oui), accepter la licence, garder Wireshark et TShark, puis à l'écran Npcap laisser l'installation de Npcap.
    👉 Explication : Npcap est le pilote de capture; l'installeur Wireshark le propose ou le lance.
 
 4. Npcap : si proposé séparément, télécharger sur https://npcap.com/#download. Options : cocher « Support raw 802.11 traffic (monitor mode) » seulement si nécessaire; ne pas cocher « Restrict Npcap driver's access to Administrators only » si des utilisateurs standard doivent capturer (voir fiche Sécuriser).
    👉 Explication : Les cases dépendent de l'écran proposé par l'installeur; vérifier la version publiée.
 
-5. USBPcap (si proposé) : ne l'installer que pour capturer des périphériques USB.
+5. USBPcap (si proposé) : ne l'installer que pour capturer des périphériques [[Glossary:USB]].
    👉 Explication : Composant optionnel supplémentaire avec son propre pilote; à éviter sinon.
 
 6. PowerShell (administrateur) pour Wireshark seul via winget, si winget est disponible :
 ```powershell
 winget install --id WiresharkFoundation.Wireshark --source winget
 ```
-   👉 Explication : Installation depuis le dépôt winget; Npcap peut nécessiter une étape GUI. L'installation silencieuse de Npcap relève de la licence OEM.
+   👉 Explication : Installation depuis le dépôt winget; Npcap peut nécessiter une étape GUI. L'installation silencieuse de Npcap relève de la licence [[Glossary:OEM]].
 
 7. Vérifier l'installation.
 ```powershell

@@ -11,14 +11,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Windows Server 2016 / 2019 / 2022
 
-- **Environnement** : VM (Windows Server 2022)
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022)
 - **OS / Version** : Windows Server 2022 (Desktop Experience ou Core, à vérifier sur la version déployée)
 - **Version** : Windows Server 2016 / 2019 / 2022 (les cmdlets citées sont celles de 2022, à vérifier sur 2016 et 2019)
 - **Catégorie** : Systèmes, annuaires et services
 - **Tags** : `[windows-server-2022]`, `[powershell]`, `[ad-ds]`, `[dns]`, `[dhcp]`, `[gpo]`, `[wsus]`, `[dfs]`, `[rds]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Mettre en place les rôles de base d'un serveur Windows : AD DS (forêt et contrôleur de domaine), DNS, DHCP, GPO, WSUS, DFS et RDS. Les étapes sont données en PowerShell, exécuté en administrateur. Les tests se font uniquement sur votre propre domaine de lab.
+Mettre en place les rôles de base d'un serveur Windows : [[Glossary:AD]] DS (forêt et contrôleur de domaine), [[Glossary:DNS]], [[Glossary:DHCP]], [[Glossary:GPO]], [[Glossary:WSUS]], DFS et RDS. Les étapes sont données en PowerShell, exécuté en administrateur. Les tests se font uniquement sur votre propre domaine de lab.
 
 ---
 
@@ -40,7 +40,7 @@ Get-WindowsFeature AD-Domain-Services, DNS, DHCP
 ```powershell
 Install-ADDSForest -DomainName "corp.lab" -DomainNetbiosName "CORPLAB" -InstallDns -SafeModeAdministratorPassword (Read-Host -AsSecureString "Mot de passe DSRM") -Force
 ```
-👉 Explication : Crée la forêt, installe DNS et demande à l'invite le mot de passe DSRM (mode de restauration des services d'annuaire). Ce mot de passe ne doit pas être écrit dans la commande. Le serveur redémarre à la fin.
+👉 Explication : Crée la forêt, installe DNS et demande à l'invite le mot de passe [[Glossary:DSRM]] (mode de restauration des services d'annuaire). Ce mot de passe ne doit pas être écrit dans la commande. Le serveur redémarre à la fin.
 
 4. Contrôle du contrôleur de domaine après redémarrage :
 ```powershell
@@ -63,7 +63,7 @@ Resolve-DnsName app01.corp.lab
 ---
 
 ## ⚡ 2. Production — Façon Simplifiée
-1. Création d'une GPO de verrouillage d'écran et son lien sur une OU :
+1. Création d'une GPO de verrouillage d'écran et son lien sur une [[Glossary:OU]] :
 ```powershell
 New-GPO -Name "GPO-Verrouillage-Postes"
 New-GPLink -Name "GPO-Verrouillage-Postes" -Target "OU=Postes,DC=corp,DC=lab"

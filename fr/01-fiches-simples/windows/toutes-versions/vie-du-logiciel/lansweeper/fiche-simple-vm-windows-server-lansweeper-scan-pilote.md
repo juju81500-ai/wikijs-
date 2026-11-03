@@ -28,14 +28,14 @@ Valider un scan pilote d'actifs appartenant à l'organisation avec une plage res
    ```powershell
    Test-Connection 192.0.2.10 -Count 2
    ```
-   👉 Explication : remplacer l'IP; plage de lab seulement.
+   👉 Explication : remplacer l'[[Glossary:IP]]; plage de lab seulement.
 
 2. Créer un identifiant de scan dédié, non administrateur de domaine, avec droits de lecture sur les seuls hôtes pilotes :
    ```powershell
    New-LocalUser -Name "svc-lansweeper" -NoPassword
    Add-LocalGroupMember -Group "Administrateurs" -Member "svc-lansweeper"
    ```
-   👉 Explication : en lab, sur chaque hôte pilote; en domaine, utiliser un compte de service à droits délégués (GUI **Utilisateurs et ordinateurs Active Directory > Nouveau > Utilisateur**) et définir le mot de passe dans le coffre.
+   👉 Explication : en lab, sur chaque hôte pilote; en domaine, utiliser un compte de service à droits délégués ([[Glossary:GUI]] **Utilisateurs et ordinateurs Active Directory > Nouveau > Utilisateur**) et définir le mot de passe dans le coffre.
 
 3. Créer la cible : Lansweeper **Scanning > Scanning Targets > Add new scanning target > IP Range**, plage du lab, puis **Scanning > Scanning Credentials > Add new credentials** (type Windows, mappé à la plage).
    👉 Explication : une seule plage de lab.
@@ -53,7 +53,7 @@ Valider un scan pilote d'actifs appartenant à l'organisation avec une plage res
 ## 🔒 3. Production — Façon Sécurisée
 
 - N'utiliser que des réseaux que l'organisation possède ou est autorisée à inventorier.
-- Pour WMI, ouvrir uniquement les flux et règles Windows requis entre le scanner et les cibles prévues; ne pas désactiver le pare-feu Windows.
+- Pour [[Glossary:WMI]], ouvrir uniquement les flux et règles Windows requis entre le scanner et les cibles prévues; ne pas désactiver le pare-feu Windows.
 - Préférer LsAgent lorsqu'il réduit l'exposition entrante ou lorsque les postes sont hors site.
 - Employer des comptes de découverte en lecture seule et des credentials SNMPv3 read-only; ne jamais stocker de mot de passe dans une fiche ou un ticket.
 - Désactiver/supprimer le compte ou la cible temporaire lorsque le pilote est terminé.

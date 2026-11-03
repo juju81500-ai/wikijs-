@@ -34,7 +34,7 @@ Vérifier ce qui est visible depuis l'extérieur.
 2. Contrôler que 8006 n'est pas joignable depuis un réseau non autorisé (le pare-feu doit bloquer).
    👉 Explication : valide les règles de l'étape 29.
 
-3. Tester le certificat et les protocoles TLS :
+3. Tester le certificat et les protocoles [[Glossary:TLS]] :
    ```bash
    nmap --script ssl-enum-ciphers -p 8006 IP_HOTE
    ```

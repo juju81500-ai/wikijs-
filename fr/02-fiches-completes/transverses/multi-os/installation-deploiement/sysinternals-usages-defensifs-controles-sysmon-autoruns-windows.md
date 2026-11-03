@@ -22,7 +22,7 @@ dateModified: 2026-11-03T09:36:14Z
 - Complète la fiche [Administration Microsoft Sysinternals Windows 11](/fr/02-fiches-completes/windows/client-11/installation-deploiement/123-administration-microsoft-sysinternals-windows-11), qui reste la référence du diagnostic sur poste. Ici : outils qui **installent un pilote/service** (Sysmon) ou **peuvent changer la configuration** (Autoruns).
 - Usage strictement défensif. Toute action décrite ici s'exécute uniquement sur des systèmes que vous possédez ou pour lesquels vous disposez d'une autorisation écrite (périmètre, dates, contacts). Ne pas utiliser ces outils pour contourner des protections ni pour collecter des données de tiers.
 - Les outils Sysinternals sont gratuits mais soumis au contrat de licence Microsoft Sysinternals Software License Terms ; l'acceptation s'exprime par `-accepteula` ou en interface. Vérifier les conditions pour un usage commercial/redistribution.
-- Hypothèses : droits administrateur local, poste ou VM pilote validé, point de restauration/snapshot disponible, SIEM ou collecte d'événements défini.
+- Hypothèses : droits administrateur local, poste ou [[Glossary:VM]] pilote validé, point de restauration/snapshot disponible, [[Glossary:SIEM]] ou collecte d'événements défini.
 
 ## 2. Prérequis
 
@@ -57,7 +57,7 @@ Get-WinEvent -LogName "Microsoft-Windows-Sysmon/Operational" -MaxEvents 5
 ```
 
 4. Pour modifier la configuration sans réinstaller : `sysmon64.exe -c C:\Tools\sysmon-config-v2.xml` ; afficher la configuration active avec `sysmon64.exe -c`.
-5. Déploiement à l'échelle : par GPO, outil de gestion de configuration ou MDM, par vagues, après validation sur le pilote. Mettre à jour Sysmon explicitement (nouveau binaire) selon la procédure Microsoft.
+5. Déploiement à l'échelle : par [[Glossary:GPO]], outil de gestion de configuration ou MDM, par vagues, après validation sur le pilote. Mettre à jour Sysmon explicitement (nouveau binaire) selon la procédure Microsoft.
 
 ## 5. Auditer la persistance avec Autoruns
 

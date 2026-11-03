@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Chiffrer les volumes et restreindre les droits NTFS.
+Chiffrer les volumes et restreindre les droits [[Glossary:NTFS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -29,14 +29,14 @@ Chiffrer les volumes et restreindre les droits NTFS.
    Get-BitLockerVolume
    Enable-BitLocker -MountPoint 'C:' -EncryptionMethod XtsAes256 -TpmProtector
    ```
-   👉 Explication : chiffre C: avec protecteur TPM (réaliser l'étape suivante avant tout redémarrage).
+   👉 Explication : chiffre C: avec protecteur [[Glossary:TPM]] (réaliser l'étape suivante avant tout redémarrage).
 
 2. Créer et sauvegarder la clé de récupération dans l'annuaire (jamais sur le poste).
    ```powershell
    Add-BitLockerKeyProtector -MountPoint 'C:' -RecoveryPasswordProtector
    BackupToAAD-BitLockerKeyProtector -MountPoint 'C:' -KeyProtectorId 'ID_PROTECTEUR'
    ```
-   👉 Explication : ajoute la clé de récupération et la copie dans Entra ID (en AD : `Backup-BitLockerKeyProtector`); `ID_PROTECTEUR` provient de `(Get-BitLockerVolume C:).KeyProtector`.
+   👉 Explication : ajoute la clé de récupération et la copie dans Entra ID (en [[Glossary:AD]] : `Backup-BitLockerKeyProtector`); `ID_PROTECTEUR` provient de `(Get-BitLockerVolume C:).KeyProtector`.
 
 3. Contrôler les droits NTFS d'un dossier sensible : **clic droit > Propriétés > Sécurité**.
    ```powershell
@@ -45,7 +45,7 @@ Chiffrer les volumes et restreindre les droits NTFS.
    ```
    👉 Explication : affiche les permissions pour supprimer les accès trop larges (`Tout le monde`, `Utilisateurs` en modification).
 
-4. Interdire l'écriture sur supports USB non autorisés par GPO : **Modèles d'administration > Système > Accès au stockage amovible**.
+4. Interdire l'écriture sur supports [[Glossary:USB]] non autorisés par [[Glossary:GPO]] : **Modèles d'administration > Système > Accès au stockage amovible**.
    👉 Explication : limite les fuites de données.
 
 ## 2. Production — Contrôles

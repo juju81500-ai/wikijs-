@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-lxc-alpine-3-19-systeme-test-redemarrage.md
 
-- **Environnement** : LXC (Proxmox VE)
+- **Environnement** : [[Glossary:LXC]] (Proxmox VE)
 - **OS / Version** : Alpine Linux 3-19 - Famille Alpine (OpenRC, apk)
 - **Catégorie** : Système & Services / Validation de la persistance
 - **Tags** : `[alpine3.19]`, `[alpine]`, `[lxc]`, `[reboot]`, `[openrc]`, `[persistance]`, `[validation]`
@@ -31,13 +31,13 @@ Vérifier qu'un conteneur Alpine Linux redémarre proprement : montages, réseau
    ip route
    ss -lntup
    ```
-   👉 Explication : Ces sorties servent de référence : services dans leurs runlevels, adresses IP, route par défaut et ports en écoute.
+   👉 Explication : Ces sorties servent de référence : services dans leurs runlevels, adresses [[Glossary:IP]], route par défaut et ports en écoute.
 
 2. Redémarrer le conteneur depuis l'hôte Proxmox :
    ```sh
    pct reboot <vmid>
    ```
-   👉 Explication : `pct reboot` redémarre le CT proprement depuis l'hôte. Depuis le conteneur, la commande `reboot` produit le même effet.
+   👉 Explication : `pct reboot` redémarre le [[Glossary:CT]] proprement depuis l'hôte. Depuis le conteneur, la commande `reboot` produit le même effet.
 
 3. Relever à nouveau l'état et comparer avec la référence :
    ```sh
@@ -78,7 +78,7 @@ Vérifier qu'un conteneur Alpine Linux redémarre proprement : montages, réseau
    ```sh
    pct console <vmid>
    ```
-   👉 Explication : Si le réseau ou SSH ne revient pas, la console de l'hôte reste le seul moyen d'accès. Ne pas tester un redémarrage à distance sans cette console.
+   👉 Explication : Si le réseau ou [[Glossary:SSH]] ne revient pas, la console de l'hôte reste le seul moyen d'accès. Ne pas tester un redémarrage à distance sans cette console.
 
 2. Vérifier l'absence d'erreurs de démarrage dans les journaux après le redémarrage :
    ```sh

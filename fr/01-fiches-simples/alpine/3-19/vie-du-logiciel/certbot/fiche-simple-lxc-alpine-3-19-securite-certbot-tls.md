@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-lxc-alpine-3-19-securite-certbot-tls.md
 
-- **Environnement** : LXC (Proxmox VE)
+- **Environnement** : [[Glossary:LXC]] (Proxmox VE)
 - **OS / Version** : Alpine Linux 3-19 - Famille Alpine (OpenRC, apk)
-- **Catégorie** : Sécurité / Chiffrement des flux TLS
+- **Catégorie** : Sécurité / Chiffrement des flux [[Glossary:TLS]]
 - **Tags** : `[alpine3.19]`, `[alpine]`, `[lxc]`, `[certbot]`, `[letsencrypt]`, `[tls]`, `[crond]`
 
 ## 🎯 Problème précis à résoudre
@@ -38,7 +38,7 @@ Obtenir et renouveler automatiquement un certificat TLS Let's Encrypt sur un con
    mkdir -p /var/www/localhost/htdocs/.well-known/acme-challenge
    certbot certonly --staging --webroot -w /var/www/localhost/htdocs -d <fqdn_du_service> -m <adresse_email> --agree-tos --non-interactive
    ```
-   👉 Explication : Let's Encrypt doit joindre `http://<fqdn_du_service>/.well-known/` sur le port 80. Sans DNS public pointant vers le conteneur, cette étape échoue : le lab doit alors utiliser une CA interne.
+   👉 Explication : Let's Encrypt doit joindre `http://<fqdn_du_service>/.well-known/` sur le port 80. Sans [[Glossary:DNS]] public pointant vers le conteneur, cette étape échoue : le lab doit alors utiliser une [[Glossary:CA]] interne.
 
 ---
 

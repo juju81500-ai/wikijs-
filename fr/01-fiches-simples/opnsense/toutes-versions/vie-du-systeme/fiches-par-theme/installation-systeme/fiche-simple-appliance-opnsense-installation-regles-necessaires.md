@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-appliance-opnsense-installation-regles-necessaires.md
 
-- **Environnement** : Appliance physique ou VM dédiée avec interfaces réseau identifiées
+- **Environnement** : Appliance physique ou [[Glossary:VM]] dédiée avec interfaces réseau identifiées
 - **OS / Version** : OPNsense Community ou Business Edition, release maintenue compatible avec la plateforme
 - **Catégorie** : pare-feu / règles
 - **Tags** : `opnsense`, `installation`, `pare-feu`, `wan`, `lan`
@@ -24,16 +24,16 @@ Créer uniquement les règles de filtrage strictement nécessaires.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. **Firewall > Rules > LAN** puis **Add** : ajouter une règle par flux nécessaire, dans le bon ordre.
+1. **Firewall > Rules > [[Glossary:LAN]]** puis **Add** : ajouter une règle par flux nécessaire, dans le bon ordre.
    👉 Explication : par défaut les flux sont refusés sauf autorisation explicite.
 
 2. Limiter les sources d'administration au sous-réseau dédié (**Source** de la règle).
    👉 Explication : réduit l'exposition de l'interface d'administration.
 
-3. Ne créer aucune règle autorisant la gestion Web/SSH depuis **Firewall > Rules > WAN**.
+3. Ne créer aucune règle autorisant la gestion Web/SSH depuis **Firewall > Rules > [[Glossary:WAN]]**.
    👉 Explication : pas de gestion depuis le WAN sans architecture sécurisée et justification.
 
-4. Configurer DHCP, DNS, VLAN, NAT, VPN ou haute disponibilité seulement si le rôle le nécessite, étape par étape.
+4. Configurer [[Glossary:DHCP]], [[Glossary:DNS]], [[Glossary:VLAN]], [[Glossary:NAT]], [[Glossary:VPN]] ou haute disponibilité seulement si le rôle le nécessite, étape par étape.
    👉 Explication : tester chaque flux avant d'ajouter le suivant.
 
 5. Contrôler les règles actives :

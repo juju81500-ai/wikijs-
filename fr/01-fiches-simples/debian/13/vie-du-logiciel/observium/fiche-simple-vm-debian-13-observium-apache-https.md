@@ -58,8 +58,8 @@ Publier l'interface Observium en HTTPS, limitée au réseau d'administration.
    ```
    👉 Explication : mod_php exige prefork; `php8.4` est le module habituel de Debian 13, à adapter si `ls /etc/apache2/mods-available | grep php` indique autre chose.
 
-4. Limiter le pare-feu au TCP 443 depuis le réseau d'administration (exemple nftables/ufw selon l'outil en place).
-   👉 Explication : aucun accès depuis Internet; SNMP sortant UDP 161 vers les seuls équipements autorisés.
+4. Limiter le pare-feu au [[Glossary:TCP]] 443 depuis le réseau d'administration (exemple nftables/ufw selon l'outil en place).
+   👉 Explication : aucun accès depuis Internet; [[Glossary:SNMP]] sortant [[Glossary:UDP]] 161 vers les seuls équipements autorisés.
 
 ## 2. Production — Contrôles
 

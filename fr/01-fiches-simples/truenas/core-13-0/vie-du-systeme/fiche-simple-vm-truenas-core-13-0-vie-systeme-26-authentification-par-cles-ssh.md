@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Remplacer le mot de passe SSH par une clé.
+Remplacer le mot de passe [[Glossary:SSH]] par une clé.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -30,7 +30,7 @@ Remplacer le mot de passe SSH par une clé.
    ```
    👉 Explication : crée la paire de clés.
 
-2. GUI : Compte > Utilisateurs > ADMIN1 > Modifier > Clé publique SSH.
+2. [[Glossary:GUI]] : Compte > Utilisateurs > ADMIN1 > Modifier > Clé publique SSH.
    ```sh
    midclt call user.update ID_UTILISATEUR '{"sshpubkey": "CLE_PUBLIQUE"}'
    ```

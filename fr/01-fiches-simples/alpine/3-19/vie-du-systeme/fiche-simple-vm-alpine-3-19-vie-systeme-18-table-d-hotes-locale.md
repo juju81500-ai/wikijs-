@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_18_Table_D_Hotes_Locale
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 18 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-18`
@@ -28,7 +28,7 @@ Garder les entrées critiques en local.
    ```sh
    cat /etc/hosts
    ```
-   👉 Explication : doit contenir `127.0.0.1 localhost` et le FQDN de la machine.
+   👉 Explication : doit contenir `127.0.0.1 localhost` et le [[Glossary:FQDN]] de la machine.
 
 2. Ajouter les hôtes critiques (remplacer `ADRESSE_IP_DC` et `NOM_DC.DOMAINE`) :
    ```sh
@@ -37,7 +37,7 @@ Garder les entrées critiques en local.
    EOF'
    getent hosts NOM_DC.DOMAINE
    ```
-   👉 Explication : assure la résolution des serveurs essentiels même si le DNS est indisponible.
+   👉 Explication : assure la résolution des serveurs essentiels même si le [[Glossary:DNS]] est indisponible.
 
 3. Contrôler que l'ordre des sources de noms reste cohérent :
    ```sh

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_PowerShell_Securiser_Signature
 
-- **Environnement** : VM Rocky Linux 9 de laboratoire, accès sudo, dépôt Microsoft pour RHEL 9
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 de laboratoire, accès sudo, dépôt Microsoft pour [[Glossary:RHEL]] 9
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : shell / scripting
 - **Tags** : `rocky9`, `powershell`, `pwsh`, `scripting`
@@ -35,7 +35,7 @@ Durcir l'usage de PowerShell 7 sur Linux et traiter la signature de scripts selo
    sha256sum CHEMIN_SCRIPT
    sha256sum -c FICHIER_EMPREINTES
    ```
-   👉 Explication : la signature Authenticode (`Set-/Get-AuthenticodeSignature`) est propre à Windows ; sous Linux on s'appuie sur des empreintes, des signatures GPG ou des commits Git signés.
+   👉 Explication : la signature Authenticode (`Set-/Get-AuthenticodeSignature`) est propre à Windows ; sous Linux on s'appuie sur des empreintes, des signatures [[Glossary:GPG]] ou des commits Git signés.
 
 3. Exécuter en compte non privilégié et refuser l'élévation inutile :
    ```bash

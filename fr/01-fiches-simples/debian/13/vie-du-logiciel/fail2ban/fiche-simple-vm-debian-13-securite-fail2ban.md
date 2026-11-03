@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Fiche_Simple_-_VM_Debian_13_Securite_Fail2ban
 
-- **Environnement** : VM ou serveur Debian 13 exposant SSH
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 13 exposant [[Glossary:SSH]]
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
 - **Catégorie** : Sécurité / Protection contre le brute-force
 - **Tags** : `[debian13]`, `[debian]`, `[fail2ban]`, `[ssh]`, `[brute-force]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer Fail2ban sur Debian 13 pour bannir temporairement les adresses IP qui échouent répétitivement à s'authentifier sur SSH, en lisant les journaux systemd, sans modifier le fichier de configuration d'origine.
+Installer Fail2ban sur Debian 13 pour bannir temporairement les adresses [[Glossary:IP]] qui échouent répétitivement à s'authentifier sur SSH, en lisant les journaux systemd, sans modifier le fichier de configuration d'origine.
 
 ---
 

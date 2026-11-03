@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_GitLab_CE_Installer
 
-- **Environnement** : VM Debian 13 de préproduction; FQDN et ressources confirmés
+- **Environnement** : [[Glossary:VM]] Debian 13 de préproduction; [[Glossary:FQDN]] et ressources confirmés
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : forge Git / administration
 - **Tags** : `debian13`, `gitlab-ce`, `forge-git`, `tls`, `sauvegarde`
@@ -28,7 +28,7 @@ Installer GitLab CE depuis le dépôt officiel après examen du script de dépô
    sudo apt update
    sudo apt install -y curl ca-certificates openssh-server tzdata perl
    ```
-   👉 Explication : vérifier qu’aucun service SSH en place n’est altéré sans accord.
+   👉 Explication : vérifier qu’aucun service [[Glossary:SSH]] en place n’est altéré sans accord.
 
 2. Télécharger puis relire le script du dépôt CE
    ```bash
@@ -60,7 +60,7 @@ Installer GitLab CE depuis le dépôt officiel après examen du script de dépô
 
 ## 2. Production — Contrôles
 
-Tester l’installation sur une copie de préproduction; épingler paquet et origine APT et appliquer un changement tracé.
+Tester l’installation sur une copie de préproduction; épingler paquet et origine [[Glossary:APT]] et appliquer un changement tracé.
 
 ## 3. Production — Sécurité
 

@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 VM_Debian_13_Securite_Hardening-SSH-ED25519.md
 
-- **Environnement** : VM (Debian 13 Trixie / OpenSSH 9.x)
+- **Environnement** : [[Glossary:VM]] (Debian 13 Trixie / OpenSSH 9.x)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
-- **Catégorie** : Sécurité / Accès Distant SSH
+- **Catégorie** : Sécurité / Accès Distant [[Glossary:SSH]]
 - **Tags** : `[debian13]`, `[ssh]`, `[ed25519]`, `[hardening]`, `[security]`, `[openssh]`
 
 ## 🎯 Problème précis à résoudre
-Durcir le service d'accès distant OpenSSH sur Debian 13 (Trixie), imposer la connexion par clé asymétrique moderne ED25519, désactiver l'authentification par mot de passe et masquer l'accès du compte root.
+Durcir le service d'accès distant OpenSSH sur Debian 13 (Trixie), imposer la connexion par clé asymétrique moderne [[Glossary:ED25519]], désactiver l'authentification par mot de passe et masquer l'accès du compte root.
 
 ---
 

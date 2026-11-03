@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:14Z
 # fiche-simple-hote-vmware-esxi-8-esxi-ajouter-vcenter-premier-invite.md
 
 - **Environnement** : Hôte physique VMware ESXi 8.0 pilote autonome (DCUI, Host Client, vCenter)
-- **OS / Version** : VMware ESXi 8.0, build et image OEM validés sur le matériel
+- **OS / Version** : VMware ESXi 8.0, build et image [[Glossary:OEM]] validés sur le matériel
 - **Catégorie** : virtualisation / vCenter
 - **Tags** : `vmware`, `esxi`, `vsphere8`, `hyperviseur`, `vcenter`, `vm-pilote`
 
@@ -20,12 +20,12 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Intégrer l'hôte à vCenter et déployer une VM de test.
+Intégrer l'hôte à vCenter et déployer une [[Glossary:VM]] de test.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Déployer vCenter Server Appliance selon la documentation de la version retenue : **Installateur vCenter > Install > Stage 1 / Stage 2**
-   👉 Explication : vérifier compatibilité ESXi/vCenter, DNS, NTP, stockage et certificat avant l'enrôlement.
+   👉 Explication : vérifier compatibilité ESXi/vCenter, [[Glossary:DNS]], [[Glossary:NTP]], stockage et certificat avant l'enrôlement.
 
 2. Ajouter l'hôte à l'inventaire : **vSphere Client > Datacenter > Add Host**
    👉 Explication : utiliser des rôles et comptes nominatifs plutôt que root.

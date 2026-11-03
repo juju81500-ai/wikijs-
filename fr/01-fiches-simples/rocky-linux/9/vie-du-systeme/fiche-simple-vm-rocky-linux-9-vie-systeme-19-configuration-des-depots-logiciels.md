@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_19_Configuration_Des_Depots_Logiciels
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 19 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-19`
@@ -38,7 +38,7 @@ Disposer de dépôts fiables.
    ```
    👉 Explication : CRB fournit des dépendances de développement; EPEL ajoute des paquets communautaires (fail2ban...).
 
-3. Vérifier que la signature GPG est exigée :
+3. Vérifier que la signature [[Glossary:GPG]] est exigée :
    ```bash
    grep -H gpgcheck /etc/yum.repos.d/*.repo
    ```

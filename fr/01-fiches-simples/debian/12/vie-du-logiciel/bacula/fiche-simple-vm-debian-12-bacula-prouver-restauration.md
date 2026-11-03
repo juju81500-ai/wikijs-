@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-12-bacula-prouver-restauration.md
 
-- **Environnement** : VM Debian 12 dédiée à Bacula (Director, Storage Daemon, File Daemon, catalogue PostgreSQL)
+- **Environnement** : [[Glossary:VM]] Debian 12 dédiée à Bacula (Director, Storage Daemon, File Daemon, catalogue PostgreSQL)
 - **OS / Version** : Debian 12 Bookworm; Bacula Community 15.0.3 (backports)
 - **Catégorie** : sauvegarde / restauration
 - **Tags** : `debian12`, `bacula`, `backports`, `postgresql`, `restore`, `sha256`

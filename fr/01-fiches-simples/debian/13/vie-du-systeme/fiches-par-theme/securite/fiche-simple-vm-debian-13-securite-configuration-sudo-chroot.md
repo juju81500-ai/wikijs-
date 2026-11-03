@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Debian_13_Securite_Configuration-Sudo-Chroot-Restreint.md
 
-- **Environnement** : VM / LXC (Debian 13)
+- **Environnement** : [[Glossary:VM]] / [[Glossary:LXC]] (Debian 13)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
 - **Catégorie** : Sécurité & Privilèges / Sudoers
 - **Tags** : `[debian13]`, `[sudo]`, `[security]`, `[privileges]`, `[hardening]`

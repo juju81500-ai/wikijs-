@@ -11,14 +11,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Suricata
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : Suricata 6.0.x (paquet `suricata` de bookworm ; une version plus récente en bookworm-backports est possible, à vérifier avec `apt-cache policy suricata`)
 - **Catégorie** : Réseau et cybersécurité
 - **Tags** : `[debian-12]`, `[suricata]`, `[ids]`, `[hardening]`
 
 ## 🎯 Objectif
-Installer Suricata en IDS passif sur une interface miroir autorisée, mettre à jour les règles, vérifier la configuration et la remontée d'une alerte de test. Cette fiche ne configure ni NFQUEUE ni mode inline, et ne crée aucune règle `drop` ou `reject`. Les tests ne se font que sur votre propre réseau de laboratoire.
+Installer Suricata en [[Glossary:IDS]] passif sur une interface miroir autorisée, mettre à jour les règles, vérifier la configuration et la remontée d'une alerte de test. Cette fiche ne configure ni NFQUEUE ni mode inline, et ne crée aucune règle `drop` ou `reject`. Les tests ne se font que sur votre propre réseau de laboratoire.
 
 ---
 
@@ -28,7 +28,7 @@ Installer Suricata en IDS passif sur une interface miroir autorisée, mettre à 
 sudo apt update
 sudo apt install -y suricata suricata-update jq
 ```
-👉 Explication : `suricata-update` télécharge les règles, `jq` lit les journaux JSON. La disponibilité de `suricata-update` dans bookworm est à vérifier ; sinon, utiliser bookworm-backports.
+👉 Explication : `suricata-update` télécharge les règles, `jq` lit les journaux [[Glossary:JSON]]. La disponibilité de `suricata-update` dans bookworm est à vérifier ; sinon, utiliser bookworm-backports.
 
 2. Vérification des versions et de l'interface :
 ```bash
@@ -122,7 +122,7 @@ ls -l /etc/suricata/suricata.yaml
 ```
 👉 Explication : Le fichier n'est plus lisible par tout utilisateur. Le service démarre sous `root` puis lit ce fichier avant tout changement de compte ; à vérifier sur la version déployée.
 
-2. Vérification que l'interface miroir n'a pas d'adresse IP :
+2. Vérification que l'interface miroir n'a pas d'adresse [[Glossary:IP]] :
 ```bash
 ip -br address show ens33
 ```

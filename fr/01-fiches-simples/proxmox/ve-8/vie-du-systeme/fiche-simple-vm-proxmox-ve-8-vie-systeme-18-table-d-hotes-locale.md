@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Garantir la résolution du FQDN de l'hôte et des nœuds du cluster sans DNS.
+Garantir la résolution du [[Glossary:FQDN]] de l'hôte et des nœuds du cluster sans [[Glossary:DNS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : **Nœud > System > Hosts > Edit**. En ligne de commande :
+1. [[Glossary:GUI]] : **Nœud > System > Hosts > Edit**. En ligne de commande :
    ```bash
    nano /etc/hosts
    ```
@@ -34,7 +34,7 @@ Garantir la résolution du FQDN de l'hôte et des nœuds du cluster sans DNS.
    ```bash
    getent hosts pve01.domaine.local
    ```
-   👉 Explication : doit renvoyer l'IP de gestion.
+   👉 Explication : doit renvoyer l'[[Glossary:IP]] de gestion.
 
 3. Ne pas laisser le FQDN sur `127.0.1.1`.
    👉 Explication : la communication du cluster (corosync) échoue si le nom pointe vers le bouclage.

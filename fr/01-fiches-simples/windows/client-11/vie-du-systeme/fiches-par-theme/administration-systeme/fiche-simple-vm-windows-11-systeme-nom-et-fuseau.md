@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 Fiche_Simple_-_VM_Windows_11_Systeme_Nom_Et_Fuseau
 
-- **Environnement** : VM / Poste de travail (Windows 11)
+- **Environnement** : [[Glossary:VM]] / Poste de travail (Windows 11)
 - **OS / Version** : Windows 11 - Famille Windows Client
 - **Catégorie** : Système & Services / Identité et configuration de base
 - **Tags** : `[windows-11]`, `[powershell]`, `[rename-computer]`, `[timezone]`, `[w32tm]`, `[gui]`
@@ -37,7 +37,7 @@ Donner à un poste Windows 11 un nom conforme à la convention de nommage (15 ca
    ```powershell
    Rename-Computer -NewName "<nom_du_poste>" -Restart
    ```
-   👉 Explication : Remplace le nom NetBIOS (15 caractères maximum, sans espaces) et redémarre. En GUI, le même changement se fait dans **Paramètres** > **Système** > **Informations système** > **Renommer ce PC**.
+   👉 Explication : Remplace le nom NetBIOS (15 caractères maximum, sans espaces) et redémarre. En [[Glossary:GUI]], le même changement se fait dans **Paramètres** > **Système** > **Informations système** > **Renommer ce PC**.
 
 ---
 
@@ -46,7 +46,7 @@ Donner à un poste Windows 11 un nom conforme à la convention de nommage (15 ca
    ```powershell
    Rename-Computer -NewName "<nom_du_poste>" -DomainCredential (Get-Credential "<nom_domaine>\<compte_admin>") -Restart
    ```
-   👉 Explication : Demande les identifiants d'un compte autorisé à modifier l'objet ordinateur dans Active Directory. Mettre à jour l'inventaire et le DNS après le redémarrage.
+   👉 Explication : Demande les identifiants d'un compte autorisé à modifier l'objet ordinateur dans Active Directory. Mettre à jour l'inventaire et le [[Glossary:DNS]] après le redémarrage.
 2. Vérifier la synchronisation horaire après le changement de fuseau :
    ```powershell
    w32tm /query /status
@@ -65,7 +65,7 @@ Donner à un poste Windows 11 un nom conforme à la convention de nommage (15 ca
    ```powershell
    Set-ItemProperty -Path "HKLM:\SYSTEM\CurrentControlSet\Control\TimeZoneInformation" -Name "RealTimeIsUniversal" -Value 0 -Type DWord
    ```
-   👉 Explication : Valeur 0 = horloge CMOS en heure locale. Une valeur 1 créerait un décalage avec les autres systèmes (double démarrage Linux notamment).
+   👉 Explication : Valeur 0 = horloge [[Glossary:CMOS]] en heure locale. Une valeur 1 créerait un décalage avec les autres systèmes (double démarrage Linux notamment).
 3. Vérifier le fuseau effectif et le réglage de l'horloge :
    ```powershell
    Get-TimeZone

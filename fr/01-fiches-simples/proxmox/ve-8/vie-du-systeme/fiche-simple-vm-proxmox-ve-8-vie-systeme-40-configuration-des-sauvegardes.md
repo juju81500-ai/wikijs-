@@ -20,22 +20,22 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Planifier la sauvegarde des VM et de l'hôte vers Proxmox Backup Server.
+Planifier la sauvegarde des [[Glossary:VM]] et de l'hôte vers Proxmox Backup Server.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : **Datacenter > Storage > Add > Proxmox Backup Server** (serveur, datastore, utilisateur, empreinte) puis **Datacenter > Backup > Add** (sélection des VM, planning, rétention). En ligne de commande :
+1. [[Glossary:GUI]] : **Datacenter > Storage > Add > Proxmox Backup Server** (serveur, datastore, utilisateur, empreinte) puis **Datacenter > Backup > Add** (sélection des VM, planning, rétention). En ligne de commande :
    ```bash
    pvesm add pbs PBS --server IP_PBS --datastore DATASTORE --username sauvegarde@pbs --password --fingerprint EMPREINTE
    pvesh create /cluster/backup --vmid 100,101 --storage PBS --schedule '02:00' --mode snapshot --prune-backups keep-daily=7,keep-weekly=4
    ```
-   👉 Explication : `IP_PBS` = serveur PBS, `DATASTORE` = datastore, `EMPREINTE` = empreinte SHA-256 du certificat PBS; la commande demande le mot de passe; mode `snapshot` sans arrêt de la VM.
+   👉 Explication : `IP_PBS` = serveur [[Glossary:PBS]], `DATASTORE` = datastore, `EMPREINTE` = empreinte SHA-256 du certificat PBS; la commande demande le mot de passe; mode `snapshot` sans arrêt de la VM.
 
 2. Lancer une sauvegarde immédiate :
    ```bash
    vzdump 100 --storage PBS --mode snapshot
    ```
-   👉 Explication : `100` = VMID; vérifie le circuit complet.
+   👉 Explication : `100` = [[Glossary:VMID]]; vérifie le circuit complet.
 
 3. Sauvegarder aussi la configuration de l'hôte (`/etc/pve`, `/etc/network`) par un script planifié vers un stockage distant.
    ```bash

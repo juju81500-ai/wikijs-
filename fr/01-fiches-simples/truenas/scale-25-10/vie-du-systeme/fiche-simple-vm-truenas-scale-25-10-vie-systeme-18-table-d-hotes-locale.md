@@ -24,7 +24,7 @@ Ajouter des correspondances locales indispensables.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Réseau > Paramètres globaux > Hôtes supplémentaires (une ligne `IP nom`).
+1. [[Glossary:GUI]] : Réseau > Paramètres globaux > Hôtes supplémentaires (une ligne `IP nom`).
    ```bash
    sudo midclt call network.configuration.update '{"hosts": ["ADRESSE NOM_HOTE"]}'
    ```
@@ -38,7 +38,7 @@ Ajouter des correspondances locales indispensables.
 
 ## 2. Production — Contrôles
 
-Limiter aux cas où le DNS peut être indisponible.
+Limiter aux cas où le [[Glossary:DNS]] peut être indisponible.
 
 ## 3. Production — Sécurité
 

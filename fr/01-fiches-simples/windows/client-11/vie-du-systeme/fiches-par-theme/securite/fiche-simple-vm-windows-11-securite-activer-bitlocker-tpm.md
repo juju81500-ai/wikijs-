@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 fiche-simple-vm-windows-11-securite-activer-bitlocker-tpm.md
 
-- **Environnement** : VM ou poste client Windows
+- **Environnement** : [[Glossary:VM]] ou poste client Windows
 - **OS / Version** : Windows 11 Pro, Enterprise ou Education
 - **Catégorie** : Sécurité / Chiffrement
 - **Tags** : `[windows-11]`, `[bitlocker]`, `[tpm]`, `[chiffrement]`, `[recovery-key]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Activer le chiffrement BitLocker du volume système Windows 11, vérifier l'état du TPM et sauvegarder la clé de récupération dans un emplacement distinct et contrôlé.
+Activer le chiffrement BitLocker du volume système Windows 11, vérifier l'état du [[Glossary:TPM]] et sauvegarder la clé de récupération dans un emplacement distinct et contrôlé.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Vérifier l'édition Windows, le TPM et l'état actuel du volume :
@@ -30,8 +30,8 @@ Activer le chiffrement BitLocker du volume système Windows 11, vérifier l'éta
    👉 *Explication : BitLocker avec gestion complète est disponible sur les éditions Pro/Enterprise/Education; l'option « Chiffrement de l'appareil » sur d'autres éditions varie selon le matériel et la gestion.*
 
 ## ⚡ 2. Production — Façon Simplifiée
-1. Vérifier les stratégies de chiffrement de l'organisation et l'escrow de clé de récupération (AD DS, Entra ID ou coffre approuvé) avant le démarrage.
-2. Activer BitLocker avec l'assistant GUI et vérifier que la clé a été sauvegardée et que le chiffrement a commencé :
+1. Vérifier les stratégies de chiffrement de l'organisation et l'escrow de clé de récupération ([[Glossary:AD]] DS, Entra ID ou coffre approuvé) avant le démarrage.
+2. Activer BitLocker avec l'assistant [[Glossary:GUI]] et vérifier que la clé a été sauvegardée et que le chiffrement a commencé :
    ```powershell
    Get-BitLockerVolume -MountPoint C: | Select-Object MountPoint, VolumeStatus, ProtectionStatus, EncryptionPercentage
    ```

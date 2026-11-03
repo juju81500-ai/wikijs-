@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **Environnement** : Serveurs Windows Server 2022 (Connection Server), vCenter, UAG, compte administrateur nominatif
 - **OS / Version** : Windows Server 2022; version Horizon à vérifier auprès de l'éditeur
-- **Catégorie** : VDI / Horizon
+- **Catégorie** : [[Glossary:VDI]] / Horizon
 - **Tags** : `vmware-horizon`, `horizon`, `windows-server`, `validation`
 
 ---
@@ -24,7 +24,7 @@ Recetter Horizon : état des services, ouverture de session via UAG.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI **Monitor > Dashboard** : vérifier Connection Server, vCenter, pools et sessions en vert.
+1. [[Glossary:GUI]] **Monitor > Dashboard** : vérifier Connection Server, vCenter, pools et sessions en vert.
    👉 Explication : état global.
 
 2. Contrôle PowerShell des services :

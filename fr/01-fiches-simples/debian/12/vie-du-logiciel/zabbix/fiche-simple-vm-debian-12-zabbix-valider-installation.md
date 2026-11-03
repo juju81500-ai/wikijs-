@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # fiche-simple-vm-debian-12-zabbix-valider-installation.md
 
 - **Environnement** : console Web Zabbix en HTTPS et hôte de test autorisé
-- **OS / Version** : Debian 12; Zabbix 7.0 LTS
+- **OS / Version** : Debian 12; Zabbix 7.0 [[Glossary:LTS]]
 - **Catégorie** : supervision / validation
 - **Tags** : `debian12`, `zabbix`, `frontend`, `agent`, `validation`
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-truenas-core-13-0-deploiement-prerequis.md
 
-- **Environnement** : Appliance TrueNAS CORE (FreeBSD) en VM de laboratoire ou NAS existant
+- **Environnement** : Appliance TrueNAS CORE (FreeBSD) en [[Glossary:VM]] de laboratoire ou [[Glossary:NAS]] existant
 - **OS / Version** : TrueNAS CORE, branche 13.0 (build exact à relever sur l'ISO)
 - **Catégorie** : stockage NAS / prérequis
 - **Tags** : `truenas-core`, `truenas`, `freebsd`, `zfs`, `smb`, `nas`
@@ -24,10 +24,10 @@ Réunir matériel ou VM conforme et une ISO vérifiée.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Vérifier : x86-64 2 cœurs, 8 Go de RAM, disque de boot SSD 16 Go, au moins deux disques de données de même taille (pas de SMR, pas de clé USB en boot, pas de pool sur un seul disque).
+1. Vérifier : x86-64 2 cœurs, 8 Go de [[Glossary:RAM]], disque de boot [[Glossary:SSD]] 16 Go, au moins deux disques de données de même taille (pas de SMR, pas de clé [[Glossary:USB]] en boot, pas de pool sur un seul disque).
    👉 Explication : conditions de la documentation matérielle CORE 13.0.
 
-2. En VM de test : 8 Go de RAM, disque système de 20 Go, au moins un disque de données de 4 Go, réseau en bridge, OS invité FreeBSD 64 bits, démarrage BIOS sous VMware.
+2. En VM de test : 8 Go de RAM, disque système de 20 Go, au moins un disque de données de 4 Go, réseau en bridge, OS invité FreeBSD 64 bits, démarrage [[Glossary:BIOS]] sous VMware.
    👉 Explication : paramètres de VM recommandés par la documentation.
 
 3. Télécharger l'ISO depuis la source officielle iXsystems puis calculer son empreinte (Linux) :
@@ -44,7 +44,7 @@ Réunir matériel ou VM conforme et une ISO vérifiée.
 
 ## 2. Production — Contrôles
 
-Présenter les disques bruts à ZFS (pas de RAID matériel).
+Présenter les disques bruts à [[Glossary:ZFS]] (pas de [[Glossary:RAID]] matériel).
 
 ## 3. Production — Sécurité
 

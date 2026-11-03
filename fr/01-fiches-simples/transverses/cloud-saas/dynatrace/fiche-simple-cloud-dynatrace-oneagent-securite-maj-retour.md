@@ -27,7 +27,7 @@ Sécuriser OneAgent, le mettre à jour et savoir le retirer.
 1. Ne jamais forcer l'installation sur une plateforme non supportée avec `SKIP_OS_SUPPORT_CHECK`.
    👉 Explication : une plateforme non supportée n'a pas de garantie de fonctionnement.
 
-2. Vérifier la signature de chaque binaire récupéré et garder les communications TLS validées.
+2. Vérifier la signature de chaque binaire récupéré et garder les communications [[Glossary:TLS]] validées.
    👉 Explication : garantit l'intégrité et la confidentialité.
 
 3. Protéger les chemins de configuration, données et journaux OneAgent et limiter l'accès à l'administration du tenant.

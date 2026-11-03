@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Catégorie** : Automatisation, déploiement et IaC
 - **Plateforme** : Windows / Linux
-- **Produit (matrice)** : WDS + MDT / FOG Project
+- **Produit (matrice)** : WDS + [[Glossary:MDT]] / FOG Project
 - **Statut dans le pack** : Couvert — Debian 13 (7 fiches); support officiel de Debian 13 à confirmer auprès du projet FOG avant déploiement.
 - **Tags** : `logiciel`, `09-automatisation-deploiement-et-iac`, `couvert`
 

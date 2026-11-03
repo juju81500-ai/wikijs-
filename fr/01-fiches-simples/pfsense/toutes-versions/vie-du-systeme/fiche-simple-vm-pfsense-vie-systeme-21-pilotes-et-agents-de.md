@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_21_Pilotes_Et_Agents_De
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 21 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-21`
@@ -31,8 +31,8 @@ Intégrer le pare-feu à l'hyperviseur.
    ```
    👉 Explication : installe l'agent invité; le nom exact du paquet dépend de la version.
 
-2. Activer l'agent côté hyperviseur (Proxmox : VM > Options > Agent QEMU invité).
-   👉 Explication : permet l'arrêt propre et la remontée de l'adresse IP.
+2. Activer l'agent côté hyperviseur (Proxmox : VM > Options > Agent [[Glossary:QEMU]] invité).
+   👉 Explication : permet l'arrêt propre et la remontée de l'adresse [[Glossary:IP]].
 
 ## 2. Production — Contrôles
 

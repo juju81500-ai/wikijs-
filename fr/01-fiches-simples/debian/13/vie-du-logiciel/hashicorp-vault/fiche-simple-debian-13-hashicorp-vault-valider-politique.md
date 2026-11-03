@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-debian-13-hashicorp-vault-valider-politique.md
 
-- **Environnement** : HashiCorp Vault avec TLS, authentification et policy de test
+- **Environnement** : HashiCorp Vault avec [[Glossary:TLS]], authentification et policy de test
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Secrets / contrôle d'accès
 - **Tags** : `debian13`, `vault`, `secrets`, `policy`, `tls`, `audit`
@@ -24,7 +24,7 @@ Vérifier qu'une identité applicative ne peut lire que le chemin de secrets exp
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 
-1. Confirmer l'endpoint HTTPS et la CA approuvée :
+1. Confirmer l'endpoint HTTPS et la [[Glossary:CA]] approuvée :
    ```bash
    export VAULT_ADDR=https://vault.example.net:8200
    export VAULT_CACERT=/etc/vault.d/tls/ca.crt
@@ -62,7 +62,7 @@ Vérifier qu'une identité applicative ne peut lire que le chemin de secrets exp
 
 ## ⚡ 2. Production — Façon Simplifiée
 
-1. Lister les policies et vérifier TTL et propriétaire :
+1. Lister les policies et vérifier [[Glossary:TTL]] et propriétaire :
    ```bash
    vault policy list
    vault policy read NOM_POLICY
@@ -74,7 +74,7 @@ Vérifier qu'une identité applicative ne peut lire que le chemin de secrets exp
 ## 🔒 3. Production — Façon Sécurisée
 
 - Ne pas utiliser le token root pour l'accès applicatif; le révoquer après bootstrap.
-- Ne pas mettre token, unseal key ou secret en argument CLI, dans l'historique ou dans le pipeline de logs.
+- Ne pas mettre token, unseal key ou secret en argument [[Glossary:CLI]], dans l'historique ou dans le pipeline de logs.
 - Tester le refus d'accès comme une assertion obligatoire avant changement de policy.
 
 ## ✅ Validation et retour arrière

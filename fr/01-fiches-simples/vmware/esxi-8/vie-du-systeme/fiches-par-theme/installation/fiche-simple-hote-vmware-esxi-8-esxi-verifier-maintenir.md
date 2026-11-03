@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:14Z
 # fiche-simple-hote-vmware-esxi-8-esxi-verifier-maintenir.md
 
 - **Environnement** : Hôte physique VMware ESXi 8.0 pilote autonome (DCUI, Host Client, vCenter)
-- **OS / Version** : VMware ESXi 8.0, build et image OEM validés sur le matériel
+- **OS / Version** : VMware ESXi 8.0, build et image [[Glossary:OEM]] validés sur le matériel
 - **Catégorie** : virtualisation / exploitation
 - **Tags** : `vmware`, `esxi`, `vsphere8`, `hyperviseur`, `maintenance`, `correctifs`
 
@@ -24,10 +24,10 @@ Vérifier l'état et organiser la maintenance.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Contrôler version/build, état matériel, datastores, uplinks, alertes, heure, DNS et syslog : **Host Client > Monitor > Hardware / Events**
+1. Contrôler version/build, état matériel, datastores, uplinks, alertes, heure, [[Glossary:DNS]] et syslog : **Host Client > Monitor > Hardware / Events**
    👉 Explication : un contrôle régulier détecte les dérives.
 
-2. Lire la version depuis l'ESXi Shell (SSH activé temporairement et désactivé après) :
+2. Lire la version depuis l'ESXi Shell ([[Glossary:SSH]] activé temporairement et désactivé après) :
    ```bash
    vmware -vl
    ```
@@ -38,11 +38,11 @@ Vérifier l'état et organiser la maintenance.
 
 ## 2. Production — Contrôles
 
-Définir propriétaires, capacités, RPO/RTO et responsabilités de licence.
+Définir propriétaires, capacités, [[Glossary:RPO]]/RTO et responsabilités de licence.
 
 ## 3. Production — Sécurité
 
-- Un RAID, un datastore répliqué ou un snapshot ne remplace pas une sauvegarde restaurable.
+- Un [[Glossary:RAID]], un datastore répliqué ou un snapshot ne remplace pas une sauvegarde restaurable.
 
 ## Validation et retour arrière
 

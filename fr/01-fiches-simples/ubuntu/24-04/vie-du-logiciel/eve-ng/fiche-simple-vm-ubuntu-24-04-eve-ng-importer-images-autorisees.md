@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_EVE-NG_Importer_Images_Autorisees
 
-- **Environnement** : VM EVE-NG (appliance basée sur Ubuntu Server 24-04 LTS) hébergée sur un poste ou serveur de virtualisation
+- **Environnement** : [[Glossary:VM]] EVE-NG (appliance basée sur Ubuntu Server 24-04 [[Glossary:LTS]]) hébergée sur un poste ou serveur de virtualisation
 - **OS / Version** : EVE-NG 7.x (7.2.0-18 au contrôle du 29/10/2026), Ubuntu 24-04 LTS embarqué; Community 6.2.0-4 (Ubuntu 22-04) en fin de support juin 2026
 - **Catégorie** : simulation réseau / images
 - **Tags** : `ubuntu24.04`, `eve-ng`, `images`, `sftp`, `qemu`, `licence`
@@ -27,16 +27,16 @@ Ajouter à EVE-NG des images d'équipements que vous avez le droit d'utiliser, s
 1. Confirmer le droit d'usage de l'image (contrat, licence éditeur, compte autorisé) et noter son origine; ne jamais utiliser d'image provenant d'une source non officielle.
    👉 Explication : EVE-NG ne fournit pas d'images éditeur; l'obtention reste de votre responsabilité.
 
-2. Identifier le dossier attendu dans la table officielle **QEMU image naming** et la fiche **How-To** de l'éditeur concerné (remplacer `PREFIXE_TABLE-VERSION` par le nom de dossier exact, par exemple le préfixe indiqué par la table suivi de la version).
+2. Identifier le dossier attendu dans la table officielle **[[Glossary:QEMU]] image naming** et la fiche **How-To** de l'éditeur concerné (remplacer `PREFIXE_TABLE-VERSION` par le nom de dossier exact, par exemple le préfixe indiqué par la table suivi de la version).
    👉 Explication : les noms de dossier QEMU sont sensibles : le préfixe doit correspondre à la table, ce qui suit le `-` est libre.
 
 3. Dans WinSCP (Windows) ou FileZilla (Linux/macOS), ouvrir une session **SFTP**, hôte `IP_EVE`, port `22`, utilisateur `root`, mot de passe `MOT_DE_PASSE_ROOT_EVE`.
-   👉 Explication : la doc officielle recommande WinSCP ou FileZilla en SSH/SFTP (port 22); les valeurs en majuscules sont à remplacer.
+   👉 Explication : la doc officielle recommande WinSCP ou FileZilla en [[Glossary:SSH]]/SFTP (port 22); les valeurs en majuscules sont à remplacer.
 
 4. Créer le dossier cible côté EVE-NG et y envoyer l'image : `/opt/unetlab/addons/qemu/PREFIXE_TABLE-VERSION/` avec un disque nommé selon le format attendu, par exemple `hda.qcow2` ou `virtioa.qcow2`. Pour les images IOL ou Dynamips, utiliser `/opt/unetlab/addons/iol/bin/` ou `/opt/unetlab/addons/dynamips/`.
    👉 Explication : emplacements cités par le cookbook; le nom exact du disque dépend du template (voir la fiche How-To de l'image).
 
-5. Corriger les permissions depuis la CLI d'EVE-NG :
+5. Corriger les permissions depuis la [[Glossary:CLI]] d'EVE-NG :
    ```bash
    /opt/unetlab/wrappers/unl_wrapper -a fixpermissions
    ```
@@ -54,7 +54,7 @@ Ajouter à EVE-NG des images d'équipements que vous avez le droit d'utiliser, s
 ## 3. Production — Sécurité
 
 - Ne pas déposer d'images éditeur sur un partage public ni dans un dépôt Git.
-- Utiliser SFTP (port 22), pas FTP en clair, pour le transfert.
+- Utiliser SFTP (port 22), pas [[Glossary:FTP]] en clair, pour le transfert.
 - Limiter l'accès SSH de l'hôte EVE-NG au poste d'administration; ne pas enregistrer le mot de passe root dans WinSCP ou FileZilla sur un poste partagé.
 
 ## Validation et retour arrière

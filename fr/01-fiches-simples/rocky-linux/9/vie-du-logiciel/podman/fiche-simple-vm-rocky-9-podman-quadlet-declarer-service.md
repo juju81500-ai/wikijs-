@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-rocky-9-podman-quadlet-declarer-service.md
 
-- **Environnement** : VM Rocky Linux 9 avec Podman rootless, systemd et Quadlet (pilote local)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 avec Podman rootless, systemd et Quadlet (pilote local)
 - **OS / Version** : Rocky Linux 9; Podman des dépôts maintenus
 - **Catégorie** : conteneurs / quadlet
 - **Tags** : `rocky9`, `podman`, `quadlet`, `rootless`, `systemd`, `container-unit`, `linger`

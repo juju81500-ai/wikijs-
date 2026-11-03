@@ -24,7 +24,7 @@ Inventorier la configuration et garantir un accès console avant toute sauvegard
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Inventorier interfaces, VLAN, règles, NAT, certificats, VPN, comptes, plugins et rôle CARP : **Interfaces > Assignments**, **Firewall > Rules**, **VPN**.
+1. Inventorier interfaces, [[Glossary:VLAN]], règles, [[Glossary:NAT]], certificats, [[Glossary:VPN]], comptes, plugins et rôle [[Glossary:CARP]] : **Interfaces > Assignments**, **Firewall > Rules**, **VPN**.
    👉 Explication : on sait ce que la sauvegarde doit contenir.
 
 2. Afficher la version installée : **Lobby > Dashboard**, ou en console :
@@ -36,7 +36,7 @@ Inventorier la configuration et garantir un accès console avant toute sauvegard
 3. Conserver un accès console et noter l'ordre des interfaces matérielles.
    👉 Explication : sur du nouveau matériel, les noms d'interface peuvent changer.
 
-4. En HA, documenter l'état MASTER/BACKUP, les adresses propres et les VIP de chaque nœud.
+4. En HA, documenter l'état MASTER/BACKUP, les adresses propres et les [[Glossary:VIP]] de chaque nœud.
    👉 Explication : la synchronisation ne remplace pas une copie indépendante.
 
 ## 2. Production — Contrôles

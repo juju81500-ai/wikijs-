@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-debian-12-13-preparer-migration-paquets.md
 
-- **Environnement** : VM ou serveur Debian 12 Bookworm migré vers Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 12 Bookworm migré vers Debian 13 Trixie
 - **OS / Version** : Debian 12 → Debian 13
 - **Catégorie** : Système / Migration / Maintenance
 - **Tags** : `[debian12]`, `[debian13]`, `[bookworm]`, `[trixie]`, `[migration]`, `[apt]`, `[maintenance]`
@@ -44,19 +44,19 @@ Préparer la migration majeure Debian 12 vers 13, vérifier les dépôts et les 
    - MariaDB 10.11 → 11.8 : réaliser une sauvegarde et confirmer l'arrêt propre avant la migration majeure.
    - PostgreSQL 15 → 17 : planifier une migration de cluster documentée; le changement de paquet seul ne convertit pas les données.
    - OpenSSH : remplacer les clés DSA et confirmer l'accès de secours avant le redémarrage.
-   - Samba AD DC : confirmer le paquet `samba-ad-dc` et le plan de reprise du domaine.
-4. Après sauvegarde, mettre à jour les sources deb822 vers `trixie` sans mélanger les suites; suivre les étapes d'APT de la note Debian, d'abord `upgrade --without-new-pkgs`, puis `full-upgrade`.
+   - Samba [[Glossary:AD]] [[Glossary:DC]] : confirmer le paquet `samba-ad-dc` et le plan de reprise du domaine.
+4. Après sauvegarde, mettre à jour les sources deb822 vers `trixie` sans mélanger les suites; suivre les étapes d'[[Glossary:APT]] de la note Debian, d'abord `upgrade --without-new-pkgs`, puis `full-upgrade`.
 5. Redémarrer seulement après la fin des opérations et vérifier réseau, montages, services et journaux.
    👉 *Explication : les fichiers de dépôts deb822 se modifient en conservant composants et options (dont `non-free-firmware`); ne pas faire un remplacement textuel aveugle.*
 
 ## 🔒 3. Production — Façon Sécurisée
-1. Ne pas faire la migration majeure via une session SSH unique sans console; les noms d'interface peuvent changer sur certains matériels.
+1. Ne pas faire la migration majeure via une session [[Glossary:SSH]] unique sans console; les noms d'interface peuvent changer sur certains matériels.
 2. Vérifier les réglages `/etc/sysctl.conf`; déplacer les paramètres locaux validés vers `/etc/sysctl.d/*.conf`.
 3. Examiner `/etc/tmpfiles.d/tmp.conf`, les scripts écrivant dans `/tmp`, et le nettoyage des fichiers dans `/var/tmp`.
 4. Ne pas supprimer les anciens noyaux, dépôts, journaux ou fichiers de données avant validation applicative.
 
 ## ✅ Validation et retour arrière
-- Confirmer `VERSION_CODENAME=trixie`, versions applicatives, réseau, DNS, stockage, services, chiffrement et supervision.
+- Confirmer `VERSION_CODENAME=trixie`, versions applicatives, réseau, [[Glossary:DNS]], stockage, services, chiffrement et supervision.
 - Tester depuis un second poste les parcours métier et exécuter une restauration en VM isolée.
 - Si la migration échoue, arrêter les écritures et restaurer la VM ou les données avec le plan testé; ne pas tenter un downgrade APT improvisé.
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-ubuntu-24-04-migration-26-04-retour-arriere.md
 
-- **Environnement** : VM ou serveur Ubuntu Server LTS
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu Server [[Glossary:LTS]]
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble) vers 26-04 LTS (Resolute)
 - **Catégorie** : migration de version
 - **Tags** : `ubuntu24.04`, `ubuntu26.04`, `migration`, `retour-arriere`
@@ -28,7 +28,7 @@ Revenir à Ubuntu 24-04 après un échec de migration.
    👉 Explication : on évite d'envoyer des données incohérentes.
 
 2. Restaurer le snapshot ou la sauvegarde validée avant la migration.
-   👉 Explication : une mise à niveau Debian/Ubuntu n'a pas de downgrade APT pris en charge.
+   👉 Explication : une mise à niveau Debian/Ubuntu n'a pas de downgrade [[Glossary:APT]] pris en charge.
 
 3. Restaurer aussi les bases dans un état compatible avec les binaires retenus.
    👉 Explication : un moteur de base migré ne relit pas toujours d'anciens fichiers.

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_Zeek_Configurer
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Zeek
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Zeek
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Zeek / capteur passif standalone
 - **Tags** : `zeek`, `ubuntu24.04`, `vie-du-logiciel`, `configurer`
@@ -34,7 +34,7 @@ Configurer et exploiter Zeek en capteur passif standalone sur l’interface auto
    ```bash
    sudoedit /opt/zeek/etc/networks.cfg
    ```
-   👉 Explication : Y mettre LOCAL_NET_AUTORISE (CIDR, à remplacer) pour que Zeek distingue interne/externe.
+   👉 Explication : Y mettre LOCAL_NET_AUTORISE ([[Glossary:CIDR]], à remplacer) pour que Zeek distingue interne/externe.
 
 3. Vérifier la configuration :
    ```bash
@@ -68,7 +68,7 @@ Faire relire interface et réseaux locaux; surveiller l’espace disque et les p
 
 ## Validation et retour arrière
 
-- **Validation** : Les journaux conn.log (et dns.log si du DNS est observé) sont produits sans erreur.
+- **Validation** : Les journaux conn.log (et dns.log si du [[Glossary:DNS]] est observé) sont produits sans erreur.
 - **Retour arrière** : `sudo /opt/zeek/bin/zeekctl stop`, restaurer `node.cfg` et `networks.cfg` sauvegardés, puis `zeekctl deploy`.
 
 ## Si le problème n’est pas résolu

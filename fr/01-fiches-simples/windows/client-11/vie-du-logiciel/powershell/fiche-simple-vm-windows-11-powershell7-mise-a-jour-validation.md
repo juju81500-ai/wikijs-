@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-11-powershell7-mise-a-jour-validation.md
 
-- **Environnement** : VM ou poste Windows 11 de test; compte standard puis élévation uniquement si requise
-- **OS / Version** : Windows 11 x64; PowerShell 7.6.9 Stable (LTS)
+- **Environnement** : [[Glossary:VM]] ou poste Windows 11 de test; compte standard puis élévation uniquement si requise
+- **OS / Version** : Windows 11 x64; PowerShell 7.6.9 Stable ([[Glossary:LTS]])
 - **Catégorie** : administration / PowerShell
 - **Tags** : `windows-11`, `powershell`, `pwsh`, `administration`, `scripts`, `securite`
 
@@ -53,7 +53,7 @@ Vérifier que les modules employés sont connus, approuvés et compatibles.
 ## Validation et retour arrière
 
 - **Validation** : Version attendue, 5.1 disponible, scripts pilotes valides.
-- **Retour arrière** : Réinstaller le MSI de la version précédente après vérification de signature et de hash.
+- **Retour arrière** : Réinstaller le [[Glossary:MSI]] de la version précédente après vérification de signature et de hash.
 
 ## Si le problème n'est pas résolu
 

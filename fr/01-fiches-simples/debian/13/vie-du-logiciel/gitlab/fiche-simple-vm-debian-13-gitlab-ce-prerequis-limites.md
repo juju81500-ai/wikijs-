@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_GitLab_CE_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 de préproduction; FQDN et ressources confirmés
+- **Environnement** : [[Glossary:VM]] Debian 13 de préproduction; [[Glossary:FQDN]] et ressources confirmés
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : forge Git / administration
 - **Tags** : `debian13`, `gitlab-ce`, `forge-git`, `tls`, `sauvegarde`
@@ -38,11 +38,11 @@ dateModified: 2026-11-03T09:36:13Z
    ```
    👉 Explication : si la matrice ne confirme pas Debian 13 et cette version, arrêter. Détail à confirmer dans la documentation officielle avant application : Vérifier dans la documentation officielle que Debian 13, l’architecture, l’édition CE et la version cible sont supportées. Version cible 18.X.Y-ce.0 : à remplacer après validation.
 
-3. Définir DNS et accès réseau
+3. Définir [[Glossary:DNS]] et accès réseau
    ```text
    Navigateur > ouvrir la documentation officielle : https://docs.gitlab.com/install/package/
    ```
-   👉 Explication : ne pas exposer une instance non configurée. Détail à confirmer dans la documentation officielle avant application : Documenter FQDN, terminaison TLS, ports Web/SSH, réseaux clients et chemin de secours.
+   👉 Explication : ne pas exposer une instance non configurée. Détail à confirmer dans la documentation officielle avant application : Documenter FQDN, terminaison [[Glossary:TLS]], ports Web/SSH, réseaux clients et chemin de secours.
 
 ## 2. Production — Contrôles
 

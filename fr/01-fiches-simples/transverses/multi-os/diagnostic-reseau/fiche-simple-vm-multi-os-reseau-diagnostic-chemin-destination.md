@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-multi-os-reseau-diagnostic-chemin-destination.md
 
-- **Environnement** : VM, poste, serveur, LXC Proxmox ou hôte Docker (Linux ou Windows)
+- **Environnement** : [[Glossary:VM]], poste, serveur, [[Glossary:LXC]] Proxmox ou hôte Docker (Linux ou Windows)
 - **OS / Version** : Debian 12/13, Ubuntu 24-04/26-04, Rocky Linux 9, Alpine Linux, Windows 10/11, Windows Server 2022/2025
 - **Catégorie** : réseau / routage
 - **Tags** : `reseau`, `diagnostic`, `multi-os`, `depannage`
@@ -42,7 +42,7 @@ Savoir par où passent les paquets vers la destination et où ils s'arrêtent.
    ```
    👉 Explication : même suivi de chemin sans résolution de noms.
 
-4. Si la passerelle répond mais pas le réseau distant, demander au propriétaire du réseau de contrôler routage, ACL, VPN, VLAN et routes de retour.
+4. Si la passerelle répond mais pas le réseau distant, demander au propriétaire du réseau de contrôler routage, [[Glossary:ACL]], [[Glossary:VPN]], [[Glossary:VLAN]] et routes de retour.
    👉 Explication : la cause est au-delà de la machine locale.
 
 ## 2. Production — Contrôles

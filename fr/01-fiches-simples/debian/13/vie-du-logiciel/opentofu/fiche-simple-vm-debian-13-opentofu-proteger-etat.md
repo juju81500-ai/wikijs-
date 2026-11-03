@@ -66,7 +66,7 @@ Faire approuver le backend, la résidence des données, l'identité des exécuta
 - Ajouter `terraform.tfstate`, `*.tfplan` et fichiers sensibles au `.gitignore`.
 - Ne pas partager ou envoyer l'état dans un ticket; il peut contenir des valeurs sensibles.
 - Garder les clés de chiffrement séparées de l'état et planifier leur récupération.
-- Ne pas activer un backend distant sans ACL, verrouillage et sauvegarde testés.
+- Ne pas activer un backend distant sans [[Glossary:ACL]], verrouillage et sauvegarde testés.
 
 ## Validation et retour arrière
 

@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Debian_12_Securite_NFTables-Pare-Feu.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Sécurité & Réseau / Pare-feu hôte
 - **Tags** : `[debian12]`, `[debian-family]`, `[nftables]`, `[firewall]`, `[systemd]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Mettre en place un pare-feu hôte persistant sur Debian 12 avec `nftables` : politique par défaut `drop` sur l'entrée, ouverture limitée aux flux nécessaires et SSH restreint au réseau d'administration.
+Mettre en place un pare-feu hôte persistant sur Debian 12 avec `nftables` : politique par défaut `drop` sur l'entrée, ouverture limitée aux flux nécessaires et [[Glossary:SSH]] restreint au réseau d'administration.
 
 ---
 

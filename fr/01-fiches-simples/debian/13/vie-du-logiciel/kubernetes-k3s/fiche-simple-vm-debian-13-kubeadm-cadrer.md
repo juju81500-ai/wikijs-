@@ -32,9 +32,9 @@ Vérifier prérequis, réseau, CNI et capacité avant d'initialiser un cluster k
    sudo cat /sys/class/dmi/id/product_uuid
    uname -r
    ```
-   👉 Explication : minimum 2 Go de RAM par machine et 2 CPU pour le plan de contrôle; nom d'hôte, MAC et `product_uuid` uniques.
+   👉 Explication : minimum 2 Go de [[Glossary:RAM]] par machine et 2 [[Glossary:CPU]] pour le plan de contrôle; nom d'hôte, MAC et `product_uuid` uniques.
 
-2. Contrôler IP statique, routes et ports déjà utilisés :
+2. Contrôler [[Glossary:IP]] statique, routes et ports déjà utilisés :
    ```bash
    ip route show
    sudo ss -lnt
@@ -47,7 +47,7 @@ Vérifier prérequis, réseau, CNI et capacité avant d'initialiser un cluster k
    ```
    👉 Explication : kubelet refuse de démarrer avec du swap; une sortie vide est attendue (désactivation à l'étape suivante).
 
-4. Consigner : nom DNS ou adresse du `--control-plane-endpoint`, CNI choisi et son CIDR de pods, snapshot de VM ou console hors bande.
+4. Consigner : nom [[Glossary:DNS]] ou adresse du `--control-plane-endpoint`, CNI choisi et son [[Glossary:CIDR]] de pods, snapshot de [[Glossary:VM]] ou console hors bande.
    👉 Explication : ces choix précèdent `kubeadm init`.
 
 ## 2. Production — Contrôles

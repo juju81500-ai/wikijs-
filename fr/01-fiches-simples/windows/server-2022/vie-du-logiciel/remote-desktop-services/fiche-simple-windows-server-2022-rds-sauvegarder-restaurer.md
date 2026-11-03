@@ -38,13 +38,13 @@ oles-rds.csv' -NoTypeInformation -Encoding UTF8
    ```
    👉 Explication : Archive un inventaire, pas les certificats privés, données de profils ou l'état complet du déploiement.
 3. Dans **Gestionnaire de serveur** > **Services Bureau à distance** > **Vue d'ensemble** > **Tâches** > **Exporter la configuration de déploiement**, exporter si cette option est disponible pour la topologie.
-   👉 Explication : Cet export est disponible pour certaines configurations et ne remplace pas la sauvegarde VM, les certificats avec clés privées ni les données utilisateur.
+   👉 Explication : Cet export est disponible pour certaines configurations et ne remplace pas la sauvegarde [[Glossary:VM]], les certificats avec clés privées ni les données utilisateur.
 4. Sauvegarder les profils via la solution de profils approuvée, puis tester la restauration sur un hôte isolé.
    👉 Explication : Les procédures de profils itinérants/containers dépendent du produit; ne pas copier un profil actif sans consigne de l'éditeur.
 
 ## 2. Production — Contrôles
 
-- Définir RPO/RTO, protection hors ligne/immutabilité, chiffrement et contrôle d'accès du dépôt.
+- Définir [[Glossary:RPO]]/RTO, protection hors ligne/immutabilité, chiffrement et contrôle d'accès du dépôt.
 - Inclure configuration, certificats et clés privées via coffre/PKI, serveurs de licences et données de profils selon leurs procédures.
 - Documenter l'ordre de restauration des rôles Broker, Web Access, Gateway, Session Host et licences pour la topologie réelle.
 

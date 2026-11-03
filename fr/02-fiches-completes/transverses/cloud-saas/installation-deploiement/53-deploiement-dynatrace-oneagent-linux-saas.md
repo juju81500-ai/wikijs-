@@ -45,7 +45,7 @@ sudo systemctl --no-pager status oneagent
 
 Utiliser d'abord un hôte de test. L'interface de déploiement fournit la commande spécifique et les contrôles de statut adaptés au tenant/version; ne pas inventer ni réutiliser un token d'un autre environnement. Vérifier l'arrivée du host dans Dynatrace, les métadonnées et le mode sélectionné.
 
-Redémarrer les processus applicatifs seulement si nécessaire pour activer le monitoring profond et dans une fenêtre approuvée. Contrôler l'impact sur CPU, mémoire, processus et disponibilité avant le déploiement à l'échelle.
+Redémarrer les processus applicatifs seulement si nécessaire pour activer le monitoring profond et dans une fenêtre approuvée. Contrôler l'impact sur [[Glossary:CPU]], mémoire, processus et disponibilité avant le déploiement à l'échelle.
 
 ## 4. Généraliser et exploiter
 
@@ -61,7 +61,7 @@ Fiche simple : [sécurité, mise à jour et retour arrière OneAgent](/fr/01-fic
 
 - Ne pas forcer une installation sur une plateforme non supportée avec `SKIP_OS_SUPPORT_CHECK`.
 - Protéger les chemins de configuration, données et journaux OneAgent et limiter l'accès à l'administration du tenant.
-- Vérifier la signature de chaque binaire récupéré et garder les communications TLS validées.
+- Vérifier la signature de chaque binaire récupéré et garder les communications [[Glossary:TLS]] validées.
 - Tester les upgrades sur un groupe pilote; coordonner les redémarrages d'applications et contrôler les changements de capacité.
 - Pour rollback, suivre la procédure officielle de désinstallation de la version, retirer l'hôte du groupe d'automatisation si besoin et confirmer que l'ingestion cesse.
 

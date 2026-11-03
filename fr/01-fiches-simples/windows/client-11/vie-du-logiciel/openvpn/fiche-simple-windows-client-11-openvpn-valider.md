@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Vérifier la connexion VPN et les routes.
+Vérifier la connexion [[Glossary:VPN]] et les routes.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : clic droit sur l'icône OpenVPN GUI > Connecter, puis saisir la phrase de passe si demandée.
+1. [[Glossary:GUI]] : clic droit sur l'icône OpenVPN GUI > Connecter, puis saisir la phrase de passe si demandée.
    👉 Explication : L'icône devient verte une fois la connexion établie.
 
 2. Vérifier l'interface et les routes :

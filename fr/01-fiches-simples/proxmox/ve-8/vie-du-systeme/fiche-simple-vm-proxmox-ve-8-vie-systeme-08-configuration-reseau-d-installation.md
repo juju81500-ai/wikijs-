@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Donner à l'installateur une adresse IP de gestion.
+Donner à l'installateur une adresse [[Glossary:IP]] de gestion.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Dans l'installateur, écran **Management Network Configuration** : choisir l'interface de gestion, saisir l'IP en CIDR (`IP_HOTE/24`), la passerelle (`IP_GW`) et le DNS (`IP_DNS`).
+1. Dans l'installateur, écran **Management Network Configuration** : choisir l'interface de gestion, saisir l'IP en [[Glossary:CIDR]] (`IP_HOTE/24`), la passerelle (`IP_GW`) et le [[Glossary:DNS]] (`IP_DNS`).
    👉 Explication : l'IP saisie sera celle de l'interface web https://IP_HOTE:8006; la passerelle et le DNS doivent être joignables.
 
 2. Depuis la console, contrôler le réseau :
@@ -40,7 +40,7 @@ Donner à l'installateur une adresse IP de gestion.
 
 ## 2. Production — Contrôles
 
-Réseau de gestion isolé (VLAN d'administration).
+Réseau de gestion isolé ([[Glossary:VLAN]] d'administration).
 
 ## 3. Production — Sécurité
 

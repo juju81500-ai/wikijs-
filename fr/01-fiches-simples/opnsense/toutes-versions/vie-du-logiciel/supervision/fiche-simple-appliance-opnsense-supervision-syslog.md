@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-appliance-opnsense-supervision-syslog.md
 
-- **Environnement** : OPNsense sur VM Proxmox VE ou appliance dédiée, serveur syslog distant sur le réseau de gestion
+- **Environnement** : OPNsense sur [[Glossary:VM]] Proxmox VE ou appliance dédiée, serveur syslog distant sur le réseau de gestion
 - **OS / Version** : OPNsense (base FreeBSD) - Toutes-versions (libellés de menu à vérifier sur la version déployée)
 - **Catégorie** : Supervision / Journaux
 - **Tags** : `opnsense`, `freebsd`, `syslog`, `logs`, `siem`, `tls`
@@ -29,7 +29,7 @@ Envoyer les journaux d'OPNsense vers un serveur syslog distant, vérifier leur r
    👉 Explication : Ajoute une destination distante aux journaux locaux d'OPNsense.
 2. Définir la cible :
    Enabled = coché, Transport = `UDP(4)`, Hostname = `<adresse_ip_syslog>`, Port = `514`, Level = `Informational`
-   👉 Explication : UDP est suffisant pour un test ; le transport chiffré est traité en section 3.
+   👉 Explication : [[Glossary:UDP]] est suffisant pour un test ; le transport chiffré est traité en section 3.
 3. Envoyer un message de test depuis le shell d'OPNsense (option 8) :
    `logger -n <adresse_ip_syslog> -P 514 "test syslog OPNsense"`
    👉 Explication : Émet un message de test directement vers le serveur, sans attendre un événement réel.
@@ -56,7 +56,7 @@ Envoyer les journaux d'OPNsense vers un serveur syslog distant, vérifier leur r
 ---
 
 ## 🔒 3. Production — Façon Sécurisée
-1. Chiffrer le transport avec TLS :
+1. Chiffrer le transport avec [[Glossary:TLS]] :
    `System > Settings > Logging / targets` : Transport = `TLS(6)`, Port = `6514`, certificat de l'autorité interne (à vérifier sur la version déployée)
    👉 Explication : Empêche la lecture ou la modification des journaux en transit.
 2. Configurer le serveur syslog en réception TLS :

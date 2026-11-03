@@ -11,14 +11,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 FreeIPA
 
-- **Environnement** : VM (Rocky Linux 9)
+- **Environnement** : [[Glossary:VM]] (Rocky Linux 9)
 - **OS / Version** : Rocky Linux 9.x
 - **Version** : FreeIPA 4.10.x (paquets `ipa-server` des dépôts Rocky 9, à vérifier sur la version déployée)
 - **Catégorie** : Systèmes, annuaires et services
 - **Tags** : `[rocky-linux-9]`, `[freeipa]`, `[ipa]`, `[kerberos]`, `[ldap]`, `[dns]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer un serveur FreeIPA sur Rocky Linux 9 avec son DNS intégré, créer un utilisateur de test, vérifier l'authentification Kerberos, puis le durcir (politique de mots de passe, sauvegarde, pare-feu restreint) avant de l'utiliser comme annuaire de l'entreprise. Le nom d'hôte doit être un FQDN résolu correctement. Les tests ne se font que sur votre propre serveur.
+Installer un serveur FreeIPA sur Rocky Linux 9 avec son [[Glossary:DNS]] intégré, créer un utilisateur de test, vérifier l'authentification Kerberos, puis le durcir (politique de mots de passe, sauvegarde, pare-feu restreint) avant de l'utiliser comme annuaire de l'entreprise. Le nom d'hôte doit être un [[Glossary:FQDN]] résolu correctement. Les tests ne se font que sur votre propre serveur.
 
 ---
 
@@ -29,7 +29,7 @@ sudo hostnamectl set-hostname ipa01.lab.local
 hostnamectl status
 getent hosts ipa01.lab.local
 ```
-👉 Explication : FreeIPA exige un FQDN. `ipa01.lab.local` doit résoudre vers l'adresse IP du serveur (fichier `/etc/hosts` ou DNS). Sans cela, l'installation échoue.
+👉 Explication : FreeIPA exige un FQDN. `ipa01.lab.local` doit résoudre vers l'adresse [[Glossary:IP]] du serveur (fichier `/etc/hosts` ou DNS). Sans cela, l'installation échoue.
 
 2. Installation des paquets serveur et DNS :
 ```bash
@@ -52,7 +52,7 @@ sudo firewall-cmd --reload
 sudo firewall-cmd --list-services
 getenforce
 ```
-👉 Explication : Ces services firewalld couvrent LDAP, LDAPS, DNS, Kerberos, le changement de mot de passe et l'interface web. `getenforce` doit répondre `Enforcing`. Ne pas désactiver SELinux pour contourner un problème : le corriger avec `ausearch -m AVC -ts recent`.
+👉 Explication : Ces services firewalld couvrent [[Glossary:LDAP]], LDAPS, DNS, Kerberos, le changement de mot de passe et l'interface web. `getenforce` doit répondre `Enforcing`. Ne pas désactiver SELinux pour contourner un problème : le corriger avec `ausearch -m AVC -ts recent`.
 
 5. Contrôle des services FreeIPA et création d'un utilisateur de test :
 ```bash
@@ -115,7 +115,7 @@ sudo firewall-cmd --permanent --zone=ipa-interne --add-service=freeipa-ldap --ad
 sudo firewall-cmd --reload
 sudo firewall-cmd --zone=ipa-interne --list-all
 ```
-👉 Explication : Crée une zone dédiée n'acceptant que le réseau `192.168.10.0/24` (adapter au réseau réel). Les services sont retirés de la zone par défaut pour éviter une exposition large. Avant d'appliquer, s'assurer que l'accès SSH d'administration reste autorisé (`--add-service=ssh` dans la même zone).
+👉 Explication : Crée une zone dédiée n'acceptant que le réseau `192.168.10.0/24` (adapter au réseau réel). Les services sont retirés de la zone par défaut pour éviter une exposition large. Avant d'appliquer, s'assurer que l'accès [[Glossary:SSH]] d'administration reste autorisé (`--add-service=ssh` dans la même zone).
 
 3. Journaux et état de santé de l'annuaire :
 ```bash

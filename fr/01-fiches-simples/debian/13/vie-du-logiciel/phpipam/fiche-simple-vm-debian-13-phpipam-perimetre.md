@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-phpipam-perimetre.md
 
-- **Environnement** : VM Debian 13, phpIPAM avec MariaDB locale, PHP-FPM et Nginx
+- **Environnement** : [[Glossary:VM]] Debian 13, phpIPAM avec MariaDB locale, PHP-FPM et Nginx
 - **OS / Version** : Debian 13 Trixie x86-64; phpIPAM 1.8.3; PHP 8.4
-- **Catégorie** : IPAM / cadrage
+- **Catégorie** : [[Glossary:IPAM]] / cadrage
 - **Tags** : `debian13`, `phpipam`, `ipam`, `nginx`, `mariadb`, `prerequis`
 
 ---
@@ -27,7 +27,7 @@ Définir ce que phpIPAM va gérer avant l'installation.
 1. Noter la version cible : phpIPAM 1.8.3 (PHP 7.2 à 8.5; Debian 13 fournit PHP 8.4).
    👉 Explication : la procédure détaillée amont vise Ubuntu, à valider en préproduction sur Debian 13.
 
-2. Réserver un FQDN (exemple `ipam.example.net`, à remplacer), un certificat TLS, les administrateurs responsables et le plan d'adressage approuvé.
+2. Réserver un [[Glossary:FQDN]] (exemple `ipam.example.net`, à remplacer), un certificat [[Glossary:TLS]], les administrateurs responsables et le plan d'adressage approuvé.
    👉 Explication : tout doit exister avant l'installation.
 
 3. Exclure scans, pings automatiques, découverte d'hôtes, suppression automatique d'adresses inactives et exposition hors réseau d'administration.

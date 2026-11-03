@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Capturer l'état de référence du NAS neuf.
+Capturer l'état de référence du [[Glossary:NAS]] neuf.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Exporter la configuration : GUI Système > Général > Gérer la configuration > Télécharger le fichier.
+1. Exporter la configuration : [[Glossary:GUI]] Système > Général > Gérer la configuration > Télécharger le fichier.
    ```bash
    sudo midclt call system.info | python3 -m json.tool
    sudo zpool status

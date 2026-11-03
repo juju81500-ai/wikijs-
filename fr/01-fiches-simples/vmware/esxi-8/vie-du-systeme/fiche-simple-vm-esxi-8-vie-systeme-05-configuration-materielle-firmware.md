@@ -20,14 +20,14 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Préparer le BIOS/UEFI et le matériel.
+Préparer le [[Glossary:BIOS]]/UEFI et le matériel.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Au démarrage, entrer dans le Setup (F2 ou F11) et activer : Virtualisation (Intel VT-x / AMD-V), VT-d/IOMMU, mode UEFI, Secure Boot et TPM 2.0 selon la politique.
+1. Au démarrage, entrer dans le Setup (F2 ou F11) et activer : Virtualisation (Intel VT-x / AMD-V), VT-d/IOMMU, mode UEFI, Secure Boot et [[Glossary:TPM]] 2.0 selon la politique.
    👉 Explication : VT-x/AMD-V est indispensable; TPM et Secure Boot renforcent l'attestation de l'hôte.
 
-2. Configurer le RAID matériel (iDRAC : **Configuration > Configuration du stockage**) pour le datastore local, ou passer en mode HBA pour vSAN.
+2. Configurer le [[Glossary:RAID]] matériel (iDRAC : **Configuration > Configuration du stockage**) pour le datastore local, ou passer en mode [[Glossary:HBA]] pour vSAN.
    👉 Explication : ESXi ne gère pas de RAID logiciel : le contrôleur doit présenter un volume redondant.
 
 3. Après installation, vérifier le matériel vu par l'hôte :
@@ -36,7 +36,7 @@ Préparer le BIOS/UEFI et le matériel.
    esxcli hardware cpu global get
    esxcli hardware trustedboot get
    ```
-   👉 Explication : affiche constructeur, modèle, CPU, TPM; l'hôte doit voir la virtualisation matérielle.
+   👉 Explication : affiche constructeur, modèle, [[Glossary:CPU]], TPM; l'hôte doit voir la virtualisation matérielle.
 
 4. Mettre à jour BIOS, iDRAC, contrôleur RAID et cartes réseau avant la mise en production.
    👉 Explication : corrige des défauts connus; respecter la matrice de compatibilité.

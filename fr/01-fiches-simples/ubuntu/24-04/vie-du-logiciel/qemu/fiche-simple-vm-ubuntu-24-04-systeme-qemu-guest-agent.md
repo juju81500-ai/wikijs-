@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Systeme_Qemu_Guest_Agent
 
-- **Environnement** : VM Ubuntu Server (KVM / QEMU / Proxmox VE)
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat)
+- **Environnement** : [[Glossary:VM]] Ubuntu Server ([[Glossary:KVM]] / [[Glossary:QEMU]] / Proxmox VE)
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble Numbat)
 - **Catégorie** : Système / Agent de virtualisation
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[qemu]`, `[guest-agent]`, `[proxmox]`, `[virtio]`, `[kvm]`
 
 ## 🎯 Problème précis à résoudre
-Installer et activer `qemu-guest-agent` sur une VM Ubuntu Server 24-04 LTS pour que l'hyperviseur puisse lire l'adresse IP, arrêter proprement la VM et figer le système de fichiers lors des sauvegardes.
+Installer et activer `qemu-guest-agent` sur une VM Ubuntu Server 24-04 LTS pour que l'hyperviseur puisse lire l'adresse [[Glossary:IP]], arrêter proprement la VM et figer le système de fichiers lors des sauvegardes.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Vérifier la présence du canal virtio exposé par l'hyperviseur :

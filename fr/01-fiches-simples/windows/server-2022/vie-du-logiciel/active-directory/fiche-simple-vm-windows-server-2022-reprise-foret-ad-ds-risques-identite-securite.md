@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-2022-reprise-foret-ad-ds-risques-identite-securite.md
 
-- **Environnement** : Forêt AD DS d'entreprise; laboratoire isolé recommandé
+- **Environnement** : Forêt [[Glossary:AD]] DS d'entreprise; laboratoire isolé recommandé
 - **OS / Version** : Windows Server 2022 pour les contrôleurs de domaine concernés
 - **Catégorie** : Active Directory / sécurité
 - **Tags** : `windows-server-2022`, `active-directory`, `ad-ds`, `forest-recovery`
@@ -24,7 +24,7 @@ Appliquer les opérations d'identité documentées par Microsoft avant la reconn
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Selon le scénario, exécuter avec un responsable AD les opérations documentées : rôles FSMO, nettoyage des métadonnées des DC perdus, DNS, invalidation/réattribution des pools RID.
+1. Selon le scénario, exécuter avec un responsable AD les opérations documentées : rôles [[Glossary:FSMO]], nettoyage des métadonnées des [[Glossary:DC]] perdus, [[Glossary:DNS]], invalidation/réattribution des pools RID.
    👉 Explication : étapes exactes et ordre du guide officiel à respecter.
 
 2. Réinitialiser les secrets krbtgt et comptes privilégiés, puis les mots de passe des comptes de service gérés si une compromission est suspectée.

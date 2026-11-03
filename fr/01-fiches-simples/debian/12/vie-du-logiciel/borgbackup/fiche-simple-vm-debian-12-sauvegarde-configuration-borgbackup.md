@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Debian_12_Sauvegarde_Configuration-BorgBackup.md
 
-- **Environnement** : VM (Debian 12 Bookworm)
+- **Environnement** : [[Glossary:VM]] (Debian 12 Bookworm)
 - **OS / Version** : Debian 12 - Famille Debian
 - **Catégorie** : Sauvegarde & Archivage / BorgBackup
 - **Tags** : `[debian12]`, `[borgbackup]`, `[sauvegarde]`, `[chiffrement]`, `[deduplication]`, `[hardening]`

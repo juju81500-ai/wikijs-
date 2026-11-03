@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-ubuntu-24-04-lemp-configurer-nginx-phpfpm.md
 
-- **Environnement** : VM Ubuntu Server 24-04 dédiée à une application Web PHP
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble); Nginx, PHP 8.3, MariaDB 10.11
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 dédiée à une application Web PHP
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble); Nginx, PHP 8.3, MariaDB 10.11
 - **Catégorie** : web / configuration
 - **Tags** : `ubuntu24.04`, `nginx`, `php8.3`, `mariadb`, `lemp`, `server-block`, `php-fpm`
 
@@ -30,7 +30,7 @@ Créer un server block Nginx qui transmet les fichiers PHP au socket FPM.
    ```
    👉 Explication : la racine est lisible par le groupe Web.
 
-2. Créer `/etc/nginx/sites-available/app` avec ce contenu (`app.example.net` est à remplacer par votre FQDN) :
+2. Créer `/etc/nginx/sites-available/app` avec ce contenu (`app.example.net` est à remplacer par votre [[Glossary:FQDN]]) :
    ```nginx
    server {
        listen 80;

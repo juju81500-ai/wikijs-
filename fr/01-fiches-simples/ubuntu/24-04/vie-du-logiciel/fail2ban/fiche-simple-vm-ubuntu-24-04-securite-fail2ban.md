@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Securite_Fail2ban
 
-- **Environnement** : VM Ubuntu Server
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat) - paquet `fail2ban` depuis le dépôt universe
+- **Environnement** : [[Glossary:VM]] Ubuntu Server
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble Numbat) - paquet `fail2ban` depuis le dépôt universe
 - **Catégorie** : Sécurité / Protection contre les intrusions et le brute-force
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[fail2ban]`, `[ssh]`, `[brute-force]`, `[jail]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Bloquer temporairement les adresses IP qui échouent répétitivement à s'authentifier sur SSH, sur Ubuntu Server 24-04 LTS, avec Fail2ban configuré via le journal systemd.
+Bloquer temporairement les adresses [[Glossary:IP]] qui échouent répétitivement à s'authentifier sur [[Glossary:SSH]], sur Ubuntu Server 24-04 LTS, avec Fail2ban configuré via le journal systemd.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Installer Fail2ban et vérifier le service :

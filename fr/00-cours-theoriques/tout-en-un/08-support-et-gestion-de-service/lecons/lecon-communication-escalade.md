@@ -30,7 +30,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Prérequis et durée
 
-- Notions d'incident, de priorité et de SLA (voir la leçon [ITIL 4 pour le technicien](/fr/00-cours-theoriques/tout-en-un/08-support-et-gestion-de-service/lecons/lecon-itil4-technicien)) ; savoir ouvrir un terminal Linux.
+- Notions d'incident, de priorité et de [[Glossary:SLA]] (voir la leçon [ITIL 4 pour le technicien](/fr/00-cours-theoriques/tout-en-un/08-support-et-gestion-de-service/lecons/lecon-itil4-technicien)) ; savoir ouvrir un terminal Linux.
 - Une **machine virtuelle jetable** pour la mise en pratique (aucun outil installé : seuls Bash et `awk` sont utilisés).
 - Durée totale : environ 3 h 30.
 
@@ -128,7 +128,7 @@ Le niveau suivant **accuse réception** et l'utilisateur est **prévenu** (« Vo
 ### 3.1 Les cinq règles
 
 1. **Dire la situation avant les détails** : le lecteur doit comprendre en deux lignes.
-2. **Éviter le jargon** : « le service d'envoi est arrêté » plutôt que « le démon SMTP a crashé ».
+2. **Éviter le jargon** : « le service d'envoi est arrêté » plutôt que « le démon [[Glossary:SMTP]] a crashé ».
 3. **Être honnête** : ne promettez que ce que vous maîtrisez, annoncez « je reviens vers vous à 11 h » et tenez-le, même pour dire « pas encore de nouvelle ».
 4. **Donner la prochaine étape** : qui fait quoi, quand.
 5. **Rester courtois et factuel** : pas d'accusation, pas de ton défensif.
@@ -223,7 +223,7 @@ Un **post-mortem** (ou retour d'expérience) est une revue **écrite** d'un inci
 - **Pourquoi la messagerie s'est-elle arrêtée ?** Le disque du serveur était plein.
 - **Pourquoi plein ?** Les journaux ont grossi anormalement.
 - **Pourquoi n'a-t-on pas été prévenu ?** L'alerte « disque à 90 % » n'existait pas pour ce serveur.
-- **Pourquoi ?** Le serveur a été ajouté à la CMDB mais pas à la supervision.
+- **Pourquoi ?** Le serveur a été ajouté à la [[Glossary:CMDB]] mais pas à la supervision.
 - **Pourquoi ?** La procédure de mise en service ne prévoit pas cette étape.
 
 **Actions** : (1) ajouter la supervision du disque, propriétaire équipe exploitation, d'ici vendredi ; (2) ajouter l'étape « supervision » à la procédure de mise en service, propriétaire responsable d'équipe, d'ici deux semaines ; (3) contrôler que tous les serveurs de la CMDB sont supervisés, d'ici un mois.
@@ -242,7 +242,7 @@ Faites animer la séance par quelqu'un qui n'a pas géré l'incident, jugez les 
 
 *Figure 4 — Des indicateurs simples, avec leur formule : un indicateur sans définition est inutilisable.*
 
-- **MTTA** (délai moyen de prise en charge) et **MTTR** (délai moyen de résolution).
+- **MTTA** (délai moyen de prise en charge) et **[[Glossary:MTTR]]** (délai moyen de résolution).
 - **FCR** (*first contact resolution*) : part des tickets résolus dès le premier niveau.
 - **Respect des SLA** et **taux de réouverture**.
 - **Satisfaction** après clôture (une question, un champ libre).
@@ -257,7 +257,7 @@ Pièges : la **moyenne** trompe (quelques tickets très longs faussent le MTTR :
 
 Objectif : **calculer des indicateurs** à partir d'un petit fichier de tickets fictifs et **générer un message d'avancement** structuré. Aucune installation, aucun accès réseau, aucune donnée réelle.
 
-> **Précautions** : travaillez dans une **VM jetable** ; pour toute modification sensible ailleurs, prenez un **instantané**, gardez un **accès console de secours**, testez et sachez **revenir en arrière**. Ici, seuls des fichiers d'un dossier dédié sont créés puis supprimés (retour arrière).
+> **Précautions** : travaillez dans une **[[Glossary:VM]] jetable** ; pour toute modification sensible ailleurs, prenez un **instantané**, gardez un **accès console de secours**, testez et sachez **revenir en arrière**. Ici, seuls des fichiers d'un dossier dédié sont créés puis supprimés (retour arrière).
 
 ### Étape 1 — Dossier de travail
 
@@ -454,7 +454,7 @@ a) Des tickets clos trop vite, une qualité dégradée ; b) Un excellent service
 
 - Chapitre « Postmortem Culture: Learning from Failure » (*Site Reliability Engineering*, Google) : <https://sre.google/sre-book/postmortem-culture/>
 - Chapitre « Managing Incidents » (*Site Reliability Engineering*, Google) : <https://sre.google/sre-book/managing-incidents/>
-- Guide NIST SP 800-61 sur la gestion des incidents de sécurité : <https://csrc.nist.gov/pubs/sp/800/61/r2/final>
+- Guide [[Glossary:NIST]] SP 800-61 sur la gestion des incidents de sécurité : <https://csrc.nist.gov/pubs/sp/800/61/r2/final>
 - Manuel de GNU Awk : <https://www.gnu.org/software/gawk/manual/>
 
 ## Crédits des images

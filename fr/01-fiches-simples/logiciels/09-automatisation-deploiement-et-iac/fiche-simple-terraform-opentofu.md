@@ -188,7 +188,7 @@ ls -l ~/tf-prod
 ```
 👉 Explication : Réserve la lecture des fichiers de valeurs et de plan à leur propriétaire. Un plan enregistré peut révéler des valeurs sensibles.
 
-5. Vérification de l'intégrité du binaire et version figée de l'outil : reprendre la vérification d'empreinte de la fiche Packer (`sha256sum -c`) et la vérification GPG du fichier SHA256SUMS. Consigner la version de Terraform ou OpenTofu utilisée dans le dépôt, par exemple dans le bloc `required_version`.
+5. Vérification de l'intégrité du binaire et version figée de l'outil : reprendre la vérification d'empreinte de la fiche Packer (`sha256sum -c`) et la vérification [[Glossary:GPG]] du fichier SHA256SUMS. Consigner la version de Terraform ou OpenTofu utilisée dans le dépôt, par exemple dans le bloc `required_version`.
 👉 Explication : Le binaire qui applique l'infrastructure a les mêmes droits que son administrateur : il doit être authentifié comme n'importe quel logiciel d'administration (commandes exactes de vérification GPG à vérifier sur la version déployée).
 
 6. Chiffrement de l'état côté outil (OpenTofu uniquement) : dans un projet OpenTofu, un bloc `encryption` permet de chiffrer le fichier d'état avant son envoi au backend. Terraform ne propose pas ce chiffrement : dans ce cas, le chiffrement au repos du bucket et les droits d'accès restrictifs sont obligatoires.

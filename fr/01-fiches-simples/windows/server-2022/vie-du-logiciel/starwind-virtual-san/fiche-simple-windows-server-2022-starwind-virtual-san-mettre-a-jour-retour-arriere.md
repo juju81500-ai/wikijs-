@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_Windows_Server_2022_StarWind_Virtual_SAN_Mettre_A_Jour_Retour_Arriere
 
-- **Environnement** : Windows Server 2022 avec StarWind Virtual SAN; fenêtre de maintenance approuvée
+- **Environnement** : Windows Server 2022 avec StarWind Virtual [[Glossary:SAN]]; fenêtre de maintenance approuvée
 - **OS / Version** : Windows Server 2022; compatibilité StarWind à confirmer auprès de l’éditeur
 - **Catégorie** : stockage SAN / maintenance
 - **Tags** : `starwind`, `virtual-san`, `windows-server`, `mise-a-jour`, `retour-arriere`
@@ -30,7 +30,7 @@ Préparer une mise à jour StarWind contrôlée et un retour arrière vérifié.
    👉 Explication : une mise à jour ne constitue pas un plan de reprise.
 3. Vérifier dans la documentation le type d’installation et l’ordre de mise à jour; obtenir le paquet depuis le portail officiel et contrôler son intégrité selon les instructions éditeur.
    👉 Explication : n’appliquer aucun ordre générique à un cluster actif.
-4. Sur une VM de test, suivre l’assistant graphique officiel de la version puis vérifier l’état dans la console StarWind et **Server Manager > Tools > Services**.
+4. Sur une [[Glossary:VM]] de test, suivre l’assistant graphique officiel de la version puis vérifier l’état dans la console StarWind et **Server Manager > Tools > Services**.
    👉 Explication : PowerShell en lecture seule peut confirmer l’état des services avec `Get-Service -Name '*StarWind*'`; ne pas inventer de commande de mise à jour produit.
 5. Tester accès des volumes, état des nœuds et une charge non critique; consigner résultat et version.
    👉 Explication : comparer avec l’état observé avant changement.

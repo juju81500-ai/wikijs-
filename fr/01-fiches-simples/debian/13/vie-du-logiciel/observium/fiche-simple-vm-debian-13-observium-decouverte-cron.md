@@ -30,7 +30,7 @@ Lancer découverte et interrogation puis planifier le poller toutes les cinq min
    sudo ./discovery.php -h sw1.example.invalid
    sudo ./poller.php -h sw1.example.invalid
    ```
-   👉 Explication : on confirme l'absence d'erreur SNMP, la création des RRD et la mise à jour des graphiques.
+   👉 Explication : on confirme l'absence d'erreur [[Glossary:SNMP]], la création des RRD et la mise à jour des graphiques.
 
 2. Créer `/etc/cron.d/observium` :
    ```bash

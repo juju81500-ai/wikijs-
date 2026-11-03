@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Gitea_Securiser_TLS
 
-- **Environnement** : VM Debian 13 isolée; domaine et stockage définis
+- **Environnement** : [[Glossary:VM]] Debian 13 isolée; domaine et stockage définis
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : forge Git / administration
 - **Tags** : `debian13`, `gitea`, `forge-git`, `tls`, `sauvegarde`
@@ -30,11 +30,11 @@ Mettre le reverse proxy sous HTTPS et limiter les flux entrants.
    ```
    👉 Explication : le port 3000 reste interne; n’exposer que les ports approuvés.
 
-2. Configurer proxy et certificat TLS
+2. Configurer proxy et certificat [[Glossary:TLS]]
    ```text
    Navigateur > ouvrir la documentation officielle : https://docs.gitea.com/installation/install-from-binary
    ```
-   👉 Explication : remplacer le nom par le FQDN à remplacer; suivre le guide du proxy retenu. Détail à confirmer dans la documentation officielle avant application : Configurer le proxy approuvé pour le FQDN, certificat valide et transmission du schéma HTTPS. Conserver ROOT_URL = https://FQDN/ (FQDN à remplacer).
+   👉 Explication : remplacer le nom par le [[Glossary:FQDN]] à remplacer; suivre le guide du proxy retenu. Détail à confirmer dans la documentation officielle avant application : Configurer le proxy approuvé pour le FQDN, certificat valide et transmission du schéma HTTPS. Conserver ROOT_URL = https://FQDN/ (FQDN à remplacer).
 
 3. Vérifier certificat et accès HTTPS
    ```bash
@@ -47,11 +47,11 @@ Mettre le reverse proxy sous HTTPS et limiter les flux entrants.
    ```text
    Navigateur > ouvrir la documentation officielle : https://docs.gitea.com/installation/install-from-binary
    ```
-   👉 Explication : faire appliquer les ACL par l’équipe réseau et préserver l’accès d’administration. Détail à confirmer dans la documentation officielle avant application : Autoriser 443/TCP depuis les réseaux clients approuvés. Autoriser le SSH Git seulement si retenu et depuis les réseaux prévus. Refuser l’accès direct au port 3000.
+   👉 Explication : faire appliquer les [[Glossary:ACL]] par l’équipe réseau et préserver l’accès d’administration. Détail à confirmer dans la documentation officielle avant application : Autoriser 443/TCP depuis les réseaux clients approuvés. Autoriser le [[Glossary:SSH]] Git seulement si retenu et depuis les réseaux prévus. Refuser l’accès direct au port 3000.
 
 ## 2. Production — Contrôles
 
-Tester depuis les zones autorisées et refusées; faire valider TLS, renouvellement, MFA, pare-feu et accès SSH.
+Tester depuis les zones autorisées et refusées; faire valider TLS, renouvellement, [[Glossary:MFA]], pare-feu et accès SSH.
 
 ## 3. Production — Sécurité
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-centreon-script.md
 
-- **Environnement** : VM Debian 13 dédiée, serveur Centreon Central avec MariaDB locale
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée, serveur Centreon Central avec MariaDB locale
 - **OS / Version** : Debian 13 Trixie; Centreon 26.10
 - **Catégorie** : supervision / installation
 - **Tags** : `debian13`, `centreon`, `supervision`, `script`, `verification`

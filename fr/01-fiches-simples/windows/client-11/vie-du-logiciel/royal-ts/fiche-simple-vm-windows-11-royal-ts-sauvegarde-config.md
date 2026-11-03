@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_VM_Windows_11_Royal_TS_Sauvegarde_Config
 
-- **Environnement** : Poste Windows 11 x64 d'administration (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'administration ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; Royal TS VERSION_ROYAL_TS (à remplacer)
 - **Catégorie** : gestionnaire de connexions distantes
 - **Tags** : `royal-ts`, `windows11`, `sauvegarde`, `restauration`
@@ -30,7 +30,7 @@ Sauvegarder et restaurer documents et paramètres Royal TS.
 2. `Copy-Item "C:\Documents\NOM_DOCUMENT.rtsz" "C:\Sauvegardes\RoyalTS\NOM_DOCUMENT_DATE.rtsz"` (à remplacer).
    👉 Explication : copie du document.
 
-3. GUI : **File > Save As** vers `C:\Sauvegardes\RoyalTS\`.
+3. [[Glossary:GUI]] : **File > Save As** vers `C:\Sauvegardes\RoyalTS\`.
    👉 Explication : alternative.
 
 4. Restaurer : **File > Open** sur la copie ou `Copy-Item` inverse.

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-appliance-opnsense-carp-pfsync-creer-vip-carp.md
 
-- **Environnement** : Deux appliances OPNsense en haute disponibilité (CARP et pfsync)
+- **Environnement** : Deux appliances OPNsense en haute disponibilité ([[Glossary:CARP]] et pfsync)
 - **OS / Version** : OPNsense (toutes versions compatibles entre les deux nœuds)
 - **Catégorie** : pare-feu / haute disponibilité
 - **Tags** : `opnsense`, `carp`, `pfsync`, `ha`, `firewall`
@@ -37,7 +37,7 @@ Créer les adresses virtuelles CARP identiques sur les deux pare-feu.
    👉 Explication : détermine si le primaire reprend la main au retour.
 
 5. Avant activation, vérifier adresse, masque, interface et absence de conflit.
-   👉 Explication : ne jamais copier une VIP d'exemple dans le réseau réel.
+   👉 Explication : ne jamais copier une [[Glossary:VIP]] d'exemple dans le réseau réel.
 
 ## 2. Production — Contrôles
 

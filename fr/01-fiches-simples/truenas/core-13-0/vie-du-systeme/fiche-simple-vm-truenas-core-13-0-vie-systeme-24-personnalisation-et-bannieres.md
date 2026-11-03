@@ -24,7 +24,7 @@ Afficher un avertissement légal.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Services > SSH > Options > Texte de bannière (Paramètres supplémentaires).
+1. [[Glossary:GUI]] : Services > [[Glossary:SSH]] > Options > Texte de bannière (Paramètres supplémentaires).
    ```sh
    midclt call ssh.config | grep -i banner
    ```

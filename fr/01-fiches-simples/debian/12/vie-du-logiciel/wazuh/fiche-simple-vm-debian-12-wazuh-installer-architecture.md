@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : Debian 12; Wazuh manager, indexer et dashboard selon architecture validée
 - **OS / Version** : version Wazuh 4.x maintenue depuis les sources officielles
-- **Catégorie** : SIEM/XDR / déploiement
+- **Catégorie** : [[Glossary:SIEM]]/XDR / déploiement
 - **Tags** : `debian12`, `wazuh`, `siem`, `installation`, `tls`
 
 ---

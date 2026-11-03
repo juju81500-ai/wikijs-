@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_PowerShell_Securiser
 
-- **Environnement** : VM Debian 13 de laboratoire avec dépôts Microsoft officiels
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire avec dépôts Microsoft officiels
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : shell / scripting
 - **Tags** : `debian13`, `powershell`, `pwsh`, `scripting`, `securite`
@@ -34,7 +34,7 @@ Réduire privilèges et exposition de secrets lors des scripts PowerShell sous L
    Get-ExecutionPolicy -List
    Get-Item ./SCRIPT.ps1 | Format-List FullName,Length
    ```
-   👉 Explication : ExecutionPolicy n’est pas une frontière de sécurité; compléter par ACL Linux et revue de code.
+   👉 Explication : ExecutionPolicy n’est pas une frontière de sécurité; compléter par [[Glossary:ACL]] Linux et revue de code.
 
 3. Tester compte et mode simulation
    ```bash

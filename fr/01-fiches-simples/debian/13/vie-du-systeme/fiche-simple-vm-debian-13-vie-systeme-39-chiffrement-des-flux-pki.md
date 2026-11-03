@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Vie_Systeme_39_Chiffrement_Des_Flux_Pki
 
-- **Environnement** : VM Debian 13 « trixie » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 13 « trixie » (serveur)
 - **OS / Version** : Debian 13; étape 39 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian13`, `vie-du-systeme`, `cycle-de-vie`, `etape-39`
@@ -31,7 +31,7 @@ Obtenir un certificat.
    ```
    👉 Explication : obtient et installe un certificat.
 
-2. Ajouter une CA interne :
+2. Ajouter une [[Glossary:CA]] interne :
    ```bash
    sudo cp ca-entreprise.crt /usr/local/share/ca-certificates/
    sudo update-ca-certificates

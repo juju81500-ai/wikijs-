@@ -23,7 +23,7 @@ Fiche défensive d’administration et de gouvernance. Elle ne remplace pas le g
 
 ## 🧭 Périmètre
 
-Complément aux fiches existantes: suivre la documentation de la version déployée, stocker les secrets hors du dépôt, activer TLS sur le chemin d’accès, appliquer les règles d’accès les plus restrictives et maintenir la chaîne d’authentification et les dépendances à jour. Tester les changements d’ACL/MFA dans un périmètre pilote et préserver un accès de secours explicitement contrôlé.
+Complément aux fiches existantes: suivre la documentation de la version déployée, stocker les secrets hors du dépôt, activer [[Glossary:TLS]] sur le chemin d’accès, appliquer les règles d’accès les plus restrictives et maintenir la chaîne d’authentification et les dépendances à jour. Tester les changements d’[[Glossary:ACL]]/MFA dans un périmètre pilote et préserver un accès de secours explicitement contrôlé.
 
 ## ✅ Autorisation et préparation
 
@@ -31,7 +31,7 @@ Avant toute modification, consigner le propriétaire du service, les actifs et u
 
 ## 🔎 Validation
 
-Vérifier MFA, refus par défaut, journaux dépourvus de secrets et accès aux applications attendues sur un compte pilote. Pour rollback, restaurer la dernière configuration valide et redémarrer selon le processus de changement; invalider tout secret exposé. Vérifier aussi l’horodatage, la journalisation et l’absence de secrets dans les tickets ou exports; faire approuver le résultat par le propriétaire du service.
+Vérifier [[Glossary:MFA]], refus par défaut, journaux dépourvus de secrets et accès aux applications attendues sur un compte pilote. Pour rollback, restaurer la dernière configuration valide et redémarrer selon le processus de changement; invalider tout secret exposé. Vérifier aussi l’horodatage, la journalisation et l’absence de secrets dans les tickets ou exports; faire approuver le résultat par le propriétaire du service.
 
 ## ↩️ Retour arrière
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_10_Compte_Super_Administrateur
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 10 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-10`
@@ -36,7 +36,7 @@ Sécuriser le compte `root`.
    ```
    👉 Explication : identifie les comptes utilisables; seuls les comptes réellement nécessaires doivent avoir un mot de passe.
 
-3. Interdire la connexion SSH de `root` (Alpine autorise `root` par clé seulement par défaut) :
+3. Interdire la connexion [[Glossary:SSH]] de `root` (Alpine autorise `root` par clé seulement par défaut) :
    ```sh
    doas grep -E '^#?PermitRootLogin' /etc/ssh/sshd_config
    ```

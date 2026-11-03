@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Contrôler la compatibilité LDAP et AD DS avant toute migration.
+Contrôler la compatibilité [[Glossary:LDAP]] et [[Glossary:AD]] DS avant toute migration.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Appliquer les protections du système (SMB, TLS, NTLM, LLMNR).
+Appliquer les protections du système (SMB, [[Glossary:TLS]], [[Glossary:NTLM]], LLMNR).
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -31,7 +31,7 @@ Appliquer les protections du système (SMB, TLS, NTLM, LLMNR).
    ```
    👉 Explication : protège contre l'interception; tester la compatibilité des clients anciens.
 
-2. Désactiver LLMNR (**Modèles d'administration > Réseau > Client DNS > Désactiver la résolution de noms multidiffusion**) :
+2. Désactiver LLMNR (**Modèles d'administration > Réseau > Client [[Glossary:DNS]] > Désactiver la résolution de noms multidiffusion**) :
    ```powershell
    New-Item 'HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient' -Force | Out-Null
    Set-ItemProperty 'HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient' EnableMulticast 0
@@ -46,7 +46,7 @@ Appliquer les protections du système (SMB, TLS, NTLM, LLMNR).
 
 ## 2. Production — Contrôles
 
-Appliquer ces paramètres par GPO et par baseline de sécurité.
+Appliquer ces paramètres par [[Glossary:GPO]] et par baseline de sécurité.
 
 ## 3. Production — Sécurité
 

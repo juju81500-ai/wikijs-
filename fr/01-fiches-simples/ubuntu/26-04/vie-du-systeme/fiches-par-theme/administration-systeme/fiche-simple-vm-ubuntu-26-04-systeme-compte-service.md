@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Systeme_Compte_Service
 
-- **Environnement** : VM ou serveur Ubuntu hébergeant une application ou un service dédié
-- **OS / Version** : Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu hébergeant une application ou un service dédié
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]]
 - **Catégorie** : Système / Comptes et isolation des services
 - **Tags** : `ubuntu2604`, `useradd`, `nologin`, `service-account`, `systemd`, `moindre-privilege`
 

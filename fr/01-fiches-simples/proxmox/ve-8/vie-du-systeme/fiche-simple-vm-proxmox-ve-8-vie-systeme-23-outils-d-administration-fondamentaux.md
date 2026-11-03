@@ -37,9 +37,9 @@ Installer les outils de diagnostic courants.
    pvesm status
    pvecm status
    ```
-   👉 Explication : VM, conteneurs, stockages et cluster.
+   👉 Explication : [[Glossary:VM]], conteneurs, stockages et cluster.
 
-3. Activer le contrôle SMART des disques :
+3. Activer le contrôle [[Glossary:SMART]] des disques :
    ```bash
    smartctl -H /dev/sdX
    ```

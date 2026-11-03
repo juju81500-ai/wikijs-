@@ -49,7 +49,7 @@ Conserver les fichiers de configuration jusqu'à décision de changement explici
 
 ## 3. Production — Sécurité
 
-- Révoquer la clé API si l'hôte est définitivement retiré.
+- Révoquer la clé [[Glossary:API]] si l'hôte est définitivement retiré.
 - Ne pas purger journaux et configuration pendant une enquête.
 
 ## Validation et retour arrière

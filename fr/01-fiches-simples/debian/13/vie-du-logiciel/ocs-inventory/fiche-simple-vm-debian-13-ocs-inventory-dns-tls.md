@@ -11,16 +11,16 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-ocs-inventory-dns-tls.md
 
-- **Environnement** : VM Debian 13 dédiée, OCS Inventory 3.0 (Nginx, uWSGI, PostgreSQL local)
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée, OCS Inventory 3.0 (Nginx, uWSGI, PostgreSQL local)
 - **OS / Version** : Debian 13 Trixie; OCS Inventory 3.0; PostgreSQL 17
-- **Catégorie** : inventaire de parc / ITSM
+- **Catégorie** : inventaire de parc / [[Glossary:ITSM]]
 - **Tags** : `debian13`, `ocs-inventory`, `ocs3`, `postgresql`, `nginx`, `tls`, `dns`
 
 ---
 
 ## Problème précis à résoudre
 
-Fixer les noms de serveur Nginx pour la console et l'API, puis activer TLS.
+Fixer les noms de serveur Nginx pour la console et l'[[Glossary:API]], puis activer [[Glossary:TLS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -37,7 +37,7 @@ Fixer les noms de serveur Nginx pour la console et l'API, puis activer TLS.
    ```
    👉 Explication : `nginx -t` valide la syntaxe avant tout rechargement.
 
-4. Rediriger HTTP vers HTTPS une fois les certificats validés.
+4. Rediriger [[Glossary:HTTP]] vers HTTPS une fois les certificats validés.
    👉 Explication : évite l'accès en clair après vérification.
 
 ## 2. Production — Contrôles

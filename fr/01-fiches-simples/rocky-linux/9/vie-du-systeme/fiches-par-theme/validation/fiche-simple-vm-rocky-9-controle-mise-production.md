@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-rocky-9-controle-mise-production.md
 
-- **Environnement** : VM ou serveur Rocky Linux
-- **OS / Version** : Rocky Linux 9 / RHEL 9
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9
 - **Catégorie** : Production / Validation / Exploitation
 - **Tags** : `[rocky9]`, `[rhel9]`, `[production]`, `[validation]`, `[selinux]`, `[sauvegarde]`
 
@@ -40,7 +40,7 @@ Effectuer la réception technique d'un serveur Rocky Linux avant ouverture en pr
    ```bash
    nc -zv IP_SERVEUR PORT
    ```
-   👉 Explication : remplacer IP et port; puis restaurer une sauvegarde dans une VM isolée.
+   👉 Explication : remplacer [[Glossary:IP]] et port; puis restaurer une sauvegarde dans une VM isolée.
 
 
 ## ⚡ 2. Production — Façon Simplifiée
@@ -53,7 +53,7 @@ Effectuer la réception technique d'un serveur Rocky Linux avant ouverture en pr
    👉 Explication : hostname/IP documentés, dépôts corrects, heure synchronisée.
 
 2. Accès : `getent group wheel` et `sudo grep -E '^(PermitRootLogin|PasswordAuthentication)' /etc/ssh/sshd_config`
-   👉 Explication : compte nominatif dans `wheel`, SSH validé; vérifier aussi la console hyperviseur.
+   👉 Explication : compte nominatif dans `wheel`, [[Glossary:SSH]] validé; vérifier aussi la console hyperviseur.
 
 3. Sécurité et rôle :
    ```bash

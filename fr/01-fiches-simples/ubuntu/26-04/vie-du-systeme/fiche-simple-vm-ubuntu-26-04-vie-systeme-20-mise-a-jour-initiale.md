@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_20_Mise_A_Jour_Initiale
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 20 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-20`
@@ -31,7 +31,7 @@ Appliquer tous les correctifs.
    sudo apt autoremove -y
    sudo snap refresh
    ```
-   👉 Explication : installe les mises à jour APT, y compris celles qui changent des dépendances, puis celles des snaps.
+   👉 Explication : installe les mises à jour [[Glossary:APT]], y compris celles qui changent des dépendances, puis celles des snaps.
 
 2. Redémarrer si le noyau a changé :
    ```bash

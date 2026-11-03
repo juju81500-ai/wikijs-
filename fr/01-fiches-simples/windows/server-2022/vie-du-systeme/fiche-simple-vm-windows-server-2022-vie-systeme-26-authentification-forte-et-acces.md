@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Sécuriser l'accès d'administration à distance (RDP, WinRM, OpenSSH).
+Sécuriser l'accès d'administration à distance ([[Glossary:RDP]], WinRM, OpenSSH).
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -30,7 +30,7 @@ Sécuriser l'accès d'administration à distance (RDP, WinRM, OpenSSH).
    Set-ItemProperty 'HKLM:\System\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' UserAuthentication 1
    Enable-NetFirewallRule -DisplayGroup 'Bureau à distance'
    ```
-   👉 Explication : autorise RDP avec NLA; le groupe de règles s'appelle `Remote Desktop` sur une édition anglaise.
+   👉 Explication : autorise RDP avec [[Glossary:NLA]]; le groupe de règles s'appelle `Remote Desktop` sur une édition anglaise.
 
 2. Activer WinRM pour l'administration PowerShell :
    ```powershell
@@ -46,15 +46,15 @@ Sécuriser l'accès d'administration à distance (RDP, WinRM, OpenSSH).
    Start-Service sshd
    Set-Service sshd -StartupType Automatic
    ```
-   👉 Explication : fournit un accès SSH avec clés; ne l'activer que si le besoin existe.
+   👉 Explication : fournit un accès [[Glossary:SSH]] avec clés; ne l'activer que si le besoin existe.
 
 ## 2. Production — Contrôles
 
-Passer par un bastion ou un VPN et limiter les adresses sources autorisées.
+Passer par un bastion ou un [[Glossary:VPN]] et limiter les adresses sources autorisées.
 
 ## 3. Production — Sécurité
 
-Jamais de RDP exposé à Internet; MFA sur le bastion; NLA obligatoire.
+Jamais de RDP exposé à Internet; [[Glossary:MFA]] sur le bastion; NLA obligatoire.
 
 ## Validation et retour arrière
 

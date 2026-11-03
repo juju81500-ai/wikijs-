@@ -26,7 +26,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## 2. Prérequis
 
-- Machine Linux dédiée ou VM avec passage USB d'un adaptateur Wi-Fi capable de mode moniteur (la compatibilité du pilote est à vérifier dans la documentation Kismet).
+- Machine Linux dédiée ou [[Glossary:VM]] avec passage [[Glossary:USB]] d'un adaptateur Wi-Fi capable de mode moniteur (la compatibilité du pilote est à vérifier dans la documentation Kismet).
 - Liste de référence des SSID/BSSID légitimes de l'organisation.
 - Espace de stockage et procédure de purge des journaux.
 
@@ -50,7 +50,7 @@ ip link
 kismet -c wlan0
 ```
 
-3. Au premier lancement, créer les identifiants de l'interface web (la page par défaut écoute en local sur le port 2501) ; ne pas l'exposer hors de l'hôte et y accéder par tunnel SSH si besoin.
+3. Au premier lancement, créer les identifiants de l'interface web (la page par défaut écoute en local sur le port 2501) ; ne pas l'exposer hors de l'hôte et y accéder par tunnel [[Glossary:SSH]] si besoin.
 4. Limiter les canaux ou bandes à ceux du périmètre autorisé dans les paramètres de la source.
 
 ## 5. Exploitation défensive

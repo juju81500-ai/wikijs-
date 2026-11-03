@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_Snort_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Snort
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Snort
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Snort / mise à jour et retour arrière
 - **Tags** : `snort`, `rocky9`, `vie-du-logiciel`, `mise-a-jour-retour-arriere`
 

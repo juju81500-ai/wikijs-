@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Déployer le certificat de l'autorité interne et vérifier TLS.
+Déployer le certificat de l'autorité interne et vérifier [[Glossary:TLS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -28,7 +28,7 @@ Déployer le certificat de l'autorité interne et vérifier TLS.
    ```powershell
    Import-Certificate -FilePath 'C:\Certs\AC_RACINE.cer' -CertStoreLocation Cert:\LocalMachine\Root
    ```
-   👉 Explication : ajoute la racine au magasin machine (`AC_RACINE.cer` fourni par la PKI de l'entreprise).
+   👉 Explication : ajoute la racine au magasin machine (`AC_RACINE.cer` fourni par la [[Glossary:PKI]] de l'entreprise).
 
 2. Lister et contrôler les certificats : **certlm.msc > Personnel**.
    ```powershell
@@ -37,7 +37,7 @@ Déployer le certificat de l'autorité interne et vérifier TLS.
    ```
    👉 Explication : affiche les certificats et ceux qui expirent dans moins de 60 jours.
 
-3. Demander un certificat machine à l'autorité interne (inscription automatique par GPO recommandée).
+3. Demander un certificat machine à l'autorité interne (inscription automatique par [[Glossary:GPO]] recommandée).
    ```powershell
    Get-Certificate -Template 'Machine' -CertStoreLocation Cert:\LocalMachine\My
    ```

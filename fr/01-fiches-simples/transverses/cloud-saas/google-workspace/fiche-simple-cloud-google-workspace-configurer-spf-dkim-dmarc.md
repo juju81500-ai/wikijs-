@@ -20,14 +20,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Publier SPF, activer DKIM et publier DMARC pour DOMAINE afin de limiter l'usurpation d'identité.
+Publier [[Glossary:SPF]], activer [[Glossary:DKIM]] et publier [[Glossary:DMARC]] pour DOMAINE afin de limiter l'usurpation d'identité.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Publier un TXT SPF sur DOMAINE (à remplacer) : `v=spf1 include:_spf.google.com ~all` (ajouter les autres expéditeurs légitimes; un seul SPF par domaine).
    👉 Explication : valeur recommandée par Google; durcir en `-all` quand l'inventaire est complet.
 
-2. Interface : console d'administration > Applications > Google Workspace > Gmail > Authentifier les e-mails : sélectionner DOMAINE, générer la clé DKIM (2048 bits recommandé), publier le TXT indiqué (nom et valeur propres au domaine) chez l'hébergeur DNS, puis cliquer sur « Démarrer l'authentification ».
+2. Interface : console d'administration > Applications > Google Workspace > Gmail > Authentifier les e-mails : sélectionner DOMAINE, générer la clé DKIM (2048 bits recommandé), publier le TXT indiqué (nom et valeur propres au domaine) chez l'hébergeur [[Glossary:DNS]], puis cliquer sur « Démarrer l'authentification ».
    👉 Explication : DKIM ne signe qu'après publication DNS et propagation.
 
 3. Publier un TXT `_dmarc.DOMAINE` : `v=DMARC1; p=none; rua=mailto:ADRESSE_RAPPORTS`.

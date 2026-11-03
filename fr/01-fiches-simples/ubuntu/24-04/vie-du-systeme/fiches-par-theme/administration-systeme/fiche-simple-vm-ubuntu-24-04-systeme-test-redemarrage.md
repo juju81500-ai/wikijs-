@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Systeme_Test_Redemarrage
 
-- **Environnement** : VM Ubuntu Server (production après validation en fenêtre de maintenance)
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat)
+- **Environnement** : [[Glossary:VM]] Ubuntu Server (production après validation en fenêtre de maintenance)
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble Numbat)
 - **Catégorie** : Système / Test de persistance au redémarrage
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[reboot]`, `[systemd]`, `[fstab]`, `[netplan]`, `[validation]`
 
 ## 🎯 Problème précis à résoudre
-Vérifier qu'un serveur Ubuntu Server 24-04 LTS redémarre sans intervention : montages, réseau, DNS, horloge et services métier doivent revenir à l'état attendu, avant toute mise en production définitive.
+Vérifier qu'un serveur Ubuntu Server 24-04 LTS redémarre sans intervention : montages, réseau, [[Glossary:DNS]], horloge et services métier doivent revenir à l'état attendu, avant toute mise en production définitive.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Relever l'état de référence avant le redémarrage :
@@ -28,7 +28,7 @@ Vérifier qu'un serveur Ubuntu Server 24-04 LTS redémarre sans intervention : m
    ip route
    systemctl list-unit-files --state=enabled --no-pager
    ```
-   👉 *Explication : Ces sorties servent de comparaison après redémarrage ; noter l'adresse IP, la passerelle et la liste des services activés.*
+   👉 *Explication : Ces sorties servent de comparaison après redémarrage ; noter l'adresse [[Glossary:IP]], la passerelle et la liste des services activés.*
 2. Redémarrer dans la VM de test :
    ```bash
    sudo systemctl reboot

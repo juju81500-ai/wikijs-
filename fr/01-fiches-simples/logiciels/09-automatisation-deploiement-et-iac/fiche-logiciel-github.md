@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 📚 Couverture dans le pack
 
-Couvert — périmètre SaaS demandé : compte, clés SSH et secrets chiffrés GitHub Actions; aucun déploiement OS.
+Couvert — périmètre SaaS demandé : compte, clés [[Glossary:SSH]] et secrets chiffrés GitHub Actions; aucun déploiement OS.
 
 ## 🧭 Utilisation
 

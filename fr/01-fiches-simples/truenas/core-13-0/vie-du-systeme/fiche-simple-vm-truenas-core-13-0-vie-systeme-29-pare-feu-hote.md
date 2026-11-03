@@ -24,7 +24,7 @@ Limiter l'accès aux interfaces d'administration.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Général > Adresse IPv4 de l'interface web (liste d'écoute).
+1. [[Glossary:GUI]] : Système > Général > Adresse IPv4 de l'interface web (liste d'écoute).
    ```sh
    midclt call system.general.update '{"ui_address": ["ADRESSE_NAS"]}'
    ```

@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Leçon — Modèle OSI et TCP/IP : couches, encapsulation et PDU
 
 - **Tags** : `transverse`, `tout-en-un`, `lecon`, `reseau`, `osi`, `tcp-ip`, `encapsulation`, `pdu`
-- **Niveau** : débutant à intermédiaire (TSSR, support, administration système)
+- **Niveau** : débutant à intermédiaire ([[Glossary:TSSR]], support, administration système)
 - **Durée estimée** : 3 h 30 (lecture 1 h 30, laboratoire 1 h, exercices et quiz 1 h)
 
 ---
@@ -22,12 +22,12 @@ dateModified: 2026-11-03T09:36:13Z
 À la fin de cette leçon, vous saurez :
 
 - expliquer pourquoi les réseaux sont conçus en **couches** et ce que chaque couche apporte ;
-- citer les 7 couches du modèle **OSI** et les 4 couches du modèle **TCP/IP**, puis les mettre en correspondance ;
+- citer les 7 couches du modèle **OSI** et les 4 couches du modèle **[[Glossary:TCP]]/IP**, puis les mettre en correspondance ;
 - décrire l'**encapsulation** et la **décapsulation** étape par étape, avec les en-têtes ajoutés à chaque niveau ;
 - nommer correctement le **PDU** (unité de données de protocole) de chaque couche : message, segment, datagramme, paquet, trame, bits ;
-- distinguer ce qui **change** (adresses MAC) et ce qui **reste** (adresses IP) lorsqu'un paquet traverse un routeur ;
-- comparer **TCP** et **UDP** et décrire la poignée de main en trois temps ;
-- calculer la taille d'une trame Ethernet, la **MTU** et le **MSS** ;
+- distinguer ce qui **change** (adresses MAC) et ce qui **reste** (adresses [[Glossary:IP]]) lorsqu'un paquet traverse un routeur ;
+- comparer **TCP** et **[[Glossary:UDP]]** et décrire la poignée de main en trois temps ;
+- calculer la taille d'une trame Ethernet, la **[[Glossary:MTU]]** et le **MSS** ;
 - utiliser le modèle comme grille de **diagnostic** (de la couche 1 vers la couche 7).
 
 ## Prérequis et durée
@@ -78,9 +78,9 @@ Le modèle **OSI** (*Open Systems Interconnection*) a été normalisé à la fin
 
 ### 2.1 Les sept couches
 
-**Couche 7 — Application.** Elle fournit des services directement exploitables par les logiciels : HTTP pour le web, DNS pour les noms, SMTP/IMAP pour le courrier, SSH pour l'accès distant, DHCP pour l'attribution d'adresses. Ne la confondez pas avec « l'application » au sens du logiciel : un navigateur *utilise* la couche application, il n'*est* pas cette couche.
+**Couche 7 — Application.** Elle fournit des services directement exploitables par les logiciels : [[Glossary:HTTP]] pour le web, [[Glossary:DNS]] pour les noms, [[Glossary:SMTP]]/IMAP pour le courrier, [[Glossary:SSH]] pour l'accès distant, [[Glossary:DHCP]] pour l'attribution d'adresses. Ne la confondez pas avec « l'application » au sens du logiciel : un navigateur *utilise* la couche application, il n'*est* pas cette couche.
 
-**Couche 6 — Présentation.** Elle s'occupe de la **représentation** des données : encodage des caractères (UTF-8), compression, chiffrement. Dans la pratique actuelle, TLS (le « S » de HTTPS) est souvent rattaché ici, mais cette attribution reste discutable.
+**Couche 6 — Présentation.** Elle s'occupe de la **représentation** des données : encodage des caractères (UTF-8), compression, chiffrement. Dans la pratique actuelle, [[Glossary:TLS]] (le « S » de HTTPS) est souvent rattaché ici, mais cette attribution reste discutable.
 
 **Couche 5 — Session.** Elle gère l'**ouverture, le maintien et la fermeture de dialogues** entre applications (reprise après coupure, points de synchronisation). Dans la pile TCP/IP, ces fonctions sont assurées par les applications elles-mêmes.
 
@@ -92,7 +92,7 @@ Le modèle **OSI** (*Open Systems Interconnection*) a été normalisé à la fin
 
 **Couche 1 — Physique.** Elle transporte les **bits** sous forme de signaux électriques, lumineux ou radio : connecteurs, câbles, fréquences, débits. PDU : **bits** (ou symboles).
 
-OSI n'est **pas** un protocole installé sur vos machines : c'est une **grille de lecture**. Les protocoles réels ne se rangent pas toujours proprement dans une case (ARP flotte entre 2 et 3, TLS entre 4 et 7) ; utilisez le modèle pour **raisonner**, pas pour « classer à tout prix ».
+OSI n'est **pas** un protocole installé sur vos machines : c'est une **grille de lecture**. Les protocoles réels ne se rangent pas toujours proprement dans une case ([[Glossary:ARP]] flotte entre 2 et 3, TLS entre 4 et 7) ; utilisez le modèle pour **raisonner**, pas pour « classer à tout prix ».
 
 ---
 
@@ -102,9 +102,9 @@ Le modèle **TCP/IP** a été défini pour ARPANET, avant OSI, avec une approche
 
 | Couche TCP/IP | Rôle | Équivalent OSI | Exemples de protocoles |
 |---|---|---|---|
-| **Application** | Services pour l'utilisateur et les programmes | 7, 6, 5 | HTTP, HTTPS, DNS, DHCP, SMTP, SSH, NTP |
+| **Application** | Services pour l'utilisateur et les programmes | 7, 6, 5 | HTTP, HTTPS, DNS, DHCP, SMTP, SSH, [[Glossary:NTP]] |
 | **Transport** | Dialogue de bout en bout, ports | 4 | TCP, UDP, (QUIC au-dessus d'UDP) |
-| **Internet** | Adressage et routage | 3 | IPv4, IPv6, ICMP |
+| **Internet** | Adressage et routage | 3 | IPv4, IPv6, [[Glossary:ICMP]] |
 | **Accès réseau** (ou « liaison ») | Transmission sur le lien local | 2 et 1 | Ethernet, Wi-Fi (802.11), PPP |
 
 Pour dépanner, on parle en numéros OSI (« problème de couche 2 ») ; pour comprendre Internet, TCP/IP est plus fidèle.
@@ -119,7 +119,7 @@ Quand une application envoie des données, **chaque couche les enveloppe** :
 
 1. L'**application** produit un message (par exemple une requête HTTP).
 2. Le **transport** ajoute son en-tête (ports source et destination, numéros de séquence…) : on obtient un **segment**.
-3. La couche **Internet** ajoute son en-tête (adresses IP source et destination, TTL…) : on obtient un **paquet**.
+3. La couche **Internet** ajoute son en-tête (adresses IP source et destination, [[Glossary:TTL]]…) : on obtient un **paquet**.
 4. L'**accès réseau** ajoute un en-tête (adresses MAC, type) et une **fin de trame** (somme de contrôle FCS) : on obtient une **trame**.
 5. La carte réseau convertit la trame en **signaux**.
 
@@ -192,7 +192,7 @@ On appelle ce surcoût l'**overhead**. Il est d'environ 4,3 % ici ; il devient �
 ### 6.1 Deux types d'adresses, deux rôles
 
 - L'adresse **MAC** (48 bits, notée `00:00:5e:00:53:01`) identifie une interface **sur un lien**. Elle est lue et réécrite à chaque saut.
-- L'adresse **IP** identifie une interface **dans l'ensemble du réseau**. Elle reste (hors traduction d'adresses NAT) de bout en bout.
+- L'adresse **IP** identifie une interface **dans l'ensemble du réseau**. Elle reste (hors traduction d'adresses [[Glossary:NAT]]) de bout en bout.
 
 Analogie : l'adresse IP est l'**adresse postale** du destinataire final, tandis que l'adresse MAC est le **nom du prochain facteur** qui prendra le colis.
 
@@ -352,7 +352,7 @@ Get-NetTCPConnection -State Established | Select-Object LocalAddress, LocalPort,
 
 ### Étape 6 — Capturer et reconnaître l'encapsulation (VM jetable uniquement)
 
-Dans un terminal avec droits d'administration, sur la VM du laboratoire :
+Dans un terminal avec droits d'administration, sur la [[Glossary:VM]] du laboratoire :
 
 ```bash
 sudo tcpdump -nn -e -c 8 -i eth0 'tcp port 80 or icmp'

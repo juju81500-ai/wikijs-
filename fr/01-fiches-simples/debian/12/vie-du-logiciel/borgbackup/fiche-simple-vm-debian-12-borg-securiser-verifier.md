@@ -36,7 +36,7 @@ Protéger l'accès au dépôt et vérifier son intégrité sans perturber les sa
    ```
    👉 Explication : planifier ce contrôle en surveillant l'impact I/O; `--verify-data` est plus complet mais plus long.
 
-3. Restreindre la clé SSH côté destination dans `authorized_keys` :
+3. Restreindre la clé [[Glossary:SSH]] côté destination dans `authorized_keys` :
    ```bash
    command="borg serve --restrict-to-path /srv/borg/depot --append-only",restrict ssh-ed25519 AAAA... borg-client
    ```

@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-lxc-alpine-3-19-reseau-diagnostic-dns-routes.md
 
-- **Environnement** : LXC Alpine administré depuis Proxmox VE
+- **Environnement** : [[Glossary:LXC]] Alpine administré depuis Proxmox VE
 - **OS / Version** : Alpine Linux 3-19 avec BusyBox et OpenRC (version legacy)
 - **Catégorie** : Réseau / Diagnostic
 - **Tags** : `[alpine3.19]`, `[alpine]`, `[lxc]`, `[reseau]`, `[dns]`, `[busybox]`, `[openrc]`
 
 ## 🎯 Problème précis à résoudre
-Diagnostiquer une perte de connectivité ou de résolution DNS dans Alpine LXC, en distinguant les paramètres fournis par Proxmox de ceux du conteneur.
+Diagnostiquer une perte de connectivité ou de résolution [[Glossary:DNS]] dans Alpine LXC, en distinguant les paramètres fournis par Proxmox de ceux du conteneur.
 
 > Alpine 3-19 est une version ancienne : réserver cette fiche à un environnement existant ou de laboratoire et planifier une migration vers une branche maintenue.
 
@@ -34,7 +34,7 @@ Diagnostiquer une perte de connectivité ou de résolution DNS dans Alpine LXC, 
    ping -c 3 <passerelle>
    nslookup <nom-a-tester>
    ```
-   👉 *Explication : si la passerelle répond mais que `nslookup` échoue, examiner le DNS; si la route manque, vérifier d'abord la configuration réseau du CT.*
+   👉 *Explication : si la passerelle répond mais que `nslookup` échoue, examiner le DNS; si la route manque, vérifier d'abord la configuration réseau du [[Glossary:CT]].*
 
 ## ⚡ 2. Production — Façon Simplifiée
 1. Dans Proxmox, vérifier l'adresse, la passerelle, le bridge/VLAN et les paramètres DNS configurés pour le CT.

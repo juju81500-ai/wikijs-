@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_MongoDB_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; MongoDB Community (dépôt officiel)
 - **Catégorie** : base de données / MongoDB / Prérequis et limites
 - **Tags** : `debian13`, `mongodb`, `prerequis`
@@ -30,10 +30,10 @@ Vérifier qu'un MongoDB Community peut être installé sur Debian 13 et cadrer l
    grep -m1 -o -w avx /proc/cpuinfo || echo 'AVX absent'
    df -h /var/lib /var/backups
    ```
-   👉 Explication : MongoDB 5.0 et plus exige un processeur avec AVX ; prévoir de l'espace pour données, journal et sauvegardes (XFS recommandé par l'éditeur).
+   👉 Explication : MongoDB 5.0 et plus exige un processeur avec AVX ; prévoir de l'espace pour données, journal et sauvegardes ([[Glossary:XFS]] recommandé par l'éditeur).
 
 2. Vérifier le support de Debian 13 :
-   👉 Explication : MongoDB Community est distribué par son propre dépôt APT : vérifier dans la matrice de compatibilité de la version visée que Debian 13 est prise en charge ; à défaut utiliser une distribution listée ou un conteneur officiel.
+   👉 Explication : MongoDB Community est distribué par son propre dépôt [[Glossary:APT]] : vérifier dans la matrice de compatibilité de la version visée que Debian 13 est prise en charge ; à défaut utiliser une distribution listée ou un conteneur officiel.
 
 3. Contrôler le port :
    ```bash
@@ -43,7 +43,7 @@ Vérifier qu'un MongoDB Community peut être installé sur Debian 13 et cadrer l
 
 ## 2. Production — Contrôles
 
-Consigner version, volumétrie, clients, responsable, RPO/RTO.
+Consigner version, volumétrie, clients, responsable, [[Glossary:RPO]]/RTO.
 
 ## 3. Production — Sécurité
 

@@ -30,8 +30,8 @@ Sécuriser le compte root.
    ```
    👉 Explication : vérifie le compte sans afficher le mot de passe.
 
-2. Désactiver la connexion root SSH par mot de passe (étape 27).
-   👉 Explication : root reste utilisable à la console et via la GUI.
+2. Désactiver la connexion root [[Glossary:SSH]] par mot de passe (étape 27).
+   👉 Explication : root reste utilisable à la console et via la [[Glossary:GUI]].
 
 ## 2. Production — Contrôles
 

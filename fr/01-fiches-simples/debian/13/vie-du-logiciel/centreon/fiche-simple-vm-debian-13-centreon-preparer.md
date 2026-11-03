@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-centreon-preparer.md
 
-- **Environnement** : VM Debian 13 dédiée, serveur Centreon Central avec MariaDB locale
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée, serveur Centreon Central avec MariaDB locale
 - **OS / Version** : Debian 13 Trixie; Centreon 26.10
 - **Catégorie** : supervision / prérequis
 - **Tags** : `debian13`, `centreon`, `supervision`, `prerequis`
@@ -30,7 +30,7 @@ Vérifier que la VM Debian 13 est prête (nom, heure, réseau, espace disque) av
    timedatectl status
    ip -br address
    ```
-   👉 Explication : affiche le nom d'hôte, l'heure et l'adresse IP; l'IP doit être fixe et le nom conforme au DNS.
+   👉 Explication : affiche le nom d'hôte, l'heure et l'adresse [[Glossary:IP]]; l'IP doit être fixe et le nom conforme au [[Glossary:DNS]].
 
 2. Exécuter :
    ```bash
@@ -50,7 +50,7 @@ Vérifier que la VM Debian 13 est prête (nom, heure, réseau, espace disque) av
 
 ## 2. Production — Contrôles
 
-Prévoir DNS, IP fixe, fuseau horaire, serveur SMTP, certificat TLS, espace pour les métriques et une sauvegarde testable; dimensionner selon le nombre d'hôtes, de services, les intervalles et la rétention.
+Prévoir DNS, IP fixe, fuseau horaire, serveur [[Glossary:SMTP]], certificat [[Glossary:TLS]], espace pour les métriques et une sauvegarde testable; dimensionner selon le nombre d'hôtes, de services, les intervalles et la rétention.
 
 ## 3. Production — Sécurité
 

@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 📚 Couverture dans le pack
 
-Couvert — PowerShell 7 documenté sur Debian 13, Ubuntu 24-04, Rocky Linux 9, Windows Server 2022 et Windows 11 (installation, profils, remoting SSH, modules, signature là où elle s'applique). Windows PowerShell 5.1 (intégré à Windows) est traité en comparaison de PowerShell 7 : WinRM, modules et stratégie d'exécution.
+Couvert — PowerShell 7 documenté sur Debian 13, Ubuntu 24-04, Rocky Linux 9, Windows Server 2022 et Windows 11 (installation, profils, remoting [[Glossary:SSH]], modules, signature là où elle s'applique). Windows PowerShell 5.1 (intégré à Windows) est traité en comparaison de PowerShell 7 : WinRM, modules et stratégie d'exécution.
 
 ## 🧭 Utilisation
 

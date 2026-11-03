@@ -47,7 +47,7 @@ Démarrer la stack et terminer l'assistant initial de Wiki.js.
    👉 Explication : `db` doit être healthy et `wiki` sans erreur persistante.
 
 4. Ouvrir **https://wiki.example.net** (adresse d'exemple à remplacer), terminer l'assistant, créer le compte administrateur avec un mot de passe unique, puis définir l'URL publique canonique dans **Administration > General**.
-   👉 Explication : l'URL canonique évite des liens erronés; configurer ensuite SMTP et l'authentification nécessaires.
+   👉 Explication : l'URL canonique évite des liens erronés; configurer ensuite [[Glossary:SMTP]] et l'authentification nécessaires.
 
 ## 2. Production — Contrôles
 
@@ -56,7 +56,7 @@ Planifier la mise en service en fenêtre approuvée et noter les versions d'imag
 ## 3. Production — Sécurité
 
 - Ne pas laisser de compte administrateur partagé.
-- Ne pas activer TLS dans Wiki.js : TLS est terminé par Traefik.
+- Ne pas activer [[Glossary:TLS]] dans Wiki.js : TLS est terminé par Traefik.
 
 ## Validation et retour arrière
 

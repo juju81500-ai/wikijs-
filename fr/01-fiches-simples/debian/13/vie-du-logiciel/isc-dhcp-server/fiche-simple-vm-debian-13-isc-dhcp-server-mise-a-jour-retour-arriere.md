@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_ISC-DHCP-Server_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Debian 13; ISC DHCP déprécié, usage transitoire
+- **Environnement** : [[Glossary:VM]] Debian 13; ISC [[Glossary:DHCP]] déprécié, usage transitoire
 - **OS / Version** : Debian 13
 - **Catégorie** : Vie du logiciel / ISC-DHCP-Server — Mise à jour et retour arrière
 - **Tags** : `isc-dhcp`, `serveur`, `vie-du-logiciel`, `mise_a_jour_retour_arriere`
@@ -40,7 +40,7 @@ Prioriser migration Kea et tester plage, réservations/options en lab.
 
 ## 3. Production — Sécurité
 
-Appliquer seulement mises à jour Debian disponibles; réduire usage du logiciel EOL.
+Appliquer seulement mises à jour Debian disponibles; réduire usage du logiciel [[Glossary:EOL]].
 
 ## Validation et retour arrière
 

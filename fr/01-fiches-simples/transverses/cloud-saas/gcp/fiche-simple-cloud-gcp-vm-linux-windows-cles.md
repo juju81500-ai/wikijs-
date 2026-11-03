@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Fiche_Simple_-_Cloud_GCP_VM_Linux_Windows_Cles
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — Google Cloud CLI (gcloud ; version publiée à vérifier)
+- **OS / Version** : Cloud/SaaS — Google Cloud [[Glossary:CLI]] (gcloud ; version publiée à vérifier)
 - **Catégorie** : cloud public / vm linux et windows avec accès par clé
 - **Tags** : `gcp`, `vm_linux_windows_cles`, `securite`, `procedure`
 
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-VM Linux et Windows avec accès par clé dans Google Cloud Platform en limitant les risques de sécurité, de disponibilité et de coût.
+[[Glossary:VM]] Linux et Windows avec accès par clé dans Google Cloud Platform en limitant les risques de sécurité, de disponibilité et de coût.
 
 Les valeurs écrites en MAJUSCULES sont des placeholders à remplacer par les valeurs validées de l’environnement. Ne coller aucun secret réel dans les commandes, les fiches ou l’historique shell.
 
@@ -33,7 +33,7 @@ Les valeurs écrites en MAJUSCULES sont des placeholders à remplacer par les va
    gcloud compute instances create VM_LINUX --zone=ZONE --image-family=debian-12 --image-project=debian-cloud --metadata=enable-oslogin=TRUE
 gcloud compute ssh VM_LINUX --zone=ZONE
    ```
-   👉 Explication : OS Login et `gcloud compute ssh` fournissent un parcours Linux avec clés gérées. Windows n’accepte pas SSH par défaut : administrer via RDP/IAP/Bastion autorisé ou installer/configurer OpenSSH selon la documentation avant d’utiliser une clé.
+   👉 Explication : OS Login et `gcloud compute ssh` fournissent un parcours Linux avec clés gérées. Windows n’accepte pas [[Glossary:SSH]] par défaut : administrer via [[Glossary:RDP]]/IAP/Bastion autorisé ou installer/configurer OpenSSH selon la documentation avant d’utiliser une clé.
 3. Console et CLI : comparer la configuration affichée avec l’état attendu, puis valider sur une ressource pilote non sensible.
    👉 Explication : les interfaces évoluent ; vérifier l’aide/version officielle et les quotas/licences avant généralisation.
 
@@ -43,7 +43,7 @@ Valider image et éditeur, taille, patching, chiffrement, rôle, sauvegarde, co�
 
 ## 3. Production — Sécurité
 
-Protéger la clé privée dans un coffre, désactiver les comptes/services inutiles, utiliser accès temporaire et MFA, ne pas inscrire de secrets dans user-data ou métadonnées.
+Protéger la clé privée dans un coffre, désactiver les comptes/services inutiles, utiliser accès temporaire et [[Glossary:MFA]], ne pas inscrire de secrets dans user-data ou métadonnées.
 
 ## Validation et retour arrière
 

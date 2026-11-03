@@ -11,17 +11,17 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche simple — Debian 13 : préparer un lab Samba AD DC
 
-- **OS / Version** : VM Debian 13 Trixie, Samba des dépôts Debian
+- **OS / Version** : [[Glossary:VM]] Debian 13 Trixie, Samba des dépôts Debian
 - **Catégorie** : Services réseau / Annuaire Active Directory
 - **Tags** : `[debian13]`, `[samba]`, `[ad-dc]`, `[dns]`, `[lab]`
 
 ## Objectif
 
-Créer un domaine Samba AD DC neuf dans un environnement de laboratoire isolé. Cette fiche ne décrit pas une migration ou une reprise de forêt existante.
+Créer un domaine Samba [[Glossary:AD]] [[Glossary:DC]] neuf dans un environnement de laboratoire isolé. Cette fiche ne décrit pas une migration ou une reprise de forêt existante.
 
 ## 1. Préparer avant le provisionnement
 
-Fixer l'adresse IP et le nom du serveur, vérifier NTP, choisir le nom DNS/NetBIOS du domaine et confirmer que le réseau est isolé. Ne jamais utiliser un suffixe `.local` ni un domaine que l'organisation ne contrôle pas.
+Fixer l'adresse [[Glossary:IP]] et le nom du serveur, vérifier [[Glossary:NTP]], choisir le nom [[Glossary:DNS]]/NetBIOS du domaine et confirmer que le réseau est isolé. Ne jamais utiliser un suffixe `.local` ni un domaine que l'organisation ne contrôle pas.
 
 ```bash
 hostnamectl
@@ -56,7 +56,7 @@ sudo systemctl --no-pager status samba-ad-dc.service
 sudo journalctl -u samba-ad-dc.service -n 40 --no-pager
 host -t SRV _ldap._tcp.ad.lab.test 192.0.2.10
 ```
-   👉 Explication : contrôle la configuration, démarre le service, lit l'état et les journaux, puis interroge l'enregistrement SRV LDAP.
+   👉 Explication : contrôle la configuration, démarre le service, lit l'état et les journaux, puis interroge l'enregistrement SRV [[Glossary:LDAP]].
 
 Remplacer le nom et l'adresse de l'exemple. Le système et les clients du lab doivent utiliser le DNS du DC. Tester Kerberos avec `kinit Administrator@AD.LAB.TEST` et une saisie interactive du mot de passe.
 

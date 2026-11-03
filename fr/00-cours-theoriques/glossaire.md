@@ -2,11 +2,11 @@
 title: "Glossaire TSSR et AIS"
 description: "Définitions des termes et sigles employés dans les fiches du pack et dans les référentiels de formation TSSR (Technicien Supérieur Systèmes et Réseaux) et AIS (Administrateur d'Infrastructures Sécurisées). Les entrées sont regroupées par domaine, puis classées par ordre alphabétique."
 published: true
-date: 2026-11-03T10:06:20Z
+date: 2026-11-03T10:12:11Z
 tags: ["glossaire", "tssr", "ais", "definitions", "reference"]
 editor: markdown
-dateCreated: 2026-11-03T10:06:20Z
-dateModified: 2026-11-03T10:06:20Z
+dateCreated: 2026-11-03T10:12:11Z
+dateModified: 2026-11-03T10:12:11Z
 ---
 
 # Glossaire TSSR et AIS

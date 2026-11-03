@@ -108,9 +108,9 @@ Déployer la plateforme de cloud privé Nextcloud en conteneurs Docker avec base
 ---
 
 ## 🔒 3. Production — Façon Sécurisée (Hardening & Isolation Enterprise)
-1. Ajouter `cloud.example.net` au proxy TLS et à la liste des domaines de confiance, puis vérifier la configuration effective :
+1. Ajouter `cloud.example.net` au proxy [[Glossary:TLS]] et à la liste des domaines de confiance, puis vérifier la configuration effective :
    `docker compose exec -u www-data app php occ config:system:get trusted_domains`
-   👉 Explication : Restreint l'accès HTTP uniquement au nom de domaine officiel FQDN pour parer le détournement d'en-tête HTTP Host.
+   👉 Explication : Restreint l'accès [[Glossary:HTTP]] uniquement au nom de domaine officiel [[Glossary:FQDN]] pour parer le détournement d'en-tête HTTP Host.
 
 2. Configurer APCu pour le cache local et Redis pour le verrouillage transactionnel après vérification de leur disponibilité :
    ```bash

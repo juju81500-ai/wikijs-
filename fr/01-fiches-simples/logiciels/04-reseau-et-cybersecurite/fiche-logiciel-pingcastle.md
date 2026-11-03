@@ -23,7 +23,7 @@ Fiche défensive d’administration et de gouvernance. Elle ne remplace pas le g
 
 ## 🧭 Périmètre
 
-La fiche existante couvre déjà un usage technique; celle-ci rappelle les limites de gouvernance. Utiliser uniquement un domaine autorisé, avec approbation du propriétaire AD, une identité nominative à privilèges minimaux et une fenêtre déclarée. Les rapports révèlent la posture et la structure de l’annuaire: stockage chiffré à accès restreint, durée de conservation définie, partage limité, suppression contrôlée. Ne pas exécuter depuis un contrôleur de domaine.
+La fiche existante couvre déjà un usage technique; celle-ci rappelle les limites de gouvernance. Utiliser uniquement un domaine autorisé, avec approbation du propriétaire [[Glossary:AD]], une identité nominative à privilèges minimaux et une fenêtre déclarée. Les rapports révèlent la posture et la structure de l’annuaire: stockage chiffré à accès restreint, durée de conservation définie, partage limité, suppression contrôlée. Ne pas exécuter depuis un contrôleur de domaine.
 
 ## ✅ Autorisation et préparation
 

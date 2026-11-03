@@ -13,14 +13,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : Tenant Atlassian Cloud administré par l'organisation (SaaS, aucune machine locale)
 - **OS / Version** : Jira Service Management Cloud (SaaS Atlassian)
-- **Catégorie** : ITSM / centre de services
+- **Catégorie** : [[Glossary:ITSM]] / centre de services
 - **Tags** : `jira-service-management`, `atlassian-cloud`, `itsm`, `saas`
 
 ---
 
 ## Problème précis à résoudre
 
-Créer request types, files, workflows et SLA alignés sur le processus réel.
+Créer request types, files, workflows et [[Glossary:SLA]] alignés sur le processus réel.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

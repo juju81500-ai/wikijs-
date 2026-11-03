@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # fiche-simple-vm-debian-12-zabbix-sauvegarder-mettre-a-jour.md
 
 - **Environnement** : serveur Zabbix Debian 12; sauvegardes cohérentes de base et configuration
-- **OS / Version** : Debian 12; Zabbix 7.0 LTS
+- **OS / Version** : Debian 12; Zabbix 7.0 [[Glossary:LTS]]
 - **Catégorie** : supervision / sauvegarde et mise à jour
 - **Tags** : `debian12`, `zabbix`, `backup`, `upgrade`, `restore`, `rollback`
 

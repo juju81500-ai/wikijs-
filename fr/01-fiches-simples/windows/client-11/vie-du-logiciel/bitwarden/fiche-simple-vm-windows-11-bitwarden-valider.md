@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Valider synchronisation, verrouillage et MFA avec une entrée factice.
+Valider synchronisation, verrouillage et [[Glossary:MFA]] avec une entrée factice.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

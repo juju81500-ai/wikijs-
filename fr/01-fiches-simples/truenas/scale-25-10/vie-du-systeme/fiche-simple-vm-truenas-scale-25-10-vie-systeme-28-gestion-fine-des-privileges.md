@@ -24,7 +24,7 @@ Limiter les droits administrateur.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Identifiants > Utilisateurs > Modifier : définir la commande sudo autorisée ou le rôle (lecture seule, opérateur de partage).
+1. [[Glossary:GUI]] : Identifiants > Utilisateurs > Modifier : définir la commande sudo autorisée ou le rôle (lecture seule, opérateur de partage).
    ```bash
    sudo midclt call user.query '[["username","=","ADMIN1"]]' | grep -i -E 'sudo|roles'
    ```

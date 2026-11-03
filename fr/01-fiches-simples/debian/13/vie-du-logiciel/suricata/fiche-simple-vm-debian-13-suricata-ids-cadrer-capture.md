@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-suricata-ids-cadrer-capture.md
 
-- **Environnement** : VM Debian 13 dédiée avec interface de gestion et interface de capture
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée avec interface de gestion et interface de capture
 - **OS / Version** : Debian 13 Trixie; Suricata 8.0.7 et suricata-update (Debian Backports)
 - **Catégorie** : detection reseau / cadrage
 - **Tags** : `suricata`, `debian13`, `ids`, `cadrage`
@@ -30,8 +30,8 @@ Cadrer l'observation passive et obtenir les autorisations avant d'installer la s
    ```
    👉 Explication : l'interface de capture doit être indépendante de celle de gestion.
 
-2. Noter par écrit les sous-réseaux internes autorisés, la source de trafic (SPAN, TAP ou pcap) et l'approbation du propriétaire réseau.
-   👉 Explication : ces CIDR serviront à renseigner `HOME_NET`; les captures peuvent contenir des données sensibles.
+2. Noter par écrit les sous-réseaux internes autorisés, la source de trafic ([[Glossary:SPAN]], TAP ou pcap) et l'approbation du propriétaire réseau.
+   👉 Explication : ces [[Glossary:CIDR]] serviront à renseigner `HOME_NET`; les captures peuvent contenir des données sensibles.
 
 3. Contrôler les versions candidates après activation de `trixie-backports` :
    ```bash

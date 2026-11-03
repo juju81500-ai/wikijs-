@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-openldap-retour-arriere.md
 
-- **Environnement** : VM Debian 13 avec snapshot et LDIF précédents vérifiés
+- **Environnement** : [[Glossary:VM]] Debian 13 avec snapshot et LDIF précédents vérifiés
 - **OS / Version** : Debian 13; slapd 2.6
 - **Catégorie** : annuaire / changement et retour arrière
 - **Tags** : `debian13`, `openldap`, `rollback`, `olc`, `snapshot`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Annuler un changement OLC, TLS ou ACL sans perdre les données ni verrouiller l'accès à l'annuaire.
+Annuler un changement OLC, [[Glossary:TLS]] ou [[Glossary:ACL]] sans perdre les données ni verrouiller l'accès à l'annuaire.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -56,7 +56,7 @@ Exiger approbation de changement, sauvegarde vérifiée, opérateur de secours, 
 ## 3. Production — Sécurité
 
 - Ne pas éditer `/etc/ldap/slapd.d` à la main.
-- Ne pas supprimer les répertoires LDAP; les renommer uniquement dans le cadre d'une procédure de restauration approuvée.
+- Ne pas supprimer les répertoires [[Glossary:LDAP]]; les renommer uniquement dans le cadre d'une procédure de restauration approuvée.
 - Préserver LDIF et journaux, qui peuvent contenir des données sensibles.
 - Si l'accès est compromis, limiter les flux via le pare-feu approuvé et escalader au propriétaire.
 

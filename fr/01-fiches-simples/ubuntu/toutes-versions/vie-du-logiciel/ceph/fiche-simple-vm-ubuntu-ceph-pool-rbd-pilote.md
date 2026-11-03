@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # fiche-simple-vm-ubuntu-ceph-pool-rbd-pilote.md
 
 - **Environnement** : Cluster Ceph de laboratoire à trois nœuds (ceph01, ceph02, ceph03) géré par cephadm
-- **OS / Version** : Ubuntu Server 22-04 LTS; Ceph Tentacle 20.2.4
+- **OS / Version** : Ubuntu Server 22-04 [[Glossary:LTS]]; Ceph Tentacle 20.2.4
 - **Catégorie** : stockage / cluster Ceph
 - **Tags** : `ubuntu2204`, `ceph`, `tentacle`, `cephadm`
 

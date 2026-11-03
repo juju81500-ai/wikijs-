@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_Windows_Server_2022_SQL-Server_Sauvegarder_Restaurer
 
-- **Environnement** : VM Windows Server 2022 (SQL Server 2022 Standard ou Developer)
+- **Environnement** : [[Glossary:VM]] Windows Server 2022 ([[Glossary:SQL]] Server 2022 Standard ou Developer)
 - **OS / Version** : Windows Server 2022; SQL Server 2022 (instance par défaut MSSQLSERVER)
 - **Catégorie** : base de données / SQL Server / Sauvegarder et restaurer
 - **Tags** : `windows-server-2022`, `sql-server`, `sqlserver-2022`, `sauvegarde`
@@ -24,7 +24,7 @@ Sauvegarder les bases (complète, différentielle, journal) et prouver la restau
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI — SSMS : clic droit sur la base → Tâches → Sauvegarder… ; Type : Complète ; Destination : disque ; Options : vérifier, somme de contrôle, compression :
+1. [[Glossary:GUI]] — SSMS : clic droit sur la base → Tâches → Sauvegarder… ; Type : Complète ; Destination : disque ; Options : vérifier, somme de contrôle, compression :
    ```powershell
    Backup-SqlDatabase -ServerInstance localhost -Database APPDB -BackupFile 'B:\Backup\APPDB_complet.bak' -CompressionOption On -Checksum
    ```

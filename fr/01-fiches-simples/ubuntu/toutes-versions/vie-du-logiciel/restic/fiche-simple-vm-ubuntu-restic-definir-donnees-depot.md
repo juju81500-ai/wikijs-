@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-ubuntu-restic-definir-donnees-depot.md
 
-- **Environnement** : VM Ubuntu Server avec destination de sauvegarde indépendante
+- **Environnement** : [[Glossary:VM]] Ubuntu Server avec destination de sauvegarde indépendante
 - **OS / Version** : Ubuntu Server (toutes versions supportées); paquet restic des dépôts Ubuntu
 - **Catégorie** : sauvegarde / restauration
 - **Tags** : `ubuntu`, `restic`, `sauvegarde`, `restauration`, `retention`

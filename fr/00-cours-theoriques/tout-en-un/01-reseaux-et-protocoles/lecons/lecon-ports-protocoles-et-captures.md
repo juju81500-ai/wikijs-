@@ -24,17 +24,17 @@ dateModified: 2026-11-03T09:36:13Z
 
 1. expliquer le port et le quintuplet d'une connexion ;
 2. citer les ports et protocoles courants et dire s'ils sont chiffrés ;
-3. décrire la poignée de main TCP, la fermeture et les états vus avec `ss` ;
-4. dire ce qui est lisible ou non en HTTP et en HTTPS ;
-5. situer la négociation TLS, le SNI et le certificat ;
-6. lire une capture (poignée de main TCP, requête DNS, requête HTTP) avec `tcpdump` et Wireshark ;
+3. décrire la poignée de main [[Glossary:TCP]], la fermeture et les états vus avec `ss` ;
+4. dire ce qui est lisible ou non en [[Glossary:HTTP]] et en HTTPS ;
+5. situer la négociation [[Glossary:TLS]], le SNI et le certificat ;
+6. lire une capture (poignée de main TCP, requête [[Glossary:DNS]], requête HTTP) avec `tcpdump` et Wireshark ;
 7. reconnaître trois signatures de panne : SYN sans réponse, RST, retransmissions.
 
 ## Prérequis et durée
 
-- Connaître le modèle en couches (IP, transport, application) et une adresse IPv4.
+- Connaître le modèle en couches ([[Glossary:IP]], transport, application) et une adresse IPv4.
 - Savoir ouvrir deux terminaux Linux ; connaître les bases de `curl`.
-- Laboratoire : une VM Linux jetable ; captures **uniquement sur l'interface locale `lo`**.
+- Laboratoire : une [[Glossary:VM]] Linux jetable ; captures **uniquement sur l'interface locale `lo`**.
 - Durée totale : environ 3 h 30.
 
 Les adresses d'exemple appartiennent aux blocs de documentation (`192.0.2.0/24`, `198.51.100.0/24`, `203.0.113.0/24`, `2001:db8::/32`) et les noms à `example.com` ou `example.test`. Les extraits de capture sont **fictifs**.
@@ -43,7 +43,7 @@ Les adresses d'exemple appartiennent aux blocs de documentation (`192.0.2.0/24`,
 
 - Une connexion est identifiée par **cinq éléments** : protocole, IP source, port source, IP destination, port destination.
 - Le **port** désigne le service sur une machine. Le serveur écoute sur un port connu (80, 443, 53…) ; le client prend un port **éphémère**.
-- **TCP** est fiable et orienté connexion (SYN, SYN-ACK, ACK) ; **UDP** envoie sans connexion (DNS, DHCP, NTP).
+- **TCP** est fiable et orienté connexion (SYN, SYN-ACK, ACK) ; **[[Glossary:UDP]]** envoie sans connexion (DNS, [[Glossary:DHCP]], [[Glossary:NTP]]).
 - **HTTP** est lisible en clair ; **HTTPS** = HTTP dans **TLS** : seuls adresses, ports, volumes et (souvent) le nom du site restent visibles.
 - Dans une capture, les **drapeaux** TCP racontent l'histoire : `[S]` ouverture, `[S.]` réponse, `[.]` accusé, `[P.]` données, `[F.]` fermeture, `[R]` rupture.
 - Filtrer avant de lire : on ne lit jamais toute une capture, on isole une conversation.
@@ -80,7 +80,7 @@ Plusieurs connexions simultanées vers le même serveur utilisent des ports sour
 |---|---|---|
 | Connexion | oui (poignée de main) | non |
 | Fiabilité | accusés de réception, retransmissions, ordre | aucune garantie |
-| Exemples | HTTP, HTTPS, SSH, SMTP | DNS (petites requêtes), DHCP, NTP, QUIC |
+| Exemples | HTTP, HTTPS, [[Glossary:SSH]], [[Glossary:SMTP]] | DNS (petites requêtes), DHCP, NTP, QUIC |
 
 Le DNS illustre le choix : une question et une réponse tiennent chacune dans un datagramme UDP. Un même numéro de port existe séparément en TCP et en UDP.
 
@@ -88,18 +88,18 @@ Le DNS illustre le choix : une question et une réponse tiennent chacune dans un
 
 | Port | Protocole | Transport | Rôle | Chiffré ? |
 |---|---|---|---|---|
-| 20/21 | FTP | TCP | transfert de fichiers (21 commande, 20 données actives) | non |
+| 20/21 | [[Glossary:FTP]] | TCP | transfert de fichiers (21 commande, 20 données actives) | non |
 | 22 | SSH | TCP | administration à distance, SFTP | oui |
 | 23 | Telnet | TCP | terminal à distance (obsolète) | non |
-| 25 | SMTP | TCP | transfert de courrier entre serveurs | optionnel (STARTTLS) |
+| 25 | SMTP | TCP | transfert de courrier entre serveurs | optionnel ([[Glossary:STARTTLS]]) |
 | 53 | DNS | UDP et TCP | résolution de noms | non (sauf DoT/DoH) |
 | 67/68 | DHCP | UDP | attribution d'adresses (serveur/client) | non |
 | 80 | HTTP | TCP | web en clair | non |
 | 123 | NTP | UDP | synchronisation de l'heure | non |
-| 143 / 993 | IMAP / IMAPS | TCP | courrier consulté sur le serveur | non / oui |
+| 143 / 993 | [[Glossary:IMAP]] / IMAPS | TCP | courrier consulté sur le serveur | non / oui |
 | 443 | HTTPS | TCP (et UDP pour HTTP/3) | web chiffré | oui |
 | 445 | SMB | TCP | partage de fichiers Windows | selon la configuration |
-| 3389 | RDP | TCP | bureau à distance Windows | oui |
+| 3389 | [[Glossary:RDP]] | TCP | bureau à distance Windows | oui |
 
 Le registre officiel est tenu par l'IANA ; `/etc/services` (voir `getent services nom`) en donne une copie. Un numéro de port **n'est qu'une convention** : un service web peut écouter sur 8080, un SSH sur 2222.
 
@@ -193,7 +193,7 @@ Server: exemple-serveur
 
 ### 5.3 Le certificat et la confiance
 
-Le client vérifie que le certificat est signé par une autorité de confiance (**chaîne**), qu'il couvre le **nom demandé** (champ SAN) et qu'il est **valide à la date du jour**. Causes d'échec : certificat expiré, nom inexact, chaîne incomplète, horloge fausse. Un site redirige souvent le port 80 vers 443 (`301`) : dans une capture, on voit un bref échange en clair, puis une connexion vers 443.
+Le client vérifie que le certificat est signé par une autorité de confiance (**chaîne**), qu'il couvre le **nom demandé** (champ [[Glossary:SAN]]) et qu'il est **valide à la date du jour**. Causes d'échec : certificat expiré, nom inexact, chaîne incomplète, horloge fausse. Un site redirige souvent le port 80 vers 443 (`301`) : dans une capture, on voit un bref échange en clair, puis une connexion vers 443.
 
 ## 6. Les outils de capture
 

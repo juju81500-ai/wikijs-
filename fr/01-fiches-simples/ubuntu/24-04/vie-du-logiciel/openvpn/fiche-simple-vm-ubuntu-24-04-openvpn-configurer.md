@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_OpenVPN_Configurer
 
-- **Environnement** : VM Ubuntu 24-04 dédiée à OpenVPN Community Edition (serveur)
-- **OS / Version** : Ubuntu 24-04 LTS Noble; version des dépôts à vérifier sur l'hôte
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 dédiée à OpenVPN Community Edition (serveur)
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; version des dépôts à vérifier sur l'hôte
 - **Catégorie** : OpenVPN Community Edition / configurer
 - **Tags** : `openvpn`, `ubuntu24-04`, `vie-du-logiciel`, `configurer`
 
@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Configurer le serveur OpenVPN UDP avec certificats, sans publier de routes non approuvées.
+Configurer le serveur OpenVPN [[Glossary:UDP]] avec certificats, sans publier de routes non approuvées.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Installer les certificats émis par la PKI approuvée :
+1. Installer les certificats émis par la [[Glossary:PKI]] approuvée :
    ```bash
    sudo install -d -o root -g root -m 0750 /etc/openvpn/server
    sudo install -o root -g root -m 0644 CA_CERTIFICATE /etc/openvpn/server/ca.crt
@@ -32,7 +32,7 @@ Configurer le serveur OpenVPN UDP avec certificats, sans publier de routes non a
    sudo install -o root -g root -m 0600 SERVER_PRIVATE_KEY /etc/openvpn/server/server.key
    sudo sh -c "umask 077; openvpn --genkey tls-crypt /etc/openvpn/server/tls-crypt.key"
    ```
-   👉 Explication : CA_CERTIFICATE, SERVER_CERTIFICATE et SERVER_PRIVATE_KEY sont les chemins des fichiers approuvés (à remplacer); ne jamais copier la clé privée de la CA. La clé tls-crypt est générée localement et remise aux clients par un canal protégé.
+   👉 Explication : CA_CERTIFICATE, SERVER_CERTIFICATE et SERVER_PRIVATE_KEY sont les chemins des fichiers approuvés (à remplacer); ne jamais copier la clé privée de la [[Glossary:CA]]. La clé tls-crypt est générée localement et remise aux clients par un canal protégé.
 
 2. Créer /etc/openvpn/server/server.conf avec le même contenu que la fiche Debian (le fichier est identique sur toutes les distributions) :
    ```bash

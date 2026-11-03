@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Snort_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 dédiée à Snort IDS passif
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à Snort [[Glossary:IDS]] passif
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : Snort IDS passif / prérequis et limites
 - **Tags** : `snort`, `debian13`, `vie-du-logiciel`, `prerequis_limites`
@@ -36,7 +36,7 @@ Définir un capteur IDS passif sur une source de trafic autorisée.
    ip -br address
    ip -br link
    ```
-   👉 Explication : Utiliser un TAP, SPAN ou pcap autorisé; garder la gestion séparée.
+   👉 Explication : Utiliser un TAP, [[Glossary:SPAN]] ou pcap autorisé; garder la gestion séparée.
 
 3. Faire approuver réseaux HOME_NET, règles, rétention et destinataire des alertes.
    👉 Explication : Cette série couvre la détection passive seulement, pas inline/IPS, blocage ou réponse automatique.

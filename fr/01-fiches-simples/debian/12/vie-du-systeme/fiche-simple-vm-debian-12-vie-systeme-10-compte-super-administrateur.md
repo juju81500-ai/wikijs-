@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_12_Vie_Systeme_10_Compte_Super_Administrateur
 
-- **Environnement** : VM Debian 12 « bookworm » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 12 « bookworm » (serveur)
 - **OS / Version** : Debian 12; étape 10 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian12`, `vie-du-systeme`, `cycle-de-vie`, `etape-10`
@@ -43,7 +43,7 @@ Stocker tout mot de passe root de secours dans le coffre d'entreprise.
 
 ## 3. Production — Sécurité
 
-Interdire root en SSH (étape 27).
+Interdire root en [[Glossary:SSH]] (étape 27).
 
 ## Validation et retour arrière
 

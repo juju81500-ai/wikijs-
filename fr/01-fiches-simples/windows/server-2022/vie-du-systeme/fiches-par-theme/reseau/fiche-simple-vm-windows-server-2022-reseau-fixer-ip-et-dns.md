@@ -11,20 +11,20 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 VM_WinSrv_2022_Reseau_Fixer-IP-Et-DNS.md
 
-- **Environnement** : VM (Hyper-V / Proxmox VE / VSphere)
+- **Environnement** : [[Glossary:VM]] (Hyper-V / Proxmox VE / VSphere)
 - **OS / Version** : Windows Server 2022 Standard / Datacenter - Famille Windows
-- **Catégorie** : Réseau / Adressage IP & DNS
+- **Catégorie** : Réseau / Adressage [[Glossary:IP]] & [[Glossary:DNS]]
 - **Tags** : `[winsrv2022]`, `[windows-server]`, `[reseau]`, `[ip-statique]`, `[dns]`, `[gui]`, `[powershell]`, `[hardening]`
 
 ---
 
 ## 🎯 Problème précis à résoudre
-Fixer une adresse IP statique, définir la passerelle par défaut, configurer les serveurs DNS préférés et auxiliaires, et vider le cache DNS sous Windows Server 2022 via l'interface graphique (GUI) pas-à-pas ou la ligne de commande PowerShell.
+Fixer une adresse IP statique, définir la passerelle par défaut, configurer les serveurs DNS préférés et auxiliaires, et vider le cache DNS sous Windows Server 2022 via l'interface graphique ([[Glossary:GUI]]) pas-à-pas ou la ligne de commande PowerShell.
 
 ---
 
 ## 🖥️ Méthode Interface Graphique (GUI Pas-à-Pas - "Clic-Clic")
-Avant de modifier une carte à distance, prévoir un accès console ou un moyen de retour arrière : le changement d'IP peut couper la session. Vérifier également que l'adresse choisie est libre ou réservée dans le plan DHCP.
+Avant de modifier une carte à distance, prévoir un accès console ou un moyen de retour arrière : le changement d'IP peut couper la session. Vérifier également que l'adresse choisie est libre ou réservée dans le plan [[Glossary:DHCP]].
 
 1. **Ouvrir la fenêtre des connexions réseau** :
    - Appuyer sur la combinaison de touches `Win + R` du clavier pour ouvrir la boîte de dialogue *Exécuter*.
@@ -37,13 +37,13 @@ Avant de modifier une carte à distance, prévoir un accès console ou un moyen 
    - 👉 *Explication : Affiche la liste des composants et protocoles réseau installés.*
 
 3. **Saisir les paramètres IP et DNS** :
-   - Sélectionner **Protocole Internet version 4 (TCP/IPv4)** puis cliquer sur le bouton **Propriétés**.
+   - Sélectionner **Protocole Internet version 4 ([[Glossary:TCP]]/IPv4)** puis cliquer sur le bouton **Propriétés**.
    - Cocher le bouton radio **Utiliser l'adresse IP suivante :**
      - *Adresse IP* : `192.168.1.50`
      - *Masque de sous-réseau* : `255.255.255.0`
      - *Passerelle par défaut* : `192.168.1.1`
    - Cocher le bouton radio **Utiliser l'adresse de serveur DNS suivante :**
-     - *Serveur DNS préféré* : `192.168.1.10` (Adresse de votre serveur DNS / Contrôleur AD)
+     - *Serveur DNS préféré* : `192.168.1.10` (Adresse de votre serveur DNS / Contrôleur [[Glossary:AD]])
    - *Serveur DNS auxiliaire* : laisser vide ou saisir un autre DNS interne AD si disponible.
    - Cliquer sur **OK** puis sur **Fermer**.
    - 👉 *Explication : Enregistre et applique immédiatement la configuration IP fixe sur la carte.*

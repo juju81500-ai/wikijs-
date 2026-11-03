@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_01_Definition_Des_Besoins_Sizing
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 01 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-01`
@@ -31,7 +31,7 @@ Dimensionner la machine avant de la créer.
    lsblk -o NAME,SIZE,TYPE
    uname -m
    ```
-   👉 Explication : nombre de vCPU, RAM en Mo, disques et architecture (`x86_64` ou `aarch64`) pour comparer au besoin.
+   👉 Explication : nombre de vCPU, [[Glossary:RAM]] en Mo, disques et architecture (`x86_64` ou `aarch64`) pour comparer au besoin.
 
 2. Mesurer les entrées/sorties d'une machine comparable (sur Alpine) :
    ```sh
@@ -40,7 +40,7 @@ Dimensionner la machine avant de la créer.
    ```
    👉 Explication : `%util` et `await` élevés indiquent un stockage à surdimensionner.
 
-3. Noter vCPU, RAM, disque, IOPS, réseau et architecture dans le dossier du projet.
+3. Noter vCPU, RAM, disque, [[Glossary:IOPS]], réseau et architecture dans le dossier du projet.
    👉 Explication : Alpine tient dans 512 Mo de RAM et 1 Go de disque pour un serveur minimal; ajouter la charge du service prévu (nginx, base de données, etc.).
 
 ## 2. Production — Contrôles

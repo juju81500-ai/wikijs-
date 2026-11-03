@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_Suricata_Configurer
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Suricata
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
-- **Catégorie** : Suricata / configuration IDS passif
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Suricata
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
+- **Catégorie** : Suricata / configuration [[Glossary:IDS]] passif
 - **Tags** : `suricata`, `rocky9`, `vie-du-logiciel`, `configurer`
 
 ---

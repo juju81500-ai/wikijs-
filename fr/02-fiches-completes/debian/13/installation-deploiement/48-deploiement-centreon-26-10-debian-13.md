@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **OS / Version** : Debian 13 Trixie; Centreon 26.10
 - **Type de fiche** : Installation/Déploiement
-- **Environnement** : VM Linux dédiée, serveur central Centreon et base locale
+- **Environnement** : [[Glossary:VM]] Linux dédiée, serveur central Centreon et base locale
 - **Machine ciblée** : Centreon Central
 - **Catégorie** : Supervision / métrologie
 - **Tags** : `centreon`, `debian13`, `supervision`, `snmp`, `monitoring`, `tls`
@@ -22,7 +22,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [préparer le serveur Centreon](/fr/01-fiches-simples/debian/13/vie-du-logiciel/centreon/fiche-simple-vm-debian-13-centreon-preparer).
 
-Centreon 26.10 prend en charge Debian 13. Prévoir DNS, IP fixe, fuseau horaire, serveur SMTP, certificat TLS, espace disque pour les données métriques et une sauvegarde testable. Dimensionner selon nombre de hôtes, services, intervalles et rétention.
+Centreon 26.10 prend en charge Debian 13. Prévoir [[Glossary:DNS]], [[Glossary:IP]] fixe, fuseau horaire, serveur [[Glossary:SMTP]], certificat [[Glossary:TLS]], espace disque pour les données métriques et une sauvegarde testable. Dimensionner selon nombre de hôtes, services, intervalles et rétention.
 
 La procédure officielle unattended exécute des opérations privilégiées et installe dépôts/services. Télécharger le script vers un fichier, vérifier le dépôt HTTPS officiel et lire son contenu avant exécution. Ne pas copier un script dans `bash` directement depuis une URL.
 
@@ -60,7 +60,7 @@ Fiche simple : [terminer l'assistant Web](/fr/01-fiches-simples/debian/13/vie-du
 
 Ouvrir `https://centreon.example.net/centreon` depuis le réseau d'administration. Vérifier les dépendances, conserver les chemins recommandés, créer le compte `admin` avec un secret unique conservé au coffre et laisser le wizard initialiser les bases et modules.
 
-Après installation, ne pas laisser l'accès à la page d'installation. Contrôler que TLS est présenté avec le certificat attendu et que l'accès HTTP suit la politique de redirection approuvée.
+Après installation, ne pas laisser l'accès à la page d'installation. Contrôler que TLS est présenté avec le certificat attendu et que l'accès [[Glossary:HTTP]] suit la politique de redirection approuvée.
 
 ## 5. Initialiser la supervision
 
@@ -68,7 +68,7 @@ Fiche simple : [initialiser la supervision](/fr/01-fiches-simples/debian/13/vie-
 
 Dans **Configuration > Pollers**, exporter la configuration du Central en cochant **Move Export Files** selon la procédure Centreon, puis redémarrer les services de collecte/gestion nécessaires. Tester d'abord `localhost` et un hôte pilote autorisé; vérifier les données et logs avant d'ajouter d'autres cibles.
 
-Pour les équipements, utiliser SNMPv3 authPriv en lecture seule quand disponible, limiter UDP/161 aux pollers et ne pas utiliser une communauté publique. Les credentials de supervision doivent être distincts des comptes d'administration.
+Pour les équipements, utiliser SNMPv3 authPriv en lecture seule quand disponible, limiter [[Glossary:UDP]]/161 aux pollers et ne pas utiliser une communauté publique. Les credentials de supervision doivent être distincts des comptes d'administration.
 
 ## 6. Vérifier les services
 
@@ -79,13 +79,13 @@ sudo systemctl --no-pager status mariadb apache2 php8.4-fpm gorgoned cbd centeng
 sudo journalctl -b -p err --no-pager
 ```
 
-Adapter le nom de service PHP à la version installée par le dépôt Centreon et examiner les journaux liés aux composants concernés. Les services de trap SNMP peuvent rester inactifs s'ils ne sont pas utilisés.
+Adapter le nom de service PHP à la version installée par le dépôt Centreon et examiner les journaux liés aux composants concernés. Les services de trap [[Glossary:SNMP]] peuvent rester inactifs s'ils ne sont pas utilisés.
 
 ## 7. Sécuriser et exploiter
 
 Fiche simple : [sécuriser et exploiter Centreon](/fr/01-fiches-simples/debian/13/vie-du-logiciel/centreon/fiche-simple-vm-debian-13-centreon-securiser-exploiter).
 
-- Restreindre l'interface au réseau de gestion, activer MFA/SSO selon l'édition et attribuer des profils nominatifs.
+- Restreindre l'interface au réseau de gestion, activer [[Glossary:MFA]]/SSO selon l'édition et attribuer des profils nominatifs.
 - Configurer TLS et certificats selon les étapes officielles; ne pas désactiver durablement le pare-feu.
 - Vérifier l'état SELinux lorsque la plateforme le fournit. Si une procédure de paquet nécessite une exception temporaire, la retirer après installation et appliquer la politique Centreon documentée.
 - Sauvegarder bases, configuration, clés de chiffrement, plugins et données RRD; tester la restauration isolée.

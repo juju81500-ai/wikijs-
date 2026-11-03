@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:14Z
 # Copier et sauvegarder des fichiers avec Robocopy sur Windows Server 2022
 
 - **Type de fiche** : Autres — copie / sauvegarde de fichiers
-- **Environnement** : Windows Server 2022 (Robocopy intégré); partages SMB et volumes NTFS
+- **Environnement** : Windows Server 2022 (Robocopy intégré); partages SMB et volumes [[Glossary:NTFS]]
 - **OS / Version** : Windows Server 2022 (valable pour les versions Windows qui incluent Robocopy; non testé sur d'autres)
 - **Rôle** : Prévisualiser puis exécuter une copie de fichiers avec journal et garde-fous contre les suppressions
 - **Tags** : `robocopy`, `windows-server-2022`, `sauvegarde`, `mir`, `purge`, `dry-run`, `ntfs`
@@ -21,7 +21,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [périmètre et limites](/fr/01-fiches-simples/windows/server-2022/vie-du-logiciel/robocopy/fiche-simple-vm-windows-server-2022-robocopy-perimetre).
 
-Robocopy copie des arborescences de fichiers. Ce n'est pas une sauvegarde historisée ni applicative : les fichiers verrouillés, bases de données et états système exigent une solution adaptée ([Veeam](/fr/02-fiches-completes/windows/server-2022/installation-deploiement/58-deploiement-veeam-backup-replication-13-windows-server-2022), VSS, sauvegarde native). Un miroir propage les suppressions. Ce guide n'a pas été testé sur un serveur Windows 2022.
+Robocopy copie des arborescences de fichiers. Ce n'est pas une sauvegarde historisée ni applicative : les fichiers verrouillés, bases de données et états système exigent une solution adaptée ([Veeam](/fr/02-fiches-completes/windows/server-2022/installation-deploiement/58-deploiement-veeam-backup-replication-13-windows-server-2022), [[Glossary:VSS]], sauvegarde native). Un miroir propage les suppressions. Ce guide n'a pas été testé sur un serveur Windows 2022.
 
 ## 2. Préparer
 
@@ -49,7 +49,7 @@ robocopy $Src $Dst /E /COPY:DAT /DCOPY:DAT /R:2 /W:5 /L /FP /NP /LOG:"$Log\previ
 echo $LASTEXITCODE
 ```
 
-`/E` copie les sous-répertoires, vides compris; `/COPY:DAT` copie données, attributs et dates; `/DCOPY:DAT` ajoute les dates des répertoires. Pour conserver les ACL NTFS, ajouter `S` (`/COPY:DATS`) avec les droits nécessaires; `/COPYALL` ajoute propriétaire et audit et exige des privilèges élevés. Relire le journal avant l'étape suivante.
+`/E` copie les sous-répertoires, vides compris; `/COPY:DAT` copie données, attributs et dates; `/DCOPY:DAT` ajoute les dates des répertoires. Pour conserver les [[Glossary:ACL]] NTFS, ajouter `S` (`/COPY:DATS`) avec les droits nécessaires; `/COPYALL` ajoute propriétaire et audit et exige des privilèges élevés. Relire le journal avant l'étape suivante.
 
 ## 4. Exécuter la copie sans suppression
 

@@ -34,7 +34,7 @@ Suivre et appliquer les correctifs de façon contrôlée.
 2. Sous vCenter, utiliser les images de cluster de vSphere Lifecycle Manager (vSphere Client : **Cluster > Mises à jour > Image**).
    👉 Explication : applique et vérifie le correctif hôte par hôte avec vMotion.
 
-3. Ne pas automatiser le redémarrage sans migration préalable des VM.
+3. Ne pas automatiser le redémarrage sans migration préalable des [[Glossary:VM]].
    👉 Explication : une mise à jour automatique peut interrompre des services.
 
 ## 2. Production — Contrôles

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_Vie_Systeme_24_Personnalisation_Et_Bannieres
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS « noble »
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] « noble »
 - **OS / Version** : Ubuntu 24-04; étape 24 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2404`, `vie-du-systeme`, `cycle-de-vie`, `etape-24`
@@ -33,7 +33,7 @@ Afficher un avertissement légal.
    ```
    👉 Explication : texte d'avertissement avant et après connexion; `motd-news` n'affiche plus d'annonces (Ubuntu assemble le MOTD à partir de `/etc/update-motd.d/`).
 
-2. Activer la bannière SSH :
+2. Activer la bannière [[Glossary:SSH]] :
    ```bash
    echo 'Banner /etc/issue.net' | sudo tee /etc/ssh/sshd_config.d/10-banner.conf
    sudo sshd -t && sudo systemctl reload ssh

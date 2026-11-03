@@ -21,11 +21,11 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [préparer l'hôte et le DNS](/fr/01-fiches-simples/transverses/docker/wikijs/fiche-simple-docker-wikijs-preparer-hote-dns).
 
-Cette fiche suppose que Docker Compose et Traefik sont déjà installés et maintenus. Pour l'installation de l'hôte, du pare-feu, du DNS et du reverse proxy, suivre les fiches correspondantes.
+Cette fiche suppose que Docker Compose et Traefik sont déjà installés et maintenus. Pour l'installation de l'hôte, du pare-feu, du [[Glossary:DNS]] et du reverse proxy, suivre les fiches correspondantes.
 
-- Prévoir au moins 2 vCPU, 1 Go de RAM minimum et du stockage selon le volume de documents et pièces jointes.
+- Prévoir au moins 2 vCPU, 1 Go de [[Glossary:RAM]] minimum et du stockage selon le volume de documents et pièces jointes.
 - Créer un enregistrement DNS `A`/`AAAA` pour `wiki.example.net` vers l'adresse du reverse proxy.
-- Vérifier que les ports 80/443 et le certificat ACME fonctionnent déjà pour un autre service.
+- Vérifier que les ports 80/443 et le certificat [[Glossary:ACME]] fonctionnent déjà pour un autre service.
 - Créer le réseau Docker externe nommé ci-dessous, ou remplacer son nom par le réseau partagé existant de Traefik.
 - Garder la console de l'hôte disponible pendant la mise en service.
 
@@ -139,13 +139,13 @@ sudo docker compose ps
 sudo docker compose logs --tail=100 db wiki
 ```
 
-Ouvrir `https://wiki.example.net`. Terminer l'assistant initial, créer le compte administrateur avec un mot de passe unique, définir l'URL publique canonique, puis configurer SMTP et les mécanismes d'authentification nécessaires. Ne pas laisser un compte administrateur partagé.
+Ouvrir `https://wiki.example.net`. Terminer l'assistant initial, créer le compte administrateur avec un mot de passe unique, définir l'URL publique canonique, puis configurer [[Glossary:SMTP]] et les mécanismes d'authentification nécessaires. Ne pas laisser un compte administrateur partagé.
 
 ## 5. Recette
 
 Fiche simple : [réaliser la recette](/fr/01-fiches-simples/transverses/docker/wikijs/fiche-simple-docker-wikijs-recette).
 
-- Vérifier que le certificat présenté correspond au nom DNS et que HTTP redirige vers HTTPS selon la politique Traefik.
+- Vérifier que le certificat présenté correspond au nom DNS et que [[Glossary:HTTP]] redirige vers HTTPS selon la politique Traefik.
 - Créer une page de test, la modifier, joindre un fichier puis confirmer sa présence après redémarrage des services.
 - Vérifier `docker compose ps`, les journaux sans erreur persistante et l'état de santé PostgreSQL.
 - Confirmer qu'aucun port PostgreSQL ou port 3000 n'est publié sur l'interface publique.
@@ -195,8 +195,8 @@ docker network inspect traefik_proxy
 
 - **Wiki.js ne joint pas PostgreSQL** : vérifier `DB_HOST: db`, le réseau `backend`, l'état healthy et le montage `DB_PASS_FILE`.
 - **Erreur 404 ou 502** : vérifier DNS, labels Traefik, réseau Docker réellement partagé et port amont 3000.
-- **Certificat invalide** : diagnostiquer Traefik et ACME; ne pas activer TLS directement dans Wiki.js lorsque TLS est terminé par le reverse proxy.
-- **Pièce jointe perdue après recréation** : vérifier le module de stockage choisi et sa persistance; le dump SQL seul peut ne pas contenir les fichiers.
+- **Certificat invalide** : diagnostiquer Traefik et ACME; ne pas activer [[Glossary:TLS]] directement dans Wiki.js lorsque TLS est terminé par le reverse proxy.
+- **Pièce jointe perdue après recréation** : vérifier le module de stockage choisi et sa persistance; le dump [[Glossary:SQL]] seul peut ne pas contenir les fichiers.
 
 ## Sources
 

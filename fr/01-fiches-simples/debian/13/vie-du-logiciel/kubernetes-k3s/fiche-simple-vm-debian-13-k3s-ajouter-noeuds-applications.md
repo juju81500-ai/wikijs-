@@ -54,7 +54,7 @@ Joindre des nœuds au cluster et déployer une première application sans expose
    ```
    👉 Explication : un namespace isolé et des limites évitent d'impacter d'autres charges.
 
-5. Valider DNS et service, puis nettoyer :
+5. Valider [[Glossary:DNS]] et service, puis nettoyer :
    ```bash
    sudo k3s kubectl -n test-pilote expose deployment demo --port=80
    sudo k3s kubectl -n test-pilote run dnstest --rm -it --image=busybox:stable --restart=Never -- nslookup demo
@@ -72,8 +72,8 @@ Joindre des nœuds au cluster et déployer une première application sans expose
 ## 3. Production — Sécurité
 
 - Stocker les tokens et secrets dans un coffre approuvé; renouveler ou révoquer les accès selon la procédure.
-- Appliquer RBAC minimal et limiter la création de workloads privilégiés.
-- N'exposer un service qu'après validation du filtrage réseau, du TLS et de son propriétaire.
+- Appliquer [[Glossary:RBAC]] minimal et limiter la création de workloads privilégiés.
+- N'exposer un service qu'après validation du filtrage réseau, du [[Glossary:TLS]] et de son propriétaire.
 - Ne pas placer les secrets en clair dans les manifests versionnés.
 
 ## Validation et retour arrière

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Dell EMC
 
-- **Catégorie** : Stockage et SAN / NAS
+- **Catégorie** : Stockage et [[Glossary:SAN]] / [[Glossary:NAS]]
 - **Plateforme** : Appliances
 - **Produit (matrice)** : NetApp ONTAP / Dell EMC
 - **Statut dans le pack** : Matériel/éditeur propriétaire — hors périmètre pas à pas

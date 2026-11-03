@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_PuTTY_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13 (Trixie), poste d'administration en ligne de commande
+- **Environnement** : [[Glossary:VM]] Debian 13 (Trixie), poste d'administration en ligne de commande
 - **OS / Version** : Debian 13 (Trixie) — paquet putty-tools
-- **Catégorie** : outils d'administration / SSH
+- **Catégorie** : outils d'administration / [[Glossary:SSH]]
 - **Tags** : `putty`, `putty-tools`, `plink`, `puttygen`, `ssh`, `sauvegarde`, `restauration`
 
 ---
@@ -28,7 +28,7 @@ Sauvegarder et restaurer les clés `.ppk` et la configuration PuTTY de l'utilisa
    ```bash
    tar czf - -C ~ .ssh | gpg -c -o SAUVEGARDE_A_REMPLACER.tar.gz.gpg
    ```
-   👉 Explication : la phrase de passe GPG se saisit à l'invite.
+   👉 Explication : la phrase de passe [[Glossary:GPG]] se saisit à l'invite.
 2. Si l'interface graphique est utilisée, sauvegarder `~/.putty` (sessions et clés d'hôtes).
    👉 Explication : `plink` lit aussi ces sessions enregistrées.
 3. Restaurer :

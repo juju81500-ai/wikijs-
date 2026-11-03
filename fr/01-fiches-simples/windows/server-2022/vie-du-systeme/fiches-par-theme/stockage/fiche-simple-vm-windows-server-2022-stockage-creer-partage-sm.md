@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 VM_WinSrv_2022_Stockage_Creer-Partage-SMB-Et-Droits-NTFS.md
 
-- **Environnement** : VM / Serveur de Fichiers Windows
+- **Environnement** : [[Glossary:VM]] / Serveur de Fichiers Windows
 - **OS / Version** : Windows Server 2022 Standard / Datacenter
 - **Catégorie** : Stockage / Partage SMB & Permissions
 - **Tags** : `[winsrv2022]`, `[smb]`, `[partage]`, `[ntfs]`, `[acl]`, `[gui]`, `[powershell]`, `[hardening]`
@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:14Z
 ---
 
 ## 🎯 Problème précis à résoudre
-Créer un dossier partagé réseau (Partage SMB), attribuer les autorisations de partage et combiner les autorisations de sécurité NTFS fines selon le modèle AGDLP.
+Créer un dossier partagé réseau (Partage SMB), attribuer les autorisations de partage et combiner les autorisations de sécurité [[Glossary:NTFS]] fines selon le modèle [[Glossary:AGDLP]].
 
 ---
 
@@ -28,7 +28,7 @@ Créer un dossier partagé réseau (Partage SMB), attribuer les autorisations de
 ### Prérequis
 - Ouvrir une session avec un compte autorisé à administrer le serveur de fichiers.
 - Utiliser un volume de données prévu à cet effet, par exemple `D:` ; ne pas créer le partage à la racine d'un volume.
-- Faire créer/valider par l'équipe AD les groupes de ressources **Domain Local** selon AGDLP, par exemple `LAB\DL_Donnees_Lecture` et `LAB\DL_Donnees_Modification`, avec les groupes globaux d'utilisateurs membres.
+- Faire créer/valider par l'équipe [[Glossary:AD]] les groupes de ressources **Domain Local** selon AGDLP, par exemple `LAB\DL_Donnees_Lecture` et `LAB\DL_Donnees_Modification`, avec les groupes globaux d'utilisateurs membres.
 - Définir qui doit avoir le contrôle total du partage et du dossier ; conserver les entrées système et administrateurs nécessaires.
 
 ### Créer le partage SMB
@@ -47,12 +47,12 @@ Créer un dossier partagé réseau (Partage SMB), attribuer les autorisations de
 4. Ajouter `LAB\DL_Donnees_Modification` avec **Modification**. Ne pas accorder **Contrôle total** aux groupes utilisateurs.
 5. Appliquer les changements au dossier, sous-dossiers et fichiers uniquement si c'est le périmètre voulu. Vérifier l'héritage sur un sous-dossier représentatif.
 
-Les droits réellement obtenus à distance sont limités par la combinaison des autorisations de partage SMB et NTFS : l'autorisation la plus restrictive s'applique. AGDLP signifie **Accounts > Global groups > Domain Local groups > Permissions** ; les ACL du partage et du dossier sont attribuées aux groupes Domain Local, pas directement aux personnes.
+Les droits réellement obtenus à distance sont limités par la combinaison des autorisations de partage SMB et NTFS : l'autorisation la plus restrictive s'applique. AGDLP signifie **Accounts > Global groups > Domain Local groups > Permissions** ; les [[Glossary:ACL]] du partage et du dossier sont attribuées aux groupes Domain Local, pas directement aux personnes.
 
 ### Vérifier depuis un poste client
 1. Depuis un poste autorisé, ouvrir `\\FS01\Donnees_Entreprise` avec un compte membre du groupe concerné. Vérifier lecture seule pour `DL_Donnees_Lecture`, puis création/modification pour `DL_Donnees_Modification`.
 2. Depuis un compte non autorisé, vérifier que l'accès est refusé. Avec ABE activé, vérifier aussi que les sous-dossiers sans droit de lecture ne sont pas énumérés.
-3. En cas d'échec, contrôler séparément la résolution DNS, la connectivité SMB/pare-feu, les autorisations de partage, les ACL NTFS et l'appartenance effective aux groupes. Ne pas résoudre le problème en donnant des droits à `Tout le monde`.
+3. En cas d'échec, contrôler séparément la résolution [[Glossary:DNS]], la connectivité SMB/pare-feu, les autorisations de partage, les ACL NTFS et l'appartenance effective aux groupes. Ne pas résoudre le problème en donnant des droits à `Tout le monde`.
 
 ---
 

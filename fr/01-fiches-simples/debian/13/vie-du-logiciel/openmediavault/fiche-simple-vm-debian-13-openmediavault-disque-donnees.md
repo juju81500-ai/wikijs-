@@ -37,7 +37,7 @@ Ajouter un disque de données sans toucher au disque système.
 3. Créer puis monter le système de fichiers : **Storage > File Systems**.
    👉 Explication : OMV garde ses volumes dans sa base; ne pas éditer à la main les zones OMV de `/etc/fstab`.
 
-4. Pour un RAID logiciel : **Storage > RAID**.
+4. Pour un [[Glossary:RAID]] logiciel : **Storage > RAID**.
    👉 Explication : Choisir le niveau selon capacité et tolérance de panne; un RAID n'est pas une sauvegarde.
 
 ## 2. Production — Contrôles

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-minikube-prerequis.md
 
-- **Environnement** : VM Debian 13 de laboratoire avec Docker Engine, Minikube mono-nœud
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire avec Docker Engine, Minikube mono-nœud
 - **OS / Version** : Debian 13 Trixie; Minikube (driver Docker)
 - **Catégorie** : conteneurs / Kubernetes de laboratoire
 - **Tags** : `debian13`, `minikube`, `docker`, `kubernetes`, `lab`
@@ -38,7 +38,7 @@ Vérifier Docker, le compte non-root et les ressources avant d'installer Minikub
    ```
    👉 Explication : l'appartenance au groupe `docker` équivaut à root sur l'hôte : n'utiliser qu'une VM de laboratoire dédiée.
 
-3. Contrôler CPU, mémoire et disque :
+3. Contrôler [[Glossary:CPU]], mémoire et disque :
    ```bash
    nproc
    free -h
@@ -50,7 +50,7 @@ Vérifier Docker, le compte non-root et les ressources avant d'installer Minikub
    ```bash
    curl -sI https://registry-1.docker.io/v2/ | head -n 1
    ```
-   👉 Explication : un code HTTP (même 401) confirme que le registre est joignable.
+   👉 Explication : un code [[Glossary:HTTP]] (même 401) confirme que le registre est joignable.
 
 ## 2. Production — Contrôles
 

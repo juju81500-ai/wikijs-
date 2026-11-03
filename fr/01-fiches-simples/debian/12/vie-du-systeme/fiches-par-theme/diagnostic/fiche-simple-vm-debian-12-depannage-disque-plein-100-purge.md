@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Debian_12_Depannage_Disque-Plein-100-Purge.md
 
-- **Environnement** : VM / LXC (Debian 12 / Ubuntu / Linux Universel)
+- **Environnement** : [[Glossary:VM]] / [[Glossary:LXC]] (Debian 12 / Ubuntu / Linux Universel)
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Dépannage & Maintenance / Stockage
 - **Tags** : `[debian12]`, `[depannage]`, `[disque-plein]`, `[hardening]`
@@ -45,7 +45,7 @@ Diagnostiquer un disque système plein à 100%, identifier les répertoires volu
    journalctl --disk-usage
    ```
    👉 Explication : Recharger le service qui garde un fichier supprimé ouvert, après identification et selon la fenêtre adaptée.
-3. Libérer uniquement le cache APT et examiner la simulation de suppression :
+3. Libérer uniquement le cache [[Glossary:APT]] et examiner la simulation de suppression :
    ```bash
    sudo apt clean
    sudo apt autoremove --dry-run

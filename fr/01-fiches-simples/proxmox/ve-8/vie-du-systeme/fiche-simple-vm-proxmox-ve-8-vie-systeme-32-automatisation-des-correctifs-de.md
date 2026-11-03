@@ -24,7 +24,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Proxmox envoie un e-mail quand des mises à jour existent (GUI : **Datacenter > Notifications** ou **Nœud > System > Notifications**). Contrôler la messagerie :
+1. Proxmox envoie un e-mail quand des mises à jour existent ([[Glossary:GUI]] : **Datacenter > Notifications** ou **Nœud > System > Notifications**). Contrôler la messagerie :
    ```bash
    echo test | mail -s 'test pve' ADMIN_MAIL
    mailq
@@ -43,7 +43,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 2. Production — Contrôles
 
-Fenêtre mensuelle de maintenance avec migration des VM.
+Fenêtre mensuelle de maintenance avec migration des [[Glossary:VM]].
 
 ## 3. Production — Sécurité
 

@@ -24,7 +24,7 @@ Valider le durcissement et garder la possibilité de revenir en arrière.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Tester authentification, SMB, LDAP, sauvegarde, applications, gestion à distance et redémarrage depuis des clients représentatifs.
+1. Tester authentification, SMB, [[Glossary:LDAP]], sauvegarde, applications, gestion à distance et redémarrage depuis des clients représentatifs.
    👉 Explication : détecte les régressions avant la production.
 
 2. Contrôles rapides :
@@ -48,7 +48,7 @@ Toute exception doit être limitée, documentée, datée et revue.
 ## Validation et retour arrière
 
 - **Validation** : tous les tests sont passés depuis les clients représentatifs.
-- **Retour arrière** : restaurer les stratégies précédentes ou la VM du lab.
+- **Retour arrière** : restaurer les stratégies précédentes ou la [[Glossary:VM]] du lab.
 
 ## Si le problème n'est pas résolu
 

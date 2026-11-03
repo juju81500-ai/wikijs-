@@ -31,7 +31,7 @@ Recette de PowerShell sur Windows Server 2022 : versions, profils, modules, remo
    ```
    👉 Explication : 5.1 et la version 7 approuvée doivent répondre.
 
-2. Contrôler le service SSH (GUI : services.msc) :
+2. Contrôler le service [[Glossary:SSH]] ([[Glossary:GUI]] : services.msc) :
    ```powershell
    Get-Service sshd
    ```

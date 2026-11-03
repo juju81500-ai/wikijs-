@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-rocky-9-conteneurs-podman-rootless-quadlet.md
 
-- **Environnement** : VM Rocky Linux 9
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9
 - **OS / Version** : Rocky Linux 9 avec systemd et Podman
 - **Catégorie** : Conteneurs / Services
 - **Tags** : `[rocky9]`, `[rhel9]`, `[podman]`, `[rootless]`, `[quadlet]`, `[systemd]`, `[hardening]`
@@ -70,6 +70,6 @@ Déployer un conteneur Podman rootless et le gérer comme un service utilisateur
 3. Garder SELinux en `Enforcing`; ne pas désactiver son étiquetage pour faire fonctionner le conteneur.
 
 ## ✅ Validation et retour arrière
-- Vérifier le service utilisateur, `podman ps`, les journaux avec `journalctl --user -u web.service` et le test HTTP depuis une source autorisée.
+- Vérifier le service utilisateur, `podman ps`, les journaux avec `journalctl --user -u web.service` et le test [[Glossary:HTTP]] depuis une source autorisée.
 - Pour retirer le déploiement, arrêter/désactiver l'unité, sauvegarder puis retirer le fichier `.container`, puis exécuter `systemctl --user daemon-reload`.
 - Ne désactiver le linger qu'après avoir confirmé qu'aucun autre service utilisateur n'en dépend.

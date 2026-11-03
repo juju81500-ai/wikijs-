@@ -25,7 +25,7 @@ Obtenir l'ISO officielle d'ESXi 8.
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Télécharger l'ISO depuis le portail Broadcom (support.broadcom.com > Free Downloads ou My Downloads > VMware vSphere > ESXi 8.0), avec le compte associé à la licence.
-   👉 Explication : le téléchargement exige un compte Broadcom; l'ISO OEM du constructeur (Dell, HPE) contient les pilotes adaptés.
+   👉 Explication : le téléchargement exige un compte Broadcom; l'ISO [[Glossary:OEM]] du constructeur (Dell, HPE) contient les pilotes adaptés.
 
 2. Contrôler la taille et le nom du fichier :
    ```sh

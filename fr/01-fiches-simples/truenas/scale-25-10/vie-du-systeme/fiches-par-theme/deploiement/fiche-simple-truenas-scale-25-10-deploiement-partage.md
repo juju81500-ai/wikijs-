@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-truenas-scale-25-10-deploiement-partage.md
 
-- **Environnement** : NAS autonome pilote (matériel x86-64 ou VM de laboratoire)
+- **Environnement** : [[Glossary:NAS]] autonome pilote (matériel x86-64 ou [[Glossary:VM]] de laboratoire)
 - **OS / Version** : TrueNAS SCALE 25.10 Community Edition
 - **Catégorie** : stockage NAS / partage
 - **Tags** : `truenas`, `scale2510`, `zfs`, `nas`, `smb`, `sauvegarde`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Publier un partage SMB ou NFS contrôlé et le tester avec un client pilote.
+Publier un partage SMB ou [[Glossary:NFS]] contrôlé et le tester avec un client pilote.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -30,10 +30,10 @@ Publier un partage SMB ou NFS contrôlé et le tester avec un client pilote.
 2. **Shares > Windows (SMB) Shares > Add** : choisir le dataset dédié et les comptes nominatifs.
    👉 Explication : permissions minimales.
 
-3. Vérifier l'ACL du dataset, puis tester depuis un seul client pilote autorisé.
+3. Vérifier l'[[Glossary:ACL]] du dataset, puis tester depuis un seul client pilote autorisé.
    👉 Explication : valide lecture/écriture, héritage ACL, verrouillage et reprise après interruption.
 
-4. Surveiller pool, alertes SMART, scrubs, températures et espace.
+4. Surveiller pool, alertes [[Glossary:SMART]], scrubs, températures et espace.
    👉 Explication : anticipe les pannes.
 
 ## 2. Production — Contrôles

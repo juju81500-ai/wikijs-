@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # fiche-simple-lxc-alpine-diagnostic-corriger-proprietaire.md
 
 - **Environnement** : console Proxmox et console Alpine; correction selon le propriétaire identifié
-- **OS / Version** : branche Alpine maintenue; OpenRC pour les services dans le CT
+- **OS / Version** : branche Alpine maintenue; OpenRC pour les services dans le [[Glossary:CT]]
 - **Catégorie** : diagnostic / correction
 - **Tags** : `alpine`, `proxmox`, `lxc`, `openrc`, `firewall`, `rollback`
 
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Corriger uniquement la couche responsable de la panne, sans appliquer au LXC des changements destinés à une VM.
+Corriger uniquement la couche responsable de la panne, sans appliquer au [[Glossary:LXC]] des changements destinés à une [[Glossary:VM]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Bash / Shell
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : GNU Bash 5.2.x (paquet des dépôts Debian 12, à vérifier sur la version déployée)
 - **Catégorie** : Scripting, développement et administration

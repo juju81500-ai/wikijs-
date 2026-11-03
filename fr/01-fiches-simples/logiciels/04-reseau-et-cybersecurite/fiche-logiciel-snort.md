@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 📚 Couverture dans le pack
 
-Couvert — Snort IDS passif sur Debian 13, Ubuntu 24-04 et Rocky Linux 9 (Snort 3 compilé depuis les sources officielles sur Ubuntu/Rocky; disponibilité des paquets à vérifier). Le mode inline/IPS et le blocage ne sont pas couverts.
+Couvert — Snort [[Glossary:IDS]] passif sur Debian 13, Ubuntu 24-04 et Rocky Linux 9 (Snort 3 compilé depuis les sources officielles sur Ubuntu/Rocky; disponibilité des paquets à vérifier). Le mode inline/IPS et le blocage ne sont pas couverts.
 
 Fiches simples du guide : [prérequis et limites](/fr/01-fiches-simples/debian/13/vie-du-logiciel/snort/fiche-simple-vm-debian-13-snort-prerequis-limites), [installation](/fr/01-fiches-simples/debian/13/vie-du-logiciel/snort/fiche-simple-vm-debian-13-snort-installer), [configuration](/fr/01-fiches-simples/debian/13/vie-du-logiciel/snort/fiche-simple-vm-debian-13-snort-configurer), [sécurisation](/fr/01-fiches-simples/debian/13/vie-du-logiciel/snort/fiche-simple-vm-debian-13-snort-securiser), [validation](/fr/01-fiches-simples/debian/13/vie-du-logiciel/snort/fiche-simple-vm-debian-13-snort-valider), [sauvegarde/restauration](/fr/01-fiches-simples/debian/13/vie-du-logiciel/snort/fiche-simple-vm-debian-13-snort-sauvegarder-restaurer), [mise à jour/retour arrière](/fr/01-fiches-simples/debian/13/vie-du-logiciel/snort/fiche-simple-vm-debian-13-snort-mise-a-jour-retour-arriere).
 
@@ -29,7 +29,7 @@ Fiches simples supplémentaires — Rocky Linux 9 : [prérequis et limites](/fr/
 
 ## 🧭 Périmètre
 
-La matrice indique une couverture partielle: les fiches existantes documentent uniquement une supervision IDS passive en environnement autorisé. Cette fiche complète la gouvernance des règles, versions, alertes et journaux. Examiner les règles et leurs sources, effectuer leur revue en préproduction, protéger les journaux et transmettre les alertes via le processus SOC. Le mode IPS/inline et le blocage automatique ne sont pas documentés ici.
+La matrice indique une couverture partielle: les fiches existantes documentent uniquement une supervision IDS passive en environnement autorisé. Cette fiche complète la gouvernance des règles, versions, alertes et journaux. Examiner les règles et leurs sources, effectuer leur revue en préproduction, protéger les journaux et transmettre les alertes via le processus [[Glossary:SOC]]. Le mode IPS/inline et le blocage automatique ne sont pas documentés ici.
 
 ## ✅ Autorisation et préparation
 

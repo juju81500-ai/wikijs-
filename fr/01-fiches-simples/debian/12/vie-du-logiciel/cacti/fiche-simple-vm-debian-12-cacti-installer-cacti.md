@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-12-cacti-installer-cacti.md
 
-- **Environnement** : VM Debian 12 dédiée (Apache, PHP, MariaDB, poller local)
+- **Environnement** : [[Glossary:VM]] Debian 12 dédiée (Apache, PHP, MariaDB, poller local)
 - **OS / Version** : Debian 12 Bookworm; Cacti 1.2.31
 - **Catégorie** : supervision / installation
 - **Tags** : `debian12`, `cacti`, `snmp`, `rrdtool`, `mariadb`

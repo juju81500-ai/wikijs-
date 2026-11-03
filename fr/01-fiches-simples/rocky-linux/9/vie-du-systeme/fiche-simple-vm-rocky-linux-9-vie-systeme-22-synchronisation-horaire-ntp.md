@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_22_Synchronisation_Horaire_Ntp
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 22 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-22`
@@ -29,7 +29,7 @@ Garder l'heure exacte avec chrony.
    sudo dnf install -y chrony
    sudo systemctl enable --now chronyd
    ```
-   👉 Explication : chrony est le client NTP standard de Rocky.
+   👉 Explication : chrony est le client [[Glossary:NTP]] standard de Rocky.
 
 2. Déclarer le serveur NTP interne (`ntp.exemple.lan` à adapter) :
    ```bash

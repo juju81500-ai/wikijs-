@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Automatiser les mises à jour avec WSUS, Windows Update for Business ou Intune.
+Automatiser les mises à jour avec [[Glossary:WSUS]], Windows Update for Business ou Intune.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Définir les paramètres de mise à jour : **Paramètres > Windows Update > Options avancées**, ou GPO **Configuration ordinateur > Modèles d'administration > Composants Windows > Windows Update**.
+1. Définir les paramètres de mise à jour : **Paramètres > Windows Update > Options avancées**, ou [[Glossary:GPO]] **Configuration ordinateur > Modèles d'administration > Composants Windows > Windows Update**.
    ```powershell
    Get-ItemProperty 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate' -ErrorAction SilentlyContinue
    ```
@@ -57,7 +57,7 @@ Anneaux de test puis déploiement général avec date limite; redémarrages plan
 
 ## 3. Production — Sécurité
 
-Sur Windows 10 hors ESU, plus de correctifs de sécurité : isoler le poste ou le migrer.
+Sur Windows 10 hors [[Glossary:ESU]], plus de correctifs de sécurité : isoler le poste ou le migrer.
 
 ## Validation et retour arrière
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_GitLab_CE_Valider_Recette
 
-- **Environnement** : VM Debian 13 de préproduction; FQDN et ressources confirmés
+- **Environnement** : [[Glossary:VM]] Debian 13 de préproduction; [[Glossary:FQDN]] et ressources confirmés
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : forge Git / administration
 - **Tags** : `debian13`, `gitlab-ce`, `forge-git`, `tls`, `sauvegarde`

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-kubeadm-initialiser.md
 
-- **Environnement** : premier nœud de plan de contrôle Debian 13, CNI et CIDR déjà choisis
+- **Environnement** : premier nœud de plan de contrôle Debian 13, CNI et [[Glossary:CIDR]] déjà choisis
 - **OS / Version** : Debian 13; kubeadm
 - **Catégorie** : Kubernetes / plan de contrôle
 - **Tags** : `debian13`, `kubeadm`, `control-plane`, `cni`, `kubeconfig`
@@ -53,7 +53,7 @@ Initialiser le plan de contrôle avec une adresse de terminaison et un CIDR de p
 
 ## 2. Production — Contrôles
 
-Faire approuver IP de l'API, DNS/load balancer, CIDR, CNI, certificats, contrôles d'accès et plan HA avant initialisation.
+Faire approuver [[Glossary:IP]] de l'[[Glossary:API]], [[Glossary:DNS]]/load balancer, CIDR, CNI, certificats, contrôles d'accès et plan HA avant initialisation.
 
 ## 3. Production — Sécurité
 

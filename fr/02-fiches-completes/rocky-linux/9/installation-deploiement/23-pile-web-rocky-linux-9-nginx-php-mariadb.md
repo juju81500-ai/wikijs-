@@ -12,8 +12,8 @@ dateModified: 2026-11-03T09:36:14Z
 # Pile Web sur Rocky Linux 9 : Nginx, PHP-FPM et MariaDB
 
 - **Type de fiche** : Installation / Déploiement
-- **Environnement** : VM ou serveur Rocky Linux
-- **OS / Version** : Rocky Linux 9 / RHEL 9, Nginx, PHP-FPM et MariaDB fournis par les dépôts actifs
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9, Nginx, PHP-FPM et MariaDB fournis par les dépôts actifs
 - **Rôle** : Héberger une application Web PHP avec base MariaDB locale
 - **Tags** : `rocky9`, `rhel9`, `nginx`, `php-fpm`, `mariadb`, `lemp`, `selinux`
 
@@ -21,7 +21,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [prérequis et choix des versions de la pile web](/fr/01-fiches-simples/rocky-linux/9/vie-du-logiciel/pile-web/fiche-simple-vm-rocky-9-pile-web-prerequis-versions).
 
-Définir hostname/FQDN, IP stable, stockage, ports, sauvegardes et accès console. Rocky Linux 9 utilise DNF/AppStream et peut proposer différents streams PHP selon les dépôts activés; vérifier les candidats avant installation plutôt que supposer une version :
+Définir hostname/FQDN, [[Glossary:IP]] stable, stockage, ports, sauvegardes et accès console. Rocky Linux 9 utilise [[Glossary:DNF]]/AppStream et peut proposer différents streams PHP selon les dépôts activés; vérifier les candidats avant installation plutôt que supposer une version :
 
 ```bash
 cat /etc/rocky-release
@@ -114,7 +114,7 @@ sudo firewall-cmd --get-active-zones
 sudo firewall-cmd --zone=<ZONE_ACTIVE> --list-all
 ```
 
-Configurer TLS avec une autorité/certificat approuvé et une procédure de renouvellement. Ne pas désactiver SELinux ou firewalld pour dépanner l'application.
+Configurer [[Glossary:TLS]] avec une autorité/certificat approuvé et une procédure de renouvellement. Ne pas désactiver SELinux ou firewalld pour dépanner l'application.
 
 ## 6. Déployer et vérifier
 
@@ -126,7 +126,7 @@ Déployer une version applicative compatible avec la version PHP réellement ins
 
 Fiche simple : [sauvegarder et revenir en arrière sur la pile web](/fr/01-fiches-simples/rocky-linux/9/vie-du-logiciel/pile-web/fiche-simple-vm-rocky-9-pile-web-sauvegarder-retour).
 
-Sauvegarder code/configuration et effectuer un dump cohérent de MariaDB vers une cible indépendante. Tester la restauration dans un environnement isolé. Si la mise à jour échoue, restaurer config et base compatibles; ne pas rétrograder le serveur SQL en réutilisant des fichiers de données modifiés par une version plus récente.
+Sauvegarder code/configuration et effectuer un dump cohérent de MariaDB vers une cible indépendante. Tester la restauration dans un environnement isolé. Si la mise à jour échoue, restaurer config et base compatibles; ne pas rétrograder le serveur [[Glossary:SQL]] en réutilisant des fichiers de données modifiés par une version plus récente.
 
 ## Sources
 

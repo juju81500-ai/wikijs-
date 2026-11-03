@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Debian_12_Securite_Sudoers-Privileges.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Sécurité & Privilèges / Élévation de droits
 - **Tags** : `[debian12]`, `[debian-family]`, `[sudo]`, `[sudoers]`, `[visudo]`, `[moindre-privilege]`, `[hardening]`

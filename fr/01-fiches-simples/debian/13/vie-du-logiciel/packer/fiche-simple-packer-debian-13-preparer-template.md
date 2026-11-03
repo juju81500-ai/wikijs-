@@ -60,7 +60,7 @@ Créer un template HCL2 minimal qui déclare explicitement un plugin et une sour
    ```bash
    packer fmt .
    ```
-   👉 Explication : normalise le style HCL.
+   👉 Explication : normalise le style [[Glossary:HCL]].
 
 ## 2. Production — Contrôles
 

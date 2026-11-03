@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-proxmox-ve-8-securite-ssh-et-2fa.md
 
-- **Environnement** : Hyperviseur Proxmox VE 8 (accès SSH et interface web https://<nom_de_l_hote>:8006)
+- **Environnement** : Hyperviseur Proxmox VE 8 (accès [[Glossary:SSH]] et interface web https://<nom_de_l_hote>:8006)
 - **OS / Version** : Proxmox VE 8.x - Debian 12 Bookworm
 - **Catégorie** : Sécurité / Accès distant et authentification
 - **Tags** : `[proxmox-ve-8]`, `[debian-bookworm]`, `[ssh]`, `[2fa]`, `[totp]`, `[hardening]`
@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 ---
 
 ## 🎯 Problème précis à résoudre
-Restreindre l'accès SSH à l'authentification par clé cryptographique, interdire la connexion root par mot de passe, puis imposer un second facteur (TOTP) aux comptes administrateurs de l'interface web Proxmox.
+Restreindre l'accès SSH à l'authentification par clé cryptographique, interdire la connexion root par mot de passe, puis imposer un second facteur ([[Glossary:TOTP]]) aux comptes administrateurs de l'interface web Proxmox.
 
 ---
 

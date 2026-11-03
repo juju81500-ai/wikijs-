@@ -53,7 +53,7 @@ Contrôler quorum, liens Corosync et réseau entre nœuds.
 
 ## 2. Production — Contrôles
 
-Vérifier aussi synchronisation horaire, pertes et latence sur le réseau cluster. Corosync utilise UDP 5405–5412 selon la configuration.
+Vérifier aussi synchronisation horaire, pertes et latence sur le réseau cluster. Corosync utilise [[Glossary:UDP]] 5405–5412 selon la configuration.
 
 ## 3. Production — Sécurité
 

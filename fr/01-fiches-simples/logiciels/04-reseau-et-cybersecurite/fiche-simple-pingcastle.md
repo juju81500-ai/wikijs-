@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 PingCastle
 
-- **Environnement** : VM (Windows Server 2022, serveur membre du domaine)
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022, serveur membre du domaine)
 - **OS / Version** : Windows Server 2022 (PowerShell 5.1)
 - **Version** : PingCastle 3.x (archive officielle, numéro exact à vérifier sur la version déployée)
 - **Catégorie** : Réseau et cybersécurité
@@ -36,7 +36,7 @@ Get-ChildItem C:\Outils\PingCastle
 Get-Item C:\Outils\PingCastle\PingCastle.exe | Select-Object Name, Length, LastWriteTime
 Get-ADDomain | Select-Object DNSRoot, NetBIOSName
 ```
-👉 Explication : Confirme la présence de l'exécutable et affiche le nom DNS du domaine (`Get-ADDomain` fait partie du module ActiveDirectory de RSAT, installé sur un serveur membre).
+👉 Explication : Confirme la présence de l'exécutable et affiche le nom [[Glossary:DNS]] du domaine (`Get-ADDomain` fait partie du module ActiveDirectory de RSAT, installé sur un serveur membre).
 
 3. Lancement du contrôle de santé sur le domaine de test :
 ```powershell

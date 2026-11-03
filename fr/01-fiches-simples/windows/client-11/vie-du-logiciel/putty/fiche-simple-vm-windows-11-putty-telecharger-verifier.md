@@ -13,14 +13,14 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **Environnement** : Poste Windows 11 x64 d'administration
 - **OS / Version** : Windows 11 x64; PuTTY 0.85 Stable
-- **Catégorie** : client SSH / intégrité
+- **Catégorie** : client [[Glossary:SSH]] / intégrité
 - **Tags** : `putty`, `windows11`, `ssh`, `puttygen`, `host-key`
 
 ---
 
 ## Problème précis à résoudre
 
-Obtenir le MSI officiel et prouver son intégrité.
+Obtenir le [[Glossary:MSI]] officiel et prouver son intégrité.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -41,7 +41,7 @@ Obtenir le MSI officiel et prouver son intégrité.
    gpg --fingerprint 5C67D0F88BC3E5B5
    gpg --verify .\putty-64bit-0.85-installer.msi.gpg .\putty-64bit-0.85-installer.msi
    ```
-   👉 Explication : l'empreinte complète doit être `1A07 DAC0 F220 CF12 248E A719 5C67 D0F8 8BC3 E5B5` et la signature bonne; sinon refuser le fichier. Gpg4win fournit GPG sur Windows.
+   👉 Explication : l'empreinte complète doit être `1A07 DAC0 F220 CF12 248E A719 5C67 D0F8 8BC3 E5B5` et la signature bonne; sinon refuser le fichier. Gpg4win fournit [[Glossary:GPG]] sur Windows.
 
 3. Vérifier la signature Authenticode et le SHA-256 :
    ```powershell

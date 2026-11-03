@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Stockage NetApp ONTAP et Dell EMC : solutions et interfaces
 
-- **Environnement** : Baies de stockage d'entreprise, accès NAS/SAN depuis serveurs Linux/Windows/hyperviseurs
+- **Environnement** : Baies de stockage d'entreprise, accès [[Glossary:NAS]]/SAN depuis serveurs Linux/Windows/hyperviseurs
 - **Tags** : `netapp`, `ontap`, `dell-emc`, `powerstore`, `powerscale`, `nas`, `san`
 - **Statut de validation** : **Verdict : Non testé sur plateforme cible.** Les procédures ci-dessous sont issues de la méthode documentaire et doivent être rejouées en laboratoire avant toute production.
 
@@ -21,13 +21,13 @@ Ce guide distingue des solutions de constructeurs différents ; ne pas appliquer
 
 | Famille | Interfaces d'administration | Usage |
 |---|---|---|
-| NetApp ONTAP | CLI (SSH), System Manager (web), API REST | NAS (NFS/SMB) et SAN (iSCSI/FC/NVMe) unifiés ; SVM, agrégats, volumes, LIF |
+| NetApp ONTAP | [[Glossary:CLI]] ([[Glossary:SSH]]), System Manager (web), [[Glossary:API]] REST | NAS ([[Glossary:NFS]]/SMB) et [[Glossary:SAN]] (iSCSI/FC/NVMe) unifiés ; SVM, agrégats, volumes, LIF |
 | NetApp ONTAP Select / Cloud | mêmes interfaces ONTAP | Variantes logicielles, licences distinctes |
 | Dell EMC PowerStore | PowerStore Manager (web), CLI, REST | Baie bloc/fichier |
 | Dell EMC PowerScale (Isilon) | OneFS : WebUI, CLI, REST | NAS scale-out |
 | Dell EMC Unity / autres gammes | Unisphere, CLI | Selon cycle de vie du produit ; vérifier son statut |
 
-Prérequis : accès administrateur délégué, réseau de gestion séparé, plan de capacité, DNS/NTP, sauvegarde et réplication pensées, support constructeur actif. Pas d'opérations destructives (suppression de volume/agrégat, reformatage) sans validation écrite et snapshot/sauvegarde.
+Prérequis : accès administrateur délégué, réseau de gestion séparé, plan de capacité, [[Glossary:DNS]]/NTP, sauvegarde et réplication pensées, support constructeur actif. Pas d'opérations destructives (suppression de volume/agrégat, reformatage) sans validation écrite et snapshot/sauvegarde.
 
 ## 2. Exigences de version et licence
 
@@ -49,7 +49,7 @@ network interface show
 ```
 volume create -vserver svm1 -volume vol_test -aggregate aggr1 -size 10GB -junction-path /vol_test
 ```
-4. Exporter via NFS (export-policy restrictive par client) ou créer un partage CIFS ; pour iSCSI créer LUN, igroup et mapping.
+4. Exporter via NFS (export-policy restrictive par client) ou créer un partage [[Glossary:CIFS]] ; pour iSCSI créer [[Glossary:LUN]], igroup et mapping.
 5. Monter depuis un client de test et écrire un fichier.
 
 ## 4. Procédure – Dell EMC (PowerStore / PowerScale)

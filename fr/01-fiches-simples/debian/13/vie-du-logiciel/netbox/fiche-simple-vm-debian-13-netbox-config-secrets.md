@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : NetBox 4.7.4 installé sur Debian 13; secrets gérés par coffre approuvé
 - **OS / Version** : Debian 13; NetBox 4.7.4
-- **Catégorie** : IPAM / DCIM / configuration et secrets
+- **Catégorie** : [[Glossary:IPAM]] / [[Glossary:DCIM]] / configuration et secrets
 - **Tags** : `debian13`, `netbox`, `configuration`, `secrets`, `postgresql`, `redis`
 
 ---
@@ -41,7 +41,7 @@ Configurer les hôtes autorisés, PostgreSQL, Redis et les secrets NetBox avec p
    ```bash
    sudoedit /opt/netbox/netbox/netbox/configuration.py
    ```
-   👉 Explication : renseigner `ALLOWED_HOSTS` (FQDN, jamais `['*']`), `API_TOKEN_PEPPERS`, `DATABASES` (hôte `localhost`, base/rôle `netbox`), `REDIS` (deux entrées `tasks` et `caching`, bases différentes) et `SECRET_KEY`.
+   👉 Explication : renseigner `ALLOWED_HOSTS` ([[Glossary:FQDN]], jamais `['*']`), `API_TOKEN_PEPPERS`, `DATABASES` (hôte `localhost`, base/rôle `netbox`), `REDIS` (deux entrées `tasks` et `caching`, bases différentes) et `SECRET_KEY`.
 
 4. Protéger le fichier :
    ```bash

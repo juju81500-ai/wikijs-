@@ -24,12 +24,12 @@ Appliquer une mise à jour de Configuration Manager et savoir comment revenir en
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Lister les mises à jour disponibles. GUI : `Administration > Services cloud > Mises à jour et maintenance`.
+1. Lister les mises à jour disponibles. [[Glossary:GUI]] : `Administration > Services cloud > Mises à jour et maintenance`.
    ```powershell
    $CodeSite = "CODESITE"
    Get-CimInstance -Namespace "root\SMS\site_$CodeSite" -ClassName SMS_CM_UpdatePackages | Select-Object Name, FullVersion, State
    ```
-   👉 Explication : `CODESITE` est à remplacer; la valeur de `State` est à interpréter avec la documentation (WMI). Sur le lab, `Rechercher les mises à jour` actualise la liste.
+   👉 Explication : `CODESITE` est à remplacer; la valeur de `State` est à interpréter avec la documentation ([[Glossary:WMI]]). Sur le lab, `Rechercher les mises à jour` actualise la liste.
 
 2. Lancer le contrôle de prérequis de la mise à jour. GUI : clic droit sur la mise à jour, `Exécuter la vérification des prérequis`.
    👉 Explication : consulter les résultats dans `Surveillance > Mises à jour et maintenance`; corriger les alertes avant l'installation.
@@ -45,7 +45,7 @@ Appliquer une mise à jour de Configuration Manager et savoir comment revenir en
 
 ## 2. Production — Contrôles
 
-Avant production : sauvegarde de site et de SQL récente (fiche Sauvegarde/Restauration), fenêtre de maintenance, version validée en lab, lecture des notes de version. Vérifier la compatibilité des versions client, ADK et SQL.
+Avant production : sauvegarde de site et de [[Glossary:SQL]] récente (fiche Sauvegarde/Restauration), fenêtre de maintenance, version validée en lab, lecture des notes de version. Vérifier la compatibilité des versions client, [[Glossary:ADK]] et SQL.
 
 ## 3. Production — Sécurité
 
@@ -55,7 +55,7 @@ Avant production : sauvegarde de site et de SQL récente (fiche Sauvegarde/Resta
 ## Validation et retour arrière
 
 - **Validation** : version attendue, composants sains, clients pilote mis à jour, recette rejouée.
-- **Retour arrière** : pas de désinstallation de mise à jour; restaurer le site depuis la sauvegarde d'avant mise à jour (`setup.exe` > `Recover a site`) ou la VM et la base SQL ensemble (même instant). Les clients déjà mis à niveau sont à traiter selon la documentation.
+- **Retour arrière** : pas de désinstallation de mise à jour; restaurer le site depuis la sauvegarde d'avant mise à jour (`setup.exe` > `Recover a site`) ou la [[Glossary:VM]] et la base SQL ensemble (même instant). Les clients déjà mis à niveau sont à traiter selon la documentation.
 
 ## Si le problème n'est pas résolu
 

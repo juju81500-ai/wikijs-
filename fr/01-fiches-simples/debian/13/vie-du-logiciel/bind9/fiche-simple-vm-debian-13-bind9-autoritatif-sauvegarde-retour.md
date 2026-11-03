@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-bind9-autoritatif-sauvegarde-retour.md
 
-- **Environnement** : VM Debian 13 avec bind9 autoritatif
+- **Environnement** : [[Glossary:VM]] Debian 13 avec bind9 autoritatif
 - **OS / Version** : Debian 13 Trixie; paquets bind9 de la distribution
 - **Catégorie** : dns / sauvegarde
 - **Tags** : `debian13`, `bind9`, `sauvegarde`, `rollback`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Sauvegarder la configuration BIND et savoir restaurer sans réinstaller.
+Sauvegarder la configuration [[Glossary:BIND]] et savoir restaurer sans réinstaller.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -45,7 +45,7 @@ Sauvegarder la configuration BIND et savoir restaurer sans réinstaller.
 
 ## 2. Production — Contrôles
 
-Tester la restauration dans un environnement isolé et comparer les réponses DNS attendues; sans cela, la sauvegarde n'est pas vérifiée.
+Tester la restauration dans un environnement isolé et comparer les réponses [[Glossary:DNS]] attendues; sans cela, la sauvegarde n'est pas vérifiée.
 
 ## 3. Production — Sécurité
 

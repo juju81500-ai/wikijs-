@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Sauvegarde_Test_Restauration
 
-- **Environnement** : VM ou serveur Ubuntu dont les données sont sauvegardées avec BorgBackup
-- **OS / Version** : Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu dont les données sont sauvegardées avec BorgBackup
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]]
 - **Catégorie** : Sauvegarde / Test de restauration (PRA)
 - **Tags** : `ubuntu2604`, `borgbackup`, `restauration`, `pra`, `sauvegarde`, `integrite`
 
@@ -64,7 +64,7 @@ sudo diff -r <chemin_source> /srv/restauration_test/<chemin_a_restaurer>
 ```bash
 time sudo borg extract $BORG_REPO::<nom_archive> <chemin_a_restaurer>
 ```
-👉 Explication : Le temps mesuré dans un environnement isolé est la base du RTO (durée maximale d'interruption) à inscrire dans le plan de reprise.
+👉 Explication : Le temps mesuré dans un environnement isolé est la base du [[Glossary:RTO]] (durée maximale d'interruption) à inscrire dans le plan de reprise.
 
 ## 🔒 3. Production — Façon Sécurisée
 

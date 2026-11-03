@@ -24,7 +24,7 @@ Rendre l'ISO démarrable sur un serveur physique.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Clé USB depuis Linux (remplacer `sdX` par la clé; **efface tout**) :
+1. Clé [[Glossary:USB]] depuis Linux (remplacer `sdX` par la clé; **efface tout**) :
    ```sh
    lsblk -o NAME,SIZE,MODEL,TRAN
    sudo dd if=VMware-VMvisor-Installer-8.0.iso of=/dev/sdX bs=1M conv=fsync status=progress
@@ -34,7 +34,7 @@ Rendre l'ISO démarrable sur un serveur physique.
 2. Alternative : média virtuel dans la console de gestion (iDRAC : **Console virtuelle > Connecter le média virtuel > Mapper CD/DVD**; iLO : **Remote Console > Virtual Media**).
    👉 Explication : évite le déplacement sur site; l'ISO doit rester accessible durant l'installation.
 
-3. Pour un hôte de test en VM (Workstation/Proxmox), monter l'ISO dans le lecteur CD de la VM (VM imbriquée : activer la virtualisation matérielle exposée).
+3. Pour un hôte de test en [[Glossary:VM]] (Workstation/Proxmox), monter l'ISO dans le lecteur CD de la VM (VM imbriquée : activer la virtualisation matérielle exposée).
    👉 Explication : ESXi en VM sert uniquement aux tests.
 
 ## 2. Production — Contrôles

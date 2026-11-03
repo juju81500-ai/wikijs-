@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_VM_ESXi_8_VMware_vSphere_vSwitch_Standard
 
-- **Environnement** : Hôte ESXi 8.x isolé de laboratoire; NIC physique libre si liaison externe
+- **Environnement** : Hôte ESXi 8.x isolé de laboratoire; [[Glossary:NIC]] physique libre si liaison externe
 - **OS / Version** : VMware ESXi 8.x / vCenter Server 8.x
 - **Catégorie** : virtualisation / réseau
 - **Tags** : `vmware-vsphere`, `vsphere8`, `vswitch`, `reseau`, `standard-switch`
@@ -26,7 +26,7 @@ Créer un vSwitch standard de laboratoire sans déconnecter la gestion ni détou
 
 1. Dans vSphere Client : **Hôte ESXi > Configurer > Réseau > Commutateurs virtuels > Ajouter une mise en réseau**. Choisir **Réseau de machine virtuelle > Nouveau commutateur standard**; sélectionner une NIC seulement si elle est libre et nécessaire.
    👉 Explication : sans uplink, un switch convient à un segment interne isolé. Ne jamais déplacer la NIC de gestion sans accès console.
-2. Créer `vSwitch_LAB` et port group `PG_LAB` (noms à remplacer). N'appliquer un VLAN que si sa valeur correspond au réseau validé.
+2. Créer `vSwitch_LAB` et port group `PG_LAB` (noms à remplacer). N'appliquer un [[Glossary:VLAN]] que si sa valeur correspond au réseau validé.
    👉 Explication : VLAN/MTU incorrects peuvent interrompre des services.
 3. Équivalent PowerCLI documenté pour une NIC libre (remplacer les valeurs) :
    ```powershell
@@ -39,11 +39,11 @@ Créer un vSwitch standard de laboratoire sans déconnecter la gestion ni détou
 
 ## 2. Production — Contrôles
 
-- Vérifier redondance, VLAN, MTU, teaming/failover, accès console et fenêtre approuvée avant changement.
+- Vérifier redondance, VLAN, [[Glossary:MTU]], teaming/failover, accès console et fenêtre approuvée avant changement.
 
 ## 3. Production — Sécurité
 
-- Séparer gestion, stockage, vMotion et trafic invité; ne pas relier une VM non maîtrisée au réseau de gestion.
+- Séparer gestion, stockage, vMotion et trafic invité; ne pas relier une [[Glossary:VM]] non maîtrisée au réseau de gestion.
 
 ## Validation et retour arrière
 

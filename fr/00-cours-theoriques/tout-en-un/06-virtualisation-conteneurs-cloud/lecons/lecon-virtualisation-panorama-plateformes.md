@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Leçon — Panorama Proxmox VE, VMware vSphere et Hyper-V : concepts, haute disponibilité, migration à chaud, licences, exploitation
 
 - **Tags** : `transverse`, `tout-en-un`, `lecon`, `virtualisation`, `proxmox`, `vsphere`, `hyper-v`, `haute-disponibilite`, `migration`, `licences`
-- **Niveau** : intermédiaire (technicien TSSR, administrateur systèmes en formation)
+- **Niveau** : intermédiaire (technicien [[Glossary:TSSR]], administrateur systèmes en formation)
 - **Durée estimée** : 3 h 30 (lecture 1 h 30, laboratoire 1 h, exercices et quiz 1 h)
 
 ---
@@ -36,10 +36,10 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## L'essentiel en bref
 
-- Les trois plateformes répondent aux mêmes besoins (exécuter des VM, les gérer en cluster, les déplacer, les protéger) avec des **vocabulaires différents**.
-- **Proxmox VE** : Debian + KVM/LXC + cluster intégré, logiciel libre, support par abonnement. **vSphere** : ESXi (hôte) + vCenter (gestion), écosystème commercial riche. **Hyper-V** : rôle de Windows Server, clustering de basculement Windows.
+- Les trois plateformes répondent aux mêmes besoins (exécuter des [[Glossary:VM]], les gérer en cluster, les déplacer, les protéger) avec des **vocabulaires différents**.
+- **Proxmox VE** : Debian + [[Glossary:KVM]]/LXC + cluster intégré, logiciel libre, support par abonnement. **vSphere** : ESXi (hôte) + vCenter (gestion), écosystème commercial riche. **Hyper-V** : rôle de Windows Server, clustering de basculement Windows.
 - La **haute disponibilité** redémarre les VM d'un hôte en panne ailleurs : c'est une **reprise rapide**, pas une continuité sans coupure.
-- La **migration à chaud** déplace une VM allumée entre hôtes ; elle exige CPU compatibles, réseau cohérent et stockage accessible (ou copie de stockage).
+- La **migration à chaud** déplace une VM allumée entre hôtes ; elle exige [[Glossary:CPU]] compatibles, réseau cohérent et stockage accessible (ou copie de stockage).
 - Les **licences** changent selon l'éditeur et le temps : inventorie, lis les conditions en vigueur, anticipe les échéances.
 - L'exploitation compte plus que le produit : correctifs en rotation, supervision, sauvegarde testée, accès de gestion protégés.
 - Avant toute modification sensible : **snapshot ou sauvegarde, console de secours, test, retour arrière**.
@@ -50,13 +50,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 ### 1.1 Proxmox VE
 
-Proxmox VE est une distribution basée sur **Debian** qui associe **KVM/QEMU** (machines virtuelles) et **LXC** (conteneurs), une interface web, une API et des outils en ligne de commande (`qm` pour les VM, `pct` pour les conteneurs, `pvesm` pour le stockage, `pvecm` pour le cluster, `ha-manager` pour la HA). Le cluster repose sur **Corosync** (communication et quorum) et un système de fichiers de configuration partagé (`pmxcfs`, monté sous `/etc/pve`). Les stockages possibles : local (LVM, ZFS), NFS, iSCSI, **Ceph** intégré, etc. **Proxmox Backup Server** complète l'ensemble (déduplication, sauvegardes incrémentales).
+Proxmox VE est une distribution basée sur **Debian** qui associe **KVM/QEMU** (machines virtuelles) et **[[Glossary:LXC]]** (conteneurs), une interface web, une [[Glossary:API]] et des outils en ligne de commande (`qm` pour les VM, `pct` pour les conteneurs, `pvesm` pour le stockage, `pvecm` pour le cluster, `ha-manager` pour la HA). Le cluster repose sur **Corosync** (communication et quorum) et un système de fichiers de configuration partagé (`pmxcfs`, monté sous `/etc/pve`). Les stockages possibles : local ([[Glossary:LVM]], [[Glossary:ZFS]]), [[Glossary:NFS]], iSCSI, **Ceph** intégré, etc. **Proxmox Backup Server** complète l'ensemble (déduplication, sauvegardes incrémentales).
 
 Le code est sous licence libre (AGPLv3) ; l'éditeur vend des **abonnements** qui donnent accès au dépôt « entreprise » (mises à jour testées) et à un support.
 
 ### 1.2 VMware vSphere
 
-vSphere associe **ESXi**, l'hyperviseur de type 1 installé sur chaque hôte, et **vCenter Server**, le serveur de gestion centralisée. Les fonctions de cluster (HA, DRS pour l'équilibrage de charge, vMotion pour la migration à chaud) passent par vCenter. Le réseau s'appuie sur des vSwitch standard ou **distribués**, le stockage sur des datastores VMFS, NFS, vSAN (stockage distribué) ou vVols.
+vSphere associe **ESXi**, l'hyperviseur de type 1 installé sur chaque hôte, et **vCenter Server**, le serveur de gestion centralisée. Les fonctions de cluster (HA, [[Glossary:DRS]] pour l'équilibrage de charge, vMotion pour la migration à chaud) passent par vCenter. Le réseau s'appuie sur des vSwitch standard ou **distribués**, le stockage sur des datastores VMFS, NFS, vSAN (stockage distribué) ou vVols.
 
 Côté commercial, VMware appartient désormais à Broadcom, qui a profondément remanié les offres, les éditions et les conditions de licence ces dernières années. Les informations de cette leçon sur ce point restent volontairement générales : **vérifie les conditions en vigueur auprès de l'éditeur ou de son revendeur**.
 
@@ -100,7 +100,7 @@ Un point d'architecture mérite d'être noté : **vSphere sépare** l'hôte (ESX
 - **Capacité N+1** : il faut assez de ressources libres pour absorber la perte d'un hôte (*contrôle d'admission* chez VMware).
 - **Continuité réelle** : certains produits exécutent la VM en parallèle (Fault Tolerance chez VMware), avec des contraintes fortes ; c'est un autre mécanisme.
 - **Stockage répliqué** (par exemple réplication ZFS asynchrone sous Proxmox VE) : la VM redémarre sur la dernière réplication, avec une **perte de données possible**.
-- **Ordre de démarrage** : annuaire, DNS, base de données avant les applications ; méfie-toi des dépendances circulaires (contrôleur de domaine nécessaire au démarrage du cluster).
+- **Ordre de démarrage** : annuaire, [[Glossary:DNS]], base de données avant les applications ; méfie-toi des dépendances circulaires (contrôleur de domaine nécessaire au démarrage du cluster).
 
 ## 4. Migration à chaud
 
@@ -110,7 +110,7 @@ La **migration à chaud** (vMotion, Live Migration, migration en ligne de Proxmo
 |---|---|
 | **CPU compatibles** | L'invité a vu certaines instructions ; elles doivent exister sur la destination. Même génération, ou masque de compatibilité (EVC chez VMware, type de CPU générique sous Proxmox VE, compatibilité de processeur sous Hyper-V). |
 | **Réseau de migration** dédié et rapide | La mémoire transite par le réseau ; un lien saturé fragilise l'opération. |
-| **Mêmes réseaux et VLAN** sur la destination | Sinon la VM perd sa connectivité. |
+| **Mêmes réseaux et [[Glossary:VLAN]]** sur la destination | Sinon la VM perd sa connectivité. |
 | **Stockage accessible** aux deux hôtes | Sinon, migration avec copie de stockage, plus longue. |
 | **Pas de périphérique local lié** | Passthrough PCI, disque local, ISO de l'hôte : à détacher. |
 
@@ -129,15 +129,15 @@ Méthode : (1) inventorier hôtes, cœurs, éditions, versions, VM et OS invité
 
 ## 6. Bonnes pratiques d'exploitation
 
-**Accès de gestion.** Réseau de gestion dédié, non exposé à Internet (VPN ou bastion) ; comptes nominatifs, **MFA** quand c'est possible, droits par rôle, comptes d'urgence en coffre ; services inutiles désactivés, journaux centralisés. Protège vCenter, la gestion de cluster et les sauvegardes comme des actifs critiques : qui contrôle l'hyperviseur contrôle toutes les VM.
+**Accès de gestion.** Réseau de gestion dédié, non exposé à Internet ([[Glossary:VPN]] ou bastion) ; comptes nominatifs, **[[Glossary:MFA]]** quand c'est possible, droits par rôle, comptes d'urgence en coffre ; services inutiles désactivés, journaux centralisés. Protège vCenter, la gestion de cluster et les sauvegardes comme des actifs critiques : qui contrôle l'hyperviseur contrôle toutes les VM.
 
-**Mises à jour.** Hôte par hôte, en vidant d'abord l'hôte (mode maintenance, migration des VM), avec contrôle du cluster avant et après ; notes de version lues, test en laboratoire ; versions **homogènes** entre hôtes ; firmware, BIOS et pilotes conformes à la matrice de compatibilité ; fins de support anticipées.
+**Mises à jour.** Hôte par hôte, en vidant d'abord l'hôte (mode maintenance, migration des VM), avec contrôle du cluster avant et après ; notes de version lues, test en laboratoire ; versions **homogènes** entre hôtes ; firmware, [[Glossary:BIOS]] et pilotes conformes à la matrice de compatibilité ; fins de support anticipées.
 
 **Supervision et capacité.** CPU, `steal`/ready, mémoire (balloon, swap), latence et occupation des datastores, réseau, santé du quorum, sauvegardes, matériel. Alertes sur seuils utiles, tendances, **N+1** dans les calculs.
 
 **Sauvegarde et reprise.** Sauvegardes hors du stockage de production, règle **3-2-1**, restauration testée en réseau isolé ; sauvegarde de la **configuration** des hôtes et de la gestion ; snapshots courts ; plan de reprise avec ordre de redémarrage et exercice périodique.
 
-**Changement et documentation.** Pour chaque changement sensible : **fenêtre annoncée, snapshot ou sauvegarde, console de secours, test sur clone ou laboratoire, retour arrière écrit**. Conventions de nommage, propriétaires, schémas réseau et stockage à jour (VLAN, MTU, chemins).
+**Changement et documentation.** Pour chaque changement sensible : **fenêtre annoncée, snapshot ou sauvegarde, console de secours, test sur clone ou laboratoire, retour arrière écrit**. Conventions de nommage, propriétaires, schémas réseau et stockage à jour (VLAN, [[Glossary:MTU]], chemins).
 
 **Choisir.** Pose les bonnes questions : compétences de l'équipe, budget complet (licences, support, matériel, formation, sauvegarde), besoins de HA et de migration, règles de licence des applications, écosystème, réversibilité. Il n'existe pas de meilleur choix absolu : une petite structure à compétences Linux peut s'orienter vers Proxmox VE, un environnement Windows et Active Directory vers Hyper-V, une organisation très outillée vers vSphere. Ce sont des tendances, pas des règles.
 
@@ -225,7 +225,7 @@ Get-VMHost | Select-Object Name, ConnectionState, Version
 1. **(Vocabulaire)** Pour chacun des termes suivants, donne l'équivalent sous Proxmox VE, vSphere et Hyper-V : migration à chaud ; gestion centralisée ; pilotes invités.
 2. **(Quorum)** Un cluster de deux nœuds perd l'un d'eux. Que se passe-t-il pour le quorum ? Quelle solution proposes-tu ?
 3. **(HA)** Un client attend de la HA qu'elle « évite toute coupure ». Rédige une explication claire de ce qu'elle garantit et de ce qu'elle ne garantit pas, avec un exemple.
-4. **(Capacité)** Un cluster de 4 hôtes de 256 Go de RAM porte 640 Go de VM. Peut-il absorber la perte d'un hôte en HA ? Justifie par un calcul.
+4. **(Capacité)** Un cluster de 4 hôtes de 256 Go de [[Glossary:RAM]] porte 640 Go de VM. Peut-il absorber la perte d'un hôte en HA ? Justifie par un calcul.
 5. **(Migration)** Une migration à chaud échoue : « CPU incompatible ». Liste trois causes possibles et les corrections associées.
 6. **(Licences)** Tu reprends un cluster de 3 hôtes sans documentation de licences. Établis un plan en 6 étapes pour évaluer la conformité.
 7. **(Exploitation)** Rédige la procédure de mise à jour d'un cluster de 3 hôtes, hôte par hôte, avec contrôles avant/après et retour arrière.

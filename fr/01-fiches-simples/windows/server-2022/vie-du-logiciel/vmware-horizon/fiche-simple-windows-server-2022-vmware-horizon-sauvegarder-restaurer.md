@@ -13,18 +13,18 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **Environnement** : Serveurs Windows Server 2022 (Connection Server), vCenter, UAG, compte administrateur nominatif
 - **OS / Version** : Windows Server 2022; version Horizon à vérifier auprès de l'éditeur
-- **Catégorie** : VDI / Horizon
+- **Catégorie** : [[Glossary:VDI]] / Horizon
 - **Tags** : `vmware-horizon`, `horizon`, `windows-server`, `sauvegarde`
 
 ---
 
 ## Problème précis à résoudre
 
-Sauvegarder et restaurer la configuration Horizon (LDAP du Connection Server, base d'événements, UAG).
+Sauvegarder et restaurer la configuration Horizon ([[Glossary:LDAP]] du Connection Server, base d'événements, UAG).
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI **Settings > Servers > Connection Servers > Backup** : vérifier la planification et la rétention de la sauvegarde automatique de la base de configuration.
+1. [[Glossary:GUI]] **Settings > Servers > Connection Servers > Backup** : vérifier la planification et la rétention de la sauvegarde automatique de la base de configuration.
    👉 Explication : par défaut une sauvegarde automatique existe ; confirmer la fréquence sur votre version.
 
 2. Exporter manuellement la configuration avec l'outil officiel vdmexport (chemin d'installation à vérifier) :
@@ -34,7 +34,7 @@ cd 'C:\Program Files\VMware\VMware View\Server\tools\bin'
 ```
    👉 Explication : CHEMIN_SAUVEGARDE est à remplacer ; le fichier exporté est sensible.
 
-3. Sauvegarder la base d'événements SQL (si utilisée) :
+3. Sauvegarder la base d'événements [[Glossary:SQL]] (si utilisée) :
 ```powershell
 Backup-SqlDatabase -ServerInstance 'SQL_HORIZON' -Database 'EVENT_DB' -BackupFile 'CHEMIN_SAUVEGARDE\EVENT_DB.bak'
 ```

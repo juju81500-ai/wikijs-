@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Configurer les serveurs DNS de l'hôte.
+Configurer les serveurs [[Glossary:DNS]] de l'hôte.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : **Nœud > System > DNS > Edit** (domaine de recherche, DNS 1/2/3). En ligne de commande :
+1. [[Glossary:GUI]] : **Nœud > System > DNS > Edit** (domaine de recherche, DNS 1/2/3). En ligne de commande :
    ```bash
    cat /etc/resolv.conf
    pvesh set /nodes/NOEUD/dns --search domaine.local --dns1 IP_DNS
@@ -36,7 +36,7 @@ Configurer les serveurs DNS de l'hôte.
    getent hosts www.proxmox.com
    host $(hostname -f)
    ```
-   👉 Explication : le nom externe et le FQDN de l'hôte doivent se résoudre.
+   👉 Explication : le nom externe et le [[Glossary:FQDN]] de l'hôte doivent se résoudre.
 
 3. Prévoir au moins deux serveurs DNS.
    👉 Explication : évite une panne totale si un serveur DNS tombe.

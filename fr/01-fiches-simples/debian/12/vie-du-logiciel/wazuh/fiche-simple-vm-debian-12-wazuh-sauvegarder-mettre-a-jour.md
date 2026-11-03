@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : plateforme Wazuh en exploitation; environnement séparé disponible pour tests
 - **OS / Version** : Wazuh 4.x maintenu
-- **Catégorie** : SIEM/XDR / sauvegarde et mise à jour
+- **Catégorie** : [[Glossary:SIEM]]/XDR / sauvegarde et mise à jour
 - **Tags** : `debian12`, `wazuh`, `backup`, `upgrade`, `restore`, `rollback`
 
 ---
@@ -30,7 +30,7 @@ Sauvegarder et mettre à niveau Wazuh dans l'ordre supporté, avec une restaurat
    ```
    👉 Explication : contient des secrets; copier vers un stockage chiffré hors serveur.
 
-2. Sauvegarder les index (instantané) selon la procédure de la version, ou la VM entière :
+2. Sauvegarder les index (instantané) selon la procédure de la version, ou la [[Glossary:VM]] entière :
    ```bash
    curl -sk -u admin https://127.0.0.1:9200/_cat/indices?v | head
    ```

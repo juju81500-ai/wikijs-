@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_VM_Windows_11_mRemoteNG_Sauvegarde_Restauration
 
-- **Environnement** : Poste Windows 11 x64 d'administration (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'administration ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; mRemoteNG VERSION_MREMOTENG (à remplacer)
 - **Catégorie** : gestionnaire de connexions distantes
 - **Tags** : `mremoteng`, `windows11`, `sauvegarde`, `restauration`
@@ -30,13 +30,13 @@ Sauvegarder et restaurer le fichier de connexions mRemoteNG.
 2. `Copy-Item "$env:APPDATA\mRemoteNG\confCons.xml" "C:\Sauvegardes\mRemoteNG\confCons_DATE.xml"` (DATE à remplacer ; nom du fichier à vérifier).
    👉 Explication : copie du fichier de connexions.
 
-3. GUI alternative : **File > Save Connection File As…** vers `C:\Sauvegardes\mRemoteNG\`.
+3. [[Glossary:GUI]] alternative : **File > Save Connection File As…** vers `C:\Sauvegardes\mRemoteNG\`.
    👉 Explication : sauvegarde depuis l'interface.
 
 4. Restaurer : **File > Open Connection File…** ou `Copy-Item` inverse application fermée.
    👉 Explication : remet l'ancien état.
 
-5. Archiver aussi les fichiers de clés SSH séparément et chiffrés.
+5. Archiver aussi les fichiers de clés [[Glossary:SSH]] séparément et chiffrés.
    👉 Explication : les clés ne doivent pas voyager avec le fichier.
 
 ## 2. Production — Contrôles

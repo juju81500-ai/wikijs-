@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_Vie_Systeme_25_Validation_De_L_Etat
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS « noble »
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] « noble »
 - **OS / Version** : Ubuntu 24-04; étape 25 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2404`, `vie-du-systeme`, `cycle-de-vie`, `etape-25`
@@ -41,7 +41,7 @@ Figer un état propre.
 
 ## 2. Production — Contrôles
 
-Convertir en modèle seulement après nettoyage (machine-id, clés SSH).
+Convertir en modèle seulement après nettoyage (machine-id, clés [[Glossary:SSH]]).
 
 ## 3. Production — Sécurité
 

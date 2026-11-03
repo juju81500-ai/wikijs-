@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Dovecot_Installer
 
-- **Environnement** : VM Debian 13; Dovecot depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Debian 13; Dovecot depuis les dépôts de la distribution
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / Dovecot — Installer
 - **Tags** : `debian13`, `dovecot`, `imap`, `messagerie`, `installer`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Installer Dovecot depuis les dépôts Debian 13 avec IMAP et LMTP.
+Installer Dovecot depuis les dépôts Debian 13 avec [[Glossary:IMAP]] et LMTP.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

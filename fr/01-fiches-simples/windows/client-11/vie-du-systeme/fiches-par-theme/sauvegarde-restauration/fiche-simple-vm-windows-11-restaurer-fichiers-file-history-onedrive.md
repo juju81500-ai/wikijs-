@@ -27,7 +27,7 @@ Récupérer un fichier supprimé ou une version précédente sans écraser d'abo
 1. Identifier source, compte propriétaire, date de version et autorisation de restauration.
    👉 Explication : sans autorisation du propriétaire, ne pas restaurer.
 
-2. File History (GUI) : dans l'**Explorateur**, aller au dossier d'origine, clic droit > **Propriétés > Versions précédentes** (ou **Panneau de configuration > Système et sécurité > Historique des fichiers > Restaurer des fichiers personnels**), choisir une version.
+2. File History ([[Glossary:GUI]]) : dans l'**Explorateur**, aller au dossier d'origine, clic droit > **Propriétés > Versions précédentes** (ou **Panneau de configuration > Système et sécurité > Historique des fichiers > Restaurer des fichiers personnels**), choisir une version.
    👉 Explication : l'écran liste les versions datées.
 
 3. Restaurer sans écraser : bouton **Restaurer vers...** (ou clic droit sur la version > **Restaurer vers**), dossier temporaire, puis comparer :

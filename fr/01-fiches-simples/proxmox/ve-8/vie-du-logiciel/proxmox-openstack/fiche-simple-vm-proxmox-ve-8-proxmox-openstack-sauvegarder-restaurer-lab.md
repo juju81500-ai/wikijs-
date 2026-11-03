@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Proxmox_VE_8_Proxmox_OpenStack_Sauvegarder_Restaurer_Lab
 
-- **Environnement** : VM DevStack jetable sur Proxmox VE 8.x, environnement isolé
-- **OS / Version** : Ubuntu Server 24-04 LTS pour le lab OpenStack; DevStack selon branche officiellement documentée
+- **Environnement** : [[Glossary:VM]] DevStack jetable sur Proxmox VE 8.x, environnement isolé
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] pour le lab OpenStack; DevStack selon branche officiellement documentée
 - **Catégorie** : cloud privé / sauvegarde de lab
 - **Tags** : `proxmox`, `openstack`, `devstack`, `sauvegarde`, `restauration`, `lab`
 
@@ -31,7 +31,7 @@ Restaurer un lab OpenStack jetable sans confondre snapshot VM, sauvegarde indép
 3. Pour une copie indépendante, utiliser la tâche et le dépôt déjà administrés dans Proxmox VE ou Proxmox Backup Server, selon leur documentation de version.
    👉 Explication : ne pas inventer une cible ni supposer qu’un snapshot est répliqué hors site.
 4. Restaurer un point de sauvegarde dans le lab sous un nouvel ID VM et sur un réseau isolé, en suivant l’assistant de l’outil utilisé.
-   👉 Explication : le nouvel ID évite d’écraser la VM source; les étapes exactes dépendent de la version de PBS/PVE.
+   👉 Explication : le nouvel ID évite d’écraser la VM source; les étapes exactes dépendent de la version de [[Glossary:PBS]]/PVE.
 5. Vérifier l’accès local à Horizon et au catalogue, puis supprimer seulement la VM restaurée de test.
    👉 Explication : ce contrôle valide la récupération sans toucher à une plateforme réelle.
 
@@ -42,7 +42,7 @@ Restaurer un lab OpenStack jetable sans confondre snapshot VM, sauvegarde indép
 
 ## 3. Production — Sécurité
 
-- Isoler la VM et son réseau; ne pas exposer Horizon ni les API au réseau public.
+- Isoler la VM et son réseau; ne pas exposer Horizon ni les [[Glossary:API]] au réseau public.
 - Protéger les sauvegardes et fichiers de configuration contenant des secrets.
 
 ## Validation et retour arrière

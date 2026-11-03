@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_Ubuntu_24.04_Nakivo_Transporter_Sauvegarder_Restaurer
 
-- **Environnement** : Ubuntu Server 24-04 LTS x64; NAKIVO Backup & Replication Transporter
+- **Environnement** : Ubuntu Server 24-04 [[Glossary:LTS]] x64; NAKIVO Backup & Replication Transporter
 - **OS / Version** : Ubuntu 24-04 — plateforme de déploiement listée dans les exigences NAKIVO; valider le build produit
 - **Catégorie** : sauvegarde / restauration
 - **Tags** : `ubuntu-24.04`, `nakivo`, `transporter`, `sauvegarder-restaurer`
@@ -36,7 +36,7 @@ Protéger la configuration NAKIVO (self-backup du Director) et prouver qu'une re
 4. Cliquer sur **Run Self-backup Now** pour obtenir un premier point de récupération.
    👉 Explication : ne pas attendre l'horaire pour vérifier que la sauvegarde s'écrit.
 
-5. Sauvegarder les données de la machine Transporter selon la politique de l'organisation (snapshot VM ou image du système), en plus du self-backup.
+5. Sauvegarder les données de la machine Transporter selon la politique de l'organisation (snapshot [[Glossary:VM]] ou image du système), en plus du self-backup.
    👉 Explication : le self-backup ne remplace pas la sauvegarde de l'hôte Linux; les données de sauvegarde restent dans les dépôts.
 
 6. Restaurer en lab : **Settings** > **Repositories**, sélectionner un dépôt contenant un self-backup, choisir le self-backup dans la liste **Backups**, cliquer sur **Recover** puis **Restore**, et attendre le message de succès.
@@ -56,7 +56,7 @@ Protéger la configuration NAKIVO (self-backup du Director) et prouver qu'une re
 
 - Chiffrer le self-backup et stocker le mot de passe dans un coffre approuvé; ne jamais l'écrire dans une fiche ou un ticket.
 - Restreindre l'accès aux dépôts qui contiennent les self-backups.
-- Ne pas exposer SSH ou l'interface NAKIVO sur Internet sans architecture de sécurité approuvée.
+- Ne pas exposer [[Glossary:SSH]] ou l'interface NAKIVO sur Internet sans architecture de sécurité approuvée.
 
 ## Validation et retour arrière
 

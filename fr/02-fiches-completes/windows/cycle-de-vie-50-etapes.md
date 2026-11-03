@@ -15,7 +15,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 Cycle complet multi-OS : [Cycle de vie 50 étapes](/fr/00-administration/01-gouvernance-architecture/cycle-de-vie-50-etapes).
 
-Commandes Windows appliquées. Serveur et client n'ont pas les mêmes étapes (AD, DHCP, DNS et IIS sont réservés au serveur).
+Commandes Windows appliquées. Serveur et client n'ont pas les mêmes étapes ([[Glossary:AD]], [[Glossary:DHCP]], [[Glossary:DNS]] et [[Glossary:IIS]] sont réservés au serveur).
 
 
 Les fiches du pack correspondant à chaque étape ne sont pas liées automatiquement (correspondances par nom trop approximatives) : à relier à la main.
@@ -25,7 +25,7 @@ Versions présentes dans le pack : Client-10, Client-11, Server-2022, Server-202
 
 ### 01. Definition des besoins (Sizing)
 
-- **Tous OS** : Allocation vCPU/CPU, RAM, IOPS stockage, architecture (x86_64, ARM64).
+- **Tous OS** : Allocation vCPU/CPU, [[Glossary:RAM]], [[Glossary:IOPS]] stockage, architecture (x86_64, ARM64).
 
 ### 02. Recuperation de l'image systeme
 
@@ -37,12 +37,12 @@ Versions présentes dans le pack : Client-10, Client-11, Server-2022, Server-202
 
 ### 04. Preparation du support d'amorcage
 
-- **Bare-metal** : Cle USB bootable (dd, Rufus, Ventoy) ou montage IPMI/iDRAC/iLO
+- **Bare-metal** : Cle [[Glossary:USB]] bootable (dd, Rufus, Ventoy) ou montage [[Glossary:IPMI]]/iDRAC/iLO
 - **Virtuel** : Stockage ISO dans le datastore (Proxmox VE, VMware ESXi, Hyper-V, XCP-ng)
 
 ### 05. Configuration materielle / Firmware
 
-- **Tous OS** : Choix BIOS Legacy ou UEFI, Secure Boot (On/Off selon OS), Virtualisation (VT-x/AMD-V), controleur de stockage (AHCI, VirtIO SCSI, MegaRAID).
+- **Tous OS** : Choix [[Glossary:BIOS]] Legacy ou UEFI, Secure Boot (On/Off selon OS), Virtualisation (VT-x/AMD-V), controleur de stockage ([[Glossary:AHCI]], VirtIO SCSI, MegaRAID).
 
 
 ## Phase 2 : installation de base (étapes 6 à 15)
@@ -73,15 +73,15 @@ Versions présentes dans le pack : Client-10, Client-11, Server-2022, Server-202
 
 ### 12. Fuseau horaire (Timezone)
 
-- **Windows** : Time Zone (ex: Romance Standard Time) + horloge CMOS en heure locale
+- **Windows** : Time Zone (ex: Romance Standard Time) + horloge [[Glossary:CMOS]] en heure locale
 
 ### 13. Partitionnement et systemes de fichiers
 
-- **Windows** : GPT/MBR, NTFS / ReFS, Partitions (EFI, MSR, C:\ OS, D:\ Data, Recovery)
+- **Windows** : [[Glossary:GPT]]/MBR, [[Glossary:NTFS]] / ReFS, Partitions ([[Glossary:EFI]], MSR, C:\ OS, D:\ Data, Recovery)
 
 ### 14. Selection des composants de base
 
-- **Windows** : Edition "Server Core" (sans GUI) ou "Server with Desktop Experience" (GUI)
+- **Windows** : Edition "Server Core" (sans [[Glossary:GUI]]) ou "Server with Desktop Experience" (GUI)
 
 ### 15. Chargeur d'amorcage (Bootloader)
 
@@ -104,7 +104,7 @@ Versions présentes dans le pack : Client-10, Client-11, Server-2022, Server-202
 
 ### 19. Configuration des depots logiciels (Repositories)
 
-- **Windows** : Configuration WSUS / Windows Update / Winget / PSGallery
+- **Windows** : Configuration [[Glossary:WSUS]] / Windows Update / Winget / PSGallery
 
 ### 20. Mise a jour initiale complete du systeme
 
@@ -112,7 +112,7 @@ Versions présentes dans le pack : Client-10, Client-11, Server-2022, Server-202
 
 ### 21. Pilotes et agents de virtualisation
 
-- **Windows** : VirtIO Drivers + QEMU Guest Agent, VMware Tools, Hyper-V Integration Services
+- **Windows** : VirtIO Drivers + [[Glossary:QEMU]] Guest Agent, VMware Tools, Hyper-V Integration Services
 
 ### 22. Synchronisation horaire (NTP)
 
@@ -124,11 +124,11 @@ Versions présentes dans le pack : Client-10, Client-11, Server-2022, Server-202
 
 ### 24. Personnalisation de l'environnement et bannieres
 
-- **Windows** : Profil PowerShell ($PROFILE), Banniere legale GPO (interactive logon message)
+- **Windows** : Profil PowerShell ($PROFILE), Banniere legale [[Glossary:GPO]] (interactive logon message)
 
 ### 25. Validation de l'etat initial (Baseline)
 
-- **Tous OS** : Nettoyage des caches, arret propre et creation du Snapshot VM "01-CLEAN-INSTALL" ou capture Sysprep/Template.
+- **Tous OS** : Nettoyage des caches, arret propre et creation du Snapshot [[Glossary:VM]] "01-CLEAN-INSTALL" ou capture Sysprep/Template.
 
 
 ## Phase 4 : sécurisation et hardening (étapes 26 à 35)
@@ -139,11 +139,11 @@ Versions présentes dans le pack : Client-10, Client-11, Server-2022, Server-202
 
 ### 27. Durcissement de l'acces distant
 
-- **Windows** : Durcissement RDP (NLA obligatoire, restriction d'IP) et sshd_config_default
+- **Windows** : Durcissement [[Glossary:RDP]] ([[Glossary:NLA]] obligatoire, restriction d'[[Glossary:IP]]) et sshd_config_default
 
 ### 28. Gestion fine des privileges d'administration
 
-- **Windows** : UAC (User Account Control), Groupes locaux Restreints, LAPS (Local Admin Password Solution)
+- **Windows** : [[Glossary:UAC]] (User Account Control), Groupes locaux Restreints, [[Glossary:LAPS]] (Local Admin Password Solution)
 
 ### 29. Pare-feu hote (Host Firewall)
 
@@ -167,11 +167,11 @@ Versions présentes dans le pack : Client-10, Client-11, Server-2022, Server-202
 
 ### 34. Durcissement du noyau et de la pile reseau
 
-- **Windows** : Registre TCP/IP (HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters) & Hardening Kitty
+- **Windows** : Registre [[Glossary:TCP]]/IP (HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters) & Hardening Kitty
 
 ### 35. Controle d'acces obligatoire (MAC) et Antivirus
 
-- **Windows** : Microsoft Defender Antivirus, AppLocker / WDAC (Windows Defender Application Control)
+- **Windows** : Microsoft Defender Antivirus, AppLocker / [[Glossary:WDAC]] (Windows Defender Application Control)
 
 
 ## Phase 5 : mise en production et services (étapes 36 à 42)
@@ -195,15 +195,15 @@ Versions présentes dans le pack : Client-10, Client-11, Server-2022, Server-202
 ### 40. Configuration des sauvegardes (Backup)
 
 - **Niveau VM** : Proxmox Backup Server (vzdump), Veeam Backup & Replication
-- **Niveau OS** : BorgBackup, Restic, Rclone, cron dumps SQL (Linux/BSD) | Windows Server Backup (wbadmin), VSS
+- **Niveau OS** : BorgBackup, Restic, Rclone, cron dumps [[Glossary:SQL]] (Linux/BSD) | Windows Server Backup (wbadmin), [[Glossary:VSS]]
 
 ### 41. Supervision, metriques et inventaire (Monitoring)
 
-- **Windows** : Zabbix Agent 2, Prometheus windows_exporter, Service SNMP WMI, GLPI Agent
+- **Windows** : Zabbix Agent 2, Prometheus windows_exporter, Service [[Glossary:SNMP]] [[Glossary:WMI]], [[Glossary:GLPI]] Agent
 
 ### 42. Gestion, rotation et centralisation des journaux (Logs)
 
-- **Windows** : Event Viewer (wevtutil - taille max des journaux), WEF (Windows Event Forwarding), Winlogbeat
+- **Windows** : Event Viewer (wevtutil - taille max des journaux), [[Glossary:WEF]] (Windows Event Forwarding), Winlogbeat
 
 
 ## Phase 6 : vérification, tests et documentation (étapes 43 à 50)
@@ -234,7 +234,7 @@ Versions présentes dans le pack : Client-10, Client-11, Server-2022, Server-202
 
 ### 49. Enregistrement CMDB et Gestion des acces
 
-- **Tous OS** : Integration dans l'inventaire (GLPI, NetBox), documentation IPAM, enregistrement des secrets dans le coffre-fort (Vaultwarden / Bitwarden, KeePass, HashiCorp Vault) et configuration SSH/RDP.
+- **Tous OS** : Integration dans l'inventaire (GLPI, NetBox), documentation [[Glossary:IPAM]], enregistrement des secrets dans le coffre-fort (Vaultwarden / Bitwarden, KeePass, HashiCorp Vault) et configuration [[Glossary:SSH]]/RDP.
 
 ### 50. Documentation d'exploitation (Runbook / Dossier d'Architecture Technique)
 

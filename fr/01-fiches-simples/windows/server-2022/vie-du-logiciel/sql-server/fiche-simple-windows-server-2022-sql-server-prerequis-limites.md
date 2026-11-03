@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_Windows_Server_2022_SQL-Server_Prerequis_Limites
 
-- **Environnement** : VM Windows Server 2022 (SQL Server 2022 Standard ou Developer)
+- **Environnement** : [[Glossary:VM]] Windows Server 2022 ([[Glossary:SQL]] Server 2022 Standard ou Developer)
 - **OS / Version** : Windows Server 2022; SQL Server 2022 (instance par défaut MSSQLSERVER)
 - **Catégorie** : base de données / SQL Server / Prérequis et limites
 - **Tags** : `windows-server-2022`, `sql-server`, `sqlserver-2022`, `prerequis`
@@ -29,14 +29,14 @@ Vérifier que le serveur Windows est prêt pour SQL Server 2022 et connaître le
    Get-ComputerInfo | Select-Object OsName,OsVersion,CsName,CsDomain
    Get-Volume | Select-Object DriveLetter,FileSystemLabel,FileSystem,Size,SizeRemaining
    ```
-   👉 Explication : GUI équivalent : Paramètres → Système → À propos. Le nom de l'ordinateur doit être définitif avant l'installation.
+   👉 Explication : [[Glossary:GUI]] équivalent : Paramètres → Système → À propos. Le nom de l'ordinateur doit être définitif avant l'installation.
 
 2. Prévoir des volumes séparés (données, journaux, sauvegardes) :
    ```powershell
    Get-Disk | Select-Object Number,FriendlyName,Size,PartitionStyle
    fsutil fsinfo ntfsinfo D:
    ```
-   👉 Explication : GUI : Gestionnaire de serveur → Services de fichiers et de stockage → Volumes. Formater les volumes de données en NTFS, unité d'allocation de 64 Ko, par exemple avec `Format-Volume -DriveLetter D -FileSystem NTFS -AllocationUnitSize 65536` (action destructive, à valider).
+   👉 Explication : GUI : Gestionnaire de serveur → Services de fichiers et de stockage → Volumes. Formater les volumes de données en [[Glossary:NTFS]], unité d'allocation de 64 Ko, par exemple avec `Format-Volume -DriveLetter D -FileSystem NTFS -AllocationUnitSize 65536` (action destructive, à valider).
 
 3. Choisir l'édition et le compte de service :
    👉 Explication : Developer pour le lab et les tests (non autorisée en production), Standard ou Enterprise sous licence en production ; compte de service par défaut (compte virtuel) en lab, compte de service géré (gMSA) en production.
@@ -53,7 +53,7 @@ Vérifier que le serveur Windows est prêt pour SQL Server 2022 et connaître le
 
 ## 2. Production — Contrôles
 
-Consigner nom, IP, édition, licence, volumétrie, comptes de service, groupe DBA, RPO/RTO, fenêtre de maintenance.
+Consigner nom, [[Glossary:IP]], édition, licence, volumétrie, comptes de service, groupe DBA, [[Glossary:RPO]]/RTO, fenêtre de maintenance.
 
 ## 3. Production — Sécurité
 

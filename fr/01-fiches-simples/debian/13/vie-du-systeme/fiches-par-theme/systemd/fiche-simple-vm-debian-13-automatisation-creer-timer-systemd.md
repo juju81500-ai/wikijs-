@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-debian-13-automatisation-creer-timer-systemd.md
 
-- **Environnement** : VM ou serveur Debian 13
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 13
 - **OS / Version** : Debian 13 avec systemd
 - **Catégorie** : Automatisation / Services
 - **Tags** : `[debian13]`, `[debian]`, `[systemd]`, `[timer]`, `[automatisation]`, `[maintenance]`

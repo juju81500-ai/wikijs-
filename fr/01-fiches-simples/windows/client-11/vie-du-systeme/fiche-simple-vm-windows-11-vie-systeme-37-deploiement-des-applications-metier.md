@@ -30,7 +30,7 @@ Installer les logiciels métier de manière standardisée.
    ```
    👉 Explication : installe l'application identifiée par `ID_APPLICATION` (obtenu avec `winget search`) sans interaction.
 
-2. Installer un paquet MSI interne en mode silencieux.
+2. Installer un paquet [[Glossary:MSI]] interne en mode silencieux.
    ```powershell
    Start-Process msiexec.exe -ArgumentList '/i "\\SERVEUR\Logiciels\APPLICATION.msi" /qn /norestart /l*v C:\Windows\Temp\APPLICATION.log' -Wait -NoNewWindow
    ```
@@ -42,7 +42,7 @@ Installer les logiciels métier de manière standardisée.
    ```
    👉 Explication : liste les logiciels et leurs versions pour l'inventaire.
 
-4. Appliquer les profils de l'utilisateur (imprimantes, lecteurs réseau) par GPO ou Intune.
+4. Appliquer les profils de l'utilisateur (imprimantes, lecteurs réseau) par [[Glossary:GPO]] ou Intune.
    ```powershell
    Get-PrinterPort | Select-Object -First 5
    Get-SmbMapping

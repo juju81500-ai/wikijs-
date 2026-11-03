@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **Environnement** : Poste Windows 11 géré, compte standard, Postman Desktop et Newman
 - **OS / Version** : Windows 11 Client
-- **Catégorie** : API / variables et secrets
+- **Catégorie** : [[Glossary:API]] / variables et secrets
 - **Tags** : `windows-11`, `postman`, `api`, `newman`, `vie-du-logiciel`
 
 ---
@@ -53,7 +53,7 @@ Séparer URL, paramètres et secrets avec des environnements Postman et des vari
    ```text
    Environments > ENV_LAB > ⋯ > Export > vérifier que API_TOKEN n'a pas de valeur
    ```
-   👉 Explication : Contrôler le JSON exporté avant de le partager.
+   👉 Explication : Contrôler le [[Glossary:JSON]] exporté avant de le partager.
 
 ## 2. Production — Contrôles
 

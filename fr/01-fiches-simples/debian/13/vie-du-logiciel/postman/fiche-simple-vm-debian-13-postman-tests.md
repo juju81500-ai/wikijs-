@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Postman_Tests
 
-- **Environnement** : VM Debian 13 Trixie avec bureau graphique, Postman Desktop et Newman
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie avec bureau graphique, Postman Desktop et Newman
 - **OS / Version** : Debian 13 Trixie
-- **Catégorie** : API / tests automatisés
+- **Catégorie** : [[Glossary:API]] / tests automatisés
 - **Tags** : `debian13`, `postman`, `api`, `newman`, `vie-du-logiciel`
 
 ---
@@ -36,7 +36,7 @@ Ajouter des tests Postman (scripts de test) vérifiant statut, temps de réponse
    pm.test('Temps de réponse < 800 ms', function () { pm.expect(pm.response.responseTime).to.be.below(800); });
    pm.test('Corps JSON', function () { pm.response.to.be.json; });
    ```
-   👉 Explication : Vérifie le statut, le temps de réponse (seuil à adapter) et le format JSON.
+   👉 Explication : Vérifie le statut, le temps de réponse (seuil à adapter) et le format [[Glossary:JSON]].
 
 3. Lancer la recette dans le Collection Runner :
    ```text

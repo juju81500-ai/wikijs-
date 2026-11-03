@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_30_Protection_Contre_Le_Brute
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 30 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-30`
@@ -24,7 +24,7 @@ Bloquer les tentatives répétées de connexion.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Dans Système > Paramètres > Administration, vérifier que la protection contre le force brute (verrouillage après échecs) est active pour le GUI et SSH.
+1. Dans Système > Paramètres > Administration, vérifier que la protection contre le force brute (verrouillage après échecs) est active pour le [[Glossary:GUI]] et [[Glossary:SSH]].
    👉 Explication : les adresses fautives sont ajoutées à une table de blocage.
 
 2. Lister les adresses bloquées et en débloquer une :

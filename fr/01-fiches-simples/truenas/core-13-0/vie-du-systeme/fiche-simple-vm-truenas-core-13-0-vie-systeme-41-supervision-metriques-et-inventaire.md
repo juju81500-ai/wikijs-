@@ -20,18 +20,18 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Surveiller l'état du NAS.
+Surveiller l'état du [[Glossary:NAS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Tableau de bord, Rapports (CPU, ARC, réseau, disques) et Alertes.
+1. [[Glossary:GUI]] : Tableau de bord, Rapports ([[Glossary:CPU]], ARC, réseau, disques) et Alertes.
    ```sh
    zpool status -x
    zpool list -o name,size,alloc,free,cap,health
    ```
    👉 Explication : état et occupation.
 
-2. SNMP : Services > SNMP.
+2. [[Glossary:SNMP]] : Services > SNMP.
    ```sh
    midclt call service.update snmp '{"enable": true}'
    snmpwalk -v2c -c COMMUNAUTE ADRESSE_NAS 1.3.6.1.2.1.1
@@ -42,7 +42,7 @@ Surveiller l'état du NAS.
    ```sh
    midclt call mail.config | head
    ```
-   👉 Explication : SMTP configuré.
+   👉 Explication : [[Glossary:SMTP]] configuré.
 
 ## 2. Production — Contrôles
 

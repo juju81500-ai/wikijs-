@@ -38,7 +38,7 @@ Vérifier qu'une sauvegarde est restaurable sans toucher à la production.
    ```
    👉 Explication : la configuration identique garantit un test réaliste.
 
-3. Ajouter une entrée DNS de test et se connecter avec un compte de test.
+3. Ajouter une entrée [[Glossary:DNS]] de test et se connecter avec un compte de test.
    👉 Explication : on retrouve l'élément de test sans toucher à la production.
 
 4. Si une restauration en production est nécessaire : arrêter le conteneur et conserver une copie de l'état actuel avant d'écraser `vw-data`.

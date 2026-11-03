@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_VM_Windows_11_Visio_Installer
 
-- **Environnement** : Poste Windows 11 x64 d'un utilisateur ou administrateur (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'un utilisateur ou administrateur ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; version Visio à vérifier auprès de l'éditeur
 - **Catégorie** : outil de diagrammes / poste de travail
 - **Tags** : `visio`, `windows11`, `microsoft-365`, `installation`
@@ -47,7 +47,7 @@ cd C:\ODT
 ```
    👉 Explication : l'installation télécharge depuis le CDN ou depuis SOURCE_ODT si SourcePath est ajouté.
 
-4. Variante Intune : GUI **Centre d'administration Intune > Applications > Windows > Ajouter > Microsoft 365 Apps** ; dans les paramètres, activer l'application Visio (libellé à vérifier), assigner le groupe GROUPE_VISIO.
+4. Variante Intune : [[Glossary:GUI]] **Centre d'administration Intune > Applications > Windows > Ajouter > Microsoft 365 Apps** ; dans les paramètres, activer l'application Visio (libellé à vérifier), assigner le groupe GROUPE_VISIO.
    👉 Explication : GROUPE_VISIO est un groupe Entra ID à remplacer.
 
 5. Contrôler l'installation :

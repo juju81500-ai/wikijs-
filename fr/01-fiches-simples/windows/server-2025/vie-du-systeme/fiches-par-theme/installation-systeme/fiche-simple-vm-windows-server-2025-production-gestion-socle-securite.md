@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-2025-production-gestion-socle-securite.md
 
-- **Environnement** : Serveur physique ou VM Windows Server 2025 administré par l'organisation
+- **Environnement** : Serveur physique ou [[Glossary:VM]] Windows Server 2025 administré par l'organisation
 - **OS / Version** : Windows Server 2025 Standard ou Datacenter
 - **Catégorie** : installation / déploiement
 - **Tags** : `windows-server-2025`, `installation`, `production`, `uefi`, `openssh`
@@ -24,7 +24,7 @@ Mettre le serveur sous gestion et appliquer la baseline de sécurité.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Inscrire le serveur dans l'outil de gestion prévu (GPO, Windows Admin Center, MECM, Azure Arc ou autre).
+1. Inscrire le serveur dans l'outil de gestion prévu ([[Glossary:GPO]], Windows Admin Center, MECM, Azure Arc ou autre).
    👉 Explication : le serveur doit être géré.
 
 2. Appliquer la baseline et les stratégies approuvées pour le rôle.

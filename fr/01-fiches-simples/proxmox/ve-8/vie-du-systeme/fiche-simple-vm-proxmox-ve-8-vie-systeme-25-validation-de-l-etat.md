@@ -39,7 +39,7 @@ Enregistrer l'état de référence de l'hôte.
    ```
    👉 Explication : tous les services doivent être `active (running)`.
 
-3. Archiver la configuration (GUI : **Datacenter > Backup** pour les VM; pour l'hôte, copier `/etc/pve` et `/etc/network`) :
+3. Archiver la configuration ([[Glossary:GUI]] : **Datacenter > Backup** pour les [[Glossary:VM]]; pour l'hôte, copier `/etc/pve` et `/etc/network`) :
    ```bash
    tar czf pve-config-$(date +%F).tgz /etc/pve /etc/network /etc/hosts /etc/chrony
    ```

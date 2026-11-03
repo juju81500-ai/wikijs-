@@ -11,14 +11,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Packer
 
-- **Environnement** : Poste d'administration ou VM de build (Debian 13)
+- **Environnement** : Poste d'administration ou [[Glossary:VM]] de build (Debian 13)
 - **OS / Version** : Debian 13 (trixie)
 - **Version** : Packer 1.x (`<version_packer>`, binaire officiel HashiCorp, à vérifier sur la version déployée)
 - **Catégorie** : Automatisation, déploiement et IaC
 - **Tags** : `[debian-13]`, `[packer]`, `[hashicorp]`, `[image-template]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer Packer sur Debian 13, valider un modèle de construction d'image (format HCL) sans VM réelle, puis préparer un build reproductible : version figée, variables externalisées, binaire vérifié par empreinte. Packer construit des images (template de VM) à partir d'un modèle ; une image mal construite se déploie ensuite partout, d'où l'importance de la vérification.
+Installer Packer sur Debian 13, valider un modèle de construction d'image (format [[Glossary:HCL]]) sans VM réelle, puis préparer un build reproductible : version figée, variables externalisées, binaire vérifié par empreinte. Packer construit des images (template de VM) à partir d'un modèle ; une image mal construite se déploie ensuite partout, d'où l'importance de la vérification.
 
 ---
 
@@ -136,7 +136,7 @@ packer validate -var-file=prod.pkrvars.hcl .
 ---
 
 ## 🔒 3. Production — Façon Sécurisée (Hardening & Isolation Enterprise)
-1. Vérification de l'authenticité du fichier d'empreintes (signature GPG) avant installation :
+1. Vérification de l'authenticité du fichier d'empreintes (signature [[Glossary:GPG]]) avant installation :
 ```bash
 curl -LO https://releases.hashicorp.com/packer/<version_packer>/packer_<version_packer>_SHA256SUMS.sig
 curl -fsSL https://www.hashicorp.com/.well-known/pgp-key.txt | gpg --import
@@ -173,7 +173,7 @@ packer build -var-file=prod.pkrvars.hcl -on-error=cleanup .
 ```
 👉 Explication : `-on-error=cleanup` supprime automatiquement les ressources temporaires créées pendant le build en cas d'erreur, ce qui évite les machines orphelines. C'est le comportement par défaut ; `-on-error=abort` les laisserait en place pour diagnostic (options à vérifier sur la version déployée). Consigner la version de Packer, la version des plugins et la date du build dans le journal de l'équipe.
 
-5. Contrôle de la surface d'accès des images produites : ajouter un provisioner final dans le modèle qui supprime les mots de passe par défaut, les clés SSH de build et les jetons temporaires, puis tester l'image produite avant publication.
+5. Contrôle de la surface d'accès des images produites : ajouter un provisioner final dans le modèle qui supprime les mots de passe par défaut, les clés [[Glossary:SSH]] de build et les jetons temporaires, puis tester l'image produite avant publication.
 👉 Explication : Une image de référence ne doit contenir aucun identifiant de construction, sinon chaque machine déployée à partir d'elle l'hérite. Le contenu exact du provisioner dépend de l'hyperviseur et de l'OS cible (à compléter selon le cas, à vérifier sur la version déployée).
 
 ---

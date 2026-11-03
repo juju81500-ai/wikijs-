@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_ownCloud_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Ubuntu Server 24-04; ownCloud Infinite Scale (oCIS), binaire officiel
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04; ownCloud Infinite Scale (oCIS), binaire officiel
 - **OS / Version** : Ubuntu Server 24-04
 - **Catégorie** : Vie du logiciel / ownCloud — Mise à jour et retour arrière
 - **Tags** : `owncloud`, `serveur`, `vie-du-logiciel`, `mise_a_jour_retour_arriere`

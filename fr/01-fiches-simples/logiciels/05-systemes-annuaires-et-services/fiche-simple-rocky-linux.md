@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Rocky Linux
 
-- **Environnement** : VM (Rocky Linux 9)
+- **Environnement** : [[Glossary:VM]] (Rocky Linux 9)
 - **OS / Version** : Rocky Linux 9.x
 - **Version** : Rocky Linux 9 (dépôts `rocky` et `rocky-extras`, à vérifier sur la version déployée)
 - **Catégorie** : Systèmes, annuaires et services
@@ -64,7 +64,7 @@ sudo firewall-cmd --permanent --add-port=8443/tcp
 sudo firewall-cmd --reload
 sudo firewall-cmd --list-ports
 ```
-👉 Explication : `semanage port -a` déclare le port 8443 comme port HTTP pour SELinux (sinon le service est refusé même si le pare-feu est ouvert). `firewall-cmd --add-port` ouvre le port dans firewalld. Si le port est déjà déclaré, `semanage` renvoie une erreur `ValueError` : utiliser `semanage port -m` pour modifier. Le port 8443 est un exemple à adapter.
+👉 Explication : `semanage port -a` déclare le port 8443 comme port [[Glossary:HTTP]] pour SELinux (sinon le service est refusé même si le pare-feu est ouvert). `firewall-cmd --add-port` ouvre le port dans firewalld. Si le port est déjà déclaré, `semanage` renvoie une erreur `ValueError` : utiliser `semanage port -m` pour modifier. Le port 8443 est un exemple à adapter.
 
 ---
 
@@ -110,7 +110,7 @@ grep -rH "^enabled" /etc/yum.repos.d/
 ```
 👉 Explication : Tous les dépôts actifs doivent avoir `gpgcheck=1`. Un dépôt en `gpgcheck=0` doit être désactivé ou justifié par écrit.
 
-2. Limitation de l'accès SSH au réseau d'administration :
+2. Limitation de l'accès [[Glossary:SSH]] au réseau d'administration :
 ```bash
 sudo firewall-cmd --list-services
 sudo firewall-cmd --permanent --remove-service=ssh

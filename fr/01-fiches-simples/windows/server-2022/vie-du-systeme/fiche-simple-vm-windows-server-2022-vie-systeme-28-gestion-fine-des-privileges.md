@@ -51,7 +51,7 @@ Revoir trimestriellement les membres des groupes privilégiés.
 
 ## 3. Production — Sécurité
 
-Élévation à la demande (UAC) et aucun compte partagé.
+Élévation à la demande ([[Glossary:UAC]]) et aucun compte partagé.
 
 ## Validation et retour arrière
 

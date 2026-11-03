@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-2022-iis-retour-arriere.md
 
-- **Environnement** : VM Windows Server 2022 pilote
-- **OS / Version** : Windows Server 2022; rôle Web Server (IIS)
+- **Environnement** : [[Glossary:VM]] Windows Server 2022 pilote
+- **OS / Version** : Windows Server 2022; rôle Web Server ([[Glossary:IIS]])
 - **Catégorie** : serveur Web / IIS
 - **Tags** : `iis`, `windows-server-2022`, `web-server`, `tls`, `application-pool`
 
@@ -33,7 +33,7 @@ Restaurer la configuration IIS après un changement raté.
 2. La restauration remplace la configuration IIS active (`appcmd restore backup NOM_DE_LA_SAUVEGARDE`, nom réel à indiquer); pratiquer d'abord sur une VM isolée et suivre la procédure Microsoft.
    👉 Explication : c'est une action destructive pour la configuration courante.
 
-3. Pour un changement applicatif, remettre la version de contenu précédente et confirmer ACL, bindings, certificat et état du pool.
+3. Pour un changement applicatif, remettre la version de contenu précédente et confirmer [[Glossary:ACL]], bindings, certificat et état du pool.
    👉 Explication : la sauvegarde IIS ne couvre pas le contenu.
 
 ## 2. Production — Contrôles

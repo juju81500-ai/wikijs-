@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_17_Resolution_De_Noms_Client
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 17 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-17`
@@ -20,14 +20,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Configurer les serveurs DNS utilisés par le pare-feu et les clients.
+Configurer les serveurs [[Glossary:DNS]] utilisés par le pare-feu et les clients.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Renseigner System > General Setup > DNS Servers (`IP_DNS1`, `IP_DNS2`) et décocher « Allow DNS server list to be overridden by DHCP/PPP on WAN » si les DNS sont imposés.
+1. Renseigner System > General Setup > DNS Servers (`IP_DNS1`, `IP_DNS2`) et décocher « Allow DNS server list to be overridden by [[Glossary:DHCP]]/PPP on [[Glossary:WAN]] » si les DNS sont imposés.
    👉 Explication : `IP_DNS1` et `IP_DNS2` sont les résolveurs internes ou publics choisis.
 
-2. Activer Services > DNS Resolver > General Settings (Enable DNS Resolver, DNSSEC, interfaces LAN).
+2. Activer Services > DNS Resolver > General Settings (Enable DNS Resolver, [[Glossary:DNSSEC]], interfaces [[Glossary:LAN]]).
    👉 Explication : les clients interrogent le pare-feu qui résout ou relaie (Unbound).
 
 3. Tester en shell :

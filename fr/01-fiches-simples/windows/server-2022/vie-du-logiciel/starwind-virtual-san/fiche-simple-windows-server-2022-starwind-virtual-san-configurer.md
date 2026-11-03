@@ -30,7 +30,7 @@ Rename-NetAdapter -Name NOM_ACTUEL -NewName NOM_ROLE
 ```
    👉 Explication : NOM_ACTUEL et NOM_ROLE sont à remplacer (exemple de rôles : gestion, iSCSI, synchronisation) ; des noms clairs évitent les erreurs de câblage.
 
-2. Fixer une adresse IP statique par réseau. GUI : propriétés de la carte > **Protocole Internet version 4 (TCP/IPv4)**. PowerShell :
+2. Fixer une adresse [[Glossary:IP]] statique par réseau. [[Glossary:GUI]] : propriétés de la carte > **Protocole Internet version 4 ([[Glossary:TCP]]/IPv4)**. PowerShell :
 ```powershell
 New-NetIPAddress -InterfaceAlias NOM_ROLE -IPAddress ADRESSE_IP -PrefixLength LONGUEUR_PREFIXE
 ```

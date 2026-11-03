@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_Suricata_Sauvegarder_Restaurer
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Suricata
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Suricata
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Suricata / sauvegarde et restauration
 - **Tags** : `suricata`, `rocky9`, `vie-du-logiciel`, `sauvegarder-restaurer`
 

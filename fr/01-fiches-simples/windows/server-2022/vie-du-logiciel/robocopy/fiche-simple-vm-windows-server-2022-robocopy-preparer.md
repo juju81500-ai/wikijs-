@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-2022-robocopy-preparer.md
 
-- **Environnement** : Windows Server 2022 (Robocopy intégré); partages SMB et volumes NTFS
+- **Environnement** : Windows Server 2022 (Robocopy intégré); partages SMB et volumes [[Glossary:NTFS]]
 - **OS / Version** : Windows Server 2022 (Robocopy; non testé sur d'autres versions)
 - **Catégorie** : copie / sauvegarde de fichiers
 - **Tags** : `windows-server-2022`, `robocopy`, `preparation`, `powershell`

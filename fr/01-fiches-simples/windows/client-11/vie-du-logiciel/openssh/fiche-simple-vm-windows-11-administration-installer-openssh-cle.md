@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 fiche-simple-vm-windows-11-administration-installer-openssh-cle.md
 
-- **Environnement** : VM ou poste client Windows
+- **Environnement** : [[Glossary:VM]] ou poste client Windows
 - **OS / Version** : Windows 11 Pro / Enterprise
 - **Catégorie** : Installation / Administration / Sécurité
 - **Tags** : `[windows-11]`, `[openssh]`, `[ssh]`, `[cle-ed25519]`, `[powershell]`, `[hardening]`
@@ -50,7 +50,7 @@ Installer OpenSSH Server sur Windows 11, autoriser l'administration par clé et 
 
 ## 🔒 3. Production — Façon Sécurisée
 1. Restreindre la règle pare-feu `OpenSSH-Server-In-TCP` au profil et aux sources d'administration; vérifier qu'aucune autre règle large ne maintient l'exposition.
-2. Protéger `authorized_keys` avec les ACL attendues et ne jamais copier la clé privée sur Windows.
+2. Protéger `authorized_keys` avec les [[Glossary:ACL]] attendues et ne jamais copier la clé privée sur Windows.
 3. Pour un compte membre du groupe Administrateurs, respecter le chemin et les ACL particuliers de `administrators_authorized_keys`; ne pas réutiliser les permissions d'un compte standard.
 4. Garder la console locale ou hyperviseur et un compte de secours avant de fermer l'authentification par mot de passe.
 

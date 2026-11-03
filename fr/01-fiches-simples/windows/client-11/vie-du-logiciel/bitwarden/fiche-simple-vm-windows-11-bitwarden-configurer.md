@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Configurer compte, MFA, verrouillage et récupération depuis interface officielle.
+Configurer compte, [[Glossary:MFA]], verrouillage et récupération depuis interface officielle.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

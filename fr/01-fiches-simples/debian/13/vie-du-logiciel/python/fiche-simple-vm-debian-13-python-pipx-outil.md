@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Installer un outil CLI Python isolé sans toucher au système.
+Installer un outil [[Glossary:CLI]] Python isolé sans toucher au système.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

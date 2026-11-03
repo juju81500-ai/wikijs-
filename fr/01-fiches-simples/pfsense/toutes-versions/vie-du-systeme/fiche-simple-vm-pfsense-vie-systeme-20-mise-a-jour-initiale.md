@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_20_Mise_A_Jour_Initiale
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 20 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-20`
@@ -27,7 +27,7 @@ Appliquer les correctifs disponibles dès l'installation.
 1. Aller dans System > Update > System Update : lire la version disponible, puis Confirm pour lancer la mise à jour.
    👉 Explication : télécharge et applique les mises à jour; le pare-feu redémarre.
 
-2. Ou en shell (console option 13 « Update from console » ou SSH) :
+2. Ou en shell (console option 13 « Update from console » ou [[Glossary:SSH]]) :
    ```sh
    pfSense-upgrade -c
    pfSense-upgrade

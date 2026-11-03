@@ -24,7 +24,7 @@ Choisir le canal de mise à jour.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Mises à jour > Train (STABLE).
+1. [[Glossary:GUI]] : Système > Mises à jour > Train (STABLE).
    ```sh
    midclt call update.get_trains | head -30
    ```

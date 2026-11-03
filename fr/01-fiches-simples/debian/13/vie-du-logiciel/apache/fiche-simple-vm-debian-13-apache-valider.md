@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Apache_Valider
 
-- **Environnement** : VM Debian 13 Trixie
-- **OS / Version** : Debian 13 Trixie; Apache HTTP Server
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
+- **OS / Version** : Debian 13 Trixie; Apache [[Glossary:HTTP]] Server
 - **Catégorie** : serveur Web / Apache / Valider (recette)
 - **Tags** : `debian13`, `apache`, `recette`
 

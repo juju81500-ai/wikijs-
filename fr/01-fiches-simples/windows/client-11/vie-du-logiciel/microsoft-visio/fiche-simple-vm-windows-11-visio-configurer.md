@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_VM_Windows_11_Visio_Configurer
 
-- **Environnement** : Poste Windows 11 x64 d'un utilisateur ou administrateur (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'un utilisateur ou administrateur ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; version Visio à vérifier auprès de l'éditeur
 - **Catégorie** : outil de diagrammes / poste de travail
 - **Tags** : `visio`, `windows11`, `microsoft-365`, `configuration`
@@ -34,7 +34,7 @@ cscript ospp.vbs /dstatus
 ```
    👉 Explication : non applicable aux abonnements ; indique l'état d'activation en volume.
 
-3. Définir les emplacements de modèles et de formes : GUI **Fichier > Options > Avancé > Chemins d'accès aux fichiers**, vers PARTAGE_MODELES (à remplacer).
+3. Définir les emplacements de modèles et de formes : [[Glossary:GUI]] **Fichier > Options > Avancé > Chemins d'accès aux fichiers**, vers PARTAGE_MODELES (à remplacer).
    👉 Explication : centralise les stencils d'équipe.
 
 4. Configurer l'enregistrement : GUI **Fichier > Options > Enregistrer** : format .vsdx, enregistrement automatique actif.
@@ -43,7 +43,7 @@ cscript ospp.vbs /dstatus
 ## 2. Production — Contrôles
 
 - Documenter les options retenues.
-- Déployer via GPO ou Intune si possible.
+- Déployer via [[Glossary:GPO]] ou Intune si possible.
 
 ## 3. Production — Sécurité
 

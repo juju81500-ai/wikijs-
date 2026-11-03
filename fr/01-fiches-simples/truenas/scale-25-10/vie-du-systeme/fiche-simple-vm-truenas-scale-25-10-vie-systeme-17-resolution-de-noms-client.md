@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Configurer les serveurs DNS.
+Configurer les serveurs [[Glossary:DNS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Réseau > Paramètres globaux > Serveurs DNS 1 à 3.
+1. [[Glossary:GUI]] : Réseau > Paramètres globaux > Serveurs DNS 1 à 3.
    ```bash
    sudo midclt call network.configuration.update '{"nameserver1": "DNS1", "nameserver2": "DNS2"}'
    ```

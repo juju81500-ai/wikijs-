@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Systeme_Hostname_FQDN
 
-- **Environnement** : VM Ubuntu Server
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat)
+- **Environnement** : [[Glossary:VM]] Ubuntu Server
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble Numbat)
 - **Catégorie** : Système / Identité de la machine
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[hostname]`, `[fqdn]`, `[hostnamectl]`, `[etc-hosts]`
 
 ## 🎯 Problème précis à résoudre
-Définir le nom d'hôte statique et le FQDN d'un serveur Ubuntu 24-04 LTS, vérifier leur résolution locale et éviter qu'une réécriture de `/etc/hosts` par cloud-init ne les annule.
+Définir le nom d'hôte statique et le [[Glossary:FQDN]] d'un serveur Ubuntu 24-04 LTS, vérifier leur résolution locale et éviter qu'une réécriture de `/etc/hosts` par cloud-init ne les annule.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Afficher l'identité actuelle de la machine :
@@ -50,7 +50,7 @@ Définir le nom d'hôte statique et le FQDN d'un serveur Ubuntu 24-04 LTS, véri
    hostname -d
    getent hosts $(hostname -f)
    ```
-   👉 *Explication : `hostname -d` doit afficher `<domaine>` ; `getent hosts` doit renvoyer la ligne de `/etc/hosts` ou l'adresse IP du DNS.*
+   👉 *Explication : `hostname -d` doit afficher `<domaine>` ; `getent hosts` doit renvoyer la ligne de `/etc/hosts` ou l'adresse [[Glossary:IP]] du [[Glossary:DNS]].*
 
 ## 🔒 3. Production — Façon Sécurisée
 1. Si le serveur est déployé depuis une image cloud, empêcher cloud-init de réécrire `/etc/hosts` :
@@ -69,5 +69,5 @@ Définir le nom d'hôte statique et le FQDN d'un serveur Ubuntu 24-04 LTS, véri
    👉 *Explication : Le nom statique doit rester `<nom_du_serveur>` après redémarrage. La commande `cloud-init status` n'existe que sur les installations avec cloud-init.*
 
 ## ✅ Validation et retour arrière
-- Confirmer que `hostname -f` renvoie `<nom_du_serveur>.<domaine>` depuis une nouvelle session SSH.
+- Confirmer que `hostname -f` renvoie `<nom_du_serveur>.<domaine>` depuis une nouvelle session [[Glossary:SSH]].
 - En cas d'erreur, restaurer `/etc/hosts` avec `sudo cp -a /etc/hosts.bak /etc/hosts` et rétablir l'ancien nom avec `sudo hostnamectl set-hostname <ancien_nom>`.

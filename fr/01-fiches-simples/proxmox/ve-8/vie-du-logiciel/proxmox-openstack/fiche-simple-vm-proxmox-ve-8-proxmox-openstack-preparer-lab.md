@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Proxmox_VE_8_Proxmox_OpenStack_Preparer_Lab
 
-- **Environnement** : Nœud Proxmox VE 8.x de lab; VM OpenStack isolée et jetable
-- **OS / Version** : Proxmox VE 8.x; Ubuntu Server 24-04 LTS pour DevStack
+- **Environnement** : Nœud Proxmox VE 8.x de lab; [[Glossary:VM]] OpenStack isolée et jetable
+- **OS / Version** : Proxmox VE 8.x; Ubuntu Server 24-04 [[Glossary:LTS]] pour DevStack
 - **Catégorie** : cloud privé / préparation lab
 - **Tags** : `proxmox-ve`, `pve8`, `openstack`, `prerequis`, `reseau-isole`
 
@@ -28,7 +28,7 @@ Préparer une VM isolée pour DevStack avant d’installer les services ou d’a
    👉 Explication : DevStack présente Ubuntu 24-04 Noble comme version la plus testée au moment consulté; cela ne certifie pas l’intégration Proxmox-OpenStack.
 2. Dans Proxmox, sélectionner le nœud > **Create VM**; attacher l’ISO, créer un disque jetable et relier la VM à un bridge de lab sans uplink externe. Dimensionner selon ressources et recommandations DevStack actuelles.
    👉 Explication : besoins variables selon services; éviter surallocation sur hôte partagé.
-3. Dans les options CPU, exposer les extensions de virtualisation imbriquée seulement après vérification de la documentation PVE. Dans Ubuntu, contrôler :
+3. Dans les options [[Glossary:CPU]], exposer les extensions de virtualisation imbriquée seulement après vérification de la documentation PVE. Dans Ubuntu, contrôler :
    ```bash
    grep -m1 -Eo 'vmx|svm' /proc/cpuinfo
    ```
@@ -42,7 +42,7 @@ Préparer une VM isolée pour DevStack avant d’installer les services ou d’a
 
 ## 3. Production — Sécurité
 
-- Bridge/VLAN isolé, sans réseau gestion/production ni IP publique; aucun port entrant Internet; ne pas réutiliser comptes/clefs SSH de production.
+- Bridge/VLAN isolé, sans réseau gestion/production ni [[Glossary:IP]] publique; aucun port entrant Internet; ne pas réutiliser comptes/clefs [[Glossary:SSH]] de production.
 
 ## Validation et retour arrière
 

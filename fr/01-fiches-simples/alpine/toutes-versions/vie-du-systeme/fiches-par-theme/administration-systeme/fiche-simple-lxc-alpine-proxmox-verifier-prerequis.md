@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-lxc-alpine-proxmox-verifier-prerequis.md
 
-- **Environnement** : nœud Proxmox VE et plan de création du CT validé
+- **Environnement** : nœud Proxmox VE et plan de création du [[Glossary:CT]] validé
 - **OS / Version** : Proxmox VE en version maintenue; template Alpine compatible
-- **Catégorie** : virtualisation / prérequis LXC
+- **Catégorie** : virtualisation / prérequis [[Glossary:LXC]]
 - **Tags** : `alpine`, `proxmox`, `lxc`, `prerequis`, `reseau`
 
 ---
@@ -42,7 +42,7 @@ Vérifier que l'hôte, le template, le réseau, les ressources et les accès de 
 3. Vérifier l'accès console de secours : dans l'interface Proxmox, ouvrir **Nœud > Shell**.
    👉 Explication : toujours garder un accès hors réseau du CT.
 
-4. Consigner : hostname, plan IP/DNS, bridge/VLAN, quotas, sauvegarde.
+4. Consigner : hostname, plan [[Glossary:IP]]/DNS, bridge/VLAN, quotas, sauvegarde.
    👉 Explication : éviter un CT privilégié; nesting, FUSE et montages seulement si justifiés.
 
 ## 2. Production — Contrôles

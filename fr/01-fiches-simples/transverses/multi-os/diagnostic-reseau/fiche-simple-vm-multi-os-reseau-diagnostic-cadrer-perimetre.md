@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-multi-os-reseau-diagnostic-cadrer-perimetre.md
 
-- **Environnement** : VM, poste, serveur, LXC Proxmox ou hôte Docker (Linux ou Windows)
+- **Environnement** : [[Glossary:VM]], poste, serveur, [[Glossary:LXC]] Proxmox ou hôte Docker (Linux ou Windows)
 - **OS / Version** : Debian 12/13, Ubuntu 24-04/26-04, Rocky Linux 9, Alpine Linux, Windows 10/11, Windows Server 2022/2025
 - **Catégorie** : réseau / cadrage
 - **Tags** : `reseau`, `diagnostic`, `multi-os`, `depannage`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Poser le parcours de diagnostic (Lien → Adresse → Passerelle → Route → DNS → Port → Application) avant de toucher à la configuration.
+Poser le parcours de diagnostic (Lien → Adresse → Passerelle → Route → [[Glossary:DNS]] → Port → Application) avant de toucher à la configuration.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

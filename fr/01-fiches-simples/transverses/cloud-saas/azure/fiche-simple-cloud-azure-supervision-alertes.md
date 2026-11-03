@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Fiche_Simple_-_Cloud_Azure_Supervision_Alertes
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — Azure CLI (az ; version publiée à vérifier)
+- **OS / Version** : Cloud/SaaS — Azure [[Glossary:CLI]] (az ; version publiée à vérifier)
 - **Catégorie** : cloud public / supervision et alertes
 - **Tags** : `azure`, `supervision_alertes`, `securite`, `procedure`
 
@@ -39,7 +39,7 @@ az monitor action-group list --resource-group GROUPE
 
 ## 2. Production — Contrôles
 
-Définir propriétaire, sévérité, seuils fondés sur SLO, escalade, canal d’astreinte et comportement en absence de métriques.
+Définir propriétaire, sévérité, seuils fondés sur [[Glossary:SLO]], escalade, canal d’astreinte et comportement en absence de métriques.
 
 ## 3. Production — Sécurité
 

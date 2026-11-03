@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-lxc-alpine-sauvegarde-cadrer-protection.md
 
-- **Environnement** : Proxmox VE avec CT Alpine; PBS ou cible de sauvegarde dédiée
+- **Environnement** : Proxmox VE avec [[Glossary:CT]] Alpine; [[Glossary:PBS]] ou cible de sauvegarde dédiée
 - **OS / Version** : branche Alpine maintenue choisie pour le service
-- **Catégorie** : sauvegarde LXC / cadrage
+- **Catégorie** : sauvegarde [[Glossary:LXC]] / cadrage
 - **Tags** : `alpine`, `proxmox`, `lxc`, `backup`, `rpo`, `rto`
 
 ---
@@ -28,7 +28,7 @@ Définir ce qui doit être protégé et comment restaurer un CT Alpine sans conf
    ```bash
    pct config CTID
    ```
-   👉 Explication : relever ID, hostname, IP, bridge/VLAN, points de montage.
+   👉 Explication : relever ID, hostname, [[Glossary:IP]], bridge/VLAN, points de montage.
 
 2. Lister données et tâches dans le CT :
    ```sh
@@ -55,7 +55,7 @@ Faire approuver périmètre, cohérence applicative, fréquence, rétention, chi
 
 ## Validation et retour arrière
 
-- **Validation** : liste des données, dépendances, cible, RPO/RTO et restauration pilote sont documentés.
+- **Validation** : liste des données, dépendances, cible, [[Glossary:RPO]]/RTO et restauration pilote sont documentés.
 - **Arrêt** : ne pas activer la sauvegarde de production avant d'avoir défini la cohérence applicative et la cible indépendante.
 
 ## Si le problème n'est pas résolu

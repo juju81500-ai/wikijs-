@@ -35,7 +35,7 @@ Télécharger le .deb officiel et contrôler son empreinte SHA-256.
    ```bash
    echo '515a975fbdb982e0d736b6f99248dbbb856a8b07bb72d6d3648a54b850fa33db  drawio-amd64-32.6.1.deb' | sha256sum --check
    ```
-   👉 Explication : `OK` confirme que le paquet correspond au `digest` publié par l'API GitHub de la release.
+   👉 Explication : `OK` confirme que le paquet correspond au `digest` publié par l'[[Glossary:API]] GitHub de la release.
 
 3. En cas d'échec, supprimer le fichier :
    ```bash

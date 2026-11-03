@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-lxc-alpine-installation-creation-ct-proxmox.md
 
-- **Environnement** : Hôte Proxmox VE et nouveau conteneur LXC
+- **Environnement** : Hôte Proxmox VE et nouveau conteneur [[Glossary:LXC]]
 - **OS / Version** : Alpine Linux depuis un template maintenu proposé par Proxmox
 - **Catégorie** : Installation / Virtualisation
 - **Tags** : `[alpine]`, `[proxmox]`, `[lxc]`, `[installation]`, `[template]`, `[unprivileged]`
@@ -29,11 +29,11 @@ Créer un conteneur LXC Alpine sur Proxmox à partir d'un template maintenu, ave
    ```bash
    pveam download <STOCKAGE_TEMPLATE> <NOM_TEMPLATE_ALPINE>
    ```
-3. Créer le CT dans l'interface Proxmox : **Créer CT > Général > Template > Disques > CPU > Mémoire > Réseau > DNS > Confirmer**.
+3. Créer le [[Glossary:CT]] dans l'interface Proxmox : **Créer CT > Général > Template > Disques > [[Glossary:CPU]] > Mémoire > Réseau > [[Glossary:DNS]] > Confirmer**.
    - Utiliser un identifiant unique, un hostname conforme et un mot de passe administrateur transmis de manière sécurisée.
    - Choisir un CT non privilégié; donner au disque, CPU et mémoire les valeurs nécessaires au lab.
-   - Sélectionner le bridge/VLAN réellement configuré et une adresse DHCP ou statique réservée.
-   👉 *Explication : noms de stockages, bridge, VLAN, adresse IP et template sont des exemples dépendants du cluster.*
+   - Sélectionner le bridge/VLAN réellement configuré et une adresse [[Glossary:DHCP]] ou statique réservée.
+   👉 *Explication : noms de stockages, bridge, [[Glossary:VLAN]], adresse [[Glossary:IP]] et template sont des exemples dépendants du cluster.*
 
 ## ⚡ 2. Production — Façon Simplifiée
 1. Confirmer le template maintenu, les besoins de l'application, les quotas, les points de montage et la politique de sauvegarde.

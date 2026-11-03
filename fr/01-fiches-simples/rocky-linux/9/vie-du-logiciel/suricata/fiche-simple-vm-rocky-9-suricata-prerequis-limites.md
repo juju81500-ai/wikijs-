@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_Suricata_Prerequis_Limites
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Suricata
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Suricata
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Suricata / prérequis et limites
 - **Tags** : `suricata`, `rocky9`, `vie-du-logiciel`, `prerequis-limites`
 
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Cadrer un capteur Suricata IDS passif (détection et journalisation uniquement) sur VM Rocky Linux 9, dans un périmètre autorisé.
+Cadrer un capteur Suricata [[Glossary:IDS]] passif (détection et journalisation uniquement) sur VM Rocky Linux 9, dans un périmètre autorisé.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -35,19 +35,19 @@ Cadrer un capteur Suricata IDS passif (détection et journalisation uniquement) 
    ip -br link
    df -h /var/log
    ```
-   👉 Explication : Suricata consomme CPU/RAM selon le débit et les règles; prévoir deux interfaces (gestion et capture) et un volume de logs.
+   👉 Explication : Suricata consomme [[Glossary:CPU]]/RAM selon le débit et les règles; prévoir deux interfaces (gestion et capture) et un volume de logs.
 
 3. Noter les limites.
    👉 Explication : Mode traité : IDS passif (AF_PACKET sur interface miroir/TAP). Le mode IPS/inline (NFQUEUE, blocage) n’est pas couvert. Le trafic chiffré n’est pas inspecté dans son contenu. Aucune détection ne remplace une revue des alertes. SELinux : rester en Enforcing; pour tout refus, `sudo ausearch -m avc -ts recent` puis corriger le contexte plutôt que désactiver SELinux.
 
 ## 2. Production — Contrôles
 
-Faire valider architecture (SPAN/TAP), HOME_NET, volumétrie des logs et propriétaire des alertes.
+Faire valider architecture ([[Glossary:SPAN]]/TAP), HOME_NET, volumétrie des logs et propriétaire des alertes.
 
 ## 3. Production — Sécurité
 
 - Détection uniquement, sans action de blocage.
-- Interface de capture sans adresse IP si possible.
+- Interface de capture sans adresse [[Glossary:IP]] si possible.
 
 ## Validation et retour arrière
 

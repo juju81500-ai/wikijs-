@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 fiche-simple-vmware-esxi-8-reseau-hostname-dns-ntp.md
 
-- **Environnement** : Hôte physique VMware ESXi 8 (ESXi Shell ou SSH, Host Client, vSphere Client)
+- **Environnement** : Hôte physique VMware ESXi 8 (ESXi Shell ou [[Glossary:SSH]], Host Client, vSphere Client)
 - **OS / Version** : VMware ESXi 8.0 - Hyperviseur bare-metal
 - **Catégorie** : Virtualisation / Réseau et identité de l'hôte
 - **Tags** : `[vmware-esxi-8]`, `[esxcli]`, `[reseau]`, `[dns]`, `[ntp]`, `[hardening]`
@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:14Z
 ---
 
 ## 🎯 Problème précis à résoudre
-Définir le nom d'hôte complet (FQDN), les serveurs DNS et la synchronisation NTP d'un hôte ESXi 8 avec `esxcli`, puis restreindre le client NTP aux seuls serveurs autorisés.
+Définir le nom d'hôte complet ([[Glossary:FQDN]]), les serveurs [[Glossary:DNS]] et la synchronisation [[Glossary:NTP]] d'un hôte ESXi 8 avec `esxcli`, puis restreindre le client NTP aux seuls serveurs autorisés.
 
 ---
 
@@ -51,7 +51,7 @@ esxcli system ntp set --server=<ip_serveur_ntp> --enabled=true
 /etc/init.d/ntpd restart
 esxcli system ntp get
 ```
-👉 Explication : active le client NTP vers `<ip_serveur_ntp>`, redémarre le service `ntpd` et affiche la configuration appliquée. Un décalage d'horloge fausse les certificats TLS et l'authentification Kerberos.
+👉 Explication : active le client NTP vers `<ip_serveur_ntp>`, redémarre le service `ntpd` et affiche la configuration appliquée. Un décalage d'horloge fausse les certificats [[Glossary:TLS]] et l'authentification Kerberos.
 
 5. Tester la connectivité depuis le VMkernel de management :
 ```bash
@@ -66,7 +66,7 @@ vmkping -I vmk0 <ip_passerelle>
 ```bash
 esxcli network ip interface ipv4 set --interface-name=vmk0 --type=static --ipv4=<ip_management> --netmask=<masque_reseau>
 ```
-👉 Explication : remplace l'adresse DHCP par l'adresse fixe définitive de l'hôte ; à exécuter depuis la console DCUI ou une session SSH ouverte hors de `vmk0`, pour éviter une coupure.
+👉 Explication : remplace l'adresse [[Glossary:DHCP]] par l'adresse fixe définitive de l'hôte ; à exécuter depuis la console DCUI ou une session SSH ouverte hors de `vmk0`, pour éviter une coupure.
 
 2. Déclarer la route par défaut :
 ```bash
@@ -103,4 +103,4 @@ esxcli network firewall ruleset allowedip list --ruleset-id=ntpClient
 esxcli network ip interface list
 esxcli network ip route ipv4 list
 ```
-👉 Explication : exporte l'état réel des interfaces VMkernel et des routes pour l'inventaire et le dossier d'exploitation (étape CMDB et documentation).
+👉 Explication : exporte l'état réel des interfaces VMkernel et des routes pour l'inventaire et le dossier d'exploitation (étape [[Glossary:CMDB]] et documentation).

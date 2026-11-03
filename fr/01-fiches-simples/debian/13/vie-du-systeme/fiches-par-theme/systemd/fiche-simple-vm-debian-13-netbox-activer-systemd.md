@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : Debian 13; unités systemd livrées avec NetBox 4.7.4
 - **OS / Version** : Debian 13; NetBox 4.7.4
-- **Catégorie** : IPAM / DCIM / services
+- **Catégorie** : [[Glossary:IPAM]] / [[Glossary:DCIM]] / services
 - **Tags** : `debian13`, `netbox`, `systemd`, `gunicorn`, `rq`
 
 ---

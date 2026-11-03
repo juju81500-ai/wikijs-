@@ -13,14 +13,14 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **Environnement** : Poste Windows 11 x64 d'administration
 - **OS / Version** : Windows 11 x64; PuTTY 0.85 Stable
-- **Catégorie** : client SSH / installation
+- **Catégorie** : client [[Glossary:SSH]] / installation
 - **Tags** : `putty`, `windows11`, `ssh`, `puttygen`, `host-key`
 
 ---
 
 ## Problème précis à résoudre
 
-Installer PuTTY avec le MSI vérifié.
+Installer PuTTY avec le [[Glossary:MSI]] vérifié.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

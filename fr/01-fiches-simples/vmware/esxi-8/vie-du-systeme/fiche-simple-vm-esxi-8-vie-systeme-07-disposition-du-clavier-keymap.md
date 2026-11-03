@@ -27,7 +27,7 @@ Que les touches saisies correspondent au clavier physique.
 1. Dans l'installateur : écran **Select a Keyboard Layout** = French. Pour modifier ensuite (DCUI : **F2 > Configure Keyboard**).
    👉 Explication : évite les erreurs de saisie du mot de passe root.
 
-2. Contrôler depuis le shell (SSH) :
+2. Contrôler depuis le shell ([[Glossary:SSH]]) :
    ```sh
    esxcli system settings keyboard layout get
    esxcli system settings keyboard layout set -l French

@@ -45,7 +45,7 @@ Configurer la disposition de clavier correcte, y compris à l'écran de connexio
 
 ## 2. Production — Contrôles
 
-Sur une console de VM, vérifier le clavier du client (RDP, console Hyper-V) en plus du serveur.
+Sur une console de [[Glossary:VM]], vérifier le clavier du client ([[Glossary:RDP]], console Hyper-V) en plus du serveur.
 
 ## 3. Production — Sécurité
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_HAProxy_Valider
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; HAProxy des dépôts Debian
 - **Catégorie** : répartiteur de charge / HAProxy / Valider (recette)
 - **Tags** : `debian13`, `haproxy`, `recette`
@@ -44,7 +44,7 @@ Prouver la répartition de charge, le contrôle de santé et la tolérance à la
    ```
    👉 Explication : le serveur tombé passe `DOWN` dans les statistiques et le trafic reste servi par l'autre.
 
-4. Consulter les statistiques via tunnel SSH :
+4. Consulter les statistiques via tunnel [[Glossary:SSH]] :
    ```bash
    ssh -L 8404:127.0.0.1:8404 ADMIN@IP_HAPROXY
    # puis ouvrir http://127.0.0.1:8404/stats

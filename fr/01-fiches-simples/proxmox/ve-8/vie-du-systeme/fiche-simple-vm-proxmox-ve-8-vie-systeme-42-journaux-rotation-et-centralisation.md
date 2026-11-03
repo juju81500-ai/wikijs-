@@ -30,7 +30,7 @@ Conserver et centraliser les journaux.
    cat /etc/logrotate.d/pve
    journalctl --disk-usage
    ```
-   👉 Explication : les tâches Proxmox sont dans `/var/log/pve/tasks/` (GUI : **Nœud > Tasks** et **Nœud > System > Syslog**).
+   👉 Explication : les tâches Proxmox sont dans `/var/log/pve/tasks/` ([[Glossary:GUI]] : **Nœud > Tasks** et **Nœud > System > Syslog**).
 
 2. Limiter la taille du journal : dans `/etc/systemd/journald.conf`, définir `SystemMaxUse=1G` puis `systemctl restart systemd-journald`.
    👉 Explication : évite de remplir le disque système.
@@ -41,7 +41,7 @@ Conserver et centraliser les journaux.
    echo '*.* @@IP_SYSLOG:514' > /etc/rsyslog.d/90-central.conf
    systemctl restart rsyslog
    ```
-   👉 Explication : `@@` = transport TCP; utiliser TLS si le serveur le permet.
+   👉 Explication : `@@` = transport [[Glossary:TCP]]; utiliser [[Glossary:TLS]] si le serveur le permet.
 
 ## 2. Production — Contrôles
 

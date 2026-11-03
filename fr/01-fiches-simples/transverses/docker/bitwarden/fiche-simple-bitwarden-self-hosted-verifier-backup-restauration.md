@@ -43,7 +43,7 @@ Confirmer que les données et la configuration Bitwarden sont sauvegardées et r
    sudo tar xzf /sauvegardes/bwdata-AAAA-MM-JJ.tgz -C /opt/bitwarden
    cd /opt/bitwarden && ./bitwarden.sh restart
    ```
-   👉 Explication : vérifier TLS, connexion d'un compte de test, éléments fictifs, pièces jointes et organisations.
+   👉 Explication : vérifier [[Glossary:TLS]], connexion d'un compte de test, éléments fictifs, pièces jointes et organisations.
 
 4. Consigner durée et étapes sans publier mot de passe DB, ID d'installation, clé, tokens ou données de coffre.
    👉 Explication : ces informations restent dans le coffre de l'organisation.
@@ -68,7 +68,7 @@ Confirmer que les données et la configuration Bitwarden sont sauvegardées et r
 ## ✅ Validation et retour arrière
 
 - **Validation** : test sur une copie, accès TLS valide, données test restaurées, contrôle des logs.
-- **Retour arrière** : conserver le serveur actif et sa sauvegarde; ne basculer le DNS qu'après approbation et test complet.
+- **Retour arrière** : conserver le serveur actif et sa sauvegarde; ne basculer le [[Glossary:DNS]] qu'après approbation et test complet.
 
 ## 🔗 Si le problème n'est pas résolu
 

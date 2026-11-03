@@ -11,24 +11,24 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 LXC_Debian_13_Reseau_Modifier-Hostname-Et-Hosts.md
 
-- **Environnement** : LXC (Proxmox VE / Debian 13)
+- **Environnement** : [[Glossary:LXC]] (Proxmox VE / Debian 13)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
 - **Catégorie** : Système & Réseau / Hostname
 - **Tags** : `[debian13]`, `[lxc]`, `[hostname]`, `[hosts]`, `[proxmox]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Modifier le nom d'hôte d'un conteneur LXC Debian 13 en conservant Proxmox VE comme source de configuration et en gardant cohérents le DNS et `/etc/hosts`.
+Modifier le nom d'hôte d'un conteneur LXC Debian 13 en conservant Proxmox VE comme source de configuration et en gardant cohérents le [[Glossary:DNS]] et `/etc/hosts`.
 
 ---
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Sur l'hôte Proxmox, définir un nom de test pour le conteneur :
    `pct set CTID --hostname lxc-test`
-   👉 Explication : Le changement reste géré par Proxmox et ne modifie pas directement les fichiers générés du CT.
+   👉 Explication : Le changement reste géré par Proxmox et ne modifie pas directement les fichiers générés du [[Glossary:CT]].
 
 2. Contrôle de l'affichage du nom d'hôte :
    `hostname -f`
-   👉 Explication : Affiche le nom FQDN actuellement résolu localement.
+   👉 Explication : Affiche le nom [[Glossary:FQDN]] actuellement résolu localement.
 
 ---
 

@@ -24,7 +24,7 @@ Cadrer l'administration défensive de Google Workspace : rôles, outils et limit
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Utiliser un compte super-administrateur nominatif protégé par MFA, distinct du compte courant, et déléguer le reste par rôles d'administrateur (console : Compte > Rôles d'administrateur). Les valeurs en MAJUSCULES (DOMAINE, ADMIN_UPN, etc.) sont à remplacer par celles de votre tenant.
+1. Utiliser un compte super-administrateur nominatif protégé par [[Glossary:MFA]], distinct du compte courant, et déléguer le reste par rôles d'administrateur (console : Compte > Rôles d'administrateur). Les valeurs en MAJUSCULES (DOMAINE, ADMIN_UPN, etc.) sont à remplacer par celles de votre tenant.
    👉 Explication : limite le nombre de super-administrateurs.
 
 2. Ouvrir la console : https://admin.google.com et vérifier Compte > Paramètres du compte.

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_FOG_Project_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Debian 13 dédiée FOG Project (clonage/déploiement d'images), réseau de laboratoire isolé
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée FOG Project (clonage/déploiement d'images), réseau de laboratoire isolé
 - **OS / Version** : Debian 13 Trixie; FOG Project (version et support Debian 13 à vérifier)
 - **Catégorie** : automatisation / déploiement
 - **Tags** : `debian13`, `fog-project`, `mise-a-jour`, `retour-arriere`, `maintenance`
@@ -46,7 +46,7 @@ Mettre à jour FOG de façon contrôlée avec un retour arrière préparé.
    👉 Explication : l'installeur détecte l'installation existante ; lire attentivement les invites.
 
 5. Valider avec la fiche Valider sur le poste pilote.
-   👉 Explication : vérifier démarrage PXE, capture et déploiement.
+   👉 Explication : vérifier démarrage [[Glossary:PXE]], capture et déploiement.
 
 ## 2. Production — Contrôles
 

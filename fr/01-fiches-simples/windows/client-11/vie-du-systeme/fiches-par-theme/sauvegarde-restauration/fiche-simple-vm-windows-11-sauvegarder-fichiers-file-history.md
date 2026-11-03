@@ -35,7 +35,7 @@ Protéger les dossiers utilisateur avec File History vers une cible approuvée e
    👉 Explication : remplacer le partage; File History ne sauvegarde pas sur le disque système.
 
 3. Activer : **Panneau de configuration > Système et sécurité > Historique des fichiers > Sélectionner un lecteur**, choisir la cible, puis **Activer**.
-   👉 Explication : GUI; en ligne de commande, l'outil `fhmanagew.exe -cleanup 30` sert au nettoyage des anciennes versions.
+   👉 Explication : [[Glossary:GUI]]; en ligne de commande, l'outil `fhmanagew.exe -cleanup 30` sert au nettoyage des anciennes versions.
 
 4. Ajouter les dossiers de test : **Explorateur > Bibliothèques (ou Dossier) > Propriétés > Inclure un dossier** ; exclusions via **Historique des fichiers > Exclure des dossiers**.
    👉 Explication : dossiers non sensibles uniquement.

@@ -30,7 +30,7 @@ Durcir l'hôte et maîtriser le retour arrière.
    ```
    👉 Explication : doit contenir seulement des comptes nominatifs.
 
-2. Restreindre WinRM, RDP et ports de migration aux réseaux de gestion (pare-feu Windows).
+2. Restreindre WinRM, [[Glossary:RDP]] et ports de migration aux réseaux de gestion (pare-feu Windows).
    👉 Explication : réduit l'exposition.
 
 3. Contrôler Defender et le pare-feu :
@@ -40,7 +40,7 @@ Durcir l'hôte et maîtriser le retour arrière.
    ```
    👉 Explication : confirme que les protections sont actives.
 
-4. Tester sauvegarde et restauration de VM en réseau isolé; documenter propriétaire, RPO/RTO et dépendances.
+4. Tester sauvegarde et restauration de [[Glossary:VM]] en réseau isolé; documenter propriétaire, [[Glossary:RPO]]/RTO et dépendances.
    👉 Explication : preuve de reprise.
 
 5. Si l'installation du rôle échoue, vérifier prérequis, build et firmware.

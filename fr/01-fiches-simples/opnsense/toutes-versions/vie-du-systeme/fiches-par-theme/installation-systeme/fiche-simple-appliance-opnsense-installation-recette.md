@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-appliance-opnsense-installation-recette.md
 
-- **Environnement** : Appliance physique ou VM dédiée avec interfaces réseau identifiées
+- **Environnement** : Appliance physique ou [[Glossary:VM]] dédiée avec interfaces réseau identifiées
 - **OS / Version** : OPNsense Community ou Business Edition, release maintenue compatible avec la plateforme
 - **Catégorie** : pare-feu / validation
 - **Tags** : `opnsense`, `installation`, `pare-feu`, `wan`, `lan`

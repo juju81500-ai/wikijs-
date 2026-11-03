@@ -21,9 +21,9 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [préparer l'accès et le périmètre](/fr/01-fiches-simples/opnsense/toutes-versions/vie-du-systeme/fiches-par-theme/sauvegarde-restauration/fiche-simple-vm-opnsense-config-preparer).
 
-Inventorier interfaces, VLAN, règles, NAT, certificats, VPN, comptes, secrets, plugins et rôle CARP. Conserver un accès console et noter l'ordre des interfaces matérielles. Les identifiants, clés privées, PSK et certificats contenus dans la configuration doivent être traités comme des secrets.
+Inventorier interfaces, [[Glossary:VLAN]], règles, [[Glossary:NAT]], certificats, [[Glossary:VPN]], comptes, secrets, plugins et rôle [[Glossary:CARP]]. Conserver un accès console et noter l'ordre des interfaces matérielles. Les identifiants, clés privées, PSK et certificats contenus dans la configuration doivent être traités comme des secrets.
 
-En HA, la synchronisation entre nœuds ne remplace pas une copie indépendante. Prévoir un export par appliance et documenter l'état MASTER/BACKUP, les adresses propres et les VIP.
+En HA, la synchronisation entre nœuds ne remplace pas une copie indépendante. Prévoir un export par appliance et documenter l'état MASTER/BACKUP, les adresses propres et les [[Glossary:VIP]].
 
 ## 2. Exporter une sauvegarde chiffrée
 
@@ -40,9 +40,9 @@ Fiche simple : [vérifier la sauvegarde](/fr/01-fiches-simples/opnsense/toutes-v
 - Vérifier date, taille, version source et appareil concerné.
 - Confirmer que l'export est lisible et que le mot de passe est conservé dans le coffre.
 - Copier la sauvegarde hors de l'appliance et hors de son stockage local.
-- Tester périodiquement la restauration sur une VM ou appliance isolée de même version.
+- Tester périodiquement la restauration sur une [[Glossary:VM]] ou appliance isolée de même version.
 
-Un snapshot ZFS peut accélérer un retour arrière local sur une installation compatible, mais ne remplace ni l'export de configuration hors appliance, ni la sauvegarde des données externes.
+Un snapshot [[Glossary:ZFS]] peut accélérer un retour arrière local sur une installation compatible, mais ne remplace ni l'export de configuration hors appliance, ni la sauvegarde des données externes.
 
 ## 4. Restaurer
 
@@ -51,7 +51,7 @@ Fiche simple : [restaurer](/fr/01-fiches-simples/opnsense/toutes-versions/vie-du
 1. Vérifier le modèle de matériel, les interfaces et la version cible; installer une release compatible.
 2. Restaurer l'export complet depuis **System > Configuration > Backups** ou la console selon la procédure OPNsense.
 3. Sur du matériel différent, conserver l'accès console : les noms d'interface peuvent nécessiter une réaffectation manuelle.
-4. Redémarrer si la procédure le demande, puis valider WAN/LAN, règles, DNS, VPN, certificats et administration avant reconnexion au réseau.
+4. Redémarrer si la procédure le demande, puis valider [[Glossary:WAN]]/LAN, règles, [[Glossary:DNS]], VPN, certificats et administration avant reconnexion au réseau.
 
 Privilégier la restauration complète. Les restaurations partielles peuvent créer des incohérences entre composants dépendants.
 
@@ -59,7 +59,7 @@ Privilégier la restauration complète. Les restaurations partielles peuvent cr�
 
 Fiche simple : [recette et clôture](/fr/01-fiches-simples/opnsense/toutes-versions/vie-du-systeme/fiches-par-theme/sauvegarde-restauration/fiche-simple-vm-opnsense-config-recette).
 
-Tester clients, routage, DHCP/DNS, NAT, VPN et règles de blocage/autorisation. En HA, rétablir la synchronisation seulement après avoir confirmé les rôles et les adresses propres des deux nœuds. Consigner version, sauvegarde, résultat du test et prochaines échéances.
+Tester clients, routage, [[Glossary:DHCP]]/DNS, NAT, VPN et règles de blocage/autorisation. En HA, rétablir la synchronisation seulement après avoir confirmé les rôles et les adresses propres des deux nœuds. Consigner version, sauvegarde, résultat du test et prochaines échéances.
 
 ## Sources
 

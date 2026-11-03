@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_20_Mise_A_Jour_Initiale
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 20 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-20`
@@ -27,7 +27,7 @@ Appliquer les correctifs disponibles dès l'installation.
 1. Aller dans Système > Micrologiciel > Mises à jour > Vérifier les mises à jour, lire les notes de version, puis Mettre à jour.
    👉 Explication : applique le système et les paquets; un redémarrage peut être demandé.
 
-2. Ou en shell (console option 12 ou SSH) :
+2. Ou en shell (console option 12 ou [[Glossary:SSH]]) :
    ```sh
    opnsense-update -c
    opnsense-update -bkp

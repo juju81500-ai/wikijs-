@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Dimensionner le NAS (capacité utile, RAM, niveau de redondance) avant d'acheter ou de créer la machine.
+Dimensionner le [[Glossary:NAS]] (capacité utile, [[Glossary:RAM]], niveau de redondance) avant d'acheter ou de créer la machine.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -31,14 +31,14 @@ Dimensionner le NAS (capacité utile, RAM, niveau de redondance) avant d'acheter
    lsblk -o NAME,MODEL,SIZE,ROTA,TYPE
    sudo zpool list
    ```
-   👉 Explication : CPU, RAM, disques (ROTA=1 : disque tournant, 0 : SSD) et occupation des pools actuels.
+   👉 Explication : [[Glossary:CPU]], RAM, disques (ROTA=1 : disque tournant, 0 : [[Glossary:SSD]]) et occupation des pools actuels.
 
 2. Calculer la capacité utile selon la topologie :
    ```bash
    # MIRROR : 50 % ; RAIDZ1 : (N-1)/N ; RAIDZ2 : (N-2)/N ; RAIDZ3 : (N-3)/N
    # Exemple : 6 disques de 8 To en RAIDZ2 = (6-2) x 8 = 32 To bruts, environ 28 To utilisables (marge de 80 % conseillée)
    ```
-   👉 Explication : ZFS ne doit pas dépasser environ 80 % d'occupation du pool.
+   👉 Explication : [[Glossary:ZFS]] ne doit pas dépasser environ 80 % d'occupation du pool.
 
 3. Dimensionner la RAM : 8 Go minimum, puis environ 1 Go par To de stockage, de préférence ECC. Noter le besoin dans le dossier.
    👉 Explication : la RAM alimente le cache ARC de ZFS ; l'ECC évite la corruption silencieuse en mémoire.

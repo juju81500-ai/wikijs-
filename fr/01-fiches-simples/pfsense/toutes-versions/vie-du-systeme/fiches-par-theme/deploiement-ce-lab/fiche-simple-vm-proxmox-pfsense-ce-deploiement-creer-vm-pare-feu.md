@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-proxmox-pfsense-ce-deploiement-creer-vm-pare-feu.md
 
-- **Environnement** : VM pfSense CE en laboratoire sur Proxmox VE, deux interfaces (WAN et LAN isolés)
+- **Environnement** : [[Glossary:VM]] pfSense CE en laboratoire sur Proxmox VE, deux interfaces ([[Glossary:WAN]] et [[Glossary:LAN]] isolés)
 - **OS / Version** : pfSense Community Edition 2.9.0 (VM x86-64 sur Proxmox VE)
 - **Catégorie** : pare-feu et routage
 - **Tags** : `pfsense`, `ce`, `proxmox`, `firewall`, `lab`
@@ -27,10 +27,10 @@ Créer la VM pfSense avec les paramètres de laboratoire prévus.
 1. Dans Proxmox : **Créer une VM**, lui donner un identifiant documenté et un nom clair, puis attacher l'ISO Netgate au lecteur optique.
    👉 Explication : l'ISO sert à démarrer l'installateur; garder la console Proxmox disponible.
 
-2. Régler **Système** (BIOS/UEFI selon la recette Netgate retenue) et **Disque** : VirtIO Block d'au moins 16 Go.
+2. Régler **Système** ([[Glossary:BIOS]]/UEFI selon la recette Netgate retenue) et **Disque** : VirtIO Block d'au moins 16 Go.
    👉 Explication : ne pas changer de mode BIOS/UEFI après installation.
 
-3. Régler **CPU** : 2 vCPU et **Mémoire** : 2 Go.
+3. Régler **[[Glossary:CPU]]** : 2 vCPU et **Mémoire** : 2 Go.
    👉 Explication : les minimums publiés (1 CPU, 1 Go, 8 Go) ne conviennent pas à tous les scénarios.
 
 4. Ajouter deux cartes réseau **VirtIO** : la première sur `vmbr-pfsense-wan`, la seconde sur `vmbr-pfsense-lan`.
@@ -43,7 +43,7 @@ Créer la VM pfSense avec les paramètres de laboratoire prévus.
    👉 Explication : affiche disque, cartes réseau et ISO; 9100 est un identifiant d'exemple.
 
 6. Créer séparément une VM cliente de test sur `vmbr-pfsense-lan`.
-   👉 Explication : elle servira à joindre le GUI; l'administration de l'hyperviseur reste hors de ce segment.
+   👉 Explication : elle servira à joindre le [[Glossary:GUI]]; l'administration de l'hyperviseur reste hors de ce segment.
 
 ## 2. Production — Contrôles
 

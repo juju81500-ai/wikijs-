@@ -38,7 +38,7 @@ Diagnostiquer la connectivité et la résolution de noms entre services Docker C
    docker inspect --format '{{json .NetworkSettings.Networks}}' "$(docker compose ps -q app)"
    docker network inspect <nom-reseau-compose>
    ```
-2. Depuis un conteneur de diagnostic autorisé et attaché au réseau, vérifier DNS et port applicatif :
+2. Depuis un conteneur de diagnostic autorisé et attaché au réseau, vérifier [[Glossary:DNS]] et port applicatif :
    ```bash
    docker run --rm --network <nom-reseau-compose> busybox nslookup db
    docker run --rm --network <nom-reseau-compose> busybox nc -zvw 3 db 5432

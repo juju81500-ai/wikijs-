@@ -31,7 +31,7 @@ Vérifier le chemin d'accès, les droits, la collection et les licences avant la
    Get-NetTCPConnection -State Listen -LocalPort 3389 -ErrorAction SilentlyContinue
    ```
    👉 Explication : Confirme que le rôle est installé, que le service est actif et qu'un socket écoute; ne prouve pas l'accessibilité de bout en bout.
-2. Depuis le client du lab, tester le nom DNS et le port :
+2. Depuis le client du lab, tester le nom [[Glossary:DNS]] et le port :
    ```powershell
    Resolve-DnsName RDS-HOTE.FQDN
    Test-NetConnection -ComputerName RDS-HOTE.FQDN -Port 3389

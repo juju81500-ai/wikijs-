@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-lxc-alpine-proxmox-retour-arriere-diagnostic.md
 
-- **Environnement** : CT Alpine sur Proxmox VE avec accès à la console de l'hôte
+- **Environnement** : [[Glossary:CT]] Alpine sur Proxmox VE avec accès à la console de l'hôte
 - **OS / Version** : branche Alpine maintenue retenue pour le CT
 - **Catégorie** : virtualisation / dépannage et reprise
 - **Tags** : `alpine`, `proxmox`, `lxc`, `rollback`, `diagnostic`

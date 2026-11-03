@@ -31,7 +31,7 @@ Cloner un dépôt autorisé sans exposer d'identifiants.
    git clone https://git.example.invalid/equipe/projet.git
    cd projet
    ```
-   👉 Explication : HTTPS avec certificat vérifié ou SSH avec clé gérée par l'agent; `projet` est le nom d'exemple du dépôt.
+   👉 Explication : HTTPS avec certificat vérifié ou [[Glossary:SSH]] avec clé gérée par l'agent; `projet` est le nom d'exemple du dépôt.
 
 2. Contrôler le remote et l'état :
    ```bash

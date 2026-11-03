@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_PowerShell_Remoting_SSH
 
-- **Environnement** : VM Rocky Linux 9 de laboratoire, accès sudo, dépôt Microsoft pour RHEL 9
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 de laboratoire, accès sudo, dépôt Microsoft pour [[Glossary:RHEL]] 9
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : shell / scripting
 - **Tags** : `rocky9`, `powershell`, `pwsh`, `scripting`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Activer le remoting PowerShell via SSH sur Rocky Linux 9 (sous-système `powershell` de sshd).
+Activer le remoting PowerShell via [[Glossary:SSH]] sur Rocky Linux 9 (sous-système `powershell` de sshd).
 
 ## 1. Hors-Production (Lab / Test / POC)
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Déployer un cluster Ceph Tentacle avec cephadm sur Ubuntu 22-04
 
-- **OS / Version** : Ubuntu Server 22-04 LTS; Ceph Tentacle 20.2.4
+- **OS / Version** : Ubuntu Server 22-04 [[Glossary:LTS]]; Ceph Tentacle 20.2.4
 - **Type de fiche** : Installation/Déploiement
 - **Rôle** : Cluster Ceph de laboratoire avec MON, MGR, OSD et pool RBD pilote
 - **Tags** : `ubuntu2204`, `ceph`, `tentacle`, `cephadm`, `rados`, `rbd`, `storage`
@@ -20,19 +20,19 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [cadrer le périmètre Ceph](/fr/01-fiches-simples/ubuntu/toutes-versions/vie-du-logiciel/ceph/fiche-simple-vm-ubuntu-ceph-cadrer-perimetre).
 
-Ce guide crée un cluster de test avec trois nœuds, trois domaines de panne distincts et stockage dédié aux OSD. Il ne couvre ni CephFS, ni RGW, ni iSCSI, ni l'intégration de production avec Proxmox ou OpenStack. Une VM mono-nœud n'est pas un cluster HA et ne valide pas la résilience.
+Ce guide crée un cluster de test avec trois nœuds, trois domaines de panne distincts et stockage dédié aux OSD. Il ne couvre ni CephFS, ni RGW, ni iSCSI, ni l'intégration de production avec Proxmox ou OpenStack. Une [[Glossary:VM]] mono-nœud n'est pas un cluster HA et ne valide pas la résilience.
 
 La documentation de Ceph Tentacle classe Ubuntu 22-04 parmi les plateformes sur lesquelles Ceph fournit des paquets et réalise des tests complets. La documentation Ceph ne liste pas Debian 13 pour cette version.
 
-Préparer trois hôtes `ceph01`, `ceph02`, `ceph03`, résolus par DNS, synchronisés par Chrony/NTP et administrables par SSH. Chaque hôte doit avoir un disque système séparé et au moins un disque de données inutilisé, dédié à Ceph. Prévoir une interface/réseau public Ceph et, pour ce cluster de test, une seconde interface dédiée au trafic de réplication. Utiliser des adresses RFC1918 réservées au lab; ne pas copier les exemples tels quels.
+Préparer trois hôtes `ceph01`, `ceph02`, `ceph03`, résolus par [[Glossary:DNS]], synchronisés par Chrony/NTP et administrables par [[Glossary:SSH]]. Chaque hôte doit avoir un disque système séparé et au moins un disque de données inutilisé, dédié à Ceph. Prévoir une interface/réseau public Ceph et, pour ce cluster de test, une seconde interface dédiée au trafic de réplication. Utiliser des adresses RFC1918 réservées au lab; ne pas copier les exemples tels quels.
 
-Ceph demande beaucoup de ressources disque, RAM et réseau. Un réseau de production 10 Gb/s ou supérieur et du matériel de stockage avec protection contre la perte d'alimentation sont des recommandations de Ceph, pas des exigences que ce petit lab prouve.
+Ceph demande beaucoup de ressources disque, [[Glossary:RAM]] et réseau. Un réseau de production 10 Gb/s ou supérieur et du matériel de stockage avec protection contre la perte d'alimentation sont des recommandations de Ceph, pas des exigences que ce petit lab prouve.
 
 ## 2. Préparer les nœuds
 
 Fiche simple : [préparer les nœuds Ceph](/fr/01-fiches-simples/ubuntu/toutes-versions/vie-du-logiciel/ceph/fiche-simple-vm-ubuntu-ceph-preparer-noeuds).
 
-Sur chaque hôte, fixer les noms, adresses, résolutions réciproques, DNS, NTP et routes des deux réseaux. Remplacer les exemples suivants par le plan du lab :
+Sur chaque hôte, fixer les noms, adresses, résolutions réciproques, DNS, [[Glossary:NTP]] et routes des deux réseaux. Remplacer les exemples suivants par le plan du lab :
 
 | Hôte | Réseau public Ceph | Réseau cluster |
 |---|---|---|
@@ -82,7 +82,7 @@ sudo cephadm bootstrap \
   --cluster-network 10.30.0.0/24
 ```
 
-Si le lab n'a pas un réseau de réplication distinct, omettre `--cluster-network`; ne pas inventer ce réseau. Conserver l'URL Dashboard donnée à la fin, puis se connecter au CLI :
+Si le lab n'a pas un réseau de réplication distinct, omettre `--cluster-network`; ne pas inventer ce réseau. Conserver l'URL Dashboard donnée à la fin, puis se connecter au [[Glossary:CLI]] :
 
 ```bash
 sudo ceph -s
@@ -139,7 +139,7 @@ lsblk -o NAME,SIZE,MODEL,SERIAL,FSTYPE,MOUNTPOINTS
 sudo ceph orch device ls --wide
 ```
 
-Un disque disponible pour un OSD doit être vide, non monté et sans partitions, système de fichiers, LVM ou ancien OSD. **Ne pas utiliser `--all-available-devices` dans cette procédure** : les spécifications `ceph orch apply` sont persistantes et peuvent consommer automatiquement les disques disponibles ajoutés plus tard.
+Un disque disponible pour un OSD doit être vide, non monté et sans partitions, système de fichiers, [[Glossary:LVM]] ou ancien OSD. **Ne pas utiliser `--all-available-devices` dans cette procédure** : les spécifications `ceph orch apply` sont persistantes et peuvent consommer automatiquement les disques disponibles ajoutés plus tard.
 
 Ne continuer qu'après validation physique des disques de données et de leurs chemins stables `/dev/disk/by-id/`. Un chemin n'est valide que sur l'hôte où le périphérique a été identifié. Exemple de fichier multi-document, avec une spécification par hôte et un unique disque de données dédié par nœud :
 

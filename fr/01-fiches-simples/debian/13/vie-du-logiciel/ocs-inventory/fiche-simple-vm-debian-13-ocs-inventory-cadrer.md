@@ -11,16 +11,16 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-ocs-inventory-cadrer.md
 
-- **Environnement** : VM Debian 13 dédiée, OCS Inventory 3.0 (Nginx, uWSGI, PostgreSQL local)
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée, OCS Inventory 3.0 (Nginx, uWSGI, PostgreSQL local)
 - **OS / Version** : Debian 13 Trixie; OCS Inventory 3.0; PostgreSQL 17
-- **Catégorie** : inventaire de parc / ITSM
+- **Catégorie** : inventaire de parc / [[Glossary:ITSM]]
 - **Tags** : `debian13`, `ocs-inventory`, `ocs3`, `postgresql`, `nginx`, `prerequis`
 
 ---
 
 ## Problème précis à résoudre
 
-Valider l'architecture (backend API + console), les noms DNS, les ressources et les accès avant d'installer OCS Inventory 3.
+Valider l'architecture (backend [[Glossary:API]] + console), les noms [[Glossary:DNS]], les ressources et les accès avant d'installer OCS Inventory 3.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -30,14 +30,14 @@ Valider l'architecture (backend API + console), les noms DNS, les ressources et 
    free -h
    df -h /
    ```
-   👉 Explication : OCS 3 demande au minimum 4 Go de RAM (8 Go recommandés) et un stockage adapté au volume des inventaires.
+   👉 Explication : OCS 3 demande au minimum 4 Go de [[Glossary:RAM]] (8 Go recommandés) et un stockage adapté au volume des inventaires.
 
 2. Vérifier que les noms DNS prévus résolvent vers la VM (remplacer `ocs.example.net` et `ocs-api.example.net` par vos noms réels) :
    ```bash
    getent hosts ocs.example.net
    getent hosts ocs-api.example.net
    ```
-   👉 Explication : la console et l'API utilisent deux noms distincts; ils doivent exister avant la configuration TLS.
+   👉 Explication : la console et l'API utilisent deux noms distincts; ils doivent exister avant la configuration [[Glossary:TLS]].
 
 3. Contrôler qu'aucun paquet serveur OCS 2.x n'est installé :
    ```bash
@@ -47,7 +47,7 @@ Valider l'architecture (backend API + console), les noms DNS, les ressources et 
 
 ## 2. Production — Contrôles
 
-Documenter les noms DNS, certificats TLS, réseaux autorisés vers la console et l'API, serveur SMTP, et la destination des sauvegardes hors hôte.
+Documenter les noms DNS, certificats TLS, réseaux autorisés vers la console et l'API, serveur [[Glossary:SMTP]], et la destination des sauvegardes hors hôte.
 
 ## 3. Production — Sécurité
 

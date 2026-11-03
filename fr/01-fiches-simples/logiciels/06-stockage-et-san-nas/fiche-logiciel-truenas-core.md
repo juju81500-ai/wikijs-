@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 TrueNAS Core
 
-- **Catégorie** : Stockage et SAN / NAS
+- **Catégorie** : Stockage et [[Glossary:SAN]] / [[Glossary:NAS]]
 - **Plateforme** : Appliance FreeBSD
 - **Produit (matrice)** : TrueNAS Core
 - **Statut dans le pack** : Couvert

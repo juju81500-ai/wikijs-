@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-debian-13-services-creer-service-systemd-durci.md
 
-- **Environnement** : VM ou serveur Debian 13
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 13
 - **OS / Version** : Debian 13 (Trixie) avec systemd
 - **Catégorie** : Services / Administration
 - **Tags** : `[debian13]`, `[debian]`, `[systemd]`, `[service]`, `[least-privilege]`, `[hardening]`

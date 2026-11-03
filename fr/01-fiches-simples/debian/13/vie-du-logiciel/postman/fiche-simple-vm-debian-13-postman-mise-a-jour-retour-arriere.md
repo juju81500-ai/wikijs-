@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Postman_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Debian 13 Trixie avec bureau graphique, Postman Desktop et Newman
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie avec bureau graphique, Postman Desktop et Newman
 - **OS / Version** : Debian 13 Trixie
-- **Catégorie** : API / mise à jour et retour arrière
+- **Catégorie** : [[Glossary:API]] / mise à jour et retour arrière
 - **Tags** : `debian13`, `postman`, `api`, `newman`, `vie-du-logiciel`
 
 ---

@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Stockage_Fstab_Options
 
-- **Environnement** : VM ou serveur Ubuntu avec disque de données supplémentaire
-- **OS / Version** : Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu avec disque de données supplémentaire
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]]
 - **Catégorie** : Stockage / Montages et options
 - **Tags** : `ubuntu2604`, `fstab`, `uuid`, `mount`, `nodev`, `nosuid`, `noexec`
 
@@ -48,7 +48,7 @@ findmnt /srv/donnees
 ```text
 UUID=<uuid_du_disque>  /srv/donnees  ext4  defaults,nodev,nosuid,nofail  0  2
 ```
-👉 Explication : `nodev` interdit les fichiers spéciaux, `nosuid` ignore les bits SUID. `nofail` permet au démarrage de continuer si le disque manque. Le dernier champ `2` demande une vérification fsck après la racine.
+👉 Explication : `nodev` interdit les fichiers spéciaux, `nosuid` ignore les bits [[Glossary:SUID]]. `nofail` permet au démarrage de continuer si le disque manque. Le dernier champ `2` demande une vérification fsck après la racine.
 
 ## ⚡ 2. Production — Façon Simplifiée
 

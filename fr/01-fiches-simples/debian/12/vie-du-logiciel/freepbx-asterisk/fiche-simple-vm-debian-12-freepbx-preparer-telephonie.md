@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-12-freepbx-preparer-telephonie.md
 
-- **Environnement** : VM ou serveur dédié, VLAN voix et accès console de secours
+- **Environnement** : [[Glossary:VM]] ou serveur dédié, [[Glossary:VLAN]] voix et accès console de secours
 - **OS / Version** : OS et versions FreePBX/Asterisk officiellement compatibles à confirmer
-- **Catégorie** : téléphonie IP / préparation
+- **Catégorie** : téléphonie [[Glossary:IP]] / préparation
 - **Tags** : `debian12`, `freepbx`, `asterisk`, `voip`, `sip`, `telephonie`
 
 ---
@@ -24,7 +24,7 @@ Définir l'architecture téléphonique et les flux nécessaires avant l'installa
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Vérifier IP, DNS et horloge :
+1. Vérifier IP, [[Glossary:DNS]] et horloge :
    ```bash
    ip -br a
    getent hosts pbx.example.net

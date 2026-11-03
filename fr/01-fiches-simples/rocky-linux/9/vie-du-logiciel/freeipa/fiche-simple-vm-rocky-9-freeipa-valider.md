@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-rocky-9-freeipa-valider.md
 
-- **Environnement** : VM Rocky Linux 9 dédiée au premier serveur FreeIPA/IdM
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée au premier serveur FreeIPA/IdM
 - **OS / Version** : Rocky Linux 9 x86_64; paquets `ipa-server` des dépôts de la distribution
 - **Catégorie** : annuaire / validation
 - **Tags** : `rocky9`, `freeipa`, `idm`, `kerberos`
@@ -36,7 +36,7 @@ Contrôler que FreeIPA fonctionne de bout en bout après installation.
    ipa user-find
    ipa host-find
    ```
-   👉 Explication : Les requêtes LDAP/IPA doivent répondre.
+   👉 Explication : Les requêtes [[Glossary:LDAP]]/IPA doivent répondre.
 
 3. Vérifier les services :
    ```bash
@@ -44,7 +44,7 @@ Contrôler que FreeIPA fonctionne de bout en bout après installation.
    ```
    👉 Explication : Tous les services IdM doivent être démarrés (`systemctl status ipa` est équivalent).
 
-4. Ouvrir **https://FQDN/ipa/ui/** depuis un poste autorisé (remplacer FQDN par le nom du serveur).
+4. Ouvrir **https://FQDN/ipa/ui/** depuis un poste autorisé (remplacer [[Glossary:FQDN]] par le nom du serveur).
    👉 Explication : vérifie l'interface web.
 
 5. Sur un client de test, installer `ipa-client` puis lancer `ipa-client-install`.

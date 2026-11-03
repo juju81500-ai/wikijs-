@@ -31,7 +31,7 @@ Installer Python, pip, venv et pipx depuis les dépôts Debian.
    ```
    👉 Explication : Tous viennent des dépôts Debian configurés.
 
-2. Contrôler la provenance APT :
+2. Contrôler la provenance [[Glossary:APT]] :
    ```bash
    apt-cache policy python3 python3-pip python3-venv pipx
    ```

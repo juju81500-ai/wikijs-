@@ -90,7 +90,7 @@ Logiciels qui s'installent et se gèrent sur Windows Server 2022. Pour chaque lo
 
 ### IIS
 
-- Fiche d'entrée : [catalogue IIS](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-iis) (statut : Guide complet — installation du rôle IIS et site pilote Windows Server 2022)
+- Fiche d'entrée : [catalogue IIS](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-iis) (statut : Guide complet — installation du rôle [[Glossary:IIS]] et site pilote Windows Server 2022)
 - [VM Windows Server 2022 IIS Installer Role Web Server](/fr/01-fiches-simples/windows/server-2022/vie-du-logiciel/iis/fiche-simple-vm-windows-server-2022-iis-installer-role-web-server)
 - [VM Windows Server 2022 IIS Perimetre Prerequis](/fr/01-fiches-simples/windows/server-2022/vie-du-logiciel/iis/fiche-simple-vm-windows-server-2022-iis-perimetre-prerequis)
 - [VM Windows Server 2022 IIS Retour Arriere](/fr/01-fiches-simples/windows/server-2022/vie-du-logiciel/iis/fiche-simple-vm-windows-server-2022-iis-retour-arriere)
@@ -110,7 +110,7 @@ Logiciels qui s'installent et se gèrent sur Windows Server 2022. Pour chaque lo
 
 ### Nakivo
 
-- Fiche d'entrée : [catalogue Nakivo-Altaro](/fr/01-fiches-simples/logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-nakivo-altaro) (statut : Partiel — NAKIVO Windows Server 2022 et Transporter Linux sur Debian 13 et Ubuntu Server 24-04; Altaro/Hornetsecurity limité à la documentation publique de VM Backup)
+- Fiche d'entrée : [catalogue Nakivo-Altaro](/fr/01-fiches-simples/logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-nakivo-altaro) (statut : Partiel — NAKIVO Windows Server 2022 et Transporter Linux sur Debian 13 et Ubuntu Server 24-04; Altaro/Hornetsecurity limité à la documentation publique de [[Glossary:VM]] Backup)
 - [Windows Server 2022 Nakivo Configurer](/fr/01-fiches-simples/windows/server-2022/vie-du-logiciel/nakivo/fiche-simple-windows-server-2022-nakivo-configurer)
 - [Windows Server 2022 Nakivo Installer Director Transporter](/fr/01-fiches-simples/windows/server-2022/vie-du-logiciel/nakivo/fiche-simple-windows-server-2022-nakivo-installer-director-transporter)
 - [Windows Server 2022 Nakivo Job Sauvegarde](/fr/01-fiches-simples/windows/server-2022/vie-du-logiciel/nakivo/fiche-simple-windows-server-2022-nakivo-job-sauvegarde)

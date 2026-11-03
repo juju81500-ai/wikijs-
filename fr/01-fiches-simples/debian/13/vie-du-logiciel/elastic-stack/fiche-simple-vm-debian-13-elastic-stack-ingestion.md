@@ -44,7 +44,7 @@ Valider la santé du nœud et préparer une ingestion pilote.
 
 ## 2. Production — Contrôles
 
-Choisir Elastic Agent/Fleet ou un shipper conforme à l'architecture; valider d'abord un hôte pilote avec certificat CA.
+Choisir Elastic Agent/Fleet ou un shipper conforme à l'architecture; valider d'abord un hôte pilote avec certificat [[Glossary:CA]].
 
 ## 3. Production — Sécurité
 
@@ -53,7 +53,7 @@ Choisir Elastic Agent/Fleet ou un shipper conforme à l'architecture; valider d'
 
 ## Validation et retour arrière
 
-- **Validation** : l'API est saine et le document de test est visible dans Kibana.
+- **Validation** : l'[[Glossary:API]] est saine et le document de test est visible dans Kibana.
 - **Retour arrière** : supprimer l'index de test : `curl --cacert /etc/elasticsearch/certs/http_ca.crt -u elastic -X DELETE https://localhost:9200/test-pilote`.
 
 ## Si le problème n'est pas résolu

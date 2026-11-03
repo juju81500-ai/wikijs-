@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:14Z
 # fiche-simple-hote-vmware-esxi-8-esxi-valider-materiel-droits.md
 
 - **Environnement** : Hôte physique VMware ESXi 8.0 pilote autonome (DCUI, Host Client, vCenter)
-- **OS / Version** : VMware ESXi 8.0, build et image OEM validés sur le matériel
+- **OS / Version** : VMware ESXi 8.0, build et image [[Glossary:OEM]] validés sur le matériel
 - **Catégorie** : virtualisation / cadrage
 - **Tags** : `vmware`, `esxi`, `vsphere8`, `hyperviseur`, `compatibilite`, `licence`
 
@@ -24,13 +24,13 @@ Vérifier compatibilité matérielle et droits avant installation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Consulter la matrice de compatibilité Broadcom pour serveur, CPU, contrôleur, NIC et firmware : **Broadcom Compatibility Guide > Systems / Servers**
+1. Consulter la matrice de compatibilité Broadcom pour serveur, [[Glossary:CPU]], contrôleur, [[Glossary:NIC]] et firmware : **Broadcom Compatibility Guide > Systems / Servers**
    👉 Explication : l'image ESXi signée du fabricant doit correspondre au matériel.
 
 2. Confirmer support, mode de licence et droits des fonctions voulues (vCenter, HA, migration, sauvegarde) : **Portail Broadcom Support > Licences**
    👉 Explication : éviter un achat ou un déploiement non couvert.
 
-3. Préparer noms DNS, IP de management, VLAN, passerelle, DNS/NTP et accès console hors bande.
+3. Préparer noms [[Glossary:DNS]], [[Glossary:IP]] de management, [[Glossary:VLAN]], passerelle, DNS/NTP et accès console hors bande.
    👉 Explication : ces éléments sont demandés pendant l'installation.
 
 ## 2. Production — Contrôles

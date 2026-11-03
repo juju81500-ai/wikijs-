@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_VM_Windows_11_Royal_TS_Coffre_Identifiants
 
-- **Environnement** : Poste Windows 11 x64 d'administration (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'administration ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; Royal TS VERSION_ROYAL_TS (à remplacer)
 - **Catégorie** : gestionnaire de connexions distantes
 - **Tags** : `royal-ts`, `windows11`, `credentials`, `coffre`, `cles`

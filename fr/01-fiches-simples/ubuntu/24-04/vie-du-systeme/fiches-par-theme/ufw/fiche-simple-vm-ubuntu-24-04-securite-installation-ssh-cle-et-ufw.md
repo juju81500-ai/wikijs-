@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-ubuntu-24-04-securite-installation-ssh-cle-et-ufw.md
 
-- **Environnement** : VM Ubuntu Server
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat)
+- **Environnement** : [[Glossary:VM]] Ubuntu Server
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble Numbat)
 - **Catégorie** : Installation / Sécurité / Accès distant
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[openssh]`, `[ssh]`, `[ufw]`, `[ed25519]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer OpenSSH Server sur Ubuntu Server 24-04, préparer un accès par clé Ed25519 et désactiver l'authentification SSH par mot de passe seulement après validation de la clé.
+Installer OpenSSH Server sur Ubuntu Server 24-04, préparer un accès par clé Ed25519 et désactiver l'authentification [[Glossary:SSH]] par mot de passe seulement après validation de la clé.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Installer et démarrer le service Ubuntu `ssh` :
@@ -57,7 +57,7 @@ Installer OpenSSH Server sur Ubuntu Server 24-04, préparer un accès par clé E
 
 ## 🔒 3. Production — Façon Sécurisée
 1. Garder la session SSH actuelle ouverte et tester un nouvel accès par clé avant de fermer cette session.
-2. Si UFW est utilisé, autoriser SSH avant toute activation du pare-feu :
+2. Si [[Glossary:UFW]] est utilisé, autoriser SSH avant toute activation du pare-feu :
    ```bash
    sudo ufw app list
    sudo ufw allow OpenSSH
@@ -73,4 +73,4 @@ Installer OpenSSH Server sur Ubuntu Server 24-04, préparer un accès par clé E
 - Examiner les échecs avec `sudo journalctl -u ssh --since today`.
 
 ## 🔗 Si le problème n'est pas résolu
-- Vérifier l'adresse Netplan, le DNS, le pare-feu UFW et les permissions du compte distant.
+- Vérifier l'adresse Netplan, le [[Glossary:DNS]], le pare-feu UFW et les permissions du compte distant.

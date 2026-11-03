@@ -35,7 +35,7 @@ Contrôler exactement les changements projetés par rsync avant d'écrire ou de 
    ```bash
    rsync -aHAX --numeric-ids --one-file-system --dry-run --itemize-changes --stats -e ssh "$SRC" "$DST"
    ```
-   👉 Explication : `-a` préserve droits, dates, liens, propriétaire; `-H` liens physiques; `-A` ACL; `-X` attributs étendus; `--numeric-ids` évite le remappage UID/GID; `--one-file-system` ne traverse pas les autres montages; `--dry-run` ne modifie rien.
+   👉 Explication : `-a` préserve droits, dates, liens, propriétaire; `-H` liens physiques; `-A` [[Glossary:ACL]]; `-X` attributs étendus; `--numeric-ids` évite le remappage UID/GID; `--one-file-system` ne traverse pas les autres montages; `--dry-run` ne modifie rien.
 
 3. Relire la liste des changements :
    👉 Explication : vérifier que les fichiers listés sont attendus et que la source n'est pas vide ni démontée.

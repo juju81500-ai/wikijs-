@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 Fiche_Simple_-_VM_Windows_Server_2022_Diagnostic_WinEvent
 
-- **Environnement** : VM (Windows Server 2022)
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022)
 - **OS / Version** : Windows Server 2022 - Famille Windows Server
 - **Catégorie** : Système & Services / Diagnostic et journaux
 - **Tags** : `[windows-server-2022]`, `[get-winevent]`, `[event-log]`, `[diagnostic]`, `[powershell]`

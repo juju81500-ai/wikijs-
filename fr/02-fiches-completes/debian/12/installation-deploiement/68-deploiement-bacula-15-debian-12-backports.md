@@ -25,7 +25,7 @@ Bacula sépare le Director (planification et catalogue), le Storage Daemon (volu
 
 Cette procédure vise un laboratoire à serveur unique Debian 12 avec stockage disque et un jeu de fichiers fictifs. Bacula Community 15.0.3 est disponible dans les backports Debian Bookworm; les paquets Bookworm standard sont d'une génération antérieure. Le guide ne vise ni Debian 13, ni une architecture de production, ni les paquets upstream Bacula qui nécessitent une inscription et une clé d'accès.
 
-En production, séparer les rôles selon les besoins, protéger le stockage contre l'effacement ou le chiffrement depuis le serveur sauvegardé, conserver une copie hors site, définir RPO/RTO et éprouver les restaurations. Une copie de volumes sur le même serveur n'est pas une stratégie de reprise.
+En production, séparer les rôles selon les besoins, protéger le stockage contre l'effacement ou le chiffrement depuis le serveur sauvegardé, conserver une copie hors site, définir [[Glossary:RPO]]/RTO et éprouver les restaurations. Une copie de volumes sur le même serveur n'est pas une stratégie de reprise.
 
 ## 2. Préparer Debian 12 et vérifier la version
 
@@ -38,7 +38,7 @@ sudo apt update
 apt-cache policy bacula-director-pgsql bacula-sd bacula-client bacula-console
 ```
 
-Le candidat doit provenir de Bookworm Backports et correspondre à Bacula 15.0.3 (`15.0.3-3~bpo12+1` pour la révision référencée ici). Si ce n'est pas le cas, arrêter et revoir les sources APT au lieu de mélanger les versions.
+Le candidat doit provenir de Bookworm Backports et correspondre à Bacula 15.0.3 (`15.0.3-3~bpo12+1` pour la révision référencée ici). Si ce n'est pas le cas, arrêter et revoir les sources [[Glossary:APT]] au lieu de mélanger les versions.
 
 Installer explicitement les composants du serveur et PostgreSQL :
 
@@ -136,7 +136,7 @@ sudo systemctl enable --now bacula-director.service bacula-sd.service bacula-fd.
 sudo systemctl --no-pager --full status bacula-director.service bacula-sd.service bacula-fd.service
 ```
 
-Si les unités portent d'autres noms sur le système, employer ceux trouvés à l'étape précédente. Contrôler aussi les journaux systemd. Limiter le pare-feu aux flux requis entre les composants : console vers Director (TCP 9101 par défaut), Director vers File Daemon (9102) et Director/File Daemon vers Storage Daemon (9103). Ne jamais exposer ces ports à Internet.
+Si les unités portent d'autres noms sur le système, employer ceux trouvés à l'étape précédente. Contrôler aussi les journaux systemd. Limiter le pare-feu aux flux requis entre les composants : console vers Director ([[Glossary:TCP]] 9101 par défaut), Director vers File Daemon (9102) et Director/File Daemon vers Storage Daemon (9103). Ne jamais exposer ces ports à Internet.
 
 ## 6. Exécuter le job et étiqueter un volume
 
@@ -167,7 +167,7 @@ Un job de sauvegarde `OK` ne prouve pas qu'une restauration est possible. Répé
 Fiche simple : [secrets, TLS et exploitation](/fr/01-fiches-simples/debian/12/vie-du-logiciel/bacula/fiche-simple-vm-debian-12-bacula-secrets-tls-exploitation).
 
 - Utiliser des mots de passe aléatoires, uniques par relation Director/Storage/File Daemon et protégés dans les configurations avec les permissions minimales nécessaires.
-- Configurer TLS et exiger le chiffrement de bout en bout entre les composants, en vérifiant les certificats et noms d'hôtes. La documentation Bacula 15 indique qu'une authentification TLS seule (`TLS Authenticate = yes`) désactive ensuite le chiffrement du flux; ne pas confondre authentification et chiffrement.
+- Configurer [[Glossary:TLS]] et exiger le chiffrement de bout en bout entre les composants, en vérifiant les certificats et noms d'hôtes. La documentation Bacula 15 indique qu'une authentification TLS seule (`TLS Authenticate = yes`) désactive ensuite le chiffrement du flux; ne pas confondre authentification et chiffrement.
 - Restreindre les accès à `bconsole`, au catalogue PostgreSQL, aux volumes, aux configurations et aux clés privées.
 - Vérifier que le job de sauvegarde du catalogue est planifié après les autres jobs; protéger ses exports, les fichiers bootstrap, les configurations et les certificats sur une cible indépendante.
 - Définir les rétentions Fichiers, Jobs et Volumes après calcul de capacité. Le pruning du catalogue supprime des index, pas les volumes; le recyclage d'un volume réutilise ses données et doit respecter la politique de rétention.

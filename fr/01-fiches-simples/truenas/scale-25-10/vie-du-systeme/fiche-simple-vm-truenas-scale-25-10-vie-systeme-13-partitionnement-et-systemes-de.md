@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Choisir les disques de démarrage lors de l'installation : le reste est géré par ZFS.
+Choisir les disques de démarrage lors de l'installation : le reste est géré par [[Glossary:ZFS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Dans l'installateur : Install/Upgrade, cocher un (ou deux pour un miroir) disque de démarrage SSD.
+1. Dans l'installateur : Install/Upgrade, cocher un (ou deux pour un miroir) disque de démarrage [[Glossary:SSD]].
    👉 Explication : l'installateur crée seul le pool `boot-pool` ; ne pas choisir de disque de données.
 
 2. Après installation, vérifier le pool de démarrage :
@@ -32,7 +32,7 @@ Choisir les disques de démarrage lors de l'installation : le reste est géré p
    sudo zpool status boot-pool
    lsblk -o NAME,SIZE,TYPE,MOUNTPOINT
    ```
-   👉 Explication : ONLINE, sans erreur. GUI : Système > Environnements d'amorçage.
+   👉 Explication : ONLINE, sans erreur. [[Glossary:GUI]] : Système > Environnements d'amorçage.
 
 3. Ne pas créer de partitions à la main sur le système.
    👉 Explication : TrueNAS gère le système en lecture seule ; toute modification passe par la GUI.

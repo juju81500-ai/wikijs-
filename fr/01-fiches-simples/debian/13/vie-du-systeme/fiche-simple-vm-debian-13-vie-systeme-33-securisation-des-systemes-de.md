@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Vie_Systeme_33_Securisation_Des_Systemes_De
 
-- **Environnement** : VM Debian 13 « trixie » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 13 « trixie » (serveur)
 - **OS / Version** : Debian 13; étape 33 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian13`, `vie-du-systeme`, `cycle-de-vie`, `etape-33`
@@ -24,7 +24,7 @@ Restreindre les montages.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Debian 13 monte `/tmp` en tmpfs (en mémoire, jusqu'à la moitié de la RAM) : contrôler l'état réel de `/tmp`, `/var/tmp` et `/dev/shm` :
+1. Debian 13 monte `/tmp` en tmpfs (en mémoire, jusqu'à la moitié de la [[Glossary:RAM]]) : contrôler l'état réel de `/tmp`, `/var/tmp` et `/dev/shm` :
    ```bash
    findmnt -no TARGET,FSTYPE,OPTIONS /tmp /var/tmp /dev/shm
    df -h /tmp

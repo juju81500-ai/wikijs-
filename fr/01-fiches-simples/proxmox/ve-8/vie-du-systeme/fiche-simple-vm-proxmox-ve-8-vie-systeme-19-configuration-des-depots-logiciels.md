@@ -24,7 +24,7 @@ Choisir les dépôts Enterprise ou No-Subscription.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : **Nœud > Updates > Repositories** : désactiver `pve-enterprise` si pas d'abonnement, puis **Add > No-Subscription**. En ligne de commande (Debian 12 = `bookworm`) :
+1. [[Glossary:GUI]] : **Nœud > Updates > Repositories** : désactiver `pve-enterprise` si pas d'abonnement, puis **Add > No-Subscription**. En ligne de commande (Debian 12 = `bookworm`) :
    ```bash
    cat /etc/apt/sources.list.d/pve-enterprise.list
    echo 'deb http://download.proxmox.com/debian/pve bookworm pve-no-subscription' > /etc/apt/sources.list.d/pve-no-subscription.list

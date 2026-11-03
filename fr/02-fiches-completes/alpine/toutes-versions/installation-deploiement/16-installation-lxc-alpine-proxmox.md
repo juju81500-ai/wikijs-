@@ -21,7 +21,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [cadrer l'architecture](/fr/01-fiches-simples/alpine/toutes-versions/vie-du-systeme/fiches-par-theme/administration-systeme/fiche-simple-lxc-alpine-proxmox-cadrer-architecture).
 
-Créer un conteneur Alpine non privilégié, isolé sur le bridge/VLAN prévu, avec ressources, stockage, adresse et politique de sauvegarde cohérents avec son rôle. Un LXC partage le noyau de l'hôte; le noyau et une partie du filtrage restent sous responsabilité Proxmox.
+Créer un conteneur Alpine non privilégié, isolé sur le bridge/VLAN prévu, avec ressources, stockage, adresse et politique de sauvegarde cohérents avec son rôle. Un [[Glossary:LXC]] partage le noyau de l'hôte; le noyau et une partie du filtrage restent sous responsabilité Proxmox.
 
 ## 2. Prérequis
 
@@ -29,7 +29,7 @@ Fiche simple : [vérifier les prérequis](/fr/01-fiches-simples/alpine/toutes-ve
 
 - Nœud et stockage Proxmox opérationnels; accès administrateur et console de secours.
 - Template Alpine maintenu et compatible avec la version de Proxmox. Ne pas utiliser Alpine 3-19 pour un nouveau service de production.
-- ID CT libre, hostname, plan IP/DNS, bridge/VLAN, quota CPU/RAM/disque et sauvegarde définis.
+- ID [[Glossary:CT]] libre, hostname, plan [[Glossary:IP]]/DNS, bridge/VLAN, quota [[Glossary:CPU]]/RAM/disque et sauvegarde définis.
 - Réseau, points de montage, capacités et nesting justifiés par le service; éviter le CT privilégié.
 
 ## 3. Télécharger et créer le conteneur
@@ -55,7 +55,7 @@ Dans l'interface Proxmox :
 2. Sélectionner le template Alpine téléchargé.
 3. Définir stockage, taille disque, CPU et mémoire selon la charge prévue.
 4. Activer **Unprivileged container**.
-5. Choisir bridge, VLAN tag, adresse DHCP ou réservation statique, passerelle et DNS.
+5. Choisir bridge, [[Glossary:VLAN]] tag, adresse [[Glossary:DHCP]] ou réservation statique, passerelle et [[Glossary:DNS]].
 6. Laisser désactivés nesting, FUSE et périphériques hôte sauf besoin documenté.
 7. Vérifier le résumé et créer le CT.
 
@@ -80,7 +80,7 @@ apk update
 apk upgrade
 ```
 
-Créer un compte nominatif non-root, configurer `doas`, puis installer seulement les paquets liés au rôle. Configurer les services avec OpenRC et utiliser les fiches simples Alpine pour SSH, réseau, DNS et services.
+Créer un compte nominatif non-root, configurer `doas`, puis installer seulement les paquets liés au rôle. Configurer les services avec OpenRC et utiliser les fiches simples Alpine pour [[Glossary:SSH]], réseau, DNS et services.
 
 ## 5. Sécuriser et exposer le service
 
@@ -97,7 +97,7 @@ Fiche simple : [valider la mise en production](/fr/01-fiches-simples/alpine/tout
 
 Depuis le CT, vérifier version, paquets, services OpenRC, adresse, route, DNS et ports d'écoute. Depuis un client autorisé, tester le parcours applicatif; depuis une source non autorisée, vérifier le refus attendu.
 
-Créer une tâche de sauvegarde vers PBS ou une cible indépendante, puis réaliser une restauration vers un ID temporaire et un réseau isolé.
+Créer une tâche de sauvegarde vers [[Glossary:PBS]] ou une cible indépendante, puis réaliser une restauration vers un ID temporaire et un réseau isolé.
 
 ## 7. Retour arrière et dépannage
 

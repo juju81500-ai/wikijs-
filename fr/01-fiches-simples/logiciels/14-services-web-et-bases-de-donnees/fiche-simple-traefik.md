@@ -11,14 +11,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Traefik
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : Traefik v3.x (binaire officiel GitHub, version à vérifier sur la version déployée)
 - **Catégorie** : Services Web et bases de données
 - **Tags** : `[debian-12]`, `[traefik]`, `[reverse-proxy]`, `[load-balancer]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer Traefik sur Debian 12 comme reverse proxy HTTP devant deux serveurs web, vérifier qu'il route une requête selon le nom d'hôte, puis le durcir (tableau de bord protégé, utilisateur de service dédié, pare-feu restreint) avant de l'exposer à un service de l'entreprise. Les tests ne se font que sur votre propre serveur et vos propres machines.
+Installer Traefik sur Debian 12 comme reverse proxy [[Glossary:HTTP]] devant deux serveurs web, vérifier qu'il route une requête selon le nom d'hôte, puis le durcir (tableau de bord protégé, utilisateur de service dédié, pare-feu restreint) avant de l'exposer à un service de l'entreprise. Les tests ne se font que sur votre propre serveur et vos propres machines.
 
 ---
 
@@ -86,7 +86,7 @@ Dans un second terminal :
 curl -I -H "Host: app.lab.local" http://127.0.0.1/
 curl -s http://127.0.0.1:8080/api/rawdata | head -n 20
 ```
-👉 Explication : `traefik --configFile` démarre le proxy avec la configuration. La première requête doit recevoir une réponse des serveurs web. La seconde interroge l'API du tableau de bord sur le port 8080 et affiche les routeurs déclarés. Le port 8080 est le port standard de l'API Traefik (à vérifier sur la version déployée).
+👉 Explication : `traefik --configFile` démarre le proxy avec la configuration. La première requête doit recevoir une réponse des serveurs web. La seconde interroge l'[[Glossary:API]] du tableau de bord sur le port 8080 et affiche les routeurs déclarés. Le port 8080 est le port standard de l'API Traefik (à vérifier sur la version déployée).
 
 ---
 
@@ -99,7 +99,7 @@ getcap /usr/local/bin/traefik
 ```
 👉 Explication : Traefik tourne sous un compte sans droits d'administration. `setcap` accorde uniquement la capacité d'ouvrir les ports inférieurs à 1024. `getcap` confirme le réglage.
 
-2. Ouverture du pare-feu pour le web et l'administration SSH :
+2. Ouverture du pare-feu pour le web et l'administration [[Glossary:SSH]] :
 ```bash
 sudo apt install -y ufw
 sudo ufw allow from 192.168.10.0/24 to any port 22 proto tcp

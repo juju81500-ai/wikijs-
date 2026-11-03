@@ -24,7 +24,7 @@ Séparer les accès par application.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Identifiants > Utilisateurs > Ajouter un compte sans shell et sans connexion SMB inutile.
+1. [[Glossary:GUI]] : Identifiants > Utilisateurs > Ajouter un compte sans shell et sans connexion SMB inutile.
    ```bash
    sudo midclt call user.create '{"username":"SVC_SAUVEGARDE","full_name":"Service","password_disabled":true,"shell":"/usr/sbin/nologin","group_create":true}'
    ```

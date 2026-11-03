@@ -24,14 +24,14 @@ Dimensionner le poste Windows 10 avant de l'acheter, de le créer ou de le dépl
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Relever les ressources de la machine ou du modèle comparable : **Paramètres > Système > À propos de** (processeur, RAM installée, type de système) et **Paramètres > Système > Stockage** (espace disque).
+1. Relever les ressources de la machine ou du modèle comparable : **Paramètres > Système > À propos de** (processeur, [[Glossary:RAM]] installée, type de système) et **Paramètres > Système > Stockage** (espace disque).
    ```powershell
    Get-CimInstance Win32_Processor | Select-Object Name,NumberOfCores,NumberOfLogicalProcessors
    Get-CimInstance Win32_ComputerSystem | Select-Object @{n='RAM_Go';e={[math]::Round($_.TotalPhysicalMemory/1GB,1)}}
    Get-PhysicalDisk | Select-Object FriendlyName,MediaType,@{n='Taille_Go';e={[math]::Round($_.Size/1GB)}}
    (Get-CimInstance Win32_OperatingSystem).OSArchitecture
    ```
-   👉 Explication : affiche cœurs, RAM, type de disque (SSD/HDD) et architecture 64 bits pour comparer au besoin des applications métier.
+   👉 Explication : affiche cœurs, RAM, type de disque ([[Glossary:SSD]]/HDD) et architecture 64 bits pour comparer au besoin des applications métier.
 
 2. Mesurer la charge d'un poste comparable : **Gestionnaire des tâches (Ctrl+Maj+Échap) > Performances**, ou la commande ci-contre.
    ```powershell
@@ -39,19 +39,19 @@ Dimensionner le poste Windows 10 avant de l'acheter, de le créer ou de le dépl
    ```
    👉 Explication : un processeur proche de 100 %, peu de mémoire disponible ou une file disque élevée indiquent un poste sous-dimensionné.
 
-3. Vérifier les prérequis matériels de Windows 11 (TPM 2.0, démarrage sécurisé, 4 Go de RAM, 64 Go de stockage) : lancer l'application **Contrôle d'intégrité du PC** ou lire l'état du TPM.
+3. Vérifier les prérequis matériels de Windows 11 ([[Glossary:TPM]] 2.0, démarrage sécurisé, 4 Go de RAM, 64 Go de stockage) : lancer l'application **Contrôle d'intégrité du PC** ou lire l'état du TPM.
    ```powershell
    Get-Tpm | Select-Object TpmPresent,TpmReady,ManufacturerVersion
    Confirm-SecureBootUEFI
    ```
-   👉 Explication : `TpmPresent : True` avec une version 2.0 et `True` pour Secure Boot sont attendus; `Confirm-SecureBootUEFI` échoue sur un BIOS hérité (Legacy).
+   👉 Explication : `TpmPresent : True` avec une version 2.0 et `True` pour Secure Boot sont attendus; `Confirm-SecureBootUEFI` échoue sur un [[Glossary:BIOS]] hérité (Legacy).
 
 4. Noter processeur, RAM, disque, GPU éventuel, écrans, périphériques et applications métier dans le dossier du projet.
    👉 Explication : ce tableau sert de référence pour la commande de matériel et pour la recette.
 
 ## 2. Production — Contrôles
 
-Ajouter 20 à 30 % de marge, valider avec le métier et avec la DSI; viser au moins 8 Go de RAM et un SSD pour un usage bureautique en entreprise.
+Ajouter 20 à 30 % de marge, valider avec le métier et avec la [[Glossary:DSI]]; viser au moins 8 Go de RAM et un SSD pour un usage bureautique en entreprise.
 
 ## 3. Production — Sécurité
 

@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-apache-hote-virtuel.md
 
-- **Environnement** : VM Debian 13 Trixie, hôte virtuel statique de test
-- **OS / Version** : Debian 13 Trixie; Apache HTTP Server 2.4.x du dépôt Debian
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie, hôte virtuel statique de test
+- **OS / Version** : Debian 13 Trixie; Apache [[Glossary:HTTP]] Server 2.4.x du dépôt Debian
 - **Catégorie** : serveur Web / hôte virtuel
 - **Tags** : `debian13`, `apache`, `virtual-host`, `document-root`, `validation`
 
@@ -32,7 +32,7 @@ Servir une page statique de test depuis un hôte virtuel dédié avec un répert
    ```
    👉 Explication : contenu non sensible, propriété root, non modifiable par Apache.
 
-2. Créer l'hôte virtuel (remplacer `www.example.net` par le FQDN validé) :
+2. Créer l'hôte virtuel (remplacer `www.example.net` par le [[Glossary:FQDN]] validé) :
    ```bash
    sudo tee /etc/apache2/sites-available/pilote.conf >/dev/null <<'EOF'
    <VirtualHost *:80>

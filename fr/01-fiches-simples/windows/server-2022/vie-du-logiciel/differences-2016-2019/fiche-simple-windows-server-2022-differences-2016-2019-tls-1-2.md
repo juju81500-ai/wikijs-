@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Vérifier et imposer TLS 1.2 sur 2016 et 2019 (TLS 1.3 n'est pas pris en charge de la même façon que sur 2022).
+Vérifier et imposer [[Glossary:TLS]] 1.2 sur 2016 et 2019 (TLS 1.3 n'est pas pris en charge de la même façon que sur 2022).
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -48,7 +48,7 @@ Vérifier et imposer TLS 1.2 sur 2016 et 2019 (TLS 1.3 n'est pas pris en charge 
 
 ## 3. Production — Sécurité
 
-- Appliquer les paramètres par GPO plutôt que par saisie manuelle ; ne pas inventer de listes de suites de chiffrement : suivre la documentation Microsoft.
+- Appliquer les paramètres par [[Glossary:GPO]] plutôt que par saisie manuelle ; ne pas inventer de listes de suites de chiffrement : suivre la documentation Microsoft.
 
 ## Validation et retour arrière
 

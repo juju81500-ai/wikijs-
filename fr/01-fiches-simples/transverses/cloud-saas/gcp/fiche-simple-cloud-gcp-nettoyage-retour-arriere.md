@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Fiche_Simple_-_Cloud_GCP_Nettoyage_Retour_Arriere
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — Google Cloud CLI (gcloud ; version publiée à vérifier)
+- **OS / Version** : Cloud/SaaS — Google Cloud [[Glossary:CLI]] (gcloud ; version publiée à vérifier)
 - **Catégorie** : cloud public / nettoyage et retour arrière
 - **Tags** : `gcp`, `nettoyage_retour_arriere`, `securite`, `procedure`
 
@@ -26,7 +26,7 @@ Les valeurs écrites en MAJUSCULES sont des placeholders à remplacer par les va
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Console : Compute Engine → VM instances/Disks/Snapshots ; VPC network ; Cloud Storage ; vérifier le projet sélectionné.
+1. Console : Compute Engine → [[Glossary:VM]] instances/Disks/Snapshots ; VPC network ; Cloud Storage ; vérifier le projet sélectionné.
    👉 Explication : vérifier le compte/projet/abonnement et la région sélectionnés avant toute modification.
 2. CLI officielle (Google Cloud CLI (gcloud ; version publiée à vérifier)) :
    ```bash

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_34_Durcissement_Du_Noyau_Et
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 34 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-34`
@@ -35,7 +35,7 @@ Appliquer des réglages sysctl de sécurité.
    kernel.dmesg_restrict = 1
    EOF'
    ```
-   👉 Explication : filtre les routes anormales, refuse les redirections ICMP, protège contre le SYN flood et masque les adresses du noyau.
+   👉 Explication : filtre les routes anormales, refuse les redirections [[Glossary:ICMP]], protège contre le SYN flood et masque les adresses du noyau.
 
 2. Appliquer le fichier :
    ```sh

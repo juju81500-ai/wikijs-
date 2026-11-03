@@ -24,7 +24,7 @@ Ajouter des correspondances locales.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Réseau > Configuration globale > Hosts (une ligne `IP nom`).
+1. [[Glossary:GUI]] : Réseau > Configuration globale > Hosts (une ligne `IP nom`).
    ```sh
    midclt call network.configuration.update '{"hosts": ["ADRESSE NOM_HOTE"]}'
    ```

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_Postfix_Securiser
 
-- **Environnement** : VM Rocky Linux 9; Postfix depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9; Postfix depuis les dépôts de la distribution
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : Vie du logiciel / Postfix — Sécuriser
 - **Tags** : `postfix`, `serveur`, `vie-du-logiciel`, `securiser`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Limiter connexions réseau et protéger TLS et comptes de Postfix.
+Limiter connexions réseau et protéger [[Glossary:TLS]] et comptes de Postfix.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -38,12 +38,12 @@ sudo firewall-cmd --permanent --add-service=smtp
 sudo firewall-cmd --reload
 sudo firewall-cmd --list-all
    ```
-   👉 Explication : Configure STARTTLS opportuniste et le refus du relais non autorisé. `SMTP_CERT`, `SMTP_KEY` et `ADMIN_CIDR` sont des placeholders à remplacer par les certificats installés et le réseau admin; sur Rocky, restorecon vérifie les labels sans désactiver SELinux.
+   👉 Explication : Configure [[Glossary:STARTTLS]] opportuniste et le refus du relais non autorisé. `SMTP_CERT`, `SMTP_KEY` et `ADMIN_CIDR` sont des placeholders à remplacer par les certificats installés et le réseau admin; sur Rocky, restorecon vérifie les labels sans désactiver SELinux.
 
 
 ## 2. Production — Contrôles
 
-Ubuntu : UFW si prévu; Rocky : firewalld et SELinux enforcing. Autoriser uniquement les flux documentés.
+Ubuntu : [[Glossary:UFW]] si prévu; Rocky : firewalld et SELinux enforcing. Autoriser uniquement les flux documentés.
 
 ## 3. Production — Sécurité
 

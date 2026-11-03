@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Gérer le compte administrateur local intégré et son mot de passe unique par poste (LAPS).
+Gérer le compte administrateur local intégré et son mot de passe unique par poste ([[Glossary:LAPS]]).
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -36,9 +36,9 @@ Gérer le compte administrateur local intégré et son mot de passe unique par p
    Rename-LocalUser -Name 'Administrateur' -NewName 'ADMIN_LOCAL'
    Disable-LocalUser -Name 'Guest'
    ```
-   👉 Explication : réduit la surface d'attaque (`ADMIN_LOCAL` est le nom choisi par la DSI); le compte Invité reste désactivé.
+   👉 Explication : réduit la surface d'attaque (`ADMIN_LOCAL` est le nom choisi par la [[Glossary:DSI]]); le compte Invité reste désactivé.
 
-3. Activer Windows LAPS (intégré à Windows) : **GPO > Configuration ordinateur > Modèles d'administration > Système > LAPS**, ou profil Intune « Windows LAPS ».
+3. Activer Windows LAPS (intégré à Windows) : **[[Glossary:GPO]] > Configuration ordinateur > Modèles d'administration > Système > LAPS**, ou profil Intune « Windows LAPS ».
    ```powershell
    Get-Command -Module LAPS
    Invoke-LapsPolicyProcessing
@@ -46,7 +46,7 @@ Gérer le compte administrateur local intégré et son mot de passe unique par p
    ```
    👉 Explication : vérifie la disponibilité du module LAPS, applique la stratégie et fournit les journaux de diagnostic.
 
-4. Lire le mot de passe géré (administrateur habilité) : **Entra ID > Appareils > poste > Mot de passe de l'administrateur local** ou en AD :
+4. Lire le mot de passe géré (administrateur habilité) : **Entra ID > Appareils > poste > Mot de passe de l'administrateur local** ou en [[Glossary:AD]] :
    ```powershell
    Get-LapsADPassword -Identity 'NOM_POSTE' -AsPlainText
    ```

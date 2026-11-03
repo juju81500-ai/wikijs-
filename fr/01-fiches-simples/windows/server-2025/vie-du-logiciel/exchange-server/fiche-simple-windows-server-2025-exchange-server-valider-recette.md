@@ -47,7 +47,7 @@ Vérifier l’état des services, bases, files d’attente et flux de courrier a
 
 ## 2. Production — Contrôles
 
-Planifier une fenêtre de changement, sauvegarder les configurations concernées, vérifier l’état AD/DNS et Exchange, puis appliquer les étapes d’abord en environnement pilote.
+Planifier une fenêtre de changement, sauvegarder les configurations concernées, vérifier l’état [[Glossary:AD]]/DNS et Exchange, puis appliquer les étapes d’abord en environnement pilote.
 
 ## 3. Production — Sécurité
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-appliance-opnsense-installation-assistant-initial.md
 
-- **Environnement** : Appliance physique ou VM dédiée avec interfaces réseau identifiées
+- **Environnement** : Appliance physique ou [[Glossary:VM]] dédiée avec interfaces réseau identifiées
 - **OS / Version** : OPNsense Community ou Business Edition, release maintenue compatible avec la plateforme
 - **Catégorie** : pare-feu / configuration initiale
 - **Tags** : `opnsense`, `installation`, `pare-feu`, `wan`, `lan`
@@ -24,10 +24,10 @@ Terminer l'assistant web avec des paramètres approuvés et mettre à jour le sy
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Depuis un poste d'administration dédié, ouvrir **https://adresse-LAN** (adresse LAN à remplacer) puis lancer l'assistant **System > Wizard > General setup**.
+1. Depuis un poste d'administration dédié, ouvrir **https://adresse-LAN** (adresse [[Glossary:LAN]] à remplacer) puis lancer l'assistant **System > Wizard > General setup**.
    👉 Explication : ouvre l'interface web d'administration.
 
-2. Définir un mot de passe administrateur unique, le nom d'hôte, le domaine, la zone horaire, les DNS, le type d'adressage WAN et le plan IP LAN.
+2. Définir un mot de passe administrateur unique, le nom d'hôte, le domaine, la zone horaire, les [[Glossary:DNS]], le type d'adressage [[Glossary:WAN]] et le plan [[Glossary:IP]] LAN.
    👉 Explication : remplace les paramètres temporaires par ceux approuvés; vérifier l'absence de conflit d'adresse.
 
 3. Lire les notes de version puis **System > Firmware > Status > Check for updates** et appliquer la mise à jour.

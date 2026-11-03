@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Connaître les outils intégrés au NAS.
+Connaître les outils intégrés au [[Glossary:NAS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Utiliser la console de l'interface : Système > Shell (ou SSH) pour les commandes ZFS :
+1. Utiliser la console de l'interface : Système > Shell (ou [[Glossary:SSH]]) pour les commandes [[Glossary:ZFS]] :
    ```bash
    sudo zpool list
    sudo zfs list
@@ -32,11 +32,11 @@ Connaître les outils intégrés au NAS.
    ```
    👉 Explication : pools, jeux de données et disques.
 
-2. Utiliser le CLI TrueNAS :
+2. Utiliser le [[Glossary:CLI]] TrueNAS :
    ```bash
    cli -c 'storage pool query name,status'
    ```
-   👉 Explication : interroge l'API en mode texte.
+   👉 Explication : interroge l'[[Glossary:API]] en mode texte.
 
 3. Utiliser l'API en ligne de commande :
    ```bash
@@ -50,7 +50,7 @@ Documenter les commandes autorisées en exploitation.
 
 ## 3. Production — Sécurité
 
-Réserver les modifications à la GUI ou à `midclt`, éviter les modifications manuelles ZFS sur un pool géré.
+Réserver les modifications à la [[Glossary:GUI]] ou à `midclt`, éviter les modifications manuelles ZFS sur un pool géré.
 
 ## Validation et retour arrière
 

@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_MongoDB_Securiser
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; MongoDB Community (dépôt officiel)
-- **Catégorie** : base de données / MongoDB / Sécuriser (authentification, TLS, pare-feu)
+- **Catégorie** : base de données / MongoDB / Sécuriser (authentification, [[Glossary:TLS]], pare-feu)
 - **Tags** : `debian13`, `mongodb`, `securite`
 
 ---
@@ -65,7 +65,7 @@ Activer l'authentification et TLS sur MongoDB et filtrer le port 27017.
    # si ufw est utilisé :
    sudo ufw allow from IP_CLIENT to any port 27017 proto tcp
    ```
-   👉 Explication : seules les IP clientes autorisées atteignent MongoDB.
+   👉 Explication : seules les [[Glossary:IP]] clientes autorisées atteignent MongoDB.
 
 ## 2. Production — Contrôles
 

@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **Environnement** : Serveurs Windows Server 2022 (Connection Server), vCenter, UAG, compte administrateur nominatif
 - **OS / Version** : Windows Server 2022; version Horizon à vérifier auprès de l'éditeur
-- **Catégorie** : VDI / Horizon
+- **Catégorie** : [[Glossary:VDI]] / Horizon
 - **Tags** : `vmware-horizon`, `horizon`, `windows-server`, `installation`
 
 ---
@@ -31,15 +31,15 @@ Get-FileHash -Algorithm SHA256 -Path CHEMIN_INSTALLEUR_CS
    👉 Explication : CHEMIN_INSTALLEUR_CS est à remplacer par le fichier téléchargé.
 
 2. Sur CS1_HORIZON, lancer l'installeur en administrateur ; choisir **Horizon Standard Server**, saisir le mot de passe de récupération des données (saisi, jamais écrit ici), accepter la règle pare-feu proposée.
-   👉 Explication : ce mot de passe protège les sauvegardes LDAP ; le stocker dans un coffre.
+   👉 Explication : ce mot de passe protège les sauvegardes [[Glossary:LDAP]] ; le stocker dans un coffre.
 
-3. Ouvrir la console : https://CS1_HORIZON/admin, GUI **Settings > Product Licensing and Usage > Edit License** et saisir la clé.
+3. Ouvrir la console : https://CS1_HORIZON/admin, [[Glossary:GUI]] **Settings > Product Licensing and Usage > Edit License** et saisir la clé.
    👉 Explication : active les fonctions selon l'édition.
 
 4. Ajouter vCenter : GUI **Settings > Servers > vCenter Servers > Add**, saisir VCENTER_FQDN, COMPTE_HORIZON_VC et accepter le certificat après vérification de l'empreinte.
-   👉 Explication : permet à Horizon de provisionner les VM.
+   👉 Explication : permet à Horizon de provisionner les [[Glossary:VM]].
 
-5. Installer l'Horizon Agent sur VM_MODELE : installeur Horizon Agent, options de protocole et USB selon besoin, puis redémarrer.
+5. Installer l'Horizon Agent sur VM_MODELE : installeur Horizon Agent, options de protocole et [[Glossary:USB]] selon besoin, puis redémarrer.
    👉 Explication : le nom exact des options varie selon la version.
 
 6. Contrôler les services. PowerShell :

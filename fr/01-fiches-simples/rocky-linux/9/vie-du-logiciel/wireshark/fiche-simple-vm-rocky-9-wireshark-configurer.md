@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_Wireshark_Configurer
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Wireshark
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Wireshark
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Wireshark / privilèges de capture et analyse
 - **Tags** : `wireshark`, `rocky9`, `vie-du-logiciel`, `configurer`
 
@@ -43,14 +43,14 @@ Autoriser une capture minimale via dumpcap et analyser un fichier hors ligne.
    ```
    👉 Explication : `-c` limite les paquets, `-f` applique un filtre de capture, `-w` écrit le fichier; HOTE_AUTORISE est à remplacer.
 
-4. Analyser hors ligne en CLI :
+4. Analyser hors ligne en [[Glossary:CLI]] :
    ```bash
    capinfos /var/tmp/TICKET.pcapng
    tshark -r /var/tmp/TICKET.pcapng -q -z io,phs
    ```
    👉 Explication : `capinfos` résume le fichier; `-z io,phs` affiche la hiérarchie des protocoles sans interpréter de contenu applicatif.
 
-5. Ouvrir dans la GUI : menu Fichier > Ouvrir, sélectionner le .pcapng, puis Statistiques > Hiérarchie des protocoles.
+5. Ouvrir dans la [[Glossary:GUI]] : menu Fichier > Ouvrir, sélectionner le .pcapng, puis Statistiques > Hiérarchie des protocoles.
    👉 Explication : La GUI est réservée aux postes avec session graphique; l’analyse reste hors ligne.
 
 ## 2. Production — Contrôles

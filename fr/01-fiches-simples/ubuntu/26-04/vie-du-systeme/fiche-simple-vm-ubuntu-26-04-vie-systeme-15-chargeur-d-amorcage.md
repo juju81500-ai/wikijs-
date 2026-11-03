@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_15_Chargeur_D_Amorcage
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 15 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-15`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Vérifier GRUB.
+Vérifier [[Glossary:GRUB]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -30,7 +30,7 @@ Vérifier GRUB.
    sudo grub-install --version
    grep -E 'GRUB_TIMEOUT|GRUB_CMDLINE' /etc/default/grub
    ```
-   👉 Explication : montre l'entrée EFI et les options noyau.
+   👉 Explication : montre l'entrée [[Glossary:EFI]] et les options noyau.
 
 2. Appliquer un changement de `/etc/default/grub` :
    ```bash

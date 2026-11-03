@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_37_Deploiement_Des_Roles_Metiers
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 37 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-37`
@@ -20,17 +20,17 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Activer les rôles du pare-feu : DHCP, NAT, VPN.
+Activer les rôles du pare-feu : [[Glossary:DHCP]], [[Glossary:NAT]], [[Glossary:VPN]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. DHCP : Services > Dnsmasq DNS & DHCP (ou Kea DHCPv4 / ISC DHCPv4) > LAN : activer, plage `IP_DEBUT` à `IP_FIN`, passerelle `IP_LAN`.
+1. DHCP : Services > Dnsmasq [[Glossary:DNS]] & DHCP (ou Kea DHCPv4 / ISC DHCPv4) > [[Glossary:LAN]] : activer, plage `IP_DEBUT` à `IP_FIN`, passerelle `IP_LAN`.
    👉 Explication : `IP_DEBUT` et `IP_FIN` délimitent la plage distribuée; en shell, vérifier le service.
 
-2. NAT sortant : Pare-feu > NAT > Sortant, mode automatique ou hybride pour le LAN vers le WAN. Redirection de port : Pare-feu > NAT > Redirection de port.
+2. NAT sortant : Pare-feu > NAT > Sortant, mode automatique ou hybride pour le LAN vers le [[Glossary:WAN]]. Redirection de port : Pare-feu > NAT > Redirection de port.
    👉 Explication : traduit les adresses internes vers l'adresse WAN et publie un service si besoin.
 
-3. VPN : VPN > WireGuard > Instances > Ajouter (port 51820), puis Pare-feu > Règles > WAN pour autoriser UDP 51820.
+3. VPN : VPN > WireGuard > Instances > Ajouter (port 51820), puis Pare-feu > Règles > WAN pour autoriser [[Glossary:UDP]] 51820.
    👉 Explication : crée un accès distant chiffré; l'interface `wg0` apparaît ensuite.
 
 4. Vérifier en shell :

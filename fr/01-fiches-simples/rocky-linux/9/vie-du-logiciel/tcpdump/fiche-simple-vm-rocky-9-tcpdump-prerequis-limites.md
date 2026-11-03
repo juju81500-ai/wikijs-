@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_tcpdump_Prerequis_Limites
 
-- **Environnement** : VM Rocky Linux 9 dédiée à tcpdump
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à tcpdump
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : tcpdump / prérequis et limites
 - **Tags** : `tcpdump`, `rocky9`, `vie-du-logiciel`, `prerequis-limites`
 
@@ -43,7 +43,7 @@ Cadrer l’usage autorisé de tcpdump sur VM Rocky Linux 9 avant toute capture :
    👉 Explication : Une capture non bornée peut remplir le disque; prévoir un volume dédié et une limite de taille.
 
 4. Noter les limites connues.
-   👉 Explication : tcpdump ne déchiffre pas TLS, ne voit pas le trafic entre deux VM d’un autre vSwitch, et tronque les paquets selon la taille de capture (`-s`). Il capture en lecture seule : il ne bloque rien. SELinux : écrire dans `/var/tmp` ou dans un répertoire dédié au bon contexte; en cas de refus, consulter `sudo ausearch -m avc -ts recent` sans désactiver SELinux.
+   👉 Explication : tcpdump ne déchiffre pas [[Glossary:TLS]], ne voit pas le trafic entre deux VM d’un autre vSwitch, et tronque les paquets selon la taille de capture (`-s`). Il capture en lecture seule : il ne bloque rien. SELinux : écrire dans `/var/tmp` ou dans un répertoire dédié au bon contexte; en cas de refus, consulter `sudo ausearch -m avc -ts recent` sans désactiver SELinux.
 
 ## 2. Production — Contrôles
 

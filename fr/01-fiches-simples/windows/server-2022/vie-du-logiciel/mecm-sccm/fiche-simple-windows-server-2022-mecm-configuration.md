@@ -33,7 +33,7 @@ Configurer le site installé : limites, groupes de limites, découverte, point d
    ```
    👉 Explication : le module est installé avec la console (à vérifier sur la version publiée); le lecteur de site porte le code de site.
 
-2. Créer une limite et un groupe de limites. GUI : `Administration > Configuration de la hiérarchie > Limites`, puis `Groupes de limites`.
+2. Créer une limite et un groupe de limites. [[Glossary:GUI]] : `Administration > Configuration de la hiérarchie > Limites`, puis `Groupes de limites`.
    ```powershell
    New-CMBoundary -Name "LIMITE-LAB" -Type IPRange -Value "192.0.2.1-192.0.2.254"
    New-CMBoundaryGroup -Name "GROUPE-LIMITES-LAB"
@@ -45,7 +45,7 @@ Configurer le site installé : limites, groupes de limites, découverte, point d
    ```powershell
    Get-CMDiscoveryMethod | Select-Object ItemName, Flag
    ```
-   👉 Explication : activer la découverte de systèmes Active Directory sur l'OU `OU=ORDINATEURS,DC=DOMAINE,DC=LOCAL` (à remplacer) depuis la console; les paramètres sont à vérifier selon la version.
+   👉 Explication : activer la découverte de systèmes Active Directory sur l'[[Glossary:OU]] `OU=ORDINATEURS,DC=DOMAINE,DC=LOCAL` (à remplacer) depuis la console; les paramètres sont à vérifier selon la version.
 
 4. Contrôler le point de distribution. GUI : `Administration > Configuration du site > Serveurs et rôles système de site`.
    ```powershell

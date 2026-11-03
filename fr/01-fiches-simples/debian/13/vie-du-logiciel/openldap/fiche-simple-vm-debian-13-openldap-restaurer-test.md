@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-openldap-restaurer-test.md
 
-- **Environnement** : VM Debian 13 de restauration isolée, base LDAP vide
+- **Environnement** : [[Glossary:VM]] Debian 13 de restauration isolée, base [[Glossary:LDAP]] vide
 - **OS / Version** : Debian 13; OpenLDAP 2.6
 - **Catégorie** : annuaire / restauration
 - **Tags** : `debian13`, `openldap`, `slapadd`, `restore`, `test`
@@ -48,7 +48,7 @@ Démontrer la restauration des données LDAP sur une VM isolée sans toucher à 
 
 ## 2. Production — Contrôles
 
-Mesurer RPO/RTO, vérifier cohérence des données et plan de bascule; faire approuver toute restauration de production avec fenêtre et responsable.
+Mesurer [[Glossary:RPO]]/RTO, vérifier cohérence des données et plan de bascule; faire approuver toute restauration de production avec fenêtre et responsable.
 
 ## 3. Production — Sécurité
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_39_Chiffrement_Des_Flux_Pki
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 39 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-39`
@@ -20,14 +20,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Remplacer le certificat auto-signé du GUI.
+Remplacer le certificat auto-signé du [[Glossary:GUI]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Importer ou créer une autorité : Système > Confiance > Autorités > Ajouter, puis Système > Confiance > Certificats > Ajouter (nom commun `fw01.exemple.lan`).
    👉 Explication : génère un certificat serveur signé par votre autorité.
 
-2. Appliquer le certificat : Système > Paramètres > Administration > Certificat SSL, puis Enregistrer.
+2. Appliquer le certificat : Système > Paramètres > Administration > Certificat [[Glossary:SSL]], puis Enregistrer.
    👉 Explication : le GUI présente le certificat reconnu par les postes.
 
 3. Contrôler en shell :
@@ -42,7 +42,7 @@ Surveiller les dates d'expiration; utiliser `os-acme-client` si le nom est publi
 
 ## 3. Production — Sécurité
 
-Clé d'au moins 2048 bits (RSA) ou ECDSA; TLS 1.2 minimum.
+Clé d'au moins 2048 bits ([[Glossary:RSA]]) ou ECDSA; [[Glossary:TLS]] 1.2 minimum.
 
 ## Validation et retour arrière
 

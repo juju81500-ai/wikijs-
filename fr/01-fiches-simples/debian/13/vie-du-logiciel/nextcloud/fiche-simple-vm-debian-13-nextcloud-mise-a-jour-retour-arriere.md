@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Nextcloud_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Debian 13; Nextcloud (archive officielle), Apache, PHP 8.4 et MariaDB
+- **Environnement** : [[Glossary:VM]] Debian 13; Nextcloud (archive officielle), Apache, PHP 8.4 et MariaDB
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / Nextcloud — Mise à jour et retour arrière
 - **Tags** : `debian13`, `nextcloud`, `cloud`, `apache`, `php`, `mise-a-jour-retour-arriere`

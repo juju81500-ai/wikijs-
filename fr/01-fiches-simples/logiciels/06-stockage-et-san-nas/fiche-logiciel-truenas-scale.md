@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 TrueNAS SCALE
 
-- **Catégorie** : Stockage et SAN / NAS
+- **Catégorie** : Stockage et [[Glossary:SAN]] / [[Glossary:NAS]]
 - **Plateforme** : Appliance Linux
 - **Produit (matrice)** : TrueNAS SCALE
 - **Statut dans le pack** : Couvert

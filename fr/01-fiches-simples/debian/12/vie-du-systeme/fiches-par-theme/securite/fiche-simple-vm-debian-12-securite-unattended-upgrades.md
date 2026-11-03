@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Debian_12_Securite_Unattended-Upgrades.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Sécurité & Maintenance / Correctifs automatiques
 - **Tags** : `[debian12]`, `[debian-family]`, `[unattended-upgrades]`, `[apt]`, `[patch]`, `[hardening]`
@@ -28,7 +28,7 @@ Automatiser l'installation des correctifs de sécurité Debian 12 via `unattende
 2. Simulation d'une exécution sans installation :
    `sudo unattended-upgrade --dry-run --debug`
    👉 Explication : Montre les paquets qui seraient mis à jour sans rien modifier sur la machine.
-3. Contrôle des timers APT :
+3. Contrôle des timers [[Glossary:APT]] :
    `systemctl list-timers 'apt-daily*'`
    👉 Explication : Vérifie que les timers `apt-daily` et `apt-daily-upgrade` sont planifiés.
 

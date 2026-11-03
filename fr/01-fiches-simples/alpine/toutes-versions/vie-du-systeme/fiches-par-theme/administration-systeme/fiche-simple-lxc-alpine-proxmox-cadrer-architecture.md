@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-lxc-alpine-proxmox-cadrer-architecture.md
 
-- **Environnement** : cluster ou nœud Proxmox VE hébergeant un service dans un LXC Alpine
+- **Environnement** : cluster ou nœud Proxmox VE hébergeant un service dans un [[Glossary:LXC]] Alpine
 - **OS / Version** : branche Alpine maintenue disponible dans Proxmox VE
 - **Catégorie** : virtualisation / cadrage LXC
 - **Tags** : `alpine`, `proxmox`, `lxc`, `architecture`, `production`
@@ -24,15 +24,15 @@ Définir l'isolation, le réseau et les ressources d'un conteneur Alpine en tena
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Relever sur le nœud Proxmox les ponts, VLAN et stockages disponibles :
+1. Relever sur le nœud Proxmox les ponts, [[Glossary:VLAN]] et stockages disponibles :
    ```bash
    pvesm status
    ip -br link show type bridge
    pct list
    ```
-   👉 Explication : choisir bridge/VLAN et stockage cohérents avec le rôle du CT; relever les ID déjà utilisés.
+   👉 Explication : choisir bridge/VLAN et stockage cohérents avec le rôle du [[Glossary:CT]]; relever les ID déjà utilisés.
 
-2. Consigner : ID CT, hostname, IP/DNS, VLAN, CPU/RAM/disque, politique de sauvegarde.
+2. Consigner : ID CT, hostname, [[Glossary:IP]]/DNS, VLAN, [[Glossary:CPU]]/RAM/disque, politique de sauvegarde.
    👉 Explication : un LXC partage le noyau de l'hôte; créer un conteneur **non privilégié**, isolé sur le réseau prévu.
 
 3. Vérifier la version du noyau hôte :

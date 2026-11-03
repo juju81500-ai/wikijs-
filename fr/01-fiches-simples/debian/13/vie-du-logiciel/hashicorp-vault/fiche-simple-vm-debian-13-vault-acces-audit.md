@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : Cluster Vault trois nœuds Raft sur Debian 13
 - **OS / Version** : Debian 13 Trixie x86-64; Vault Community ou Enterprise selon canal validé
-- **Catégorie** : coffre de secrets / IAM et audit
+- **Catégorie** : coffre de secrets / [[Glossary:IAM]] et audit
 - **Tags** : `debian13`, `vault`, `policy`, `audit`, `token`
 
 ---
@@ -64,7 +64,7 @@ Limiter l'usage du token root, créer des politiques à moindre privilège et ac
 
 ## 2. Production — Contrôles
 
-Méthode d'authentification d'entreprise (OIDC/LDAP), politiques revues, TTL courts, audit expédié, comptes sortants révoqués.
+Méthode d'authentification d'entreprise ([[Glossary:OIDC]]/LDAP), politiques revues, [[Glossary:TTL]] courts, audit expédié, comptes sortants révoqués.
 
 ## 3. Production — Sécurité
 

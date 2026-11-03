@@ -55,7 +55,7 @@ Conserver la trace de la vérification (empreinte, date, version).
 ## 3. Production — Sécurité
 
 - Ne pas exécuter le fichier si signature, empreinte ou digest ne correspondent pas.
-- Un avertissement de confiance GPG n'est acceptable que si l'empreinte est celle publiée.
+- Un avertissement de confiance [[Glossary:GPG]] n'est acceptable que si l'empreinte est celle publiée.
 
 ## Validation et retour arrière
 

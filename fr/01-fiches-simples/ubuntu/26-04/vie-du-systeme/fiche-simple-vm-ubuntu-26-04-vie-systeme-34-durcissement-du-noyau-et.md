@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_34_Durcissement_Du_Noyau_Et
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 34 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-34`
@@ -33,7 +33,7 @@ Régler sysctl.
    net.ipv4.ip_forward = 0
    EOT
    ```
-   👉 Explication : durcit la pile IP (mettre `ip_forward = 1` seulement pour un routeur).
+   👉 Explication : durcit la pile [[Glossary:IP]] (mettre `ip_forward = 1` seulement pour un routeur).
 
 2. Appliquer :
    ```bash

@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Postman_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 Trixie avec bureau graphique, Postman Desktop et Newman
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie avec bureau graphique, Postman Desktop et Newman
 - **OS / Version** : Debian 13 Trixie
-- **Catégorie** : API / prérequis
+- **Catégorie** : [[Glossary:API]] / prérequis
 - **Tags** : `debian13`, `postman`, `api`, `newman`, `vie-du-logiciel`
 
 ---
@@ -53,7 +53,7 @@ Valider les prérequis et limites de Postman Desktop et Newman sur Debian 13 ava
 
 ## 2. Production — Contrôles
 
-Inventorier les postes concernés, la version cible, le besoin d'un compte Postman (licence/équipe), la politique d'accès au cloud Postman et la conformité RGPD des données envoyées dans les collections.
+Inventorier les postes concernés, la version cible, le besoin d'un compte Postman (licence/équipe), la politique d'accès au cloud Postman et la conformité [[Glossary:RGPD]] des données envoyées dans les collections.
 
 ## 3. Production — Sécurité
 

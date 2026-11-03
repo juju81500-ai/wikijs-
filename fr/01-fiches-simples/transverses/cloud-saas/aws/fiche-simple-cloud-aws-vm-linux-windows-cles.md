@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Fiche_Simple_-_Cloud_AWS_VM_Linux_Windows_Cles
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — AWS CLI v2
+- **OS / Version** : Cloud/SaaS — AWS [[Glossary:CLI]] v2
 - **Catégorie** : cloud public / vm linux et windows avec accès par clé
 - **Tags** : `aws`, `vm_linux_windows_cles`, `securite`, `procedure`
 
@@ -20,13 +20,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-VM Linux et Windows avec accès par clé dans AWS en limitant les risques de sécurité, de disponibilité et de coût.
+[[Glossary:VM]] Linux et Windows avec accès par clé dans AWS en limitant les risques de sécurité, de disponibilité et de coût.
 
 Les valeurs écrites en MAJUSCULES sont des placeholders à remplacer par les valeurs validées de l’environnement. Ne coller aucun secret réel dans les commandes, les fiches ou l’historique shell.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Console : EC2 → Key Pairs → Create key pair ; EC2 → Instances → Launch instances ; Connect → SSH client.
+1. Console : EC2 → Key Pairs → Create key pair ; EC2 → Instances → Launch instances ; Connect → [[Glossary:SSH]] client.
    👉 Explication : vérifier le compte/projet/abonnement et la région sélectionnés avant toute modification.
 2. CLI officielle (AWS CLI v2) :
    ```bash
@@ -43,7 +43,7 @@ Valider image et éditeur, taille, patching, chiffrement, rôle, sauvegarde, co�
 
 ## 3. Production — Sécurité
 
-Protéger la clé privée dans un coffre, désactiver les comptes/services inutiles, utiliser accès temporaire et MFA, ne pas inscrire de secrets dans user-data ou métadonnées.
+Protéger la clé privée dans un coffre, désactiver les comptes/services inutiles, utiliser accès temporaire et [[Glossary:MFA]], ne pas inscrire de secrets dans user-data ou métadonnées.
 
 ## Validation et retour arrière
 

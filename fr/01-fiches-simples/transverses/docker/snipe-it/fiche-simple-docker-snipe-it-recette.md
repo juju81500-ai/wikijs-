@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : Hôte Docker avec Docker Compose v2 et réseau Traefik existant
 - **OS / Version** : Hôte Linux maintenu; Snipe-IT 8.8.3; MariaDB 11.4.7
-- **Catégorie** : ITSM / gestion des actifs
+- **Catégorie** : [[Glossary:ITSM]] / gestion des actifs
 - **Tags** : `snipe-it`, `docker`, `mariadb`, `traefik`, `inventaire`
 
 ---
@@ -25,7 +25,7 @@ Vérifier le déploiement de bout en bout.
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Vérifier certificat, URL publique et cookies sécurisés dans le navigateur.
-   👉 Explication : confirme TLS et `SECURE_COOKIES`.
+   👉 Explication : confirme [[Glossary:TLS]] et `SECURE_COOKIES`.
 
 2. Vérifier l'absence d'accès direct à la base :
    ```bash
@@ -37,7 +37,7 @@ Vérifier le déploiement de bout en bout.
    👉 Explication : valide le fonctionnement de base.
 
 4. Tester les permissions d'un compte non administrateur et l'envoi d'une notification.
-   👉 Explication : contrôle les rôles et SMTP.
+   👉 Explication : contrôle les rôles et [[Glossary:SMTP]].
 
 5. Tester la persistance :
    ```bash

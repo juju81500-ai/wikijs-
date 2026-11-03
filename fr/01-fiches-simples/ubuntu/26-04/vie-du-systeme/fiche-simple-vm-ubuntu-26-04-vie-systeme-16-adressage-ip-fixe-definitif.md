@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_16_Adressage_Ip_Fixe_Definitif
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 16 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-16`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Fixer l'IP du serveur avec Netplan.
+Fixer l'[[Glossary:IP]] du serveur avec Netplan.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -32,7 +32,7 @@ Fixer l'IP du serveur avec Netplan.
    ```
    👉 Explication : sur une image installée avec cloud-init, `50-cloud-init.yaml` peut être régénéré; la directive l'évite.
 
-2. Écrire la configuration statique (remplacer `ens18`, l'adresse, la passerelle et les DNS) :
+2. Écrire la configuration statique (remplacer `ens18`, l'adresse, la passerelle et les [[Glossary:DNS]]) :
    ```bash
    sudo tee /etc/netplan/01-reseau.yaml >/dev/null <<'EOT'
    network:
@@ -63,11 +63,11 @@ Fixer l'IP du serveur avec Netplan.
 
 ## 2. Production — Contrôles
 
-Réserver l'adresse dans l'IPAM (étape 49).
+Réserver l'adresse dans l'[[Glossary:IPAM]] (étape 49).
 
 ## 3. Production — Sécurité
 
-Valider depuis la console : une erreur coupe l'accès SSH.
+Valider depuis la console : une erreur coupe l'accès [[Glossary:SSH]].
 
 ## Validation et retour arrière
 

@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Contrôler le démarrage de l'hôte (GRUB ou systemd-boot).
+Contrôler le démarrage de l'hôte ([[Glossary:GRUB]] ou systemd-boot).
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -29,7 +29,7 @@ Contrôler le démarrage de l'hôte (GRUB ou systemd-boot).
    proxmox-boot-tool status
    ls /sys/firmware/efi && echo UEFI || echo BIOS
    ```
-   👉 Explication : sous ZFS avec UEFI, Proxmox utilise `proxmox-boot-tool` pour synchroniser les partitions ESP.
+   👉 Explication : sous [[Glossary:ZFS]] avec UEFI, Proxmox utilise `proxmox-boot-tool` pour synchroniser les partitions ESP.
 
 2. Régénérer la configuration après un changement de noyau ou de paramètre :
    ```bash

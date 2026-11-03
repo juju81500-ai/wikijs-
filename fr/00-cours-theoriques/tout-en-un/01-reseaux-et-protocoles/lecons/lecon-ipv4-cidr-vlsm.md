@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Leçon — Adressage IPv4, masques, CIDR, VLSM et calcul de sous-réseaux
 
 - **Tags** : `transverse`, `tout-en-un`, `lecon`, `reseau`, `ipv4`, `cidr`, `vlsm`, `sous-reseaux`, `masque`
-- **Niveau** : débutant à intermédiaire (TSSR, support, administration système)
+- **Niveau** : débutant à intermédiaire ([[Glossary:TSSR]], support, administration système)
 - **Durée estimée** : 4 h (lecture 1 h 30, calculs guidés 1 h 30, laboratoire et exercices 1 h)
 
 ---
@@ -22,17 +22,17 @@ dateModified: 2026-11-03T09:36:13Z
 À la fin de cette leçon, vous saurez :
 
 - convertir une adresse IPv4 entre **notation décimale pointée** et **binaire** ;
-- expliquer le rôle du **masque** et passer d'un masque décimal à la **notation CIDR** (`/n`) et inversement ;
+- expliquer le rôle du **masque** et passer d'un masque décimal à la **notation [[Glossary:CIDR]]** (`/n`) et inversement ;
 - calculer, pour n'importe quelle adresse, son **adresse réseau**, son **adresse de diffusion**, sa **plage d'hôtes** et leur nombre ;
 - découper un réseau en **sous-réseaux de taille égale** ;
-- concevoir un plan d'adressage **VLSM** (masques de longueurs variables) sans chevauchement ;
+- concevoir un plan d'adressage **[[Glossary:VLSM]]** (masques de longueurs variables) sans chevauchement ;
 - **agréger** plusieurs réseaux contigus en un seul préfixe ;
 - reconnaître les plages **privées et spéciales** (RFC 1918, 169.254.0.0/16, documentation…) ;
 - décider si deux machines sont **dans le même réseau** ou si un routeur est nécessaire.
 
 ## Prérequis et durée
 
-- Connaître la notion d'adresse IP et de réseau local (voir la leçon [Modèle OSI et TCP/IP](/fr/00-cours-theoriques/tout-en-un/01-reseaux-et-protocoles/lecons/lecon-osi-tcpip)).
+- Connaître la notion d'adresse [[Glossary:IP]] et de réseau local (voir la leçon [Modèle OSI et TCP/IP](/fr/00-cours-theoriques/tout-en-un/01-reseaux-et-protocoles/lecons/lecon-osi-tcpip)).
 - Savoir faire des additions, soustractions et multiplications simples ; connaître les puissances de 2 jusqu'à 2⁸ (c'est le seul « par cœur » à retenir, voir section 1).
 - Durée : environ 4 h. Aucun matériel spécifique : un terminal avec Python 3, ou PowerShell, suffit. Les calculs du laboratoire sont purement informatiques et ne touchent à aucune configuration réseau.
 
@@ -140,8 +140,8 @@ Avant 1993, on découpait l'espace en **classes** : A (/8, premier octet 1-126),
 |---|---|
 | 10.0.0.0/8, 172.16.0.0/12 (172.16.0.0 à 172.31.255.255), 192.168.0.0/16 | **Adresses privées** (RFC 1918), non routées sur Internet |
 | 127.0.0.0/8 | **Bouclage** (*loopback*) : 127.0.0.1 désigne la machine elle-même |
-| 169.254.0.0/16 | **Lien local** (APIPA, RFC 3927) : auto-attribuée quand aucun DHCP ne répond |
-| 100.64.0.0/10 | Espace de **NAT opérateur** (CGNAT, RFC 6598) |
+| 169.254.0.0/16 | **Lien local** (APIPA, RFC 3927) : auto-attribuée quand aucun [[Glossary:DHCP]] ne répond |
+| 100.64.0.0/10 | Espace de **[[Glossary:NAT]] opérateur** (CGNAT, RFC 6598) |
 | 192.0.2.0/24, 198.51.100.0/24, 203.0.113.0/24 | **Documentation** (RFC 5737) |
 | 224.0.0.0/4 | **Multicast** |
 | 0.0.0.0 | « Adresse non spécifiée » ; `0.0.0.0/0` = route par défaut |
@@ -244,7 +244,7 @@ On gagne en structure, mais on perd en souplesse : chaque service reçoit 30 adr
 
 ### 6.3 Exemple : 198.51.100.0/24
 
-Besoins : LAN A = 100 hôtes, LAN B = 50, LAN C = 20, deux liaisons point à point entre routeurs (2 adresses chacune).
+Besoins : [[Glossary:LAN]] A = 100 hôtes, LAN B = 50, LAN C = 20, deux liaisons point à point entre routeurs (2 adresses chacune).
 
 | Réseau | Besoin | Bloc choisi | Plage | Hôtes utiles |
 |---|---|---|---|---|

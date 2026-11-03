@@ -24,7 +24,7 @@ Sauvegarder données et configuration.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Snapshots : GUI Tâches > Instantanés périodiques > Ajouter.
+1. Snapshots : [[Glossary:GUI]] Tâches > Instantanés périodiques > Ajouter.
    ```sh
    zfs snapshot POOL/DATASET@MANUEL
    zfs list -t snapshot -r POOL/DATASET
@@ -35,7 +35,7 @@ Sauvegarder données et configuration.
    ```sh
    midclt call replication.query | head -30
    ```
-   👉 Explication : envoi des snapshots vers un autre NAS.
+   👉 Explication : envoi des snapshots vers un autre [[Glossary:NAS]].
 
 3. Configuration : GUI Système > Général > Enregistrer la configuration.
    ```sh

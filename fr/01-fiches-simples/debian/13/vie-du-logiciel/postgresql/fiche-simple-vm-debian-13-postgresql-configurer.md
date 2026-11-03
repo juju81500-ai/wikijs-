@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_PostgreSQL_Configurer
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; PostgreSQL 17 des dépôts Debian
 - **Catégorie** : base de données / PostgreSQL / Configurer
 - **Tags** : `debian13`, `postgresql`, `configuration`

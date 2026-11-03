@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Passbolt_Installer
 
-- **Environnement** : VM Debian 13 dédiée avec domaine, base et SMTP définis
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée avec domaine, base et [[Glossary:SMTP]] définis
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : gestionnaire de secrets / serveur
 - **Tags** : `debian13`, `passbolt`, `secrets`, `tls`, `sauvegarde`
@@ -43,7 +43,7 @@ Ajouter le dépôt CE après checksum et revue du script officiel, puis installe
    sudo apt update
    apt-cache policy passbolt-ce-server
    ```
-   👉 Explication : n’exécuter qu’après revue; vérifier origine APT.
+   👉 Explication : n’exécuter qu’après revue; vérifier origine [[Glossary:APT]].
 
 4. Installer paquet interactif
    ```bash
@@ -59,7 +59,7 @@ Piloter l’installation et consigner version, checksum et origine du paquet.
 
 - Ne pas contourner APT Secure.
 - Ne pas exécuter le script sans checksum valide et revue.
-- Ne pas exposer l’application avant configuration TLS.
+- Ne pas exposer l’application avant configuration [[Glossary:TLS]].
 
 ## Validation et retour arrière
 

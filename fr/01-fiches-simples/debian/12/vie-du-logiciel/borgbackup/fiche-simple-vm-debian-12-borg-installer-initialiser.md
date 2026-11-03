@@ -37,7 +37,7 @@ Installer Borg et initialiser une seule fois un dépôt chiffré sans risquer d'
    sudo adduser --disabled-password --gecos "" borgbackup
    sudo install -d -o borgbackup -g borgbackup -m 0700 /srv/borg/depot
    ```
-   👉 Explication : un compte sans mot de passe, limité à la sauvegarde (restreindre la clé SSH avec `borg serve --restrict-to-path`).
+   👉 Explication : un compte sans mot de passe, limité à la sauvegarde (restreindre la clé [[Glossary:SSH]] avec `borg serve --restrict-to-path`).
 
 3. Initialiser une seule fois le dépôt chiffré (saisie de la phrase de passe à l'invite) :
    ```bash

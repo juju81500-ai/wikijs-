@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_ownCloud_Configurer
 
-- **Environnement** : VM Rocky Linux 9; ownCloud Infinite Scale (oCIS), binaire officiel
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9; ownCloud Infinite Scale (oCIS), binaire officiel
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : Vie du logiciel / ownCloud — Configurer
 - **Tags** : `owncloud`, `serveur`, `vie-du-logiciel`, `configurer`
@@ -59,7 +59,7 @@ sudo systemctl enable --now ocis
 
 ## 2. Production — Contrôles
 
-Séparer config `/etc/ocis`, données `/var/lib/ocis` et terminaison TLS du proxy.
+Séparer config `/etc/ocis`, données `/var/lib/ocis` et terminaison [[Glossary:TLS]] du proxy.
 
 ## 3. Production — Sécurité
 

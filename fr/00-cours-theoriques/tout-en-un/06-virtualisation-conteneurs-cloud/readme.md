@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Tags** : `transverse`, `tout-en-un`, `virtualisation`, `conteneurs`, `cloud`
 
-Fiches de tâches communes aux hyperviseurs, VM, conteneurs et plateformes cloud. Les procédures propres au fournisseur restent séparées.
+Fiches de tâches communes aux hyperviseurs, [[Glossary:VM]], conteneurs et plateformes cloud. Les procédures propres au fournisseur restent séparées.
 
 - [Préparer un changement VM réversible](/fr/00-cours-theoriques/tout-en-un/06-virtualisation-conteneurs-cloud/tout-en-un-preparer-changement-vm)
 

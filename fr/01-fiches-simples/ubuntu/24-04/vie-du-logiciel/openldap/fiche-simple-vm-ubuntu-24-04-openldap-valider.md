@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_OpenLDAP_Valider
 
-- **Environnement** : VM Ubuntu 24-04 avec FQDN stable, serveur OpenLDAP (slapd)
-- **OS / Version** : Ubuntu 24-04 LTS Noble; slapd 2.6 des dépôts, version à vérifier
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 avec [[Glossary:FQDN]] stable, serveur OpenLDAP (slapd)
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; slapd 2.6 des dépôts, version à vérifier
 - **Catégorie** : annuaire OpenLDAP / valider
 - **Tags** : `openldap`, `ubuntu24-04`, `vie-du-logiciel`, `valider`
 
@@ -31,11 +31,11 @@ Recetter l'annuaire sur Ubuntu avec un client.
    ```
    👉 Explication : Réponse active puis l'identité du canal local (root via ldapi).
 
-2. Lire l'annuaire en TLS avec un compte de test :
+2. Lire l'annuaire en [[Glossary:TLS]] avec un compte de test :
    ```bash
    ldapsearch -x -ZZ -H ldap://FQDN -D COMPTE_DN -W -b DOMAINE_BASE -s one dn
    ```
-   👉 Explication : COMPTE_DN est le DN d'un compte de test (à remplacer); -W demande le mot de passe sans l'écrire. Les OU attendues doivent apparaître.
+   👉 Explication : COMPTE_DN est le [[Glossary:DN]] d'un compte de test (à remplacer); -W demande le mot de passe sans l'écrire. Les [[Glossary:OU]] attendues doivent apparaître.
 
 3. Contrôler les ports exposés :
    ```bash
@@ -53,7 +53,7 @@ Consigner le résultat; le détail des contrôles est identique à [la fiche Deb
 
 ## Validation et retour arrière
 
-- **Validation** : Service actif, STARTTLS valide, entrées attendues.
+- **Validation** : Service actif, [[Glossary:STARTTLS]] valide, entrées attendues.
 - **Retour arrière** : Désactiver l'accès réseau (ufw) et restaurer la configuration précédente.
 
 ## Si le problème n'est pas résolu

@@ -24,12 +24,12 @@ Déclarer le serveur dans l'inventaire.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Collecter les informations à saisir dans la CMDB :
+1. Collecter les informations à saisir dans la [[Glossary:CMDB]] :
    ```powershell
    Get-ComputerInfo | Select-Object CsName, CsDomain, WindowsProductName, OsVersion, BiosSeralNumber
    Get-NetIPConfiguration | Select-Object InterfaceAlias, IPv4Address
    ```
-   👉 Explication : nom, domaine, version, numéro de série et adresse IP.
+   👉 Explication : nom, domaine, version, numéro de série et adresse [[Glossary:IP]].
 
 2. Lister les comptes administrateurs à déclarer :
    ```powershell

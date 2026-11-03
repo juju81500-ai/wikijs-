@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Réduire la surface d'attaque d'un site MECM/SCCM : administration déléguée (RBAC), comptes à moindre privilège, communications chiffrées, pare-feu.
+Réduire la surface d'attaque d'un site MECM/SCCM : administration déléguée ([[Glossary:RBAC]]), comptes à moindre privilège, communications chiffrées, pare-feu.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Lister les administrateurs et rôles de sécurité. GUI : `Administration > Sécurité > Utilisateurs administratifs`.
+1. Lister les administrateurs et rôles de sécurité. [[Glossary:GUI]] : `Administration > Sécurité > Utilisateurs administratifs`.
    ```powershell
    Get-CMAdministrativeUser | Select-Object LogonName, RoleNames
    Get-CMSecurityRole | Select-Object RoleName
@@ -35,10 +35,10 @@ Réduire la surface d'attaque d'un site MECM/SCCM : administration déléguée (
    ```powershell
    New-CMAdministrativeUser -Name "DOMAINE\GROUPE-ADMIN-DEPLOIEMENT" -RoleName "Application Administrator" -CollectionName "COLLECTION-TEST"
    ```
-   👉 Explication : on délègue à un groupe AD, limité à une collection. Le nom du rôle est celui de la console (langue à vérifier).
+   👉 Explication : on délègue à un groupe [[Glossary:AD]], limité à une collection. Le nom du rôle est celui de la console (langue à vérifier).
 
 3. Contrôler le mode de communication. GUI : `Administration > Configuration du site > Sites > Propriétés > Sécurité des communications`.
-   👉 Explication : choisir « HTTPS ou HTTP amélioré » (Enhanced HTTP) plutôt que HTTP seul; l'HTTPS complet exige une PKI et des certificats : vérifier la version publiée et la documentation PKI.
+   👉 Explication : choisir « HTTPS ou [[Glossary:HTTP]] amélioré » (Enhanced HTTP) plutôt que HTTP seul; l'HTTPS complet exige une [[Glossary:PKI]] et des certificats : vérifier la version publiée et la documentation PKI.
 
 4. Contrôler les comptes configurés (accès réseau, push client). GUI : `Administration > Configuration du site > Sites > Paramètres du site > Configurer les composants du site`.
    👉 Explication : supprimer les comptes inutiles; aucun compte ne doit être administrateur de domaine.

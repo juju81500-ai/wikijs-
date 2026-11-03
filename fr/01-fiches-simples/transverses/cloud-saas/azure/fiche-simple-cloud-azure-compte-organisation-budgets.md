@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Fiche_Simple_-_Cloud_Azure_Compte_Organisation_Budgets
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — Azure CLI (az ; version publiée à vérifier)
+- **OS / Version** : Cloud/SaaS — Azure [[Glossary:CLI]] (az ; version publiée à vérifier)
 - **Catégorie** : cloud public / compte, organisation sécurisée et budgets
 - **Tags** : `azure`, `compte_organisation_budgets`, `securite`, `procedure`
 
@@ -26,7 +26,7 @@ Les valeurs écrites en MAJUSCULES sont des placeholders à remplacer par les va
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Console : Microsoft Entra admin center → Protection → Conditional Access / Authentication methods ; Azure portal → Subscriptions → Access control (IAM) ; Cost Management + Billing → Budgets.
+1. Console : Microsoft Entra admin center → Protection → Conditional Access / Authentication methods ; Azure portal → Subscriptions → Access control ([[Glossary:IAM]]) ; Cost Management + Billing → Budgets.
    👉 Explication : vérifier le compte/projet/abonnement et la région sélectionnés avant toute modification.
 2. CLI officielle (Azure CLI (az ; version publiée à vérifier)) :
    ```bash
@@ -34,7 +34,7 @@ Les valeurs écrites en MAJUSCULES sont des placeholders à remplacer par les va
 az account show
 az consumption budget list --subscription ID_ABONNEMENT
    ```
-   👉 Explication : Imposer MFA aux administrateurs via une stratégie pilotée, affecter des rôles RBAC minimaux et fixer un budget d’abonnement. Utiliser des identités managées pour l’automatisation, jamais des secrets intégrés aux scripts.
+   👉 Explication : Imposer [[Glossary:MFA]] aux administrateurs via une stratégie pilotée, affecter des rôles [[Glossary:RBAC]] minimaux et fixer un budget d’abonnement. Utiliser des identités managées pour l’automatisation, jamais des secrets intégrés aux scripts.
 3. Console et CLI : comparer la configuration affichée avec l’état attendu, puis valider sur une ressource pilote non sensible.
    👉 Explication : les interfaces évoluent ; vérifier l’aide/version officielle et les quotas/licences avant généralisation.
 

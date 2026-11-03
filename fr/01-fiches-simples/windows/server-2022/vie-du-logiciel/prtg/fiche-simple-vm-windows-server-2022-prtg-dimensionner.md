@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-2022-prtg-dimensionner.md
 
-- **Environnement** : Serveur Windows dédié ou VM, accès d'administration restreint
-- **OS / Version** : Windows Server 2022 ou 2025 en Desktop Experience; PRTG Network Monitor maintenu
-- **Catégorie** : supervision / SNMP / WMI
+- **Environnement** : Serveur Windows dédié ou [[Glossary:VM]], accès d'administration restreint
+- **OS / Version** : Windows Server 2022 ou 2025 en Desktop Experience; [[Glossary:PRTG]] Network Monitor maintenu
+- **Catégorie** : supervision / [[Glossary:SNMP]] / [[Glossary:WMI]]
 - **Tags** : `prtg`, `windows-server`, `supervision`, `dimensionnement`, `dotnet`
 
 ---
@@ -27,7 +27,7 @@ Dimensionner le serveur PRTG et vérifier les prérequis avant installation.
 1. Dimensionner selon le nombre de capteurs, intervalles, protocoles et rétention en suivant les tableaux officiels Paessler.
    👉 Explication : le nombre d'équipements seul ne suffit pas.
 
-2. Prévoir un volume de données dédié, une adresse fixe, le DNS et la sauvegarde.
+2. Prévoir un volume de données dédié, une adresse fixe, le [[Glossary:DNS]] et la sauvegarde.
    👉 Explication : la base de supervision grossit avec le temps.
 
 3. Vérifier l'édition de Windows (Desktop Experience requis) :

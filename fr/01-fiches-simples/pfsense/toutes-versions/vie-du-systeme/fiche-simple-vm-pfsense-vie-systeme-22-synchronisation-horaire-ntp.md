@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_22_Synchronisation_Horaire_Ntp
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 22 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-22`
@@ -24,7 +24,7 @@ Garantir une heure fiable sur le pare-feu et le réseau.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Aller dans Services > NTP > Settings : ajouter les serveurs (ex. `fr.pool.ntp.org`), sélectionner l'interface LAN pour servir l'heure, Save.
+1. Aller dans Services > [[Glossary:NTP]] > Settings : ajouter les serveurs (ex. `fr.pool.ntp.org`), sélectionner l'interface [[Glossary:LAN]] pour servir l'heure, Save.
    👉 Explication : le pare-feu synchronise son horloge et peut la fournir aux clients.
 
 2. Contrôler la synchronisation : Status > NTP, ou en shell :
@@ -39,7 +39,7 @@ Utiliser au moins trois sources, dont une interne si possible.
 
 ## 3. Production — Sécurité
 
-Autoriser le NTP sortant (UDP 123) seulement vers les serveurs choisis.
+Autoriser le NTP sortant ([[Glossary:UDP]] 123) seulement vers les serveurs choisis.
 
 ## Validation et retour arrière
 

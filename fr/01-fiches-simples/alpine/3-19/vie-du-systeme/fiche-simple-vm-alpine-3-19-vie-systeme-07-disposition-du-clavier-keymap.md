@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_07_Disposition_Du_Clavier_Keymap
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 07 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-07`
@@ -44,7 +44,7 @@ Régler le clavier pour saisir correctement les mots de passe.
 
 ## 2. Production — Contrôles
 
-Documenter la disposition retenue pour la console et pour SSH (le clavier distant est celui du poste d'administration).
+Documenter la disposition retenue pour la console et pour [[Glossary:SSH]] (le clavier distant est celui du poste d'administration).
 
 ## 3. Production — Sécurité
 

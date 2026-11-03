@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # 📄 fiche-simple-vm-ubuntu-24-04-graylog-valider-input-syslog-pilote.md
 
 - **Environnement** : Graylog 7.2, Ubuntu Server 24-04, source de journaux administrée
-- **OS / Version** : Ubuntu Server 24-04 LTS
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]]
 - **Catégorie** : Journaux / ingestion
 - **Tags** : `ubuntu2404`, `graylog`, `syslog`, `logs`, `tls`, `pilote`
 
@@ -25,9 +25,9 @@ Valider la réception et la recherche d'un petit flux Syslog provenant d'une sou
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 
 1. Confirmer source, format, port et protocole avec le propriétaire du système.
-   👉 Explication : exemple retenu : Syslog TCP/TLS 6514 depuis une seule IP.
+   👉 Explication : exemple retenu : Syslog [[Glossary:TCP]]/TLS 6514 depuis une seule [[Glossary:IP]].
 
-2. Créer l'input : **System > Inputs > Select input : Syslog TCP > Launch new input** (titre « pilote-syslog », bind address de l'interface interne, port 6514, TLS activé).
+2. Créer l'input : **System > Inputs > Select input : Syslog TCP > Launch new input** (titre « pilote-syslog », bind address de l'interface interne, port 6514, [[Glossary:TLS]] activé).
    👉 Explication : seules les options nécessaires.
 
 3. Restreindre le réseau :
@@ -56,7 +56,7 @@ Valider la réception et la recherche d'un petit flux Syslog provenant d'une sou
 
 ## 🔒 3. Production — Façon Sécurisée
 
-- N'exposer aucun input à Internet; appliquer une ACL source côté réseau et écouter uniquement sur l'interface requise.
+- N'exposer aucun input à Internet; appliquer une [[Glossary:ACL]] source côté réseau et écouter uniquement sur l'interface requise.
 - Chiffrer le transport des journaux sensibles et valider les certificats; ne pas collecter mots de passe, tokens ou données personnelles non autorisées.
 - Définir les droits de recherche par équipe et une politique de rétention approuvée.
 

@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Activer DRS pour équilibrer la charge des VM entre les hôtes d'un cluster.
+Activer [[Glossary:DRS]] pour équilibrer la charge des [[Glossary:VM]] entre les hôtes d'un cluster.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -38,7 +38,7 @@ Activer DRS pour équilibrer la charge des VM entre les hôtes d'un cluster.
 
 ## 2. Production — Contrôles
 
-- Hôtes compatibles CPU (EVC si besoin), réseau vMotion dédié.
+- Hôtes compatibles [[Glossary:CPU]] (EVC si besoin), réseau vMotion dédié.
 
 ## 3. Production — Sécurité
 

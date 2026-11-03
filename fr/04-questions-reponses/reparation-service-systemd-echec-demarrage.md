@@ -25,7 +25,7 @@ journalctl -u SERVICE -b --no-pager -n 100
 systemctl --failed
 ```
 
-Noter le premier message d'erreur, l'heure et les changements récents. Ne pas commencer par supprimer des fichiers PID, vider les journaux ou réinstaller le paquet.
+Noter le premier message d'erreur, l'heure et les changements récents. Ne pas commencer par supprimer des fichiers [[Glossary:PID]], vider les journaux ou réinstaller le paquet.
 
 ## 2. Vérifier les dépendances courantes
 

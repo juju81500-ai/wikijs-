@@ -14,16 +14,16 @@ dateModified: 2026-11-03T09:36:14Z
 - **OS / Version** : Hôte Linux avec Docker Engine et plugin Compose; images Apache Guacamole 1.6.0
 - **Type de fiche** : Installation/Déploiement
 - **Périmètre** : accès distant via navigateur, guacd, authentification JDBC PostgreSQL, reverse proxy HTTPS
-- **Catégorie** : accès distant / VDI
+- **Catégorie** : accès distant / [[Glossary:VDI]]
 - **Tags** : `apache-guacamole`, `docker`, `compose`, `postgresql`, `remote-access`, `https`, `mfa`
 
 ## 1. Périmètre et prérequis
 
 Fiche simple : [cadrer le périmètre et les prérequis](/fr/01-fiches-simples/transverses/docker/guacamole/fiche-simple-hote-docker-guacamole-cadrer-prerequis).
 
-Guacamole fournit une passerelle web d'accès distant. Cette fiche déploie les composants Guacamole et guacd avec une base PostgreSQL. Elle ne configure pas les systèmes cibles, les identifiants de connexion aux hôtes, SSO/LDAP/MFA, ni la haute disponibilité.
+Guacamole fournit une passerelle web d'accès distant. Cette fiche déploie les composants Guacamole et guacd avec une base PostgreSQL. Elle ne configure pas les systèmes cibles, les identifiants de connexion aux hôtes, [[Glossary:SSO]]/LDAP/MFA, ni la haute disponibilité.
 
-Prérequis : hôte Linux Docker durci, DNS dédié, réseau d'administration, reverse proxy HTTPS géré, stockage persistant sauvegardé et liste de systèmes cibles explicitement autorisés. Traiter Guacamole comme une passerelle privilégiée : comptes personnels, MFA ou SSO approuvé, journalisation, restriction des réseaux et procédure de révocation sont nécessaires avant tout usage de production.
+Prérequis : hôte Linux Docker durci, [[Glossary:DNS]] dédié, réseau d'administration, reverse proxy HTTPS géré, stockage persistant sauvegardé et liste de systèmes cibles explicitement autorisés. Traiter Guacamole comme une passerelle privilégiée : comptes personnels, [[Glossary:MFA]] ou SSO approuvé, journalisation, restriction des réseaux et procédure de révocation sont nécessaires avant tout usage de production.
 
 ## 2. Préparer les secrets et la configuration
 
@@ -101,7 +101,7 @@ docker compose up -d db
 docker compose ps
 ```
 
-Générer le schéma avec l'outil fourni dans l'image Guacamole 1.6.0, puis l'importer dans la base neuve. Conserver le fichier SQL comme artefact de déploiement, sans secret :
+Générer le schéma avec l'outil fourni dans l'image Guacamole 1.6.0, puis l'importer dans la base neuve. Conserver le fichier [[Glossary:SQL]] comme artefact de déploiement, sans secret :
 
 ```bash
 docker run --rm guacamole/guacamole:1.6.0 /opt/guacamole/bin/initdb.sh --postgresql > initdb.sql
@@ -123,7 +123,7 @@ docker compose ps
 docker compose logs --tail=100 guacamole guacd db
 ```
 
-Ne pas partager la sortie complète de `docker compose config` : elle peut contenir des secrets interpolés. Cet exemple suppose que le reverse proxy s'exécute sur l'hôte. S'il est lui-même conteneurisé, le connecter au service Guacamole sur un réseau privé dédié et retirer la publication loopback; ne pas pointer le proxy vers sa propre adresse `127.0.0.1`. Configurer le reverse proxy pour transmettre HTTPS vers `http://127.0.0.1:8080/guacamole/`. Les en-têtes proxy ne doivent être acceptés que depuis le proxy de confiance. Terminer TLS avec un certificat valide, n'autoriser que les réseaux clients approuvés et ne pas exposer directement le port 8080.
+Ne pas partager la sortie complète de `docker compose config` : elle peut contenir des secrets interpolés. Cet exemple suppose que le reverse proxy s'exécute sur l'hôte. S'il est lui-même conteneurisé, le connecter au service Guacamole sur un réseau privé dédié et retirer la publication loopback; ne pas pointer le proxy vers sa propre adresse `127.0.0.1`. Configurer le reverse proxy pour transmettre HTTPS vers `http://127.0.0.1:8080/guacamole/`. Les en-têtes proxy ne doivent être acceptés que depuis le proxy de confiance. Terminer [[Glossary:TLS]] avec un certificat valide, n'autoriser que les réseaux clients approuvés et ne pas exposer directement le port 8080.
 
 Ouvrir la page de connexion. Sur une base tout juste initialisée, les identifiants initiaux documentés par Guacamole sont `guacadmin` / `guacadmin`; changer immédiatement le mot de passe, créer les comptes nominaux et vérifier les permissions. Ne pas connecter de systèmes réels tant que les comptes et contrôles d'accès ne sont pas validés.
 

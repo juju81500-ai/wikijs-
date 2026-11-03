@@ -31,14 +31,14 @@ Installer le paquet openmediavault depuis le dépôt officiel signé.
    ```
    👉 Explication : La méthode Debian exige systemd-resolved actif.
 
-2. Définir un DNS accessible (remplacer `ens18` par votre interface et `192.0.2.53` par votre résolveur) :
+2. Définir un [[Glossary:DNS]] accessible (remplacer `ens18` par votre interface et `192.0.2.53` par votre résolveur) :
    ```bash
    sudo resolvectl dns ens18 192.0.2.53
    resolvectl status
    ```
    👉 Explication : Utiliser de préférence le résolveur approuvé par le site.
 
-3. Installer la clé officielle dans le trousseau APT :
+3. Installer la clé officielle dans le trousseau [[Glossary:APT]] :
    ```bash
    wget --quiet --output-document=- https://packages.openmediavault.io/archive.key \
      | sudo gpg --dearmor --yes --output /usr/share/keyrings/openmediavault-archive-keyring.gpg
@@ -70,7 +70,7 @@ Installer le paquet openmediavault depuis le dépôt officiel signé.
    sudo omv-confdbadm populate
    sudo omv-firstaid
    ```
-   👉 Explication : `populate` reprend certaines configurations existantes; l'IP peut changer à l'application.
+   👉 Explication : `populate` reprend certaines configurations existantes; l'[[Glossary:IP]] peut changer à l'application.
 
 ## 2. Production — Contrôles
 
@@ -84,7 +84,7 @@ Prévoir accès console hyperviseur et fenêtre de maintenance : la configuratio
 ## Validation et retour arrière
 
 - **Validation** : `dpkg -l openmediavault` indique le paquet installé et l'interface Web répond.
-- **Retour arrière** : restaurer la sauvegarde ou l'instantané de la VM; OMV ne se désinstalle pas proprement.
+- **Retour arrière** : restaurer la sauvegarde ou l'instantané de la [[Glossary:VM]]; OMV ne se désinstalle pas proprement.
 
 ## Si le problème n'est pas résolu
 

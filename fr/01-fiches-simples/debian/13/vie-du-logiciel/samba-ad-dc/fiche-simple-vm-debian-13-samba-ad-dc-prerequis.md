@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-samba-ad-dc-prerequis.md
 
-- **Environnement** : VM Debian 13 de laboratoire, contrôleur de domaine Samba AD DC (DNS SAMBA_INTERNAL)
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire, contrôleur de domaine Samba [[Glossary:AD]] [[Glossary:DC]] ([[Glossary:DNS]] SAMBA_INTERNAL)
 - **OS / Version** : Debian 13 Trixie; Samba 4.22 (dépôts Debian)
 - **Catégorie** : annuaire / cadrage
 - **Tags** : `debian13`, `samba`, `active-directory`, `lab`, `prerequis`
@@ -28,14 +28,14 @@ Cadrer ce que couvre un domaine Samba AD DC de laboratoire avant de l'installer.
    👉 Explication : après création de la forêt, ces noms ne se changent pas facilement.
 
 2. Vérifier la matrice de compatibilité Samba et les applications visées.
-   👉 Explication : Samba n'est pas compatible avec tous les rôles et GPO Microsoft.
+   👉 Explication : Samba n'est pas compatible avec tous les rôles et [[Glossary:GPO]] Microsoft.
 
 3. Confirmer que le domaine est neuf.
    👉 Explication : la procédure ne couvre pas la migration d'une forêt Microsoft existante.
 
 ## 2. Production — Contrôles
 
-Pour une mise en service réelle : plusieurs DC dans des domaines de panne distincts, sauvegardes testées, supervision, NTP, reprise et revue de sécurité. Une seule VM sert uniquement à l'apprentissage.
+Pour une mise en service réelle : plusieurs DC dans des domaines de panne distincts, sauvegardes testées, supervision, [[Glossary:NTP]], reprise et revue de sécurité. Une seule VM sert uniquement à l'apprentissage.
 
 ## 3. Production — Sécurité
 

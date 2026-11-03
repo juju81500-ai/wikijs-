@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-ubuntu-24-04-migration-26-04-evaluer.md
 
-- **Environnement** : VM ou serveur Ubuntu Server LTS
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu Server [[Glossary:LTS]]
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble) vers 26-04 LTS (Resolute)
 - **Catégorie** : migration de version
 - **Tags** : `ubuntu24.04`, `ubuntu26.04`, `migration`, `evaluation`
@@ -34,7 +34,7 @@ Mesurer l'impact de la mise à niveau avant toute action.
    👉 Explication : on confirme partir de Ubuntu 24-04 (Noble).
 
 3. Lister les applications installées et vérifier leur compatibilité avec 26-04.
-   👉 Explication : PHP, PostgreSQL, OpenSSH, systemd, Netplan et APT changent de version.
+   👉 Explication : PHP, PostgreSQL, OpenSSH, systemd, Netplan et [[Glossary:APT]] changent de version.
 
 ## 2. Production — Contrôles
 

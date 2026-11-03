@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_24_Personnalisation_Et_Bannieres
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 24 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-24`
@@ -24,7 +24,7 @@ Afficher un avertissement légal à la connexion.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Dans System > Advanced > Admin Access > webConfigurator, renseigner le message de connexion; pour SSH, créer `/etc/motd` via Diagnostics > Edit File (si le paquet `File Editor` est installé).
+1. Dans System > Advanced > Admin Access > webConfigurator, renseigner le message de connexion; pour [[Glossary:SSH]], créer `/etc/motd` via Diagnostics > Edit File (si le paquet `File Editor` est installé).
    👉 Explication : informe l'utilisateur que l'accès est surveillé.
 
 2. Contrôler en shell :

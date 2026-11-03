@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_22_Synchronisation_Horaire_Ntp
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 22 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-22`
@@ -56,7 +56,7 @@ Deux sources internes, pas de dépendance directe à Internet.
 
 ## 3. Production — Sécurité
 
-Autoriser seulement UDP 123 vers les serveurs de temps.
+Autoriser seulement [[Glossary:UDP]] 123 vers les serveurs de temps.
 
 ## Validation et retour arrière
 

@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 Fiche_Simple_-_VM_Windows_11_Securite_Defender_WDAC
 
-- **Environnement** : VM / Poste de travail (Windows 11)
+- **Environnement** : [[Glossary:VM]] / Poste de travail (Windows 11)
 - **OS / Version** : Windows 11 - Famille Windows Client
 - **Catégorie** : Sécurité / Antivirus et contrôle d'applications
 - **Tags** : `[windows-11]`, `[defender]`, `[wdac]`, `[applocker]`, `[code-integrity]`, `[powershell]`
 
 ## 🎯 Problème précis à résoudre
-Vérifier et durcir Microsoft Defender Antivirus sur un poste Windows 11, puis mettre en place un contrôle des applications (WDAC) en commençant par un mode audit qui journalise sans bloquer.
+Vérifier et durcir Microsoft Defender Antivirus sur un poste Windows 11, puis mettre en place un contrôle des applications ([[Glossary:WDAC]]) en commençant par un mode audit qui journalise sans bloquer.
 
 ---
 

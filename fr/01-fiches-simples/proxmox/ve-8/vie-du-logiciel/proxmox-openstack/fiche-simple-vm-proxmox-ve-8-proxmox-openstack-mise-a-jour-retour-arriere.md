@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Proxmox_VE_8_Proxmox_OpenStack_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM DevStack jetable sur Proxmox VE 8.x
-- **OS / Version** : Ubuntu Server 24-04 LTS; DevStack selon branche officielle
+- **Environnement** : [[Glossary:VM]] DevStack jetable sur Proxmox VE 8.x
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]]; DevStack selon branche officielle
 - **Catégorie** : cloud privé / maintenance de lab
 - **Tags** : `proxmox`, `openstack`, `devstack`, `mise-a-jour`, `retour-arriere`, `lab`
 

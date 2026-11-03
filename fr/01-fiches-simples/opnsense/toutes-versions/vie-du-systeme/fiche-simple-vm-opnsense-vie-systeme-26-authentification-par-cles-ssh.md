@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_26_Authentification_Par_Cles_Ssh
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 26 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-26`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Remplacer le mot de passe par une clé pour l'accès SSH.
+Remplacer le mot de passe par une clé pour l'accès [[Glossary:SSH]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 

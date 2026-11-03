@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_cURL_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13 avec réseau de test autorisé
+- **Environnement** : [[Glossary:VM]] Debian 13 avec réseau de test autorisé
 - **OS / Version** : Debian 13 Trixie
-- **Catégorie** : transfert HTTP / diagnostic
+- **Catégorie** : transfert [[Glossary:HTTP]] / diagnostic
 - **Tags** : `debian13`, `curl`, `http`, `tls`, `api`
 ---
 

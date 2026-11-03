@@ -24,7 +24,7 @@ Capturer l'état de référence.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Général > Enregistrer la configuration.
+1. [[Glossary:GUI]] : Système > Général > Enregistrer la configuration.
    ```sh
    midclt call system.info | head -20
    zpool status

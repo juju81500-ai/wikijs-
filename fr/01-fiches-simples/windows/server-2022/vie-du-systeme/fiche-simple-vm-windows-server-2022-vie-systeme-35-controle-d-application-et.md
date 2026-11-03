@@ -45,11 +45,11 @@ Activer Microsoft Defender et le contrôle d'applications.
 
 ## 2. Production — Contrôles
 
-Compléter avec WDAC ou AppLocker pour n'autoriser que les applications approuvées.
+Compléter avec [[Glossary:WDAC]] ou AppLocker pour n'autoriser que les applications approuvées.
 
 ## 3. Production — Sécurité
 
-Ne pas désactiver Defender sans solution de remplacement validée par le RSSI.
+Ne pas désactiver Defender sans solution de remplacement validée par le [[Glossary:RSSI]].
 
 ## Validation et retour arrière
 

@@ -38,7 +38,7 @@ Isoler à quelle couche se situe un problème d'accès réseau, en commençant p
    ```
    👉 Explication : affiche les interfaces configurées et les routes IPv4, sans changement.
 
-3. Tester la résolution puis un port TCP autorisé sous Linux (remplacer l'exemple par une cible du laboratoire) :
+3. Tester la résolution puis un port [[Glossary:TCP]] autorisé sous Linux (remplacer l'exemple par une cible du laboratoire) :
    ```bash
    HOTE=serveur-lab.example
    PORT=443
@@ -63,7 +63,7 @@ Isoler à quelle couche se situe un problème d'accès réseau, en commençant p
 
 ## 2. Production — Contrôles
 
-Consigner l'heure, les adresses, le port cible et le segment réseau. Comparer avec un hôte fonctionnel du même VLAN et escalader au réseau avec les observations, sans envoyer de capture contenant des données client.
+Consigner l'heure, les adresses, le port cible et le segment réseau. Comparer avec un hôte fonctionnel du même [[Glossary:VLAN]] et escalader au réseau avec les observations, sans envoyer de capture contenant des données client.
 
 ## 3. Production — Sécurité
 

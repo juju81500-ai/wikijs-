@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Déployer pfSense CE 2.9.0 en laboratoire Proxmox VE
 
-- **OS / Version** : pfSense Community Edition 2.9.0, VM x86-64 sur Proxmox VE
+- **OS / Version** : pfSense Community Edition 2.9.0, [[Glossary:VM]] x86-64 sur Proxmox VE
 - **Type de fiche** : Installation/Déploiement
 - **Périmètre** : installation de laboratoire à deux interfaces; pas de raccordement à un réseau de production
 - **Catégorie** : Pare-feu et routage
@@ -23,7 +23,7 @@ Fiche simple : [périmètre, prérequis et réseau](/fr/01-fiches-simples/pfsens
 
 Au 27 octobre 2026, Netgate répertorie pfSense CE 2.9.0 parmi les versions prises en charge. La version CE 2.9.0 utilise FreeBSD 16-CURRENT comme système de base. Ce guide installe CE en VM à des fins d'apprentissage et de validation; il ne remplace ni une conception de pare-feu de production, ni un guide d'appliance Netgate, ni une procédure haute disponibilité.
 
-Prérequis de laboratoire : un hôte Proxmox VE opérationnel, un poste ou VM d'administration, une image d'installation obtenue depuis le portail Netgate, et deux réseaux de laboratoire distincts. Préparer `vmbr-pfsense-wan` et `vmbr-pfsense-lan`; le pont WAN doit fournir un accès amont contrôlé nécessaire à l'installateur en ligne. Le pont LAN ne doit être connecté ni au réseau de gestion Proxmox, ni à un segment de production. Si le test n'a pas besoin d'Internet, isoler aussi le WAN après l'installation.
+Prérequis de laboratoire : un hôte Proxmox VE opérationnel, un poste ou VM d'administration, une image d'installation obtenue depuis le portail Netgate, et deux réseaux de laboratoire distincts. Préparer `vmbr-pfsense-wan` et `vmbr-pfsense-lan`; le pont [[Glossary:WAN]] doit fournir un accès amont contrôlé nécessaire à l'installateur en ligne. Le pont [[Glossary:LAN]] ne doit être connecté ni au réseau de gestion Proxmox, ni à un segment de production. Si le test n'a pas besoin d'Internet, isoler aussi le WAN après l'installation.
 
 Ne pas brancher directement les deux interfaces de cette VM sur le même réseau. Vérifier que le sous-réseau LAN initial `192.168.1.0/24` et le LAN cible choisi ne chevauchent aucun réseau de l'hôte ou du site.
 
@@ -45,9 +45,9 @@ Fiche simple : [créer la VM de pare-feu](/fr/01-fiches-simples/pfsense/toutes-v
 
 Dans Proxmox VE, créer une VM avec des identifiants documentés et les paramètres de laboratoire suivants :
 
-- Firmware/BIOS et contrôleur système conformes à la recette Netgate retenue; ne pas mélanger BIOS/UEFI après installation.
+- Firmware/BIOS et contrôleur système conformes à la recette Netgate retenue; ne pas mélanger [[Glossary:BIOS]]/UEFI après installation.
 - Disque VirtIO Block d'au moins 16 Go pour les essais, sur un stockage adapté.
-- 2 vCPU et 2 Go de RAM pour un usage léger de laboratoire; les minimums publiés sont 1 CPU, 1 Go de RAM et 8 Go de disque, mais ils ne conviennent pas à tous les scénarios.
+- 2 vCPU et 2 Go de [[Glossary:RAM]] pour un usage léger de laboratoire; les minimums publiés sont 1 [[Glossary:CPU]], 1 Go de RAM et 8 Go de disque, mais ils ne conviennent pas à tous les scénarios.
 - Deux cartes réseau de type VirtIO : première sur `vmbr-pfsense-wan`, seconde sur `vmbr-pfsense-lan`.
 - ISO Netgate Installer attachée au lecteur optique et console Proxmox disponible.
 
@@ -63,18 +63,18 @@ Si le matériel est éligible à pfSense Plus, sélectionner explicitement **Ins
 
 À l'assignation des interfaces, vérifier les MAC affichées par Proxmox et affecter `vtnet0` à WAN, `vtnet1` à LAN. Confirmer l'affectation dans la console avant de continuer. Ne pas se fier uniquement à l'ordre supposé des interfaces si les MAC ne correspondent pas.
 
-La configuration initiale pfSense utilise généralement WAN en DHCP, LAN `192.168.1.1/24`, DHCP actif sur LAN, blocage des connexions entrantes WAN, et autorisation générale sortante depuis LAN. Elle peut aussi activer IPv6/DHCPv6 selon la délégation disponible. Cette ouverture sortante par défaut ne doit pas être considérée comme une politique finale.
+La configuration initiale pfSense utilise généralement WAN en [[Glossary:DHCP]], LAN `192.168.1.1/24`, DHCP actif sur LAN, blocage des connexions entrantes WAN, et autorisation générale sortante depuis LAN. Elle peut aussi activer IPv6/DHCPv6 selon la délégation disponible. Cette ouverture sortante par défaut ne doit pas être considérée comme une politique finale.
 
 ## 5. Accéder au GUI et sécuriser les premiers réglages
 
 Fiche simple : [accéder au GUI et sécuriser les premiers réglages](/fr/01-fiches-simples/pfsense/toutes-versions/vie-du-systeme/fiches-par-theme/deploiement-ce-lab/fiche-simple-vm-proxmox-pfsense-ce-deploiement-acces-gui-premiers-reglages).
 
-Depuis la VM cliente connectée au pont LAN isolé, obtenir une adresse LAN puis ouvrir `https://192.168.1.1`. Au premier accès, les identifiants par défaut sont `admin` / `pfsense`; changer le mot de passe immédiatement avant toute autre tâche. Ne jamais exposer le GUI ou SSH sur WAN.
+Depuis la VM cliente connectée au pont LAN isolé, obtenir une adresse LAN puis ouvrir `https://192.168.1.1`. Au premier accès, les identifiants par défaut sont `admin` / `pfsense`; changer le mot de passe immédiatement avant toute autre tâche. Ne jamais exposer le [[Glossary:GUI]] ou [[Glossary:SSH]] sur WAN.
 
 Dans l'assistant de configuration :
 
-1. Définir un nom d'hôte et un domaine de laboratoire qui ne crée pas de conflit DNS.
-2. Vérifier le fuseau horaire et NTP.
+1. Définir un nom d'hôte et un domaine de laboratoire qui ne crée pas de conflit [[Glossary:DNS]].
+2. Vérifier le fuseau horaire et [[Glossary:NTP]].
 3. Configurer WAN selon le réseau amont isolé et contrôler la passerelle; ne pas importer de paramètres de fournisseur réel dans un lab partagé.
 4. Remplacer le LAN par un sous-réseau réservé au lab, non chevauchant, puis renouveler l'adresse de la VM cliente et rouvrir le GUI sur la nouvelle adresse.
 5. Si un DHCP existe déjà sur ce LAN, désactiver le DHCP pfSense pour éviter deux serveurs concurrents; sinon définir une seule plage de lab clairement documentée.
@@ -104,7 +104,7 @@ Fiche simple : [sauvegarder et éprouver la restauration](/fr/01-fiches-simples/
 
 Dans **Diagnostics > Backup & Restore**, télécharger une configuration complète en cochant le chiffrement et en choisissant une phrase secrète gérée hors bande. Un export XML sans chiffrement contient des informations sensibles. Stocker le backup hors de la VM et de l'hôte Proxmox, avec accès limité.
 
-Pour éprouver la restauration, cloner ou recréer une seconde VM de test, déconnecter ses cartes du réseau amont et du LAN de production, puis restaurer la configuration sur une version compatible. pfSense compare la révision de configuration; une sauvegarde complète d'une révision antérieure peut être migrée, mais une restauration partielle d'une autre révision n'est pas prise en charge. Vérifier interfaces, IP, DHCP, règles et GUI avant de reconnecter un réseau de laboratoire.
+Pour éprouver la restauration, cloner ou recréer une seconde VM de test, déconnecter ses cartes du réseau amont et du LAN de production, puis restaurer la configuration sur une version compatible. pfSense compare la révision de configuration; une sauvegarde complète d'une révision antérieure peut être migrée, mais une restauration partielle d'une autre révision n'est pas prise en charge. Vérifier interfaces, [[Glossary:IP]], DHCP, règles et GUI avant de reconnecter un réseau de laboratoire.
 
 Le test est réussi si la VM restaurée démarre sans erreur, que les interfaces sont affectées aux bons ponts, et que les règles/politiques attendues sont effectivement appliquées. Nettoyer le clone et supprimer les médias d'installation quand ils ne sont plus nécessaires.
 
@@ -112,10 +112,10 @@ Le test est réussi si la VM restaurée démarre sans erreur, que les interfaces
 
 Fiche simple : [exploitation et limites](/fr/01-fiches-simples/pfsense/toutes-versions/vie-du-systeme/fiches-par-theme/deploiement-ce-lab/fiche-simple-vm-proxmox-pfsense-ce-deploiement-exploitation-limites).
 
-- Garder pfSense CE sur une version prise en charge; lire l'Upgrade Guide et les notes de version avant mise à niveau. Pour CE 2.9.0, vérifier les errata matériels des plateformes visées et les certificats TLS faibles.
+- Garder pfSense CE sur une version prise en charge; lire l'Upgrade Guide et les notes de version avant mise à niveau. Pour CE 2.9.0, vérifier les errata matériels des plateformes visées et les certificats [[Glossary:TLS]] faibles.
 - Sauvegarder la configuration avant une modification réseau, une mise à niveau ou l'ajout d'un paquet.
 - N'installer que les paquets nécessaires, après vérification de leur compatibilité avec la version cible.
-- Cette fiche ne couvre pas CARP/pfsync, multi-WAN, VPN, règles de production, matériel Netgate ou dimensionnement de débit. Ces sujets nécessitent un plan de changement distinct et des essais dédiés.
+- Cette fiche ne couvre pas [[Glossary:CARP]]/pfsync, multi-WAN, [[Glossary:VPN]], règles de production, matériel Netgate ou dimensionnement de débit. Ces sujets nécessitent un plan de changement distinct et des essais dédiés.
 
 ## Sources
 

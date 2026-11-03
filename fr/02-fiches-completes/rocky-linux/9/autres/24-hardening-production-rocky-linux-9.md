@@ -12,8 +12,8 @@ dateModified: 2026-11-03T09:36:14Z
 # Hardening d'un serveur Rocky Linux 9 avant production
 
 - **Type de fiche** : Autres — sécurité / exploitation
-- **Environnement** : VM ou serveur dédié Rocky Linux
-- **OS / Version** : Rocky Linux 9 / famille RHEL 9
+- **Environnement** : [[Glossary:VM]] ou serveur dédié Rocky Linux
+- **OS / Version** : Rocky Linux 9 / famille [[Glossary:RHEL]] 9
 - **Rôle** : Appliquer une base de sécurité et vérifier l'état avant ouverture du service
 - **Tags** : `rocky9`, `rhel9`, `hardening`, `selinux`, `firewalld`, `production`
 
@@ -25,7 +25,7 @@ Cette fiche prépare un serveur installé; elle ne remplace pas l'installation n
 
 - Confirmer le rôle, l'adresse/zone réseau, les ports entrants nécessaires, les utilisateurs et le responsable.
 - Garder la console hyperviseur et un compte de secours testé.
-- Sauvegarder la configuration et planifier une fenêtre avant toute modification SSH ou firewall.
+- Sauvegarder la configuration et planifier une fenêtre avant toute modification [[Glossary:SSH]] ou firewall.
 
 ## 2. Mettre à jour et inventorier
 

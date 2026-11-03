@@ -12,16 +12,16 @@ dateModified: 2026-11-03T09:36:14Z
 # Diagnostiquer un LXC Alpine : réseau et services OpenRC
 
 - **Type de fiche** : Diagnostic
-- **Environnement** : LXC Alpine sur Proxmox VE
+- **Environnement** : [[Glossary:LXC]] Alpine sur Proxmox VE
 - **OS / Version** : Branche Alpine maintenue; noter la version réelle avant intervention
-- **Rôle** : Isoler les pannes de lien, IP, route, DNS, pare-feu et service
+- **Rôle** : Isoler les pannes de lien, [[Glossary:IP]], route, [[Glossary:DNS]], pare-feu et service
 - **Tags** : `alpine`, `proxmox`, `lxc`, `diagnostic`, `openrc`, `reseau`
 
 ## 1. Objectif et précautions
 
 Fiche simple : [préparer l'intervention](/fr/01-fiches-simples/alpine/toutes-versions/vie-du-systeme/fiches-par-theme/diagnostic/fiche-simple-lxc-alpine-diagnostic-preparer-intervention).
 
-Suivre la chaîne **hôte/bridge → interface → IP → passerelle → route → DNS → port → service**. Un LXC partage le noyau de l'hôte et peut recevoir sa configuration réseau de Proxmox; ne pas appliquer à l'intérieur du CT une réparation conçue pour une VM.
+Suivre la chaîne **hôte/bridge → interface → IP → passerelle → route → DNS → port → service**. Un LXC partage le noyau de l'hôte et peut recevoir sa configuration réseau de Proxmox; ne pas appliquer à l'intérieur du [[Glossary:CT]] une réparation conçue pour une [[Glossary:VM]].
 
 Avant tout changement, noter l'heure, l'IP, l'interface, le bridge/VLAN, la destination et le port. Garder la console Proxmox ouverte. Ne pas vider les règles firewall ni redémarrer tout le nœud.
 
@@ -47,7 +47,7 @@ cat /etc/resolv.conf
 rc-status
 ```
 
-Comparer le bridge, le VLAN tag, l'adresse, la passerelle et le DNS du CT avec le plan réseau et une machine fonctionnelle du même segment.
+Comparer le bridge, le [[Glossary:VLAN]] tag, l'adresse, la passerelle et le DNS du CT avec le plan réseau et une machine fonctionnelle du même segment.
 
 ## 3. Isoler la couche en panne
 
@@ -55,7 +55,7 @@ Fiche simple : [isoler la couche en panne](/fr/01-fiches-simples/alpine/toutes-v
 
 1. **Lien/bridge/VLAN** : vérifier que l'interface est `UP`, le CT démarré, le bridge existe et le VLAN est permis sur le switch.
 2. **IP et route** : confirmer que l'adresse/prefixe attendus apparaissent et qu'une route existe vers la destination.
-3. **Passerelle** : tester ICMP si autorisé; un ping bloqué ne prouve pas une panne.
+3. **Passerelle** : tester [[Glossary:ICMP]] si autorisé; un ping bloqué ne prouve pas une panne.
 4. **DNS** : tester l'IP de destination puis `nslookup <nom>`; lire le résolveur fourni à `/etc/resolv.conf`.
 5. **Port/service** : confirmer que le service écoute et tester uniquement le port requis depuis un client autorisé.
 

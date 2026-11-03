@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-2025-production-identite-reseau.md
 
-- **Environnement** : Serveur physique ou VM Windows Server 2025 administré par l'organisation
+- **Environnement** : Serveur physique ou [[Glossary:VM]] Windows Server 2025 administré par l'organisation
 - **OS / Version** : Windows Server 2025 Standard ou Datacenter
 - **Catégorie** : installation / déploiement
 - **Tags** : `windows-server-2025`, `installation`, `production`, `uefi`, `openssh`
@@ -24,7 +24,7 @@ Nommer le serveur, fixer réseau, heure et contrôler l'état de base.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : **Gestionnaire de serveur > Serveur local** pour le nom, l'adresse IP, le DNS, le fuseau horaire; jonction au domaine uniquement si le rôle et la stratégie l'exigent.
+1. [[Glossary:GUI]] : **Gestionnaire de serveur > Serveur local** pour le nom, l'adresse [[Glossary:IP]], le [[Glossary:DNS]], le fuseau horaire; jonction au domaine uniquement si le rôle et la stratégie l'exigent.
    👉 Explication : on respecte la convention de nommage.
 
 2. Contrôles de base en PowerShell :

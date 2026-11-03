@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-2022-adds-dns-dhcp-sauvegarde-securite-retour.md
 
-- **Environnement** : VM ou serveur dédié Windows Server 2022, domaine de laboratoire ou d'entreprise
-- **OS / Version** : Windows Server 2022; rôles AD DS, DNS et DHCP
+- **Environnement** : [[Glossary:VM]] ou serveur dédié Windows Server 2022, domaine de laboratoire ou d'entreprise
+- **OS / Version** : Windows Server 2022; rôles [[Glossary:AD]] DS, [[Glossary:DNS]] et [[Glossary:DHCP]]
 - **Catégorie** : annuaire / services réseau
 - **Tags** : `windows-server-2022`, `active-directory`, `dns`, `dhcp`, `gpo`
 
@@ -34,14 +34,14 @@ Protéger l'annuaire et prévoir la reprise.
    👉 Explication : la liste doit rester minimale; administrer avec des comptes séparés.
 
 3. Restreindre les flux aux réseaux nécessaires avec le pare-feu.
-   👉 Explication : LDAP, Kerberos, DNS et DHCP ne sont pas à exposer à Internet.
+   👉 Explication : [[Glossary:LDAP]], Kerberos, DNS et DHCP ne sont pas à exposer à Internet.
 
 4. Conserver les journaux en cas d'échec de promotion et suivre la procédure de rétrogradation/nettoyage AD DS adaptée.
    👉 Explication : une promotion ne se défait pas par simple désinstallation de rôle.
 
 ## 2. Production — Contrôles
 
-Protéger le mot de passe DSRM et planifier les sauvegardes.
+Protéger le mot de passe [[Glossary:DSRM]] et planifier les sauvegardes.
 
 ## 3. Production — Sécurité
 

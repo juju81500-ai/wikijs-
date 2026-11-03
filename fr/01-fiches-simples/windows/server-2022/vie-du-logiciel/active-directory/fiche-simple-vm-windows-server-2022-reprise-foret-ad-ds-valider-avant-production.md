@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-2022-reprise-foret-ad-ds-valider-avant-production.md
 
-- **Environnement** : Forêt AD DS d'entreprise; laboratoire isolé recommandé
+- **Environnement** : Forêt [[Glossary:AD]] DS d'entreprise; laboratoire isolé recommandé
 - **OS / Version** : Windows Server 2022 pour les contrôleurs de domaine concernés
 - **Catégorie** : Active Directory / validation
 - **Tags** : `windows-server-2022`, `active-directory`, `ad-ds`, `forest-recovery`
@@ -28,7 +28,7 @@ Valider la forêt restaurée en réseau isolé avant de la reconnecter.
    ```powershell
    dcdiag /v
    ```
-   👉 Explication : Diagnostic détaillé des DC (lecture seule).
+   👉 Explication : Diagnostic détaillé des [[Glossary:DC]] (lecture seule).
 
 2. Vérifier la réplication :
    ```powershell
@@ -36,7 +36,7 @@ Valider la forêt restaurée en réseau isolé avant de la reconnecter.
    ```
    👉 Explication : Contrôle de la réplication (lecture seule).
 
-3. Vérifier SYSVOL/NETLOGON :
+3. Vérifier [[Glossary:SYSVOL]]/NETLOGON :
    ```powershell
    Get-SmbShare | Where-Object Name -in "SYSVOL","NETLOGON"
    ```
@@ -58,7 +58,7 @@ Recréer ou redéployer les DC restants selon le plan, puis effectuer une nouvel
 
 ## Validation et retour arrière
 
-- **Validation** : DNS, SYSVOL/NETLOGON, DC, événements et réplication sains en isolation.
+- **Validation** : [[Glossary:DNS]], SYSVOL/NETLOGON, DC, événements et réplication sains en isolation.
 - **Retour arrière** : garder le réseau de reprise isolé et corriger avant toute reconnexion.
 
 ## Si le problème n'est pas résolu

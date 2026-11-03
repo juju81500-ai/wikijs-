@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Ubuntu_24.04_Systeme_Mise-A-Jour-APT-Auto.md
 
-- **Environnement** : VM (Ubuntu Server 24-04 LTS)
+- **Environnement** : [[Glossary:VM]] (Ubuntu Server 24-04 [[Glossary:LTS]])
 - **OS / Version** : Ubuntu 24-04 LTS - Famille Debian / Ubuntu
 - **Catégorie** : Système & Maintenance / Gestion des Paquets
 - **Tags** : `[ubuntu-24.04]`, `[apt]`, `[mises-a-jour]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Effectuer la mise à jour complète des paquets logiciels du système sous Ubuntu 24-04 LTS via APT, nettoyer les dépendances obsolètes et configurer les mises à jour automatiques des vulnérabilités critiques.
+Effectuer la mise à jour complète des paquets logiciels du système sous Ubuntu 24-04 LTS via [[Glossary:APT]], nettoyer les dépendances obsolètes et configurer les mises à jour automatiques des vulnérabilités critiques.
 
 ---
 

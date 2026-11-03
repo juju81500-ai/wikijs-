@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_PowerShell_Remoting_SSH
 
-- **Environnement** : VM Ubuntu 24-04 LTS de laboratoire, accès sudo, dépôt Microsoft officiel
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 [[Glossary:LTS]] de laboratoire, accès sudo, dépôt Microsoft officiel
 - **OS / Version** : Ubuntu 24-04 LTS
 - **Catégorie** : shell / scripting
 - **Tags** : `ubuntu2404`, `powershell`, `pwsh`, `scripting`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Activer le remoting PowerShell via SSH sur Ubuntu 24-04 LTS (sous-système `powershell` de sshd).
+Activer le remoting PowerShell via [[Glossary:SSH]] sur Ubuntu 24-04 LTS (sous-système `powershell` de sshd).
 
 ## 1. Hors-Production (Lab / Test / POC)
 

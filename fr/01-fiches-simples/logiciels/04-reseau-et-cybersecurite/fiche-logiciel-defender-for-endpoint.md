@@ -23,7 +23,7 @@ Fiche défensive d’administration et de gouvernance. Elle ne remplace pas le g
 
 ## 🧭 Périmètre
 
-Utiliser les rôles RBAC Microsoft Entra/Defender et MFA, onboarder uniquement les terminaux appartenant au périmètre, suivre la santé et la configuration de sécurité via les outils Microsoft supportés. Déployer les stratégies par anneaux et contrôler les conflits avec les autres agents de protection. Les actions de réponse (isolation, collecte, suppression) doivent être décidées dans un incident autorisé.
+Utiliser les rôles [[Glossary:RBAC]] Microsoft Entra/Defender et [[Glossary:MFA]], onboarder uniquement les terminaux appartenant au périmètre, suivre la santé et la configuration de sécurité via les outils Microsoft supportés. Déployer les stratégies par anneaux et contrôler les conflits avec les autres agents de protection. Les actions de réponse (isolation, collecte, suppression) doivent être décidées dans un incident autorisé.
 
 ## ✅ Autorisation et préparation
 

@@ -42,7 +42,7 @@ Sauvegarder, mettre à jour et restaurer sans perte.
    ```
    👉 Explication : remet le service en marche.
 
-4. Tester la restauration sur un hôte et un réseau isolés, sans DNS public ni clients.
+4. Tester la restauration sur un hôte et un réseau isolés, sans [[Glossary:DNS]] public ni clients.
    👉 Explication : prouve la restaurabilité.
 
 5. Mettre à jour dans une fenêtre contrôlée :

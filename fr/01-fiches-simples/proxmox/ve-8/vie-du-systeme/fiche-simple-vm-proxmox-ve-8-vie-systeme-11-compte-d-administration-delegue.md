@@ -24,7 +24,7 @@ Créer un compte nominatif avec droits limités.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : **Datacenter > Permissions > Users > Add** (domaine **Proxmox VE authentication server**), puis **Permissions > Add > User Permission** (chemin `/`, rôle `Administrator` ou plus restreint). En ligne de commande (remplacer `ADMIN1`) :
+1. [[Glossary:GUI]] : **Datacenter > Permissions > Users > Add** (domaine **Proxmox VE authentication server**), puis **Permissions > Add > User Permission** (chemin `/`, rôle `Administrator` ou plus restreint). En ligne de commande (remplacer `ADMIN1`) :
    ```bash
    pveum user add ADMIN1@pve --comment "Admin nominatif"
    pveum passwd ADMIN1@pve
@@ -48,7 +48,7 @@ Un compte par administrateur; pas de compte partagé.
 
 ## 3. Production — Sécurité
 
-Activer le 2FA pour chaque compte (TOTP).
+Activer le 2FA pour chaque compte ([[Glossary:TOTP]]).
 
 ## Validation et retour arrière
 

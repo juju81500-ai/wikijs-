@@ -15,7 +15,7 @@ dateModified: 2026-11-03T09:36:14Z
 - **Type de fiche** : Installation/Déploiement
 - **Environnement** : Docker Compose v2, réseau Traefik existant
 - **Machine ciblée** : Hôte Docker d'inventaire
-- **Catégorie** : ITSM / gestion des actifs
+- **Catégorie** : [[Glossary:ITSM]] / gestion des actifs
 - **Tags** : `snipe-it`, `docker`, `mariadb`, `traefik`, `inventaire`, `itsm`
 
 ## 1. Préparer l'architecture
@@ -24,7 +24,7 @@ Fiche simple : [préparer l'architecture Snipe-IT](/fr/01-fiches-simples/transve
 
 Ce guide utilise uniquement l'image officielle `snipe/snipe-it`, épinglée à `v8.8.3`, et la stack Docker officielle comme base. La version a été relevée le 27 octobre 2026; revalider la dernière version maintenue et ses prérequis avant un nouveau déploiement.
 
-Prévoir DNS `assets.example.net`, TLS terminé par Traefik, un réseau proxy existant, volumes Docker sauvegardés hors hôte et envoi SMTP. Garder la base dans un réseau privé et ne pas publier son port.
+Prévoir [[Glossary:DNS]] `assets.example.net`, [[Glossary:TLS]] terminé par Traefik, un réseau proxy existant, volumes Docker sauvegardés hors hôte et envoi [[Glossary:SMTP]]. Garder la base dans un réseau privé et ne pas publier son port.
 
 ## 2. Récupérer les fichiers officiels
 
@@ -65,7 +65,7 @@ docker compose run --rm app php artisan key:generate --show
 
 Conserver la clé `APP_KEY` dans le coffre de secrets : elle est nécessaire pour déchiffrer certains champs de la base après restauration. Utiliser les labels Traefik déjà en vigueur pour router le service `app` vers le port 80 du conteneur; connecter `app` au réseau `traefik_proxy`, mais ne pas exposer MariaDB.
 
-Si la stack officielle publie le port 8000, retirer ce port hôte lorsqu'on utilise Traefik et attacher l'application au réseau partagé. Définir `APP_TRUSTED_PROXIES` selon le CIDR réel du réseau proxy, sans faire confiance à des réseaux non maîtrisés.
+Si la stack officielle publie le port 8000, retirer ce port hôte lorsqu'on utilise Traefik et attacher l'application au réseau partagé. Définir `APP_TRUSTED_PROXIES` selon le [[Glossary:CIDR]] réel du réseau proxy, sans faire confiance à des réseaux non maîtrisés.
 
 ## 4. Valider et démarrer
 
@@ -96,7 +96,7 @@ Fiche simple : [recette Snipe-IT](/fr/01-fiches-simples/transverses/docker/snipe
 
 Fiche simple : [sauvegarde et restauration Snipe-IT](/fr/01-fiches-simples/transverses/docker/snipe-it/fiche-simple-docker-snipe-it-sauvegarde-restauration).
 
-L'outil Snipe-IT génère une archive contenant dump SQL et pièces jointes : lancer **Admin > Backups** ou, en maintenance planifiée :
+L'outil Snipe-IT génère une archive contenant dump [[Glossary:SQL]] et pièces jointes : lancer **Admin > Backups** ou, en maintenance planifiée :
 
 ```bash
 docker compose exec -T app php artisan snipeit:backup

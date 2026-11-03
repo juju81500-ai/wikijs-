@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Bash_Shell_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Debian 13 de laboratoire, compte utilisateur non privilégié
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire, compte utilisateur non privilégié
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : shell / scripting
 - **Tags** : `debian13`, `bash`, `shell`, `scripting`, `securite`
@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Mettre à jour Bash via APT et rejouer les contrôles représentatifs.
+Mettre à jour Bash via [[Glossary:APT]] et rejouer les contrôles représentatifs.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

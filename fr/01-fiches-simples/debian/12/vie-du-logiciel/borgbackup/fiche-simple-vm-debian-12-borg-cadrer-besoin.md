@@ -38,7 +38,7 @@ Définir les données, la cohérence applicative et la protection des clés avan
    ```
    👉 Explication : une copie de fichiers d'une base en fonctionnement peut être incohérente (adapter au moteur utilisé).
 
-3. Consigner : fréquence, rétention, RPO/RTO, destination indépendante, qui détient la clé.
+3. Consigner : fréquence, rétention, [[Glossary:RPO]]/RTO, destination indépendante, qui détient la clé.
    👉 Explication : la déduplication n'est pas une réplication; prévoir une copie hors site.
 
 ## 2. Production — Contrôles

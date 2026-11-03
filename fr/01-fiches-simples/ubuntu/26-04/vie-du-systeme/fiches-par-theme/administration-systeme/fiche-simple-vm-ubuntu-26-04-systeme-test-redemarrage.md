@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Systeme_Test_Redemarrage
 
-- **Environnement** : VM ou serveur Ubuntu en fin de mise en service
-- **OS / Version** : Ubuntu Server 26-04 LTS (systemd 259)
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu en fin de mise en service
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]] (systemd 259)
 - **Catégorie** : Système / Persistance au redémarrage
 - **Tags** : `ubuntu2604`, `reboot`, `systemd`, `persistance`, `fstab`, `netplan`
 
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 🎯 Problème précis à résoudre
 
-Vérifier qu'un serveur Ubuntu 26-04 redémarre proprement et que tout ce qui a été configuré (disques, réseau, DNS, services) est rétabli automatiquement, sans intervention manuelle, avant sa mise en production.
+Vérifier qu'un serveur Ubuntu 26-04 redémarre proprement et que tout ce qui a été configuré (disques, réseau, [[Glossary:DNS]], services) est rétabli automatiquement, sans intervention manuelle, avant sa mise en production.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 
@@ -91,10 +91,10 @@ sudo ss -tulnp
 sudo ufw status verbose
 systemctl is-active fail2ban apparmor
 ```
-👉 Explication : UFW, Fail2ban et AppArmor doivent être actifs, avec les règles attendues.
+👉 Explication : [[Glossary:UFW]], Fail2ban et AppArmor doivent être actifs, avec les règles attendues.
 
 ## ✅ Validation et retour arrière
 
 - **Précontrôles** : relevé avant redémarrage archivé, console de secours accessible, sauvegarde ou snapshot de la VM réalisé.
-- **Validation** : `systemctl is-system-running` affiche `running` ; les montages, l'IP, la route, le DNS et les services métier sont identiques au relevé initial.
+- **Validation** : `systemctl is-system-running` affiche `running` ; les montages, l'[[Glossary:IP]], la route, le DNS et les services métier sont identiques au relevé initial.
 - **Retour arrière** : si le démarrage échoue, utiliser la console pour restaurer `/etc/fstab` ou la configuration réseau depuis la copie sauvegardée, puis `sudo systemctl daemon-reload` ; à défaut, restaurer le snapshot.

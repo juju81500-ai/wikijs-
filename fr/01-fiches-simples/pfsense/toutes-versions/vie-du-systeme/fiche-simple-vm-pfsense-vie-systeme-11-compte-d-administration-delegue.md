@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_11_Compte_D_Administration_Delegue
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 11 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-11`
@@ -27,7 +27,7 @@ dateModified: 2026-11-03T09:36:13Z
 1. Créer un groupe dans System > User Manager > Groups > Add (ex. `admins-fw`) puis l'onglet Assigned Privileges pour lui attribuer des droits (ex. `WebCfg - All pages`).
    👉 Explication : les droits sont attribués au groupe, pas aux personnes.
 
-2. Créer l'utilisateur dans System > User Manager > Users > Add : nom `ADMIN01`, mot de passe fort, groupe `admins-fw`; ajouter le privilège `User - System: Shell account access` pour SSH.
+2. Créer l'utilisateur dans System > User Manager > Users > Add : nom `ADMIN01`, mot de passe fort, groupe `admins-fw`; ajouter le privilège `User - System: Shell account access` pour [[Glossary:SSH]].
    👉 Explication : `ADMIN01` est le compte nominatif de l'administrateur.
 
 3. Contrôler en shell :

@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-2022-iis-verifier-service-site.md
 
-- **Environnement** : VM Windows Server 2022 pilote
-- **OS / Version** : Windows Server 2022; rôle Web Server (IIS)
+- **Environnement** : [[Glossary:VM]] Windows Server 2022 pilote
+- **OS / Version** : Windows Server 2022; rôle Web Server ([[Glossary:IIS]])
 - **Catégorie** : serveur Web / IIS
 - **Tags** : `iis`, `windows-server-2022`, `web-server`, `tls`, `application-pool`
 
@@ -33,11 +33,11 @@ Contrôler que le service, le site et le pool fonctionnent.
    ```
    👉 Explication : le service doit être `Running` et la requête renvoyer le code 200.
 
-2. GUI : **IIS Manager > Sites** et **Pools d'applications** pour vérifier l'état démarré.
+2. [[Glossary:GUI]] : **IIS Manager > Sites** et **Pools d'applications** pour vérifier l'état démarré.
    👉 Explication : vue graphique équivalente.
 
 3. Consulter les journaux IIS dans `%SystemDrive%\inetpub\logs\LogFiles`.
-   👉 Explication : on confirme la requête de test; en environnement cible, tester le nom DNS et le certificat depuis un poste client approuvé.
+   👉 Explication : on confirme la requête de test; en environnement cible, tester le nom [[Glossary:DNS]] et le certificat depuis un poste client approuvé.
 
 ## 2. Production — Contrôles
 

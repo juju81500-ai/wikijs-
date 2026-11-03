@@ -20,17 +20,17 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Optimiser le NAS lorsqu'il est une VM ou ajouter des pilotes matériels.
+Optimiser le [[Glossary:NAS]] lorsqu'il est une [[Glossary:VM]] ou ajouter des pilotes matériels.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Sur une VM, présenter les disques par passthrough du contrôleur (PCI passthrough HBA) plutôt que des disques virtuels.
+1. Sur une VM, présenter les disques par passthrough du contrôleur (PCI passthrough [[Glossary:HBA]]) plutôt que des disques virtuels.
    ```bash
    lspci | grep -i -E 'sas|sata|nvme'
    ```
-   👉 Explication : ZFS accède directement aux disques physiques.
+   👉 Explication : [[Glossary:ZFS]] accède directement aux disques physiques.
 
-2. Activer l'agent invité si disponible : Applications ou service QEMU guest agent selon l'hyperviseur.
+2. Activer l'agent invité si disponible : Applications ou service [[Glossary:QEMU]] guest agent selon l'hyperviseur.
    ```bash
    systemctl status qemu-guest-agent
    ```

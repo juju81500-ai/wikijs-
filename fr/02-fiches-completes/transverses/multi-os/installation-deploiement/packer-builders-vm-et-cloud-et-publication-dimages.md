@@ -17,14 +17,14 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## 1. Périmètre et prérequis
 
-- Périmètre : création d'images dorées via builders VM (par exemple QEMU, VirtualBox, VMware, vSphere, Proxmox) et cloud (par exemple AWS, Azure, GCP, OpenStack), puis publication.
+- Périmètre : création d'images dorées via builders [[Glossary:VM]] (par exemple [[Glossary:QEMU]], VirtualBox, VMware, vSphere, Proxmox) et cloud (par exemple AWS, Azure, GCP, OpenStack), puis publication.
 - Prérequis : compte de service à droits minimaux, réseau vers l'hyperviseur/cloud, source d'ISO/image de base vérifiée (somme de contrôle officielle), secrets hors du dépôt (variables d'environnement, coffre-fort).
 - Les plugins sont distincts de Packer : chaque builder est un plugin d'intégration.
 
 ## 2. Exigences de version et licence
 
 - **Version de Packer et des plugins à figer avant déploiement** (contrainte `required_plugins` avec versions explicites).
-- Vérifier la licence actuelle de Packer (changement de licence de l'éditeur) et les conditions de redistribution des images ; licences OS des images (ex. RHEL, Windows) à respecter.
+- Vérifier la licence actuelle de Packer (changement de licence de l'éditeur) et les conditions de redistribution des images ; licences OS des images (ex. [[Glossary:RHEL]], Windows) à respecter.
 - Les frais cloud (stockage d'images, instances temporaires) sont à anticiper.
 
 ## 3. Procédure
@@ -41,7 +41,7 @@ packer validate .
 ```bash
 PACKER_LOG=1 packer build -var-file=lab.pkrvars.hcl .
 ```
-5. Après build : vérifier l'image dans la plateforme (liste de templates ou d'AMI), la démarrer, contrôler paquets, utilisateurs, clés SSH, services.
+5. Après build : vérifier l'image dans la plateforme (liste de templates ou d'AMI), la démarrer, contrôler paquets, utilisateurs, clés [[Glossary:SSH]], services.
 6. Durcir : supprimer clés, historiques, comptes de build temporaires, secrets, identifiants machine (`machine-id`) avant finalisation.
 7. Publier : taguer l'image (nom, version, date, commit), restreindre les droits de partage (privé par défaut) et enregistrer le manifeste (`manifest` post-processor).
 

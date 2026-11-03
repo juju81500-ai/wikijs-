@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_VM_ESXi_8_VMware_vSphere_Snapshots
 
-- **Environnement** : vCenter Server 8.x et VM jetable de laboratoire
+- **Environnement** : vCenter Server 8.x et [[Glossary:VM]] jetable de laboratoire
 - **OS / Version** : VMware vSphere 8.x
 - **Catégorie** : virtualisation / protection des VM
 - **Tags** : `vmware-vsphere`, `vsphere8`, `snapshot`, `vm`, `restauration`

@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-ubuntu-24-04-controle-mise-production.md
 
-- **Environnement** : VM ou serveur Ubuntu Server
-- **OS / Version** : Ubuntu Server 24-04 LTS
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu Server
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]]
 - **Catégorie** : Production / Validation / Exploitation
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[production]`, `[validation]`, `[sauvegarde]`, `[securite]`
 
 ## 🎯 Problème précis à résoudre
-Valider un serveur Ubuntu avant sa mise en production : réseau, cloud-init, mises à jour, SSH, AppArmor, pare-feu, sauvegarde et supervision.
+Valider un serveur Ubuntu avant sa mise en production : réseau, cloud-init, mises à jour, [[Glossary:SSH]], AppArmor, pare-feu, sauvegarde et supervision.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Identité, mises à jour, unités en échec :
@@ -36,13 +36,13 @@ Valider un serveur Ubuntu avant sa mise en production : réseau, cloud-init, mis
    sudo ufw status verbose
    sudo aa-status
    ```
-   👉 Explication : `netplan generate` valide la configuration; UFW et AppArmor actifs.
+   👉 Explication : `netplan generate` valide la configuration; [[Glossary:UFW]] et AppArmor actifs.
 
 3. Tester les ports applicatifs depuis un client autorisé :
    ```bash
    nc -zv IP_SERVEUR PORT
    ```
-   👉 Explication : remplacer IP et port; puis restaurer en environnement isolé.
+   👉 Explication : remplacer [[Glossary:IP]] et port; puis restaurer en environnement isolé.
 
 
 ## ⚡ 2. Production — Façon Simplifiée
@@ -76,6 +76,6 @@ Valider un serveur Ubuntu avant sa mise en production : réseau, cloud-init, mis
 - Conserver console hyperviseur et accès de secours jusqu'à validation externe.
 
 ## ✅ Validation et retour arrière
-- Tester service, SSH, DNS, réseau et alertes depuis les postes autorisés; conserver les preuves de validation.
+- Tester service, SSH, [[Glossary:DNS]], réseau et alertes depuis les postes autorisés; conserver les preuves de validation.
 - Restaurer une sauvegarde représentative dans une VM isolée.
 - En cas d'échec, suspendre la bascule, restaurer la configuration précédente ou reconstruire depuis l'ISO vérifié.

@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-ubuntu-26-04-librenms-configurer-php-fpm-nginx.md
 
-- **Environnement** : VM Ubuntu Server 26-04 dédiée à LibreNMS (Nginx, PHP-FPM, MariaDB, SNMP)
-- **OS / Version** : Ubuntu Server 26-04 LTS; LibreNMS 26.10.2; PHP 8.5
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 dédiée à LibreNMS (Nginx, PHP-FPM, MariaDB, [[Glossary:SNMP]])
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]]; LibreNMS 26.10.2; PHP 8.5
 - **Catégorie** : supervision / serveur web
 - **Tags** : `ubuntu2604`, `librenms`, `snmpv3`, `nginx`, `mariadb`
 
@@ -45,7 +45,7 @@ Créer un pool PHP-FPM dédié et un vhost Nginx pour LibreNMS.
 3. Définir la timezone dans `/etc/php/8.5/fpm/php.ini` et `/etc/php/8.5/cli/php.ini`.
    👉 Explication : garde un fuseau cohérent entre web et tâches.
 
-4. Créer `/etc/nginx/conf.d/librenms.conf` (remplacer `librenms.example.net` par le vrai nom DNS) :
+4. Créer `/etc/nginx/conf.d/librenms.conf` (remplacer `librenms.example.net` par le vrai nom [[Glossary:DNS]]) :
    ```nginx
    server {
      listen 80;
@@ -69,7 +69,7 @@ Créer un pool PHP-FPM dédié et un vhost Nginx pour LibreNMS.
      }
    }
    ```
-   👉 Explication : HTTP seulement pour le contrôle initial; ne pas exposer ainsi.
+   👉 Explication : [[Glossary:HTTP]] seulement pour le contrôle initial; ne pas exposer ainsi.
 
 5. Tester et redémarrer :
    ```bash
@@ -80,7 +80,7 @@ Créer un pool PHP-FPM dédié et un vhost Nginx pour LibreNMS.
 
 ## 2. Production — Contrôles
 
-Mettre le TLS au reverse proxy ou configurer un vhost HTTPS approuvé avant tout accès utilisateur; restreindre l'administration au réseau de gestion.
+Mettre le [[Glossary:TLS]] au reverse proxy ou configurer un vhost HTTPS approuvé avant tout accès utilisateur; restreindre l'administration au réseau de gestion.
 
 ## 3. Production — Sécurité
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_Windows_Server_2022_WDS_MDT_Securisation
 
-- **Environnement** : Windows Server 2022, WDS + MDT déjà installés selon la procédure historique
+- **Environnement** : Windows Server 2022, WDS + [[Glossary:MDT]] déjà installés selon la procédure historique
 - **OS / Version** : Windows Server 2022; WDS, MDT : vérifier la version publiée
 - **Catégorie** : Automatisation, déploiement et IaC
 - **Tags** : `windows-server-2022`, `wds`, `mdt`, `securisation`, `pxe`
@@ -24,7 +24,7 @@ Contrôler et compléter la sécurisation du serveur de déploiement. La créati
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Contrôler la politique de réponse PXE. GUI : `Outils d'administration > Services de déploiement Windows > clic droit sur le serveur > Propriétés > Réponse PXE`.
+1. Contrôler la politique de réponse [[Glossary:PXE]]. [[Glossary:GUI]] : `Outils d'administration > Services de déploiement Windows > clic droit sur le serveur > Propriétés > Réponse PXE`.
    ```powershell
    wdsutil /Get-Server /Show:Config
    ```
@@ -55,13 +55,13 @@ Revue après chaque changement d'image; supprimer les anciens comptes, journaux 
 
 ## 3. Production — Sécurité
 
-- Le compte lié au déploiement n'est pas administrateur de domaine; délégation limitée à l'ajout d'ordinateurs dans une OU dédiée.
+- Le compte lié au déploiement n'est pas administrateur de domaine; délégation limitée à l'ajout d'ordinateurs dans une [[Glossary:OU]] dédiée.
 - Les secrets vivent dans un coffre-fort, jamais dans les fichiers du partage.
-- Isoler le VLAN de déploiement et filtrer les accès au partage.
+- Isoler le [[Glossary:VLAN]] de déploiement et filtrer les accès au partage.
 
 ## Validation et retour arrière
 
-- **Validation** : politique PXE restrictive, ACL minimales, aucun secret dans les fichiers `.ini`, pare-feu restreint.
+- **Validation** : politique PXE restrictive, [[Glossary:ACL]] minimales, aucun secret dans les fichiers `.ini`, pare-feu restreint.
 - **Retour arrière** : ces contrôles sont en lecture seule. Si un correctif a été appliqué, restaurer les ACL ou `.ini` depuis la sauvegarde (fiche Sauvegarde/Restauration).
 
 ## Si le problème n'est pas résolu

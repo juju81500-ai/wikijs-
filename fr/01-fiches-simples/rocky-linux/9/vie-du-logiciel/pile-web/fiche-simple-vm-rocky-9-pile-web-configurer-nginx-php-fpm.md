@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-rocky-9-pile-web-configurer-nginx-php-fpm.md
 
-- **Environnement** : VM ou serveur Rocky Linux 9 hébergeant une application PHP avec MariaDB locale
-- **OS / Version** : Rocky Linux 9 / RHEL 9; Nginx, PHP-FPM et MariaDB des dépôts actifs
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux 9 hébergeant une application PHP avec MariaDB locale
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9; Nginx, PHP-FPM et MariaDB des dépôts actifs
 - **Catégorie** : services web / configuration
 - **Tags** : `rocky9`, `nginx`, `php-fpm`, `mariadb`, `selinux`
 

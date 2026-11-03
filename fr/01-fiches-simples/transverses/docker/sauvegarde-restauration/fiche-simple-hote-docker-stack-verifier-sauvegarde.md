@@ -42,7 +42,7 @@ S'assurer que la sauvegarde est complète, chiffrée et restaurable.
 4. Appliquer une rétention documentée et surveiller les échecs.
    👉 Explication : on évite saturation et échecs silencieux.
 
-5. Programmer un exercice de restauration sur une stack isolée, sans DNS ni données réelles.
+5. Programmer un exercice de restauration sur une stack isolée, sans [[Glossary:DNS]] ni données réelles.
    👉 Explication : seule une restauration testée prouve la sauvegarde.
 
 ## 2. Production — Contrôles

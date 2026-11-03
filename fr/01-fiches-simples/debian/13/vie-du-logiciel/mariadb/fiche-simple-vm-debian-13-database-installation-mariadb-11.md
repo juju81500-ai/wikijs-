@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Debian_13_Database_Installation-MariaDB-11.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
 - **Catégorie** : Bases de données / MariaDB
 - **Tags** : `[debian13]`, `[mariadb]`, `[database]`, `[sql]`, `[hardening]`
@@ -60,7 +60,7 @@ Installer le SGBD MariaDB 11 sur Debian 13, initialiser la sécurité d'accès, 
    ```
    👉 Explication : Remplacer l'adresse et le secret. N'utiliser ni `%` ni un mot de passe d'exemple ; ajouter des privilèges de migration uniquement pendant les migrations.
 
-4. Si l'application est sur un autre hôte, sauvegarder et modifier la directive `bind-address` dans `/etc/mysql/mariadb.conf.d/50-server.cnf` pour écouter sur l'IP privée du serveur DB. Vérifier que cette IP est assignée avant le redémarrage.
+4. Si l'application est sur un autre hôte, sauvegarder et modifier la directive `bind-address` dans `/etc/mysql/mariadb.conf.d/50-server.cnf` pour écouter sur l'[[Glossary:IP]] privée du serveur DB. Vérifier que cette IP est assignée avant le redémarrage.
    ```bash
    sudo mariadb -e "SHOW VARIABLES LIKE 'bind_address';"
    sudo systemctl restart mariadb
@@ -80,10 +80,10 @@ Installer le SGBD MariaDB 11 sur Debian 13, initialiser la sécurité d'accès, 
    require_secure_transport=ON
    local-infile=0
    ```
-   👉 Explication : Tester d'abord les clients TLS ; exiger le transport sécurisé peut refuser les clients non configurés.
+   👉 Explication : Tester d'abord les clients [[Glossary:TLS]] ; exiger le transport sécurisé peut refuser les clients non configurés.
 
 2. Restreindre la clé privée au compte du service et conserver la chaîne publique lisible :
    `sudo chown mysql:mysql /etc/mysql/ssl/server-key.pem && sudo chmod 600 /etc/mysql/ssl/server-key.pem`
    👉 Explication : Ne pas appliquer récursivement des permissions aux certificats, et vérifier que MariaDB peut lire la clé avant redémarrage.
 
-3. Autoriser TCP/3306 uniquement depuis l'adresse du serveur applicatif dans le pare-feu persistant géré par l'hôte. Valider et appliquer la règle par ce gestionnaire ; une commande `nft add rule` seule n'est pas persistante.
+3. Autoriser [[Glossary:TCP]]/3306 uniquement depuis l'adresse du serveur applicatif dans le pare-feu persistant géré par l'hôte. Valider et appliquer la règle par ce gestionnaire ; une commande `nft add rule` seule n'est pas persistante.

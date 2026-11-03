@@ -25,7 +25,7 @@ Réduire l’exposition du serveur Debian 13 utilisé par le Transporter et prot
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Autoriser seulement les flux explicitement requis par la version NAKIVO, entre les systèmes NAKIVO et l’hôte concerné.
-   👉 Explication : ouvrir les ports strictement nécessaires selon la documentation courante; ne pas exposer l’accès SSH sur Internet.
+   👉 Explication : ouvrir les ports strictement nécessaires selon la documentation courante; ne pas exposer l’accès [[Glossary:SSH]] sur Internet.
 
 2. Utiliser un compte d’administration dédié avec les privilèges nécessaires; conserver les identifiants dans le coffre approuvé, jamais dans cette fiche.
    👉 Explication : l’accès SSH permet l’administration distante du serveur.

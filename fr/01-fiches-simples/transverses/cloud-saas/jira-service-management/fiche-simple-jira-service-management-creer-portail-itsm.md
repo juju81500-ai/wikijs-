@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : Jira Service Management Cloud
 - **OS / Version** : N/A — service SaaS
-- **Catégorie** : Service / ITSM
+- **Catégorie** : Service / [[Glossary:ITSM]]
 - **Tags** : `jira-service-management`, `cloud`, `itsm`, `portail`, `permissions`
 
 ---
@@ -48,8 +48,8 @@ Créer un portail de service ITSM opérationnel sans ouvrir l'accès client par 
 
 - Garder l'accès clients sur **Restricted** ou domaines explicitement approuvés, sauf décision métier documentée.
 - Désactiver le partage entre clients s'il n'est pas nécessaire; vérifier l'effet du partage par organisation.
-- Activer SSO/MFA pour les agents et gérer leur arrivée/départ par groupe.
-- Ne pas demander mots de passe, clés API ou données sensibles dans les champs de demande.
+- Activer [[Glossary:SSO]]/MFA pour les agents et gérer leur arrivée/départ par groupe.
+- Ne pas demander mots de passe, clés [[Glossary:API]] ou données sensibles dans les champs de demande.
 - Tester séparément les rôles d'agent, client et administrateur avant ouverture du portail.
 
 ## ✅ Validation et retour arrière

@@ -23,7 +23,7 @@ Fiche défensive d’administration et de gouvernance. Elle ne remplace pas le g
 
 ## 🧭 Périmètre
 
-Administrer la console avec comptes nominatifs, RBAC, MFA selon les intégrations prises en charge, accès au réseau de gestion restreint et sauvegardes chiffrées. Gérer certificats, nœuds/HA, politiques d’accès et intégrations RADIUS dans le processus de changement; protéger les données d’identité et journaux selon la politique de confidentialité. Consulter la documentation correspondant à la version et au rôle des nœuds.
+Administrer la console avec comptes nominatifs, [[Glossary:RBAC]], [[Glossary:MFA]] selon les intégrations prises en charge, accès au réseau de gestion restreint et sauvegardes chiffrées. Gérer certificats, nœuds/HA, politiques d’accès et intégrations [[Glossary:RADIUS]] dans le processus de changement; protéger les données d’identité et journaux selon la politique de confidentialité. Consulter la documentation correspondant à la version et au rôle des nœuds.
 
 ## ✅ Autorisation et préparation
 

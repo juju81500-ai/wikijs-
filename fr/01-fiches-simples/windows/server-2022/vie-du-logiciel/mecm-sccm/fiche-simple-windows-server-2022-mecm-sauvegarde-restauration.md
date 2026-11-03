@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_Windows_Server_2022_MECM_Sauvegarde_Restauration
 
-- **Environnement** : Windows Server 2022, site primaire MECM/SCCM, base SQL Server
+- **Environnement** : Windows Server 2022, site primaire MECM/SCCM, base [[Glossary:SQL]] Server
 - **OS / Version** : Windows Server 2022; Configuration Manager et SQL Server : vérifier la version publiée
 - **Catégorie** : Automatisation, déploiement et IaC
 - **Tags** : `windows-server-2022`, `mecm`, `sccm`, `sauvegarde`, `restauration`
@@ -24,7 +24,7 @@ Planifier la sauvegarde du site MECM/SCCM et préparer sa restauration.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Activer la tâche de sauvegarde. GUI : `Administration > Configuration du site > Sites > Paramètres > Tâches de maintenance de site > Sauvegarder le serveur de site`; cocher `Activer`, renseigner le chemin (à remplacer : `\\SERVEUR-SAUVEGARDE\MECM_BACKUP`) et le planning.
+1. Activer la tâche de sauvegarde. [[Glossary:GUI]] : `Administration > Configuration du site > Sites > Paramètres > Tâches de maintenance de site > Sauvegarder le serveur de site`; cocher `Activer`, renseigner le chemin (à remplacer : `\\SERVEUR-SAUVEGARDE\MECM_BACKUP`) et le planning.
    👉 Explication : la tâche utilise le service `SMS_SITE_BACKUP`; le chemin doit être accessible en écriture par le compte machine du serveur de site. Pas d'équivalent PowerShell vérifié ici : vérifier la version publiée.
 
 2. Lancer la sauvegarde. GUI : `Services > Services Windows`.
@@ -39,7 +39,7 @@ Planifier la sauvegarde du site MECM/SCCM et préparer sa restauration.
    ```
    👉 Explication : on doit voir un dossier `CODESITEBackup` récent. Sauvegarder aussi le dossier de contenu (sources des applications) et les certificats, qui ne sont pas tous inclus : vérifier la documentation.
 
-4. Tester la restauration en laboratoire sur une VM isolée : exécuter `setup.exe` du média, choisir `Recover a site`, indiquer le dossier de sauvegarde.
+4. Tester la restauration en laboratoire sur une [[Glossary:VM]] isolée : exécuter `setup.exe` du média, choisir `Recover a site`, indiquer le dossier de sauvegarde.
    👉 Explication : la restauration réelle suit la page « Recover sites » de Microsoft; elle dépend du scénario (perte du serveur de site ou de la base). Ne jamais tester sur la production.
 
 ## 2. Production — Contrôles
@@ -48,7 +48,7 @@ Surveiller le succès quotidien (`Surveillance > État des composants > SMS_SITE
 
 ## 3. Production — Sécurité
 
-- Chemin de sauvegarde restreint (ACL) et chiffré; copie hors site.
+- Chemin de sauvegarde restreint ([[Glossary:ACL]]) et chiffré; copie hors site.
 - Éviter les snapshots de VM comme seule sauvegarde d'un site : risque d'incohérence avec SQL.
 
 ## Validation et retour arrière

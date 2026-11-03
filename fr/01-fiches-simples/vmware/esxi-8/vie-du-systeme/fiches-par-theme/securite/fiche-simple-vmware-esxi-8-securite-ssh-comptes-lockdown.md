@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 fiche-simple-vmware-esxi-8-securite-ssh-comptes-lockdown.md
 
-- **Environnement** : Hôte physique VMware ESXi 8 (DCUI, ESXi Shell, SSH, vSphere Client)
+- **Environnement** : Hôte physique VMware ESXi 8 (DCUI, ESXi Shell, [[Glossary:SSH]], vSphere Client)
 - **OS / Version** : VMware ESXi 8.0 - Accès d'administration
 - **Catégorie** : Sécurité / Accès distant, comptes et lockdown
 - **Tags** : `[vmware-esxi-8]`, `[ssh]`, `[esxi-shell]`, `[lockdown]`, `[comptes]`, `[hardening]`

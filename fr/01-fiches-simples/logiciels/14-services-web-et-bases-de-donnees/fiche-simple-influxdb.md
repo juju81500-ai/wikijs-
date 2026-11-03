@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 InfluxDB
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : InfluxDB 2.x (dépôt officiel InfluxData, Debian 12 ne fournit pas InfluxDB dans ses dépôts ; version à vérifier sur la version déployée)
 - **Catégorie** : Services Web et bases de données
@@ -61,7 +61,7 @@ Dans l'éditeur, ajouter :
 [Service]
 Environment="INFLUXD_HTTP_BIND_ADDRESS=192.168.10.60:8086"
 ```
-👉 Explication : Limite l'écoute HTTP à l'adresse `192.168.10.60` (à adapter). La variable d'environnement de l'écoute est à vérifier sur la version déployée. `ss` confirme le port 8086 et l'adresse d'écoute.
+👉 Explication : Limite l'écoute [[Glossary:HTTP]] à l'adresse `192.168.10.60` (à adapter). La variable d'environnement de l'écoute est à vérifier sur la version déployée. `ss` confirme le port 8086 et l'adresse d'écoute.
 
 2. Création d'un jeton limité à un seul bucket pour l'application :
 ```bash
@@ -70,7 +70,7 @@ influx auth create --org lab_org --description appli_mesures --read-bucket $BID 
 ```
 👉 Explication : Le jeton affiché une seule fois est à copier dans le coffre-fort du pack. Il ne donne accès qu'au bucket `essai_lab` (à remplacer par le bucket de production). Le nom du sous-commande `bucket find` est à vérifier sur la version déployée.
 
-3. Ouverture du pare-feu pour l'application et l'administration SSH :
+3. Ouverture du pare-feu pour l'application et l'administration [[Glossary:SSH]] :
 ```bash
 sudo apt install -y ufw
 sudo ufw allow from 192.168.10.0/24 to any port 22 proto tcp

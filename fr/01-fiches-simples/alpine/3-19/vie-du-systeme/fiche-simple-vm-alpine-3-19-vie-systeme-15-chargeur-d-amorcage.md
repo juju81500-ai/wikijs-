@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_15_Chargeur_D_Amorcage
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 15 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-15`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Vérifier le chargeur installé par `setup-disk` (syslinux en BIOS, GRUB en UEFI).
+Vérifier le chargeur installé par `setup-disk` (syslinux en [[Glossary:BIOS]], [[Glossary:GRUB]] en UEFI).
 
 ## 1. Hors-Production (Lab / Test / POC)
 

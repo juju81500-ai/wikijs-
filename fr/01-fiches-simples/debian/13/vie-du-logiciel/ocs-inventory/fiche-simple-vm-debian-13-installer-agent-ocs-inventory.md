@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-debian-13-installer-agent-ocs-inventory.md
 
-- **Environnement** : VM Debian 13 membre d'un parc inventorié
+- **Environnement** : [[Glossary:VM]] Debian 13 membre d'un parc inventorié
 - **OS / Version** : Debian 13 Trixie, agent OCS Inventory 3
 - **Catégorie** : Système / inventaire
 - **Tags** : `debian13`, `ocs-inventory`, `agent`, `inventaire`, `https`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 🎯 Problème précis à résoudre
 
-Installer l'agent OCS 3 depuis le dépôt officiel et le configurer pour remonter un inventaire vers une API autorisée.
+Installer l'agent OCS 3 depuis le dépôt officiel et le configurer pour remonter un inventaire vers une [[Glossary:API]] autorisée.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 
@@ -36,7 +36,7 @@ Installer l'agent OCS 3 depuis le dépôt officiel et le configurer pour remonte
 
 ## ⚡ 2. Production — Façon Simplifiée
 
-1. Ajouter le dépôt officiel (la clé est vérifiée par APT) :
+1. Ajouter le dépôt officiel (la clé est vérifiée par [[Glossary:APT]]) :
    ```bash
    curl -fsSL https://deb-v3.ocsinventory-ng.org/repo-signing-key.gpg | sudo gpg --dearmor -o /etc/apt/trusted.gpg.d/ocs-archive-keyring.gpg
    echo "deb https://deb-v3.ocsinventory-ng.org/ trixie main" | sudo tee /etc/apt/sources.list.d/ocsinventory.list
@@ -49,7 +49,7 @@ Installer l'agent OCS 3 depuis le dépôt officiel et le configurer pour remonte
    ```bash
    sudo /usr/share/ocsinventory-agent/install.sh
    ```
-   👉 Explication : choisir le mode distant `1`, saisir l'URL API HTTPS puis le compte et son secret à l'invite; ne pas désactiver la validation TLS.
+   👉 Explication : choisir le mode distant `1`, saisir l'URL API HTTPS puis le compte et son secret à l'invite; ne pas désactiver la validation [[Glossary:TLS]].
 
 3. Vérifier la configuration et lancer un inventaire :
    ```bash
@@ -63,14 +63,14 @@ Installer l'agent OCS 3 depuis le dépôt officiel et le configurer pour remonte
 
 ## 🔒 3. Production — Façon Sécurisée
 
-- Utiliser le certificat TLS approuvé par le système; si une CA privée est utilisée, installer sa racine dans le magasin de confiance et conserver `bypass_certificate: false`.
+- Utiliser le certificat TLS approuvé par le système; si une [[Glossary:CA]] privée est utilisée, installer sa racine dans le magasin de confiance et conserver `bypass_certificate: false`.
 - Ne pas utiliser un compte administrateur humain pour l'agent; accorder seulement les permissions de consultation et d'envoi d'inventaire requises.
 - Restreindre les connexions sortantes à l'URL/API OCS nécessaire et protéger le secret agent.
 - Ne pas activer les fonctions de déploiement de paquets/actions à distance sans gouvernance distincte, validation de changements et approbation explicite.
 
 ## ✅ Validation et retour arrière
 
-- **Précontrôles** : version Debian, DNS, certificat et compte agent autorisé.
+- **Précontrôles** : version Debian, [[Glossary:DNS]], certificat et compte agent autorisé.
 - **Validation** : exécution `ocsinventory-cli`, état `ocsinventory-agent.service`, puis présence de la VM dans la console.
 - **Retour arrière** : arrêter le service et désinstaller avec `sudo apt remove ocsinventory-agent`; préserver `config.json` uniquement si sa protection et sa nécessité sont vérifiées.
 

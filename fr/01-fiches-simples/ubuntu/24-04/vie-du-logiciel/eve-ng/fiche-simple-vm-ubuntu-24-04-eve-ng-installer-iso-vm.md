@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_EVE-NG_Installer_ISO_VM
 
-- **Environnement** : VM EVE-NG (appliance basée sur Ubuntu Server 24-04 LTS) hébergée sur un poste ou serveur de virtualisation
+- **Environnement** : [[Glossary:VM]] EVE-NG (appliance basée sur Ubuntu Server 24-04 [[Glossary:LTS]]) hébergée sur un poste ou serveur de virtualisation
 - **OS / Version** : EVE-NG 7.x (7.2.0-18 au contrôle du 29/10/2026), Ubuntu 24-04 LTS embarqué; Community 6.2.0-4 (Ubuntu 22-04) en fin de support juin 2026
 - **Catégorie** : simulation réseau / installation
 - **Tags** : `ubuntu24.04`, `eve-ng`, `installation`, `iso`, `vmware-workstation`, `vm`
@@ -35,19 +35,19 @@ Installer EVE-NG dans une VM à partir de l'ISO officiel. EVE-NG installe son pr
 2. Dans VMware Workstation Pro : **File > New Virtual Machine > Custom > Next**, choisir **I will install the operating system later**, système invité **Linux**, version **Ubuntu 64-bit**, nommer la VM `EVE-NG-LAB`.
    👉 Explication : procédure du cookbook officiel (section 3.1); la VM est créée sans OS pour fixer d'abord le matériel.
 
-3. Régler le matériel : processeurs selon le dimensionnement, **cores per processor = 1**, RAM selon le calculateur, disque d'au moins 200 Go en **un seul fichier**, contrôleur LSI Logic, disque SCSI, carte réseau NAT (portable) ou Bridged (poste fixe).
-   👉 Explication : valeurs du cookbook; Internet et DNS doivent être joignables depuis la VM.
+3. Régler le matériel : processeurs selon le dimensionnement, **cores per processor = 1**, [[Glossary:RAM]] selon le calculateur, disque d'au moins 200 Go en **un seul fichier**, contrôleur LSI Logic, disque SCSI, carte réseau [[Glossary:NAT]] (portable) ou Bridged (poste fixe).
+   👉 Explication : valeurs du cookbook; Internet et [[Glossary:DNS]] doivent être joignables depuis la VM.
 
 4. Dans **Customize Hardware > Processors**, cocher **Virtualize Intel VT-x/EPT or AMD-V/RVI** et **Virtualize IOMMU**; dans **CD/DVD**, choisir **Use ISO image file** et sélectionner l'ISO EVE-NG. En firmware UEFI, désactiver **Secure Boot**.
-   👉 Explication : sans virtualisation imbriquée, les nœuds QEMU ne démarrent pas; Secure Boot doit être désactivé selon le cookbook.
+   👉 Explication : sans virtualisation imbriquée, les nœuds [[Glossary:QEMU]] ne démarrent pas; Secure Boot doit être désactivé selon le cookbook.
 
 5. Démarrer la VM, choisir **Install EVE NG Pro Server**, langue **English**, clavier **English US**, puis **Continue**. Ne pas se connecter pendant la phase 2.
    👉 Explication : phase 1 (Ubuntu) puis redémarrage automatique; phase 2 (EVE-NG) s'exécute seule. ⚠️ La version 7 annonce un « installateur avec interface au premier démarrage » : les écrans peuvent différer légèrement du cookbook 7.9; suivre l'assistant affiché.
 
-6. À l'écran de connexion CLI, se connecter avec l'identifiant par défaut documenté `root` / `eve`, puis renseigner l'assistant IP : nom d'hôte `HOTE_EVE`, adresse `IP_EVE`, masque `MASQUE_EVE`, passerelle `PASSERELLE_EVE`, DNS `DNS_EVE` et un mot de passe root fort `MOT_DE_PASSE_ROOT_EVE`.
+6. À l'écran de connexion [[Glossary:CLI]], se connecter avec l'identifiant par défaut documenté `root` / `eve`, puis renseigner l'assistant [[Glossary:IP]] : nom d'hôte `HOTE_EVE`, adresse `IP_EVE`, masque `MASQUE_EVE`, passerelle `PASSERELLE_EVE`, DNS `DNS_EVE` et un mot de passe root fort `MOT_DE_PASSE_ROOT_EVE`.
    👉 Explication : les valeurs en majuscules sont à remplacer par celles de votre lab; l'IP statique est la méthode préférée par l'éditeur. Le mot de passe root par défaut est remplacé dans cet assistant : ne jamais conserver `eve`.
 
-7. Après redémarrage, se connecter en SSH ou à la console et vérifier la version et le réseau :
+7. Après redémarrage, se connecter en [[Glossary:SSH]] ou à la console et vérifier la version et le réseau :
    ```bash
    dpkg -l eve-ng-pro
    ping -c 3 www.eve-ng.net

@@ -44,7 +44,7 @@ Prouver que la sauvegarde est restaurable.
 
 ## 2. Production — Contrôles
 
-Tester une restauration complète périodiquement et chronométrer (RTO) pour la comparer à l'objectif.
+Tester une restauration complète périodiquement et chronométrer ([[Glossary:RTO]]) pour la comparer à l'objectif.
 
 ## 3. Production — Sécurité
 

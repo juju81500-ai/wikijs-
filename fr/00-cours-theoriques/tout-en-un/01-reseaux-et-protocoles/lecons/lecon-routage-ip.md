@@ -25,18 +25,18 @@ dateModified: 2026-11-03T09:36:13Z
 - lire une table de routage ligne par ligne (préfixe, saut suivant, interface, métrique) ;
 - appliquer la règle du préfixe le plus long et expliquer la route par défaut ;
 - créer des routes statiques (Linux, exemple de type Cisco IOS) et penser à la route retour ;
-- décrire le principe de RIP, OSPF et BGP et choisir une famille de protocole selon le contexte ;
+- décrire le principe de RIP, [[Glossary:OSPF]] et [[Glossary:BGP]] et choisir une famille de protocole selon le contexte ;
 - diagnostiquer une panne de routage avec `ip route get`, `ping` et `traceroute`.
 
 ## Prérequis et durée
 
-- Adressage IPv4, masque et notation CIDR ; notion de commutateur et de VLAN ([leçon sur la commutation](/fr/00-cours-theoriques/tout-en-un/01-reseaux-et-protocoles/lecons/lecon-commutation-ethernet-vlan)).
-- Terminal Linux ; pour le laboratoire, une VM Linux jetable avec `iproute2` (`traceroute` optionnel).
+- Adressage IPv4, masque et notation [[Glossary:CIDR]] ; notion de commutateur et de [[Glossary:VLAN]] ([leçon sur la commutation](/fr/00-cours-theoriques/tout-en-un/01-reseaux-et-protocoles/lecons/lecon-commutation-ethernet-vlan)).
+- Terminal Linux ; pour le laboratoire, une [[Glossary:VM]] Linux jetable avec `iproute2` (`traceroute` optionnel).
 - Durée : environ 3 h 30.
 
 ## L'essentiel en bref
 
-- Un **routeur** relie des réseaux IP différents et transmet les paquets d'un réseau à l'autre.
+- Un **routeur** relie des réseaux [[Glossary:IP]] différents et transmet les paquets d'un réseau à l'autre.
 - La **passerelle par défaut** est le routeur local vers lequel un hôte envoie tout ce qui n'est pas dans son propre sous-réseau.
 - La **table de routage** associe un préfixe de destination à un saut suivant et/ou une interface ; le **préfixe le plus long** gagne ; `0.0.0.0/0` est la route par défaut.
 - Une **route statique** est écrite à la main ; elle est simple, prévisible, mais ne s'adapte pas aux pannes.
@@ -51,7 +51,7 @@ Un routeur est un carrefour avec des panneaux : il ne connaît pas toute la rout
 
 ### 1.2 La décision de l'hôte
 
-Avant d'émettre, un hôte compare l'adresse de destination à **son propre sous-réseau** (adresse et masque). Si la destination est dans le même sous-réseau, il demande l'adresse MAC par ARP et envoie directement. Sinon, il envoie la trame à sa **passerelle par défaut** : l'adresse IP de destination reste celle du serveur lointain, mais l'adresse MAC de destination devient celle de la passerelle.
+Avant d'émettre, un hôte compare l'adresse de destination à **son propre sous-réseau** (adresse et masque). Si la destination est dans le même sous-réseau, il demande l'adresse MAC par [[Glossary:ARP]] et envoie directement. Sinon, il envoie la trame à sa **passerelle par défaut** : l'adresse IP de destination reste celle du serveur lointain, mais l'adresse MAC de destination devient celle de la passerelle.
 
 ![Organigramme de la décision d'envoi d'un paquet : sous-réseau local, passerelle, recherche dans la table, route par défaut ou abandon](images/routage-ip-2.svg)
 
@@ -59,7 +59,7 @@ Avant d'émettre, un hôte compare l'adresse de destination à **son propre sous
 
 ### 1.3 Ce qui change à chaque saut
 
-À chaque routeur traversé : l'adresse IP source et destination **ne changent pas** (hors NAT, traité dans la [leçon NAT, ACL et CLI](/fr/00-cours-theoriques/tout-en-un/01-reseaux-et-protocoles/lecons/lecon-nat-acl-cisco-ios)) ; les adresses MAC sont **réécrites** ; le champ TTL (durée de vie) est décrémenté de 1 ; la somme de contrôle d'en-tête est recalculée. Si le TTL tombe à 0, le routeur abandonne le paquet et renvoie un message ICMP « Time Exceeded » : c'est ce que `traceroute` exploite.
+À chaque routeur traversé : l'adresse IP source et destination **ne changent pas** (hors [[Glossary:NAT]], traité dans la [leçon NAT, ACL et CLI](/fr/00-cours-theoriques/tout-en-un/01-reseaux-et-protocoles/lecons/lecon-nat-acl-cisco-ios)) ; les adresses MAC sont **réécrites** ; le champ [[Glossary:TTL]] (durée de vie) est décrémenté de 1 ; la somme de contrôle d'en-tête est recalculée. Si le TTL tombe à 0, le routeur abandonne le paquet et renvoie un message [[Glossary:ICMP]] « Time Exceeded » : c'est ce que `traceroute` exploite.
 
 Pour voir la configuration d'un hôte Linux (lecture seule) :
 
@@ -77,7 +77,7 @@ Get-NetIPConfiguration
 Get-NetRoute -AddressFamily IPv4 | Sort-Object DestinationPrefix
 ```
 
-👉 Explication : affiche adresses, passerelles et DNS, puis les routes IPv4 triées par préfixe. Lecture seule.
+👉 Explication : affiche adresses, passerelles et [[Glossary:DNS]], puis les routes IPv4 triées par préfixe. Lecture seule.
 
 ## 2. La table de routage
 
@@ -233,7 +233,7 @@ R1# show ip route ospf
 
 ### 4.5 BGP : le routage d'Internet
 
-BGP (version 4, RFC 4271) relie les **systèmes autonomes**, identifiés par un numéro d'AS. Il fonctionne sur TCP (port 179) entre voisins configurés explicitement. Au lieu d'optimiser un coût, il choisit selon des **attributs** et des **politiques** (chemin d'AS le plus court, préférence locale, filtres commerciaux) : « je choisis ce chemin parce que mon contrat avec tel opérateur le prévoit », pas seulement parce qu'il est court. On distingue **eBGP** (entre AS différents) et **iBGP** (à l'intérieur d'un AS). Il converge prudemment et passe à l'échelle de centaines de milliers de préfixes ; une erreur de configuration chez un opérateur peut affecter beaucoup de monde, d'où l'usage strict des filtres. Une PME ne le rencontre généralement que si elle possède ses propres blocs d'adresses et plusieurs opérateurs.
+BGP (version 4, RFC 4271) relie les **systèmes autonomes**, identifiés par un numéro d'AS. Il fonctionne sur [[Glossary:TCP]] (port 179) entre voisins configurés explicitement. Au lieu d'optimiser un coût, il choisit selon des **attributs** et des **politiques** (chemin d'AS le plus court, préférence locale, filtres commerciaux) : « je choisis ce chemin parce que mon contrat avec tel opérateur le prévoit », pas seulement parce qu'il est court. On distingue **eBGP** (entre AS différents) et **iBGP** (à l'intérieur d'un AS). Il converge prudemment et passe à l'échelle de centaines de milliers de préfixes ; une erreur de configuration chez un opérateur peut affecter beaucoup de monde, d'où l'usage strict des filtres. Une PME ne le rencontre généralement que si elle possède ses propres blocs d'adresses et plusieurs opérateurs.
 
 ### 4.6 Choisir
 
@@ -366,7 +366,7 @@ A. la bande passante — B. le délai — C. le nombre de sauts — D. le coût 
 A. un EGP à vecteur de chemins — B. un IGP à état de liens — C. un IGP à vecteur de distance — D. un protocole de couche 2
 
 **Q7.** BGP est principalement utilisé…
-A. dans un LAN — B. entre systèmes autonomes — C. entre un poste et son DNS — D. pour attribuer des adresses
+A. dans un [[Glossary:LAN]] — B. entre systèmes autonomes — C. entre un poste et son DNS — D. pour attribuer des adresses
 
 **Q8.** `ping` part mais aucune réponse ne revient, alors que la route aller est correcte. Hypothèse la plus probable ?
 A. la route retour manque — B. le TTL est trop grand — C. le masque est en `/24` — D. ICMP n'existe pas

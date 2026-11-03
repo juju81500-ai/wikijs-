@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Catégorie** : Virtualisation et conteneurisation
 - **Plateforme** : Appliance
-- **Produit (matrice)** : Nutanix AHV
+- **Produit (matrice)** : Nutanix [[Glossary:AHV]]
 - **Statut dans le pack** : Matériel/éditeur propriétaire — hors périmètre pas à pas
 - **Tags** : `logiciel`, `03-virtualisation-et-conteneurisation`, `hors-perimetre`
 

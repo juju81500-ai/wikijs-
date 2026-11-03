@@ -18,7 +18,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [cadrer le cluster](/fr/01-fiches-simples/debian/13/vie-du-logiciel/kubernetes-k3s/fiche-simple-vm-debian-13-k3s-cadrer).
 
-Choisir la version K3s supportée, le nombre de serveurs, le datastore (SQLite pour un nœud simple, etcd ou datastore externe pour HA selon la documentation), les adresses fixes, le CNI, le stockage et l'ingress. Définir les ports entre nœuds et les règles d'accès à l'API. Les versions Debian 13 et K3s retenues doivent apparaître dans leurs matrices de compatibilité.
+Choisir la version K3s supportée, le nombre de serveurs, le datastore (SQLite pour un nœud simple, etcd ou datastore externe pour HA selon la documentation), les adresses fixes, le CNI, le stockage et l'ingress. Définir les ports entre nœuds et les règles d'accès à l'[[Glossary:API]]. Les versions Debian 13 et K3s retenues doivent apparaître dans leurs matrices de compatibilité.
 
 Sauvegarder le datastore et protéger le token de cluster ; ce token permet de rejoindre le cluster et doit être traité comme un secret.
 
@@ -44,14 +44,14 @@ Fiche simple : [ajouter des nœuds et applications](/fr/01-fiches-simples/debian
 
 Ajouter des agents avec l'adresse API, le token conservé dans un coffre et la même version majeure/mineure selon la politique de mise à niveau. Vérifier l'état `Ready` avant de déployer. Utiliser des manifests versionnés, des namespaces, des ressources requests/limits et des secrets gérés hors dépôt.
 
-Déployer d'abord une application de test sans données importantes, puis vérifier résolution DNS, stockage persistant, exposition Ingress, certificats et politiques réseau.
+Déployer d'abord une application de test sans données importantes, puis vérifier résolution [[Glossary:DNS]], stockage persistant, exposition Ingress, certificats et politiques réseau.
 
 ## 4. Sécuriser et surveiller
 
 Fiche simple : [sécuriser et surveiller](/fr/01-fiches-simples/debian/13/vie-du-logiciel/kubernetes-k3s/fiche-simple-vm-debian-13-k3s-securiser-surveiller).
 
 - Restreindre l'API Kubernetes aux réseaux d'administration.
-- Appliquer RBAC minimal et séparer les comptes opérateur.
+- Appliquer [[Glossary:RBAC]] minimal et séparer les comptes opérateur.
 - Ne pas exposer les services via `NodePort` ou `LoadBalancer` sans filtrage amont.
 - Surveiller capacité, certificats, événements, composants système et sauvegardes.
 - Éviter les conteneurs privilégiés et les montages d'hôte non nécessaires.

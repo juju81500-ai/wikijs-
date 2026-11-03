@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 Fiche_Simple_-_VM_Windows_Server_2022_Systeme_Nom_Et_Fuseau
 
-- **Environnement** : VM (Windows Server 2022)
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022)
 - **OS / Version** : Windows Server 2022 - Famille Windows Server
 - **Catégorie** : Système & Services / Identité et configuration de base
 - **Tags** : `[windows-server-2022]`, `[powershell]`, `[rename-computer]`, `[timezone]`, `[w32tm]`
@@ -51,7 +51,7 @@ Donner à un serveur Windows Server 2022 un nom d'hôte conforme à la conventio
    ```powershell
    Rename-Computer -NewName "<nom_du_serveur>" -DomainCredential (Get-Credential "<nom_domaine>\<compte_admin>") -Restart
    ```
-   👉 Explication : Demande les identifiants d'un compte autorisé à modifier l'objet ordinateur dans Active Directory, puis redémarre. Mettre à jour ensuite les enregistrements DNS et la supervision liés à l'ancien nom.
+   👉 Explication : Demande les identifiants d'un compte autorisé à modifier l'objet ordinateur dans Active Directory, puis redémarre. Mettre à jour ensuite les enregistrements [[Glossary:DNS]] et la supervision liés à l'ancien nom.
 2. Vérifier la source de temps et l'écart d'horloge après application du fuseau :
    ```powershell
    w32tm /query /status
@@ -72,7 +72,7 @@ Donner à un serveur Windows Server 2022 un nom d'hôte conforme à la conventio
    secedit /export /cfg "C:\Audit\secpol.inf"
    Select-String -Path "C:\Audit\secpol.inf" -Pattern "SeTimeZonePrivilege"
    ```
-   👉 Explication : Ce droit doit rester limité aux administrateurs. Si d'autres comptes y figurent, corriger la GPO « Attribution des droits utilisateur ».
+   👉 Explication : Ce droit doit rester limité aux administrateurs. Si d'autres comptes y figurent, corriger la [[Glossary:GPO]] « Attribution des droits utilisateur ».
 3. Vérifier que le serveur de domaine (PDC émulateur) est bien la source de temps d'un membre du domaine :
    ```powershell
    w32tm /query /source

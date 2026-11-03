@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **Environnement** : Poste Windows 11 x64 d'administration
 - **OS / Version** : Windows 11 x64; PuTTY 0.85 Stable
-- **Catégorie** : client SSH / données
+- **Catégorie** : client [[Glossary:SSH]] / données
 - **Tags** : `putty`, `windows11`, `ssh`, `puttygen`, `host-key`
 
 ---
@@ -24,7 +24,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Laisser la journalisation désactivée; si une politique l'impose, **Session > Logging**, choisir un dossier approuvé à ACL restreintes.
+1. Laisser la journalisation désactivée; si une politique l'impose, **Session > Logging**, choisir un dossier approuvé à [[Glossary:ACL]] restreintes.
    👉 Explication : les sorties peuvent contenir identifiants et données métier.
 
 2. Définir rotation et rétention des journaux, et les relire avant tout partage.

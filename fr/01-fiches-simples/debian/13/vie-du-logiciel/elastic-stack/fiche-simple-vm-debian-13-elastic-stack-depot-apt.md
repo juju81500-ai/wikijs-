@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : Elasticsearch et Kibana sur Debian 13, nœud unique
 - **OS / Version** : Debian 13; Elasticsearch et Kibana 9.5.x
-- **Catégorie** : journalisation / dépôt APT
+- **Catégorie** : journalisation / dépôt [[Glossary:APT]]
 - **Tags** : `debian13`, `elastic`, `apt`, `gpg`, `depot`
 
 ---

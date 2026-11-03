@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_Dovecot_Configurer
 
-- **Environnement** : VM Ubuntu Server 24-04; Dovecot depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04; Dovecot depuis les dépôts de la distribution
 - **OS / Version** : Ubuntu Server 24-04
 - **Catégorie** : Vie du logiciel / Dovecot — Configurer
 - **Tags** : `dovecot`, `serveur`, `vie-du-logiciel`, `configurer`
@@ -42,7 +42,7 @@ Tracer les paramètres, les domaines et les réseaux autorisés; contrôler la s
 
 ## 3. Production — Sécurité
 
-Postfix : garder `reject_unauth_destination` et limiter `mynetworks`. Dovecot : activer TLS selon la version et les protocoles utilisés.
+Postfix : garder `reject_unauth_destination` et limiter `mynetworks`. Dovecot : activer [[Glossary:TLS]] selon la version et les protocoles utilisés.
 
 ## Validation et retour arrière
 

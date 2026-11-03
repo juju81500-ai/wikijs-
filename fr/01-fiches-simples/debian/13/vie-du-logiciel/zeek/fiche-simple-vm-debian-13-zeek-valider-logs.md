@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-zeek-valider-logs.md
 
-- **Environnement** : VM Debian 13 capteur passif Zeek standalone sur interface miroir approuvée
-- **OS / Version** : Debian 13 Trixie; Zeek 8.0 LTS (dépôt OBS officiel)
+- **Environnement** : [[Glossary:VM]] Debian 13 capteur passif Zeek standalone sur interface miroir approuvée
+- **OS / Version** : Debian 13 Trixie; Zeek 8.0 [[Glossary:LTS]] (dépôt OBS officiel)
 - **Catégorie** : supervision / analyse passive du trafic
 - **Tags** : `debian13`, `zeek`, `zeekctl`, `af-packet`, `network-monitoring`
 

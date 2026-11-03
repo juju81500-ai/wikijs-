@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_ownCloud_Installer
 
-- **Environnement** : VM Rocky Linux 9; ownCloud Infinite Scale (oCIS), binaire officiel
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9; ownCloud Infinite Scale (oCIS), binaire officiel
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : Vie du logiciel / ownCloud — Installer
 - **Tags** : `owncloud`, `serveur`, `vie-du-logiciel`, `installer`

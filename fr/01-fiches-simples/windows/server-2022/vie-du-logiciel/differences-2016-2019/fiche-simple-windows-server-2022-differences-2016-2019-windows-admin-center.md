@@ -26,7 +26,7 @@ Administrer des serveurs 2016 et 2019 avec Windows Admin Center (WAC) depuis une
 
 1. Télécharger Windows Admin Center depuis la page officielle Microsoft et noter la version publiée.
    👉 Explication : la compatibilité des versions cibles (2016, 2019) est indiquée dans la documentation WAC ; vérifier la version publiée.
-2. Installer la passerelle sur un serveur ou un poste d'administration (GUI : lancer le MSI, choisir le port HTTPS et un certificat de confiance). Équivalent en ligne de commande (remplacer `CHEMIN_MSI`) :
+2. Installer la passerelle sur un serveur ou un poste d'administration ([[Glossary:GUI]] : lancer le [[Glossary:MSI]], choisir le port HTTPS et un certificat de confiance). Équivalent en ligne de commande (remplacer `CHEMIN_MSI`) :
    ```powershell
    Start-Process msiexec.exe -ArgumentList '/i CHEMIN_MSI /qn /L*v C:\Sauvegarde\wac-install.log SME_PORT=443 SSL_CERTIFICATE_OPTION=generate' -Wait
    ```
@@ -40,7 +40,7 @@ Administrer des serveurs 2016 et 2019 avec Windows Admin Center (WAC) depuis une
 
 ## 3. Production — Sécurité
 
-- Utiliser un certificat valide, HTTPS uniquement, et déléguer par groupes AD plutôt que par comptes locaux.
+- Utiliser un certificat valide, HTTPS uniquement, et déléguer par groupes [[Glossary:AD]] plutôt que par comptes locaux.
 
 ## Validation et retour arrière
 

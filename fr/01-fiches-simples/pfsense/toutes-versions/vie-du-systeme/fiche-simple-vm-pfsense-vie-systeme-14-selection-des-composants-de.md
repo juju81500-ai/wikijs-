@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_14_Selection_Des_Composants_De
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 14 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-14`
@@ -36,7 +36,7 @@ Installer uniquement ce qui est nécessaire.
 
 ## 2. Production — Contrôles
 
-Tenir la liste des paquets autorisés et la déclarer à la CMDB.
+Tenir la liste des paquets autorisés et la déclarer à la [[Glossary:CMDB]].
 
 ## 3. Production — Sécurité
 

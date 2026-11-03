@@ -31,7 +31,7 @@ Inventorier l'existant et poser une baseline avant tout durcissement.
    ```
    👉 Explication : Relève la version du système et les rôles/fonctionnalités installés (lecture seule).
 
-2. Inventorier clients, NAS, applications, mécanismes LDAP/SMB, outils de sauvegarde et dépendances d'authentification; déployer d'abord en laboratoire représentatif.
+2. Inventorier clients, [[Glossary:NAS]], applications, mécanismes [[Glossary:LDAP]]/SMB, outils de sauvegarde et dépendances d'authentification; déployer d'abord en laboratoire représentatif.
    👉 Explication : permet de prévoir les régressions de compatibilité.
 
 3. Appliquer une baseline Microsoft adaptée au rôle, conserver un compte de secours testé et vérifier la restauration avant les changements de politique.
@@ -48,7 +48,7 @@ Ne désactiver aucune protection nouvelle sans analyse et dérogation formelle.
 ## Validation et retour arrière
 
 - **Validation** : inventaire fait, baseline choisie, restauration vérifiée.
-- **Retour arrière** : supprimer la baseline appliquée en lab ou restaurer la VM.
+- **Retour arrière** : supprimer la baseline appliquée en lab ou restaurer la [[Glossary:VM]].
 
 ## Si le problème n'est pas résolu
 

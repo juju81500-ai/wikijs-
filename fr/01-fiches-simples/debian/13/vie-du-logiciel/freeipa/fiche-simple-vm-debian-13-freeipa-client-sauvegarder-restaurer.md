@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_FreeIPA_Client_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13 cliente d'un domaine FreeIPA existant
+- **Environnement** : [[Glossary:VM]] Debian 13 cliente d'un domaine FreeIPA existant
 - **OS / Version** : Debian 13 Trixie; paquet freeipa-client des dépôts, version à vérifier
 - **Catégorie** : FreeIPA client / sauvegarder / restaurer
 - **Tags** : `freeipa`, `debian13`, `vie-du-logiciel`, `sauvegarder-restaurer`

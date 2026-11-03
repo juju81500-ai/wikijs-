@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_Postfix_Valider
 
-- **Environnement** : VM Ubuntu Server 24-04; Postfix depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04; Postfix depuis les dépôts de la distribution
 - **OS / Version** : Ubuntu Server 24-04
 - **Catégorie** : Vie du logiciel / Postfix — Valider (recette)
 - **Tags** : `postfix`, `serveur`, `vie-du-logiciel`, `valider`

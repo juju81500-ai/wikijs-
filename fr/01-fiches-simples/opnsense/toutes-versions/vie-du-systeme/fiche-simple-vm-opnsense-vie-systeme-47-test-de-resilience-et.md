@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_47_Test_De_Resilience_Et
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 47 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-47`
@@ -24,15 +24,15 @@ Vérifier le comportement lors d'une panne et les alertes.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Simuler la perte du WAN (débrancher ou désactiver l'interface virtuelle) et observer Système > Passerelles > Groupes / État.
+1. Simuler la perte du [[Glossary:WAN]] (débrancher ou désactiver l'interface virtuelle) et observer Système > Passerelles > Groupes / État.
    👉 Explication : la bascule ou l'alerte doit se produire.
 
-2. Avec CARP (si HA) : Interfaces > Diagnostics > CARP, passer en maintenance, vérifier le basculement. En shell :
+2. Avec [[Glossary:CARP]] (si HA) : Interfaces > Diagnostics > CARP, passer en maintenance, vérifier le basculement. En shell :
    ```sh
    sysctl net.inet.carp.demotion
    ifconfig vtnet0 | grep carp
    ```
-   👉 Explication : montre la rétrogradation et l'état MASTER/BACKUP des VIP.
+   👉 Explication : montre la rétrogradation et l'état MASTER/BACKUP des [[Glossary:VIP]].
 
 3. Confirmer que la supervision a émis l'alerte attendue.
    👉 Explication : valide la chaîne d'alerte de bout en bout.

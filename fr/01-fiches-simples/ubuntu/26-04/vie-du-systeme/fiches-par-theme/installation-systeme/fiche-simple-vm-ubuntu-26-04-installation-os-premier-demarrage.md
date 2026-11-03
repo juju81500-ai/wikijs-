@@ -11,18 +11,18 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-ubuntu-26-04-installation-os-premier-demarrage.md
 
-- **Environnement** : VM ou serveur Ubuntu
-- **OS / Version** : Ubuntu Server 26-04 LTS (Resolute Raccoon)
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]] (Resolute Raccoon)
 - **Catégorie** : Installation / Système / Compatibilité
 - **Tags** : `[ubuntu26.04]`, `[ubuntu]`, `[resolute]`, `[installation]`, `[apt3]`, `[systemd259]`
 
 ## 🎯 Problème précis à résoudre
 Installer Ubuntu Server 26-04 LTS sur une nouvelle VM et vérifier les changements de base par rapport à 24-04 avant de reprendre une fiche ou un script plus ancien.
 
-> `26-04` est la série LTS. `.1`, `.2`, etc. désignent des images ponctuelles de la même série et ne changent pas le nom de suite APT.
+> `26-04` est la série LTS. `.1`, `.2`, etc. désignent des images ponctuelles de la même série et ne changent pas le nom de suite [[Glossary:APT]].
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
-1. Récupérer l'image Server officielle 26-04 LTS et vérifier l'empreinte publiée; vérifier aussi le support CPU de la VM.
+1. Récupérer l'image Server officielle 26-04 LTS et vérifier l'empreinte publiée; vérifier aussi le support [[Glossary:CPU]] de la VM.
 2. Créer une VM avec firmware, disque et réseau adaptés au lab; l'installateur Subiquity peut configurer stockage, réseau et compte.
 3. Après le premier démarrage, relever la base réellement installée :
    ```bash
@@ -34,13 +34,13 @@ Installer Ubuntu Server 26-04 LTS sur une nouvelle VM et vérifier les changemen
    netplan info
    apt-cache policy php-fpm postgresql nginx openssh-server chrony
    ```
-4. Vérifier les services horaires et SSH :
+4. Vérifier les services horaires et [[Glossary:SSH]] :
    ```bash
    systemctl status chrony --no-pager
    systemctl list-unit-files 'ssh*'
    systemctl status ssh.socket ssh.service --no-pager
    ```
-   👉 *Explication : sur une nouvelle installation Ubuntu 26-04, Chrony est le client NTP par défaut. La commande de statut SSH ne s'applique que si OpenSSH Server est installé; l'activation peut être gérée par socket.*
+   👉 *Explication : sur une nouvelle installation Ubuntu 26-04, Chrony est le client [[Glossary:NTP]] par défaut. La commande de statut SSH ne s'applique que si OpenSSH Server est installé; l'activation peut être gérée par socket.*
 
 ## ⚡ 2. Production — Façon Simplifiée
 1. Confirmer l'image ponctuelle, l'architecture CPU, les pilotes, le stockage et le propriétaire cloud-init du réseau.

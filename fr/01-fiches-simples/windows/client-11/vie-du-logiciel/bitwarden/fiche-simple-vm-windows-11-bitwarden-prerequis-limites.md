@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Définir client, compte autorisé, MFA, récupération et poste géré avant d’y placer des secrets.
+Définir client, compte autorisé, [[Glossary:MFA]], récupération et poste géré avant d’y placer des secrets.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

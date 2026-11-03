@@ -24,7 +24,7 @@ Choisir le canal de mises à jour.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Mise à jour > Paramètres > Train de mise à jour (stable recommandé).
+1. [[Glossary:GUI]] : Système > Mise à jour > Paramètres > Train de mise à jour (stable recommandé).
    ```bash
    sudo midclt call update.get_trains | python3 -m json.tool | head -30
    ```

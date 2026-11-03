@@ -355,7 +355,7 @@ Logiciels qui s'installent et se gèrent sur Debian 13. Pour chaque logiciel : f
 
 ### Nakivo
 
-- Fiche d'entrée : [catalogue Nakivo-Altaro](/fr/01-fiches-simples/logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-nakivo-altaro) (statut : Partiel — NAKIVO Windows Server 2022 et Transporter Linux sur Debian 13 et Ubuntu Server 24-04; Altaro/Hornetsecurity limité à la documentation publique de VM Backup)
+- Fiche d'entrée : [catalogue Nakivo-Altaro](/fr/01-fiches-simples/logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-nakivo-altaro) (statut : Partiel — NAKIVO Windows Server 2022 et Transporter Linux sur Debian 13 et Ubuntu Server 24-04; Altaro/Hornetsecurity limité à la documentation publique de [[Glossary:VM]] Backup)
 - [Debian 13 Nakivo Transporter Configurer](/fr/01-fiches-simples/debian/13/vie-du-logiciel/nakivo/fiche-simple-debian-13-nakivo-transporter-configurer)
 - [Debian 13 Nakivo Transporter Installer](/fr/01-fiches-simples/debian/13/vie-du-logiciel/nakivo/fiche-simple-debian-13-nakivo-transporter-installer)
 - [Debian 13 Nakivo Transporter Mettre A Jour Retour Arriere](/fr/01-fiches-simples/debian/13/vie-du-logiciel/nakivo/fiche-simple-debian-13-nakivo-transporter-mettre-a-jour-retour-arriere)
@@ -876,7 +876,7 @@ Cliquer sur le nom pour voir l'état de couverture ; une procédure détaillée 
 ### Services Web et bases de données
 
 - [Apache](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-apache) — Couvert
-- [IIS](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-iis) — Guide complet — installation du rôle IIS et site pilote Windows Server 2022
+- [IIS](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-iis) — Guide complet — installation du rôle [[Glossary:IIS]] et site pilote Windows Server 2022
 - [SQL-Server](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-sql-server) — Couvert
 
 ### Stockage et SAN / NAS

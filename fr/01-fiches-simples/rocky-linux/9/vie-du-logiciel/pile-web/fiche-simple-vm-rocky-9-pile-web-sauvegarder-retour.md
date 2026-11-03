@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-rocky-9-pile-web-sauvegarder-retour.md
 
-- **Environnement** : VM ou serveur Rocky Linux 9 hébergeant une application PHP avec MariaDB locale
-- **OS / Version** : Rocky Linux 9 / RHEL 9; Nginx, PHP-FPM et MariaDB des dépôts actifs
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux 9 hébergeant une application PHP avec MariaDB locale
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9; Nginx, PHP-FPM et MariaDB des dépôts actifs
 - **Catégorie** : services web / sauvegarde
 - **Tags** : `rocky9`, `nginx`, `php-fpm`, `mariadb`, `selinux`
 
@@ -46,7 +46,7 @@ Si une mise à jour échoue, restaurer configuration et base compatibles.
 ## 3. Production — Sécurité
 
 - Dump et archives contiennent des secrets : chiffrer et restreindre l'accès.
-- Ne pas rétrograder le serveur SQL avec des fichiers de données modifiés par une version plus récente.
+- Ne pas rétrograder le serveur [[Glossary:SQL]] avec des fichiers de données modifiés par une version plus récente.
 
 ## Validation et retour arrière
 

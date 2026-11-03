@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-ubuntu-24-04-reseau-diagnostic-systemdresolved-dns-split.md
 
-- **Environnement** : VM Ubuntu Server
-- **OS / Version** : Ubuntu Server 24-04 LTS avec Netplan et `systemd-resolved`
-- **Catégorie** : Réseau / DNS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] avec Netplan et `systemd-resolved`
+- **Catégorie** : Réseau / [[Glossary:DNS]]
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[netplan]`, `[systemd-resolved]`, `[dns]`, `[diagnostic]`
 
 ## 🎯 Problème précis à résoudre

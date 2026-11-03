@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_OpenVPN_Installer
 
-- **Environnement** : VM Rocky Linux 9 dédiée à OpenVPN Community Edition (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à OpenVPN Community Edition (serveur)
 - **OS / Version** : Rocky Linux 9; paquets openvpn et easy-rsa issus d'EPEL, version à vérifier
 - **Catégorie** : OpenVPN Community Edition / installer
 - **Tags** : `openvpn`, `rocky9`, `vie-du-logiciel`, `installer`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Installer OpenVPN Community Edition et l'outil PKI depuis les dépôts de Rocky Linux 9 (EPEL) sans démarrer de service non configuré.
+Installer OpenVPN Community Edition et l'outil [[Glossary:PKI]] depuis les dépôts de Rocky Linux 9 (EPEL) sans démarrer de service non configuré.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -45,7 +45,7 @@ Consigner version, dépôt d'origine et unités disponibles; prévoir un client 
 
 ## 3. Production — Sécurité
 
-- Ne pas activer ni démarrer l'unité avant d'avoir une configuration validée; conserver la clé de CA hors ligne.
+- Ne pas activer ni démarrer l'unité avant d'avoir une configuration validée; conserver la clé de [[Glossary:CA]] hors ligne.
 
 ## Validation et retour arrière
 

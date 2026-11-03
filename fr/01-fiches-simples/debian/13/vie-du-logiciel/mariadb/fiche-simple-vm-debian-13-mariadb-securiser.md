@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_MariaDB_Securiser
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; MariaDB des dépôts Debian
-- **Catégorie** : base de données / MariaDB / Sécuriser (TLS, comptes, pare-feu)
+- **Catégorie** : base de données / MariaDB / Sécuriser ([[Glossary:TLS]], comptes, pare-feu)
 - **Tags** : `debian13`, `mariadb`, `securite`
 
 ---
@@ -63,7 +63,7 @@ Chiffrer les connexions, durcir les comptes et limiter l'accès réseau à Maria
    # si ufw est utilisé :
    sudo ufw allow from IP_CLIENT to any port 3306 proto tcp
    ```
-   👉 Explication : seules les IP clientes autorisées atteignent le port 3306.
+   👉 Explication : seules les [[Glossary:IP]] clientes autorisées atteignent le port 3306.
 
 ## 2. Production — Contrôles
 

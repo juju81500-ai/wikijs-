@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Tags** : `transverse`, `tout-en-un`, `support`, `itsm`
 
-Fiches de triage, transfert, inventaire, compte rendu d'incident et pratiques ITSM.
+Fiches de triage, transfert, inventaire, compte rendu d'incident et pratiques [[Glossary:ITSM]].
 
 - [Qualifier un incident exploitable](/fr/00-cours-theoriques/tout-en-un/08-support-et-gestion-de-service/tout-en-un-qualifier-incident)
 

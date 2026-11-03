@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_Postfix_Configurer
 
-- **Environnement** : VM Rocky Linux 9; Postfix depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9; Postfix depuis les dépôts de la distribution
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : Vie du logiciel / Postfix — Configurer
 - **Tags** : `postfix`, `serveur`, `vie-du-logiciel`, `configurer`
@@ -32,7 +32,7 @@ sudo postconf -e "myhostname = MAIL.EXAMPLE.NET"
 sudo postconf -e "mynetworks = 127.0.0.0/8, [::1]/128"
 sudo postfix check
    ```
-   👉 Explication : Sauvegarde puis fixe le nom d’hôte et limite les réseaux de confiance à la boucle locale. `MAIL.EXAMPLE.NET` est à remplacer par le FQDN validé; contrôler chaque réglage selon la version installée.
+   👉 Explication : Sauvegarde puis fixe le nom d’hôte et limite les réseaux de confiance à la boucle locale. `MAIL.EXAMPLE.NET` est à remplacer par le [[Glossary:FQDN]] validé; contrôler chaque réglage selon la version installée.
 
 
 ## 2. Production — Contrôles
@@ -41,7 +41,7 @@ Tracer les paramètres, les domaines et les réseaux autorisés; contrôler la s
 
 ## 3. Production — Sécurité
 
-Postfix : garder `reject_unauth_destination` et limiter `mynetworks`. Dovecot : activer TLS selon la version et les protocoles utilisés.
+Postfix : garder `reject_unauth_destination` et limiter `mynetworks`. Dovecot : activer [[Glossary:TLS]] selon la version et les protocoles utilisés.
 
 ## Validation et retour arrière
 

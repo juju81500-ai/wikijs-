@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Administrer des hôtes avec Ansible Core sur Debian 13
 
-- **OS / Version** : Debian 13 Trixie amd64 pour le nœud de contrôle; hôtes gérés Linux accessibles par SSH
+- **OS / Version** : Debian 13 Trixie amd64 pour le nœud de contrôle; hôtes gérés Linux accessibles par [[Glossary:SSH]]
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : installation de `ansible-core` depuis APT, inventaire contrôlé, vérification de connectivité et exécution d'un playbook sans changement
+- **Périmètre** : installation de `ansible-core` depuis [[Glossary:APT]], inventaire contrôlé, vérification de connectivité et exécution d'un playbook sans changement
 - **Catégorie** : automatisation / administration système
 - **Tags** : `ansible`, `ansible-core`, `debian13`, `automatisation`, `ssh`, `inventory`, `playbook`
 
@@ -23,7 +23,7 @@ Fiche simple : [cadrer le pilote Ansible](/fr/01-fiches-simples/debian/13/vie-du
 
 Ansible Core exécute les modules depuis un nœud de contrôle; les hôtes Linux gérés n'ont généralement besoin que de Python et d'un accès SSH. Cette fiche n'installe ni Ansible Automation Platform, AWX, collections tierces, ni agent sur les hôtes. Elle commence avec un test de lecture (`setup`) et ne modifie aucun hôte distant.
 
-Utiliser une VM de contrôle dédiée, un compte utilisateur nominatif, une clé SSH dédiée protégée par phrase de passe et des hôtes de laboratoire explicitement autorisés. Ne pas utiliser root pour les opérations de contrôle ou de gestion, et ne pas accorder `become` avant d'avoir examiné les tâches.
+Utiliser une [[Glossary:VM]] de contrôle dédiée, un compte utilisateur nominatif, une clé SSH dédiée protégée par phrase de passe et des hôtes de laboratoire explicitement autorisés. Ne pas utiliser root pour les opérations de contrôle ou de gestion, et ne pas accorder `become` avant d'avoir examiné les tâches.
 
 ## 2. Installer Ansible Core depuis Debian
 
@@ -68,7 +68,7 @@ ansible linux_lab -i inventory.ini -m ansible.builtin.ping
 ansible linux_lab -i inventory.ini -m ansible.builtin.setup --limit serveur-test.example.net
 ```
 
-Le module `ping` vérifie la connexion Ansible et l'interpréteur Python; ce n'est pas un test ICMP. `setup` recueille des faits système. Limiter la commande à un seul hôte de test avant d'élargir le périmètre.
+Le module `ping` vérifie la connexion Ansible et l'interpréteur Python; ce n'est pas un test [[Glossary:ICMP]]. `setup` recueille des faits système. Limiter la commande à un seul hôte de test avant d'élargir le périmètre.
 
 ## 5. Écrire et valider un playbook sans changement
 

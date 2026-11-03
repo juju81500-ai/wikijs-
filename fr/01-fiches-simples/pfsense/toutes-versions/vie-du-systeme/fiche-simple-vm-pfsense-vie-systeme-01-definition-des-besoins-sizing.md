@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_01_Definition_Des_Besoins_Sizing
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 01 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-01`
@@ -24,19 +24,19 @@ Dimensionner le pare-feu avant de créer la VM ou d'acheter le matériel.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Relever le débit WAN, le nombre de clients, de tunnels VPN et les paquets activés (Snort/Suricata, pfBlockerNG) :
-   👉 Explication : le débit avec inspection et chiffrement VPN dimensionne le CPU; les paquets additionnels consomment de la RAM.
+1. Relever le débit [[Glossary:WAN]], le nombre de clients, de tunnels [[Glossary:VPN]] et les paquets activés (Snort/Suricata, pfBlockerNG) :
+   👉 Explication : le débit avec inspection et chiffrement VPN dimensionne le [[Glossary:CPU]]; les paquets additionnels consomment de la [[Glossary:RAM]].
 
-2. Sur un pfSense existant, relever les ressources : Status > Dashboard (widget System Information) ou, en shell (console option 8 ou SSH) :
+2. Sur un pfSense existant, relever les ressources : Status > Dashboard (widget System Information) ou, en shell (console option 8 ou [[Glossary:SSH]]) :
    ```sh
    sysctl hw.ncpu hw.physmem
    df -h /
    zpool list 2>/dev/null
    vmstat 1 3
    ```
-   👉 Explication : nombre de CPU, RAM et disque; `zpool list` n'est utile qu'avec ZFS.
+   👉 Explication : nombre de CPU, RAM et disque; `zpool list` n'est utile qu'avec [[Glossary:ZFS]].
 
-3. Compter les interfaces (WAN, LAN, DMZ, HA) et choisir des cartes réseau compatibles FreeBSD (Intel de préférence).
+3. Compter les interfaces (WAN, [[Glossary:LAN]], [[Glossary:DMZ]], HA) et choisir des cartes réseau compatibles FreeBSD (Intel de préférence).
    👉 Explication : une carte non reconnue ne peut pas être affectée à l'installation.
 
 4. Noter vCPU (2 minimum), RAM (2 Go minimum, 4 Go avec paquets), disque (8 Go minimum, 20 Go conseillés), interfaces et débit cible dans le dossier du projet.
@@ -48,7 +48,7 @@ Ajouter 30 % de marge de débit; prévoir un second nœud si le pare-feu est un 
 
 ## 3. Production — Sécurité
 
-Prévoir des interfaces physiques ou des VLAN distincts pour WAN, LAN et DMZ.
+Prévoir des interfaces physiques ou des [[Glossary:VLAN]] distincts pour WAN, LAN et DMZ.
 
 ## Validation et retour arrière
 

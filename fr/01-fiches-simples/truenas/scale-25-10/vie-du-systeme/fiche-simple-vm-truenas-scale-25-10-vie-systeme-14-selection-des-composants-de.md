@@ -25,9 +25,9 @@ Choisir le mode d'installation.
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Choisir Fresh Install (nouvelle installation) ou Upgrade selon le cas, puis le mode d'amorçage UEFI.
-   👉 Explication : un ajout de paquets Debian n'est pas supporté sur un NAS.
+   👉 Explication : un ajout de paquets Debian n'est pas supporté sur un [[Glossary:NAS]].
 
-2. Lister les services actifs après installation : GUI Système > Services.
+2. Lister les services actifs après installation : [[Glossary:GUI]] Système > Services.
    ```bash
    sudo midclt call service.query | python3 -m json.tool | grep -E '"service"|"state"'
    ```
@@ -35,7 +35,7 @@ Choisir le mode d'installation.
 
 ## 2. Production — Contrôles
 
-N'activer que les services nécessaires (SMB, NFS, iSCSI, SSH).
+N'activer que les services nécessaires (SMB, [[Glossary:NFS]], iSCSI, [[Glossary:SSH]]).
 
 ## 3. Production — Sécurité
 

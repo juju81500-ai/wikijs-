@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Appliquer les paramètres de sécurité recommandés : SMB, NTLM, protocoles hérités.
+Appliquer les paramètres de sécurité recommandés : SMB, [[Glossary:NTLM]], protocoles hérités.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -31,14 +31,14 @@ Appliquer les paramètres de sécurité recommandés : SMB, NTLM, protocoles hé
    ```
    👉 Explication : supprime SMB 1 et force la signature.
 
-2. Désactiver les protocoles de résolution locaux LLMNR et NetBIOS : GPO **Modèles d'administration > Réseau > Client DNS > Désactiver la résolution multidiffusion**.
+2. Désactiver les protocoles de résolution locaux LLMNR et NetBIOS : [[Glossary:GPO]] **Modèles d'administration > Réseau > Client [[Glossary:DNS]] > Désactiver la résolution multidiffusion**.
    ```powershell
    New-Item 'HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient' -Force | Out-Null
    Set-ItemProperty 'HKLM:\SOFTWARE\Policies\Microsoft\Windows NT\DNSClient' EnableMulticast 0 -Type DWord
    ```
    👉 Explication : coupe LLMNR, vecteur d'attaque courant d'interception d'identifiants.
 
-3. Restreindre NTLM : GPO **Options de sécurité > Sécurité réseau : niveau d'authentification LAN Manager = Envoyer uniquement les réponses NTLMv2, refuser LM et NTLM**.
+3. Restreindre NTLM : GPO **Options de sécurité > Sécurité réseau : niveau d'authentification [[Glossary:LAN]] Manager = Envoyer uniquement les réponses NTLMv2, refuser LM et NTLM**.
    ```powershell
    Set-ItemProperty HKLM:\SYSTEM\CurrentControlSet\Control\Lsa LmCompatibilityLevel 5 -Type DWord
    ```
@@ -52,7 +52,7 @@ Appliquer les paramètres de sécurité recommandés : SMB, NTLM, protocoles hé
 
 ## 2. Production — Contrôles
 
-Appliquer un référentiel reconnu (ANSSI, Microsoft Security Baseline, CIS) par GPO ou Intune.
+Appliquer un référentiel reconnu ([[Glossary:ANSSI]], Microsoft Security Baseline, CIS) par GPO ou Intune.
 
 ## 3. Production — Sécurité
 

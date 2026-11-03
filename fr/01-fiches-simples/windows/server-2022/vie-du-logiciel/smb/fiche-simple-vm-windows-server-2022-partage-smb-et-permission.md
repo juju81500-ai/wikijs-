@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 VM_WinSrv_2022_Stockage_Partage-SMB-Permissions-NTFS.md
 
-- **Environnement** : VM (Windows Server 2022 Serveur de Fichiers)
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022 Serveur de Fichiers)
 - **OS / Version** : Windows Server 2022 - Famille Windows
 - **Catégorie** : Stockage / Partages & Sécurité
 - **Tags** : `[windows-server-2022]`, `[smb]`, `[ntfs]`, `[acl]`, `[partage-fichiers]`, `[powershell]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Créer un répertoire sur un volume de données, configurer un partage SMB réseau, cumuler et ajuster les autorisations de partage SMB et les autorisations de sécurité NTFS (ACL), et activer l'Abe (Access-Based Enumeration) pour masquer les dossiers non autorisés.
+Créer un répertoire sur un volume de données, configurer un partage SMB réseau, cumuler et ajuster les autorisations de partage SMB et les autorisations de sécurité [[Glossary:NTFS]] ([[Glossary:ACL]]), et activer l'Abe (Access-Based Enumeration) pour masquer les dossiers non autorisés.
 
 ---
 
@@ -67,6 +67,6 @@ Créer un répertoire sur un volume de données, configurer un partage SMB rése
    `$acl = Get-Acl "D:\Donnees_Entreprise"; $acl.SetAccessRuleProtection($true, $false); Set-Acl "D:\Donnees_Entreprise" $acl`
    👉 Explication : Casse l'héritage du disque parent D: et supprime toutes les permissions résiduelles non définies explicitement.
 
-4. Verrouillage strict des permissions NTFS selon le modèle AGDLP (Account -> Global Group -> Domain Local Group -> Permission) :
+4. Verrouillage strict des permissions NTFS selon le modèle [[Glossary:AGDLP]] (Account -> Global Group -> Domain Local Group -> Permission) :
    `$ruleSec = New-Object System.Security.AccessControl.FileSystemAccessRule("LAB\DL_Donnees_Lecteurs","ReadAndExecute","ContainerInherit,ObjectInherit","None","Allow"); $acl.AddAccessRule($ruleSec); Set-Acl "D:\Donnees_Entreprise" $acl`
    👉 Explication : Accorde uniquement la lecture/exécution aux membres du groupe local de domaine DL_Donnees_Lecteurs.

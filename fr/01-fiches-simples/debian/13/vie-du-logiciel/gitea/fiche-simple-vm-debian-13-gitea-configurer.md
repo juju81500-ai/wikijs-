@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Gitea_Configurer
 
-- **Environnement** : VM Debian 13 isolée; domaine et stockage définis
+- **Environnement** : [[Glossary:VM]] Debian 13 isolée; domaine et stockage définis
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : forge Git / administration
 - **Tags** : `debian13`, `gitea`, `forge-git`, `tls`, `sauvegarde`
@@ -30,7 +30,7 @@ Configurer URL canonique, écoute locale et compte administrateur pour une premi
    ```
    👉 Explication : éditer localement sans placer de secret dans l’historique.
 
-2. Fixer FQDN et écoute backend
+2. Fixer [[Glossary:FQDN]] et écoute backend
    ```ini
    [server]
    DOMAIN = forge.example.com

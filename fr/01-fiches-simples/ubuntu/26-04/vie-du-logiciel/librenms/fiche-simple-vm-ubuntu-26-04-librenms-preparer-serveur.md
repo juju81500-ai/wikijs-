@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-ubuntu-26-04-librenms-preparer-serveur.md
 
-- **Environnement** : VM Ubuntu Server 26-04 dédiée à LibreNMS (Nginx, PHP-FPM, MariaDB, SNMP)
-- **OS / Version** : Ubuntu Server 26-04 LTS; LibreNMS 26.10.2; PHP 8.5
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 dédiée à LibreNMS (Nginx, PHP-FPM, MariaDB, [[Glossary:SNMP]])
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]]; LibreNMS 26.10.2; PHP 8.5
 - **Catégorie** : supervision / préparation
 - **Tags** : `ubuntu2604`, `librenms`, `snmpv3`, `nginx`, `mariadb`
 
@@ -37,7 +37,7 @@ Vérifier que le serveur et les versions PHP disponibles conviennent avant d'ins
    ```
    👉 Explication : Affiche fuseau et synchronisation de l'heure; le fuseau du système et de PHP doivent être cohérents.
 
-3. Lister par écrit DNS, TLS, NTP, disque dédié RRD/logs, sauvegardes et appareils autorisés à superviser.
+3. Lister par écrit [[Glossary:DNS]], [[Glossary:TLS]], [[Glossary:NTP]], disque dédié RRD/logs, sauvegardes et appareils autorisés à superviser.
    👉 Explication : évite de superviser des équipements hors périmètre.
 
 ## 2. Production — Contrôles

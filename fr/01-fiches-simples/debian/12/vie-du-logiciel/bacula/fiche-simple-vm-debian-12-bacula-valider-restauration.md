@@ -53,14 +53,14 @@ Confirmer qu'un job Bacula terminé avec succès permet de restaurer un fichier 
 
 ## 2. Production — Contrôles
 
-Programmer des restaurations représentatives pour chaque type de client et niveau Full/Incremental/Differential. Vérifier séparément la restauration du catalogue, des volumes et du bootstrap; documenter les durées et l'écart aux RPO/RTO.
+Programmer des restaurations représentatives pour chaque type de client et niveau Full/Incremental/Differential. Vérifier séparément la restauration du catalogue, des volumes et du bootstrap; documenter les durées et l'écart aux [[Glossary:RPO]]/RTO.
 
 ## 3. Production — Sécurité
 
 - Ne pas restaurer directement sur les données actives avant validation du client et de l'emplacement.
 - Ne pas afficher les secrets Director/Storage/File Daemon dans les logs ou la documentation.
 - Vérifier que les volumes nécessaires sont présents, lisibles et protégés contre l'effacement depuis les clients.
-- Confirmer que le trafic Bacula est limité aux réseaux autorisés et chiffré par TLS correctement validé.
+- Confirmer que le trafic Bacula est limité aux réseaux autorisés et chiffré par [[Glossary:TLS]] correctement validé.
 
 ## Validation et retour arrière
 

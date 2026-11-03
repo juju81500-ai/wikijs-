@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_MongoDB_Valider
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; MongoDB Community (dépôt officiel)
 - **Catégorie** : base de données / MongoDB / Valider (recette)
 - **Tags** : `debian13`, `mongodb`, `recette`
@@ -37,7 +37,7 @@ Prouver que MongoDB est opérationnel, authentifié et chiffré.
    ```
    👉 Explication : la commande doit retourner `Unauthorized`.
 
-3. Connexion authentifiée avec TLS :
+3. Connexion authentifiée avec [[Glossary:TLS]] :
    ```bash
    mongosh 'mongodb://ADMIN_DB@NOM_SERVEUR:27017/admin?tls=true&tlsCAFile=/chemin/CA.crt' --eval 'db.runCommand({ping:1})'
    ```

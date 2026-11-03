@@ -50,7 +50,7 @@ Régler la disposition du clavier AZERTY français.
 
 ## 2. Production — Contrôles
 
-Un seul clavier par défaut pour l'ensemble du parc, défini par GPO ou profil Intune.
+Un seul clavier par défaut pour l'ensemble du parc, défini par [[Glossary:GPO]] ou profil Intune.
 
 ## 3. Production — Sécurité
 

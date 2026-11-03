@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## 🎯 Problème précis à résoudre
 
-Créer et valider un job de sauvegarde Veeam pour une VM pilote Hyper-V.
+Créer et valider un job de sauvegarde Veeam pour une [[Glossary:VM]] pilote Hyper-V.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 
@@ -43,7 +43,7 @@ Créer et valider un job de sauvegarde Veeam pour une VM pilote Hyper-V.
    Get-VBRJob -Name "Pilote-VM" | Start-VBRJob
    Get-VBRBackupSession | Sort-Object CreationTime -Descending | Select-Object -First 1 JobName, Result, CreationTime, EndTime
    ```
-   👉 Explication : GUI **History > Jobs** (durée, taille, logs); un point de restauration doit exister.
+   👉 Explication : [[Glossary:GUI]] **History > Jobs** (durée, taille, logs); un point de restauration doit exister.
 
 4. Restaurer un fichier : **Home > Restore > Hyper-V > Guest files > Windows**, choisir le point, puis **Copy To** vers un dossier temporaire; si possible, faire une restauration VM isolée (**Instant Recovery** désactivé pour le lab).
    👉 Explication : emplacement temporaire, jamais sur la production.
@@ -55,7 +55,7 @@ Créer et valider un job de sauvegarde Veeam pour une VM pilote Hyper-V.
    ```powershell
    Get-VBRBackupRepository | Select-Object Name, @{n='LibreGo';e={[math]::Round($_.GetContainer().CachedFreeSpace.InGigabytes)}}
    ```
-   👉 Explication : vérifier capacité du dépôt, SLA, fenêtre, application-aware processing et alertes; planifier une copie indépendante hors site (**Backup Copy Job**).
+   👉 Explication : vérifier capacité du dépôt, [[Glossary:SLA]], fenêtre, application-aware processing et alertes; planifier une copie indépendante hors site (**Backup Copy Job**).
 
 
 ## 🔒 3. Production — Façon Sécurisée

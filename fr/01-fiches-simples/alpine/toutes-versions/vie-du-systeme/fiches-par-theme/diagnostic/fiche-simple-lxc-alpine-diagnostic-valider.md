@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-lxc-alpine-diagnostic-valider.md
 
-- **Environnement** : CT Alpine corrigé, terminal de contrôle et client autorisé
+- **Environnement** : [[Glossary:CT]] Alpine corrigé, terminal de contrôle et client autorisé
 - **OS / Version** : branche Alpine maintenue
 - **Catégorie** : diagnostic / validation
 - **Tags** : `alpine`, `lxc`, `diagnostic`, `validation`, `firewall`
@@ -24,7 +24,7 @@ Confirmer qu'une correction rétablit le service attendu et que le filtrage cont
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Dans l'ordre, vérifier IP, route, DNS, port :
+1. Dans l'ordre, vérifier [[Glossary:IP]], route, [[Glossary:DNS]], port :
    ```sh
    ip -br addr
    ip route
@@ -37,7 +37,7 @@ Confirmer qu'une correction rétablit le service attendu et que le filtrage cont
    ```bash
    curl -fsSI http://IP_DU_CT:PORT/
    ```
-   👉 Explication : remplacer IP et port; la réponse attendue est le code HTTP du service.
+   👉 Explication : remplacer IP et port; la réponse attendue est le code [[Glossary:HTTP]] du service.
 
 3. Depuis une source non autorisée, confirmer le refus :
    ```bash

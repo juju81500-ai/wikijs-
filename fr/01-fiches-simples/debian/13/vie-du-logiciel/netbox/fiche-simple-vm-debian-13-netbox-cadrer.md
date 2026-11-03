@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-netbox-cadrer.md
 
-- **Environnement** : VM Debian 13 dédiée, NetBox 4.7.4, petit pilote IPAM/DCIM
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée, NetBox 4.7.4, petit pilote [[Glossary:IPAM]]/DCIM
 - **OS / Version** : Debian 13 Trixie; NetBox 4.7.4
-- **Catégorie** : IPAM / DCIM / cadrage
+- **Catégorie** : IPAM / [[Glossary:DCIM]] / cadrage
 - **Tags** : `debian13`, `netbox`, `ipam`, `dcim`, `cadrage`
 
 ---
@@ -37,7 +37,7 @@ Définir l'usage de NetBox comme source de vérité et les responsabilités de d
    timedatectl show -p NTPSynchronized --value
    free -h; df -h /opt /var/lib
    ```
-   👉 Explication : le FQDN servira à `ALLOWED_HOSTS` et au certificat TLS.
+   👉 Explication : le [[Glossary:FQDN]] servira à `ALLOWED_HOSTS` et au certificat [[Glossary:TLS]].
 
 3. Contrôler que les ports de service sont libres :
    ```bash
@@ -50,7 +50,7 @@ Définir l'usage de NetBox comme source de vérité et les responsabilités de d
 
 ## 2. Production — Contrôles
 
-Avant le passage en production, approuver conventions de sites, tenants, VRF, états et rôles, source d'autorité, responsabilités de revue, rétention, API et intégrations.
+Avant le passage en production, approuver conventions de sites, tenants, VRF, états et rôles, source d'autorité, responsabilités de revue, rétention, [[Glossary:API]] et intégrations.
 
 ## 3. Production — Sécurité
 

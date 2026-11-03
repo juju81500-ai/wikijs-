@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_24_Personnalisation_Et_Bannieres
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 24 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-24`
@@ -33,7 +33,7 @@ Afficher l'avertissement légal et les informations de la machine.
    ```
    👉 Explication : affiché après connexion; remplacer `NOM_MACHINE` et `ROLE_SERVICE`.
 
-2. Ajouter une bannière avant l'authentification SSH :
+2. Ajouter une bannière avant l'authentification [[Glossary:SSH]] :
    ```sh
    doas sh -c 'cat > /etc/issue.net <<EOF
    Accès réservé aux personnes autorisées.

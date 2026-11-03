@@ -34,7 +34,7 @@ Utiliser le fichier hosts de façon contrôlée.
    ```powershell
    Add-Content C:\Windows\System32\drivers\etc\hosts "`nIP NOM_HOTE"
    ```
-   👉 Explication : associe un nom à une adresse sans DNS; à réserver aux tests.
+   👉 Explication : associe un nom à une adresse sans [[Glossary:DNS]]; à réserver aux tests.
 
 3. Vérifier la prise en compte :
    ```powershell

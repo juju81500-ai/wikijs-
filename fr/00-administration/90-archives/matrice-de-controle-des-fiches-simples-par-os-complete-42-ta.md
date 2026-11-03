@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Matrice de Contrôle des Fiches Simples par OS et Actions TSSR
 
-Cette matrice récapitule les tâches du Référentiel TSSR et leur état documentaire par environnement.
+Cette matrice récapitule les tâches du Référentiel [[Glossary:TSSR]] et leur état documentaire par environnement.
 
 > **Statut provisoire** : les états historiques n'étaient pas appuyés par un contrôle fiable. **À vérifier** signifie que l'existence, le contenu, les commandes et la validation dans un environnement cible restent à confirmer ; ce statut ne certifie pas qu'une procédure est opérationnelle.
 
@@ -19,23 +19,23 @@ Cette matrice récapitule les tâches du Référentiel TSSR et leur état docume
 
 ## 📊 Matrice Globale de Couverture (Actions TSSR × Systèmes d'Exploitation)
 
-| Action / Tâche Opérationnelle TSSR | Windows Server 2022 | Windows 10 / 11 | Debian 12 (Bookworm) | Debian 13 (Trixie) | Ubuntu 24-04 LTS | Rocky Linux 9 | Alpine 3-19 (LXC/VM) | Hôte Docker & Conteneurs |
+| Action / Tâche Opérationnelle TSSR | Windows Server 2022 | Windows 10 / 11 | Debian 12 (Bookworm) | Debian 13 (Trixie) | Ubuntu 24-04 [[Glossary:LTS]] | Rocky Linux 9 | Alpine 3-19 ([[Glossary:LXC]]/VM) | Hôte Docker & Conteneurs |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
-| **Fixer l'adresse IP et les DNS** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A |
+| **Fixer l'adresse [[Glossary:IP]] et les [[Glossary:DNS]]** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A |
 | **Ajouter ou supprimer une route statique** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A |
-| **Vider le cache DNS et la table ARP** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A |
+| **Vider le cache DNS et la table [[Glossary:ARP]]** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A |
 | **Configurer le fichier hosts (DNS local)** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** |
 | **Diagnostic réseau (Netcat, SS, Tcpdump)** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** |
-| **Changer le nom d'hôte (Hostname / FQDN)** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** |
+| **Changer le nom d'hôte (Hostname / [[Glossary:FQDN]])** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** |
 | **Passer le clavier en AZERTY & Fuseau horaire** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A |
 | **Créer un utilisateur local standard** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A |
 | **Créer un utilisateur administrateur (Sudo/Wheel/Admin)** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A |
-| **Gérer les groupes & permissions (POSIX / NTFS)** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A |
-| **Activer & sécuriser l'accès distant (SSH / RDP)** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** |
-| **Générer et déployer une clé SSH (ED25519)** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** |
+| **Gérer les groupes & permissions (POSIX / [[Glossary:NTFS]])** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A |
+| **Activer & sécuriser l'accès distant ([[Glossary:SSH]] / [[Glossary:RDP]])** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** |
+| **Générer et déployer une clé SSH ([[Glossary:ED25519]])** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** |
 | **Réinitialiser un mot de passe local perdu** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A |
-| **Mettre à jour le système & paquets (APT/DNF/APK)** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** |
-| **Agrandir / Gérer l'espace disque & LVM** | **À vérifier** | N/A | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A | N/A |
+| **Mettre à jour le système & paquets ([[Glossary:APT]]/DNF/APK)** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** |
+| **Agrandir / Gérer l'espace disque & [[Glossary:LVM]]** | **À vérifier** | N/A | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A | N/A |
 | **Initialiser, formater et monter un disque** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A | N/A |
 | **Monter un partage SMB au démarrage (fstab/Net Use)** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A | N/A |
 | **Archiver et compresser des dossiers (Tar / Zip)** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** |
@@ -47,22 +47,22 @@ Cette matrice récapitule les tâches du Référentiel TSSR et leur état docume
 | **Configurer un pare-feu local (nftables/UFW/awall/Windows)** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A |
 | **Bannir ou débannir une IP (Fail2ban / Pare-feu)** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A |
 | **Installer & configurer un serveur Web (Nginx/PHP)** | **À vérifier** | N/A | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** |
-| **Configurer le chiffrement SSL/TLS (Certbot)** | **À vérifier** | N/A | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A | **À vérifier** |
+| **Configurer le chiffrement [[Glossary:SSL]]/TLS (Certbot)** | **À vérifier** | N/A | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A | **À vérifier** |
 | **Installer une base de données (PostgreSQL/MariaDB)** | **À vérifier** | N/A | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A | **À vérifier** |
 | **Configurer un partage de fichiers (SMB / NFSv4)** | **À vérifier** | N/A | **À vérifier** | **À vérifier** | N/A | **À vérifier** | N/A | **À vérifier** |
-| **Configurer un stockage SAN / iSCSI Target LIO** | **À vérifier** | N/A | **À vérifier** | **À vérifier** | N/A | N/A | N/A | N/A |
-| **Haute Disponibilité & IP virtuelle (VRRP Keepalived)** | N/A | N/A | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A | N/A |
+| **Configurer un stockage [[Glossary:SAN]] / iSCSI Target LIO** | **À vérifier** | N/A | **À vérifier** | **À vérifier** | N/A | N/A | N/A | N/A |
+| **Haute Disponibilité & IP virtuelle ([[Glossary:VRRP]] Keepalived)** | N/A | N/A | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A | N/A |
 | **Installer un agent de supervision (Zabbix/Prometheus)** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** |
-| **Centraliser les logs à distance (Rsyslog TLS)** | **À vérifier** | N/A | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A | N/A |
-| **Synchronisation horaire / NTP (Chrony/W32Time)** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A |
+| **Centraliser les logs à distance (Rsyslog [[Glossary:TLS]])** | **À vérifier** | N/A | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A | N/A |
+| **Synchronisation horaire / [[Glossary:NTP]] (Chrony/W32Time)** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A |
 | **Déployer Docker Engine & Compose / Portainer** | N/A | N/A | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A | **À vérifier** |
 | **Consulter logs & exec dans un conteneur Docker** | N/A | N/A | N/A | N/A | N/A | N/A | N/A | **À vérifier** |
 | **Exporter & importer images et volumes Docker** | N/A | N/A | N/A | N/A | N/A | N/A | N/A | **À vérifier** |
-| **Joindre un domaine Active Directory (AD DS)** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A | N/A |
+| **Joindre un domaine Active Directory ([[Glossary:AD]] DS)** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A | N/A |
 | **Promouvoir un contrôleur de domaine (AD DS)** | **À vérifier** | N/A | N/A | N/A | N/A | N/A | N/A | N/A |
-| **Configurer un serveur DHCP (Scope & Réservation MAC)** | **À vérifier** | N/A | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A | N/A |
-| **Configurer un serveur DNS (Zones, A, CNAME)** | **À vérifier** | N/A | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A | N/A |
-| **Gérer les stratégies de groupe (GPO / GPUpdate)** | **À vérifier** | **À vérifier** | N/A | N/A | N/A | N/A | N/A | N/A |
+| **Configurer un serveur [[Glossary:DHCP]] (Scope & Réservation MAC)** | **À vérifier** | N/A | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A | N/A |
+| **Configurer un serveur DNS (Zones, A, [[Glossary:CNAME]])** | **À vérifier** | N/A | **À vérifier** | **À vérifier** | **À vérifier** | **À vérifier** | N/A | N/A |
+| **Gérer les stratégies de groupe ([[Glossary:GPO]] / GPUpdate)** | **À vérifier** | **À vérifier** | N/A | N/A | N/A | N/A | N/A | N/A |
 
 ---
 

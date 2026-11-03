@@ -20,14 +20,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Restreindre et durcir l'accès à l'interface Web, à l'API et à SSH.
+Restreindre et durcir l'accès à l'interface Web, à l'[[Glossary:API]] et à [[Glossary:SSH]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Restreindre l'interface Web/API et SSH au réseau d'administration (pare-feu : **Datacenter > Firewall**).
    👉 Explication : on réduit la surface d'attaque.
 
-2. Créer des comptes nominatifs : **Datacenter > Permissions > Users**, puis activer le MFA : **Datacenter > Permissions > Two Factor**.
+2. Créer des comptes nominatifs : **Datacenter > Permissions > Users**, puis activer le [[Glossary:MFA]] : **Datacenter > Permissions > Two Factor**.
    👉 Explication : fini les comptes partagés; le second facteur protège les accès.
 
 3. Gérer les certificats : **Node > System > Certificates**.

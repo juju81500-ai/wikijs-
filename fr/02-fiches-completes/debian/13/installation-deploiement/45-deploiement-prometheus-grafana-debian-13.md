@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **OS / Version** : Debian 13 Trixie; Prometheus 3.15.1; Grafana OSS dépôt stable
 - **Type de fiche** : Installation/Déploiement
-- **Environnement** : VM Linux dédiée avec exporteurs sur des hôtes autorisés
+- **Environnement** : [[Glossary:VM]] Linux dédiée avec exporteurs sur des hôtes autorisés
 - **Machine ciblée** : Serveur de métriques central
 - **Catégorie** : Supervision / métrologie
 - **Tags** : `debian13`, `prometheus`, `grafana`, `node-exporter`, `monitoring`, `metrics`
@@ -22,7 +22,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [cadrer la collecte](/fr/01-fiches-simples/debian/13/vie-du-logiciel/prometheus-grafana/fiche-simple-vm-debian-13-prometheus-grafana-cadrer).
 
-Lister hôtes, métriques, intervalles, rétention, seuils et responsable d'astreinte. Dimensionner CPU/RAM/disque selon séries, cardinalité et rétention. Utiliser une liste explicite de cibles; ne pas collecter des adresses hors du périmètre autorisé.
+Lister hôtes, métriques, intervalles, rétention, seuils et responsable d'astreinte. Dimensionner [[Glossary:CPU]]/RAM/disque selon séries, cardinalité et rétention. Utiliser une liste explicite de cibles; ne pas collecter des adresses hors du périmètre autorisé.
 
 Ce guide installe Prometheus et Grafana sur Debian 13. Il suppose que Node Exporter est déjà disponible sur l'hôte local (la fiche simple existante le configure). Pour alertes et notifications, déployer Alertmanager selon un guide séparé.
 
@@ -37,7 +37,7 @@ sudo useradd --system --no-create-home --shell /usr/sbin/nologin prometheus
 sudo install -d -o prometheus -g prometheus -m 0750 /etc/prometheus /var/lib/prometheus
 ```
 
-Télécharger la version officielle Linux AMD64 et vérifier son checksum :
+Télécharger la version officielle Linux [[Glossary:AMD64]] et vérifier son checksum :
 
 ```bash
 cd /tmp
@@ -110,7 +110,7 @@ Adapter `--web.external-url` au nom public réel. Prometheus n'applique pas d'au
 
 Fiche simple : [installer Grafana](/fr/01-fiches-simples/debian/13/vie-du-logiciel/prometheus-grafana/fiche-simple-vm-debian-13-prometheus-grafana-installer-grafana).
 
-Ajouter le dépôt APT officiel Grafana, puis installer le paquet OSS :
+Ajouter le dépôt [[Glossary:APT]] officiel Grafana, puis installer le paquet OSS :
 
 ```bash
 sudo apt install -y apt-transport-https wget gnupg
@@ -122,7 +122,7 @@ sudo apt update
 sudo apt install grafana
 ```
 
-Si l'accès passe par un reverse proxy, configurer `http_addr = 127.0.0.1` dans `/etc/grafana/grafana.ini`, publier Grafana via HTTPS et activer SSO/MFA. Puis :
+Si l'accès passe par un reverse proxy, configurer `http_addr = 127.0.0.1` dans `/etc/grafana/grafana.ini`, publier Grafana via HTTPS et activer [[Glossary:SSO]]/MFA. Puis :
 
 ```bash
 sudo systemctl enable --now grafana-server

@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Créer la clé USB d'installation ou le support de démarrage.
+Créer la clé [[Glossary:USB]] d'installation ou le support de démarrage.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -33,7 +33,7 @@ Créer la clé USB d'installation ou le support de démarrage.
    ```
    👉 Explication : liste uniquement les disques USB; noter le numéro (`NUMERO_DISQUE`) de la clé.
 
-3. Formater la clé en GPT/FAT32 et copier le contenu de l'ISO montée (remplacer `NUMERO_DISQUE` et `LETTRE_ISO`, lettre du lecteur de l'ISO montée; remplacer `U` si la lettre attribuée à la clé diffère).
+3. Formater la clé en [[Glossary:GPT]]/FAT32 et copier le contenu de l'ISO montée (remplacer `NUMERO_DISQUE` et `LETTRE_ISO`, lettre du lecteur de l'ISO montée; remplacer `U` si la lettre attribuée à la clé diffère).
    ```powershell
    Clear-Disk -Number NUMERO_DISQUE -RemoveData -Confirm:$false
    Initialize-Disk -Number NUMERO_DISQUE -PartitionStyle GPT

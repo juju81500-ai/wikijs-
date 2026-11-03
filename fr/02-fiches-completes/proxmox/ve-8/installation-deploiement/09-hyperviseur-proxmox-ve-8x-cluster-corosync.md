@@ -58,13 +58,13 @@ pvecm status
 corosync-cfgtool -s
 ```
 
-Vérifier le quorum après arrêt contrôlé d'un nœud, puis confirmer que les VM/CT et le stockage restent cohérents. Pour HA, définir les groupes, priorités et règles de fencing/support matériel selon la conception retenue.
+Vérifier le quorum après arrêt contrôlé d'un nœud, puis confirmer que les [[Glossary:VM]]/CT et le stockage restent cohérents. Pour HA, définir les groupes, priorités et règles de fencing/support matériel selon la conception retenue.
 
 ## 4. Sécuriser l'administration
 
 Fiche simple : [sécuriser l'administration](/fr/01-fiches-simples/proxmox/ve-8/vie-du-logiciel/cluster-corosync/fiche-simple-hote-proxmox-ve-8-cluster-securiser).
 
-Restreindre l'interface Web/API et SSH au réseau d'administration, utiliser des comptes nominatifs et MFA, gérer les certificats, limiter les privilèges et centraliser les sauvegardes hors cluster. Ne pas appliquer de règles firewall sans garder un accès console.
+Restreindre l'interface Web/API et [[Glossary:SSH]] au réseau d'administration, utiliser des comptes nominatifs et [[Glossary:MFA]], gérer les certificats, limiter les privilèges et centraliser les sauvegardes hors cluster. Ne pas appliquer de règles firewall sans garder un accès console.
 
 ## 5. Maintenance et incidents
 

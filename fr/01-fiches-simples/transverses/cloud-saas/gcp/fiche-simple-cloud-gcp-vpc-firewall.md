@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Fiche_Simple_-_Cloud_GCP_VPC_Firewall
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — Google Cloud CLI (gcloud ; version publiée à vérifier)
+- **OS / Version** : Cloud/SaaS — Google Cloud [[Glossary:CLI]] (gcloud ; version publiée à vérifier)
 - **Catégorie** : cloud public / vpc et pare-feu
 - **Tags** : `gcp`, `vpc_firewall`, `securite`, `procedure`
 
@@ -33,17 +33,17 @@ Les valeurs écrites en MAJUSCULES sont des placeholders à remplacer par les va
    gcloud compute networks create NOM_VPC --subnet-mode=custom
 gcloud compute firewall-rules create REGLE_SSH --network=NOM_VPC --direction=INGRESS --action=ALLOW --rules=tcp:22 --source-ranges=IP_ADMIN/32
    ```
-   👉 Explication : Créer des sous-réseaux non chevauchants ; ne jamais autoriser SSH/RDP depuis 0.0.0.0/0. Vérifier les règles effectives et les tags/comptes de service ciblés.
+   👉 Explication : Créer des sous-réseaux non chevauchants ; ne jamais autoriser [[Glossary:SSH]]/RDP depuis 0.0.0.0/0. Vérifier les règles effectives et les tags/comptes de service ciblés.
 3. Console et CLI : comparer la configuration affichée avec l’état attendu, puis valider sur une ressource pilote non sensible.
    👉 Explication : les interfaces évoluent ; vérifier l’aide/version officielle et les quotas/licences avant généralisation.
 
 ## 2. Production — Contrôles
 
-Faire approuver CIDR, sous-réseaux, routes, flux entrants/sortants, DNS et accès d’administration. Vérifier qu’aucune règle SSH/RDP ne cible Internet entier.
+Faire approuver [[Glossary:CIDR]], sous-réseaux, routes, flux entrants/sortants, [[Glossary:DNS]] et accès d’administration. Vérifier qu’aucune règle SSH/RDP ne cible Internet entier.
 
 ## 3. Production — Sécurité
 
-Appliquer le moindre privilège, filtrer IPv4 et IPv6, journaliser les flux sensibles et utiliser VPN/bastion/accès managé. Ne pas ouvrir de port d’administration au monde.
+Appliquer le moindre privilège, filtrer IPv4 et IPv6, journaliser les flux sensibles et utiliser [[Glossary:VPN]]/bastion/accès managé. Ne pas ouvrir de port d’administration au monde.
 
 ## Validation et retour arrière
 

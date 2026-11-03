@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-lansweeper-configurer-methodes-scan.md
 
-- **Environnement** : Serveur Windows x64 avec Lansweeper Classic (SQL LocalDB ou SQL Server selon l'échelle)
+- **Environnement** : Serveur Windows x64 avec Lansweeper Classic ([[Glossary:SQL]] LocalDB ou SQL Server selon l'échelle)
 - **OS / Version** : Windows Server 2022 recommandé; Lansweeper Classic selon la matrice officielle
 - **Catégorie** : inventaire de parc / découverte réseau
 - **Tags** : `lansweeper`, `windows-server-2022`, `inventaire`, `wmi`, `snmp`
@@ -24,13 +24,13 @@ Choisir la méthode de scan adaptée à chaque type d'actif.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Postes Windows: choisir scan agentless WMI ou **LsAgent**.
+1. Postes Windows: choisir scan agentless [[Glossary:WMI]] ou **LsAgent**.
    👉 Explication : l'agent réduit les ports entrants et convient aux appareils hors site.
 
-2. Linux/macOS: privilégier les agents, ou SSH avec compte restreint.
+2. Linux/macOS: privilégier les agents, ou [[Glossary:SSH]] avec compte restreint.
    👉 Explication : limite les privilèges.
 
-3. Équipements réseau et NAS: configurer SNMPv3 en lecture seule avec une liste de cibles définie.
+3. Équipements réseau et [[Glossary:NAS]]: configurer SNMPv3 en lecture seule avec une liste de cibles définie.
    👉 Explication : évite une découverte trop large.
 
 4. Espacer et limiter les scans; ne lancer aucune découverte large sans fenêtre approuvée.

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-appliance-opnsense-systeme-mise-a-jour.md
 
-- **Environnement** : OPNsense sur VM Proxmox VE ou appliance dédiée, fenêtre de maintenance planifiée
+- **Environnement** : OPNsense sur [[Glossary:VM]] Proxmox VE ou appliance dédiée, fenêtre de maintenance planifiée
 - **OS / Version** : OPNsense (base FreeBSD) - Toutes-versions
 - **Catégorie** : Système / Mises à jour
 - **Tags** : `opnsense`, `freebsd`, `update`, `firmware`, `pkg`, `maintenance`

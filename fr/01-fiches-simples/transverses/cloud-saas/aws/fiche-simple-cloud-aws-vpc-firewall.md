@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Fiche_Simple_-_Cloud_AWS_VPC_Firewall
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — AWS CLI v2
+- **OS / Version** : Cloud/SaaS — AWS [[Glossary:CLI]] v2
 - **Catégorie** : cloud public / vpc et pare-feu
 - **Tags** : `aws`, `vpc_firewall`, `securite`, `procedure`
 
@@ -33,17 +33,17 @@ Les valeurs écrites en MAJUSCULES sont des placeholders à remplacer par les va
    aws ec2 create-vpc --cidr-block CIDR_VPC
 aws ec2 describe-security-groups --filters Name=vpc-id,Values=ID_VPC
    ```
-   👉 Explication : Créer un adressage non chevauchant et des règles minimales ; limiter SSH/RDP à IP_ADMIN/32 ou préférer un bastion/SSM.
+   👉 Explication : Créer un adressage non chevauchant et des règles minimales ; limiter [[Glossary:SSH]]/RDP à IP_ADMIN/32 ou préférer un bastion/SSM.
 3. Console et CLI : comparer la configuration affichée avec l’état attendu, puis valider sur une ressource pilote non sensible.
    👉 Explication : les interfaces évoluent ; vérifier l’aide/version officielle et les quotas/licences avant généralisation.
 
 ## 2. Production — Contrôles
 
-Faire approuver CIDR, sous-réseaux, routes, flux entrants/sortants, DNS et accès d’administration. Vérifier qu’aucune règle SSH/RDP ne cible Internet entier.
+Faire approuver [[Glossary:CIDR]], sous-réseaux, routes, flux entrants/sortants, [[Glossary:DNS]] et accès d’administration. Vérifier qu’aucune règle SSH/RDP ne cible Internet entier.
 
 ## 3. Production — Sécurité
 
-Appliquer le moindre privilège, filtrer IPv4 et IPv6, journaliser les flux sensibles et utiliser VPN/bastion/accès managé. Ne pas ouvrir de port d’administration au monde.
+Appliquer le moindre privilège, filtrer IPv4 et IPv6, journaliser les flux sensibles et utiliser [[Glossary:VPN]]/bastion/accès managé. Ne pas ouvrir de port d’administration au monde.
 
 ## Validation et retour arrière
 

@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Fiche_Simple_-_Tout-en-un_Preparer_Changement_VM
 
 - **Environnement** : plateforme de virtualisation de laboratoire ou de production approuvée
-- **OS / Version** : hyperviseur et outils selon plateforme ; exemple CLI Proxmox VE à adapter
+- **OS / Version** : hyperviseur et outils selon plateforme ; exemple [[Glossary:CLI]] Proxmox VE à adapter
 - **Catégorie** : Tout-en-un / Virtualisation, conteneurs et cloud
 - **Tags** : `transverse`, `tout-en-un`, `virtualisation`, `vm`, `changement`
 
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Préparer une modification réversible d'une VM en identifiant son état, ses dépendances et le point de retour, avant d'intervenir dans l'invité.
+Préparer une modification réversible d'une [[Glossary:VM]] en identifiant son état, ses dépendances et le point de retour, avant d'intervenir dans l'invité.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -63,7 +63,7 @@ Vérifier la sauvegarde indépendante, l'espace datastore, les jobs, la haute di
 
 ## 3. Production — Sécurité
 
-Ne jamais démarrer simultanément un clone et l'original sur le même réseau avant d'avoir traité IP, nom machine, clés, agents et tâches planifiées. Les commandes Proxmox nécessitent des droits hyperviseur ; utiliser le moindre privilège.
+Ne jamais démarrer simultanément un clone et l'original sur le même réseau avant d'avoir traité [[Glossary:IP]], nom machine, clés, agents et tâches planifiées. Les commandes Proxmox nécessitent des droits hyperviseur ; utiliser le moindre privilège.
 
 ## Validation et retour arrière
 

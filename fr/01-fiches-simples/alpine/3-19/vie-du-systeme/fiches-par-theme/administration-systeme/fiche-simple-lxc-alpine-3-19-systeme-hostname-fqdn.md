@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-lxc-alpine-3-19-systeme-hostname-fqdn.md
 
-- **Environnement** : LXC (Proxmox VE)
+- **Environnement** : [[Glossary:LXC]] (Proxmox VE)
 - **OS / Version** : Alpine Linux 3-19 - Famille Alpine (OpenRC, apk)
 - **Catégorie** : Système & Services / Identité réseau
 - **Tags** : `[alpine3.19]`, `[alpine]`, `[lxc]`, `[hostname]`, `[fqdn]`, `[openrc]`
 
 ## 🎯 Problème précis à résoudre
-Définir le nom d'hôte court et le nom de domaine complet (FQDN) d'un conteneur Alpine Linux, en gardant cohérents `/etc/hostname`, `/etc/hosts` et la configuration du conteneur sur Proxmox.
+Définir le nom d'hôte court et le nom de domaine complet ([[Glossary:FQDN]]) d'un conteneur Alpine Linux, en gardant cohérents `/etc/hostname`, `/etc/hosts` et la configuration du conteneur sur Proxmox.
 
 > Alpine 3-19 est en fin de support : valider cette procédure sur une branche maintenue avant tout usage en production.
 
@@ -44,7 +44,7 @@ Définir le nom d'hôte court et le nom de domaine complet (FQDN) d'un conteneur
    127.0.0.1    localhost
    <ip_du_conteneur>    <nom_du_conteneur>.<domaine> <nom_du_conteneur>
    ```
-   👉 Explication : `/etc/hosts` assure la résolution locale du FQDN même si le DNS est indisponible. Remplacer `<domaine>` par le suffixe DNS interne réel (par exemple `lab.example.lan`).
+   👉 Explication : `/etc/hosts` assure la résolution locale du FQDN même si le [[Glossary:DNS]] est indisponible. Remplacer `<domaine>` par le suffixe DNS interne réel (par exemple `lab.example.lan`).
 
 4. Vérifier la résolution locale :
    ```sh
@@ -56,7 +56,7 @@ Définir le nom d'hôte court et le nom de domaine complet (FQDN) d'un conteneur
 ---
 
 ## ⚡ 2. Production — Façon Simplifiée
-1. Régler le nom du conteneur depuis l'hôte Proxmox, puis redémarrer le CT :
+1. Régler le nom du conteneur depuis l'hôte Proxmox, puis redémarrer le [[Glossary:CT]] :
    ```sh
    pct set <vmid> --hostname <nom_du_conteneur>.<domaine>
    pct reboot <vmid>
@@ -77,6 +77,6 @@ Définir le nom d'hôte court et le nom de domaine complet (FQDN) d'un conteneur
    ```sh
    getent hosts <ip_du_conteneur>
    ```
-   👉 Explication : une correspondance directe et inverse cohérente évite les erreurs de certificats TLS et les mauvaises attributions dans les journaux.
+   👉 Explication : une correspondance directe et inverse cohérente évite les erreurs de certificats [[Glossary:TLS]] et les mauvaises attributions dans les journaux.
 
 2. Ne garder dans `/etc/hosts` que les entrées locales nécessaires, sans adresses de tiers ni secrets, et reporter le nom du conteneur dans l'inventaire (étape 49 du cycle de vie).

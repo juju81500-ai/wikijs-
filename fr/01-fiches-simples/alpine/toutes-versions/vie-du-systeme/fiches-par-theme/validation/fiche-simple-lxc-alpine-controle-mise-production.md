@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-lxc-alpine-controle-mise-production.md
 
-- **Environnement** : LXC Alpine administré sur Proxmox VE
+- **Environnement** : [[Glossary:LXC]] Alpine administré sur Proxmox VE
 - **OS / Version** : Branche Alpine maintenue sélectionnée pour le service
 - **Catégorie** : Production / Validation / Exploitation
 - **Tags** : `[alpine]`, `[lxc]`, `[production]`, `[validation]`, `[sauvegarde]`, `[openrc]`
@@ -28,13 +28,13 @@ Vérifier qu'un LXC Alpine est prêt à être mis en production : accès d'admin
    ```
    👉 Explication : version maintenue, mises à jour en attente documentées, services attendus démarrés.
 
-2. Tester depuis un second poste DNS, ports et SSH par clé :
+2. Tester depuis un second poste [[Glossary:DNS]], ports et [[Glossary:SSH]] par clé :
    ```bash
    nslookup NOM_CT
    nc -zv IP_CT 22
    ssh -o PasswordAuthentication=no UTILISATEUR@IP_CT hostname
    ```
-   👉 Explication : remplacer nom et IP; la connexion par mot de passe doit être refusée.
+   👉 Explication : remplacer nom et [[Glossary:IP]]; la connexion par mot de passe doit être refusée.
 
 3. Sauvegarder et restaurer depuis Proxmox : **Datacenter > Backup > Run now**, puis **Restore** vers un ID temporaire et un réseau isolé :
    ```bash
@@ -49,7 +49,7 @@ Vérifier qu'un LXC Alpine est prêt à être mis en production : accès d'admin
 3. **Sécurité et maintenance :** branche Alpine maintenue, dépôts cohérents, clé SSH testée, secrets protégés et pare-feu appliqué au niveau prévu (souvent Proxmox pour LXC).
 4. **Données et exploitation :** sauvegarde planifiée vers une cible distincte, supervision et journaux configurés; restaurer un échantillon avant l'ouverture du service.
 5. **Bascule :** enregistrer responsable, fenêtre, IP/DNS, procédure de retour arrière et critères d'acceptation.
-   👉 *Explication : le CT partage le noyau de l'hôte; patch noyau, pare-feu et capacité de restauration dépendent aussi de Proxmox.*
+   👉 *Explication : le [[Glossary:CT]] partage le noyau de l'hôte; patch noyau, pare-feu et capacité de restauration dépendent aussi de Proxmox.*
 
 ## 🔒 3. Production — Façon Sécurisée
 - Refuser la mise en service si l'accès console, la sauvegarde restaurable, la mise à jour ou le réseau ne sont pas validés.

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Dovecot_Prerequis_Limites
 
-- **Environnement** : VM Debian 13; Dovecot depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Debian 13; Dovecot depuis les dépôts de la distribution
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / Dovecot — Prérequis et limites
 - **Tags** : `debian13`, `dovecot`, `imap`, `messagerie`, `prerequis-limites`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Vérifier qu'une VM Debian 13 peut héberger Dovecot (IMAP/LMTP) et identifier la limite majeure : Debian 13 fournit la branche 2.4, dont la syntaxe diffère de la 2.3.
+Vérifier qu'une VM Debian 13 peut héberger Dovecot ([[Glossary:IMAP]]/LMTP) et identifier la limite majeure : Debian 13 fournit la branche 2.4, dont la syntaxe diffère de la 2.3.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -29,7 +29,7 @@ Vérifier qu'une VM Debian 13 peut héberger Dovecot (IMAP/LMTP) et identifier l
    cat /etc/os-release | head -3
    hostnamectl --static
    ```
-   👉 Explication : FQDN attendu (`MAIL.EXAMPLE.NET`, à remplacer) pour le certificat TLS.
+   👉 Explication : [[Glossary:FQDN]] attendu (`MAIL.EXAMPLE.NET`, à remplacer) pour le certificat [[Glossary:TLS]].
 
 2. Relever la version proposée :
    ```bash

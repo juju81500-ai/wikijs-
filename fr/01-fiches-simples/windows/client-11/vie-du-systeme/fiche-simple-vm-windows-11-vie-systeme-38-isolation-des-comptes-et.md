@@ -44,7 +44,7 @@ Faire tourner les services avec des comptes à moindres privilèges (gMSA ou com
    ```
    👉 Explication : exporte et lit les droits d'ouverture de session.
 
-4. Appliquer le durcissement d'un service (SID restreint).
+4. Appliquer le durcissement d'un service ([[Glossary:SID]] restreint).
    ```powershell
    sc.exe sidtype NOM_SERVICE restricted
    ```

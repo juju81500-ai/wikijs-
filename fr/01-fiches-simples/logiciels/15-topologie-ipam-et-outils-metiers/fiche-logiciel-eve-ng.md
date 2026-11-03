@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 EVE-NG
 
-- **Catégorie** : Topologie, IPAM et outils métiers
-- **Plateforme** : Appliance / VM
+- **Catégorie** : Topologie, [[Glossary:IPAM]] et outils métiers
+- **Plateforme** : Appliance / [[Glossary:VM]]
 - **Produit (matrice)** : EVE-NG
 - **Statut dans le pack** : Partiel
 - **Tags** : `logiciel`, `15-topologie-ipam-et-outils-metiers`, `partiel`

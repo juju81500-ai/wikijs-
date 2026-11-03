@@ -24,8 +24,8 @@ Installer et utiliser un scanner uniquement sur des cibles dont vous avez l'auto
 
 ## 2. Prérequis
 
-- Autorisation écrite précisant cibles, plages IP, dates, horaires et contact d'urgence.
-- Segment ou VM d'administration isolé pour le scanner.
+- Autorisation écrite précisant cibles, plages [[Glossary:IP]], dates, horaires et contact d'urgence.
+- Segment ou [[Glossary:VM]] d'administration isolé pour le scanner.
 - Licence Nessus (Essentials, Professional ou Expert selon besoin) obtenue sur le site éditeur, ou installation de Greenbone Community Edition.
 - Comptes de scan authentifié à moindre privilège (lecture), stockés dans un coffre.
 - Sauvegardes et fenêtre de maintenance pour les systèmes fragiles (équipements industriels, imprimantes, appliances).
@@ -44,7 +44,7 @@ Les deux outils diffèrent par la gestion des flux de signatures, la licence et 
 
 ### 4.1 Préparer l'hôte
 
-Installer sur un hôte durci et à jour, avec NTP et espace disque suffisant, sans l'exposer à Internet. Limiter l'accès à l'interface web à un réseau d'administration.
+Installer sur un hôte durci et à jour, avec [[Glossary:NTP]] et espace disque suffisant, sans l'exposer à Internet. Limiter l'accès à l'interface web à un réseau d'administration.
 
 ### 4.2 Installer
 

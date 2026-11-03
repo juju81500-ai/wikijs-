@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Citrix Virtual Apps and Desktops
 
-- **Catégorie** : Poste de travail et VDI
+- **Catégorie** : Poste de travail et [[Glossary:VDI]]
 - **Plateforme** : Windows / Linux
 - **Produit (matrice)** : Citrix Virtual Apps and Desktops
 - **Statut dans le pack** : Couvert
@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 📚 Couverture dans le pack
 
-Couvert pour Windows Server 2022 (Delivery Controller, StoreFront, licences, VDA, catalogues, sauvegarde SQL, mise à jour) — série de 7 fiches simples ; Linux VDA non couvert
+Couvert pour Windows Server 2022 (Delivery Controller, StoreFront, licences, VDA, catalogues, sauvegarde [[Glossary:SQL]], mise à jour) — série de 7 fiches simples ; Linux VDA non couvert
 
 ## 🧭 Utilisation
 

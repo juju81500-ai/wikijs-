@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_Postfix_Prerequis_Limites
 
-- **Environnement** : VM Rocky Linux 9; Postfix depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9; Postfix depuis les dépôts de la distribution
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : Vie du logiciel / Postfix — Prérequis et limites
 - **Tags** : `postfix`, `serveur`, `vie-du-logiciel`, `prerequis_limites`
@@ -36,7 +36,7 @@ sudo ss -lntup
 
 ## 2. Production — Contrôles
 
-Documenter rôle SMTP/IMAP, domaines, réseaux autorisés et ports.
+Documenter rôle [[Glossary:SMTP]]/IMAP, domaines, réseaux autorisés et ports.
 
 ## 3. Production — Sécurité
 

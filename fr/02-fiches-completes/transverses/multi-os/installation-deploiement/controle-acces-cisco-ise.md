@@ -26,9 +26,9 @@ Préparer et valider un déploiement ISE (AAA, 802.1X, profilage, posture, TACAC
 
 - Licence Cisco (Smart Licensing) et compte Cisco avec droits de téléchargement.
 - Image ISE compatible avec la plateforme matérielle ou virtuelle et dimensionnement validé dans le guide d'installation.
-- DNS direct et inverse, NTP, certificats et plan de nommage des nœuds.
-- Intégration annuaire (AD ou LDAP) et autorité de certification.
-- Équipements réseau compatibles RADIUS/CoA avec leur propre version testée.
+- [[Glossary:DNS]] direct et inverse, [[Glossary:NTP]], certificats et plan de nommage des nœuds.
+- Intégration annuaire ([[Glossary:AD]] ou [[Glossary:LDAP]]) et autorité de certification.
+- Équipements réseau compatibles [[Glossary:RADIUS]]/CoA avec leur propre version testée.
 - Plan de bascule d'accès (mode surveillance avant application).
 
 ## 3. Variantes éditeur à distinguer

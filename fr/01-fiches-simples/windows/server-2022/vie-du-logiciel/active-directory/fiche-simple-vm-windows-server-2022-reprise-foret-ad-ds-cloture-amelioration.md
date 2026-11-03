@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-2022-reprise-foret-ad-ds-cloture-amelioration.md
 
-- **Environnement** : Forêt AD DS d'entreprise; laboratoire isolé recommandé
+- **Environnement** : Forêt [[Glossary:AD]] DS d'entreprise; laboratoire isolé recommandé
 - **OS / Version** : Windows Server 2022 pour les contrôleurs de domaine concernés
 - **Catégorie** : Active Directory / amélioration continue
 - **Tags** : `windows-server-2022`, `active-directory`, `ad-ds`, `forest-recovery`

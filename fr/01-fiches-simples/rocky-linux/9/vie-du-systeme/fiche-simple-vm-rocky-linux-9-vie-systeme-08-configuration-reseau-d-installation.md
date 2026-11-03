@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_08_Configuration_Reseau_D_Installation
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 08 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-08`
@@ -25,7 +25,7 @@ Disposer d'un réseau pendant l'installation.
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Dans anaconda, ouvrir « Réseau et nom d'hôte » et activer l'interface.
-   👉 Explication : le DHCP donne une adresse temporaire pour télécharger les paquets.
+   👉 Explication : le [[Glossary:DHCP]] donne une adresse temporaire pour télécharger les paquets.
 
 2. Après le premier démarrage, contrôler l'état :
    ```bash
@@ -40,11 +40,11 @@ Disposer d'un réseau pendant l'installation.
    ping -c 2 8.8.8.8
    curl -sI https://download.rockylinux.org | head -n1
    ```
-   👉 Explication : valide routage, DNS et accès aux miroirs.
+   👉 Explication : valide routage, [[Glossary:DNS]] et accès aux miroirs.
 
 ## 2. Production — Contrôles
 
-Prévoir VLAN, passerelle et DNS corrects dès l'installation.
+Prévoir [[Glossary:VLAN]], passerelle et DNS corrects dès l'installation.
 
 ## 3. Production — Sécurité
 

@@ -25,15 +25,15 @@ Choisir et documenter l'architecture de synchronisation d'identités hybrides av
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Lire la page Learn « Choose between Connect Sync and Cloud Sync » et choisir selon la topologie (forêts, filtrage, écriture différée, objets pris en charge).
-   👉 Explication : la décision ne repose pas sur le nom historique « Azure AD Connect » ; confirmer la fonctionnalité nécessaire.
+   👉 Explication : la décision ne repose pas sur le nom historique « Azure [[Glossary:AD]] Connect » ; confirmer la fonctionnalité nécessaire.
 
-2. Vérifier les prérequis publiés : système de serveur supporté, .NET, TLS 1.2, compte et rôles requis, URL/ports sortants.
+2. Vérifier les prérequis publiés : système de serveur supporté, .NET, [[Glossary:TLS]] 1.2, compte et rôles requis, URL/ports sortants.
    👉 Explication : ne pas déduire la matrice de support ; elle évolue. Consulter la page « Prerequisites ».
 
 3. Télécharger Microsoft Entra Connect depuis le Centre d'administration : Entra admin center → Entra ID → Entra Connect → Get started (ou lien indiqué par Learn).
    👉 Explication : télécharger uniquement depuis la source officielle Microsoft et valider la signature.
 
-4. Installer Connect Sync depuis le MSI officiel, puis configurer avec l'assistant GUI. Dans **Microsoft Entra Connect** > **Customize**, choisir les options adaptées à la topologie, valider le filtrage des unités d'organisation et ne démarrer l'export qu'après approbation. Pour un serveur secondaire, activer **Staging mode**.
+4. Installer Connect Sync depuis le [[Glossary:MSI]] officiel, puis configurer avec l'assistant [[Glossary:GUI]]. Dans **Microsoft Entra Connect** > **Customize**, choisir les options adaptées à la topologie, valider le filtrage des unités d'organisation et ne démarrer l'export qu'après approbation. Pour un serveur secondaire, activer **Staging mode**.
    ```powershell
    $Installer = 'C:\INSTALL\AzureADConnect.msi' # CHEMIN_MSI_VERIFIE à remplacer
    Get-AuthenticodeSignature $Installer

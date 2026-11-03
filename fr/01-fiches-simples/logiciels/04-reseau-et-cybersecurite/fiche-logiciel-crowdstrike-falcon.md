@@ -23,7 +23,7 @@ Fiche défensive d’administration et de gouvernance. Elle ne remplace pas le g
 
 ## 🧭 Périmètre
 
-Administrer la console avec identité nominative, MFA et rôles restreints; suivre l’état de santé des capteurs et la couverture du parc depuis l’inventaire autorisé. Déployer les politiques de prévention par groupes pilotes, avec revue et procédure de retour arrière. Les actions de confinement ou de remédiation sur un poste nécessitent une autorisation d’incident et une traçabilité dédiée.
+Administrer la console avec identité nominative, [[Glossary:MFA]] et rôles restreints; suivre l’état de santé des capteurs et la couverture du parc depuis l’inventaire autorisé. Déployer les politiques de prévention par groupes pilotes, avec revue et procédure de retour arrière. Les actions de confinement ou de remédiation sur un poste nécessitent une autorisation d’incident et une traçabilité dédiée.
 
 ## ✅ Autorisation et préparation
 

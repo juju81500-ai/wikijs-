@@ -21,7 +21,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 À la fin de cette leçon, vous saurez :
 
-1. Expliquer pourquoi une paire de clés SSH est plus sûre qu'un mot de passe, et ce qui voyage (ou non) sur le réseau.
+1. Expliquer pourquoi une paire de clés [[Glossary:SSH]] est plus sûre qu'un mot de passe, et ce qui voyage (ou non) sur le réseau.
 2. Générer une clé moderne (Ed25519), la protéger par une passphrase et installer la clé publique sur un serveur.
 3. Utiliser **ssh-agent** sans exposer inutilement vos clés.
 4. Écrire un fichier `~/.ssh/config` lisible (alias, utilisateur, clé, saut) et le tester avec `ssh -G`.
@@ -32,7 +32,7 @@ dateModified: 2026-11-03T09:36:13Z
 ## Prérequis et durée
 
 - Avoir lu la leçon [Comptes, groupes, permissions et sudo](/fr/00-cours-theoriques/tout-en-un/02-identites-et-acces/lecons/lecon-comptes-linux) : les permissions de `~/.ssh` y sont essentielles.
-- Une **VM jetable** Debian ou Ubuntu avec le serveur OpenSSH (`openssh-server`) et un client SSH sur votre poste (Linux, macOS ou Windows 10/11 avec OpenSSH intégré).
+- Une **[[Glossary:VM]] jetable** Debian ou Ubuntu avec le serveur OpenSSH (`openssh-server`) et un client SSH sur votre poste (Linux, macOS ou Windows 10/11 avec OpenSSH intégré).
 - Durée totale : environ 3 h 30. Le laboratoire (section 8) se déroule sur la VM, à l'aide d'un compte de test.
 
 > **Règle de sécurité** : les adresses du cours (192.0.2.x, 198.51.100.x, 203.0.113.x) sont des adresses de documentation. Remplacez-les par celles de **votre** laboratoire. N'exécutez jamais de modification de `sshd_config` sur un serveur de production sans fenêtre de maintenance et sans seconde session ouverte.
@@ -79,8 +79,8 @@ Mais une clé privée copiée sans passphrase est aussi dangereuse qu'un mot de 
 ### 2.1 Choisir l'algorithme
 
 - **Ed25519** : court, rapide, moderne. C'est le choix par défaut actuel.
-- **RSA 3072 bits ou plus** : pour les systèmes anciens qui ne connaissent pas Ed25519. Évitez RSA 1024 et 2048 pour les nouveaux déploiements.
-- **Clés FIDO2 (`ed25519-sk`)** : la clé privée reste dans un jeton matériel, ce qui protège contre le vol de fichier.
+- **[[Glossary:RSA]] 3072 bits ou plus** : pour les systèmes anciens qui ne connaissent pas Ed25519. Évitez RSA 1024 et 2048 pour les nouveaux déploiements.
+- **Clés [[Glossary:FIDO2]] (`ed25519-sk`)** : la clé privée reste dans un jeton matériel, ce qui protège contre le vol de fichier.
 - DSA est à abandonner.
 
 ### 2.2 Générer la clé
@@ -240,7 +240,7 @@ ClientAliveCountMax 2
 
 - **Utile** : couper les mots de passe, interdire root, limiter les utilisateurs, `LogLevel VERBOSE` (empreinte de la clé utilisée), filtrer les sources par pare-feu.
 - **Cosmétique** : changer le port 22 réduit le bruit des journaux mais ne protège pas d'un scan.
-- **Complément** : bannissement des essais répétés (`fail2ban`), mises à jour, MFA sur le bastion.
+- **Complément** : bannissement des essais répétés (`fail2ban`), mises à jour, [[Glossary:MFA]] sur le bastion.
 - **À éviter** : copier des listes d'algorithmes au hasard ; les défauts d'OpenSSH récent sont raisonnables.
 
 ### 5.4 Valider et recharger sans risque
@@ -261,7 +261,7 @@ sudo sshd -T | grep -Ei 'permitrootlogin|passwordauthentication|allowgroups|maxa
 sudo systemctl reload ssh
 ```
 
-👉 Explication : recharge sans couper les sessions existantes (service `ssh` sur Debian/Ubuntu, `sshd` sur RHEL). Testez ensuite dans un **second terminal** avant de fermer le premier.
+👉 Explication : recharge sans couper les sessions existantes (service `ssh` sur Debian/Ubuntu, `sshd` sur [[Glossary:RHEL]]). Testez ensuite dans un **second terminal** avant de fermer le premier.
 
 ## 6. Bonne hygiène des clés
 

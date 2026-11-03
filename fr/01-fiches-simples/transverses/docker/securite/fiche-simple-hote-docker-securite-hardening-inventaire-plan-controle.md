@@ -36,7 +36,7 @@ Savoir qui contrôle Docker et ce qui est exposé.
    ```bash
    ss -lntup
    ```
-   👉 Explication : repère l'exposition réseau, notamment une API Docker en TCP.
+   👉 Explication : repère l'exposition réseau, notamment une [[Glossary:API]] Docker en [[Glossary:TCP]].
 
 3. Lister les membres du groupe `docker` :
    ```bash

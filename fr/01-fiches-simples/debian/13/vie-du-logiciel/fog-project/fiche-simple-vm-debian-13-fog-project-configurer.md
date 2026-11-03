@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_FOG_Project_Configurer
 
-- **Environnement** : VM Debian 13 dédiée FOG Project (clonage/déploiement d'images), réseau de laboratoire isolé
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée FOG Project (clonage/déploiement d'images), réseau de laboratoire isolé
 - **OS / Version** : Debian 13 Trixie; FOG Project (version et support Debian 13 à vérifier)
 - **Catégorie** : automatisation / déploiement
 - **Tags** : `debian13`, `fog-project`, `configuration`, `pxe`, `dhcp`
@@ -20,14 +20,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Configurer le démarrage réseau et les paramètres de base de FOG sans impacter le DHCP existant.
+Configurer le démarrage réseau et les paramètres de base de FOG sans impacter le [[Glossary:DHCP]] existant.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Si DHCP existant : renseigner sur le serveur DHCP les options 66 (IP_SERVEUR_FOG) et 67 (nom du fichier de démarrage indiqué par la documentation FOG pour BIOS/UEFI).
+1. Si DHCP existant : renseigner sur le serveur DHCP les options 66 (IP_SERVEUR_FOG) et 67 (nom du fichier de démarrage indiqué par la documentation FOG pour [[Glossary:BIOS]]/UEFI).
    👉 Explication : IP_SERVEUR_FOG est à remplacer ; le fichier de démarrage dépend du mode BIOS/UEFI : se référer à la documentation FOG.
 
-2. Dans l'interface web : FOG Configuration → FOG Settings → vérifier les paramètres de réseau (TFTP/Web host).
+2. Dans l'interface web : FOG Configuration → FOG Settings → vérifier les paramètres de réseau ([[Glossary:TFTP]]/Web host).
    👉 Explication : les chemins de menu peuvent varier selon la version : vérifier dans la documentation correspondante.
 
 3. Vérifier les services de démarrage :
@@ -36,12 +36,12 @@ Configurer le démarrage réseau et les paramètres de base de FOG sans impacter
    ```
    👉 Explication : les noms d'unités peuvent différer selon la version de l'installeur ; adapter à `systemctl list-units | grep -Ei 'tftp|nfs'`.
 
-4. Tester avec une seule VM de laboratoire en démarrage PXE, sans lancer de déploiement.
+4. Tester avec une seule VM de laboratoire en démarrage [[Glossary:PXE]], sans lancer de déploiement.
    👉 Explication : le test valide la chaîne DHCP→TFTP→menu FOG avant tout déploiement.
 
 ## 2. Production — Contrôles
 
-Production : changement DHCP approuvé, VLAN ou machines pilotes limités, groupes d'hôtes et images nommés, droits des comptes de gestion séparés.
+Production : changement DHCP approuvé, [[Glossary:VLAN]] ou machines pilotes limités, groupes d'hôtes et images nommés, droits des comptes de gestion séparés.
 
 ## 3. Production — Sécurité
 

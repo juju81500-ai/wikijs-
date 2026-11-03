@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Chiffrer l'API et le cluster et configurer le stockage Raft persistant sur chaque nœud.
+Chiffrer l'[[Glossary:API]] et le cluster et configurer le stockage Raft persistant sur chaque nœud.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Placer le certificat du nœud et sa clé (émis par l'autorité approuvée, SAN = nom DNS du nœud) avec des droits stricts :
+1. Placer le certificat du nœud et sa clé (émis par l'autorité approuvée, [[Glossary:SAN]] = nom [[Glossary:DNS]] du nœud) avec des droits stricts :
    ```bash
    sudo install -d -o vault -g vault -m 0750 /opt/vault/tls
    sudo install -o vault -g vault -m 0640 vault1-fullchain.pem /opt/vault/tls/vault.crt
@@ -55,7 +55,7 @@ Chiffrer l'API et le cluster et configurer le stockage Raft persistant sur chaqu
      tls_key_file    = "/opt/vault/tls/vault.key"
    }
    ```
-   👉 Explication : ces lignes (bloc de fichier, à enregistrer dans `vault.hcl`) activent TLS sur l'API 8200 et le cluster 8201 et un stockage Raft persistant.
+   👉 Explication : ces lignes (bloc de fichier, à enregistrer dans `vault.hcl`) activent [[Glossary:TLS]] sur l'API 8200 et le cluster 8201 et un stockage Raft persistant.
 
 4. Restreindre le pare-feu et désactiver les core dumps (selon vos outils; exemple systemd) :
    ```bash

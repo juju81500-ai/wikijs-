@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_32_Automatisation_Des_Correctifs_De
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 32 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-32`
@@ -43,7 +43,7 @@ Appliquer les correctifs de sécurité dans une fenêtre de maintenance avec poi
 
 ## 3. Production — Sécurité
 
-Appliquer sans délai les correctifs critiques exposant le WAN.
+Appliquer sans délai les correctifs critiques exposant le [[Glossary:WAN]].
 
 ## Validation et retour arrière
 

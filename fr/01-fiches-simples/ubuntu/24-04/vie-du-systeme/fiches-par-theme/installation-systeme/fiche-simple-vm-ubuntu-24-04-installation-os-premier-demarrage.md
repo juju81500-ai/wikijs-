@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-ubuntu-24-04-installation-os-premier-demarrage.md
 
-- **Environnement** : VM Ubuntu Server sur Proxmox VE, KVM ou VMware
-- **OS / Version** : Ubuntu Server 24-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server sur Proxmox VE, [[Glossary:KVM]] ou VMware
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]]
 - **Catégorie** : Installation / Système
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[installation]`, `[vm]`, `[netplan]`, `[premier-demarrage]`
 
@@ -21,7 +21,7 @@ Installer Ubuntu Server 24-04 LTS sur une nouvelle VM, configurer stockage et r�
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Télécharger l'ISO depuis une source officielle Canonical et contrôler l'empreinte publiée.
-2. Créer une VM avec disque, firmware, CPU, mémoire et interface réseau conformes au lab; monter l'ISO.
+2. Créer une VM avec disque, firmware, [[Glossary:CPU]], mémoire et interface réseau conformes au lab; monter l'ISO.
 3. Dans l'installateur, choisir langue, clavier, profil Ubuntu Server, stockage et réseau; créer un compte nominatif. Installer OpenSSH si requis.
 4. Au premier démarrage, vérifier :
    ```bash
@@ -34,9 +34,9 @@ Installer Ubuntu Server 24-04 LTS sur une nouvelle VM, configurer stockage et r�
    👉 *Explication : une configuration Netplan créée par cloud-init peut être régénérée; identifier la source avant toute modification persistante.*
 
 ## ⚡ 2. Production — Façon Simplifiée
-1. Valider ISO, ressources, stockage, réseau virtuel, hostname, plan IP et procédure de sauvegarde.
+1. Valider ISO, ressources, stockage, réseau virtuel, hostname, plan [[Glossary:IP]] et procédure de sauvegarde.
 2. Installer selon le plan de stockage du rôle; garder une console hyperviseur pendant la configuration réseau.
-3. Appliquer les fiches existantes pour mises à jour, compte d'administration, SSH par clé, Netplan, DNS, UFW et cloud-init.
+3. Appliquer les fiches existantes pour mises à jour, compte d'administration, [[Glossary:SSH]] par clé, Netplan, [[Glossary:DNS]], [[Glossary:UFW]] et cloud-init.
 4. Installer uniquement les paquets nécessaires, appliquer les mises à jour et effectuer un redémarrage de validation.
 
 ## 🔒 3. Production — Façon Sécurisée

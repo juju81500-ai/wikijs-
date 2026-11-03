@@ -2,11 +2,11 @@
 title: "00 — Cours théoriques"
 description: "Parcours de compréhension pour relier les notions avant de passer aux fiches pratiques. Le contenu rédigé dans ce dossier est une synthèse originale du pack. Les animations, illustrations et cours externes restent chez leurs auteurs : les liens ouvrent les pages d'origine."
 published: true
-date: 2026-11-03T10:10:00Z
+date: 2026-11-03T10:12:11Z
 tags: ["cours", "theorie", "tssr", "reseau", "systeme"]
 editor: markdown
-dateCreated: 2026-11-03T10:10:00Z
-dateModified: 2026-11-03T10:10:00Z
+dateCreated: 2026-11-03T10:12:11Z
+dateModified: 2026-11-03T10:12:11Z
 ---
 
 # 00 — Cours théoriques
@@ -28,7 +28,7 @@ Parcours de compréhension pour relier les notions avant de passer aux fiches pr
 | Thème | Ressource | Apport |
 |---|---|---|
 | Linux | [Parcours Linux de Stéphane Robert](https://www.stephane-robert.info/docs/admin-serveurs/linux/parcours/) | Programme progressif, leçons, laboratoires et quiz, du terminal à l'administration serveur. |
-| Linux, Windows et réseau | [Modules ZenTSSR](https://zentssr.com/modules) | Révisions organisées par compétences et modules TSSR. |
+| Linux, Windows et réseau | [Modules ZenTSSR](https://zentssr.com/modules) | Révisions organisées par compétences et modules [[Glossary:TSSR]]. |
 | Systèmes et réseaux | [Cours TSSR sur GitHub](https://github.com/kipit/nivvlem-TSSR/blob/main/modules.md) | Index de modules Linux, Windows, réseau, virtualisation, scripting, sauvegarde et sécurité. |
 | Réseau | [Cours Root & Code](https://www.jousseaume.online/categorie/reseau/) | Cours illustrés, animations transcrites et questions de compréhension. |
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # RHEL et AlmaLinux : compléments par rapport à Rocky Linux 9
 
-- **Environnement** : Serveurs RHEL ou AlmaLinux de la famille EL, en complément des fiches Rocky Linux 9 existantes
+- **Environnement** : Serveurs [[Glossary:RHEL]] ou AlmaLinux de la famille EL, en complément des fiches Rocky Linux 9 existantes
 - **Tags** : `rhel`, `almalinux`, `rocky`, `dnf`, `selinux`, `subscription`
 - **Statut de validation** : **Verdict : Non testé sur plateforme cible.** Les procédures ci-dessous sont issues de la méthode documentaire et doivent être rejouées en laboratoire avant toute production.
 
@@ -40,15 +40,15 @@ sudo subscription-manager register
 sudo subscription-manager status
 sudo subscription-manager repos --list-enabled
 ```
-3. AlmaLinux : vérifier les dépôts `baseos`, `appstream` et la clé GPG.
+3. AlmaLinux : vérifier les dépôts `baseos`, `appstream` et la clé [[Glossary:GPG]].
 ```bash
 dnf repolist
 rpm -qa gpg-pubkey*
 ```
 4. Mettre à jour après instantané : `sudo dnf check-update` puis `sudo dnf update`.
 5. Contrôler SELinux (`getenforce`, doit rester `Enforcing`) et firewalld (`firewall-cmd --list-all`).
-6. Migration entre distributions EL : n'utiliser que l'outil et la procédure documentés par la distribution cible (par exemple outil officiel de conversion), uniquement sur une copie ou une VM clonée d'abord.
-7. Documenter le canal de correctifs de sécurité et le rythme de mise à jour (CVE).
+6. Migration entre distributions EL : n'utiliser que l'outil et la procédure documentés par la distribution cible (par exemple outil officiel de conversion), uniquement sur une copie ou une [[Glossary:VM]] clonée d'abord.
+7. Documenter le canal de correctifs de sécurité et le rythme de mise à jour ([[Glossary:CVE]]).
 
 ## 4. Vérifications
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-gns3-deploiement-version-perimetre.md
 
-- **Environnement** : Poste Debian 13 amd64 graphique avec virtualisation CPU
+- **Environnement** : Poste Debian 13 amd64 graphique avec virtualisation [[Glossary:CPU]]
 - **OS / Version** : Debian 13 Trixie amd64; GNS3 2.2.61 stable
 - **Catégorie** : simulation reseau / cadrage
 - **Tags** : `gns3`, `debian13`, `cadrage`, `lab`
@@ -34,18 +34,18 @@ Choisir la version stable et définir le périmètre d'un laboratoire isolé.
    ```bash
    grep -Ec '(vmx|svm)' /proc/cpuinfo
    ```
-   👉 Explication : un résultat supérieur à 0 indique que VT-x/AMD-V est activé; sur VM, la virtualisation imbriquée doit être autorisée par l'hyperviseur.
+   👉 Explication : un résultat supérieur à 0 indique que VT-x/AMD-V est activé; sur [[Glossary:VM]], la virtualisation imbriquée doit être autorisée par l'hyperviseur.
 
 3. Retenir GNS3 2.2.61 stable; la branche 3.1 alpha n'est pas utilisée.
-   👉 Explication : GNS3 n'est pas un paquet APT Debian natif; l'installation se fait par `pipx`.
+   👉 Explication : GNS3 n'est pas un paquet [[Glossary:APT]] Debian natif; l'installation se fait par `pipx`.
 
 ## 2. Production — Contrôles
 
-Définir ressources (CPU, Go de RAM, disque), propriétaires des images et licences.
+Définir ressources (CPU, Go de [[Glossary:RAM]], disque), propriétaires des images et licences.
 
 ## 3. Production — Sécurité
 
-- Aucun lien Cloud, NAT externe ni pont vers une carte physique.
+- Aucun lien Cloud, [[Glossary:NAT]] externe ni pont vers une carte physique.
 - Images propriétaires uniquement depuis l'éditeur, selon leur licence.
 
 ## Validation et retour arrière

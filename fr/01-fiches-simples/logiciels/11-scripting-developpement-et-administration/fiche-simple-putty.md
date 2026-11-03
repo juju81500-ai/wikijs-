@@ -11,14 +11,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 PuTTY
 
-- **Environnement** : VM (Windows Server 2022)
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022)
 - **OS / Version** : Windows Server 2022 (Desktop Experience), PowerShell 5.1
 - **Version** : PuTTY 0.85.x (paquet winget `PuTTY.PuTTY`, à vérifier sur la version déployée)
 - **Catégorie** : Scripting, développement et administration
 - **Tags** : `[windows-server-2022]`, `[putty]`, `[ssh]`, `[powershell]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer PuTTY sur Windows Server 2022, vérifier la connexion SSH vers une machine Linux de test, valider l'empreinte de la clé d'hôte, puis imposer une connexion par clé et une validation stricte des clés d'hôte pour l'administration en production. Les tests ne se font que sur vos propres machines.
+Installer PuTTY sur Windows Server 2022, vérifier la connexion [[Glossary:SSH]] vers une machine Linux de test, valider l'empreinte de la clé d'hôte, puis imposer une connexion par clé et une validation stricte des clés d'hôte pour l'administration en production. Les tests ne se font que sur vos propres machines.
 
 ---
 

@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Limiter les connexions RDP aux utilisateurs et adresses réseau approuvés sans modifier inutilement le port RDP par défaut.
+Limiter les connexions [[Glossary:RDP]] aux utilisateurs et adresses réseau approuvés sans modifier inutilement le port RDP par défaut.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -32,7 +32,7 @@ Limiter les connexions RDP aux utilisateurs et adresses réseau approuvés sans 
    Add-LocalGroupMember -Group $rdpGroup.Name -Member 'LAB\GRP_RDS_ACCESS'
    Get-LocalGroupMember -Group $rdpGroup.Name
    ```
-   👉 Explication : Le SID identifie le groupe local « Utilisateurs du Bureau à distance » indépendamment de la langue; `LAB\GRP_RDS_ACCESS` est un exemple à remplacer par le groupe autorisé.
+   👉 Explication : Le [[Glossary:SID]] identifie le groupe local « Utilisateurs du Bureau à distance » indépendamment de la langue; `LAB\GRP_RDS_ACCESS` est un exemple à remplacer par le groupe autorisé.
 3. Dans `wf.msc` > **Règles de trafic entrant** > règles Bureau à distance > **Propriétés** > **Étendue**, limiter les adresses distantes au réseau d'administration.
    👉 Explication : Le sous-réseau est à remplacer par le réseau de lab approuvé. Ne pas ouvrir les règles vers Internet.
 4. Vérifier les réglages RDP/NLA :
@@ -40,7 +40,7 @@ Limiter les connexions RDP aux utilisateurs et adresses réseau approuvés sans 
    Get-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server' -Name fDenyTSConnections
    Get-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -Name UserAuthentication
    ```
-   👉 Explication : RDP doit être activé (`fDenyTSConnections` à 0) et NLA exigé (`UserAuthentication` à 1).
+   👉 Explication : RDP doit être activé (`fDenyTSConnections` à 0) et [[Glossary:NLA]] exigé (`UserAuthentication` à 1).
 
 ## 2. Production — Contrôles
 
@@ -50,7 +50,7 @@ Limiter les connexions RDP aux utilisateurs et adresses réseau approuvés sans 
 
 ## 3. Production — Sécurité
 
-- Préférer VPN/RD Gateway approuvée, NLA, certificat TLS valide et filtrage réseau par source.
+- Préférer [[Glossary:VPN]]/RD Gateway approuvée, NLA, certificat [[Glossary:TLS]] valide et filtrage réseau par source.
 - Ne pas compter sur le changement du port 3389 pour protéger le service; il ne remplace pas les contrôles d'accès.
 - Ne pas ajouter des utilisateurs au groupe Administrateurs pour leur donner seulement le droit RDP.
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Traefik_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; Traefik v3 (binaire officiel)
 - **Catégorie** : reverse proxy / Traefik / Sauvegarder et restaurer
 - **Tags** : `debian13`, `traefik`, `sauvegarde`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Sauvegarder configuration, certificats ACME et unité systemd de Traefik et prouver la restauration.
+Sauvegarder configuration, certificats [[Glossary:ACME]] et unité systemd de Traefik et prouver la restauration.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

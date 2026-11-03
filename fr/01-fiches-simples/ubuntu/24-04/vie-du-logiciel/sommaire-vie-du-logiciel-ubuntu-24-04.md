@@ -94,7 +94,7 @@ Logiciels qui s'installent et se gèrent sur Ubuntu 24-04. Pour chaque logiciel 
 
 ### Nakivo
 
-- Fiche d'entrée : [catalogue Nakivo-Altaro](/fr/01-fiches-simples/logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-nakivo-altaro) (statut : Partiel — NAKIVO Windows Server 2022 et Transporter Linux sur Debian 13 et Ubuntu Server 24-04; Altaro/Hornetsecurity limité à la documentation publique de VM Backup)
+- Fiche d'entrée : [catalogue Nakivo-Altaro](/fr/01-fiches-simples/logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-nakivo-altaro) (statut : Partiel — NAKIVO Windows Server 2022 et Transporter Linux sur Debian 13 et Ubuntu Server 24-04; Altaro/Hornetsecurity limité à la documentation publique de [[Glossary:VM]] Backup)
 - [Ubuntu 24-04 Nakivo Transporter Configurer](/fr/01-fiches-simples/ubuntu/24-04/vie-du-logiciel/nakivo/fiche-simple-ubuntu-24-04-nakivo-transporter-configurer)
 - [Ubuntu 24-04 Nakivo Transporter Installer](/fr/01-fiches-simples/ubuntu/24-04/vie-du-logiciel/nakivo/fiche-simple-ubuntu-24-04-nakivo-transporter-installer)
 - [Ubuntu 24-04 Nakivo Transporter Mettre A Jour Retour Arriere](/fr/01-fiches-simples/ubuntu/24-04/vie-du-logiciel/nakivo/fiche-simple-ubuntu-24-04-nakivo-transporter-mettre-a-jour-retour-arriere)
@@ -349,7 +349,7 @@ Cliquer sur le nom pour voir l'état de couverture ; une procédure détaillée 
 - [Apache](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-apache) — Couvert
 - [Caddy](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-caddy) — Couvert
 - [HAProxy](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-haproxy) — Couvert
-- [IIS](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-iis) — Guide complet — installation du rôle IIS et site pilote Windows Server 2022
+- [IIS](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-iis) — Guide complet — installation du rôle [[Glossary:IIS]] et site pilote Windows Server 2022
 - [InfluxDB](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-influxdb) — Couvert
 - [MariaDB](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-mariadb) — Couvert
 - [MongoDB](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-mongodb) — Couvert

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_49_Enregistrement_Cmdb_Et_Gestion
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 49 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-49`
@@ -33,7 +33,7 @@ Inventorier la machine.
    ```
    👉 Explication : identité, version, adresses et numéro de série.
 
-2. Créer la fiche CMDB avec propriétaire et criticité.
+2. Créer la fiche [[Glossary:CMDB]] avec propriétaire et criticité.
    👉 Explication : assure le suivi du cycle de vie.
 
 3. Lister les comptes autorisés :

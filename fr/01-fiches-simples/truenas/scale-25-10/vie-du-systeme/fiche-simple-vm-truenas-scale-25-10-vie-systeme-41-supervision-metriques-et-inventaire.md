@@ -20,18 +20,18 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Surveiller l'état du NAS.
+Surveiller l'état du [[Glossary:NAS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Tableau de bord, Rapports (graphiques CPU, ARC, réseau, disques) et Alertes.
+1. [[Glossary:GUI]] : Tableau de bord, Rapports (graphiques [[Glossary:CPU]], ARC, réseau, disques) et Alertes.
    ```bash
    sudo zpool status -x
    sudo zpool list -o name,size,alloc,free,cap,health
    ```
    👉 Explication : état de santé et occupation.
 
-2. Activer SNMP si utilisé : Système > Services > SNMP.
+2. Activer [[Glossary:SNMP]] si utilisé : Système > Services > SNMP.
    ```bash
    sudo midclt call service.update snmp '{"enable": true}'
    snmpwalk -v2c -c COMMUNAUTE ADRESSE_NAS 1.3.6.1.2.1.1
@@ -42,7 +42,7 @@ Surveiller l'état du NAS.
    ```bash
    sudo midclt call mail.config | python3 -m json.tool | head
    ```
-   👉 Explication : serveur SMTP configuré.
+   👉 Explication : serveur [[Glossary:SMTP]] configuré.
 
 ## 2. Production — Contrôles
 

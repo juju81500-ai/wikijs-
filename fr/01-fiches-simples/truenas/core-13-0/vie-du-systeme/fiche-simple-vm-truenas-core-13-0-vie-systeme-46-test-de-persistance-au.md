@@ -24,7 +24,7 @@ Vérifier que tout redémarre seul.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : icône Alimentation > Redémarrer.
+1. [[Glossary:GUI]] : icône Alimentation > Redémarrer.
    ```sh
    shutdown -r now
    ```

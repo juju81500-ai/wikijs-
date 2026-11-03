@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_10_Compte_Super_Administrateur
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 10 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-10`
@@ -45,7 +45,7 @@ Stocker le mot de passe dans un coffre-fort et le réserver aux urgences.
 
 ## 3. Production — Sécurité
 
-Mot de passe long et unique; activer le 2FA (System > User Manager > Authentication Servers, TOTP).
+Mot de passe long et unique; activer le 2FA (System > User Manager > Authentication Servers, [[Glossary:TOTP]]).
 
 ## Validation et retour arrière
 

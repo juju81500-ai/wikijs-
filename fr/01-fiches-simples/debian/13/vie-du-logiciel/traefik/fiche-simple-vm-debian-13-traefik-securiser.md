@@ -11,16 +11,16 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Traefik_Securiser
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; Traefik v3 (binaire officiel)
-- **Catégorie** : reverse proxy / Traefik / Sécuriser (TLS, redirection, pare-feu)
+- **Catégorie** : reverse proxy / Traefik / Sécuriser ([[Glossary:TLS]], redirection, pare-feu)
 - **Tags** : `debian13`, `traefik`, `securite`
 
 ---
 
 ## Problème précis à résoudre
 
-Activer HTTPS (certificat ACME ou fichier), rediriger HTTP vers HTTPS et limiter l'exposition.
+Activer HTTPS (certificat [[Glossary:ACME]] ou fichier), rediriger [[Glossary:HTTP]] vers HTTPS et limiter l'exposition.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -37,7 +37,7 @@ Activer HTTPS (certificat ACME ou fichier), rediriger HTTP vers HTTPS et limiter
    EOF
    sudo install -o traefik -g traefik -m 0600 /dev/null /var/lib/traefik/acme.json
    ```
-   👉 Explication : remplacer `ADMIN@example.net` (à remplacer) ; utiliser d'abord le serveur de préproduction Let's Encrypt (`caServer`) en lab ; nécessite un nom DNS public et le port 80.
+   👉 Explication : remplacer `ADMIN@example.net` (à remplacer) ; utiliser d'abord le serveur de préproduction Let's Encrypt (`caServer`) en lab ; nécessite un nom [[Glossary:DNS]] public et le port 80.
 
 2. Passer le routeur en HTTPS :
    ```bash
@@ -99,7 +99,7 @@ Certificats supervisés (échéance), sauvegarde de `acme.json`, journaux centra
 ## 3. Production — Sécurité
 
 - `acme.json` en `0600`, jamais versionné.
-- Ne jamais écrire de jeton API DNS dans les fichiers ; utiliser un fichier d'environnement en `0600` pour l'unité.
+- Ne jamais écrire de jeton [[Glossary:API]] DNS dans les fichiers ; utiliser un fichier d'environnement en `0600` pour l'unité.
 - Aucun tableau de bord public.
 
 ## Validation et retour arrière

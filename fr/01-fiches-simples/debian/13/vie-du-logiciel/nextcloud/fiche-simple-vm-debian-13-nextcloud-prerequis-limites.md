@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Nextcloud_Prerequis_Limites
 
-- **Environnement** : VM Debian 13; Nextcloud (archive officielle), Apache, PHP 8.4 et MariaDB
+- **Environnement** : [[Glossary:VM]] Debian 13; Nextcloud (archive officielle), Apache, PHP 8.4 et MariaDB
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / Nextcloud — Prérequis et limites
 - **Tags** : `debian13`, `nextcloud`, `cloud`, `apache`, `php`, `prerequis-limites`
@@ -24,7 +24,7 @@ Vérifier la compatibilité d'une VM Debian 13 avec Nextcloud installé depuis l
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Contrôler l'OS, la RAM et l'espace disque :
+1. Contrôler l'OS, la [[Glossary:RAM]] et l'espace disque :
    ```bash
    cat /etc/os-release | head -3
    free -h
@@ -44,7 +44,7 @@ Vérifier la compatibilité d'une VM Debian 13 avec Nextcloud installé depuis l
    ```
    👉 Explication : MariaDB (ou PostgreSQL) et Apache/Nginx sont requis ; versions à comparer à la matrice officielle.
 
-4. Définir le nom DNS et le répertoire de données :
+4. Définir le nom [[Glossary:DNS]] et le répertoire de données :
    ```bash
    hostnamectl --static
    sudo install -d -m 0750 /srv/nextcloud-data
@@ -53,7 +53,7 @@ Vérifier la compatibilité d'une VM Debian 13 avec Nextcloud installé depuis l
 
 ## 2. Production — Contrôles
 
-Documenter version cible, FQDN, volumétrie, authentification, politique de sauvegarde, besoin de Redis/antivirus. Pour une approche conteneurisée voir le guide Docker du pack.
+Documenter version cible, [[Glossary:FQDN]], volumétrie, authentification, politique de sauvegarde, besoin de Redis/antivirus. Pour une approche conteneurisée voir le guide Docker du pack.
 
 ## 3. Production — Sécurité
 

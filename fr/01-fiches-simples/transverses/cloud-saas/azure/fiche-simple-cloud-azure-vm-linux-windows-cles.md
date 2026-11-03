@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Fiche_Simple_-_Cloud_Azure_VM_Linux_Windows_Cles
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — Azure CLI (az ; version publiée à vérifier)
+- **OS / Version** : Cloud/SaaS — Azure [[Glossary:CLI]] (az ; version publiée à vérifier)
 - **Catégorie** : cloud public / vm linux et windows avec accès par clé
 - **Tags** : `azure`, `vm_linux_windows_cles`, `securite`, `procedure`
 
@@ -20,13 +20,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-VM Linux et Windows avec accès par clé dans Microsoft Azure en limitant les risques de sécurité, de disponibilité et de coût.
+[[Glossary:VM]] Linux et Windows avec accès par clé dans Microsoft Azure en limitant les risques de sécurité, de disponibilité et de coût.
 
 Les valeurs écrites en MAJUSCULES sont des placeholders à remplacer par les valeurs validées de l’environnement. Ne coller aucun secret réel dans les commandes, les fiches ou l’historique shell.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Console : Virtual machines → Create → Azure virtual machine ; Linux : Authentication type SSH public key ; Windows : identité et accès via Bastion.
+1. Console : Virtual machines → Create → Azure virtual machine ; Linux : Authentication type [[Glossary:SSH]] public key ; Windows : identité et accès via Bastion.
    👉 Explication : vérifier le compte/projet/abonnement et la région sélectionnés avant toute modification.
 2. CLI officielle (Azure CLI (az ; version publiée à vérifier)) :
    ```bash
@@ -43,7 +43,7 @@ Valider image et éditeur, taille, patching, chiffrement, rôle, sauvegarde, co�
 
 ## 3. Production — Sécurité
 
-Protéger la clé privée dans un coffre, désactiver les comptes/services inutiles, utiliser accès temporaire et MFA, ne pas inscrire de secrets dans user-data ou métadonnées.
+Protéger la clé privée dans un coffre, désactiver les comptes/services inutiles, utiliser accès temporaire et [[Glossary:MFA]], ne pas inscrire de secrets dans user-data ou métadonnées.
 
 ## Validation et retour arrière
 

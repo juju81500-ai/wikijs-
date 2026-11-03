@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-rocky-9-securite-hardening-recette-retour.md
 
-- **Environnement** : VM ou serveur dédié Rocky Linux 9 avant ouverture en production
-- **OS / Version** : Rocky Linux 9 / famille RHEL 9
+- **Environnement** : [[Glossary:VM]] ou serveur dédié Rocky Linux 9 avant ouverture en production
+- **OS / Version** : Rocky Linux 9 / famille [[Glossary:RHEL]] 9
 - **Catégorie** : sécurité / recette
 - **Tags** : `rocky9`, `rhel9`, `hardening`, `recette`, `rollback`
 

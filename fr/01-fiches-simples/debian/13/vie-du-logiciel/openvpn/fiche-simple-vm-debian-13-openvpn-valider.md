@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_OpenVPN_Valider
 
-- **Environnement** : VM Debian 13 dédiée à OpenVPN Community Edition
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à OpenVPN Community Edition
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : OpenVPN Community Edition / valider
 - **Tags** : `openvpn`, `debian13`, `vie-du-logiciel`, `valider`
@@ -37,7 +37,7 @@ Valider configuration, service et tunnel client sans élargir le périmètre ré
    systemctl status openvpn-server@server --no-pager
    sudo journalctl -u openvpn-server@server -n 50 --no-pager
    ```
-   👉 Explication : Utiliser ce nom d’unité seulement s’il existe; examiner les erreurs TLS ou de clé.
+   👉 Explication : Utiliser ce nom d’unité seulement s’il existe; examiner les erreurs [[Glossary:TLS]] ou de clé.
 
 3. Depuis le client pilote autorisé, établir le tunnel puis contrôler interface et sockets :
    ```bash

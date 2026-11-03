@@ -13,16 +13,16 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **OS / Version** : Debian 13 Trixie, paquets de la distribution
 - **Type de fiche** : Installation/Déploiement
-- **Rôle** : DNS autoritatif primaire pour une zone privée de laboratoire
+- **Rôle** : [[Glossary:DNS]] autoritatif primaire pour une zone privée de laboratoire
 - **Tags** : `debian13`, `bind9`, `dns`, `authoritative`, `hardening`, `lab`
 
 ## 1. Périmètre et prérequis
 
 Fiche simple : [cadrer le périmètre autoritatif](/fr/01-fiches-simples/debian/13/vie-du-logiciel/bind9/fiche-simple-vm-debian-13-bind9-autoritatif-cadrer).
 
-Cette procédure configure BIND comme serveur **autoritatif uniquement**. Elle ne configure ni résolveur récursif pour les postes ni mises à jour DNS dynamiques. Déployer un résolveur interne séparé si les clients doivent résoudre des noms Internet.
+Cette procédure configure [[Glossary:BIND]] comme serveur **autoritatif uniquement**. Elle ne configure ni résolveur récursif pour les postes ni mises à jour DNS dynamiques. Déployer un résolveur interne séparé si les clients doivent résoudre des noms Internet.
 
-Les valeurs `lab.example.test`, `192.0.2.0/24` et `192.0.2.53` sont réservées aux exemples et ne doivent pas être reprises comme plan d'adressage réel. Remplacer les variables par une zone et une adresse statique maîtrisées. Vérifier également qu'aucun autre service n'écoute sur l'adresse prévue au port TCP/UDP 53.
+Les valeurs `lab.example.test`, `192.0.2.0/24` et `192.0.2.53` sont réservées aux exemples et ne doivent pas être reprises comme plan d'adressage réel. Remplacer les variables par une zone et une adresse statique maîtrisées. Vérifier également qu'aucun autre service n'écoute sur l'adresse prévue au port [[Glossary:TCP]]/UDP 53.
 
 Prévoir une console hors bande ou une session d'administration indépendante du DNS. Sauvegarder `/etc/bind` et les fichiers de zone avant toute modification.
 
@@ -72,7 +72,7 @@ options {
 };
 ```
 
-L'adresse d'écoute doit correspondre à une adresse locale statique. Si IPv6 est utilisé, remplacer `listen-on-v6 { none; };` par les adresses IPv6 voulues et inclure les préfixes autorisés dans l'ACL. Ne pas remplacer l'ACL par `any` sur un réseau privé.
+L'adresse d'écoute doit correspondre à une adresse locale statique. Si IPv6 est utilisé, remplacer `listen-on-v6 { none; };` par les adresses IPv6 voulues et inclure les préfixes autorisés dans l'[[Glossary:ACL]]. Ne pas remplacer l'ACL par `any` sur un réseau privé.
 
 Déclarer la zone dans `/etc/bind/named.conf.local` :
 
@@ -165,9 +165,9 @@ Les trois premières réponses doivent être autoritatives (`aa`). La dernière 
 
 Fiche simple : [ouvrir le pare-feu et exploiter](/fr/01-fiches-simples/debian/13/vie-du-logiciel/bind9/fiche-simple-vm-debian-13-bind9-autoritatif-pare-feu-exploitation).
 
-Autoriser UDP **et** TCP 53 uniquement depuis les réseaux clients approuvés. TCP est requis notamment pour les réponses DNS volumineuses et les transferts de zone. Garder les transferts désactivés tant qu'aucun secondaire n'est configuré.
+Autoriser [[Glossary:UDP]] **et** TCP 53 uniquement depuis les réseaux clients approuvés. TCP est requis notamment pour les réponses DNS volumineuses et les transferts de zone. Garder les transferts désactivés tant qu'aucun secondaire n'est configuré.
 
-Pour ajouter un secondaire, utiliser une ACL limitée à son adresse, protéger les transferts et notifications par TSIG, et valider la configuration des deux côtés avant ouverture réseau. Ne pas utiliser une ACL basée uniquement sur une IP source pour autoriser des mises à jour dynamiques.
+Pour ajouter un secondaire, utiliser une ACL limitée à son adresse, protéger les transferts et notifications par TSIG, et valider la configuration des deux côtés avant ouverture réseau. Ne pas utiliser une ACL basée uniquement sur une [[Glossary:IP]] source pour autoriser des mises à jour dynamiques.
 
 Surveiller `systemctl status bind9`, les journaux du service, les refus d'accès, l'espace disque et l'expiration des certificats si DNS-over-TLS est ajouté séparément. Documenter les changements de zone et incrémenter le numéro SOA.
 

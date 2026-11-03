@@ -11,14 +11,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 FOG Project
 
-- **Environnement** : VM (Debian 12), disque dédié pour les images
+- **Environnement** : [[Glossary:VM]] (Debian 12), disque dédié pour les images
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : FOG Project, branche `master` du dépôt officiel (version exacte à vérifier sur la version déployée)
 - **Catégorie** : Automatisation, déploiement et IaC
 - **Tags** : `[debian-12]`, `[fog]`, `[pxe]`, `[imagerie]`, `[deploiement]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer le serveur FOG Project sur Debian 12 avec son script officiel, vérifier les services d'imagerie (web, TFTP, NFS, base), préparer le démarrage PXE des postes, puis durcir l'accès à l'interface d'administration et sauvegarder la base et les images.
+Installer le serveur FOG Project sur Debian 12 avec son script officiel, vérifier les services d'imagerie (web, [[Glossary:TFTP]], [[Glossary:NFS]], base), préparer le démarrage [[Glossary:PXE]] des postes, puis durcir l'accès à l'interface d'administration et sauvegarder la base et les images.
 
 ---
 
@@ -36,7 +36,7 @@ sudo git clone --depth 1 -b master https://github.com/FOGProject/fogproject.git 
 cd /opt/fogproject/bin
 sudo ./installfog.sh
 ```
-👉 Explication : L'installeur est interactif. Il demande le type d'installation (normale ou développement, choisir normale), l'adresse IP du serveur (adresse fixe obligatoire), le nom DNS et la création de la base. Il installe Apache, MariaDB, TFTP et NFS. L'opération dure plusieurs minutes. Les options exactes proposées dépendent de la version, à vérifier pendant l'installation.
+👉 Explication : L'installeur est interactif. Il demande le type d'installation (normale ou développement, choisir normale), l'adresse [[Glossary:IP]] du serveur (adresse fixe obligatoire), le nom [[Glossary:DNS]] et la création de la base. Il installe Apache, MariaDB, TFTP et NFS. L'opération dure plusieurs minutes. Les options exactes proposées dépendent de la version, à vérifier pendant l'installation.
 
 3. Contrôle des services :
 ```bash
@@ -51,7 +51,7 @@ curl -I http://<adresse_serveur_fog>/fog/management/
 ```
 👉 Explication : Une réponse `HTTP/1.1 200 OK` ou une redirection vers la page de connexion est attendue. Dans un navigateur, `http://<adresse_serveur_fog>/fog/management/` ouvre la console. Identifiant et mot de passe par défaut à remplacer dès la première connexion.
 
-5. Configuration DHCP du lab pour le démarrage PXE :
+5. Configuration [[Glossary:DHCP]] du lab pour le démarrage PXE :
 ```
 option 66 (serveur TFTP) = <adresse_serveur_fog>
 option 67 (fichier de démarrage) = undionly.kpxe
@@ -71,7 +71,7 @@ sudo ufw allow from <plage_reseau_postes> to any port 2049 proto tcp
 sudo ufw enable
 sudo ufw status verbose
 ```
-👉 Explication : Limite l'accès au réseau des postes (`<plage_reseau_postes>`) pour le web, TFTP (UDP 69) et NFS (TCP 2049). La liste exacte des ports nécessaires dépend de la version : à vérifier avant mise en service. SSH reste limité à `<adresse_ip_admin>`.
+👉 Explication : Limite l'accès au réseau des postes (`<plage_reseau_postes>`) pour le web, TFTP ([[Glossary:UDP]] 69) et NFS ([[Glossary:TCP]] 2049). La liste exacte des ports nécessaires dépend de la version : à vérifier avant mise en service. [[Glossary:SSH]] reste limité à `<adresse_ip_admin>`.
 
 2. Changement du mot de passe du compte d'administration FOG dans l'interface web, section `Utilisateurs`, avant toute mise en service.
 👉 Explication : Le mot de passe par défaut de FOG est connu publiquement. La méthode en ligne de commande pour le modifier dépend de la version déployée : à vérifier avant utilisation, la console web reste la méthode de référence.

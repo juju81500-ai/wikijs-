@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-lxc-alpine-3-19-systeme-mise-a-jour-paquets-apk.md
 
-- **Environnement** : LXC Alpine administré depuis Proxmox VE
+- **Environnement** : [[Glossary:LXC]] Alpine administré depuis Proxmox VE
 - **OS / Version** : Alpine Linux 3-19 avec `apk` et OpenRC (version legacy)
 - **Catégorie** : Système / Maintenance
 - **Tags** : `[alpine3.19]`, `[alpine]`, `[lxc]`, `[apk]`, `[mises-a-jour]`, `[maintenance]`
@@ -37,7 +37,7 @@ Contrôler les dépôts et appliquer les mises à jour de paquets Alpine avec `a
    👉 *Explication : `apk upgrade` met à jour les paquets selon les dépôts configurés; relire leur branche avant de confirmer en production.*
 
 ## ⚡ 2. Production — Façon Simplifiée
-1. Sauvegarder les données et la configuration du CT; relever son état et vérifier l'espace disque.
+1. Sauvegarder les données et la configuration du [[Glossary:CT]]; relever son état et vérifier l'espace disque.
 2. Confirmer que `/etc/apk/repositories` ne mélange pas des versions de branches différentes, puis appliquer :
    ```sh
    apk update

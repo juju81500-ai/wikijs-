@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Valider qu'un serveur Windows Server 2022 peut accueillir StarWind Virtual SAN et connaître les limites de ce guide (Windows Server 2022 uniquement).
+Valider qu'un serveur Windows Server 2022 peut accueillir StarWind Virtual [[Glossary:SAN]] et connaître les limites de ce guide (Windows Server 2022 uniquement).
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -30,7 +30,7 @@ Get-ComputerInfo -Property OsName,OsVersion,OsBuildNumber
 ```
    👉 Explication : on confirme un Windows Server 2022 ; ce guide ne couvre aucun autre système.
 
-2. Lister les volumes et disques candidats au stockage. GUI : **Gestionnaire de serveur > Services de fichiers et de stockage > Volumes**. PowerShell :
+2. Lister les volumes et disques candidats au stockage. [[Glossary:GUI]] : **Gestionnaire de serveur > Services de fichiers et de stockage > Volumes**. PowerShell :
 ```powershell
 Get-Disk
 Get-Volume
@@ -44,7 +44,7 @@ Get-NetAdapter | Format-Table Name,Status,LinkSpeed
    👉 Explication : StarWind demande en pratique des réseaux séparés (gestion, iSCSI, synchronisation) ; le nombre de cartes doit être connu avant l'installation.
 
 4. Relever dans la documentation éditeur les exigences matérielles et la matrice de compatibilité (liens en bas de fiche). Vérifier la compatibilité et la version courante du produit dans la documentation éditeur avant toute action.
-   👉 Explication : les exigences exactes (CPU, RAM, réseau, hyperviseur supporté) dépendent de la version et ne sont pas recopiées ici pour ne pas les inventer.
+   👉 Explication : les exigences exactes ([[Glossary:CPU]], [[Glossary:RAM]], réseau, hyperviseur supporté) dépendent de la version et ne sont pas recopiées ici pour ne pas les inventer.
 
 5. Noter les limites du pack : seule l'installation sur Windows Server 2022 est documentée ici ; pas de déploiement Linux ni d'appliance couvert, et la prise en charge d'autres usages n'est ni affirmée ni exclue.
    👉 Explication : on évite d'induire une compatibilité non vérifiée.

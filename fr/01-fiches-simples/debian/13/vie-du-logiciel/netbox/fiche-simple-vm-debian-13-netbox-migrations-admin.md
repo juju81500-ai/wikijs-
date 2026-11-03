@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : NetBox 4.7.4 en pilote, PostgreSQL et Redis locaux
 - **OS / Version** : Debian 13; NetBox 4.7.4
-- **Catégorie** : IPAM / DCIM / initialisation
+- **Catégorie** : [[Glossary:IPAM]] / [[Glossary:DCIM]] / initialisation
 - **Tags** : `debian13`, `netbox`, `migration`, `superuser`, `database`
 
 ---

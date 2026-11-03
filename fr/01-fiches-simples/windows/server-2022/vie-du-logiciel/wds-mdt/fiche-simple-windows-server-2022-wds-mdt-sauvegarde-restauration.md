@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_Windows_Server_2022_WDS_MDT_Sauvegarde_Restauration
 
-- **Environnement** : Windows Server 2022, WDS + MDT, partage de déploiement et dossier `RemoteInstall`
+- **Environnement** : Windows Server 2022, WDS + [[Glossary:MDT]], partage de déploiement et dossier `RemoteInstall`
 - **OS / Version** : Windows Server 2022 (Robocopy et `reg` intégrés); WDS, MDT : vérifier la version publiée
 - **Catégorie** : Automatisation, déploiement et IaC
 - **Tags** : `windows-server-2022`, `wds`, `mdt`, `sauvegarde`, `restauration`
@@ -64,7 +64,7 @@ Planifier la sauvegarde après chaque modification d'image; tester la restaurati
 
 ## 3. Production — Sécurité
 
-- Destination avec ACL restreintes, chiffrée, copie hors site.
+- Destination avec [[Glossary:ACL]] restreintes, chiffrée, copie hors site.
 - Le partage contient des identifiants éventuels dans les `.ini` : traiter la sauvegarde comme sensible.
 
 ## Validation et retour arrière

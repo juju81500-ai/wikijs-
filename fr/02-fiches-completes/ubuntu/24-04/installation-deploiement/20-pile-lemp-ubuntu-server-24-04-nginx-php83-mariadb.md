@@ -12,16 +12,16 @@ dateModified: 2026-11-03T09:36:14Z
 # Pile LEMP sur Ubuntu Server 24-04 : Nginx, PHP-FPM et MariaDB
 
 - **Type de fiche** : Installation / Déploiement
-- **Environnement** : VM Ubuntu Server dédiée à une application Web
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble), Nginx, PHP 8.3, MariaDB 10.11
-- **Rôle** : Déployer une application PHP avec base locale et TLS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server dédiée à une application Web
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble), Nginx, PHP 8.3, MariaDB 10.11
+- **Rôle** : Déployer une application PHP avec base locale et [[Glossary:TLS]]
 - **Tags** : `ubuntu24.04`, `noble`, `nginx`, `php8.3`, `mariadb`, `lemp`, `tls`
 
 ## 1. Prérequis et versionnement
 
 Fiche simple : [vérifier prérequis et versions](/fr/01-fiches-simples/ubuntu/24-04/vie-du-logiciel/lemp/fiche-simple-vm-ubuntu-24-04-lemp-verifier-prerequis-versions).
 
-Réserver hostname/FQDN, IP stable, volumes, accès SSH, sauvegarde et flux. Ubuntu 24-04 fournit PHP 8.3 et MariaDB 10.11 dans ses dépôts. Vérifier les candidats avant installation; les révisions de sécurité évoluent.
+Réserver hostname/FQDN, [[Glossary:IP]] stable, volumes, accès [[Glossary:SSH]], sauvegarde et flux. Ubuntu 24-04 fournit PHP 8.3 et MariaDB 10.11 dans ses dépôts. Vérifier les candidats avant installation; les révisions de sécurité évoluent.
 
 ```bash
 cat /etc/os-release
@@ -56,7 +56,7 @@ sudo mariadb-secure-installation
 sudo mariadb
 ```
 
-Dans la console SQL, définir un secret par coffre et n'accorder que les droits nécessaires :
+Dans la console [[Glossary:SQL]], définir un secret par coffre et n'accorder que les droits nécessaires :
 
 ```sql
 CREATE DATABASE appdb CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -65,7 +65,7 @@ GRANT SELECT, INSERT, UPDATE, DELETE ON appdb.* TO 'appuser'@'localhost';
 EXIT;
 ```
 
-Ajouter des permissions de migration seulement pendant une procédure approuvée. MariaDB reste local; ne pas publier TCP/3306 si la pile est sur une seule VM.
+Ajouter des permissions de migration seulement pendant une procédure approuvée. MariaDB reste local; ne pas publier [[Glossary:TCP]]/3306 si la pile est sur une seule VM.
 
 ## 4. Configurer Nginx et PHP-FPM
 
@@ -77,7 +77,7 @@ Créer le répertoire applicatif et définir son propriétaire selon les besoins
 sudo install -d -o root -g www-data -m 0755 /var/www/app/public
 ```
 
-Créer un server block dans `/etc/nginx/sites-available/app`; définir FQDN, racine, index, `try_files`, refus des fichiers cachés et socket FPM :
+Créer un server block dans `/etc/nginx/sites-available/app`; définir [[Glossary:FQDN]], racine, index, `try_files`, refus des fichiers cachés et socket FPM :
 
 ```nginx
 server {
@@ -109,7 +109,7 @@ sudo systemctl reload nginx
 
 Fiche simple : [déployer l'application et TLS](/fr/01-fiches-simples/ubuntu/24-04/vie-du-logiciel/lemp/fiche-simple-vm-ubuntu-24-04-lemp-deployer-application-tls).
 
-Déployer une version applicative prise en charge, protéger le fichier de configuration et accorder au groupe Web une écriture uniquement sur cache/uploads requis. Configurer TLS avec l'autorité/outil ACME retenu et vérifier le renouvellement.
+Déployer une version applicative prise en charge, protéger le fichier de configuration et accorder au groupe Web une écriture uniquement sur cache/uploads requis. Configurer TLS avec l'autorité/outil [[Glossary:ACME]] retenu et vérifier le renouvellement.
 
 Pour un test FPM, créer temporairement un endpoint affichant uniquement `OK`, le tester via Nginx et le supprimer immédiatement; ne pas exposer `phpinfo()`.
 
@@ -117,7 +117,7 @@ Pour un test FPM, créer temporairement un endpoint affichant uniquement `OK`, l
 
 Fiche simple : [ouvrir les flux nécessaires](/fr/01-fiches-simples/ubuntu/24-04/vie-du-logiciel/lemp/fiche-simple-vm-ubuntu-24-04-lemp-ouvrir-flux).
 
-Autoriser TCP/80 pour ACME/redirect et TCP/443 pour les clients dans le pare-feu réellement géré. Restreindre SSH au réseau d'administration. Ne pas ajouter de règle `nft` runtime comme configuration finale ni désactiver UFW globalement.
+Autoriser TCP/80 pour ACME/redirect et TCP/443 pour les clients dans le pare-feu réellement géré. Restreindre SSH au réseau d'administration. Ne pas ajouter de règle `nft` runtime comme configuration finale ni désactiver [[Glossary:UFW]] globalement.
 
 ## 7. Valider, sauvegarder et exploiter
 

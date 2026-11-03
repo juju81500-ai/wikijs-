@@ -24,11 +24,11 @@ Vérifier que tout redémarre seul.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Redémarrer : GUI icône Alimentation > Redémarrer.
+1. Redémarrer : [[Glossary:GUI]] icône Alimentation > Redémarrer.
    ```bash
    sudo midclt call system.reboot
    ```
-   👉 Explication : redémarre le NAS ; prévenir les utilisateurs.
+   👉 Explication : redémarre le [[Glossary:NAS]] ; prévenir les utilisateurs.
 
 2. Après redémarrage :
    ```bash

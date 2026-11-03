@@ -49,7 +49,7 @@ Démarrer la pile puis la publier derrière un reverse proxy HTTPS.
 
 ## 2. Production — Contrôles
 
-N'accepter les en-têtes du proxy que depuis le proxy de confiance; terminer TLS avec un certificat valide et n'autoriser que les réseaux clients approuvés.
+N'accepter les en-têtes du proxy que depuis le proxy de confiance; terminer [[Glossary:TLS]] avec un certificat valide et n'autoriser que les réseaux clients approuvés.
 
 ## 3. Production — Sécurité
 

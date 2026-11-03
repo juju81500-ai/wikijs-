@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Fiche_Simple_-_Cloud_GCP_Stockage_Objet_Chiffre
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — Google Cloud CLI (gcloud ; version publiée à vérifier)
+- **OS / Version** : Cloud/SaaS — Google Cloud [[Glossary:CLI]] (gcloud ; version publiée à vérifier)
 - **Catégorie** : cloud public / stockage objet chiffré
 - **Tags** : `gcp`, `stockage_objet_chiffre`, `securite`, `procedure`
 

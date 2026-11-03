@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # fiche-simple-vm-ubuntu-24-04-graylog-cadrer-prerequis.md
 
 - **Environnement** : Ubuntu Server 24-04: nœud Graylog + MongoDB et Data Node (laboratoire)
-- **OS / Version** : Ubuntu Server 24-04 LTS; Graylog 7.2; MongoDB 8.0
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]]; Graylog 7.2; MongoDB 8.0
 - **Catégorie** : journaux / cadrage
 - **Tags** : `ubuntu2404`, `graylog`, `datanode`, `mongodb`, `prerequis`
 
@@ -30,21 +30,21 @@ Vérifier l'hôte avant d'installer Graylog.
    free -h
    nproc
    ```
-   👉 Explication : confirme Ubuntu 24-04, mémoire et CPU disponibles.
+   👉 Explication : confirme Ubuntu 24-04, mémoire et [[Glossary:CPU]] disponibles.
 
 2. Contrôler l'espace du stockage des données :
    ```bash
    df -hT /var/lib
    lsblk -f
    ```
-   👉 Explication : le Data Node demande une zone dédiée, idéalement XFS.
+   👉 Explication : le Data Node demande une zone dédiée, idéalement [[Glossary:XFS]].
 
-3. Contrôler l'heure et la résolution DNS du nœud :
+3. Contrôler l'heure et la résolution [[Glossary:DNS]] du nœud :
    ```bash
    timedatectl
    hostname -f
    ```
-   👉 Explication : NTP et DNS cohérents sont exigés.
+   👉 Explication : [[Glossary:NTP]] et DNS cohérents sont exigés.
 
 ## 2. Production — Contrôles
 

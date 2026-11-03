@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Debian_13_Supervision_Installation-Rsyslog-TLS.md
 
-- **Environnement** : VM (Debian 13)
+- **Environnement** : [[Glossary:VM]] (Debian 13)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
-- **Catégorie** : Supervision & Logs / Rsyslog TLS
+- **Catégorie** : Supervision & Logs / Rsyslog [[Glossary:TLS]]
 - **Tags** : `[debian13]`, `[rsyslog]`, `[syslog]`, `[logs]`, `[tls]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Configurer le démon `rsyslog` sous Debian 13 pour expédier tous les journaux système vers un serveur de logs centralisé en utilisant le chiffrement TLS et le protocole TCP fiable.
+Configurer le démon `rsyslog` sous Debian 13 pour expédier tous les journaux système vers un serveur de logs centralisé en utilisant le chiffrement TLS et le protocole [[Glossary:TCP]] fiable.
 
 ---
 
@@ -39,7 +39,7 @@ Configurer le démon `rsyslog` sous Debian 13 pour expédier tous les journaux s
 ## ⚡ 2. Production — Façon Simplifiée
 1. Installation du module d'extension GnuTLS pour Rsyslog :
    `apt-get install -y rsyslog-gnutls`
-   👉 Explication : Ajoute le support du chiffrement SSL/TLS à Rsyslog.
+   👉 Explication : Ajoute le support du chiffrement [[Glossary:SSL]]/TLS à Rsyslog.
 
 2. Configuration de l'expéditeur distant dans `/etc/rsyslog.d/50-remote.conf` :
    `echo '*.* action(type="omfwd" target="syslog.lab.local" port="514" protocol="tcp")' > /etc/rsyslog.d/50-remote.conf`

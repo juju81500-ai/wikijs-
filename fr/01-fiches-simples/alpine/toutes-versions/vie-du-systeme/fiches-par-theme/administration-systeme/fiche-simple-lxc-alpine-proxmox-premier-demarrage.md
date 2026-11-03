@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-lxc-alpine-proxmox-premier-demarrage.md
 
-- **Environnement** : nouveau CT Alpine sur Proxmox VE, accès par console
+- **Environnement** : nouveau [[Glossary:CT]] Alpine sur Proxmox VE, accès par console
 - **OS / Version** : branche Alpine maintenue retenue pour le service
 - **Catégorie** : virtualisation / configuration initiale
 - **Tags** : `alpine`, `proxmox`, `lxc`, `openrc`, `apk`
@@ -39,7 +39,7 @@ Vérifier le démarrage et initialiser l'identité, les paquets et les services 
    cat /etc/resolv.conf
    rc-status
    ```
-   👉 Explication : adresse, passerelle et DNS doivent correspondre au plan.
+   👉 Explication : adresse, passerelle et [[Glossary:DNS]] doivent correspondre au plan.
 
 3. Mettre à jour :
    ```sh
@@ -59,7 +59,7 @@ Vérifier le démarrage et initialiser l'identité, les paquets et les services 
 
 ## 2. Production — Contrôles
 
-Vérifier version, dépôts APK, comptes, synchronisation horaire, résolution DNS, services et accès d'administration avant le déploiement applicatif.
+Vérifier version, dépôts [[Glossary:APK]], comptes, synchronisation horaire, résolution DNS, services et accès d'administration avant le déploiement applicatif.
 
 ## 3. Production — Sécurité
 

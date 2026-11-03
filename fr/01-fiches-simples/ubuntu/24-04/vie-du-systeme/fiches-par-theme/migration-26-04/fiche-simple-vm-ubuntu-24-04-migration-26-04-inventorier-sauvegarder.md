@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-ubuntu-24-04-migration-26-04-inventorier-sauvegarder.md
 
-- **Environnement** : VM ou serveur Ubuntu Server LTS
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu Server [[Glossary:LTS]]
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble) vers 26-04 LTS (Resolute)
 - **Catégorie** : migration de version
 - **Tags** : `ubuntu24.04`, `ubuntu26.04`, `migration`, `inventaire`, `sauvegarde`
@@ -35,11 +35,11 @@ Inventorier l'état du système et sauvegarder avant l'intervention.
    ```
    👉 Explication : on détecte paquets retenus, incohérences dpkg, services en échec et manque d'espace.
 
-2. Inventorier dépôts externes/PPAs, services, extensions, clés SSH, montages, tâches planifiées et fichiers de configuration.
+2. Inventorier dépôts externes/PPAs, services, extensions, clés [[Glossary:SSH]], montages, tâches planifiées et fichiers de configuration.
    👉 Explication : on sait quoi vérifier après la migration.
 
 3. Faire une sauvegarde complète vers une cible distincte (snapshot de VM ou sauvegarde système).
-   👉 Explication : il n'y a pas de retour arrière APT pris en charge.
+   👉 Explication : il n'y a pas de retour arrière [[Glossary:APT]] pris en charge.
 
 4. Restaurer une copie dans une VM isolée avant l'intervention réelle.
    👉 Explication : on prouve que la sauvegarde est exploitable.

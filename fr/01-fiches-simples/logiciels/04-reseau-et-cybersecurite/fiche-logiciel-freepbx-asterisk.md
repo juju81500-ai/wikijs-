@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 FreePBX / Asterisk
 
-- **Catégorie** : Téléphonie IP / communications unifiées
+- **Catégorie** : Téléphonie [[Glossary:IP]] / communications unifiées
 - **Plateforme** : Appliance ou OS officiellement supporté
 - **Produit (matrice)** : FreePBX / Asterisk
 - **Statut dans le pack** : Couvert pour un déploiement de laboratoire

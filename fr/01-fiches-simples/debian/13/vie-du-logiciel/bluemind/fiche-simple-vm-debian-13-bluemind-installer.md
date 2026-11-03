@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_BlueMind_Installer
 
-- **Environnement** : VM Debian 13; BlueMind 5.7; guide public
+- **Environnement** : [[Glossary:VM]] Debian 13; BlueMind 5.7; guide public
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Vie du logiciel / BlueMind — Installer
 - **Tags** : `bluemind`, `serveur`, `vie-du-logiciel`, `installer`

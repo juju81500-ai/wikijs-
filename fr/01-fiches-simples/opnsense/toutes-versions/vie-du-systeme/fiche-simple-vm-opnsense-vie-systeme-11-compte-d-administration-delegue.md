@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_11_Compte_D_Administration_Delegue
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 11 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-11`
@@ -27,7 +27,7 @@ dateModified: 2026-11-03T09:36:13Z
 1. Créer un groupe dans Système > Accès > Groupes (ex. `admins-fw`) et lui donner les privilèges (ex. Tous les privilèges de pages ou un jeu limité).
    👉 Explication : les droits sont attribués au groupe, pas aux personnes.
 
-2. Créer l'utilisateur dans Système > Accès > Utilisateurs > Ajouter : nom `ADMIN01`, mot de passe fort, appartenance au groupe; cocher « Shell autorisé » si l'accès SSH est requis.
+2. Créer l'utilisateur dans Système > Accès > Utilisateurs > Ajouter : nom `ADMIN01`, mot de passe fort, appartenance au groupe; cocher « Shell autorisé » si l'accès [[Glossary:SSH]] est requis.
    👉 Explication : `ADMIN01` est le compte nominatif de l'administrateur.
 
 3. Contrôler le compte en shell :

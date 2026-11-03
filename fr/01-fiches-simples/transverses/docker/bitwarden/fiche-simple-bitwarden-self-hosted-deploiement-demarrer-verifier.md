@@ -36,10 +36,10 @@ Démarrer Bitwarden et valider le service avec un compte de test.
    ```
    👉 Explication : tous doivent être en état healthy/Up.
 
-3. Ouvrir **https://** suivi du FQDN depuis un poste pilote et vérifier le certificat.
-   👉 Explication : confirme TLS valide.
+3. Ouvrir **https://** suivi du [[Glossary:FQDN]] depuis un poste pilote et vérifier le certificat.
+   👉 Explication : confirme [[Glossary:TLS]] valide.
 
-4. Inscrire un compte de test, se connecter depuis un client approuvé et valider synchronisation, import de test et invitations SMTP.
+4. Inscrire un compte de test, se connecter depuis un client approuvé et valider synchronisation, import de test et invitations [[Glossary:SMTP]].
    👉 Explication : valide le cycle complet.
 
 ## 2. Production — Contrôles

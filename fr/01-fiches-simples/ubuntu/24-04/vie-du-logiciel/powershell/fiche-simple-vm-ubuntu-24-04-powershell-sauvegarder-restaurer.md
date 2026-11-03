@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_PowerShell_Sauvegarder_Restaurer
 
-- **Environnement** : VM Ubuntu 24-04 LTS de laboratoire, accès sudo, dépôt Microsoft officiel
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 [[Glossary:LTS]] de laboratoire, accès sudo, dépôt Microsoft officiel
 - **OS / Version** : Ubuntu 24-04 LTS
 - **Catégorie** : shell / scripting
 - **Tags** : `ubuntu2404`, `powershell`, `pwsh`, `scripting`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Sauvegarder et restaurer l'état de PowerShell 7 : profils, inventaire des modules, configuration SSH.
+Sauvegarder et restaurer l'état de PowerShell 7 : profils, inventaire des modules, configuration [[Glossary:SSH]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 

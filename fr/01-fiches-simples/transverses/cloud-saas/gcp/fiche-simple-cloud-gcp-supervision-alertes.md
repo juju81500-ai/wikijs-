@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Fiche_Simple_-_Cloud_GCP_Supervision_Alertes
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — Google Cloud CLI (gcloud ; version publiée à vérifier)
+- **OS / Version** : Cloud/SaaS — Google Cloud [[Glossary:CLI]] (gcloud ; version publiée à vérifier)
 - **Catégorie** : cloud public / supervision et alertes
 - **Tags** : `gcp`, `supervision_alertes`, `securite`, `procedure`
 
@@ -39,7 +39,7 @@ gcloud monitoring channels list --project=ID_PROJET
 
 ## 2. Production — Contrôles
 
-Définir propriétaire, sévérité, seuils fondés sur SLO, escalade, canal d’astreinte et comportement en absence de métriques.
+Définir propriétaire, sévérité, seuils fondés sur [[Glossary:SLO]], escalade, canal d’astreinte et comportement en absence de métriques.
 
 ## 3. Production — Sécurité
 

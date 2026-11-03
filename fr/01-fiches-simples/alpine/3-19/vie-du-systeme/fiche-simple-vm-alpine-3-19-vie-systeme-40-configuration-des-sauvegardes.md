@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_40_Configuration_Des_Sauvegardes
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 40 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-40`
@@ -43,7 +43,7 @@ Sauvegarder la configuration et les données.
    ```sh
    scp /var/backups/etc-*.tar.gz UTILISATEUR@SERVEUR_SAUVEGARDE:/sauvegardes/
    ```
-   👉 Explication : copie l'archive sur un serveur distant par SSH.
+   👉 Explication : copie l'archive sur un serveur distant par [[Glossary:SSH]].
 
 ## 2. Production — Contrôles
 

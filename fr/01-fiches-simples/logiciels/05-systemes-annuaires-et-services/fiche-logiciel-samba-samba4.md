@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 📚 Couverture dans le pack
 
-Couvert pour un lab AD DC — [guide Samba AD DC Debian 13](/fr/02-fiches-completes/debian/13/installation-deploiement/65-deploiement-samba-ad-dc-debian-13); partage SMB traité séparément dans [NAS/SAN](/fr/02-fiches-completes/transverses/multi-os/installation-deploiement/07-stockage-reseau-nas-san-samba-nfsv4-iscsi). Migration de forêt et validation production non couvertes
+Couvert pour un lab [[Glossary:AD]] [[Glossary:DC]] — [guide Samba AD DC Debian 13](/fr/02-fiches-completes/debian/13/installation-deploiement/65-deploiement-samba-ad-dc-debian-13); partage SMB traité séparément dans [NAS/SAN](/fr/02-fiches-completes/transverses/multi-os/installation-deploiement/07-stockage-reseau-nas-san-samba-nfsv4-iscsi). Migration de forêt et validation production non couvertes
 
 ## 🧭 Utilisation
 

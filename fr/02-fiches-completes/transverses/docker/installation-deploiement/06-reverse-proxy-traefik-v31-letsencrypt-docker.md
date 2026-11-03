@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [préparer DNS et exposition](/fr/01-fiches-simples/transverses/docker/traefik/fiche-simple-docker-conteneur-traefik-preparer-dns).
 
-Définir les noms DNS, les adresses publiques, les ports entrants 80/443 et le mécanisme de renouvellement ACME. Vérifier que les enregistrements A/AAAA correspondent réellement à l'hôte. Protéger la clé ACME et conserver `acme.json` sur un stockage persistant, sauvegardé et lisible uniquement par le compte requis.
+Définir les noms [[Glossary:DNS]], les adresses publiques, les ports entrants 80/443 et le mécanisme de renouvellement [[Glossary:ACME]]. Vérifier que les enregistrements A/AAAA correspondent réellement à l'hôte. Protéger la clé ACME et conserver `acme.json` sur un stockage persistant, sauvegardé et lisible uniquement par le compte requis.
 
 Ne pas exposer le tableau de bord sans authentification et filtrage. L'accès brut au socket Docker donne des privilèges équivalents à root : préférer un fournisseur de configuration maîtrisé ou un proxy de socket restreint.
 
@@ -42,7 +42,7 @@ Les secrets ACME et identifiants DNS ne doivent pas apparaître dans le dépôt,
 
 Fiche simple : [déployer un premier service](/fr/01-fiches-simples/transverses/docker/traefik/fiche-simple-docker-conteneur-traefik-premier-service).
 
-Commencer avec une application de test non sensible. Ajouter un routeur HTTPS, un service, un middleware de redirection HTTP vers HTTPS et une politique de sécurité appropriée. Les labels de l'application doivent désigner le réseau et le resolver corrects.
+Commencer avec une application de test non sensible. Ajouter un routeur HTTPS, un service, un middleware de redirection [[Glossary:HTTP]] vers HTTPS et une politique de sécurité appropriée. Les labels de l'application doivent désigner le réseau et le resolver corrects.
 
 ```bash
 docker compose up -d

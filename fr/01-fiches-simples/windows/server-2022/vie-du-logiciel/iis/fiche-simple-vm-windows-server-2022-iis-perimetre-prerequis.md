@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-2022-iis-perimetre-prerequis.md
 
-- **Environnement** : VM Windows Server 2022 pilote
-- **OS / Version** : Windows Server 2022; rôle Web Server (IIS)
+- **Environnement** : [[Glossary:VM]] Windows Server 2022 pilote
+- **OS / Version** : Windows Server 2022; rôle Web Server ([[Glossary:IIS]])
 - **Catégorie** : serveur Web / IIS
 - **Tags** : `iis`, `windows-server-2022`, `web-server`, `tls`, `application-pool`
 
@@ -34,12 +34,12 @@ Confirmer que le serveur est prêt avant d'installer IIS.
    ```
    👉 Explication : on confirme le niveau de correctifs.
 
-3. Confirmer nom DNS, certificat prévu, pare-feu administré, sauvegarde de la VM et plan de changement; lister les seuls modules IIS nécessaires à l'application.
+3. Confirmer nom [[Glossary:DNS]], certificat prévu, pare-feu administré, sauvegarde de la VM et plan de changement; lister les seuls modules IIS nécessaires à l'application.
    👉 Explication : on évite d'installer des fonctionnalités optionnelles sans revue.
 
 ## 2. Production — Contrôles
 
-Cette étape n'installe ni runtime, ni base, ni reverse proxy, ni cluster Web Farm, ni AD CS.
+Cette étape n'installe ni runtime, ni base, ni reverse proxy, ni cluster Web Farm, ni [[Glossary:AD]] CS.
 
 ## 3. Production — Sécurité
 

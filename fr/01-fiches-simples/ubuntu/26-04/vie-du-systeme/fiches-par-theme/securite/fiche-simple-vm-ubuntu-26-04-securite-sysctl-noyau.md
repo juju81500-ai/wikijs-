@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Securite_Sysctl_Noyau
 
-- **Environnement** : VM ou serveur Ubuntu exposé au réseau (hors routeur ou hôte de conteneurs)
-- **OS / Version** : Ubuntu Server 26-04 LTS (noyau 7.0)
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu exposé au réseau (hors routeur ou hôte de conteneurs)
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]] (noyau 7.0)
 - **Catégorie** : Sécurité / Durcissement du noyau et de la pile réseau
 - **Tags** : `ubuntu2604`, `sysctl`, `noyau`, `tcp-syncookies`, `rp-filter`, `hardening`
 
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 🎯 Problème précis à résoudre
 
-Appliquer un jeu de paramètres `sysctl` de durcissement (redirections ICMP, SYN cookies, filtrage de source, protections des liens symboliques et des pointeurs noyau) de façon persistante, sans casser le routage ni Docker.
+Appliquer un jeu de paramètres `sysctl` de durcissement (redirections [[Glossary:ICMP]], SYN cookies, filtrage de source, protections des liens symboliques et des pointeurs noyau) de façon persistante, sans casser le routage ni Docker.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 

@@ -37,14 +37,14 @@ Identifier la cause d'une panne Wiki.js (base, 404/502, certificat, pièces join
 2. Si Wiki.js ne joint pas PostgreSQL : vérifier `DB_HOST: db`, le réseau `backend`, l'état healthy et le montage `DB_PASS_FILE` dans `docker-compose.yml`.
    👉 Explication : ce sont les causes les plus fréquentes.
 
-3. Si erreur 404 ou 502 : vérifier le DNS, les labels Traefik, le réseau Docker réellement partagé et le port amont 3000.
+3. Si erreur 404 ou 502 : vérifier le [[Glossary:DNS]], les labels Traefik, le réseau Docker réellement partagé et le port amont 3000.
    👉 Explication : Traefik doit pouvoir joindre le conteneur.
 
-4. Si certificat invalide : diagnostiquer Traefik et ACME, sans activer TLS dans Wiki.js.
+4. Si certificat invalide : diagnostiquer Traefik et [[Glossary:ACME]], sans activer [[Glossary:TLS]] dans Wiki.js.
    👉 Explication : TLS est terminé par le reverse proxy.
 
 5. Si une pièce jointe disparaît après recréation : vérifier le module de stockage choisi et sa persistance.
-   👉 Explication : le dump SQL seul peut ne pas contenir les fichiers.
+   👉 Explication : le dump [[Glossary:SQL]] seul peut ne pas contenir les fichiers.
 
 ## 2. Production — Contrôles
 

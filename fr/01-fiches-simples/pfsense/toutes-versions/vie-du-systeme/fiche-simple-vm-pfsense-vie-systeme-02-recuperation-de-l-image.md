@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_02_Recuperation_De_L_Image
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 02 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-02`
@@ -24,7 +24,7 @@ Obtenir l'image officielle de pfSense CE.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Télécharger l'ISO depuis https://www.pfsense.org/download/ (Architecture AMD64, Installer = DVD Image (ISO), miroir au choix) puis sa somme de contrôle. En shell :
+1. Télécharger l'ISO depuis https://www.pfsense.org/download/ (Architecture [[Glossary:AMD64]], Installer = DVD Image (ISO), miroir au choix) puis sa somme de contrôle. En shell :
    ```sh
    mkdir -p ~/iso && cd ~/iso
    curl -fLO https://MIROIR/pfSense-CE-VERSION-RELEASE-amd64.iso.gz

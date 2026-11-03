@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-ubuntu-24-04-migration-26-04-upgrade.md
 
-- **Environnement** : VM ou serveur Ubuntu Server LTS
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu Server [[Glossary:LTS]]
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble) vers 26-04 LTS (Resolute)
 - **Catégorie** : migration de version
 - **Tags** : `ubuntu24.04`, `ubuntu26.04`, `migration`, `upgrade`, `do-release-upgrade`
@@ -52,7 +52,7 @@ Exécuter uniquement en fenêtre de maintenance avec console disponible.
 
 ## 3. Production — Sécurité
 
-- Ne pas forcer une suite APT `resolute` dans les sources pendant qu'un upgrade est interrompu.
+- Ne pas forcer une suite [[Glossary:APT]] `resolute` dans les sources pendant qu'un upgrade est interrompu.
 
 ## Validation et retour arrière
 

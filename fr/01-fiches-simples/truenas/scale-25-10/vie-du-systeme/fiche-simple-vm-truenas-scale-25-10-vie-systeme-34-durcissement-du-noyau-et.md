@@ -24,7 +24,7 @@ Appliquer les réglages réseau sûrs.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Avancé > Sysctl > Ajouter (variable, valeur).
+1. [[Glossary:GUI]] : Système > Avancé > Sysctl > Ajouter (variable, valeur).
    ```bash
    sudo sysctl net.ipv4.conf.all.rp_filter
    sudo midclt call tunable.create '{"type": "SYSCTL", "var": "net.ipv4.conf.all.rp_filter", "value": "1"}'

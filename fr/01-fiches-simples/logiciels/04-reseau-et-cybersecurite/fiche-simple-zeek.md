@@ -11,14 +11,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Zeek
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
-- **Version** : Zeek 8.0 LTS depuis le dépôt OBS `security:zeek` (répertoire `Debian_12`, à vérifier : présence du paquet `zeek-8.0` pour bookworm)
+- **Version** : Zeek 8.0 [[Glossary:LTS]] depuis le dépôt OBS `security:zeek` (répertoire `Debian_12`, à vérifier : présence du paquet `zeek-8.0` pour bookworm)
 - **Catégorie** : Réseau et cybersécurité
 - **Tags** : `[debian-12]`, `[zeek]`, `[network-monitoring]`, `[hardening]`
 
 ## 🎯 Objectif
-Installer Zeek 8.0 LTS en capteur passif standalone sur une interface miroir autorisée, le déployer avec ZeekControl et vérifier la production de journaux (`conn.log`). Zeek ne bloque pas le trafic et ne remplace pas un IDS à signatures. Les tests ne se font que sur votre propre réseau de laboratoire.
+Installer Zeek 8.0 LTS en capteur passif standalone sur une interface miroir autorisée, le déployer avec ZeekControl et vérifier la production de journaux (`conn.log`). Zeek ne bloque pas le trafic et ne remplace pas un [[Glossary:IDS]] à signatures. Les tests ne se font que sur votre propre réseau de laboratoire.
 
 ---
 
@@ -33,7 +33,7 @@ echo 'deb [signed-by=/etc/apt/keyrings/zeek-obs.gpg] https://download.opensuse.o
 sudo apt update
 apt-cache policy zeek-8.0
 ```
-👉 Explication : Importe la clé du dépôt OBS dans un trousseau dédié et déclare la source APT associée. `apt-cache policy` doit montrer un candidat provenant de `security:zeek`. Si le paquet n'existe pas pour `Debian_12`, le signaler : cette fiche ne prévoit pas de compilation manuelle.
+👉 Explication : Importe la clé du dépôt OBS dans un trousseau dédié et déclare la source [[Glossary:APT]] associée. `apt-cache policy` doit montrer un candidat provenant de `security:zeek`. Si le paquet n'existe pas pour `Debian_12`, le signaler : cette fiche ne prévoit pas de compilation manuelle.
 
 2. Installation et vérification du binaire :
 ```bash

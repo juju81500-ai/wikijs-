@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_FOG_Project_Installer
 
-- **Environnement** : VM Debian 13 dédiée FOG Project (clonage/déploiement d'images), réseau de laboratoire isolé
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée FOG Project (clonage/déploiement d'images), réseau de laboratoire isolé
 - **OS / Version** : Debian 13 Trixie; FOG Project (version et support Debian 13 à vérifier)
 - **Catégorie** : automatisation / déploiement
 - **Tags** : `debian13`, `fog-project`, `installation`, `git`, `installfog`
@@ -50,7 +50,7 @@ Installer FOG depuis le dépôt officiel en contrôlant ce que l'installeur modi
    cd bin
    sudo ./installfog.sh
    ```
-   👉 Explication : répondre aux questions (interface réseau, DHCP oui/non, nom d'hôte/IP) selon le choix de cadrage ; ne pas utiliser de réponses automatiques non relues.
+   👉 Explication : répondre aux questions (interface réseau, [[Glossary:DHCP]] oui/non, nom d'hôte/IP) selon le choix de cadrage ; ne pas utiliser de réponses automatiques non relues.
 
 5. Terminer l'installation via l'assistant web indiqué par l'installeur : https://IP_SERVEUR_FOG/fog/management (IP_SERVEUR_FOG à remplacer).
    👉 Explication : l'installeur affiche le schéma de base et l'URL ; conserver la sortie dans le journal de changement, sans mot de passe.
@@ -63,7 +63,7 @@ Production : installer depuis une étiquette validée, sur VM sauvegardée, avec
 
 - Ne pas exécuter de script téléchargé et redirigé directement vers un shell (`curl | bash`).
 - Lire `installfog.sh` ou s'appuyer sur une étiquette connue avant exécution en root.
-- Ne pas exposer MariaDB, NFS ou TFTP au-delà du VLAN de déploiement.
+- Ne pas exposer MariaDB, [[Glossary:NFS]] ou [[Glossary:TFTP]] au-delà du [[Glossary:VLAN]] de déploiement.
 - Ne jamais copier de mot de passe dans la fiche ou le dépôt.
 
 ## Validation et retour arrière

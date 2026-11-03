@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Fiche_Simple_-_Cloud_GCP_Compte_Organisation_Budgets
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — Google Cloud CLI (gcloud ; version publiée à vérifier)
+- **OS / Version** : Cloud/SaaS — Google Cloud [[Glossary:CLI]] (gcloud ; version publiée à vérifier)
 - **Catégorie** : cloud public / compte, organisation sécurisée et budgets
 - **Tags** : `gcp`, `compte_organisation_budgets`, `securite`, `procedure`
 
@@ -26,7 +26,7 @@ Les valeurs écrites en MAJUSCULES sont des placeholders à remplacer par les va
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Console : Google Cloud console → IAM & Admin → IAM ; Google Account → Security → 2-Step Verification ; Billing → Budgets & alerts → Create budget.
+1. Console : Google Cloud console → [[Glossary:IAM]] & Admin → IAM ; Google Account → Security → 2-Step Verification ; Billing → Budgets & alerts → Create budget.
    👉 Explication : vérifier le compte/projet/abonnement et la région sélectionnés avant toute modification.
 2. CLI officielle (Google Cloud CLI (gcloud ; version publiée à vérifier)) :
    ```bash
@@ -44,7 +44,7 @@ Valider le tenant/compte, le périmètre d’abonnement/projet, les rôles, les 
 
 ## 3. Production — Sécurité
 
-Ne pas utiliser l’identité root/propriétaire pour les tâches courantes. MFA résistante à l’hameçonnage pour les rôles privilégiés ; secrets dans un coffre ; séparation des tâches et deux accès d’urgence contrôlés.
+Ne pas utiliser l’identité root/propriétaire pour les tâches courantes. [[Glossary:MFA]] résistante à l’hameçonnage pour les rôles privilégiés ; secrets dans un coffre ; séparation des tâches et deux accès d’urgence contrôlés.
 
 ## Validation et retour arrière
 

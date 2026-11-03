@@ -13,14 +13,14 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **Environnement** : Windows Server 2022; Exchange Server 2019 CU14 ou ultérieur, ou Exchange Server Subscription Edition (vérifier la matrice de support publiée)
 - **OS / Version** : Windows Server 2022
-- **Catégorie** : Messagerie / sécurité TLS
+- **Catégorie** : Messagerie / sécurité [[Glossary:TLS]]
 - **Tags** : `windows-server-2022`, `exchange-server`, `messagerie`, `certificat`, `tls`, `iis`, `smtp`
 
 ---
 
 ## Problème précis à résoudre
 
-Remplacer le certificat auto-signé par un certificat d'une autorité de confiance pour IIS et SMTP.
+Remplacer le certificat auto-signé par un certificat d'une autorité de confiance pour [[Glossary:IIS]] et [[Glossary:SMTP]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -58,12 +58,12 @@ Remplacer le certificat auto-signé par un certificat d'une autorité de confian
 
 ## 2. Production — Contrôles
 
-Suivre les dates d'expiration (alerte à 30 jours), renouveler avec une nouvelle demande, tester depuis un client externe et par un contrôle STARTTLS sur le port 25.
+Suivre les dates d'expiration (alerte à 30 jours), renouveler avec une nouvelle demande, tester depuis un client externe et par un contrôle [[Glossary:STARTTLS]] sur le port 25.
 
 ## 3. Production — Sécurité
 
-- Clé privée non exportable lorsque possible, certificat SAN limité aux noms nécessaires.
-- Désactiver SSL 3.0/TLS 1.0/1.1 selon la politique et les prérequis du CU (vérifier la documentation officielle avant).
+- Clé privée non exportable lorsque possible, certificat [[Glossary:SAN]] limité aux noms nécessaires.
+- Désactiver [[Glossary:SSL]] 3.0/TLS 1.0/1.1 selon la politique et les prérequis du CU (vérifier la documentation officielle avant).
 - Ne jamais stocker de fichier PFX avec son mot de passe en clair.
 
 ## Validation et retour arrière

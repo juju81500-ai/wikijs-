@@ -30,7 +30,7 @@ Mettre à jour NAKIVO sans compromettre les jobs ou points de restauration et pr
    👉 Explication : copier le dossier d’installation ne garantit pas la restauration de la configuration.
 3. Consulter le Help Center pour les prérequis, chemin de mise à niveau et éventuel retour arrière; télécharger uniquement depuis le portail officiel.
    👉 Explication : si la procédure de retour à la version précédente n’est pas documentée, arrêter avant le changement.
-4. Dans une VM de test, suivre l’assistant graphique officiel; exécuter un job pilote puis une restauration de test.
+4. Dans une [[Glossary:VM]] de test, suivre l’assistant graphique officiel; exécuter un job pilote puis une restauration de test.
    👉 Explication : aucun ordre universel des composants n’est présumé.
 5. Consigner le résultat et conserver les preuves dans l’espace d’exploitation approuvé.
    👉 Explication : décider ensuite de poursuivre ou de suspendre le déploiement.

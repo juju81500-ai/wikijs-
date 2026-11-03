@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-12-freepbx-installer-methode-supportee.md
 
-- **Environnement** : VM de test dédiée, accès console, image ou procédure éditeur validée
+- **Environnement** : [[Glossary:VM]] de test dédiée, accès console, image ou procédure éditeur validée
 - **OS / Version** : plateforme explicitement supportée par la version FreePBX retenue
-- **Catégorie** : téléphonie IP / installation
+- **Catégorie** : téléphonie [[Glossary:IP]] / installation
 - **Tags** : `debian12`, `freepbx`, `asterisk`, `installation`, `integrity`
 
 ---

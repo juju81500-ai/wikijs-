@@ -13,14 +13,14 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **Environnement** : Hôte de session RDS Windows Server 2025
 - **OS / Version** : Windows Server 2025 Desktop Experience
-- **Catégorie** : Vie du logiciel / Sécurité RDS (TLS, comptes, pare-feu)
+- **Catégorie** : Vie du logiciel / Sécurité RDS ([[Glossary:TLS]], comptes, pare-feu)
 - **Tags** : `windows-server-2025`, `rds`, `tls`, `nla`, `pare-feu`, `comptes`
 
 ---
 
 ## Problème précis à résoudre
 
-Limiter l'exposition et les droits des connexions RDS : certificat TLS approuvé, NLA, groupe d'accès restreint et règle de pare-feu bornée.
+Limiter l'exposition et les droits des connexions RDS : certificat TLS approuvé, [[Glossary:NLA]], groupe d'accès restreint et règle de pare-feu bornée.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -28,7 +28,7 @@ Limiter l'exposition et les droits des connexions RDS : certificat TLS approuvé
    ```powershell
    Get-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -Name UserAuthentication
    ```
-   👉 Explication : La valeur 1 signifie que l'authentification au niveau du réseau est requise. GUI : **Gestionnaire de serveur** > **Serveur local** > **Bureau à distance** > case NLA.
+   👉 Explication : La valeur 1 signifie que l'authentification au niveau du réseau est requise. [[Glossary:GUI]] : **Gestionnaire de serveur** > **Serveur local** > **Bureau à distance** > case NLA.
 2. Autoriser un groupe dédié plutôt que des comptes individuels :
    ```powershell
    Add-LocalGroupMember -Group 'Utilisateurs du Bureau à distance' -Member 'DOMAINE\GROUPE_RDS'
@@ -42,7 +42,7 @@ Limiter l'exposition et les droits des connexions RDS : certificat TLS approuvé
    Get-RDCertificate -ConnectionBroker NOM_BROKER
    ```
    👉 Explication : CHEMIN_PFX (fichier PFX émis par l'AC interne ou publique) et NOM_BROKER sont à remplacer; répéter pour les rôles `RDPublishing`, `RDWebAccess` et `RDGateway` si présents. GUI : **Services Bureau à distance** > **Vue d'ensemble** > **Tâches** > **Modifier les propriétés de déploiement** > **Certificats**.
-4. Contrôler les règles de pare-feu RDP (noms selon la langue) :
+4. Contrôler les règles de pare-feu [[Glossary:RDP]] (noms selon la langue) :
    ```powershell
    Get-NetFirewallRule -DisplayGroup 'Bureau à distance' -ErrorAction SilentlyContinue | Select-Object DisplayName, Enabled, Profile
    Get-NetFirewallRule -DisplayGroup 'Remote Desktop' -ErrorAction SilentlyContinue | Select-Object DisplayName, Enabled, Profile
@@ -51,13 +51,13 @@ Limiter l'exposition et les droits des connexions RDS : certificat TLS approuvé
 
 ## 2. Production — Contrôles
 
-- Utiliser RD Gateway ou un VPN approuvé; vérifier NLA, certificat, correctifs, groupes et journaux.
+- Utiliser RD Gateway ou un [[Glossary:VPN]] approuvé; vérifier NLA, certificat, correctifs, groupes et journaux.
 - Auditer l'appartenance au groupe d'accès et les verrouillages de compte via la stratégie du domaine.
 - Tester depuis un poste hors périmètre : la connexion doit échouer.
 
 ## 3. Production — Sécurité
 
-- Ne jamais exposer TCP/UDP 3389 directement sur Internet.
+- Ne jamais exposer [[Glossary:TCP]]/UDP 3389 directement sur Internet.
 - Aucun mot de passe de PFX ou de compte dans les scripts; saisie à l'invite ou coffre.
 - Aucun compte administrateur partagé; comptes nominatifs et journalisés.
 

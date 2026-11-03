@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **OS / Version** : Debian 13 Trixie amd64; interpréteur Python fourni par Debian
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : paquet système, environnements `venv` par projet et outils CLI isolés avec `pipx`
+- **Périmètre** : paquet système, environnements `venv` par projet et outils [[Glossary:CLI]] isolés avec `pipx`
 - **Catégorie** : développement / automatisation / administration
 - **Tags** : `python`, `debian13`, `venv`, `pipx`, `pip`, `pep668`, `dependances`
 
@@ -21,7 +21,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [choisir le mode d'installation](/fr/01-fiches-simples/debian/13/vie-du-logiciel/python/fiche-simple-vm-debian-13-python-choisir-mode).
 
-Sur Debian, APT possède et gère le Python système et les bibliothèques destinées aux applications du système. Installer les modules disponibles pour une application système avec les paquets Debian. Pour un projet applicatif, utiliser un environnement virtuel `venv` propre au projet. Pour un outil Python en ligne de commande qui ne fait pas partie des paquets Debian, utiliser `pipx`, qui crée un environnement isolé par application.
+Sur Debian, [[Glossary:APT]] possède et gère le Python système et les bibliothèques destinées aux applications du système. Installer les modules disponibles pour une application système avec les paquets Debian. Pour un projet applicatif, utiliser un environnement virtuel `venv` propre au projet. Pour un outil Python en ligne de commande qui ne fait pas partie des paquets Debian, utiliser `pipx`, qui crée un environnement isolé par application.
 
 Ne pas installer de paquets avec `sudo pip`, ne pas écrire dans le `site-packages` global et ne pas contourner PEP 668 avec `--break-system-packages`. Ces contournements peuvent remplacer des modules gérés par APT et rendre l'interpréteur ou des utilitaires système incohérents. Les environnements `venv` et `pipx` ne sont pas des sandboxes : ils isolent les dépendances, pas les permissions d'exécution ou l'accès aux fichiers.
 

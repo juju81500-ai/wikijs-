@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Debian_13_Services_Installation-Docker-Engine.md
 
-- **Environnement** : VM (Debian 13 Trixie / Kernel 6.x)
+- **Environnement** : [[Glossary:VM]] (Debian 13 Trixie / Kernel 6.x)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
 - **Catégorie** : Conteneurs & Virtualisation / Docker Engine
 - **Tags** : `[debian13]`, `[docker]`, `[docker-compose]`, `[containerd]`, `[hardening]`, `[security]`
@@ -35,11 +35,11 @@ Installer le moteur Docker Engine officiel, le plugin Docker Compose v2 et conta
 ## ⚡ 2. Production — Façon Simplifiée
 1. Installation des dépendances et préparation des clés de sécurité :
    `apt-get update && apt-get install -y ca-certificates gnupg`
-   👉 Explication : Installe les outils nécessaires à la validation des certificats et des signatures GPG.
+   👉 Explication : Installe les outils nécessaires à la validation des certificats et des signatures [[Glossary:GPG]].
 
 2. Configuration de la clé GPG et du dépôt officiel Docker pour Debian 13 :
    `install -m 0755 -d /etc/apt/keyrings && apt-get update`
-   👉 Explication : Prépare l'arborescence des clés APT sécurisées pour le dépôt Docker officiel Trixie.
+   👉 Explication : Prépare l'arborescence des clés [[Glossary:APT]] sécurisées pour le dépôt Docker officiel Trixie.
 
 3. Installation de la suite Docker Engine complète :
    `apt-get install -y docker-ce docker-ce-cli containerd.io docker-compose-plugin`

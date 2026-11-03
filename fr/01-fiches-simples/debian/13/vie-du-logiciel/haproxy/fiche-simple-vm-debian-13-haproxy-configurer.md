@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_HAProxy_Configurer
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; HAProxy des dépôts Debian
 - **Catégorie** : répartiteur de charge / HAProxy / Configurer un frontend et des backends
 - **Tags** : `debian13`, `haproxy`, `configuration`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Écrire une configuration HAProxy minimale répartissant le trafic HTTP sur deux backends avec contrôle de santé.
+Écrire une configuration HAProxy minimale répartissant le trafic [[Glossary:HTTP]] sur deux backends avec contrôle de santé.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -70,7 +70,7 @@ dateModified: 2026-11-03T09:36:13Z
    EOF
    sudo haproxy -c -f /etc/haproxy/haproxy.cfg && sudo systemctl reload haproxy
    ```
-   👉 Explication : liée à loopback ; y accéder par tunnel SSH, jamais directement exposée.
+   👉 Explication : liée à loopback ; y accéder par tunnel [[Glossary:SSH]], jamais directement exposée.
 
 ## 2. Production — Contrôles
 

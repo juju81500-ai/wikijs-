@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **Environnement** : Serveur Windows Server 2022 dédié au serveur de sauvegarde Veeam (pilote autonome) et hôte Hyper-V autorisé
 - **OS / Version** : Windows Server 2022; Veeam Backup & Replication 13.1.2.57
-- **Catégorie** : sauvegarde VM / installation
+- **Catégorie** : sauvegarde [[Glossary:VM]] / installation
 - **Tags** : `windows-server-2022`, `veeam`, `backup-replication`, `hyper-v`, `iso`, `backup-server`
 
 ---
@@ -33,7 +33,7 @@ Installer le Backup Server à partir du média officiel vérifié.
 2. Monter l'ISO : **Explorateur de fichiers > clic droit sur l'ISO > Monter**
    👉 Explication : donne accès à l'installateur.
 
-3. GUI équivalent en commande :
+3. [[Glossary:GUI]] équivalent en commande :
    ```powershell
    Mount-DiskImage -ImagePath C:\Installateurs\VeeamBackup.iso | Get-Volume
    ```

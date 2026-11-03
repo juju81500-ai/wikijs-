@@ -24,7 +24,7 @@ Activer le pare-feu Proxmox et filtrer l'accès à l'hôte.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : **Datacenter > Firewall > Options > Firewall : Yes**, puis **Datacenter > Firewall > Add** (autoriser SSH et 8006 depuis `RESEAU_ADMIN`), puis **Nœud > Firewall > Options > Firewall : Yes**. En ligne de commande, éditer `/etc/pve/firewall/cluster.fw` :
+1. [[Glossary:GUI]] : **Datacenter > Firewall > Options > Firewall : Yes**, puis **Datacenter > Firewall > Add** (autoriser [[Glossary:SSH]] et 8006 depuis `RESEAU_ADMIN`), puis **Nœud > Firewall > Options > Firewall : Yes**. En ligne de commande, éditer `/etc/pve/firewall/cluster.fw` :
    ```bash
    [OPTIONS]
    enable: 1
@@ -33,7 +33,7 @@ Activer le pare-feu Proxmox et filtrer l'accès à l'hôte.
    IN SSH(ACCEPT) -source RESEAU_ADMIN
    IN ACCEPT -p tcp -dport 8006 -source RESEAU_ADMIN
    ```
-   👉 Explication : `RESEAU_ADMIN` = réseau d'administration en CIDR; la politique par défaut est DROP en entrée.
+   👉 Explication : `RESEAU_ADMIN` = réseau d'administration en [[Glossary:CIDR]]; la politique par défaut est DROP en entrée.
 
 2. Contrôler l'état :
    ```bash

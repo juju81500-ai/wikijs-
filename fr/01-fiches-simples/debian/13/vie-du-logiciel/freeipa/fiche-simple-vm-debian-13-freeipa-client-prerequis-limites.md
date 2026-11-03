@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_FreeIPA_Client_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 cliente d'un domaine FreeIPA existant
+- **Environnement** : [[Glossary:VM]] Debian 13 cliente d'un domaine FreeIPA existant
 - **OS / Version** : Debian 13 Trixie; paquet freeipa-client des dépôts, version à vérifier
 - **Catégorie** : FreeIPA client / prérequis et limites
 - **Tags** : `freeipa`, `debian13`, `vie-du-logiciel`, `prerequis-limites`
@@ -30,7 +30,7 @@ Valider les prérequis avant d'inscrire un client Debian dans un domaine FreeIPA
    ip -br address
    cat /etc/os-release
    ```
-   👉 Explication : Le client doit avoir un FQDN stable dans le domaine DNS de FreeIPA (CLIENT_FQDN à consigner).
+   👉 Explication : Le client doit avoir un [[Glossary:FQDN]] stable dans le domaine [[Glossary:DNS]] de FreeIPA (CLIENT_FQDN à consigner).
 
 2. Vérifier la résolution du serveur FreeIPA et des enregistrements de service :
    ```bash

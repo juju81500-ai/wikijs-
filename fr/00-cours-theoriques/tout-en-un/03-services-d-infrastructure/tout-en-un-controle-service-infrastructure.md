@@ -59,7 +59,7 @@ dateModified: 2026-11-03T09:36:13Z
    ```powershell
    Test-NetConnection -ComputerName 'serveur-lab.example' -Port 443
    ```
-   👉 Explication : contrôle une connexion TCP précise ; n'effectue ni balayage ni changement de pare-feu.
+   👉 Explication : contrôle une connexion [[Glossary:TCP]] précise ; n'effectue ni balayage ni changement de pare-feu.
 
 ## 2. Production — Contrôles
 

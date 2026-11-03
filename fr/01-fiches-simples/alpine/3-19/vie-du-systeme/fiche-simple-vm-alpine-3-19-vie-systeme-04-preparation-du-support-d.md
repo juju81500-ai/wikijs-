@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_04_Preparation_Du_Support_D
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 04 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-04`
@@ -24,7 +24,7 @@ Rendre l'ISO amorçable sur la machine ou l'hyperviseur.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Identifier la clé USB avec précaution :
+1. Identifier la clé [[Glossary:USB]] avec précaution :
    ```sh
    lsblk -o NAME,SIZE,MODEL,TRAN
    ```
@@ -41,7 +41,7 @@ Rendre l'ISO amorçable sur la machine ou l'hyperviseur.
 
 ## 2. Production — Contrôles
 
-Utiliser le virtuel (ISO sur datastore) ou PXE pour les déploiements en série.
+Utiliser le virtuel (ISO sur datastore) ou [[Glossary:PXE]] pour les déploiements en série.
 
 ## 3. Production — Sécurité
 

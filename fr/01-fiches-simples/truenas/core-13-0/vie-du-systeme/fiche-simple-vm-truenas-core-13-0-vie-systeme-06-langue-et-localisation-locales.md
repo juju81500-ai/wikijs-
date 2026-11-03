@@ -24,7 +24,7 @@ Choisir la langue de l'interface.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Général > Langue (Français).
+1. [[Glossary:GUI]] : Système > Général > Langue (Français).
    ```sh
    midclt call system.general.update '{"language": "fr"}'
    ```

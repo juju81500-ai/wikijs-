@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-lxc-alpine-3-19-securite-fail2ban.md
 
-- **Environnement** : LXC (Proxmox VE)
+- **Environnement** : [[Glossary:LXC]] (Proxmox VE)
 - **OS / Version** : Alpine Linux 3-19 - Famille Alpine (OpenRC, apk)
 - **Catégorie** : Sécurité / Protection contre le brute-force
 - **Tags** : `[alpine3.19]`, `[alpine]`, `[lxc]`, `[fail2ban]`, `[ssh]`, `[openrc]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer Fail2ban sur un conteneur Alpine Linux pour bloquer temporairement les adresses qui échouent répétitivement à l'authentification SSH, sans se verrouiller soi-même hors du conteneur.
+Installer Fail2ban sur un conteneur Alpine Linux pour bloquer temporairement les adresses qui échouent répétitivement à l'authentification [[Glossary:SSH]], sans se verrouiller soi-même hors du conteneur.
 
 > Alpine 3-19 est en fin de support : valider cette procédure sur une branche maintenue avant tout usage en production.
 

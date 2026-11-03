@@ -24,7 +24,7 @@ Définir le clavier de la console.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Général > Disposition du clavier de la console (fr.kbd).
+1. [[Glossary:GUI]] : Système > Général > Disposition du clavier de la console (fr.kbd).
    ```sh
    midclt call system.general.update '{"kbdmap": "fr"}'
    ```

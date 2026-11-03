@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_EVE-NG_Sauvegarder_Restaurer
 
-- **Environnement** : VM EVE-NG (appliance basée sur Ubuntu Server 24-04 LTS) hébergée sur un poste ou serveur de virtualisation
+- **Environnement** : [[Glossary:VM]] EVE-NG (appliance basée sur Ubuntu Server 24-04 [[Glossary:LTS]]) hébergée sur un poste ou serveur de virtualisation
 - **OS / Version** : EVE-NG 7.x (7.2.0-18 au contrôle du 29/10/2026), Ubuntu 24-04 LTS embarqué; Community 6.2.0-4 (Ubuntu 22-04) en fin de support juin 2026
 - **Catégorie** : simulation réseau / sauvegarde
 - **Tags** : `ubuntu24.04`, `eve-ng`, `sauvegarde`, `restauration`, `sftp`, `backup-manager`
@@ -33,7 +33,7 @@ Exporter des labs et sauvegarder EVE-NG vers un serveur SFTP/FTP externe, puis r
 3. Arrêter tous les labs : **System > Stop All Nodes**.
    👉 Explication : le Backup Manager exige que tous les nœuds soient arrêtés.
 
-4. Installer le gestionnaire (en root, Internet et DNS requis) :
+4. Installer le gestionnaire (en root, Internet et [[Glossary:DNS]] requis) :
    ```bash
    apt update
    apt install eve-backup-manager
@@ -68,7 +68,7 @@ Exporter des labs et sauvegarder EVE-NG vers un serveur SFTP/FTP externe, puis r
 ## 3. Production — Sécurité
 
 - Stocker la sauvegarde sur un serveur à accès restreint et chiffré au repos : elle contient la base d'utilisateurs et les images.
-- Utiliser SFTP plutôt que FTP en clair.
+- Utiliser SFTP plutôt que [[Glossary:FTP]] en clair.
 - Ne pas laisser le mot de passe SFTP dans l'historique shell ni dans un script partagé.
 
 ## Validation et retour arrière

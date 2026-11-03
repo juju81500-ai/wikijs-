@@ -42,7 +42,7 @@ Initialiser les plugins déclarés et vérifier le format et la configuration sa
    ```bash
    cat .packer.lock.hcl
    ```
-   👉 Explication : en cas d'erreur, ne pas lancer de build; corriger HCL, versions et dépendances, puis répéter.
+   👉 Explication : en cas d'erreur, ne pas lancer de build; corriger [[Glossary:HCL]], versions et dépendances, puis répéter.
 
 ## 2. Production — Contrôles
 

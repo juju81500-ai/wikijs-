@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_OpenVPN_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 dédiée à OpenVPN Community Edition
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à OpenVPN Community Edition
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : OpenVPN Community Edition / prérequis et limites
 - **Tags** : `openvpn`, `debian13`, `vie-du-logiciel`, `prerequis_limites`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Définir un service VPN autorisé et ses dépendances avant toute installation.
+Définir un service [[Glossary:VPN]] autorisé et ses dépendances avant toute installation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -38,8 +38,8 @@ Définir un service VPN autorisé et ses dépendances avant toute installation.
    ```
    👉 Explication : Documenter les réseaux d’administration et VPN approuvés; ne pas reprendre d’adresse d’exemple comme plan réel.
 
-3. Faire approuver le propriétaire, les utilisateurs, la PKI, le port UDP et les routes avant le changement.
-   👉 Explication : Ne pas activer de routage, NAT ou exposition réseau sans validation du propriétaire réseau.
+3. Faire approuver le propriétaire, les utilisateurs, la [[Glossary:PKI]], le port [[Glossary:UDP]] et les routes avant le changement.
+   👉 Explication : Ne pas activer de routage, [[Glossary:NAT]] ou exposition réseau sans validation du propriétaire réseau.
 
 ## 2. Production — Contrôles
 
@@ -47,7 +47,7 @@ Vérifier l’approbation, la procédure de révocation, l’accès d’urgence 
 
 ## 3. Production — Sécurité
 
-- Ne pas placer la clé privée de la CA sur le serveur; prévoir des certificats nominatifs révocables.
+- Ne pas placer la clé privée de la [[Glossary:CA]] sur le serveur; prévoir des certificats nominatifs révocables.
 
 ## Validation et retour arrière
 

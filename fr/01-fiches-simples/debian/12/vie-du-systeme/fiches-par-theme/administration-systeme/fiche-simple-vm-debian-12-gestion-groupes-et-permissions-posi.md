@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Debian_12_Utilisateurs_Gestion-Groupes-Et-Permissions.md
 
-- **Environnement** : VM / LXC (Debian 12 / Ubuntu 24-04 / Linux)
+- **Environnement** : [[Glossary:VM]] / [[Glossary:LXC]] (Debian 12 / Ubuntu 24-04 / Linux)
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Utilisateurs & Droits / Groupes & Permissions POSIX
 - **Tags** : `[debian12]`, `[groupes]`, `[chmod]`, `[chown]`, `[permissions]`, `[hardening]`
@@ -45,4 +45,4 @@ Créer des groupes d'utilisateurs d'entreprise, y ajouter ou supprimer des membr
 	stat -c '%A %a %U:%G %n' /srv/donnees_tssr
 	getfacl /srv/donnees_tssr
 	```
-2. Si le partage existe déjà, sauvegarder puis ajuster seulement les chemins qui doivent appartenir au groupe. Utiliser une ACL par défaut si les permissions applicatives nécessitent un contrôle plus fin ; vérifier le résultat avec un compte membre et un compte non membre.
+2. Si le partage existe déjà, sauvegarder puis ajuster seulement les chemins qui doivent appartenir au groupe. Utiliser une [[Glossary:ACL]] par défaut si les permissions applicatives nécessitent un contrôle plus fin ; vérifier le résultat avec un compte membre et un compte non membre.

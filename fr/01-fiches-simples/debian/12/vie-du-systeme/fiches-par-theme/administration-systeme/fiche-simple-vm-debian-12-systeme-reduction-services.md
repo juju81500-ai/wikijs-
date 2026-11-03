@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Debian_12_Systeme_Reduction-Services.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Système & Services / Réduction de la surface d'attaque
 - **Tags** : `[debian12]`, `[debian-family]`, `[systemd]`, `[services]`, `[surface-attaque]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Identifier et désactiver les services Debian 12 inutiles au rôle du serveur (ex. `avahi-daemon`, `cups-browsed`, `bluetooth`) afin de réduire la surface d'attaque, sans couper les services indispensables (SSH, réseau, horloge, pare-feu).
+Identifier et désactiver les services Debian 12 inutiles au rôle du serveur (ex. `avahi-daemon`, `cups-browsed`, `bluetooth`) afin de réduire la surface d'attaque, sans couper les services indispensables ([[Glossary:SSH]], réseau, horloge, pare-feu).
 
 ---
 

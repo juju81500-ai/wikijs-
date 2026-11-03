@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_cURL_Securiser
 
-- **Environnement** : VM Debian 13 avec réseau de test autorisé
+- **Environnement** : [[Glossary:VM]] Debian 13 avec réseau de test autorisé
 - **OS / Version** : Debian 13 Trixie
-- **Catégorie** : transfert HTTP / diagnostic
+- **Catégorie** : transfert [[Glossary:HTTP]] / diagnostic
 - **Tags** : `debian13`, `curl`, `http`, `tls`, `api`
 ---
 
@@ -27,13 +27,13 @@ Réduire les risques d’exécution, de transfert et de fuite liés à cURL.
    ```bash
    curl -sS -o /dev/null -w "%{http_code}\n" https://example.com/
    ```
-   👉 Explication : remplacer par API à remplacer; utiliser uniquement endpoint approuvé.
+   👉 Explication : remplacer par [[Glossary:API]] à remplacer; utiliser uniquement endpoint approuvé.
 
 2. Activer contrôles adaptés
    ```text
    Navigateur > ouvrir la documentation officielle : https://curl.se/docs/manpage.html
    ```
-   👉 Explication : ne pas utiliser `-k`; vérifier destination et redirections. Détail à confirmer dans la documentation officielle avant application : Toujours valider TLS et limiter redirections vers HTTPS.
+   👉 Explication : ne pas utiliser `-k`; vérifier destination et redirections. Détail à confirmer dans la documentation officielle avant application : Toujours valider [[Glossary:TLS]] et limiter redirections vers HTTPS.
 
 3. Contrôler les sorties et logs
    ```bash

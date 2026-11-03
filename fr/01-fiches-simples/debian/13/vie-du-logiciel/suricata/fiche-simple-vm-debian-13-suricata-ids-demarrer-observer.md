@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-suricata-ids-demarrer-observer.md
 
-- **Environnement** : VM Debian 13 avec Suricata configuré
+- **Environnement** : [[Glossary:VM]] Debian 13 avec Suricata configuré
 - **OS / Version** : Debian 13 Trixie; Suricata 8.0.7 et suricata-update (Debian Backports)
 - **Catégorie** : detection reseau / service
 - **Tags** : `suricata`, `debian13`, `systemd`, `eve-json`
@@ -59,7 +59,7 @@ Définir supervision, rotation des journaux, rétention et transfert chiffré de
 ## 3. Production — Sécurité
 
 - Protéger pcap et sorties comme données sensibles.
-- Transférer EVE JSON uniquement par canal chiffré avec compte minimal.
+- Transférer EVE [[Glossary:JSON]] uniquement par canal chiffré avec compte minimal.
 
 ## Validation et retour arrière
 

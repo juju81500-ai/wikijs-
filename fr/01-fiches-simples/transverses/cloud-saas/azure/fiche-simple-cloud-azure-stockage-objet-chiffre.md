@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Fiche_Simple_-_Cloud_Azure_Stockage_Objet_Chiffre
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — Azure CLI (az ; version publiée à vérifier)
+- **OS / Version** : Cloud/SaaS — Azure [[Glossary:CLI]] (az ; version publiée à vérifier)
 - **Catégorie** : cloud public / stockage objet chiffré
 - **Tags** : `azure`, `stockage_objet_chiffre`, `securite`, `procedure`
 
@@ -33,7 +33,7 @@ Les valeurs écrites en MAJUSCULES sont des placeholders à remplacer par les va
    az storage account create --name NOM_COMPTE_UNIQUE --resource-group GROUPE --location REGION --sku Standard_LRS --kind StorageV2 --https-only true --min-tls-version TLS1_2 --allow-blob-public-access false
 az storage account show --name NOM_COMPTE_UNIQUE --resource-group GROUPE
    ```
-   👉 Explication : Le stockage est chiffré au repos par défaut ; activer accès privé, TLS, identité Microsoft Entra, rétention/versioning et CMEK si exigée par politique. Ne pas exposer les clés de compte.
+   👉 Explication : Le stockage est chiffré au repos par défaut ; activer accès privé, [[Glossary:TLS]], identité Microsoft Entra, rétention/versioning et CMEK si exigée par politique. Ne pas exposer les clés de compte.
 3. Console et CLI : comparer la configuration affichée avec l’état attendu, puis valider sur une ressource pilote non sensible.
    👉 Explication : les interfaces évoluent ; vérifier l’aide/version officielle et les quotas/licences avant généralisation.
 

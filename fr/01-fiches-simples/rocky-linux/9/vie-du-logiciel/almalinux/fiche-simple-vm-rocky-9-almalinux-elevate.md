@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_AlmaLinux_ELevate
 
-- **Environnement** : VM Rocky Linux 9 comme repère documentaire; sujet AlmaLinux
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 comme repère documentaire; sujet AlmaLinux
 - **OS / Version** : AlmaLinux 8/9 selon la matrice officielle du chemin étudié; contrôles depuis clone Rocky Linux 9
 - **Catégorie** : Vie du logiciel / AlmaLinux — Évaluer ELevate
 - **Tags** : `rocky9`, `almalinux`, `rhel`, `migration`

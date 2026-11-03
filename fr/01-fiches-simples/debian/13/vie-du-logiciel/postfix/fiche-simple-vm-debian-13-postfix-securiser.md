@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Postfix_Securiser
 
-- **Environnement** : VM Debian 13; Postfix depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Debian 13; Postfix depuis les dépôts de la distribution
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / Postfix — Sécuriser
 - **Tags** : `debian13`, `postfix`, `smtp`, `messagerie`, `securiser`
@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Activer TLS, limiter l'exposition (SMTP/Submission) et réduire les abus sur Postfix.
+Activer [[Glossary:TLS]], limiter l'exposition ([[Glossary:SMTP]]/Submission) et réduire les abus sur Postfix.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Obtenir un certificat valide pour le FQDN (voir la fiche Certbot du pack) puis renseigner Postfix :
+1. Obtenir un certificat valide pour le [[Glossary:FQDN]] (voir la fiche Certbot du pack) puis renseigner Postfix :
    ```bash
    sudo postconf -e 'smtpd_tls_cert_file = /etc/letsencrypt/live/MAIL.EXAMPLE.NET/fullchain.pem'
    sudo postconf -e 'smtpd_tls_key_file = /etc/letsencrypt/live/MAIL.EXAMPLE.NET/privkey.pem'
@@ -60,7 +60,7 @@ Activer TLS, limiter l'exposition (SMTP/Submission) et réduire les abus sur Pos
    sudo ufw allow 587/tcp
    sudo ufw allow OUTIL_ADMIN_SSH_PORT/tcp
    ```
-   👉 Explication : `OUTIL_ADMIN_SSH_PORT` est à remplacer par le port SSH réel, à autoriser avant `ufw enable`. Restreindre 587 aux sources attendues si possible.
+   👉 Explication : `OUTIL_ADMIN_SSH_PORT` est à remplacer par le port [[Glossary:SSH]] réel, à autoriser avant `ufw enable`. Restreindre 587 aux sources attendues si possible.
 
 5. Recharger après contrôle :
    ```bash
@@ -70,7 +70,7 @@ Activer TLS, limiter l'exposition (SMTP/Submission) et réduire les abus sur Pos
 
 ## 2. Production — Contrôles
 
-Vérifier la validité du certificat et son renouvellement, la présence de SPF/DKIM/DMARC (hors périmètre de cette fiche), et que le port 587 n'accepte que l'authentification chiffrée.
+Vérifier la validité du certificat et son renouvellement, la présence de [[Glossary:SPF]]/DKIM/DMARC (hors périmètre de cette fiche), et que le port 587 n'accepte que l'authentification chiffrée.
 
 ## 3. Production — Sécurité
 

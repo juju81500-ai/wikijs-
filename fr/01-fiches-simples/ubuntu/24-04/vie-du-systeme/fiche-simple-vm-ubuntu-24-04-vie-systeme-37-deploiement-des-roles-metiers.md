@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_Vie_Systeme_37_Deploiement_Des_Roles_Metiers
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS « noble »
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] « noble »
 - **OS / Version** : Ubuntu 24-04; étape 37 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2404`, `vie-du-systeme`, `cycle-de-vie`, `etape-37`
@@ -31,7 +31,7 @@ Installer le service attendu.
    sudo ufw allow from 192.0.2.0/24 to any port 80,443 proto tcp
    systemctl status nginx --no-pager
    ```
-   👉 Explication : installe et démarre le service; la règle UFW limite l'accès aux clients prévus.
+   👉 Explication : installe et démarre le service; la règle [[Glossary:UFW]] limite l'accès aux clients prévus.
 
 2. Pour un logiciel livré en snap, privilégier le canal stable :
    ```bash

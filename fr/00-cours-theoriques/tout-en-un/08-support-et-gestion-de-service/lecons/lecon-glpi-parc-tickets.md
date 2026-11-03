@@ -21,15 +21,15 @@ dateModified: 2026-11-03T09:36:13Z
 
 À l'issue de cette leçon, vous saurez :
 
-1. Situer **GLPI** (logiciel libre de gestion de parc et de support) dans une démarche de gestion de services.
+1. Situer **[[Glossary:GLPI]]** (logiciel libre de gestion de parc et de support) dans une démarche de gestion de services.
 2. Organiser un **parc** et comprendre l'**inventaire** (manuel, importé, automatique).
-3. Concevoir des **catégories**, des **modèles** et des **règles** sobres, et raisonner sur les **SLA**.
+3. Concevoir des **catégories**, des **modèles** et des **règles** sobres, et raisonner sur les **[[Glossary:SLA]]**.
 4. Construire des **tableaux de bord** utiles et alimenter une **base de connaissances**.
 5. Suivre un **parcours d'administration** ordonné, avec sauvegarde et retour arrière.
 
 ## Prérequis et durée
 
-- Connaître incident, demande, priorité, SLA et CMDB (voir la leçon [ITIL 4 pour le technicien](/fr/00-cours-theoriques/tout-en-un/08-support-et-gestion-de-service/lecons/lecon-itil4-technicien)) ; bases de Linux et du web.
+- Connaître incident, demande, priorité, SLA et [[Glossary:CMDB]] (voir la leçon [ITIL 4 pour le technicien](/fr/00-cours-theoriques/tout-en-un/08-support-et-gestion-de-service/lecons/lecon-itil4-technicien)) ; bases de Linux et du web.
 - Une **machine virtuelle jetable** (Debian ou Ubuntu récente) pour la mise en pratique, avec un **instantané** disponible. Ne jamais installer ni tester sur un serveur de production.
 - Durée totale : environ 4 h.
 
@@ -194,7 +194,7 @@ Sauvegardez la base **et** les dossiers de fichiers, et **testez la restauration
 
 ## Mise en pratique guidée
 
-Objectif : installer une instance GLPI **de laboratoire** sur une VM jetable, créer une catégorie, un SLA, un ticket et un article, puis sauvegarder et restaurer. Les commandes ci-dessous sont indicatives pour une distribution de la famille Debian ; **vérifiez les prérequis exacts de votre version de GLPI** dans la documentation officielle avant de commencer.
+Objectif : installer une instance GLPI **de laboratoire** sur une [[Glossary:VM]] jetable, créer une catégorie, un SLA, un ticket et un article, puis sauvegarder et restaurer. Les commandes ci-dessous sont indicatives pour une distribution de la famille Debian ; **vérifiez les prérequis exacts de votre version de GLPI** dans la documentation officielle avant de commencer.
 
 > **Précautions obligatoires** : VM **jetable** sans donnée réelle ; **instantané** avant l'installation ; **accès console de secours** (hyperviseur) ; test après chaque étape ; retour arrière par restauration de l'instantané. Adresses de documentation (192.0.2.0/24) et domaine `example.test` : remplacez-les par ceux de votre laboratoire.
 
@@ -305,7 +305,7 @@ Effectuez, dans l'ordre :
 
 1. **Configuration → Intitulés → Calendriers** : créer un calendrier « Heures ouvrées » (lundi–vendredi, 8 h–18 h).
 2. **Configuration → Niveaux de service** : créer un SLA « P1 » (TTO 15 min, TTR 4 h) rattaché à ce calendrier.
-3. **Configuration → Intitulés → Assistance → Catégories ITIL** : créer « Messagerie » avec une sous-catégorie « Boîte aux lettres ».
+3. **Configuration → Intitulés → Assistance → Catégories [[Glossary:ITIL]]** : créer « Messagerie » avec une sous-catégorie « Boîte aux lettres ».
 4. **Parc → Ordinateurs** : créer une fiche fictive `PC-LAB-001` avec numéro de série et lieu.
 5. **Assistance → Tickets → Ajouter** : créer un ticket lié à cet ordinateur, catégorie « Messagerie », avec le SLA.
 6. Résoudre le ticket avec une solution, puis **Outils → Base de connaissances** : créer l'article correspondant.

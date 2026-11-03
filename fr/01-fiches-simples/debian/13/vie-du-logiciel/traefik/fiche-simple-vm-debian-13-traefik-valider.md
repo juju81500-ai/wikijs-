@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Traefik_Valider
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; Traefik v3 (binaire officiel)
 - **Catégorie** : reverse proxy / Traefik / Valider (recette)
 - **Tags** : `debian13`, `traefik`, `recette`
@@ -31,7 +31,7 @@ Prouver que Traefik route correctement, présente un certificat valide et résis
    ```
    👉 Explication : écoute sur 80 et 443 uniquement.
 
-2. Tester HTTP, redirection et HTTPS :
+2. Tester [[Glossary:HTTP]], redirection et HTTPS :
    ```bash
    curl -sI http://APP.example.net/ | head -3
    curl -sI https://APP.example.net/ | head -5

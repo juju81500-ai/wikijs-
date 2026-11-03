@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 VM_Win11_Reseau_Fixer-IP-PowerShell.md
 
-- **Environnement** : VM / Poste client (Windows 11)
+- **Environnement** : [[Glossary:VM]] / Poste client (Windows 11)
 - **OS / Version** : Windows 11 - Famille Windows Client
-- **Catégorie** : Réseau / Configuration IP
+- **Catégorie** : Réseau / Configuration [[Glossary:IP]]
 - **Tags** : `[windows-11]`, `[windows-client]`, `[powershell]`, `[ip-statique]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Fixer une adresse IP statique, la passerelle et les serveurs DNS sur un poste client Windows 11 via PowerShell, puis sécuriser la pile réseau client.
+Fixer une adresse IP statique, la passerelle et les serveurs [[Glossary:DNS]] sur un poste client Windows 11 via PowerShell, puis sécuriser la pile réseau client.
 
 ---
 
@@ -34,11 +34,11 @@ Fixer une adresse IP statique, la passerelle et les serveurs DNS sur un poste cl
 
 **Équivalent interface graphique :**
 
-- **Win + R** > `ncpa.cpl` > clic droit sur la carte > **Propriétés > Protocole Internet version 4 (TCP/IPv4) > Propriétés**, cocher **Utiliser l'adresse IP suivante** et saisir IP, masque, passerelle, DNS, puis **OK**.
+- **Win + R** > `ncpa.cpl` > clic droit sur la carte > **Propriétés > Protocole Internet version 4 ([[Glossary:TCP]]/IPv4) > Propriétés**, cocher **Utiliser l'adresse IP suivante** et saisir IP, masque, passerelle, DNS, puis **OK**.
   👉 Explication : équivalent de `New-NetIPAddress` et `Set-DnsClientServerAddress`; adapter les valeurs d'exemple.
 
 ## ⚡ 2. Production — Façon Simplifiée
-1. Modification d'une configuration existante de DHCP vers Statique :
+1. Modification d'une configuration existante de [[Glossary:DHCP]] vers Statique :
    `Set-NetIPInterface -InterfaceIndex 12 -Dhcp Disabled`
    👉 Explication : Désactive le client DHCP sur la carte réseau client.
 2. Application simultanée de l'IP et des serveurs DNS principal et secondaire :
@@ -51,7 +51,7 @@ Fixer une adresse IP statique, la passerelle et les serveurs DNS sur un poste cl
 ## 🔒 3. Production — Façon Sécurisée (Hardening & Isolation Enterprise)
 1. Désactivation des protocoles d'authentification et de résolution obsolètes (LLMNR / NetBIOS / mDNS) :
    `Disable-NetAdapterBinding -Name "Ethernet" -ComponentID ms_tcpip6`
-   👉 Explication : Bloque IPv6 non utilisé et désactive la résolution mDNS pour éviter le spoofing de nom sur le LAN.
+   👉 Explication : Bloque IPv6 non utilisé et désactive la résolution mDNS pour éviter le spoofing de nom sur le [[Glossary:LAN]].
 2. Activation de DNS-over-HTTPS (DoH) sur Windows 11 :
    `Set-DNSClientDohServerAddress -ServerAddress "192.168.1.10" -DohTemplate "https://dns.lab.local/dns-query" -AllowFallbackToUdp $false`
    👉 Explication : Force le chiffrement HTTPS des requêtes DNS transmises par le poste client.

@@ -14,12 +14,12 @@ dateModified: 2026-11-03T09:36:13Z
 - **Catégorie** : Sauvegarde, restauration et PRA / PCA
 - **Plateforme** : Windows et Linux selon compatibilités explicitement publiées
 - **Produit (matrice)** : Nakivo / Altaro (Hornetsecurity)
-- **Statut dans le pack** : Partiel — NAKIVO Windows Server 2022 et Transporter Linux sur Debian 13 et Ubuntu Server 24-04; Altaro/Hornetsecurity limité à la documentation publique de VM Backup
+- **Statut dans le pack** : Partiel — NAKIVO Windows Server 2022 et Transporter Linux sur Debian 13 et Ubuntu Server 24-04; Altaro/Hornetsecurity limité à la documentation publique de [[Glossary:VM]] Backup
 - **Tags** : `logiciel`, `07-sauvegarde-restauration-et-pra-pca`, `partiel`
 
 ## 📚 Couverture dans le pack
 
-NAKIVO : procédures Windows Server 2022 existantes et séries Linux Transporter Debian 13 et Ubuntu Server 24-04 LTS (5 fiches par OS : prérequis, installation, configuration, sécurité, validation/maintenance). La page NAKIVO « Deployment Requirements » liste explicitement Debian 13 64-bit et Ubuntu 24-04 Server LTS x64 comme plateformes de déploiement. La liste « Supported Platforms » des machines physiques protégées est distincte et ne doit pas être interprétée comme la matrice des hôtes Transporter. Altaro/Hornetsecurity : fiche d’entrée seulement; la base de connaissances publique confirme l’installation et l’ouverture de la VM Backup Management Console, sans série de déploiement créée ici.
+NAKIVO : procédures Windows Server 2022 existantes et séries Linux Transporter Debian 13 et Ubuntu Server 24-04 [[Glossary:LTS]] (5 fiches par OS : prérequis, installation, configuration, sécurité, validation/maintenance). La page NAKIVO « Deployment Requirements » liste explicitement Debian 13 64-bit et Ubuntu 24-04 Server LTS x64 comme plateformes de déploiement. La liste « Supported Platforms » des machines physiques protégées est distincte et ne doit pas être interprétée comme la matrice des hôtes Transporter. Altaro/Hornetsecurity : fiche d’entrée seulement; la base de connaissances publique confirme l’installation et l’ouverture de la VM Backup Management Console, sans série de déploiement créée ici.
 
 Référence OS de déploiement : [NAKIVO Deployment Requirements](https://helpcenter.nakivo.com/User-Guide/Content/Deployment/System-Requirements/Deployment-Requirements.htm).
 

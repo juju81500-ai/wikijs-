@@ -24,7 +24,7 @@ Publier une application de test non sensible en HTTPS.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Ajouter à l'application de test un routeur HTTPS, un service, un middleware de redirection HTTP vers HTTPS et le bon resolver (labels Compose).
+1. Ajouter à l'application de test un routeur HTTPS, un service, un middleware de redirection [[Glossary:HTTP]] vers HTTPS et le bon resolver (labels Compose).
    👉 Explication : Traefik construit ses routes depuis ces labels.
 
 2. Démarrer la pile :
@@ -43,7 +43,7 @@ Publier une application de test non sensible en HTTPS.
    ```bash
    docker compose logs --tail 100 traefik
    ```
-   👉 Explication : on cherche les erreurs ACME ou de routage.
+   👉 Explication : on cherche les erreurs [[Glossary:ACME]] ou de routage.
 
 ## 2. Production — Contrôles
 

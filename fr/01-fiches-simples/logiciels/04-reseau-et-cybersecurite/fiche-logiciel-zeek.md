@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 📚 Couverture dans le pack
 
-Couvert — Zeek 8.0 LTS en capteur passif/standalone sur Debian 13 et Ubuntu 24-04 (dépôt OBS), et sur Rocky Linux 9 via image conteneur Podman officielle. Cluster et haute disponibilité non couverts.
+Couvert — Zeek 8.0 [[Glossary:LTS]] en capteur passif/standalone sur Debian 13 et Ubuntu 24-04 (dépôt OBS), et sur Rocky Linux 9 via image conteneur Podman officielle. Cluster et haute disponibilité non couverts.
 
 Fiches simples du guide : [cadrer le périmètre](/fr/01-fiches-simples/debian/13/vie-du-logiciel/zeek/fiche-simple-vm-debian-13-zeek-cadrer), [installer depuis le dépôt](/fr/01-fiches-simples/debian/13/vie-du-logiciel/zeek/fiche-simple-vm-debian-13-zeek-depot-installer), [compte de service](/fr/01-fiches-simples/debian/13/vie-du-logiciel/zeek/fiche-simple-vm-debian-13-zeek-compte-service), [configurer standalone](/fr/01-fiches-simples/debian/13/vie-du-logiciel/zeek/fiche-simple-vm-debian-13-zeek-noeud-standalone), [déployer ZeekControl](/fr/01-fiches-simples/debian/13/vie-du-logiciel/zeek/fiche-simple-vm-debian-13-zeek-deployer), [valider les logs](/fr/01-fiches-simples/debian/13/vie-du-logiciel/zeek/fiche-simple-vm-debian-13-zeek-valider-logs), [valider le capteur](/fr/01-fiches-simples/debian/13/vie-du-logiciel/zeek/fiche-simple-vm-debian-13-zeek-valider-capteur), [exploiter/durcir](/fr/01-fiches-simples/debian/13/vie-du-logiciel/zeek/fiche-simple-vm-debian-13-zeek-exploiter).
 

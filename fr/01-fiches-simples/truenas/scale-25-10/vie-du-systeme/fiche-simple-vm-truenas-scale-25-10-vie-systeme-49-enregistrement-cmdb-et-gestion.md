@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Inventorier le NAS.
+Inventorier le [[Glossary:NAS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -31,7 +31,7 @@ Inventorier le NAS.
    ```
    👉 Explication : version, mémoire et disques avec leur numéro de série.
 
-2. Saisir dans la CMDB : nom, IP, version, pools, partages, propriétaire, contrat de support, date de mise à jour.
+2. Saisir dans la [[Glossary:CMDB]] : nom, [[Glossary:IP]], version, pools, partages, propriétaire, contrat de support, date de mise à jour.
    👉 Explication : permet l'astreinte et le suivi du cycle de vie.
 
 ## 2. Production — Contrôles

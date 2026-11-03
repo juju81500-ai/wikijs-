@@ -11,14 +11,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Keycloak
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : Keycloak 26.x (distribution zip officielle, numéro exact à vérifier sur la version déployée)
 - **Catégorie** : Réseau et cybersécurité
 - **Tags** : `[debian-12]`, `[keycloak]`, `[sso]`, `[oidc]`, `[java]`, `[hardening]`
 
 ## 🎯 Objectif
-Installer Keycloak sur Debian 12 comme fournisseur d'identité (SSO, OIDC, SAML), vérifier la console d'administration sur ce même serveur, puis le durcir (compte administrateur dédié, HTTPS, exposition restreinte). Les tests ne se font que sur votre propre serveur.
+Installer Keycloak sur Debian 12 comme fournisseur d'identité ([[Glossary:SSO]], [[Glossary:OIDC]], [[Glossary:SAML]]), vérifier la console d'administration sur ce même serveur, puis le durcir (compte administrateur dédié, HTTPS, exposition restreinte). Les tests ne se font que sur votre propre serveur.
 
 ---
 
@@ -46,7 +46,7 @@ ls /opt/keycloak/bin
 cd /opt/keycloak
 sudo KC_BOOTSTRAP_ADMIN_USERNAME=admin_lab KC_BOOTSTRAP_ADMIN_PASSWORD='<MOT_DE_PASSE_ADMIN_A_REMPLACER>' ./bin/kc.sh start-dev --http-port=8080
 ```
-👉 Explication : Lance Keycloak en mode `start-dev` (HTTP, base H2 intégrée, non prévue pour la production). Le compte `admin_lab` est créé au premier démarrage. Le mot de passe est un mot de passe de laboratoire.
+👉 Explication : Lance Keycloak en mode `start-dev` ([[Glossary:HTTP]], base H2 intégrée, non prévue pour la production). Le compte `admin_lab` est créé au premier démarrage. Le mot de passe est un mot de passe de laboratoire.
 
 4. Contrôle de la console d'administration :
 ```bash
@@ -76,7 +76,7 @@ sudo -u keycloak KC_HOSTNAME=auth.entreprise.lan KC_PROXY_HEADERS=xforwarded KC_
 ```bash
 curl -f http://127.0.0.1:9000/health/ready
 ```
-👉 Explication : Le point de santé est exposé sur le port de gestion 9000. La réponse JSON avec `"status": "UP"` est attendue.
+👉 Explication : Le point de santé est exposé sur le port de gestion 9000. La réponse [[Glossary:JSON]] avec `"status": "UP"` est attendue.
 
 ---
 

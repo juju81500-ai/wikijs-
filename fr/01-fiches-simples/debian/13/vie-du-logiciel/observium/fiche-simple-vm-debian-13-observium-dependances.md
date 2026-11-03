@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Installer depuis Debian 13 la pile Apache, PHP, MariaDB et les outils SNMP nécessaires.
+Installer depuis Debian 13 la pile Apache, PHP, MariaDB et les outils [[Glossary:SNMP]] nécessaires.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -29,7 +29,7 @@ Installer depuis Debian 13 la pile Apache, PHP, MariaDB et les outils SNMP néce
    sudo apt update
    sudo apt install -y apache2 libapache2-mod-php php-cli php-mysql php-gd php-bcmath php-mbstring php-curl php-apcu php-pear mariadb-server mariadb-client snmp fping rrdtool whois mtr-tiny ipmitool libvirt-clients python3-mysqldb python3-pymysql python-is-python3 graphviz imagemagick
    ```
-   👉 Explication : APT choisit la version PHP supportée par Trixie.
+   👉 Explication : [[Glossary:APT]] choisit la version PHP supportée par Trixie.
 
 2. Contrôler les versions effectives :
    ```bash

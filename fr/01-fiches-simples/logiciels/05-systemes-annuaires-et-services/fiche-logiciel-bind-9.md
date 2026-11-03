@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Catégorie** : Systèmes, annuaires et services
 - **Plateforme** : Linux
-- **Produit (matrice)** : BIND 9
+- **Produit (matrice)** : [[Glossary:BIND]] 9
 - **Statut dans le pack** : Couvert
 - **Tags** : `logiciel`, `05-systemes-annuaires-et-services`, `couvert`
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-rsync-installer-preparer.md
 
-- **Environnement** : Debian 13 Trixie; source et destination locales ou SSH
+- **Environnement** : Debian 13 Trixie; source et destination locales ou [[Glossary:SSH]]
 - **OS / Version** : Debian 13; paquet rsync du dépôt Debian
 - **Catégorie** : sauvegarde de fichiers / préparation
 - **Tags** : `debian13`, `rsync`, `apt`, `ssh`, `installation`

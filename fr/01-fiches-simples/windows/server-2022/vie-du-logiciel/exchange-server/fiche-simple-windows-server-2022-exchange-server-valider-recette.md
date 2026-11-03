@@ -56,7 +56,7 @@ Conserver les résultats de test, vérifier l'événementiel et les files, et si
 ## 3. Production — Sécurité
 
 - Supprimer les boîtes et comptes de test après recette.
-- Contrôler qu'aucun relais ouvert n'existe (test depuis une IP non autorisée).
+- Contrôler qu'aucun relais ouvert n'existe (test depuis une [[Glossary:IP]] non autorisée).
 
 ## Validation et retour arrière
 

@@ -23,7 +23,7 @@ Fiche défensive d’administration et de gouvernance. Elle ne remplace pas le g
 
 ## 🧭 Périmètre
 
-Administrer les portails/gateways et profils selon la documentation correspondant à PAN-OS et au client déployés. Imposer identité nominative, MFA, certificats valides, groupes d’accès minimaux et gestion des terminaux; surveiller les connexions et appliquer une procédure de révocation. Les changements de politique relèvent du processus de revue firewall, sans procédure de configuration de tunnel générique ici.
+Administrer les portails/gateways et profils selon la documentation correspondant à PAN-OS et au client déployés. Imposer identité nominative, [[Glossary:MFA]], certificats valides, groupes d’accès minimaux et gestion des terminaux; surveiller les connexions et appliquer une procédure de révocation. Les changements de politique relèvent du processus de revue firewall, sans procédure de configuration de tunnel générique ici.
 
 ## ✅ Autorisation et préparation
 

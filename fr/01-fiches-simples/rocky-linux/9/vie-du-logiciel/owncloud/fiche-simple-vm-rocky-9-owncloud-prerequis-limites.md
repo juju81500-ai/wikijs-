@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_ownCloud_Prerequis_Limites
 
-- **Environnement** : VM Rocky Linux 9; ownCloud Infinite Scale (oCIS), binaire officiel
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9; ownCloud Infinite Scale (oCIS), binaire officiel
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : Vie du logiciel / ownCloud — Prérequis et limites
 - **Tags** : `owncloud`, `serveur`, `vie-du-logiciel`, `prerequis_limites`
@@ -37,7 +37,7 @@ curl -fsSL https://download.owncloud.com/ocis/ocis/stable/
 
 ## 2. Production — Contrôles
 
-Documenter version, FQDN, reverse proxy, stockage et RPO/RTO.
+Documenter version, [[Glossary:FQDN]], reverse proxy, stockage et [[Glossary:RPO]]/RTO.
 
 ## 3. Production — Sécurité
 

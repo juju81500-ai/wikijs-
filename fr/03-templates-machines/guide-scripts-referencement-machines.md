@@ -56,7 +56,7 @@ Sans argument, le fichier est nommé `fiche-machine_<nom-hôte>.md` dans le doss
 
 ### Champs relevés automatiquement
 
-Nom d'hôte, type (VM, LXC ou physique), OS et version, vCPU, RAM, disques, adresses IP, services actifs, ports en écoute, état du pare-feu local, date de dernière modification.
+Nom d'hôte, type ([[Glossary:VM]], [[Glossary:LXC]] ou physique), OS et version, vCPU, [[Glossary:RAM]], disques, adresses [[Glossary:IP]], services actifs, ports en écoute, état du pare-feu local, date de dernière modification.
 
 ### Champs à compléter à la main
 

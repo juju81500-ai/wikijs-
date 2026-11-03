@@ -23,21 +23,21 @@ dateModified: 2026-11-03T09:36:13Z
 
 - vous repérer dans les modes de la ligne de commande d'un équipement de type Cisco IOS et utiliser l'aide, les abréviations et les commandes `show` ;
 - distinguer configuration d'exécution et configuration de démarrage ;
-- expliquer le NAT statique, dynamique et le PAT (surcharge), lire une table de traduction et citer les limites du NAT ;
-- écrire et ordonner une ACL standard ou étendue, utiliser les masques génériques (*wildcard*) et placer l'ACL au bon endroit ;
+- expliquer le [[Glossary:NAT]] statique, dynamique et le PAT (surcharge), lire une table de traduction et citer les limites du NAT ;
+- écrire et ordonner une [[Glossary:ACL]] standard ou étendue, utiliser les masques génériques (*wildcard*) et placer l'ACL au bon endroit ;
 - raisonner sur l'ordre d'exécution NAT / ACL / routage ;
 - reproduire NAT et filtrage dans un laboratoire Linux jetable.
 
 ## Prérequis et durée
 
-- Adressage IPv4 et sous-réseaux ; routage de base ([leçon sur le routage](/fr/00-cours-theoriques/tout-en-un/01-reseaux-et-protocoles/lecons/lecon-routage-ip)) ; notions de VLAN ([leçon sur la commutation](/fr/00-cours-theoriques/tout-en-un/01-reseaux-et-protocoles/lecons/lecon-commutation-ethernet-vlan)).
-- Notions de ports TCP/UDP (80, 443, 53, 23, 22).
-- Laboratoire : une VM Linux jetable avec `iproute2`, `nftables`, `tcpdump` (et `conntrack` en option) ; ou un simulateur de réseau gratuit pour les exemples Cisco IOS.
+- Adressage IPv4 et sous-réseaux ; routage de base ([leçon sur le routage](/fr/00-cours-theoriques/tout-en-un/01-reseaux-et-protocoles/lecons/lecon-routage-ip)) ; notions de [[Glossary:VLAN]] ([leçon sur la commutation](/fr/00-cours-theoriques/tout-en-un/01-reseaux-et-protocoles/lecons/lecon-commutation-ethernet-vlan)).
+- Notions de ports [[Glossary:TCP]]/UDP (80, 443, 53, 23, 22).
+- Laboratoire : une [[Glossary:VM]] Linux jetable avec `iproute2`, `nftables`, `tcpdump` (et `conntrack` en option) ; ou un simulateur de réseau gratuit pour les exemples Cisco IOS.
 - Durée : environ 4 h.
 
 ## L'essentiel en bref
 
-- La **CLI Cisco IOS** est organisée en **modes** (`>` utilisateur, `#` privilégié, `(config)#` global, `(config-if)#` interface) ; `?` donne l'aide ; `show` consulte, rien n'est permanent tant qu'on n'a pas sauvegardé.
+- La **[[Glossary:CLI]] Cisco IOS** est organisée en **modes** (`>` utilisateur, `#` privilégié, `(config)#` global, `(config-if)#` interface) ; `?` donne l'aide ; `show` consulte, rien n'est permanent tant qu'on n'a pas sauvegardé.
 - Le **NAT** traduit des adresses ; le **PAT** (NAT « overload ») fait partager **une** adresse publique à de nombreux postes en distinguant les flux par le **port**.
 - Une **ACL** est une liste de règles lues **de haut en bas** : la **première** qui correspond s'applique ; un **deny implicite** termine toute liste.
 - Une ACL se **place** sur une interface avec un sens (`in` ou `out`) ; mal placée, elle coupe tout, y compris votre propre accès d'administration.
@@ -92,7 +92,7 @@ La **running-config** (en mémoire vive) est celle qui s'applique tout de suite 
 
 ### 1.5 Accès sécurisé (principe)
 
-Préférer **SSH** à Telnet (qui transmet tout en clair), utiliser un secret robuste stocké hors du dépôt (marqueur `<A_DEFINIR>`) et limiter les adresses autorisées à administrer l'équipement. Exemple de lab : `enable secret <A_DEFINIR>`, puis `crypto key generate rsa modulus 2048` (nom d'hôte et domaine requis) et, sur `line vty 0 4`, `transport input ssh` et `login local`.
+Préférer **[[Glossary:SSH]]** à Telnet (qui transmet tout en clair), utiliser un secret robuste stocké hors du dépôt (marqueur `<A_DEFINIR>`) et limiter les adresses autorisées à administrer l'équipement. Exemple de lab : `enable secret <A_DEFINIR>`, puis `crypto key generate rsa modulus 2048` (nom d'hôte et domaine requis) et, sur `line vty 0 4`, `transport input ssh` et `login local`.
 
 👉 Explication : ces commandes protègent le mode privilégié et imposent SSH ; une erreur sur les lignes `vty` peut vous interdire l'accès distant, donc lab uniquement.
 
@@ -209,7 +209,7 @@ R1(config-if)# ip access-group LAN-OUT in
 R1(config-if)# end
 ```
 
-👉 Explication : la liste refuse Telnet venant d'un poste précis, autorise le Web, la résolution DNS vers un serveur désigné et le ping depuis le réseau interne, puis applique la liste **en entrée** de l'interface interne. Tout ce qui n'est pas listé (SSH, SMTP…) est refusé par le deny implicite. Lab uniquement : appliquée par erreur sur l'interface de gestion, elle coupe votre session.
+👉 Explication : la liste refuse Telnet venant d'un poste précis, autorise le Web, la résolution [[Glossary:DNS]] vers un serveur désigné et le ping depuis le réseau interne, puis applique la liste **en entrée** de l'interface interne. Tout ce qui n'est pas listé (SSH, [[Glossary:SMTP]]…) est refusé par le deny implicite. Lab uniquement : appliquée par erreur sur l'interface de gestion, elle coupe votre session.
 
 Vérifier (lecture seule) :
 
@@ -325,7 +325,7 @@ ip netns list
 4. Non : la ligne 10 autorise tout et s'arrête là (première correspondance gagnante). Il faut placer le `deny tcp any any eq 23` **avant** le `permit ip any any` (en nommée, utiliser des numéros de séquence ou réécrire la liste).
 5. `ip access-list standard ADMIN` / `permit 192.0.2.0 0.0.0.63` ; puis `line vty 0 4` / `access-class ADMIN in`. Risque : se couper l'accès si l'adresse de votre poste n'est pas dans `192.0.2.0/26`. Prévoir une session ouverte, un accès console et un retour arrière.
 6. L'ACL sortante est évaluée **après** NAT : l'adresse source n'est plus `192.0.2.x` mais `203.0.113.1`, donc la règle ne correspond jamais et le deny implicite abandonne tout. Il faut autoriser l'adresse traduite (`permit tcp host 203.0.113.1 any eq 443`) ou filtrer plutôt en entrée de l'interface interne, avant NAT.
-7. Un NAT statique (redirection du port 443 vers `192.0.2.20`), une ACL entrante externe limitant aux ports voulus (443) et, si possible, aux sources attendues, une journalisation, un test depuis l'extérieur et la surveillance des compteurs. Risques : exposition d'un service, vulnérabilités du serveur, rebond vers le réseau interne ; la bonne pratique est de placer le serveur dans une zone séparée (DMZ).
+7. Un NAT statique (redirection du port 443 vers `192.0.2.20`), une ACL entrante externe limitant aux ports voulus (443) et, si possible, aux sources attendues, une journalisation, un test depuis l'extérieur et la surveillance des compteurs. Risques : exposition d'un service, vulnérabilités du serveur, rebond vers le réseau interne ; la bonne pratique est de placer le serveur dans une zone séparée ([[Glossary:DMZ]]).
 
 ## Quiz
 
@@ -342,7 +342,7 @@ A. il affiche l'aide — B. il annule ou supprime une commande — C. il redéma
 A. NAT statique — B. NAT dynamique avec pool — C. PAT (overload) — D. aucun
 
 **Q5.** Comment le PAT distingue-t-il les flux ?
-A. par l'adresse MAC — B. par le port source traduit — C. par le TTL — D. par le VLAN
+A. par l'adresse MAC — B. par le port source traduit — C. par le [[Glossary:TTL]] — D. par le VLAN
 
 **Q6.** Le NAT est-il un pare-feu ?
 A. oui, par défaut — B. non : il traduit, il ne décide pas de la politique d'autorisation — C. oui, uniquement en statique — D. seulement en IPv6

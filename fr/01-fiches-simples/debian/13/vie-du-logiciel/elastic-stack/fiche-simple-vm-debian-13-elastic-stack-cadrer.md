@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Vérifier que la VM et le réseau conviennent avant d'installer Elasticsearch et Kibana.
+Vérifier que la [[Glossary:VM]] et le réseau conviennent avant d'installer Elasticsearch et Kibana.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -42,7 +42,7 @@ Vérifier que la VM et le réseau conviennent avant d'installer Elasticsearch et
    ```bash
    sudo ss -tlnp | grep -E ':(9200|9300|5601)\b' || echo "ports libres"
    ```
-   👉 Explication : 9200 (API), 9300 (transport) et 5601 (Kibana) doivent être libres et ne jamais être exposés sur Internet.
+   👉 Explication : 9200 ([[Glossary:API]]), 9300 (transport) et 5601 (Kibana) doivent être libres et ne jamais être exposés sur Internet.
 
 ## 2. Production — Contrôles
 
@@ -51,7 +51,7 @@ Concevoir séparément rôles master/data/ingest, haute disponibilité, snapshot
 ## 3. Production — Sécurité
 
 - Ne pas exposer 9200 ni 9300 sur Internet.
-- Placer Kibana derrière un proxy TLS ou limiter son accès aux administrateurs.
+- Placer Kibana derrière un proxy [[Glossary:TLS]] ou limiter son accès aux administrateurs.
 - Les deux composants doivent rester à la même version 9.5.x.
 
 ## Validation et retour arrière

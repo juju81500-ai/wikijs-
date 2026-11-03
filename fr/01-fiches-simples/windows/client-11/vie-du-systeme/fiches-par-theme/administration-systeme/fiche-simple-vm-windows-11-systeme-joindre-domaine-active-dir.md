@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 VM_Win11_Systeme_Joindre-Domaine-Active-Directory.md
 
-- **Environnement** : VM / Poste client (Windows 11)
+- **Environnement** : [[Glossary:VM]] / Poste client (Windows 11)
 - **OS / Version** : Windows 11 - Famille Windows Client
-- **Catégorie** : Système / Annuaire & Domaine AD DS
+- **Catégorie** : Système / Annuaire & Domaine [[Glossary:AD]] DS
 - **Tags** : `[windows-11]`, `[active-directory]`, `[domain-join]`, `[gui]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Joindre un poste client Windows 11 à un domaine Active Directory d'entreprise (`lab.local`), placer l'ordinateur dans la bonne Unité d'Organisation (OU) et sécuriser la jonction.
+Joindre un poste client Windows 11 à un domaine Active Directory d'entreprise (`lab.local`), placer l'ordinateur dans la bonne Unité d'Organisation ([[Glossary:OU]]) et sécuriser la jonction.
 
 ---
 
@@ -25,16 +25,16 @@ Joindre un poste client Windows 11 à un domaine Active Directory d'entreprise (
 
 ### Prérequis
 - L'édition doit permettre l'adhésion au domaine (Pro, Enterprise ou Education ; Windows Home ne peut pas rejoindre un domaine AD classique).
-- La carte réseau du poste doit utiliser le DNS du domaine ; vérifier la connectivité au contrôleur de domaine et la synchronisation de l'heure avant l'opération.
+- La carte réseau du poste doit utiliser le [[Glossary:DNS]] du domaine ; vérifier la connectivité au contrôleur de domaine et la synchronisation de l'heure avant l'opération.
 - Disposer d'un compte explicitement autorisé à joindre des postes, et connaître l'OU cible. Si l'objet ordinateur doit être précréé ou placé dans une OU précise, le faire dans ADUC selon la délégation de l'organisation.
 
 ### Joindre le poste
 1. Ouvrir **Paramètres** > **Comptes** > **Accès professionnel ou scolaire** > **Se connecter**.
 2. Dans la fenêtre de connexion, sélectionner **Joindre cet appareil à un domaine Active Directory local** (et non l'option d'inscription à Microsoft Entra ID).
-3. Saisir le FQDN du domaine (`lab.local` seulement dans le laboratoire), puis **Suivant**. Fournir les identifiants autorisés à joindre l'ordinateur lorsqu'ils sont demandés.
+3. Saisir le [[Glossary:FQDN]] du domaine (`lab.local` seulement dans le laboratoire), puis **Suivant**. Fournir les identifiants autorisés à joindre l'ordinateur lorsqu'ils sont demandés.
 4. Si l'assistant demande le type de compte, choisir l'utilisateur standard prévu ; ne pas ajouter le poste ou l'utilisateur aux administrateurs locaux sans besoin validé.
 5. Terminer l'assistant et redémarrer lorsque Windows le demande.
-6. Après redémarrage, se connecter avec le compte de domaine (`DOMAINE\utilisateur` ou UPN). Dans **Paramètres** > **Système** > **Informations système**, vérifier l'appartenance au domaine. Dans ADUC, contrôler que le compte ordinateur est dans l'OU attendue ; vérifier l'application des GPO avec l'équipe poste de travail.
+6. Après redémarrage, se connecter avec le compte de domaine (`DOMAINE\utilisateur` ou UPN). Dans **Paramètres** > **Système** > **Informations système**, vérifier l'appartenance au domaine. Dans ADUC, contrôler que le compte ordinateur est dans l'OU attendue ; vérifier l'application des [[Glossary:GPO]] avec l'équipe poste de travail.
 
 Si le domaine est introuvable, arrêter et corriger le DNS ou la connectivité avant de répéter la jonction. Ne pas supprimer puis recréer le compte ordinateur en production sans vérifier les droits et la procédure de réutilisation sécurisée du compte.
 

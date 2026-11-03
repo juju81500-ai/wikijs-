@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 ISC DHCP Server
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
-- **Version** : ISC DHCP 4.4.3 (paquet des dépôts Debian 12, à vérifier sur la version déployée)
+- **Version** : ISC [[Glossary:DHCP]] 4.4.3 (paquet des dépôts Debian 12, à vérifier sur la version déployée)
 - **Catégorie** : Systèmes, annuaires et services
 - **Tags** : `[debian-12]`, `[isc-dhcp]`, `[dhcp]`, `[reseau]`, `[legacy]`
 
@@ -58,7 +58,7 @@ subnet 192.168.10.0 netmask 255.255.255.0 {
     option domain-name "lab.local";
 }
 ```
-👉 Explication : `authoritative` indique que ce serveur fait autorité sur le sous-réseau. La plage `192.168.10.100` à `192.168.10.199` est distribuée aux clients. `routers` donne la passerelle, `domain-name-servers` le serveur DNS. Adapter ces valeurs au réseau de test.
+👉 Explication : `authoritative` indique que ce serveur fait autorité sur le sous-réseau. La plage `192.168.10.100` à `192.168.10.199` est distribuée aux clients. `routers` donne la passerelle, `domain-name-servers` le serveur [[Glossary:DNS]]. Adapter ces valeurs au réseau de test.
 
 4. Vérification de la syntaxe puis démarrage :
 ```bash
@@ -105,7 +105,7 @@ systemctl status isc-dhcp-server --no-pager
 ```
 👉 Explication : Vérifie la syntaxe avant de relancer le service. Une erreur de syntaxe bloque le redémarrage, il faut la corriger avant de continuer.
 
-3. Ouverture du pare-feu : DHCP est écouté sur le port UDP 67 et le client émet depuis `0.0.0.0`, donc la règle filtre sur l'interface et le port, pas sur une adresse source :
+3. Ouverture du pare-feu : DHCP est écouté sur le port [[Glossary:UDP]] 67 et le client émet depuis `0.0.0.0`, donc la règle filtre sur l'interface et le port, pas sur une adresse source :
 ```bash
 sudo apt install -y ufw
 sudo ufw allow from 192.168.10.0/24 to any port 22 proto tcp
@@ -113,7 +113,7 @@ sudo ufw allow in on ens19 to any port 67 proto udp
 sudo ufw enable
 sudo ufw status verbose
 ```
-👉 Explication : SSH est autorisé depuis le sous-réseau d'administration avant l'activation, pour éviter de se couper l'accès. La règle DHCP n'accepte que l'interface `ens19`. Vérifier que le sous-réseau `192.168.10.0/24` correspond bien à l'administration réelle.
+👉 Explication : [[Glossary:SSH]] est autorisé depuis le sous-réseau d'administration avant l'activation, pour éviter de se couper l'accès. La règle DHCP n'accepte que l'interface `ens19`. Vérifier que le sous-réseau `192.168.10.0/24` correspond bien à l'administration réelle.
 
 ---
 

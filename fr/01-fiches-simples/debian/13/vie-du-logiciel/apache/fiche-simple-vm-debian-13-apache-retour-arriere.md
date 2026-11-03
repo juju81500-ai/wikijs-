@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-apache-retour-arriere.md
 
-- **Environnement** : VM Debian 13 Trixie avec configuration Apache sauvegardée
-- **OS / Version** : Debian 13 Trixie; Apache HTTP Server
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie avec configuration Apache sauvegardée
+- **OS / Version** : Debian 13 Trixie; Apache [[Glossary:HTTP]] Server
 - **Catégorie** : serveur Web / gestion du changement
 - **Tags** : `debian13`, `apache`, `rollback`, `configuration`, `changement`
 

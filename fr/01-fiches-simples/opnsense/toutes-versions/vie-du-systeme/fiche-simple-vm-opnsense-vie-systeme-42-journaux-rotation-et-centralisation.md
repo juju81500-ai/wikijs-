@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_42_Journaux_Rotation_Et_Centralisation
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 42 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-42`
@@ -24,7 +24,7 @@ Centraliser et conserver les journaux.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Aller dans Système > Paramètres > Journalisation > Distant, ajouter la destination `IP_SYSLOG` (port 514 UDP/TCP ou TLS) et choisir les applications.
+1. Aller dans Système > Paramètres > Journalisation > Distant, ajouter la destination `IP_SYSLOG` (port 514 [[Glossary:UDP]]/TCP ou [[Glossary:TLS]]) et choisir les applications.
    👉 Explication : `IP_SYSLOG` est le serveur de journaux; les événements sont envoyés en temps réel.
 
 2. Régler la rétention locale dans Système > Journaux > Paramètres (nombre de fichiers, taille) et consulter Système > Journaux > Fichiers.

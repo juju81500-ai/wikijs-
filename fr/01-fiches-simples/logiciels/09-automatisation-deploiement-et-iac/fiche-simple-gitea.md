@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Gitea
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : Gitea 1.22.x (binaire officiel, version exacte à vérifier sur la version déployée)
 - **Catégorie** : Automatisation, déploiement et IaC
@@ -79,7 +79,7 @@ curl -I http://localhost:3000
 ---
 
 ## ⚡ 2. Production — Façon Simplifiée
-1. Ouverture du pare-feu pour l'accès web, SSH Git et l'administration :
+1. Ouverture du pare-feu pour l'accès web, [[Glossary:SSH]] Git et l'administration :
 ```bash
 sudo apt install -y ufw
 sudo ufw allow from <adresse_ip_admin> to any port 22 proto tcp

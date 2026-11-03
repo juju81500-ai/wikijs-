@@ -11,14 +11,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Dovecot
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : Dovecot 2.3.x (paquet des dépôts Debian 12, à vérifier sur la version déployée)
 - **Catégorie** : Messagerie et collaboratif
 - **Tags** : `[debian-12]`, `[dovecot]`, `[imap]`, `[messagerie]`, `[hardening]`
 
 ## 🎯 Objectif
-Installer le serveur IMAP Dovecot sur Debian 12, vérifier sur ce même serveur qu'une authentification de test réussit et qu'un client IMAP peut se connecter, puis le durcir (authentification interdite en clair, TLS obligatoire) avant de l'exposer aux postes de l'entreprise. Les tests ne se font que sur votre propre serveur.
+Installer le serveur [[Glossary:IMAP]] Dovecot sur Debian 12, vérifier sur ce même serveur qu'une authentification de test réussit et qu'un client IMAP peut se connecter, puis le durcir (authentification interdite en clair, [[Glossary:TLS]] obligatoire) avant de l'exposer aux postes de l'entreprise. Les tests ne se font que sur votre propre serveur.
 
 ---
 
@@ -50,7 +50,7 @@ systemctl status dovecot --no-pager
 sudo useradd -m utilisateur_test
 sudo passwd utilisateur_test
 ```
-👉 Explication : Dovecot authentifie par défaut les comptes système Linux (PAM). `<mot_de_passe_test>` est saisi au prompt, il doit être un mot de passe de lab jamais réutilisé. Le format de boîte `Maildir` est à vérifier selon la configuration de `mail_location`.
+👉 Explication : Dovecot authentifie par défaut les comptes système Linux ([[Glossary:PAM]]). `<mot_de_passe_test>` est saisi au prompt, il doit être un mot de passe de lab jamais réutilisé. Le format de boîte `Maildir` est à vérifier selon la configuration de `mail_location`.
 
 5. Test d'authentification sur le serveur lui-même :
 ```bash
@@ -79,7 +79,7 @@ sudo postconf -e "smtpd_sasl_type = dovecot"
 sudo postconf -e "smtpd_sasl_path = private/auth"
 sudo systemctl reload postfix
 ```
-👉 Explication : Postfix livre dans les boîtes `Maildir` et délègue l'authentification SASL des clients SMTP à Dovecot via le socket `private/auth`. Ces paramètres sont à vérifier sur la version déployée.
+👉 Explication : Postfix livre dans les boîtes `Maildir` et délègue l'authentification SASL des clients [[Glossary:SMTP]] à Dovecot via le socket `private/auth`. Ces paramètres sont à vérifier sur la version déployée.
 
 3. Contrôle de la syntaxe puis redémarrage :
 ```bash
@@ -98,7 +98,7 @@ sudo ufw allow 993/tcp
 sudo ufw enable
 sudo ufw status verbose
 ```
-👉 Explication : Ouvre SSH seulement pour `<adresse_ip_admin>` avant d'activer le pare-feu. Le port 993 (IMAPS) est le port à exposer ; le port 143 n'est à ouvrir que si le STARTTLS est utilisé.
+👉 Explication : Ouvre [[Glossary:SSH]] seulement pour `<adresse_ip_admin>` avant d'activer le pare-feu. Le port 993 (IMAPS) est le port à exposer ; le port 143 n'est à ouvrir que si le [[Glossary:STARTTLS]] est utilisé.
 
 ---
 

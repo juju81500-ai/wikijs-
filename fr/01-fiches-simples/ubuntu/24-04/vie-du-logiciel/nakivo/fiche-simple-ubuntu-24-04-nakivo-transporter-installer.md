@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_Ubuntu_24.04_Nakivo_Transporter_Installer
 
-- **Environnement** : Ubuntu Server 24-04 LTS x64; NAKIVO Backup & Replication Transporter
+- **Environnement** : Ubuntu Server 24-04 [[Glossary:LTS]] x64; NAKIVO Backup & Replication Transporter
 - **OS / Version** : Ubuntu Server 24-04 LTS — explicitement listé dans les exigences NAKIVO consultées; valider la version du produit
 - **Catégorie** : sauvegarde / installation
 - **Tags** : `ubuntu-24.04`, `nakivo`, `transporter`, `transporter-installer`
@@ -46,7 +46,7 @@ Prévoir une fenêtre de changement, une sauvegarde de configuration, des règle
 ## 3. Production — Sécurité
 
 - Garder le système et le Transporter dans le périmètre de mises à jour approuvé.
-- Ne pas exposer SSH ou l’interface NAKIVO sur Internet sans architecture de sécurité explicitement approuvée.
+- Ne pas exposer [[Glossary:SSH]] ou l’interface NAKIVO sur Internet sans architecture de sécurité explicitement approuvée.
 - Ne jamais copier de secrets ou de clés privées dans les fiches ou journaux partagés.
 
 ## Validation et retour arrière

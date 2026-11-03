@@ -24,7 +24,7 @@ Sauvegarder la configuration Wireshark (profils) et les captures utiles, puis le
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : **Aide > À propos de Wireshark > Dossiers** pour repérer le dossier de configuration personnel.
+1. [[Glossary:GUI]] : **Aide > À propos de Wireshark > Dossiers** pour repérer le dossier de configuration personnel.
    👉 Explication : En général `%APPDATA%\Wireshark`; vérifier dans l'interface.
 
 2. Sauvegarder les profils.
@@ -50,7 +50,7 @@ Expand-Archive C:\Sauvegardes\wireshark-profils.zip -DestinationPath "$env:APPDA
 
 ## 2. Production — Contrôles
 
-Secrets : aucun; ne pas inclure de clés TLS/pre-master secrets dans la sauvegarde sans chiffrement.
+Secrets : aucun; ne pas inclure de clés [[Glossary:TLS]]/pre-master secrets dans la sauvegarde sans chiffrement.
 
 ## 3. Production — Sécurité
 

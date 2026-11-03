@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_45_Analyse_Des_Journaux_D
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 45 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-45`
@@ -30,7 +30,7 @@ Repérer les erreurs et les tentatives suspectes.
    ```
    👉 Explication : extrait les lignes d'erreur récentes.
 
-2. Chercher les échecs d'authentification SSH :
+2. Chercher les échecs d'authentification [[Glossary:SSH]] :
    ```sh
    grep -i 'sshd' /var/log/messages | grep -iE 'failed|invalid' | tail
    ```

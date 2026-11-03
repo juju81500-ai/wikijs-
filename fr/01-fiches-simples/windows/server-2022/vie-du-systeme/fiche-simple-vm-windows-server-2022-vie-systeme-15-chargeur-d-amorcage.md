@@ -24,12 +24,12 @@ Vérifier l'amorçage UEFI et la partition de démarrage.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Vérifier le mode de démarrage (**msinfo32 > Mode BIOS : UEFI**) :
+1. Vérifier le mode de démarrage (**msinfo32 > Mode [[Glossary:BIOS]] : UEFI**) :
    ```powershell
    bcdedit /enum '{current}'
    Get-Partition | Where-Object Type -eq 'System' | Select-Object DiskNumber, PartitionNumber, Size
    ```
-   👉 Explication : montre l'entrée d'amorçage active et la partition système EFI.
+   👉 Explication : montre l'entrée d'amorçage active et la partition système [[Glossary:EFI]].
 
 2. Lister les entrées de démarrage :
    ```powershell

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-multi-os-reseau-diagnostic-adresse-passerelle.md
 
-- **Environnement** : VM, poste, serveur, LXC Proxmox ou hôte Docker (Linux ou Windows)
+- **Environnement** : [[Glossary:VM]], poste, serveur, [[Glossary:LXC]] Proxmox ou hôte Docker (Linux ou Windows)
 - **OS / Version** : Debian 12/13, Ubuntu 24-04/26-04, Rocky Linux 9, Alpine Linux, Windows 10/11, Windows Server 2022/2025
 - **Catégorie** : réseau / couche 3
 - **Tags** : `reseau`, `diagnostic`, `multi-os`, `depannage`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Contrôler l'adresse IP, le préfixe et la passerelle utilisés par la machine.
+Contrôler l'adresse [[Glossary:IP]], le préfixe et la passerelle utilisés par la machine.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -43,7 +43,7 @@ Contrôler l'adresse IP, le préfixe et la passerelle utilisés par la machine.
    ```bash
    ping -c 3 192.0.2.1
    ```
-   👉 Explication : un retour confirme la couche 2/3 locale; un échec seul ne prouve rien car ICMP peut être filtré.
+   👉 Explication : un retour confirme la couche 2/3 locale; un échec seul ne prouve rien car [[Glossary:ICMP]] peut être filtré.
 
 4. Équivalent Windows :
    ```powershell

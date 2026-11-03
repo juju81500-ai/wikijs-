@@ -24,7 +24,7 @@ Installer un certificat valide.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Certificats > Ajouter > Importer un certificat (ou CSR).
+1. [[Glossary:GUI]] : Système > Certificats > Ajouter > Importer un certificat (ou CSR).
    ```sh
    midclt call certificate.query | grep -E 'name|until'
    ```
@@ -44,11 +44,11 @@ Installer un certificat valide.
 
 ## 2. Production — Contrôles
 
-PKI interne ; surveiller l'expiration.
+[[Glossary:PKI]] interne ; surveiller l'expiration.
 
 ## 3. Production — Sécurité
 
-Forcer HTTPS ; désactiver TLS 1.0/1.1.
+Forcer HTTPS ; désactiver [[Glossary:TLS]] 1.0/1.1.
 
 ## Validation et retour arrière
 

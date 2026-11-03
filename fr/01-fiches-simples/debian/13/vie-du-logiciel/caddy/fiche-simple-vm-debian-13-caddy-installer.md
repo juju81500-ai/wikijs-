@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-caddy-installer.md
 
-- **Environnement** : VM Debian 13 Trixie, dépôt officiel Caddy stable
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie, dépôt officiel Caddy stable
 - **OS / Version** : Debian 13; Caddy stable
 - **Catégorie** : serveur Web / installation
 - **Tags** : `debian13`, `caddy`, `apt`, `installation`, `signature`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Installer Caddy depuis le dépôt APT officiel et confirmer la version et l'origine du paquet.
+Installer Caddy depuis le dépôt [[Glossary:APT]] officiel et confirmer la version et l'origine du paquet.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

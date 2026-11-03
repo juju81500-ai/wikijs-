@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Catégorie** : Services Web et bases de données
 - **Plateforme** : Linux / Windows
-- **Produit (matrice)** : MySQL / MariaDB / PostgreSQL / SQL Server
+- **Produit (matrice)** : MySQL / MariaDB / PostgreSQL / [[Glossary:SQL]] Server
 - **Statut dans le pack** : Couvert
 - **Tags** : `logiciel`, `14-services-web-et-bases-de-donnees`, `couvert`
 
@@ -27,6 +27,6 @@ Cette fiche est le point d'entrée du logiciel : elle indique si le pack contien
 
 Procédure pas à pas du pack : [MariaDB](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-simple-mariadb).
 
-Fiche simple associée au guide LEMP : [sécuriser MariaDB et créer la base](/fr/01-fiches-simples/debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-lemp-securiser-mariadb).
+Fiche simple associée au guide [[Glossary:LEMP]] : [sécuriser MariaDB et créer la base](/fr/01-fiches-simples/debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-lemp-securiser-mariadb).
 
 Fiches simples du guide : [prérequis et limites](/fr/01-fiches-simples/debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-mariadb-prerequis-limites), [11](/fr/01-fiches-simples/debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-database-installation-mariadb-11), [configurer](/fr/01-fiches-simples/debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-mariadb-configurer), [mariadb](/fr/01-fiches-simples/debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-lemp-securiser-mariadb), [sécuriser](/fr/01-fiches-simples/debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-mariadb-securiser), [valider (recette)](/fr/01-fiches-simples/debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-mariadb-valider), [sauvegarder / restaurer](/fr/01-fiches-simples/debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-mariadb-sauvegarder-restaurer), [mise à jour et retour arrière](/fr/01-fiches-simples/debian/13/vie-du-logiciel/mariadb/fiche-simple-vm-debian-13-mariadb-mettre-a-jour).

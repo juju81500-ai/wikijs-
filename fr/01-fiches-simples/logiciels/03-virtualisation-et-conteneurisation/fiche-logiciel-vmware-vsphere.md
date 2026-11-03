@@ -14,12 +14,12 @@ dateModified: 2026-11-03T09:36:13Z
 - **Catégorie** : Virtualisation et conteneurisation
 - **Plateforme** : Appliance / bare-metal
 - **Produit (matrice)** : VMware vSphere (ESXi / vCenter)
-- **Statut dans le pack** : Couvert — vSphere 8 : ESXi, vCenter Server Appliance (installation, sauvegarde/restauration VAMI, mises à jour, certificats), HA/DRS, réseau, datastore NFS, snapshots, maintenance. Hors périmètre : vSAN, NSX, Lifecycle Manager avancé.
+- **Statut dans le pack** : Couvert — vSphere 8 : ESXi, vCenter Server Appliance (installation, sauvegarde/restauration VAMI, mises à jour, certificats), HA/DRS, réseau, datastore [[Glossary:NFS]], snapshots, maintenance. Hors périmètre : vSAN, NSX, Lifecycle Manager avancé.
 - **Tags** : `logiciel`, `03-virtualisation-et-conteneurisation`, `couvert`
 
 ## 📚 Couverture dans le pack
 
-Couvert — [guide ESXi 8.0](/fr/02-fiches-completes/vmware/esxi-8/installation-deploiement/56-deploiement-vmware-esxi-8-0) et série vSphere 8 : installation du VCSA, sauvegarde/restauration VAMI, mises à jour, certificats, HA, DRS, datastore NFS, vSwitch standard, réseau vMotion, snapshots et maintenance d'hôte. Non couverts : vSAN, NSX, Lifecycle Manager avancé, vSphere avec Tanzu.🧭 Utilisation
+Couvert — [guide ESXi 8.0](/fr/02-fiches-completes/vmware/esxi-8/installation-deploiement/56-deploiement-vmware-esxi-8-0) et série vSphere 8 : installation du VCSA, sauvegarde/restauration VAMI, mises à jour, certificats, HA, [[Glossary:DRS]], datastore NFS, vSwitch standard, réseau vMotion, snapshots et maintenance d'hôte. Non couverts : vSAN, NSX, Lifecycle Manager avancé, vSphere avec Tanzu.🧭 Utilisation
 
 Cette fiche est le point d'entrée du logiciel : elle indique si le pack contient une procédure et renvoie vers elle. Pour une procédure pas à pas, ouvrir le guide ou la fiche liée ci-dessus. Lorsque le statut est `Manquant`, aucune procédure dédiée n'existe encore dans le pack.
 

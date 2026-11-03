@@ -25,8 +25,8 @@ Réaliser une mise à niveau en place de Windows Server 2016 ou 2019 vers 2022 e
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Vérifier la voie de mise à niveau supportée dans la documentation Microsoft (2016 vers 2022 et 2019 vers 2022 sont des chemins documentés, mêmes édition et langue) et la compatibilité des applications et pilotes.
-   👉 Explication : la mise à niveau n'est pas permise entre toutes les éditions, ni dans tous les cas pour un DC avec rôles spécifiques ; contrôler la page officielle.
-2. Prendre une sauvegarde complète et un snapshot de VM :
+   👉 Explication : la mise à niveau n'est pas permise entre toutes les éditions, ni dans tous les cas pour un [[Glossary:DC]] avec rôles spécifiques ; contrôler la page officielle.
+2. Prendre une sauvegarde complète et un snapshot de [[Glossary:VM]] :
    ```powershell
    wbadmin start backup -backupTarget:E: -include:C: -allCritical -quiet
    ```
@@ -45,7 +45,7 @@ Réaliser une mise à niveau en place de Windows Server 2016 ou 2019 vers 2022 e
 
 ## 2. Production — Contrôles
 
-- Mise à niveau en fenêtre de maintenance, après test sur un clone ; ordre pour AD : d'abord les DC 2022 ajoutés ou mis à niveau, ensuite les niveaux fonctionnels.
+- Mise à niveau en fenêtre de maintenance, après test sur un clone ; ordre pour [[Glossary:AD]] : d'abord les DC 2022 ajoutés ou mis à niveau, ensuite les niveaux fonctionnels.
 - Pour un parc critique, préférer une migration vers un nouveau serveur 2022 plutôt qu'une mise à niveau en place.
 
 ## 3. Production — Sécurité

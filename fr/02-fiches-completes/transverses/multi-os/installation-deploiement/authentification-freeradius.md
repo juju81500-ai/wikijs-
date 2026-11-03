@@ -13,21 +13,21 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **OS / Version** : Linux (Debian/Ubuntu/RHEL et dérivés); FreeRADIUS 3.2.x ou version de la distribution
 - **Type de fiche** : Installation/Déploiement
-- **Environnement** : VM Linux dédiée, clients RADIUS déclarés
+- **Environnement** : [[Glossary:VM]] Linux dédiée, clients [[Glossary:RADIUS]] déclarés
 - **Machine ciblée** : Serveur RADIUS
 - **Catégorie** : Authentification / AAA
 - **Tags** : `freeradius`, `radius`, `802.1x`, `aaa`, `wifi`, `vpn`
 
 ## 1. Périmètre
 
-Installer FreeRADIUS, déclarer les clients RADIUS, brancher une source d'authentification (annuaire LDAP/AD ou fichier de test) et vérifier le fonctionnement en mode debug. Pour 802.1x/EAP, les certificats sont un prérequis.
+Installer FreeRADIUS, déclarer les clients RADIUS, brancher une source d'authentification (annuaire [[Glossary:LDAP]]/AD ou fichier de test) et vérifier le fonctionnement en mode debug. Pour 802.1x/EAP, les certificats sont un prérequis.
 
 ## 2. Prérequis
 
-- VM Linux à jour avec IP fixe, NTP et pare-feu hôte.
-- Liste des équipements clients (switchs, bornes Wi-Fi, VPN) avec adresse et secret partagé unique par client.
+- VM Linux à jour avec [[Glossary:IP]] fixe, [[Glossary:NTP]] et pare-feu hôte.
+- Liste des équipements clients (switchs, bornes Wi-Fi, [[Glossary:VPN]]) avec adresse et secret partagé unique par client.
 - Autorité de certification interne et certificat serveur pour EAP-TLS/PEAP.
-- Source d'identité : LDAP, ou AD avec la méthode d'intégration choisie (certaines méthodes imposent Samba/winbind).
+- Source d'identité : LDAP, ou [[Glossary:AD]] avec la méthode d'intégration choisie (certaines méthodes imposent Samba/winbind).
 - Compte de service à moindre privilège pour la liaison à l'annuaire.
 
 ## 3. Variantes éditeur à distinguer
@@ -35,7 +35,7 @@ Installer FreeRADIUS, déclarer les clients RADIUS, brancher une source d'authen
 | Source | Paquet/chemin | Remarque |
 |---|---|---|
 | Distribution Debian/Ubuntu | Paquet `freeradius`, configuration sous `/etc/freeradius/3.0/` | Version fournie par la distribution |
-| Distribution RHEL et dérivés | Paquet `freeradius`, configuration sous `/etc/raddb/` | Chemins différents de Debian |
+| Distribution [[Glossary:RHEL]] et dérivés | Paquet `freeradius`, configuration sous `/etc/raddb/` | Chemins différents de Debian |
 | Paquets du projet FreeRADIUS (Network RADIUS) | Dépôts selon les instructions du projet | Pour une version plus récente |
 
 Les chemins et noms de service varient selon la distribution.
@@ -78,7 +78,7 @@ Sur RHEL le binaire peut être `radiusd`. Arrêter le mode debug avant productio
 
 ### 4.6 Activer le service et la journalisation
 
-Activer le service, restreindre le pare-feu aux ports RADIUS (authentification UDP 1812, comptabilité UDP 1813) depuis les clients uniquement, envoyer les journaux au collecteur.
+Activer le service, restreindre le pare-feu aux ports RADIUS (authentification [[Glossary:UDP]] 1812, comptabilité UDP 1813) depuis les clients uniquement, envoyer les journaux au collecteur.
 
 ## 5. Validation
 

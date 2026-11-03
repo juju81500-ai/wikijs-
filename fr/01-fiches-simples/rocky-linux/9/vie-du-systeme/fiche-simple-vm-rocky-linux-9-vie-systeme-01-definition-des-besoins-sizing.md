@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_01_Definition_Des_Besoins_Sizing
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 01 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-01`
@@ -31,7 +31,7 @@ Dimensionner la machine avant de la créer.
    lsblk -o NAME,SIZE,TYPE
    uname -m
    ```
-   👉 Explication : nombre de vCPU, RAM, disques et architecture (`x86_64` ou `aarch64`) pour comparer au besoin.
+   👉 Explication : nombre de vCPU, [[Glossary:RAM]], disques et architecture (`x86_64` ou `aarch64`) pour comparer au besoin.
 
 2. Mesurer les entrées/sorties d'une machine comparable :
    ```bash
@@ -40,8 +40,8 @@ Dimensionner la machine avant de la créer.
    ```
    👉 Explication : `%util` et `await` élevés indiquent un stockage à surdimensionner.
 
-3. Noter vCPU, RAM, disque, IOPS, réseau et architecture dans le dossier du projet.
-   👉 Explication : ce tableau sert de référence pour l'hyperviseur et pour la recette (Rocky 9 exige un CPU x86-64-v2 au minimum).
+3. Noter vCPU, RAM, disque, [[Glossary:IOPS]], réseau et architecture dans le dossier du projet.
+   👉 Explication : ce tableau sert de référence pour l'hyperviseur et pour la recette (Rocky 9 exige un [[Glossary:CPU]] x86-64-v2 au minimum).
 
 ## 2. Production — Contrôles
 

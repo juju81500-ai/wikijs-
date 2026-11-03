@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-centreon-installer-central.md
 
-- **Environnement** : VM Debian 13 dédiée, serveur Centreon Central avec MariaDB locale
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée, serveur Centreon Central avec MariaDB locale
 - **OS / Version** : Debian 13 Trixie; Centreon 26.10
 - **Catégorie** : supervision / installation
 - **Tags** : `debian13`, `centreon`, `supervision`, `tls`, `unattended`
@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Installer Centreon Central 26.10 avec le script officiel, TLS activé.
+Installer Centreon Central 26.10 avec le script officiel, [[Glossary:TLS]] activé.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Vérifier avant de lancer : sauvegarde de la VM faite, DNS et certificat validés.
+1. Vérifier avant de lancer : sauvegarde de la VM faite, [[Glossary:DNS]] et certificat validés.
    👉 Explication : l'installation configure paquets, MariaDB et services; elle est difficile à annuler.
 
 2. Exécuter :

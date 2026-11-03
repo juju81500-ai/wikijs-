@@ -20,12 +20,12 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Passer un hôte ESXi de laboratoire en maintenance puis le réintégrer sans supposer que les VM ont été migrées ou arrêtées.
+Passer un hôte ESXi de laboratoire en maintenance puis le réintégrer sans supposer que les [[Glossary:VM]] ont été migrées ou arrêtées.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Dans vSphere Client : hôte > **Actions > Mode de maintenance > Passer en mode maintenance**. Confirmer seulement après arrêt/migration des VM jetables.
-   👉 Explication : migration DRS/vMotion dépend des réglages; un hôte autonome ne garantit pas la disponibilité des VM.
+   👉 Explication : migration [[Glossary:DRS]]/vMotion dépend des réglages; un hôte autonome ne garantit pas la disponibilité des VM.
 2. Variante PowerCLI documentée sur l'hôte jetable après vérification de son nom :
    ```powershell
    $vmhost = Get-VMHost -Name 'ESXI_LAB_FQDN'

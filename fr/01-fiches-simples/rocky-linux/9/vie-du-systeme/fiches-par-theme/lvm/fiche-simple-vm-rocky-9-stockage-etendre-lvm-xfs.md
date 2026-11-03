@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-rocky-9-stockage-etendre-lvm-xfs.md
 
-- **Environnement** : VM Rocky Linux dont le disque virtuel a déjà été agrandi
-- **OS / Version** : Rocky Linux 9 / RHEL 9 avec LVM et XFS ou ext4
+- **Environnement** : [[Glossary:VM]] Rocky Linux dont le disque virtuel a déjà été agrandi
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 avec [[Glossary:LVM]] et [[Glossary:XFS]] ou ext4
 - **Catégorie** : Stockage / Maintenance
 - **Tags** : `[rocky9]`, `[rhel9]`, `[lvm]`, `[xfs]`, `[stockage]`, `[maintenance]`
 

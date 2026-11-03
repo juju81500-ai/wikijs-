@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-centreon-verifier-services.md
 
-- **Environnement** : VM Debian 13 dédiée, serveur Centreon Central avec MariaDB locale
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée, serveur Centreon Central avec MariaDB locale
 - **OS / Version** : Debian 13 Trixie; Centreon 26.10
 - **Catégorie** : supervision / contrôle
 - **Tags** : `debian13`, `centreon`, `supervision`, `systemd`, `journal`
@@ -38,7 +38,7 @@ Contrôler que les services Centreon et la base tournent correctement.
 
 ## 2. Production — Contrôles
 
-Examiner les journaux des composants concernés; les services de trap SNMP peuvent rester inactifs s'ils ne sont pas utilisés.
+Examiner les journaux des composants concernés; les services de trap [[Glossary:SNMP]] peuvent rester inactifs s'ils ne sont pas utilisés.
 
 ## 3. Production — Sécurité
 

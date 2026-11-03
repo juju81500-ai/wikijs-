@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-zeek-depot-installer.md
 
-- **Environnement** : VM Debian 13 capteur passif Zeek standalone sur interface miroir approuvée
-- **OS / Version** : Debian 13 Trixie; Zeek 8.0 LTS (dépôt OBS officiel)
+- **Environnement** : [[Glossary:VM]] Debian 13 capteur passif Zeek standalone sur interface miroir approuvée
+- **OS / Version** : Debian 13 Trixie; Zeek 8.0 [[Glossary:LTS]] (dépôt OBS officiel)
 - **Catégorie** : supervision / analyse passive du trafic
 - **Tags** : `debian13`, `zeek`, `zeekctl`, `af-packet`, `network-monitoring`
 
@@ -32,7 +32,7 @@ Installer Zeek 8.0 LTS depuis le dépôt OBS officiel pour Debian 13.
    ```
    👉 Explication : prépare l'import de la clé dans un keyring dédié.
 
-2. Importer la clé et déclarer la source APT liée à ce keyring :
+2. Importer la clé et déclarer la source [[Glossary:APT]] liée à ce keyring :
    ```bash
    curl -fsSL https://download.opensuse.org/repositories/security:/zeek/Debian_13/Release.key | sudo gpg --dearmor --yes -o /etc/apt/keyrings/zeek-obs.gpg
    echo 'deb [signed-by=/etc/apt/keyrings/zeek-obs.gpg] https://download.opensuse.org/repositories/security:/zeek/Debian_13/ /' | sudo tee /etc/apt/sources.list.d/zeek-obs.list

@@ -25,7 +25,7 @@ Version concernée : scale-25-10. Page dupliquée depuis la page de la famille T
 
 ### 01. Definition des besoins (Sizing)
 
-- **Tous OS** : Allocation vCPU/CPU, RAM, IOPS stockage, architecture (x86_64, ARM64).
+- **Tous OS** : Allocation vCPU/CPU, [[Glossary:RAM]], [[Glossary:IOPS]] stockage, architecture (x86_64, ARM64).
 
 ### 02. Recuperation de l'image systeme
 
@@ -33,16 +33,16 @@ Version concernée : scale-25-10. Page dupliquée depuis la page de la famille T
 
 ### 03. Verification d'integrite et d'authenticite
 
-- **Linux/BSD** : sha256sum -c SHA256SUMS & verification signature GPG
+- **Linux/BSD** : sha256sum -c SHA256SUMS & verification signature [[Glossary:GPG]]
 
 ### 04. Preparation du support d'amorcage
 
-- **Bare-metal** : Cle USB bootable (dd, Rufus, Ventoy) ou montage IPMI/iDRAC/iLO
+- **Bare-metal** : Cle [[Glossary:USB]] bootable (dd, Rufus, Ventoy) ou montage [[Glossary:IPMI]]/iDRAC/iLO
 - **Virtuel** : Stockage ISO dans le datastore (Proxmox VE, VMware ESXi, Hyper-V, XCP-ng)
 
 ### 05. Configuration materielle / Firmware
 
-- **Tous OS** : Choix BIOS Legacy ou UEFI, Secure Boot (On/Off selon OS), Virtualisation (VT-x/AMD-V), controleur de stockage (AHCI, VirtIO SCSI, MegaRAID).
+- **Tous OS** : Choix [[Glossary:BIOS]] Legacy ou UEFI, Secure Boot (On/Off selon OS), Virtualisation (VT-x/AMD-V), controleur de stockage ([[Glossary:AHCI]], VirtIO SCSI, MegaRAID).
 
 
 ## Phase 2 : installation de base (étapes 6 à 15)
@@ -57,11 +57,11 @@ Version concernée : scale-25-10. Page dupliquée depuis la page de la famille T
 
 ### 08. Configuration reseau d'installation
 
-- **Debian** : netcfg (DHCP ou Statique temporaire)
+- **Debian** : netcfg ([[Glossary:DHCP]] ou Statique temporaire)
 
 ### 09. Identite de la machine
 
-- **Linux/BSD** : Hostname + Domain Name (FQDN)
+- **Linux/BSD** : Hostname + Domain Name ([[Glossary:FQDN]])
 
 ### 10. Compte Super-Administrateur
 
@@ -73,15 +73,15 @@ Version concernée : scale-25-10. Page dupliquée depuis la page de la famille T
 
 ### 12. Fuseau horaire (Timezone)
 
-- **Linux/BSD** : tzdata (ex: Europe/Paris, UTC) + horloge CMOS en UTC
+- **Linux/BSD** : tzdata (ex: Europe/Paris, UTC) + horloge [[Glossary:CMOS]] en UTC
 
 ### 13. Partitionnement et systemes de fichiers
 
-- **Debian/Ubuntu** : GPT/MBR, ext4/xfs/btrfs/ZFS, LVM2, points (/boot, /boot/efi, /, /var, /home, swap)
+- **Debian/Ubuntu** : [[Glossary:GPT]]/MBR, ext4/xfs/btrfs/ZFS, LVM2, points (/boot, /boot/efi, /, /var, /home, swap)
 
 ### 14. Selection des composants de base
 
-- **Debian** : tasksel (Serveur SSH, Utilitaires usuels du systeme, sans GUI)
+- **Debian** : tasksel (Serveur [[Glossary:SSH]], Utilitaires usuels du systeme, sans [[Glossary:GUI]])
 
 ### 15. Chargeur d'amorcage (Bootloader)
 
@@ -128,14 +128,14 @@ Version concernée : scale-25-10. Page dupliquée depuis la page de la famille T
 
 ### 25. Validation de l'etat initial (Baseline)
 
-- **Tous OS** : Nettoyage des caches, arret propre et creation du Snapshot VM "01-CLEAN-INSTALL" ou capture Sysprep/Template.
+- **Tous OS** : Nettoyage des caches, arret propre et creation du Snapshot [[Glossary:VM]] "01-CLEAN-INSTALL" ou capture Sysprep/Template.
 
 
 ## Phase 4 : sécurisation et hardening (étapes 26 à 35)
 
 ### 26. Authentification par cles cryptographiques (SSH / WinRM)
 
-- **Linux/BSD** : ~/.ssh/authorized_keys (ed25519 / RSA 4096)
+- **Linux/BSD** : ~/.ssh/authorized_keys (ed25519 / [[Glossary:RSA]] 4096)
 
 ### 27. Durcissement de l'acces distant
 
@@ -147,7 +147,7 @@ Version concernée : scale-25-10. Page dupliquée depuis la page de la famille T
 
 ### 29. Pare-feu hote (Host Firewall)
 
-- **Debian/Ubuntu** : UFW ou Nftables (/etc/nftables.conf)
+- **Debian/Ubuntu** : [[Glossary:UFW]] ou Nftables (/etc/nftables.conf)
 
 ### 30. Protection contre les intrusions et le brute-force (IPS)
 
@@ -178,7 +178,7 @@ Version concernée : scale-25-10. Page dupliquée depuis la page de la famille T
 
 ### 36. Integration a l'annuaire ou au reseau d'administration
 
-- **Linux/BSD** : realmd / sssd / Winbind (Jonction AD), client FreeIPA/LDAP, VPN (WireGuard, Tailscale)
+- **Linux/BSD** : realmd / sssd / Winbind (Jonction [[Glossary:AD]]), client FreeIPA/LDAP, [[Glossary:VPN]] (WireGuard, Tailscale)
 
 ### 37. Deploiement des roles metiers et stacks applicatives
 
@@ -190,20 +190,20 @@ Version concernée : scale-25-10. Page dupliquée depuis la page de la famille T
 
 ### 39. Chiffrement des flux (PKI / TLS)
 
-- **Linux/BSD** : Certbot (Let's Encrypt), OpenSSL, ajout CA dans /usr/local/share/ca-certificates/
+- **Linux/BSD** : Certbot (Let's Encrypt), OpenSSL, ajout [[Glossary:CA]] dans /usr/local/share/ca-certificates/
 
 ### 40. Configuration des sauvegardes (Backup)
 
 - **Niveau VM** : Proxmox Backup Server (vzdump), Veeam Backup & Replication
-- **Niveau OS** : BorgBackup, Restic, Rclone, cron dumps SQL (Linux/BSD) | Windows Server Backup (wbadmin), VSS
+- **Niveau OS** : BorgBackup, Restic, Rclone, cron dumps [[Glossary:SQL]] (Linux/BSD) | Windows Server Backup (wbadmin), [[Glossary:VSS]]
 
 ### 41. Supervision, metriques et inventaire (Monitoring)
 
-- **Linux/BSD** : Zabbix Agent, Prometheus node_exporter, SNMPd, GLPI Agent
+- **Linux/BSD** : Zabbix Agent, Prometheus node_exporter, SNMPd, [[Glossary:GLPI]] Agent
 
 ### 42. Gestion, rotation et centralisation des journaux (Logs)
 
-- **Linux/BSD** : logrotate (/etc/logrotate.d/), journald.conf, rsyslog / syslog-ng / Promtail (envoi SIEM)
+- **Linux/BSD** : logrotate (/etc/logrotate.d/), journald.conf, rsyslog / syslog-ng / Promtail (envoi [[Glossary:SIEM]])
 
 
 ## Phase 6 : vérification, tests et documentation (étapes 43 à 50)
@@ -234,7 +234,7 @@ Version concernée : scale-25-10. Page dupliquée depuis la page de la famille T
 
 ### 49. Enregistrement CMDB et Gestion des acces
 
-- **Tous OS** : Integration dans l'inventaire (GLPI, NetBox), documentation IPAM, enregistrement des secrets dans le coffre-fort (Vaultwarden / Bitwarden, KeePass, HashiCorp Vault) et configuration SSH/RDP.
+- **Tous OS** : Integration dans l'inventaire (GLPI, NetBox), documentation [[Glossary:IPAM]], enregistrement des secrets dans le coffre-fort (Vaultwarden / Bitwarden, KeePass, HashiCorp Vault) et configuration SSH/RDP.
 
 ### 50. Documentation d'exploitation (Runbook / Dossier d'Architecture Technique)
 

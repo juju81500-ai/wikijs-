@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-lxc-alpine-3-19-diagnostic-journaux-erreurs.md
 
-- **Environnement** : LXC (Proxmox VE)
+- **Environnement** : [[Glossary:LXC]] (Proxmox VE)
 - **OS / Version** : Alpine Linux 3-19 - Famille Alpine (OpenRC, apk)
 - **Catégorie** : Diagnostic & Maintenance / Analyse des erreurs système
 - **Tags** : `[alpine3.19]`, `[alpine]`, `[lxc]`, `[diagnostic]`, `[logs]`, `[openrc]`, `[dmesg]`
@@ -63,7 +63,7 @@ Identifier les services en échec, les erreurs consignées par syslog et les mes
 ---
 
 ## 🔒 3. Production — Façon Sécurisée
-1. Consulter les tentatives d'authentification refusées sur SSH :
+1. Consulter les tentatives d'authentification refusées sur [[Glossary:SSH]] :
    ```sh
    grep -E 'Failed password|Invalid user' /var/log/messages | tail -n 50
    ```

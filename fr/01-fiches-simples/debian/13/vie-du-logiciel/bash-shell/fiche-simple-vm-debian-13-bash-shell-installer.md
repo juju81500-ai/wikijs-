@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Bash_Shell_Installer
 
-- **Environnement** : VM Debian 13 de laboratoire, compte utilisateur non privilégié
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire, compte utilisateur non privilégié
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : shell / scripting
 - **Tags** : `debian13`, `bash`, `shell`, `scripting`, `securite`
@@ -23,7 +23,7 @@ Installer Bash depuis les dépôts Debian approuvés.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Vérifier candidat APT
+1. Vérifier candidat [[Glossary:APT]]
    ```bash
    sudo apt update
    apt-cache policy bash

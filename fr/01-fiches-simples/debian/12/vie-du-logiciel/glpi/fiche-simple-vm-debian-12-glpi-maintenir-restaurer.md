@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-12-glpi-maintenir-restaurer.md
 
-- **Environnement** : instance GLPI Debian en production; base et fichiers sauvegardés de façon cohérente
+- **Environnement** : instance [[Glossary:GLPI]] Debian en production; base et fichiers sauvegardés de façon cohérente
 - **OS / Version** : Debian 12 ou 13; version GLPI supportée
 - **Catégorie** : GLPI / exploitation et restauration
 - **Tags** : `debian12`, `glpi`, `backup`, `upgrade`, `restore`, `rollback`

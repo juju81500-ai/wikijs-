@@ -29,7 +29,7 @@ Prouver la restauration.
    ls /mnt/POOL/DATASET/.zfs/snapshot/
    cp /mnt/POOL/DATASET/.zfs/snapshot/NOM_SNAP/FICHIER /mnt/POOL/DATASET/FICHIER_RESTAURE
    ```
-   👉 Explication : NOM_SNAP est un snapshot existant ; GUI : Stockage > Snapshots > Cloner / Rollback.
+   👉 Explication : NOM_SNAP est un snapshot existant ; [[Glossary:GUI]] : Stockage > Snapshots > Cloner / Rollback.
 
 2. Cloner un snapshot :
    ```sh
@@ -41,7 +41,7 @@ Prouver la restauration.
    ```sh
    ls -l /data/freenas-v1.db
    ```
-   👉 Explication : la base de configuration est ce fichier ; à tester sur un NAS de test.
+   👉 Explication : la base de configuration est ce fichier ; à tester sur un [[Glossary:NAS]] de test.
 
 ## 2. Production — Contrôles
 

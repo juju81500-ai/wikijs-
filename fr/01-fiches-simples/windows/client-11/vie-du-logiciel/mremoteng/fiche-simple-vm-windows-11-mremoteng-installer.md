@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_VM_Windows_11_mRemoteNG_Installer
 
-- **Environnement** : Poste Windows 11 x64 d'administration (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'administration ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; mRemoteNG VERSION_MREMOTENG (à remplacer)
 - **Catégorie** : gestionnaire de connexions distantes
 - **Tags** : `mremoteng`, `windows11`, `installation`, `winget`
@@ -24,10 +24,10 @@ Installer mRemoteNG sur Windows 11.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Télécharger le MSI/installateur de VERSION_MREMOTENG (à remplacer) depuis la page Releases GitHub.
+1. Télécharger le [[Glossary:MSI]]/installateur de VERSION_MREMOTENG (à remplacer) depuis la page Releases GitHub.
    👉 Explication : source officielle.
 
-2. GUI : exécuter l'installateur, suivre l'assistant, choisir le dossier d'installation.
+2. [[Glossary:GUI]] : exécuter l'installateur, suivre l'assistant, choisir le dossier d'installation.
    👉 Explication : installation de référence.
 
 3. Dans PowerShell, chercher le nom exact : `winget search "mRemoteNG" --source winget`. Relever l'ID exact affiché (colonne Id) et le noter comme ID_PAQUET_VERIFIE (à remplacer ; ne jamais le deviner). Puis, ID vérifié seulement : `winget install --id ID_PAQUET_VERIFIE --exact --source winget`.

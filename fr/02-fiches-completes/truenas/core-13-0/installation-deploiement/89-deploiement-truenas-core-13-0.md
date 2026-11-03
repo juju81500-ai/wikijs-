@@ -13,8 +13,8 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **OS / Version** : TrueNAS CORE, branche documentaire 13.0 (appliance FreeBSD); numéro de build exact à relever sur l'ISO téléchargé
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : installation en VM de laboratoire, pool ZFS, partage SMB, snapshots, sauvegarde de la configuration
-- **Catégorie** : stockage NAS / ZFS
+- **Périmètre** : installation en [[Glossary:VM]] de laboratoire, pool [[Glossary:ZFS]], partage SMB, snapshots, sauvegarde de la configuration
+- **Catégorie** : stockage [[Glossary:NAS]] / ZFS
 - **Tags** : `truenas-core`, `truenas`, `freebsd`, `zfs`, `smb`, `snapshots`, `nas`
 
 ## 1. Statut du produit et décision
@@ -27,7 +27,7 @@ TrueNAS CORE est la variante FreeBSD; [TrueNAS SCALE 25.10](/fr/02-fiches-comple
 
 Fiche simple : [vérifier les prérequis et l'ISO](/fr/01-fiches-simples/truenas/core-13-0/vie-du-systeme/fiches-par-theme/deploiement/fiche-simple-truenas-core-13-0-deploiement-prerequis).
 
-Selon la documentation matérielle CORE 13.0 : processeur x86-64 à deux cœurs, 8 Go de RAM, périphérique de démarrage SSD de 16 Go, au moins deux disques de données de taille identique pour un pool. Éviter SMR, clés USB comme disque de boot et pool sur un seul disque ou en stripe. En VM de test : 8 Go de RAM, un disque d'au moins 8 Go pour le système (20 Go recommandés pour l'ISO standard), au moins un disque de 4 Go pour les données, réseau en bridge, type d'OS FreeBSD 64 bits et démarrage BIOS sous VMware. Les disques doivent être présentés bruts à ZFS (pas de RAID matériel).
+Selon la documentation matérielle CORE 13.0 : processeur x86-64 à deux cœurs, 8 Go de [[Glossary:RAM]], périphérique de démarrage [[Glossary:SSD]] de 16 Go, au moins deux disques de données de taille identique pour un pool. Éviter SMR, clés [[Glossary:USB]] comme disque de boot et pool sur un seul disque ou en stripe. En VM de test : 8 Go de RAM, un disque d'au moins 8 Go pour le système (20 Go recommandés pour l'ISO standard), au moins un disque de 4 Go pour les données, réseau en bridge, type d'OS FreeBSD 64 bits et démarrage [[Glossary:BIOS]] sous VMware. Les disques doivent être présentés bruts à ZFS (pas de [[Glossary:RAID]] matériel).
 
 Télécharger l'ISO depuis la source officielle iXsystems et contrôler son empreinte avec les informations publiées au même endroit avant de l'attacher à la VM. Si aucune empreinte n'est publiée pour le fichier obtenu, arrêter et escalader.
 
@@ -39,7 +39,7 @@ Fiche simple : [installer en laboratoire](/fr/01-fiches-simples/truenas/core-13-
 2. Sélectionner le disque de démarrage. **L'installateur efface le disque choisi** : vérifier le disque avant de confirmer.
 3. Définir le mot de passe du compte `root` avec un secret long, conservé dans le gestionnaire de secrets.
 4. Choisir le mode de démarrage adapté (BIOS en VMware d'après la documentation).
-5. À la fin, arrêter la VM, retirer l'ISO, puis redémarrer. Le menu console affiche l'adresse IP de l'interface web.
+5. À la fin, arrêter la VM, retirer l'ISO, puis redémarrer. Le menu console affiche l'adresse [[Glossary:IP]] de l'interface web.
 6. Attribuer une adresse IP fixe depuis le menu console, puis se connecter à l'interface web en HTTPS depuis un poste d'administration. Ne pas exposer l'interface sur Internet.
 
 ## 4. Créer un pool et un partage SMB
@@ -49,7 +49,7 @@ Fiche simple : [créer un pool et un partage SMB](/fr/01-fiches-simples/truenas/
 1. **Storage > Pools > Add** : créer un pool avec redondance (miroir ou RAIDZ) selon le nombre de disques. La création **détruit le contenu des disques sélectionnés**; ne sélectionner que les disques prévus.
 2. Créer un dataset par usage (ne pas partager la racine du pool).
 3. **Accounts** : créer un utilisateur de service et un groupe; ne pas utiliser `root` pour les partages.
-4. **Sharing > Windows Shares (SMB)** : ajouter le chemin du dataset, activer le service SMB, tester l'accès depuis un client de test. Les ACL et l'intégration Active Directory se traitent dans une procédure distincte.
+4. **Sharing > Windows Shares (SMB)** : ajouter le chemin du dataset, activer le service SMB, tester l'accès depuis un client de test. Les [[Glossary:ACL]] et l'intégration Active Directory se traitent dans une procédure distincte.
 
 ## 5. Snapshots et sauvegarde de configuration
 
@@ -57,7 +57,7 @@ Fiche simple : [gérer snapshots et sauvegarde de configuration](/fr/01-fiches-s
 
 - **Storage > Snapshots > Add** : créer un snapshot du dataset de test, puis une **tâche de snapshot périodique** avec une rétention définie.
 - Pour récupérer des données, utiliser **Clone to new dataset** puis partager le clone, comme le recommande la documentation. Le **rollback** d'un dataset est destructif pour les données postérieures au snapshot et peut faire échouer les tâches de réplication : à éviter en production.
-- **System > General > Save Config** après chaque changement de configuration. L'option « Export Password Secret Seed » permet de restaurer sur un autre périphérique de démarrage mais produit un fichier à protéger comme un secret. Sauvegarder séparément les clés SSH (`/usr/local/etc/ssh/ssh_host_*` et `/root/.ssh`), car elles ne sont pas dans la base de configuration. Une copie automatique de la base est aussi écrite chaque jour à 03:45 dans le dataset système, mais elle disparaît avec le pool de boot si celui-ci est perdu. Copier le fichier hors de la machine.
+- **System > General > Save Config** après chaque changement de configuration. L'option « Export Password Secret Seed » permet de restaurer sur un autre périphérique de démarrage mais produit un fichier à protéger comme un secret. Sauvegarder séparément les clés [[Glossary:SSH]] (`/usr/local/etc/ssh/ssh_host_*` et `/root/.ssh`), car elles ne sont pas dans la base de configuration. Une copie automatique de la base est aussi écrite chaque jour à 03:45 dans le dataset système, mais elle disparaît avec le pool de boot si celui-ci est perdu. Copier le fichier hors de la machine.
 - Les snapshots ne remplacent pas une sauvegarde hors machine : répliquer vers un autre système ou utiliser une des solutions de sauvegarde du pack.
 
 ## 6. Validation

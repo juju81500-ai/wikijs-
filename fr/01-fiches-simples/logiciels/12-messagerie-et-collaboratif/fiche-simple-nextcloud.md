@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Nextcloud
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : Nextcloud 29.x (archive officielle, à vérifier sur la version déployée)
 - **Catégorie** : Messagerie et collaboratif
@@ -76,7 +76,7 @@ cd /var/www/nextcloud
 sudo -u www-data php occ config:system:set trusted_domains 1 --value="<nom_serveur_cloud>"
 sudo -u www-data php occ config:system:set overwrite.cli.url --value="https://<nom_serveur_cloud>/"
 ```
-👉 Explication : Seul le nom déclaré est accepté dans l'en-tête `Host`. `<nom_serveur_cloud>` est le FQDN du service. Sans cette étape, l'interface refuse les accès par nom.
+👉 Explication : Seul le nom déclaré est accepté dans l'en-tête `Host`. `<nom_serveur_cloud>` est le [[Glossary:FQDN]] du service. Sans cette étape, l'interface refuse les accès par nom.
 
 3. Contrôle de l'état et de la configuration :
 ```bash
@@ -93,7 +93,7 @@ sudo ufw allow 443/tcp
 sudo ufw enable
 sudo ufw status verbose
 ```
-👉 Explication : Ouvre SSH seulement pour `<adresse_ip_admin>` avant d'activer le pare-feu. Seul le port 443 est exposé aux utilisateurs.
+👉 Explication : Ouvre [[Glossary:SSH]] seulement pour `<adresse_ip_admin>` avant d'activer le pare-feu. Seul le port 443 est exposé aux utilisateurs.
 
 ---
 

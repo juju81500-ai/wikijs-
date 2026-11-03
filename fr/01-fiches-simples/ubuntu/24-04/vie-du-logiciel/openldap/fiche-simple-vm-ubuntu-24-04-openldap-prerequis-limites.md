@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_OpenLDAP_Prerequis_Limites
 
-- **Environnement** : VM Ubuntu 24-04 avec FQDN stable, serveur OpenLDAP (slapd)
-- **OS / Version** : Ubuntu 24-04 LTS Noble; slapd 2.6 des dépôts, version à vérifier
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 avec [[Glossary:FQDN]] stable, serveur OpenLDAP (slapd)
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; slapd 2.6 des dépôts, version à vérifier
 - **Catégorie** : annuaire OpenLDAP / prérequis et limites
 - **Tags** : `openldap`, `ubuntu24-04`, `vie-du-logiciel`, `prerequis-limites`
 
@@ -30,7 +30,7 @@ Valider les prérequis Ubuntu 24-04 avant d'installer slapd, sans répéter le c
    hostnamectl
    timedatectl
    ```
-   👉 Explication : Le FQDN doit être stable et résolu par les clients; le suffixe LDAP en dépendra.
+   👉 Explication : Le FQDN doit être stable et résolu par les clients; le suffixe [[Glossary:LDAP]] en dépendra.
 
 2. Vérifier la version candidate de slapd :
    ```bash
@@ -42,7 +42,7 @@ Valider les prérequis Ubuntu 24-04 avant d'installer slapd, sans répéter le c
    ```bash
    sudo aa-status | grep -i slapd
    ```
-   👉 Explication : Un profil slapd peut être appliqué : les fichiers TLS et sauvegardes hors des chemins habituels peuvent être refusés (voir la fiche Configurer).
+   👉 Explication : Un profil slapd peut être appliqué : les fichiers [[Glossary:TLS]] et sauvegardes hors des chemins habituels peuvent être refusés (voir la fiche Configurer).
 
 ## 2. Production — Contrôles
 

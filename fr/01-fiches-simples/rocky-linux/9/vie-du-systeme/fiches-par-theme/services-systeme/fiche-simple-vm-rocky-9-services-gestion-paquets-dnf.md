@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Rocky_9_Services_Gestion-Paquets-DNF.md
 
-- **Environnement** : VM (Rocky Linux 9 / RHEL 9)
+- **Environnement** : [[Glossary:VM]] (Rocky Linux 9 / [[Glossary:RHEL]] 9)
 - **OS / Version** : Rocky Linux 9 - Famille RedHat
 - **Catégorie** : Système & Services / Gestionnaires de paquets
 - **Tags** : `[rocky-9]`, `[redhat-family]`, `[dnf]`, `[rpm]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Gérer l'installation, la recherche, la mise à jour et la suppression de logiciels sous Rocky Linux 9 / RHEL 9 via le gestionnaire de paquets DNF/RPM, et activer les dépôts d'entreprise EPEL.
+Gérer l'installation, la recherche, la mise à jour et la suppression de logiciels sous Rocky Linux 9 / RHEL 9 via le gestionnaire de paquets [[Glossary:DNF]]/RPM, et activer les dépôts d'entreprise EPEL.
 
 ---
 
@@ -41,4 +41,4 @@ Gérer l'installation, la recherche, la mise à jour et la suppression de logici
 ## 🔒 3. Production — Façon Sécurisée (Hardening & Isolation Enterprise)
 1. Activation de l'outil `dnf-automatic` pour les correctifs de sécurité critiques :
    `dnf install -y dnf-automatic`
-   👉 Explication : Installe le service de mise à jour automatique des paquets RPM.
+   👉 Explication : Installe le service de mise à jour automatique des paquets [[Glossary:RPM]].

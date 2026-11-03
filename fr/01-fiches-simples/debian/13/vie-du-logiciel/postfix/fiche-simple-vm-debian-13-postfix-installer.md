@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Postfix_Installer
 
-- **Environnement** : VM Debian 13; Postfix depuis les dépôts de la distribution
+- **Environnement** : [[Glossary:VM]] Debian 13; Postfix depuis les dépôts de la distribution
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : Messagerie et collaboratif / Postfix — Installer
 - **Tags** : `debian13`, `postfix`, `smtp`, `messagerie`, `installer`
@@ -29,14 +29,14 @@ Installer Postfix (paquet Debian 13) en mode non interactif avec les outils de t
    echo "postfix postfix/main_mailer_type select Internet Site" | sudo debconf-set-selections
    echo "postfix postfix/mailname string MAIL.EXAMPLE.NET" | sudo debconf-set-selections
    ```
-   👉 Explication : évite le dialogue interactif ; `MAIL.EXAMPLE.NET` est à remplacer par le FQDN réel.
+   👉 Explication : évite le dialogue interactif ; `MAIL.EXAMPLE.NET` est à remplacer par le [[Glossary:FQDN]] réel.
 
 2. Installer les paquets :
    ```bash
    sudo apt update
    sudo DEBIAN_FRONTEND=noninteractive apt install -y postfix bsd-mailx swaks
    ```
-   👉 Explication : `bsd-mailx` fournit la commande `mail`, `swaks` est un client SMTP de test.
+   👉 Explication : `bsd-mailx` fournit la commande `mail`, `swaks` est un client [[Glossary:SMTP]] de test.
 
 3. Activer et démarrer le service :
    ```bash

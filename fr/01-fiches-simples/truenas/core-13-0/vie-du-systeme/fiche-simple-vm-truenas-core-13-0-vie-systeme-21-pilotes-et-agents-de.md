@@ -20,15 +20,15 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Optimiser lorsque le NAS est une VM.
+Optimiser lorsque le [[Glossary:NAS]] est une [[Glossary:VM]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Sur une VM, présenter le contrôleur HBA en passthrough PCI.
+1. Sur une VM, présenter le contrôleur [[Glossary:HBA]] en passthrough PCI.
    ```sh
    pciconf -lv | grep -i -B3 -E 'sas|sata|nvme'
    ```
-   👉 Explication : ZFS accède aux disques physiques.
+   👉 Explication : [[Glossary:ZFS]] accède aux disques physiques.
 
 2. Pilote invité si disponible (VMware : service open-vm-tools).
    ```sh

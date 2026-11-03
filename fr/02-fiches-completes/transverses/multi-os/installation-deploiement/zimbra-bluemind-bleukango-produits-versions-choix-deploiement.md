@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 ## 1. Portée, hypothèses et licences
 
 - Ce document compare des **produits distincts** de messagerie et de collaboration ; ils ne partagent ni installateur, ni procédure de mise à jour, ni modèle de licence.
-- Hypothèse : un seul produit est retenu pour un pilote, sur une VM de laboratoire dédiée. La production exige la matrice de support, le calendrier de maintenance et le contrat de l'éditeur ou de l'intégrateur.
+- Hypothèse : un seul produit est retenu pour un pilote, sur une [[Glossary:VM]] de laboratoire dédiée. La production exige la matrice de support, le calendrier de maintenance et le contrat de l'éditeur ou de l'intégrateur.
 - Rien dans cette fiche ne remplace la documentation éditeur de la version retenue.
 
 ## 2. Cartographie à valider avant toute installation
@@ -35,9 +35,9 @@ Remplir pour chaque produit : éditeur, édition, version, OS supportés, ports,
 
 ## 3. Prérequis communs
 
-- VM de laboratoire sur un OS exactement listé par l'éditeur, nom d'hôte FQDN résolvable (DNS interne), horloge synchronisée (NTP).
-- Ressources conformes à la documentation (RAM, disque) ; instantané avant installation.
-- Ports limités : le courrier (25, 465/587, 143/993), HTTP(S) et l'administration restent filtrés ; ne pas ouvrir le port 25 vers Internet en lab.
+- VM de laboratoire sur un OS exactement listé par l'éditeur, nom d'hôte [[Glossary:FQDN]] résolvable ([[Glossary:DNS]] interne), horloge synchronisée ([[Glossary:NTP]]).
+- Ressources conformes à la documentation ([[Glossary:RAM]], disque) ; instantané avant installation.
+- Ports limités : le courrier (25, 465/587, 143/993), [[Glossary:HTTP]](S) et l'administration restent filtrés ; ne pas ouvrir le port 25 vers Internet en lab.
 - Enregistrements DNS MX/A du domaine de test ; aucun envoi de courrier réel.
 
 ## 4. Chemin Zimbra (pilote)
@@ -52,25 +52,25 @@ su - zimbra -c "zmcontrol status"
 su - zimbra -c "zmcontrol -v"
 ```
 
-5. Créer un domaine et un compte de test (`zmprov` ou console d'administration) et tester webmail, SMTP et IMAP en lab.
+5. Créer un domaine et un compte de test (`zmprov` ou console d'administration) et tester webmail, [[Glossary:SMTP]] et [[Glossary:IMAP]] en lab.
 
 ## 5. Chemin BlueMind (pilote)
 
 1. Suivre la procédure d'installation de la version choisie sur la documentation officielle BlueMind : dépôts ou installateur fournis par l'éditeur, serveur unique pour le pilote.
 2. Contrôler l'état des services avec l'outil d'administration documenté pour la version (`bmctl` selon la documentation : confirmer la syntaxe sur votre version).
 3. Créer un domaine et un utilisateur de test dans la console d'administration, tester webmail, SMTP, IMAP et agenda.
-4. Configurer l'annuaire LDAP/AD seulement après la validation du pilote.
+4. Configurer l'annuaire [[Glossary:LDAP]]/AD seulement après la validation du pilote.
 
 ## 6. Validation
 
 - Tous les services attendus sont actifs, la version affichée correspond à la fiche d'identité remplie.
-- Connexion webmail, envoi interne et réception, IMAP/SMTP authentifiés, certificat TLS valide (autorité interne en lab).
+- Connexion webmail, envoi interne et réception, IMAP/SMTP authentifiés, certificat [[Glossary:TLS]] valide (autorité interne en lab).
 - Sauvegarde exécutée et restauration vérifiée sur une VM isolée.
 - Journaux sans erreur critique ; plan de maintenance daté.
 
 ## 7. Retour arrière
 
-Restaurer l'instantané de la VM de lab. Pour une désinstallation, suivre la procédure officielle de l'éditeur (ne pas supprimer manuellement des répertoires système). Ne pas basculer les MX de production sans plan de repli : conserver le MX d'origine et un TTL court jusqu'à la validation finale.
+Restaurer l'instantané de la VM de lab. Pour une désinstallation, suivre la procédure officielle de l'éditeur (ne pas supprimer manuellement des répertoires système). Ne pas basculer les MX de production sans plan de repli : conserver le MX d'origine et un [[Glossary:TTL]] court jusqu'à la validation finale.
 
 ## Sources officielles
 

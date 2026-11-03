@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 ---
 
 ## 🎯 Problème précis à résoudre
-Vérifier que l'hyperviseur Proxmox VE 8 redémarre proprement : montages, stockages, réseau, cluster et démarrage automatique des VM et conteneurs, avant sa mise en production ou après une maintenance.
+Vérifier que l'hyperviseur Proxmox VE 8 redémarre proprement : montages, stockages, réseau, cluster et démarrage automatique des [[Glossary:VM]] et conteneurs, avant sa mise en production ou après une maintenance.
 
 ---
 
@@ -70,7 +70,7 @@ pct set <ctid> --onboot 1 --startup order=2,up=30
 ```
 👉 Explication : démarre automatiquement la VM `<vmid>` en premier puis le conteneur `<ctid>` ; `up` définit le délai en secondes avant de passer à l'invité suivant.
 
-3. Vérifier la santé des pools ZFS avant redémarrage (si ZFS est utilisé) :
+3. Vérifier la santé des pools [[Glossary:ZFS]] avant redémarrage (si ZFS est utilisé) :
 ```bash
 zpool status -x
 ```

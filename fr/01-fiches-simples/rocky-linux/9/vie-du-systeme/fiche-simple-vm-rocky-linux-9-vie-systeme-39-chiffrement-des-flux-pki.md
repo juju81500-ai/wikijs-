@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_39_Chiffrement_Des_Flux_Pki
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 39 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-39`
@@ -46,11 +46,11 @@ Chiffrer les services exposés.
 
 ## 2. Production — Contrôles
 
-Superviser l'expiration; utiliser une PKI interne pour les noms non publics.
+Superviser l'expiration; utiliser une [[Glossary:PKI]] interne pour les noms non publics.
 
 ## 3. Production — Sécurité
 
-Clé privée en mode `600`; TLS 1.2 minimum (politique crypto système).
+Clé privée en mode `600`; [[Glossary:TLS]] 1.2 minimum (politique crypto système).
 
 ## Validation et retour arrière
 

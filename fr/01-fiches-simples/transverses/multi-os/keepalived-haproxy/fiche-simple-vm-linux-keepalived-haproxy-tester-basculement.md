@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Vérifier que l'IP virtuelle bascule correctement.
+Vérifier que l'[[Glossary:IP]] virtuelle bascule correctement.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Securite_Sysctl_Noyau
 
-- **Environnement** : VM Ubuntu Server
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat, noyau 6.8 par défaut)
+- **Environnement** : [[Glossary:VM]] Ubuntu Server
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble Numbat, noyau 6.8 par défaut)
 - **Catégorie** : Sécurité / Durcissement du noyau et de la pile réseau
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[sysctl]`, `[kernel]`, `[tcp-syncookies]`, `[hardening]`
 
@@ -50,7 +50,7 @@ Appliquer un jeu de paramètres `sysctl` de durcissement au noyau et à la pile 
    kernel.randomize_va_space = 2
    EOF
    ```
-   👉 *Explication : Ces valeurs désactivent les redirections ICMP et le routage par la source, activent les SYN cookies contre le SYN flood et restreignent l'accès aux journaux du noyau et aux adresses mémoire.*
+   👉 *Explication : Ces valeurs désactivent les redirections [[Glossary:ICMP]] et le routage par la source, activent les SYN cookies contre le SYN flood et restreignent l'accès aux journaux du noyau et aux adresses mémoire.*
 2. Appliquer tous les fichiers `sysctl.d` et vérifier :
    ```bash
    sudo sysctl --system

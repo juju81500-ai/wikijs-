@@ -27,7 +27,7 @@ Définir clients, droits, protocole et protection avant de créer le moindre par
 1. Lister les clients, droits, plan d'adressage, protocole, capacité, snapshots, sauvegarde et scénario de restauration.
    👉 Explication : on choisit Samba (clients SMB), NFSv4 (clients Unix) ou iSCSI (blocs) selon le besoin.
 
-2. Ne pas présenter un même système de fichiers en NFS/SMB et en LUN iSCSI simultanément.
+2. Ne pas présenter un même système de fichiers en [[Glossary:NFS]]/SMB et en [[Glossary:LUN]] iSCSI simultanément.
    👉 Explication : un montage concurrent incompatible peut corrompre les données.
 
 3. Contrôler les volumes disponibles :

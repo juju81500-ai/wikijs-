@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Appliquer des permissions NTFS et du chiffrement.
+Appliquer des permissions [[Glossary:NTFS]] et du chiffrement.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -42,7 +42,7 @@ Appliquer des permissions NTFS et du chiffrement.
    Install-WindowsFeature BitLocker -IncludeManagementTools -Restart
    Enable-BitLocker -MountPoint D: -RecoveryPasswordProtector -UsedSpaceOnly
    ```
-   👉 Explication : protège les données au repos; sauvegarder la clé de récupération dans AD ou le coffre, jamais sur le même volume.
+   👉 Explication : protège les données au repos; sauvegarder la clé de récupération dans [[Glossary:AD]] ou le coffre, jamais sur le même volume.
 
 ## 2. Production — Contrôles
 

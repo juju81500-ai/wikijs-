@@ -22,21 +22,21 @@ dateModified: 2026-11-03T09:36:13Z
 À la fin de cette leçon, vous saurez :
 
 1. contrôler l'état de **Microsoft Defender** et des **correctifs** avec PowerShell, en lecture seule ;
-2. auditer les **comptes locaux** et expliquer le **principe de LAPS** ;
-3. décrire l'ordre d'application des **stratégies de groupe (GPO)** et vérifier le résultat ;
+2. auditer les **comptes locaux** et expliquer le **principe de [[Glossary:LAPS]]** ;
+3. décrire l'ordre d'application des **stratégies de groupe ([[Glossary:GPO]])** et vérifier le résultat ;
 4. expliquer le **principe de BitLocker** et ses précautions de récupération ;
 5. lire les **journaux de sécurité** et repérer les événements importants ;
-6. détecter et encadrer l'exposition de **SMB** et **RDP** ;
+6. détecter et encadrer l'exposition de **SMB** et **[[Glossary:RDP]]** ;
 7. conduire chaque changement avec : **snapshot → console de secours → test → retour arrière**.
 
 ## Prérequis et durée
 
 - Administration Windows de base : PowerShell, services, utilisateurs et groupes.
-- Laboratoire : une **VM jetable** Windows Server (évaluation) ou Windows 11, avec **snapshot** et **console de l'hyperviseur** ; idéalement un contrôleur de domaine de test `example.test` pour GPO et LAPS. Adresses de documentation : `192.0.2.0/24`, `198.51.100.0/24`.
+- Laboratoire : une **[[Glossary:VM]] jetable** Windows Server (évaluation) ou Windows 11, avec **snapshot** et **console de l'hyperviseur** ; idéalement un contrôleur de domaine de test `example.test` pour GPO et LAPS. Adresses de documentation : `192.0.2.0/24`, `198.51.100.0/24`.
 - PowerShell **en administrateur** pour les contrôles des sections 7 à 10.
 - Durée : environ 3 h 30.
 
-> ⚠️ **Périmètre.** Ne durcissez que des machines dont vous êtes responsable. Une GPO mal pensée s'applique à des centaines de postes en quelques minutes : testez sur une OU pilote.
+> ⚠️ **Périmètre.** Ne durcissez que des machines dont vous êtes responsable. Une GPO mal pensée s'applique à des centaines de postes en quelques minutes : testez sur une [[Glossary:OU]] pilote.
 
 ## L'essentiel en bref
 
@@ -122,7 +122,7 @@ Get-Service wuauserv, UsoSvc | Select-Object Name, Status, StartType
 
 👉 Explication : (1) version et build du système, (2) dix derniers correctifs installés (la date de la dernière mise à jour est l'indicateur clé), (3) `True` si un redémarrage est en attente, (4) état des services de mise à jour. Tout est en lecture seule.
 
-**Organisation pour un parc.** Distribuez par **anneaux** : test, pilote, production (WSUS, Windows Update for Business ou Intune). Les correctifs de sécurité mensuels sont prioritaires ; un serveur critique se met à jour en **fenêtre de maintenance**, snapshot avant, vérification après.
+**Organisation pour un parc.** Distribuez par **anneaux** : test, pilote, production ([[Glossary:WSUS]], Windows Update for Business ou Intune). Les correctifs de sécurité mensuels sont prioritaires ; un serveur critique se met à jour en **fenêtre de maintenance**, snapshot avant, vérification après.
 
 **Rappel.** Un redémarrage en attente laisse souvent le correctif **inactif** : un système « à jour » mais non redémarré reste vulnérable.
 
@@ -138,7 +138,7 @@ Get-LocalGroupMember -SID S-1-5-32-544
 Get-LocalUser | Where-Object { $_.SID -like '*-500' } | Select-Object Name, Enabled
 ```
 
-👉 Explication : liste les comptes locaux avec leur état et la date du dernier changement de mot de passe, puis les membres du groupe **Administrateurs** désigné par son SID (le nom du groupe varie selon la langue : `Administrators`, `Administrateurs`), puis le compte administrateur intégré (RID 500). Lecture seule.
+👉 Explication : liste les comptes locaux avec leur état et la date du dernier changement de mot de passe, puis les membres du groupe **Administrateurs** désigné par son [[Glossary:SID]] (le nom du groupe varie selon la langue : `Administrators`, `Administrateurs`), puis le compte administrateur intégré (RID 500). Lecture seule.
 
 À rechercher : comptes actifs mais inutilisés, `PasswordRequired` à `False`, membres inconnus dans le groupe Administrateurs, compte *Invité* actif.
 
@@ -173,7 +173,7 @@ Gain : le mot de passe volé sur `PC-01` est inutile sur `PC-02`, ce qui bloque 
 
 **L'ordre LSDOU** : stratégie **L**ocale, **S**ite, **D**omaine, **O**U (les OU imbriquées s'appliquent de la plus haute à la plus basse). En cas de conflit, la **dernière appliquée gagne**, sauf si une GPO supérieure est **appliquée** (*Enforced*) ou si l'héritage est bloqué sur une OU.
 
-**Réglages de sécurité typiques** : longueur minimale des mots de passe et verrouillage de compte, audit avancé (connexions, comptes, processus), droits d'ouverture de session par Bureau à distance, NTLM restreint, signature SMB, UAC, profils du pare-feu, paramètres LAPS et BitLocker.
+**Réglages de sécurité typiques** : longueur minimale des mots de passe et verrouillage de compte, audit avancé (connexions, comptes, processus), droits d'ouverture de session par Bureau à distance, [[Glossary:NTLM]] restreint, signature SMB, [[Glossary:UAC]], profils du pare-feu, paramètres LAPS et BitLocker.
 
 **Méthode sûre.**
 
@@ -198,10 +198,10 @@ Get-GPOReport -Name "Durcissement-Postes" -ReportType Html -Path .\Durcissement-
 
 BitLocker **chiffre le volume** : un disque volé ou une machine perdue n'expose pas les données. C'est une protection **au repos**, pas contre un attaquant qui travaille sur la session ouverte.
 
-- **TPM** : puce qui contient la clé et vérifie l'intégrité du démarrage ; le déverrouillage est transparent.
+- **[[Glossary:TPM]]** : puce qui contient la clé et vérifie l'intégrité du démarrage ; le déverrouillage est transparent.
 - **Protecteurs** : TPM seul, TPM + code PIN, mot de passe, **clé de récupération** de 48 chiffres.
 - **Clé de récupération** : **à sauvegarder avant d'activer** (dans Active Directory ou Entra ID, via une GPO). Sans elle, une panne de matériel ou un changement du démarrage peut rendre les données définitivement illisibles.
-- **Suspension** : avant une mise à jour du micrologiciel (BIOS/UEFI), suspendez temporairement la protection (`Suspend-BitLocker -MountPoint C: -RebootCount 1`), sinon la machine demande la clé de récupération.
+- **Suspension** : avant une mise à jour du micrologiciel ([[Glossary:BIOS]]/UEFI), suspendez temporairement la protection (`Suspend-BitLocker -MountPoint C: -RebootCount 1`), sinon la machine demande la clé de récupération.
 
 ```powershell
 Get-BitLockerVolume | Select-Object MountPoint, VolumeStatus, ProtectionStatus, EncryptionMethod
@@ -247,7 +247,7 @@ Get-WinEvent -FilterHashtable @{LogName='Security'; Id=4625; StartTime=(Get-Date
 
 ## 9. SMB et RDP exposés : deux portes à ne jamais laisser ouvertes
 
-**SMB** (partage de fichiers, TCP 445) et **RDP** (Bureau à distance, TCP 3389) sont les deux services Windows les plus visés par les scanners et les rançongiciels. Règle absolue : **ne jamais les exposer directement à Internet**. En interne, on les **limite** par pare-feu aux seuls réseaux d'administration, et l'accès distant passe par un **VPN**, un **bastion** ou une **passerelle RD Gateway** avec authentification forte.
+**SMB** (partage de fichiers, [[Glossary:TCP]] 445) et **RDP** (Bureau à distance, TCP 3389) sont les deux services Windows les plus visés par les scanners et les rançongiciels. Règle absolue : **ne jamais les exposer directement à Internet**. En interne, on les **limite** par pare-feu aux seuls réseaux d'administration, et l'accès distant passe par un **[[Glossary:VPN]]**, un **bastion** ou une **passerelle RD Gateway** avec authentification forte.
 
 ![Schéma original de l'exposition de SMB et RDP : Internet est bloqué par le pare-feu, l'administrateur passe par un VPN ou un bastion et une règle limitée au réseau d'administration](images/durcissement-windows-4.svg)
 
@@ -273,7 +273,7 @@ Get-ItemProperty 'HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStat
 Get-NetFirewallRule -Name 'RemoteDesktop-UserMode-In-TCP' | Get-NetFirewallAddressFilter | Select-Object RemoteAddress
 ```
 
-👉 Explication : (1) `fDenyTSConnections` à `0` signifie RDP **activé**, `1` désactivé ; (2) `UserAuthentication` à `1` signifie que l'authentification au niveau du réseau (**NLA**) est exigée ; (3) affiche les adresses autorisées par la règle RDP entrante. `Any` signifie qu'il n'y a aucune limitation.
+👉 Explication : (1) `fDenyTSConnections` à `0` signifie RDP **activé**, `1` désactivé ; (2) `UserAuthentication` à `1` signifie que l'authentification au niveau du réseau (**[[Glossary:NLA]]**) est exigée ; (3) affiche les adresses autorisées par la règle RDP entrante. `Any` signifie qu'il n'y a aucune limitation.
 
 ### Encadrer RDP
 
@@ -430,7 +430,7 @@ a) pour accélérer la règle b) pour corriger si l'on se coupe soi-même c) c'e
 - Détecter, activer et désactiver SMB : <https://learn.microsoft.com/fr-fr/windows-server/storage/file-server/troubleshoot/detect-enable-and-disable-smbv1-v2-v3>
 - Audit de sécurité : <https://learn.microsoft.com/fr-fr/windows/security/threat-protection/auditing/security-auditing-overview>
 - Benchmarks CIS (site officiel) : <https://www.cisecurity.org/cis-benchmarks>
-- ANSSI, publications et guides de sécurité : <https://cyber.gouv.fr/publications>
+- [[Glossary:ANSSI]], publications et guides de sécurité : <https://cyber.gouv.fr/publications>
 
 *Si une adresse Microsoft Learn a changé, cherchez le titre de la page sur le site officiel.*
 

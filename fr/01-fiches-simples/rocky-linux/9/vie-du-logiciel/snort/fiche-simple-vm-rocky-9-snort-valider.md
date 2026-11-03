@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_Snort_Valider
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Snort
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Snort
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Snort / validation
 - **Tags** : `snort`, `rocky9`, `vie-du-logiciel`, `valider`
 
@@ -30,7 +30,7 @@ Recetter Snort sur un fichier pcap autorisé, puis en capture bornée.
    ping -c 3 HOTE_AUTORISE
    wait
    ```
-   👉 Explication : Génère 5 paquets ICMP vers un hôte autorisé; `tcpdump` est requis (voir la série tcpdump).
+   👉 Explication : Génère 5 paquets [[Glossary:ICMP]] vers un hôte autorisé; `tcpdump` est requis (voir la série tcpdump).
 
 2. Analyser hors ligne :
    ```bash

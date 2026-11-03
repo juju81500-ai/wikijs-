@@ -13,21 +13,21 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **OS / Version** : Tenant Google Workspace (SaaS)
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : Création et vérification du domaine, administrateurs, unités organisationnelles, 2SV, SSO SAML, messagerie (MX, SPF, DKIM, DMARC), provisionnement
+- **Périmètre** : Création et vérification du domaine, administrateurs, unités organisationnelles, 2SV, [[Glossary:SSO]] [[Glossary:SAML]], messagerie (MX, [[Glossary:SPF]], [[Glossary:DKIM]], [[Glossary:DMARC]]), provisionnement
 - **Catégorie** : Collaboration / identité
 - **Tags** : `google-workspace`,`saas`,`sso`,`gmail`,`2sv`
 
 ## 1. Portée, hypothèses et licences
 
-- Couvre l'administration d'un tenant **Google Workspace** via la console d'administration. Google Cloud Platform (projets, IAM) est un produit distinct.
+- Couvre l'administration d'un tenant **Google Workspace** via la console d'administration. Google Cloud Platform (projets, [[Glossary:IAM]]) est un produit distinct.
 - **Souscription requise** : Google Workspace est payant par utilisateur (éditions Business, Enterprise, Education, etc.). Les fonctionnalités (SSO avec fournisseur tiers, audit avancé, DLP) dépendent de l'édition : vérifier la comparaison d'éditions en cours.
-- Hypothèses : un domaine DNS contrôlé, une adresse de secours pour le super-administrateur, un rôle de responsable de la conformité pour les rétentions et les exports.
+- Hypothèses : un domaine [[Glossary:DNS]] contrôlé, une adresse de secours pour le super-administrateur, un rôle de responsable de la conformité pour les rétentions et les exports.
 
 ## 2. Prérequis
 
 - Accès DNS au domaine (enregistrements TXT et MX).
 - Deux comptes super-administrateurs nominatifs maximum, avec clés de sécurité physiques ; un compte de secours dont les identifiants sont conservés dans un coffre.
-- Inventaire des utilisateurs, groupes, unités organisationnelles (OU) et applications tierces.
+- Inventaire des utilisateurs, groupes, unités organisationnelles ([[Glossary:OU]]) et applications tierces.
 - Si SSO : un fournisseur d'identité (IdP) compatible SAML 2.0 et ses métadonnées.
 
 ## 3. Création et vérification du domaine
@@ -49,13 +49,13 @@ dig +short TXT exemple.fr
 ## 5. Sécurité
 
 1. Sécurité > Authentification > Validation en deux étapes : activer la 2SV, imposer son enregistrement avec une période de grâce, privilégier les clés de sécurité pour les administrateurs.
-2. Politiques de mots de passe, appareils mobiles gérés, contrôle d'accès aux applications tierces et API (Sécurité > Contrôle des accès et des données).
+2. Politiques de mots de passe, appareils mobiles gérés, contrôle d'accès aux applications tierces et [[Glossary:API]] (Sécurité > Contrôle des accès et des données).
 3. SSO SAML : dans Sécurité > Authentification > SSO avec un fournisseur d'identité tiers, charger les métadonnées/certificat de l'IdP, définir l'URL de connexion, appliquer le SSO à une OU de test avant le domaine entier. Conserver une OU d'urgence sans SSO pour le compte de secours.
-4. Activer l'export des journaux d'audit selon l'édition vers un SIEM ou BigQuery si disponible.
+4. Activer l'export des journaux d'audit selon l'édition vers un [[Glossary:SIEM]] ou BigQuery si disponible.
 
 ## 6. Messagerie
 
-1. Enregistrements MX : utiliser les valeurs affichées par la documentation Google actuelle (« Set up MX records for Gmail ») ; elles ont évolué dans le temps. Réduire le TTL avant la bascule.
+1. Enregistrements MX : utiliser les valeurs affichées par la documentation Google actuelle (« Set up MX records for Gmail ») ; elles ont évolué dans le temps. Réduire le [[Glossary:TTL]] avant la bascule.
 2. SPF : publier un unique enregistrement TXT incluant Google (valeur dans la documentation), en tenant compte des autres expéditeurs.
 3. DKIM : Applications > Google Workspace > Gmail > Authentifier les e-mails, générer la clé, publier l'enregistrement TXT puis démarrer l'authentification.
 4. DMARC : commencer par `p=none` avec adresse de rapport, puis durcir.

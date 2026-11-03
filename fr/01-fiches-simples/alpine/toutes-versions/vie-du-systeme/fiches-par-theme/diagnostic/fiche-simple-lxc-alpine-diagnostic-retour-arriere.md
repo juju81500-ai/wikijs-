@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-lxc-alpine-diagnostic-retour-arriere.md
 
-- **Environnement** : CT Alpine sur Proxmox VE; accès console de l'hôte conservé
+- **Environnement** : [[Glossary:CT]] Alpine sur Proxmox VE; accès console de l'hôte conservé
 - **OS / Version** : branche Alpine maintenue
 - **Catégorie** : diagnostic / retour arrière
 - **Tags** : `alpine`, `proxmox`, `lxc`, `rollback`, `backup`
@@ -38,7 +38,7 @@ Récupérer l'accès au CT ou au service après une correction réseau infructue
    ```
    👉 Explication : ne pas supprimer le CT ni ses journaux.
 
-3. Restaurer une sauvegarde dans un ID et un réseau isolés : **Stockage PBS > Content > Restore** avec un ID temporaire.
+3. Restaurer une sauvegarde dans un ID et un réseau isolés : **Stockage [[Glossary:PBS]] > Content > Restore** avec un ID temporaire.
    👉 Explication : voir la fiche de restauration isolée.
 
 ## 2. Production — Contrôles
@@ -48,7 +48,7 @@ Déclencher la procédure d'incident, prévenir le propriétaire et préserver l
 ## 3. Production — Sécurité
 
 - Ne pas supprimer le CT ni son stockage pour résoudre une panne réseau.
-- Ne pas restaurer une sauvegarde directement sur le réseau actif sans vérifier l'IP.
+- Ne pas restaurer une sauvegarde directement sur le réseau actif sans vérifier l'[[Glossary:IP]].
 - Ne pas détruire les journaux, snapshots ou sauvegardes pendant l'investigation.
 - Limiter l'accès à la copie restaurée et aux données récupérées.
 

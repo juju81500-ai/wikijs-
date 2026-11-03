@@ -11,14 +11,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 TrueNAS Core
 
-- **Environnement** : Appliance dédiée (matériel ou VM réservée au NAS)
+- **Environnement** : Appliance dédiée (matériel ou [[Glossary:VM]] réservée au [[Glossary:NAS]])
 - **OS / Version** : TrueNAS CORE 13.0 (appliance basée sur FreeBSD 13, hors Debian 12 et Rocky Linux 9 par nature)
 - **Version** : TrueNAS CORE 13.0-U6 ou supérieure, à vérifier dans `System > Update`
-- **Catégorie** : Stockage et SAN / NAS
+- **Catégorie** : Stockage et [[Glossary:SAN]] / NAS
 - **Tags** : `[truenas-core]`, `[freebsd]`, `[zfs]`, `[nas]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Mettre en service un NAS TrueNAS CORE, créer un pool ZFS et un jeu de données partagé, vérifier l'état du pool et les instantanés, puis durcir l'accès d'administration. Les tests ne se font que sur votre propre appliance. Les commandes s'exécutent dans le shell de l'interface (`System > Shell`), en root.
+Mettre en service un NAS TrueNAS CORE, créer un pool [[Glossary:ZFS]] et un jeu de données partagé, vérifier l'état du pool et les instantanés, puis durcir l'accès d'administration. Les tests ne se font que sur votre propre appliance. Les commandes s'exécutent dans le shell de l'interface (`System > Shell`), en root.
 
 ---
 
@@ -76,7 +76,7 @@ zfs list -t snapshot -o name,creation -r tank/partage-test | tail -n 5
 ```
 👉 Explication : Les instantanés périodiques, les scrubs et la réplication se configurent dans `Data Protection`. La commande vérifie que les derniers instantanés planifiés ont bien été créés.
 
-3. Surveillance SMART des disques :
+3. Surveillance [[Glossary:SMART]] des disques :
 ```bash
 camcontrol devlist
 smartctl -H /dev/ada0
@@ -91,7 +91,7 @@ smartctl -H /dev/ada0
 sockstat -4 -l
 service sshd status
 ```
-👉 Explication : `sockstat -4 -l` liste les ports IPv4 en écoute. Seuls l'interface web (80 et 443), SSH (22), SMB (445) et NFS (2049) selon les services activés doivent apparaître. Point à vérifier : ne pas modifier `/etc/ssh/sshd_config` à la main, TrueNAS l'écrase ; passer par `System > Services`.
+👉 Explication : `sockstat -4 -l` liste les ports IPv4 en écoute. Seuls l'interface web (80 et 443), [[Glossary:SSH]] (22), SMB (445) et [[Glossary:NFS]] (2049) selon les services activés doivent apparaître. Point à vérifier : ne pas modifier `/etc/ssh/sshd_config` à la main, TrueNAS l'écrase ; passer par `System > Services`.
 
 2. Propriétés ZFS du jeu de données :
 ```bash
@@ -104,7 +104,7 @@ zfs get -r compression,atime,readonly,sync tank/partage-test
 ls -ld /mnt/tank/partage-test
 getfacl /mnt/tank/partage-test
 ```
-👉 Explication : Vérifie le propriétaire et les ACL NFSv4 du dossier. Les droits se modifient dans `Storage > Dataset > Edit Permissions` plutôt qu'en ligne de commande.
+👉 Explication : Vérifie le propriétaire et les [[Glossary:ACL]] NFSv4 du dossier. Les droits se modifient dans `Storage > Dataset > Edit Permissions` plutôt qu'en ligne de commande.
 
 4. Sauvegarde de la configuration :
 ```bash

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_BlueMind_Prerequis_Limites
 
-- **Environnement** : VM Ubuntu Server 24-04; BlueMind 5.7; guide public, matrice OS à revalider
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04; BlueMind 5.7; guide public, matrice OS à revalider
 - **OS / Version** : Ubuntu Server 24-04
 - **Catégorie** : Vie du logiciel / BlueMind — Prérequis et limites
 - **Tags** : `bluemind`, `serveur`, `vie-du-logiciel`, `prerequis_limites`
@@ -38,7 +38,7 @@ printf "%s\n" "https://doc.bluemind.net/release/5.7/guide-d-installation"
 
 ## 2. Production — Contrôles
 
-Serveur dédié, DNS/MX/PTR, ressources, stockage et sauvegarde doivent être prévus.
+Serveur dédié, [[Glossary:DNS]]/MX/PTR, ressources, stockage et sauvegarde doivent être prévus.
 
 ## 3. Production — Sécurité
 

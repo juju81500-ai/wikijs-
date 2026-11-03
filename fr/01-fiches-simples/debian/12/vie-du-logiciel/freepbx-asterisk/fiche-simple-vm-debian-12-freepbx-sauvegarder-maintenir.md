@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : PBX FreePBX/Asterisk opérationnel; cible de sauvegarde hors serveur
 - **OS / Version** : versions FreePBX/Asterisk maintenues et compatibles
-- **Catégorie** : téléphonie IP / sauvegarde et maintenance
+- **Catégorie** : téléphonie [[Glossary:IP]] / sauvegarde et maintenance
 - **Tags** : `debian12`, `freepbx`, `asterisk`, `backup`, `restore`, `upgrade`
 
 ---

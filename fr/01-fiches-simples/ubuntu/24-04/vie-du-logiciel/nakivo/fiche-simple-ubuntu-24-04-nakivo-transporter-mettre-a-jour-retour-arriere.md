@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_Ubuntu_24.04_Nakivo_Transporter_Mettre_A_Jour_Retour_Arriere
 
-- **Environnement** : Ubuntu Server 24-04 LTS x64; NAKIVO Backup & Replication Transporter
+- **Environnement** : Ubuntu Server 24-04 [[Glossary:LTS]] x64; NAKIVO Backup & Replication Transporter
 - **OS / Version** : Ubuntu 24-04 — plateforme de déploiement listée dans les exigences NAKIVO; valider le build produit
 - **Catégorie** : sauvegarde / maintenance
 - **Tags** : `ubuntu-24.04`, `nakivo`, `transporter`, `mettre-a-jour-retour-arriere`
@@ -39,13 +39,13 @@ Mettre à jour un Transporter NAKIVO installé sur Ubuntu 24-04 (avec son Direct
    ```
    👉 Explication : remplacer `X.X.X` par la version téléchargée (à remplacer); utiliser le nom exact du fichier publié.
 
-5. Vérifier qu'aucun job ni tâche de maintenance de dépôt n'est en cours, créer un snapshot de la VM si l'hôte est virtualisé, puis exécuter l'updater avec les privilèges root :
+5. Vérifier qu'aucun job ni tâche de maintenance de dépôt n'est en cours, créer un snapshot de la [[Glossary:VM]] si l'hôte est virtualisé, puis exécuter l'updater avec les privilèges root :
    ```bash
    sudo ./NAKIVO_Backup_Replication_vX.X.X_Updater.sh
    ```
    👉 Explication : lire la licence (Espace pour paginer), répondre « Y » puis Entrée, et de nouveau « Y » pour confirmer l'arrêt des services; répéter sur chaque machine où un Transporter est déployé séparément.
 
-6. Si un dépôt CIFS/NFS reste monté sur l'OS, arrêter les services Transporter concernés, vérifier les montages, démonter, puis lancer la mise à jour :
+6. Si un dépôt [[Glossary:CIFS]]/NFS reste monté sur l'OS, arrêter les services Transporter concernés, vérifier les montages, démonter, puis lancer la mise à jour :
    ```bash
    mount | grep -E 'cifs|nfs'
    sudo umount CHEMIN_DU_POINT_DE_MONTAGE

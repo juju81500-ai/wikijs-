@@ -27,10 +27,10 @@ Installer l'Agent sur un seul hôte pilote avec la commande générée par Datad
 1. Dans Datadog, ouvrir **Fleet Automation > Install Agents** (instructions Linux), choisir la région et les options organisationnelles.
    👉 Explication : la commande générée contient le site correct.
 
-2. Examiner la commande/script généré avant exécution : contenu, URL de téléchargement, certificat TLS et prérequis.
+2. Examiner la commande/script généré avant exécution : contenu, URL de téléchargement, certificat [[Glossary:TLS]] et prérequis.
    👉 Explication : le script peut modifier le système avec des privilèges élevés.
 
-3. Sur l'hôte pilote approuvé, exécuter la commande fournie par Fleet Automation en transmettant la clé API depuis le gestionnaire de secrets (variable d'environnement non journalisée).
+3. Sur l'hôte pilote approuvé, exécuter la commande fournie par Fleet Automation en transmettant la clé [[Glossary:API]] depuis le gestionnaire de secrets (variable d'environnement non journalisée).
    👉 Explication : la clé ne doit pas rester dans l'historique shell ni dans la fiche.
 
 4. Contrôler que le service est installé et démarré :

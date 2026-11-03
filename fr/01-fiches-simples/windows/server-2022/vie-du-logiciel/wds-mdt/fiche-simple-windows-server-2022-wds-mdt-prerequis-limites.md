@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_Windows_Server_2022_WDS_MDT_Prerequis_Limites
 
-- **Environnement** : Windows Server 2022, rôle WDS et MDT (serveur de déploiement PXE)
-- **OS / Version** : Windows Server 2022; WDS (rôle intégré), MDT et Windows ADK : vérifier la version publiée et le statut de support
+- **Environnement** : Windows Server 2022, rôle WDS et [[Glossary:MDT]] (serveur de déploiement [[Glossary:PXE]])
+- **OS / Version** : Windows Server 2022; WDS (rôle intégré), MDT et Windows [[Glossary:ADK]] : vérifier la version publiée et le statut de support
 - **Catégorie** : Automatisation, déploiement et IaC
 - **Tags** : `windows-server-2022`, `wds`, `mdt`, `prerequis`, `limites`
 
@@ -24,7 +24,7 @@ Valider les prérequis et connaître les limites de WDS/MDT avant de s'engager. 
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Contrôler l'OS et l'état du rôle. GUI : `Gestionnaire de serveur > Gérer > Ajouter des rôles et fonctionnalités`.
+1. Contrôler l'OS et l'état du rôle. [[Glossary:GUI]] : `Gestionnaire de serveur > Gérer > Ajouter des rôles et fonctionnalités`.
    ```powershell
    Get-ComputerInfo | Select-Object OsName, OsVersion, CsDomain
    Get-WindowsFeature WDS* | Select-Object Name, InstallState
@@ -35,14 +35,14 @@ Valider les prérequis et connaître les limites de WDS/MDT avant de s'engager. 
    ```powershell
    Get-Volume | Select-Object DriveLetter, FileSystem, SizeRemaining, Size
    ```
-   👉 Explication : prévoir un volume NTFS dédié, distinct du système; la taille dépend du nombre d'images (à dimensionner).
+   👉 Explication : prévoir un volume [[Glossary:NTFS]] dédié, distinct du système; la taille dépend du nombre d'images (à dimensionner).
 
-3. Contrôler la présence de DHCP et du réseau PXE :
+3. Contrôler la présence de [[Glossary:DHCP]] et du réseau PXE :
    ```powershell
    Get-WindowsFeature DHCP | Select-Object InstallState
    Test-NetConnection SERVEUR-DHCP.DOMAINE.LOCAL -Port 67
    ```
-   👉 Explication : `SERVEUR-DHCP.DOMAINE.LOCAL` est à remplacer. Le test sur le port UDP 67 n'est pas fiable avec `Test-NetConnection` (TCP) : valider surtout le comportement PXE réel (options DHCP 66/67 ou relais) avec l'équipe réseau. Vérifier la configuration documentée par Microsoft.
+   👉 Explication : `SERVEUR-DHCP.DOMAINE.LOCAL` est à remplacer. Le test sur le port [[Glossary:UDP]] 67 n'est pas fiable avec `Test-NetConnection` ([[Glossary:TCP]]) : valider surtout le comportement PXE réel (options DHCP 66/67 ou relais) avec l'équipe réseau. Vérifier la configuration documentée par Microsoft.
 
 4. Noter les limites à vérifier avant décision (aucune commande) :
    - MDT : Microsoft a annoncé la fin de support/retrait de MDT; vérifier le statut publié et les alternatives (Configuration Manager, Autopilot, WDS + images natives).
@@ -52,7 +52,7 @@ Valider les prérequis et connaître les limites de WDS/MDT avant de s'engager. 
 
 ## 2. Production — Contrôles
 
-Faire valider par le responsable : périmètre (réseaux, VLAN), choix de maintenir WDS/MDT, plan de sortie, licences Windows.
+Faire valider par le responsable : périmètre (réseaux, [[Glossary:VLAN]]), choix de maintenir WDS/MDT, plan de sortie, licences Windows.
 
 ## 3. Production — Sécurité
 

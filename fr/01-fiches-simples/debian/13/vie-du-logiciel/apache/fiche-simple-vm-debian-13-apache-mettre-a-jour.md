@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Apache_Mettre_A_Jour
 
-- **Environnement** : VM Debian 13 Trixie
-- **OS / Version** : Debian 13 Trixie; Apache HTTP Server
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
+- **OS / Version** : Debian 13 Trixie; Apache [[Glossary:HTTP]] Server
 - **Catégorie** : serveur Web / Apache / Mise à jour et retour arrière
 - **Tags** : `debian13`, `apache`, `mise-a-jour`
 

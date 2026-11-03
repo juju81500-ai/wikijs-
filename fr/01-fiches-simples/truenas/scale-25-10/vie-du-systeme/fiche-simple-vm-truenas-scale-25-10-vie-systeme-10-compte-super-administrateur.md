@@ -30,7 +30,7 @@ Sécuriser le compte d'administration initial.
    ```
    👉 Explication : vérifie l'existence du compte sans afficher le mot de passe.
 
-2. Désactiver la connexion SSH par mot de passe de ce compte après dépôt d'une clé (étape 26).
+2. Désactiver la connexion [[Glossary:SSH]] par mot de passe de ce compte après dépôt d'une clé (étape 26).
    👉 Explication : le compte reste utilisable uniquement par la console et l'interface web.
 
 ## 2. Production — Contrôles

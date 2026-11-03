@@ -29,12 +29,12 @@ Prouver qu'un déploiement RDS Windows Server 2025 fonctionne, accepte les utili
    Get-WindowsFeature RDS-*  | Where-Object Installed
    Get-Service TermService, UmRdpService
    ```
-   👉 Explication : Confirme que les rôles attendus sont installés et que les services RDP tournent.
+   👉 Explication : Confirme que les rôles attendus sont installés et que les services [[Glossary:RDP]] tournent.
 2. Contrôler le port d'écoute depuis un poste client :
    ```powershell
    Test-NetConnection NOM_SERVEUR -Port 3389
    ```
-   👉 Explication : NOM_SERVEUR est à remplacer par le FQDN de l'hôte; `TcpTestSucceeded : True` attendu uniquement depuis le réseau autorisé.
+   👉 Explication : NOM_SERVEUR est à remplacer par le [[Glossary:FQDN]] de l'hôte; `TcpTestSucceeded : True` attendu uniquement depuis le réseau autorisé.
 3. Ouvrir une session avec `mstsc /v:NOM_SERVEUR` avec un compte pilote, puis lister les sessions :
    ```powershell
    quser /server:NOM_SERVEUR

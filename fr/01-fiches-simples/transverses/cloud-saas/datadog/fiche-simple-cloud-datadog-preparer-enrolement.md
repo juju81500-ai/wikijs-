@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Préparer les prérequis et la clé API avant d'installer l'Agent.
+Préparer les prérequis et la clé [[Glossary:API]] avant d'installer l'Agent.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

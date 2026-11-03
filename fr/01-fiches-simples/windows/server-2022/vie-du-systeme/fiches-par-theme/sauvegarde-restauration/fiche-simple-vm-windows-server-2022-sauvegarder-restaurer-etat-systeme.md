@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 fiche-simple-vm-windows-server-2022-sauvegarder-restaurer-etat-systeme.md
 
-- **Environnement** : VM ou serveur Windows Server avec volume de sauvegarde dédié
+- **Environnement** : [[Glossary:VM]] ou serveur Windows Server avec volume de sauvegarde dédié
 - **OS / Version** : Windows Server 2022 avec Windows Server Backup
 - **Catégorie** : Sauvegarde / Restauration / Système
 - **Tags** : `[windows-server-2022]`, `[windows-server-backup]`, `[wbadmin]`, `[sauvegarde]`, `[restauration]`, `[system-state]`
@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:14Z
 ## 🎯 Problème précis à résoudre
 Installer Windows Server Backup, effectuer une sauvegarde de l'état système sur une cible dédiée et vérifier qu'une version exploitable est disponible avant une procédure de restauration.
 
-> Une sauvegarde de l'état système n'est pas une sauvegarde complète des données applicatives. Pour un contrôleur de domaine, suivre le plan de récupération AD DS/forêt et ne pas improviser une restauration autoritaire.
+> Une sauvegarde de l'état système n'est pas une sauvegarde complète des données applicatives. Pour un contrôleur de domaine, suivre le plan de récupération [[Glossary:AD]] DS/forêt et ne pas improviser une restauration autoritaire.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Installer le composant et vérifier son état :
@@ -39,7 +39,7 @@ Installer Windows Server Backup, effectuer une sauvegarde de l'état système su
 
 ## ⚡ 2. Production — Façon Simplifiée
 1. Installer **Sauvegarde Windows Server** depuis Gestionnaire de serveur ou PowerShell et choisir une cible dédiée conforme à la politique de rétention.
-2. En GUI, ouvrir `wbadmin.msc`, choisir **Sauvegarde locale > Sauvegarde unique > Options différentes > Personnalisée**, sélectionner **État du système**, puis définir la destination.
+2. En [[Glossary:GUI]], ouvrir `wbadmin.msc`, choisir **Sauvegarde locale > Sauvegarde unique > Options différentes > Personnalisée**, sélectionner **État du système**, puis définir la destination.
 3. Vérifier l'historique avec `wbadmin get versions -backuptarget:<cible>` et documenter la date, la cible, la rétention et les composants concernés.
 
 ## 🔒 3. Production — Façon Sécurisée

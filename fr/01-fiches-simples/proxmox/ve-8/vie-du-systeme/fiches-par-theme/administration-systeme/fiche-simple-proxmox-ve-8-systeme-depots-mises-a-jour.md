@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 ---
 
 ## 🎯 Problème précis à résoudre
-Configurer les dépôts APT de Proxmox VE 8 (abonnement entreprise ou dépôt sans abonnement), appliquer les mises à jour du système et du catalogue des modèles de conteneurs LXC, sans interrompre les machines virtuelles en cours.
+Configurer les dépôts [[Glossary:APT]] de Proxmox VE 8 (abonnement entreprise ou dépôt sans abonnement), appliquer les mises à jour du système et du catalogue des modèles de conteneurs [[Glossary:LXC]], sans interrompre les machines virtuelles en cours.
 
 ---
 
@@ -89,7 +89,7 @@ tar -czf /root/apt-sauvegarde-$(date +%F).tar.gz /etc/apt
 ```bash
 apt update && apt full-upgrade -y && pveversion
 ```
-👉 Explication : applique les mises à jour après migration ou arrêt des VM sensibles ; `pveversion` confirme la version finale. Un nouveau noyau nécessite un redémarrage du nœud, à planifier séparément.
+👉 Explication : applique les mises à jour après migration ou arrêt des [[Glossary:VM]] sensibles ; `pveversion` confirme la version finale. Un nouveau noyau nécessite un redémarrage du nœud, à planifier séparément.
 
 ---
 

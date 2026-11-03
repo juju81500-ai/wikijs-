@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **OS / Version** : Debian 13 Trixie amd64; paquet `slapd` 2.6.10+dfsg-1 (version du dépôt Debian vérifiée le 29 octobre 2026)
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : annuaire LDAP autonome (un serveur), configuration OLC `cn=config`, TLS, sauvegarde `slapcat`
+- **Périmètre** : annuaire [[Glossary:LDAP]] autonome (un serveur), configuration OLC `cn=config`, [[Glossary:TLS]], sauvegarde `slapcat`
 - **Catégorie** : annuaire / identité
 - **Tags** : `openldap`, `slapd`, `ldap`, `debian13`, `cn-config`, `slapcat`, `ldaps`
 
@@ -21,9 +21,9 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [cadrer le pilote OpenLDAP](/fr/01-fiches-simples/debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-cadrer).
 
-Ce guide installe l'annuaire OpenLDAP fourni par Debian 13. Il ne remplace ni Active Directory, ni Samba AD DC (voir le [guide Samba AD DC](/fr/02-fiches-completes/debian/13/installation-deploiement/65-deploiement-samba-ad-dc-debian-13)), ni FreeIPA (Kerberos, CA et DNS intégrés, voir le [guide FreeIPA Rocky Linux 9](/fr/02-fiches-completes/rocky-linux/9/installation-deploiement/88-deploiement-freeipa-rocky-linux-9)). Choisir OpenLDAP quand une application demande uniquement un annuaire LDAP/LDAPS. Réplication (syncrepl), overlays (memberOf, ppolicy), SSSD client et migration depuis un autre annuaire ne sont pas couverts.
+Ce guide installe l'annuaire OpenLDAP fourni par Debian 13. Il ne remplace ni Active Directory, ni Samba [[Glossary:AD]] [[Glossary:DC]] (voir le [guide Samba AD DC](/fr/02-fiches-completes/debian/13/installation-deploiement/65-deploiement-samba-ad-dc-debian-13)), ni FreeIPA (Kerberos, [[Glossary:CA]] et [[Glossary:DNS]] intégrés, voir le [guide FreeIPA Rocky Linux 9](/fr/02-fiches-completes/rocky-linux/9/installation-deploiement/88-deploiement-freeipa-rocky-linux-9)). Choisir OpenLDAP quand une application demande uniquement un annuaire LDAP/LDAPS. Réplication (syncrepl), overlays (memberOf, ppolicy), [[Glossary:SSSD]] client et migration depuis un autre annuaire ne sont pas couverts.
 
-Prérequis : VM Debian 13 dédiée, nom d'hôte FQDN stable, DNS résolvant ce nom, heure synchronisée, snapshot de la VM avant les étapes de configuration. Ce guide n'a pas été testé sur une machine Debian 13.
+Prérequis : [[Glossary:VM]] Debian 13 dédiée, nom d'hôte [[Glossary:FQDN]] stable, DNS résolvant ce nom, heure synchronisée, snapshot de la VM avant les étapes de configuration. Ce guide n'a pas été testé sur une machine Debian 13.
 
 ## 2. Installer
 
@@ -78,7 +78,7 @@ Si l'annuaire est local, `-x -D ... -W` demande le mot de passe en interactif; n
 
 Fiche simple : [configurer TLS](/fr/01-fiches-simples/debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-configurer-tls).
 
-Obtenir un certificat dont le CN/SAN correspond au FQDN utilisé par les clients (CA interne ou ACME). Copier la chaîne et la clé sous `/etc/ldap/tls/`, propriétaire de la clé `openldap:openldap`, mode `0600`. Puis, avec `/root/tls.ldif` :
+Obtenir un certificat dont le CN/SAN correspond au FQDN utilisé par les clients (CA interne ou [[Glossary:ACME]]). Copier la chaîne et la clé sous `/etc/ldap/tls/`, propriétaire de la clé `openldap:openldap`, mode `0600`. Puis, avec `/root/tls.ldif` :
 
 ```ldif
 dn: cn=config
@@ -97,7 +97,7 @@ olcTLSCertificateKeyFile: /etc/ldap/tls/ldap.key
 sudo ldapmodify -Q -Y EXTERNAL -H ldapi:/// -f /root/tls.ldif
 ```
 
-Pour LDAPS sur 636, ajouter `ldaps:///` dans `SLAPD_SERVICES` du fichier `/etc/default/slapd`, puis redémarrer `slapd`. Valider ensuite STARTTLS et LDAPS avant d'imposer le chiffrement (`olcSecurity`, décrit dans l'Administrator's Guide). Une valeur TLS erronée empêche le démarrage : garder la session ouverte et conserver le LDIF inverse.
+Pour LDAPS sur 636, ajouter `ldaps:///` dans `SLAPD_SERVICES` du fichier `/etc/default/slapd`, puis redémarrer `slapd`. Valider ensuite [[Glossary:STARTTLS]] et LDAPS avant d'imposer le chiffrement (`olcSecurity`, décrit dans l'Administrator's Guide). Une valeur TLS erronée empêche le démarrage : garder la session ouverte et conserver le LDIF inverse.
 
 ## 6. Sauvegarder
 
@@ -142,7 +142,7 @@ Fiche simple : [valider LDAP, TLS et les flux](/fr/01-fiches-simples/debian/13/v
 
 Fiche simple : [préparer le retour arrière](/fr/01-fiches-simples/debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-retour-arriere).
 
-Avant toute modification de `cn=config`, exporter `slapcat -n 0`. En cas d'échec TLS ou ACL : `ldapmodify -Y EXTERNAL` pour remettre les anciennes valeurs, ou restaurer le snapshot de la VM. En dernier recours, arrêter `slapd` et restaurer les LDIF sur une base vide (étape 7), après avoir conservé les répertoires `/var/lib/ldap` et `/etc/ldap/slapd.d` actuels en les renommant (ne pas les supprimer).
+Avant toute modification de `cn=config`, exporter `slapcat -n 0`. En cas d'échec TLS ou [[Glossary:ACL]] : `ldapmodify -Y EXTERNAL` pour remettre les anciennes valeurs, ou restaurer le snapshot de la VM. En dernier recours, arrêter `slapd` et restaurer les LDIF sur une base vide (étape 7), après avoir conservé les répertoires `/var/lib/ldap` et `/etc/ldap/slapd.d` actuels en les renommant (ne pas les supprimer).
 
 ## Sources
 

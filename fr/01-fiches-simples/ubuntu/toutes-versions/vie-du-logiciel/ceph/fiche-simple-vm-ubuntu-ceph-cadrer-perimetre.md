@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # fiche-simple-vm-ubuntu-ceph-cadrer-perimetre.md
 
 - **Environnement** : Cluster Ceph de laboratoire à trois nœuds (ceph01, ceph02, ceph03) géré par cephadm
-- **OS / Version** : Ubuntu Server 22-04 LTS; Ceph Tentacle 20.2.4
+- **OS / Version** : Ubuntu Server 22-04 [[Glossary:LTS]]; Ceph Tentacle 20.2.4
 - **Catégorie** : stockage / cluster Ceph
 - **Tags** : `ubuntu2204`, `ceph`, `tentacle`, `cephadm`
 
@@ -25,7 +25,7 @@ Définir ce que le cluster de test couvre (ou non) et réunir les prérequis ava
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Noter le périmètre : trois nœuds `ceph01`, `ceph02`, `ceph03`, MON/MGR/OSD et un pool RBD pilote, sans CephFS, RGW ni iSCSI.
-   👉 Explication : une VM mono-nœud n'est pas un cluster HA et ne prouve aucune résilience.
+   👉 Explication : une [[Glossary:VM]] mono-nœud n'est pas un cluster HA et ne prouve aucune résilience.
 
 2. Vérifier sur chaque hôte son identité, ses adresses et ses routes :
    ```bash
@@ -39,7 +39,7 @@ Définir ce que le cluster de test couvre (ou non) et réunir les prérequis ava
    ```bash
    getent hosts ceph01 ceph02 ceph03
    ```
-   👉 Explication : chaque nom doit retourner l'adresse du plan de lab; sinon corriger DNS ou `/etc/hosts` avant la suite.
+   👉 Explication : chaque nom doit retourner l'adresse du plan de lab; sinon corriger [[Glossary:DNS]] ou `/etc/hosts` avant la suite.
 
 4. Lister les disques et repérer un disque de données vide par nœud :
    ```bash
@@ -61,7 +61,7 @@ Valider avec le responsable : matériel (réseau 10 Gb/s ou plus, protection con
 
 ## Validation et retour arrière
 
-- **Validation** : trois hôtes résolus, administrables par SSH et chacun avec un disque de données vierge identifié.
+- **Validation** : trois hôtes résolus, administrables par [[Glossary:SSH]] et chacun avec un disque de données vierge identifié.
 - **Retour arrière** : aucune modification n'est faite par cette fiche; rien à annuler.
 
 ## Si le problème n'est pas résolu

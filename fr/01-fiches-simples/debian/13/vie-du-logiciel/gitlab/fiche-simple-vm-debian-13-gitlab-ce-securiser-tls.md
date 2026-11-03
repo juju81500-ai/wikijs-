@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_GitLab_CE_Securiser_TLS
 
-- **Environnement** : VM Debian 13 de préproduction; FQDN et ressources confirmés
+- **Environnement** : [[Glossary:VM]] Debian 13 de préproduction; [[Glossary:FQDN]] et ressources confirmés
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : forge Git / administration
 - **Tags** : `debian13`, `gitlab-ce`, `forge-git`, `tls`, `sauvegarde`
@@ -34,7 +34,7 @@ Configurer HTTPS, restrictions réseau et contrôles de compte avant exposition.
    ```text
    Navigateur > ouvrir la documentation officielle : https://docs.gitlab.com/install/package/
    ```
-   👉 Explication : ne pas configurer deux terminaisons TLS non coordonnées; suivre le guide GitLab correspondant. Détail à confirmer dans la documentation officielle avant application : Confirmer si TLS termine dans Omnibus ou dans un reverse proxy. Configurer un certificat valide couvrant le FQDN et la redirection HTTP vers HTTPS.
+   👉 Explication : ne pas configurer deux terminaisons [[Glossary:TLS]] non coordonnées; suivre le guide GitLab correspondant. Détail à confirmer dans la documentation officielle avant application : Confirmer si TLS termine dans Omnibus ou dans un reverse proxy. Configurer un certificat valide couvrant le FQDN et la redirection [[Glossary:HTTP]] vers HTTPS.
 
 3. Vérifier certificat et URL
    ```bash
@@ -43,15 +43,15 @@ Configurer HTTPS, restrictions réseau et contrôles de compte avant exposition.
    ```
    👉 Explication : remplacer le FQDN à remplacer; contrôler chaîne, nom, expiration et redirection.
 
-4. Appliquer les ACL validées
+4. Appliquer les [[Glossary:ACL]] validées
    ```text
    Navigateur > ouvrir la documentation officielle : https://docs.gitlab.com/install/package/
    ```
-   👉 Explication : faire valider les règles par l’équipe réseau. Détail à confirmer dans la documentation officielle avant application : Autoriser HTTPS depuis les segments approuvés. Autoriser SSH Git uniquement si utilisé. Restreindre administration et ports de backend.
+   👉 Explication : faire valider les règles par l’équipe réseau. Détail à confirmer dans la documentation officielle avant application : Autoriser HTTPS depuis les segments approuvés. Autoriser [[Glossary:SSH]] Git uniquement si utilisé. Restreindre administration et ports de backend.
 
 ## 2. Production — Contrôles
 
-Vérifier renouvellement TLS, MFA, accès anonyme, runners, ports, sauvegardes et tests d’accès refusé.
+Vérifier renouvellement TLS, [[Glossary:MFA]], accès anonyme, runners, ports, sauvegardes et tests d’accès refusé.
 
 ## 3. Production — Sécurité
 

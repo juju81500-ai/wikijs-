@@ -44,7 +44,7 @@ Activer et configurer le Pare-feu Windows avec fonctions avancées de sécurité
 
 ## 2. Production — Contrôles
 
-Journaliser les paquets rejetés (`Set-NetFirewallProfile -LogBlocked True`) et gérer les règles par GPO.
+Journaliser les paquets rejetés (`Set-NetFirewallProfile -LogBlocked True`) et gérer les règles par [[Glossary:GPO]].
 
 ## 3. Production — Sécurité
 

@@ -24,7 +24,7 @@ Régler le fuseau pour des journaux et snapshots cohérents.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Général > Localisation > Fuseau horaire (Europe/Paris).
+1. [[Glossary:GUI]] : Système > Général > Localisation > Fuseau horaire (Europe/Paris).
    ```bash
    sudo midclt call system.general.update '{"timezone": "Europe/Paris"}'
    ```
@@ -38,7 +38,7 @@ Régler le fuseau pour des journaux et snapshots cohérents.
 
 ## 2. Production — Contrôles
 
-Uniformiser le fuseau sur tous les NAS et la supervision.
+Uniformiser le fuseau sur tous les [[Glossary:NAS]] et la supervision.
 
 ## 3. Production — Sécurité
 

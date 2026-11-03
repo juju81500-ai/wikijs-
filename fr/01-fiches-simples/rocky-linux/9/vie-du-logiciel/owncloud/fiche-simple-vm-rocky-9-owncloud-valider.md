@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_ownCloud_Valider
 
-- **Environnement** : VM Rocky Linux 9; ownCloud Infinite Scale (oCIS), binaire officiel
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9; ownCloud Infinite Scale (oCIS), binaire officiel
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : Vie du logiciel / ownCloud — Valider (recette)
 - **Tags** : `owncloud`, `serveur`, `vie-du-logiciel`, `valider`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Vérifier service, logs et URL TLS.
+Vérifier service, logs et URL [[Glossary:TLS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -31,7 +31,7 @@ systemctl is-active ocis
 sudo journalctl -u ocis -n 80 --no-pager
 curl -fsSI https://CLOUD.EXAMPLE.NET/
    ```
-   👉 Explication : Remplacer le FQDN; tester connexion puis un fichier non sensible depuis un client autorisé.
+   👉 Explication : Remplacer le [[Glossary:FQDN]]; tester connexion puis un fichier non sensible depuis un client autorisé.
 
 
 ## 2. Production — Contrôles

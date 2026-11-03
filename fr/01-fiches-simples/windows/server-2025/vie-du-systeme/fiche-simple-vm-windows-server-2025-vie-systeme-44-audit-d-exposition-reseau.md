@@ -30,7 +30,7 @@ Contrôler ce qu'un voisin voit du serveur.
    Test-NetConnection IP_SERVEUR -Port 445
    Test-NetConnection IP_SERVEUR -Port 5985
    ```
-   👉 Explication : teste RDP, SMB et WinRM; seuls les ports prévus doivent répondre.
+   👉 Explication : teste [[Glossary:RDP]], SMB et WinRM; seuls les ports prévus doivent répondre.
 
 2. Si autorisé, utiliser un scanner (nmap) depuis un poste d'audit :
    ```powershell

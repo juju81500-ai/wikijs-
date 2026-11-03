@@ -35,9 +35,9 @@ Contrôler que le service est joignable en HTTPS, fermé aux tiers et restaurabl
    ```bash
    curl -I https://vault.example.net
    ```
-   👉 Explication : une réponse HTTP valide confirme le reverse proxy et le certificat.
+   👉 Explication : une réponse [[Glossary:HTTP]] valide confirme le reverse proxy et le certificat.
 
-3. Depuis un autre hôte, tester l'accès direct au port 11001 (remplacer `192.0.2.10` par l'IP de l'hôte) :
+3. Depuis un autre hôte, tester l'accès direct au port 11001 (remplacer `192.0.2.10` par l'[[Glossary:IP]] de l'hôte) :
    ```bash
    curl -m 5 http://192.0.2.10:11001
    ```

@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Chercher les erreurs matérielles et ZFS.
+Chercher les erreurs matérielles et [[Glossary:ZFS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -37,7 +37,7 @@ Chercher les erreurs matérielles et ZFS.
    ```
    👉 Explication : erreurs de lecture, d'écriture, de somme de contrôle.
 
-3. SMART : GUI Stockage > Disks > S.M.A.R.T. Tests.
+3. [[Glossary:SMART]] : [[Glossary:GUI]] Stockage > Disks > S.M.A.R.T. Tests.
    ```sh
    smartctl -H /dev/da0
    smartctl -A /dev/da0 | grep -i -E 'reallocated|pending|crc'

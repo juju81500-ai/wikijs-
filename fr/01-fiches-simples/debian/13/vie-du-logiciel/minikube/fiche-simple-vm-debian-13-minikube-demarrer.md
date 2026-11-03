@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-minikube-demarrer.md
 
-- **Environnement** : VM Debian 13 de laboratoire avec Docker Engine, Minikube mono-nœud
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire avec Docker Engine, Minikube mono-nœud
 - **OS / Version** : Debian 13 Trixie; Minikube (driver Docker)
 - **Catégorie** : conteneurs / Kubernetes de laboratoire
 - **Tags** : `debian13`, `minikube`, `docker`, `kubernetes`, `lab`
@@ -24,7 +24,7 @@ Démarrer un cluster mono-nœud avec le driver Docker et des ressources explicit
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Démarrer avec ressources explicites (`2` CPU et `4096` Mo sont des valeurs d'exemple à adapter) :
+1. Démarrer avec ressources explicites (`2` [[Glossary:CPU]] et `4096` Mo sont des valeurs d'exemple à adapter) :
    ```bash
    minikube start --driver=docker --cpus=2 --memory=4096
    ```
@@ -54,7 +54,7 @@ Documenter profil, ressources et version de Kubernetes.
 
 ## 3. Production — Sécurité
 
-- Ne pas publier l'API sur un réseau non maîtrisé.
+- Ne pas publier l'[[Glossary:API]] sur un réseau non maîtrisé.
 
 ## Validation et retour arrière
 

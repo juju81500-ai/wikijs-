@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **Environnement** : Poste Windows 11 géré, compte standard, Postman Desktop et Newman
 - **OS / Version** : Windows 11 Client
-- **Catégorie** : API / installation
+- **Catégorie** : [[Glossary:API]] / installation
 - **Tags** : `windows-11`, `postman`, `api`, `newman`, `vie-du-logiciel`
 
 ---
@@ -31,7 +31,7 @@ Installer Postman Desktop depuis la source officielle sur Windows 11 et vérifie
    ```
    👉 Explication : Recherche puis installe l'identifiant `Postman.Postman` (vérifier l'identifiant exact dans le résultat de la recherche).
 
-2. Alternative GUI : télécharger l'installeur officiel :
+2. Alternative [[Glossary:GUI]] : télécharger l'installeur officiel :
    ```text
    Navigateur > https://www.postman.com/downloads/ > Windows 64-bit > télécharger l'installeur
    ```

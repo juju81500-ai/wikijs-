@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_21_Pilotes_Et_Agents_De
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 21 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-21`
@@ -36,7 +36,7 @@ Installer l'agent de l'hyperviseur.
    doas rc-update add qemu-guest-agent default
    doas rc-service qemu-guest-agent start
    ```
-   👉 Explication : permet à l'hyperviseur d'arrêter proprement la VM et de lire son adresse IP (activer aussi l'option dans la VM). Sur VMware, installer `open-vm-tools` de la même manière.
+   👉 Explication : permet à l'hyperviseur d'arrêter proprement la VM et de lire son adresse [[Glossary:IP]] (activer aussi l'option dans la VM). Sur VMware, installer `open-vm-tools` de la même manière.
 
 3. Contrôler le service :
    ```sh
@@ -46,7 +46,7 @@ Installer l'agent de l'hyperviseur.
 
 ## 2. Production — Contrôles
 
-Activer l'option « Agent QEMU » dans les paramètres de la VM.
+Activer l'option « Agent [[Glossary:QEMU]] » dans les paramètres de la VM.
 
 ## 3. Production — Sécurité
 

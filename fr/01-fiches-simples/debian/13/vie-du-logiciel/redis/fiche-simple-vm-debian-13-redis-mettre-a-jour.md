@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Redis_Mettre_A_Jour
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; Redis des dépôts Debian
 - **Catégorie** : base clé-valeur / Redis / Mise à jour et retour arrière
 - **Tags** : `debian13`, `redis`, `mise-a-jour`
@@ -39,7 +39,7 @@ Mettre à jour Redis avec un retour arrière fondé sur sauvegarde et instantan�
    apt list --upgradable 2>/dev/null | grep -i redis
    redis-server --version
    ```
-   👉 Explication : lire les notes de version (changements de licence, d'ACL, de commandes).
+   👉 Explication : lire les notes de version (changements de licence, d'[[Glossary:ACL]], de commandes).
 
 3. Appliquer :
    ```bash

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-2025-production-preparer-installation.md
 
-- **Environnement** : Serveur physique ou VM Windows Server 2025 administré par l'organisation
+- **Environnement** : Serveur physique ou [[Glossary:VM]] Windows Server 2025 administré par l'organisation
 - **OS / Version** : Windows Server 2025 Standard ou Datacenter
 - **Catégorie** : installation / déploiement
 - **Tags** : `windows-server-2025`, `installation`, `production`, `uefi`, `openssh`
@@ -30,7 +30,7 @@ Décider rôle, licence, ressources et compatibilité avant d'installer.
 2. Vérifier la compatibilité des applications et pilotes avec Server 2025.
    👉 Explication : on évite une migration bloquée.
 
-3. Pour une VM, utiliser une génération 2/UEFI si la plateforme le permet et un modèle CPU exposant SSE4.2 et POPCNT (hyperviseur : **paramètres de la VM > Processeur**).
+3. Pour une VM, utiliser une génération 2/UEFI si la plateforme le permet et un modèle [[Glossary:CPU]] exposant SSE4.2 et POPCNT (hyperviseur : **paramètres de la VM > Processeur**).
    👉 Explication : Server 2025 requiert notamment SSE4.2 et POPCNT.
 
 4. Prévoir les ressources selon la charge, pas seulement le minimum d'installation.

@@ -24,7 +24,7 @@ Installer le client WireGuard depuis la source officielle.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : télécharger l'installateur Windows depuis la page officielle wireguard.com/install puis l'exécuter en administrateur.
+1. [[Glossary:GUI]] : télécharger l'installateur Windows depuis la page officielle wireguard.com/install puis l'exécuter en administrateur.
    👉 Explication : N'utiliser que wireguard.com; consigner la version.
 
 2. Alternative en PowerShell élevé avec winget (vérifier l'identifiant publié) :

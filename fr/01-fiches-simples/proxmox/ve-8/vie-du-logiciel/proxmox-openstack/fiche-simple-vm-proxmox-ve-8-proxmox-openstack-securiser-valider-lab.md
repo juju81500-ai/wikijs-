@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Proxmox_VE_8_Proxmox_OpenStack_Securiser_Valider_Lab
 
-- **Environnement** : VM DevStack de test sur réseau isolé Proxmox VE 8.x
-- **OS / Version** : Ubuntu Server 24-04 LTS / DevStack; Proxmox VE 8.x
+- **Environnement** : [[Glossary:VM]] DevStack de test sur réseau isolé Proxmox VE 8.x
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] / DevStack; Proxmox VE 8.x
 - **Catégorie** : cloud privé / sécurité et validation
 - **Tags** : `openstack`, `devstack`, `securite`, `validation`, `lab`
 
@@ -26,7 +26,7 @@ Valider le lab sans exposer interfaces d’administration, secrets ni données r
 
 1. Dans Proxmox, vérifier l’interface de VM, son bridge/VLAN sans uplink de production et le pare-feu appliqué.
    👉 Explication : contrôler plan d’adressage et règles, pas seulement le nom du bridge.
-2. Depuis la console Ubuntu, examiner adresses/routes et services via CLI authentifiée :
+2. Depuis la console Ubuntu, examiner adresses/routes et services via [[Glossary:CLI]] authentifiée :
    ```bash
    ip address
    ip route
@@ -35,7 +35,7 @@ Valider le lab sans exposer interfaces d’administration, secrets ni données r
    ```
    👉 Explication : expurger sorties avant partage, elles peuvent révéler l’infrastructure.
 3. Depuis Horizon sur adresse interne uniquement, créer une ressource minimale jetable seulement si maîtrisé; vérifier puis supprimer selon dépendances.
-   👉 Explication : ne pas créer réseau externe, floating IP ou règle d’entrée Internet pour exposer Horizon.
+   👉 Explication : ne pas créer réseau externe, floating [[Glossary:IP]] ou règle d’entrée Internet pour exposer Horizon.
 4. En incident, conserver diagnostic expurgé et isoler la VM; ne pas désactiver globalement le pare-feu.
    👉 Explication : erreur de déploiement ne justifie pas d’élargir les accès.
 

@@ -13,11 +13,11 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : Docker (Hôte Debian / Ubuntu)
 - **OS / Version** : Docker Engine 24+ / Compose v2
-- **Catégorie** : Sécurité & VPN / WireGuard
+- **Catégorie** : Sécurité & [[Glossary:VPN]] / WireGuard
 - **Tags** : `[docker]`, `[wireguard]`, `[vpn]`, `[docker-compose]`, `[wg-easy]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Déployer un serveur VPN moderne et haute performance WireGuard dans un conteneur Docker avec l'interface d'administration Web `wg-easy`, configurer la persistance des clés et sécuriser l'accès au port UDP.
+Déployer un serveur VPN moderne et haute performance WireGuard dans un conteneur Docker avec l'interface d'administration Web `wg-easy`, configurer la persistance des clés et sécuriser l'accès au port [[Glossary:UDP]].
 
 ---
 
@@ -62,7 +62,7 @@ Déployer un serveur VPN moderne et haute performance WireGuard dans un conteneu
          - net.ipv4.ip_forward=1
        restart: unless-stopped
    ```
-   👉 Explication : Remplacer la version, le nom DNS et le DNS interne. Générer le hash bcrypt selon la documentation wg-easy, le fournir hors du dépôt et ne publier l'interface qu'à travers un accès d'administration protégé.
+   👉 Explication : Remplacer la version, le nom [[Glossary:DNS]] et le DNS interne. Générer le hash bcrypt selon la documentation wg-easy, le fournir hors du dépôt et ne publier l'interface qu'à travers un accès d'administration protégé.
 
 3. Démarrage de la stack Docker Compose :
    `docker compose up -d`
@@ -73,9 +73,9 @@ Déployer un serveur VPN moderne et haute performance WireGuard dans un conteneu
 ## 🔒 3. Production — Façon Sécurisée (Hardening & Isolation Enterprise)
 1. Vérifier que le port d'administration est lié à `127.0.0.1` dans Compose, puis valider et appliquer :
    `docker compose config --quiet && docker compose up -d`
-   👉 Explication : Empêche l'exposition de la console Web d'administration sur Internet (accessible uniquement via tunnel SSH ou Reverse Proxy local).
+   👉 Explication : Empêche l'exposition de la console Web d'administration sur Internet (accessible uniquement via tunnel [[Glossary:SSH]] ou Reverse Proxy local).
 
-2. Activation du transfert d'IP sécurisé (IP Forwarding) sur l'hôte Linux :
+2. Activation du transfert d'[[Glossary:IP]] sécurisé (IP Forwarding) sur l'hôte Linux :
    `sysctl -w net.ipv4.ip_forward=1 && echo "net.ipv4.ip_forward=1" >> /etc/sysctl.d/99-wireguard.conf`
    👉 Explication : Permet au noyau hôte de router le trafic chiffré des clients VPN vers le réseau local.
 

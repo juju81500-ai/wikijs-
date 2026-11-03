@@ -21,7 +21,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [inventorier et protéger le plan de contrôle](/fr/01-fiches-simples/transverses/docker/securite/fiche-simple-hote-docker-securite-hardening-inventaire-plan-controle).
 
-Le socket Docker donne un contrôle privilégié de l'hôte. Ne jamais le monter dans une application ordinaire; éviter son exposition TCP, et limiter l'accès au groupe `docker` comme un accès root.
+Le socket Docker donne un contrôle privilégié de l'hôte. Ne jamais le monter dans une application ordinaire; éviter son exposition [[Glossary:TCP]], et limiter l'accès au groupe `docker` comme un accès root.
 
 ```bash
 docker version
@@ -61,7 +61,7 @@ Utiliser des volumes nommés ou des bind mounts explicitement protégés. Sauveg
 
 Fiche simple : [limiter les ressources et les journaux](/fr/01-fiches-simples/transverses/docker/securite/fiche-simple-hote-docker-securite-hardening-ressources-journaux).
 
-Définir des plafonds CPU/mémoire adaptés aux services et une politique de rotation des logs Docker. Superviser l'espace de `/var/lib/docker`, les erreurs de stockage, les redémarrages et les ports exposés. Ne pas lancer `docker system prune --volumes` sur un hôte de production sans inventaire et validation explicite.
+Définir des plafonds [[Glossary:CPU]]/mémoire adaptés aux services et une politique de rotation des logs Docker. Superviser l'espace de `/var/lib/docker`, les erreurs de stockage, les redémarrages et les ports exposés. Ne pas lancer `docker system prune --volumes` sur un hôte de production sans inventaire et validation explicite.
 
 ## 6. Vérifier et exploiter
 

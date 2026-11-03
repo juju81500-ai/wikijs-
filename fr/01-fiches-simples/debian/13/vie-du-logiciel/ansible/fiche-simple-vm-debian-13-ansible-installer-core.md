@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-ansible-installer-core.md
 
-- **Environnement** : VM Debian 13 Trixie, dépôts Debian approuvés
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie, dépôts Debian approuvés
 - **OS / Version** : Debian 13; Ansible Core
 - **Catégorie** : automatisation / installation
 - **Tags** : `debian13`, `ansible-core`, `apt`, `installation`, `version`
@@ -35,7 +35,7 @@ Installer Ansible Core depuis les dépôts Debian et consigner sa version et sa 
    ```bash
    sudo apt install ansible-core openssh-client
    ```
-   👉 Explication : installe Ansible Core et le client SSH.
+   👉 Explication : installe Ansible Core et le client [[Glossary:SSH]].
 
 3. Vérifier :
    ```bash
@@ -57,7 +57,7 @@ Installer Ansible Core depuis les dépôts Debian et consigner sa version et sa 
 ## 3. Production — Sécurité
 
 - Installer uniquement depuis un dépôt Debian approuvé.
-- Ne pas ajouter de dépôt tiers ou contourner APT Secure.
+- Ne pas ajouter de dépôt tiers ou contourner [[Glossary:APT]] Secure.
 - Protéger le compte utilisateur et le répertoire de travail; ne pas exécuter Ansible depuis un compte partagé.
 - Maintenir une méthode de mise à jour et de retour arrière vérifiée.
 

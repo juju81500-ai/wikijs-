@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_04_Preparation_Du_Support_D
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 04 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-04`
@@ -24,7 +24,7 @@ Rendre l'image amorçable sur le matériel ou l'hyperviseur.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Sur un matériel physique, identifier la clé USB puis y écrire l'image `vga` (remplacer `/dev/sdX`) :
+1. Sur un matériel physique, identifier la clé [[Glossary:USB]] puis y écrire l'image `vga` (remplacer `/dev/sdX`) :
    ```sh
    lsblk -o NAME,SIZE,MODEL,TRAN
    sudo dd if=OPNsense-VERSION-vga-amd64.img of=/dev/sdX bs=4M status=progress oflag=sync

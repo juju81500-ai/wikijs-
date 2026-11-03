@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : PBX installé, interface locale protégée et identifiants opérateur fournis par canal sûr
 - **OS / Version** : FreePBX/Asterisk officiellement compatibles
-- **Catégorie** : téléphonie IP / configuration
+- **Catégorie** : téléphonie [[Glossary:IP]] / configuration
 - **Tags** : `debian12`, `freepbx`, `asterisk`, `sip`, `tls`, `srtp`
 
 ---
@@ -36,7 +36,7 @@ Configurer les accès, trunks et routes d'appel de base sans exposer de secrets 
 4. Configurer les routes : **Connectivity > Inbound Routes** et **Connectivity > Outbound Routes**.
    👉 Explication : restreindre les destinations (pas d'international ni de numéros surtaxés par défaut) et limiter le coût.
 
-5. Activer TLS/SRTP : **Settings > Asterisk SIP Settings > Chan PJSIP Settings** (transport TLS) puis, par extension, **Advanced > Media Encryption**.
+5. Activer [[Glossary:TLS]]/SRTP : **Settings > Asterisk SIP Settings > Chan PJSIP Settings** (transport TLS) puis, par extension, **Advanced > Media Encryption**.
    👉 Explication : uniquement si tous les terminaux et l'opérateur le prennent en charge.
 
 6. Appliquer : cliquer sur **Apply Config**.

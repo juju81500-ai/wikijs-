@@ -24,7 +24,7 @@ Mettre à jour le VCSA par la VAMI avec un retour arrière préparé.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Avant toute mise à jour : lancer une sauvegarde VAMI et prendre un snapshot de la VM VCSA (éteint ou à chaud, selon la documentation Broadcom).
+1. Avant toute mise à jour : lancer une sauvegarde VAMI et prendre un snapshot de la [[Glossary:VM]] VCSA (éteint ou à chaud, selon la documentation Broadcom).
    👉 Explication : le snapshot est un retour arrière court, pas une sauvegarde.
 2. Consulter les notes de version et la matrice d'interopérabilité (ESXi, sauvegarde, produits tiers).
    👉 Explication : un VCSA mis à jour avant ses hôtes ou produits liés peut devenir incompatible.
@@ -35,7 +35,7 @@ Mettre à jour le VCSA par la VAMI avec un retour arrière préparé.
 
 ## 2. Production — Contrôles
 
-- Mise à jour en fenêtre de maintenance, hôtes en état stable, DRS/HA contrôlés (voir fiches HA et DRS).
+- Mise à jour en fenêtre de maintenance, hôtes en état stable, [[Glossary:DRS]]/HA contrôlés (voir fiches HA et DRS).
 
 ## 3. Production — Sécurité
 

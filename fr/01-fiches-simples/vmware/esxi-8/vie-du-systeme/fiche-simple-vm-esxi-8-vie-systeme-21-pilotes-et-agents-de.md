@@ -37,7 +37,7 @@ Installer les pilotes constructeur et les VMware Tools des invités.
    ```
    👉 Explication : à faire en mode maintenance, puis redémarrer.
 
-3. Dans chaque VM, installer VMware Tools (Host Client : **VM > Actions > Invité > Installer VMware Tools**; Linux : `open-vm-tools`) :
+3. Dans chaque [[Glossary:VM]], installer VMware Tools (Host Client : **VM > Actions > Invité > Installer VMware Tools**; Linux : `open-vm-tools`) :
    ```sh
    vim-cmd vmsvc/getallvms
    vim-cmd vmsvc/get.guest VMID | grep -i toolsStatus

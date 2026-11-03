@@ -98,7 +98,7 @@ Cliquer sur le nom pour voir l'état de couverture ; une procédure détaillée 
 
 ### Sauvegarde, restauration et PRA / PCA
 
-- [Nakivo-Altaro](/fr/01-fiches-simples/logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-nakivo-altaro) — Partiel — NAKIVO Windows Server 2022 et Transporter Linux sur Debian 13 et Ubuntu Server 24-04; Altaro/Hornetsecurity limité à la documentation publique de VM Backup
+- [Nakivo-Altaro](/fr/01-fiches-simples/logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-nakivo-altaro) — Partiel — NAKIVO Windows Server 2022 et Transporter Linux sur Debian 13 et Ubuntu Server 24-04; Altaro/Hornetsecurity limité à la documentation publique de [[Glossary:VM]] Backup
 - [Robocopy](/fr/01-fiches-simples/logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-robocopy) — Couvert
 - [Veeam-Backup-Replication](/fr/01-fiches-simples/logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-veeam-backup-replication) — Couvert
 - [rsync](/fr/01-fiches-simples/logiciels/07-sauvegarde-restauration-et-pra-pca/fiche-logiciel-rsync) — Couvert
@@ -119,7 +119,7 @@ Cliquer sur le nom pour voir l'état de couverture ; une procédure détaillée 
 ### Services Web et bases de données
 
 - [Apache](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-apache) — Couvert
-- [IIS](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-iis) — Guide complet — installation du rôle IIS et site pilote Windows Server 2022
+- [IIS](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-iis) — Guide complet — installation du rôle [[Glossary:IIS]] et site pilote Windows Server 2022
 - [MariaDB](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-mariadb) — Couvert
 - [MySQL](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-mysql) — Couvert
 - [Nginx](/fr/01-fiches-simples/logiciels/14-services-web-et-bases-de-donnees/fiche-logiciel-nginx) — Couvert

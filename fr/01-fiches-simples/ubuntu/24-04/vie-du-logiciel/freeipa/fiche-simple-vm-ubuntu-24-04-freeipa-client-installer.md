@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_FreeIPA_Client_Installer
 
-- **Environnement** : VM Ubuntu 24-04 cliente d'un domaine FreeIPA existant
-- **OS / Version** : Ubuntu 24-04 LTS Noble; paquet freeipa-client des dépôts, version à vérifier
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 cliente d'un domaine FreeIPA existant
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; paquet freeipa-client des dépôts, version à vérifier
 - **Catégorie** : FreeIPA client / installer
 - **Tags** : `freeipa`, `ubuntu24-04`, `vie-du-logiciel`, `installer`
 
@@ -30,7 +30,7 @@ Installer le client FreeIPA sur Ubuntu depuis les dépôts de la distribution.
    apt-cache policy freeipa-client
    sudo apt install freeipa-client
    ```
-   👉 Explication : Le paquet installe ipa-client-install et les dépendances (SSSD, Kerberos); noter la version et vérifier qu'elle est compatible avec le serveur.
+   👉 Explication : Le paquet installe ipa-client-install et les dépendances ([[Glossary:SSSD]], Kerberos); noter la version et vérifier qu'elle est compatible avec le serveur.
 
 2. Contrôler la commande d'inscription :
    ```bash

@@ -30,7 +30,7 @@ Filtrer l'accès aux services de l'hôte.
    esxcli network firewall ruleset list
    esxcli network firewall ruleset allowedip add -r sshServer -i RESEAU_ADMIN
    ```
-   👉 Explication : `RESEAU_ADMIN` = réseau d'administration (CIDR); limite SSH à ces adresses.
+   👉 Explication : `RESEAU_ADMIN` = réseau d'administration ([[Glossary:CIDR]]); limite [[Glossary:SSH]] à ces adresses.
 
 2. Désactiver les ensembles de règles inutiles :
    ```sh
@@ -47,7 +47,7 @@ Filtrer l'accès aux services de l'hôte.
 
 ## 2. Production — Contrôles
 
-Autoriser seulement vCenter, NTP, DNS et SSH temporaire.
+Autoriser seulement vCenter, [[Glossary:NTP]], [[Glossary:DNS]] et SSH temporaire.
 
 ## 3. Production — Sécurité
 

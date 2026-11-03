@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Afficher un avertissement légal et identifier le NAS.
+Afficher un avertissement légal et identifier le [[Glossary:NAS]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Général > Paramètres > Texte de bannière de connexion (ou Services > SSH > Paramètres avancés > Bannière).
+1. [[Glossary:GUI]] : Système > Général > Paramètres > Texte de bannière de connexion (ou Services > [[Glossary:SSH]] > Paramètres avancés > Bannière).
    ```bash
    sudo midclt call ssh.config | grep -i banner
    ```

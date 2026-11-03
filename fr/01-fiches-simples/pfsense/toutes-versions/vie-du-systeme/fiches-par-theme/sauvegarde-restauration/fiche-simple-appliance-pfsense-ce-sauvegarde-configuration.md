@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-appliance-pfsense-ce-sauvegarde-configuration.md
 
-- **Environnement** : pfSense CE sur VM Proxmox VE ou appliance dédiée, dépôt de sauvegarde hors pare-feu
+- **Environnement** : pfSense CE sur [[Glossary:VM]] Proxmox VE ou appliance dédiée, dépôt de sauvegarde hors pare-feu
 - **OS / Version** : pfSense CE 2.x (base FreeBSD) - Toutes-versions
 - **Catégorie** : Sauvegarde / Configuration
 - **Tags** : `pfsense`, `ce`, `backup`, `xml`, `restore`, `freebsd`
@@ -26,7 +26,7 @@ Exporter la configuration complète de pfSense CE sous forme chiffrée, conserve
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Ouvrir l'export de configuration :
    `Diagnostics > Backup & Restore` (onglet Backup/Restore) : Backup area = `All configuration`
-   👉 Explication : Exporte l'ensemble du fichier `/cf/conf/config.xml` : interfaces, règles, alias, utilisateurs, VPN.
+   👉 Explication : Exporte l'ensemble du fichier `/cf/conf/config.xml` : interfaces, règles, alias, utilisateurs, [[Glossary:VPN]].
 2. Chiffrer l'export avant téléchargement :
    cocher `Encrypt this configuration file`, saisir une phrase de passe d'au moins 16 caractères, puis cliquer `Download configuration as XML`
    👉 Explication : Le fichier contient des secrets (clés VPN, certificats privés). Sans chiffrement, il est lisible en clair.

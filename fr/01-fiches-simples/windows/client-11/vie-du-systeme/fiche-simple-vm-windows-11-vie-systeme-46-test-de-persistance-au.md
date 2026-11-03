@@ -50,7 +50,7 @@ Vérifier que la configuration survit à un redémarrage.
    whoami
    gpresult /r | Select-String 'Domaine|Domain Name'
    ```
-   👉 Explication : confirme l'identité, les GPO et le domaine.
+   👉 Explication : confirme l'identité, les [[Glossary:GPO]] et le domaine.
 
 ## 2. Production — Contrôles
 

@@ -31,7 +31,7 @@ Inscrire l'hôte dans l'inventaire et revoir les accès.
    esxcli hardware platform get
    esxcli network ip interface ipv4 get
    ```
-   👉 Explication : nom, version, numéro de série et IP : à saisir dans la CMDB.
+   👉 Explication : nom, version, numéro de série et [[Glossary:IP]] : à saisir dans la [[Glossary:CMDB]].
 
 2. Lister les comptes et droits :
    ```sh

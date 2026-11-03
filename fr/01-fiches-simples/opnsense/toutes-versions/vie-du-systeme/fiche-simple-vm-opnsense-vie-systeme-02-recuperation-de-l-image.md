@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_02_Recuperation_De_L_Image
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 02 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-02`
@@ -24,7 +24,7 @@ Obtenir l'image officielle d'OPNsense.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Télécharger l'image `dvd` (ISO) ou `vga`/`serial` (clé USB) depuis la page officielle https://opnsense.org/download/ (Architecture amd64, Type dvd, Miroir au choix). En shell :
+1. Télécharger l'image `dvd` (ISO) ou `vga`/`serial` (clé [[Glossary:USB]]) depuis la page officielle https://opnsense.org/download/ (Architecture amd64, Type dvd, Miroir au choix). En shell :
    ```sh
    mkdir -p ~/iso && cd ~/iso
    curl -fLO https://MIROIR/releases/VERSION/OPNsense-VERSION-dvd-amd64.iso.bz2

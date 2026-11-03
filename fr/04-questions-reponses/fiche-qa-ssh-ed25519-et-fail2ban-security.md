@@ -14,7 +14,7 @@ dateModified: 2026-11-03T09:36:14Z
 - **Tags** : `linux`, `ssh`, `ed25519`, `fail2ban`, `securite`
 
 ### ❓ Question
-Comment réduire les tentatives de connexion SSH sans perdre l'accès d'administration ?
+Comment réduire les tentatives de connexion [[Glossary:SSH]] sans perdre l'accès d'administration ?
 
 ---
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 draw-io Desktop
 
-- **Catégorie** : Topologie, IPAM et outils métiers
+- **Catégorie** : Topologie, [[Glossary:IPAM]] et outils métiers
 - **Plateforme** : Multiplateforme
 - **Produit (matrice)** : draw-io Desktop
 - **Statut dans le pack** : Couvert

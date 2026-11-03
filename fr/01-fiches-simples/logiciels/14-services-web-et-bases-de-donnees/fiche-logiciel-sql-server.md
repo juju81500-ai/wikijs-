@@ -13,13 +13,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Catégorie** : Services Web et bases de données
 - **Plateforme** : Linux / Windows
-- **Produit (matrice)** : MySQL / MariaDB / PostgreSQL / SQL Server
+- **Produit (matrice)** : MySQL / MariaDB / PostgreSQL / [[Glossary:SQL]] Server
 - **Statut dans le pack** : Couvert
 - **Tags** : `logiciel`, `14-services-web-et-bases-de-donnees`, `couvert`
 
 ## 📚 Couverture dans le pack
 
-Couvert — série par étape pour Windows Server 2022 (SQL Server 2022, GUI SSMS et PowerShell/sqlcmd) (prérequis, installation, configuration, sécurisation, recette, sauvegarde/restauration, mise à jour et retour arrière). Always On, clusters de basculement et SQL Server sur Linux non traités.
+Couvert — série par étape pour Windows Server 2022 (SQL Server 2022, [[Glossary:GUI]] SSMS et PowerShell/sqlcmd) (prérequis, installation, configuration, sécurisation, recette, sauvegarde/restauration, mise à jour et retour arrière). Always On, clusters de basculement et SQL Server sur Linux non traités.
 
 ## 🧭 Utilisation
 

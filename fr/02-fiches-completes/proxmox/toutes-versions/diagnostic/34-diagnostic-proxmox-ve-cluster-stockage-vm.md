@@ -53,7 +53,7 @@ ip route
 getent hosts <AUTRE_NOEUD>
 ```
 
-Vérifier quorum, appartenance et liens Corosync, adresses fixes, résolution, synchronisation horaire et pertes/latence sur le réseau cluster. Les paquets Corosync utilisent UDP 5405–5412 selon la configuration. Les changements de réseau peuvent couper l'accès et l'appartenance; utiliser la console et le processus de staging documenté.
+Vérifier quorum, appartenance et liens Corosync, adresses fixes, résolution, synchronisation horaire et pertes/latence sur le réseau cluster. Les paquets Corosync utilisent [[Glossary:UDP]] 5405–5412 selon la configuration. Les changements de réseau peuvent couper l'accès et l'appartenance; utiliser la console et le processus de staging documenté.
 
 Si le cluster est non-quorate, conserver l'état en lecture et rétablir d'abord le réseau ou le nœud manquant. `pvecm expected 1` n'est pas une réparation générique : ne l'utiliser que selon la procédure Proxmox correspondant au scénario, après analyse de split-brain et approbation.
 
@@ -68,7 +68,7 @@ lsblk -f
 journalctl -b -u pvestatd --no-pager
 ```
 
-Vérifier montage, reachability, capacité, latence, erreurs I/O et état du stockage partagé depuis tous les nœuds concernés. Un stockage plein ou indisponible peut bloquer des VM; ne pas retirer puis recréer une définition de stockage avant d'avoir prouvé où résident les volumes.
+Vérifier montage, reachability, capacité, latence, erreurs I/O et état du stockage partagé depuis tous les nœuds concernés. Un stockage plein ou indisponible peut bloquer des [[Glossary:VM]]; ne pas retirer puis recréer une définition de stockage avant d'avoir prouvé où résident les volumes.
 
 ## 5. Diagnostiquer une VM ou un conteneur
 

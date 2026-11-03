@@ -24,13 +24,13 @@ Remplacer ou renouveler les certificats du vCenter pour obtenir une chaîne de c
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Dans vSphere Client : **Administration > Certificats > Gestion des certificats** ; consulter les dates d'expiration des certificats Machine SSL et des solutions.
+1. Dans vSphere Client : **Administration > Certificats > Gestion des certificats** ; consulter les dates d'expiration des certificats Machine [[Glossary:SSL]] et des solutions.
    👉 Explication : contrôler régulièrement : un certificat expiré coupe l'accès.
-2. Générer une demande de signature : **Actions > Certificat Machine SSL > Générer une demande de signature de certificat** avec le FQDN `VCSA_FQDN`, la faire signer par l'autorité interne.
+2. Générer une demande de signature : **Actions > Certificat Machine SSL > Générer une demande de signature de certificat** avec le [[Glossary:FQDN]] `VCSA_FQDN`, la faire signer par l'autorité interne.
    👉 Explication : la clé privée reste sur le vCenter.
 3. Importer la chaîne signée par **Actions > Importer et remplacer le certificat**.
    👉 Explication : les services redémarrent ; vérifier les chaînes d'approbation sur les postes.
-4. Option en CLI sur l'appliance (shell) : `/usr/lib/vmware-vmca/bin/certificate-manager`.
+4. Option en [[Glossary:CLI]] sur l'appliance (shell) : `/usr/lib/vmware-vmca/bin/certificate-manager`.
    👉 Explication : l'outil propose des options guidées ; suivre la documentation de la version.
 
 ## 2. Production — Contrôles

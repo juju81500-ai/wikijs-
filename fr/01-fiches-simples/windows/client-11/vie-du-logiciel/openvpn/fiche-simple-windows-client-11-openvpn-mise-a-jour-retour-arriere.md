@@ -24,7 +24,7 @@ Mettre à jour le client OpenVPN avec retour arrière.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Noter la version actuelle (Paramètres > Applications > Applications installées > OpenVPN) et conserver le MSI actuel.
+1. Noter la version actuelle (Paramètres > Applications > Applications installées > OpenVPN) et conserver le [[Glossary:MSI]] actuel.
    👉 Explication : La version de référence sert au retour arrière.
 
 2. Télécharger le nouveau MSI sur la page officielle, vérifier l'empreinte puis installer par-dessus :

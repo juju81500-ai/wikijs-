@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-rocky-9-pile-web-prerequis-versions.md
 
-- **Environnement** : VM ou serveur Rocky Linux 9 hébergeant une application PHP avec MariaDB locale
-- **OS / Version** : Rocky Linux 9 / RHEL 9; Nginx, PHP-FPM et MariaDB des dépôts actifs
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux 9 hébergeant une application PHP avec MariaDB locale
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9; Nginx, PHP-FPM et MariaDB des dépôts actifs
 - **Catégorie** : services web / prérequis
 - **Tags** : `rocky9`, `nginx`, `php-fpm`, `mariadb`, `selinux`
 
@@ -32,7 +32,7 @@ Choisir les versions PHP, Nginx et MariaDB avant d'installer, sans les supposer.
    ```
    👉 Explication : Affiche la version de Rocky, les streams PHP proposés et les versions candidates des paquets.
 
-2. Noter hostname/FQDN, IP stable, stockage, ports, sauvegardes et accès console.
+2. Noter hostname/FQDN, [[Glossary:IP]] stable, stockage, ports, sauvegardes et accès console.
    👉 Explication : ces éléments sont à figer avant l'installation.
 
 ## 2. Production — Contrôles

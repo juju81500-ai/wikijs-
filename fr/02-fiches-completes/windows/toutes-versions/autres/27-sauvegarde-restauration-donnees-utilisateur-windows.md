@@ -56,7 +56,7 @@ Fiche simple : [vérifier la copie et protéger le support](/fr/01-fiches-simple
 
 Fiche simple : [restaurer sans écraser](/fr/01-fiches-simples/windows/toutes-versions/vie-du-systeme/fiches-par-theme/sauvegarde-restauration/fiche-simple-vm-windows-sauvegarde-donnees-utilisateur-restaurer-sans-ecraser).
 
-Restaurer d'abord vers un répertoire temporaire, confirmer l'identité de l'utilisateur et la date de sauvegarde, puis comparer avec les fichiers présents. Fusionner seulement les dossiers approuvés; ne pas écraser en bloc `AppData`, les profils système ou les ACL sans procédure propre à l'application.
+Restaurer d'abord vers un répertoire temporaire, confirmer l'identité de l'utilisateur et la date de sauvegarde, puis comparer avec les fichiers présents. Fusionner seulement les dossiers approuvés; ne pas écraser en bloc `AppData`, les profils système ou les [[Glossary:ACL]] sans procédure propre à l'application.
 
 Avec Robocopy, inverser source et destination après contrôle, commencer par une simulation (`/L`) et lire la liste des opérations avant la copie réelle. Ne pas utiliser `/MIR` pour une restauration de profil.
 

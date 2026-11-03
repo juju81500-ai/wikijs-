@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Pile LEMP sur Debian 13 : Nginx, PHP-FPM et MariaDB
 
-- **Environnement** : VM ou serveur dédié
+- **Environnement** : [[Glossary:VM]] ou serveur dédié
 - **OS** : Debian 13 (Trixie)
 - **Rôle** : Héberger une application Web PHP avec une base MariaDB locale
 - **Tags** : `debian13`, `nginx`, `php-fpm`, `mariadb`, `lemp`, `tls`
@@ -22,7 +22,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [préparer la pile LEMP](/fr/01-fiches-simples/debian/13/vie-du-logiciel/lemp/fiche-simple-vm-debian-13-lemp-preparer).
 
-- Prévoir un nom DNS, une adresse IP stable et un accès console ou SSH de secours.
+- Prévoir un nom [[Glossary:DNS]], une adresse [[Glossary:IP]] stable et un accès console ou [[Glossary:SSH]] de secours.
 - Remplacer `app.example.net` et les adresses d'exemple par les valeurs de l'environnement.
 - N'exposer que les ports nécessaires. Ne pas publier MariaDB sur Internet.
 
@@ -133,9 +133,9 @@ sudo rm /var/www/app/public/index.php
 
 Fiche simple : [configurer TLS et le filtrage](/fr/01-fiches-simples/debian/13/vie-du-logiciel/lemp/fiche-simple-vm-debian-13-lemp-configurer-tls-filtrage).
 
-- Publier le site uniquement après résolution DNS correcte et validation HTTP.
-- Autoriser TCP/80 pour la validation du certificat et TCP/443 pour les utilisateurs; limiter SSH au réseau d'administration.
-- Déployer le certificat avec l'outil ACME retenu par l'organisation, puis vérifier le renouvellement automatique.
+- Publier le site uniquement après résolution DNS correcte et validation [[Glossary:HTTP]].
+- Autoriser [[Glossary:TCP]]/80 pour la validation du certificat et TCP/443 pour les utilisateurs; limiter SSH au réseau d'administration.
+- Déployer le certificat avec l'outil [[Glossary:ACME]] retenu par l'organisation, puis vérifier le renouvellement automatique.
 - Ne pas ajouter de règle de pare-feu avant d'avoir identifié le gestionnaire actif et la méthode d'accès de secours.
 
 ## 6. Sauvegarde et retour arrière

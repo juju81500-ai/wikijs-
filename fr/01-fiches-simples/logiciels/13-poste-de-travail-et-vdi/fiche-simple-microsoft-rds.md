@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Microsoft RDS
 
-- **Environnement** : VM Windows Server 2022 (lab) ; serveur physique ou VM de production derrière VPN ou passerelle RD Gateway
+- **Environnement** : [[Glossary:VM]] Windows Server 2022 (lab) ; serveur physique ou VM de production derrière [[Glossary:VPN]] ou passerelle RD Gateway
 - **OS / Version** : Windows Server 2022 Standard ou Datacenter - Remote Desktop Services (rôle Hôte Session Bureau à distance, à vérifier sur la version déployée)
-- **Catégorie** : Poste de travail et VDI
+- **Catégorie** : Poste de travail et [[Glossary:VDI]]
 - **Tags** : `[winsrv2022]`, `[rds]`, `[rdp]`, `[session-host]`, `[nla]`, `[powershell]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer le rôle Hôte Session Bureau à distance sur Windows Server 2022, activer RDP avec authentification NLA, limiter le pare-feu au réseau d'administration et valider une connexion. Le broker, les collections et les licences RDS (serveur de licences, CAL) sont hors périmètre de cette fiche simple.
+Installer le rôle Hôte Session Bureau à distance sur Windows Server 2022, activer [[Glossary:RDP]] avec authentification [[Glossary:NLA]], limiter le pare-feu au réseau d'administration et valider une connexion. Le broker, les collections et les licences RDS (serveur de licences, CAL) sont hors périmètre de cette fiche simple.
 
 ---
 
@@ -39,7 +39,7 @@ Installer le rôle Hôte Session Bureau à distance sur Windows Server 2022, act
    Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server' -Name 'fDenyTSConnections' -Value 0
    Enable-NetFirewallRule -DisplayGroup 'Bureau à distance'
    ```
-   👉 Explication : La valeur `0` autorise les connexions Bureau à distance ; le groupe de règles pare-feu les autorise sur le port TCP 3389. Sur un Windows Server en anglais, le nom du groupe est `Remote Desktop` (à vérifier sur la version déployée).
+   👉 Explication : La valeur `0` autorise les connexions Bureau à distance ; le groupe de règles pare-feu les autorise sur le port [[Glossary:TCP]] 3389. Sur un Windows Server en anglais, le nom du groupe est `Remote Desktop` (à vérifier sur la version déployée).
 
 4. Contrôle du service et test de connexion :
    ```powershell
@@ -66,12 +66,12 @@ Installer le rôle Hôte Session Bureau à distance sur Windows Server 2022, act
    ```powershell
    mstsc /v:<nom_de_l_hote>
    ```
-   👉 Explication : Ouvre le client Bureau à distance vers `<nom_de_l_hote>`, nom DNS du serveur. Depuis un poste hors du réseau d'administration, la connexion doit être refusée une fois la règle restreinte (étape 3 de la section sécurisée).
+   👉 Explication : Ouvre le client Bureau à distance vers `<nom_de_l_hote>`, nom [[Glossary:DNS]] du serveur. Depuis un poste hors du réseau d'administration, la connexion doit être refusée une fois la règle restreinte (étape 3 de la section sécurisée).
 
 ---
 
 ## 🔒 3. Production — Façon Sécurisée (Hardening & Isolation Enterprise)
-1. Exiger le chiffrement TLS et un niveau de chiffrement élevé :
+1. Exiger le chiffrement [[Glossary:TLS]] et un niveau de chiffrement élevé :
    ```powershell
    Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -Name 'SecurityLayer' -Value 2
    Set-ItemProperty -Path 'HKLM:\SYSTEM\CurrentControlSet\Control\Terminal Server\WinStations\RDP-Tcp' -Name 'MinEncryptionLevel' -Value 3
@@ -82,7 +82,7 @@ Installer le rôle Hôte Session Bureau à distance sur Windows Server 2022, act
    ```powershell
    Set-NetFirewallRule -DisplayGroup 'Bureau à distance' -Direction Inbound -RemoteAddress '<reseau_administration>'
    ```
-   👉 Explication : Remplacer `<reseau_administration>` par le sous-réseau de gestion au format CIDR (exemple : `192.168.10.0/24`). Les connexions RDP venant d'autres adresses sont alors bloquées. Ne pas exposer le port 3389 directement sur Internet : passer par un VPN ou une passerelle RD Gateway.
+   👉 Explication : Remplacer `<reseau_administration>` par le sous-réseau de gestion au format [[Glossary:CIDR]] (exemple : `192.168.10.0/24`). Les connexions RDP venant d'autres adresses sont alors bloquées. Ne pas exposer le port 3389 directement sur Internet : passer par un VPN ou une passerelle RD Gateway.
 
 3. Contrôle des sessions ouvertes :
    ```powershell

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-opentofu-installer.md
 
-- **Environnement** : Debian 13 Trixie amd64, dépôts APT approuvés
+- **Environnement** : Debian 13 Trixie amd64, dépôts [[Glossary:APT]] approuvés
 - **OS / Version** : Debian 13; OpenTofu
 - **Catégorie** : infrastructure as code / installation
 - **Tags** : `debian13`, `opentofu`, `apt`, `installation`, `signature`
@@ -65,7 +65,7 @@ Installer OpenTofu depuis le dépôt APT officiel en vérifiant clés, source et
 
 ## 2. Production — Contrôles
 
-Figer la version approuvée avec le processus APT d'entreprise et tester chaque mise à jour dans une VM de contrôle avant diffusion.
+Figer la version approuvée avec le processus APT d'entreprise et tester chaque mise à jour dans une [[Glossary:VM]] de contrôle avant diffusion.
 
 ## 3. Production — Sécurité
 

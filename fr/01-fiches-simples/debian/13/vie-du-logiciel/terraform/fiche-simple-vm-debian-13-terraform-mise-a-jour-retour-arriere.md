@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Terraform_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Debian 13 de laboratoire avec fournisseur sandbox
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire avec fournisseur sandbox
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : infrastructure as code
 - **Tags** : `debian13`, `terraform`, `iac`, `state`, `securite`
@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Mettre à niveau CLI/providers en préproduction et éviter downgrade incompatible d’état.
+Mettre à niveau [[Glossary:CLI]]/providers en préproduction et éviter downgrade incompatible d’état.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

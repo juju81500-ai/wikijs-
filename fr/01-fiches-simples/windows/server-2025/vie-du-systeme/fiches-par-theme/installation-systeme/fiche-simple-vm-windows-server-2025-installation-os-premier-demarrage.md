@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 fiche-simple-vm-windows-server-2025-installation-os-premier-demarrage.md
 
-- **Environnement** : VM ou serveur Windows
+- **Environnement** : [[Glossary:VM]] ou serveur Windows
 - **OS / Version** : Windows Server 2025 Standard ou Datacenter
 - **Catégorie** : Installation / Système / Compatibilité
 - **Tags** : `[windows-server-2025]`, `[installation]`, `[vm]`, `[server-core]`, `[compatibilite]`, `[premier-demarrage]`
@@ -21,7 +21,7 @@ Installer Windows Server 2025 en choisissant l'expérience Core/Desktop adaptée
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Obtenir l'ISO depuis une source Microsoft autorisée et vérifier édition/licence.
-2. Vérifier le modèle CPU virtuel : Server 2025 requiert notamment SSE4.2 et POPCNT. Prévoir au moins 2 Go de RAM pour le setup VM, davantage pour les rôles.
+2. Vérifier le modèle [[Glossary:CPU]] virtuel : Server 2025 requiert notamment SSE4.2 et POPCNT. Prévoir au moins 2 Go de [[Glossary:RAM]] pour le setup VM, davantage pour les rôles.
 3. Créer la VM avec UEFI/contrôleur disque adaptés, monter l'ISO et choisir explicitement **Server Core** ou **Server with Desktop Experience**.
 4. Après installation et premier démarrage, vérifier :
    ```powershell
@@ -39,14 +39,14 @@ Installer Windows Server 2025 en choisissant l'expérience Core/Desktop adaptée
 
 ## ⚡ 2. Production — Façon Simplifiée
 1. Vérifier avec l'éditeur de chaque rôle et application que Windows Server 2025 est pris en charge.
-2. Installer et mettre à jour le système; configurer hostname, IP/DNS, heure, compte d'administration et console via les fiches serveur correspondantes.
-3. Vérifier les nouveaux comportements à l'aide de la fiche de compatibilité Server 2025 avant d'activer des rôles SMB, AD DS, RRAS ou OpenSSH.
+2. Installer et mettre à jour le système; configurer hostname, [[Glossary:IP]]/DNS, heure, compte d'administration et console via les fiches serveur correspondantes.
+3. Vérifier les nouveaux comportements à l'aide de la fiche de compatibilité Server 2025 avant d'activer des rôles SMB, [[Glossary:AD]] DS, RRAS ou OpenSSH.
 4. Installer uniquement les rôles requis, puis effectuer un redémarrage et une sauvegarde initiale avant la mise en service.
 
 ## 🔒 3. Production — Façon Sécurisée
 1. Ne pas rétrograder les protections SMB/LDAP ou désactiver Credential Guard pour contourner un client ancien sans étude d'impact approuvée.
-2. Conserver l'accès console; limiter RDP et SSH aux réseaux d'administration.
-3. Tester compatibilité SMB, LDAP, Kerberos et pilotes sur un environnement pilote; les valeurs par défaut de 2025 peuvent refuser des clients 2022 ou tiers mal configurés.
+2. Conserver l'accès console; limiter [[Glossary:RDP]] et [[Glossary:SSH]] aux réseaux d'administration.
+3. Tester compatibilité SMB, [[Glossary:LDAP]], Kerberos et pilotes sur un environnement pilote; les valeurs par défaut de 2025 peuvent refuser des clients 2022 ou tiers mal configurés.
 
 ## ✅ Validation et retour arrière
 - Confirmer build, édition, option Core/Desktop, prérequis CPU, réseau, rôles, pare-feu, sauvegarde et accès admin.

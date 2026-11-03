@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 fiche-simple-vm-windows-server-2022-reprise-foret-ad-ds-lab.md
 
-- **Environnement** : Forêt AD DS Windows Server 2022, sauvegardes testées et lab isolé
+- **Environnement** : Forêt [[Glossary:AD]] DS Windows Server 2022, sauvegardes testées et lab isolé
 - **OS / Version** : Windows Server 2022
 - **Catégorie** : Continuité / reprise après sinistre
 - **Tags** : `windows-server-2022`, `ad-ds`, `forest-recovery`, `dsrm`, `sauvegarde`, `lab`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## 🎯 Problème précis à résoudre
 
-Répéter et valider le plan de récupération d'une forêt AD DS en laboratoire, sans connecter les DC restaurés au réseau de production.
+Répéter et valider le plan de récupération d'une forêt AD DS en laboratoire, sans connecter les [[Glossary:DC]] restaurés au réseau de production.
 
 ## ⚠️ Périmètre critique
 
@@ -28,7 +28,7 @@ La récupération de forêt est un dernier recours pour une panne forêt entièr
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 
-1. Préparer un réseau virtuel isolé : **Hyper-V Manager > Virtual Switch Manager > Create > Private**, relier les VM de lab à ce switch :
+1. Préparer un réseau virtuel isolé : **Hyper-V Manager > Virtual Switch Manager > Create > Private**, relier les [[Glossary:VM]] de lab à ce switch :
    ```powershell
    New-VMSwitch -Name "LAB-ISOLE" -SwitchType Private
    Get-VM | Get-VMNetworkAdapter | Select-Object VMName, SwitchName
@@ -41,7 +41,7 @@ La récupération de forêt est un dernier recours pour une panne forêt entièr
    Get-ADDomain | Select-Object Forest, InfrastructureMaster, PDCEmulator, RIDMaster
    netdom query fsmo
    ```
-   👉 Explication : horodatage, média, mot de passe DSRM, DNS, rôles FSMO et dépendances consignés.
+   👉 Explication : horodatage, média, mot de passe [[Glossary:DSRM]], [[Glossary:DNS]], rôles [[Glossary:FSMO]] et dépendances consignés.
 
 3. Restaurer un DC inscriptible du domaine racine (démarrage en mode DSRM) :
    ```powershell
@@ -49,7 +49,7 @@ La récupération de forêt est un dernier recours pour une panne forêt entièr
    Restart-Computer
    wbadmin start systemstaterecovery -version:AAAA-MM-JJ-HH:MM -backupTarget:E: -quiet
    ```
-   👉 Explication : suivre le guide Microsoft de récupération de forêt; remplacer version et cible; pour SYSVOL, appliquer la restauration faisant autorité selon la procédure.
+   👉 Explication : suivre le guide Microsoft de récupération de forêt; remplacer version et cible; pour [[Glossary:SYSVOL]], appliquer la restauration faisant autorité selon la procédure.
 
 4. Compléter dans le lab seulement : réinitialiser les comptes privilégiés (dont `krbtgt`), nettoyer les métadonnées, relever le pool RID, contrôler la réplication :
    ```powershell
@@ -87,7 +87,7 @@ La récupération de forêt est un dernier recours pour une panne forêt entièr
 
 - **Validation lab** : services AD DS/DNS, SYSVOL/NETLOGON, DNS SRV, état des rôles, réplication et ouverture de session testés.
 - **Retour arrière lab** : détruire le réseau isolé et les copies VM de test; conserver la preuve de test sans réutiliser ces DC en production.
-- **Critère production** : documenter le plan, résultats du dernier exercice, RTO/RPO, sauvegardes confirmées et approbations avant bascule.
+- **Critère production** : documenter le plan, résultats du dernier exercice, [[Glossary:RTO]]/RPO, sauvegardes confirmées et approbations avant bascule.
 
 ## 🔗 Si le problème n'est pas résolu
 

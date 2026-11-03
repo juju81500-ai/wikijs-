@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_Windows_Server_2022_RDS_Installer_Configurer
 
-- **Environnement** : VM Windows Server 2022 de lab, contrôleur de domaine exclu
+- **Environnement** : [[Glossary:VM]] Windows Server 2022 de lab, contrôleur de domaine exclu
 - **OS / Version** : Windows Server 2022 Desktop Experience
 - **Catégorie** : Vie du logiciel / Installation et configuration RDS
 - **Tags** : `windows-server-2022`, `rds`, `session-host`, `powershell`
@@ -37,8 +37,8 @@ Installer le rôle hôte de session RDS sur un serveur pilote, sans confondre ce
    Get-WindowsFeature RDS-RD-Server
    Get-Service TermService
    ```
-   👉 Explication : Confirme l'installation et le service RDP, mais ne valide ni les licences ni les droits d'accès.
-4. Pour une ferme de test, dans **Gestionnaire de serveur** > **Services Bureau à distance** > **Vue d'ensemble**, utiliser **Installation** et suivre l'assistant de déploiement. Ajouter les serveurs uniquement après validation DNS/AD et capacité.
+   👉 Explication : Confirme l'installation et le service [[Glossary:RDP]], mais ne valide ni les licences ni les droits d'accès.
+4. Pour une ferme de test, dans **Gestionnaire de serveur** > **Services Bureau à distance** > **Vue d'ensemble**, utiliser **Installation** et suivre l'assistant de déploiement. Ajouter les serveurs uniquement après validation [[Glossary:DNS]]/AD et capacité.
    👉 Explication : L'assistant configure les rôles associés; vérifier la topologie et la documentation de la version cible avant de continuer.
 
 ## 2. Production — Contrôles

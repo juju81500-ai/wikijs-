@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_VM_Windows_11_mRemoteNG_Mise_A_Jour_Rollback
 
-- **Environnement** : Poste Windows 11 x64 d'administration (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'administration ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; mRemoteNG VERSION_MREMOTENG (à remplacer)
 - **Catégorie** : gestionnaire de connexions distantes
 - **Tags** : `mremoteng`, `windows11`, `mise-a-jour`, `rollback`
@@ -30,7 +30,7 @@ Mettre à jour mRemoteNG avec retour arrière possible.
 2. Télécharger VERSION_CIBLE (à remplacer) depuis la page Releases officielle.
    👉 Explication : source officielle.
 
-3. GUI : exécuter le nouvel installateur par-dessus l'existant.
+3. [[Glossary:GUI]] : exécuter le nouvel installateur par-dessus l'existant.
    👉 Explication : mise à jour standard.
 
 4. Dans PowerShell, chercher le nom exact : `winget search "mRemoteNG" --source winget`. Relever l'ID exact affiché (colonne Id) et le noter comme ID_PAQUET_VERIFIE (à remplacer ; ne jamais le deviner). Puis `winget upgrade --id ID_PAQUET_VERIFIE --exact` si l'ID est vérifié.

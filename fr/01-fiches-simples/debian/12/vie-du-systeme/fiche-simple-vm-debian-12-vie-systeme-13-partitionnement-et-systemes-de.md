@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_12_Vie_Systeme_13_Partitionnement_Et_Systemes_De
 
-- **Environnement** : VM Debian 12 « bookworm » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 12 « bookworm » (serveur)
 - **OS / Version** : Debian 12; étape 13 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian12`, `vie-du-systeme`, `cycle-de-vie`, `etape-13`
@@ -31,7 +31,7 @@ Choisir une disposition disque saine.
    sudo vgs
    sudo lvs
    ```
-   👉 Explication : affiche partitions, types de système de fichiers et volumes LVM.
+   👉 Explication : affiche partitions, types de système de fichiers et volumes [[Glossary:LVM]].
 
 2. Pour agrandir un volume plus tard, suivre la fiche LVM.
    👉 Explication : l'agrandissement se fait à chaud avec `lvextend -r`.

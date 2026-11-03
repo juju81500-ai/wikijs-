@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 VM_WinSrv_2022_ADDS_Creation-Utilisateur-Et-OU.md
 
-- **Environnement** : VM (Windows Server 2022 AD DS)
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022 [[Glossary:AD]] DS)
 - **OS / Version** : Windows Server 2022 - Famille Windows
 - **Catégorie** : Annuaire & Identité / Active Directory
 - **Tags** : `[windows-server-2022]`, `[active-directory]`, `[ou]`, `[user-management]`, `[gui]`, `[powershell]`, `[hardening]`, `[gpo]`
 
 ## 🎯 Problème précis à résoudre
-Structurer l'annuaire Active Directory en créant une Unité d'Organisation (OU), y ajouter un utilisateur, configurer la réinitialisation de mot de passe à la première connexion et sécuriser le compte selon les règles de complexité d'entreprise.
+Structurer l'annuaire Active Directory en créant une Unité d'Organisation ([[Glossary:OU]]), y ajouter un utilisateur, configurer la réinitialisation de mot de passe à la première connexion et sécuriser le compte selon les règles de complexité d'entreprise.
 
 ---
 
@@ -80,7 +80,7 @@ Référence : [Microsoft Learn — Utilisateurs et ordinateurs Active Directory]
 
 3. Ajout du compte au groupe restreint "Protected Users" :
    `Add-ADGroupMember -Identity "Protected Users" -Members "adm-jdupont"`
-   👉 Explication : Force l'utilisation d'algorithmes de chiffrement forts (AES), interdit le stockage des hachages NTLM/WDigest et bloque le cache de mots de passe hors-ligne.
+   👉 Explication : Force l'utilisation d'algorithmes de chiffrement forts ([[Glossary:AES]]), interdit le stockage des hachages [[Glossary:NTLM]]/WDigest et bloque le cache de mots de passe hors-ligne.
 
 4. Activation de l'audit complet des modifications sur le compte utilisateur :
    `Set-ADUser -Identity "jdupont" -SmartcardLogonRequired $false`

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Cisco Packet Tracer
 
-- **Catégorie** : Topologie, IPAM et outils métiers
+- **Catégorie** : Topologie, [[Glossary:IPAM]] et outils métiers
 - **Plateforme** : Windows / macOS / Ubuntu
 - **Produit (matrice)** : Cisco Packet Tracer
 - **Statut dans le pack** : Couvert

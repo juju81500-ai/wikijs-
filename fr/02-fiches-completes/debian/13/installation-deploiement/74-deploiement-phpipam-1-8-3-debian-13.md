@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **OS / Version** : Debian 13 Trixie x86-64; phpIPAM 1.8.3
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : application phpIPAM, MariaDB locale, PHP-FPM et Nginx; saisie IPAM manuelle
+- **Périmètre** : application phpIPAM, MariaDB locale, PHP-FPM et Nginx; saisie [[Glossary:IPAM]] manuelle
 - **Catégorie** : IPAM
 - **Tags** : `phpipam`, `ipam`, `debian13`, `mariadb`, `php84`, `nginx`
 
@@ -23,7 +23,7 @@ Fiche simple : [cadrer le périmètre phpIPAM](/fr/01-fiches-simples/debian/13/v
 
 Au 27 octobre 2026, la release GitHub stable la plus récente consultée est phpIPAM 1.8.3. L'archive officielle publie le SHA-256 `2fc737da5a04a842cda097f609c4db85c808270eaad5949c4ec03d10f874556d`. La branche 1.8.x déclare PHP 7.2 à 8.5; Debian 13 utilise PHP 8.4. La documentation d'installation détaillée vise Ubuntu, pas Debian 13: les noms de paquets et le socket PHP-FPM ci-dessous sont adaptés au système cible et doivent être validés en préproduction.
 
-Cette fiche couvre l'inventaire IPAM tenu par les administrateurs. Les scans, pings automatiques, découverte d'hôtes, suppressions automatiques d'adresses inactives et exposition de la console hors réseau d'administration sont exclus. Préparer un FQDN, un certificat TLS, les administrateurs responsables et un plan d'adressage approuvé avant l'installation.
+Cette fiche couvre l'inventaire IPAM tenu par les administrateurs. Les scans, pings automatiques, découverte d'hôtes, suppressions automatiques d'adresses inactives et exposition de la console hors réseau d'administration sont exclus. Préparer un [[Glossary:FQDN]], un certificat [[Glossary:TLS]], les administrateurs responsables et un plan d'adressage approuvé avant l'installation.
 
 ## 2. Installer les paquets
 
@@ -51,7 +51,7 @@ Garder MariaDB sur localhost. Créer une base UTF-8 et un utilisateur limité à
 sudo mariadb
 ```
 
-Dans la console SQL :
+Dans la console [[Glossary:SQL]] :
 
 ```sql
 CREATE DATABASE phpipam CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;
@@ -100,7 +100,7 @@ Le code applicatif reste non modifiable par `www-data`; ne pas appliquer un `cho
 
 Fiche simple : [configurer Nginx et PHP-FPM](/fr/01-fiches-simples/debian/13/vie-du-logiciel/phpipam/fiche-simple-vm-debian-13-phpipam-nginx-php).
 
-Créer `/etc/nginx/sites-available/phpipam` et adapter le nom DNS, les chemins de certificats et le socket FPM au serveur :
+Créer `/etc/nginx/sites-available/phpipam` et adapter le nom [[Glossary:DNS]], les chemins de certificats et le socket FPM au serveur :
 
 ```nginx
 server {
@@ -155,11 +155,11 @@ Ouvrir `https://ipam.example.net/` depuis le réseau d'administration. Utiliser 
 
 1. Modifier immédiatement le mot de passe administrateur initial (les identifiants par défaut sont publiés dans le README officiel).
 2. Dans `config.php`, passer `$disable_installer = true` pour désactiver les scripts `/app/install/`.
-3. Vérifier de nouveau que `$debugging = false`, que le site est en HTTPS et que l'API ne permet pas le HTTP non sécurisé.
+3. Vérifier de nouveau que `$debugging = false`, que le site est en HTTPS et que l'[[Glossary:API]] ne permet pas le [[Glossary:HTTP]] non sécurisé.
 4. Créer des comptes nominatifs et groupes avec accès limité aux sections nécessaires; réserver le compte administrateur aux changements d'administration.
 5. Si l'API est utilisée, créer un token minimal dédié à l'intégration, le protéger et tester ses droits avant toute synchronisation.
 
-Saisir quelques prefixes et adresses fictifs ou réservés au lab. Vérifier que les sous-réseaux, VLAN et sections correspondent au plan approuvé. Ne pas activer les tâches de scan, ping, discovery ou suppression des adresses inactives dans cette procédure.
+Saisir quelques prefixes et adresses fictifs ou réservés au lab. Vérifier que les sous-réseaux, [[Glossary:VLAN]] et sections correspondent au plan approuvé. Ne pas activer les tâches de scan, ping, discovery ou suppression des adresses inactives dans cette procédure.
 
 ## 7. Sauvegarder et restaurer
 
@@ -189,4 +189,4 @@ Avant toute mise à niveau, suivre l'ordre documenté : sauvegarder la base et `
 - [phpIPAM — procédure Ubuntu amont, adaptée ici à Debian 13](https://phpipam.net/news/phpipam-installation-on-ubuntu-26-04-LTS/)
 - [phpIPAM — politique de sécurité](https://github.com/phpipam/phpipam/blob/v1.8.3/SECURITY.md)
 
-Les commandes Debian 13 et la configuration Nginx doivent être testées sur une VM de préproduction avant diffusion en production. Aucun déploiement ni test réel de restauration n'a été exécuté par cette fiche.
+Les commandes Debian 13 et la configuration Nginx doivent être testées sur une [[Glossary:VM]] de préproduction avant diffusion en production. Aucun déploiement ni test réel de restauration n'a été exécuté par cette fiche.

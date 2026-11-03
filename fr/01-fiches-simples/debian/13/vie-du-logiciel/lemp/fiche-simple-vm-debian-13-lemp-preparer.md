@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-lemp-preparer.md
 
-- **Environnement** : VM ou serveur dédié Debian 13 Trixie pour une application Web PHP
+- **Environnement** : [[Glossary:VM]] ou serveur dédié Debian 13 Trixie pour une application Web PHP
 - **OS / Version** : Debian 13; Nginx, PHP-FPM et MariaDB depuis les dépôts Debian
-- **Catégorie** : pile Web LEMP / préparation
+- **Catégorie** : pile Web [[Glossary:LEMP]] / préparation
 - **Tags** : `debian13`, `lemp`, `nginx`, `php-fpm`, `mariadb`, `preparation`
 
 ---
@@ -24,12 +24,12 @@ Préparer l'hébergement d'une application PHP sans exposer de service ni démar
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Contrôler le DNS, l'IP et l'accès de secours :
+1. Contrôler le [[Glossary:DNS]], l'[[Glossary:IP]] et l'accès de secours :
    ```bash
    ip -br a
    getent hosts app.example.net
    ```
-   👉 Explication : remplacer `app.example.net`; garder une console ou un SSH de secours avant tout changement.
+   👉 Explication : remplacer `app.example.net`; garder une console ou un [[Glossary:SSH]] de secours avant tout changement.
 
 2. Installer la pile :
    ```bash

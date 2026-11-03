@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Alpine_3.19_Vie_Systeme_49_Enregistrement_Cmdb_Et_Gestion
 
-- **Environnement** : VM Alpine Linux 3-19 (serveur)
+- **Environnement** : [[Glossary:VM]] Alpine Linux 3-19 (serveur)
 - **OS / Version** : Alpine Linux 3-19; étape 49 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `alpine319`, `vie-du-systeme`, `cycle-de-vie`, `etape-49`
@@ -31,7 +31,7 @@ Inscrire la machine et les accès dans l'inventaire.
    uname -r
    ip -br addr
    ```
-   👉 Explication : nom, version, noyau et adresses à enregistrer dans la CMDB.
+   👉 Explication : nom, version, noyau et adresses à enregistrer dans la [[Glossary:CMDB]].
 
 2. Relever les comptes et les droits :
    ```sh
@@ -40,7 +40,7 @@ Inscrire la machine et les accès dans l'inventaire.
    ```
    👉 Explication : liste les administrateurs et les comptes d'utilisateurs.
 
-3. Relever les clés SSH autorisées :
+3. Relever les clés [[Glossary:SSH]] autorisées :
    ```sh
    doas find /home -name authorized_keys -exec wc -l {} +
    ```

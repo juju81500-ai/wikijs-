@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_FOG_Project_Valider
 
-- **Environnement** : VM Debian 13 dédiée FOG Project (clonage/déploiement d'images), réseau de laboratoire isolé
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée FOG Project (clonage/déploiement d'images), réseau de laboratoire isolé
 - **OS / Version** : Debian 13 Trixie; FOG Project (version et support Debian 13 à vérifier)
 - **Catégorie** : automatisation / déploiement
 - **Tags** : `debian13`, `fog-project`, `validation`, `recette`, `pxe`
@@ -29,7 +29,7 @@ Valider le fonctionnement de FOG sur un poste pilote avant extension.
    systemctl --no-pager --failed
    sudo journalctl -p warning -b --no-pager | tail -n 40
    ```
-   👉 Explication : aucune unité en échec liée à FOG, web, base de données, TFTP ou NFS.
+   👉 Explication : aucune unité en échec liée à FOG, web, base de données, [[Glossary:TFTP]] ou [[Glossary:NFS]].
 
 2. Dans l'interface : Hosts → inscrire un poste pilote (HOTE_PILOTE à remplacer).
    👉 Explication : inscrire un seul hôte de laboratoire.

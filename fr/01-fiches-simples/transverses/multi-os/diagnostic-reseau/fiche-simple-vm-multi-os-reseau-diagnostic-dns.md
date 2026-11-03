@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-multi-os-reseau-diagnostic-dns.md
 
-- **Environnement** : VM, poste, serveur, LXC Proxmox ou hôte Docker (Linux ou Windows)
+- **Environnement** : [[Glossary:VM]], poste, serveur, [[Glossary:LXC]] Proxmox ou hôte Docker (Linux ou Windows)
 - **OS / Version** : Debian 12/13, Ubuntu 24-04/26-04, Rocky Linux 9, Alpine Linux, Windows 10/11, Windows Server 2022/2025
 - **Catégorie** : réseau / résolution de noms
 - **Tags** : `reseau`, `diagnostic`, `multi-os`, `depannage`
@@ -24,11 +24,11 @@ Distinguer une panne de routage d'une panne de résolution de noms.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Tester d'abord l'IP connue (exemple à remplacer), puis le nom :
+1. Tester d'abord l'[[Glossary:IP]] connue (exemple à remplacer), puis le nom :
    ```bash
    ping -c 2 192.0.2.10
    ```
-   👉 Explication : si l'IP répond mais pas le nom, le problème est le DNS.
+   👉 Explication : si l'IP répond mais pas le nom, le problème est le [[Glossary:DNS]].
 
 2. Debian/Ubuntu (systemd-resolved) — remplacer `srv1.example.test` par le nom testé :
    ```bash
@@ -58,7 +58,7 @@ Distinguer une panne de routage d'une panne de résolution de noms.
    Get-DnsClientServerAddress
    Resolve-DnsName srv1.example.test
    ```
-   👉 Explication : un poste joint à Active Directory doit utiliser les DNS AD internes.
+   👉 Explication : un poste joint à Active Directory doit utiliser les DNS [[Glossary:AD]] internes.
 
 ## 2. Production — Contrôles
 

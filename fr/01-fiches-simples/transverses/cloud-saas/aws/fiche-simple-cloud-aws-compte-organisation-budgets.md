@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Fiche_Simple_-_Cloud_AWS_Compte_Organisation_Budgets
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — AWS CLI v2
+- **OS / Version** : Cloud/SaaS — AWS [[Glossary:CLI]] v2
 - **Catégorie** : cloud public / compte, organisation sécurisée et budgets
 - **Tags** : `aws`, `compte_organisation_budgets`, `securite`, `procedure`
 
@@ -26,7 +26,7 @@ Les valeurs écrites en MAJUSCULES sont des placeholders à remplacer par les va
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Console : IAM Identity Center → Settings, Users/Groups, Permission sets ; IAM → Security credentials → MFA ; Billing and Cost Management → Budgets → Create budget.
+1. Console : [[Glossary:IAM]] Identity Center → Settings, Users/Groups, Permission sets ; IAM → Security credentials → [[Glossary:MFA]] ; Billing and Cost Management → Budgets → Create budget.
    👉 Explication : vérifier le compte/projet/abonnement et la région sélectionnés avant toute modification.
 2. CLI officielle (AWS CLI v2) :
    ```bash

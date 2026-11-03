@@ -37,7 +37,7 @@ Mettre à jour Wireshark/Npcap et savoir revenir en arrière.
 ```powershell
 winget upgrade --id WiresharkFoundation.Wireshark
 ```
-GUI : lancer le nouvel installeur par-dessus.
+[[Glossary:GUI]] : lancer le nouvel installeur par-dessus.
    👉 Explication : Met à jour Wireshark; la mise à jour de Npcap peut être proposée séparément.
 
 4. Revalider avec la fiche Valider la recette.

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_05_Configuration_Materielle_Firmware
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 05 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-05`
@@ -24,7 +24,7 @@ Régler le firmware et les options de la VM avant l'installation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Choisir UEFI (ou BIOS) et noter ce choix; sur Proxmox : VM > Matériel > BIOS = OVMF, désactiver Secure Boot (Disque EFI sans clés préenrôlées).
+1. Choisir UEFI (ou [[Glossary:BIOS]]) et noter ce choix; sur Proxmox : VM > Matériel > BIOS = [[Glossary:OVMF]], désactiver Secure Boot (Disque [[Glossary:EFI]] sans clés préenrôlées).
    👉 Explication : pfSense CE ne démarre pas avec Secure Boot activé.
 
 2. Choisir un modèle de carte réseau `VirtIO` (ou Intel E1000 en secours) et activer les extensions de virtualisation.

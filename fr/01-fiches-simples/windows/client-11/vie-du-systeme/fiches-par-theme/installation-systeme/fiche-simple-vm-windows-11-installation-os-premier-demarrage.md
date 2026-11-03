@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 fiche-simple-vm-windows-11-installation-os-premier-demarrage.md
 
-- **Environnement** : VM ou poste client physique
+- **Environnement** : [[Glossary:VM]] ou poste client physique
 - **OS / Version** : Windows 11 Pro ou Enterprise selon les besoins du domaine et de gestion
 - **Catégorie** : Installation / Système
 - **Tags** : `[windows-11]`, `[installation]`, `[oobe]`, `[uefi]`, `[tpm]`, `[premier-demarrage]`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 Installer Windows 11 sur un nouveau poste, vérifier l'édition et les prérequis matériels, puis préparer le premier démarrage avant l'inscription dans le domaine ou la gestion centralisée.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
-1. Utiliser un média d'installation officiel et vérifier l'édition, l'architecture et la compatibilité TPM 2.0/Secure Boot.
+1. Utiliser un média d'installation officiel et vérifier l'édition, l'architecture et la compatibilité [[Glossary:TPM]] 2.0/Secure Boot.
 2. Créer la VM ou démarrer le poste sur le média; choisir la langue, le clavier et l'édition prévue par la licence.
 3. Sélectionner uniquement le disque cible après vérification; effectuer l'installation UEFI et terminer l'OOBE selon le mode de gestion (compte local de lab ou inscription organisationnelle).
 4. Après le premier démarrage, vérifier :
@@ -38,7 +38,7 @@ Installer Windows 11 sur un nouveau poste, vérifier l'édition et les prérequi
   👉 Explication : équivalent graphique des commandes de contrôle après le premier démarrage.
 
 ## ⚡ 2. Production — Façon Simplifiée
-1. Vérifier l'édition/licence, le nom de l'appareil, l'affectation utilisateur et le scénario de gestion (AD DS, Entra ID ou poste autonome).
+1. Vérifier l'édition/licence, le nom de l'appareil, l'affectation utilisateur et le scénario de gestion ([[Glossary:AD]] DS, Entra ID ou poste autonome).
 2. Installer pilotes et mises à jour depuis les sources approuvées; ne pas désactiver les exigences TPM/Secure Boot pour contourner une incompatibilité.
 3. Configurer le compte de secours et les protections du poste, puis appliquer les fiches distinctes pour réseau, domaine, BitLocker, pare-feu et accès distant.
 4. Redémarrer et vérifier l'état de la machine avant d'y transférer des données utilisateur.

@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 IIS
 
-- **Environnement** : VM (Windows Server 2022)
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022)
 - **OS / Version** : Windows Server 2022 (Standard ou Datacenter, Desktop Experience non requis)
-- **Version** : IIS 10.0 (rôle Serveur Web intégré à Windows Server 2022, à vérifier sur la version déployée)
+- **Version** : [[Glossary:IIS]] 10.0 (rôle Serveur Web intégré à Windows Server 2022, à vérifier sur la version déployée)
 - **Catégorie** : Services Web et bases de données
 - **Tags** : `[windows-server-2022]`, `[iis]`, `[powershell]`, `[serveur-web]`, `[hardening]`
 
@@ -61,7 +61,7 @@ Remove-Website -Name "Default Web Site"
 ```
 👉 Explication : Évite qu'un site d'usine réponde sur le port 80 à la place du site d'entreprise.
 
-3. Ouverture du pare-feu Windows pour HTTP et HTTPS :
+3. Ouverture du pare-feu Windows pour [[Glossary:HTTP]] et HTTPS :
 ```powershell
 New-NetFirewallRule -DisplayName "IIS HTTP entrant" -Direction Inbound -Protocol TCP -LocalPort 80 -Action Allow
 New-NetFirewallRule -DisplayName "IIS HTTPS entrant" -Direction Inbound -Protocol TCP -LocalPort 443 -Action Allow

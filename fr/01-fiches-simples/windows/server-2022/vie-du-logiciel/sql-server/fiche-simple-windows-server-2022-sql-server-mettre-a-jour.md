@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_Windows_Server_2022_SQL-Server_Mettre_A_Jour
 
-- **Environnement** : VM Windows Server 2022 (SQL Server 2022 Standard ou Developer)
+- **Environnement** : [[Glossary:VM]] Windows Server 2022 ([[Glossary:SQL]] Server 2022 Standard ou Developer)
 - **OS / Version** : Windows Server 2022; SQL Server 2022 (instance par défaut MSSQLSERVER)
 - **Catégorie** : base de données / SQL Server / Mise à jour et retour arrière
 - **Tags** : `windows-server-2022`, `sql-server`, `sqlserver-2022`, `mise-a-jour`
@@ -34,7 +34,7 @@ Appliquer une mise à jour cumulative (CU) de SQL Server 2022 et savoir revenir 
    ```powershell
    foreach ($b in 'master','msdb','model','APPDB') { Backup-SqlDatabase -ServerInstance localhost -Database $b -BackupFile "B:\Backup\avant-maj_${b}.bak" -CompressionOption On -Checksum }
    ```
-   👉 Explication : sauvegardes de bases ; en complément, prendre un point de contrôle Hyper-V (GUI : Gestionnaire Hyper-V → clic droit sur la VM → Point de contrôle) ou un instantané du virtualiseur.
+   👉 Explication : sauvegardes de bases ; en complément, prendre un point de contrôle Hyper-V ([[Glossary:GUI]] : Gestionnaire Hyper-V → clic droit sur la VM → Point de contrôle) ou un instantané du virtualiseur.
 
 3. Télécharger la CU depuis le Centre de téléchargement Microsoft et contrôler sa signature :
    ```powershell

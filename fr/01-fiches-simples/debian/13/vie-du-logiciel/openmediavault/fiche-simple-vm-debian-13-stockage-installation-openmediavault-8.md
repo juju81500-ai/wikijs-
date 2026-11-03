@@ -11,19 +11,19 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche simple — Debian 13 : installer OpenMediaVault 8
 
-- **OS / Version** : VM ou serveur dédié Debian 13 Trixie minimal
-- **Catégorie** : Stockage / NAS / SMB
+- **OS / Version** : [[Glossary:VM]] ou serveur dédié Debian 13 Trixie minimal
+- **Catégorie** : Stockage / [[Glossary:NAS]] / SMB
 - **Tags** : `[debian13]`, `[openmediavault8]`, `[omv]`, `[nas]`, `[smb]`, `[stockage]`
 
 ## Avant de commencer
 
-Cette installation prend la main sur plusieurs services Debian, notamment le réseau, SSH, Nginx et Samba. L'utiliser sur un hôte dédié, sans environnement graphique ni serveur Web existant, avec accès console et sauvegarde. OpenMediaVault n'est pas pris en charge dans LXC.
+Cette installation prend la main sur plusieurs services Debian, notamment le réseau, [[Glossary:SSH]], Nginx et Samba. L'utiliser sur un hôte dédié, sans environnement graphique ni serveur Web existant, avec accès console et sauvegarde. OpenMediaVault n'est pas pris en charge dans [[Glossary:LXC]].
 
 Prévoir un disque système et des disques de données distincts. Identifier les disques par numéro de série; ne rien effacer avant d'avoir confirmé le périphérique et sauvegardé son contenu.
 
 ## Installer OMV 8
 
-Confirmer Debian 13 et le DNS, installer `systemd-resolved` et la clé APT officielle, puis ajouter le dépôt stable `synchrony` selon la documentation OMV :
+Confirmer Debian 13 et le [[Glossary:DNS]], installer `systemd-resolved` et la clé [[Glossary:APT]] officielle, puis ajouter le dépôt stable `synchrony` selon la documentation OMV :
 
 ```bash
 cat /etc/os-release
@@ -43,7 +43,7 @@ sudo omv-firstaid
 ```
    👉 Explication : initialise la base de configuration OMV; `omv-firstaid` ouvre l'assistant de réparation réseau.
 
-Utiliser la console pendant la première configuration réseau : l'adresse IP peut changer à l'application. Changer les identifiants initiaux de l'interface Web et limiter l'accès à un réseau d'administration.
+Utiliser la console pendant la première configuration réseau : l'adresse [[Glossary:IP]] peut changer à l'application. Changer les identifiants initiaux de l'interface Web et limiter l'accès à un réseau d'administration.
 
 ## Intégrer le disque et créer un partage
 
@@ -54,7 +54,7 @@ lsblk -o NAME,SIZE,MODEL,SERIAL,FSTYPE,MOUNTPOINTS
 
 Dans l'interface OMV, créer ou monter le système de fichiers du disque de données sous `Storage | File Systems`, puis créer un dossier partagé. Configurer les utilisateurs et permissions dans OMV avant d'activer SMB/CIFS. Appliquer les changements en attente et tester avec un client pilote, y compris un compte non autorisé qui doit être refusé.
 
-Ne pas ajouter les montages ou les partages dans les fichiers gérés d'OMV. Ne pas traiter RAID comme une sauvegarde.
+Ne pas ajouter les montages ou les partages dans les fichiers gérés d'OMV. Ne pas traiter [[Glossary:RAID]] comme une sauvegarde.
 
 ## Vérification et retour arrière
 

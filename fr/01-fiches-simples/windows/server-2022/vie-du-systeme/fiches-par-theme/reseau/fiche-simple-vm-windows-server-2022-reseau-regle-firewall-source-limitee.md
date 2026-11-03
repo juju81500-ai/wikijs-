@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 fiche-simple-vm-windows-server-2022-reseau-regle-firewall-source-limitee.md
 
-- **Environnement** : VM Windows Server
+- **Environnement** : [[Glossary:VM]] Windows Server
 - **OS / Version** : Windows Server 2022
 - **Catégorie** : Réseau / Sécurité
 - **Tags** : `[windows-server-2022]`, `[firewall]`, `[reseau]`, `[powershell]`, `[gui]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Autoriser un port TCP entrant uniquement sur les profils réseau et depuis les adresses sources nécessaires, avec le pare-feu Microsoft Defender actif.
+Autoriser un port [[Glossary:TCP]] entrant uniquement sur les profils réseau et depuis les adresses sources nécessaires, avec le pare-feu Microsoft Defender actif.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 1. Vérifier les profils actifs et les règles correspondantes :
@@ -33,8 +33,8 @@ Autoriser un port TCP entrant uniquement sur les profils réseau et depuis les a
 
 ## ⚡ 2. Production — Façon Simplifiée
 1. Confirmer le port réellement écouté, le profil réseau de l'interface et la plage source autorisée.
-2. En GUI, ouvrir `wf.msc`, choisir **Règles de trafic entrant > Nouvelle règle... > Port**, sélectionner TCP et le port, puis **Autoriser la connexion**.
-3. Dans **Étendue**, limiter l'adresse IP distante; dans **Profil**, ne cocher que le profil approprié. Donner un nom explicite et terminer l'assistant.
+2. En [[Glossary:GUI]], ouvrir `wf.msc`, choisir **Règles de trafic entrant > Nouvelle règle... > Port**, sélectionner TCP et le port, puis **Autoriser la connexion**.
+3. Dans **Étendue**, limiter l'adresse [[Glossary:IP]] distante; dans **Profil**, ne cocher que le profil approprié. Donner un nom explicite et terminer l'assistant.
 4. Vérifier la règle et le service :
    ```powershell
    Get-NetFirewallRule -DisplayName "Application TCP 8443 - Lab" | Get-NetFirewallAddressFilter

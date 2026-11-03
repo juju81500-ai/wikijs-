@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Debian_12_Systeme_Test-Redemarrage.md
 
-- **Environnement** : VM (Proxmox VE / KVM)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Système & Exploitation / Test de persistance au redémarrage
 - **Tags** : `[debian12]`, `[debian-family]`, `[reboot]`, `[systemd]`, `[fstab]`, `[validation]`, `[production]`
 
 ## 🎯 Problème précis à résoudre
-Vérifier qu'un serveur Debian 12 redémarre proprement et que tous ses éléments persistants reviennent seuls : montages `/etc/fstab`, pile réseau, horloge, pare-feu, SSH et services métier, sans unité systemd en échec.
+Vérifier qu'un serveur Debian 12 redémarre proprement et que tous ses éléments persistants reviennent seuls : montages `/etc/fstab`, pile réseau, horloge, pare-feu, [[Glossary:SSH]] et services métier, sans unité systemd en échec.
 
 ---
 

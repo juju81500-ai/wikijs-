@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_cURL_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 avec réseau de test autorisé
+- **Environnement** : [[Glossary:VM]] Debian 13 avec réseau de test autorisé
 - **OS / Version** : Debian 13 Trixie
-- **Catégorie** : transfert HTTP / diagnostic
+- **Catégorie** : transfert [[Glossary:HTTP]] / diagnostic
 - **Tags** : `debian13`, `curl`, `http`, `tls`, `api`
 ---
 
@@ -28,14 +28,14 @@ Identifier version, dépendances, shell/endpoint et périmètre avant usage de c
    cat /etc/os-release
    apt-cache policy curl
    ```
-   👉 Explication : confirmer Debian 13 et l’origine APT approuvée.
+   👉 Explication : confirmer Debian 13 et l’origine [[Glossary:APT]] approuvée.
 
 2. Inspecter les dépendances ou destination
    ```bash
    curl --version
    ls -l /etc/ssl/certs/ca-certificates.crt
    ```
-   👉 Explication : la version liste les protocoles et l’emplacement du magasin CA.
+   👉 Explication : la version liste les protocoles et l’emplacement du magasin [[Glossary:CA]].
 
 3. Lire manuel et limites de l’outil
    ```text

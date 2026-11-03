@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-rocky-9-freeipa-sauvegarder.md
 
-- **Environnement** : VM Rocky Linux 9 dédiée au premier serveur FreeIPA/IdM
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée au premier serveur FreeIPA/IdM
 - **OS / Version** : Rocky Linux 9 x86_64; paquets `ipa-server` des dépôts de la distribution
 - **Catégorie** : annuaire / sauvegarde
 - **Tags** : `rocky9`, `freeipa`, `idm`, `kerberos`
@@ -41,7 +41,7 @@ Réaliser une sauvegarde `ipa-backup` complète et la mettre hors de l'hôte.
 
 ## 2. Production — Contrôles
 
-Planifier la fenêtre de maintenance; la sauvegarde d'un serveur doit contenir tous les rôles (CA, DNS, KRA).
+Planifier la fenêtre de maintenance; la sauvegarde d'un serveur doit contenir tous les rôles ([[Glossary:CA]], [[Glossary:DNS]], KRA).
 
 ## 3. Production — Sécurité
 

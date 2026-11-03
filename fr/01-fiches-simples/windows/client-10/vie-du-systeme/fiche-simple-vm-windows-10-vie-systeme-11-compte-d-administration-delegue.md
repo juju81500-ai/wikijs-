@@ -37,7 +37,7 @@ Donner des droits d'administration limités et nominatifs au support, sans parta
    ```
    👉 Explication : `DOMAINE\PRENOM.NOM` est le compte nominatif du technicien; le contrôle affiche les membres effectifs.
 
-3. Préférer des groupes restreints par GPO : **Configuration ordinateur > Préférences > Paramètres du Panneau de configuration > Utilisateurs et groupes locaux**, ou Intune **Protection de compte > Groupes locaux**.
+3. Préférer des groupes restreints par [[Glossary:GPO]] : **Configuration ordinateur > Préférences > Paramètres du Panneau de configuration > Utilisateurs et groupes locaux**, ou Intune **Protection de compte > Groupes locaux**.
    ```powershell
    gpresult /r /scope computer
    ```

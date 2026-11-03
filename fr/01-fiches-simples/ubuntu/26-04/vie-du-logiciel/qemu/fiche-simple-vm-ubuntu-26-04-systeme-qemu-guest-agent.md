@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Systeme_Qemu_Guest_Agent
 
-- **Environnement** : VM Ubuntu sur hyperviseur KVM/QEMU (Proxmox VE, libvirt, OpenStack)
-- **OS / Version** : Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu sur hyperviseur [[Glossary:KVM]]/QEMU (Proxmox VE, libvirt, OpenStack)
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]]
 - **Catégorie** : Système / Virtualisation / Agent invité
 - **Tags** : `ubuntu2604`, `qemu-guest-agent`, `kvm`, `proxmox`, `virtualisation`
 
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 🎯 Problème précis à résoudre
 
-Installer l'agent invité QEMU sur une VM Ubuntu 26-04 pour que l'hyperviseur reçoive l'adresse IP, l'état du système et permette un arrêt propre ou une sauvegarde cohérente du système de fichiers.
+Installer l'agent invité [[Glossary:QEMU]] sur une VM Ubuntu 26-04 pour que l'hyperviseur reçoive l'adresse [[Glossary:IP]], l'état du système et permette un arrêt propre ou une sauvegarde cohérente du système de fichiers.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 

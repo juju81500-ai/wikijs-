@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_MariaDB_Prerequis_Limites
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; MariaDB des dépôts Debian
 - **Catégorie** : base de données / MariaDB / Prérequis et limites
 - **Tags** : `debian13`, `mariadb`, `prerequis`
@@ -40,7 +40,7 @@ Cadrer l'exploitation de MariaDB sur Debian 13 avant de configurer, sécuriser e
    👉 Explication : l'installation est décrite dans la fiche `Database_Installation_MariaDB_11` du pack.
 
 3. Lister les besoins applicatifs :
-   👉 Explication : bases à créer, comptes applicatifs, adresses IP des clients, volumétrie, RPO/RTO attendus.
+   👉 Explication : bases à créer, comptes applicatifs, adresses [[Glossary:IP]] des clients, volumétrie, [[Glossary:RPO]]/RTO attendus.
 
 ## 2. Production — Contrôles
 

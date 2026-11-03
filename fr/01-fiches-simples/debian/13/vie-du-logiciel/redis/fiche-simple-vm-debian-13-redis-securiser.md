@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Redis_Securiser
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; Redis des dépôts Debian
-- **Catégorie** : base clé-valeur / Redis / Sécuriser (ACL, TLS, pare-feu)
+- **Catégorie** : base clé-valeur / Redis / Sécuriser ([[Glossary:ACL]], [[Glossary:TLS]], pare-feu)
 - **Tags** : `debian13`, `redis`, `securite`
 
 ---
@@ -69,7 +69,7 @@ Imposer l'authentification par ACL, activer TLS et filtrer le port 6379.
    # si ufw est utilisé :
    sudo ufw allow from IP_CLIENT to any port 6379 proto tcp
    ```
-   👉 Explication : seules les IP clientes autorisées atteignent Redis.
+   👉 Explication : seules les [[Glossary:IP]] clientes autorisées atteignent Redis.
 
 ## 2. Production — Contrôles
 

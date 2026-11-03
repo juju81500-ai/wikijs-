@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:14Z
 # 📄 Fiche_Simple_-_VM_Windows_Server_2022_Securite_gMSA
 
 - **Environnement** : Domaine Active Directory (contrôleur de domaine et serveur membre)
-- **OS / Version** : Windows Server 2022 - Famille Windows Server (domaine AD DS)
+- **OS / Version** : Windows Server 2022 - Famille Windows Server (domaine [[Glossary:AD]] DS)
 - **Catégorie** : Sécurité / Comptes de service
 - **Tags** : `[windows-server-2022]`, `[gmsa]`, `[active-directory]`, `[service-account]`, `[powershell]`
 
@@ -42,7 +42,7 @@ Remplacer un compte de service à mot de passe fixe par un compte gMSA (Group Ma
 **Équivalent interface graphique :**
 
 - **Utilisateurs et ordinateurs Active Directory** (`dsa.msc`) > conteneur **Managed Service Accounts** : visualiser le compte gMSA créé et ses propriétés.
-  👉 Explication : la création du gMSA et de la clé KDS reste en PowerShell (pas d'assistant graphique); la GUI sert à vérifier.
+  👉 Explication : la création du gMSA et de la clé KDS reste en PowerShell (pas d'assistant graphique); la [[Glossary:GUI]] sert à vérifier.
 
 ## ⚡ 2. Production — Façon Simplifiée
 1. Affecter le compte gMSA à un service Windows (le mot de passe reste vide) :

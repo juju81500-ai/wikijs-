@@ -50,7 +50,7 @@ Documenter approbation d'enrôlement, inventaire de nœuds, propriétaires, éti
 
 - Traiter jeton et commande join comme secrets d'enrôlement.
 - Ne pas les mettre dans un ticket, dépôt, historique partagé ou journal de CI.
-- Ne pas joindre un nœud à un API endpoint non vérifié.
+- Ne pas joindre un nœud à un [[Glossary:API]] endpoint non vérifié.
 - Révoquer/régénérer les jetons exposés selon la procédure officielle.
 
 ## Validation et retour arrière

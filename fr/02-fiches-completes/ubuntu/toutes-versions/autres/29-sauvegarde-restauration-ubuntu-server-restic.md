@@ -12,8 +12,8 @@ dateModified: 2026-11-03T09:36:14Z
 # Sauvegarder et restaurer Ubuntu Server avec Restic
 
 - **Type de fiche** : Autres — sauvegarde / reprise
-- **Environnement** : VM ou serveur dédié avec dépôt de sauvegarde hors hôte
-- **OS / Version** : Ubuntu Server 24-04 LTS ou 26-04 LTS
+- **Environnement** : [[Glossary:VM]] ou serveur dédié avec dépôt de sauvegarde hors hôte
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] ou 26-04 LTS
 - **Rôle** : Mettre en place des sauvegardes chiffrées, vérifiables et restaurables
 - **Tags** : `ubuntu-server`, `ubuntu-24.04`, `ubuntu-26.04`, `restic`, `sauvegarde`, `restauration`
 

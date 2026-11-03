@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_OpenVPN_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13 dédiée à OpenVPN Community Edition
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à OpenVPN Community Edition
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : OpenVPN Community Edition / sauvegarder / restaurer
 - **Tags** : `openvpn`, `debian13`, `vie-du-logiciel`, `sauvegarder_restaurer`
@@ -32,7 +32,7 @@ Sauvegarder la configuration et les artefacts nécessaires au rétablissement sa
    ```
    👉 Explication : L’archive contient des clés privées; transférer chiffrée vers un dépôt approuvé et consigner son empreinte séparément.
 
-2. Vérifier que CA hors ligne, inventaire de certificats et procédure de révocation sont sauvegardés séparément.
+2. Vérifier que [[Glossary:CA]] hors ligne, inventaire de certificats et procédure de révocation sont sauvegardés séparément.
    👉 Explication : Ne pas regrouper les clés privées clients avec la configuration serveur.
 
 3. Tester une restauration dans une VM isolée, sans connexion au réseau de production.
@@ -40,7 +40,7 @@ Sauvegarder la configuration et les artefacts nécessaires au rétablissement sa
 
 ## 2. Production — Contrôles
 
-Définir RPO/RTO, chiffrement, accès nominatif au dépôt, rétention, vérification d’intégrité et responsable de test.
+Définir [[Glossary:RPO]]/RTO, chiffrement, accès nominatif au dépôt, rétention, vérification d’intégrité et responsable de test.
 
 ## 3. Production — Sécurité
 

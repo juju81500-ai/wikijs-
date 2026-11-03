@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-samba-ad-dc-verifier-ad.md
 
-- **Environnement** : VM Debian 13 de laboratoire, contrôleur de domaine Samba AD DC (DNS SAMBA_INTERNAL)
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire, contrôleur de domaine Samba [[Glossary:AD]] [[Glossary:DC]] ([[Glossary:DNS]] SAMBA_INTERNAL)
 - **OS / Version** : Debian 13 Trixie; Samba 4.22 (dépôts Debian)
 - **Catégorie** : annuaire / validation
 - **Tags** : `debian13`, `samba`, `active-directory`, `lab`, `kerberos`, `dns`
@@ -30,7 +30,7 @@ Contrôler DNS, Kerberos et l'état du domaine.
    host -t SRV _ldap._tcp.ad.lab.test 192.0.2.10
    host -t SRV _kerberos._udp.ad.lab.test 192.0.2.10
    ```
-   👉 Explication : vérifie les enregistrements A et SRV (noms et IP d'exemple à remplacer).
+   👉 Explication : vérifie les enregistrements A et SRV (noms et [[Glossary:IP]] d'exemple à remplacer).
 
 2. Exécuter :
    ```bash
@@ -46,9 +46,9 @@ Contrôler DNS, Kerberos et l'état du domaine.
    sudo samba-tool ntacl sysvolcheck
    sudo samba-tool dbcheck
    ```
-   👉 Explication : contrôle le domaine, les utilisateurs, les ACL SYSVOL et la base (diagnostic seulement, sans option de réparation).
+   👉 Explication : contrôle le domaine, les utilisateurs, les [[Glossary:ACL]] [[Glossary:SYSVOL]] et la base (diagnostic seulement, sans option de réparation).
 
-4. Joindre un poste de test, appliquer une GPO témoin et accéder à SYSVOL/NETLOGON.
+4. Joindre un poste de test, appliquer une [[Glossary:GPO]] témoin et accéder à SYSVOL/NETLOGON.
    👉 Explication : valide l'usage réel; en multi-DC, lancer aussi `samba-tool drs showrepl` sur chaque DC.
 
 ## 2. Production — Contrôles

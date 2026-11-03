@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # Fiche_Simple_-_Cloud_Azure_VPC_Firewall
 
 - **Environnement** : tenant/compte de laboratoire contrôlé ; accès d’administration autorisé
-- **OS / Version** : Cloud/SaaS — Azure CLI (az ; version publiée à vérifier)
+- **OS / Version** : Cloud/SaaS — Azure [[Glossary:CLI]] (az ; version publiée à vérifier)
 - **Catégorie** : cloud public / vnet et pare-feu
 - **Tags** : `azure`, `vpc_firewall`, `securite`, `procedure`
 
@@ -33,17 +33,17 @@ Les valeurs écrites en MAJUSCULES sont des placeholders à remplacer par les va
    az network vnet create --resource-group GROUPE --name NOM_VNET --address-prefixes CIDR_VNET --subnet-name NOM_SUBNET --subnet-prefixes CIDR_SUBNET
 az network nsg list --resource-group GROUPE
    ```
-   👉 Explication : Valider le plan IP, les routes et les règles NSG avant attachement ; n’autoriser SSH/RDP que depuis IP_ADMIN/32 ou via Bastion/VPN.
+   👉 Explication : Valider le plan [[Glossary:IP]], les routes et les règles NSG avant attachement ; n’autoriser [[Glossary:SSH]]/RDP que depuis IP_ADMIN/32 ou via Bastion/VPN.
 3. Console et CLI : comparer la configuration affichée avec l’état attendu, puis valider sur une ressource pilote non sensible.
    👉 Explication : les interfaces évoluent ; vérifier l’aide/version officielle et les quotas/licences avant généralisation.
 
 ## 2. Production — Contrôles
 
-Faire approuver CIDR, sous-réseaux, routes, flux entrants/sortants, DNS et accès d’administration. Vérifier qu’aucune règle SSH/RDP ne cible Internet entier.
+Faire approuver [[Glossary:CIDR]], sous-réseaux, routes, flux entrants/sortants, [[Glossary:DNS]] et accès d’administration. Vérifier qu’aucune règle SSH/RDP ne cible Internet entier.
 
 ## 3. Production — Sécurité
 
-Appliquer le moindre privilège, filtrer IPv4 et IPv6, journaliser les flux sensibles et utiliser VPN/bastion/accès managé. Ne pas ouvrir de port d’administration au monde.
+Appliquer le moindre privilège, filtrer IPv4 et IPv6, journaliser les flux sensibles et utiliser [[Glossary:VPN]]/bastion/accès managé. Ne pas ouvrir de port d’administration au monde.
 
 ## Validation et retour arrière
 

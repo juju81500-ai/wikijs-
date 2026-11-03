@@ -24,7 +24,7 @@ Valider qu'une panne déclenche une alerte.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Dans un lab, mettre un disque hors ligne : GUI Stockage > Gérer les périphériques > disque > Hors ligne.
+1. Dans un lab, mettre un disque hors ligne : [[Glossary:GUI]] Stockage > Gérer les périphériques > disque > Hors ligne.
    ```bash
    sudo zpool offline POOL sdX
    sudo zpool status POOL

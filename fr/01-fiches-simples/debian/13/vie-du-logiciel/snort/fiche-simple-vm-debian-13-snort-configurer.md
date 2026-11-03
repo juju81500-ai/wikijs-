@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Snort_Configurer
 
-- **Environnement** : VM Debian 13 dédiée à Snort IDS passif
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à Snort [[Glossary:IDS]] passif
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : Snort IDS passif / configurer
 - **Tags** : `snort`, `debian13`, `vie-du-logiciel`, `configurer`

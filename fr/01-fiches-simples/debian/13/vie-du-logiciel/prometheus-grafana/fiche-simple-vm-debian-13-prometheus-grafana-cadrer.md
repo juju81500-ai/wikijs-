@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-prometheus-grafana-cadrer.md
 
-- **Environnement** : VM Debian 13 dédiée; cibles de supervision explicitement autorisées
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée; cibles de supervision explicitement autorisées
 - **OS / Version** : Debian 13 Trixie; Prometheus 3.15.1 et Grafana OSS
 - **Catégorie** : supervision / métrologie / cadrage
 - **Tags** : `debian13`, `prometheus`, `grafana`, `cadrage`, `metrics`

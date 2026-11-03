@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_24.04_Securite_Certbot_TLS
 
-- **Environnement** : VM Ubuntu Server exposant un service HTTPS public
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat) - certbot 2.9.x depuis le dépôt Noble (la documentation amont recommande le paquet snap)
-- **Catégorie** : Sécurité / Chiffrement des flux (TLS)
+- **Environnement** : [[Glossary:VM]] Ubuntu Server exposant un service HTTPS public
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble Numbat) - certbot 2.9.x depuis le dépôt Noble (la documentation amont recommande le paquet snap)
+- **Catégorie** : Sécurité / Chiffrement des flux ([[Glossary:TLS]])
 - **Tags** : `[ubuntu24.04]`, `[ubuntu]`, `[certbot]`, `[letsencrypt]`, `[tls]`, `[nginx]`, `[renouvellement]`
 
 ## 🎯 Problème précis à résoudre
@@ -39,14 +39,14 @@ Obtenir, installer et renouveler automatiquement un certificat TLS Let's Encrypt
    dig +short <domaine>
    sudo ufw status verbose
    ```
-   👉 *Explication : Let's Encrypt valide le domaine en accédant au port 80 ; un DNS ou un pare-feu incorrect fait échouer l'émission.*
+   👉 *Explication : Let's Encrypt valide le domaine en accédant au port 80 ; un [[Glossary:DNS]] ou un pare-feu incorrect fait échouer l'émission.*
 2. Émettre le certificat de production et configurer Nginx :
    ```bash
    sudo certbot --nginx -d <domaine> --non-interactive --agree-tos --redirect -m <email_admin>
    sudo nginx -t
    sudo systemctl reload nginx
    ```
-   👉 *Explication : L'option `--redirect` force la redirection HTTP vers HTTPS. Le plugin Nginx modifie le fichier du site ; `nginx -t` doit valider la syntaxe avant rechargement.*
+   👉 *Explication : L'option `--redirect` force la redirection [[Glossary:HTTP]] vers HTTPS. Le plugin Nginx modifie le fichier du site ; `nginx -t` doit valider la syntaxe avant rechargement.*
 
 ## 🔒 3. Production — Façon Sécurisée
 1. Tester le renouvellement sans modifier le certificat réel :

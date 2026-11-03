@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_MongoDB_Mettre_A_Jour
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; MongoDB Community (dépôt officiel)
 - **Catégorie** : base de données / MongoDB / Mise à jour et retour arrière
 - **Tags** : `debian13`, `mongodb`, `mise-a-jour`

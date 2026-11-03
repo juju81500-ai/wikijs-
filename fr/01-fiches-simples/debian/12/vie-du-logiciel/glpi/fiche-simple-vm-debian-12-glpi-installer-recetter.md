@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-12-glpi-installer-recetter.md
 
-- **Environnement** : GLPI déployé en HTTPS, accès depuis un poste d'administration
+- **Environnement** : [[Glossary:GLPI]] déployé en HTTPS, accès depuis un poste d'administration
 - **OS / Version** : Debian 12 ou 13; version GLPI maintenue
 - **Catégorie** : GLPI / installation et recette
 - **Tags** : `debian12`, `glpi`, `itsm`, `https`, `validation`
@@ -25,7 +25,7 @@ Terminer l'installation GLPI et valider les fonctions essentielles sans laisser 
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Ouvrir l'URL HTTPS depuis un poste d'administration : **https://glpi.example.net** puis suivre l'assistant (langue, licence, **Installer**, informations de base : serveur `localhost`, utilisateur `glpi`, base `glpi`).
-   👉 Explication : utiliser le compte SQL dédié.
+   👉 Explication : utiliser le compte [[Glossary:SQL]] dédié.
 
 2. Sécuriser après installation : supprimer l'installateur et remplacer les comptes par défaut : **Configuration > Utilisateurs** (changer `glpi`, `tech`, `normal`, `post-only`).
    ```bash

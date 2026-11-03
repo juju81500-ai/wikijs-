@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-git-valider-clone-commit.md
 
-- **Environnement** : Git depuis APT Debian 13, dépôt de test autorisé
+- **Environnement** : Git depuis [[Glossary:APT]] Debian 13, dépôt de test autorisé
 - **OS / Version** : Debian 13 Trixie amd64
 - **Catégorie** : gestion de versions / développement
 - **Tags** : `debian13`, `git`, `validation`, `ssh`, `secrets`, `workflow`
@@ -46,7 +46,7 @@ Vérifier le client Git, l'identité de commit et le parcours clone, revue, comm
    git remote -v
    git status --short --branch
    ```
-   👉 Explication : remplacer l'URL; aucun jeton dans l'URL (utiliser clé SSH ou gestionnaire d'identifiants).
+   👉 Explication : remplacer l'URL; aucun jeton dans l'URL (utiliser clé [[Glossary:SSH]] ou gestionnaire d'identifiants).
 
 4. Créer une branche, modifier un fichier fictif et relire :
    ```bash
@@ -73,7 +73,7 @@ Consigner l'URL distante approuvée, la branche autorisée, la stratégie de mer
 ## 3. Production — Sécurité
 
 - Ne pas mettre de tokens ou mots de passe dans une URL, une commande, `.git/config`, un script ou l'historique du shell.
-- Vérifier l'empreinte SSH de l'hôte par une source officielle; ne pas désactiver les contrôles TLS/SSH.
+- Vérifier l'empreinte SSH de l'hôte par une source officielle; ne pas désactiver les contrôles [[Glossary:TLS]]/SSH.
 - Inspecter le diff indexé pour détecter secrets, données personnelles, exports et artefacts avant chaque commit.
 - Garder les dépôts inconnus en Restricted Mode dans VS Code; examiner tâches, scripts et configurations avant exécution.
 - Éviter les pushes forcés et les commits directs sur les branches protégées.

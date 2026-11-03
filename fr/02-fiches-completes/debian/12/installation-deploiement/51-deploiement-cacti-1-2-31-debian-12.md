@@ -21,7 +21,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [cadrer et préparer le déploiement](/fr/01-fiches-simples/debian/12/vie-du-logiciel/cacti/fiche-simple-vm-debian-12-cacti-cadrer).
 
-Installer sur une VM dédiée et dimensionner CPU, RAM, stockage RRD et base selon le nombre de périphériques, de graphes et la fréquence d'interrogation. Préparer DNS, NTP, certificat TLS, stratégie de sauvegarde et compte de service SNMP lecture seule. La collecte par polling implique une connectivité réseau explicite entre le poller et les équipements autorisés.
+Installer sur une [[Glossary:VM]] dédiée et dimensionner [[Glossary:CPU]], [[Glossary:RAM]], stockage RRD et base selon le nombre de périphériques, de graphes et la fréquence d'interrogation. Préparer [[Glossary:DNS]], [[Glossary:NTP]], certificat [[Glossary:TLS]], stratégie de sauvegarde et compte de service [[Glossary:SNMP]] lecture seule. La collecte par polling implique une connectivité réseau explicite entre le poller et les équipements autorisés.
 
 La version actuelle documentée par Cacti est 1.2.31; vérifier les exigences PHP, extensions, MariaDB, RRDtool et Composer avant de figer les paquets. Ne pas utiliser un dépôt de branche mobile en production : choisir une archive/release identifiée, vérifier sa provenance et appliquer les correctifs de sécurité.
 
@@ -58,7 +58,7 @@ Fiche simple : [finaliser l'interface et la collecte](/fr/01-fiches-simples/debi
 
 Redémarrer Apache/PHP-FPM après configuration si utilisé. Ouvrir l'interface derrière HTTPS et terminer l'assistant avec un compte administrateur unique; changer les valeurs initiales et supprimer tout accès de démonstration.
 
-Configurer le poller sous un compte dédié et le cron ou service systemd recommandé par la release. Ajouter d'abord un équipement pilote autorisé, utiliser SNMPv3 authPriv en lecture seule et attacher uniquement les templates utiles. Le poller doit recevoir les réponses depuis les équipements; limiter UDP/161 aux sources nécessaires.
+Configurer le poller sous un compte dédié et le cron ou service systemd recommandé par la release. Ajouter d'abord un équipement pilote autorisé, utiliser SNMPv3 authPriv en lecture seule et attacher uniquement les templates utiles. Le poller doit recevoir les réponses depuis les équipements; limiter [[Glossary:UDP]]/161 aux sources nécessaires.
 
 ## 6. Vérifier
 

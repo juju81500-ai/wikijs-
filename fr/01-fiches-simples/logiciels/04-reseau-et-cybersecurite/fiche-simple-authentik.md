@@ -11,14 +11,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Authentik
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : Authentik 2024.x (conteneurs officiels via Docker Compose, tag à vérifier sur la version déployée)
 - **Catégorie** : Réseau et cybersécurité
 - **Tags** : `[debian-12]`, `[authentik]`, `[sso]`, `[mfa]`, `[docker]`, `[hardening]`
 
 ## 🎯 Objectif
-Déployer Authentik sur Debian 12 avec Docker Compose comme fournisseur d'identité (SSO, double facteur), vérifier l'assistant de première configuration sur ce même serveur, puis le durcir (secrets forts, accès d'administration restreint, sauvegarde). Les tests ne se font que sur votre propre serveur.
+Déployer Authentik sur Debian 12 avec Docker Compose comme fournisseur d'identité ([[Glossary:SSO]], double facteur), vérifier l'assistant de première configuration sur ce même serveur, puis le durcir (secrets forts, accès d'administration restreint, sauvegarde). Les tests ne se font que sur votre propre serveur.
 
 ---
 
@@ -77,7 +77,7 @@ sudo ufw allow from <adresse_ip_reverse_proxy> to any port 9443 proto tcp
 sudo ufw enable
 sudo ufw status verbose
 ```
-👉 Explication : SSH est limité au poste d'administration. Les ports 9000 et 9443 ne sont accessibles que depuis le reverse proxy qui publie Authentik en HTTPS. Autoriser SSH avant `ufw enable` évite de perdre l'accès.
+👉 Explication : [[Glossary:SSH]] est limité au poste d'administration. Les ports 9000 et 9443 ne sont accessibles que depuis le reverse proxy qui publie Authentik en HTTPS. Autoriser SSH avant `ufw enable` évite de perdre l'accès.
 
 2. Redémarrage propre après modification du `.env` :
 ```bash

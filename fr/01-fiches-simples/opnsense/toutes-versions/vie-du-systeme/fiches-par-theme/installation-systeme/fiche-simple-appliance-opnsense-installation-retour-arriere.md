@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-appliance-opnsense-installation-retour-arriere.md
 
-- **Environnement** : Appliance physique ou VM dédiée avec interfaces réseau identifiées
+- **Environnement** : Appliance physique ou [[Glossary:VM]] dédiée avec interfaces réseau identifiées
 - **OS / Version** : OPNsense Community ou Business Edition, release maintenue compatible avec la plateforme
 - **Catégorie** : pare-feu / retour arrière
 - **Tags** : `opnsense`, `installation`, `pare-feu`, `wan`, `lan`
@@ -24,7 +24,7 @@ Retrouver un accès ou revenir à une configuration valide.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. En cas de perte d'accès, utiliser la console locale : **1) Assign interfaces** ou **2) Set interface IP address** pour corriger l'affectation.
+1. En cas de perte d'accès, utiliser la console locale : **1) Assign interfaces** ou **2) Set interface [[Glossary:IP]] address** pour corriger l'affectation.
    👉 Explication : la console reste accessible même sans réseau.
 
 2. Restaurer une configuration valide : menu console (entrée de restauration de configuration, selon la version) ou **System > Configuration > Backups > Restore**.

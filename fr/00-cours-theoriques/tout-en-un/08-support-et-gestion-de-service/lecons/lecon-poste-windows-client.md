@@ -25,7 +25,7 @@ dateModified: 2026-11-03T09:36:13Z
 2. Diagnostiquer une panne d'**impression** maillon par maillon (application, spouleur, pilote, port, imprimante).
 3. Contrôler l'état des **mises à jour** et distinguer un échec de téléchargement, d'installation ou de redémarrage.
 4. Repérer un **pilote** défaillant et revenir à une version saine.
-5. Résoudre les pannes **réseau** courantes du poste (adresse, DNS, proxy, profil réseau).
+5. Résoudre les pannes **réseau** courantes du poste (adresse, [[Glossary:DNS]], proxy, profil réseau).
 6. Situer une panne de **démarrage**.
 7. Choisir un **outil de diagnostic** adapté et conduire une **prise en main à distance** dans le respect du consentement de l'utilisateur.
 
@@ -49,7 +49,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 Un poste est une chaîne : cuisine (matériel), personnel (système), salle réservée au client (profil) et plat servi (application). Dépanner, c'est trouver l'étape qui échoue.
 
-Rappel de méthode : relevez l'**heure exacte**, le **dernier changement**, comparez, ne modifiez qu'une chose à la fois. Toutes les commandes de cette leçon sont **en lecture seule**, sauf mention contraire (⚠️), à exécuter sur une VM de laboratoire.
+Rappel de méthode : relevez l'**heure exacte**, le **dernier changement**, comparez, ne modifiez qu'une chose à la fois. Toutes les commandes de cette leçon sont **en lecture seule**, sauf mention contraire (⚠️), à exécuter sur une [[Glossary:VM]] de laboratoire.
 
 ## 2. Profils utilisateur
 
@@ -77,7 +77,7 @@ Get-CimInstance Win32_UserProfile | Select-Object LocalPath, LastUseTime, Loaded
 whoami /user
 ```
 
-👉 Explication : affiche le compte courant et son identifiant de sécurité (SID), utile pour retrouver la clé de registre du profil.
+👉 Explication : affiche le compte courant et son identifiant de sécurité ([[Glossary:SID]]), utile pour retrouver la clé de registre du profil.
 
 ```powershell
 Get-WinEvent -FilterHashtable @{LogName='Application'; ProviderName='Microsoft-Windows-User Profile Service'} -MaxEvents 10 | Format-List TimeCreated, Id, Message
@@ -113,7 +113,7 @@ robocopy C:\Users\lab-test D:\Sauvegarde\lab-test /E /XJ /R:1 /W:1 /COPY:DAT
 1. **Application** : imprime-t-elle vers « Microsoft Print to PDF » ? Si oui, application et spouleur fonctionnent ; le problème est en aval.
 2. **Spouleur** (service Spooler) : file d'attente des travaux.
 3. **Pilote** : traduit le document pour le modèle d'imprimante.
-4. **Port ou serveur d'impression** : port TCP/IP direct ou partage `\\serveur\imprimante`.
+4. **Port ou serveur d'impression** : port [[Glossary:TCP]]/IP direct ou partage `\\serveur\imprimante`.
 5. **Imprimante** : allumée, joignable, papier et consommables.
 
 ### 3.2 Contrôles en lecture seule
@@ -235,13 +235,13 @@ Utilisez des pilotes **signés** et provenant d'une source officielle ; évitez 
 
 ### 6.1 Ordre de contrôle
 
-Reprenez l'arbre de la leçon de méthode : **adresse IP → passerelle → DNS → port du service → proxy → compte**.
+Reprenez l'arbre de la leçon de méthode : **adresse [[Glossary:IP]] → passerelle → DNS → port du service → proxy → compte**.
 
 ```powershell
 Get-NetIPConfiguration
 ```
 
-👉 Explication : affiche interfaces, adresses IPv4/IPv6, passerelles et serveurs DNS ; une adresse en 169.254.x.x indique l'absence de DHCP.
+👉 Explication : affiche interfaces, adresses IPv4/IPv6, passerelles et serveurs DNS ; une adresse en 169.254.x.x indique l'absence de [[Glossary:DHCP]].
 
 ```powershell
 Get-DnsClientServerAddress -AddressFamily IPv4 | Format-Table InterfaceAlias, ServerAddresses
@@ -359,7 +359,7 @@ Prendre la main, c'est voir et agir dans la session de quelqu'un : documents, me
 | Modalité | Principe | Point d'attention |
 |---|---|---|
 | Assistance à distance interactive (par exemple **Assistance rapide** de Windows ou **Assistance à distance** `msra`) | Partage de l'écran de l'utilisateur, avec son accord | Adaptée au dépannage « en direct » ; l'utilisateur voit tout |
-| Bureau à distance (RDP) | Ouvre une **nouvelle session** et verrouille généralement la session locale | Inadapté pour voir la session de l'utilisateur ; adapté aux serveurs ou aux postes non utilisés |
+| Bureau à distance ([[Glossary:RDP]]) | Ouvre une **nouvelle session** et verrouille généralement la session locale | Inadapté pour voir la session de l'utilisateur ; adapté aux serveurs ou aux postes non utilisés |
 | Administration à distance non interactive (PowerShell, outils de gestion) | Commandes sans affichage du bureau | Journaliser les commandes ; moindre intrusion sur le contenu de la session |
 
 Choisissez la **modalité la moins intrusive qui résout le problème** : souvent, une commande d'administration suffit sans voir l'écran.
@@ -459,7 +459,7 @@ Par deux : le technicien demande, informe, obtient l'accord, puis rédige la not
 ## Corrigés des exercices
 
 1. (a) Démarrage, étape 3 (noyau, pilotes). (b) Profil (étape 4). (c) Réseau : proxy ou DNS. (d) Chaîne d'impression après le spouleur : pilote, port, réseau ou imprimante.
-2. Pas de réponse DHCP : lien ou Wi-Fi non établi, VLAN ou port incorrect, serveur DHCP indisponible, service client du poste. Vérifier d'abord l'état de la carte et comparer avec un autre poste.
+2. Pas de réponse DHCP : lien ou Wi-Fi non établi, [[Glossary:VLAN]] ou port incorrect, serveur DHCP indisponible, service client du poste. Vérifier d'abord l'état de la carte et comparer avec un autre poste.
 3. Sauvegarder les données ; lire les événements du service de profils ; renommer le profil et en créer un neuf ; restaurer les données, valider, documenter. Pas de suppression sans accord.
 4. Les autres imprimantes fonctionnent-elles ? L'imprimante est-elle allumée sans erreur ? Répond-elle (ping, port 9100) ? Le serveur d'impression est-il sain ? Un travail bloque-t-il la file ? Tout le monde touché : serveur, file ou imprimante, pas un poste.
 5. Preuves : version et date du pilote, journaux aux heures des coupures, correctif installé. Action : retour à la version précédente du pilote, un seul changement, sur un poste pilote d'abord.
@@ -501,7 +501,7 @@ A. Le mot de passe de l'utilisateur. B. Son accord explicite après information.
 **Réponse : B.** Le consentement explicite est la règle ; un mot de passe ne se demande jamais.
 
 **Q9. Pourquoi RDP est-il mal adapté pour regarder le problème d'un utilisateur ?**
-A. Il est interdit. B. Il ouvre généralement une nouvelle session et verrouille la session locale. C. Il est plus lent. D. Il nécessite un VPN.
+A. Il est interdit. B. Il ouvre généralement une nouvelle session et verrouille la session locale. C. Il est plus lent. D. Il nécessite un [[Glossary:VPN]].
 **Réponse : B.** On ne voit pas la session de l'utilisateur ; l'assistance interactive est plus adaptée.
 
 **Q10. Quel journal donne la chronologie des échecs de mises à jour ?**
@@ -531,7 +531,7 @@ A. Microsoft-Windows-WindowsUpdateClient/Operational. B. Journal du spouleur. C.
 - Dépannage de Windows Update : <https://learn.microsoft.com/windows/deployment/update/windows-update-troubleshooting>
 - Environnement de récupération Windows : <https://learn.microsoft.com/windows-hardware/manufacture/desktop/windows-recovery-environment--windows-re--technical-reference>
 - Assistance rapide : <https://learn.microsoft.com/windows/client-management/client-tools/quick-assist>
-- RGPD (EUR-Lex) : <https://eur-lex.europa.eu/eli/reg/2016/679/oj>
+- [[Glossary:RGPD]] (EUR-Lex) : <https://eur-lex.europa.eu/eli/reg/2016/679/oj>
 
 ## Crédits des images
 
@@ -541,7 +541,7 @@ A. Microsoft-Windows-WindowsUpdateClient/Operational. B. Journal du spouleur. C.
 | `images/poste-windows-client-2.svg` | Création originale (aucune source externe) | Projet Pack Master | CC0 1.0 — <https://creativecommons.org/publicdomain/zero/1.0/> | Sans objet |
 | `images/poste-windows-client-3.svg` | Création originale (aucune source externe) | Projet Pack Master | CC0 1.0 — <https://creativecommons.org/publicdomain/zero/1.0/> | Sans objet |
 
-Création originale du projet Pack Master, dédiée au domaine public (CC0). Aucune image Commons retenue : l'API de Commons renvoyait HTTP 429 lors de la recherche.
+Création originale du projet Pack Master, dédiée au domaine public (CC0). Aucune image Commons retenue : l'[[Glossary:API]] de Commons renvoyait [[Glossary:HTTP]] 429 lors de la recherche.
 
 ## Historique de vérification
 

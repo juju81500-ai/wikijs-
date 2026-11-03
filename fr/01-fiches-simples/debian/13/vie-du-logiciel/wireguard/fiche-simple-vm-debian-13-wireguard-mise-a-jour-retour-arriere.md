@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_WireGuard_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Debian 13 dédiée à WireGuard natif
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée à WireGuard natif
 - **OS / Version** : Debian 13 Trixie; version des dépôts à vérifier sur l’hôte
 - **Catégorie** : WireGuard natif / mise à jour et retour arrière
 - **Tags** : `wireguard`, `debian13`, `vie-du-logiciel`, `mise_a_jour_retour_arriere`

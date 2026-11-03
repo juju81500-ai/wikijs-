@@ -60,7 +60,7 @@ Appliquer le compte/organisation approuvé, rôles minimaux, revue des accès et
 
 - Ne jamais coder un secret dans YAML, un commit, un artefact ou les logs.
 - Ne pas exposer secrets aux workflows de forks non fiables.
-- Préférer OIDC lorsque le fournisseur le permet.
+- Préférer [[Glossary:OIDC]] lorsque le fournisseur le permet.
 
 ## Validation et retour arrière
 

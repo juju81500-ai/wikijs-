@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_FreeIPA_Client_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Ubuntu 24-04 cliente d'un domaine FreeIPA existant
-- **OS / Version** : Ubuntu 24-04 LTS Noble; paquet freeipa-client des dépôts, version à vérifier
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 cliente d'un domaine FreeIPA existant
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; paquet freeipa-client des dépôts, version à vérifier
 - **Catégorie** : FreeIPA client / mise à jour / retour arrière
 - **Tags** : `freeipa`, `ubuntu24-04`, `vie-du-logiciel`, `mise-a-jour-retour-arriere`
 

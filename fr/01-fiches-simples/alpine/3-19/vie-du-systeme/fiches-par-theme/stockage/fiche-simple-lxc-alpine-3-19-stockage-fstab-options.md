@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-lxc-alpine-3-19-stockage-fstab-options.md
 
-- **Environnement** : LXC (Proxmox VE)
+- **Environnement** : [[Glossary:LXC]] (Proxmox VE)
 - **OS / Version** : Alpine Linux 3-19 - Famille Alpine (OpenRC, apk)
 - **Catégorie** : Stockage & Systèmes de fichiers / Montages
 - **Tags** : `[alpine3.19]`, `[alpine]`, `[lxc]`, `[fstab]`, `[mount]`, `[hardening]`
@@ -36,7 +36,7 @@ Vérifier et durcir les montages persistants d'un conteneur Alpine Linux (`/etc/
    ```text
    tmpfs   /tmp   tmpfs   defaults,nodev,nosuid,noexec,size=512M   0 0
    ```
-   👉 Explication : `noexec` interdit l'exécution directe de binaires depuis `/tmp`, `nosuid` ignore le bit SUID et `nodev` ignore les fichiers périphériques. Sauvegarder `/etc/fstab` avant cette modification.
+   👉 Explication : `noexec` interdit l'exécution directe de binaires depuis `/tmp`, `nosuid` ignore le bit [[Glossary:SUID]] et `nodev` ignore les fichiers périphériques. Sauvegarder `/etc/fstab` avant cette modification.
 
 3. Appliquer les entrées sans redémarrer et contrôler le résultat :
    ```sh

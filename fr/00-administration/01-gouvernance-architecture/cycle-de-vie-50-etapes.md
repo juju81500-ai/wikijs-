@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Tags** : `cycle-de-vie`, `checklist`, `installation`, `production`, `reparation`, `verification`
 
-Nomenclature du cycle : [DEBIAN/UBUNTU] | [RHEL/ALMA/ROCKY] | [WINDOWS SERVER] | [FREEBSD]. Les pages par OS reprennent ce cycle avec les seules commandes de la famille.
+Nomenclature du cycle : [DEBIAN/UBUNTU] | [[[Glossary:RHEL]]/ALMA/ROCKY] | [WINDOWS SERVER] | [FREEBSD]. Les pages par OS reprennent ce cycle avec les seules commandes de la famille.
 
 Cette liste est une trame de préparation, pas un script universel ni une autorisation de changement. Les commandes et chemins varient selon la version, l'édition et l'architecture. Vérifier les sources officielles et l'état initial; sauvegarder, prévoir un accès de secours et valider le retour arrière avant toute action en production. Ne pas appliquer en bloc les exemples ou les réglages de durcissement.
 
@@ -21,7 +21,7 @@ Cette liste est une trame de préparation, pas un script universel ni une autori
 
 ### 01. Definition des besoins (Sizing)
 
-- **Tous OS** : Allocation vCPU/CPU, RAM, IOPS stockage, architecture (x86_64, ARM64).
+- **Tous OS** : Allocation vCPU/CPU, [[Glossary:RAM]], [[Glossary:IOPS]] stockage, architecture (x86_64, ARM64).
 
 ### 02. Recuperation de l'image systeme
 
@@ -39,12 +39,12 @@ Cette liste est une trame de préparation, pas un script universel ni une autori
 
 ### 04. Preparation du support d'amorcage
 
-- **Bare-metal** : Clé USB bootable (outil adapté à l'OS) ou média virtuel via IPMI/iDRAC/iLO. `dd` écrase le périphérique cible : identifier et vérifier le disque avant écriture.
+- **Bare-metal** : Clé [[Glossary:USB]] bootable (outil adapté à l'OS) ou média virtuel via [[Glossary:IPMI]]/iDRAC/iLO. `dd` écrase le périphérique cible : identifier et vérifier le disque avant écriture.
 - **Virtuel** : Stockage de l'ISO dans le datastore (Proxmox VE, VMware ESXi, Hyper-V, XCP-ng); limiter et protéger les accès à la console de gestion.
 
 ### 05. Configuration materielle / Firmware
 
-- **Tous OS** : Choisir UEFI ou BIOS selon la plateforme et les besoins; préférer Secure Boot activé lorsqu'il est pris en charge par la chaîne de démarrage. Configurer VT-x/AMD-V, stockage (AHCI, VirtIO SCSI, contrôleur matériel) et firmware selon l'hyperviseur et l'OS. Ne pas désactiver une protection sans motif documenté.
+- **Tous OS** : Choisir UEFI ou [[Glossary:BIOS]] selon la plateforme et les besoins; préférer Secure Boot activé lorsqu'il est pris en charge par la chaîne de démarrage. Configurer VT-x/AMD-V, stockage ([[Glossary:AHCI]], VirtIO SCSI, contrôleur matériel) et firmware selon l'hyperviseur et l'OS. Ne pas désactiver une protection sans motif documenté.
 
 
 ## Phase 2 : installation de base (étapes 6 à 15)
@@ -61,7 +61,7 @@ Cette liste est une trame de préparation, pas un script universel ni une autori
 
 ### 08. Configuration reseau d'installation
 
-- **Debian** : Configuration de l'installateur (DHCP ou paramètres temporaires)
+- **Debian** : Configuration de l'installateur ([[Glossary:DHCP]] ou paramètres temporaires)
 - **RHEL** : Network & Host Name (Anaconda / NetworkManager)
 - **Windows** : WinPE Network initialization
 - **FreeBSD** : bsdinstall netconfig
@@ -69,8 +69,8 @@ Cette liste est une trame de préparation, pas un script universel ni une autori
 
 ### 09. Identite de la machine
 
-- **Linux/BSD** : Hostname + Domain Name (FQDN)
-- **Windows** : Computer Name (NetBIOS / DNS Hostname)
+- **Linux/BSD** : Hostname + Domain Name ([[Glossary:FQDN]])
+- **Windows** : Computer Name (NetBIOS / [[Glossary:DNS]] Hostname)
 
 ### 10. Compte Super-Administrateur
 
@@ -92,22 +92,22 @@ Cette liste est une trame de préparation, pas un script universel ni une autori
 
 ### 13. Partitionnement et systemes de fichiers
 
-- **Tous OS** : Concevoir le partitionnement selon l'UEFI/BIOS, la capacité, les besoins de reprise et les outils de sauvegarde; GPT est le choix courant pour les nouveaux systèmes.
-- **Debian/Ubuntu** : Choisir un système de fichiers pris en charge par l'installateur et la distribution (souvent ext4; XFS, Btrfs, ZFS ou LVM selon les besoins et le support).
+- **Tous OS** : Concevoir le partitionnement selon l'UEFI/BIOS, la capacité, les besoins de reprise et les outils de sauvegarde; [[Glossary:GPT]] est le choix courant pour les nouveaux systèmes.
+- **Debian/Ubuntu** : Choisir un système de fichiers pris en charge par l'installateur et la distribution (souvent ext4; [[Glossary:XFS]], Btrfs, [[Glossary:ZFS]] ou [[Glossary:LVM]] selon les besoins et le support).
 - **RHEL/Rocky** : XFS ou ext4; LVM et Stratis selon l'édition et les besoins.
-- **Windows** : EFI/MSR/OS/Recovery selon le mode de démarrage; NTFS pour le volume système. ReFS est destiné à des usages et éditions pris en charge, pas un remplacement universel de NTFS.
+- **Windows** : [[Glossary:EFI]]/MSR/OS/Recovery selon le mode de démarrage; [[Glossary:NTFS]] pour le volume système. ReFS est destiné à des usages et éditions pris en charge, pas un remplacement universel de NTFS.
 - **FreeBSD** : GPT avec UFS ou ZFS selon l'usage; vérifier le schéma de partitions de l'installateur et les exigences de démarrage.
 
 ### 14. Selection des composants de base
 
-- **Debian** : tasksel (Serveur SSH, Utilitaires usuels du systeme, sans GUI)
+- **Debian** : tasksel (Serveur [[Glossary:SSH]], Utilitaires usuels du systeme, sans [[Glossary:GUI]])
 - **RHEL** : Base Environment "Minimal Install" ou "Server" (sans GUI)
 - **Windows** : Edition "Server Core" (sans GUI) ou "Server with Desktop Experience" (GUI)
 - **FreeBSD** : Distribution sets (base, kernel, lib32, ports)
 
 ### 15. Chargeur d'amorcage (Bootloader)
 
-- **Linux** : Chargeur pris en charge par la distribution et le mode de démarrage; GRUB est courant. Ne choisir systemd-boot que si la distribution et la configuration le prennent en charge.
+- **Linux** : Chargeur pris en charge par la distribution et le mode de démarrage; [[Glossary:GRUB]] est courant. Ne choisir systemd-boot que si la distribution et la configuration le prennent en charge.
 - **Windows** : Windows Boot Manager (bootmgfw.efi / BCD)
 - **FreeBSD** : loader.efi / gptzfsboot
 
@@ -143,13 +143,13 @@ Cette liste est une trame de préparation, pas un script universel ni une autori
 
 - **Debian/Ubuntu** : Actualiser l'index puis examiner les changements proposés avant la mise à niveau (par exemple `apt update` puis `apt full-upgrade`).
 - **RHEL/Rocky** : Examiner puis appliquer les mises à jour (`dnf upgrade`); planifier le redémarrage si le noyau ou des services l'exigent.
-- **Windows** : Windows Update, WSUS ou l'outil de gestion approuvé. `Install-WindowsUpdate` dépend d'un module tiers; ne pas le présenter comme une commande intégrée.
+- **Windows** : Windows Update, [[Glossary:WSUS]] ou l'outil de gestion approuvé. `Install-WindowsUpdate` dépend d'un module tiers; ne pas le présenter comme une commande intégrée.
 - **FreeBSD** : Distinguer les mises à jour du système de base (`freebsd-update`, selon version et architecture) de celles des paquets (`pkg`); suivre le guide de mise à niveau de la version cible.
 - **Tous OS** : Ne pas accepter automatiquement des suppressions ou changements majeurs sans les examiner; sauvegarder et prévoir une fenêtre de maintenance.
 
 ### 21. Pilotes et agents de virtualisation
 
-- **Linux/BSD** : Installer uniquement l'agent et les pilotes correspondant à l'hyperviseur (par exemple QEMU Guest Agent, open-vm-tools ou xe-guest-utilities), si pris en charge.
+- **Linux/BSD** : Installer uniquement l'agent et les pilotes correspondant à l'hyperviseur (par exemple [[Glossary:QEMU]] Guest Agent, open-vm-tools ou xe-guest-utilities), si pris en charge.
 - **Windows** : Pilotes VirtIO et agent QEMU, VMware Tools ou composants d'intégration Hyper-V selon la plateforme.
 - **Firmware** : `fwupd` est un outil de mise à jour de firmware, pas un agent de virtualisation; l'utiliser uniquement avec du matériel et des sources compatibles.
 
@@ -157,7 +157,7 @@ Cette liste est une trame de préparation, pas un script universel ni une autori
 
 - **Linux** : Utiliser le client fourni ou approuvé par la distribution (par exemple chrony ou systemd-timesyncd); le chemin de configuration varie.
 - **Windows** : Configurer Windows Time avec les sources approuvées par l'organisation ou le domaine; ne pas copier une commande contenant des serveurs fictifs.
-- **FreeBSD** : Configurer le service NTP disponible pour la version et l'activer selon les règles de démarrage de FreeBSD.
+- **FreeBSD** : Configurer le service [[Glossary:NTP]] disponible pour la version et l'activer selon les règles de démarrage de FreeBSD.
 - **Tous OS** : Vérifier la source, l'état de synchronisation et la cohérence des horloges entre machines.
 
 ### 23. Outils d'administration fondamentaux
@@ -168,7 +168,7 @@ Cette liste est une trame de préparation, pas un script universel ni une autori
 ### 24. Personnalisation de l'environnement et bannieres
 
 - **Linux/BSD** : /etc/profile, ~/.bashrc, /etc/motd, /etc/issue, /etc/issue.net
-- **Windows** : Profil PowerShell ($PROFILE), Banniere legale GPO (interactive logon message)
+- **Windows** : Profil PowerShell ($PROFILE), Banniere legale [[Glossary:GPO]] (interactive logon message)
 - **Tous OS** : Appliquer les bannières légales selon la politique et ne pas y exposer de détails sensibles sur le système.
 
 ### 25. Validation de l'etat initial (Baseline)
@@ -184,22 +184,22 @@ Appliquer les contrôles selon le modèle de menace, la politique et les dépend
 ### 26. Authentification par cles cryptographiques (SSH / WinRM)
 
 - **Linux/BSD** : Clés SSH selon les algorithmes autorisés et compatibles; protéger la clé privée et contrôler propriétaire/permissions de `authorized_keys`.
-- **Windows OpenSSH** : Fichier de clés et ACL selon le type de compte et la configuration OpenSSH Windows; vérifier la documentation de la version.
-- **WinRM** : Pour l'accès hors domaine, préférer HTTPS avec certificats correctement validés; ne pas désactiver la validation TLS pour contourner une erreur.
+- **Windows OpenSSH** : Fichier de clés et [[Glossary:ACL]] selon le type de compte et la configuration OpenSSH Windows; vérifier la documentation de la version.
+- **WinRM** : Pour l'accès hors domaine, préférer HTTPS avec certificats correctement validés; ne pas désactiver la validation [[Glossary:TLS]] pour contourner une erreur.
 
 ### 27. Durcissement de l'acces distant
 
 - **Linux/BSD** : Configurer sshd selon la version et les comptes autorisés. Avant de désactiver l'authentification par mot de passe, vérifier une seconde connexion par clé et conserver un accès de secours.
-- **Windows** : Activer NLA si les clients le prennent en charge; limiter RDP à des réseaux d'administration/VPN et aux comptes nécessaires. Pour OpenSSH, utiliser la configuration effectivement chargée, généralement `C:\ProgramData\ssh\sshd_config`.
+- **Windows** : Activer [[Glossary:NLA]] si les clients le prennent en charge; limiter [[Glossary:RDP]] à des réseaux d'administration/VPN et aux comptes nécessaires. Pour OpenSSH, utiliser la configuration effectivement chargée, généralement `C:\ProgramData\ssh\sshd_config`.
 
 ### 28. Gestion fine des privileges d'administration
 
 - **Linux/BSD** : /etc/sudoers et /etc/sudoers.d/ (visudo)
-- **Windows** : UAC (User Account Control), Groupes locaux Restreints, LAPS (Local Admin Password Solution)
+- **Windows** : [[Glossary:UAC]] (User Account Control), Groupes locaux Restreints, [[Glossary:LAPS]] (Local Admin Password Solution)
 
 ### 29. Pare-feu hote (Host Firewall)
 
-- **Debian/Ubuntu** : UFW ou Nftables (/etc/nftables.conf)
+- **Debian/Ubuntu** : [[Glossary:UFW]] ou Nftables (/etc/nftables.conf)
 - **RHEL/Rocky** : Firewalld (firewall-cmd) ou Nftables
 - **Windows** : Windows Defender Firewall with Advanced Security (wf.msc / New-NetFirewallRule)
 - **FreeBSD** : PF (/etc/pf.conf) ou IPFW
@@ -208,7 +208,7 @@ Appliquer les contrôles selon le modèle de menace, la politique et les dépend
 
 - **Linux/BSD** : Fail2ban (/etc/fail2ban/jail.local) ou CrowdSec
 - **Windows** : Protection intégrée, politiques de verrouillage définies avec précaution et outils approuvés pour la version.
-- **Tous OS** : Ces contrôles complètent, sans remplacer, MFA, mises à jour, filtrage réseau et surveillance. Une politique de verrouillage trop stricte peut permettre un déni de service; tester les seuils.
+- **Tous OS** : Ces contrôles complètent, sans remplacer, [[Glossary:MFA]], mises à jour, filtrage réseau et surveillance. Une politique de verrouillage trop stricte peut permettre un déni de service; tester les seuils.
 
 ### 31. Reduction de la surface d'attaque (Services)
 
@@ -235,13 +235,13 @@ Appliquer les contrôles selon le modèle de menace, la politique et les dépend
 
 - **Linux/BSD** : Configurer uniquement les paramètres nécessaires dans les fichiers pris en charge par l'OS (par exemple `/etc/sysctl.d/` sous Linux). Des paramètres tels que `ip_forward` dépendent du rôle; ne pas les désactiver ou les activer globalement sans analyse.
 - **Windows** : Préférer les stratégies et paramètres documentés pour la version; toute modification du registre doit être justifiée, sauvegardée et testée.
-- **Tous OS** : Évaluer l'effet sur routage, VPN, conteneurs et haute disponibilité avant d'appliquer un réglage réseau.
+- **Tous OS** : Évaluer l'effet sur routage, [[Glossary:VPN]], conteneurs et haute disponibilité avant d'appliquer un réglage réseau.
 
 ### 35. Controle d'acces obligatoire (MAC) et Antivirus
 
 - **Debian/Ubuntu** : Vérifier l'état AppArmor et mettre en mode enforcement les profils adaptés après validation; la disponibilité des outils varie selon l'installation.
 - **RHEL/Rocky** : Vérifier le mode SELinux et les politiques; `setenforce` modifie l'état à l'exécution, tandis que la configuration persistante se traite séparément.
-- **Windows** : Microsoft Defender Antivirus, AppLocker / WDAC (Windows Defender Application Control)
+- **Windows** : Microsoft Defender Antivirus, AppLocker / [[Glossary:WDAC]] (Windows Defender Application Control)
 - **FreeBSD** : Évaluer le MAC Framework pour les contrôles MAC; les jails isolent des environnements et ne sont pas un substitut direct aux politiques MAC.
 - **Tous OS** : Ne pas désactiver une protection pour masquer un problème; analyser les journaux et adapter la politique de façon ciblée.
 
@@ -250,44 +250,44 @@ Appliquer les contrôles selon le modèle de menace, la politique et les dépend
 
 ### 36. Integration a l'annuaire ou au reseau d'administration
 
-- **Linux/BSD** : Intégrer à AD ou FreeIPA/LDAP avec un client compatible et une politique d'identité testée. Le VPN est un contrôle d'accès réseau distinct, à traiter selon l'architecture.
+- **Linux/BSD** : Intégrer à [[Glossary:AD]] ou FreeIPA/LDAP avec un client compatible et une politique d'identité testée. Le VPN est un contrôle d'accès réseau distinct, à traiter selon l'architecture.
 - **Windows** : Add-Computer -DomainName (Jonction Active Directory Domain Services)
 - **Tous OS** : Prévoir DNS, synchronisation horaire, comptes de secours, droits délégués et retrait propre de l'annuaire.
 
 ### 37. Deploiement des roles metiers et stacks applicatives
 
 - **Linux/BSD** : Docker/Podman, Nginx/Apache, PostgreSQL/MariaDB, Bind9, etc.
-- **Windows** : Server Manager Roles & Features (Install-WindowsFeature : ADDS, DNS, DHCP, IIS, Hyper-V)
+- **Windows** : Server Manager Roles & Features (Install-WindowsFeature : ADDS, DNS, DHCP, [[Glossary:IIS]], Hyper-V)
 
 ### 38. Isolation des comptes de service
 
 - **Linux** : Créer un compte dédié sans connexion interactive avec les outils de la distribution; `useradd -r` et le chemin de `nologin` ne sont pas uniformes.
-- **BSD** : Utiliser les outils et conventions de comptes de service de la version.
+- **[[Glossary:BSD]]** : Utiliser les outils et conventions de comptes de service de la version.
 - **Windows** : gMSA (Group Managed Service Accounts) ou Managed Service Accounts (MSA)
 - **Tous OS** : Accorder uniquement les permissions nécessaires, protéger les secrets et documenter rotation et dépendances.
 
 ### 39. Chiffrement des flux (PKI / TLS)
 
-- **Linux/BSD** : Utiliser la PKI de l'organisation ou une AC publique selon le besoin. Les outils et chemins d'installation des autorités varient selon l'OS; valider la chaîne et le renouvellement.
+- **Linux/BSD** : Utiliser la [[Glossary:PKI]] de l'organisation ou une AC publique selon le besoin. Les outils et chemins d'installation des autorités varient selon l'OS; valider la chaîne et le renouvellement.
 - **Windows** : AD CS (Auto-enrollment), IIS Certificate Binding, magasin de certificats (certlm.msc)
 - **Tous OS** : Ne jamais installer une autorité de certification sans vérifier sa provenance et son empreinte; planifier expiration et renouvellement.
 
 ### 40. Configuration des sauvegardes (Backup)
 
-- **Niveau VM** : Utiliser l'outil de sauvegarde de la plateforme (par exemple Proxmox Backup Server ou Veeam); `vzdump` est un outil de sauvegarde Proxmox, pas une commande PBS.
-- **Niveau OS** : BorgBackup ou Restic pour des fichiers selon le besoin; `rclone` seul est une synchronisation, pas une stratégie de sauvegarde complète. Produire les dumps SQL avec une méthode cohérente avec le moteur; Windows Server Backup et VSS selon le rôle.
-- **Tous OS** : Définir RPO/RTO, chiffrement, rétention, copie séparée, surveillance et test de restauration; protéger les identifiants de sauvegarde.
+- **Niveau [[Glossary:VM]]** : Utiliser l'outil de sauvegarde de la plateforme (par exemple Proxmox Backup Server ou Veeam); `vzdump` est un outil de sauvegarde Proxmox, pas une commande [[Glossary:PBS]].
+- **Niveau OS** : BorgBackup ou Restic pour des fichiers selon le besoin; `rclone` seul est une synchronisation, pas une stratégie de sauvegarde complète. Produire les dumps [[Glossary:SQL]] avec une méthode cohérente avec le moteur; Windows Server Backup et [[Glossary:VSS]] selon le rôle.
+- **Tous OS** : Définir [[Glossary:RPO]]/RTO, chiffrement, rétention, copie séparée, surveillance et test de restauration; protéger les identifiants de sauvegarde.
 
 ### 41. Supervision, metriques et inventaire (Monitoring)
 
-- **Linux/BSD** : Déployer un agent pris en charge (Zabbix, node_exporter, GLPI Agent ou SNMP selon le besoin); limiter les sources autorisées et privilégier SNMPv3 si SNMP est requis.
+- **Linux/BSD** : Déployer un agent pris en charge (Zabbix, node_exporter, [[Glossary:GLPI]] Agent ou [[Glossary:SNMP]] selon le besoin); limiter les sources autorisées et privilégier SNMPv3 si SNMP est requis.
 - **Windows** : Agent adapté à la version et à la plateforme; contrôler le pare-feu, l'authentification et les droits de service.
 - **Tous OS** : Inventorier les métriques et alertes nécessaires, protéger les identifiants et vérifier que les données ne divulguent pas d'informations sensibles.
 
 ### 42. Gestion, rotation et centralisation des journaux (Logs)
 
 - **Linux/BSD** : Configurer la rétention et la persistance selon le service (`logrotate`, journald, syslog); protéger l'accès aux journaux et contrôler l'espace disque.
-- **Windows** : Configurer les tailles et rétentions des journaux selon la politique; centraliser via WEF ou un agent approuvé et vérifier les ACL.
+- **Windows** : Configurer les tailles et rétentions des journaux selon la politique; centraliser via [[Glossary:WEF]] ou un agent approuvé et vérifier les ACL.
 - **Tous OS** : Chiffrer et restreindre le transport centralisé; vérifier les versions, la maintenance et la compatibilité des agents avant déploiement.
 
 
@@ -327,7 +327,7 @@ Appliquer les contrôles selon le modèle de menace, la politique et les dépend
 
 ### 49. Enregistrement CMDB et Gestion des acces
 
-- **Tous OS** : Enregistrer l'actif, ses dépendances et son adressage dans la CMDB/IPAM. Stocker les secrets uniquement dans le coffre-fort approuvé par l'organisation; documenter des références, jamais les secrets eux-mêmes.
+- **Tous OS** : Enregistrer l'actif, ses dépendances et son adressage dans la [[Glossary:CMDB]]/IPAM. Stocker les secrets uniquement dans le coffre-fort approuvé par l'organisation; documenter des références, jamais les secrets eux-mêmes.
 - **Accès** : Attribuer des accès SSH/RDP nominatifs et minimaux; vérifier MFA, journalisation, révocation et comptes de secours selon la politique.
 
 ### 50. Documentation d'exploitation (Runbook / Dossier d'Architecture Technique)

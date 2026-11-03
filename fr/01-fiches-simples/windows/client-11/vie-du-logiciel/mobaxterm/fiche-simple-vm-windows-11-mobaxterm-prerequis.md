@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_VM_Windows_11_MobaXterm_Prerequis
 
-- **Environnement** : Poste Windows 11 x64 d'administration (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'administration ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; MobaXterm Home/Professional, version VERSION_MOBAXTERM (à remplacer)
-- **Catégorie** : client SSH/RDP multi-sessions
+- **Catégorie** : client [[Glossary:SSH]]/RDP multi-sessions
 - **Tags** : `mobaxterm`, `windows11`, `prerequis`
 
 ---
@@ -37,7 +37,7 @@ Vérifier qu'un poste Windows 11 est prêt à recevoir MobaXterm (édition, droi
    👉 Explication : confirme que le flux SSH est ouvert avant toute configuration.
 
 5. Vérifier l'outil de paquets : `winget --version`.
-   👉 Explication : winget est nécessaire pour la commande d'installation ; absent, utiliser l'installation GUI.
+   👉 Explication : winget est nécessaire pour la commande d'installation ; absent, utiliser l'installation [[Glossary:GUI]].
 
 ## 2. Production — Contrôles
 

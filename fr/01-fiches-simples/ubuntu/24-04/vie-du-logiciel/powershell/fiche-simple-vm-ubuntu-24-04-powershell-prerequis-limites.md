@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_PowerShell_Prerequis_Limites
 
-- **Environnement** : VM Ubuntu 24-04 LTS de laboratoire, accès sudo, dépôt Microsoft officiel
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 [[Glossary:LTS]] de laboratoire, accès sudo, dépôt Microsoft officiel
 - **OS / Version** : Ubuntu 24-04 LTS
 - **Catégorie** : shell / scripting
 - **Tags** : `ubuntu2404`, `powershell`, `pwsh`, `scripting`
@@ -35,13 +35,13 @@ Cadrer le périmètre PowerShell 7 sur Ubuntu 24-04 LTS avant installation : sup
    👉 Explication : Microsoft documente les distributions supportées par version de PowerShell ; Ubuntu 24-04 LTS figure dans la documentation d'installation (vérifier la version publiée).
 
 3. Noter les différences PowerShell 7 / Windows PowerShell 5.1 :
-   👉 Explication : PowerShell 7 (`pwsh`, édition Core) est multiplateforme et s'installe côte à côte ; Windows PowerShell 5.1 (`powershell.exe`, édition Desktop) n'existe que sous Windows. Ici seul PowerShell 7 est disponible : pas de modules dépendant de .NET Framework, WMI/CIM Windows, ni de remoting WinRM natif.
+   👉 Explication : PowerShell 7 (`pwsh`, édition Core) est multiplateforme et s'installe côte à côte ; Windows PowerShell 5.1 (`powershell.exe`, édition Desktop) n'existe que sous Windows. Ici seul PowerShell 7 est disponible : pas de modules dépendant de .NET Framework, [[Glossary:WMI]]/CIM Windows, ni de remoting WinRM natif.
 
 4. Décider du mode de remoting visé :
-   👉 Explication : sous Linux, le remoting PowerShell passe par SSH (sous-système `powershell` de sshd) ; WinRM/WSMan n'est pas utilisé pour s'y connecter.
+   👉 Explication : sous Linux, le remoting PowerShell passe par [[Glossary:SSH]] (sous-système `powershell` de sshd) ; WinRM/WSMan n'est pas utilisé pour s'y connecter.
 
 5. Noter que la stratégie d'exécution et les signatures Authenticode ne s'appliquent pas :
-   👉 Explication : `Set-ExecutionPolicy` n'a pas d'effet sous Linux ; l'intégrité des scripts se contrôle autrement (empreinte, signature GPG/Git) — voir la fiche Securiser.
+   👉 Explication : `Set-ExecutionPolicy` n'a pas d'effet sous Linux ; l'intégrité des scripts se contrôle autrement (empreinte, signature [[Glossary:GPG]]/Git) — voir la fiche Securiser.
 
 ## 2. Production — Contrôles
 

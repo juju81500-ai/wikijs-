@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 LXC_Alpine_3.19_Services_Installation-Et-Configuration-Nginx.md
 
-- **Environnement** : LXC (Proxmox PXC)
+- **Environnement** : [[Glossary:LXC]] (Proxmox PXC)
 - **OS / Version** : Alpine Linux 3-19 - Famille Alpine
 - **Catégorie** : Web & Micro-services
 - **Tags** : `[alpine3.19]`, `[alpine-family]`, `[lxc]`, `[nginx]`, `[openrc]`, `[apk]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer le serveur HTTP ultraléger Nginx sur un conteneur LXC Alpine Linux, configurer le démarrage OpenRC et sécuriser la configuration Web.
+Installer le serveur [[Glossary:HTTP]] ultraléger Nginx sur un conteneur LXC Alpine Linux, configurer le démarrage OpenRC et sécuriser la configuration Web.
 
 ---
 

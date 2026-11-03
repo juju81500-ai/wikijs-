@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_OpenVPN_Valider
 
-- **Environnement** : VM Rocky Linux 9 dédiée à OpenVPN Community Edition (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à OpenVPN Community Edition (serveur)
 - **OS / Version** : Rocky Linux 9; paquets openvpn et easy-rsa issus d'EPEL, version à vérifier
 - **Catégorie** : OpenVPN Community Edition / valider
 - **Tags** : `openvpn`, `rocky9`, `vie-du-logiciel`, `valider`
@@ -32,7 +32,7 @@ Recetter le serveur avec un client pilote avant ouverture aux utilisateurs.
    ```
    👉 Explication : server est le nom du fichier server.conf (à adapter); l'interface tun0 doit exister (nom pouvant varier selon la configuration).
 
-2. Vérifier l'écoute UDP :
+2. Vérifier l'écoute [[Glossary:UDP]] :
    ```bash
    sudo ss -ulnp | grep openvpn
    ```
@@ -42,7 +42,7 @@ Recetter le serveur avec un client pilote avant ouverture aux utilisateurs.
    ```bash
    sudo journalctl -u openvpn-server@server -n 50 --no-pager
    ```
-   👉 Explication : Confirmer la connexion TLS, l'authentification du certificat pilote et l'accès aux seules routes autorisées; tester aussi qu'un certificat révoqué est refusé.
+   👉 Explication : Confirmer la connexion [[Glossary:TLS]], l'authentification du certificat pilote et l'accès aux seules routes autorisées; tester aussi qu'un certificat révoqué est refusé.
 
 ## 2. Production — Contrôles
 

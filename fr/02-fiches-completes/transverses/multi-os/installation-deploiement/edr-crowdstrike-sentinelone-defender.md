@@ -25,10 +25,10 @@ Préparer, piloter et exploiter le déploiement d'un agent EDR de manière défe
 ## 2. Prérequis
 
 - Licence et tenant actifs (CrowdStrike Falcon, SentinelOne Singularity, ou licence Microsoft incluant Defender for Endpoint).
-- Compte administrateur de la console avec rôles à moindre privilège et MFA.
+- Compte administrateur de la console avec rôles à moindre privilège et [[Glossary:MFA]].
 - Liste d'OS et versions compatibles avec la version d'agent visée.
 - Accès réseau sortant vers les domaines de l'éditeur, validé avec l'équipe réseau/proxy.
-- Outil de déploiement existant (GPO, Intune, Configuration Manager, Ansible, MDM macOS...) et groupe pilote.
+- Outil de déploiement existant ([[Glossary:GPO]], Intune, Configuration Manager, Ansible, MDM macOS...) et groupe pilote.
 - Accord de la direction et information du personnel sur la collecte de télémétrie (cadre juridique/RGPD).
 - Produit commercial : la console, les droits d'accès au portail éditeur et la licence sont des prérequis. Aucune commande générique n'est donnée quand elle dépend de la console ou de la version; suivre la documentation de la version exacte.
 
@@ -40,7 +40,7 @@ Préparer, piloter et exploiter le déploiement d'un agent EDR de manière défe
 | SentinelOne | Management Console du tenant | Portail du tenant | Jeton de site, politiques par site/groupe |
 | Defender for Endpoint | Portail Microsoft Defender | Onboarding via paquet généré dans le portail ou intégration Intune/Configuration Manager | Sur serveurs, la méthode dépend de la version Windows Server ou Linux |
 
-Les trois produits ont leurs propres modèles de politique, de protection contre la désinstallation et de verbes d'API. Ne pas supposer des équivalences exactes.
+Les trois produits ont leurs propres modèles de politique, de protection contre la désinstallation et de verbes d'[[Glossary:API]]. Ne pas supposer des équivalences exactes.
 
 ## 4. Étapes vérifiables
 
@@ -62,7 +62,7 @@ Confirmer dans la console que chaque hôte pilote apparaît, avec version d'agen
 
 ### 4.5 Étendre par vagues
 
-Passer progressivement du mode détection à la prévention, traiter les faux positifs, puis élargir. Brancher les alertes sur le SIEM/ITSM et définir le processus de réponse à incident.
+Passer progressivement du mode détection à la prévention, traiter les faux positifs, puis élargir. Brancher les alertes sur le [[Glossary:SIEM]]/ITSM et définir le processus de réponse à incident.
 
 ### 4.6 Maintenir
 

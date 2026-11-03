@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : plateforme Wazuh déployée; accès administrateur limité
 - **OS / Version** : version Wazuh 4.x maintenue
-- **Catégorie** : SIEM/XDR / exploitation
+- **Catégorie** : [[Glossary:SIEM]]/XDR / exploitation
 - **Tags** : `debian12`, `wazuh`, `siem`, `tls`, `monitoring`, `least-privilege`
 
 ---
@@ -55,7 +55,7 @@ Définir responsables, alertes, seuils, procédure de certificats, comptes, rét
 
 ## 3. Production — Sécurité
 
-- Ne pas exposer le dashboard sans TLS et contrôle d'accès.
+- Ne pas exposer le dashboard sans [[Glossary:TLS]] et contrôle d'accès.
 - Ne pas donner des droits d'administration globaux aux utilisateurs de consultation.
 - Ne pas collecter davantage que les journaux autorisés.
 - Protéger la configuration et les certificats contre les modifications non autorisées.

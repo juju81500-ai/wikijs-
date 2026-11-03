@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Bash_Shell_Configurer
 
-- **Environnement** : VM Debian 13 de laboratoire, compte utilisateur non privilégié
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire, compte utilisateur non privilégié
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : shell / scripting
 - **Tags** : `debian13`, `bash`, `shell`, `scripting`, `securite`
@@ -51,7 +51,7 @@ Gérer les paramètres par utilisateur ou configuration centrale contrôlée; co
 
 - Ne jamais conserver identifiants en clair dans l’historique ou config.
 - Protéger permissions et environnement.
-- Ne pas définir des réglages qui neutralisent TLS ou validation.
+- Ne pas définir des réglages qui neutralisent [[Glossary:TLS]] ou validation.
 
 ## Validation et retour arrière
 

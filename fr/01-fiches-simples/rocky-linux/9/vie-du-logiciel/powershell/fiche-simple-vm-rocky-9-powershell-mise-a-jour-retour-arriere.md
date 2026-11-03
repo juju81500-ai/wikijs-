@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_PowerShell_Mise_A_Jour_Retour_Arriere
 
-- **Environnement** : VM Rocky Linux 9 de laboratoire, accès sudo, dépôt Microsoft pour RHEL 9
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 de laboratoire, accès sudo, dépôt Microsoft pour [[Glossary:RHEL]] 9
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : shell / scripting
 - **Tags** : `rocky9`, `powershell`, `pwsh`, `scripting`
@@ -39,7 +39,7 @@ Mettre à jour PowerShell 7 de façon contrôlée et savoir revenir à la versio
    dnf history list powershell
    sudo dnf downgrade powershell
    ```
-   👉 Explication : `dnf downgrade` installe une version antérieure disponible dans les dépôts ; sinon installer le RPM archivé.
+   👉 Explication : `dnf downgrade` installe une version antérieure disponible dans les dépôts ; sinon installer le [[Glossary:RPM]] archivé.
 
 4. Figer une version (extension versionlock, à installer au préalable) :
    ```bash

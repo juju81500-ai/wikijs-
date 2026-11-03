@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-12-bacula-cadrer-perimetre.md
 
-- **Environnement** : VM Debian 12 dédiée à Bacula (Director, Storage Daemon, File Daemon, catalogue PostgreSQL)
+- **Environnement** : [[Glossary:VM]] Debian 12 dédiée à Bacula (Director, Storage Daemon, File Daemon, catalogue PostgreSQL)
 - **OS / Version** : Debian 12 Bookworm; Bacula Community 15.0.3 (backports)
 - **Catégorie** : sauvegarde / cadrage
 - **Tags** : `debian12`, `bacula`, `backports`, `postgresql`, `cadrage`
@@ -45,7 +45,7 @@ Vérifier que le serveur de laboratoire Debian 12 convient avant de déployer Ba
 
 ## 2. Production — Contrôles
 
-Définir RPO/RTO, séparer les rôles Director/Storage/File Daemon selon les besoins, prévoir une copie hors site et des tests de restauration planifiés.
+Définir [[Glossary:RPO]]/RTO, séparer les rôles Director/Storage/File Daemon selon les besoins, prévoir une copie hors site et des tests de restauration planifiés.
 
 ## 3. Production — Sécurité
 

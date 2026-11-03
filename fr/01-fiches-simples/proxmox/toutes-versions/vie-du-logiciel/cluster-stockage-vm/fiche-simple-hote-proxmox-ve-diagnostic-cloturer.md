@@ -24,7 +24,7 @@ Consigner l'incident et les actions préventives.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Consigner les sorties non sensibles, la cause, le changement réalisé et la validation des VM et du stockage.
+1. Consigner les sorties non sensibles, la cause, le changement réalisé et la validation des [[Glossary:VM]] et du stockage.
    👉 Explication : cette trace permet l'analyse a posteriori.
 
 2. Retirer toute donnée sensible des journaux partagés.

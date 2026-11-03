@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_ownCloud_Sauvegarder_Restaurer
 
-- **Environnement** : VM Rocky Linux 9; ownCloud Infinite Scale (oCIS), binaire officiel
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9; ownCloud Infinite Scale (oCIS), binaire officiel
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : Vie du logiciel / ownCloud — Sauvegarder / restaurer
 - **Tags** : `owncloud`, `serveur`, `vie-du-logiciel`, `sauvegarder_restaurer`
@@ -35,7 +35,7 @@ sudo chmod 600 /root/ocis-backup-DATE.tgz
 
 ## 2. Production — Contrôles
 
-Définir rétention, chiffrement, RPO/RTO et restauration isolée.
+Définir rétention, chiffrement, [[Glossary:RPO]]/RTO et restauration isolée.
 
 ## 3. Production — Sécurité
 

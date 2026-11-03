@@ -11,14 +11,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 cURL
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : cURL 7.88.x (paquet des dépôts Debian 12, à vérifier sur la version déployée)
 - **Catégorie** : Scripting, développement et administration
 - **Tags** : `[debian-12]`, `[curl]`, `[http]`, `[tls]`, `[api]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer cURL sur Debian 12, vérifier qu'un service web interne répond et que son certificat est valide, tester une API avec un jeton lu depuis un fichier protégé, puis appliquer des options TLS et de sécurité strictes pour les scripts de production. Les tests ne ciblent que vos propres services.
+Installer cURL sur Debian 12, vérifier qu'un service web interne répond et que son certificat est valide, tester une [[Glossary:API]] avec un jeton lu depuis un fichier protégé, puis appliquer des options [[Glossary:TLS]] et de sécurité strictes pour les scripts de production. Les tests ne ciblent que vos propres services.
 
 ---
 
@@ -29,7 +29,7 @@ sudo apt update
 sudo apt install -y curl
 curl --version
 ```
-👉 Explication : Installe cURL depuis les dépôts Debian 12. `curl --version` affiche la version et les protocoles compilés (HTTPS, HTTP/2, etc.).
+👉 Explication : Installe cURL depuis les dépôts Debian 12. `curl --version` affiche la version et les protocoles compilés (HTTPS, [[Glossary:HTTP]]/2, etc.).
 
 2. Test de réponse d'un service web du lab :
 ```bash

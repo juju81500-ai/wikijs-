@@ -31,7 +31,7 @@ Contrôle d'accès obligatoire : sans objet sur FreeBSD.
    ```
    👉 Explication : la commande est inconnue sous FreeBSD : normal.
 
-2. Utiliser les ACL ZFS et l'isolation par dataset : GUI Stockage > Pools > Modifier les permissions.
+2. Utiliser les [[Glossary:ACL]] [[Glossary:ZFS]] et l'isolation par dataset : [[Glossary:GUI]] Stockage > Pools > Modifier les permissions.
    ```sh
    zfs get acltype POOL/DATASET
    ```

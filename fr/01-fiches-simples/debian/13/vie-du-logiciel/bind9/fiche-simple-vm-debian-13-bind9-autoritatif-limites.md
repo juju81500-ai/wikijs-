@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-bind9-autoritatif-limites.md
 
-- **Environnement** : VM Debian 13 pilote avec bind9
+- **Environnement** : [[Glossary:VM]] Debian 13 pilote avec bind9
 - **OS / Version** : Debian 13 Trixie; paquets bind9 de la distribution
 - **Catégorie** : dns / recette
 - **Tags** : `debian13`, `bind9`, `limites`, `recette`
@@ -28,7 +28,7 @@ Connaître ce que la procédure ne prouve pas avant utilisation en production.
    ```bash
    named -V
    ```
-   👉 Explication : les commandes du guide proviennent des documentations BIND et Debian; elles n'ont pas été exécutées sur Debian 13 dans ce workspace.
+   👉 Explication : les commandes du guide proviennent des documentations [[Glossary:BIND]] et Debian; elles n'ont pas été exécutées sur Debian 13 dans ce workspace.
 
 2. Tester l'écoute réseau réelle :
    ```bash

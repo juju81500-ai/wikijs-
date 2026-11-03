@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-kea-modifier-plage.md
 
-- **Environnement** : VM Debian 13 serveur DHCPv4 sur un VLAN de test isolé
+- **Environnement** : [[Glossary:VM]] Debian 13 serveur DHCPv4 sur un [[Glossary:VLAN]] de test isolé
 - **OS / Version** : Debian 13 Trixie x86-64; ISC Kea (canal stable)
-- **Catégorie** : réseau / DHCP
+- **Catégorie** : réseau / [[Glossary:DHCP]]
 - **Tags** : `debian13`, `kea`, `dhcpv4`, `isc`, `reseau`
 
 ---

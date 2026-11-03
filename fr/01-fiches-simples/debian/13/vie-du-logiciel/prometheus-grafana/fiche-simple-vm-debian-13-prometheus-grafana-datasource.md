@@ -28,7 +28,7 @@ Relier Grafana au Prometheus local et donner des droits adaptés aux utilisateur
    👉 Explication : on crée la source de données qui interroge Prometheus.
 
 2. Renseigner **Prometheus server URL** : `http://127.0.0.1:9090`, puis cliquer sur **Save & test**.
-   👉 Explication : le message « Successfully queried the Prometheus API » confirme la liaison; sinon vérifier le service et l'URL.
+   👉 Explication : le message « Successfully queried the Prometheus [[Glossary:API]] » confirme la liaison; sinon vérifier le service et l'URL.
 
 3. Vérifier l'accès côté serveur avant de continuer :
    ```bash

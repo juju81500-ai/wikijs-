@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_Suricata_Valider
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Suricata
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Suricata
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Suricata / validation
 - **Tags** : `suricata`, `ubuntu24.04`, `vie-du-logiciel`, `valider`
@@ -35,13 +35,13 @@ Recetter le capteur : moteur actif, règles chargées, événements écrits.
    ```bash
    curl -s http://testmynids.org/uid/index.html -o /dev/null
    ```
-   👉 Explication : Requête inoffensive vers un site de test d’IDS; elle ne doit être faite que si la sortie Internet est autorisée et si la règle de test est chargée. Sinon utiliser un serveur de test interne.
+   👉 Explication : Requête inoffensive vers un site de test d’[[Glossary:IDS]]; elle ne doit être faite que si la sortie Internet est autorisée et si la règle de test est chargée. Sinon utiliser un serveur de test interne.
 
 3. Lire l’alerte :
    ```bash
    sudo jq "select(.event_type==\"alert\")" /var/log/suricata/eve.json | tail -n 20
    ```
-   👉 Explication : Affiche les alertes JSON; sans alerte, vérifier la position de la capture et les règles.
+   👉 Explication : Affiche les alertes [[Glossary:JSON]]; sans alerte, vérifier la position de la capture et les règles.
 
 4. Rejouer un fichier pcap autorisé hors ligne (option) :
    ```bash

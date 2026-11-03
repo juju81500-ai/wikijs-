@@ -29,7 +29,7 @@ Protéger les datastores et les accès.
    esxcli storage filesystem list
    esxcli storage nfs list
    ```
-   👉 Explication : contrôler les montages NFS (préférer NFSv4.1 avec Kerberos).
+   👉 Explication : contrôler les montages [[Glossary:NFS]] (préférer NFSv4.1 avec Kerberos).
 
 2. Monter un datastore NFS restreint (Host Client : **Stockage > Datastores > Nouveau datastore > Monter un datastore NFS**) :
    ```sh
@@ -37,7 +37,7 @@ Protéger les datastores et les accès.
    ```
    👉 Explication : `IP_NFS` = serveur NFS; `/EXPORT` = chemin; `NOM_DS` = nom du datastore.
 
-3. Limiter l'export côté serveur aux IP des hôtes ESXi uniquement.
+3. Limiter l'export côté serveur aux [[Glossary:IP]] des hôtes ESXi uniquement.
    👉 Explication : empêche l'accès non autorisé au stockage.
 
 ## 2. Production — Contrôles
@@ -46,7 +46,7 @@ Documenter qui accède à chaque datastore.
 
 ## 3. Production — Sécurité
 
-Isoler le réseau de stockage dans un VLAN dédié.
+Isoler le réseau de stockage dans un [[Glossary:VLAN]] dédié.
 
 ## Validation et retour arrière
 

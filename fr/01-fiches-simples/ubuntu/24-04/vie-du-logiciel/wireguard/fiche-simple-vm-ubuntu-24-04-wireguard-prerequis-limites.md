@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_WireGuard_Prerequis_Limites
 
-- **Environnement** : VM Ubuntu 24-04 dédiée à un serveur WireGuard natif
-- **OS / Version** : Ubuntu 24-04 LTS Noble; noyau avec module WireGuard et paquet wireguard, versions à vérifier
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 dédiée à un serveur WireGuard natif
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; noyau avec module WireGuard et paquet wireguard, versions à vérifier
 - **Catégorie** : WireGuard natif / prérequis et limites
 - **Tags** : `wireguard`, `ubuntu24-04`, `vie-du-logiciel`, `prerequis-limites`
 
@@ -31,7 +31,7 @@ Valider le cadre avant d'installer un serveur WireGuard : OS, réseau, adressage
    ip -br address
    ip route
    ```
-   👉 Explication : Noter l'IP ou le FQDN joignable par les clients.
+   👉 Explication : Noter l'[[Glossary:IP]] ou le [[Glossary:FQDN]] joignable par les clients.
 
 2. Vérifier que le noyau sait charger WireGuard :
    ```bash
@@ -40,7 +40,7 @@ Valider le cadre avant d'installer un serveur WireGuard : OS, réseau, adressage
    👉 Explication : La commande ne doit pas retourner d'erreur; sinon s'arrêter et revoir le noyau/les dépôts avant de continuer.
 
 3. Consigner les valeurs à décider :
-   👉 Explication : VPN_SERVER_CIDR (adresse du serveur dans le tunnel, ex. réseau dédié), VPN_UDP_PORT (port UDP), CLIENT_VPN_ADDRESS (adresse /32 par pair), SERVER_ENDPOINT (IP ou FQDN public). Valeurs en majuscules à remplacer par le plan validé.
+   👉 Explication : VPN_SERVER_CIDR (adresse du serveur dans le tunnel, ex. réseau dédié), VPN_UDP_PORT (port [[Glossary:UDP]]), CLIENT_VPN_ADDRESS (adresse /32 par pair), SERVER_ENDPOINT (IP ou FQDN public). Valeurs en majuscules à remplacer par le plan validé.
 
 ## 2. Production — Contrôles
 

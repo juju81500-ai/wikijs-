@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Vérifier la version, le dépôt, le format HCL et la stabilité du plan du pilote OpenTofu.
+Vérifier la version, le dépôt, le format [[Glossary:HCL]] et la stabilité du plan du pilote OpenTofu.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

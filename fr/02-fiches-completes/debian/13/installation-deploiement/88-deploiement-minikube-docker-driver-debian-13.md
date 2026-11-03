@@ -22,8 +22,8 @@ dateModified: 2026-11-03T09:36:14Z
 Fiche simple : [vérifier les prérequis Minikube](/fr/01-fiches-simples/debian/13/vie-du-logiciel/minikube/fiche-simple-vm-debian-13-minikube-prerequis).
 
 - Docker Engine installé selon la [documentation officielle Docker](https://docs.docker.com/engine/install/debian/), version 18.09 minimum et 20.10 ou plus recommandée selon la page du driver Docker de Minikube. Appliquer aussi le durcissement de l'hôte du guide 32.
-- Compte non-root autorisé à utiliser Docker. Attention : l'appartenance au groupe `docker` équivaut à des droits root sur l'hôte ; utiliser une VM de laboratoire dédiée.
-- CPU, mémoire et disque adaptés à la charge : dimensionner explicitement avec `--cpus` et `--memory` plutôt que se fier aux valeurs par défaut.
+- Compte non-root autorisé à utiliser Docker. Attention : l'appartenance au groupe `docker` équivaut à des droits root sur l'hôte ; utiliser une [[Glossary:VM]] de laboratoire dédiée.
+- [[Glossary:CPU]], mémoire et disque adaptés à la charge : dimensionner explicitement avec `--cpus` et `--memory` plutôt que se fier aux valeurs par défaut.
 - Accès sortant vers les registres d'images nécessaires, ou miroir interne.
 
 Limites : un seul nœud, pas de tolérance de panne ; les restrictions de sécurité du runtime Docker listées dans la page du driver (options non supportées) peuvent empêcher le démarrage ; l'exposition réseau passe par les mécanismes Minikube, pas par une configuration de production.
@@ -89,7 +89,7 @@ minikube addons list
 minikube addons enable <addon>
 ```
 
-N'activer que les add-ons nécessaires. Les add-ons `ingress` et `ingress-dns` ne sont supportés qu'en Linux avec le driver Docker selon la documentation du driver. Ne pas publier l'API ou les services de laboratoire sur un réseau non maîtrisé ; pour accéder à un service : `minikube service <nom> --url`.
+N'activer que les add-ons nécessaires. Les add-ons `ingress` et `ingress-dns` ne sont supportés qu'en Linux avec le driver Docker selon la documentation du driver. Ne pas publier l'[[Glossary:API]] ou les services de laboratoire sur un réseau non maîtrisé ; pour accéder à un service : `minikube service <nom> --url`.
 
 ## 7. Retour arrière, arrêt et suppression
 

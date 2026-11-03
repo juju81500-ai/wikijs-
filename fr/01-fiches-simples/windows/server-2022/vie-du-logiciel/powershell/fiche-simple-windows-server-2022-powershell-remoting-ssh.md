@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Activer le remoting PowerShell via SSH vers un Windows Server 2022, en complément de WinRM pour 5.1.
+Activer le remoting PowerShell via [[Glossary:SSH]] vers un Windows Server 2022, en complément de WinRM pour 5.1.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Installer OpenSSH Server. GUI : Paramètres > Applications > Fonctionnalités facultatives > Ajouter une fonctionnalité > Serveur OpenSSH. Ligne de commande :
+1. Installer OpenSSH Server. [[Glossary:GUI]] : Paramètres > Applications > Fonctionnalités facultatives > Ajouter une fonctionnalité > Serveur OpenSSH. Ligne de commande :
    ```powershell
    Get-WindowsCapability -Online | Where-Object Name -like 'OpenSSH*'
    Add-WindowsCapability -Online -Name OpenSSH.Server~~~~0.0.1.0
@@ -58,7 +58,7 @@ Activer le remoting PowerShell via SSH vers un Windows Server 2022, en compléme
    ```
    👉 Explication : le nom de règle `OpenSSH-Server-In-TCP` est celui de la documentation Microsoft : confirmer avec la commande précédente.
 
-6. Compte administrateur : installer la clé publique dans le fichier dédié, puis fixer les ACL (CLE_PUBLIQUE à remplacer par le contenu de la clé publique) :
+6. Compte administrateur : installer la clé publique dans le fichier dédié, puis fixer les [[Glossary:ACL]] (CLE_PUBLIQUE à remplacer par le contenu de la clé publique) :
    ```powershell
    Add-Content -Path "$env:ProgramData\ssh\administrators_authorized_keys" -Value 'CLE_PUBLIQUE'
    icacls.exe "$env:ProgramData\ssh\administrators_authorized_keys" /inheritance:r /grant 'Administrators:F' /grant 'SYSTEM:F'

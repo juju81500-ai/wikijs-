@@ -13,18 +13,18 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **OS / Version** : Debian 13 Trixie minimal, OpenMediaVault 8.0 « Synchrony »
 - **Type de fiche** : Installation/Déploiement
-- **Rôle** : NAS autonome de laboratoire ou de petite structure
+- **Rôle** : [[Glossary:NAS]] autonome de laboratoire ou de petite structure
 - **Tags** : `debian13`, `openmediavault`, `omv8`, `nas`, `smb`, `storage`
 
 ## 1. Choisir le mode de déploiement
 
 Fiche simple : [choisir le mode de déploiement](/fr/01-fiches-simples/debian/13/vie-du-logiciel/openmediavault/fiche-simple-vm-debian-13-openmediavault-choisir-mode).
 
-Pour un serveur x86-64 dédié, la documentation recommande l'image ISO OpenMediaVault. Cette procédure couvre le cas d'une Debian 13 déjà installée, utile pour une VM ou un matériel où Debian a été préparé séparément.
+Pour un serveur x86-64 dédié, la documentation recommande l'image ISO OpenMediaVault. Cette procédure couvre le cas d'une Debian 13 déjà installée, utile pour une [[Glossary:VM]] ou un matériel où Debian a été préparé séparément.
 
-**Ne pas installer OMV dans LXC ou un autre conteneur.** Ne pas convertir un serveur Debian qui héberge déjà des services critiques : OMV gère les paquets et peut remplacer la configuration réseau, SSH, Samba, Nginx et les montages. Prévoir un accès console hors bande, une sauvegarde et une fenêtre de maintenance.
+**Ne pas installer OMV dans [[Glossary:LXC]] ou un autre conteneur.** Ne pas convertir un serveur Debian qui héberge déjà des services critiques : OMV gère les paquets et peut remplacer la configuration réseau, [[Glossary:SSH]], Samba, Nginx et les montages. Prévoir un accès console hors bande, une sauvegarde et une fenêtre de maintenance.
 
-Architecture minimale recommandée : disque système dédié et un ou plusieurs disques de données distincts, réseau Ethernet filaire, adresse IP statique et DNS fonctionnel. OMV ne considère pas officiellement le disque système comme disque de partage de données.
+Architecture minimale recommandée : disque système dédié et un ou plusieurs disques de données distincts, réseau Ethernet filaire, adresse [[Glossary:IP]] statique et [[Glossary:DNS]] fonctionnel. OMV ne considère pas officiellement le disque système comme disque de partage de données.
 
 ## 2. Préparer Debian 13
 
@@ -57,7 +57,7 @@ sudo resolvectl dns <interface> <adresse_dns>
 resolvectl status
 ```
 
-Télécharger la clé officielle et l'installer dans le trousseau APT :
+Télécharger la clé officielle et l'installer dans le trousseau [[Glossary:APT]] :
 
 ```bash
 wget --quiet --output-document=- https://packages.openmediavault.io/archive.key \
@@ -118,7 +118,7 @@ Dans l'interface, utiliser `Storage | Disks` pour identifier les disques. Si le 
 
 Créer le système de fichiers pris en charge via `Storage | File Systems`, puis le monter depuis la même interface. Ne pas ajouter manuellement le montage aux zones OMV de `/etc/fstab` : OMV conserve ses références de volumes dans sa base de configuration et redéploie les entrées gérées.
 
-Pour un RAID logiciel, créer et surveiller l'ensemble mdadm via `Storage | RAID`. Choisir le niveau selon la capacité et la tolérance de panne attendues. Un RAID n'est pas une sauvegarde; ne jamais créer ou supprimer un ensemble sans sauvegarde vérifiée et plan de remplacement des disques.
+Pour un [[Glossary:RAID]] logiciel, créer et surveiller l'ensemble mdadm via `Storage | RAID`. Choisir le niveau selon la capacité et la tolérance de panne attendues. Un RAID n'est pas une sauvegarde; ne jamais créer ou supprimer un ensemble sans sauvegarde vérifiée et plan de remplacement des disques.
 
 ## 6. Créer un partage SMB privé
 
@@ -138,15 +138,15 @@ smbclient -L //<adresse_omv> -U <utilisateur>
 smbclient //<adresse_omv>/<partage> -U <utilisateur> -c 'ls'
 ```
 
-Vérifier l'écriture et la suppression d'un fichier test avec un compte pilote. Vérifier qu'un compte non autorisé est refusé. Ne pas utiliser les modes « guest » ou permissions `777` pour résoudre un problème d'accès; analyser l'identité, les droits du partage, POSIX et ACL.
+Vérifier l'écriture et la suppression d'un fichier test avec un compte pilote. Vérifier qu'un compte non autorisé est refusé. Ne pas utiliser les modes « guest » ou permissions `777` pour résoudre un problème d'accès; analyser l'identité, les droits du partage, POSIX et [[Glossary:ACL]].
 
 ## 7. Durcissement, mises à jour et sauvegarde
 
 Fiche simple : [durcissement, mises à jour et sauvegarde](/fr/01-fiches-simples/debian/13/vie-du-logiciel/openmediavault/fiche-simple-vm-debian-13-openmediavault-durcissement).
 
 - Garder SSH accessible uniquement au réseau d'administration; désactiver l'accès SSH direct à root une fois le service contrôlé et utiliser un compte non privilégié avec `sudo`.
-- Restreindre l'interface Web à un VLAN ou sous-réseau de gestion. N'exposer aucun service NAS sur Internet; utiliser un VPN approuvé pour l'accès distant.
-- Autoriser SMB sur TCP 445 uniquement depuis les clients prévus. Désactiver les options d'invité et d'anciens protocoles quand l'environnement le permet.
+- Restreindre l'interface Web à un [[Glossary:VLAN]] ou sous-réseau de gestion. N'exposer aucun service NAS sur Internet; utiliser un [[Glossary:VPN]] approuvé pour l'accès distant.
+- Autoriser SMB sur [[Glossary:TCP]] 445 uniquement depuis les clients prévus. Désactiver les options d'invité et d'anciens protocoles quand l'environnement le permet.
 - Appliquer les mises à jour via `System | Update Management` ou `omv-upgrade`; ne pas mélanger Debian Backports, Testing ou Experimental dans le système OMV.
 - Sauvegarder les données sur un autre système ou support hors ligne, avec une copie séparée des clés et éléments de configuration nécessaires. Tester périodiquement la restauration d'un dossier et d'un fichier avec leurs permissions.
 - Si un plugin de sauvegarde de configuration est retenu, valider sa compatibilité OMV 8 et restaurer l'export sur une VM de test avant d'en dépendre.

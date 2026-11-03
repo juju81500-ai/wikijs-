@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Installer PowerShell 7 sur Windows Server 2022 avec le paquet MSI officiel, sans toucher à Windows PowerShell 5.1.
+Installer PowerShell 7 sur Windows Server 2022 avec le paquet [[Glossary:MSI]] officiel, sans toucher à Windows PowerShell 5.1.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Télécharger le MSI x64 depuis la page de versions officielle (https://github.com/PowerShell/PowerShell/releases ou lien de Microsoft Learn), puis le fichier d'empreintes publié avec la version. GUI : navigateur, page de la version stable approuvée, section Assets.
+1. Télécharger le MSI x64 depuis la page de versions officielle (https://github.com/PowerShell/PowerShell/releases ou lien de Microsoft Learn), puis le fichier d'empreintes publié avec la version. [[Glossary:GUI]] : navigateur, page de la version stable approuvée, section Assets.
    👉 Explication : choisir explicitement la version approuvée (VERSION dans la suite, à remplacer) ; ne pas utiliser de miroir non autorisé. Le client `winget` n'est pas à supposer présent sur Windows Server 2022 : vérifier avant de s'en servir.
 
 2. Contrôler l'empreinte et la signature du MSI (CHEMIN_MSI et EMPREINTE_PUBLIEE sont à remplacer) :
@@ -49,7 +49,7 @@ Installer PowerShell 7 sur Windows Server 2022 avec le paquet MSI officiel, sans
 
 ## 2. Production — Contrôles
 
-Déployer par outil de distribution (GPO, MECM ou script) avec le même MSI validé, après test sur un pilote. Commandes établies d'après la documentation officielle et non testées dans ce pack : à valider en lab avant toute production.
+Déployer par outil de distribution ([[Glossary:GPO]], MECM ou script) avec le même MSI validé, après test sur un pilote. Commandes établies d'après la documentation officielle et non testées dans ce pack : à valider en lab avant toute production.
 
 ## 3. Production — Sécurité
 

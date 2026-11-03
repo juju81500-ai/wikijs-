@@ -24,7 +24,7 @@ Vérifier qu'un projet GNS3 s'ouvre et s'enregistre sur le serveur local sans po
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Confirmer versions, QEMU et KVM :
+1. Confirmer versions, [[Glossary:QEMU]] et [[Glossary:KVM]] :
    ```bash
    gns3 --version
    gns3server --version
@@ -50,11 +50,11 @@ Vérifier qu'un projet GNS3 s'ouvre et s'enregistre sur le serveur local sans po
    ```bash
    grep -E '"node_type": "(cloud|nat)"' ~/GNS3/projects/NOM_PROJET/*.gns3 || echo "aucun noeud Cloud/NAT"
    ```
-   👉 Explication : remplacer `NOM_PROJET`; aucun pont physique ni NAT vers un tiers.
+   👉 Explication : remplacer `NOM_PROJET`; aucun pont physique ni [[Glossary:NAT]] vers un tiers.
 
 ## 2. Production — Contrôles
 
-Identifier l'administrateur du poste, les projets, ressources CPU/RAM/disque, versions et propriétaire/licence de chaque image avant un atelier partagé.
+Identifier l'administrateur du poste, les projets, ressources [[Glossary:CPU]]/RAM/disque, versions et propriétaire/licence de chaque image avant un atelier partagé.
 
 ## 3. Production — Sécurité
 

@@ -20,15 +20,15 @@ Fiche simple : [préparer l'infrastructure PBS](/fr/01-fiches-simples/proxmox/to
 
 Dimensionner le stockage à partir des données, de la rétention, du taux de changement et de la fenêtre de sauvegarde. Séparer datastore et système si possible, protéger le serveur et le réseau d'administration, et prévoir une copie hors site ou hors ligne. La déduplication n'est ni une réplication ni une sauvegarde indépendante.
 
-Vérifier compatibilité des versions PVE/PBS, DNS, NTP, certificats et accès. Les références `3.x` sont historiques : appliquer une version encore supportée et les notes de mise à jour actuelles.
+Vérifier compatibilité des versions PVE/PBS, [[Glossary:DNS]], [[Glossary:NTP]], certificats et accès. Les références `3.x` sont historiques : appliquer une version encore supportée et les notes de mise à jour actuelles.
 
 ## 2. Installer et créer le datastore
 
 Fiche simple : [installer PBS et créer le datastore](/fr/01-fiches-simples/proxmox/toutes-versions/vie-du-logiciel/proxmox-backup-server/fiche-simple-hote-proxmox-backup-server-installer-datastore).
 
-Installer PBS depuis le média ou le dépôt officiel, puis configurer le stockage dans l'interface d'administration. Créer un datastore sur un système de fichiers pris en charge, avec capacité, alertes et politique de nettoyage vérifiées. Ne pas modifier le stockage actif avec des commandes génériques de formatage ou de montage.
+Installer [[Glossary:PBS]] depuis le média ou le dépôt officiel, puis configurer le stockage dans l'interface d'administration. Créer un datastore sur un système de fichiers pris en charge, avec capacité, alertes et politique de nettoyage vérifiées. Ne pas modifier le stockage actif avec des commandes génériques de formatage ou de montage.
 
-Créer des utilisateurs et API tokens dédiés avec les permissions minimales sur les namespaces/datastores requis. Protéger les secrets et les clés de chiffrement des sauvegardes côté client.
+Créer des utilisateurs et [[Glossary:API]] tokens dédiés avec les permissions minimales sur les namespaces/datastores requis. Protéger les secrets et les clés de chiffrement des sauvegardes côté client.
 
 ## 3. Relier Proxmox VE à PBS
 
@@ -36,7 +36,7 @@ Fiche simple : [relier Proxmox VE à PBS](/fr/01-fiches-simples/proxmox/toutes-v
 
 Dans PVE, ajouter PBS via le stockage de sauvegarde, vérifier le certificat/empreinte depuis un canal fiable, sélectionner le datastore et utiliser un compte ou token dédié. Choisir chiffrement côté client lorsque la stratégie de confidentialité l'exige et sauvegarder séparément la clé de déchiffrement.
 
-Configurer une tâche sur un petit groupe de VM/CT et vérifier le résultat, la rétention, la vérification d'intégrité et les alertes avant généralisation.
+Configurer une tâche sur un petit groupe de [[Glossary:VM]]/CT et vérifier le résultat, la rétention, la vérification d'intégrité et les alertes avant généralisation.
 
 ## 4. Tester la restauration
 
@@ -52,4 +52,4 @@ Test d'acceptation : sélectionner un point de sauvegarde, restaurer vers un ide
 
 Fiche simple : [exploitation et incident](/fr/01-fiches-simples/proxmox/toutes-versions/vie-du-logiciel/proxmox-backup-server/fiche-simple-hote-proxmox-backup-server-exploitation-incident).
 
-Surveiller l'espace, la durée, l'échec des jobs et la vérification des chunks. Mettre à jour PVE et PBS selon la matrice officielle. Protéger l'accès administratif avec MFA, réseau dédié et audit. En perte de PBS, préserver les disques et les clés ; ne pas réinitialiser ou recréer un datastore avant analyse.
+Surveiller l'espace, la durée, l'échec des jobs et la vérification des chunks. Mettre à jour PVE et PBS selon la matrice officielle. Protéger l'accès administratif avec [[Glossary:MFA]], réseau dédié et audit. En perte de PBS, préserver les disques et les clés ; ne pas réinitialiser ou recréer un datastore avant analyse.

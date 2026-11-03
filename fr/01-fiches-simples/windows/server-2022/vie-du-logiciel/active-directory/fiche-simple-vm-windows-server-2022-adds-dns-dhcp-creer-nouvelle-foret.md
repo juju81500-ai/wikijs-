@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-2022-adds-dns-dhcp-creer-nouvelle-foret.md
 
-- **Environnement** : VM ou serveur dédié Windows Server 2022, domaine de laboratoire ou d'entreprise
-- **OS / Version** : Windows Server 2022; rôles AD DS, DNS et DHCP
+- **Environnement** : [[Glossary:VM]] ou serveur dédié Windows Server 2022, domaine de laboratoire ou d'entreprise
+- **OS / Version** : Windows Server 2022; rôles [[Glossary:AD]] DS, [[Glossary:DNS]] et [[Glossary:DHCP]]
 - **Catégorie** : annuaire / services réseau
 - **Tags** : `windows-server-2022`, `active-directory`, `dns`, `dhcp`, `gpo`
 
@@ -24,7 +24,7 @@ Promouvoir le premier contrôleur de domaine (laboratoire ou nouvelle forêt).
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : **Gestionnaire de serveur > Gérer > Ajouter des rôles et fonctionnalités > Services AD DS**, puis **Promouvoir ce serveur en contrôleur de domaine > Ajouter une nouvelle forêt**.
+1. [[Glossary:GUI]] : **Gestionnaire de serveur > Gérer > Ajouter des rôles et fonctionnalités > Services AD DS**, puis **Promouvoir ce serveur en contrôleur de domaine > Ajouter une nouvelle forêt**.
    👉 Explication : équivalent graphique des commandes ci-dessous.
 
 2. Installer les rôles (après redémarrage du renommage) :
@@ -38,7 +38,7 @@ Promouvoir le premier contrôleur de domaine (laboratoire ou nouvelle forêt).
    Install-ADDSForest -DomainName "ad.example.net" -DomainNetbiosName "EXAMPLE" -InstallDNS -SafeModeAdministratorPassword (Read-Host "Mot de passe DSRM" -AsSecureString) -NoRebootOnCompletion
    Restart-Computer
    ```
-   👉 Explication : le mot de passe DSRM est saisi de façon interactive, jamais en argument; la promotion modifie durablement le serveur.
+   👉 Explication : le mot de passe [[Glossary:DSRM]] est saisi de façon interactive, jamais en argument; la promotion modifie durablement le serveur.
 
 ## 2. Production — Contrôles
 

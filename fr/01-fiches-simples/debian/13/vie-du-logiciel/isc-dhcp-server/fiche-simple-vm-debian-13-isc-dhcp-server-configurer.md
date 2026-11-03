@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_ISC-DHCP-Server_Configurer
 
-- **Environnement** : VM Debian 13; ISC DHCP déprécié, usage transitoire
+- **Environnement** : [[Glossary:VM]] Debian 13; ISC [[Glossary:DHCP]] déprécié, usage transitoire
 - **OS / Version** : Debian 13
 - **Catégorie** : Vie du logiciel / ISC-DHCP-Server — Configurer
 - **Tags** : `isc-dhcp`, `serveur`, `vie-du-logiciel`, `configurer`
@@ -36,7 +36,7 @@ sudo dhcpd -t -cf /etc/dhcp/dhcpd.conf
 
 ## 2. Production — Contrôles
 
-Vérifier chevauchements, réservations, relais et VLAN avec l’équipe réseau.
+Vérifier chevauchements, réservations, relais et [[Glossary:VLAN]] avec l’équipe réseau.
 
 ## 3. Production — Sécurité
 

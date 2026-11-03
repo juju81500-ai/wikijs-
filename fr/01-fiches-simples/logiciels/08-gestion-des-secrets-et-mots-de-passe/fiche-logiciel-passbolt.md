@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 📚 Couverture dans le pack
 
-Couvert — Passbolt Community Edition Debian 13 avec TLS, sauvegarde et reprise.
+Couvert — Passbolt Community Edition Debian 13 avec [[Glossary:TLS]], sauvegarde et reprise.
 
 ## 🧭 Utilisation
 

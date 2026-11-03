@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : Splunk Enterprise 10.2 sur Debian 12 x86-64
 - **OS / Version** : Debian 12 Bookworm
-- **Catégorie** : SIEM / exploitation
+- **Catégorie** : [[Glossary:SIEM]] / exploitation
 - **Tags** : `debian12`, `splunk`, `siem`, `logs`, `systemd`, `diagnostic`
 
 ---
@@ -70,7 +70,7 @@ Contrôler l'état de Splunk et d'une ingestion pilote sans exposer de secrets n
 
 ## ✅ Validation et retour arrière
 
-- **Validation** : service actif sous le compte prévu, UI en TLS accessible, événement test présent dans le bon index et pas d'erreur persistante.
+- **Validation** : service actif sous le compte prévu, UI en [[Glossary:TLS]] accessible, événement test présent dans le bon index et pas d'erreur persistante.
 - **Retour arrière** : restaurer la configuration précédemment sauvegardée et redémarrer selon la méthode de gestion approuvée.
 
 ## 🔗 Si le problème n'est pas résolu

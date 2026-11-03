@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Fiche_Simple_-_VM_Ubuntu_26.04_Diagnostic_Journalctl_Erreurs
 
-- **Environnement** : VM ou serveur Ubuntu en incident ou après une mise à jour
-- **OS / Version** : Ubuntu Server 26-04 LTS (systemd 259)
+- **Environnement** : [[Glossary:VM]] ou serveur Ubuntu en incident ou après une mise à jour
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]] (systemd 259)
 - **Catégorie** : Diagnostic / Journaux systemd et noyau
 - **Tags** : `ubuntu2604`, `journalctl`, `dmesg`, `systemd`, `diagnostic`, `erreurs`
 
@@ -69,7 +69,7 @@ systemd-analyze blame | head -n 15
 ```bash
 sudo journalctl _COMM=sshd --since "1 hour ago" --no-pager
 ```
-👉 Explication : Montre les connexions et échecs SSH de l'heure écoulée. Des échecs répétés depuis une même IP justifient la vérification de Fail2ban.
+👉 Explication : Montre les connexions et échecs [[Glossary:SSH]] de l'heure écoulée. Des échecs répétés depuis une même [[Glossary:IP]] justifient la vérification de Fail2ban.
 
 2. Vérifier l'intégrité des journaux persistants :
 ```bash

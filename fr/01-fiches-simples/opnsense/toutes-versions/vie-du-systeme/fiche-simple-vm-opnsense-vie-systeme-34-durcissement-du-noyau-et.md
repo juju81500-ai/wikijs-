@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_34_Durcissement_Du_Noyau_Et
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 34 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-34`
@@ -25,9 +25,9 @@ Appliquer les paramètres réseau sûrs.
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. Dans Système > Paramètres > Ajustables, contrôler/ajouter : `net.inet.ip.redirect=0`, `net.inet.icmp.drop_redirect=1`, `net.inet.tcp.drop_synfin=1`, puis Enregistrer.
-   👉 Explication : refuse les redirections ICMP et les paquets TCP anormaux.
+   👉 Explication : refuse les redirections [[Glossary:ICMP]] et les paquets [[Glossary:TCP]] anormaux.
 
-2. Pare-feu > Paramètres > Normalisation : activer la normalisation des paquets; vérifier que les interfaces WAN ont « Bloquer les réseaux privés/bogon ».
+2. Pare-feu > Paramètres > Normalisation : activer la normalisation des paquets; vérifier que les interfaces [[Glossary:WAN]] ont « Bloquer les réseaux privés/bogon ».
    👉 Explication : réassemble les fragments et évite l'usurpation.
 
 3. Contrôler les valeurs effectives :

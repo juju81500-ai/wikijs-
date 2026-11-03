@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_08_Configuration_Reseau_D_Installation
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 08 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-08`
@@ -20,14 +20,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Affecter les interfaces WAN et LAN pour que la console et l'interface web soient joignables.
+Affecter les interfaces [[Glossary:WAN]] et [[Glossary:LAN]] pour que la console et l'interface web soient joignables.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. À l'invite de la console, taper `n` pour passer les VLAN, puis saisir le nom des interfaces (ex. `vtnet0` pour WAN, `vtnet1` pour LAN), ou depuis le menu console choisir l'option 1.
+1. À l'invite de la console, taper `n` pour passer les [[Glossary:VLAN]], puis saisir le nom des interfaces (ex. `vtnet0` pour WAN, `vtnet1` pour LAN), ou depuis le menu console choisir l'option 1.
    👉 Explication : l'option 1 « Assign interfaces » associe les cartes physiques aux rôles WAN et LAN.
 
-2. Définir les adresses : option 2 « Set interface IP address » (LAN : `192.168.1.1/24` par défaut, WAN en DHCP). Vérifier en shell (option 8) :
+2. Définir les adresses : option 2 « Set interface [[Glossary:IP]] address » (LAN : `192.168.1.1/24` par défaut, WAN en [[Glossary:DHCP]]). Vérifier en shell (option 8) :
    ```sh
    ifconfig -a | grep -E '^[a-z]|inet '
    netstat -rn | head

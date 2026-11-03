@@ -24,7 +24,7 @@ Sécuriser la HA et revenir en arrière en cas de flapping.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Filtrer VRRP entre les seuls pairs (protocole 112) avec le pare-feu hôte (remplacer 192.0.2.2 par l'IP du pair) :
+1. Filtrer [[Glossary:VRRP]] entre les seuls pairs (protocole 112) avec le pare-feu hôte (remplacer 192.0.2.2 par l'[[Glossary:IP]] du pair) :
    ```bash
    sudo iptables -A INPUT -p 112 -s 192.0.2.2 -j ACCEPT
    ```

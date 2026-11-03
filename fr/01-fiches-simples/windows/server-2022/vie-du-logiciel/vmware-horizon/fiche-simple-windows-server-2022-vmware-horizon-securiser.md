@@ -13,14 +13,14 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **Environnement** : Serveurs Windows Server 2022 (Connection Server), vCenter, UAG, compte administrateur nominatif
 - **OS / Version** : Windows Server 2022; version Horizon à vérifier auprès de l'éditeur
-- **Catégorie** : VDI / Horizon
+- **Catégorie** : [[Glossary:VDI]] / Horizon
 - **Tags** : `vmware-horizon`, `horizon`, `windows-server`, `securite`
 
 ---
 
 ## Problème précis à résoudre
 
-Sécuriser Horizon : certificats TLS, comptes, pare-feu.
+Sécuriser Horizon : certificats [[Glossary:TLS]], comptes, pare-feu.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -30,7 +30,7 @@ Get-ChildItem Cert:\LocalMachine\My | Format-List Subject,FriendlyName,NotAfter,
 ```
    👉 Explication : le Connection Server utilise le certificat portant le nom convivial vdm (à confirmer dans la documentation de la version).
 
-2. Redémarrer le service Connection Server puis valider dans GUI **Settings > Servers > Connection Servers** que le certificat est reconnu.
+2. Redémarrer le service Connection Server puis valider dans [[Glossary:GUI]] **Settings > Servers > Connection Servers** que le certificat est reconnu.
    👉 Explication : sans redémarrage l'ancien certificat reste servi.
 
 3. Remplacer aussi le certificat de l'UAG via GUI **Admin UI > Advanced Settings > TLS Server Certificate Settings**.

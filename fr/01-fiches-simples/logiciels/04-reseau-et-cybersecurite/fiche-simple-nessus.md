@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Nessus
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : Nessus 10.x (paquet .deb Tenable, numéro exact à vérifier sur la version déployée)
 - **Catégorie** : Réseau et cybersécurité
@@ -64,7 +64,7 @@ sudo ufw allow from <adresse_ip_admin> to any port 8834 proto tcp
 sudo ufw enable
 sudo ufw status verbose
 ```
-👉 Explication : Le port 8834 n'est ouvert que pour le poste d'administration. Autoriser SSH avant `ufw enable` évite de perdre l'accès.
+👉 Explication : Le port 8834 n'est ouvert que pour le poste d'administration. Autoriser [[Glossary:SSH]] avant `ufw enable` évite de perdre l'accès.
 
 2. Création d'un compte d'analyse nominatif :
 ```bash

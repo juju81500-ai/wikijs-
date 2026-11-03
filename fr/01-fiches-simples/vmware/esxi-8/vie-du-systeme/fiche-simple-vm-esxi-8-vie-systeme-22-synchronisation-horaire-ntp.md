@@ -24,7 +24,7 @@ Garder l'heure exacte.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Host Client : **Gérer > Système > Heure et date > Modifier les paramètres NTP** (Utiliser le protocole NTP, démarrage avec l'hôte, serveur NTP). En ligne de commande :
+1. Host Client : **Gérer > Système > Heure et date > Modifier les paramètres [[Glossary:NTP]]** (Utiliser le protocole NTP, démarrage avec l'hôte, serveur NTP). En ligne de commande :
    ```sh
    esxcli system ntp set -s IP_NTP -e true
    esxcli system ntp get

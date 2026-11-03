@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # fiche-simple-vm-ubuntu-ceph-installer-cephadm-bootstrap.md
 
 - **Environnement** : Cluster Ceph de laboratoire à trois nœuds (ceph01, ceph02, ceph03) géré par cephadm
-- **OS / Version** : Ubuntu Server 22-04 LTS; Ceph Tentacle 20.2.4
+- **OS / Version** : Ubuntu Server 22-04 [[Glossary:LTS]]; Ceph Tentacle 20.2.4
 - **Catégorie** : stockage / cluster Ceph
 - **Tags** : `ubuntu2204`, `ceph`, `tentacle`, `cephadm`
 
@@ -41,13 +41,13 @@ Installer cephadm et créer le premier MON/MGR du cluster avec `cephadm bootstra
    ```
    👉 Explication : aligne cephadm sur la version Tentacle retenue et installe la commande `ceph`.
 
-3. Amorcer le cluster (remplacer l'IP du MON et le réseau de réplication par ceux du lab) :
+3. Amorcer le cluster (remplacer l'[[Glossary:IP]] du MON et le réseau de réplication par ceux du lab) :
    ```bash
    sudo cephadm bootstrap \
      --mon-ip 10.20.0.11 \
      --cluster-network 10.30.0.0/24
    ```
-   👉 Explication : crée le premier MON et MGR, la clé SSH de gestion, la configuration et le trousseau `client.admin`; omettre `--cluster-network` si le lab n'a pas de réseau de réplication distinct.
+   👉 Explication : crée le premier MON et MGR, la clé [[Glossary:SSH]] de gestion, la configuration et le trousseau `client.admin`; omettre `--cluster-network` si le lab n'a pas de réseau de réplication distinct.
 
 4. Noter l'URL du Dashboard affichée à la fin, sans consigner le mot de passe dans un document.
    👉 Explication : le mot de passe initial est un secret à placer dans le coffre.

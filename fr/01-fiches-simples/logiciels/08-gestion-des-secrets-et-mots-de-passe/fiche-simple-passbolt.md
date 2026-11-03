@@ -11,14 +11,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Passbolt
 
-- **Environnement** : VM (Debian 13) avec Docker
+- **Environnement** : [[Glossary:VM]] (Debian 13) avec Docker
 - **OS / Version** : Debian 13 (trixie)
 - **Version** : Passbolt CE `<version_passbolt>` (image Docker `passbolt/passbolt`, à vérifier sur la version déployée)
 - **Catégorie** : Gestion des secrets et mots de passe
 - **Tags** : `[debian-13]`, `[docker]`, `[passbolt]`, `[gestionnaire-mots-de-passe]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Déployer Passbolt CE (gestionnaire de mots de passe partagés) sur une VM Debian 13 avec Docker, créer le premier compte administrateur, vérifier que l'interface répond, puis le publier derrière HTTPS avec des sauvegardes et des secrets protégés. Passbolt repose sur une clé GPG serveur : sa perte rend les secrets inaccessibles, d'où les étapes de sauvegarde.
+Déployer Passbolt CE (gestionnaire de mots de passe partagés) sur une VM Debian 13 avec Docker, créer le premier compte administrateur, vérifier que l'interface répond, puis le publier derrière HTTPS avec des sauvegardes et des secrets protégés. Passbolt repose sur une clé [[Glossary:GPG]] serveur : sa perte rend les secrets inaccessibles, d'où les étapes de sauvegarde.
 
 ---
 
@@ -38,14 +38,14 @@ sudo docker compose version
 mkdir -p ~/passbolt/gpg ~/passbolt/jwt ~/passbolt/db
 cd ~/passbolt
 ```
-👉 Explication : Crée l'arborescence du projet : `gpg` pour la clé serveur, `jwt` pour les clés d'authentification API, `db` pour les données MariaDB.
+👉 Explication : Crée l'arborescence du projet : `gpg` pour la clé serveur, `jwt` pour les clés d'authentification [[Glossary:API]], `db` pour les données MariaDB.
 
 3. Génération de la clé GPG du serveur (sans phrase de passe, requise par le conteneur) :
 ```bash
 gpg --batch --passphrase '' --quick-gen-key "Passbolt <adresse_email_passbolt>" rsa3072 default never
 gpg --list-keys --fingerprint <adresse_email_passbolt>
 ```
-👉 Explication : Crée une clé RSA 3072 sans expiration pour le serveur. `<adresse_email_passbolt>` est l'adresse de service de Passbolt. La seconde commande affiche l'empreinte (fingerprint) de la clé : la noter, elle est nécessaire à l'étape suivante. Les options exactes de `gpg` peuvent varier selon la version (à vérifier sur la version déployée).
+👉 Explication : Crée une clé [[Glossary:RSA]] 3072 sans expiration pour le serveur. `<adresse_email_passbolt>` est l'adresse de service de Passbolt. La seconde commande affiche l'empreinte (fingerprint) de la clé : la noter, elle est nécessaire à l'étape suivante. Les options exactes de `gpg` peuvent varier selon la version (à vérifier sur la version déployée).
 
 4. Export de la clé publique et de la clé privée serveur :
 ```bash
@@ -94,7 +94,7 @@ services:
     ports:
       - "443:443"
 ```
-👉 Explication : `<domaine_passbolt>` est le nom DNS du service (en lab, l'adresse IP de la VM convient). `<mot_de_passe_base>` et `<mot_de_passe_root_base>` sont des mots de passe forts différents, à saisir identiques pour les deux champs `DATASOURCES_DEFAULT_PASSWORD` et `MARIADB_PASSWORD`. La base n'expose aucun port vers l'extérieur. `latest-ce` est acceptable en lab seulement.
+👉 Explication : `<domaine_passbolt>` est le nom [[Glossary:DNS]] du service (en lab, l'adresse [[Glossary:IP]] de la VM convient). `<mot_de_passe_base>` et `<mot_de_passe_root_base>` sont des mots de passe forts différents, à saisir identiques pour les deux champs `DATASOURCES_DEFAULT_PASSWORD` et `MARIADB_PASSWORD`. La base n'expose aucun port vers l'extérieur. `latest-ce` est acceptable en lab seulement.
 
 7. Démarrage des conteneurs et contrôle de leur état :
 ```bash
@@ -150,7 +150,7 @@ server {
 ```
 👉 Explication : Nginx reçoit le trafic public et le transmet au conteneur. `<domaine_passbolt>` doit correspondre à `APP_FULL_BASE_URL` dans le fichier Compose et pointer en DNS vers ce serveur.
 
-3. Activation du site, contrôle de la configuration et certificat TLS :
+3. Activation du site, contrôle de la configuration et certificat [[Glossary:TLS]] :
 ```bash
 sudo ln -s /etc/nginx/sites-available/passbolt /etc/nginx/sites-enabled/passbolt
 sudo nginx -t
@@ -158,7 +158,7 @@ sudo certbot --nginx -d <domaine_passbolt>
 ```
 👉 Explication : `nginx -t` valide la syntaxe avant tout rechargement. Certbot obtient un certificat Let's Encrypt pour `<domaine_passbolt>` et configure HTTPS. Le domaine doit être joignable depuis Internet sur le port 80 pour la validation.
 
-4. Pare-feu : seuls SSH (depuis l'administration) et HTTP/HTTPS sont ouverts :
+4. Pare-feu : seuls [[Glossary:SSH]] (depuis l'administration) et [[Glossary:HTTP]]/HTTPS sont ouverts :
 ```bash
 sudo apt install -y ufw
 sudo ufw allow from <adresse_ip_admin> to any port 22 proto tcp

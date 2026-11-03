@@ -40,7 +40,7 @@ Figer l'état initial du serveur.
    ```
    👉 Explication : ces fichiers servent de référence pour détecter les dérives.
 
-3. Prendre un point de contrôle de la VM (Hyper-V : **clic droit sur la VM > Point de contrôle**) :
+3. Prendre un point de contrôle de la [[Glossary:VM]] (Hyper-V : **clic droit sur la VM > Point de contrôle**) :
    ```powershell
    Checkpoint-VM -Name NOM_VM -SnapshotName 'Baseline'
    ```

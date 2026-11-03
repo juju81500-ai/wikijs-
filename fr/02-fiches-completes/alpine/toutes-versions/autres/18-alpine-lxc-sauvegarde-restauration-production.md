@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:14Z
 # Sauvegarder et restaurer un LXC Alpine en production
 
 - **Type de fiche** : Autres — sauvegarde / reprise
-- **Environnement** : Proxmox VE avec CT Alpine et Proxmox Backup Server ou stockage de sauvegarde dédié
+- **Environnement** : Proxmox VE avec [[Glossary:CT]] Alpine et Proxmox Backup Server ou stockage de sauvegarde dédié
 - **OS / Version** : Alpine Linux, version maintenue choisie pour le service
 - **Rôle** : Définir la sauvegarde, le test de restauration et la bascule de reprise
 - **Tags** : `alpine`, `proxmox`, `lxc`, `sauvegarde`, `restauration`, `production`
@@ -21,7 +21,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [cadrer la protection](/fr/01-fiches-simples/alpine/toutes-versions/vie-du-systeme/fiches-par-theme/sauvegarde-restauration/fiche-simple-lxc-alpine-sauvegarde-cadrer-protection).
 
-Inventorier données persistantes, fichiers de configuration, secrets, montages, tâches planifiées, identifiant CT, hostname, IP, bridge/VLAN et dépendances. Distinguer une sauvegarde du CT d'une sauvegarde applicative cohérente : les bases de données peuvent nécessiter un dump natif ou l'arrêt propre des écritures.
+Inventorier données persistantes, fichiers de configuration, secrets, montages, tâches planifiées, identifiant CT, hostname, [[Glossary:IP]], bridge/VLAN et dépendances. Distinguer une sauvegarde du CT d'une sauvegarde applicative cohérente : les bases de données peuvent nécessiter un dump natif ou l'arrêt propre des écritures.
 
 Choisir une cible distincte du nœud protégé, une rétention, un chiffrement si requis et les responsables de récupération. Un snapshot local ne remplace pas une copie indépendante.
 
@@ -29,7 +29,7 @@ Choisir une cible distincte du nœud protégé, une rétention, un chiffrement s
 
 Fiche simple : [configurer PBS pour le CT](/fr/01-fiches-simples/alpine/toutes-versions/vie-du-systeme/fiches-par-theme/sauvegarde-restauration/fiche-simple-lxc-alpine-sauvegarde-configurer-pbs).
 
-Depuis PVE, ajouter le datastore PBS avec certificat/empreinte validés et compte/token dédié aux droits minimaux. Créer une tâche de sauvegarde pour le CT et vérifier mode, planification, rétention, chiffrement et notifications selon le stockage et la politique de l'organisation.
+Depuis PVE, ajouter le datastore [[Glossary:PBS]] avec certificat/empreinte validés et compte/token dédié aux droits minimaux. Créer une tâche de sauvegarde pour le CT et vérifier mode, planification, rétention, chiffrement et notifications selon le stockage et la politique de l'organisation.
 
 Pour un test manuel ponctuel sur le nœud PVE :
 
@@ -72,7 +72,7 @@ Fiche simple : [reprendre le service en production](/fr/01-fiches-simples/alpine
 1. Déclarer l'incident et geler les écritures sur l'ancien service si possible.
 2. Choisir le point de sauvegarde; noter l'ID source et la destination.
 3. Restaurer en environnement isolé et valider avant la bascule.
-4. Éteindre l'ancien CT ou isoler son réseau avant de réutiliser IP, DNS ou tâches planifiées.
+4. Éteindre l'ancien CT ou isoler son réseau avant de réutiliser IP, [[Glossary:DNS]] ou tâches planifiées.
 5. Basculer l'adresse/DNS/VIP selon le plan, tester les clients, puis surveiller.
 
 ## 6. Retour arrière et conservation
@@ -81,7 +81,7 @@ Fiche simple : [gérer le retour arrière et la conservation](/fr/01-fiches-simp
 
 Si le test échoue, garder le CT restauré isolé et remettre l'ancien service en fonctionnement après confirmation qu'il n'y a pas d'écritures concurrentes. Ne jamais démarrer simultanément deux CT portant la même IP ou exécutant les mêmes traitements.
 
-Conserver l'ancienne instance et le point de sauvegarde jusqu'à la période d'acceptation; documenter le RPO/RTO réellement mesuré.
+Conserver l'ancienne instance et le point de sauvegarde jusqu'à la période d'acceptation; documenter le [[Glossary:RPO]]/RTO réellement mesuré.
 
 ## Sources
 

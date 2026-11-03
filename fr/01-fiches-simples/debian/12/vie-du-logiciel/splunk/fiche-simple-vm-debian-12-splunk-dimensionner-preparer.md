@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-12-splunk-dimensionner-preparer.md
 
-- **Environnement** : VM Debian 12 dédiée à Splunk Enterprise autonome (laboratoire)
+- **Environnement** : [[Glossary:VM]] Debian 12 dédiée à Splunk Enterprise autonome (laboratoire)
 - **OS / Version** : Debian 12 Bookworm; Splunk Enterprise 10.2
 - **Catégorie** : journaux / cadrage
 - **Tags** : `debian12`, `splunk`, `logs`, `dimensionnement`
@@ -31,7 +31,7 @@ Vérifier que l'hôte convient avant d'installer Splunk.
    ```
    👉 Explication : ils doivent figurer dans la matrice officielle Splunk 10.2.
 
-2. Contrôler CPU, RAM et disque :
+2. Contrôler [[Glossary:CPU]], [[Glossary:RAM]] et disque :
    ```bash
    nproc
    free -h
@@ -47,7 +47,7 @@ Vérifier que l'hôte convient avant d'installer Splunk.
 
 ## 2. Production — Contrôles
 
-Pour une plateforme distribuée de production, appliquer les architectures validées Splunk; préparer DNS/NTP, stockage local, sauvegarde et plan réseau.
+Pour une plateforme distribuée de production, appliquer les architectures validées Splunk; préparer [[Glossary:DNS]]/NTP, stockage local, sauvegarde et plan réseau.
 
 ## 3. Production — Sécurité
 

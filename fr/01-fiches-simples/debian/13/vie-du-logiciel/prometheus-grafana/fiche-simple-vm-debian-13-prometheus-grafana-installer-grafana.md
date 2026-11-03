@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-prometheus-grafana-installer-grafana.md
 
-- **Environnement** : Debian 13; dépôt APT officiel Grafana
+- **Environnement** : Debian 13; dépôt [[Glossary:APT]] officiel Grafana
 - **OS / Version** : Debian 13; Grafana OSS
 - **Catégorie** : supervision / tableaux de bord
 - **Tags** : `debian13`, `grafana`, `apt`, `installation`, `tls`
@@ -68,8 +68,8 @@ Documenter version, dépôt, source d'authentification, propriétaire des dashbo
 ## 3. Production — Sécurité
 
 - Ne pas désactiver la validation APT ni installer depuis un miroir non approuvé.
-- Ne pas exposer TCP/3000 directement au réseau utilisateur ou à Internet.
-- Configurer TLS et SSO/MFA selon la politique avant ouverture.
+- Ne pas exposer [[Glossary:TCP]]/3000 directement au réseau utilisateur ou à Internet.
+- Configurer [[Glossary:TLS]] et [[Glossary:SSO]]/MFA selon la politique avant ouverture.
 - Changer les identifiants initiaux et utiliser des comptes nominatifs.
 
 ## Validation et retour arrière

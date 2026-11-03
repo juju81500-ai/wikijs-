@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 VM_WinSrv_2022_GPO_Forcer-Et-Auditer-Mise-A-Jour-GPUpdate.md
 
-- **Environnement** : VM / Poste de travail / Serveur Active Directory
+- **Environnement** : [[Glossary:VM]] / Poste de travail / Serveur Active Directory
 - **OS / Version** : Windows Server 2022 / Windows 11 / Windows 10
-- **Catégorie** : Active Directory / GPO
+- **Catégorie** : Active Directory / [[Glossary:GPO]]
 - **Tags** : `[winsrv2022]`, `[win11]`, `[gpo]`, `[gpupdate]`, `[gpresult]`, `[gui]`, `[cmd]`, `[powershell]`
 
 ---
@@ -35,7 +35,7 @@ Forcer l'application immédiate des stratégies de groupe Active Directory (GPO)
 
 ### Déclencher une actualisation distante (GPMC)
 1. Sur un poste d'administration avec GPMC/RSAT, ouvrir **Gestionnaire de stratégie de groupe** (`gpmc.msc`).
-2. Sélectionner l'OU qui contient les ordinateurs de test, clic droit > **Mise à jour de stratégie de groupe...**, vérifier le nombre de machines ciblées et confirmer.
+2. Sélectionner l'[[Glossary:OU]] qui contient les ordinateurs de test, clic droit > **Mise à jour de stratégie de groupe...**, vérifier le nombre de machines ciblées et confirmer.
 3. Utiliser cette action uniquement sur le périmètre prévu. Les postes doivent être joignables et les règles de pare-feu/planification distante nécessaires doivent être disponibles ; en cas d'échec, lancer `gpupdate /force` localement ou diagnostiquer la connectivité.
 
 ### Vérifier le résultat dans GPMC

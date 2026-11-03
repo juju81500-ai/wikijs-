@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 📚 Couverture dans le pack
 
-Couvert — cURL Debian 13 pour transfert HTTP(S), TLS et recette API; Postman reste distinct.
+Couvert — cURL Debian 13 pour transfert [[Glossary:HTTP]](S), [[Glossary:TLS]] et recette [[Glossary:API]]; Postman reste distinct.
 
 ## 🧭 Utilisation
 

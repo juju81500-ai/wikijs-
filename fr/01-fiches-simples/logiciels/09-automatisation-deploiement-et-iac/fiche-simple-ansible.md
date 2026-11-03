@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Ansible
 
-- **Environnement** : VM Debian 13 (nœud de contrôle Ansible) et hôtes cibles joignables en SSH
+- **Environnement** : [[Glossary:VM]] Debian 13 (nœud de contrôle Ansible) et hôtes cibles joignables en [[Glossary:SSH]]
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian / Ansible (paquet Debian 13, version à relever avec `ansible --version`, à vérifier sur la version déployée)
 - **Catégorie** : Automatisation, déploiement et IaC
 - **Tags** : `[debian13]`, `[debian-family]`, `[ansible]`, `[automation]`, `[ssh-keys]`, `[hardening]`
@@ -89,7 +89,7 @@ Installer Ansible sur un nœud de contrôle Debian 13, vérifier sa version, joi
    ```
    👉 Explication : Isole l'automatisation hors du compte `root`. Le mot de passe est verrouillé, l'accès se fait uniquement par clé SSH.
 
-2. Préparation du dossier SSH du compte dédié et génération d'une clé ED25519 protégée par phrase secrète :
+2. Préparation du dossier SSH du compte dédié et génération d'une clé [[Glossary:ED25519]] protégée par phrase secrète :
    ```bash
    sudo install -d -m 700 -o ansible-admin -g ansible-admin /home/ansible-admin/.ssh && sudo -iu ansible-admin ssh-keygen -t ed25519 -a 100 -C "ansible-controle-debian13" -f /home/ansible-admin/.ssh/id_ansible
    ```

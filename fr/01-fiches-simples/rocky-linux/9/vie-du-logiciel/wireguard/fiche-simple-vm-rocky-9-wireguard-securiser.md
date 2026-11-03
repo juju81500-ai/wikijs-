@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_WireGuard_Securiser
 
-- **Environnement** : VM Rocky Linux 9 dédiée à un serveur WireGuard natif
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à un serveur WireGuard natif
 - **OS / Version** : Rocky Linux 9; wireguard-tools issu d'EPEL, module noyau à vérifier sur l'hôte
 - **Catégorie** : WireGuard natif / sécuriser
 - **Tags** : `wireguard`, `rocky9`, `vie-du-logiciel`, `securiser`
@@ -24,13 +24,13 @@ Réduire l'exposition du serveur WireGuard.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Ouvrir seulement le port UDP VPN (firewalld) :
+1. Ouvrir seulement le port [[Glossary:UDP]] [[Glossary:VPN]] (firewalld) :
    ```bash
    sudo firewall-cmd --permanent --add-port=VPN_UDP_PORT/udp
    sudo firewall-cmd --reload
    sudo firewall-cmd --list-all
    ```
-   👉 Explication : VPN_UDP_PORT est à remplacer par le port UDP retenu. N'ajouter --add-masquerade que si le plan réseau impose du NAT.
+   👉 Explication : VPN_UDP_PORT est à remplacer par le port UDP retenu. N'ajouter --add-masquerade que si le plan réseau impose du [[Glossary:NAT]].
 
 2. Activer le routage uniquement si le serveur doit joindre un réseau interne :
    ```bash
@@ -47,7 +47,7 @@ Réduire l'exposition du serveur WireGuard.
 
 ## 2. Production — Contrôles
 
-Restreindre SSH au réseau d'administration; prévoir la rotation des clés d'un pair compromis (retrait du bloc Peer puis rechargement).
+Restreindre [[Glossary:SSH]] au réseau d'administration; prévoir la rotation des clés d'un pair compromis (retrait du bloc Peer puis rechargement).
 
 ## 3. Production — Sécurité
 

@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:14Z
 # Installer une appliance OPNsense en production
 
 - **Type de fiche** : Installation / Déploiement
-- **Environnement** : Appliance physique ou VM dédiée avec interfaces réseau identifiées
+- **Environnement** : Appliance physique ou [[Glossary:VM]] dédiée avec interfaces réseau identifiées
 - **OS / Version** : OPNsense Community ou Business Edition, release maintenue compatible avec la plateforme
 - **Rôle** : Installer le système, attribuer les interfaces et valider le routage et le filtrage
 - **Tags** : `opnsense`, `installation`, `pare-feu`, `wan`, `lan`, `production`
@@ -21,7 +21,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [préparer l'architecture OPNsense](/fr/01-fiches-simples/opnsense/toutes-versions/vie-du-systeme/fiches-par-theme/installation-systeme/fiche-simple-appliance-opnsense-installation-preparer-architecture).
 
-Définir WAN, LAN, VLAN, réseaux de gestion, adresses, passerelle, DNS, règles, NAT, VPN, journaux et procédure d'accès de secours. Prévoir au minimum une console locale ou série. Pour une VM, affecter des cartes réseau dédiées et conserver leur correspondance avec les interfaces virtuelles.
+Définir [[Glossary:WAN]], [[Glossary:LAN]], [[Glossary:VLAN]], réseaux de gestion, adresses, passerelle, [[Glossary:DNS]], règles, [[Glossary:NAT]], [[Glossary:VPN]], journaux et procédure d'accès de secours. Prévoir au minimum une console locale ou série. Pour une VM, affecter des cartes réseau dédiées et conserver leur correspondance avec les interfaces virtuelles.
 
 Télécharger l'image depuis le site officiel, vérifier son empreinte selon les instructions du projet et préparer le média d'installation. Ne pas connecter l'appliance à un réseau de production avant d'avoir défini les interfaces et les règles.
 
@@ -38,7 +38,7 @@ Fiche simple : [installer le système OPNsense](/fr/01-fiches-simples/opnsense/t
 
 Fiche simple : [assistant initial OPNsense](/fr/01-fiches-simples/opnsense/toutes-versions/vie-du-systeme/fiches-par-theme/installation-systeme/fiche-simple-appliance-opnsense-installation-assistant-initial).
 
-Depuis un poste d'administration dédié, ouvrir l'interface Web via l'adresse LAN. Définir un mot de passe administrateur unique, le nom d'hôte et le domaine, la zone horaire, les DNS, le type d'adressage WAN et le plan IP LAN. Remplacer les paramètres temporaires par ceux approuvés et vérifier l'absence de conflit d'adresse.
+Depuis un poste d'administration dédié, ouvrir l'interface Web via l'adresse LAN. Définir un mot de passe administrateur unique, le nom d'hôte et le domaine, la zone horaire, les DNS, le type d'adressage WAN et le plan [[Glossary:IP]] LAN. Remplacer les paramètres temporaires par ceux approuvés et vérifier l'absence de conflit d'adresse.
 
 Mettre à jour vers une version maintenue après consultation des notes de version et avant exposition externe. Exporter une première configuration protégée dès que l'administration est stable.
 
@@ -48,7 +48,7 @@ Fiche simple : [créer les règles nécessaires OPNsense](/fr/01-fiches-simples/
 
 Partir du principe que les flux sont refusés sauf autorisation explicite. Ajouter uniquement les règles nécessaires, dans le bon ordre et sur la bonne interface; limiter les sources d'administration au sous-réseau dédié. N'autoriser aucune gestion Web/SSH depuis le WAN sans architecture sécurisée et justification.
 
-Configurer DHCP, DNS, VLAN, NAT, VPN ou haute disponibilité uniquement si le rôle le nécessite. Procéder par étape, tester les flux avant d'ajouter la suivante, et garder la console accessible.
+Configurer [[Glossary:DHCP]], DNS, VLAN, NAT, VPN ou haute disponibilité uniquement si le rôle le nécessite. Procéder par étape, tester les flux avant d'ajouter la suivante, et garder la console accessible.
 
 ## 5. Recette
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-lemp-depanner.md
 
-- **Environnement** : pile LEMP Debian 13; diagnostic local et accès administrateur contrôlé
+- **Environnement** : pile [[Glossary:LEMP]] Debian 13; diagnostic local et accès administrateur contrôlé
 - **OS / Version** : Debian 13 Trixie; Nginx, MariaDB, PHP-FPM 8.4
 - **Catégorie** : pile Web LEMP / dépannage
 - **Tags** : `debian13`, `lemp`, `nginx`, `mariadb`, `php-fpm`, `diagnostic`
@@ -51,7 +51,7 @@ Diagnostiquer un défaut Nginx, PHP-FPM ou MariaDB sans exposer d'informations d
 
 ## 2. Production — Contrôles
 
-Consigner symptômes, heure, changements récents, code HTTP, services, journaux et hypothèse vérifiée avant appliquer une correction.
+Consigner symptômes, heure, changements récents, code [[Glossary:HTTP]], services, journaux et hypothèse vérifiée avant appliquer une correction.
 
 ## 3. Production — Sécurité
 

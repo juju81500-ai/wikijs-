@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 📚 Couverture dans le pack
 
-Couvert — guide complet et série de fiches simples Kea DHCPv4 sur Debian 13. Kea est l’alternative retenue ici à ISC DHCP; les migrations depuis dhcpd doivent être planifiées et testées.
+Couvert — guide complet et série de fiches simples Kea DHCPv4 sur Debian 13. Kea est l’alternative retenue ici à ISC [[Glossary:DHCP]]; les migrations depuis dhcpd doivent être planifiées et testées.
 
 Fiches simples du guide : [cadrer le périmètre Kea](/fr/01-fiches-simples/debian/13/vie-du-logiciel/dhcp/fiche-simple-vm-debian-13-kea-cadrer), [installer le paquet ISC Kea](/fr/01-fiches-simples/debian/13/vie-du-logiciel/dhcp/fiche-simple-vm-debian-13-kea-installer), [écrire la configuration minimale Kea](/fr/01-fiches-simples/debian/13/vie-du-logiciel/dhcp/fiche-simple-vm-debian-13-kea-configurer), [valider puis démarrer Kea](/fr/01-fiches-simples/debian/13/vie-du-logiciel/dhcp/fiche-simple-vm-debian-13-kea-valider-demarrer), [contrôler le service sans perturber le LAN](/fr/01-fiches-simples/debian/13/vie-du-logiciel/dhcp/fiche-simple-vm-debian-13-kea-controler-service), [changer une plage ou revenir en arrière](/fr/01-fiches-simples/debian/13/vie-du-logiciel/dhcp/fiche-simple-vm-debian-13-kea-modifier-plage), [durcir et exploiter Kea](/fr/01-fiches-simples/debian/13/vie-du-logiciel/dhcp/fiche-simple-vm-debian-13-kea-durcir), [connaître les limites de validation](/fr/01-fiches-simples/debian/13/vie-du-logiciel/dhcp/fiche-simple-vm-debian-13-kea-limites).
 

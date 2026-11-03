@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-samba-ad-dc-reseau-securite.md
 
-- **Environnement** : VM Debian 13 de laboratoire, contrôleur de domaine Samba AD DC (DNS SAMBA_INTERNAL)
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire, contrôleur de domaine Samba [[Glossary:AD]] [[Glossary:DC]] ([[Glossary:DNS]] SAMBA_INTERNAL)
 - **OS / Version** : Debian 13 Trixie; Samba 4.22 (dépôts Debian)
 - **Catégorie** : annuaire / sécurité réseau
 - **Tags** : `debian13`, `samba`, `active-directory`, `lab`, `pare-feu`, `securite`
@@ -24,7 +24,7 @@ Limiter les flux AD aux clients et serveurs approuvés.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Autoriser entre clients approuvés et DC : DNS 53 TCP/UDP, Kerberos 88 TCP/UDP, NTP 123 UDP, RPC 135 TCP, LDAP 389 TCP/UDP, SMB 445 TCP, changement de mot de passe 464 TCP/UDP et RPC dynamique TCP.
+1. Autoriser entre clients approuvés et DC : DNS 53 [[Glossary:TCP]]/UDP, Kerberos 88 TCP/UDP, [[Glossary:NTP]] 123 [[Glossary:UDP]], RPC 135 TCP, [[Glossary:LDAP]] 389 TCP/UDP, SMB 445 TCP, changement de mot de passe 464 TCP/UDP et RPC dynamique TCP.
    👉 Explication : ce sont les flux nécessaires à un DC.
 
 2. N'ouvrir NetBIOS 137-139 et Global Catalog 3268/3269 que si le scénario les exige.
@@ -38,12 +38,12 @@ Limiter les flux AD aux clients et serveurs approuvés.
 
 ## 2. Production — Contrôles
 
-Restreindre SSH et la console, activer les mises à jour Debian, surveiller les échecs Kerberos et les changements AD.
+Restreindre [[Glossary:SSH]] et la console, activer les mises à jour Debian, surveiller les échecs Kerberos et les changements AD.
 
 ## 3. Production — Sécurité
 
 - Ne jamais publier LDAP, SMB, RPC ou Kerberos sur Internet.
-- N'activer aucune compatibilité faible (NTLM, algorithmes hérités) sans exception approuvée.
+- N'activer aucune compatibilité faible ([[Glossary:NTLM]], algorithmes hérités) sans exception approuvée.
 - Protéger bases et secrets du DC.
 
 ## Validation et retour arrière

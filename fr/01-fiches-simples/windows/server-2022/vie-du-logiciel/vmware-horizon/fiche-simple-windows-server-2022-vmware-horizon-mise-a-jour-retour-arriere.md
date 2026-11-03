@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **Environnement** : Serveurs Windows Server 2022 (Connection Server), vCenter, UAG, compte administrateur nominatif
 - **OS / Version** : Windows Server 2022; version Horizon à vérifier auprès de l'éditeur
-- **Catégorie** : VDI / Horizon
+- **Catégorie** : [[Glossary:VDI]] / Horizon
 - **Tags** : `vmware-horizon`, `horizon`, `windows-server`, `mise-a-jour`
 
 ---
@@ -33,7 +33,7 @@ Mettre à jour Horizon et revenir en arrière.
 3. Sur chaque Connection Server, exécuter l'installeur de la nouvelle version VERSION_HORIZON_CIBLE en administrateur.
    👉 Explication : mise à niveau sur place ; faire un serveur à la fois.
 
-4. Mettre à jour l'agent dans VM_MODELE, créer un nouveau snapshot et pousser le pool : GUI **Inventory > Desktops > NOM_POOL > Maintain > Schedule/Push Image**.
+4. Mettre à jour l'agent dans VM_MODELE, créer un nouveau snapshot et pousser le pool : [[Glossary:GUI]] **Inventory > Desktops > NOM_POOL > Maintain > Schedule/Push Image**.
    👉 Explication : libellé à vérifier.
 
 5. Mettre à jour l'UAG en redéployant la nouvelle OVA avec le fichier INI.

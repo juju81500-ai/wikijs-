@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:14Z
 # Fiche_Simple_-_VM_Windows_10_mRemoteNG_Differences
 
 - **Environnement** : Poste Windows Client-10 existant; application mRemoteNG
-- **OS / Version** : Windows 10 — vérifier édition, version, LTSC ou statut ESU; la compatibilité produit dépend du build éditeur
+- **OS / Version** : Windows 10 — vérifier édition, version, LTSC ou statut [[Glossary:ESU]]; la compatibilité produit dépend du build éditeur
 - **Catégorie** : poste de travail / client d’administration distante
 - **Tags** : `windows-client-10`, `mremoteng`, `cycle-de-vie`, `limites`
 

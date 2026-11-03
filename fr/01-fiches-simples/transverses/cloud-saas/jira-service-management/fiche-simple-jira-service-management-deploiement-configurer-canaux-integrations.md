@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : Tenant Atlassian Cloud administré par l'organisation (SaaS, aucune machine locale)
 - **OS / Version** : Jira Service Management Cloud (SaaS Atlassian)
-- **Catégorie** : ITSM / centre de services
+- **Catégorie** : [[Glossary:ITSM]] / centre de services
 - **Tags** : `jira-service-management`, `atlassian-cloud`, `itsm`, `saas`
 
 ---

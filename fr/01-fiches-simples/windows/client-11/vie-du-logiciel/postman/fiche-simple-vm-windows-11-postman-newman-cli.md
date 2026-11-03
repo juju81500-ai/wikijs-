@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **Environnement** : Poste Windows 11 géré, compte standard, Postman Desktop et Newman
 - **OS / Version** : Windows 11 Client
-- **Catégorie** : API / exécution en ligne de commande
+- **Catégorie** : [[Glossary:API]] / exécution en ligne de commande
 - **Tags** : `windows-11`, `postman`, `api`, `newman`, `vie-du-logiciel`
 
 ---
@@ -31,7 +31,7 @@ Installer Newman et exécuter une collection Postman exportée en ligne de comma
    npm install -g newman
    newman --version
    ```
-   👉 Explication : Node.js LTS est requis (`winget install --id OpenJS.NodeJS.LTS -e` si absent). Si npm global est interdit, voir la politique du poste.
+   👉 Explication : Node.js [[Glossary:LTS]] est requis (`winget install --id OpenJS.NodeJS.LTS -e` si absent). Si npm global est interdit, voir la politique du poste.
 
 2. Exécuter la collection avec l'environnement exporté :
    ```powershell

@@ -30,12 +30,12 @@ Vérifier les contrôles d'accès, réseau, secrets et certificats avant toute u
    ```
    👉 Explication : planifier la rotation avant l'échéance.
 
-2. Contrôler les droits RBAC et l'exposition :
+2. Contrôler les droits [[Glossary:RBAC]] et l'exposition :
    ```bash
    kubectl get clusterrolebindings -o wide | grep -i cluster-admin
    kubectl get svc -A | grep -E 'NodePort|LoadBalancer'
    ```
-   👉 Explication : `cluster-admin` limité aux administrateurs; ne pas exposer `NodePort` ou l'API à des réseaux non prévus.
+   👉 Explication : `cluster-admin` limité aux administrateurs; ne pas exposer `NodePort` ou l'[[Glossary:API]] à des réseaux non prévus.
 
 3. Vérifier les politiques réseau et l'accès à l'API :
    ```bash

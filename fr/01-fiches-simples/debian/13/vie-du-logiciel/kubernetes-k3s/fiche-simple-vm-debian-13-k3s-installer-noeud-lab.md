@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-k3s-installer-noeud-lab.md
 
-- **Environnement** : VM de laboratoire Debian 13 isolée
+- **Environnement** : [[Glossary:VM]] de laboratoire Debian 13 isolée
 - **OS / Version** : Debian 13; version K3s explicitement épinglée
 - **Catégorie** : Kubernetes / K3s / installation
 - **Tags** : `debian13`, `k3s`, `kubernetes`, `installation`, `lab`
@@ -69,7 +69,7 @@ Installer un premier nœud K3s de laboratoire avec une version vérifiée, une c
 ## 3. Production — Sécurité
 
 - Ne jamais publier le kubeconfig, le token ou des secrets dans des journaux, tickets ou dépôts.
-- N'exposer ni l'API ni les composants K3s sur toutes les interfaces sans filtrage et contrôle d'accès explicites.
+- N'exposer ni l'[[Glossary:API]] ni les composants K3s sur toutes les interfaces sans filtrage et contrôle d'accès explicites.
 - Ne pas exécuter un script distant sans vérifier son contenu et sa provenance.
 - Limiter les droits du compte d'administration et protéger les fichiers de configuration.
 

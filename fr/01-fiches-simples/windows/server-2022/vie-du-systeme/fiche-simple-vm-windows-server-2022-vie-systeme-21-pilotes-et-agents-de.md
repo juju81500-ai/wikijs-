@@ -24,7 +24,7 @@ Installer les pilotes et services d'intégration.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Hyper-V : les services d'intégration passent par Windows Update. Vérifier-les dans **Gestionnaire Hyper-V > Paramètres de la VM > Services d'intégration**.
+1. Hyper-V : les services d'intégration passent par Windows Update. Vérifier-les dans **Gestionnaire Hyper-V > Paramètres de la [[Glossary:VM]] > Services d'intégration**.
    ```powershell
    Get-VMIntegrationService -VMName NOM_VM
    ```

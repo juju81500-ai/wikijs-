@@ -30,7 +30,7 @@ Appliquer toutes les mises à jour disponibles avant la mise en production.
    Get-WindowsUpdate
    Install-WindowsUpdate -AcceptAll -AutoReboot
    ```
-   👉 Explication : installe le module communautaire PSWindowsUpdate (depuis la PowerShell Gallery) puis applique les mises à jour; en entreprise, préférer WSUS ou Intune.
+   👉 Explication : installe le module communautaire PSWindowsUpdate (depuis la PowerShell Gallery) puis applique les mises à jour; en entreprise, préférer [[Glossary:WSUS]] ou Intune.
 
 2. Variante sans module : lancer le service d'analyse natif.
    ```powershell
@@ -46,7 +46,7 @@ Appliquer toutes les mises à jour disponibles avant la mise en production.
    ```
    👉 Explication : génère le journal de mise à jour (`WindowsUpdate.log` sur le bureau) et affiche le build atteint.
 
-4. Pour Windows 10 (fin de support le 14 octobre 2025), ne recevoir les correctifs de sécurité que si le poste est inscrit aux mises à jour de sécurité étendues (ESU); sinon planifier la migration vers Windows 11.
+4. Pour Windows 10 (fin de support le 14 octobre 2025), ne recevoir les correctifs de sécurité que si le poste est inscrit aux mises à jour de sécurité étendues ([[Glossary:ESU]]); sinon planifier la migration vers Windows 11.
    👉 Explication : au-delà de la fin de support, sans ESU, aucun correctif de sécurité n'est publié.
 
 ## 2. Production — Contrôles

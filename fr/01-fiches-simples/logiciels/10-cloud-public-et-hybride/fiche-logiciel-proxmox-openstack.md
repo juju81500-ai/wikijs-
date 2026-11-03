@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 📚 Couverture dans le pack
 
-Partiel — Proxmox VE est couvert par ses fiches dédiées; OpenStack est limité ici à un lab DevStack jetable sur Ubuntu Server 24-04 LTS et à des repères d’architecture/API. Aucune intégration native/supportée entre Proxmox VE et OpenStack n’est revendiquée; aucune procédure de production OpenStack n’est fournie.
+Partiel — Proxmox VE est couvert par ses fiches dédiées; OpenStack est limité ici à un lab DevStack jetable sur Ubuntu Server 24-04 [[Glossary:LTS]] et à des repères d’architecture/API. Aucune intégration native/supportée entre Proxmox VE et OpenStack n’est revendiquée; aucune procédure de production OpenStack n’est fournie.
 
 ## 🧭 Utilisation
 

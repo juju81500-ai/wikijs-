@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 📚 Couverture dans le pack
 
-Cloud/SaaS — administration défensive : série de fiches simples (domaine, MFA, SPF/DKIM/DMARC, rétention, recette). Pas de guide complet dédié ; aucune installation, service géré par l'éditeur.
+Cloud/SaaS — administration défensive : série de fiches simples (domaine, [[Glossary:MFA]], [[Glossary:SPF]]/DKIM/DMARC, rétention, recette). Pas de guide complet dédié ; aucune installation, service géré par l'éditeur.
 
 ## 🧭 Utilisation
 

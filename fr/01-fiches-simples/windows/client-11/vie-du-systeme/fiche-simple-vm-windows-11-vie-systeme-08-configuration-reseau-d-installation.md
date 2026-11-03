@@ -32,7 +32,7 @@ Disposer d'un réseau fonctionnel pendant et juste après l'installation.
    Get-NetIPConfiguration
    Get-NetAdapter | Select-Object Name,Status,LinkSpeed,MacAddress
    ```
-   👉 Explication : affiche l'adresse IP, la passerelle, les DNS et l'état des cartes.
+   👉 Explication : affiche l'adresse [[Glossary:IP]], la passerelle, les [[Glossary:DNS]] et l'état des cartes.
 
 3. Vérifier la sortie réseau et la résolution.
    ```powershell
@@ -47,11 +47,11 @@ Disposer d'un réseau fonctionnel pendant et juste après l'installation.
    netsh winhttp show proxy
    netsh winhttp set proxy proxy-server="PROXY:PORT"
    ```
-   👉 Explication : affiche ou définit le proxy utilisé par les services système (`PROXY:PORT` fourni par la DSI).
+   👉 Explication : affiche ou définit le proxy utilisé par les services système (`PROXY:PORT` fourni par la [[Glossary:DSI]]).
 
 ## 2. Production — Contrôles
 
-Utiliser le réseau d'installation ou VLAN de déploiement prévu; le poste ne doit pas rester sur un réseau invité.
+Utiliser le réseau d'installation ou [[Glossary:VLAN]] de déploiement prévu; le poste ne doit pas rester sur un réseau invité.
 
 ## 3. Production — Sécurité
 

@@ -20,23 +20,23 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Superviser l'hôte et les VM.
+Superviser l'hôte et les [[Glossary:VM]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Host Client : **Hôte > Surveiller > Performances / Matériel / Événements**. Pour SNMP :
+1. Host Client : **Hôte > Surveiller > Performances / Matériel / Événements**. Pour [[Glossary:SNMP]] :
    ```sh
    esxcli system snmp set --communities COMMUNAUTE --enable true
    esxcli system snmp get
    ```
    👉 Explication : `COMMUNAUTE` = chaîne secrète à ne pas laisser par défaut (utiliser SNMPv3 si possible).
 
-2. Surveiller au minimum : CPU, RAM, latence disque, occupation des datastores, état du matériel, alertes d'événements.
+2. Surveiller au minimum : [[Glossary:CPU]], [[Glossary:RAM]], latence disque, occupation des datastores, état du matériel, alertes d'événements.
    ```sh
    esxtop -b -n 1 | head -5
    esxcli hardware ipmi sdr list 2>/dev/null | head
    ```
-   👉 Explication : `esxtop -b` donne un instantané; IPMI donne températures et ventilateurs.
+   👉 Explication : `esxtop -b` donne un instantané; [[Glossary:IPMI]] donne températures et ventilateurs.
 
 3. Configurer les alertes dans la supervision (vCenter : **Surveiller > Alarmes**).
    👉 Explication : prévient l'équipe en cas de panne ou de saturation.
@@ -47,7 +47,7 @@ Seuils d'alerte documentés (datastore à 80 %).
 
 ## 3. Production — Sécurité
 
-Accès SNMP limité aux IP de supervision.
+Accès SNMP limité aux [[Glossary:IP]] de supervision.
 
 ## Validation et retour arrière
 

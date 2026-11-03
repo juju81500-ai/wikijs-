@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Vie_Systeme_44_Audit_D_Exposition_Reseau
 
-- **Environnement** : VM Debian 13 « trixie » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 13 « trixie » (serveur)
 - **OS / Version** : Debian 13; étape 44 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian13`, `vie-du-systeme`, `cycle-de-vie`, `etape-44`
@@ -24,7 +24,7 @@ Contrôler ce qui est vu de l'extérieur.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Depuis une machine de contrôle autorisée (remplacer l'IP) :
+1. Depuis une machine de contrôle autorisée (remplacer l'[[Glossary:IP]]) :
    ```bash
    sudo apt install nmap
    sudo nmap -sV -p- 192.0.2.10

@@ -24,7 +24,7 @@ Réduire la surface d'exposition de StarWind : comptes, pare-feu, réseau et chi
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Créer un compte administrateur nominatif. GUI : **Gestion de l'ordinateur > Utilisateurs et groupes locaux**. PowerShell : `New-LocalUser -Name NOM_COMPTE -Password MOT_DE_PASSE_SECURISE`, où MOT_DE_PASSE_SECURISE est un SecureString à demander à la saisie.
+1. Créer un compte administrateur nominatif. [[Glossary:GUI]] : **Gestion de l'ordinateur > Utilisateurs et groupes locaux**. PowerShell : `New-LocalUser -Name NOM_COMPTE -Password MOT_DE_PASSE_SECURISE`, où MOT_DE_PASSE_SECURISE est un SecureString à demander à la saisie.
 ```powershell
 $mdp = Read-Host -AsSecureString 'Mot de passe'
 New-LocalUser -Name NOM_COMPTE -Password $mdp
@@ -43,7 +43,7 @@ New-NetFirewallRule -DisplayName 'StarWind iSCSI restreint' -Direction Inbound -
 ```
    👉 Explication : PORT_ISCSI et RESEAU_AUTORISE sont à remplacer ; l'iSCSI n'est ouvert qu'aux initiateurs prévus.
 
-4. Isoler le trafic de stockage dans un VLAN ou réseau dédié, non routé vers les postes utilisateurs.
+4. Isoler le trafic de stockage dans un [[Glossary:VLAN]] ou réseau dédié, non routé vers les postes utilisateurs.
    👉 Explication : le protocole iSCSI n'est pas conçu pour être exposé sur un réseau général.
 
 5. Vérifier dans la documentation éditeur la prise en charge de l'authentification CHAP et du chiffrement de l'accès de gestion pour votre version, et l'activer si disponible.

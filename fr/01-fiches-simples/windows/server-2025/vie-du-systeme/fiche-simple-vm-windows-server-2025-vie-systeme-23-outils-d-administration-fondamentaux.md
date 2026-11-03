@@ -28,7 +28,7 @@ Installer les outils d'administration et de diagnostic.
    ```powershell
    Install-WindowsFeature -Name Telnet-Client,RSAT-AD-Tools -IncludeManagementTools
    ```
-   👉 Explication : ajoute des outils de test et d'administration AD (le client Telnet n'est qu'un exemple de test à retirer ensuite).
+   👉 Explication : ajoute des outils de test et d'administration [[Glossary:AD]] (le client Telnet n'est qu'un exemple de test à retirer ensuite).
 
 2. Installer des outils via `winget` (si disponible) :
    ```powershell

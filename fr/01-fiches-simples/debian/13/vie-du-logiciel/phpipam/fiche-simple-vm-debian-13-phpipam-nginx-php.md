@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-phpipam-nginx-php.md
 
-- **Environnement** : VM Debian 13, phpIPAM avec MariaDB locale, PHP-FPM et Nginx
+- **Environnement** : [[Glossary:VM]] Debian 13, phpIPAM avec MariaDB locale, PHP-FPM et Nginx
 - **OS / Version** : Debian 13 Trixie x86-64; phpIPAM 1.8.3; PHP 8.4
-- **Catégorie** : IPAM / serveur web
+- **Catégorie** : [[Glossary:IPAM]] / serveur web
 - **Tags** : `debian13`, `phpipam`, `ipam`, `nginx`, `mariadb`, `nginx`, `php-fpm`, `tls`
 
 ---

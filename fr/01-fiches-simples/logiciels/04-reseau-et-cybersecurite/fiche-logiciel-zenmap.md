@@ -23,7 +23,7 @@ Fiche défensive d’administration et de gouvernance. Elle ne remplace pas le g
 
 ## 🧭 Périmètre
 
-Zenmap fournit une interface à un outil réseau à double usage. Cette fiche se limite à l’installation approuvée, à la gestion des postes opérateurs, à la conservation des profils et rapports et à la gouvernance d’une demande d’inventaire. Aucun profil, cible ou réglage d’exécution n’est recommandé. L’inventaire passif et les données de CMDB restent prioritaires; toute activité active exige une autorisation écrite précise et bornée.
+Zenmap fournit une interface à un outil réseau à double usage. Cette fiche se limite à l’installation approuvée, à la gestion des postes opérateurs, à la conservation des profils et rapports et à la gouvernance d’une demande d’inventaire. Aucun profil, cible ou réglage d’exécution n’est recommandé. L’inventaire passif et les données de [[Glossary:CMDB]] restent prioritaires; toute activité active exige une autorisation écrite précise et bornée.
 
 ## ✅ Autorisation et préparation
 

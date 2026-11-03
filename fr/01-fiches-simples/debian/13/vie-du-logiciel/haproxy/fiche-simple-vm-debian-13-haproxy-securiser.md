@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_HAProxy_Securiser
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; HAProxy des dépôts Debian
-- **Catégorie** : répartiteur de charge / HAProxy / Sécuriser (TLS, pare-feu, durcissement)
+- **Catégorie** : répartiteur de charge / HAProxy / Sécuriser ([[Glossary:TLS]], pare-feu, durcissement)
 - **Tags** : `debian13`, `haproxy`, `securite`
 
 ---
@@ -47,7 +47,7 @@ Activer HTTPS sur HAProxy, limiter l'exposition et durcir la configuration.
    sudo sed -i 's|^    bind \*:80$|    bind *:80\n    http-request redirect scheme https unless { ssl_fc }|' /etc/haproxy/haproxy.cfg
    sudo haproxy -c -f /etc/haproxy/haproxy.cfg && sudo systemctl reload haproxy
    ```
-   👉 Explication : vérifier le fichier après le `sed` : la redirection ne doit apparaître que dans `fe_http` ; n'activer HSTS qu'une fois HTTPS stable.
+   👉 Explication : vérifier le fichier après le `sed` : la redirection ne doit apparaître que dans `fe_http` ; n'activer [[Glossary:HSTS]] qu'une fois HTTPS stable.
 
 3. Filtrer le réseau :
    ```bash
@@ -72,11 +72,11 @@ Certificats d'AC avec renouvellement supervisé, TLS 1.2 minimum, statistiques n
 
 - Clés en `0640` root:haproxy, jamais dans un dépôt ni un ticket.
 - Aucun mot de passe en clair dans la configuration versionnée.
-- Limiter l'administration SSH au réseau d'administration.
+- Limiter l'administration [[Glossary:SSH]] au réseau d'administration.
 
 ## Validation et retour arrière
 
-- **Validation** : `curl -kI https://SITE.example.net/` répond, HTTP redirige vers HTTPS.
+- **Validation** : `curl -kI https://SITE.example.net/` répond, [[Glossary:HTTP]] redirige vers HTTPS.
 - **Retour arrière** : retirer le frontend HTTPS et la redirection, ou restaurer `haproxy.cfg.orig`, valider, recharger.
 
 ## Si le problème n'est pas résolu

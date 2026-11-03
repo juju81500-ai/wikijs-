@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_Wireshark_Sauvegarder_Restaurer
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Wireshark
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Wireshark
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Wireshark / sauvegarde et restauration
 - **Tags** : `wireshark`, `ubuntu24.04`, `vie-du-logiciel`, `sauvegarder-restaurer`
@@ -28,7 +28,7 @@ Sauvegarder les profils/préférences Wireshark et les captures de preuve.
    ```bash
    tar -czf ~/wireshark-profil-DATE.tar.gz -C ~/.config wireshark
    ```
-   👉 Explication : Archive préférences, profils et filtres; DATE est à remplacer. Ne pas y inclure de keylog TLS : le retirer au besoin.
+   👉 Explication : Archive préférences, profils et filtres; DATE est à remplacer. Ne pas y inclure de keylog [[Glossary:TLS]] : le retirer au besoin.
 
 2. Empreinte d’une capture de preuve :
    ```bash

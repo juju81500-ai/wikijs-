@@ -28,7 +28,7 @@ Ajouter un exporteur à Prometheus sans exposer de métriques à des réseaux no
    ```bash
    curl -fsS http://IP_CIBLE:9100/metrics | head
    ```
-   👉 Explication : remplacer par l'IP privée de la machine instrumentée; ne pas tester un hôte hors périmètre.
+   👉 Explication : remplacer par l'[[Glossary:IP]] privée de la machine instrumentée; ne pas tester un hôte hors périmètre.
 
 
 ## ⚡ 2. Production — Façon Simplifiée
@@ -59,9 +59,9 @@ Ajouter un exporteur à Prometheus sans exposer de métriques à des réseaux no
 
 ## 🔒 3. Production — Façon Sécurisée
 
-- Restreindre TCP/9100 sur l'hôte cible au seul serveur Prometheus; utiliser l'adresse privée et les règles firewall persistantes.
+- Restreindre [[Glossary:TCP]]/9100 sur l'hôte cible au seul serveur Prometheus; utiliser l'adresse privée et les règles firewall persistantes.
 - Ne pas publier `/metrics` sur Internet ni sur un réseau utilisateur non maîtrisé.
-- Utiliser TLS/authentification ou un proxy contrôlé si les métriques traversent une frontière réseau de confiance.
+- Utiliser [[Glossary:TLS]]/authentification ou un proxy contrôlé si les métriques traversent une frontière réseau de confiance.
 - Garder des noms de jobs et labels stables; éviter les labels de haute cardinalité comme UUID ou valeurs libres.
 
 ## ✅ Validation et retour arrière

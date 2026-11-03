@@ -37,9 +37,9 @@ Contrôler exports, service et montage NFSv4.
    nfsstat -m
    findmnt CHEMIN_DU_MONTAGE
    ```
-   👉 Explication : vérifie la version NFS négociée et les options.
+   👉 Explication : vérifie la version [[Glossary:NFS]] négociée et les options.
 
-3. Contrôler le réseau autorisé dans l'export, la résolution du serveur, UID/GID, ACL et un éventuel problème de verrouillage.
+3. Contrôler le réseau autorisé dans l'export, la résolution du serveur, UID/GID, [[Glossary:ACL]] et un éventuel problème de verrouillage.
    👉 Explication : causes fréquentes de refus d'accès.
 
 ## 2. Production — Contrôles

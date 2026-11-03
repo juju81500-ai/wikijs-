@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-proxmox-pfsense-ce-deploiement-sauvegarder-restaurer.md
 
-- **Environnement** : VM pfSense CE en laboratoire sur Proxmox VE, deux interfaces (WAN et LAN isolés)
+- **Environnement** : [[Glossary:VM]] pfSense CE en laboratoire sur Proxmox VE, deux interfaces ([[Glossary:WAN]] et [[Glossary:LAN]] isolés)
 - **OS / Version** : pfSense Community Edition 2.9.0 (VM x86-64 sur Proxmox VE)
 - **Catégorie** : pare-feu et routage
 - **Tags** : `pfsense`, `ce`, `proxmox`, `firewall`, `lab`
@@ -36,7 +36,7 @@ Disposer d'une sauvegarde chiffrée et prouver qu'elle se restaure.
 4. Dans le clone : **Diagnostics > Backup & Restore > Restore Configuration**, choisir le fichier, saisir la phrase secrète, **Restore**.
    👉 Explication : une sauvegarde complète d'une révision antérieure peut être migrée; une restauration partielle d'une autre révision n'est pas prise en charge.
 
-5. Vérifier interfaces, IP, DHCP, règles et GUI avant de reconnecter un réseau.
+5. Vérifier interfaces, [[Glossary:IP]], [[Glossary:DHCP]], règles et [[Glossary:GUI]] avant de reconnecter un réseau.
    👉 Explication : le test réussit si la VM redémarre sans erreur, les interfaces sont sur les bons ponts et les règles appliquées.
 
 6. Supprimer le clone et les médias d'installation devenus inutiles.

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_42_Journaux_Rotation_Et_Centralisation
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 42 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-42`
@@ -44,7 +44,7 @@ Conserver et centraliser les journaux.
    echo '*.* @@LOG.EXEMPLE.LAN:514' | sudo tee /etc/rsyslog.d/90-central.conf
    sudo systemctl restart rsyslog
    ```
-   👉 Explication : `@@` utilise TCP; préférer TLS en production.
+   👉 Explication : `@@` utilise [[Glossary:TCP]]; préférer [[Glossary:TLS]] en production.
 
 ## 2. Production — Contrôles
 

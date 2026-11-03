@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-2022-iis-securite-sauvegarde-maintenance.md
 
-- **Environnement** : VM Windows Server 2022 pilote
-- **OS / Version** : Windows Server 2022; rôle Web Server (IIS)
+- **Environnement** : [[Glossary:VM]] Windows Server 2022 pilote
+- **OS / Version** : Windows Server 2022; rôle Web Server ([[Glossary:IIS]])
 - **Catégorie** : serveur Web / IIS
 - **Tags** : `iis`, `windows-server-2022`, `web-server`, `tls`, `application-pool`
 
@@ -27,7 +27,7 @@ Appliquer les contrôles de sécurité et sauvegarder la configuration IIS.
 1. Dans **Pare-feu Windows Defender avec fonctions avancées > Règles de trafic entrant**, n'autoriser que les ports et sources nécessaires, avec profil et périmètre explicites.
    👉 Explication : toute règle entrante doit être délimitée.
 
-2. Utiliser HTTPS avec un certificat valide; ne désactiver le binding HTTP qu'après validation complète de HTTPS et des dépendances.
+2. Utiliser HTTPS avec un certificat valide; ne désactiver le binding [[Glossary:HTTP]] qu'après validation complète de HTTPS et des dépendances.
    👉 Explication : on évite de couper un accès encore utilisé.
 
 3. Retirer les modules inutiles, limiter les méthodes HTTP et les permissions, désactiver l'indexation de répertoire et ne placer aucun secret dans le contenu Web.

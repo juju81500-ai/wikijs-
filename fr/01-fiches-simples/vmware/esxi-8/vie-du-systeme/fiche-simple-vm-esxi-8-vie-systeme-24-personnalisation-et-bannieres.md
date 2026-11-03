@@ -31,7 +31,7 @@ Afficher un avertissement légal à la connexion.
    ```
    👉 Explication : le message s'affiche avant la connexion.
 
-2. Bannière SSH : éditer `/etc/issue` puis `/etc/ssh/sshd_config` (`Banner /etc/issue`), puis relancer SSH.
+2. Bannière [[Glossary:SSH]] : éditer `/etc/issue` puis `/etc/ssh/sshd_config` (`Banner /etc/issue`), puis relancer SSH.
    ```sh
    cat /etc/issue
    ```

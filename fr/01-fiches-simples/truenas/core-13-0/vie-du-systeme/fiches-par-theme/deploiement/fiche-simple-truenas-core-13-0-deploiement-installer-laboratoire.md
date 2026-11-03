@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-truenas-core-13-0-deploiement-installer-laboratoire.md
 
-- **Environnement** : Appliance TrueNAS CORE (FreeBSD) en VM de laboratoire ou NAS existant
+- **Environnement** : Appliance TrueNAS CORE (FreeBSD) en [[Glossary:VM]] de laboratoire ou [[Glossary:NAS]] existant
 - **OS / Version** : TrueNAS CORE, branche 13.0 (build exact à relever sur l'ISO)
 - **Catégorie** : stockage NAS / installation
 - **Tags** : `truenas-core`, `truenas`, `freebsd`, `zfs`, `smb`, `nas`
@@ -30,13 +30,13 @@ Installer TrueNAS CORE dans une VM de test.
 2. Sélectionner le disque de démarrage puis confirmer.
    👉 Explication : l'installateur efface le disque choisi : vérifier avant de confirmer.
 
-3. Définir le mot de passe `root` (secret long, conservé dans le gestionnaire de secrets), choisir le mode de démarrage (BIOS sous VMware).
+3. Définir le mot de passe `root` (secret long, conservé dans le gestionnaire de secrets), choisir le mode de démarrage ([[Glossary:BIOS]] sous VMware).
    👉 Explication : le secret n'est jamais noté en clair dans un ticket.
 
 4. Arrêter la VM, retirer l'ISO puis redémarrer.
    👉 Explication : évite de relancer l'installateur.
 
-5. Dans le menu console, choisir **1) Configure Network Interfaces** pour une IP fixe, puis ouvrir l'interface web en HTTPS depuis un poste d'administration.
+5. Dans le menu console, choisir **1) Configure Network Interfaces** pour une [[Glossary:IP]] fixe, puis ouvrir l'interface web en HTTPS depuis un poste d'administration.
    👉 Explication : l'adresse IP de l'interface web est affichée sur la console.
 
 ## 2. Production — Contrôles

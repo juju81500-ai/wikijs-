@@ -23,9 +23,9 @@ Fiche simple : [cadrer et dimensionner Observium](/fr/01-fiches-simples/debian/1
 
 Observium Community est l'édition libre, distribuée en archives majeures deux fois par an. L'édition Subscription suit des canaux SVN distincts, reçoit des mises à jour plus fréquentes et comporte des fonctions supplémentaires. Cette fiche ne décrit que Community; les fonctions avancées d'alerting mentionnées dans la documentation peuvent être réservées à l'édition Subscription.
 
-La documentation Observium indique Debian 13 parmi les distributions compatibles, PHP supérieur à 8.2, MariaDB supérieur à 10.3, Apache supérieur à 2.4, Net-SNMP supérieur à 5.8, fping supérieur à 3.8 et RRDtool supérieur à 1.7.2. Pour un petit laboratoire, les repères publiés sont 2 cœurs, 4 Go de RAM et 20 Go SSD jusqu'à environ 50 appareils/1 000 ports. Dimensionner le stockage des RRD, les E/S et les ressources au volume réel.
+La documentation Observium indique Debian 13 parmi les distributions compatibles, PHP supérieur à 8.2, MariaDB supérieur à 10.3, Apache supérieur à 2.4, Net-SNMP supérieur à 5.8, fping supérieur à 3.8 et RRDtool supérieur à 1.7.2. Pour un petit laboratoire, les repères publiés sont 2 cœurs, 4 Go de [[Glossary:RAM]] et 20 Go [[Glossary:SSD]] jusqu'à environ 50 appareils/1 000 ports. Dimensionner le stockage des RRD, les E/S et les ressources au volume réel.
 
-Utiliser une VM dédiée, une adresse de gestion stable, une résolution DNS fiable et une synchronisation NTP. Prévoir un certificat HTTPS, des sauvegardes de la base MariaDB, de `config.php` et du répertoire `rrd`, ainsi qu'une restauration testée.
+Utiliser une [[Glossary:VM]] dédiée, une adresse de gestion stable, une résolution [[Glossary:DNS]] fiable et une synchronisation [[Glossary:NTP]]. Prévoir un certificat HTTPS, des sauvegardes de la base MariaDB, de `config.php` et du répertoire `rrd`, ainsi qu'une restauration testée.
 
 ## 2. Installer les dépendances Debian
 
@@ -132,7 +132,7 @@ sudo apache2ctl configtest
 sudo systemctl reload apache2
 ```
 
-Limiter le pare-feu au port TCP 443 depuis le réseau d'administration. L'accès SNMP sortant du serveur doit être limité aux équipements explicitement autorisés (UDP 161); ICMP n'est à autoriser que si la politique de supervision l'utilise. Ne pas publier l'interface d'administration sur Internet.
+Limiter le pare-feu au port [[Glossary:TCP]] 443 depuis le réseau d'administration. L'accès [[Glossary:SNMP]] sortant du serveur doit être limité aux équipements explicitement autorisés ([[Glossary:UDP]] 161); [[Glossary:ICMP]] n'est à autoriser que si la politique de supervision l'utilise. Ne pas publier l'interface d'administration sur Internet.
 
 ## 6. Créer l'utilisateur et ajouter un équipement pilote
 
@@ -147,7 +147,7 @@ sudo ./adduser.php observium-admin 'MOT_DE_PASSE_TEMPORAIRE_A_REMPLACER' 10
 
 Remplacer immédiatement la valeur d'exemple par un secret aléatoire et temporaire. Le mot de passe est transmis en argument et peut être visible dans l'historique du shell ou dans la liste des processus; effectuer l'opération depuis une session d'administration contrôlée, ne pas l'inscrire dans un script ou un ticket, puis le changer dans l'interface après la première connexion. Attribuer le niveau administrateur uniquement au compte d'exploitation nominatif.
 
-Avant l'ajout, vérifier depuis le serveur que le nom de l'équipement résout et que SNMP répond. Sur l'équipement pilote, configurer un utilisateur SNMPv3 `authPriv`, en lecture seule, autorisé uniquement depuis l'adresse de supervision. Préférer SHA-2 et AES lorsque l'équipement et Net-SNMP les prennent en charge; sinon choisir le meilleur algorithme commun validé par la politique locale. Ne pas utiliser la communauté `public` ni SNMPv1/v2c pour ce pilote.
+Avant l'ajout, vérifier depuis le serveur que le nom de l'équipement résout et que SNMP répond. Sur l'équipement pilote, configurer un utilisateur SNMPv3 `authPriv`, en lecture seule, autorisé uniquement depuis l'adresse de supervision. Préférer SHA-2 et [[Glossary:AES]] lorsque l'équipement et Net-SNMP les prennent en charge; sinon choisir le meilleur algorithme commun validé par la politique locale. Ne pas utiliser la communauté `public` ni SNMPv1/v2c pour ce pilote.
 
 Ajouter l'appareil via l'interface HTTPS d'Observium en saisissant les identifiants SNMPv3, ou employer `add_device.php` depuis une session contrôlée en tenant compte du fait que les secrets fournis en arguments peuvent être visibles dans la liste des processus. Vérifier le nom canonique, le modèle, le sysObjectID, les interfaces et la date de dernière interrogation. N'activer aucune découverte automatique de voisins au-delà des sous-réseaux autorisés.
 
@@ -180,7 +180,7 @@ Le champ utilisateur `root` convient au format `/etc/cron.d`; ne pas recopier ce
 Fiche simple : [sauvegarder et sécuriser Observium](/fr/01-fiches-simples/debian/13/vie-du-logiciel/observium/fiche-simple-vm-debian-13-observium-sauvegarde-securite).
 
 - Sauvegarder MariaDB par dump cohérent, `config.php`, certificats, règles Apache et données RRD; conserver une copie hors de l'hôte et tester une restauration dans un environnement isolé.
-- Restreindre les droits d'écriture du serveur web; en particulier, ne pas donner à Apache un accès général en écriture au code, aux scripts CLI ou à `rrd` sans exigence confirmée par la version installée.
+- Restreindre les droits d'écriture du serveur web; en particulier, ne pas donner à Apache un accès général en écriture au code, aux scripts [[Glossary:CLI]] ou à `rrd` sans exigence confirmée par la version installée.
 - Protéger le compte MariaDB, l'accès web et les secrets SNMPv3; limiter l'accès web à HTTPS et au réseau d'administration.
 - Surveiller la croissance MariaDB/RRD, l'espace disque, la fraîcheur des interrogations, les erreurs SNMP et l'état des tâches cron.
 - En Community, les archives majeures sont publiées deux fois par an et les mises à niveau se font selon la procédure Community. Ne pas appliquer les commandes SVN réservées à Subscription Edition.

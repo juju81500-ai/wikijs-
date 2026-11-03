@@ -28,7 +28,7 @@ Définir où le serveur obtient ses mises à jour.
    ```powershell
    Get-ItemProperty 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\WindowsUpdate' -ErrorAction SilentlyContinue
    ```
-   👉 Explication : affiche le serveur WSUS imposé par stratégie, s'il existe.
+   👉 Explication : affiche le serveur [[Glossary:WSUS]] imposé par stratégie, s'il existe.
 
 2. Configurer le serveur WSUS interne (remplacer `URL_WSUS`, ex. `http://WSUS:8530`) :
    ```powershell
@@ -38,7 +38,7 @@ Définir où le serveur obtient ses mises à jour.
    Set-ItemProperty $k WUStatusServer 'URL_WSUS'
    Set-ItemProperty "$k\AU" UseWUServer 1 -ErrorAction SilentlyContinue
    ```
-   👉 Explication : pointe le client vers le WSUS; en domaine, préférer une GPO.
+   👉 Explication : pointe le client vers le WSUS; en domaine, préférer une [[Glossary:GPO]].
 
 3. Tester l'accès :
    ```powershell

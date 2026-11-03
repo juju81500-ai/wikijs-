@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 Fiche_Simple_-_VM_Windows_Server_2022_Journaux_WEF
 
-- **Environnement** : VM (Windows Server 2022, serveur collecteur WEF) / Serveurs et postes sources
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022, serveur collecteur [[Glossary:WEF]]) / Serveurs et postes sources
 - **OS / Version** : Windows Server 2022 - Famille Windows Server
 - **Catégorie** : Système & Services / Journaux et supervision
 - **Tags** : `[windows-server-2022]`, `[wef]`, `[wecutil]`, `[event-forwarding]`, `[winrm]`, `[powershell]`
@@ -42,7 +42,7 @@ Centraliser les journaux d'événements de plusieurs serveurs Windows sur un col
 ---
 
 ## ⚡ 2. Production — Façon Simplifiée
-1. Indiquer aux sources l'adresse du collecteur par stratégie de registre (à déployer par GPO en production) :
+1. Indiquer aux sources l'adresse du collecteur par stratégie de registre (à déployer par [[Glossary:GPO]] en production) :
    ```powershell
    $key = "HKLM:\SOFTWARE\Policies\Microsoft\Windows\EventLog\EventForwarding\SubscriptionManager"
    New-Item -Path $key -Force | Out-Null
@@ -69,7 +69,7 @@ Centraliser les journaux d'événements de plusieurs serveurs Windows sur un col
    ```powershell
    wevtutil sl ForwardedEvents /ms:1073741824
    ```
-   👉 Explication : Fixe la taille maximale à 1 Go. Au-delà, les anciens événements sont écrasés : l'archivage vers un SIEM doit être prévu.
+   👉 Explication : Fixe la taille maximale à 1 Go. Au-delà, les anciens événements sont écrasés : l'archivage vers un [[Glossary:SIEM]] doit être prévu.
 3. Relire les événements reçus avec leur machine d'origine :
    ```powershell
    Get-WinEvent -LogName ForwardedEvents -MaxEvents 20 | Select-Object TimeCreated, MachineName, Id, Message

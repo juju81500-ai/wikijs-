@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_Windows_Server_2022_MECM_Installation
 
-- **Environnement** : Windows Server 2022, domaine AD DS, SQL Server et ADK/WinPE déjà installés et conformes à la matrice Microsoft
+- **Environnement** : Windows Server 2022, domaine [[Glossary:AD]] DS, [[Glossary:SQL]] Server et [[Glossary:ADK]]/WinPE déjà installés et conformes à la matrice Microsoft
 - **OS / Version** : Windows Server 2022; Configuration Manager current branch : vérifier la version publiée
 - **Catégorie** : Automatisation, déploiement et IaC
 - **Tags** : `windows-server-2022`, `mecm`, `sccm`, `installation`, `site-primaire`
@@ -30,7 +30,7 @@ Installer un site primaire autonome MECM/SCCM, uniquement après validation de l
    ```
    👉 Explication : les médias proviennent du centre de licences Microsoft ou de l'évaluation; vérifier la version publiée.
 
-2. Lancer le vérificateur de prérequis. GUI : `splash.hta` du média, puis `Prerequisite checker`.
+2. Lancer le vérificateur de prérequis. [[Glossary:GUI]] : `splash.hta` du média, puis `Prerequisite checker`.
    ```powershell
    & "$Media\SMSSETUP\BIN\X64\prereqchk.exe" /LOCAL
    ```
@@ -70,7 +70,7 @@ Installer un site primaire autonome MECM/SCCM, uniquement après validation de l
 
 ## 2. Production — Contrôles
 
-Sauvegarder la VM et SQL avant l'installation; installer pendant une fenêtre validée; appliquer ensuite les mises à jour du site (voir la fiche Mise à jour).
+Sauvegarder la [[Glossary:VM]] et SQL avant l'installation; installer pendant une fenêtre validée; appliquer ensuite les mises à jour du site (voir la fiche Mise à jour).
 
 ## 3. Production — Sécurité
 

@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_PuTTY_Configurer
 
-- **Environnement** : VM Debian 13 (Trixie), poste d'administration en ligne de commande
+- **Environnement** : [[Glossary:VM]] Debian 13 (Trixie), poste d'administration en ligne de commande
 - **OS / Version** : Debian 13 (Trixie) — paquet putty-tools
-- **Catégorie** : outils d'administration / SSH
+- **Catégorie** : outils d'administration / [[Glossary:SSH]]
 - **Tags** : `putty`, `putty-tools`, `plink`, `puttygen`, `ssh`, `configuration`, `cle-ssh`
 
 ---

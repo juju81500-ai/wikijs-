@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Installer GNS3 GUI et serveur 2.2.61 par pipx.
+Installer GNS3 [[Glossary:GUI]] et serveur 2.2.61 par pipx.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

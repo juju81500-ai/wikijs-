@@ -23,7 +23,7 @@ Fiche défensive d’administration et de gouvernance. Elle ne remplace pas le g
 
 ## 🧭 Périmètre
 
-Restreindre la console de gestion par comptes nominatifs, rôles minimaux et MFA si disponible; conserver l’inventaire géré et la santé des agents. Utiliser uniquement les packages et politiques officiellement pris en charge pour les versions déployées. Toute exclusion doit être temporaire, justifiée, approuvée et réexaminée; protéger les sauvegardes de configuration.
+Restreindre la console de gestion par comptes nominatifs, rôles minimaux et [[Glossary:MFA]] si disponible; conserver l’inventaire géré et la santé des agents. Utiliser uniquement les packages et politiques officiellement pris en charge pour les versions déployées. Toute exclusion doit être temporaire, justifiée, approuvée et réexaminée; protéger les sauvegardes de configuration.
 
 ## ✅ Autorisation et préparation
 

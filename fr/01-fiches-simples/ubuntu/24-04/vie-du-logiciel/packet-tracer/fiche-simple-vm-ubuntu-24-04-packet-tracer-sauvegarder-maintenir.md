@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-ubuntu-24-04-packet-tracer-sauvegarder-maintenir.md
 
-- **Environnement** : Poste Ubuntu Desktop 24-04 (VM) pour la simulation réseau pédagogique
-- **OS / Version** : Ubuntu Desktop 24-04 LTS amd64; Cisco Packet Tracer 9.0.1
+- **Environnement** : Poste Ubuntu Desktop 24-04 ([[Glossary:VM]]) pour la simulation réseau pédagogique
+- **OS / Version** : Ubuntu Desktop 24-04 [[Glossary:LTS]] amd64; Cisco Packet Tracer 9.0.1
 - **Catégorie** : simulation réseau / maintenance
 - **Tags** : `ubuntu24.04`, `cisco`, `packet-tracer`, `netacad`, `sauvegarde`, `mise-a-jour`
 

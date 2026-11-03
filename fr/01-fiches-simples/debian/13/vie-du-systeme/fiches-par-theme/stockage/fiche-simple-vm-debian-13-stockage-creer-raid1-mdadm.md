@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-debian-13-stockage-creer-raid1-mdadm.md
 
-- **Environnement** : VM ou serveur Debian avec deux disques de données dédiés
+- **Environnement** : [[Glossary:VM]] ou serveur Debian avec deux disques de données dédiés
 - **OS / Version** : Debian 13 avec `mdadm`
 - **Catégorie** : Stockage / Disponibilité
 - **Tags** : `[debian13]`, `[debian]`, `[raid1]`, `[mdadm]`, `[stockage]`, `[maintenance]`
 
 ## 🎯 Problème précis à résoudre
-Créer un miroir logiciel RAID 1 avec deux partitions dédiées sous Debian, persister la configuration et surveiller l'état de synchronisation.
+Créer un miroir logiciel [[Glossary:RAID]] 1 avec deux partitions dédiées sous Debian, persister la configuration et surveiller l'état de synchronisation.
 
 > RAID améliore la disponibilité face à la panne d'un disque, mais ne remplace jamais une sauvegarde.
 

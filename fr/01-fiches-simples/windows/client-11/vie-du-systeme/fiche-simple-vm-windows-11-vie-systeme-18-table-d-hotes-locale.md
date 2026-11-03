@@ -52,7 +52,7 @@ Gérer le fichier hosts, uniquement pour un besoin temporaire documenté.
 
 ## 2. Production — Contrôles
 
-Préférer un enregistrement DNS; toute entrée `hosts` doit être temporaire et tracée.
+Préférer un enregistrement [[Glossary:DNS]]; toute entrée `hosts` doit être temporaire et tracée.
 
 ## 3. Production — Sécurité
 

@@ -24,9 +24,9 @@ Préparer le VMkernel vMotion et vérifier les prérequis d’une migration de t
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Confirmer deux hôtes gérés par le même vCenter, compatibilité CPU, réseau VMkernel joignable et stockage compatible/partagé si les disques ne sont pas migrés.
+1. Confirmer deux hôtes gérés par le même vCenter, compatibilité [[Glossary:CPU]], réseau VMkernel joignable et stockage compatible/partagé si les disques ne sont pas migrés.
    👉 Explication : réseau vMotion seul ne rend pas les disques partagés; capacités/licences dépendent de l'édition et du type de migration.
-2. Dans vSphere Client : **Hôte ESXi > Configurer > Réseau > Adaptateurs VMkernel > Ajouter une mise en réseau**. Créer un VMkernel sur le port group prévu, activer **vMotion**, puis attribuer l'IP/masque réservés; répéter sur le second hôte.
+2. Dans vSphere Client : **Hôte ESXi > Configurer > Réseau > Adaptateurs VMkernel > Ajouter une mise en réseau**. Créer un VMkernel sur le port group prévu, activer **vMotion**, puis attribuer l'[[Glossary:IP]]/masque réservés; répéter sur le second hôte.
    👉 Explication : éviter doublons IP et activation sur le réseau de gestion non conçu pour cet usage.
 3. Contrôles en lecture seule :
    ```shell
@@ -39,13 +39,13 @@ Préparer le VMkernel vMotion et vérifier les prérequis d’une migration de t
    $vmhost = Get-VMHost -Name 'ESXI_LAB_FQDN'
    Get-VMHostNetworkAdapter -VMHost $vmhost -VMKernel | Format-List *
    ```
-   👉 Explication : le cmdlet documenté retourne les interfaces VMkernel; garder les modifications réseau dans l’assistant GUI.
-5. Sélectionner une VM jetable > **Actions > Migrer > Modifier la ressource de calcul**, choisir l'hôte de test et relire le résumé avant lancement.
+   👉 Explication : le cmdlet documenté retourne les interfaces VMkernel; garder les modifications réseau dans l’assistant [[Glossary:GUI]].
+5. Sélectionner une [[Glossary:VM]] jetable > **Actions > Migrer > Modifier la ressource de calcul**, choisir l'hôte de test et relire le résumé avant lancement.
    👉 Explication : annuler si compatibilité ou prérequis échouent.
 
 ## 2. Production — Contrôles
 
-- Contrôler CPU/EVC, licences, versions, datastore, MTU/routage, charge et fenêtre approuvée; effectuer d’abord une migration de test.
+- Contrôler CPU/EVC, licences, versions, datastore, [[Glossary:MTU]]/routage, charge et fenêtre approuvée; effectuer d’abord une migration de test.
 
 ## 3. Production — Sécurité
 

@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 ---
 
 ## 🎯 Problème précis à résoudre
-Identifier les erreurs de l'hôte Proxmox VE 8 (services en échec, erreurs noyau, tâches échouées des VM et conteneurs), puis centraliser et limiter les journaux pour l'exploitation.
+Identifier les erreurs de l'hôte Proxmox VE 8 (services en échec, erreurs noyau, tâches échouées des [[Glossary:VM]] et conteneurs), puis centraliser et limiter les journaux pour l'exploitation.
 
 ---
 
@@ -35,7 +35,7 @@ journalctl -p err -b --no-pager | tail -n 50
 ```bash
 journalctl -u pvedaemon -u pveproxy -u pvestatd --since "1 hour ago" --no-pager
 ```
-👉 Explication : affiche l'activité de l'API (`pvedaemon`), de l'interface web (`pveproxy`) et de la collecte des statistiques (`pvestatd`) sur l'heure écoulée.
+👉 Explication : affiche l'activité de l'[[Glossary:API]] (`pvedaemon`), de l'interface web (`pveproxy`) et de la collecte des statistiques (`pvestatd`) sur l'heure écoulée.
 
 3. Lister les tâches récentes du nœud, en ne gardant que les erreurs :
 ```bash
@@ -57,7 +57,7 @@ head -n 20 /var/log/pve/tasks/index
 ```bash
 dmesg -T --level=err,crit,alert,emerg | tail -n 50
 ```
-👉 Explication : affiche les messages noyau d'erreur ou critiques avec horodatage lisible, utiles pour diagnostiquer disques, RAM ou cartes réseau.
+👉 Explication : affiche les messages noyau d'erreur ou critiques avec horodatage lisible, utiles pour diagnostiquer disques, [[Glossary:RAM]] ou cartes réseau.
 
 2. Examiner les journaux du cluster Corosync et du système de fichiers de cluster :
 ```bash
@@ -96,14 +96,14 @@ systemctl restart systemd-journald
 ```
 👉 Explication : plafonne l'espace occupé par les journaux à 2 Go pour éviter qu'ils ne saturent `/var` ; adapter la valeur à la taille de la partition.
 
-3. Transmettre les journaux à un collecteur SIEM distant :
+3. Transmettre les journaux à un collecteur [[Glossary:SIEM]] distant :
 ```bash
 apt install -y rsyslog
 echo '*.* @@<ip_siem>:514' > /etc/rsyslog.d/90-siem.conf
 systemctl restart rsyslog
 logger -p user.warning "Test de transmission SIEM depuis <nom_de_l_hote>"
 ```
-👉 Explication : `@@` transmet les messages en TCP vers le collecteur ; le message de test doit apparaître côté SIEM, ce qui valide la chaîne complète.
+👉 Explication : `@@` transmet les messages en [[Glossary:TCP]] vers le collecteur ; le message de test doit apparaître côté SIEM, ce qui valide la chaîne complète.
 
 4. Vérifier qu'aucune erreur critique n'est restée sans traitement :
 ```bash

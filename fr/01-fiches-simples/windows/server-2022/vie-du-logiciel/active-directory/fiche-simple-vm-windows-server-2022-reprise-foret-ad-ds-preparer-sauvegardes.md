@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-2022-reprise-foret-ad-ds-preparer-sauvegardes.md
 
-- **Environnement** : Forêt AD DS d'entreprise; laboratoire isolé recommandé
+- **Environnement** : Forêt [[Glossary:AD]] DS d'entreprise; laboratoire isolé recommandé
 - **OS / Version** : Windows Server 2022 pour les contrôleurs de domaine concernés
 - **Catégorie** : Active Directory / sauvegarde
 - **Tags** : `windows-server-2022`, `active-directory`, `ad-ds`, `forest-recovery`
@@ -30,13 +30,13 @@ S'assurer de disposer de sauvegardes AD-aware saines et d'un runbook documenté.
    ```
    👉 Explication : Liste les sauvegardes Windows Server Backup disponibles sur ce serveur (lecture seule).
 
-2. Relever les rôles FSMO :
+2. Relever les rôles [[Glossary:FSMO]] :
    ```powershell
    netdom query fsmo
    ```
    👉 Explication : Affiche les détenteurs des rôles FSMO à documenter (lecture seule).
 
-3. Documenter par domaine : DC retenu, date de sauvegarde, méthode de restauration, rôles FSMO, dépendances DNS/SYSVOL.
+3. Documenter par domaine : [[Glossary:DC]] retenu, date de sauvegarde, méthode de restauration, rôles FSMO, dépendances [[Glossary:DNS]]/SYSVOL.
    👉 Explication : nécessaire pour restaurer dans le bon ordre.
 
 4. Conserver supports, comptes de secours, clés et procédures hors ligne ou dans un coffre distinct du domaine.
@@ -47,7 +47,7 @@ S'assurer de disposer de sauvegardes AD-aware saines et d'un runbook documenté.
 
 ## 2. Production — Contrôles
 
-Un snapshot VM ne remplace pas une sauvegarde AD-aware, sauf scénario explicitement pris en charge par Microsoft (hyperviseur compatible VM-Generation ID) avec le runbook correspondant.
+Un snapshot [[Glossary:VM]] ne remplace pas une sauvegarde AD-aware, sauf scénario explicitement pris en charge par Microsoft (hyperviseur compatible VM-Generation ID) avec le runbook correspondant.
 
 ## 3. Production — Sécurité
 

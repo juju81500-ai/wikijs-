@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-ubuntu-26-04-pile-web-deployer-application-tls.md
 
-- **Environnement** : VM ou serveur dédié Ubuntu Server hébergeant une application PHP avec PostgreSQL local et TLS
-- **OS / Version** : Ubuntu Server 26-04 LTS (Resolute); Nginx, PHP 8.5, PostgreSQL 18
+- **Environnement** : [[Glossary:VM]] ou serveur dédié Ubuntu Server hébergeant une application PHP avec PostgreSQL local et [[Glossary:TLS]]
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]] (Resolute); Nginx, PHP 8.5, PostgreSQL 18
 - **Catégorie** : services web / déploiement
 - **Tags** : `ubuntu2604`, `nginx`, `php8.5`, `postgresql18`, `tls`
 
@@ -27,7 +27,7 @@ Déployer l'application, la relier à PostgreSQL et activer TLS.
 1. Déployer une version applicative compatible PHP 8.5, renseigner l'accès PostgreSQL via un secret protégé (fichier en droits restreints) et limiter l'écriture aux répertoires nécessaires.
    👉 Explication : évite les secrets en clair et les écritures inutiles.
 
-2. Configurer TLS avec l'outil ACME approuvé par l'organisation et tester le renouvellement.
+2. Configurer TLS avec l'outil [[Glossary:ACME]] approuvé par l'organisation et tester le renouvellement.
    👉 Explication : un certificat non renouvelé provoque une panne.
 
 3. Pour un essai FPM, créer un endpoint temporaire affichant `OK`, le tester via Nginx puis le supprimer immédiatement.

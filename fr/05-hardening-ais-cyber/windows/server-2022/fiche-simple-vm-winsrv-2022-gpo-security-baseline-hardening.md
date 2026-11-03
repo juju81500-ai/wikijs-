@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 Fiche Simple : GPO Hardening & Baseline Sécurité Windows Server 2022
 
-- **Environnement** : VM Windows Server 2022
+- **Environnement** : [[Glossary:VM]] Windows Server 2022
 - **OS / Version** : Windows Server 2022 Datacenter / Standard
-- **Catégorie** : Active Directory / GPO Sécurité
+- **Catégorie** : Active Directory / [[Glossary:GPO]] Sécurité
 - **Tags** : `winsrv2022`, `gpo`, `hardening`, `active-directory` 
 
 ---
@@ -31,7 +31,7 @@ Déployer une baseline de sécurité par GPO Active Directory : désactiver LLMN
 ---
 
 ## ⚡ 2. Production — Façon Simplifiée
-1. Sauvegarder la GPO et valider sa portée sur une OU de préproduction avant liaison :
+1. Sauvegarder la GPO et valider sa portée sur une [[Glossary:OU]] de préproduction avant liaison :
    ```powershell
    Backup-GPO -Name "GPO_Test_Baseline" -Path "C:\GPO-Backup"
    Get-GPInheritance -Target "OU=Serveurs-Test,DC=lab,DC=local"
@@ -45,7 +45,7 @@ Déployer une baseline de sécurité par GPO Active Directory : désactiver LLMN
 ## 🔒 3. Production — Façon Sécurisée (Hardening)
 1. Désactivation du protocole empoisonnable LLMNR via Registre GPO :
    Set-GPRegistryValue -Name "GPO_Test_Baseline" -Key "HKLM\Software\Policies\Microsoft\Windows NT\DNSClient" -ValueName "EnableMulticast" -Type DWord -Value 0
-   👉 Explication : Bloque la résolution de noms multicast LLMNR pour contrecarrer les attaques d'interception de hachages NTLM (Responder).
+   👉 Explication : Bloque la résolution de noms multicast LLMNR pour contrecarrer les attaques d'interception de hachages [[Glossary:NTLM]] (Responder).
 2. Sur un serveur pilote membre de l'OU, appliquer et vérifier le résultat :
    ```powershell
    gpupdate /target:computer /force

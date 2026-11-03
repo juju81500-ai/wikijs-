@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Publier SPF, activer DKIM et publier DMARC pour DOMAINE afin de limiter l'usurpation d'identité.
+Publier [[Glossary:SPF]], activer [[Glossary:DKIM]] et publier [[Glossary:DMARC]] pour DOMAINE afin de limiter l'usurpation d'identité.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -31,13 +31,13 @@ Publier SPF, activer DKIM et publier DMARC pour DOMAINE afin de limiter l'usurpa
    ```powershell
    Get-DkimSigningConfig -Identity DOMAINE | Format-List Domain,Enabled,Selector1CNAME,Selector2CNAME
    ```
-   👉 Explication : fournit les deux CNAME de sélecteurs à publier dans le DNS.
+   👉 Explication : fournit les deux [[Glossary:CNAME]] de sélecteurs à publier dans le [[Glossary:DNS]].
 
 3. Après propagation des deux CNAME, activer la signature :
    ```powershell
    Set-DkimSigningConfig -Identity DOMAINE -Enabled $true
    ```
-   👉 Explication : si la configuration n'existe pas, la créer avec `New-DkimSigningConfig -DomainName DOMAINE -Enabled $true` (vérifier la syntaxe dans la documentation). Équivalent GUI : portail Microsoft Defender > E-mail et collaboration > Stratégies et règles > Stratégies de menaces > Authentification des e-mails.
+   👉 Explication : si la configuration n'existe pas, la créer avec `New-DkimSigningConfig -DomainName DOMAINE -Enabled $true` (vérifier la syntaxe dans la documentation). Équivalent [[Glossary:GUI]] : portail Microsoft Defender > E-mail et collaboration > Stratégies et règles > Stratégies de menaces > Authentification des e-mails.
 
 4. Publier un TXT `_dmarc.DOMAINE` : `v=DMARC1; p=none; rua=mailto:ADRESSE_RAPPORTS`.
    👉 Explication : ADRESSE_RAPPORTS est à remplacer; démarrer en `p=none` pour observer, puis durcir vers `quarantine` puis `reject`.

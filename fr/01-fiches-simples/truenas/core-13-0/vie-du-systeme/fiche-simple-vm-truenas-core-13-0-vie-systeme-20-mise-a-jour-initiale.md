@@ -20,17 +20,17 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Mettre le NAS à jour dès l'installation.
+Mettre le [[Glossary:NAS]] à jour dès l'installation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Mises à jour > Rechercher > Appliquer la mise à jour.
+1. [[Glossary:GUI]] : Système > Mises à jour > Rechercher > Appliquer la mise à jour.
    ```sh
    midclt call update.check_available
    ```
    👉 Explication : indique si une version est disponible.
 
-2. Appliquer en CLI :
+2. Appliquer en [[Glossary:CLI]] :
    ```sh
    midclt call update.update '{"reboot": true}'
    ```

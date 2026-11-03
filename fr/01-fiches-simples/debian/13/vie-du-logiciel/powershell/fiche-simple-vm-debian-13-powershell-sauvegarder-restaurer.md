@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_PowerShell_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13 de laboratoire avec dépôts Microsoft officiels
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire avec dépôts Microsoft officiels
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : shell / scripting
 - **Tags** : `debian13`, `powershell`, `pwsh`, `scripting`, `securite`
@@ -49,7 +49,7 @@ Préserver profil, versions de modules et procédures de reprise.
 
 ## 2. Production — Contrôles
 
-RPO/RTO concernent scripts, modules et profils; distinguer les fichiers de configuration des secrets d’accès.
+[[Glossary:RPO]]/RTO concernent scripts, modules et profils; distinguer les fichiers de configuration des secrets d’accès.
 
 ## 3. Production — Sécurité
 

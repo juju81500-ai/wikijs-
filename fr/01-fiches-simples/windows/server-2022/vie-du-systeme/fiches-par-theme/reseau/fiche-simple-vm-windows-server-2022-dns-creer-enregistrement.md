@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 VM_WinSrv_2022_DNS_Creer-Enregistrement-A-Et-CNAME.md
 
-- **Environnement** : VM / Serveur DNS Windows
+- **Environnement** : [[Glossary:VM]] / Serveur [[Glossary:DNS]] Windows
 - **OS / Version** : Windows Server 2022 Standard / Datacenter
 - **Catégorie** : Services Réseau / DNS
 - **Tags** : `[winsrv2022]`, `[dns]`, `[enregistrement-a]`, `[cname]`, `[gui]`, `[powershell]`, `[hardening]`
@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:14Z
 ---
 
 ## 🎯 Problème précis à résoudre
-Créer un enregistrement DNS hôte (A) pour associer un nom à une adresse IP, et créer un alias (CNAME) dans une zone DNS principale (`lab.local`).
+Créer un enregistrement DNS hôte (A) pour associer un nom à une adresse [[Glossary:IP]], et créer un alias ([[Glossary:CNAME]]) dans une zone DNS principale (`lab.local`).
 
 ---
 
@@ -42,7 +42,7 @@ Créer un enregistrement DNS hôte (A) pour associer un nom à une adresse IP, e
 3. **Créer un enregistrement CNAME (Alias)** :
    - Faire un **clic droit** dans la zone ➔ **Nouvel alias (CNAME)...**.
    - *Nom de l'alias* : `wiki`
-   - *Nom de domaine pleinement qualifié (FQDN) pour l'hôte cible* : cliquer sur **Parcourir...** et cibler `srv-web.lab.local` (ou saisir directement `srv-web.lab.local.`)
+   - *Nom de domaine pleinement qualifié ([[Glossary:FQDN]]) pour l'hôte cible* : cliquer sur **Parcourir...** et cibler `srv-web.lab.local` (ou saisir directement `srv-web.lab.local.`)
    - Cliquer sur **OK**.
    - 👉 *Explication : Permet de joindre le serveur via l'adresse conviviale `wiki.lab.local`.*
 

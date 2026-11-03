@@ -30,7 +30,7 @@ Installer le rôle et ses outils de gestion.
    ```
    👉 Explication : installe le rôle et redémarre l'hôte.
 
-2. GUI équivalente : **Server Manager > Manage > Add Roles and Features > Hyper-V**.
+2. [[Glossary:GUI]] équivalente : **Server Manager > Manage > Add Roles and Features > Hyper-V**.
    👉 Explication : même résultat par l'assistant.
 
 3. Après redémarrage, confirmer :
@@ -54,7 +54,7 @@ Faire l'installation dans une fenêtre approuvée avec console hors bande.
 ## Validation et retour arrière
 
 - **Validation** : `Get-WindowsFeature Hyper-V` indique `Installed`.
-- **Retour arrière** : Avant retrait du rôle : arrêter ou migrer les VM, sauvegarder, puis suivre la procédure Microsoft.
+- **Retour arrière** : Avant retrait du rôle : arrêter ou migrer les [[Glossary:VM]], sauvegarder, puis suivre la procédure Microsoft.
 
 ## Si le problème n'est pas résolu
 

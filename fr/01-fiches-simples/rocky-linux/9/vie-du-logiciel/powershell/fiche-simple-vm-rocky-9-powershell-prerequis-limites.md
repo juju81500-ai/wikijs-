@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_PowerShell_Prerequis_Limites
 
-- **Environnement** : VM Rocky Linux 9 de laboratoire, accès sudo, dépôt Microsoft pour RHEL 9
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 de laboratoire, accès sudo, dépôt Microsoft pour [[Glossary:RHEL]] 9
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : shell / scripting
 - **Tags** : `rocky9`, `powershell`, `pwsh`, `scripting`
@@ -35,13 +35,13 @@ Cadrer le périmètre PowerShell 7 sur Rocky Linux 9 avant installation : suppor
    👉 Explication : Microsoft documente les distributions supportées par version de PowerShell ; Rocky Linux n'est pas listé nominativement : le dépôt RHEL 9 est utilisé car la distribution est compatible RHEL, support Microsoft non garanti (à vérifier avant production).
 
 3. Noter les différences PowerShell 7 / Windows PowerShell 5.1 :
-   👉 Explication : PowerShell 7 (`pwsh`, édition Core) est multiplateforme et s'installe côte à côte ; Windows PowerShell 5.1 (`powershell.exe`, édition Desktop) n'existe que sous Windows. Ici seul PowerShell 7 est disponible : pas de modules dépendant de .NET Framework, WMI/CIM Windows, ni de remoting WinRM natif.
+   👉 Explication : PowerShell 7 (`pwsh`, édition Core) est multiplateforme et s'installe côte à côte ; Windows PowerShell 5.1 (`powershell.exe`, édition Desktop) n'existe que sous Windows. Ici seul PowerShell 7 est disponible : pas de modules dépendant de .NET Framework, [[Glossary:WMI]]/CIM Windows, ni de remoting WinRM natif.
 
 4. Décider du mode de remoting visé :
-   👉 Explication : sous Linux, le remoting PowerShell passe par SSH (sous-système `powershell` de sshd) ; WinRM/WSMan n'est pas utilisé pour s'y connecter.
+   👉 Explication : sous Linux, le remoting PowerShell passe par [[Glossary:SSH]] (sous-système `powershell` de sshd) ; WinRM/WSMan n'est pas utilisé pour s'y connecter.
 
 5. Noter que la stratégie d'exécution et les signatures Authenticode ne s'appliquent pas :
-   👉 Explication : `Set-ExecutionPolicy` n'a pas d'effet sous Linux ; l'intégrité des scripts se contrôle autrement (empreinte, signature GPG/Git) — voir la fiche Securiser.
+   👉 Explication : `Set-ExecutionPolicy` n'a pas d'effet sous Linux ; l'intégrité des scripts se contrôle autrement (empreinte, signature [[Glossary:GPG]]/Git) — voir la fiche Securiser.
 
 ## 2. Production — Contrôles
 

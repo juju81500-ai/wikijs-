@@ -23,7 +23,7 @@ Fiche simple : [cadrer l'architecture Bareos](/fr/01-fiches-simples/debian/13/vi
 
 Bareos repose sur un Director, un ou plusieurs Storage Daemons, un File Daemon par client et un catalogue PostgreSQL. Pour la production, séparer les rôles selon débit et criticité; isoler le stockage, protéger catalogue et configurations, et prévoir une copie hors site. La communauté recommande de tester les restaurations avant d'activer des données réelles.
 
-Définir clients, FileSets, schedules, pools/volumes, rétention catalogue et RPO/RTO. Restreindre les ports Bareos (Director/Storage/File Daemon) aux composants concernés; chiffrer les communications avec TLS et garder les secrets de ressources hors documentation.
+Définir clients, FileSets, schedules, pools/volumes, rétention catalogue et [[Glossary:RPO]]/RTO. Restreindre les ports Bareos (Director/Storage/File Daemon) aux composants concernés; chiffrer les communications avec [[Glossary:TLS]] et garder les secrets de ressources hors documentation.
 
 ## 2. Installer les paquets Debian 13
 

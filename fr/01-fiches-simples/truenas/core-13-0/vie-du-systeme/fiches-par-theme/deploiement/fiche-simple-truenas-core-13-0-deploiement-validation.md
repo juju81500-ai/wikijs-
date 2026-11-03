@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-truenas-core-13-0-deploiement-validation.md
 
-- **Environnement** : Appliance TrueNAS CORE (FreeBSD) en VM de laboratoire ou NAS existant
+- **Environnement** : Appliance TrueNAS CORE (FreeBSD) en [[Glossary:VM]] de laboratoire ou [[Glossary:NAS]] existant
 - **OS / Version** : TrueNAS CORE, branche 13.0 (build exact à relever sur l'ISO)
 - **Catégorie** : stockage NAS / validation
 - **Tags** : `truenas-core`, `truenas`, `freebsd`, `zfs`, `smb`, `nas`

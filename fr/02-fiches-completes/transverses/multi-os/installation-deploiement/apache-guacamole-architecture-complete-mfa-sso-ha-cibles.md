@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **OS / Version** : Apache Guacamole 1.6.0 (version utilisée par la fiche Docker existante) ; Linux, conteneurs
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : Extension de l'architecture : MFA, SSO, redondance, connexions RDP/SSH/VNC vers des cibles autorisées
+- **Périmètre** : Extension de l'architecture : [[Glossary:MFA]], [[Glossary:SSO]], redondance, connexions [[Glossary:RDP]]/SSH/VNC vers des cibles autorisées
 - **Catégorie** : Accès distant / bastion
 - **Tags** : `guacamole`,`mfa`,`sso`,`ha`,`rdp`,`ssh`,`bastion`
 
@@ -34,13 +34,13 @@ IdP (SAML/OpenID) <-> Guacamole web
 ```
 
 - Les couches web et guacd peuvent être multipliées. La base PostgreSQL est le point d'état unique : sa redondance relève de PostgreSQL (réplication, Patroni, service managé).
-- Les sessions HTTP sont locales à chaque instance : prévoir l'affinité de session (sticky) au niveau du répartiteur ou valider un test de bascule.
+- Les sessions [[Glossary:HTTP]] sont locales à chaque instance : prévoir l'affinité de session (sticky) au niveau du répartiteur ou valider un test de bascule.
 
 ## 3. Prérequis
 
 - Environnement de la fiche 121 opérationnel et sauvegardé ; clone de test pour les changements.
-- Un IdP compatible OpenID Connect ou SAML 2.0 ; une application TOTP pour le MFA local.
-- Cibles de laboratoire autorisées (VM Windows RDP, Linux SSH) dans un réseau segmenté.
+- Un IdP compatible OpenID Connect ou [[Glossary:SAML]] 2.0 ; une application [[Glossary:TOTP]] pour le MFA local.
+- Cibles de laboratoire autorisées ([[Glossary:VM]] Windows RDP, Linux [[Glossary:SSH]]) dans un réseau segmenté.
 
 ## 4. MFA (TOTP)
 
@@ -61,14 +61,14 @@ IdP (SAML/OpenID) <-> Guacamole web
 
 1. Base de données : mettre en place la réplication PostgreSQL et un mécanisme de bascule documenté ; tester la restauration.
 2. Web : au moins deux conteneurs Guacamole derrière un répartiteur avec contrôle de santé HTTP et affinité de session.
-3. guacd : plusieurs instances ; chaque instance web pointe vers sa cible guacd (variable `GUACD_HOSTNAME`) ou via un répartiteur TCP. Les sessions en cours sont perdues lors de la perte d'une instance guacd : informer les utilisateurs.
-4. Reverse proxy : redondance avec adresse virtuelle ou DNS selon l'infrastructure ; certificats gérés de façon centrale.
+3. guacd : plusieurs instances ; chaque instance web pointe vers sa cible guacd (variable `GUACD_HOSTNAME`) ou via un répartiteur [[Glossary:TCP]]. Les sessions en cours sont perdues lors de la perte d'une instance guacd : informer les utilisateurs.
+4. Reverse proxy : redondance avec adresse virtuelle ou [[Glossary:DNS]] selon l'infrastructure ; certificats gérés de façon centrale.
 5. Sauvegardes : base, configuration, extensions et certificats, restauration testée.
 
 ## 7. Connexions cibles
 
 - Créer les connexions dans l'interface (Paramètres > Connexions) avec le protocole, le nom d'hôte, le port, l'utilisateur ; ne pas enregistrer de mots de passe partagés : préférer la saisie utilisateur ou un coffre.
-- RDP : préférer la sécurité NLA et des certificats valides ; n'activer « ignorer le certificat » qu'en lab, avec une note de risque.
+- RDP : préférer la sécurité [[Glossary:NLA]] et des certificats valides ; n'activer « ignorer le certificat » qu'en lab, avec une note de risque.
 - SSH : utiliser des clés et restreindre les comptes ; désactiver le transfert de fichiers et le presse-papiers si la politique l'exige.
 - Segmentation : guacd n'atteint que les cibles prévues par pare-feu ; journaliser les accès et activer l'enregistrement de session seulement si la base légale et l'information des utilisateurs le permettent.
 

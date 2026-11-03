@@ -24,7 +24,7 @@ Créer pool et partages.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Créer le pool : GUI Stockage > Pools > Ajouter (nom, disposition, disques).
+1. Créer le pool : [[Glossary:GUI]] Stockage > Pools > Ajouter (nom, disposition, disques).
    ```sh
    zpool create -o ashift=12 POOL raidz2 da1 da2 da3 da4 da5 da6
    zpool status POOL
@@ -38,7 +38,7 @@ Créer pool et partages.
    ```
    👉 Explication : dataset de fichiers et volume bloc pour iSCSI.
 
-3. Créer le partage : GUI Partage > Windows Shares (SMB) > Ajouter ; Unix Shares (NFS) ; Block Shares (iSCSI).
+3. Créer le partage : GUI Partage > Windows Shares (SMB) > Ajouter ; Unix Shares ([[Glossary:NFS]]) ; Block Shares (iSCSI).
    ```sh
    midclt call sharing.smb.create '{"path": "/mnt/POOL/DONNEES", "name": "DONNEES"}'
    service samba_server status

@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-server-2022-iis-installer-role-web-server.md
 
-- **Environnement** : VM Windows Server 2022 pilote
-- **OS / Version** : Windows Server 2022; rôle Web Server (IIS)
+- **Environnement** : [[Glossary:VM]] Windows Server 2022 pilote
+- **OS / Version** : Windows Server 2022; rôle Web Server ([[Glossary:IIS]])
 - **Catégorie** : serveur Web / IIS
 - **Tags** : `iis`, `windows-server-2022`, `web-server`, `tls`, `application-pool`
 
@@ -24,7 +24,7 @@ Ajouter le rôle IIS et ses outils d'administration.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : **Gestionnaire de serveur > Gérer > Ajouter des rôles et fonctionnalités > Rôles de serveurs > Serveur Web (IIS)**, puis cocher les outils de gestion.
+1. [[Glossary:GUI]] : **Gestionnaire de serveur > Gérer > Ajouter des rôles et fonctionnalités > Rôles de serveurs > Serveur Web (IIS)**, puis cocher les outils de gestion.
    👉 Explication : équivalent graphique de la commande ci-dessous.
 
 2. En PowerShell élevé, contrôler, installer puis recontrôler :

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 fiche-simple-vmware-esxi-8-systeme-correctifs-mises-a-jour.md
 
-- **Environnement** : Hôte physique VMware ESXi 8 (ESXi Shell ou SSH, vSphere Lifecycle Manager)
+- **Environnement** : Hôte physique VMware ESXi 8 (ESXi Shell ou [[Glossary:SSH]], vSphere Lifecycle Manager)
 - **OS / Version** : VMware ESXi 8.0 - Mises à jour par profil d'image
 - **Catégorie** : Système & Services / Correctifs et mises à jour
 - **Tags** : `[vmware-esxi-8]`, `[esxcli]`, `[lifecycle]`, `[correctifs]`, `[maintenance]`, `[hardening]`
@@ -49,7 +49,7 @@ esxcli system maintenanceMode set --enable=true
 esxcli software profile update --depot=/vmfs/volumes/<datastore>/<depot_hors_ligne>.zip --profile=<nom_du_profil>
 esxcli system shutdown reboot --delay=10 --reason="Mise a jour ESXi 8"
 ```
-👉 Explication : passe l'hôte en mode maintenance (les VM doivent être migrées ou arrêtées), installe le profil puis redémarre ; après le retour, `vmware -vl` doit afficher le nouveau build.
+👉 Explication : passe l'hôte en mode maintenance (les [[Glossary:VM]] doivent être migrées ou arrêtées), installe le profil puis redémarre ; après le retour, `vmware -vl` doit afficher le nouveau build.
 
 ---
 
@@ -99,4 +99,4 @@ esxcli software vib list
 esxcli software profile get
 vmware -vl
 ```
-👉 Explication : conserve le profil et le build validés dans la CMDB ; toute divergence entre hôtes d'un même cluster doit être corrigée avant la mise en production.
+👉 Explication : conserve le profil et le build validés dans la [[Glossary:CMDB]] ; toute divergence entre hôtes d'un même cluster doit être corrigée avant la mise en production.

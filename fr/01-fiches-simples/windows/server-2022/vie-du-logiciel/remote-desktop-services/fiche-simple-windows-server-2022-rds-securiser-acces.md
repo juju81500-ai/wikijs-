@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Limiter l'exposition et les droits des connexions RDS, en privilégiant une passerelle et des certificats approuvés plutôt qu'un port RDP exposé.
+Limiter l'exposition et les droits des connexions RDS, en privilégiant une passerelle et des certificats approuvés plutôt qu'un port [[Glossary:RDP]] exposé.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Dans **Gestionnaire de serveur** > **Serveur local** > **Bureau à distance**, ouvrir **Propriétés système** > **Utilisation à distance** et activer l'accès uniquement sur un hôte pilote; conserver NLA.
+1. Dans **Gestionnaire de serveur** > **Serveur local** > **Bureau à distance**, ouvrir **Propriétés système** > **Utilisation à distance** et activer l'accès uniquement sur un hôte pilote; conserver [[Glossary:NLA]].
    👉 Explication : Vérifie que l'accès distant est approuvé. La procédure existante d'activation RDP couvre le réglage général; cette fiche vise les contrôles RDS complémentaires.
 2. Contrôler les règles entrantes, dont le nom varie selon la langue du système :
    ```powershell
@@ -38,7 +38,7 @@ Limiter l'exposition et les droits des connexions RDS, en privilégiant une pass
 ## 2. Production — Contrôles
 
 - Utiliser RD Gateway/VPN approuvée; ne pas publier directement le port RDP sur Internet.
-- Vérifier NLA, certificat TLS, stratégie de chiffrement, correctifs, groupes et journaux.
+- Vérifier NLA, certificat [[Glossary:TLS]], stratégie de chiffrement, correctifs, groupes et journaux.
 - Dans **Gestionnaire de serveur** > **Services Bureau à distance** > **Vue d'ensemble** > **Tâches** > **Modifier les propriétés de déploiement** > **Certificats**, affecter des certificats valides lorsque la topologie le requiert.
 
 ## 3. Production — Sécurité

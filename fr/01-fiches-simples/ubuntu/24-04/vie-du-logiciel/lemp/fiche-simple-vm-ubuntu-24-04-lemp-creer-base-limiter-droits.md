@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-ubuntu-24-04-lemp-creer-base-limiter-droits.md
 
-- **Environnement** : VM Ubuntu Server 24-04 dédiée à une application Web PHP
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble); Nginx, PHP 8.3, MariaDB 10.11
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 dédiée à une application Web PHP
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble); Nginx, PHP 8.3, MariaDB 10.11
 - **Catégorie** : web / base de données
 - **Tags** : `ubuntu24.04`, `nginx`, `php8.3`, `mariadb`, `lemp`, `mariadb`, `sql`
 
@@ -30,7 +30,7 @@ Créer la base applicative avec un compte aux droits minimaux.
    ```
    👉 Explication : assistant interactif: définit la politique des comptes et supprime les éléments de test.
 
-2. Ouvrir la console SQL :
+2. Ouvrir la console [[Glossary:SQL]] :
    ```bash
    sudo mariadb
    ```
@@ -51,7 +51,7 @@ Accorder des droits de migration seulement pendant une procédure approuvée.
 
 ## 3. Production — Sécurité
 
-- MariaDB reste local: ne pas publier TCP/3306 si la pile est sur une seule VM.
+- MariaDB reste local: ne pas publier [[Glossary:TCP]]/3306 si la pile est sur une seule VM.
 - Ne jamais mettre le mot de passe réel dans un wiki ou dans l'historique.
 
 ## Validation et retour arrière

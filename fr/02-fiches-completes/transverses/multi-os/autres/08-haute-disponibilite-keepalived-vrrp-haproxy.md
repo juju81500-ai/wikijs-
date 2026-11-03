@@ -12,14 +12,14 @@ dateModified: 2026-11-03T09:36:14Z
 # Haute disponibilité d'un service avec HAProxy et Keepalived
 
 - **Environnement** : Deux nœuds Linux sur le même segment L2, plus des serveurs applicatifs redondés
-- **Composants** : HAProxy pour le proxy, Keepalived/VRRP pour l'adresse IP virtuelle
+- **Composants** : HAProxy pour le proxy, Keepalived/VRRP pour l'adresse [[Glossary:IP]] virtuelle
 - **Tags** : `ha`, `keepalived`, `vrrp`, `haproxy`, `linux`, `reseau`
 
 ## 1. Préparer l'architecture
 
 Fiche simple : [préparer l'architecture](/fr/01-fiches-simples/transverses/multi-os/keepalived-haproxy/fiche-simple-vm-linux-keepalived-haproxy-preparer-architecture).
 
-Définir une IP virtuelle libre, les IP fixes des pairs, l'interface L2, les backends et les sondes de santé. Vérifier que le commutateur, l'hyperviseur et le réseau autorisent VRRP/multicast ou le mode unicast choisi. Configurer une seule IP virtuelle ; elle ne remplace ni la redondance des backends ni celle du stockage/base.
+Définir une IP virtuelle libre, les IP fixes des pairs, l'interface L2, les backends et les sondes de santé. Vérifier que le commutateur, l'hyperviseur et le réseau autorisent [[Glossary:VRRP]]/multicast ou le mode unicast choisi. Configurer une seule IP virtuelle ; elle ne remplace ni la redondance des backends ni celle du stockage/base.
 
 ## 2. Installer et valider HAProxy
 

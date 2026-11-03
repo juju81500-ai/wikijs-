@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-rocky-9-securite-certbot-tls.md
 
-- **Environnement** : VM ou serveur Rocky Linux exposant un service web
-- **OS / Version** : Rocky Linux 9 / RHEL 9 (certbot fourni par EPEL)
-- **Catégorie** : Sécurité / Certificats TLS
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux exposant un service web
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 (certbot fourni par EPEL)
+- **Catégorie** : Sécurité / Certificats [[Glossary:TLS]]
 - **Tags** : `[rocky9]`, `[rhel9]`, `[certbot]`, `[tls]`, `[letsencrypt]`, `[epel]`
 
 ## 🎯 Problème précis à résoudre

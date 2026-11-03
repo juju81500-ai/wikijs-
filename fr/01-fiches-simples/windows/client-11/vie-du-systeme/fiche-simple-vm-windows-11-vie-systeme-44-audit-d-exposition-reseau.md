@@ -24,7 +24,7 @@ Vérifier de l'extérieur ce que le poste expose.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Depuis un autre poste du réseau d'administration, tester les ports courants (`ADRESSE_POSTE` est l'IP du poste contrôlé).
+1. Depuis un autre poste du réseau d'administration, tester les ports courants (`ADRESSE_POSTE` est l'[[Glossary:IP]] du poste contrôlé).
    ```powershell
    135,139,445,3389,5985,22 | ForEach-Object { Test-NetConnection ADRESSE_POSTE -Port $_ -WarningAction SilentlyContinue | Select-Object ComputerName,RemotePort,TcpTestSucceeded }
    ```

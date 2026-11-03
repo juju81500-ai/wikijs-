@@ -44,7 +44,7 @@ Sauvegarder la base Wiki.js et préparer une restauration testée.
    👉 Explication : si `pg_restore` n'est pas installé sur l'hôte, exécuter la commande dans le conteneur `db`; la liste doit afficher des objets de la base.
 
 4. Inclure aussi la cible de stockage réelle des fichiers (module de stockage Wiki.js activé) et le secret `secrets/db_password` dans le plan de sauvegarde.
-   👉 Explication : un dump SQL seul peut ne pas contenir les pièces jointes; un volume Docker seul n'est pas une sauvegarde.
+   👉 Explication : un dump [[Glossary:SQL]] seul peut ne pas contenir les pièces jointes; un volume Docker seul n'est pas une sauvegarde.
 
 ## 2. Production — Contrôles
 

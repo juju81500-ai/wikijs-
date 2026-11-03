@@ -47,7 +47,7 @@ Installer toutes les mises à jour disponibles.
 
 ## 2. Production — Contrôles
 
-Réaliser la mise à jour avant d'installer les rôles; prendre un point de contrôle de VM.
+Réaliser la mise à jour avant d'installer les rôles; prendre un point de contrôle de [[Glossary:VM]].
 
 ## 3. Production — Sécurité
 

@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-ubuntu-24-04-packet-tracer-topologie-isolee.md
 
-- **Environnement** : Poste Ubuntu Desktop 24-04 (VM) pour la simulation réseau pédagogique
-- **OS / Version** : Ubuntu Desktop 24-04 LTS amd64; Cisco Packet Tracer 9.0.1
+- **Environnement** : Poste Ubuntu Desktop 24-04 ([[Glossary:VM]]) pour la simulation réseau pédagogique
+- **OS / Version** : Ubuntu Desktop 24-04 [[Glossary:LTS]] amd64; Cisco Packet Tracer 9.0.1
 - **Catégorie** : simulation réseau / recette
 - **Tags** : `ubuntu24.04`, `cisco`, `packet-tracer`, `netacad`, `topologie`, `simulation`
 
@@ -30,7 +30,7 @@ Valider l'outil avec deux postes et un commutateur.
 2. Relier les deux PC au commutateur avec des câbles.
    👉 Explication : les liens sont purement simulés, sans carte physique ni réseau externe.
 
-3. Saisir les adresses IP dans **PC > Desktop > IP Configuration** (adresses de documentation, par exemple 192.0.2.10 et 192.0.2.11 en /24) :
+3. Saisir les adresses [[Glossary:IP]] dans **PC > Desktop > IP Configuration** (adresses de documentation, par exemple 192.0.2.10 et 192.0.2.11 en /24) :
    👉 Explication : paramètres réservés à la documentation, jamais celles d'un réseau réel.
 
 4. Tester par **Simulation > Add Simple PDU** entre les deux PC puis lire les événements :

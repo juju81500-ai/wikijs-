@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_15_Chargeur_D_Amorcage
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 15 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-15`
@@ -32,7 +32,7 @@ S'assurer que le pare-feu redémarre seul.
    bectl list
    sysctl machdep.bootmethod
    ```
-   👉 Explication : `bectl list` montre l'environnement actif (`NR`); System > Boot Environments donne la même vue dans l'interface (ZFS).
+   👉 Explication : `bectl list` montre l'environnement actif (`NR`); System > Boot Environments donne la même vue dans l'interface ([[Glossary:ZFS]]).
 
 ## 2. Production — Contrôles
 

@@ -53,7 +53,7 @@ Conserver la version et l'empreinte dans le dossier de changement.
 ## 3. Production — Sécurité
 
 - Ne pas lancer de script téléchargé directement.
-- Télécharger en HTTPS avec TLS 1.2 minimum.
+- Télécharger en HTTPS avec [[Glossary:TLS]] 1.2 minimum.
 
 ## Validation et retour arrière
 

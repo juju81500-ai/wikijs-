@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **OS / Version** : Debian 13 Trixie; paquet `apache2` des dépôts Debian configurés
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : installation, site statique pilote en hôte virtuel, validation, TLS avec certificat déjà géré par l'organisation
+- **Périmètre** : installation, site statique pilote en hôte virtuel, validation, [[Glossary:TLS]] avec certificat déjà géré par l'organisation
 - **Catégorie** : serveur Web
 - **Tags** : `apache-http-server`, `apache2`, `debian13`, `virtual-host`, `https`, `tls`
 
@@ -21,9 +21,9 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [cadrer le pilote Apache](/fr/01-fiches-simples/debian/13/vie-du-logiciel/apache/fiche-simple-vm-debian-13-apache-cadrer-pilote).
 
-Cette procédure installe Apache sur un serveur Debian 13 et publie un site statique pilote. Elle ne déploie pas de runtime applicatif, de base de données, de reverse proxy, de certificat ACME, de WAF ni d'architecture haute disponibilité.
+Cette procédure installe Apache sur un serveur Debian 13 et publie un site statique pilote. Elle ne déploie pas de runtime applicatif, de base de données, de reverse proxy, de certificat [[Glossary:ACME]], de [[Glossary:WAF]] ni d'architecture haute disponibilité.
 
-Prérequis : VM dédiée et approuvée, accès administrateur, nom DNS choisi, certificat TLS valide et sa clé privée provisionnés par le mécanisme de l'organisation, règles de pare-feu planifiées, sauvegarde de la VM et fenêtre de changement. Pour une production, définir le propriétaire applicatif, les critères de disponibilité, la journalisation, la supervision, les mises à jour et le retour arrière.
+Prérequis : [[Glossary:VM]] dédiée et approuvée, accès administrateur, nom [[Glossary:DNS]] choisi, certificat TLS valide et sa clé privée provisionnés par le mécanisme de l'organisation, règles de pare-feu planifiées, sauvegarde de la VM et fenêtre de changement. Pour une production, définir le propriétaire applicatif, les critères de disponibilité, la journalisation, la supervision, les mises à jour et le retour arrière.
 
 ## 2. Installer le paquet Debian
 
@@ -54,7 +54,7 @@ printf '%s\n' '<!doctype html><title>Apache pilote</title><h1>Site pilote</h1>' 
 sudo chmod 0644 /var/www/pilote/index.html
 ```
 
-Créer `/etc/apache2/sites-available/pilote.conf` et remplacer `www.example.net` par le FQDN validé :
+Créer `/etc/apache2/sites-available/pilote.conf` et remplacer `www.example.net` par le [[Glossary:FQDN]] validé :
 
 ```apache
 <VirtualHost *:80>
@@ -133,7 +133,7 @@ sudo apache2ctl configtest
 sudo systemctl reload apache2
 ```
 
-Tester HTTPS depuis un client approuvé et confirmer la chaîne, le nom et la date d'expiration du certificat. Ne configurer une redirection HTTP vers HTTPS qu'après validation complète de l'hôte HTTPS et de ses dépendances.
+Tester HTTPS depuis un client approuvé et confirmer la chaîne, le nom et la date d'expiration du certificat. Ne configurer une redirection [[Glossary:HTTP]] vers HTTPS qu'après validation complète de l'hôte HTTPS et de ses dépendances.
 
 ## 5. Contrôles de sécurité et exploitation
 

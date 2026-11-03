@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-rocky-9-sauvegarde-restic-depot.md
 
-- **Environnement** : VM ou serveur Rocky Linux
-- **OS / Version** : Rocky Linux 9 / RHEL 9 (restic fourni par EPEL)
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 (restic fourni par EPEL)
 - **Catégorie** : Sauvegarde / Dépôt chiffré Restic
 - **Tags** : `[rocky9]`, `[rhel9]`, `[restic]`, `[sauvegarde]`, `[epel]`, `[chiffrement]`
 

@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : Poste de travail géré avec OpenSSH et compte GitHub approuvé
 - **OS / Version** : GitHub SaaS — interface évolutive
-- **Catégorie** : Cloud SaaS / authentification SSH
+- **Catégorie** : Cloud SaaS / authentification [[Glossary:SSH]]
 - **Tags** : `github`, `cloud-saas`, `ssh-cles`, `securite`
 ---
 

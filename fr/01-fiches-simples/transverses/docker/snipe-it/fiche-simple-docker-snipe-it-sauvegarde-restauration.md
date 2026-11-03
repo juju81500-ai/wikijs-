@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : Hôte Docker avec Docker Compose v2 et réseau Traefik existant
 - **OS / Version** : Hôte Linux maintenu; Snipe-IT 8.8.3; MariaDB 11.4.7
-- **Catégorie** : ITSM / gestion des actifs
+- **Catégorie** : [[Glossary:ITSM]] / gestion des actifs
 - **Tags** : `snipe-it`, `docker`, `mariadb`, `traefik`, `inventaire`
 
 ---
@@ -25,7 +25,7 @@ Sauvegarder base, pièces jointes et secrets, et tester la restauration.
 ## 1. Hors-Production (Lab / Test / POC)
 
 1. **Admin > Backups** pour générer l'archive depuis l'interface.
-   👉 Explication : produit une archive avec dump SQL et pièces jointes.
+   👉 Explication : produit une archive avec dump [[Glossary:SQL]] et pièces jointes.
 
 2. Sauvegarde en ligne de commande :
    ```bash

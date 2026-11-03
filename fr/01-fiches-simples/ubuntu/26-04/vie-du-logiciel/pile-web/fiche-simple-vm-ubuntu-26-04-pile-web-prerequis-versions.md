@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-ubuntu-26-04-pile-web-prerequis-versions.md
 
-- **Environnement** : VM ou serveur dédié Ubuntu Server hébergeant une application PHP avec PostgreSQL local et TLS
-- **OS / Version** : Ubuntu Server 26-04 LTS (Resolute); Nginx, PHP 8.5, PostgreSQL 18
+- **Environnement** : [[Glossary:VM]] ou serveur dédié Ubuntu Server hébergeant une application PHP avec PostgreSQL local et [[Glossary:TLS]]
+- **OS / Version** : Ubuntu Server 26-04 [[Glossary:LTS]] (Resolute); Nginx, PHP 8.5, PostgreSQL 18
 - **Catégorie** : services web / prérequis
 - **Tags** : `ubuntu2604`, `nginx`, `php8.5`, `postgresql18`, `tls`
 
@@ -32,7 +32,7 @@ Vérifier les versions disponibles avant d'installer la pile web.
    ```
    👉 Explication : Affiche la version d'Ubuntu et les candidats Nginx, PHP 8.5 et PostgreSQL 18.
 
-2. Réserver hostname/FQDN, IP stable, volumes, accès SSH et méthode de sauvegarde.
+2. Réserver hostname/FQDN, [[Glossary:IP]] stable, volumes, accès [[Glossary:SSH]] et méthode de sauvegarde.
    👉 Explication : à figer avant l'installation.
 
 3. Vérifier que l'application prend en charge PHP 8.5 et PostgreSQL 18.

@@ -23,7 +23,7 @@ Fiche défensive d’administration et de gouvernance. Elle ne remplace pas le g
 
 ## 🧭 Périmètre
 
-Administrer le plan de gestion, les comptes nominatifs et les politiques de sécurité via les interfaces prises en charge par l’éditeur. Séparer les interfaces d’administration du trafic utilisateur, limiter leur exposition aux postes d’administration autorisés, activer MFA lorsque disponible, appliquer RBAC et conserver une sauvegarde chiffrée avant changement. Examiner les journaux d’administration et les avis de sécurité Fortinet; planifier les mises à jour selon le modèle, la version supportée et les dépendances de l’organisation.
+Administrer le plan de gestion, les comptes nominatifs et les politiques de sécurité via les interfaces prises en charge par l’éditeur. Séparer les interfaces d’administration du trafic utilisateur, limiter leur exposition aux postes d’administration autorisés, activer [[Glossary:MFA]] lorsque disponible, appliquer [[Glossary:RBAC]] et conserver une sauvegarde chiffrée avant changement. Examiner les journaux d’administration et les avis de sécurité Fortinet; planifier les mises à jour selon le modèle, la version supportée et les dépendances de l’organisation.
 
 ## ✅ Autorisation et préparation
 

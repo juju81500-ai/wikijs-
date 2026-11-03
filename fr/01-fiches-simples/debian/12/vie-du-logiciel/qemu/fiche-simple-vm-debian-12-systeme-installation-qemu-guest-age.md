@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Debian_12_Systeme_Installation-Qemu-Guest-Agent.md
 
-- **Environnement** : VM (Proxmox VE / KVM / QEMU)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE / [[Glossary:KVM]] / [[Glossary:QEMU]])
 - **OS / Version** : Debian 12 (Bookworm) - Famille Debian
 - **Catégorie** : Système / Hyperviseur & Agent
 - **Tags** : `[debian12]`, `[proxmox]`, `[qemu-guest-agent]`, `[kvm]`, `[hyperviseur]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer et activer l'agent QEMU Guest Agent sur une machine virtuelle Debian 12 sous Proxmox VE / KVM pour permettre la remontée exacte de l'adresse IP, la création de snapshots cohérents du système de fichiers (FS-Freeze) et l'extinction propre de la VM depuis l'interface d'administration.
+Installer et activer l'agent QEMU Guest Agent sur une machine virtuelle Debian 12 sous Proxmox VE / KVM pour permettre la remontée exacte de l'adresse [[Glossary:IP]], la création de snapshots cohérents du système de fichiers (FS-Freeze) et l'extinction propre de la VM depuis l'interface d'administration.
 
 ---
 
@@ -41,7 +41,7 @@ Installer et activer l'agent QEMU Guest Agent sur une machine virtuelle Debian 1
    `apt-get update && apt-get install -y qemu-guest-agent && systemctl enable --now qemu-guest-agent`
    👉 Explication : Installe l'agent et s'assure de son lancement automatique lors de chaque démarrage de la VM.
 
-2. Vérification de la communication côté hôte Proxmox VE (CLI) :
+2. Vérification de la communication côté hôte Proxmox VE ([[Glossary:CLI]]) :
    `qm guest cmd <VMID> ping`
    👉 Explication : Exécuté depuis l'hôte Proxmox, teste le canal de communication bidirectionnel avec la VM.
 

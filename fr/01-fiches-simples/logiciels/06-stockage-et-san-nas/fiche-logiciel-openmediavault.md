@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 OpenMediaVault
 
-- **Catégorie** : Stockage et SAN / NAS
+- **Catégorie** : Stockage et [[Glossary:SAN]] / [[Glossary:NAS]]
 - **Plateforme** : Linux Debian
 - **Produit (matrice)** : OpenMediaVault
 - **Statut dans le pack** : Couvert

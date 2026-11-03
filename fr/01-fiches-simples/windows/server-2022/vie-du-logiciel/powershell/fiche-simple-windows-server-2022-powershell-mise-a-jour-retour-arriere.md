@@ -24,7 +24,7 @@ Mettre à jour PowerShell 7 sur Windows Server 2022 et revenir à la version pr�
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Conserver le MSI de la version actuelle et sauvegarder (fiche Sauvegarder_Restaurer).
+1. Conserver le [[Glossary:MSI]] de la version actuelle et sauvegarder (fiche Sauvegarder_Restaurer).
    👉 Explication : permet le retour arrière hors ligne.
 
 2. Installer le MSI de la nouvelle version approuvée par-dessus (CHEMIN_MSI_NOUVEAU à remplacer ; contrôler hash et signature comme à l'installation) :
@@ -39,7 +39,7 @@ Mettre à jour PowerShell 7 sur Windows Server 2022 et revenir à la version pr�
    ```
    👉 Explication : rejouer la recette.
 
-4. Retour arrière : GUI Paramètres > Applications > Applications installées > PowerShell > Désinstaller ; ligne de commande avec le MSI courant puis réinstallation de l'ancien (CHEMIN_MSI_COURANT et CHEMIN_MSI_ANCIEN à remplacer) :
+4. Retour arrière : [[Glossary:GUI]] Paramètres > Applications > Applications installées > PowerShell > Désinstaller ; ligne de commande avec le MSI courant puis réinstallation de l'ancien (CHEMIN_MSI_COURANT et CHEMIN_MSI_ANCIEN à remplacer) :
    ```powershell
    msiexec.exe /x CHEMIN_MSI_COURANT /quiet
    msiexec.exe /package CHEMIN_MSI_ANCIEN /quiet ADD_PATH=1 REGISTER_MANIFEST=1

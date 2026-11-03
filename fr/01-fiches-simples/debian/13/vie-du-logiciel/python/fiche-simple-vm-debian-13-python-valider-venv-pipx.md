@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-python-valider-venv-pipx.md
 
-- **Environnement** : Python 3 Debian, `venv` par projet, `pipx` pour outil CLI
+- **Environnement** : Python 3 Debian, `venv` par projet, `pipx` pour outil [[Glossary:CLI]]
 - **OS / Version** : Debian 13 Trixie amd64
 - **Catégorie** : développement / automatisation
 - **Tags** : `debian13`, `python`, `venv`, `pipx`, `pip`, `validation`
@@ -63,7 +63,7 @@ Confirmer qu'un projet ou outil Python utilise son environnement isolé et ne mo
 
 ## 2. Production — Contrôles
 
-Consigner les versions Python, les sources APT/PyPI approuvées, le fichier de dépendances verrouillé, l'outil CLI et son propriétaire. Tester une reconstruction depuis un environnement vide avant déploiement.
+Consigner les versions Python, les sources [[Glossary:APT]]/PyPI approuvées, le fichier de dépendances verrouillé, l'outil CLI et son propriétaire. Tester une reconstruction depuis un environnement vide avant déploiement.
 
 ## 3. Production — Sécurité
 

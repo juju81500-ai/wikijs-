@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 GitLab
 
-- **Environnement** : VM (Debian 12), 4 Go de RAM minimum recommandés
+- **Environnement** : [[Glossary:VM]] (Debian 12), 4 Go de [[Glossary:RAM]] minimum recommandés
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : GitLab CE (Omnibus) via le dépôt officiel, version majeure à vérifier sur la version déployée
 - **Catégorie** : Automatisation, déploiement et IaC
@@ -85,7 +85,7 @@ sudo ufw allow 80/tcp
 sudo ufw enable
 sudo ufw status verbose
 ```
-👉 Explication : SSH n'est autorisé que depuis `<adresse_ip_admin>`. Le port 443 sert à l'interface web et le 80 à la redirection vers HTTPS.
+👉 Explication : [[Glossary:SSH]] n'est autorisé que depuis `<adresse_ip_admin>`. Le port 443 sert à l'interface web et le 80 à la redirection vers HTTPS.
 
 ---
 

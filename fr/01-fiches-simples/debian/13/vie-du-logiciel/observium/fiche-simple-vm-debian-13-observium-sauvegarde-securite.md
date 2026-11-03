@@ -42,7 +42,7 @@ Sauvegarder base, configuration et RRD et appliquer les contrôles de sécurité
    ls -l /opt/observium/config.php
    find /opt/observium -maxdepth 1 -writable -user www-data
    ```
-   👉 Explication : `config.php` doit être en 0640 et le serveur web ne doit pas écrire dans le code ni dans les scripts CLI.
+   👉 Explication : `config.php` doit être en 0640 et le serveur web ne doit pas écrire dans le code ni dans les scripts [[Glossary:CLI]].
 
 ## 2. Production — Contrôles
 

@@ -24,7 +24,7 @@ Limiter le risque de corruption et cadrer l'incident avant tout diagnostic.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Identifier le service, le partage ou la LUN, les hôtes touchés, l'heure de début, les erreurs, les changements récents et l'état des sauvegardes.
+1. Identifier le service, le partage ou la [[Glossary:LUN]], les hôtes touchés, l'heure de début, les erreurs, les changements récents et l'état des sauvegardes.
    👉 Explication : un incident bien cadré évite des actions hasardeuses.
 
 2. Suspendre les migrations et écritures non nécessaires si des erreurs I/O ou un risque de corruption sont observés.

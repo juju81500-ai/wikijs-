@@ -57,7 +57,7 @@ Définir fenêtre, débit réseau, surveillance, capacité, responsable, gestion
 
 - Ne pas exécuter avec des privilèges élevés sans besoin justifié.
 - Protéger la destination et les journaux contre l'accès non autorisé.
-- Ne pas publier les ports SSH ou rsync au-delà des flux nécessaires.
+- Ne pas publier les ports [[Glossary:SSH]] ou rsync au-delà des flux nécessaires.
 - Ne pas considérer une commande terminée comme une validation de restauration.
 
 ## Validation et retour arrière

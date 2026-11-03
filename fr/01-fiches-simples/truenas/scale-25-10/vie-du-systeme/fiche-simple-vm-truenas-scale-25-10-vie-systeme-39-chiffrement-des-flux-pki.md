@@ -24,13 +24,13 @@ Installer un certificat valide pour l'interface web.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Identifiants > Certificats > Ajouter > Importer un certificat (ou Créer une demande de signature CSR).
+1. [[Glossary:GUI]] : Identifiants > Certificats > Ajouter > Importer un certificat (ou Créer une demande de signature CSR).
    ```bash
    sudo midclt call certificate.query | python3 -m json.tool | grep -E 'name|until'
    ```
    👉 Explication : liste les certificats et leurs dates d'expiration.
 
-2. Appliquer le certificat : Système > Général > GUI > Certificat SSL GUI.
+2. Appliquer le certificat : Système > Général > GUI > Certificat [[Glossary:SSL]] GUI.
    ```bash
    sudo midclt call system.general.update '{"ui_certificate": ID_CERT}'
    ```
@@ -44,11 +44,11 @@ Installer un certificat valide pour l'interface web.
 
 ## 2. Production — Contrôles
 
-Utiliser la PKI interne ou ACME ; surveiller l'expiration.
+Utiliser la [[Glossary:PKI]] interne ou [[Glossary:ACME]] ; surveiller l'expiration.
 
 ## 3. Production — Sécurité
 
-Forcer HTTPS : Système > Général > Redirection HTTPS ; désactiver TLS 1.0/1.1.
+Forcer HTTPS : Système > Général > Redirection HTTPS ; désactiver [[Glossary:TLS]] 1.0/1.1.
 
 ## Validation et retour arrière
 

@@ -11,16 +11,16 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-12-znuny-preparer.md
 
-- **Environnement** : VM Debian 12 dédiée (Apache/mod_perl, MariaDB 10.11), Znuny 7.3.8
+- **Environnement** : [[Glossary:VM]] Debian 12 dédiée (Apache/mod_perl, MariaDB 10.11), Znuny 7.3.8
 - **OS / Version** : Debian 12 Bookworm; Znuny 7.3.8
-- **Catégorie** : ITSM / ticketing
+- **Catégorie** : [[Glossary:ITSM]] / ticketing
 - **Tags** : `debian12`, `znuny`, `preparation`
 
 ---
 
 ## Problème précis à résoudre
 
-Vérifier les prérequis (OS, Perl, espace, DNS, sauvegarde) avant d'installer Znuny 7.3.8.
+Vérifier les prérequis (OS, Perl, espace, [[Glossary:DNS]], sauvegarde) avant d'installer Znuny 7.3.8.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -49,11 +49,11 @@ Vérifier les prérequis (OS, Perl, espace, DNS, sauvegarde) avant d'installer Z
    ```bash
    getent hosts support.example.net
    ```
-   👉 Explication : le nom du service doit exister avant de configurer Apache et TLS.
+   👉 Explication : le nom du service doit exister avant de configurer Apache et [[Glossary:TLS]].
 
 ## 2. Production — Contrôles
 
-Prévoir DNS, TLS, SMTP, sauvegarde hors hôte et accès console/SSH de secours. Valider d'abord sur une VM de test.
+Prévoir DNS, TLS, [[Glossary:SMTP]], sauvegarde hors hôte et accès console/SSH de secours. Valider d'abord sur une VM de test.
 
 ## 3. Production — Sécurité
 

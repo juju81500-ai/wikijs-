@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-rocky-9-journaux-journald-logrotate.md
 
-- **Environnement** : VM ou serveur Rocky Linux
-- **OS / Version** : Rocky Linux 9 / RHEL 9 avec systemd-journald et logrotate
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 avec systemd-journald et logrotate
 - **Catégorie** : Journaux / Rotation et centralisation
 - **Tags** : `[rocky9]`, `[rhel9]`, `[journald]`, `[logrotate]`, `[rsyslog]`, `[logs]`
 
 ## 🎯 Problème précis à résoudre
-Rendre les journaux systemd persistants avec une taille et une durée de rétention maîtrisées, configurer la rotation des fichiers texte avec `logrotate`, puis transmettre les journaux à un SIEM.
+Rendre les journaux systemd persistants avec une taille et une durée de rétention maîtrisées, configurer la rotation des fichiers texte avec `logrotate`, puis transmettre les journaux à un [[Glossary:SIEM]].
 
 ---
 
@@ -80,11 +80,11 @@ Rendre les journaux systemd persistants avec une taille et une durée de rétent
 ---
 
 ## 🔒 3. Production — Façon Sécurisée (Hardening & Isolation Enterprise)
-1. Transmettre les journaux au SIEM par rsyslog en TCP (`@@`) :
+1. Transmettre les journaux au SIEM par rsyslog en [[Glossary:TCP]] (`@@`) :
    ```text
    *.* @@<siem_serveur>:514
    ```
-   👉 Explication : Enregistrer cette ligne dans `/etc/rsyslog.d/90-siem.conf`, puis exécuter `sudo systemctl restart rsyslog`. Le double `@@` impose TCP, plus fiable que UDP pour les journaux de sécurité.
+   👉 Explication : Enregistrer cette ligne dans `/etc/rsyslog.d/90-siem.conf`, puis exécuter `sudo systemctl restart rsyslog`. Le double `@@` impose TCP, plus fiable que [[Glossary:UDP]] pour les journaux de sécurité.
 
 2. Contrôler les droits du répertoire des journaux :
    ```bash

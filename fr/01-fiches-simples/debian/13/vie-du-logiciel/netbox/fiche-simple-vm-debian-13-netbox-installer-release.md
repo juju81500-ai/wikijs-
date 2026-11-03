@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : Debian 13, archive officielle NetBox 4.7.4
 - **OS / Version** : Debian 13; NetBox 4.7.4
-- **Catégorie** : IPAM / DCIM / installation
+- **Catégorie** : [[Glossary:IPAM]] / [[Glossary:DCIM]] / installation
 - **Tags** : `debian13`, `netbox`, `release`, `archive`, `permissions`
 
 ---

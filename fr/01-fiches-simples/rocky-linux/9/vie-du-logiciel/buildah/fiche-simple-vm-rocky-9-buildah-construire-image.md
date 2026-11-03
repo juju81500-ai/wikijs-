@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-rocky-9-buildah-construire-image.md
 
-- **Environnement** : VM Rocky Linux 9 de build, compte non privilégié dédié
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 de build, compte non privilégié dédié
 - **OS / Version** : Rocky Linux 9; paquet Buildah des dépôts de la distribution
 - **Catégorie** : conteneurs / chaîne de build
 - **Tags** : `buildah`, `oci`, `rocky9`, `rootless`, `containerfile`, `registre`

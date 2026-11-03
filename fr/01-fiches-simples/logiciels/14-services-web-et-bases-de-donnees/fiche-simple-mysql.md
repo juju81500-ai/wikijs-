@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 MySQL
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
-- **Version** : MySQL 8.0.x (dépôt APT officiel MySQL, Debian 12 ne fournit pas MySQL dans ses dépôts ; version à vérifier sur la version déployée)
+- **Version** : MySQL 8.0.x (dépôt [[Glossary:APT]] officiel MySQL, Debian 12 ne fournit pas MySQL dans ses dépôts ; version à vérifier sur la version déployée)
 - **Catégorie** : Services Web et bases de données
 - **Tags** : `[debian-12]`, `[mysql]`, `[base-de-donnees]`, `[sauvegarde]`, `[hardening]`
 
@@ -76,7 +76,7 @@ echo "$APP_PASS"
 ```
 👉 Explication : Le compte `appli` ne peut se connecter que depuis `192.168.10.21` (serveur applicatif, à adapter) et n'a que les droits de données sur `base_appli`. Copier le mot de passe dans le coffre-fort du pack.
 
-3. Ouverture du pare-feu pour l'application et l'administration SSH :
+3. Ouverture du pare-feu pour l'application et l'administration [[Glossary:SSH]] :
 ```bash
 sudo apt install -y ufw
 sudo ufw allow from 192.168.10.0/24 to any port 22 proto tcp

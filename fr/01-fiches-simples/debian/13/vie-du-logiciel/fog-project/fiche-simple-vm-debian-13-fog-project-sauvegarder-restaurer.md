@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_FOG_Project_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13 dédiée FOG Project (clonage/déploiement d'images), réseau de laboratoire isolé
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée FOG Project (clonage/déploiement d'images), réseau de laboratoire isolé
 - **OS / Version** : Debian 13 Trixie; FOG Project (version et support Debian 13 à vérifier)
 - **Catégorie** : automatisation / déploiement
 - **Tags** : `debian13`, `fog-project`, `sauvegarde`, `restauration`, `mariadb`
@@ -24,7 +24,7 @@ Sauvegarder et restaurer la configuration FOG (base de données, paramètres, im
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Identifier ce qui doit être sauvegardé : base de données FOG, `/opt/fog/.fogsettings`, `/images` (images), configuration TFTP/web/NFS modifiée.
+1. Identifier ce qui doit être sauvegardé : base de données FOG, `/opt/fog/.fogsettings`, `/images` (images), configuration [[Glossary:TFTP]]/web/NFS modifiée.
    👉 Explication : se référer à la documentation FOG pour le périmètre exact de la version installée.
 
 2. Sauvegarder la base avec un compte dédié (NOM_BASE_FOG à remplacer ; le mot de passe sera demandé) :
@@ -46,7 +46,7 @@ Sauvegarder et restaurer la configuration FOG (base de données, paramètres, im
 
 ## 2. Production — Contrôles
 
-Production : sauvegarde externalisée et chiffrée, rétention définie, volume d'images dimensionné, restauration testée périodiquement, RPO/RTO documentés.
+Production : sauvegarde externalisée et chiffrée, rétention définie, volume d'images dimensionné, restauration testée périodiquement, [[Glossary:RPO]]/RTO documentés.
 
 ## 3. Production — Sécurité
 

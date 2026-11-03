@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_OpenLDAP_Installer
 
-- **Environnement** : VM Ubuntu 24-04 avec FQDN stable, serveur OpenLDAP (slapd)
-- **OS / Version** : Ubuntu 24-04 LTS Noble; slapd 2.6 des dépôts, version à vérifier
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 avec [[Glossary:FQDN]] stable, serveur OpenLDAP (slapd)
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; slapd 2.6 des dépôts, version à vérifier
 - **Catégorie** : annuaire OpenLDAP / installer
 - **Tags** : `openldap`, `ubuntu24-04`, `vie-du-logiciel`, `installer`
 
@@ -50,7 +50,7 @@ Consigner version, suffixe et emplacement des données (/var/lib/ldap).
 
 ## 3. Production — Sécurité
 
-- Limiter l'accès administratif à la VM; ne pas exposer le port 389 avant la configuration TLS.
+- Limiter l'accès administratif à la VM; ne pas exposer le port 389 avant la configuration [[Glossary:TLS]].
 
 ## Validation et retour arrière
 

@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:14Z
 
 # 📄 Fiche_Simple_-_VM_Windows_Server_2022_Systeme_Sysprep_Modele
 
-- **Environnement** : VM (Windows Server 2022, serveur modèle destiné au clonage)
+- **Environnement** : [[Glossary:VM]] (Windows Server 2022, serveur modèle destiné au clonage)
 - **OS / Version** : Windows Server 2022 - Famille Windows Server
 - **Catégorie** : Système & Services / Images et modèles
 - **Tags** : `[windows-server-2022]`, `[sysprep]`, `[template]`, `[dism]`, `[hyper-v]`, `[powershell]`
 
 ## 🎯 Problème précis à résoudre
-Préparer une VM Windows Server 2022 propre, puis la généraliser avec Sysprep pour en faire un modèle de référence réutilisable : chaque copie reçoit alors un SID, un nom et une configuration de premier démarrage distincts.
+Préparer une VM Windows Server 2022 propre, puis la généraliser avec Sysprep pour en faire un modèle de référence réutilisable : chaque copie reçoit alors un [[Glossary:SID]], un nom et une configuration de premier démarrage distincts.
 
 ---
 

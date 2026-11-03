@@ -33,7 +33,7 @@ dateModified: 2026-11-03T09:36:13Z
 ## Prérequis et durée
 
 - Leçon « PowerShell pour débuter » maîtrisée : pipeline, `Where-Object`, `Select-Object`, `Get-Help`.
-- Connaissance des notions d'annuaire : domaine, unité d'organisation (OU), utilisateur, groupe.
+- Connaissance des notions d'annuaire : domaine, unité d'organisation ([[Glossary:OU]]), utilisateur, groupe.
 - Un **laboratoire jetable** : un contrôleur de domaine Windows Server de test pour le domaine fictif `example.test` et un poste ou serveur membre avec les outils RSAT. Prenez un instantané avant chaque séance. **Ne testez jamais d'abord sur un annuaire de production.**
 - Durée : environ 4 h.
 
@@ -440,7 +440,7 @@ Pour une journalisation maîtrisée, une fonction dédiée (comme `Write-Log` pl
    ```
    👉 Explication : simule la création puis l'ajout ; enlevez `-WhatIf` dans l'ordre pour les exécuter réellement.
 
-7. **Nettoyage.** Désactivez la protection de l'OU puis supprimez-la, ou restaurez l'instantané de la VM.
+7. **Nettoyage.** Désactivez la protection de l'OU puis supprimez-la, ou restaurez l'instantané de la [[Glossary:VM]].
    ```powershell
    Set-ADOrganizationalUnit -Identity "OU=LabLecon,DC=example,DC=test" -ProtectedFromAccidentalDeletion $false
    Remove-ADOrganizationalUnit -Identity "OU=LabLecon,DC=example,DC=test" -Recursive -WhatIf

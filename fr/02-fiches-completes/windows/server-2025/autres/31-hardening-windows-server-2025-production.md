@@ -21,7 +21,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [préparer la baseline de hardening](/fr/01-fiches-simples/windows/server-2025/vie-du-systeme/fiches-par-theme/hardening/fiche-simple-vm-windows-server-2025-hardening-preparer-baseline).
 
-Inventorier le rôle, les clients, NAS, applications, mécanismes LDAP/SMB, outils de sauvegarde et dépendances d'authentification. Déployer d'abord en laboratoire représentatif. Ne pas désactiver une protection nouvelle pour résoudre une incompatibilité sans analyse et dérogation formelle.
+Inventorier le rôle, les clients, [[Glossary:NAS]], applications, mécanismes [[Glossary:LDAP]]/SMB, outils de sauvegarde et dépendances d'authentification. Déployer d'abord en laboratoire représentatif. Ne pas désactiver une protection nouvelle pour résoudre une incompatibilité sans analyse et dérogation formelle.
 
 Appliquer une baseline Microsoft adaptée au rôle, conserver un compte de secours testé et vérifier la restauration avant les changements de politique.
 
@@ -43,7 +43,7 @@ Confirmer que les partages nécessaires négocient un dialecte moderne et que le
 
 Fiche simple : [vérifier LDAP et AD DS](/fr/01-fiches-simples/windows/server-2025/vie-du-systeme/fiches-par-theme/hardening/fiche-simple-vm-windows-server-2025-hardening-ldap-ad-ds).
 
-Pour une nouvelle forêt AD DS, vérifier la compatibilité des applications avec la signature LDAP appliquée par défaut pour les clients SASL. Auditer d'abord les événements et les clients concernés, migrer les applications vers des connexions sécurisées, puis contrôler l'authentification et la réplication.
+Pour une nouvelle forêt [[Glossary:AD]] DS, vérifier la compatibilité des applications avec la signature LDAP appliquée par défaut pour les clients SASL. Auditer d'abord les événements et les clients concernés, migrer les applications vers des connexions sécurisées, puis contrôler l'authentification et la réplication.
 
 Ne pas activer les nouvelles options AD DS, notamment la taille de page ESE 32K ou le niveau fonctionnel 2025, sans plan de compatibilité et validation de tous les contrôleurs de domaine.
 
@@ -51,9 +51,9 @@ Ne pas activer les nouvelles options AD DS, notamment la taille de page ESE 32K 
 
 Fiche simple : [réduire les accès d'administration](/fr/01-fiches-simples/windows/server-2025/vie-du-systeme/fiches-par-theme/hardening/fiche-simple-vm-windows-server-2025-hardening-reduire-acces-administration).
 
-- Vérifier que `sshd` n'écoute pas ou n'accepte pas de connexions non requises; filtrer au réseau d'administration si SSH est utilisé.
-- Conserver WinRM/RDP seulement selon le modèle d'administration retenu, avec NLA, pare-feu à portée limitée et comptes dédiés.
-- Utiliser Windows LAPS et des comptes nominatifs; retirer les rôles locaux non requis.
+- Vérifier que `sshd` n'écoute pas ou n'accepte pas de connexions non requises; filtrer au réseau d'administration si [[Glossary:SSH]] est utilisé.
+- Conserver WinRM/RDP seulement selon le modèle d'administration retenu, avec [[Glossary:NLA]], pare-feu à portée limitée et comptes dédiés.
+- Utiliser Windows [[Glossary:LAPS]] et des comptes nominatifs; retirer les rôles locaux non requis.
 - Examiner Credential Guard, VBS, Secure Boot et Microsoft Defender selon la compatibilité du rôle.
 
 ```powershell

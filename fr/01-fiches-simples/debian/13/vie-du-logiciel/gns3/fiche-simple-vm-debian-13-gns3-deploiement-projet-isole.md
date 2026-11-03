@@ -39,7 +39,7 @@ Lancer GNS3 avec un serveur local et un projet fermé.
 4. Enregistrer puis rouvrir : **File > Save project**, fermer, puis **File > Open project**.
    👉 Explication : le projet doit se rouvrir sans fichier manquant.
 
-5. Si une appliance QEMU est ajoutée, vérifier l'empreinte de l'image publiée par l'éditeur (remplacer `image.qcow2` par le fichier réel) :
+5. Si une appliance [[Glossary:QEMU]] est ajoutée, vérifier l'empreinte de l'image publiée par l'éditeur (remplacer `image.qcow2` par le fichier réel) :
    ```bash
    sha256sum image.qcow2
    ```
@@ -51,7 +51,7 @@ Définir qui valide les images, les licences et les ressources attribuées aux n
 
 ## 3. Production — Sécurité
 
-- Ne pas relier le nœud Cloud à une interface physique ni ajouter de NAT pour un lab fermé.
+- Ne pas relier le nœud Cloud à une interface physique ni ajouter de [[Glossary:NAT]] pour un lab fermé.
 - Ne pas télécharger d'images depuis des miroirs non autorisés.
 
 ## Validation et retour arrière

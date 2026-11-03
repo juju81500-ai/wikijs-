@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Tags** : `vie-du-systeme`, `cycle-de-vie`, `os`, `checklist`, `installation`, `production`
 
-Nomenclature : **Debian/Ubuntu** | **RHEL/Alma/Rocky** | **Windows Server** | **FreeBSD**.
+Nomenclature : **Debian/Ubuntu** | **[[Glossary:RHEL]]/Alma/Rocky** | **Windows Server** | **FreeBSD**.
 
 Cette trame décrit la vie d'un système d'exploitation, de la préparation à la documentation d'exploitation. Les commandes et chemins varient selon la version et l'édition : vérifier les sources officielles, sauvegarder, prévoir un accès de secours et valider le retour arrière avant toute action en production. Les valeurs entre chevrons (`<IP_SERVEUR>`, `<service>`) sont à remplacer. Les fiches par OS reprennent ces étapes avec les seules commandes de la famille ; voir aussi la version commentée [Cycle de vie 50 étapes](/fr/00-administration/01-gouvernance-architecture/cycle-de-vie-50-etapes).
 
@@ -21,7 +21,7 @@ Cette trame décrit la vie d'un système d'exploitation, de la préparation à l
 
 ### 01. Définition des besoins (Sizing)
 
-- **Tous OS** : Allocation vCPU/CPU, RAM, IOPS stockage, architecture (x86_64, ARM64).
+- **Tous OS** : Allocation vCPU/CPU, [[Glossary:RAM]], [[Glossary:IOPS]] stockage, architecture (x86_64, ARM64).
 
 ### 02. Récupération de l'image système
 
@@ -32,17 +32,17 @@ Cette trame décrit la vie d'un système d'exploitation, de la préparation à l
 
 ### 03. Vérification d'intégrité et d'authenticité
 
-- **Linux/BSD** : sha256sum -c SHA256SUMS & vérification de la signature GPG
+- **Linux/BSD** : sha256sum -c SHA256SUMS & vérification de la signature [[Glossary:GPG]]
 - **Windows** : Get-FileHash -Algorithm SHA256 (PowerShell)
 
 ### 04. Préparation du support d'amorçage
 
-- **Bare-metal** : Clé USB bootable (dd, Rufus, Ventoy) ou montage IPMI/iDRAC/iLO
+- **Bare-metal** : Clé [[Glossary:USB]] bootable (dd, Rufus, Ventoy) ou montage [[Glossary:IPMI]]/iDRAC/iLO
 - **Virtuel** : Stockage ISO dans le datastore (Proxmox VE, VMware ESXi, Hyper-V, XCP-ng)
 
 ### 05. Configuration matérielle / Firmware
 
-- **Tous OS** : Choix BIOS Legacy ou UEFI, Secure Boot (On/Off selon OS), Virtualisation (VT-x/AMD-V), contrôleur de stockage (AHCI, VirtIO SCSI, MegaRAID).
+- **Tous OS** : Choix [[Glossary:BIOS]] Legacy ou UEFI, Secure Boot (On/Off selon OS), Virtualisation (VT-x/AMD-V), contrôleur de stockage ([[Glossary:AHCI]], VirtIO SCSI, MegaRAID).
 
 ## Phase 2 : Installation de base : questions de l'installateur (étapes 6 à 15)
 
@@ -58,15 +58,15 @@ Cette trame décrit la vie d'un système d'exploitation, de la préparation à l
 
 ### 08. Configuration réseau d'installation
 
-- **Debian** : netcfg (DHCP ou Statique temporaire)
+- **Debian** : netcfg ([[Glossary:DHCP]] ou Statique temporaire)
 - **RHEL** : Network & Host Name (Anaconda / NetworkManager)
 - **Windows** : WinPE Network initialization
 - **FreeBSD** : bsdinstall netconfig
 
 ### 09. Identité de la machine
 
-- **Linux/BSD** : Hostname + Domain Name (FQDN)
-- **Windows** : Computer Name (NetBIOS / DNS Hostname)
+- **Linux/BSD** : Hostname + Domain Name ([[Glossary:FQDN]])
+- **Windows** : Computer Name (NetBIOS / [[Glossary:DNS]] Hostname)
 
 ### 10. Compte super-administrateur
 
@@ -81,19 +81,19 @@ Cette trame décrit la vie d'un système d'exploitation, de la préparation à l
 
 ### 12. Fuseau horaire (Timezone)
 
-- **Linux/BSD** : tzdata (ex: Europe/Paris, UTC) + horloge CMOS en UTC
+- **Linux/BSD** : tzdata (ex: Europe/Paris, UTC) + horloge [[Glossary:CMOS]] en UTC
 - **Windows** : Time Zone (ex: Romance Standard Time) + horloge CMOS en heure locale
 
 ### 13. Partitionnement et systèmes de fichiers
 
-- **Debian/Ubuntu** : GPT/MBR, ext4/xfs/btrfs/ZFS, LVM2, points (/boot, /boot/efi, /, /var, /home, swap)
+- **Debian/Ubuntu** : [[Glossary:GPT]]/MBR, ext4/xfs/btrfs/ZFS, LVM2, points (/boot, /boot/efi, /, /var, /home, swap)
 - **RHEL/Rocky** : GPT/MBR, xfs/ext4, LVM2 / Stratis, points (/boot, /boot/efi, /, /var, /home, swap)
-- **Windows** : GPT/MBR, NTFS / ReFS, Partitions (EFI, MSR, C:\ OS, D:\ Data, Recovery)
-- **FreeBSD** : GPT, UFS / ZFS (zroot), partitions (freebsd-boot, freebsd-swap, freebsd-zfs)
+- **Windows** : GPT/MBR, [[Glossary:NTFS]] / ReFS, Partitions ([[Glossary:EFI]], MSR, C:\ OS, D:\ Data, Recovery)
+- **FreeBSD** : GPT, UFS / [[Glossary:ZFS]] (zroot), partitions (freebsd-boot, freebsd-swap, freebsd-zfs)
 
 ### 14. Sélection des composants de base
 
-- **Debian** : tasksel (Serveur SSH, Utilitaires usuels du système, sans GUI)
+- **Debian** : tasksel (Serveur [[Glossary:SSH]], Utilitaires usuels du système, sans [[Glossary:GUI]])
 - **RHEL** : Base Environment "Minimal Install" ou "Server" (sans GUI)
 - **Windows** : Edition "Server Core" (sans GUI) ou "Server with Desktop Experience" (GUI)
 - **FreeBSD** : Distribution sets (base, kernel, lib32, ports)
@@ -127,7 +127,7 @@ Cette trame décrit la vie d'un système d'exploitation, de la préparation à l
 
 - **Debian/Ubuntu** : /etc/apt/sources.list et /etc/apt/sources.list.d/
 - **RHEL/Rocky** : /etc/yum.repos.d/*.repo
-- **Windows** : Configuration WSUS / Windows Update / Winget / PSGallery
+- **Windows** : Configuration [[Glossary:WSUS]] / Windows Update / Winget / PSGallery
 - **FreeBSD** : /etc/pkg/FreeBSD.conf
 
 ### 20. Mise à jour initiale complète du système
@@ -140,7 +140,7 @@ Cette trame décrit la vie d'un système d'exploitation, de la préparation à l
 ### 21. Pilotes et agents de virtualisation
 
 - **Linux/BSD** : qemu-guest-agent, open-vm-tools, hyperv-daemons, xe-guest-utilities, fwupd
-- **Windows** : VirtIO Drivers + QEMU Guest Agent, VMware Tools, Hyper-V Integration Services
+- **Windows** : VirtIO Drivers + [[Glossary:QEMU]] Guest Agent, VMware Tools, Hyper-V Integration Services
 
 ### 22. Synchronisation horaire (NTP)
 
@@ -156,32 +156,32 @@ Cette trame décrit la vie d'un système d'exploitation, de la préparation à l
 ### 24. Personnalisation de l'environnement et bannières
 
 - **Linux/BSD** : /etc/profile, ~/.bashrc, /etc/motd, /etc/issue, /etc/issue.net
-- **Windows** : Profil PowerShell ($PROFILE), Bannière légale GPO (interactive logon message)
+- **Windows** : Profil PowerShell ($PROFILE), Bannière légale [[Glossary:GPO]] (interactive logon message)
 
 ### 25. Validation de l'état initial (Baseline)
 
-- **Tous OS** : Nettoyage des caches, arret propre et creation du Snapshot VM "01-CLEAN-INSTALL" ou capture Sysprep/Template.
+- **Tous OS** : Nettoyage des caches, arret propre et creation du Snapshot [[Glossary:VM]] "01-CLEAN-INSTALL" ou capture Sysprep/Template.
 
 ## Phase 4 : Sécurisation / durcissement (étapes 26 à 35)
 
 ### 26. Authentification par clés cryptographiques (SSH / WinRM)
 
-- **Linux/BSD** : ~/.ssh/authorized_keys (ed25519 / RSA 4096)
+- **Linux/BSD** : ~/.ssh/authorized_keys (ed25519 / [[Glossary:RSA]] 4096)
 - **Windows** : C:\ProgramData\ssh\administrators_authorized_keys ou certificats WinRM HTTPS
 
 ### 27. Durcissement de l'accès distant
 
 - **Linux/BSD** : /etc/ssh/sshd_config (PermitRootLogin no, PasswordAuthentication no)
-- **Windows** : Durcissement RDP (NLA obligatoire, restriction d'IP) et sshd_config_default
+- **Windows** : Durcissement [[Glossary:RDP]] ([[Glossary:NLA]] obligatoire, restriction d'[[Glossary:IP]]) et sshd_config_default
 
 ### 28. Gestion fine des privilèges d'administration
 
 - **Linux/BSD** : /etc/sudoers et /etc/sudoers.d/ (visudo)
-- **Windows** : UAC (User Account Control), Groupes locaux Restreints, LAPS (Local Admin Password Solution)
+- **Windows** : [[Glossary:UAC]] (User Account Control), Groupes locaux Restreints, [[Glossary:LAPS]] (Local Admin Password Solution)
 
 ### 29. Pare-feu hote (Host Firewall)
 
-- **Debian/Ubuntu** : UFW ou Nftables (/etc/nftables.conf)
+- **Debian/Ubuntu** : [[Glossary:UFW]] ou Nftables (/etc/nftables.conf)
 - **RHEL/Rocky** : Firewalld (firewall-cmd) ou Nftables
 - **Windows** : Windows Defender Firewall with Advanced Security (wf.msc / New-NetFirewallRule)
 - **FreeBSD** : PF (/etc/pf.conf) ou IPFW
@@ -213,26 +213,26 @@ Cette trame décrit la vie d'un système d'exploitation, de la préparation à l
 ### 34. Durcissement du noyau et de la pile réseau
 
 - **Linux/BSD** : /etc/sysctl.conf et /etc/sysctl.d/ (ip_forward, tcp_syncookies, accept_redirects=0)
-- **Windows** : Registre TCP/IP (HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters) & Hardening Kitty
+- **Windows** : Registre [[Glossary:TCP]]/IP (HKLM\SYSTEM\CurrentControlSet\Services\Tcpip\Parameters) & Hardening Kitty
 
 ### 35. Contrôle d'accès obligatoire (MAC) et Antivirus
 
 - **Debian/Ubuntu** : AppArmor (aa-status, aa-enforce)
 - **RHEL/Rocky** : SELinux (getenforce, setenforce 1, /etc/selinux/config)
-- **Windows** : Microsoft Defender Antivirus, AppLocker / WDAC (Windows Defender Application Control)
+- **Windows** : Microsoft Defender Antivirus, AppLocker / [[Glossary:WDAC]] (Windows Defender Application Control)
 - **FreeBSD** : MAC Framework / Jails
 
 ## Phase 5 : Mise en production et services (étapes 36 à 42)
 
 ### 36. Intégration à l'annuaire ou au réseau d'administration
 
-- **Linux/BSD** : realmd / sssd / Winbind (Jonction AD), client FreeIPA/LDAP, VPN (WireGuard, Tailscale)
+- **Linux/BSD** : realmd / sssd / Winbind (Jonction [[Glossary:AD]]), client FreeIPA/LDAP, [[Glossary:VPN]] (WireGuard, Tailscale)
 - **Windows** : Add-Computer -DomainName (Jonction Active Directory Domain Services)
 
 ### 37. Déploiement des rôles métiers et stacks applicatives
 
 - **Linux/BSD** : Docker/Podman, Nginx/Apache, PostgreSQL/MariaDB, Bind9, etc.
-- **Windows** : Server Manager Roles & Features (Install-WindowsFeature : ADDS, DNS, DHCP, IIS, Hyper-V)
+- **Windows** : Server Manager Roles & Features (Install-WindowsFeature : ADDS, DNS, DHCP, [[Glossary:IIS]], Hyper-V)
 
 ### 38. Isolation des comptes de service
 
@@ -241,23 +241,23 @@ Cette trame décrit la vie d'un système d'exploitation, de la préparation à l
 
 ### 39. Chiffrement des flux (PKI / TLS)
 
-- **Linux/BSD** : Certbot (Let's Encrypt), OpenSSL, ajout CA dans /usr/local/share/ca-certificates/
+- **Linux/BSD** : Certbot (Let's Encrypt), OpenSSL, ajout [[Glossary:CA]] dans /usr/local/share/ca-certificates/
 - **Windows** : AD CS (Auto-enrollment), IIS Certificate Binding, magasin de certificats (certlm.msc)
 
 ### 40. Configuration des sauvegardes (Backup)
 
 - **Niveau VM** : Proxmox Backup Server (vzdump), Veeam Backup & Replication
-- **Niveau OS** : BorgBackup, Restic, Rclone, cron dumps SQL (Linux/BSD) | Windows Server Backup (wbadmin), VSS
+- **Niveau OS** : BorgBackup, Restic, Rclone, cron dumps [[Glossary:SQL]] (Linux/BSD) | Windows Server Backup (wbadmin), [[Glossary:VSS]]
 
 ### 41. Supervision, métriques et inventaire (Monitoring)
 
-- **Linux/BSD** : Zabbix Agent, Prometheus node_exporter, SNMPd, GLPI Agent
-- **Windows** : Zabbix Agent 2, Prometheus windows_exporter, Service SNMP WMI, GLPI Agent
+- **Linux/BSD** : Zabbix Agent, Prometheus node_exporter, SNMPd, [[Glossary:GLPI]] Agent
+- **Windows** : Zabbix Agent 2, Prometheus windows_exporter, Service [[Glossary:SNMP]] [[Glossary:WMI]], GLPI Agent
 
 ### 42. Gestion, rotation et centralisation des journaux (Logs)
 
-- **Linux/BSD** : logrotate (/etc/logrotate.d/), journald.conf, rsyslog / syslog-ng / Promtail (envoi SIEM)
-- **Windows** : Event Viewer (wevtutil - taille max des journaux), WEF (Windows Event Forwarding), Winlogbeat
+- **Linux/BSD** : logrotate (/etc/logrotate.d/), journald.conf, rsyslog / syslog-ng / Promtail (envoi [[Glossary:SIEM]])
+- **Windows** : Event Viewer (wevtutil - taille max des journaux), [[Glossary:WEF]] (Windows Event Forwarding), Winlogbeat
 
 ## Phase 6 : Vérification, tests et documentation (étapes 43 à 50)
 
@@ -291,7 +291,7 @@ Cette trame décrit la vie d'un système d'exploitation, de la préparation à l
 
 ### 49. Enregistrement CMDB et gestion des accès
 
-- **Tous OS** : Intégration dans l'inventaire (GLPI, NetBox), documentation IPAM, enregistrement des secrets dans le coffre-fort (Vaultwarden / Bitwarden, KeePass, HashiCorp Vault) et configuration SSH/RDP.
+- **Tous OS** : Intégration dans l'inventaire (GLPI, NetBox), documentation [[Glossary:IPAM]], enregistrement des secrets dans le coffre-fort (Vaultwarden / Bitwarden, KeePass, HashiCorp Vault) et configuration SSH/RDP.
 
 ### 50. Documentation d'exploitation (Runbook / Dossier d'Architecture Technique)
 

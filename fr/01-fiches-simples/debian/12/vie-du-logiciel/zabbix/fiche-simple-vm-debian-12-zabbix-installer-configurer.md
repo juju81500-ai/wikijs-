@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # fiche-simple-vm-debian-12-zabbix-installer-configurer.md
 
 - **Environnement** : serveur Debian 12 avec base Zabbix créée et dépôt officiel validé
-- **OS / Version** : Debian 12 Bookworm; serveur et frontend Zabbix 7.0 LTS
+- **OS / Version** : Debian 12 Bookworm; serveur et frontend Zabbix 7.0 [[Glossary:LTS]]
 - **Catégorie** : supervision / serveur et frontend
 - **Tags** : `debian12`, `zabbix`, `frontend`, `apache`, `php`, `systemd`
 

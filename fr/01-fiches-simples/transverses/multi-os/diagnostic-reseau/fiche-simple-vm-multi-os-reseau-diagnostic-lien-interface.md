@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-multi-os-reseau-diagnostic-lien-interface.md
 
-- **Environnement** : VM, poste, serveur, LXC Proxmox ou hôte Docker (Linux ou Windows)
+- **Environnement** : [[Glossary:VM]], poste, serveur, [[Glossary:LXC]] Proxmox ou hôte Docker (Linux ou Windows)
 - **OS / Version** : Debian 12/13, Ubuntu 24-04/26-04, Rocky Linux 9, Alpine Linux, Windows 10/11, Windows Server 2022/2025
 - **Catégorie** : réseau / couche 1-2
 - **Tags** : `reseau`, `diagnostic`, `multi-os`, `depannage`
@@ -46,7 +46,7 @@ Confirmer que l'interface est active et identifier le gestionnaire réseau qui l
    ip route
    rc-status
    ```
-   👉 Explication : dans un LXC, adresse, passerelle, bridge et VLAN sont souvent définis côté Proxmox.
+   👉 Explication : dans un LXC, adresse, passerelle, bridge et [[Glossary:VLAN]] sont souvent définis côté Proxmox.
 
 4. Windows 10/11 et Server : lister les cartes :
    ```powershell
@@ -55,7 +55,7 @@ Confirmer que l'interface est active et identifier le gestionnaire réseau qui l
    ```
    👉 Explication : on contrôle que la bonne carte est `Up`.
 
-5. Alternative GUI Windows : ouvrir `ncpa.cpl` (**Win + R > ncpa.cpl**) et vérifier que la carte est activée.
+5. Alternative [[Glossary:GUI]] Windows : ouvrir `ncpa.cpl` (**Win + R > ncpa.cpl**) et vérifier que la carte est activée.
    👉 Explication : ne pas supprimer/recréer une carte virtuelle avant d'avoir noté ses paramètres.
 
 ## 2. Production — Contrôles

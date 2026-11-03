@@ -34,7 +34,7 @@ Comment retrouver la cause d'une saturation et libérer de l'espace sans supprim
    ```
    👉 *Explication : La première commande compare les sous-répertoires sans franchir de montage ; `lsof` repère les fichiers supprimés encore ouverts.*
 
-3. **Nettoyer uniquement le cache APT identifié** :
+3. **Nettoyer uniquement le cache [[Glossary:APT]] identifié** :
    ```bash
    sudo apt clean
    sudo apt autoremove --dry-run

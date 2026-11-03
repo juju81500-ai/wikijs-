@@ -29,12 +29,12 @@ Vérifier ce qui est visible depuis l'extérieur.
    nmap -sS -p- IP_HOTE
    nmap -sV -p 22,443,902 IP_HOTE
    ```
-   👉 Explication : doit montrer uniquement les ports autorisés (443 Host Client, 902 vCenter, 22 SSH seulement si activé).
+   👉 Explication : doit montrer uniquement les ports autorisés (443 Host Client, 902 vCenter, 22 [[Glossary:SSH]] seulement si activé).
 
 2. Contrôler que le Host Client n'est pas accessible depuis un réseau non autorisé.
    👉 Explication : valide les règles de l'étape 29.
 
-3. Tester les protocoles TLS :
+3. Tester les protocoles [[Glossary:TLS]] :
    ```sh
    nmap --script ssl-enum-ciphers -p 443 IP_HOTE
    ```

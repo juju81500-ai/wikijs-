@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : MariaDB local sur Debian 13; compte applicatif limité à sa base
 - **OS / Version** : Debian 13 Trixie; MariaDB des dépôts Debian
-- **Catégorie** : pile Web LEMP / base de données
+- **Catégorie** : pile Web [[Glossary:LEMP]] / base de données
 - **Tags** : `debian13`, `lemp`, `mariadb`, `database`, `least-privilege`
 
 ---
@@ -65,7 +65,7 @@ Valider nom de base, propriétaire, privilèges, procédure de rotation des secr
 - Remplacer tout secret d'exemple par une valeur unique issue du gestionnaire de secrets.
 - Ne pas créer un compte applicatif accessible depuis `%`.
 - Ne pas accorder `GRANT ALL` par commodité.
-- Ne pas écouter sur toutes les interfaces; si accès distant requis, le concevoir sur réseau privé filtré avec TLS.
+- Ne pas écouter sur toutes les interfaces; si accès distant requis, le concevoir sur réseau privé filtré avec [[Glossary:TLS]].
 
 ## Validation et retour arrière
 

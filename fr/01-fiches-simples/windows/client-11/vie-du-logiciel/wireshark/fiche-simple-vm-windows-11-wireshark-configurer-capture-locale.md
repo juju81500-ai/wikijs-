@@ -30,7 +30,7 @@ Réaliser une première capture locale limitée à une interface et un filtre.
 ```
    👉 Explication : Repère le numéro de l'interface à capturer.
 
-2. GUI : ouvrir Wireshark en administrateur si nécessaire, **Capture > Options**, cocher l'interface, saisir le filtre de capture `host ADRESSE_IP` (à remplacer).
+2. [[Glossary:GUI]] : ouvrir Wireshark en administrateur si nécessaire, **Capture > Options**, cocher l'interface, saisir le filtre de capture `host ADRESSE_IP` (à remplacer).
    👉 Explication : Le filtre de capture limite le volume et les données collectées.
 
 3. Ligne de commande : capture 30 s dans un fichier.
@@ -41,7 +41,7 @@ New-Item -ItemType Directory -Force C:\Captures | Out-Null
    👉 Explication : NUMERO_INTERFACE et ADRESSE_IP sont à remplacer; sans Npcap, la commande échoue.
 
 4. Générer du trafic : `ping ADRESSE_IP` dans un autre terminal.
-   👉 Explication : Produit des paquets ICMP à observer.
+   👉 Explication : Produit des paquets [[Glossary:ICMP]] à observer.
 
 5. GUI : **Fichier > Ouvrir**, `C:\Captures\test.pcapng`, filtre d'affichage `icmp`.
    👉 Explication : Le filtre d'affichage ne modifie pas le fichier.

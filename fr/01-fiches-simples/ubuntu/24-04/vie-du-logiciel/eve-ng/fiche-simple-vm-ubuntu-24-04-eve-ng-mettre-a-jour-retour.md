@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_EVE-NG_Mettre_A_Jour_Retour
 
-- **Environnement** : VM EVE-NG (appliance basée sur Ubuntu Server 24-04 LTS) hébergée sur un poste ou serveur de virtualisation
+- **Environnement** : [[Glossary:VM]] EVE-NG (appliance basée sur Ubuntu Server 24-04 [[Glossary:LTS]]) hébergée sur un poste ou serveur de virtualisation
 - **OS / Version** : EVE-NG 7.x (7.2.0-18 au contrôle du 29/10/2026), Ubuntu 24-04 LTS embarqué; Community 6.2.0-4 (Ubuntu 22-04) en fin de support juin 2026
 - **Catégorie** : simulation réseau / mise à jour
 - **Tags** : `ubuntu24.04`, `eve-ng`, `mise-a-jour`, `snapshot`, `retour-arriere`, `upgrade`
@@ -30,7 +30,7 @@ Mettre à jour EVE-NG 7.x avec un point de retour, et planifier la migration dep
 2. Prendre un instantané de la VM dans l'hyperviseur (VMware Workstation : **VM > Snapshot > Take Snapshot**, nom `AVANT-MAJ-EVE`).
    👉 Explication : l'éditeur recommande un instantané comme filet de sécurité; c'est le seul retour arrière documenté (aucun downgrade officiel n'a été trouvé).
 
-3. Se connecter en SSH (idéalement dans `screen` ou `tmux`) et contrôler la place et le DNS :
+3. Se connecter en [[Glossary:SSH]] (idéalement dans `screen` ou `tmux`) et contrôler la place et le [[Glossary:DNS]] :
    ```bash
    screen -S eve-maj
    df -h
@@ -44,7 +44,7 @@ Mettre à jour EVE-NG 7.x avec un point de retour, et planifier la migration dep
    apt update
    apt -y dist-upgrade
    ```
-   👉 Explication : séquence indiquée par la page officielle de mise à jour; ⚠️ NE PAS accepter une montée de version d'Ubuntu proposée par le système. En cas de questions, la doc indique « N » et « Keep the local version currently installed » pour GRUB.
+   👉 Explication : séquence indiquée par la page officielle de mise à jour; ⚠️ NE PAS accepter une montée de version d'Ubuntu proposée par le système. En cas de questions, la doc indique « N » et « Keep the local version currently installed » pour [[Glossary:GRUB]].
 
 5. Redémarrer puis vider le cache du navigateur :
    ```bash

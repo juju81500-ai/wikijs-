@@ -23,7 +23,7 @@ Fiche défensive d’administration et de gouvernance. Elle ne remplace pas le g
 
 ## 🧭 Périmètre
 
-Gérer les profils et agents via le mécanisme supporté pour l’édition déployée; protéger la console, activer MFA/RBAC et limiter l’accès distant par groupes et posture de terminal. Valider les packages et mises à jour à partir des sources officielles, avec pilote et communication de changement. Retirer les profils et certificats lorsqu’un terminal ou utilisateur sort du périmètre.
+Gérer les profils et agents via le mécanisme supporté pour l’édition déployée; protéger la console, activer [[Glossary:MFA]]/RBAC et limiter l’accès distant par groupes et posture de terminal. Valider les packages et mises à jour à partir des sources officielles, avec pilote et communication de changement. Retirer les profils et certificats lorsqu’un terminal ou utilisateur sort du périmètre.
 
 ## ✅ Autorisation et préparation
 

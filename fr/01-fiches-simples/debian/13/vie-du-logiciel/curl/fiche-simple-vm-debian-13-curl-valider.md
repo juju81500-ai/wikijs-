@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_cURL_Valider
 
-- **Environnement** : VM Debian 13 avec réseau de test autorisé
+- **Environnement** : [[Glossary:VM]] Debian 13 avec réseau de test autorisé
 - **OS / Version** : Debian 13 Trixie
-- **Catégorie** : transfert HTTP / diagnostic
+- **Catégorie** : transfert [[Glossary:HTTP]] / diagnostic
 - **Tags** : `debian13`, `curl`, `http`, `tls`, `api`
 ---
 
@@ -39,7 +39,7 @@ Valider résultat, erreurs et limites de cURL avant automatisation.
    ```text
    Navigateur > ouvrir la documentation officielle : https://curl.se/docs/manpage.html
    ```
-   👉 Explication : vérifier TLS et propriété de destination avant requête. Détail à confirmer dans la documentation officielle avant application : Ne pas envoyer données sensibles à un endpoint non autorisé.
+   👉 Explication : vérifier [[Glossary:TLS]] et propriété de destination avant requête. Détail à confirmer dans la documentation officielle avant application : Ne pas envoyer données sensibles à un endpoint non autorisé.
 
 ## 2. Production — Contrôles
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_26.04_Vie_Systeme_44_Audit_D_Exposition_Reseau
 
-- **Environnement** : VM Ubuntu Server 26-04 LTS
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 26-04 [[Glossary:LTS]]
 - **OS / Version** : Ubuntu 26-04; étape 44 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `ubuntu2604`, `vie-du-systeme`, `cycle-de-vie`, `etape-44`
@@ -24,7 +24,7 @@ Contrôler ce qui est vu de l'extérieur.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Depuis une machine de contrôle autorisée (remplacer l'IP) :
+1. Depuis une machine de contrôle autorisée (remplacer l'[[Glossary:IP]]) :
    ```bash
    sudo apt install nmap
    sudo nmap -sV -p- 192.0.2.10

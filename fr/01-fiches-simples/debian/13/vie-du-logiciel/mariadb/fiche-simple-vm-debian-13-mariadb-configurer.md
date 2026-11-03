@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_MariaDB_Configurer
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; MariaDB des dépôts Debian
 - **Catégorie** : base de données / MariaDB / Configurer
 - **Tags** : `debian13`, `mariadb`, `configuration`

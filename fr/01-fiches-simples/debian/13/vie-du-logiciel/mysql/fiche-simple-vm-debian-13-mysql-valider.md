@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_MySQL_Valider
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; MySQL Community (dépôt officiel Oracle)
 - **Catégorie** : base de données / MySQL / Valider (recette)
 - **Tags** : `debian13`, `mysql`, `recette`

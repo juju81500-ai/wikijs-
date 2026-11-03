@@ -29,10 +29,10 @@ Créer le commutateur virtuel adapté au besoin.
    Get-NetAdapter
    Get-VMSwitch
    ```
-   👉 Explication : choisir le NIC physique avec l'équipe réseau.
+   👉 Explication : choisir le [[Glossary:NIC]] physique avec l'équipe réseau.
 
-2. GUI : **Hyper-V Manager > Virtual Switch Manager > New virtual network switch** (External, Internal ou Private).
-   👉 Explication : External = réseau physique; Internal = hôte et VM; Private = VM seulement.
+2. [[Glossary:GUI]] : **Hyper-V Manager > Virtual Switch Manager > New virtual network switch** (External, Internal ou Private).
+   👉 Explication : External = réseau physique; Internal = hôte et [[Glossary:VM]]; Private = VM seulement.
 
 3. Ligne de commande pour un commutateur interne d'exemple (nom à remplacer) :
    ```powershell
@@ -40,7 +40,7 @@ Créer le commutateur virtuel adapté au besoin.
    ```
    👉 Explication : (dérivé de la documentation Microsoft) crée un commutateur sans toucher au réseau physique.
 
-4. Attribuer des VLANs seulement après confirmation du port physique et des VLAN autorisés.
+4. Attribuer des VLANs seulement après confirmation du port physique et des [[Glossary:VLAN]] autorisés.
    👉 Explication : évite les coupures.
 
 ## 2. Production — Contrôles

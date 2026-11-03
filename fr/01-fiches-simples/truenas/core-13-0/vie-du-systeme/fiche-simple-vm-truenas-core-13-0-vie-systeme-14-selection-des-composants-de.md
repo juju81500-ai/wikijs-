@@ -24,10 +24,10 @@ Choisir le mode d'installation.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Choisir Fresh Install ou Upgrade, mode UEFI ou BIOS.
+1. Choisir Fresh Install ou Upgrade, mode UEFI ou [[Glossary:BIOS]].
    👉 Explication : les paquets FreeBSD ne s'ajoutent pas au système : `pkg` n'est pas supporté sur l'appliance.
 
-2. Lister les services : GUI Services.
+2. Lister les services : [[Glossary:GUI]] Services.
    ```sh
    midclt call service.query | grep -E '"service"|"state"'
    ```
@@ -35,7 +35,7 @@ Choisir le mode d'installation.
 
 ## 2. Production — Contrôles
 
-N'activer que SMB, NFS, iSCSI, SSH nécessaires.
+N'activer que SMB, [[Glossary:NFS]], iSCSI, [[Glossary:SSH]] nécessaires.
 
 ## 3. Production — Sécurité
 

@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **OS / Version** : Debian 13 Trixie amd64; paquet Git fourni par Debian
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : installation APT, configuration utilisateur, clone, revue, commit et push vers un dépôt autorisé
+- **Périmètre** : installation [[Glossary:APT]], configuration utilisateur, clone, revue, commit et push vers un dépôt autorisé
 - **Catégorie** : gestion de versions / développement
 - **Tags** : `git`, `debian13`, `gestion-versions`, `ssh`, `secrets`, `workflow`
 
@@ -59,7 +59,7 @@ Remplacer les exemples avant usage. Pour des identités distinctes entre clients
 
 Fiche simple : [cloner et contrôler un dépôt Git](/fr/01-fiches-simples/debian/13/vie-du-logiciel/git/fiche-simple-vm-debian-13-git-cloner).
 
-Cloner uniquement l'URL validée par l'équipe ou le propriétaire du projet, en HTTPS avec certificat vérifié ou en SSH avec clé gérée par l'agent autorisé :
+Cloner uniquement l'URL validée par l'équipe ou le propriétaire du projet, en HTTPS avec certificat vérifié ou en [[Glossary:SSH]] avec clé gérée par l'agent autorisé :
 
 ```bash
 mkdir -p "$HOME/src"

@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Ajouter PBS comme stockage de sauvegarde dans Proxmox VE et tester une petite tâche.
+Ajouter [[Glossary:PBS]] comme stockage de sauvegarde dans Proxmox VE et tester une petite tâche.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -39,7 +39,7 @@ Ajouter PBS comme stockage de sauvegarde dans Proxmox VE et tester une petite t�
    ```
    👉 Explication : affiche le stockage PBS actif dans PVE.
 
-5. **Datacenter > Backup > Add** sur un petit groupe de VM/CT, puis lancer **Run now**.
+5. **Datacenter > Backup > Add** sur un petit groupe de [[Glossary:VM]]/CT, puis lancer **Run now**.
    👉 Explication : vérifier résultat, rétention, vérification d'intégrité et alertes avant généralisation.
 
 ## 2. Production — Contrôles

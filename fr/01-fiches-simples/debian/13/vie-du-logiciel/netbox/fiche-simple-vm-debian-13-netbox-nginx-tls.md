@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-netbox-nginx-tls.md
 
-- **Environnement** : Debian 13; NetBox 4.7.4; certificat TLS provisionné par l'organisation
+- **Environnement** : Debian 13; NetBox 4.7.4; certificat [[Glossary:TLS]] provisionné par l'organisation
 - **OS / Version** : Debian 13; Nginx et NetBox
-- **Catégorie** : IPAM / DCIM / reverse proxy
+- **Catégorie** : [[Glossary:IPAM]] / [[Glossary:DCIM]] / reverse proxy
 - **Tags** : `debian13`, `netbox`, `nginx`, `tls`, `reverse-proxy`
 
 ---
@@ -30,7 +30,7 @@ Publier l'interface NetBox derrière Nginx en HTTPS sans exposer Gunicorn, Postg
    sudo install -m 0644 netbox.crt /etc/ssl/netbox/
    sudo install -m 0600 netbox.key /etc/ssl/netbox/
    ```
-   👉 Explication : le certificat doit correspondre au FQDN de `ALLOWED_HOSTS`.
+   👉 Explication : le certificat doit correspondre au [[Glossary:FQDN]] de `ALLOWED_HOSTS`.
 
 2. Copier la configuration fournie et l'adapter :
    ```bash
@@ -56,12 +56,12 @@ Publier l'interface NetBox derrière Nginx en HTTPS sans exposer Gunicorn, Postg
 
 ## 2. Production — Contrôles
 
-Faire approuver nom DNS, certificat, renouvellement, en-têtes proxy, politique d'accès, journaux et règles de pare-feu avec les propriétaires applicatif et réseau.
+Faire approuver nom [[Glossary:DNS]], certificat, renouvellement, en-têtes proxy, politique d'accès, journaux et règles de pare-feu avec les propriétaires applicatif et réseau.
 
 ## 3. Production — Sécurité
 
 - Ne pas supprimer le site Nginx par défaut avant validation et accès de secours.
-- Ne jamais exposer TCP/5432, TCP/6379 ou le socket/port Gunicorn.
+- Ne jamais exposer [[Glossary:TCP]]/5432, TCP/6379 ou le socket/port Gunicorn.
 - Ne pas utiliser de certificat auto-signé ou expiré pour le service métier.
 - Ne pas transmettre des en-têtes d'identité venant de clients non fiables.
 

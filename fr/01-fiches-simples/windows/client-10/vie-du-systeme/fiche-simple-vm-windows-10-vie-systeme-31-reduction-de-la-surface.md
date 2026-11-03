@@ -44,7 +44,7 @@ Supprimer les composants, services et applications inutiles (débloat).
    ```
    👉 Explication : liste les services actifs et désactive celui qui est justifié (`NOM_SERVICE`).
 
-4. Limiter la télémétrie au niveau requis : **Paramètres > Confidentialité et sécurité > Diagnostics et commentaires**, ou GPO **Autoriser les données de diagnostic**.
+4. Limiter la télémétrie au niveau requis : **Paramètres > Confidentialité et sécurité > Diagnostics et commentaires**, ou [[Glossary:GPO]] **Autoriser les données de diagnostic**.
    ```powershell
    Set-ItemProperty HKLM:\SOFTWARE\Policies\Microsoft\Windows\DataCollection AllowTelemetry 1 -Type DWord
    ```

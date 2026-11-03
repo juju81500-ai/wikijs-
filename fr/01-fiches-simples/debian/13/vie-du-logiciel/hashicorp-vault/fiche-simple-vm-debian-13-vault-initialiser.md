@@ -24,7 +24,7 @@ Démarrer les nœuds, initialiser le cluster une seule fois et joindre les autre
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Définir l'adresse et la CA de confiance dans le shell (valeurs d'exemple à remplacer) :
+1. Définir l'adresse et la [[Glossary:CA]] de confiance dans le shell (valeurs d'exemple à remplacer) :
    ```bash
    export VAULT_ADDR=https://vault1.example.invalid:8200
    export VAULT_CACERT=/etc/ssl/certs/ca-entreprise.pem

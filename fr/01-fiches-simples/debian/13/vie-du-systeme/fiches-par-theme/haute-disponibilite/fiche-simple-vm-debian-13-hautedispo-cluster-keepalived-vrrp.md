@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Debian_13_HauteDispo_Cluster-Keepalived-VRRP.md
 
-- **Environnement** : VM (Debian 13 Trixie / Cluster HA)
+- **Environnement** : [[Glossary:VM]] (Debian 13 Trixie / Cluster HA)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
-- **Catégorie** : Haute Disponibilité / Virtual IP (VRRP)
+- **Catégorie** : Haute Disponibilité / Virtual [[Glossary:IP]] ([[Glossary:VRRP]])
 - **Tags** : `[debian13]`, `[keepalived]`, `[vrrp]`, `[ha]`, `[vip]`, `[high-availability]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Mettre en place une adresse IP virtuelle flottante (VIP) partagée entre deux nœuds Debian 13 (Trixie) à l'aide du protocole VRRP avec `keepalived`, assurer le basculement automatique en cas de panne et sécuriser les échanges d'état.
+Mettre en place une adresse IP virtuelle flottante ([[Glossary:VIP]]) partagée entre deux nœuds Debian 13 (Trixie) à l'aide du protocole VRRP avec `keepalived`, assurer le basculement automatique en cas de panne et sécuriser les échanges d'état.
 
 ---
 

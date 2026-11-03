@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_WireGuard_Configurer
 
-- **Environnement** : VM Ubuntu 24-04 dédiée à un serveur WireGuard natif
-- **OS / Version** : Ubuntu 24-04 LTS Noble; noyau avec module WireGuard et paquet wireguard, versions à vérifier
+- **Environnement** : [[Glossary:VM]] Ubuntu 24-04 dédiée à un serveur WireGuard natif
+- **OS / Version** : Ubuntu 24-04 [[Glossary:LTS]] Noble; noyau avec module WireGuard et paquet wireguard, versions à vérifier
 - **Catégorie** : WireGuard natif / configurer
 - **Tags** : `wireguard`, `ubuntu24-04`, `vie-du-logiciel`, `configurer`
 
@@ -58,7 +58,7 @@ Vérifier l'unicité des AllowedIPs; un /32 par pair client.
 
 ## 3. Production — Sécurité
 
-- Ne pas utiliser 0.0.0.0/0 sans architecture full-tunnel validée; ne pas activer le routage IP implicitement.
+- Ne pas utiliser 0.0.0.0/0 sans architecture full-tunnel validée; ne pas activer le routage [[Glossary:IP]] implicitement.
 
 ## Validation et retour arrière
 

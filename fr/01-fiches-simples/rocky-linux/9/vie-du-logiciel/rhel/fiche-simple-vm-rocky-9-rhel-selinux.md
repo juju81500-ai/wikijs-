@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_RHEL_SELinux
 
-- **Environnement** : VM Rocky Linux 9 comme repère documentaire; sujet RHEL
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 comme repère documentaire; sujet [[Glossary:RHEL]]
 - **OS / Version** : Red Hat Enterprise Linux 9; commandes RHSM sur RHEL autorisé
 - **Catégorie** : Vie du logiciel / RHEL — Diagnostiquer SELinux
 - **Tags** : `rocky9`, `rhel`, `rhel`, `migration`

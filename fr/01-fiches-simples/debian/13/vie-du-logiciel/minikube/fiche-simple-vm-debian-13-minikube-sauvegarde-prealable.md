@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-minikube-sauvegarde-prealable.md
 
-- **Environnement** : VM Debian 13 de laboratoire avec Docker Engine, Minikube mono-nœud
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire avec Docker Engine, Minikube mono-nœud
 - **OS / Version** : Debian 13 Trixie; Minikube (driver Docker)
 - **Catégorie** : conteneurs / Kubernetes de laboratoire
 - **Tags** : `debian13`, `minikube`, `docker`, `kubernetes`, `lab`

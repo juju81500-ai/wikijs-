@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Nginx_Securiser
 
-- **Environnement** : VM Debian 13 Trixie
+- **Environnement** : [[Glossary:VM]] Debian 13 Trixie
 - **OS / Version** : Debian 13 Trixie; Nginx des dépôts Debian
-- **Catégorie** : serveur Web / Nginx / Sécuriser (TLS, en-têtes, pare-feu)
+- **Catégorie** : serveur Web / Nginx / Sécuriser ([[Glossary:TLS]], en-têtes, pare-feu)
 - **Tags** : `debian13`, `nginx`, `securite`
 
 ---
@@ -47,7 +47,7 @@ Activer HTTPS, masquer la version, ajouter les en-têtes de base et limiter l'ex
    ```
    👉 Explication : les suites de chiffrement par défaut de Debian restent valides avec TLS 1.2/1.3. Inclure ce snippet dans le bloc `server { listen 443 ssl; ssl_certificate ...; ssl_certificate_key ...; include snippets/tls-durci.conf; }`.
 
-3. Masquer la version et rediriger HTTP vers HTTPS :
+3. Masquer la version et rediriger [[Glossary:HTTP]] vers HTTPS :
    ```bash
    sudo sed -i 's/^\s*#\?\s*server_tokens.*/    server_tokens off;/' /etc/nginx/nginx.conf
    grep -n server_tokens /etc/nginx/nginx.conf
@@ -71,7 +71,7 @@ Activer HTTPS, masquer la version, ajouter les en-têtes de base et limiter l'ex
    sudo ufw allow 80/tcp
    sudo ufw allow 443/tcp
    ```
-   👉 Explication : n'ouvrir que 80/443 ; limiter l'administration SSH au réseau d'admin.
+   👉 Explication : n'ouvrir que 80/443 ; limiter l'administration [[Glossary:SSH]] au réseau d'admin.
 
 ## 2. Production — Contrôles
 

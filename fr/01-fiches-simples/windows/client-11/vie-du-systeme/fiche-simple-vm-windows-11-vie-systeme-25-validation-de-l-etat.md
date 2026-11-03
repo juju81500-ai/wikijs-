@@ -42,9 +42,9 @@ Figer l'état de référence du poste avant les durcissements.
    ```powershell
    gpresult /h "$env:USERPROFILE\baseline_gpo.html" /f
    ```
-   👉 Explication : rapport HTML des GPO appliquées.
+   👉 Explication : rapport HTML des [[Glossary:GPO]] appliquées.
 
-4. Ranger les fichiers dans le dossier du poste du CMDB, puis prendre un point de restauration ou snapshot : **Panneau de configuration > Système > Protection du système > Créer**.
+4. Ranger les fichiers dans le dossier du poste du [[Glossary:CMDB]], puis prendre un point de restauration ou snapshot : **Panneau de configuration > Système > Protection du système > Créer**.
    ```powershell
    Enable-ComputerRestore -Drive 'C:\'
    Checkpoint-Computer -Description 'Baseline' -RestorePointType MODIFY_SETTINGS

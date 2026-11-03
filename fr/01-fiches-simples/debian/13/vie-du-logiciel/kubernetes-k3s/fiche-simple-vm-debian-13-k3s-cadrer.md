@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-k3s-cadrer.md
 
-- **Environnement** : VM ou cluster Debian dédié; cibles et réseaux autorisés
+- **Environnement** : [[Glossary:VM]] ou cluster Debian dédié; cibles et réseaux autorisés
 - **OS / Version** : Debian 13; version K3s à confirmer dans la matrice officielle
 - **Catégorie** : Kubernetes / K3s / cadrage
 - **Tags** : `debian13`, `k3s`, `kubernetes`, `cadrage`, `architecture`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Définir une topologie K3s cohérente avant installation : nombre de serveurs et d'agents, datastore, réseaux, CNI, stockage, ingress, sauvegarde et accès API.
+Définir une topologie K3s cohérente avant installation : nombre de serveurs et d'agents, datastore, réseaux, CNI, stockage, ingress, sauvegarde et accès [[Glossary:API]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -52,7 +52,7 @@ Définir une topologie K3s cohérente avant installation : nombre de serveurs et
 ## 2. Production — Contrôles
 
 - Faire approuver le schéma, les capacités et les dépendances avant toute installation.
-- Documenter la version exacte, les composants activés, les ports, les noms DNS et le plan de mise à jour.
+- Documenter la version exacte, les composants activés, les ports, les noms [[Glossary:DNS]] et le plan de mise à jour.
 - Prévoir la haute disponibilité uniquement si le datastore et le nombre de serveurs respectent la documentation K3s.
 - Vérifier la supervision, les sauvegardes testées et les procédures de restauration.
 

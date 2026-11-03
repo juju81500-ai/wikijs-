@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_Suricata_Configurer
 
-- **Environnement** : VM Ubuntu Server 24-04 LTS dédiée à Suricata
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04 [[Glossary:LTS]] dédiée à Suricata
 - **OS / Version** : Ubuntu Server 24-04 LTS (Noble Numbat); version des paquets à vérifier sur l’hôte
-- **Catégorie** : Suricata / configuration IDS passif
+- **Catégorie** : Suricata / configuration [[Glossary:IDS]] passif
 - **Tags** : `suricata`, `ubuntu24.04`, `vie-du-logiciel`, `configurer`
 
 ---

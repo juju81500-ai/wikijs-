@@ -35,7 +35,7 @@ Vérifier ce qu'un poste distant voit.
    smbclient -L //ADRESSE_NAS -U ADMIN1
    showmount -e ADRESSE_NAS
    ```
-   👉 Explication : liste des partages SMB et exports NFS visibles.
+   👉 Explication : liste des partages SMB et exports [[Glossary:NFS]] visibles.
 
 ## 2. Production — Contrôles
 

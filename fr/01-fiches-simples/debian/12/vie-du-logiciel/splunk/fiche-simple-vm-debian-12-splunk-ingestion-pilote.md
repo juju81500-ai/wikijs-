@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-12-splunk-ingestion-pilote.md
 
-- **Environnement** : VM Debian 12 dédiée à Splunk Enterprise autonome (laboratoire)
+- **Environnement** : [[Glossary:VM]] Debian 12 dédiée à Splunk Enterprise autonome (laboratoire)
 - **OS / Version** : Debian 12 Bookworm; Splunk Enterprise 10.2
 - **Catégorie** : journaux / ingestion
 - **Tags** : `debian12`, `splunk`, `logs`, `input`, `index`
@@ -38,7 +38,7 @@ Ingérer une source de test dans un index à rétention limitée.
 
 ## 2. Production — Contrôles
 
-Pour des sources distribuées, utiliser un Universal Forwarder ou un transport approuvé, TLS vérifié; contrôler volumes d'ingestion, CPU et disque avant extension.
+Pour des sources distribuées, utiliser un Universal Forwarder ou un transport approuvé, [[Glossary:TLS]] vérifié; contrôler volumes d'ingestion, [[Glossary:CPU]] et disque avant extension.
 
 ## 3. Production — Sécurité
 

@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Debian_13_Reseau_Fixer-IP-Systemd-Networkd.md
 
-- **Environnement** : VM (Proxmox VE 8+ / KVM / Hyper-V)
+- **Environnement** : [[Glossary:VM]] (Proxmox VE 8+ / [[Glossary:KVM]] / Hyper-V)
 - **OS / Version** : Debian 13 (Trixie) - Famille Debian
-- **Catégorie** : Réseau / Configuration IP
+- **Catégorie** : Réseau / Configuration [[Glossary:IP]]
 - **Tags** : `[debian13]`, `[debian-family]`, `[reseau]`, `[ip-statique]`, `[systemd-networkd]`, `[systemd-resolved]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Configurer une adresse IP statique permanente, les serveurs DNS et la passerelle par défaut sur Debian 13 (Trixie) en utilisant le moteur natif `systemd-networkd` et `systemd-resolved`, tout en désactivant la configuration automatique via DHCP et IPv6 Router Advertisement.
+Configurer une adresse IP statique permanente, les serveurs [[Glossary:DNS]] et la passerelle par défaut sur Debian 13 (Trixie) en utilisant le moteur natif `systemd-networkd` et `systemd-resolved`, tout en désactivant la configuration automatique via [[Glossary:DHCP]] et IPv6 Router Advertisement.
 
 ---
 
@@ -36,7 +36,7 @@ Configurer une adresse IP statique permanente, les serveurs DNS et la passerelle
 
 4. Test de connectivité IP immédiat :
    `ping -c 3 192.168.1.1`
-   👉 Explication : Envoie 3 paquets ICMP pour vérifier la joignabilité de la passerelle.
+   👉 Explication : Envoie 3 paquets [[Glossary:ICMP]] pour vérifier la joignabilité de la passerelle.
 
 ---
 
@@ -72,7 +72,7 @@ Configurer une adresse IP statique permanente, les serveurs DNS et la passerelle
    ```
    👉 Explication : Empêche l'interface d'apprendre une route par défaut via RA sans désactiver IPv6 ni casser automatiquement les adresses link-local. Ne pas ajouter une seconde section `[Network]`.
 
-2. N'activer DNSSEC ou DNS-over-TLS que si les résolveurs configurés les prennent en charge et si la politique réseau l'exige. Sauvegarder `/etc/systemd/resolved.conf`, régler les options dans sa section `[Resolve]`, puis vérifier la résolution avant de fermer la session distante.
+2. N'activer [[Glossary:DNSSEC]] ou DNS-over-TLS que si les résolveurs configurés les prennent en charge et si la politique réseau l'exige. Sauvegarder `/etc/systemd/resolved.conf`, régler les options dans sa section `[Resolve]`, puis vérifier la résolution avant de fermer la session distante.
    👉 Explication : Les options strictes peuvent rendre la résolution indisponible si le DNS amont n'est pas compatible.
 
 3. Vérifier la configuration et le gestionnaire qui possède `/etc/resolv.conf` :

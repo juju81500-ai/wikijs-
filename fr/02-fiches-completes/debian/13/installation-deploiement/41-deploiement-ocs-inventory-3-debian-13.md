@@ -13,9 +13,9 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **OS / Version** : Debian 13 Trixie; OCS Inventory 3.0; PostgreSQL 17
 - **Type de fiche** : Installation/Déploiement
-- **Environnement** : VM Linux dédiée, Nginx, backend API et console Web
+- **Environnement** : [[Glossary:VM]] Linux dédiée, Nginx, backend [[Glossary:API]] et console Web
 - **Machine ciblée** : Serveur inventaire
-- **Catégorie** : Inventaire de parc / ITSM
+- **Catégorie** : Inventaire de parc / [[Glossary:ITSM]]
 - **Tags** : `ocs-inventory`, `ocs3`, `debian13`, `postgresql17`, `inventaire`, `nginx`
 
 ## 1. Architecture et prérequis
@@ -24,7 +24,7 @@ Fiche simple : [cadrer l'architecture OCS](/fr/01-fiches-simples/debian/13/vie-d
 
 OCS 3 sépare le backend API (Django/uWSGI) de la console Web (Vue.js). Ce guide suit les paquets officiels Debian et utilise PostgreSQL local. Le dépôt officiel prend en charge `trixie`; ne pas mélanger les paquets serveur OCS 2.x avec l'architecture OCS 3.
 
-Prévoir DNS et certificat TLS pour `ocs.example.net` (console) et `ocs-api.example.net` (API), 4 Go RAM minimum (8 Go recommandés), stockage adapté aux inventaires, SMTP et sauvegarde hors hôte. Restreindre l'administration et l'API aux réseaux autorisés selon les besoins du parc.
+Prévoir [[Glossary:DNS]] et certificat [[Glossary:TLS]] pour `ocs.example.net` (console) et `ocs-api.example.net` (API), 4 Go [[Glossary:RAM]] minimum (8 Go recommandés), stockage adapté aux inventaires, [[Glossary:SMTP]] et sauvegarde hors hôte. Restreindre l'administration et l'API aux réseaux autorisés selon les besoins du parc.
 
 ## 2. Installer PostgreSQL et créer la base
 
@@ -91,7 +91,7 @@ Fiche simple : [configurer DNS et TLS](/fr/01-fiches-simples/debian/13/vie-du-lo
 
 Les paquets fournissent deux blocs Nginx distincts. Remplacer les noms génériques `server_name _;` par `ocs-api.example.net` et `ocs.example.net`; vérifier qu'aucun autre vhost catch-all ne crée de conflit. Dans la configuration de la console, régler `BACKEND_API_ROUTE` vers `https://ocs-api.example.net/`.
 
-Configurer TLS pour les deux vhosts selon la fiche officielle OCS, en protégeant les clés privées et en redirigeant HTTP vers HTTPS après validation :
+Configurer TLS pour les deux vhosts selon la fiche officielle OCS, en protégeant les clés privées et en redirigeant [[Glossary:HTTP]] vers HTTPS après validation :
 
 ```bash
 sudo nginx -t

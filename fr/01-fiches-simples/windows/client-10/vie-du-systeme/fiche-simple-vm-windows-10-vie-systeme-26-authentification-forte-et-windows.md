@@ -30,13 +30,13 @@ Remplacer le mot de passe seul par le code PIN, Windows Hello Entreprise ou une 
    ```
    👉 Explication : `NgcSet : YES` indique qu'un code PIN Hello est configuré.
 
-2. Activer Windows Hello pour l'entreprise par stratégie : **Intune > Appareils > Inscription > Windows Hello Entreprise**, ou GPO **Configuration ordinateur > Modèles d'administration > Composants Windows > Windows Hello Entreprise**.
+2. Activer Windows Hello pour l'entreprise par stratégie : **Intune > Appareils > Inscription > Windows Hello Entreprise**, ou [[Glossary:GPO]] **Configuration ordinateur > Modèles d'administration > Composants Windows > Windows Hello Entreprise**.
    ```powershell
    gpresult /r /scope computer | Select-String 'Hello'
    ```
    👉 Explication : vérifie que la stratégie est appliquée.
 
-3. Enregistrer une clé de sécurité FIDO2 : **Paramètres > Comptes > Options de connexion > Clé de sécurité > Gérer**.
+3. Enregistrer une clé de sécurité [[Glossary:FIDO2]] : **Paramètres > Comptes > Options de connexion > Clé de sécurité > Gérer**.
    👉 Explication : permet une authentification sans mot de passe résistante à l'hameçonnage.
 
 4. Imposer l'authentification multifacteur sur le compte (stratégie d'accès conditionnel Entra ID).
@@ -44,11 +44,11 @@ Remplacer le mot de passe seul par le code PIN, Windows Hello Entreprise ou une 
 
 ## 2. Production — Contrôles
 
-MFA obligatoire pour les comptes à privilèges et l'accès distant.
+[[Glossary:MFA]] obligatoire pour les comptes à privilèges et l'accès distant.
 
 ## 3. Production — Sécurité
 
-Le code PIN reste local à l'appareil et protégé par le TPM; aucune biométrie n'est enregistrée sans consentement.
+Le code PIN reste local à l'appareil et protégé par le [[Glossary:TPM]]; aucune biométrie n'est enregistrée sans consentement.
 
 ## Validation et retour arrière
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-hote-windows-11-deploiement-installer-windows-11.md
 
-- **Environnement** : Parc de postes utilisateur: poste physique ou VM de test
+- **Environnement** : Parc de postes utilisateur: poste physique ou [[Glossary:VM]] de test
 - **OS / Version** : Windows 11 Pro ou Enterprise selon la gestion prévue
 - **Catégorie** : déploiement de poste de travail
 - **Tags** : `windows11`, `deploiement`, `oobe`, `bitlocker`, `production`

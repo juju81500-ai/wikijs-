@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-lxc-alpine-diagnostic-isoler-couche.md
 
-- **Environnement** : CT Alpine sur un réseau autorisé, tests limités aux destinations prévues
+- **Environnement** : [[Glossary:CT]] Alpine sur un réseau autorisé, tests limités aux destinations prévues
 - **OS / Version** : branche Alpine maintenue
 - **Catégorie** : diagnostic / isolation réseau
 - **Tags** : `alpine`, `lxc`, `diagnostic`, `dns`, `route`, `service`
@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Localiser si la panne provient du lien, de l'IP, de la route, du DNS, du port ou du service applicatif.
+Localiser si la panne provient du lien, de l'[[Glossary:IP]], de la route, du [[Glossary:DNS]], du port ou du service applicatif.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Lien, bridge, VLAN :
+1. Lien, bridge, [[Glossary:VLAN]] :
    ```sh
    ip -br link
    ```
@@ -65,7 +65,7 @@ Enregistrer le résultat de chaque couche, la destination précise et l'heure po
 
 - N'effectuer les tests que vers les systèmes autorisés et sur les ports nécessaires.
 - Ne pas installer des outils réseau en production sans changement approuvé.
-- Ne pas interpréter une réponse ICMP absente comme preuve unique d'indisponibilité.
+- Ne pas interpréter une réponse [[Glossary:ICMP]] absente comme preuve unique d'indisponibilité.
 - Ne pas lancer de scan large de réseau dans le cadre d'un diagnostic local.
 
 ## Validation et retour arrière

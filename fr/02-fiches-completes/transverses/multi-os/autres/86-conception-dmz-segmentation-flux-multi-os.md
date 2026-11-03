@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **Type de fiche** : Architecture / Sécurité / Réseau
 - **Environnement** : Réseau d'entreprise ou laboratoire isolé; pare-feu physique ou virtuel
-- **Périmètre** : définition des zones, politique de flux, tests et exploitation d'une DMZ
+- **Périmètre** : définition des zones, politique de flux, tests et exploitation d'une [[Glossary:DMZ]]
 - **Plateformes** : Multi-OS; les noms de menus et fonctions dépendent du pare-feu et de sa version
 - **Tags** : `dmz`, `segmentation`, `firewall`, `reseau`, `ipv4`, `ipv6`, `durcissement`
 
@@ -21,20 +21,20 @@ dateModified: 2026-11-03T09:36:14Z
 
 Une DMZ est une zone de confiance distincte destinée aux services qui doivent communiquer avec des réseaux moins fiables, notamment Internet. Elle limite les chemins de communication vers le réseau interne; elle ne rend pas à elle seule un service exposé sûr et ne remplace ni le durcissement des hôtes, ni la supervision, ni la gestion des correctifs.
 
-Cette fiche donne une méthode de conception sans constructeur. Elle ne fournit pas de règle à copier-coller : adresses, interfaces, routage, fonctions de NAT et ordre des règles varient selon le produit. Confirmer le comportement effectif avec la documentation de la version déployée et une revue de changement.
+Cette fiche donne une méthode de conception sans constructeur. Elle ne fournit pas de règle à copier-coller : adresses, interfaces, routage, fonctions de [[Glossary:NAT]] et ordre des règles varient selon le produit. Confirmer le comportement effectif avec la documentation de la version déployée et une revue de changement.
 
 ## 2. Définir les zones et les actifs
 
-Avant de créer des VLAN ou des règles, inventorier les services, les utilisateurs, les dépendances, les administrateurs, les adresses IPv4/IPv6 et les chemins de données. Pour chaque actif, identifier son propriétaire, sa criticité, ses ports/protocoles et le sens des connexions initiées.
+Avant de créer des [[Glossary:VLAN]] ou des règles, inventorier les services, les utilisateurs, les dépendances, les administrateurs, les adresses IPv4/IPv6 et les chemins de données. Pour chaque actif, identifier son propriétaire, sa criticité, ses ports/protocoles et le sens des connexions initiées.
 
 Zones courantes à distinguer selon le besoin :
 
-- **WAN / réseaux non fiables** : clients Internet et autres réseaux externes.
-- **DMZ publique** : reverse proxy, relais SMTP, DNS autoritatif ou service explicitement publié.
-- **DMZ applicative** : composants intermédiaires qui n'ont pas besoin d'accéder librement au LAN.
+- **[[Glossary:WAN]] / réseaux non fiables** : clients Internet et autres réseaux externes.
+- **DMZ publique** : reverse proxy, relais [[Glossary:SMTP]], [[Glossary:DNS]] autoritatif ou service explicitement publié.
+- **DMZ applicative** : composants intermédiaires qui n'ont pas besoin d'accéder librement au [[Glossary:LAN]].
 - **LAN / données** : postes, annuaire, bases de données et services internes.
 - **Administration** : bastion et postes d'administration, séparés des services publiés.
-- **Services d'infrastructure** : DNS, NTP, mises à jour, sauvegarde, journalisation et supervision, selon leur architecture.
+- **Services d'infrastructure** : DNS, [[Glossary:NTP]], mises à jour, sauvegarde, journalisation et supervision, selon leur architecture.
 
 Le nombre de zones dépend des frontières de confiance et des besoins de flux. Une zone dédiée n'a de valeur que si son cloisonnement est appliqué et vérifié sur les pare-feu, commutateurs, hyperviseurs et hôtes concernés.
 
@@ -47,8 +47,8 @@ Documenter au minimum l'initiateur, la source, la destination, le protocole/port
 | Internet | Service publié en DMZ | Refuser | Flux entrant strictement nécessaires vers un frontal public; publier uniquement les ports attendus. |
 | Internet | LAN, administration, gestion | Refuser | Aucune ouverture directe pour un usage courant; accès d'administration via une solution dédiée et authentifiée. |
 | DMZ | LAN / zone de données | Refuser | Un service applicatif peut initier un flux précis vers une dépendance nommée, sur le port attendu, si l'architecture l'exige. |
-| DMZ | Internet | Refuser par défaut ou contrôler | Résolution DNS, synchronisation horaire, dépôts de mises à jour ou API explicitement identifiés. Limiter destinations et méthodes lorsque le pare-feu le permet. |
-| Administration | Équipements et hôtes de la DMZ | Refuser depuis les réseaux utilisateurs | Administration depuis le bastion/poste de gestion, avec comptes nominatifs, MFA si disponible et journalisation. |
+| DMZ | Internet | Refuser par défaut ou contrôler | Résolution DNS, synchronisation horaire, dépôts de mises à jour ou [[Glossary:API]] explicitement identifiés. Limiter destinations et méthodes lorsque le pare-feu le permet. |
+| Administration | Équipements et hôtes de la DMZ | Refuser depuis les réseaux utilisateurs | Administration depuis le bastion/poste de gestion, avec comptes nominatifs, [[Glossary:MFA]] si disponible et journalisation. |
 | Supervision / collecte de logs | Actifs DMZ | Flux requis uniquement | Collecte initiée par le collecteur ou envoi vers une destination de logs connue; protéger le transport et les données. |
 | LAN | Service DMZ | Refuser par défaut | Accès utilisateur ou applicatif requis, limité aux groupes, hôtes, ports et usages explicitement recensés. |
 
@@ -65,7 +65,7 @@ Pour chaque autorisation, consigner le besoin, le propriétaire, la date de cré
 - Journaliser les refus significatifs et les autorisations sensibles, avec une rétention maîtrisée. Une règle de journalisation trop large peut produire du bruit, révéler des métadonnées ou consommer l'espace disque.
 - Synchroniser l'heure, protéger les interfaces d'administration, appliquer les mises à jour et sauvegarder de manière chiffrée la configuration du pare-feu et les éléments nécessaires à sa restauration.
 
-Les plages privées de RFC 1918 sont réutilisables à l'intérieur d'un réseau, mais ne constituent pas une mesure de sécurité ni une frontière de confiance. Éviter les chevauchements avec les réseaux VPN, partenaires, filiales ou environnements cloud.
+Les plages privées de RFC 1918 sont réutilisables à l'intérieur d'un réseau, mais ne constituent pas une mesure de sécurité ni une frontière de confiance. Éviter les chevauchements avec les réseaux [[Glossary:VPN]], partenaires, filiales ou environnements cloud.
 
 ## 5. Tester en laboratoire
 
@@ -87,7 +87,7 @@ Avant mise en service, faire relire la matrice de flux par les propriétaires ap
 ## 7. Critères d'acceptation
 
 - Chaque service publié a un propriétaire, une destination documentée et une exposition minimale.
-- Les flux nécessaires fonctionnent et les flux interdits sont effectivement bloqués dans les deux familles IP.
+- Les flux nécessaires fonctionnent et les flux interdits sont effectivement bloqués dans les deux familles [[Glossary:IP]].
 - Les exceptions DMZ vers LAN sont spécifiques, justifiées et journalisées selon la politique.
 - Aucun chemin de contournement (interface secondaire, route, VLAN mal configuré, accès d'administration public) n'est identifié.
 - Les journaux, sauvegardes, versions, responsable de revue et procédure de retour arrière sont documentés.

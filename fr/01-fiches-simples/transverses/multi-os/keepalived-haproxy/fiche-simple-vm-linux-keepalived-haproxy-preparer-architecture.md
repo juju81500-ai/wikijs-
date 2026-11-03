@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Définir IP virtuelle, pairs, interface et backends avant de configurer HA.
+Définir [[Glossary:IP]] virtuelle, pairs, interface et backends avant de configurer HA.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -40,7 +40,7 @@ Définir IP virtuelle, pairs, interface et backends avant de configurer HA.
    ```
    👉 Explication : aucune réponse attendue avant activation.
 
-4. Vérifier avec le réseau/hyperviseur que VRRP (multicast ou unicast choisi) est autorisé entre les nœuds.
+4. Vérifier avec le réseau/hyperviseur que [[Glossary:VRRP]] (multicast ou unicast choisi) est autorisé entre les nœuds.
    👉 Explication : le commutateur ou l'hyperviseur peut le bloquer.
 
 5. Retenir : une seule IP virtuelle ne remplace pas la redondance des backends, du stockage ni de la base.

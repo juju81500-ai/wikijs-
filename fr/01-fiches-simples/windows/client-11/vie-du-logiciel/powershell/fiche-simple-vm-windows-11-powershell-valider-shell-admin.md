@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # fiche-simple-vm-windows-11-powershell-valider-shell-admin.md
 
-- **Environnement** : VM ou poste Windows 11 de test; compte standard puis élévation uniquement si requise
+- **Environnement** : [[Glossary:VM]] ou poste Windows 11 de test; compte standard puis élévation uniquement si requise
 - **OS / Version** : Windows 11 x64; PowerShell 7.6.9 et Windows PowerShell 5.1 côte à côte
 - **Catégorie** : administration / diagnostic / scripting
 - **Tags** : `[windows-11]`, `[powershell]`, `[pwsh]`, `[diagnostic]`, `[administration]`, `[securite]`
@@ -22,7 +22,7 @@ Vérifier PowerShell 7, différencier le shell 5.1, puis effectuer des contrôle
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Installer le MSI x64 de la publication officielle PowerShell 7.6.9 après contrôle Authenticode et SHA-256.
+1. Installer le [[Glossary:MSI]] x64 de la publication officielle PowerShell 7.6.9 après contrôle Authenticode et SHA-256.
 2. Ouvrir PowerShell 7 et confirmer le shell :
    ```powershell
    $PSVersionTable | Select-Object PSVersion, PSEdition, Platform
@@ -42,7 +42,7 @@ Vérifier PowerShell 7, différencier le shell 5.1, puis effectuer des contrôle
 
 **Équivalent interface graphique :**
 
-- Clic droit sur **Démarrer > Terminal (administrateur)**, valider l'invite **UAC**; le titre de la fenêtre commence par « Administrateur ».
+- Clic droit sur **Démarrer > Terminal (administrateur)**, valider l'invite **[[Glossary:UAC]]**; le titre de la fenêtre commence par « Administrateur ».
   👉 Explication : équivalent graphique pour obtenir un shell élevé.
 
 ## 2. Production — Contrôles

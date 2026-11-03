@@ -12,15 +12,15 @@ dateModified: 2026-11-03T09:36:13Z
 # fiche-simple-lxc-alpine-sauvegarde-configurer-pbs.md
 
 - **Environnement** : hôte Proxmox VE autorisé, datastore Proxmox Backup Server validé
-- **OS / Version** : Proxmox VE et PBS selon versions maintenues du cluster
-- **Catégorie** : sauvegarde LXC / configuration PBS
+- **OS / Version** : Proxmox VE et [[Glossary:PBS]] selon versions maintenues du cluster
+- **Catégorie** : sauvegarde [[Glossary:LXC]] / configuration PBS
 - **Tags** : `alpine`, `proxmox`, `pbs`, `lxc`, `backup`
 
 ---
 
 ## Problème précis à résoudre
 
-Relier PVE à PBS et planifier la sauvegarde du CT avec identité et privilèges minimaux.
+Relier PVE à PBS et planifier la sauvegarde du [[Glossary:CT]] avec identité et privilèges minimaux.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

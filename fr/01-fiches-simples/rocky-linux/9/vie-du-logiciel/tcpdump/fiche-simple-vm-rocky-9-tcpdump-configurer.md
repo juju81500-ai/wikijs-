@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_tcpdump_Configurer
 
-- **Environnement** : VM Rocky Linux 9 dédiée à tcpdump
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à tcpdump
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : tcpdump / capture bornée
 - **Tags** : `tcpdump`, `rocky9`, `vie-du-logiciel`, `configurer`
 
@@ -34,7 +34,7 @@ Réaliser une capture courte, filtrée et bornée avec tcpdump, puis la relire h
    ```bash
    sudo tcpdump -i INTERFACE_AUTORISEE -nn -c 100 -s 96 -w /var/tmp/captures/TICKET.pcap host HOTE_AUTORISE and port PORT_AUTORISE
    ```
-   👉 Explication : `-i` choisit l’interface, `-nn` désactive la résolution DNS/ports, `-c` borne le nombre de paquets, `-s 96` limite le contenu capturé aux en-têtes, `-w` écrit le fichier. INTERFACE_AUTORISEE, TICKET, HOTE_AUTORISE et PORT_AUTORISE sont à remplacer.
+   👉 Explication : `-i` choisit l’interface, `-nn` désactive la résolution [[Glossary:DNS]]/ports, `-c` borne le nombre de paquets, `-s 96` limite le contenu capturé aux en-têtes, `-w` écrit le fichier. INTERFACE_AUTORISEE, TICKET, HOTE_AUTORISE et PORT_AUTORISE sont à remplacer.
 
 3. Relire la capture hors ligne :
    ```bash

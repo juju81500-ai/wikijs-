@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_pfSense_Vie_Systeme_48_Test_De_Restauration_Pra
 
-- **Environnement** : Pare-feu pfSense CE (VM ou matériel)
+- **Environnement** : Pare-feu pfSense CE ([[Glossary:VM]] ou matériel)
 - **OS / Version** : pfSense CE; étape 48 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `pfsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-48`
@@ -36,7 +36,7 @@ Prouver que la sauvegarde est restaurable.
    ```
    👉 Explication : `DATE` est la date de la copie; recharge toute la configuration.
 
-3. Vérifier les interfaces, règles et VPN après restauration.
+3. Vérifier les interfaces, règles et [[Glossary:VPN]] après restauration.
    👉 Explication : confirme que la sauvegarde est complète.
 
 ## 2. Production — Contrôles

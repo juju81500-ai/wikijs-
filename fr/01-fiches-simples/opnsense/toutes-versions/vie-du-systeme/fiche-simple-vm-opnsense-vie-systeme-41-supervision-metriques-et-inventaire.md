@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_OPNsense_Vie_Systeme_41_Supervision_Metriques_Et_Inventaire
 
-- **Environnement** : Pare-feu OPNsense (VM ou matériel)
+- **Environnement** : Pare-feu OPNsense ([[Glossary:VM]] ou matériel)
 - **OS / Version** : OPNsense; étape 41 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `opnsense`, `vie-du-systeme`, `cycle-de-vie`, `etape-41`
@@ -24,11 +24,11 @@ Surveiller l'état et les performances.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Activer SNMP : Services > Net-SNMP (plugin `os-net-snmp`), renseigner la communauté/utilisateur et limiter à l'adresse du serveur de supervision.
+1. Activer [[Glossary:SNMP]] : Services > Net-SNMP (plugin `os-net-snmp`), renseigner la communauté/utilisateur et limiter à l'adresse du serveur de supervision.
    👉 Explication : permet à la supervision de lire les métriques.
 
 2. Consulter Rapports > Santé et Lobby > Tableau de bord; ou installer `os-telegraf` / `os-zabbix-agent` pour exporter les métriques.
-   👉 Explication : affiche CPU, mémoire, trafic et état des passerelles.
+   👉 Explication : affiche [[Glossary:CPU]], mémoire, trafic et état des passerelles.
 
 3. Contrôler en shell :
    ```sh

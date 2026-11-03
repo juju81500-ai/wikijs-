@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_18_Table_D_Hotes_Locale
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 18 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-18`
@@ -34,7 +34,7 @@ Gérer le fichier `/etc/hosts`.
    ```bash
    echo '192.0.2.10 SRV01.EXEMPLE.LAN SRV01' | sudo tee -a /etc/hosts
    ```
-   👉 Explication : permet la résolution sans DNS; ajout en fin de fichier.
+   👉 Explication : permet la résolution sans [[Glossary:DNS]]; ajout en fin de fichier.
 
 3. Vérifier l'ordre de résolution :
    ```bash

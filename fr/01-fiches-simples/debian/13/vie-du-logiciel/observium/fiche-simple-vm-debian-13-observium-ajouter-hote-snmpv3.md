@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : Observium Community sur Debian 13, un équipement autorisé, SNMPv3
 - **OS / Version** : Debian 13 Trixie
-- **Catégorie** : Supervision / SNMP
+- **Catégorie** : Supervision / [[Glossary:SNMP]]
 - **Tags** : `debian13`, `observium`, `snmpv3`, `authpriv`, `supervision`, `test`
 
 ---
@@ -24,7 +24,7 @@ Ajouter un équipement pilote au périmètre Observium et confirmer que la déco
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Confirmer autorisation, DNS et IP :
+1. Confirmer autorisation, [[Glossary:DNS]] et [[Glossary:IP]] :
    ```bash
    getent hosts equipement.example.net
    ping -c 2 equipement.example.net
@@ -39,20 +39,20 @@ Ajouter un équipement pilote au périmètre Observium et confirmer que la déco
    unset SPW
    sudo systemctl start snmpd
    ```
-   👉 Explication : sur un équipement réseau, utiliser sa CLI constructeur; restreindre la source à l'adresse du serveur Observium (`rouser observium priv` et ACL `agentaddress`/pare-feu). Utiliser deux phrases distinctes en production.
+   👉 Explication : sur un équipement réseau, utiliser sa [[Glossary:CLI]] constructeur; restreindre la source à l'adresse du serveur Observium (`rouser observium priv` et [[Glossary:ACL]] `agentaddress`/pare-feu). Utiliser deux phrases distinctes en production.
 
 3. Filtrer le réseau :
    ```bash
    sudo nft add rule inet filter input ip saddr IP_OBSERVIUM udp dport 161 accept
    ```
-   👉 Explication : remplacer l'IP; UDP 161 seulement entre poller et appareil; HTTPS vers Observium seulement depuis le réseau d'administration. Table et chaîne supposées existantes.
+   👉 Explication : remplacer l'IP; [[Glossary:UDP]] 161 seulement entre poller et appareil; HTTPS vers Observium seulement depuis le réseau d'administration. Table et chaîne supposées existantes.
 
 4. Ajouter l'hôte : sur le serveur Observium (ligne de commande) :
    ```bash
    cd /opt/observium
    ./add_device.php equipement.example.net ANY v3 observium PHRASE_AUTH PHRASE_PRIV sha aes
    ```
-   👉 Explication : alternative GUI : **Devices > Add Device** (version SNMP v3, niveau authPriv, identifiants). Saisir les phrases via l'interface plutôt qu'en argument pour éviter l'historique shell. Vérifier modèle, `sysObjectID`, interfaces et date de dernière interrogation.
+   👉 Explication : alternative [[Glossary:GUI]] : **Devices > Add Device** (version SNMP v3, niveau authPriv, identifiants). Saisir les phrases via l'interface plutôt qu'en argument pour éviter l'historique shell. Vérifier modèle, `sysObjectID`, interfaces et date de dernière interrogation.
 
 5. Découverte et poll manuel :
    ```bash

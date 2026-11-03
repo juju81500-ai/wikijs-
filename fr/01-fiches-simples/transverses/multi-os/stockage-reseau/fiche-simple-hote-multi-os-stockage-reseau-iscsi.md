@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Exporter un LUN vers un initiateur autorisé.
+Exporter un [[Glossary:LUN]] vers un initiateur autorisé.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -37,7 +37,7 @@ Exporter un LUN vers un initiateur autorisé.
    ```bash
    sudo targetcli
    ```
-   👉 Explication : on y crée le backstore, la cible, le LUN et les ACL (commande `ls` pour naviguer).
+   👉 Explication : on y crée le backstore, la cible, le LUN et les [[Glossary:ACL]] (commande `ls` pour naviguer).
 
 4. Autoriser uniquement l'IQN de l'initiateur prévu, puis vérifier chaque identifiant avant d'exporter.
    👉 Explication : une ACL stricte empêche d'autres hôtes de voir le volume.

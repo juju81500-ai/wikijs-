@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Sysinternals
 
-- **Environnement** : VM ou poste Windows 11 de test (compte standard, élévation uniquement si requise)
+- **Environnement** : [[Glossary:VM]] ou poste Windows 11 de test (compte standard, élévation uniquement si requise)
 - **OS / Version** : Windows 11 x64 - Sysinternals Suite (Autoruns, Process Explorer ; version à relever dans les propriétés des binaires, à vérifier sur la version déployée)
 - **Catégorie** : Scripting, développement et administration
 - **Tags** : `[windows-11]`, `[sysinternals]`, `[autoruns]`, `[process-explorer]`, `[audit]`, `[diagnostic]`, `[securite]`

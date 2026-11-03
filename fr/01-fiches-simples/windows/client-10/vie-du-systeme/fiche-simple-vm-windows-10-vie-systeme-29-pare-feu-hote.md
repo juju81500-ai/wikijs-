@@ -31,7 +31,7 @@ Activer le Pare-feu Windows Defender avec une politique restrictive.
    ```
    👉 Explication : active le pare-feu et bloque tout entrant non autorisé.
 
-2. Autoriser le strict nécessaire, par exemple SSH depuis le réseau d'administration (`RESEAU_ADMIN`, au format CIDR).
+2. Autoriser le strict nécessaire, par exemple [[Glossary:SSH]] depuis le réseau d'administration (`RESEAU_ADMIN`, au format [[Glossary:CIDR]]).
    ```powershell
    New-NetFirewallRule -DisplayName 'SSH admin' -Direction Inbound -Protocol TCP -LocalPort 22 -RemoteAddress RESEAU_ADMIN -Action Allow
    ```
@@ -51,7 +51,7 @@ Activer le Pare-feu Windows Defender avec une politique restrictive.
 
 ## 2. Production — Contrôles
 
-Règles gérées par GPO ou Intune (Sécurité des points de terminaison > Pare-feu).
+Règles gérées par [[Glossary:GPO]] ou Intune (Sécurité des points de terminaison > Pare-feu).
 
 ## 3. Production — Sécurité
 

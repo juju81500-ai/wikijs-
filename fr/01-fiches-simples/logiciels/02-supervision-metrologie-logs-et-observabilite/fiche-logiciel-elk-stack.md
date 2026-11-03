@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Catégorie** : Supervision, métrologie, logs et observabilité
 - **Plateforme** : Multiplateforme
-- **Produit (matrice)** : ELK Stack
+- **Produit (matrice)** : [[Glossary:ELK]] Stack
 - **Statut dans le pack** : Couvert
 - **Tags** : `logiciel`, `02-supervision-metrologie-logs-et-observabilite`, `couvert`
 

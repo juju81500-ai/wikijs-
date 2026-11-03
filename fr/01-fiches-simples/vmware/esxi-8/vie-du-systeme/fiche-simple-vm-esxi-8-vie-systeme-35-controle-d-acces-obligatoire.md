@@ -30,7 +30,7 @@ Choisir le contrôle d'accès adapté à ESXi.
    esxcli hardware trustedboot get
    esxcli system settings encryption get
    ```
-   👉 Explication : indique si les binaires sont limités, si TPM est utilisé et si la configuration est chiffrée.
+   👉 Explication : indique si les binaires sont limités, si [[Glossary:TPM]] est utilisé et si la configuration est chiffrée.
 
 2. Activer l'application du chiffrement de configuration lié au TPM (ESXi 7.0 U2 et supérieur) :
    ```sh

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_VM_Windows_11_Visio_Securiser
 
-- **Environnement** : Poste Windows 11 x64 d'un utilisateur ou administrateur (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'un utilisateur ou administrateur ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; version Visio à vérifier auprès de l'éditeur
 - **Catégorie** : outil de diagrammes / poste de travail
 - **Tags** : `visio`, `windows11`, `microsoft-365`, `securite`
@@ -24,7 +24,7 @@ Sécuriser Visio : macros, sources de données, compte et mises à jour.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI **Fichier > Options > Centre de gestion de la confidentialité > Paramètres du Centre > Paramètres des macros** : désactiver toutes les macros avec notification.
+1. [[Glossary:GUI]] **Fichier > Options > Centre de gestion de la confidentialité > Paramètres du Centre > Paramètres des macros** : désactiver toutes les macros avec notification.
    👉 Explication : limite l'exécution de code.
 
 2. GUI **Paramètres de l'affichage protégé** : activer pour les fichiers de provenance Internet.
@@ -41,12 +41,12 @@ Get-ItemProperty 'HKLM:\SOFTWARE\Microsoft\Office\ClickToRun\Configuration' | Se
 
 ## 2. Production — Contrôles
 
-- Appliquer ces options par GPO ou Intune.
+- Appliquer ces options par [[Glossary:GPO]] ou Intune.
 - Revue des licences trimestrielle.
 
 ## 3. Production — Sécurité
 
-- Compte avec MFA.
+- Compte avec [[Glossary:MFA]].
 - Pas de partage de licence.
 
 ## Validation et retour arrière

@@ -32,14 +32,14 @@ Conserver et centraliser les journaux d'événements.
    ```
    👉 Explication : agrandit le journal Sécurité à 512 Mo (valeur en octets) et règle Application à 100 Mo.
 
-2. Activer la transcription PowerShell et l'enregistrement des blocs de script : GPO **Composants Windows > Windows PowerShell**.
+2. Activer la transcription PowerShell et l'enregistrement des blocs de script : [[Glossary:GPO]] **Composants Windows > Windows PowerShell**.
    ```powershell
    New-Item 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging' -Force | Out-Null
    Set-ItemProperty 'HKLM:\SOFTWARE\Policies\Microsoft\Windows\PowerShell\ScriptBlockLogging' EnableScriptBlockLogging 1 -Type DWord
    ```
    👉 Explication : journalise les scripts exécutés (attention aux secrets saisis dans les commandes).
 
-3. Centraliser avec le transfert d'événements Windows (WEF) vers un collecteur : GPO **Gestionnaire d'abonnements** ou agent SIEM.
+3. Centraliser avec le transfert d'événements Windows ([[Glossary:WEF]]) vers un collecteur : GPO **Gestionnaire d'abonnements** ou agent [[Glossary:SIEM]].
    ```powershell
    winrm quickconfig -q
    wecutil qc /q

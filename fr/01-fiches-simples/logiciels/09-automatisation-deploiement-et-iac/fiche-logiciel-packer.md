@@ -19,7 +19,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 📚 Couverture dans le pack
 
-Guide pilote couvrant l'installation, le template HCL2, l'initialisation et la validation, la construction d'une image Docker locale, son inspection et le nettoyage. Les images de production, builders VM/cloud et publications vers registre ne sont pas couverts.
+Guide pilote couvrant l'installation, le template HCL2, l'initialisation et la validation, la construction d'une image Docker locale, son inspection et le nettoyage. Les images de production, builders [[Glossary:VM]]/cloud et publications vers registre ne sont pas couverts.
 
 ## 🧭 Utilisation
 

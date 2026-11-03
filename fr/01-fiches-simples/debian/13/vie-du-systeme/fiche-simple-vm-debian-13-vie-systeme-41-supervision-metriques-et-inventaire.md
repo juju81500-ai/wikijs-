@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Vie_Systeme_41_Supervision_Metriques_Et_Inventaire
 
-- **Environnement** : VM Debian 13 « trixie » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 13 « trixie » (serveur)
 - **OS / Version** : Debian 13; étape 41 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian13`, `vie-du-systeme`, `cycle-de-vie`, `etape-41`
@@ -36,7 +36,7 @@ Superviser la machine.
    ```bash
    sudo nft add rule inet filter input ip saddr 192.0.2.50 tcp dport 9100 accept
    ```
-   👉 Explication : remplacer l'IP; suppose une table `inet filter` avec une chaîne `input`.
+   👉 Explication : remplacer l'[[Glossary:IP]]; suppose une table `inet filter` avec une chaîne `input`.
 
 ## 2. Production — Contrôles
 

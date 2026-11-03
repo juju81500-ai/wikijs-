@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-debian-12-itop-cron-taches-arriere-plan.md
 
-- **Environnement** : VM Debian dédiée à iTop 3.3
+- **Environnement** : [[Glossary:VM]] Debian dédiée à iTop 3.3
 - **OS / Version** : Debian 12 Bookworm; PHP 8.2; compte de service Apache `www-data`
 - **Catégorie** : Système / tâches planifiées
 - **Tags** : `debian12`, `itop`, `cron`, `itsm`, `maintenance`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 🎯 Problème précis à résoudre
 
-Activer les tâches de fond iTop (SLA, notifications, sauvegardes planifiées) sans exposer de mot de passe dans la ligne de commande.
+Activer les tâches de fond iTop ([[Glossary:SLA]], notifications, sauvegardes planifiées) sans exposer de mot de passe dans la ligne de commande.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
 
@@ -75,7 +75,7 @@ Activer les tâches de fond iTop (SLA, notifications, sauvegardes planifiées) s
 
 ## ✅ Validation et retour arrière
 
-- **Précontrôles** : vérifier le chemin, `www-data`, PHP CLI et le compte `itop-cron`.
+- **Précontrôles** : vérifier le chemin, `www-data`, PHP [[Glossary:CLI]] et le compte `itop-cron`.
 - **Validation** : `sudo -u www-data ... --status_only=1`, puis vérifier `/var/log/itop-cron.log` et l'heure de dernière exécution dans iTop.
 - **Retour arrière** : retirer `/etc/cron.d/itop`, puis contrôler avec `sudo crontab -u www-data -l` si une ancienne tâche utilisateur existait. Garder le fichier de paramètres sécurisé pour réactivation.
 

@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-13-kea-configurer.md
 
-- **Environnement** : VM Debian 13 serveur DHCPv4 sur un VLAN de test isolé
+- **Environnement** : [[Glossary:VM]] Debian 13 serveur DHCPv4 sur un [[Glossary:VLAN]] de test isolé
 - **OS / Version** : Debian 13 Trixie x86-64; ISC Kea (canal stable)
-- **Catégorie** : réseau / DHCP
+- **Catégorie** : réseau / [[Glossary:DHCP]]
 - **Tags** : `debian13`, `kea`, `dhcpv4`, `isc`, `reseau`
 
 ---
@@ -57,7 +57,7 @@ dateModified: 2026-11-03T09:36:13Z
    }
    EOF
    ```
-   👉 Explication : définit un sous-réseau, un pool `.100-.199`, la passerelle, le DNS et le domaine; `persist: true` conserve les baux.
+   👉 Explication : définit un sous-réseau, un pool `.100-.199`, la passerelle, le [[Glossary:DNS]] et le domaine; `persist: true` conserve les baux.
 
 3. Si les requêtes arrivent par un relais, ajouter `relay.ip-addresses` avec l'adresse du relais et revoir l'interface d'écoute.
    👉 Explication : sans cela le serveur ne répond pas aux requêtes relayées.
@@ -69,11 +69,11 @@ Revue de la configuration par un second administrateur : absence de chevauchemen
 ## 3. Production — Sécurité
 
 - Ne pas configurer de pool sur une interface qui ne dessert pas ce réseau.
-- Restreindre les droits du fichier de configuration (secrets SQL en clair).
+- Restreindre les droits du fichier de configuration (secrets [[Glossary:SQL]] en clair).
 
 ## Validation et retour arrière
 
-- **Validation** : Le fichier est valide JSON et validé à l'étape suivante par `kea-dhcp4 -t`.
+- **Validation** : Le fichier est valide [[Glossary:JSON]] et validé à l'étape suivante par `kea-dhcp4 -t`.
 - **Retour arrière** : `sudo cp -a /etc/kea/kea-dhcp4.conf.orig /etc/kea/kea-dhcp4.conf`.
 
 ## Si le problème n'est pas résolu

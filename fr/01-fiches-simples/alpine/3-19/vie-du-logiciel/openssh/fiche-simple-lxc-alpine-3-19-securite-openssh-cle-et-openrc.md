@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-lxc-alpine-3-19-securite-openssh-cle-et-openrc.md
 
-- **Environnement** : LXC (Proxmox VE)
+- **Environnement** : [[Glossary:LXC]] (Proxmox VE)
 - **OS / Version** : Alpine Linux 3-19 avec OpenRC (version legacy)
-- **Catégorie** : Installation / Sécurité / SSH
+- **Catégorie** : Installation / Sécurité / [[Glossary:SSH]]
 - **Tags** : `[alpine3.19]`, `[alpine]`, `[openssh]`, `[ssh]`, `[openrc]`, `[ed25519]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre

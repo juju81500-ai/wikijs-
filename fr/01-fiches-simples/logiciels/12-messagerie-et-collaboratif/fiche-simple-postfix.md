@@ -11,14 +11,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Postfix
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : Postfix 3.7.x (paquet des dépôts Debian 12, à vérifier sur la version déployée)
 - **Catégorie** : Messagerie et collaboratif
 - **Tags** : `[debian-12]`, `[postfix]`, `[smtp]`, `[messagerie]`, `[hardening]`
 
 ## 🎯 Objectif
-Installer le serveur SMTP Postfix sur Debian 12, vérifier sur ce même serveur qu'il accepte et remet un message de test, puis le durcir (chiffrement TLS obligatoire, relais restreint aux réseaux autorisés) avant de l'exposer à l'entreprise. Les tests ne se font que sur votre propre serveur.
+Installer le serveur [[Glossary:SMTP]] Postfix sur Debian 12, vérifier sur ce même serveur qu'il accepte et remet un message de test, puis le durcir (chiffrement [[Glossary:TLS]] obligatoire, relais restreint aux réseaux autorisés) avant de l'exposer à l'entreprise. Les tests ne se font que sur votre propre serveur.
 
 ---
 
@@ -62,7 +62,7 @@ sudo postconf -e "myhostname = <nom_serveur_smtp>"
 sudo postconf -e "mydomain = <domaine_entreprise>"
 sudo postconf -e "mynetworks = 127.0.0.0/8 <reseau_interne_cidr>"
 ```
-👉 Explication : `<nom_serveur_smtp>` est le nom FQDN du serveur, `<domaine_entreprise>` le domaine des adresses mail, `<reseau_interne_cidr>` le réseau interne (par exemple `192.168.10.0/24`) autorisé à envoyer sans authentification. Ne jamais mettre `0.0.0.0/0` dans `mynetworks`.
+👉 Explication : `<nom_serveur_smtp>` est le nom [[Glossary:FQDN]] du serveur, `<domaine_entreprise>` le domaine des adresses mail, `<reseau_interne_cidr>` le réseau interne (par exemple `192.168.10.0/24`) autorisé à envoyer sans authentification. Ne jamais mettre `0.0.0.0/0` dans `mynetworks`.
 
 2. Contrôle de la syntaxe puis rechargement :
 ```bash
@@ -80,7 +80,7 @@ sudo ufw allow 25/tcp
 sudo ufw enable
 sudo ufw status verbose
 ```
-👉 Explication : Ouvre SSH seulement pour `<adresse_ip_admin>` avant d'activer le pare-feu, pour ne pas se couper l'accès. Le port 25 TCP reçoit le courrier entrant entre serveurs. Les ports de soumission (587) et IMAPS (993) relèvent de la fiche Dovecot.
+👉 Explication : Ouvre [[Glossary:SSH]] seulement pour `<adresse_ip_admin>` avant d'activer le pare-feu, pour ne pas se couper l'accès. Le port 25 [[Glossary:TCP]] reçoit le courrier entrant entre serveurs. Les ports de soumission (587) et IMAPS (993) relèvent de la fiche Dovecot.
 
 ---
 
@@ -94,7 +94,7 @@ sudo postconf -e "smtp_tls_security_level = may"
 sudo postfix check
 sudo systemctl reload postfix
 ```
-👉 Explication : `may` active STARTTLS sans l'imposer aux serveurs distants ; pour un relais strictement chiffré, passer `smtpd_tls_security_level` à `encrypt` une fois les clients compatibles. `<certificat_smtp>` est le nom du certificat émis pour le serveur, à vérifier sur la version déployée.
+👉 Explication : `may` active [[Glossary:STARTTLS]] sans l'imposer aux serveurs distants ; pour un relais strictement chiffré, passer `smtpd_tls_security_level` à `encrypt` une fois les clients compatibles. `<certificat_smtp>` est le nom du certificat émis pour le serveur, à vérifier sur la version déployée.
 
 2. Restriction du relais aux clients authentifiés et aux réseaux internes :
 ```bash

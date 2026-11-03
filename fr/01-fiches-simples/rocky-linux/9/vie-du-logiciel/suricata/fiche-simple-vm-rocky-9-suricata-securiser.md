@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_Suricata_Securiser
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Suricata
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Suricata
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
 - **Catégorie** : Suricata / sécurisation
 - **Tags** : `suricata`, `rocky9`, `vie-du-logiciel`, `securiser`
 
@@ -48,7 +48,7 @@ Durcir le capteur Suricata : compte, droits, journaux et exposition réseau.
    ```bash
    sudo ss -tlnp | grep ":22"
    ```
-   👉 Explication : Limiter SSH aux administrateurs et au réseau de gestion; la politique de pare-feu relève de la fiche de durcissement de l’OS.
+   👉 Explication : Limiter [[Glossary:SSH]] aux administrateurs et au réseau de gestion; la politique de pare-feu relève de la fiche de durcissement de l’OS.
 
 5. Définir rotation et rétention :
    ```bash

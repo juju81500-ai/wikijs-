@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 Effectuer la recette d'un serveur Windows Server 2022 avant mise en production : rôle, réseau, accès, pare-feu, journaux, supervision, sauvegarde et reprise.
 
 ## 🧪 1. Hors-Production (Lab / Test / POC)
-1. Relever édition/build et rôles : GUI **Gestionnaire de serveur > Tableau de bord**, ou :
+1. Relever édition/build et rôles : [[Glossary:GUI]] **Gestionnaire de serveur > Tableau de bord**, ou :
    ```powershell
    Get-ComputerInfo | Select-Object WindowsProductName, WindowsVersion, OsBuildNumber
    Get-WindowsFeature | Where-Object Installed
@@ -35,20 +35,20 @@ Effectuer la recette d'un serveur Windows Server 2022 avant mise en production :
    ```
    👉 Explication : profils actifs, entrée bloquée par défaut; relever les erreurs récentes.
 
-3. Tester le service depuis un client autorisé et restaurer une sauvegarde dans une VM isolée :
+3. Tester le service depuis un client autorisé et restaurer une sauvegarde dans une [[Glossary:VM]] isolée :
    ```powershell
    Test-NetConnection IP_SERVEUR -Port PORT
    wbadmin get versions
    ```
-   👉 Explication : remplacer IP et port; `wbadmin get versions` liste les sauvegardes Windows Server Backup disponibles.
+   👉 Explication : remplacer [[Glossary:IP]] et port; `wbadmin get versions` liste les sauvegardes Windows Server Backup disponibles.
 
 
 ## ⚡ 2. Production — Façon Simplifiée
 1. **Système et réseau :** hostname/IP/DNS/heure validés, correctifs appliqués, redémarrage effectué et compte d'administration contrôlé.
 2. **Rôle :** seuls les rôles et fonctionnalités requis sont installés; services, ports, dépendances et tests fonctionnels correspondent au dossier d'exploitation.
-3. **Sécurité :** GPO/baseline appliquée, pare-feu actif, RDP limité aux réseaux d'administration, journaux collectés et secrets protégés.
+3. **Sécurité :** [[Glossary:GPO]]/baseline appliquée, pare-feu actif, [[Glossary:RDP]] limité aux réseaux d'administration, journaux collectés et secrets protégés.
 4. **Continuité :** Windows Server Backup ou solution agréée configurée sur une cible distincte; version récente vérifiée et exercice de restauration réalisé.
-5. **Si contrôleur de domaine :** vérifier santé et réplication AD DS/DNS; exécuter les contrôles d'annuaire prévus et suivre le runbook de restauration forêt.
+5. **Si contrôleur de domaine :** vérifier santé et réplication [[Glossary:AD]] DS/DNS; exécuter les contrôles d'annuaire prévus et suivre le runbook de restauration forêt.
 6. **Bascule :** responsable, fenêtre, dépendances, critères d'acceptation et retour arrière consignés.
    👉 *Explication : une sauvegarde réussie n'est pas une preuve de reprise; réaliser l'exercice sur une VM isolée sans réintroduire le serveur restauré sur le réseau de production.*
 

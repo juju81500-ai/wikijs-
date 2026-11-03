@@ -48,7 +48,7 @@ Vérifier le catalogue PostgreSQL et remplacer les secrets de ressources par des
    sudo chown -R root:bareos /etc/bareos
    sudo chmod -R o-rwx /etc/bareos
    ```
-   👉 Explication : active aussi TLS mutuel selon la documentation Bareos.
+   👉 Explication : active aussi [[Glossary:TLS]] mutuel selon la documentation Bareos.
 
 ## 2. Production — Contrôles
 

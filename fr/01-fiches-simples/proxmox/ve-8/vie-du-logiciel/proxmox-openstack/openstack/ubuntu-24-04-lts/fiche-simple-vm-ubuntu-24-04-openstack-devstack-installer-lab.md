@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_OpenStack_DevStack_Installer_Lab
 
-- **Environnement** : VM jetable isolée sur Proxmox VE 8.x; console locale
-- **OS / Version** : Ubuntu Server 24-04 LTS (Noble); DevStack selon branche/doc officielle
+- **Environnement** : [[Glossary:VM]] jetable isolée sur Proxmox VE 8.x; console locale
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]] (Noble); DevStack selon branche/doc officielle
 - **Catégorie** : cloud privé / installation de lab
 - **Tags** : `openstack`, `devstack`, `ubuntu2404`, `lab`, `non-production`
 
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Installer un OpenStack mono-nœud de développement pour tester concepts et API, sans exposition ni charge de production.
+Installer un OpenStack mono-nœud de développement pour tester concepts et [[Glossary:API]], sans exposition ni charge de production.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -43,7 +43,7 @@ Installer un OpenStack mono-nœud de développement pour tester concepts et API,
    👉 Explication : aucun vrai secret dans cette fiche ou dans un dépôt.
 4. Depuis le répertoire DevStack, lancer uniquement dans cette VM : `./stack.sh`.
    👉 Explication : arrêter et diagnostiquer les erreurs au lieu de rejouer aveuglément.
-5. Après succès, accéder à Horizon depuis l’admin du lab; vérifier le catalogue via la CLI locale sans afficher les identifiants :
+5. Après succès, accéder à Horizon depuis l’admin du lab; vérifier le catalogue via la [[Glossary:CLI]] locale sans afficher les identifiants :
    ```bash
    source openrc
    openstack service list

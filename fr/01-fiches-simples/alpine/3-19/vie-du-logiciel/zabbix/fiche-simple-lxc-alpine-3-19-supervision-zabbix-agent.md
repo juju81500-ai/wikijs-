@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-lxc-alpine-3-19-supervision-zabbix-agent.md
 
-- **Environnement** : LXC (Proxmox VE)
+- **Environnement** : [[Glossary:LXC]] (Proxmox VE)
 - **OS / Version** : Alpine Linux 3-19 - Famille Alpine (OpenRC, apk)
 - **Catégorie** : Supervision / Métriques et inventaire
 - **Tags** : `[alpine3.19]`, `[alpine]`, `[lxc]`, `[zabbix]`, `[zabbix-agent]`, `[supervision]`, `[openrc]`
@@ -63,7 +63,7 @@ Installer l'agent Zabbix sur un conteneur Alpine Linux, le déclarer auprès du 
    ```
    👉 Explication : Remplacer `<nom_du_service_zabbix>` par le nom trouvé dans `/etc/init.d/` à l'étape 2 de laboratoire.
 
-3. Autoriser le port TCP 10050 uniquement depuis le serveur Zabbix, par le pare-feu Proxmox du conteneur ou par Awall si la VM le prend en charge :
+3. Autoriser le port [[Glossary:TCP]] 10050 uniquement depuis le serveur Zabbix, par le pare-feu Proxmox du conteneur ou par Awall si la [[Glossary:VM]] le prend en charge :
    ```sh
    ss -lntp | grep 10050
    ```

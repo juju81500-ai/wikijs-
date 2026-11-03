@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Terraform_Sauvegarder_Restaurer
 
-- **Environnement** : VM Debian 13 de laboratoire avec fournisseur sandbox
+- **Environnement** : [[Glossary:VM]] Debian 13 de laboratoire avec fournisseur sandbox
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : infrastructure as code
 - **Tags** : `debian13`, `terraform`, `iac`, `state`, `securite`
@@ -33,7 +33,7 @@ dateModified: 2026-11-03T09:36:13Z
    ```text
    Navigateur > ouvrir la documentation officielle : https://developer.hashicorp.com/terraform/install
    ```
-   👉 Explication : config spécifique au backend, consulter documentation officielle. Détail à confirmer dans la documentation officielle avant application : Activer versionnage, chiffrement, IAM, verrouillage et journalisation dans le stockage utilisé.
+   👉 Explication : config spécifique au backend, consulter documentation officielle. Détail à confirmer dans la documentation officielle avant application : Activer versionnage, chiffrement, [[Glossary:IAM]], verrouillage et journalisation dans le stockage utilisé.
 
 3. Restaurer une version sur backend de test
    ```text
@@ -49,11 +49,11 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## 2. Production — Contrôles
 
-Définir RPO/RTO, rétention et identités autorisées; tester récupération indépendamment du compte de déploiement.
+Définir [[Glossary:RPO]]/RTO, rétention et identités autorisées; tester récupération indépendamment du compte de déploiement.
 
 ## 3. Production — Sécurité
 
-- Ne pas éditer manuellement le JSON d’état.
+- Ne pas éditer manuellement le [[Glossary:JSON]] d’état.
 - Protéger toutes copies comme l’état principal.
 - Ne pas forcer un unlock sans analyse.
 

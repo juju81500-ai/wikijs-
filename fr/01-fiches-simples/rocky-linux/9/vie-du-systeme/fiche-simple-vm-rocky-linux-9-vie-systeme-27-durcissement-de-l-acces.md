@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_27_Durcissement_De_L_Acces
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 27 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-27`
@@ -34,7 +34,7 @@ Réduire les risques de sshd.
    AllowGroups wheel
    EOT
    ```
-   👉 Explication : interdit les mots de passe, limite les essais et réserve SSH au groupe wheel.
+   👉 Explication : interdit les mots de passe, limite les essais et réserve [[Glossary:SSH]] au groupe wheel.
 
 2. Tester puis recharger :
    ```bash

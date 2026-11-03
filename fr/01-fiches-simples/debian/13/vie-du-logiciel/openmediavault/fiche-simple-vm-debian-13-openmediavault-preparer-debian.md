@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Préparer une Debian 13 minimale, à jour, avec réseau fixe et DNS fonctionnel.
+Préparer une Debian 13 minimale, à jour, avec réseau fixe et [[Glossary:DNS]] fonctionnel.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -56,8 +56,8 @@ Installer Debian sans environnement graphique ni serveur Web; relever les numér
 
 ## Validation et retour arrière
 
-- **Validation** : système à jour, nom d'hôte, IP et DNS corrects.
-- **Retour arrière** : restaurer l'instantané ou la sauvegarde de la VM avant mise à jour.
+- **Validation** : système à jour, nom d'hôte, [[Glossary:IP]] et DNS corrects.
+- **Retour arrière** : restaurer l'instantané ou la sauvegarde de la [[Glossary:VM]] avant mise à jour.
 
 ## Si le problème n'est pas résolu
 

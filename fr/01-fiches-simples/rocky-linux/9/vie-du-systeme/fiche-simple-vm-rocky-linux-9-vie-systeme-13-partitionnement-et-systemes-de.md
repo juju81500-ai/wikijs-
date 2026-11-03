@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_Linux_9_Vie_Systeme_13_Partitionnement_Et_Systemes_De
 
-- **Environnement** : VM Rocky Linux 9 (serveur)
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 (serveur)
 - **OS / Version** : Rocky Linux 9; étape 13 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `rocky9`, `vie-du-systeme`, `cycle-de-vie`, `etape-13`
@@ -24,7 +24,7 @@ Découper le disque de façon extensible.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Dans anaconda, choisir un partitionnement personnalisé LVM avec XFS :
+1. Dans anaconda, choisir un partitionnement personnalisé [[Glossary:LVM]] avec [[Glossary:XFS]] :
    👉 Explication : `/boot` (1 Gio), `/boot/efi` en UEFI, puis LVM pour `/`, `/var`, `/home`, swap.
 
 2. Contrôler le résultat :

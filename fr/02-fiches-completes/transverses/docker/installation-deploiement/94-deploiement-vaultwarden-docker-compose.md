@@ -21,9 +21,9 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [périmètre et distinction avec Bitwarden](/fr/01-fiches-simples/transverses/docker/vaultwarden/fiche-simple-hote-docker-vaultwarden-perimetre).
 
-Vaultwarden est un serveur communautaire, compatible avec les clients Bitwarden, qui n'est pas le produit officiel Bitwarden. Pour le serveur officiel, voir le [guide Bitwarden auto-hébergé](/fr/02-fiches-completes/transverses/docker/installation-deploiement/62-deploiement-bitwarden-self-hosted-linux-docker). Choisir Vaultwarden demande une décision explicite : support communautaire, politique de licence et de mise à jour du projet à valider par la sécurité. Ce guide couvre SQLite; MySQL/PostgreSQL, SSO et conformité ne sont pas traités. Ce guide n'a pas été testé.
+Vaultwarden est un serveur communautaire, compatible avec les clients Bitwarden, qui n'est pas le produit officiel Bitwarden. Pour le serveur officiel, voir le [guide Bitwarden auto-hébergé](/fr/02-fiches-completes/transverses/docker/installation-deploiement/62-deploiement-bitwarden-self-hosted-linux-docker). Choisir Vaultwarden demande une décision explicite : support communautaire, politique de licence et de mise à jour du projet à valider par la sécurité. Ce guide couvre SQLite; MySQL/PostgreSQL, [[Glossary:SSO]] et conformité ne sont pas traités. Ce guide n'a pas été testé.
 
-Prérequis : hôte Docker durci ([hardening Docker](/fr/02-fiches-completes/transverses/docker/autres/32-hardening-hote-docker-production)), nom DNS dédié, reverse proxy HTTPS (par exemple [Traefik](/fr/02-fiches-completes/transverses/docker/installation-deploiement/06-reverse-proxy-traefik-v31-letsencrypt-docker)). Le projet indique que HTTPS est pratiquement obligatoire, car l'interface web utilise des API de chiffrement du navigateur disponibles seulement en contexte sécurisé; il recommande de placer le service derrière un reverse proxy.
+Prérequis : hôte Docker durci ([hardening Docker](/fr/02-fiches-completes/transverses/docker/autres/32-hardening-hote-docker-production)), nom [[Glossary:DNS]] dédié, reverse proxy HTTPS (par exemple [Traefik](/fr/02-fiches-completes/transverses/docker/installation-deploiement/06-reverse-proxy-traefik-v31-letsencrypt-docker)). Le projet indique que HTTPS est pratiquement obligatoire, car l'interface web utilise des [[Glossary:API]] de chiffrement du navigateur disponibles seulement en contexte sécurisé; il recommande de placer le service derrière un reverse proxy.
 
 ## 2. Préparer le jeton d'administration
 
@@ -79,7 +79,7 @@ Fiche simple : [créer le premier compte puis fermer les inscriptions](/fr/01-fi
 
 Fiche simple : [sauvegarder](/fr/01-fiches-simples/transverses/docker/vaultwarden/fiche-simple-hote-docker-vaultwarden-sauvegarder).
 
-Données par défaut dans `vw-data` : `db.sqlite3` (et éventuels `-wal`/`-shm`), `attachments/`, `sends/`, `config.json`, `rsa_key*`. Le projet déconseille de copier le fichier SQLite actif et recommande l'API de sauvegarde SQLite ou la commande intégrée, et déconseille de s'appuyer sur les snapshots de système de fichiers ou de VM :
+Données par défaut dans `vw-data` : `db.sqlite3` (et éventuels `-wal`/`-shm`), `attachments/`, `sends/`, `config.json`, `rsa_key*`. Le projet déconseille de copier le fichier SQLite actif et recommande l'API de sauvegarde SQLite ou la commande intégrée, et déconseille de s'appuyer sur les snapshots de système de fichiers ou de [[Glossary:VM]] :
 
 ```bash
 docker exec -it vaultwarden /vaultwarden backup
@@ -99,7 +99,7 @@ Restaurer sur un hôte ou un réseau isolé : copier la sauvegarde dans un nouve
 Fiche simple : [validation](/fr/01-fiches-simples/transverses/docker/vaultwarden/fiche-simple-hote-docker-vaultwarden-validation).
 
 - `docker compose ps` indique le conteneur en cours d'exécution; les journaux ne montrent pas d'erreur.
-- Le site est atteint en HTTPS par le nom DNS; un accès direct HTTP au port 11001 depuis un autre hôte échoue.
+- Le site est atteint en HTTPS par le nom DNS; un accès direct [[Glossary:HTTP]] au port 11001 depuis un autre hôte échoue.
 - Un client Bitwarden se connecte au serveur personnalisé, crée, modifie et lit un élément de test.
 - L'inscription ouverte est refusée après le passage à `false`; `/admin` est refusé sans le bon jeton ou est désactivé.
 - Une sauvegarde est restaurée sur un hôte isolé et l'élément de test est retrouvé.

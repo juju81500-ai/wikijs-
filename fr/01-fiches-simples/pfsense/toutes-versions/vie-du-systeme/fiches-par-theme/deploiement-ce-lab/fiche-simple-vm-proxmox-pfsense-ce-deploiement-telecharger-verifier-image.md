@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-proxmox-pfsense-ce-deploiement-telecharger-verifier-image.md
 
-- **Environnement** : VM pfSense CE en laboratoire sur Proxmox VE, deux interfaces (WAN et LAN isolés)
+- **Environnement** : [[Glossary:VM]] pfSense CE en laboratoire sur Proxmox VE, deux interfaces ([[Glossary:WAN]] et [[Glossary:LAN]] isolés)
 - **OS / Version** : pfSense Community Edition 2.9.0 (VM x86-64 sur Proxmox VE)
 - **Catégorie** : pare-feu et routage
 - **Tags** : `pfsense`, `ce`, `proxmox`, `firewall`, `lab`
@@ -24,7 +24,7 @@ Obtenir l'image officielle Netgate et contrôler son empreinte avant usage.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Se connecter au compte Netgate Store et télécharger l'image **AMD64 ISO** du Netgate Installer.
+1. Se connecter au compte Netgate Store et télécharger l'image **[[Glossary:AMD64]] ISO** du Netgate Installer.
    👉 Explication : le téléchargement est gratuit mais nécessite un compte; ne jamais utiliser une image tierce préinstallée.
 
 2. Repérer la somme SHA-256 correspondant exactement au fichier téléchargé sur la page officielle, puis calculer l'empreinte locale :

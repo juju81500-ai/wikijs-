@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-debian-13-stockage-monter-disque-uuid-fstab.md
 
-- **Environnement** : VM ou serveur Debian; disque déjà présenté par l'hyperviseur
+- **Environnement** : [[Glossary:VM]] ou serveur Debian; disque déjà présenté par l'hyperviseur
 - **OS / Version** : Debian 13 (Trixie)
 - **Catégorie** : Stockage / Configuration
 - **Tags** : `[debian13]`, `[debian]`, `[stockage]`, `[fstab]`, `[uuid]`, `[ext4]`

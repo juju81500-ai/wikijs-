@@ -34,7 +34,7 @@ Que les touches saisies correspondent au clavier physique.
    ```
    👉 Explication : affiche puis définit la disposition sur la console.
 
-3. Tester sur la console (GUI : console iDRAC) en saisissant des caractères spéciaux (`|`, `/`, `&`).
+3. Tester sur la console ([[Glossary:GUI]] : console iDRAC) en saisissant des caractères spéciaux (`|`, `/`, `&`).
    👉 Explication : valide la disposition avant de poursuivre.
 
 ## 2. Production — Contrôles

@@ -30,7 +30,7 @@ Dimensionner le serveur Windows Server 2025 avant de le créer.
    Get-Disk | Select-Object Number, FriendlyName, @{n='Taille_Go';e={[math]::Round($_.Size/1GB)}}
    (Get-CimInstance Win32_OperatingSystem).OSArchitecture
    ```
-   👉 Explication : nombre de vCPU, RAM, disques et architecture (64 bits) pour comparer au besoin.
+   👉 Explication : nombre de vCPU, [[Glossary:RAM]], disques et architecture (64 bits) pour comparer au besoin.
 
 2. Mesurer la charge disque et mémoire sur quelques minutes :
    ```powershell
@@ -38,7 +38,7 @@ Dimensionner le serveur Windows Server 2025 avant de le créer.
    ```
    👉 Explication : une latence disque durablement supérieure à 20 ms ou peu de mémoire disponible indique un sous-dimensionnement.
 
-3. Noter vCPU, RAM, disque système, disques de données, IOPS et réseau dans le dossier du projet.
+3. Noter vCPU, RAM, disque système, disques de données, [[Glossary:IOPS]] et réseau dans le dossier du projet.
    👉 Explication : ce tableau sert de référence pour l'hyperviseur et pour la recette; Windows Server 2025 exige un processeur 64 bits et une RAM minimale (consulter la page officielle des exigences système).
 
 ## 2. Production — Contrôles

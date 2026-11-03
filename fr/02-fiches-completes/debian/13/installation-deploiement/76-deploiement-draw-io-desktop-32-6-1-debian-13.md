@@ -21,7 +21,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 Fiche simple : [cadrer le choix draw-io Desktop](/fr/01-fiches-simples/debian/13/vie-du-logiciel/draw-io/fiche-simple-vm-debian-13-draw-io-cadrer).
 
-Au 27 octobre 2026, la release stable la plus récente consultée est draw-io Desktop 32.6.1. Le projet fournit un paquet `.deb` amd64 et l'API GitHub de la release publie son digest SHA-256. Cette procédure ne couvre pas Microsoft Visio, les intégrations Cloud, la collaboration en ligne, l'IA ou les plugins tiers.
+Au 27 octobre 2026, la release stable la plus récente consultée est draw-io Desktop 32.6.1. Le projet fournit un paquet `.deb` amd64 et l'[[Glossary:API]] GitHub de la release publie son digest SHA-256. Cette procédure ne couvre pas Microsoft Visio, les intégrations Cloud, la collaboration en ligne, l'IA ou les plugins tiers.
 
 La version Desktop est conçue pour créer, ouvrir et enregistrer des diagrammes sur le poste, y compris sans connexion Internet. Pour un environnement sensible, télécharger et contrôler le paquet depuis un poste connecté approuvé, puis transférer l'artefact vérifié selon la procédure de l'organisation. Ne pas placer dans un dessin des mots de passe, tokens ou données sans classification connue.
 
@@ -43,7 +43,7 @@ L'empreinte doit afficher `OK`. Elle correspond au champ `digest` de l'asset dan
 
 Fiche simple : [installer draw-io Desktop](/fr/01-fiches-simples/debian/13/vie-du-logiciel/draw-io/fiche-simple-vm-debian-13-draw-io-installer).
 
-Vérifier l'architecture et les métadonnées du paquet, puis laisser APT résoudre ses dépendances :
+Vérifier l'architecture et les métadonnées du paquet, puis laisser [[Glossary:APT]] résoudre ses dépendances :
 
 ```bash
 dpkg --print-architecture

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_VM_Windows_11_Visio_Valider
 
-- **Environnement** : Poste Windows 11 x64 d'un utilisateur ou administrateur (VM de test puis poste pilote)
+- **Environnement** : Poste Windows 11 x64 d'un utilisateur ou administrateur ([[Glossary:VM]] de test puis poste pilote)
 - **OS / Version** : Windows 11 x64; version Visio à vérifier auprès de l'éditeur
 - **Catégorie** : outil de diagrammes / poste de travail
 - **Tags** : `visio`, `windows11`, `microsoft-365`, `validation`
@@ -33,7 +33,7 @@ Recetter Visio : démarrage, licence, création et enregistrement d'un diagramme
 2. Ouvrir Visio, créer un diagramme réseau, l'enregistrer en .vsdx dans DOSSIER_TEST (à remplacer).
    👉 Explication : valide la licence et l'écriture.
 
-3. Réouvrir le fichier et l'exporter en PDF : GUI **Fichier > Exporter > Créer un document PDF/XPS**.
+3. Réouvrir le fichier et l'exporter en PDF : [[Glossary:GUI]] **Fichier > Exporter > Créer un document PDF/XPS**.
    👉 Explication : valide la lecture et l'export.
 
 4. Vérifier **Fichier > Compte** : produit activé.

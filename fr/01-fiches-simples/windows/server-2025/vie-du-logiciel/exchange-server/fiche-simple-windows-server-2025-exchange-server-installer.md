@@ -30,7 +30,7 @@ Déployer Exchange Server Subscription Edition sur un serveur Windows Server 202
 2. Télécharger le média Exchange SE depuis les pages Microsoft officielles et suivre la procédure de nouveau déploiement publiée pour la version visée.
    👉 Explication : ne pas utiliser un média Exchange 2019/2016 ni une commande copiée d’une version/CU différente.
 
-3. Préparer le schéma, l’organisation et les domaines uniquement selon le parcours de déploiement Microsoft, avec les comptes et rôles AD requis.
+3. Préparer le schéma, l’organisation et les domaines uniquement selon le parcours de déploiement Microsoft, avec les comptes et rôles [[Glossary:AD]] requis.
    👉 Explication : faire ces opérations depuis le site AD approprié, après sauvegarde de l’annuaire et réplication saine.
 
 4. Installer le rôle Mailbox en utilisant l’assistant ou les commandes explicitement documentées pour le média SE courant; vérifier les prérequis de l’assistant avant de poursuivre.

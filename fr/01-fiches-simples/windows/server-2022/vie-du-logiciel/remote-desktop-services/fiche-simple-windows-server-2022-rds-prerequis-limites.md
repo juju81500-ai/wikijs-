@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 # Fiche_Simple_-_Windows_Server_2022_RDS_Prerequis_Limites
 
-- **Environnement** : VM ou serveur Windows dédié aux services Bureau à distance
+- **Environnement** : [[Glossary:VM]] ou serveur Windows dédié aux services Bureau à distance
 - **OS / Version** : Windows Server 2022 Desktop Experience
 - **Catégorie** : Vie du logiciel / Services Bureau à distance
 - **Tags** : `windows-server-2022`, `rds`, `prerequis`, `architecture`
@@ -40,13 +40,13 @@ Définir le périmètre et une architecture RDS supportable avant d'installer un
 
 ## 2. Production — Contrôles
 
-- Documenter nombre de sessions, capacité, disponibilité, DNS, certificats, réseau d'administration et dépendance Active Directory.
+- Documenter nombre de sessions, capacité, disponibilité, [[Glossary:DNS]], certificats, réseau d'administration et dépendance Active Directory.
 - Vérifier licence Windows Server, CAL RDS, mode de licence et capacité du serveur de licences avant l'ouverture.
 - Les déploiements multi-serveurs et rôles Broker/Gateway/Web Access exigent une architecture cohérente; ne pas les ajouter par défaut sur un contrôleur de domaine.
 
 ## 3. Production — Sécurité
 
-- Ne pas publier directement TCP/UDP 3389 sur Internet; privilégier VPN ou RD Gateway approuvée.
+- Ne pas publier directement [[Glossary:TCP]]/UDP 3389 sur Internet; privilégier [[Glossary:VPN]] ou RD Gateway approuvée.
 - Prévoir accès console hors bande et pilote avant tout changement de rôle ou de pare-feu.
 - Limiter les groupes autorisés aux utilisateurs ayant un besoin métier documenté.
 

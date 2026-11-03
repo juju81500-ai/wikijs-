@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:14Z
 # Déployer Windows Server 2025 en production
 
 - **Type de fiche** : Installation / Déploiement
-- **Environnement** : Serveur physique ou VM administré par l'organisation
+- **Environnement** : Serveur physique ou [[Glossary:VM]] administré par l'organisation
 - **OS / Version** : Windows Server 2025 Standard ou Datacenter
 - **Rôle** : Installer, préparer, mettre à jour et réceptionner un serveur avant configuration de rôle
 - **Tags** : `windows-server-2025`, `installation`, `production`, `uefi`, `openssh`, `serveur`
@@ -23,7 +23,7 @@ Fiche simple : [préparer l'installation](/fr/01-fiches-simples/windows/server-2
 
 Définir le rôle, l'édition/licence, le modèle de support, le réseau d'administration, les sauvegardes et le propriétaire du service. Vérifier la compatibilité des applications et pilotes avec Server 2025 avant migration ou installation d'un rôle.
 
-Pour une VM, valider le modèle CPU exposé : Server 2025 requiert notamment SSE4.2 et POPCNT. Utiliser une VM génération 2/UEFI lorsque la plateforme le permet, et prévoir les ressources selon la charge plutôt que le minimum d'installation.
+Pour une VM, valider le modèle [[Glossary:CPU]] exposé : Server 2025 requiert notamment SSE4.2 et POPCNT. Utiliser une VM génération 2/UEFI lorsque la plateforme le permet, et prévoir les ressources selon la charge plutôt que le minimum d'installation.
 
 ## 2. Installer le système
 
@@ -38,7 +38,7 @@ Fiche simple : [installer le système](/fr/01-fiches-simples/windows/server-2025
 
 Fiche simple : [configurer identité et réseau](/fr/01-fiches-simples/windows/server-2025/vie-du-systeme/fiches-par-theme/installation-systeme/fiche-simple-vm-windows-server-2025-production-identite-reseau).
 
-Attribuer un nom conforme à la convention, une adresse IP/DNS documentée, une source de temps et une zone horaire approuvées. Joindre le serveur au domaine uniquement lorsque le rôle et la stratégie l'exigent; éviter les comptes d'administration partagés.
+Attribuer un nom conforme à la convention, une adresse [[Glossary:IP]]/DNS documentée, une source de temps et une zone horaire approuvées. Joindre le serveur au domaine uniquement lorsque le rôle et la stratégie l'exigent; éviter les comptes d'administration partagés.
 
 Contrôles de base en PowerShell :
 
@@ -55,7 +55,7 @@ OpenSSH Server est présent par défaut sur Server 2025; vérifier son état et 
 
 Fiche simple : [appliquer gestion et socle de sécurité](/fr/01-fiches-simples/windows/server-2025/vie-du-systeme/fiches-par-theme/installation-systeme/fiche-simple-vm-windows-server-2025-production-gestion-socle-securite).
 
-- Inscrire le serveur dans l'outil de gestion prévu (GPO, Windows Admin Center, MECM, Azure Arc ou autre).
+- Inscrire le serveur dans l'outil de gestion prévu ([[Glossary:GPO]], Windows Admin Center, MECM, Azure Arc ou autre).
 - Appliquer la baseline et les stratégies approuvées pour le rôle.
 - Vérifier Microsoft Defender, pare-feu, journalisation, sauvegarde et comptes privilégiés.
 - Examiner Credential Guard, Secure Boot et VBS selon la compatibilité matérielle et applicative.
@@ -65,7 +65,7 @@ Fiche simple : [appliquer gestion et socle de sécurité](/fr/01-fiches-simples/
 
 Fiche simple : [réaliser la recette avant production](/fr/01-fiches-simples/windows/server-2025/vie-du-systeme/fiches-par-theme/installation-systeme/fiche-simple-vm-windows-server-2025-production-recette-avant-production).
 
-Vérifier DNS, heure, connectivité depuis les réseaux autorisés, mises à jour, accès d'administration, supervision, sauvegarde/restauration et journaux. Tester le redémarrage planifié et documenter version, édition, build, adresse, rôles, exceptions et propriétaire.
+Vérifier [[Glossary:DNS]], heure, connectivité depuis les réseaux autorisés, mises à jour, accès d'administration, supervision, sauvegarde/restauration et journaux. Tester le redémarrage planifié et documenter version, édition, build, adresse, rôles, exceptions et propriétaire.
 
 ## 6. Retour arrière
 

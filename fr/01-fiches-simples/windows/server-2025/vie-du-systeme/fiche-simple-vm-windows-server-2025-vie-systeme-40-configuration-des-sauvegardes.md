@@ -44,7 +44,7 @@ Mettre en place la sauvegarde du serveur.
 
 ## 2. Production — Contrôles
 
-Appliquer la règle 3-2-1 : 3 copies, 2 supports, 1 copie hors site; utiliser Veeam pour les VM.
+Appliquer la règle 3-2-1 : 3 copies, 2 supports, 1 copie hors site; utiliser Veeam pour les [[Glossary:VM]].
 
 ## 3. Production — Sécurité
 

@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_ownCloud_Securiser
 
-- **Environnement** : VM Rocky Linux 9; ownCloud Infinite Scale (oCIS), binaire officiel
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9; ownCloud Infinite Scale (oCIS), binaire officiel
 - **OS / Version** : Rocky Linux 9
 - **Catégorie** : Vie du logiciel / ownCloud — Sécuriser
 - **Tags** : `owncloud`, `serveur`, `vie-du-logiciel`, `securiser`
@@ -36,7 +36,7 @@ sudo firewall-cmd --list-all
 
 ## 2. Production — Contrôles
 
-Configurer certificat TLS valide et contrôler qu’aucune règle n’expose le backend.
+Configurer certificat [[Glossary:TLS]] valide et contrôler qu’aucune règle n’expose le backend.
 
 ## 3. Production — Sécurité
 

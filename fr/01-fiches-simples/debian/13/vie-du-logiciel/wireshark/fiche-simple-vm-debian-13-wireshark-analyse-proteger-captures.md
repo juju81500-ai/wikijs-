@@ -41,7 +41,7 @@ Limiter l'exposition des données contenues dans les captures.
    ```bash
    rm -i "$HOME/captures/test-local.pcapng"
    ```
-   👉 Explication : `-i` demande confirmation; sur SSD ou snapshots la suppression ne garantit pas l'effacement.
+   👉 Explication : `-i` demande confirmation; sur [[Glossary:SSD]] ou snapshots la suppression ne garantit pas l'effacement.
 
 ## 2. Production — Contrôles
 

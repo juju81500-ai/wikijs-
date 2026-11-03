@@ -24,11 +24,11 @@ Prouver qu'une sauvegarde est restaurable.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Dans PVE : **Stockage PBS > Sauvegardes**, sélectionner un point de sauvegarde puis **Restore**.
+1. Dans PVE : **Stockage [[Glossary:PBS]] > Sauvegardes**, sélectionner un point de sauvegarde puis **Restore**.
    👉 Explication : une tâche verte n'est pas une preuve de restaurabilité.
 
 2. Restaurer vers un identifiant temporaire (remplacer 9200 par un identifiant libre) et un réseau isolé.
-   👉 Explication : évite tout conflit avec la VM d'origine.
+   👉 Explication : évite tout conflit avec la [[Glossary:VM]] d'origine.
 
 3. Équivalent en commande (remplacer STOCKAGE_PBS, 9200 et SNAPSHOT par vos valeurs) :
    ```bash

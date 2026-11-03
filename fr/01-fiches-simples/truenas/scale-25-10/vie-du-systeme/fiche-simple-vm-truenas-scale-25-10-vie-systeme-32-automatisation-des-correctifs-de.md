@@ -24,14 +24,14 @@ Suivre les mises à jour sans les subir.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. GUI : Système > Mise à jour : surveiller les alertes de mise à jour disponible.
+1. [[Glossary:GUI]] : Système > Mise à jour : surveiller les alertes de mise à jour disponible.
    ```bash
    sudo midclt call update.check_available
    ```
    👉 Explication : interroge le serveur de mises à jour.
 
 2. Planifier une fenêtre : annoncer, sauvegarder la configuration, mettre à jour, valider.
-   👉 Explication : les mises à jour automatiques sans validation ne sont pas conseillées sur un NAS.
+   👉 Explication : les mises à jour automatiques sans validation ne sont pas conseillées sur un [[Glossary:NAS]].
 
 ## 2. Production — Contrôles
 

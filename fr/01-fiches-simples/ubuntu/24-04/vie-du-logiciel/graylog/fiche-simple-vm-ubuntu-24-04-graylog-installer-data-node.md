@@ -12,7 +12,7 @@ dateModified: 2026-11-03T09:36:13Z
 # fiche-simple-vm-ubuntu-24-04-graylog-installer-data-node.md
 
 - **Environnement** : Ubuntu Server 24-04: nœud Graylog + MongoDB et Data Node (laboratoire)
-- **OS / Version** : Ubuntu Server 24-04 LTS; Graylog 7.2; MongoDB 8.0
+- **OS / Version** : Ubuntu Server 24-04 [[Glossary:LTS]]; Graylog 7.2; MongoDB 8.0
 - **Catégorie** : journaux / stockage
 - **Tags** : `ubuntu2404`, `graylog`, `datanode`, `mongodb`, `datanode`, `sysctl`
 
@@ -42,7 +42,7 @@ Installer le Data Node Graylog sur son hôte dédié.
    ```bash
    sudoedit /etc/graylog/datanode/datanode.conf
    ```
-   👉 Explication : le heap vaut environ la moitié de la RAM, plafonné à 31 Go.
+   👉 Explication : le heap vaut environ la moitié de la [[Glossary:RAM]], plafonné à 31 Go.
 
 4. Activer le service puis contrôler l'état :
    ```bash
@@ -53,7 +53,7 @@ Installer le Data Node Graylog sur son hôte dédié.
 
 ## 2. Production — Contrôles
 
-Utiliser un stockage dédié, idéalement XFS, pour les données du Data Node.
+Utiliser un stockage dédié, idéalement [[Glossary:XFS]], pour les données du Data Node.
 
 ## 3. Production — Sécurité
 

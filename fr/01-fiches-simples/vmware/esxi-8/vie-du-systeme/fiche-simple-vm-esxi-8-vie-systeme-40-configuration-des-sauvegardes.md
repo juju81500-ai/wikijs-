@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Sauvegarder les VM et la configuration de l'hôte.
+Sauvegarder les [[Glossary:VM]] et la configuration de l'hôte.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -46,7 +46,7 @@ Sauvegarder les VM et la configuration de l'hôte.
 
 ## 2. Production — Contrôles
 
-Règle 3-2-1; Veeam avec vCenter (accès aux API de sauvegarde).
+Règle 3-2-1; Veeam avec vCenter (accès aux [[Glossary:API]] de sauvegarde).
 
 ## 3. Production — Sécurité
 

@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Environnement** : Tenant Atlassian Cloud administré par l'organisation (SaaS, aucune machine locale)
 - **OS / Version** : Jira Service Management Cloud (SaaS Atlassian)
-- **Catégorie** : ITSM / centre de services
+- **Catégorie** : [[Glossary:ITSM]] / centre de services
 - **Tags** : `jira-service-management`, `atlassian-cloud`, `itsm`, `saas`
 
 ---
@@ -30,7 +30,7 @@ Valider tenant, licences et règles de gouvernance avant d'activer le portail.
 2. Vérifier la région et la résidence des données disponibles selon le plan : **Paramètres > Résidence des données** (libellé variable selon le plan).
    👉 Explication : à valider avec la conformité avant de créer des données.
 
-3. Vérifier **Domaines** et la politique d'identité (SSO/MFA).
+3. Vérifier **Domaines** et la politique d'identité ([[Glossary:SSO]]/MFA).
    👉 Explication : seuls les domaines de l'organisation doivent être autorisés.
 
 4. Nommer des administrateurs de site et d'espace nominatifs : **Utilisateurs > Gérer les utilisateurs**.

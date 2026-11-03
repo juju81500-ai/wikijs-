@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Configurer SMTP et les paramètres d'organisation avant d'inviter des utilisateurs.
+Configurer [[Glossary:SMTP]] et les paramètres d'organisation avant d'inviter des utilisateurs.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -30,13 +30,13 @@ Configurer SMTP et les paramètres d'organisation avant d'inviter des utilisateu
    ```
    👉 Explication : contient les paramètres SMTP; le mot de passe SMTP ne doit y être saisi que depuis le coffre.
 
-2. Y renseigner serveur, port, SSL et compte SMTP selon la documentation Bitwarden.
+2. Y renseigner serveur, port, [[Glossary:SSL]] et compte SMTP selon la documentation Bitwarden.
    👉 Explication : nécessaire aux invitations et validations de compte.
 
 3. Si nécessaire, créer ou lier la licence d'organisation self-hosted.
    👉 Explication : respecter les règles de licence Bitwarden.
 
-4. Régler inscription publique, communication cloud, rôles, collections, SSO/MFA et policy avant d'inviter.
+4. Régler inscription publique, communication cloud, rôles, collections, [[Glossary:SSO]]/MFA et policy avant d'inviter.
    👉 Explication : évite une ouverture non voulue.
 
 5. Appliquer les modifications :
@@ -47,7 +47,7 @@ Configurer SMTP et les paramètres d'organisation avant d'inviter des utilisateu
 
 ## 2. Production — Contrôles
 
-Garder HTTP/HTTPS cohérent et confirmer TLS pour l'accès client.
+Garder [[Glossary:HTTP]]/HTTPS cohérent et confirmer [[Glossary:TLS]] pour l'accès client.
 
 ## 3. Production — Sécurité
 

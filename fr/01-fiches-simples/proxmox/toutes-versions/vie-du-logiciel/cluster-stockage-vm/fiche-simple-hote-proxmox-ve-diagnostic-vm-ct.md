@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Inspecter l'état et la configuration d'une VM ou d'un CT en échec.
+Inspecter l'état et la configuration d'une [[Glossary:VM]] ou d'un [[Glossary:CT]] en échec.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
@@ -31,12 +31,12 @@ Inspecter l'état et la configuration d'une VM ou d'un CT en échec.
    ```
    👉 Explication : on repère l'état de chacun.
 
-2. Afficher l'état et la configuration d'une VM (100 est un exemple de VMID à remplacer) :
+2. Afficher l'état et la configuration d'une VM (100 est un exemple de [[Glossary:VMID]] à remplacer) :
    ```bash
    qm status 100
    qm config 100
    ```
-   👉 Explication : on vérifie ressources, disques, pont et VLAN.
+   👉 Explication : on vérifie ressources, disques, pont et [[Glossary:VLAN]].
 
 3. Afficher la configuration d'un conteneur (101 est un exemple de CTID à remplacer) :
    ```bash

@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 fiche-simple-vm-rocky-9-systeme-timezone-locale.md
 
-- **Environnement** : VM ou serveur Rocky Linux
-- **OS / Version** : Rocky Linux 9 / RHEL 9 avec systemd
+- **Environnement** : [[Glossary:VM]] ou serveur Rocky Linux
+- **OS / Version** : Rocky Linux 9 / [[Glossary:RHEL]] 9 avec systemd
 - **Catégorie** : Système & Services / Fuseau horaire et locale
 - **Tags** : `[rocky9]`, `[rhel9]`, `[timedatectl]`, `[localectl]`, `[locale]`, `[systemd]`
 
@@ -61,7 +61,7 @@ Régler le fuseau horaire (Europe/Paris), conserver l'horloge matérielle en UTC
    timedatectl show --property=Timezone --value
    timedatectl show --property=NTPSynchronized --value
    ```
-   👉 Explication : Un horodatage cohérent est indispensable aux journaux, à Kerberos et aux certificats. La valeur `yes` confirme qu'une source NTP est synchronisée (voir la fiche Chrony).
+   👉 Explication : Un horodatage cohérent est indispensable aux journaux, à Kerberos et aux certificats. La valeur `yes` confirme qu'une source [[Glossary:NTP]] est synchronisée (voir la fiche Chrony).
 
 2. Contrôler les tâches planifiées avant un changement de fuseau :
    ```bash

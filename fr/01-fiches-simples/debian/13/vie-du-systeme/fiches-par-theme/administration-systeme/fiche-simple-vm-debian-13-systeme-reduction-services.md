@@ -11,13 +11,13 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 Fiche_Simple_-_VM_Debian_13_Systeme_Reduction_Services
 
-- **Environnement** : VM ou serveur Debian 13 en production
+- **Environnement** : [[Glossary:VM]] ou serveur Debian 13 en production
 - **OS / Version** : Debian 13 (Trixie) avec systemd - Famille Debian
 - **Catégorie** : Système & Services / Réduction de la surface d'attaque
 - **Tags** : `[debian13]`, `[debian]`, `[systemd]`, `[services]`, `[surface-attaque]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Identifier les services systemd en écoute ou démarrés automatiquement mais inutiles au rôle du serveur, puis les désactiver, les masquer et retirer leurs paquets sur Debian 13, sans couper les services nécessaires (SSH, journald, chrony, pare-feu).
+Identifier les services systemd en écoute ou démarrés automatiquement mais inutiles au rôle du serveur, puis les désactiver, les masquer et retirer leurs paquets sur Debian 13, sans couper les services nécessaires ([[Glossary:SSH]], journald, chrony, pare-feu).
 
 ---
 
@@ -27,7 +27,7 @@ Identifier les services systemd en écoute ou démarrés automatiquement mais in
    systemctl list-unit-files --type=service --state=enabled --no-pager
    sudo ss -tulnp
    ```
-   👉 Explication : La première commande liste les services qui démarrent avec la machine ; la seconde associe chaque port TCP/UDP en écoute à son processus. Un service sans rôle défini doit être justifié ou supprimé.
+   👉 Explication : La première commande liste les services qui démarrent avec la machine ; la seconde associe chaque port [[Glossary:TCP]]/UDP en écoute à son processus. Un service sans rôle défini doit être justifié ou supprimé.
 
 2. Vérifier les dépendances avant de désactiver un service :
    ```bash

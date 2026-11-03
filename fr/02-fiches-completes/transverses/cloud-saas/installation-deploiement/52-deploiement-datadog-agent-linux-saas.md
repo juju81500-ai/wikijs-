@@ -23,13 +23,13 @@ Fiche simple : [préparer l'enrôlement](/fr/01-fiches-simples/transverses/cloud
 
 Vérifier la plateforme Linux, l'architecture et la version de l'Agent prises en charge. Définir tenant/site (US, EU ou autre), proxy éventuel, tags obligatoires, produits autorisés (infrastructure, logs, APM) et responsable de l'hôte. Confirmer le budget/quotas d'ingestion et la politique de rétention avant d'activer des collecteurs à fort volume.
 
-Créer ou utiliser une clé API gérée par l'organisation. Ne pas utiliser une clé d'application dans la configuration Agent. Stocker les secrets dans le coffre et limiter les personnes autorisées à les administrer.
+Créer ou utiliser une clé [[Glossary:API]] gérée par l'organisation. Ne pas utiliser une clé d'application dans la configuration Agent. Stocker les secrets dans le coffre et limiter les personnes autorisées à les administrer.
 
 ## 2. Déploiement d'un hôte pilote
 
 Fiche simple : [déployer l'Agent sur un hôte pilote](/fr/01-fiches-simples/transverses/cloud-saas/datadog/fiche-simple-cloud-datadog-deployer-hote-pilote).
 
-Dans Datadog **Fleet Automation**, ouvrir les instructions d'installation Agent pour Linux. Sélectionner la région correcte et les options organisationnelles, puis examiner la commande/script généré avant exécution. Le script peut modifier le système et s'exécuter avec des privilèges élevés : valider son contenu, les URL de téléchargement, le certificat TLS et les prérequis locaux.
+Dans Datadog **Fleet Automation**, ouvrir les instructions d'installation Agent pour Linux. Sélectionner la région correcte et les options organisationnelles, puis examiner la commande/script généré avant exécution. Le script peut modifier le système et s'exécuter avec des privilèges élevés : valider son contenu, les URL de téléchargement, le certificat [[Glossary:TLS]] et les prérequis locaux.
 
 Sur un hôte de laboratoire ou un pilote approuvé, exécuter la commande fournie par Fleet Automation. Ne pas recopier une API key dans l'historique shell ni dans la fiche. Si une automatisation centrale est utilisée, transmettre le secret depuis le gestionnaire de secrets au runtime et empêcher sa journalisation.
 
@@ -58,7 +58,7 @@ Fiche simple : [sécuriser et maintenir l'Agent](/fr/01-fiches-simples/transvers
 
 - Restreindre les droits en lecture sur `datadog.yaml`, qui peut contenir des identifiants.
 - Gérer les clés API depuis le tenant, suivre leur usage et les faire tourner selon la politique interne; mettre à jour les agents concernés sans interrompre toute la flotte.
-- Utiliser un proxy sortant si requis et n'autoriser que les FQDN/ports publiés pour le site Datadog concerné.
+- Utiliser un proxy sortant si requis et n'autoriser que les [[Glossary:FQDN]]/ports publiés pour le site Datadog concerné.
 - Garder Agent et intégrations à jour; tester les versions et changements de configuration sur un groupe pilote.
 - Protéger les logs locaux et flares de support; inspecter le contenu avant partage.
 

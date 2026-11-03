@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - **Catégorie** : Services Web et bases de données
 - **Plateforme** : Linux / Windows
-- **Produit (matrice)** : MySQL / MariaDB / PostgreSQL / SQL Server
+- **Produit (matrice)** : MySQL / MariaDB / PostgreSQL / [[Glossary:SQL]] Server
 - **Statut dans le pack** : Couvert
 - **Tags** : `logiciel`, `14-services-web-et-bases-de-donnees`, `couvert`
 

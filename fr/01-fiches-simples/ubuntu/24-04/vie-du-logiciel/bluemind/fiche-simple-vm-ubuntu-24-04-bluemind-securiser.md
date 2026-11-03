@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Ubuntu_24.04_BlueMind_Securiser
 
-- **Environnement** : VM Ubuntu Server 24-04; BlueMind 5.7; guide public, matrice OS à revalider
+- **Environnement** : [[Glossary:VM]] Ubuntu Server 24-04; BlueMind 5.7; guide public, matrice OS à revalider
 - **OS / Version** : Ubuntu Server 24-04
 - **Catégorie** : Vie du logiciel / BlueMind — Sécuriser
 - **Tags** : `bluemind`, `serveur`, `vie-du-logiciel`, `securiser`
@@ -20,7 +20,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Protéger TLS, administration et exposition réseau BlueMind.
+Protéger [[Glossary:TLS]], administration et exposition réseau BlueMind.
 
 ## 1. Hors-Production (Lab / Test / POC)
 

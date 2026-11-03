@@ -11,9 +11,9 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Rocky_9_Snort_Configurer
 
-- **Environnement** : VM Rocky Linux 9 dédiée à Snort
-- **OS / Version** : Rocky Linux 9 (compatible RHEL 9); version des paquets à vérifier sur l’hôte
-- **Catégorie** : Snort / configuration IDS passif
+- **Environnement** : [[Glossary:VM]] Rocky Linux 9 dédiée à Snort
+- **OS / Version** : Rocky Linux 9 (compatible [[Glossary:RHEL]] 9); version des paquets à vérifier sur l’hôte
+- **Catégorie** : Snort / configuration [[Glossary:IDS]] passif
 - **Tags** : `snort`, `rocky9`, `vie-du-logiciel`, `configurer`
 
 ---
@@ -46,7 +46,7 @@ Configurer Snort 3 en détection passive avec HOME_NET et des règles approuvée
    ```bash
    echo 'alert icmp any any -> any any (msg:"TEST Snort ICMP lab"; sid:1000001; rev:1;)' | sudo tee /opt/snort3/rules/local.rules
    ```
-   👉 Explication : Alerte sur ICMP pour la recette; sid ≥ 1000000 est réservé aux règles locales. Retirer cette règle après la recette.
+   👉 Explication : Alerte sur [[Glossary:ICMP]] pour la recette; sid ≥ 1000000 est réservé aux règles locales. Retirer cette règle après la recette.
 
 5. Tester la configuration :
    ```bash

@@ -15,7 +15,7 @@ dateModified: 2026-11-03T09:36:13Z
 - **Niveau** : débutant à intermédiaire (couche 2 du modèle OSI)
 - **Durée estimée** : 3 h 30 (1 h 30 de cours, 1 h 30 de laboratoire, 30 min d'exercices et de quiz)
 
-> Cette leçon est un texte original du pack. Les adresses IP utilisées sont des adresses de documentation (RFC 5737) et les adresses MAC appartiennent à la plage de documentation de la RFC 7042. Tout ce qui modifie une configuration est présenté comme un exemple de laboratoire : ne jamais l'appliquer sur un réseau de production sans validation préalable, fenêtre de maintenance et plan de retour arrière.
+> Cette leçon est un texte original du pack. Les adresses [[Glossary:IP]] utilisées sont des adresses de documentation (RFC 5737) et les adresses MAC appartiennent à la plage de documentation de la RFC 7042. Tout ce qui modifie une configuration est présenté comme un exemple de laboratoire : ne jamais l'appliquer sur un réseau de production sans validation préalable, fenêtre de maintenance et plan de retour arrière.
 
 ## Objectifs pédagogiques
 
@@ -24,15 +24,15 @@ dateModified: 2026-11-03T09:36:13Z
 - expliquer le rôle d'un commutateur Ethernet et le distinguer d'un concentrateur ;
 - décrire une adresse MAC (unicast, multicast, diffusion) ;
 - dérouler l'apprentissage, l'inondation et le filtrage d'une trame ;
-- définir un VLAN, distinguer port d'accès et trunk, lire une étiquette 802.1Q et comprendre le VLAN natif ;
-- décrire le principe de STP (pont racine, ports racine, désigné, bloqué) ;
+- définir un [[Glossary:VLAN]], distinguer port d'accès et trunk, lire une étiquette 802.1Q et comprendre le VLAN natif ;
+- décrire le principe de [[Glossary:STP]] (pont racine, ports racine, désigné, bloqué) ;
 - reproduire un mini-réseau VLAN + trunk dans un laboratoire Linux jetable et lire les commandes équivalentes d'un équipement de type Cisco IOS.
 
 ## Prérequis et durée
 
 - Notions d'adresse IP et de sous-réseau ; la commutation travaille en **couche 2** (liaison de données), le routage en couche 3.
 - Savoir utiliser un terminal Linux.
-- Laboratoire : une VM Linux jetable (`iproute2`, `tcpdump`) où l'on peut exécuter des commandes d'administration **sans risque pour autre chose**.
+- Laboratoire : une [[Glossary:VM]] Linux jetable (`iproute2`, `tcpdump`) où l'on peut exécuter des commandes d'administration **sans risque pour autre chose**.
 - Durée : environ 3 h 30.
 
 ## L'essentiel en bref
@@ -67,7 +67,7 @@ Deux notions à bien séparer :
 
 *Des rangées de ports RJ45 d'un commutateur modulaire : chaque port est une « porte » vers une machine, et c'est sur cette porte que le commutateur apprend les adresses MAC. Photographie de Ben Franske, licence CC BY-SA 4.0 (voir les crédits en fin de leçon).*
 
-Le commutateur ne lit que l'en-tête Ethernet (MAC destination, MAC source, éventuelle étiquette de VLAN), jamais l'adresse IP ni le port TCP : c'est ce qui le rend rapide et simple.
+Le commutateur ne lit que l'en-tête Ethernet (MAC destination, MAC source, éventuelle étiquette de VLAN), jamais l'adresse IP ni le port [[Glossary:TCP]] : c'est ce qui le rend rapide et simple.
 
 ## 2. Les adresses MAC
 
@@ -80,7 +80,7 @@ Dans le premier octet, le bit I/G (poids faible) vaut 0 pour une adresse individ
 ### 2.2 Les trois types de destination
 
 - **Unicast** : une seule destination.
-- **Diffusion** : `ff:ff:ff:ff:ff:ff`, tout le domaine de diffusion (par exemple une requête ARP).
+- **Diffusion** : `ff:ff:ff:ff:ff:ff`, tout le domaine de diffusion (par exemple une requête [[Glossary:ARP]]).
 - **Multicast** : un groupe (`01:00:5e:…` en IPv4, `33:33:…` en IPv6).
 
 ### 2.3 Voir ses adresses MAC (lecture seule)
@@ -125,7 +125,7 @@ Table vide ; A, B, C, D sont sur les ports 1 à 4.
 
 ### 3.3 Vieillissement et tempêtes
 
-Une entrée non rafraîchie disparaît après un délai (souvent 300 s). En cas de boucle, une trame de diffusion tourne indéfiniment (**tempête de diffusion**) : les trames Ethernet n'ont pas de TTL, d'où STP (section 6).
+Une entrée non rafraîchie disparaît après un délai (souvent 300 s). En cas de boucle, une trame de diffusion tourne indéfiniment (**tempête de diffusion**) : les trames Ethernet n'ont pas de [[Glossary:TTL]], d'où STP (section 6).
 
 Table MAC d'un pont Linux (après le laboratoire, lecture seule) :
 
@@ -175,7 +175,7 @@ L'étiquette, insérée entre l'adresse MAC source et l'EtherType, ajoute 4 octe
 
 *La trame Ethernet avec étiquette 802.1Q : les 4 octets ajoutés portent le numéro de VLAN. Création originale du projet Pack Master, dédiée au domaine public (CC0).*
 
-La trame étiquetée fait 4 octets de plus (1522 au lieu de 1518) ; le MTU reste de 1500 octets.
+La trame étiquetée fait 4 octets de plus (1522 au lieu de 1518) ; le [[Glossary:MTU]] reste de 1500 octets.
 
 ### 5.3 Le VLAN natif
 
@@ -379,7 +379,7 @@ ip -br link show | grep -E 'sw-p|br-lab' || echo "nettoyage terminé"
 A. l'adresse IP de destination — B. l'adresse MAC de destination — C. le port TCP — D. le nom d'hôte
 
 **Q2.** Une trame d'adresse de destination inconnue arrive. Le commutateur…
-A. l'abandonne — B. l'envoie au routeur — C. l'inonde sur tous les autres ports du VLAN — D. renvoie une erreur ICMP
+A. l'abandonne — B. l'envoie au routeur — C. l'inonde sur tous les autres ports du VLAN — D. renvoie une erreur [[Glossary:ICMP]]
 
 **Q3.** Quel équipement réduit le domaine de diffusion ?
 A. un concentrateur — B. un câble croisé — C. un VLAN avec un routeur entre les VLAN — D. un répéteur
@@ -455,4 +455,4 @@ Méthode : partir de la couche 1 (câble, voyant), vérifier la couche 2 (VLAN d
 |---|---|---|---|
 | 2026-11-01 | Linux (`iproute2`, `tcpdump`), équipement de type Cisco IOS | Rédaction assistée (Copilot) | Non testé sur plateforme cible |
 
-Précision : lors de la rédaction, seules des requêtes de lecture vers l'API publique de Wikimedia Commons ont été exécutées, afin de vérifier la licence et de télécharger l'image 5. Les commandes du laboratoire et les exemples Cisco IOS n'ont **pas** été exécutés.
+Précision : lors de la rédaction, seules des requêtes de lecture vers l'[[Glossary:API]] publique de Wikimedia Commons ont été exécutées, afin de vérifier la licence et de télécharger l'image 5. Les commandes du laboratoire et les exemples Cisco IOS n'ont **pas** été exécutés.

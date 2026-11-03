@@ -11,8 +11,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 # fiche-simple-vm-debian-12-zabbix-concevoir-preparer.md
 
-- **Environnement** : VM dédiée Zabbix Server, base locale et agents/proxies autorisés
-- **OS / Version** : Debian 12 Bookworm; Zabbix 7.0 LTS depuis le dépôt officiel compatible
+- **Environnement** : [[Glossary:VM]] dédiée Zabbix Server, base locale et agents/proxies autorisés
+- **OS / Version** : Debian 12 Bookworm; Zabbix 7.0 [[Glossary:LTS]] depuis le dépôt officiel compatible
 - **Catégorie** : supervision / conception Zabbix
 - **Tags** : `debian12`, `zabbix`, `supervision`, `capacity`, `network`
 
@@ -29,7 +29,7 @@ Préparer la supervision Zabbix en déterminant capacité, versions, flux résea
    nproc; free -h; df -h /var/lib/mysql 2>/dev/null || df -h /
    ip -br a
    ```
-   👉 Explication : dimensionner la base selon hôtes, items et durée de conservation; réserver DNS/IP.
+   👉 Explication : dimensionner la base selon hôtes, items et durée de conservation; réserver [[Glossary:DNS]]/IP.
 
 2. Contrôler les versions proposées par le dépôt Zabbix officiel (déjà ajouté selon la documentation Zabbix pour Debian 12) :
    ```bash
@@ -38,7 +38,7 @@ Préparer la supervision Zabbix en déterminant capacité, versions, flux résea
    ```
    👉 Explication : le candidat doit provenir du dépôt Zabbix 7.0 LTS et non des dépôts Debian.
 
-3. Consigner : TLS, sauvegarde de la base, flux réseau des agents (10050/10051).
+3. Consigner : [[Glossary:TLS]], sauvegarde de la base, flux réseau des agents (10050/10051).
    👉 Explication : ces flux sont ouverts uniquement entre agents/proxies et serveur.
 
 ## 2. Production — Contrôles
@@ -54,7 +54,7 @@ Faire approuver capacité, version, réseau, stockage, TLS, rétention, sauvegar
 
 ## Validation et retour arrière
 
-- **Validation** : candidats APT, dimensions, flux, TLS et procédure de restauration confirmés.
+- **Validation** : candidats [[Glossary:APT]], dimensions, flux, TLS et procédure de restauration confirmés.
 - **Arrêt** : reporter si le dépôt ne correspond pas à Debian 12 ou à la branche LTS choisie.
 
 ## Si le problème n'est pas résolu

@@ -11,14 +11,14 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 OpenLDAP
 
-- **Environnement** : VM (Debian 12)
+- **Environnement** : [[Glossary:VM]] (Debian 12)
 - **OS / Version** : Debian 12 (bookworm)
 - **Version** : OpenLDAP 2.5.x (paquet `slapd` des dépôts Debian 12, à vérifier sur la version déployée)
 - **Catégorie** : Systèmes, annuaires et services
 - **Tags** : `[debian-12]`, `[openldap]`, `[slapd]`, `[ldap]`, `[annuaire]`, `[hardening]`
 
 ## 🎯 Problème précis à résoudre
-Installer un annuaire OpenLDAP (`slapd`) sur Debian 12, créer un domaine et un utilisateur de test, vérifier les liaisons (bind) et les requêtes LDAP, puis le durcir (anonymat désactivé, LDAPS, pare-feu restreint) avant de le rendre utilisable par un service de l'entreprise. Les tests ne se font que sur votre propre serveur.
+Installer un annuaire OpenLDAP (`slapd`) sur Debian 12, créer un domaine et un utilisateur de test, vérifier les liaisons (bind) et les requêtes [[Glossary:LDAP]], puis le durcir (anonymat désactivé, LDAPS, pare-feu restreint) avant de le rendre utilisable par un service de l'entreprise. Les tests ne se font que sur votre propre serveur.
 
 ---
 
@@ -36,7 +36,7 @@ dpkg -s slapd | grep -E '^(Version|Status)'
 sudo dpkg-reconfigure -plow slapd
 ```
 Réponses à saisir : `Omettre la configuration du serveur DNS` = Non, nom de domaine = `lab.local`, nom de l'organisation = `Lab`, mot de passe administrateur, base de données = `MDB`, purge de la base à la suppression = Non.
-👉 Explication : Crée le suffixe `dc=lab,dc=local` utilisé dans tous les DN suivants. Le DN administrateur devient `cn=admin,dc=lab,dc=local`.
+👉 Explication : Crée le suffixe `dc=lab,dc=local` utilisé dans tous les [[Glossary:DN]] suivants. Le DN administrateur devient `cn=admin,dc=lab,dc=local`.
 
 3. Contrôle du service et de la racine de l'annuaire (requête anonyme, lab uniquement) :
 ```bash
@@ -70,7 +70,7 @@ uid: jdupont
 ```bash
 ldapadd -x -D "cn=admin,dc=lab,dc=local" -W -f /root/user-jdupont.ldif
 ```
-👉 Explication : Le premier fichier crée l'OU `people`, le second l'utilisateur `jdupont`. `-W` demande le mot de passe admin. Les deux fichiers contiennent des données de lab et ne doivent pas servir en production.
+👉 Explication : Le premier fichier crée l'[[Glossary:OU]] `people`, le second l'utilisateur `jdupont`. `-W` demande le mot de passe admin. Les deux fichiers contiennent des données de lab et ne doivent pas servir en production.
 
 5. Définition du mot de passe de l'utilisateur et test de liaison :
 ```bash
@@ -91,13 +91,13 @@ sudo ufw allow from 192.168.10.0/24 to any port 636 proto tcp
 sudo ufw enable
 sudo ufw status verbose
 ```
-👉 Explication : SSH est autorisé avant l'activation du pare-feu. Le port 389 (LDAP) et 636 (LDAPS) ne sont accessibles qu'au sous-réseau `192.168.10.0/24`. Adapter le sous-réseau à l'entreprise.
+👉 Explication : [[Glossary:SSH]] est autorisé avant l'activation du pare-feu. Le port 389 (LDAP) et 636 (LDAPS) ne sont accessibles qu'au sous-réseau `192.168.10.0/24`. Adapter le sous-réseau à l'entreprise.
 
 2. Test depuis un client du sous-réseau :
 ```bash
 ldapsearch -x -H ldap://192.168.10.20 -b "dc=lab,dc=local" -s sub "(uid=jdupont)" dn
 ```
-👉 Explication : Recherche l'utilisateur `jdupont` depuis un autre poste. Remplacer `192.168.10.20` par l'adresse IP réelle du serveur. Une réponse vide indique un filtre ou une règle pare-feu à revoir.
+👉 Explication : Recherche l'utilisateur `jdupont` depuis un autre poste. Remplacer `192.168.10.20` par l'adresse [[Glossary:IP]] réelle du serveur. Une réponse vide indique un filtre ou une règle pare-feu à revoir.
 
 ---
 

@@ -22,8 +22,8 @@ dateModified: 2026-11-03T09:36:13Z
 
 À la fin de cette leçon, vous saurez :
 
-1. expliquer ce que distribue DHCP (adresse, masque, passerelle, DNS, durée du bail) ;
-2. décrire l'échange **DORA** (Discover, Offer, Request, Acknowledge) et ses ports UDP 67 et 68 ;
+1. expliquer ce que distribue [[Glossary:DHCP]] (adresse, masque, passerelle, [[Glossary:DNS]], durée du bail) ;
+2. décrire l'échange **DORA** (Discover, Offer, Request, Acknowledge) et ses ports [[Glossary:UDP]] 67 et 68 ;
 3. calculer T1, T2 et l'expiration d'un bail, et choisir une durée adaptée ;
 4. distinguer plage dynamique, réservation et adresse statique ;
 5. expliquer le rôle d'un **relais DHCP** et du champ `giaddr` ;
@@ -34,7 +34,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 - Connaître une adresse IPv4, un masque, une passerelle par défaut.
 - Savoir utiliser un terminal Linux ou PowerShell.
-- Pour le laboratoire : deux VM jetables (un serveur, un client) reliées par un **réseau interne isolé**, sans autre serveur DHCP.
+- Pour le laboratoire : deux [[Glossary:VM]] jetables (un serveur, un client) reliées par un **réseau interne isolé**, sans autre serveur DHCP.
 - Durée totale : environ 3 h.
 
 Les adresses de l'exemple appartiennent aux blocs de documentation `192.0.2.0/24`, `198.51.100.0/24` et `203.0.113.0/24` ; les adresses MAC utilisent la plage de documentation `00:00:5e:00:53:xx`. Aucun secret ni donnée réelle.
@@ -60,7 +60,7 @@ Un serveur DHCP fournit, au minimum :
 
 | Information | Option DHCP | Exemple |
 |---|---|---|
-| Adresse IP | champ `yiaddr` | `192.0.2.100` |
+| Adresse [[Glossary:IP]] | champ `yiaddr` | `192.0.2.100` |
 | Masque | option 1 | `255.255.255.0` |
 | Passerelle par défaut | option 3 | `192.0.2.1` |
 | Serveurs DNS | option 6 | `192.0.2.53` |
@@ -79,7 +79,7 @@ Au démarrage, le client n'a **pas d'adresse** et ne connaît pas le serveur. Il
 1. **DISCOVER** (client → diffusion) : « Y a-t-il un serveur DHCP ? » Le message contient l'adresse MAC du client et, souvent, des options demandées (masque, passerelle, DNS).
 2. **OFFER** (serveur → client) : « Je te propose `192.0.2.100` pour 2 heures, avec ces options. » Plusieurs serveurs peuvent répondre.
 3. **REQUEST** (client → diffusion) : « J'accepte l'offre du serveur `192.0.2.1` pour `192.0.2.100`. » Il est diffusé pour que les **autres serveurs** sachent que leur offre est refusée ; l'option 54 (identifiant du serveur) désigne le serveur choisi.
-4. **ACKNOWLEDGE** (serveur → client) : « Confirmé. » Le bail démarre. Le client vérifie en général par un test ARP que l'adresse n'est pas déjà utilisée ; s'il détecte un conflit, il envoie **DECLINE** et recommence.
+4. **ACKNOWLEDGE** (serveur → client) : « Confirmé. » Le bail démarre. Le client vérifie en général par un test [[Glossary:ARP]] que l'adresse n'est pas déjà utilisée ; s'il détecte un conflit, il envoie **DECLINE** et recommence.
 
 ### 2.1 Les autres messages
 
@@ -329,7 +329,7 @@ cd ~ && rm -r ~/lab-dhcp
 4. Échange DORA complet sur le même segment pour le client dont la MAC se termine par `:07`, qui reçoit `192.0.2.103`. Rien n'indique de relais ici (le journal d'un serveur avec relais mentionnerait l'adresse du relais, `via 198.51.100.1` par exemple).
 5. Sur le routeur : interface côté clients `203.0.113.1` avec comme cible de relais `192.0.2.67`. Sur le serveur : une étendue `203.0.113.0/24` (plage, passerelle `203.0.113.1`, DNS) dont l'adresse de sous-réseau correspond au `giaddr`. Vérifier aussi que le routeur et le pare-feu laissent passer l'UDP 67 en unicast vers le serveur.
 6. Réservation : l'adresse est gérée au serveur, la machine reste en DHCP et reçoit aussi DNS et passerelle automatiquement ; l'adresse est tout de même fixe. Statique : indépendant du serveur DHCP (utile pour les composants dont dépend DHCP lui-même) mais change à plusieurs endroits et peut provoquer des conflits. Recommandation : réservation, sauf pour les équipements dont dépend DHCP.
-7. (a) Câble ou port inactif (couche 2) ; (b) le serveur DHCP est arrêté ou plage épuisée ; (c) pas de relais pour ce VLAN ; (d) filtrage UDP 67/68 ou DHCP snooping qui bloque la réponse. Après un `ipconfig /renew`, un échec persistant relève du serveur, du relais ou du filtrage.
+7. (a) Câble ou port inactif (couche 2) ; (b) le serveur DHCP est arrêté ou plage épuisée ; (c) pas de relais pour ce [[Glossary:VLAN]] ; (d) filtrage UDP 67/68 ou DHCP snooping qui bloque la réponse. Après un `ipconfig /renew`, un échec persistant relève du serveur, du relais ou du filtrage.
 8. Le **DHCP snooping** : le commutateur n'accepte les réponses de serveur que depuis des ports « de confiance ».
 
 ## Quiz

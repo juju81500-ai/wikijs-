@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Passbolt_Configurer
 
-- **Environnement** : VM Debian 13 dédiée avec domaine, base et SMTP définis
+- **Environnement** : [[Glossary:VM]] Debian 13 dédiée avec domaine, base et [[Glossary:SMTP]] définis
 - **OS / Version** : Debian 13 Trixie
 - **Catégorie** : gestionnaire de secrets / serveur
 - **Tags** : `debian13`, `passbolt`, `secrets`, `tls`, `sauvegarde`
@@ -33,13 +33,13 @@ Configurer URL, base et mail par les mécanismes documentés pour le paquet inst
    ```text
    Navigateur > ouvrir la documentation officielle : https://www.passbolt.com/docs/hosting/install/ce/debian/
    ```
-   👉 Explication : chemins diffèrent selon paquet et version; ne pas éditer un fichier supposé. Détail à confirmer dans la documentation officielle avant application : URL publique : https://passbolt.example.com (FQDN à remplacer). Appliquer la méthode de configuration documentée pour la version installée.
+   👉 Explication : chemins diffèrent selon paquet et version; ne pas éditer un fichier supposé. Détail à confirmer dans la documentation officielle avant application : URL publique : https://passbolt.example.com ([[Glossary:FQDN]] à remplacer). Appliquer la méthode de configuration documentée pour la version installée.
 
 3. Configurer SMTP via mécanisme prévu
    ```text
    Navigateur > ouvrir la documentation officielle : https://www.passbolt.com/docs/hosting/install/ce/debian/
    ```
-   👉 Explication : ne pas versionner ou afficher credentials. Détail à confirmer dans la documentation officielle avant application : Renseigner hôte SMTP, port, TLS et expéditeur via la configuration officielle. Saisir le mot de passe via le gestionnaire de secrets approuvé.
+   👉 Explication : ne pas versionner ou afficher credentials. Détail à confirmer dans la documentation officielle avant application : Renseigner hôte SMTP, port, [[Glossary:TLS]] et expéditeur via la configuration officielle. Saisir le mot de passe via le gestionnaire de secrets approuvé.
 
 4. Créer compte admin via outil officiel après vérification chemin/version
    ```text

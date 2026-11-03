@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # 📄 VM_Debian_12_Supervision_Installation-Zabbix-Agent.md
 
-- **Environnement** : VM (Debian 12 Bookworm)
+- **Environnement** : [[Glossary:VM]] (Debian 12 Bookworm)
 - **OS / Version** : Debian 12 - Famille Debian
 - **Catégorie** : Supervision / Zabbix Agent 2
 - **Tags** : `[debian12]`, `[zabbix]`, `[zabbix-agent2]`, `[supervision]`, `[monitoring]`, `[hardening]`
@@ -28,7 +28,7 @@ Installer l'agent de supervision Zabbix Agent 2 sur Debian 12 à partir des dép
 
 2. Configuration rapide du serveur Zabbix autorisé dans `/etc/zabbix/zabbix_agentd.conf` :
    `sed -i 's/Server=127.0.0.1/Server=192.168.1.100/' /etc/zabbix/zabbix_agentd.conf && systemctl restart zabbix-agent`
-   👉 Explication : Déclare l'adresse IP du serveur Zabbix central pour autoriser la collecte de métriques.
+   👉 Explication : Déclare l'adresse [[Glossary:IP]] du serveur Zabbix central pour autoriser la collecte de métriques.
 
 ---
 
@@ -57,4 +57,4 @@ Installer l'agent de supervision Zabbix Agent 2 sur Debian 12 à partir des dép
    `echo "DenyKey=system.run[*]" >> /etc/zabbix/zabbix_agent2.conf`
    👉 Explication : Interdit au serveur Zabbix d'exécuter des commandes Shell arbitraires sur la machine cliente.
 
-4. Si l'agent accepte des connexions passives, autoriser TCP/10050 uniquement depuis le serveur Zabbix dans le pare-feu persistant géré par l'hôte. Pour un agent actif uniquement, ne pas ouvrir de port entrant inutile. Ne pas utiliser `nft add rule` seul comme règle permanente.
+4. Si l'agent accepte des connexions passives, autoriser [[Glossary:TCP]]/10050 uniquement depuis le serveur Zabbix dans le pare-feu persistant géré par l'hôte. Pour un agent actif uniquement, ne pas ouvrir de port entrant inutile. Ne pas utiliser `nft add rule` seul comme règle permanente.

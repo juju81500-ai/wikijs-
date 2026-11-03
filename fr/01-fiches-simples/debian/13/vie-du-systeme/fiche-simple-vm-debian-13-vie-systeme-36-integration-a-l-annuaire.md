@@ -11,7 +11,7 @@ dateModified: 2026-11-03T09:36:13Z
 
 # Fiche_Simple_-_VM_Debian_13_Vie_Systeme_36_Integration_A_L_Annuaire
 
-- **Environnement** : VM Debian 13 « trixie » (serveur)
+- **Environnement** : [[Glossary:VM]] Debian 13 « trixie » (serveur)
 - **OS / Version** : Debian 13; étape 36 sur 50 de la vie du système
 - **Catégorie** : vie du système / cycle de vie
 - **Tags** : `debian13`, `vie-du-systeme`, `cycle-de-vie`, `etape-36`
@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:13Z
 
 ## Problème précis à résoudre
 
-Joindre le domaine ou le VPN.
+Joindre le domaine ou le [[Glossary:VPN]].
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Installer les outils de jonction AD :
+1. Installer les outils de jonction [[Glossary:AD]] :
    ```bash
    sudo apt install realmd sssd sssd-tools adcli krb5-user packagekit
    ```

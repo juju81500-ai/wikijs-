@@ -13,7 +13,7 @@ dateModified: 2026-11-03T09:36:14Z
 
 - **OS / Version** : Debian 13 Trixie amd64; OpenTofu 1.13.2
 - **Type de fiche** : Installation/Déploiement
-- **Périmètre** : poste ou serveur d'administration IaC, dépôt APT officiel, projet pilote sans fournisseur cloud, état et sauvegarde
+- **Périmètre** : poste ou serveur d'administration IaC, dépôt [[Glossary:APT]] officiel, projet pilote sans fournisseur cloud, état et sauvegarde
 - **Catégorie** : automatisation / infrastructure as code
 - **Tags** : `opentofu`, `tofu`, `iac`, `debian13`, `state`, `plan`, `apply`
 
@@ -23,7 +23,7 @@ Fiche simple : [cadrer version et périmètre](/fr/01-fiches-simples/debian/13/v
 
 Au 29 octobre 2026, la dernière version stable publiée par le projet est OpenTofu 1.13.2 (branche documentaire 1.13.x). Le dépôt amont contient un fichier `LICENSE` (MPL-2.0, avec copyright OpenTofu Authors et HashiCorp, Inc. pour l'héritage); le valider avant redistribution. Le binaire s'appelle `tofu`.
 
-Cette fiche installe l'outil CLI et valide un cycle complet `init`, `plan`, `apply`, `destroy` avec la ressource intégrée `terraform_data`, donc sans compte cloud ni fournisseur externe. Elle ne décrit aucun fournisseur (Proxmox, Azure, AWS, GCP...) : chaque fournisseur exige sa propre fiche, ses identifiants et son modèle de droits. Terraform de HashiCorp n'est pas couvert ici.
+Cette fiche installe l'outil [[Glossary:CLI]] et valide un cycle complet `init`, `plan`, `apply`, `destroy` avec la ressource intégrée `terraform_data`, donc sans compte cloud ni fournisseur externe. Elle ne décrit aucun fournisseur (Proxmox, Azure, AWS, GCP...) : chaque fournisseur exige sa propre fiche, ses identifiants et son modèle de droits. Terraform de HashiCorp n'est pas couvert ici.
 
 ## 2. Installer depuis le dépôt APT officiel
 

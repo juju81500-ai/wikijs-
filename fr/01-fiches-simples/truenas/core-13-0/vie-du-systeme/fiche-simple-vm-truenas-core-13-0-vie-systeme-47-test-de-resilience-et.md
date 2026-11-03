@@ -24,7 +24,7 @@ Valider qu'une panne déclenche une alerte.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. En lab, mettre un disque hors ligne : GUI Stockage > Pools > Statut > disque > Offline.
+1. En lab, mettre un disque hors ligne : [[Glossary:GUI]] Stockage > Pools > Statut > disque > Offline.
    ```sh
    zpool offline POOL da2
    zpool status POOL

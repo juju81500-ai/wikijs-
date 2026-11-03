@@ -20,11 +20,11 @@ dateModified: 2026-11-03T09:36:14Z
 
 ## Problème précis à résoudre
 
-Donner à l'hôte une adresse IP de gestion temporaire.
+Donner à l'hôte une adresse [[Glossary:IP]] de gestion temporaire.
 
 ## 1. Hors-Production (Lab / Test / POC)
 
-1. Dans l'installateur, ESXi utilise DHCP par défaut. Après démarrage, configurer depuis la DCUI : **F2 > Configure Management Network > IPv4 Configuration**.
+1. Dans l'installateur, ESXi utilise [[Glossary:DHCP]] par défaut. Après démarrage, configurer depuis la DCUI : **F2 > Configure Management Network > IPv4 Configuration**.
    👉 Explication : saisir l'IP, le masque et la passerelle pour accéder au Host Client.
 
 2. Équivalent en ligne de commande (remplacer les placeholders) :
@@ -43,7 +43,7 @@ Donner à l'hôte une adresse IP de gestion temporaire.
 
 ## 2. Production — Contrôles
 
-Réseau de gestion isolé (VLAN d'administration).
+Réseau de gestion isolé ([[Glossary:VLAN]] d'administration).
 
 ## 3. Production — Sécurité
 
