@@ -1,0 +1,600 @@
+{
+  "command_blocks": {
+    "auto_hide_sidebar": false,
+    "commands": [
+      {
+        "command": "uname -a",
+        "created_at": "2026-10-08T09:17:18.848189+00:00",
+        "description": "Kernel & architecture",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-uname",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Kernel info",
+        "tags": [
+          "system"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "cat /etc/os-release",
+        "created_at": "2026-10-08T09:17:18.848239+00:00",
+        "description": "Distribution details",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-osrel",
+        "is_favorite": false,
+        "last_used": "2026-10-23T06:59:26.919890+00:00",
+        "name": "OS release",
+        "tags": [
+          "system"
+        ],
+        "use_count": 1
+      },
+      {
+        "command": "uptime -p",
+        "created_at": "2026-10-08T09:17:18.848265+00:00",
+        "description": "System uptime",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-uptime",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Uptime",
+        "tags": [
+          "system"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "free -h",
+        "created_at": "2026-10-08T09:17:18.848282+00:00",
+        "description": "RAM & swap usage",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-mem",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Memory usage",
+        "tags": [
+          "system",
+          "resources"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "ip addr show",
+        "created_at": "2026-10-08T09:17:18.848297+00:00",
+        "description": "All interfaces and IPs",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-iface",
+        "is_favorite": true,
+        "last_used": null,
+        "name": "Network interfaces",
+        "tags": [
+          "network"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "ss -tulnp",
+        "created_at": "2026-10-08T09:17:18.848311+00:00",
+        "description": "Open ports & services",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-sockets",
+        "is_favorite": false,
+        "last_used": "2026-10-23T15:05:29.885415+00:00",
+        "name": "Listening sockets",
+        "tags": [
+          "network",
+          "ports"
+        ],
+        "use_count": 1
+      },
+      {
+        "command": "curl -s ifconfig.me",
+        "created_at": "2026-10-08T09:17:18.848325+00:00",
+        "description": "Show public IP address",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-pubip",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Public IP",
+        "tags": [
+          "network"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "ping -c 4 ${HOST}",
+        "created_at": "2026-10-08T09:17:18.848341+00:00",
+        "description": "Ping a host 4 times",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": true,
+        "id": "c-ping",
+        "is_favorite": false,
+        "last_used": "2026-10-23T07:00:38.345818+00:00",
+        "name": "Ping host",
+        "tags": [
+          "network"
+        ],
+        "use_count": 2
+      },
+      {
+        "command": "ps aux --sort=-%cpu | head -20",
+        "created_at": "2026-10-08T09:17:18.848356+00:00",
+        "description": "20 most CPU-hungry processes",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-cpu-top",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Top CPU processes",
+        "tags": [
+          "processes",
+          "resources"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "top -bn1 | head -30",
+        "created_at": "2026-10-08T09:17:18.848371+00:00",
+        "description": "One-shot top output",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-proc-snap",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Process snapshot",
+        "tags": [
+          "processes"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "kill -9 ${PID}",
+        "created_at": "2026-10-08T09:17:18.848385+00:00",
+        "description": "Kill process by PID",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": true,
+        "id": "c-kill",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Force kill PID",
+        "tags": [
+          "processes"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "docker ps -a",
+        "created_at": "2026-10-08T09:17:18.848400+00:00",
+        "description": "All Docker containers",
+        "execution_mode": "one_shot",
+        "folder_id": "f-docker",
+        "has_placeholders": false,
+        "id": "c-dps",
+        "is_favorite": true,
+        "last_used": "2026-10-23T09:49:11.389854+00:00",
+        "name": "List containers",
+        "tags": [
+          "docker"
+        ],
+        "use_count": 1
+      },
+      {
+        "command": "docker images",
+        "created_at": "2026-10-08T09:17:18.848416+00:00",
+        "description": "Local Docker images",
+        "execution_mode": "one_shot",
+        "folder_id": "f-docker",
+        "has_placeholders": false,
+        "id": "c-dimages",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "List images",
+        "tags": [
+          "docker"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "docker logs --tail 100 -f ${CONTAINER}",
+        "created_at": "2026-10-08T09:17:18.848453+00:00",
+        "description": "Follow container logs",
+        "execution_mode": "interactive_terminal",
+        "folder_id": "f-docker",
+        "has_placeholders": true,
+        "id": "c-dlogs",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Container logs",
+        "tags": [
+          "docker",
+          "logs"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "docker exec -it ${CONTAINER} /bin/bash",
+        "created_at": "2026-10-08T09:17:18.848471+00:00",
+        "description": "Interactive shell in container",
+        "execution_mode": "interactive_terminal",
+        "folder_id": "f-docker",
+        "has_placeholders": true,
+        "id": "c-dexec",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Shell into container",
+        "tags": [
+          "docker"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "docker stats --no-stream",
+        "created_at": "2026-10-08T09:17:18.848488+00:00",
+        "description": "Resource usage per container",
+        "execution_mode": "one_shot",
+        "folder_id": "f-docker",
+        "has_placeholders": false,
+        "id": "c-dstats",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Container stats",
+        "tags": [
+          "docker",
+          "resources"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "docker system prune -f",
+        "created_at": "2026-10-08T09:17:18.848504+00:00",
+        "description": "Remove unused Docker resources",
+        "execution_mode": "one_shot",
+        "folder_id": "f-docker",
+        "has_placeholders": false,
+        "id": "c-dprune",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Prune Docker",
+        "tags": [
+          "docker"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "systemctl status ${SERVICE}",
+        "created_at": "2026-10-08T09:17:18.848521+00:00",
+        "description": "Status of a systemd service",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": true,
+        "id": "c-svc-stat",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Service status",
+        "tags": [
+          "systemd",
+          "services"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "journalctl -u ${SERVICE} -n 100 --no-pager",
+        "created_at": "2026-10-08T09:17:18.848538+00:00",
+        "description": "Last 100 lines of service journal",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": true,
+        "id": "c-svc-log",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Service logs",
+        "tags": [
+          "systemd",
+          "logs"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "systemctl list-units --state=failed",
+        "created_at": "2026-10-08T09:17:18.848555+00:00",
+        "description": "All failed systemd units",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-svc-fail",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Failed units",
+        "tags": [
+          "systemd"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "systemctl restart ${SERVICE}",
+        "created_at": "2026-10-08T09:17:18.848573+00:00",
+        "description": "Restart a systemd service",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": true,
+        "id": "c-svc-rst",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Restart service",
+        "tags": [
+          "systemd",
+          "services"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "df -h",
+        "created_at": "2026-10-08T09:17:18.848590+00:00",
+        "description": "Disk usage by mount point",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-df",
+        "is_favorite": false,
+        "last_used": "2026-10-17T12:36:12.211672+00:00",
+        "name": "Disk usage",
+        "tags": [
+          "disk"
+        ],
+        "use_count": 1
+      },
+      {
+        "command": "du -sh /var/log/*",
+        "created_at": "2026-10-08T09:17:18.848608+00:00",
+        "description": "Size of each log file/dir",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-du-logs",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Log dir sizes",
+        "tags": [
+          "disk",
+          "logs"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "lsblk",
+        "created_at": "2026-10-08T09:17:18.848637+00:00",
+        "description": "List all block devices",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-lsblk",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Block devices",
+        "tags": [
+          "disk"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "find / -xdev -size +100M -printf '%s %p\\n' 2>/dev/null | sort -rn | head -10",
+        "created_at": "2026-10-08T09:17:18.848684+00:00",
+        "description": "Files over 100 MB",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-bigfiles",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Largest files",
+        "tags": [
+          "disk"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "tail -f /var/log/syslog",
+        "created_at": "2026-10-08T09:17:18.848716+00:00",
+        "description": "Live syslog (Ctrl+C to stop)",
+        "execution_mode": "interactive_terminal",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-syslog",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Follow syslog",
+        "tags": [
+          "logs"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "journalctl -f -n 50",
+        "created_at": "2026-10-08T09:17:18.848739+00:00",
+        "description": "Live systemd journal",
+        "execution_mode": "interactive_terminal",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-journal",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Follow journal",
+        "tags": [
+          "logs",
+          "systemd"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "grep -i error /var/log/syslog | tail -50",
+        "created_at": "2026-10-08T09:17:18.848760+00:00",
+        "description": "Last 50 error lines in syslog",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-errlogs",
+        "is_favorite": false,
+        "last_used": "2026-10-23T07:01:19.668352+00:00",
+        "name": "Recent errors",
+        "tags": [
+          "logs"
+        ],
+        "use_count": 2
+      },
+      {
+        "command": "last -n 20",
+        "created_at": "2026-10-08T09:17:18.848780+00:00",
+        "description": "Last 20 login events",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-last",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Recent logins",
+        "tags": [
+          "security"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "who",
+        "created_at": "2026-10-08T09:17:18.848800+00:00",
+        "description": "Currently logged-in users",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-who",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Who is logged in",
+        "tags": [
+          "security"
+        ],
+        "use_count": 0
+      },
+      {
+        "command": "lastb | head -20",
+        "created_at": "2026-10-08T09:17:18.848820+00:00",
+        "description": "Last 20 failed login attempts",
+        "execution_mode": "one_shot",
+        "folder_id": "f-linux-quotidien",
+        "has_placeholders": false,
+        "id": "c-lastb",
+        "is_favorite": false,
+        "last_used": null,
+        "name": "Failed logins",
+        "tags": [
+          "security"
+        ],
+        "use_count": 0
+      },
+      {
+        "id": "cmd-search-linux",
+        "name": "Install-Search-And-Deploy_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Search-And-Deploy_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Search-And-Deploy_Linux_Complet\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [01 - RECHERCHE & INSTALLATION DYNAMIQUE LINUX]\"\necho \"==========================================================\"\n\nread -p \"Quel logiciel ou service cherchez-vous \u00e0 installer ? (ex: htop, cockpit, redis, nginx) : \" SEARCH_QUERY < /dev/tty\nif [ -z \"$SEARCH_QUERY\" ]; then echo \"Annul\u00e9.\"; exit 1; fi\n\necho \"-> Recherche de '$SEARCH_QUERY' dans les d\u00e9p\u00f4ts de $PRETTY_NAME...\"\n\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    PKG_MGR=\"apt\"\n    apt-get update -qq\n    MATCHES=$(apt-cache search --names-only \"^${SEARCH_QUERY}\" | head -n 15 | awk '{print $1}')\n    [ -z \"$MATCHES\" ] && MATCHES=$(apt-cache search \"${SEARCH_QUERY}\" | head -n 15 | awk '{print $1}')\nelif [[ \"$ID_LIKE\" == *\"rhel\"* ]] || [[ \"$ID\" == \"rocky\" ]] || [[ \"$ID\" == \"almalinux\" ]] || [[ \"$ID\" == \"fedora\" ]]; then\n    PKG_MGR=\"dnf\"\n    MATCHES=$(dnf search -q \"${SEARCH_QUERY}\" 2>/dev/null | grep -v \"^===\" | head -n 15 | awk '{print $1}' | cut -d'.' -f1)\nelse\n    PKG_MGR=\"apk\"\n    apk update -q\n    MATCHES=$(apk search \"${SEARCH_QUERY}\" | head -n 15)\nfi\n\nif [ -z \"$MATCHES\" ]; then\n    echo \"Aucun paquet trouv\u00e9 directement dans les d\u00e9p\u00f4ts standards pour '$SEARCH_QUERY'.\"\n    read -p \"Voulez-vous activer les d\u00e9p\u00f4ts \u00e9tendus (EPEL / Backports / Cl\u00e9 GPG tierce) et r\u00e9essayer ? (o/n) [o] : \" ADD_REPO < /dev/tty\n    if [[ \"$ADD_REPO\" != \"n\" && \"$ADD_REPO\" != \"N\" ]]; then\n        if [ \"$PKG_MGR\" == \"dnf\" ]; then\n            dnf install -y epel-release\n            MATCHES=$(dnf search -q \"${SEARCH_QUERY}\" 2>/dev/null | grep -v \"^===\" | head -n 15 | awk '{print $1}' | cut -d'.' -f1)\n        elif [ \"$PKG_MGR\" == \"apt\" ]; then\n            apt-get install -y software-properties-common curl gpg\n        fi\n    fi\nfi\n\necho \"--- Paquets correspondants trouv\u00e9s ---\"\nselect PKG_CHOICE in $MATCHES \"Saisie manuelle\"; do\n    if [ \"$PKG_CHOICE\" == \"Saisie manuelle\" ]; then\n        read -p \"Entrez le nom exact du paquet : \" TARGET_PKG < /dev/tty\n        break\n    elif [ -n \"$PKG_CHOICE\" ]; then\n        TARGET_PKG=\"$PKG_CHOICE\"\n        break\n    fi\ndone\n\necho \"-> Installation de '$TARGET_PKG' en cours...\"\nif [ \"$PKG_MGR\" == \"apt\" ]; then\n    DEBIAN_FRONTEND=noninteractive apt-get install -y \"$TARGET_PKG\"\n    DOC_URL=$(apt-cache show \"$TARGET_PKG\" 2>/dev/null | awk '/^Homepage:/ {print $2; exit}')\n    CMD_USED=\"apt update && apt install -y $TARGET_PKG\"\nelif [ \"$PKG_MGR\" == \"dnf\" ]; then\n    dnf install -y \"$TARGET_PKG\"\n    DOC_URL=$(dnf info \"$TARGET_PKG\" 2>/dev/null | awk '/^URL/ {print $3; exit}')\n    CMD_USED=\"dnf install -y $TARGET_PKG\"\nelse\n    apk add --no-cache \"$TARGET_PKG\"\n    DOC_URL=\"https://pkgs.alpinelinux.org/packages?name=$TARGET_PKG\"\n    CMD_USED=\"apk add --no-cache $TARGET_PKG\"\nfi\n\n[ -z \"$DOC_URL\" ] && DOC_URL=\"https://manpages.debian.org/$TARGET_PKG\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}_${TARGET_PKG}.txt\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE RECHERCHE & D'INSTALLATION DYNAMIQUE - LINUX\nNom Complet   : ${SNIPPET_NAME}_${TARGET_PKG}\nFichier TXT   : $RECAP_FILE\n======================================================================\nDate          : $DATE_EXEC\nSyst\u00e8me       : $PRETTY_NAME\nPaquet D\u00e9ploy\u00e9: $TARGET_PKG\nDocumentation : $DOC_URL\nStatut Final  : R\u00c9SOLU / PAQUET INSTALL\u00c9\n======================================================================\n\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# 1. Rechercher un paquet dans le catalogue de la distribution :\napt-cache search $SEARCH_QUERY   # (Debian/Ubuntu)\ndnf search $SEARCH_QUERY         # (RedHat/Rocky)\n\n# 2. Afficher les d\u00e9tails et le lien officiel de la documentation :\napt-cache show $TARGET_PKG\n\n# 3. Installer le paquet s\u00e9lectionn\u00e9 :\n$CMD_USED\n======================================================================\nEOF\n\necho \"==========================================================\"\necho \" PAQUET INSTALL\u00c9 : $TARGET_PKG\"\necho \" DOCUMENTATION   : $DOC_URL\"\necho \" FICHE .TXT      : $RECAP_FILE\"\necho \"==========================================================\"\nEOS\nbash /tmp/Install-Search-And-Deploy_Linux_Complet.sh",
+        "description": "Moteur de recherche interactif de paquets Linux + Gestion d\u00e9p\u00f4ts/GPG + Lien Doc officielle + Fiche .txt",
+        "tags": [
+          "linux",
+          "search",
+          "install",
+          "apt",
+          "dnf",
+          "gpg"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": true,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T14:00:00.000000+00:00"
+      },
+      {
+        "id": "cmd-search-pve",
+        "name": "Install-Search-Templates-LXC_Proxmox-VE_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Search-Templates-LXC_Proxmox-VE_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Search-Templates-LXC_Proxmox-VE_Complet\"\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [01 - RECHERCHE & D\u00c9PLOIEMENT LXC PROXMOX VE]\"\necho \"==========================================================\"\n\npveam update >/dev/null 2>&1 || true\nread -p \"Rechercher une image LXC (ex: debian, ubuntu, rocky, alpine, turnkey) : \" TPL_QUERY < /dev/tty\n[ -z \"$TPL_QUERY\" ] && TPL_QUERY=\"debian\"\n\nTPL_LIST=$(pveam available | grep -i \"$TPL_QUERY\" | awk '{print $2}' | head -n 15)\necho \"--- Templates officiels trouv\u00e9s ---\"\nselect TPL_SELECTED in $TPL_LIST; do\n    if [ -n \"$TPL_SELECTED\" ]; then\n        break\n    fi\ndone\n\nread -p \"Stockage cible pour le t\u00e9l\u00e9chargement [local] : \" TPL_STORAGE < /dev/tty\nTPL_STORAGE=${TPL_STORAGE:-local}\n\necho \"-> T\u00e9l\u00e9chargement du template $TPL_SELECTED sur '$TPL_STORAGE'...\"\npveam download \"$TPL_STORAGE\" \"$TPL_SELECTED\"\n\nread -p \"Voulez-vous cr\u00e9er imm\u00e9diatement un conteneur LXC avec cette image ? (o/n) [o] : \" CREATE_CT < /dev/tty\nif [[ \"$CREATE_CT\" != \"n\" && \"$CREATE_CT\" != \"N\" ]]; then\n    NEXT_ID=$(pvesh get /cluster/nextid)\n    read -p \"ID du conteneur [$NEXT_ID] : \" CT_ID < /dev/tty\n    CT_ID=${CT_ID:-$NEXT_ID}\n    read -p \"Nom d'h\u00f4te (Hostname) [lxc-srv-$CT_ID] : \" CT_HOST < /dev/tty\n    CT_HOST=${CT_HOST:-lxc-srv-$CT_ID}\n    read -p \"Stockage du disque racine [local-lvm] : \" ROOT_STORAGE < /dev/tty\n    ROOT_STORAGE=${ROOT_STORAGE:-local-lvm}\n    pct create \"$CT_ID\" \"${TPL_STORAGE}:vztmpl/${TPL_SELECTED}\" --hostname \"$CT_HOST\" --storage \"$ROOT_STORAGE\" --memory 1024 --cores 2 --net0 name=eth0,bridge=vmbr0,ip=dhcp --start 1\n    STATUT=\"R\u00c9SOLU / TEMPLATE T\u00c9L\u00c9CHARG\u00c9 ET LXC $CT_ID D\u00c9MARR\u00c9\"\nelse\n    CT_ID=\"TPL_ONLY\"\n    STATUT=\"R\u00c9SOLU / TEMPLATE T\u00c9L\u00c9CHARG\u00c9 DANS $TPL_STORAGE\"\nfi\n\nRECAP_FILE=\"/root/${SNIPPET_NAME}_${CT_ID}.txt\"\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & RECHERCHE DYNAMIQUE - PROXMOX VE\nNom Complet   : ${SNIPPET_NAME}_${CT_ID}\nFichier TXT   : $RECAP_FILE\n======================================================================\nDate          : $DATE_EXEC\nTemplate LXC  : $TPL_SELECTED\nDocumentation : https://pve.proxmox.com/wiki/Linux_Container\nStatut Final  : $STATUT\n======================================================================\n\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# 1. Mettre \u00e0 jour le catalogue des images de conteneurs Proxmox :\npveam update\n\n# 2. Chercher une distribution ou une appliance TurnKey :\npveam available | grep -i $TPL_QUERY\n\n# 3. T\u00e9l\u00e9charger le template dans le stockage local :\npveam download $TPL_STORAGE $TPL_SELECTED\n\n# 4. Cr\u00e9er et d\u00e9marrer un conteneur LXC en DHCP :\npct create $CT_ID ${TPL_STORAGE}:vztmpl/${TPL_SELECTED} --hostname $CT_HOST --memory 1024 --net0 name=eth0,bridge=vmbr0,ip=dhcp --start 1\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Search-Templates-LXC_Proxmox-VE_Complet.sh",
+        "description": "Recherche dynamique de templates LXC (pveam) + T\u00e9l\u00e9chargement + Cr\u00e9ation LXC automatis\u00e9e + Fiche .txt",
+        "tags": [
+          "proxmox",
+          "pve",
+          "pveam",
+          "lxc",
+          "search",
+          "install"
+        ],
+        "folder_id": "f-pve-install",
+        "is_favorite": true,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T14:05:00.000000+00:00"
+      },
+      {
+        "id": "cmd-search-docker",
+        "name": "Install-Search-Registry_Docker_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Search-Registry_Docker_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Search-Registry_Docker_Complet\"\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\nSERVER_IP=$(hostname -I 2>/dev/null | awk '{print $1}')\n\necho \"==========================================================\"\necho \"   [01 - RECHERCHE DOCKER HUB & D\u00c9PLOIEMENT COMPOSE]\"\necho \"==========================================================\"\n\nread -p \"Quel service Docker cherchez-vous ? (ex: portainer, vaultwarden, uptime-kuma, nginx) : \" IMG_QUERY < /dev/tty\nif [ -z \"$IMG_QUERY\" ]; then exit 1; fi\n\necho \"-> Interrogation du registre officiel Docker Hub pour '$IMG_QUERY'...\"\ndocker search --limit 10 \"$IMG_QUERY\"\n\nIMAGES=$(docker search --limit 10 --format \"{{.Name}}\" \"$IMG_QUERY\")\necho \"--- Choisissez l'image officielle \u00e0 d\u00e9ployer ---\"\nselect SELECTED_IMG in $IMAGES \"Saisie manuelle\"; do\n    if [ \"$SELECTED_IMG\" == \"Saisie manuelle\" ]; then\n        read -p \"Nom complet de l'image (ex: louislam/uptime-kuma:latest) : \" TARGET_IMG < /dev/tty\n        break\n    elif [ -n \"$SELECTED_IMG\" ]; then\n        TARGET_IMG=\"$SELECTED_IMG\"\n        break\n    fi\ndone\n\nCLEAN_NAME=$(echo \"$TARGET_IMG\" | awk -F'/' '{print $NF}' | cut -d':' -f1)\nread -p \"Port d'acc\u00e8s externe sur l'h\u00f4te [8080] : \" HOST_PORT < /dev/tty\nHOST_PORT=${HOST_PORT:-8080}\nread -p \"Port interne du conteneur [80] : \" CT_PORT < /dev/tty\nCT_PORT=${CT_PORT:-80}\n\nSTACK_DIR=\"/opt/docker/${CLEAN_NAME}\"\nmkdir -p \"${STACK_DIR}/data\"\ncat << EOF > \"${STACK_DIR}/docker-compose.yml\"\nservices:\n  ${CLEAN_NAME}:\n    image: ${TARGET_IMG}:latest\n    container_name: ${CLEAN_NAME}\n    restart: unless-stopped\n    ports:\n      - \"${HOST_PORT}:${CT_PORT}\"\n    volumes:\n      - ./data:/data\nEOF\n\ncd \"$STACK_DIR\" && docker compose up -d\nDOC_URL=\"https://hub.docker.com/r/${TARGET_IMG}\"\n[[ \"$TARGET_IMG\" != *\"/\"* ]] && DOC_URL=\"https://hub.docker.com/_/${TARGET_IMG}\"\n\nRECAP_FILE=\"/root/${SNIPPET_NAME}_${CLEAN_NAME}.txt\"\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE RECHERCHE & D\u00c9PLOIEMENT DYNAMIQUE - DOCKER\nNom Complet   : ${SNIPPET_NAME}_${CLEAN_NAME}\nFichier TXT   : $RECAP_FILE\n======================================================================\nDate          : $DATE_EXEC\nImage D\u00e9ploy\u00e9e: $TARGET_IMG\nURL Service   : http://$SERVER_IP:$HOST_PORT\nDocumentation : $DOC_URL\nStatut Final  : R\u00c9SOLU / CONTENEUR EN LIGNE\n======================================================================\n\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# 1. Chercher une image sur Docker Hub en CLI :\ndocker search --limit 10 $IMG_QUERY\n\n# 2. Cr\u00e9er le dossier de stack et lancer le conteneur :\nmkdir -p $STACK_DIR/data && cd $STACK_DIR\ndocker compose up -d\n======================================================================\nEOF\necho \" -> Documentation : $DOC_URL\"\necho \" -> Fiche .TXT    : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Search-Registry_Docker_Complet.sh",
+        "description": "Moteur de recherche Docker Hub + S\u00e9lection interactive + G\u00e9n\u00e9ration Docker Compose + Lien Doc + Fiche .txt",
+        "tags": [
+          "docker",
+          "search",
+          "hub",
+          "compose",
+          "install"
+        ],
+        "folder_id": "f-docker-install",
+        "is_favorite": true,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T14:10:00.000000+00:00"
+      },
+      {
+        "id": "cmd-search-wincli",
+        "name": "Install-Search-Winget_Windows-Client_Complet",
+        "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"\n\\$SnippetName = 'Install-Search-Winget_Windows-Client_Complet'\n\\$DateExec = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'\nWrite-Host '==========================================================' -ForegroundColor Cyan\nWrite-Host '   [01 - RECHERCHE & INSTALLATION WINGET WINDOWS]' -ForegroundColor Cyan\nWrite-Host '==========================================================' -ForegroundColor Cyan\n\n\\$Query = Read-Host 'Nom du logiciel \u00e0 chercher (ex: 7zip, firefox, notepad++, vlc, wireshark)'\nif ([string]::IsNullOrWhiteSpace(\\$Query)) { exit }\n\nWrite-Host \\\"-> Recherche de '\\$Query' dans le catalogue officiel Microsoft Winget...\\\" -ForegroundColor Yellow\nwinget search \\$Query --n 10\n\n\\$PkgId = Read-Host 'Entrez l ID exact du paquet \u00e0 installer (ex: 7zip.7zip ou Mozilla.Firefox)'\nif ([string]::IsNullOrWhiteSpace(\\$PkgId)) { exit }\n\n\\$DocInfo = winget show --id \\$PkgId\n\\$SilentInstall = winget install --id \\$PkgId --silent --accept-package-agreements --accept-source-agreements\n\n\\$RecapFile = \\\"C:\\Users\\Public\\\\\\${SnippetName}_\\${PkgId}.txt\\\"\n\\$TxtContent = @\\\"\n======================================================================\nFICHE DE RECHERCHE & D'INSTALLATION DYNAMIQUE - WINDOWS CLIENT\nNom Complet   : \\${SnippetName}_\\${PkgId}\nFichier TXT   : \\$RecapFile\nDate          : \\$DateExec\nLogiciel ID   : \\$PkgId\nStatut        : R\u00c9SOLU / INSTALL\u00c9 SILENCIEUSEMENT VIA WINGET\n======================================================================\n--- INFORMATIONS & LIEN \u00c9DITEUR OFFICIEL ---\n\\$(\\$DocInfo | Out-String)\n\n--- MANUEL D'APPRENTISSAGE (COMMANDES POWERSHELL EXPLIQU\u00c9ES) ---\n# 1. Chercher un logiciel dans le d\u00e9p\u00f4t officiel Microsoft Winget :\nwinget search \\$Query\n\n# 2. Afficher la documentation et l'URL officielle de l'\u00e9diteur :\nwinget show --id \\$PkgId\n\n# 3. Installer le logiciel en mode silencieux sans intervention :\nwinget install --id \\$PkgId --silent --accept-package-agreements --accept-source-agreements\n======================================================================\n\\\"@\nSet-Content -Path \\$RecapFile -Value \\$TxtContent -Encoding UTF8\nWrite-Host \\\"FICHE .TXT G\u00c9N\u00c9R\u00c9E : \\$RecapFile\\\" -ForegroundColor Green\n\"",
+        "description": "Moteur de recherche et d'installation Winget pour Windows 10/11 + R\u00e9cup\u00e9ration lien \u00e9diteur + Fiche .txt",
+        "tags": [
+          "windows",
+          "client",
+          "winget",
+          "search",
+          "install"
+        ],
+        "folder_id": "f-wincli-install",
+        "is_favorite": true,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T14:15:00.000000+00:00"
+      },
+      {
+        "id": "cmd-search-winsrv",
+        "name": "Install-Search-Roles-Features_Windows-Server_Complet",
+        "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"\n\\$SnippetName = 'Install-Search-Roles-Features_Windows-Server_Complet'\n\\$DateExec = Get-Date -Format 'yyyy-MM-dd HH:mm:ss'\nWrite-Host '==========================================================' -ForegroundColor Cyan\nWrite-Host '   [01 - RECHERCHE & D\u00c9PLOIEMENT DE R\u00d4LES WINDOWS SERVER]' -ForegroundColor Cyan\nWrite-Host '==========================================================' -ForegroundColor Cyan\n\n\\$RoleQuery = Read-Host 'Quel r\u00f4le ou fonctionnalit\u00e9 cherchez-vous ? (ex: DNS, DHCP, AD-Domain-Services, Web-Server)'\nif ([string]::IsNullOrWhiteSpace(\\$RoleQuery)) { exit }\n\nGet-WindowsFeature | Where-Object { \\$_.Name -like \\\"*\\$RoleQuery*\\\" -or \\$_.DisplayName -like \\\"*\\$RoleQuery*\\\" } | Format-Table Name, DisplayName, InstallState -AutoSize\n\n\\$TargetFeature = Read-Host 'Entrez le Name exact du r\u00f4le \u00e0 installer (ex: DHCP ou DNS)'\nif ([string]::IsNullOrWhiteSpace(\\$TargetFeature)) { exit }\n\nInstall-WindowsFeature -Name \\$TargetFeature -IncludeManagementTools\n\\$DocUrl = \\\"https://learn.microsoft.com/fr-fr/windows-server/search/?terms=\\$TargetFeature\\\" \n\n\\$RecapFile = \\\"C:\\Users\\Public\\\\\\${SnippetName}_\\${TargetFeature}.txt\\\"\n\\$TxtContent = @\\\"\n======================================================================\nFICHE DE RECHERCHE & D'INSTALLATION DE R\u00d4LE - WINDOWS SERVER\nNom Complet   : \\${SnippetName}_\\${TargetFeature}\nFichier TXT   : \\$RecapFile\nDate          : \\$DateExec\nR\u00f4le D\u00e9ploy\u00e9  : \\$TargetFeature (avec consoles RSAT)\nDocumentation : \\$DocUrl\nStatut        : R\u00c9SOLU / R\u00d4LE INSTALL\u00c9\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES POWERSHELL EXPLIQU\u00c9ES) ---\n# 1. Rechercher un r\u00f4le disponible dans Windows Server 2022/2025 :\nGet-WindowsFeature *\\$RoleQuery*\n\n# 2. Installer le r\u00f4le avec ses outils d'administration graphiques et PowerShell :\nInstall-WindowsFeature -Name \\$TargetFeature -IncludeManagementTools\n======================================================================\n\\\"@\nSet-Content -Path \\$RecapFile -Value \\$TxtContent -Encoding UTF8\nWrite-Host \\\"DOCUMENTATION : \\$DocUrl\\\" -ForegroundColor Cyan\nWrite-Host \\\"FICHE .TXT    : \\$RecapFile\\\" -ForegroundColor Green\n\"",
+        "description": "Moteur de recherche et d'installation de R\u00f4les Windows Server (2022/2025) + Lien Doc Microsoft Learn + Fiche .txt",
+        "tags": [
+          "windows-server",
+          "roles",

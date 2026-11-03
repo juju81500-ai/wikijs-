@@ -1,0 +1,600 @@
+          "hardening",
+          "securite",
+          "linux"
+        ],
+        "folder_id": "f-linux-hardening",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:17:00.000000+00:00"
+      },
+      {
+        "id": "cmd-238",
+        "name": "Maint-Truncate-Large-Log-Files_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Maint-Truncate-Large-Log-Files_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Maint-Truncate-Large-Log-Files_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [04 - VIDAGE FICHIERS DE LOGS LOURDS] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nTRUNC_LOGS=\"\"\nfor logfile in $(find /var/log -type f -size +50M 2>/dev/null); do\n    true > \"$logfile\"\n    TRUNC_LOGS+=\"Fichier vid\u00e9 : $logfile\\n\"\ndone\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE MAINTENANCE - TRONCATURE FICHIERS DE LOGS\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nStatut Final  : R\u00c9SOLU / FICHIERS > 50Mo VID\u00c9S\n======================================================================\n--- LOGS VID\u00c9S ---\n$(echo -e \"${TRUNC_LOGS:-Aucun fichier de log de plus de 50 Mo trouv\u00e9.}\")\n\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Vider instantan\u00e9ment un fichier de log trop lourd sans couper le processus qui \u00e9crit dedans :\ntrue > /var/log/syslog\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Maint-Truncate-Large-Log-Files_Linux_Complet.sh",
+        "description": "Recherche et troncature automatique des fichiers de journaux de plus de 50 Mo dans /var/log pour r\u00e9cup\u00e9rer de l'espace disque imm\u00e9diatement + Fiche .txt",
+        "tags": [
+          "logs",
+          "disque",
+          "maintenance",
+          "nettoyage",
+          "linux"
+        ],
+        "folder_id": "f-linux-maint",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:18:00.000000+00:00"
+      },
+      {
+        "id": "cmd-239",
+        "name": "Install-Apache-Bench-Benchmark_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Apache-Bench-Benchmark_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Apache-Bench-Benchmark_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [01 - OUTIL DE BENCHMARK APACHE BENCH] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y apache2-utils\nelse\n    dnf install -y httpd-tools\nfi\n\nread -p \"URL compl\u00e8te de test de charge (ex: http://192.168.1.50/) : \" TEST_URL < /dev/tty\nTEST_URL=${TEST_URL:-http://127.0.0.1/}\n\nread -p \"Nombre total de requ\u00eates [1000] : \" REQ_COUNT < /dev/tty\nREQ_COUNT=${REQ_COUNT:-1000}\nread -p \"Nombre de requ\u00eates simultan\u00e9es [10] : \" CONC_COUNT < /dev/tty\nCONC_COUNT=${CONC_COUNT:-10}\n\nAB_OUT=$(ab -n \"$REQ_COUNT\" -c \"$CONC_COUNT\" \"$TEST_URL\" 2>&1)\necho \"$AB_OUT\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE BENCHMARK WEB (APACHE BENCH - AB) - LINUX\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nURL Test\u00e9e    : $TEST_URL (Requ\u00eates : $REQ_COUNT, Concurrence : $CONC_COUNT)\nStatut Final  : R\u00c9SOLU / TEST DE CHARGE EX\u00c9CUT\u00c9\n======================================================================\n--- R\u00c9SULTATS APACHE BENCH ---\n$AB_OUT\n\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Lancer un test de charge HTTP (1000 requ\u00eates avec 10 connexions simultan\u00e9es) :\nab -n 1000 -c 10 http://192.168.1.50/\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Apache-Bench-Benchmark_Linux_Complet.sh",
+        "description": "Installation de l'outil Apache Bench (ab) et assistant de test de charge HTTP/HTTPS pour serveurs Web + Fiche .txt",
+        "tags": [
+          "bench",
+          "apache-bench",
+          "performance",
+          "web",
+          "linux",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T18:19:00.000000+00:00"
+      },
+      {
+        "id": "cmd-240",
+        "name": "Diag-Check-Open-Files-Limit_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Diag-Check-Open-Files-Limit_Linux_Complet.sh\n#!/bin/bash\n\nSNIPPET_NAME=\"Diag-Check-Open-Files-Limit_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [02 - DIAGNOSTIC LIMITES FICHIERS OUVERTS] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nULIMIT_VAL=$(ulimit -n 2>&1)\nSYS_LIMIT=$(cat /proc/sys/fs/file-max 2>&1)\n\necho \"Limite ulimit -n (par session) : $ULIMIT_VAL\"\necho \"Limite globale file-max (noyau) : $SYS_LIMIT\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE DIAGNOSTIC LIMITES DE FICHIERS OUVERTS - LINUX\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nUlimit Session: $ULIMIT_VAL\nNoyau File-Max: $SYS_LIMIT\nStatut Final  : R\u00c9SOLU / LIMITES V\u00c9RIFI\u00c9ES\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# 1. V\u00e9rifier le nombre maximal de descripteurs de fichiers ouverts autoris\u00e9s pour l'utilisateur :\nulimit -n\n\n# 2. V\u00e9rifier la limite globale au niveau du noyau Linux :\ncat /proc/sys/fs/file-max\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Diag-Check-Open-Files-Limit_Linux_Complet.sh",
+        "description": "Diagnostic des limites de descripteurs de fichiers ouverts (ulimit -n et file-max) pour \u00e9viter les saturations sur les gros serveurs de services + Fiche .txt",
+        "tags": [
+          "ulimit",
+          "fichiers",
+          "performance",
+          "diag",
+          "linux"
+        ],
+        "folder_id": "f-linux-diag",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:20:00.000000+00:00"
+      },
+      {
+        "id": "cmd-241",
+        "name": "Install-Dig-Dnsutils-Tools_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Dig-Dnsutils-Tools_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Dig-Dnsutils-Tools_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [01 - OUTILS DNS DIG & NSLOOKUP] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y dnsutils\nelse\n    dnf install -y bind-utils\nfi\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION - OUTILS DNS (DIG/NSLOOKUP)\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nStatut Final  : R\u00c9SOLU / UTILITAIRES DNS INSTALL\u00c9S\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Interroger un serveur DNS pour un enregistrement sp\u00e9cifique :\ndig @1.1.1.1 mon domaine.local +short\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Dig-Dnsutils-Tools_Linux_Complet.sh",
+        "description": "Installation des utilitaires de diagnostic DNS essentiels (dig, nslookup, host) sous Linux + Fiche .txt",
+        "tags": [
+          "dns",
+          "dig",
+          "nslookup",
+          "reseau",
+          "linux",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:21:00.000000+00:00"
+      },
+      {
+        "id": "cmd-242",
+        "name": "Diag-Check-Network-Interfaces-Detailed_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Diag-Check-Network-Interfaces-Detailed_Linux_Complet.sh\n#!/bin/bash\n\nSNIPPET_NAME=\"Diag-Check-Network-Interfaces-Detailed_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [02 - AUDIT D\u00c9TAILL\u00c9 INTERFACES R\u00c9SEAU] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nIP_OUT=$(ip -s link show 2>&1)\necho \"$IP_OUT\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE DIAGNOSTIC - STATISTIQUES INTERFACES R\u00c9SEAU\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nStatut Final  : R\u00c9SOLU / STATISTIQUES R\u00c9CUP\u00c9R\u00c9ES\n======================================================================\n--- STATISTIQUES PAQUETS ERREURS/DROPS ---\n$IP_OUT\n\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Afficher les compteurs d\u00e9taill\u00e9s d'erreurs, drops et octets par interface r\u00e9seau :\nip -s link show\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Diag-Check-Network-Interfaces-Detailed_Linux_Complet.sh",
+        "description": "Diagnostic et affichage des statistiques avanc\u00e9es de trafic, erreurs et pertes (drops) sur les interfaces r\u00e9seau + Fiche .txt",
+        "tags": [
+          "reseau",
+          "interfaces",
+          "statistiques",
+          "diag",
+          "linux"
+        ],
+        "folder_id": "f-linux-diag",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:22:00.000000+00:00"
+      },
+      {
+        "id": "cmd-243",
+        "name": "Hardening-Disable-Core-Dumps_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Hardening-Disable-Core-Dumps_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Hardening-Disable-Core-Dumps_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [03 - HARDENING D\u00c9SACTIVATION CORE DUMPS] $SNIPPET_NAME\"\necho \"==========================================================\"\n\ncat << 'EOF' > /etc/security/limits.d/99-disable-coredump.conf\n* hard core 0\n* soft core 0\nEOF\n\ncat << 'EOF' > /etc/sysctl.d/99-disable-coredump.conf\nfs.suid_dumpable = 0\nEOF\n\nsysctl --system >/dev/null 2>&1\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE HARDENING - BLOCAGE DES CORE DUMPS\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nStatut Final  : R\u00c9SOLU / DUMP M\u00c9MOIRE INTERDIT\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Emp\u00eacher le stockage sur disque de la m\u00e9moire des processus plant\u00e9s (Core Dumps)\n# pour \u00e9viter les fuites de mots de passe ou de donn\u00e9es sensibles en clair :\nfs.suid_dumpable = 0\nsysctl --system\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Hardening-Disable-Core-Dumps_Linux_Complet.sh",
+        "description": "Durcissement de s\u00e9curit\u00e9 : d\u00e9sactivation de la g\u00e9n\u00e9ration de fichiers Core Dump en cas de crash de processus + Fiche .txt",
+        "tags": [
+          "coredump",
+          "hardening",
+          "securite",
+          "linux"
+        ],
+        "folder_id": "f-linux-hardening",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:23:00.000000+00:00"
+      },
+      {
+        "id": "cmd-244",
+        "name": "Maint-Clean-Package-Cache-Apt-Dnf_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Maint-Clean-Package-Cache-Apt-Dnf_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Maint-Clean-Package-Cache-Apt-Dnf_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [04 - NETTOYAGE CACHE PAQUETS] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    apt-get clean -qq\n    apt-get autoclean -qq\n    CLEAN_MSG=\"Cache APT nettoy\u00e9 (archives .deb purg\u00e9es).\"\nelse\n    dnf clean all -q\n    CLEAN_MSG=\"Cache DNF nettoy\u00e9.\"\nfi\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE MAINTENANCE - NETTOYAGE CACHE PAQUETS\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nAction        : $CLEAN_MSG\nStatut Final  : R\u00c9SOLU / CACHE DE T\u00c9L\u00c9CHARGEMENT VID\u00c9\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Vider l'ensemble des fichiers .deb ou packages t\u00e9l\u00e9charg\u00e9s en cache par le gestionnaire de paquets :\napt-get clean && apt-get autoclean\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Maint-Clean-Package-Cache-Apt-Dnf_Linux_Complet.sh",
+        "description": "Purge compl\u00e8te du cache de t\u00e9l\u00e9chargement des paquets syst\u00e8me (.deb / packages d'installation) pour lib\u00e9rer de l'espace disque + Fiche .txt",
+        "tags": [
+          "cache",
+          "apt",
+          "dnf",
+          "maintenance",
+          "nettoyage",
+          "linux"
+        ],
+        "folder_id": "f-linux-maint",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:24:00.000000+00:00"
+      },
+      {
+        "id": "cmd-245",
+        "name": "Install-Apache2-Web-Server_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Apache2-Web-Server_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Apache2-Web-Server_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nSERVER_IP=$(hostname -I | awk '{print $1}')\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [01 - INSTALLATION SERVEUR WEB APACHE2] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y apache2\n    SVC_NAME=\"apache2\"\nelse\n    dnf install -y httpd\n    SVC_NAME=\"httpd\"\nfi\n\nsystemctl enable --now \"$SVC_NAME\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION - SERVEUR WEB APACHE2 / HTTPD\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nURL Test      : http://$SERVER_IP/\nDocumentation : https://httpd.apache.org/docs/\nStatut Final  : R\u00c9SOLU / SERVEUR WEB ACTIF\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# 1. Installer et d\u00e9marrer Apache2 :\napt install -y apache2 && systemctl enable --now apache2\n\n# 2. V\u00e9rifier la syntaxe de configuration :\napache2ctl configtest\n======================================================================\nEOF\necho \" -> URL Web : http://$SERVER_IP/\"\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Apache2-Web-Server_Linux_Complet.sh",
+        "description": "Installation et configuration rapide d'un serveur Web HTTP Apache2 / Httpd sous Linux + Fiche .txt",
+        "tags": [
+          "apache2",
+          "httpd",
+          "web",
+          "http",
+          "linux",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:25:00.000000+00:00"
+      },
+      {
+        "id": "cmd-246",
+        "name": "Diag-Trace-Network-Ports-Nc_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Diag-Trace-Network-Ports-Nc_Linux_Complet.sh\n#!/bin/bash\n\nSNIPPET_NAME=\"Diag-Trace-Network-Ports-Nc_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [02 - TEST DE PORT DISTANT NC] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nread -p \"Adresse IP ou domaine distant \u00e0 tester : \" TARGET_HOST < /dev/tty\nread -p \"Port TCP \u00e0 v\u00e9rifier (ex: 80, 443, 22) : \" TARGET_PORT < /dev/tty\n\nif nc -z -v -w 3 \"$TARGET_HOST\" \"$TARGET_PORT\" 2>&1;\nthen\n    STATUS=\"OUVERT (Le port r\u00e9pond)\"\nelse\n    STATUS=\"FERM\u00c9 OU FILTR\u00c9 (Pas de r\u00e9ponse)\"\nfi\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE DIAGNOSTIC - TEST DE PORT DISTANT (NC)\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nCible         : $TARGET_HOST sur port TCP $TARGET_PORT\nR\u00e9sultat      : $STATUS\nStatut Final  : R\u00c9SOLU / TEST EFFECTU\u00c9\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Tester rapidement si un port TCP est ouvert sur une machine distante avec un timeout de 3 secondes (-w 3) :\nnc -z -v -w 3 <IP> <PORT>\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Diag-Trace-Network-Ports-Nc_Linux_Complet.sh",
+        "description": "Assistant de diagnostic rapide pour tester l'ouverture d'un port TCP distant avec Netcat (nc) + Fiche .txt",
+        "tags": [
+          "nc",
+          "netcat",
+          "ports",
+          "reseau",
+          "diag",
+          "linux"
+        ],
+        "folder_id": "f-linux-diag",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T18:26:00.000000+00:00"
+      },
+      {
+        "id": "cmd-247",
+        "name": "Hardening-Restrict-Cron-Access_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Hardening-Restrict-Cron-Access_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Hardening-Restrict-Cron-Access_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [03 - RESTRICTION ACC\u00c8S CRON] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nrm -f /etc/cron.deny /etc/at.deny\necho \"root\" > /etc/cron.allow\nchmod 600 /etc/cron.allow\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE HARDENING - RESTRICTION DES T\u00c2CHES CRON\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nPolitique     : Seul l'utilisateur root est autoris\u00e9 \u00e0 planifier des t\u00e2ches cron\nStatut Final  : R\u00c9SOLU / FICHIER CRON.ALLOW CONFIGUR\u00c9\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Restreindre strictement l'acc\u00e8s au service de planification Cron\n# en cr\u00e9ant un fichier /etc/cron.allow contenant uniquement les utilisateurs autoris\u00e9s :\necho \"root\" > /etc/cron.allow && chmod 600 /etc/cron.allow\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Hardening-Restrict-Cron-Access_Linux_Complet.sh",
+        "description": "Durcissement de s\u00e9curit\u00e9 : restriction stricte de l'acc\u00e8s aux t\u00e2ches planifi\u00e9es Cron aux seuls utilisateurs autoris\u00e9s via cron.allow + Fiche .txt",
+        "tags": [
+          "cron",
+          "hardening",
+          "securite",
+          "linux"
+        ],
+        "folder_id": "f-linux-hardening",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:27:00.000000+00:00"
+      },
+      {
+        "id": "cmd-248",
+        "name": "Maint-Backup-Crontab-Entries_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Maint-Backup-Crontab-Entries_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Maint-Backup-Crontab-Entries_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [04 - SAUVEGARDE DES CRONTABS] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nmkdir -p /root/cron-backups\nCRON_BCK=\"/root/cron-backups/crontab_root_$(date +%F_%H%M%S).txt\"\n\ncrontab -l > \"$CRON_BCK\" 2>/dev/null || echo \"Aucune crontab pour root.\"\ncp -r /etc/cron.d /root/cron-backups/ 2>/dev/null || true\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE MAINTENANCE - SAUVEGARDE DES T\u00c2CHES CRON\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nSauvegarde    : $CRON_BCK\nStatut Final  : R\u00c9SOLU / CRONTABS SAUVEGARD\u00c9ES\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Sauvegarder la crontab de l'utilisateur root dans un fichier texte :\ncrontab -l > /root/crontab_root_backup.txt\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Maint-Backup-Crontab-Entries_Linux_Complet.sh",
+        "description": "Sauvegarde automatis\u00e9e de la crontab de root et du dossier /etc/cron.d pour ne pas perdre les planifications syst\u00e8me + Fiche .txt",
+        "tags": [
+          "cron",
+          "backup",
+          "maintenance",
+          "linux"
+        ],
+        "folder_id": "f-linux-maint",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:28:00.000000+00:00"
+      },
+      {
+        "id": "cmd-249",
+        "name": "Install-Git-Version-Control_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Git-Version-Control_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Git-Version-Control_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [01 - INSTALLATION GIT] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y git\nelse\n    dnf install -y git\nfi\n\nGIT_VER=$(git --version)\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION - GIT (VERSION CONTROL)\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nVersion       : $GIT_VER\nDocumentation : https://git-scm.com/doc\nStatut Final  : R\u00c9SOLU / GIT INSTALL\u00c9\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# 1. Configurer l'identit\u00e9 globale de l'administrateur pour Git :\ngit config --global user.name \"Admin TSSR\"\ngit config --global user.email \"admin@lab.lan\"\n\n# 2. Initialiser un d\u00e9p\u00f4t local :\ngit init\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Git-Version-Control_Linux_Complet.sh",
+        "description": "Installation de l'outil de gestion de versions Git et pr\u00e9-configuration de l'identit\u00e9 globale pour le versionnage des scripts + Fiche .txt",
+        "tags": [
+          "git",
+          "versioncontrol",
+          "devops",
+          "linux",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:29:00.000000+00:00"
+      },
+      {
+        "id": "cmd-250",
+        "name": "Diag-Check-Disk-Inodes-Usage_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Diag-Check-Disk-Inodes-Usage_Linux_Complet.sh\n#!/bin/bash\n\nSNIPPET_NAME=\"Diag-Check-Disk-Inodes-Usage_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [02 - DIAGNOSTIC UTILISATION DES INODES] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nINODES_OUT=$(df -i 2>&1)\necho \"$INODES_OUT\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE DIAGNOSTIC - UTILISATION DES INODES\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nStatut Final  : R\u00c9SOLU / RAPPORT INODES G\u00c9N\u00c9R\u00c9\n======================================================================\n--- R\u00c9SULTAT DF -I ---\n$INODES_OUT\n\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# V\u00e9rifier le nombre d'inodes restants sur les partitions du syst\u00e8me\n# (Utile si un dossier accumule des millions de petits fichiers alors que l'espace disque semble libre) :\ndf -i\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Diag-Check-Disk-Inodes-Usage_Linux_Complet.sh",
+        "description": "Diagnostic de l'utilisation des inodes sur les partitions Linux (pour identifier la saturation par de multiples petits fichiers) + Fiche .txt",
+        "tags": [
+          "inodes",
+          "disque",
+          "stockage",
+          "diag",
+          "linux"
+        ],
+        "folder_id": "f-linux-diag",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:30:00.000000+00:00"
+      },
+      {
+        "id": "cmd-251",
+        "name": "Install-Net-Tools-Route-Ifconfig_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Net-Tools-Route-Ifconfig_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Net-Tools-Route-Ifconfig_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [01 - OUTILS LEGACY NET-TOOLS] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y net-tools\nelse\n    dnf install -y net-tools\nfi\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION - NET-TOOLS (IFCONFIG/ROUTE)\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nStatut Final  : R\u00c9SOLU / IFCONFIG ET ROUTE DISPONIBLES\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Utiliser les anciennes commandes d'administration r\u00e9seau historiques :\nifconfig\nroute -n\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Net-Tools-Route-Ifconfig_Linux_Complet.sh",
+        "description": "Installation des outils r\u00e9seau historiques et classiques ifconfig et route (paquet net-tools) sous Linux + Fiche .txt",
+        "tags": [
+          "net-tools",
+          "ifconfig",
+          "route",
+          "reseau",
+          "linux",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:31:00.000000+00:00"
+      },
+      {
+        "id": "cmd-252",
+        "name": "Diag-Check-ARP-Table-Details_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Diag-Check-ARP-Table-Details_Linux_Complet.sh\n#!/bin/bash\n\nSNIPPET_NAME=\"Diag-Check-ARP-Table-Details_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [02 - AUDIT TABLE ARP D\u00c9TAILL\u00c9E] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nARP_OUT=$(ip neigh show 2>&1)\necho \"$ARP_OUT\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE DIAGNOSTIC - TABLE ARP & VOISINS R\u00c9SEAU\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nStatut Final  : R\u00c9SOLU / TABLE ARP R\u00c9CUP\u00c9R\u00c9E\n======================================================================\n--- ASSOCIATIONS IP <-> MAC ---\n$ARP_OUT\n\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Afficher la table de voisinage IP/MAC (\u00e9quivalent moderne de arp -a) :\nip neigh show\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Diag-Check-ARP-Table-Details_Linux_Complet.sh",
+        "description": "Diagnostic et affichage d\u00e9taill\u00e9 des correspondances d'adresses MAC et IP locales dans la table ARP du noyau + Fiche .txt",
+        "tags": [
+          "arp",
+          "mac",
+          "reseau",
+          "diag",
+          "linux"
+        ],
+        "folder_id": "f-linux-diag",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:32:00.000000+00:00"
+      },
+      {
+        "id": "cmd-253",
+        "name": "Hardening-Disable-Kernel-Sysrq_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Hardening-Disable-Kernel-Sysrq_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Hardening-Disable-Kernel-Sysrq_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [03 - HARDENING D\u00c9SACTIVATION SYSRQ] $SNIPPET_NAME\"\necho \"==========================================================\"\n\ncat << 'EOF' > /etc/sysctl.d/99-disable-sysrq.conf\nkernel.sysrq = 0\nEOF\n\nsysctl --system >/dev/null 2>&1\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE HARDENING - D\u00c9SACTIVATION DES TOUCHES MAGIQUES SYSRQ\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nStatut Final  : R\u00c9SOLU / KERNEL SYSRQ D\u00c9SACTIV\u00c9\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# D\u00e9sactiver les commandes de d\u00e9bogage direct du noyau via le clavier magique SysRq\n# (Protection contre les manipulations physiques non autoris\u00e9es sur la console) :\nkernel.sysrq = 0\nsysctl --system\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Hardening-Disable-Kernel-Sysrq_Linux_Complet.sh",
+        "description": "Durcissement de s\u00e9curit\u00e9 : d\u00e9sactivation des combinaisons de touches de d\u00e9bogage magiques du noyau (SysRq) sous Linux + Fiche .txt",
+        "tags": [
+          "sysrq",
+          "hardening",
+          "securite",
+          "linux"
+        ],
+        "folder_id": "f-linux-hardening",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:33:00.000000+00:00"
+      },
+      {
+        "id": "cmd-254",
+        "name": "Maint-Backup-SSH-Configuration_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Maint-Backup-SSH-Configuration_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Maint-Backup-SSH-Configuration_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [04 - SAUVEGARDE CONFIGURATION SSH] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nmkdir -p /root/ssh-backups\nSSH_BCK=\"/root/ssh-backups/ssh_config_backup_$(date +%F_%H%M%S).tar.gz\"\n\ntar -czf \"$SSH_BCK\" /etc/ssh/sshd_config /etc/ssh/sshd_config.d /root/.ssh 2>/dev/null || true\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE MAINTENANCE - SAUVEGARDE CONFIGURATION OPENSSH\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nArchive Cr\u00e9\u00e9e : $SSH_BCK\nStatut Final  : R\u00c9SOLU / CONFIGURATION SSH SAUVEGARD\u00c9E\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Sauvegarder l'ensemble des param\u00e8tres du serveur SSH et des cl\u00e9s d'administration :\ntar -czf $SSH_BCK /etc/ssh/sshd_config /root/.ssh\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Maint-Backup-SSH-Configuration_Linux_Complet.sh",
+        "description": "Sauvegarde s\u00e9curis\u00e9e et compress\u00e9e des fichiers de configuration et des cl\u00e9s d'administration OpenSSH + Fiche .txt",
+        "tags": [
+          "ssh",
+          "backup",
+          "maintenance",
+          "securite",
+          "linux"
+        ],
+        "folder_id": "f-linux-maint",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:34:00.000000+00:00"
+      },
+      {
+        "id": "cmd-255",
+        "name": "Install-Telnet-Client-Tool_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Telnet-Client-Tool_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Telnet-Client-Tool_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [01 - INSTALLATION CLIENT TELNET] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y telnet\nelse\n    dnf install -y telnet\nfi\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION - CLIENT TELNET\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nStatut Final  : R\u00c9SOLU / UTILITAIRE TELNET INSTALL\u00c9\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Tester la r\u00e9activit\u00e9 d'un port textuel (ex: SMTP ou HTTP) avec telnet :\ntelnet 192.168.1.100 25\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Telnet-Client-Tool_Linux_Complet.sh",
+        "description": "Installation du client Telnet pour les tests de connexion textuelle sur des ports applicatifs + Fiche .txt",
+        "tags": [
+          "telnet",
+          "reseau",
+          "ports",
+          "linux",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:35:00.000000+00:00"
+      },
+      {
+        "id": "cmd-256",
+        "name": "Diag-Check-Public-IP-Geo_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Diag-Check-Public-IP-Geo_Linux_Complet.sh\n#!/bin/bash\n\nSNIPPET_NAME=\"Diag-Check-Public-IP-Geo_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [02 - DIAGNOSTIC IP PUBLIQUE] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nPUB_IP=$(curl -s --max-time 5 ifconfig.me || curl -s --max-time 5 icanhazip.com || echo \"Injoignable\")\necho \"Adresse IP Publique d\u00e9tect\u00e9e : $PUB_IP\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE DIAGNOSTIC - IP PUBLIQUE EXTERNE\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nIP Publique   : $PUB_IP\nStatut Final  : R\u00c9SOLU / ADRESSE R\u00c9CUP\u00c9R\u00c9E\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Consulter rapidement son IP publique depuis le terminal via un service Web externe :\ncurl -s ifconfig.me\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Diag-Check-Public-IP-Geo_Linux_Complet.sh",
+        "description": "V\u00e9rification et affichage de l'adresse IP publique externe du serveur en interrogeant des services de g\u00e9olocalisation web + Fiche .txt",
+        "tags": [
+          "public-ip",
+          "reseau",
+          "curl",
+          "diag",
+          "linux"
+        ],
+        "folder_id": "f-linux-diag",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:36:00.000000+00:00"
+      },
+      {
+        "id": "cmd-257",
+        "name": "Hardening-Disable-Bluetooth-Service_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Hardening-Disable-Bluetooth-Service_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Hardening-Disable-Bluetooth-Service_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [03 - HARDENING D\u00c9SACTIVATION BLUETOOTH] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nsystemctl stop bluetooth 2>/dev/null || true\nsystemctl disable bluetooth 2>/dev/null || true\nsystemctl mask bluetooth 2>/dev/null || true\n\necho \"blacklist bluetooth\" > /etc/modprobe.d/disable-bluetooth.conf\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE HARDENING - D\u00c9SACTIVATION DU BLUETOOTH\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nStatut Final  : R\u00c9SOLU / SERVICE ET MODULE BLUETOOTH NEUTRALIS\u00c9S\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# 1. Arr\u00eater et masquer d\u00e9finitivement le service bluetooth systemd :\nsystemctl mask bluetooth\n\n# 2. Blacklister le module noyau correspondant :\necho \"blacklist bluetooth\" > /etc/modprobe.d/disable-bluetooth.conf\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Hardening-Disable-Bluetooth-Service_Linux_Complet.sh",
+        "description": "Durcissement de s\u00e9curit\u00e9 : arr\u00eat, masquage systemd et mise en liste noire du module Bluetooth sur les serveurs headless + Fiche .txt",
+        "tags": [
+          "bluetooth",
+          "hardening",
+          "securite",
+          "linux"
+        ],
+        "folder_id": "f-linux-hardening",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:37:00.000000+00:00"
+      },
+      {
+        "id": "cmd-258",
+        "name": "Maint-Clean-Old-Kernels-Debian_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Maint-Clean-Old-Kernels-Debian_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Maint-Clean-Old-Kernels-Debian_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [04 - NETTOYAGE ANCIENS NOYAUX LINUX] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    PURGED_OUT=$(apt-get autoremove --purge -y 2>&1)\n    MSG=\"Anciens noyaux purg\u00e9s via apt-get autoremove.\"\nelse\n    PURGED_OUT=$(package-cleanup --oldkernels --count=2 -y 2>&1 || echo \"N/A\")\n    MSG=\"Nettoyage des vieux noyaux DNF effectu\u00e9.\"\nfi\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE MAINTENANCE - PURGE DES ANCIENS NOYAUX\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nAction        : $MSG\nStatut Final  : R\u00c9SOLU / ESPACE /BOOT LIB\u00c9R\u00c9\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Supprimer automatiquement les anciennes versions du noyau Linux qui s'accumulent\n# et saturent la partition /boot :\napt-get autoremove --purge\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Maint-Clean-Old-Kernels-Debian_Linux_Complet.sh",
+        "description": "Purge automatique des anciennes versions du noyau Linux pour lib\u00e9rer l'espace disque de la partition /boot + Fiche .txt",
+        "tags": [
+          "kernel",
+          "boot",
+          "maintenance",
+          "nettoyage",
+          "linux"
+        ],
+        "folder_id": "f-linux-maint",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:38:00.000000+00:00"
+      },
+      {
+        "id": "cmd-259",
+        "name": "Install-Nmap-Security-Scanner_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Nmap-Security-Scanner_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Nmap-Security-Scanner_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [01 - INSTALLATION SCANNER NMAP] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y nmap\nelse\n    dnf install -y nmap\nfi\n\nNMAP_VER=$(nmap --version | head -n 1)\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION - NMAP (SCANNER DE PORTS & S\u00c9CURIT\u00c9)\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nVersion       : $NMAP_VER\nDocumentation : https://nmap.org/book/man.html\nStatut Final  : R\u00c9SOLU / NMAP INSTALL\u00c9\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# 1. Scanner les ports ouverts et d\u00e9tecter les services sur une machine :\nnmap -sV -T4 <IP_CIBLE>\n\n# 2. D\u00e9couvrir tous les h\u00f4tes actifs sur le sous-r\u00e9seau local (Ping scan) :\nnmap -sn 192.168.1.0/24\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Nmap-Security-Scanner_Linux_Complet.sh",
+        "description": "Installation compl\u00e8te du scanner de s\u00e9curit\u00e9 et d'exploration r\u00e9seau Nmap sous Linux + Fiche .txt",
+        "tags": [
+          "nmap",
+          "scan",
+          "securite",
+          "audit",
+          "linux",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:39:00.000000+00:00"
+      },
+      {
+        "id": "cmd-260",
+        "name": "Diag-Check-Reboot-Required_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Diag-Check-Reboot-Required_Linux_Complet.sh\n#!/bin/bash\n\nSNIPPET_NAME=\"Diag-Check-Reboot-Required_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [02 - DIAGNOSTIC RED\u00c9MARRAGE N\u00c9CESSAIRE] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nif [ -f /var/run/reboot-required ]; then\n    STATUT=\"ALERTE / UN RED\u00c9MARRAGE EST REQUIS\"\n    DETAILS=$(cat /var/run/reboot-required.pkgs 2>/dev/null || echo \"Mises \u00e0 jour syst\u00e8me majeures d\u00e9tect\u00e9es.\")\nelse\n    STATUT=\"SAIN / AUCUN RED\u00c9MARRAGE REQUIS\"\n    DETAILS=\"Le syst\u00e8me n'a pas besoin d'\u00eatre red\u00e9marr\u00e9 pour le moment.\"\nfi\n\necho \"$STATUT : $DETAILS\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE DIAGNOSTIC - V\u00c9RIFICATION REBOOT N\u00c9CESSAIRE\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nStatut Final  : $STATUT\n======================================================================\n--- D\u00c9TAILS ---\n$DETAILS\n\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# V\u00e9rifier si un red\u00e9marrage du serveur est n\u00e9cessaire suite \u00e0 la mise \u00e0 jour du noyau ou de biblioth\u00e8ques syst\u00e8me :\n[ -f /var/run/reboot-required ] && echo \"Reboot n\u00e9cessaire\"\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Diag-Check-Reboot-Required_Linux_Complet.sh",
+        "description": "V\u00e9rification automatis\u00e9e permettant de savoir si un red\u00e9marrage du serveur Linux est requis suite \u00e0 des mises \u00e0 jour syst\u00e8me + Fiche .txt",
+        "tags": [
+          "reboot",
+          "systeme",
+          "updates",
+          "diag",
+          "linux"
+        ],
+        "folder_id": "f-linux-diag",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:40:00.000000+00:00"
+      },
+      {
+        "id": "cmd-261",
+        "name": "Install-NTPsec-Chrony-Client_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-NTPsec-Chrony-Client_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-NTPsec-Chrony-Client_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [01 - CLIENT NTP CHRONY] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y chrony\n    CONF_F=\"/etc/chrony/chrony.conf\"\n    SVC_N=\"chrony\"\nelse\n    dnf install -y chrony\n    CONF_F=\"/etc/chrony.conf\"\n    SVC_N=\"chronyd\"\nfi\n\nread -p \"Adresse IP du serveur NTP interne ou passerelle [192.168.1.1] : \" NTP_GW < /dev/tty\nNTP_GW=${NTP_GW:-192.168.1.1}\n\nsed -i '/^pool /s/^/#/' \"$CONF_F\"\nsed -i '/^server /s/^/#/' \"$CONF_F\"\necho \"server $NTP_GW iburst\" >> \"$CONF_F\"\n\nsystemctl enable --now \"$SVC_N\" && systemctl restart \"$SVC_N\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE CLIENT NTP - CHRONY CONFIGURATION\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nServeur Vis\u00e9  : $NTP_GW\nStatut Final  : R\u00c9SOLU / CLIENT CHRONY CONFIGUR\u00c9\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# 1. Configurer le serveur NTP ma\u00eetre dans /etc/chrony/chrony.conf :\nserver 192.168.1.1 iburst\n\n# 2. V\u00e9rifier la synchronisation et la d\u00e9rive de l'horloge :\nchronyc sources -v\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-NTPsec-Chrony-Client_Linux_Complet.sh",
+        "description": "Configuration d'un client Chrony pointant vers un serveur NTP interne ou une passerelle pour la synchronisation horaire + Fiche .txt",
+        "tags": [
+          "chrony",
+          "ntp",
+          "temps",
+          "reseau",
+          "linux",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T18:41:00.000000+00:00"
+      },
+      {
+        "id": "cmd-262",
+        "name": "Diag-Check-Routing-Table-Extended_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Diag-Check-Routing-Table-Extended_Linux_Complet.sh\n#!/bin/bash\n\nSNIPPET_NAME=\"Diag-Check-Routing-Table-Extended_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [02 - AUDIT TABLE DE ROUTAGE \u00c9TENDUE] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nROUTE_OUT=$(ip route show table all 2>&1)\necho \"$ROUTE_OUT\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE DIAGNOSTIC - TABLES DE ROUTAGE AVANC\u00c9ES\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nStatut Final  : R\u00c9SOLU / TABLES DE ROUTAGE R\u00c9CUP\u00c9R\u00c9ES\n======================================================================\n--- R\u00c9SULTAT IP ROUTE SHOW TABLE ALL ---\n$ROUTE_OUT\n\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Afficher toutes les tables de routage (y compris les tables personnalis\u00e9es de politique de routage) :\nip route show table all\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Diag-Check-Routing-Table-Extended_Linux_Complet.sh",
+        "description": "Audit approfondi de l'ensemble des tables de routage du noyau Linux (ip route show table all) + Fiche .txt",
+        "tags": [
+          "routage",
+          "routes",
+          "reseau",
+          "diag",
+          "linux"
+        ],
+        "folder_id": "f-linux-diag",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:42:00.000000+00:00"
+      },
+      {
+        "id": "cmd-263",
+        "name": "Hardening-Disable-IPv4-Source-Routing_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Hardening-Disable-IPv4-Source-Routing_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Hardening-Disable-IPv4-Source-Routing_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [03 - HARDENING SOURCE ROUTING] $SNIPPET_NAME\"\necho \"==========================================================\"\n\ncat << 'EOF' > /etc/sysctl.d/99-disable-source-routing.conf\nnet.ipv4.conf.all.accept_source_route = 0\nnet.ipv4.conf.default.accept_source_route = 0\nEOF\n\nsysctl --system >/dev/null 2>&1\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE HARDENING - D\u00c9SACTIVATION DU SOURCE ROUTING\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nStatut Final  : R\u00c9SOLU / SOURCE ROUTING BLOQU\u00c9\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# D\u00e9sactiver l'acceptation de paquets IP avec source routing explicite\n# (Emp\u00eache l'usurpation de chemin r\u00e9seau par un attaquant) :\nnet.ipv4.conf.all.accept_source_route = 0\nsysctl --system\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Hardening-Disable-IPv4-Source-Routing_Linux_Complet.sh",
+        "description": "Durcissement de s\u00e9curit\u00e9 : d\u00e9sactivation de l'acceptation de paquets IP en source routing pour contrer les contournements de pare-feu + Fiche .txt",
+        "tags": [
+          "source-routing",
+          "hardening",
+          "securite",
+          "linux"
+        ],
+        "folder_id": "f-linux-hardening",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:43:00.000000+00:00"
+      },
+      {
+        "id": "cmd-264",
+        "name": "Maint-Clean-Tmp-Directory_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Maint-Clean-Tmp-Directory_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Maint-Clean-Tmp-Directory_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [04 - NETTOYAGE DOSSIER TEMPORAIRE] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nBEFORE_TMP=$(du -sh /tmp 2>/dev/null | awk '{print $1}')\nfind /tmp -type f -atime +3 -delete 2>/dev/null || true\nAFTER_TMP=$(du -sh /tmp 2>/dev/null | awk '{print $1}')\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE MAINTENANCE - NETTOYAGE /TMP\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nTaille /tmp AVANT : $BEFORE_TMP\nTaille /tmp APR\u00c8S : $AFTER_TMP\nStatut Final  : R\u00c9SOLU / FICHIERS OBSOL\u00c8TES SUPPRIM\u00c9S\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Supprimer les fichiers temporaires de plus de 3 jours dans /tmp :\nfind /tmp -type f -atime +3 -delete\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Maint-Clean-Tmp-Directory_Linux_Complet.sh",
+        "description": "Nettoyage automatique des fichiers obsol\u00e8tes de plus de 3 jours dans le dossier temporaire /tmp sous Linux + Fiche .txt",
+        "tags": [
+          "tmp",
+          "maintenance",
+          "nettoyage",
+          "disque",
+          "linux"
+        ],
+        "folder_id": "f-linux-maint",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:44:00.000000+00:00"
+      },
+      {
+        "id": "cmd-265",
+        "name": "Install-Apache-Utils-Htpasswd_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Apache-Utils-Htpasswd_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Apache-Utils-Htpasswd_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [01 - OUTIL DE CHIFFREMENT HTPASSWD] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y apache2-utils\nelse\n    dnf install -y httpd-tools\nfi\n\nread -p \"Nom du fichier de mots de passe \u00e0 cr\u00e9er [/etc/nginx/.htpasswd] : \" PASS_FILE < /dev/tty\nPASS_FILE=${PASS_FILE:-/etc/nginx/.htpasswd}\nread -p \"Nom d'utilisateur admin [admin] : \" AUTH_USER < /dev/tty\nAUTH_USER=${AUTH_USER:-admin}\n\nmkdir -p \"$(dirname \"$PASS_FILE\")\"\nhtpasswd -bc \"$PASS_FILE\" \"$AUTH_USER\" \"SecretPass2026!\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION - HTPASSWD (AUTHENTIFICATION WEB)\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nFichier Auth  : $PASS_FILE (Utilisateur : $AUTH_USER)\nStatut Final  : R\u00c9SOLU / FICHIER DE HACHAGE CR\u00c9\u00c9\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Cr\u00e9er un fichier de hachage de mot de passe pour prot\u00e9ger un reverse proxy (Nginx/Apache) :\nhtpasswd -bc /etc/nginx/.htpasswd admin MonSuperMotDePasse\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Apache-Utils-Htpasswd_Linux_Complet.sh",
+        "description": "Installation d'apache2-utils et g\u00e9n\u00e9ration d'un fichier de hachage .htpasswd pour prot\u00e9ger l'acc\u00e8s \u00e0 des services web + Fiche .txt",
+        "tags": [
+          "htpasswd",
+          "auth",
+          "securite",
+          "web",
+          "linux",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T18:45:00.000000+00:00"
+      },
+      {
+        "id": "cmd-266",
+        "name": "Diag-Check-Memory-Swap-Swappiness_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Diag-Check-Memory-Swap-Swappiness_Linux_Complet.sh\n#!/bin/bash\n\nSNIPPET_NAME=\"Diag-Check-Memory-Swap-Swappiness_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [02 - DIAGNOSTIC PARAM\u00c8TRE SWAPPINESS] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nSWAP_VAL=$(cat /proc/sys/vm/swappiness 2>&1)\necho \"Valeur actuelle de vm.swappiness : $SWAP_VAL\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE DIAGNOSTIC - SWAPPINESS KERNEL\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nSwappiness    : $SWAP_VAL\nStatut Final  : R\u00c9SOLU / PARAM\u00c8TRE V\u00c9RIFI\u00c9\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# V\u00e9rifier la tendance du noyau \u00e0 utiliser le Swap (0 = utilise la RAM au maximum, 100 = privil\u00e9gie le Swap) :\ncat /proc/sys/vm/swappiness\n\n# Modifier temporairement \u00e0 chaud :\nsysctl -w vm.swappiness=10\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Diag-Check-Memory-Swap-Swappiness_Linux_Complet.sh",
+        "description": "Diagnostic de la propension du noyau Linux \u00e0 utiliser la m\u00e9moire Swap (param\u00e8tre swappiness) + Fiche .txt",
+        "tags": [
+          "swap",
+          "swappiness",
+          "memoire",
+          "diag",
+          "linux"
+        ],
+        "folder_id": "f-linux-diag",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T18:46:00.000000+00:00"
+      },
+      {
+        "id": "cmd-267",
+        "name": "Hardening-Disable-IP-Forwarding_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Hardening-Disable-IP-Forwarding_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Hardening-Disable-IP-Forwarding_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [03 - HARDENING D\u00c9SACTIVATION IP FORWARD] $SNIPPET_NAME\"\necho \"==========================================================\"\n\ncat << 'EOF' > /etc/sysctl.d/99-disable-ip-forward.conf\nnet.ipv4.ip_forward = 0\nEOF\n\nsysctl --system >/dev/null 2>&1\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE HARDENING - D\u00c9SACTIVATION DU ROUTAGE IP (FORWARD)\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nDate          : $DATE_EXEC\nStatut Final  : R\u00c9SOLU / ROUTAGE INTER-R\u00c9SEAU BLOQU\u00c9\n======================================================================\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# D\u00e9sactiver le transfert de paquets IPv4 (ip_forward) sur une machine standard\n# pour qu'elle ne se comporte pas comme un routeur :\nnet.ipv4.ip_forward = 0\nsysctl --system\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Hardening-Disable-IP-Forwarding_Linux_Complet.sh",
+        "description": "Durcissement de s\u00e9curit\u00e9 : d\u00e9sactivation stricte du transfert de paquets IP (ip_forward) sur les machines non-routeurs + Fiche .txt",

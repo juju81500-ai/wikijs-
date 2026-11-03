@@ -16,9 +16,15 @@ FOLDER_ID_PATTERN = re.compile(r"^f-[a-z0-9]+(?:-[a-z0-9]+)*$")
 NUMERIC_COMMAND_ID_PATTERN = re.compile(r"^cmd-(\d+)$")
 
 
+def read_export(path: Path) -> str:
+    if path.is_dir():
+        return "".join(part.read_text(encoding="utf-8") for part in sorted(path.glob("partie-*.txt")))
+    return path.read_text(encoding="utf-8")
+
+
 def validate_import(path: Path, show_next_id: bool) -> int:
     try:
-        document = json.loads(path.read_text(encoding="utf-8"))
+        document = json.loads(read_export(path))
     except json.JSONDecodeError as error:
         print(
             f"ERREUR JSON dans {path} : ligne {error.lineno}, "
@@ -93,8 +99,8 @@ def main() -> int:
         "file",
         nargs="?",
         type=Path,
-        default=Path(__file__).resolve().parents[1] / "04-referentiels-mapping" / "mapping" / "commandes-export.dump",
-        help="fichier JSON à contrôler (défaut : 04-referentiels-mapping/mapping/commandes-export.dump)",
+        default=Path(__file__).resolve().parents[1] / "04-referentiels-mapping" / "mapping" / "commandes-export",
+        help="fichier JSON à contrôler (défaut : 04-referentiels-mapping/mapping/commandes-export/)",
     )
     parser.add_argument(
         "--next-id",

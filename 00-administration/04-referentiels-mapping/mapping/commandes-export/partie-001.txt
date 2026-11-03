@@ -1,0 +1,600 @@
+          "features",
+          "search",
+          "install"
+        ],
+        "folder_id": "f-winsrv-install",
+        "is_favorite": true,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T14:20:00.000000+00:00"
+      },
+      {
+        "id": "cmd-sstlp-linux",
+        "name": "SSTLP-Audit-Express-Ports-Reseau_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/SSTLP-Audit-Express-Ports-Reseau_Linux_Complet.sh\n#!/bin/bash\nSNIPPET_NAME=\"SSTLP-Audit-Express-Ports-Reseau_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"=== [05 - REP\u00c9RAGE & SSTLP LINUX] ===\"\necho \"--- 1. INTERFACES & ADRESSES IP ---\"\nip -br addr show\necho \"--- 2. TABLE DE ROUTAGE ---\"\nip route show\necho \"--- 3. PORTS EN \u00c9COUTE (SS -TULNP) ---\"\nss -tulnp\necho \"--- 4. DERNI\u00c8RES TENTATIVES D'INTRUSION (LASTB) ---\"\nlastb -n 10 2>/dev/null || echo \"Aucune entr\u00e9e lastb.\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE REP\u00c9RAGE & AUDIT EXPRESS (SSTLP) - LINUX\nNom Complet : $SNIPPET_NAME\nFichier TXT : $RECAP_FILE\nDate        : $DATE_EXEC\n======================================================================\n--- 1. INTERFACES IP ---\n$(ip -br addr show)\n\n--- 2. PORTS OUVERTS (SS -TULNP) ---\n$(ss -tulnp)\n\n--- 3. COMMANDES D'APPRENTISSAGE SSTLP ---\n# Afficher les IP de mani\u00e8re compacte :\nip -br a\n# Lister tous les ports TCP/UDP en \u00e9coute avec le nom du processus :\nss -tulnp\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/SSTLP-Audit-Express-Ports-Reseau_Linux_Complet.sh",
+        "description": "Rep\u00e9rage rapide SSTLP (IP compactes, Routes, Ports ouverts ss -tulnp, Connexions \u00e9chou\u00e9es) + Fiche .txt",
+        "tags": [
+          "sstlp",
+          "reperage",
+          "audit",
+          "ports",
+          "linux"
+        ],
+        "folder_id": "f-linux-sstlp",
+        "is_favorite": true,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T14:25:00.000000+00:00"
+      },
+      {
+        "id": "cmd-sstlp-pve",
+        "name": "SSTLP-Cartographie-Noeud_Proxmox-VE_Complet",
+        "command": "cat << 'EOS' > /tmp/SSTLP-Cartographie-Noeud_Proxmox-VE_Complet.sh\n#!/bin/bash\nSNIPPET_NAME=\"SSTLP-Cartographie-Noeud_Proxmox-VE_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"=== [05 - REP\u00c9RAGE & SSTLP PROXMOX VE] ===\"\nVMS=$(qm list 2>/dev/null)\nLXCS=$(pct list 2>/dev/null)\nSTOR=$(pvesm status 2>/dev/null)\n\necho \"$VMS\"\necho \"$LXCS\"\necho \"$STOR\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE REP\u00c9RAGE & CARTOGRAPHIE (SSTLP) - PROXMOX VE\nNom Complet : $SNIPPET_NAME\nFichier TXT : $RECAP_FILE\nDate        : $DATE_EXEC\n======================================================================\n--- VMs QEMU ---\n$VMS\n--- CONTENEURS LXC ---\n$LXCS\n--- STOCKAGES PVE ---\n$STOR\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/SSTLP-Cartographie-Noeud_Proxmox-VE_Complet.sh",
+        "description": "Cartographie instantan\u00e9e du n\u0153ud Proxmox (VMs, LXC, Stockages, Charge) + Fiche .txt",
+        "tags": [
+          "proxmox",
+          "sstlp",
+          "reperage",
+          "audit"
+        ],
+        "folder_id": "f-pve-sstlp",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T14:26:00.000000+00:00"
+      },
+      {
+        "id": "cmd-sstlp-docker",
+        "name": "SSTLP-Audit-Conteneurs-Ports_Docker_Complet",
+        "command": "cat << 'EOS' > /tmp/SSTLP-Audit-Conteneurs-Ports_Docker_Complet.sh\n#!/bin/bash\nSNIPPET_NAME=\"SSTLP-Audit-Conteneurs-Ports_Docker_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\nDPS=$(docker ps -a --format \"table {{.Names}}\\t{{.Status}}\\t{{.Ports}}\")\nDSTATS=$(docker stats --no-stream --format \"table {{.Name}}\\t{{.CPUPerc}}\\t{{.MemUsage}}\")\n\necho \"$DPS\"\necho \"$DSTATS\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE REP\u00c9RAGE (SSTLP) - DOCKER\nNom Complet : $SNIPPET_NAME\nDate        : $DATE_EXEC\n======================================================================\n$DPS\n\n$DSTATS\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/SSTLP-Audit-Conteneurs-Ports_Docker_Complet.sh",
+        "description": "Rep\u00e9rage rapide des conteneurs Docker, ports expos\u00e9s et consommation RAM/CPU + Fiche .txt",
+        "tags": [
+          "docker",
+          "sstlp",
+          "reperage",
+          "audit"
+        ],
+        "folder_id": "f-docker-sstlp",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T14:27:00.000000+00:00"
+      },
+      {
+        "id": "cmd-sstlp-wincli",
+        "name": "SSTLP-Audit-Poste-Ports_Windows-Client_Complet",
+        "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"\n\\$SnippetName = 'SSTLP-Audit-Poste-Ports_Windows-Client_Complet'\n\\$RecapFile = \\\"C:\\Users\\Public\\\\\\$SnippetName.txt\\\"\n\\$IpInfo = Get-NetIPConfiguration | Out-String\n\\$Ports = Get-NetTCPConnection -State Listen | Select-Object LocalAddress, LocalPort, OwningProcess | Sort-Object LocalPort | Out-String\n\\$Txt = \\\"=== FICHE SSTLP WINDOWS CLIENT ===`r`n\\$IpInfo`r`n=== PORTS EN \u00c9COUTE ===`r`n\\$Ports\\\"\nSet-Content -Path \\$RecapFile -Value \\$Txt -Encoding UTF8\nWrite-Host \\\"FICHE .TXT : \\$RecapFile\\\" -ForegroundColor Green\n\"",
+        "description": "Rep\u00e9rage rapide poste Windows (IP, Passerelle, Ports TCP en \u00e9coute) + Fiche .txt",
+        "tags": [
+          "windows",
+          "client",
+          "sstlp",
+          "reperage"
+        ],
+        "folder_id": "f-wincli-sstlp",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T14:28:00.000000+00:00"
+      },
+      {
+        "id": "cmd-sstlp-winsrv",
+        "name": "SSTLP-Audit-AD-FSMO-Repl_Windows-Server_Complet",
+        "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"\n\\$SnippetName = 'SSTLP-Audit-AD-FSMO-Repl_Windows-Server_Complet'\n\\$RecapFile = \\\"C:\\Users\\Public\\\\\\$SnippetName.txt\\\"\n\\$Fsmo = netdom query fsmo 2>&1 | Out-String\n\\$Repl = repadmin /replsummary 2>&1 | Out-String\n\\$Txt = \\\"=== FICHE SSTLP WINDOWS SERVER (FSMO & R\u00c9PLICATION) ===`r`n\\$Fsmo`r`n\\$Repl\\\"\nSet-Content -Path \\$RecapFile -Value \\$Txt -Encoding UTF8\nWrite-Host \\\"FICHE .TXT : \\$RecapFile\\\" -ForegroundColor Green\n\"",
+        "description": "Rep\u00e9rage rapide Active Directory (Ma\u00eetres d'op\u00e9rations FSMO, \u00c9tat de r\u00e9plication) + Fiche .txt",
+        "tags": [
+          "windows-server",
+          "ad",
+          "fsmo",
+          "sstlp"
+        ],
+        "folder_id": "f-winsrv-sstlp",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-18T14:29:00.000000+00:00"
+      },
+      {
+        "id": "cmd-3",
+        "name": "Install-GLPI-Server_Debian-Ubuntu_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-GLPI-Server_Debian-Ubuntu_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-GLPI-Server_Debian-Ubuntu_Complet\"\n\necho \"==========================================================\"\necho \"   INSTALLATION OFFICIELLE GLPI - FAMILLE DEBIAN/UBUNTU   \"\necho \"==========================================================\"\n\napt-get update -qq\napt-get install -y -qq curl grep sed ca-certificates lsb-release apt-transport-https gnupg\n\nread -p \"Quelle branche de GLPI voulez-vous (10, 11 ou 12) [11] : \" GLPI_BRANCH\nGLPI_BRANCH=${GLPI_BRANCH:-11}\n\necho \"R\u00e9cup\u00e9ration des versions disponibles pour GLPI $GLPI_BRANCH sur GitHub...\"\nVERSIONS=$(curl -s \"https://api.github.com/repos/glpi-project/glpi/releases?per_page=100\" | grep -oP '\"tag_name\": \"\\K'$GLPI_BRANCH'\\.[0-9]+\\.[0-9]+(-[a-z0-9]+)?')\n\nif [ -z \"$VERSIONS\" ]; then\n    echo \"Impossible de joindre l'API GitHub, saisie manuelle (ex: 12.0.0, 11.0.11, 10.0.28) :\"\n    read -p \"Version exacte : \" GLPI_VER\nelse\n    echo \"Choisissez le num\u00e9ro correspondant \u00e0 la version souhait\u00e9e :\"\n    select V in $VERSIONS; do\n        if [ -n \"$V\" ]; then\n            GLPI_VER=\"$V\"\n            break\n        fi\n    done\nfi\necho \"-> Version s\u00e9lectionn\u00e9e : $GLPI_VER\"\n\nread -p \"Nom de la base de donn\u00e9es [glpidb] : \" DB_NAME\nDB_NAME=${DB_NAME:-glpidb}\n\nread -p \"Utilisateur de la base de donn\u00e9es [glpiuser] : \" DB_USER\nDB_USER=${DB_USER:-glpiuser}\n\nread -p \"Mot de passe de la base de donn\u00e9es [GlpiPass2026!] : \" DB_PASS\nDB_PASS=${DB_PASS:-GlpiPass2026!}\n\nDEFAULT_IP=$(hostname -I | awk '{print $1}')\nread -p \"Nom de domaine ou IP du serveur [$DEFAULT_IP] : \" SERVER_NAME\nSERVER_NAME=${SERVER_NAME:-$DEFAULT_IP}\n\n. /etc/os-release\necho \"-> OS d\u00e9tect\u00e9 : $PRETTY_NAME\"\n\nNEED_SURY=0\nif [ \"$GLPI_BRANCH\" = \"12\" ] && [ \"$ID\" = \"debian\" ] && [ \"$VERSION_ID\" = \"12\" ]; then NEED_SURY=1; fi\nif [ \"$ID\" = \"ubuntu\" ] && [ \"$VERSION_ID\" = \"22-04\" ] && [ \"$GLPI_BRANCH\" != \"10\" ]; then NEED_SURY=1; fi\n\nif [ \"$NEED_SURY\" -eq 1 ]; then\n    echo \"-> Ajout du d\u00e9p\u00f4t PHP 8.3 tiers pour compatibilit\u00e9...\"\n    if [ \"$ID\" = \"debian\" ]; then\n        curl -sSLo /tmp/debsuryorg-archive-keyring.deb https://packages.sury.org/debsuryorg-archive-keyring.deb\n        dpkg -i /tmp/debsuryorg-archive-keyring.deb\n        echo \"deb [signed-by=/usr/share/keyrings/deb.sury.org-archive-keyring.gpg] https://packages.sury.org/php/ $(lsb_release -sc) main\" > /etc/apt/sources.list.d/php.list\n        apt-get update -qq\n    else\n        apt-get install -y software-properties-common\n        add-apt-repository -y ppa:ondrej/php\n        apt-get update -qq\n    fi\n    PHP_PFX=\"php8.3\"\nelse\n    PHP_PFX=\"php\"\nfi\n\nDEBIAN_FRONTEND=noninteractive apt-get install -y apache2 mariadb-server wget tar \\\n$PHP_PFX libapache2-mod-$PHP_PFX $PHP_PFX-mysql $PHP_PFX-ldap $PHP_PFX-xml \\\n$PHP_PFX-common $PHP_PFX-curl $PHP_PFX-gd $PHP_PFX-intl $PHP_PFX-mbstring \\\n$PHP_PFX-bz2 $PHP_PFX-zip $PHP_PFX-apcu $PHP_PFX-bcmath\n\nsystemctl enable --now apache2 mariadb\n\nmariadb-tzinfo-to-sql /usr/share/zoneinfo | mariadb -u root mysql\nmariadb -u root <<EOF\nCREATE DATABASE IF NOT EXISTS $DB_NAME CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;\nCREATE USER IF NOT EXISTS '$DB_USER'@'localhost' IDENTIFIED BY '$DB_PASS';\nGRANT ALL PRIVILEGES ON $DB_NAME.* TO '$DB_USER'@'localhost';\nGRANT SELECT ON mysql.time_zone_name TO '$DB_USER'@'localhost';\nFLUSH PRIVILEGES;\nEOF\n\ncd /tmp\nwget -q --show-progress \"https://github.com/glpi-project/glpi/releases/download/$GLPI_VER/glpi-$GLPI_VER.tgz\"\nrm -rf /var/www/glpi /etc/glpi /var/lib/glpi /var/log/glpi\ntar -xzf \"glpi-$GLPI_VER.tgz\" -C /var/www/\nrm -f \"glpi-$GLPI_VER.tgz\"\n\nmkdir -p /etc/glpi /var/lib/glpi /var/log/glpi\nmv /var/www/glpi/config/* /etc/glpi/\nmv /var/www/glpi/files/* /var/lib/glpi/\n\ncat << 'EOF' > /var/www/glpi/inc/downstream.php\n<?php\ndefine('GLPI_CONFIG_DIR', '/etc/glpi/');\nif (file_exists(GLPI_CONFIG_DIR . '/local_define.php')) {\n   require_once GLPI_CONFIG_DIR . '/local_define.php';\n}\nEOF\n\ncat << 'EOF' > /etc/glpi/local_define.php\n<?php\ndefine('GLPI_VAR_DIR', '/var/lib/glpi');\ndefine('GLPI_LOG_DIR', '/var/log/glpi');\nEOF\n\nchown -R www-data:www-data /var/www/glpi /etc/glpi /var/lib/glpi /var/log/glpi\nfind /var/www/glpi/ -type d -exec chmod 755 {} \\;\nfind /var/www/glpi/ -type f -exec chmod 644 {} \\;\n\ncat << EOF > /etc/apache2/sites-available/glpi.conf\n<VirtualHost *:80>\n    ServerName $SERVER_NAME\n    DocumentRoot /var/www/glpi/public\n\n    <Directory /var/www/glpi/public>\n        Require all granted\n        RewriteEngine On\n        RewriteCond %{HTTP:Authorization} ^(.+)$\n        RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]\n        RewriteCond %{REQUEST_FILENAME} !-f\n        RewriteRule ^(.*)$ index.php [QSA,L]\n    </Directory>\n</VirtualHost>\nEOF\n\nPHP_VER_ACT=$(php -r \"echo PHP_MAJOR_VERSION.'.'.PHP_MINOR_VERSION;\")\nsed -i 's/^;\\?session.cookie_httponly.*/session.cookie_httponly = on/' /etc/php/$PHP_VER_ACT/apache2/php.ini\n\na2dissite 000-default.conf\na2ensite glpi.conf\na2enmod rewrite\nsystemctl restart apache2\n\nsudo -u www-data php /var/www/glpi/bin/console db:install \\\n  --db-host=localhost \\\n  --db-name=\"$DB_NAME\" \\\n  --db-user=\"$DB_USER\" \\\n  --db-password=\"$DB_PASS\" \\\n  --default-language=fr_FR \\\n  --no-interaction\n\nrm -f /var/www/glpi/install/install.php\n\nRECAP_FILE=\"/root/${SNIPPET_NAME}_${GLPI_VER}.txt\"\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE TECHNIQUE D'INSTALLATION & APPRENTISSAGE\nNom Complet : ${SNIPPET_NAME}_${GLPI_VER}\nFichier TXT : $RECAP_FILE\nSyst\u00e8me     : $PRETTY_NAME (Famille Debian/Ubuntu)\nDate        : $(date '+%d/%m/%Y %H:%M')\nStatut      : R\u00c9SOLU / OP\u00c9RATIONNEL (http://$SERVER_NAME)\n======================================================================\n\n--- IDENTIFIANTS CONFIGUR\u00c9S ---\nBase de donn\u00e9es : $DB_NAME\nUtilisateur SQL : $DB_USER\nMot de passe SQL: $DB_PASS\nCompte Admin    : glpi / glpi (\u00e0 modifier d\u00e8s la premi\u00e8re connexion)\n\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# 1. Mise \u00e0 jour et installation des paquets requis (Apache, MariaDB, PHP)\napt update && apt upgrade -y\napt install -y apache2 mariadb-server wget tar $PHP_PFX libapache2-mod-$PHP_PFX \\\\\n$PHP_PFX-mysql $PHP_PFX-ldap $PHP_PFX-xml $PHP_PFX-common $PHP_PFX-curl \\\\\n$PHP_PFX-gd $PHP_PFX-intl $PHP_PFX-mbstring $PHP_PFX-bz2 $PHP_PFX-zip $PHP_PFX-apcu $PHP_PFX-bcmath\nsystemctl enable --now apache2 mariadb\n\n# 2. Chargement des fuseaux horaires et cr\u00e9ation de la base MariaDB\nmariadb-tzinfo-to-sql /usr/share/zoneinfo | mariadb -u root mysql\nmariadb -u root -e \"CREATE DATABASE $DB_NAME CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;\"\nmariadb -u root -e \"CREATE USER '$DB_USER'@'localhost' IDENTIFIED BY '$DB_PASS';\"\nmariadb -u root -e \"GRANT ALL PRIVILEGES ON $DB_NAME.* TO '$DB_USER'@'localhost';\"\nmariadb -u root -e \"GRANT SELECT ON mysql.time_zone_name TO '$DB_USER'@'localhost';\"\nmariadb -u root -e \"FLUSH PRIVILEGES;\"\n\n# 3. T\u00e9l\u00e9chargement et d\u00e9compression de GLPI $GLPI_VER\ncd /tmp\nwget https://github.com/glpi-project/glpi/releases/download/$GLPI_VER/glpi-$GLPI_VER.tgz\ntar -xzf glpi-$GLPI_VER.tgz -C /var/www/\nrm glpi-$GLPI_VER.tgz\n\n# 4. S\u00e9curisation FHS des r\u00e9pertoires (Documentation officielle)\nmkdir -p /etc/glpi /var/lib/glpi /var/log/glpi\nmv /var/www/glpi/config/* /etc/glpi/\nmv /var/www/glpi/files/* /var/lib/glpi/\nchown -R www-data:www-data /var/www/glpi /etc/glpi /var/lib/glpi /var/log/glpi\n\n# 5. Activation du VirtualHost Apache et module Rewrite\na2dissite 000-default.conf && a2ensite glpi.conf && a2enmod rewrite\nsystemctl restart apache2\n\n# 6. Installation de la base via CLI et suppression de install.php\nsudo -u www-data php /var/www/glpi/bin/console db:install \\\\\n  --db-host=localhost --db-name=$DB_NAME --db-user=$DB_USER \\\\\n  --db-password='$DB_PASS' --default-language=fr_FR --no-interaction\nrm -f /var/www/glpi/install/install.php\n======================================================================\nEOF\n\necho \"==========================================================\"\necho \" INSTALLATION TERMIN\u00c9E AVEC SUCC\u00c8S !\"\necho \" -> Acc\u00e8s Web  : http://$SERVER_NAME (glpi / glpi)\"\necho \" -> Fiche .TXT : $RECAP_FILE\"\necho \"==========================================================\"\nEOS\nbash /tmp/Install-GLPI-Server_Debian-Ubuntu_Complet.sh",
+        "description": "Installation officielle GLPI A-Z (FHS + CLI) + Fiche .txt au nom complet",
+        "tags": [
+          "glpi",
+          "debian",
+          "ubuntu",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 1,
+        "last_used": "2026-10-17T13:05:12.543279+00:00",
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-17T12:51:11.095251+00:00"
+      },
+      {
+        "id": "cmd-4",
+        "name": "Install-GLPI-Server_RedHat-RHEL_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-GLPI-Server_RedHat-RHEL_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-GLPI-Server_RedHat-RHEL_Complet\"\n\necho \"==========================================================\"\necho \"   INSTALLATION OFFICIELLE GLPI - FAMILLE REDHAT / RHEL   \"\necho \"==========================================================\"\n\ndnf install -y -q curl grep sed tar wget\n\nread -p \"Quelle branche de GLPI voulez-vous (10, 11 ou 12) [11] : \" GLPI_BRANCH\nGLPI_BRANCH=${GLPI_BRANCH:-11}\n\necho \"R\u00e9cup\u00e9ration des versions disponibles pour GLPI $GLPI_BRANCH sur GitHub...\"\nVERSIONS=$(curl -s \"https://api.github.com/repos/glpi-project/glpi/releases?per_page=100\" | grep -oP '\"tag_name\": \"\\K'$GLPI_BRANCH'\\.[0-9]+\\.[0-9]+(-[a-z0-9]+)?')\n\nif [ -z \"$VERSIONS\" ]; then\n    read -p \"Version exacte (ex: 12.0.0, 11.0.11, 10.0.28) : \" GLPI_VER\nelse\n    echo \"Choisissez le num\u00e9ro correspondant \u00e0 la version souhait\u00e9e :\"\n    select V in $VERSIONS; do\n        if [ -n \"$V\" ]; then\n            GLPI_VER=\"$V\"\n            break\n        fi\n    done\nfi\necho \"-> Version s\u00e9lectionn\u00e9e : $GLPI_VER\"\n\nread -p \"Nom de la base de donn\u00e9es [glpidb] : \" DB_NAME\nDB_NAME=${DB_NAME:-glpidb}\n\nread -p \"Utilisateur de la base de donn\u00e9es [glpiuser] : \" DB_USER\nDB_USER=${DB_USER:-glpiuser}\n\nread -p \"Mot de passe de la base de donn\u00e9es [GlpiPass2026!] : \" DB_PASS\nDB_PASS=${DB_PASS:-GlpiPass2026!}\n\nDEFAULT_IP=$(hostname -I | awk '{print $1}')\nread -p \"Nom de domaine ou IP du serveur [$DEFAULT_IP] : \" SERVER_NAME\nSERVER_NAME=${SERVER_NAME:-$DEFAULT_IP}\n\n. /etc/os-release\nRHEL_MAJOR=$(echo \"$VERSION_ID\" | cut -d. -f1)\nif [ \"$ID\" != \"fedora\" ]; then\n    dnf install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-$RHEL_MAJOR.noarch.rpm || true\n    dnf install -y https://rpms.remirepo.net/enterprise/remi-release-$RHEL_MAJOR.rpm || true\n    dnf module reset php -y\n    dnf module enable php:remi-8.3 -y\nfi\n\ndnf install -y httpd mariadb-server php php-fpm php-mysqlnd php-ldap php-xml \\\nphp-common php-curl php-gd php-intl php-mbstring php-bz2 php-zip php-pecl-apcu \\\nphp-bcmath policycoreutils-python-utils\n\nsystemctl enable --now httpd mariadb php-fpm\n\nmariadb-tzinfo-to-sql /usr/share/zoneinfo | mariadb -u root mysql\nmariadb -u root <<EOF\nCREATE DATABASE IF NOT EXISTS $DB_NAME CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;\nCREATE USER IF NOT EXISTS '$DB_USER'@'localhost' IDENTIFIED BY '$DB_PASS';\nGRANT ALL PRIVILEGES ON $DB_NAME.* TO '$DB_USER'@'localhost';\nGRANT SELECT ON mysql.time_zone_name TO '$DB_USER'@'localhost';\nFLUSH PRIVILEGES;\nEOF\n\ncd /tmp\nwget -q --show-progress \"https://github.com/glpi-project/glpi/releases/download/$GLPI_VER/glpi-$GLPI_VER.tgz\"\nrm -rf /var/www/glpi /etc/glpi /var/lib/glpi /var/log/glpi\ntar -xzf \"glpi-$GLPI_VER.tgz\" -C /var/www/\nrm -f \"glpi-$GLPI_VER.tgz\"\n\nmkdir -p /etc/glpi /var/lib/glpi /var/log/glpi\nmv /var/www/glpi/config/* /etc/glpi/\nmv /var/www/glpi/files/* /var/lib/glpi/\n\ncat << 'EOF' > /var/www/glpi/inc/downstream.php\n<?php\ndefine('GLPI_CONFIG_DIR', '/etc/glpi/');\nif (file_exists(GLPI_CONFIG_DIR . '/local_define.php')) {\n   require_once GLPI_CONFIG_DIR . '/local_define.php';\n}\nEOF\n\ncat << 'EOF' > /etc/glpi/local_define.php\n<?php\ndefine('GLPI_VAR_DIR', '/var/lib/glpi');\ndefine('GLPI_LOG_DIR', '/var/log/glpi');\nEOF\n\nchown -R apache:apache /var/www/glpi /etc/glpi /var/lib/glpi /var/log/glpi\nfind /var/www/glpi/ -type d -exec chmod 755 {} \\;\nfind /var/www/glpi/ -type f -exec chmod 644 {} \\;\n\ncat << EOF > /etc/httpd/conf.d/glpi.conf\n<VirtualHost *:80>\n    ServerName $SERVER_NAME\n    DocumentRoot /var/www/glpi/public\n\n    <Directory /var/www/glpi/public>\n        Require all granted\n        RewriteEngine On\n        RewriteCond %{HTTP:Authorization} ^(.+)$\n        RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]\n        RewriteCond %{REQUEST_FILENAME} !-f\n        RewriteRule ^(.*)$ index.php [QSA,L]\n    </Directory>\n</VirtualHost>\nEOF\n\nsed -i 's/^;\\?session.cookie_httponly.*/session.cookie_httponly = on/' /etc/php.ini\n\nif command -v getenforce >/dev/null && [ \"$(getenforce)\" != \"Disabled\" ]; then\n    setsebool -P httpd_can_network_connect 1\n    setsebool -P httpd_can_network_connect_db 1\n    setsebool -P httpd_can_sendmail 1\n    semanage fcontext -a -t httpd_sys_rw_content_t \"/etc/glpi(/.*)?\"\n    semanage fcontext -a -t httpd_sys_rw_content_t \"/var/lib/glpi(/.*)?\"\n    semanage fcontext -a -t httpd_sys_rw_content_t \"/var/log/glpi(/.*)?\"\n    semanage fcontext -a -t httpd_sys_content_t \"/var/www/glpi(/.*)?\"\n    restorecon -Rv /etc/glpi /var/lib/glpi /var/log/glpi /var/www/glpi\nfi\n\nif systemctl is-active --quiet firewalld; then\n    firewall-cmd --zone=public --add-service=http --permanent\n    firewall-cmd --reload\nfi\n\nsystemctl restart php-fpm httpd\n\nsudo -u apache php /var/www/glpi/bin/console db:install \\\n  --db-host=localhost \\\n  --db-name=\"$DB_NAME\" \\\n  --db-user=\"$DB_USER\" \\\n  --db-password=\"$DB_PASS\" \\\n  --default-language=fr_FR \\\n  --no-interaction\n\nrm -f /var/www/glpi/install/install.php\n\nRECAP_FILE=\"/root/${SNIPPET_NAME}_${GLPI_VER}.txt\"\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE TECHNIQUE D'INSTALLATION & APPRENTISSAGE\nNom Complet : ${SNIPPET_NAME}_${GLPI_VER}\nFichier TXT : $RECAP_FILE\nSyst\u00e8me     : $PRETTY_NAME (Famille RedHat/RHEL)\nDate        : $(date '+%d/%m/%Y %H:%M')\nStatut      : R\u00c9SOLU / OP\u00c9RATIONNEL (http://$SERVER_NAME)\n======================================================================\n\n--- IDENTIFIANTS CONFIGUR\u00c9S ---\nBase de donn\u00e9es : $DB_NAME\nUtilisateur SQL : $DB_USER\nMot de passe SQL: $DB_PASS\nCompte Admin    : glpi / glpi (\u00e0 modifier d\u00e8s la premi\u00e8re connexion)\n\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# 1. Activation des d\u00e9p\u00f4ts EPEL et Remi PHP 8.3 + Installation des paquets\ndnf install -y epel-release\ndnf module reset php -y && dnf module enable php:remi-8.3 -y\ndnf install -y httpd mariadb-server php php-fpm php-mysqlnd php-ldap php-xml \\\\\nphp-common php-curl php-gd php-intl php-mbstring php-bz2 php-zip php-pecl-apcu \\\\\nphp-bcmath policycoreutils-python-utils wget tar\nsystemctl enable --now httpd mariadb php-fpm\n\n# 2. Contextes SELinux et ouverture Firewalld\nsetsebool -P httpd_can_network_connect 1\nsetsebool -P httpd_can_network_connect_db 1\nsemanage fcontext -a -t httpd_sys_rw_content_t \"/etc/glpi(/.*)?\"\nsemanage fcontext -a -t httpd_sys_rw_content_t \"/var/lib/glpi(/.*)?\"\nsemanage fcontext -a -t httpd_sys_rw_content_t \"/var/log/glpi(/.*)?\"\nrestorecon -Rv /etc/glpi /var/lib/glpi /var/log/glpi /var/www/glpi\nfirewall-cmd --zone=public --add-service=http --permanent && firewall-cmd --reload\n\n# 3. Installation de la base via CLI et nettoyage\nsudo -u apache php /var/www/glpi/bin/console db:install \\\\\n  --db-host=localhost --db-name=$DB_NAME --db-user=$DB_USER \\\\\n  --db-password='$DB_PASS' --default-language=fr_FR --no-interaction\nrm -f /var/www/glpi/install/install.php\n======================================================================\nEOF\n\necho \"==========================================================\"\necho \" INSTALLATION TERMIN\u00c9E AVEC SUCC\u00c8S !\"\necho \" -> Acc\u00e8s Web  : http://$SERVER_NAME (glpi / glpi)\"\necho \" -> Fiche .TXT : $RECAP_FILE\"\necho \"==========================================================\"\nEOS\nbash /tmp/Install-GLPI-Server_RedHat-RHEL_Complet.sh",
+        "description": "Installation officielle GLPI A-Z (Remi + SELinux + Firewalld) + Fiche .txt au nom complet",
+        "tags": [
+          "glpi",
+          "redhat",
+          "rocky",
+          "almalinux",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-17T12:53:11.756552+00:00"
+      },
+      {
+        "id": "cmd-5",
+        "name": "Install-GLPI-Server_Alpine-Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-GLPI-Server_Alpine-Linux_Complet.sh\n#!/bin/sh\nset -e\n\necho \"==========================================================\"\necho \"    INSTALLATION OFFICIELLE GLPI - FAMILLE ALPINE LINUX   \"\necho \"==========================================================\"\n\napk update\napk add --no-cache bash curl grep sed tar wget ca-certificates tzdata\n\nbash << 'EOBASH'\nset -e\nSNIPPET_NAME=\"Install-GLPI-Server_Alpine-Linux_Complet\"\n\nread -p \"Quelle branche de GLPI voulez-vous (10, 11 ou 12) [11] : \" GLPI_BRANCH\nGLPI_BRANCH=${GLPI_BRANCH:-11}\n\necho \"R\u00e9cup\u00e9ration des versions disponibles pour GLPI $GLPI_BRANCH sur GitHub...\"\nVERSIONS=$(curl -s \"https://api.github.com/repos/glpi-project/glpi/releases?per_page=100\" | grep -oP '\"tag_name\": \"\\K'$GLPI_BRANCH'\\.[0-9]+\\.[0-9]+(-[a-z0-9]+)?')\n\nif [ -z \"$VERSIONS\" ]; then\n    read -p \"Version exacte (ex: 12.0.0, 11.0.11, 10.0.28) : \" GLPI_VER\nelse\n    echo \"Choisissez le num\u00e9ro correspondant \u00e0 la version souhait\u00e9e :\"\n    select V in $VERSIONS; do\n        if [ -n \"$V\" ]; then\n            GLPI_VER=\"$V\"\n            break\n        fi\n    done\nfi\n\nread -p \"Nom de la base de donn\u00e9es [glpidb] : \" DB_NAME\nDB_NAME=${DB_NAME:-glpidb}\nread -p \"Utilisateur de la base de donn\u00e9es [glpiuser] : \" DB_USER\nDB_USER=${DB_USER:-glpiuser}\nread -p \"Mot de passe de la base de donn\u00e9es [GlpiPass2026!] : \" DB_PASS\nDB_PASS=${DB_PASS:-GlpiPass2026!}\nDEFAULT_IP=$(hostname -i 2>/dev/null | awk '{print $1}')\nread -p \"Nom de domaine ou IP du serveur [$DEFAULT_IP] : \" SERVER_NAME\nSERVER_NAME=${SERVER_NAME:-$DEFAULT_IP}\n\nif apk search -e php83 >/dev/null 2>&1; then PHP_PKG=\"php83\"; else PHP_PKG=\"php84\"; fi\n\napk add --no-cache apache2 mariadb mariadb-client \\\n$PHP_PKG $PHP_PKG-apache2 $PHP_PKG-mysqli $PHP_PKG-pdo_mysql $PHP_PKG-ldap \\\n$PHP_PKG-xml $PHP_PKG-xmlreader $PHP_PKG-xmlwriter $PHP_PKG-dom $PHP_PKG-simplexml \\\n$PHP_PKG-curl $PHP_PKG-gd $PHP_PKG-intl $PHP_PKG-mbstring $PHP_PKG-bz2 \\\n$PHP_PKG-zip $PHP_PKG-pecl-apcu $PHP_PKG-bcmath $PHP_PKG-session $PHP_PKG-ctype \\\n$PHP_PKG-fileinfo $PHP_PKG-iconv $PHP_PKG-opcache $PHP_PKG-openssl $PHP_PKG-phar\n\nln -sf /usr/bin/$PHP_PKG /usr/bin/php\n/etc/init.d/mariadb setup\nrc-update add mariadb default\nrc-service mariadb start\n\nmariadb-tzinfo-to-sql /usr/share/zoneinfo | mariadb -u root mysql\nmariadb -u root <<EOF\nCREATE DATABASE IF NOT EXISTS $DB_NAME CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;\nCREATE USER IF NOT EXISTS '$DB_USER'@'localhost' IDENTIFIED BY '$DB_PASS';\nGRANT ALL PRIVILEGES ON $DB_NAME.* TO '$DB_USER'@'localhost';\nGRANT SELECT ON mysql.time_zone_name TO '$DB_USER'@'localhost';\nFLUSH PRIVILEGES;\nEOF\n\ncd /tmp\nwget -q \"https://github.com/glpi-project/glpi/releases/download/$GLPI_VER/glpi-$GLPI_VER.tgz\"\nrm -rf /var/www/glpi /etc/glpi /var/lib/glpi /var/log/glpi\nmkdir -p /var/www\ntar -xzf \"glpi-$GLPI_VER.tgz\" -C /var/www/\nrm -f \"glpi-$GLPI_VER.tgz\"\n\nmkdir -p /etc/glpi /var/lib/glpi /var/log/glpi\nmv /var/www/glpi/config/* /etc/glpi/\nmv /var/www/glpi/files/* /var/lib/glpi/\n\ncat << 'EOF' > /var/www/glpi/inc/downstream.php\n<?php\ndefine('GLPI_CONFIG_DIR', '/etc/glpi/');\nif (file_exists(GLPI_CONFIG_DIR . '/local_define.php')) {\n   require_once GLPI_CONFIG_DIR . '/local_define.php';\n}\nEOF\n\ncat << 'EOF' > /etc/glpi/local_define.php\n<?php\ndefine('GLPI_VAR_DIR', '/var/lib/glpi');\ndefine('GLPI_LOG_DIR', '/var/log/glpi');\nEOF\n\nchown -R apache:apache /var/www/glpi /etc/glpi /var/lib/glpi /var/log/glpi\nfind /var/www/glpi/ -type d -exec chmod 755 {} \\;\nfind /var/www/glpi/ -type f -exec chmod 644 {} \\;\n\nsed -i 's|^#LoadModule rewrite_module|LoadModule rewrite_module|' /etc/apache2/httpd.conf\nsed -i 's|^;\\?session.cookie_httponly.*|session.cookie_httponly = on|' /etc/$PHP_PKG/php.ini\n\ncat << EOF > /etc/apache2/conf.d/glpi.conf\n<VirtualHost *:80>\n    ServerName $SERVER_NAME\n    DocumentRoot /var/www/glpi/public\n    <Directory /var/www/glpi/public>\n        Require all granted\n        RewriteEngine On\n        RewriteCond %{HTTP:Authorization} ^(.+)$\n        RewriteRule .* - [E=HTTP_AUTHORIZATION:%{HTTP:Authorization}]\n        RewriteCond %{REQUEST_FILENAME} !-f\n        RewriteRule ^(.*)$ index.php [QSA,L]\n    </Directory>\n</VirtualHost>\nEOF\n\nrc-update add apache2 default\nrc-service apache2 restart\n\nsu -s /bin/sh apache -c \"php /var/www/glpi/bin/console db:install \\\n  --db-host=localhost --db-name='$DB_NAME' --db-user='$DB_USER' \\\n  --db-password='$DB_PASS' --default-language=fr_FR --no-interaction\"\n\nrm -f /var/www/glpi/install/install.php\n\n. /etc/os-release\nRECAP_FILE=\"/root/${SNIPPET_NAME}_${GLPI_VER}.txt\"\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE TECHNIQUE D'INSTALLATION & APPRENTISSAGE\nNom Complet : ${SNIPPET_NAME}_${GLPI_VER}\nFichier TXT : $RECAP_FILE\nSyst\u00e8me     : $PRETTY_NAME (Alpine Linux)\nStatut      : R\u00c9SOLU / OP\u00c9RATIONNEL (http://$SERVER_NAME)\n======================================================================\n\n--- IDENTIFIANTS CONFIGUR\u00c9S ---\nBase de donn\u00e9es : $DB_NAME (User: $DB_USER / Pass: $DB_PASS)\nCompte Admin    : glpi / glpi\n\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# 1. Initialisation de MariaDB sous OpenRC (Alpine)\n/etc/init.d/mariadb setup\nrc-update add mariadb default && rc-service mariadb start\n\n# 2. Activation du module Rewrite Apache2 et d\u00e9marrage\nsed -i 's|^#LoadModule rewrite_module|LoadModule rewrite_module|' /etc/apache2/httpd.conf\nrc-update add apache2 default && rc-service apache2 restart\n\n# 3. Installation CLI de la base de donn\u00e9es GLPI\nsu -s /bin/sh apache -c \"php /var/www/glpi/bin/console db:install --db-name=$DB_NAME --db-user=$DB_USER --db-password='$DB_PASS' --no-interaction\"\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOBASH\nEOS\nsh /tmp/Install-GLPI-Server_Alpine-Linux_Complet.sh",
+        "description": "Installation officielle GLPI A-Z (apk + OpenRC) + Fiche .txt au nom complet",
+        "tags": [
+          "glpi",
+          "alpine",
+          "lxc",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-17T12:54:24.178120+00:00"
+      },
+      {
+        "id": "cmd-6",
+        "name": "Install-Cockpit-WebGUI_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Cockpit-WebGUI_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Cockpit-WebGUI_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n\necho \"==========================================================\"\necho \"   [01 - INSTALLATION] $SNIPPET_NAME\"\necho \"==========================================================\"\n\n. /etc/os-release\nif [[ \"$ID\" == \"alpine\" ]]; then\n    echo \"Attention : Cockpit n\u00e9cessite Systemd et n'est pas support\u00e9 nativement sur Alpine (OpenRC).\"\n    exit 1\nfi\n\nread -p \"Port d'\u00e9coute pour Cockpit [9090] : \" COCKPIT_PORT\nCOCKPIT_PORT=${COCKPIT_PORT:-9090}\nread -p \"Autoriser l'utilisateur 'root' \u00e0 se connecter \u00e0 Cockpit ? (o/n) [o] : \" ALLOW_ROOT\nALLOW_ROOT=${ALLOW_ROOT:-o}\nread -p \"Installer les modules avanc\u00e9s (Machines/VM, Podman, Storage, Network) ? (o/n) [o] : \" INSTALL_MODS\nINSTALL_MODS=${INSTALL_MODS:-o}\n\nSERVER_IP=$(hostname -I | awk '{print $1}')\n\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    OS_FAMILY=\"Debian/Ubuntu\"\n    apt-get update -qq\n    PKGS=\"cockpit cockpit-ws cockpit-system\"\n    [[ \"$INSTALL_MODS\" == \"o\" ]] && PKGS=\"$PKGS cockpit-networkmanager cockpit-storaged cockpit-packagekit cockpit-podman cockpit-machines\"\n    DEBIAN_FRONTEND=noninteractive apt-get install -y $PKGS || DEBIAN_FRONTEND=noninteractive apt-get install -y cockpit\n    CMD_INSTALL=\"apt update && apt install -y $PKGS\"\nelif [[ \"$ID_LIKE\" == *\"rhel\"* ]] || [[ \"$ID_LIKE\" == *\"fedora\"* ]] || [[ \"$ID\" == \"rocky\" ]] || [[ \"$ID\" == \"almalinux\" ]]; then\n    OS_FAMILY=\"RedHat/RHEL\"\n    PKGS=\"cockpit cockpit-ws cockpit-system\"\n    [[ \"$INSTALL_MODS\" == \"o\" ]] && PKGS=\"$PKGS cockpit-networkmanager cockpit-storaged cockpit-packagekit cockpit-podman cockpit-machines\"\n    dnf install -y $PKGS || dnf install -y cockpit\n    if systemctl is-active --quiet firewalld; then\n        firewall-cmd --add-service=cockpit --permanent\n        [ \"$COCKPIT_PORT\" != \"9090\" ] && firewall-cmd --add-port=${COCKPIT_PORT}/tcp --permanent\n        firewall-cmd --reload\n    fi\n    CMD_INSTALL=\"dnf install -y $PKGS && firewall-cmd --add-service=cockpit --permanent && firewall-cmd --reload\"\nfi\n\nif [[ \"$ALLOW_ROOT\" == \"o\" ]] && [ -f /etc/cockpit/disallowed-users ]; then\n    sed -i '/^root$/d' /etc/cockpit/disallowed-users\nfi\n\nif [ \"$COCKPIT_PORT\" != \"9090\" ]; then\n    mkdir -p /etc/systemd/system/cockpit.socket.d\n    cat << EOF > /etc/systemd/system/cockpit.socket.d/listen.conf\n[Socket]\nListenStream=\nListenStream=$COCKPIT_PORT\nEOF\n    systemctl daemon-reload\nfi\n\nsystemctl enable --now cockpit.socket\nsystemctl restart cockpit.socket\n\nCOCKPIT_VER=$(cockpit-bridge --version 2>/dev/null | head -n1 | awk '{print $2}')\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & APPRENTISSAGE\nNom Complet : $SNIPPET_NAME\nFichier TXT : $RECAP_FILE\nSyst\u00e8me     : $PRETTY_NAME ($OS_FAMILY)\nStatut      : R\u00c9SOLU / OP\u00c9RATIONNEL (https://$SERVER_IP:$COCKPIT_PORT)\n======================================================================\n\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# 1. Installation de Cockpit et de ses modules\n$CMD_INSTALL\n\n# 2. Activation du socket Systemd (d\u00e9marre \u00e0 la demande)\nsystemctl enable --now cockpit.socket\n\n# 3. Autoriser la connexion de l'utilisateur root (bloqu\u00e9 par d\u00e9faut dans /etc/cockpit/disallowed-users)\nsed -i '/^root$/d' /etc/cockpit/disallowed-users\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Cockpit-WebGUI_Linux_Complet.sh",
+        "description": "Install Cockpit WebGUI (Multi-OS) + Fiche .txt au nom complet",
+        "tags": [
+          "cockpit",
+          "webgui",
+          "admin",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-17T12:57:55.287129+00:00"
+      },
+      {
+        "id": "cmd-7",
+        "name": "Install-Ansible-Master_Debian-Ubuntu_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Ansible-Master_Debian-Ubuntu_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Ansible-Master_Debian-Ubuntu_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n\necho \"==========================================================\"\necho \"   [01 - INSTALLATION] $SNIPPET_NAME\"\necho \"==========================================================\"\n\n. /etc/os-release\necho \"Quelle version d'Ansible voulez-vous installer ?\"\necho \"  1) Version officielle APT Debian/Ubuntu (Rapide & Stable)\"\necho \"  2) Toute derni\u00e8re version via Python Pipx\"\nread -p \"Votre choix (1 ou 2) [1] : \" INSTALL_MODE\nINSTALL_MODE=${INSTALL_MODE:-1}\n\nread -p \"Dossier de configuration Ansible [/etc/ansible] : \" ANSIBLE_DIR\nANSIBLE_DIR=${ANSIBLE_DIR:-/etc/ansible}\nread -p \"Utilisateur SSH par d\u00e9faut [root] : \" REMOTE_USER\nREMOTE_USER=${REMOTE_USER:-root}\nread -p \"Adresses IP cibles (s\u00e9par\u00e9es par un espace) [127.0.0.1] : \" TARGET_IPS\nTARGET_IPS=${TARGET_IPS:-127.0.0.1}\n\napt-get update -qq\nif [ \"$INSTALL_MODE\" = \"2\" ]; then\n    DEBIAN_FRONTEND=noninteractive apt-get install -y python3 python3-pip python3-venv pipx sshpass openssh-client git curl\n    PIPX_BIN_DIR=/usr/local/bin pipx install --include-deps ansible --force\n    CMD_INSTALL=\"apt update && apt install -y python3-venv pipx sshpass && PIPX_BIN_DIR=/usr/local/bin pipx install --include-deps ansible\"\nelse\n    DEBIAN_FRONTEND=noninteractive apt-get install -y ansible sshpass python3-argcomplete openssh-client git curl\n    CMD_INSTALL=\"apt update && apt install -y ansible sshpass python3-argcomplete openssh-client git\"\nfi\n\nmkdir -p \"$ANSIBLE_DIR/playbooks\" \"$ANSIBLE_DIR/group_vars\" \"$ANSIBLE_DIR/roles\"\ncat << EOF > \"$ANSIBLE_DIR/ansible.cfg\"\n[defaults]\ninventory = $ANSIBLE_DIR/hosts\nremote_user = $REMOTE_USER\nhost_key_checking = False\ninterpreter_python = auto_silent\nforks = 10\nEOF\n\ncat << EOF > \"$ANSIBLE_DIR/hosts\"\n[local]\nlocalhost ansible_connection=local\n\n[serveurs]\nEOF\nfor ip in $TARGET_IPS; do echo \"$ip\" >> \"$ANSIBLE_DIR/hosts\"; done\n\nif [ ! -f /root/.ssh/id_ed25519 ]; then\n    mkdir -p /root/.ssh && chmod 700 /root/.ssh\n    ssh-keygen -t ed25519 -f /root/.ssh/id_ed25519 -N \"\" -C \"ansible-debian-master\"\nfi\n\nANSIBLE_VER=$(ansible --version | head -n1)\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & APPRENTISSAGE\nNom Complet : $SNIPPET_NAME\nFichier TXT : $RECAP_FILE\nVersion     : $ANSIBLE_VER\nStatut      : R\u00c9SOLU / OP\u00c9RATIONNEL\n======================================================================\n\n--- CONFIGURATION CR\u00c9\u00c9E ---\nFichier config   : $ANSIBLE_DIR/ansible.cfg\nInventaire       : $ANSIBLE_DIR/hosts\nCl\u00e9 publique SSH : $(cat /root/.ssh/id_ed25519.pub)\n\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# 1. Installation d'Ansible\n$CMD_INSTALL\n\n# 2. G\u00e9n\u00e9ration de la cl\u00e9 SSH Ed25519 et envoi vers les cibles\nssh-keygen -t ed25519 -f /root/.ssh/id_ed25519 -N \"\"\n$(for ip in $TARGET_IPS; do echo \"ssh-copy-id -i /root/.ssh/id_ed25519.pub $REMOTE_USER@$ip\"; done)\n\n# 3. Tester la connectivit\u00e9 Ansible sur tout l'inventaire\nansible all -m ping\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Ansible-Master_Debian-Ubuntu_Complet.sh",
+        "description": "Installation Ansible (APT ou Pipx) + Config + Cl\u00e9 SSH + Fiche .txt au nom complet",
+        "tags": [
+          "ansible",
+          "debian",
+          "ubuntu",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-17T12:59:41.420750+00:00"
+      },
+      {
+        "id": "cmd-8",
+        "name": "Install-Ansible-Master_RedHat-RHEL_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Ansible-Master_RedHat-RHEL_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Ansible-Master_RedHat-RHEL_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n\necho \"==========================================================\"\necho \"   [01 - INSTALLATION] $SNIPPET_NAME\"\necho \"==========================================================\"\n\n. /etc/os-release\nread -p \"Dossier de configuration Ansible [/etc/ansible] : \" ANSIBLE_DIR\nANSIBLE_DIR=${ANSIBLE_DIR:-/etc/ansible}\nread -p \"Utilisateur SSH par d\u00e9faut [root] : \" REMOTE_USER\nREMOTE_USER=${REMOTE_USER:-root}\nread -p \"Adresses IP cibles (s\u00e9par\u00e9es par un espace) [127.0.0.1] : \" TARGET_IPS\nTARGET_IPS=${TARGET_IPS:-127.0.0.1}\n\n[ \"$ID\" != \"fedora\" ] && dnf install -y epel-release || true\ndnf install -y ansible sshpass openssh-clients git curl || dnf install -y ansible-core sshpass openssh-clients git curl\n\nmkdir -p \"$ANSIBLE_DIR/playbooks\" \"$ANSIBLE_DIR/group_vars\" \"$ANSIBLE_DIR/roles\"\ncat << EOF > \"$ANSIBLE_DIR/ansible.cfg\"\n[defaults]\ninventory = $ANSIBLE_DIR/hosts\nremote_user = $REMOTE_USER\nhost_key_checking = False\ninterpreter_python = auto_silent\nforks = 10\nEOF\n\ncat << EOF > \"$ANSIBLE_DIR/hosts\"\n[local]\nlocalhost ansible_connection=local\n\n[serveurs]\nEOF\nfor ip in $TARGET_IPS; do echo \"$ip\" >> \"$ANSIBLE_DIR/hosts\"; done\n\nif [ ! -f /root/.ssh/id_ed25519 ]; then\n    mkdir -p /root/.ssh && chmod 700 /root/.ssh\n    ssh-keygen -t ed25519 -f /root/.ssh/id_ed25519 -N \"\" -C \"ansible-redhat-master\"\nfi\n\nANSIBLE_VER=$(ansible --version | head -n1)\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & APPRENTISSAGE\nNom Complet : $SNIPPET_NAME\nFichier TXT : $RECAP_FILE\nVersion     : $ANSIBLE_VER\nStatut      : R\u00c9SOLU / OP\u00c9RATIONNEL\n======================================================================\n\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# 1. Installation d'Ansible via EPEL sur RHEL/Rocky/AlmaLinux\ndnf install -y epel-release && dnf install -y ansible sshpass openssh-clients git\n\n# 2. G\u00e9n\u00e9ration et copie de la cl\u00e9 SSH vers les serveurs cibles\nssh-keygen -t ed25519 -f /root/.ssh/id_ed25519 -N \"\"\n$(for ip in $TARGET_IPS; do echo \"ssh-copy-id -i /root/.ssh/id_ed25519.pub $REMOTE_USER@$ip\"; done)\n\n# 3. Test de ping Ansible\nansible all -m ping\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Ansible-Master_RedHat-RHEL_Complet.sh",
+        "description": "Installation Ansible (EPEL/DNF) + Config + Cl\u00e9 SSH + Fiche .txt au nom complet",
+        "tags": [
+          "ansible",
+          "redhat",
+          "rocky",
+          "almalinux",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-17T13:01:08.219879+00:00"
+      },
+      {
+        "id": "cmd-9",
+        "name": "Install-Ansible-Master_Alpine-Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Ansible-Master_Alpine-Linux_Complet.sh\n#!/bin/sh\nset -e\napk update && apk add --no-cache bash curl grep sed openssh-client sshpass python3 py3-pip git ansible\nbash << 'EOBASH'\nSNIPPET_NAME=\"Install-Ansible-Master_Alpine-Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nANSIBLE_DIR=\"/etc/ansible\"\nmkdir -p \"$ANSIBLE_DIR/playbooks\"\ncat << EOF > \"$ANSIBLE_DIR/ansible.cfg\"\n[defaults]\ninventory = $ANSIBLE_DIR/hosts\nhost_key_checking = False\ninterpreter_python = auto_silent\nEOF\ncat << EOF > \"$ANSIBLE_DIR/hosts\"\n[local]\nlocalhost ansible_connection=local\nEOF\n[ ! -f /root/.ssh/id_ed25519 ] && mkdir -p /root/.ssh && ssh-keygen -t ed25519 -f /root/.ssh/id_ed25519 -N \"\"\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & APPRENTISSAGE\nNom Complet : $SNIPPET_NAME\nFichier TXT : $RECAP_FILE\nStatut      : R\u00c9SOLU / OP\u00c9RATIONNEL\n======================================================================\n# 1. Installer Ansible sur Alpine Linux :\napk update && apk add ansible openssh-client sshpass python3 git\n# 2. Tester le fonctionnement local :\nansible all -m ping\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOBASH\nEOS\nsh /tmp/Install-Ansible-Master_Alpine-Linux_Complet.sh",
+        "description": "Installation Ansible (APK) + Config + Cl\u00e9 SSH + Fiche .txt au nom complet",
+        "tags": [
+          "ansible",
+          "alpine",
+          "lxc",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-17T13:03:31.851115+00:00"
+      },
+      {
+        "id": "cmd-10",
+        "name": "Install-Netdata-Monitoring_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Netdata-Monitoring_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Netdata-Monitoring_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n\necho \"==========================================================\"\necho \"   [01 - INSTALLATION] $SNIPPET_NAME\"\necho \"==========================================================\"\n\n. /etc/os-release\nSERVER_IP=$(hostname -I 2>/dev/null | awk '{print $1}')\nread -p \"Port d'\u00e9coute Web Netdata [d\u00e9faut: 19999] : \" NETDATA_PORT < /dev/tty\nNETDATA_PORT=${NETDATA_PORT:-19999}\n\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y curl wget ca-certificates\nelif [[ \"$ID_LIKE\" == *\"rhel\"* ]] || [[ \"$ID\" == \"rocky\" ]] || [[ \"$ID\" == \"almalinux\" ]]; then\n    dnf install -y curl wget ca-certificates\n    systemctl is-active --quiet firewalld && firewall-cmd --add-port=$NETDATA_PORT/tcp --permanent && firewall-cmd --reload\nfi\n\ncurl -fsSL https://get.netdata.cloud/kickstart.sh > /tmp/netdata-kickstart.sh\nsh /tmp/netdata-kickstart.sh --non-interactive --stable-channel --disable-telemetry\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & APPRENTISSAGE\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nURL Dashboard : http://$SERVER_IP:$NETDATA_PORT\nStatut        : R\u00c9SOLU / OP\u00c9RATIONNEL\n======================================================================\n\n--- MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# 1. T\u00e9l\u00e9charger et ex\u00e9cuter le script officiel Netdata (sans t\u00e9l\u00e9m\u00e9trie cloud)\ncurl -fsSL https://get.netdata.cloud/kickstart.sh > /tmp/netdata-kickstart.sh\nsh /tmp/netdata-kickstart.sh --non-interactive --stable-channel --disable-telemetry\n\n# 2. V\u00e9rifier que le d\u00e9mon tourne bien\nsystemctl status netdata\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Netdata-Monitoring_Linux_Complet.sh",
+        "description": "Supervision temps r\u00e9el Netdata (Port 19999) + Fiche .txt au nom complet",
+        "tags": [
+          "monitoring",
+          "netdata",
+          "supervision",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-17T17:55:47.015647+00:00"
+      },
+      {
+        "id": "cmd-11",
+        "name": "Install-Grafana-Loki-Promtail_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Grafana-Loki-Promtail_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Grafana-Loki-Promtail_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n\n. /etc/os-release\nSERVER_IP=$(hostname -I 2>/dev/null | awk '{print $1}')\nLOKI_VER=\"2.9.8\"\n\necho \"  1) Serveur Central (Loki + Promtail local)\"\necho \"  2) Agent uniquement (Promtail -> envoi vers serveur Loki distant)\"\nread -p \"Votre choix [1] : \" ROLE_CHOICE < /dev/tty\nROLE_CHOICE=${ROLE_CHOICE:-1}\n\nif [ \"$ROLE_CHOICE\" == \"2\" ]; then\n    read -p \"Adresse IP du serveur Loki distant : \" LOKI_HOST < /dev/tty\nelse\n    LOKI_HOST=\"127.0.0.1\"\nfi\n\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y curl wget unzip ca-certificates\nelse\n    dnf install -y curl wget unzip ca-certificates\nfi\n\nmkdir -p /etc/loki /var/lib/loki /etc/promtail /var/lib/promtail\n\nif [ \"$ROLE_CHOICE\" == \"1\" ]; then\n    wget -qO /tmp/loki.zip \"https://github.com/grafana/loki/releases/download/v$LOKI_VER/loki-linux-amd64.zip\"\n    unzip -o /tmp/loki.zip -d /tmp/ && mv /tmp/loki-linux-amd64 /usr/local/bin/loki && chmod +x /usr/local/bin/loki\n    cat << EOF > /etc/loki/loki-config.yaml\nauth_enabled: false\nserver:\n  http_listen_port: 3100\ncommon:\n  path_prefix: /var/lib/loki\n  storage:\n    filesystem:\n      chunks_directory: /var/lib/loki/chunks\n      rules_directory: /var/lib/loki/rules\n  replication_factor: 1\n  ring:\n    instance_addr: 127.0.0.1\n    kvstore:\n      store: inmemory\nschema_config:\n  configs:\n    - from: 2024-01-01\n      store: tsdb\n      object_store: filesystem\n      schema: v13\n      index:\n        prefix: index_\n        period: 24h\nEOF\n    cat << 'EOF' > /etc/systemd/system/loki.service\n[Unit]\nDescription=Grafana Loki\nAfter=network.target\n[Service]\nType=simple\nExecStart=/usr/local/bin/loki -config.file=/etc/loki/loki-config.yaml\nRestart=on-failure\n[Install]\nWantedBy=multi-user.target\nEOF\n    systemctl daemon-reload && systemctl enable --now loki\nfi\n\nwget -qO /tmp/promtail.zip \"https://github.com/grafana/loki/releases/download/v$LOKI_VER/promtail-linux-amd64.zip\"\nunzip -o /tmp/promtail.zip -d /tmp/ && mv /tmp/promtail-linux-amd64 /usr/local/bin/promtail && chmod +x /usr/local/bin/promtail\n\ncat << EOF > /etc/promtail/promtail-config.yaml\nserver:\n  http_listen_port: 9080\npositions:\n  filename: /var/lib/promtail/positions.yaml\nclients:\n  - url: http://$LOKI_HOST:3100/loki/api/v1/push\nscrape_configs:\n  - job_name: system\n    static_configs:\n      - targets: [localhost]\n        labels:\n          job: varlogs\n          host: $(hostname)\n          __path__: /var/log/*log\nEOF\n\ncat << 'EOF' > /etc/systemd/system/promtail.service\n[Unit]\nDescription=Promtail Agent\nAfter=network.target\n[Service]\nType=simple\nExecStart=/usr/local/bin/promtail -config.file=/etc/promtail/promtail-config.yaml\nRestart=on-failure\n[Install]\nWantedBy=multi-user.target\nEOF\nsystemctl daemon-reload && systemctl enable --now promtail\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & APPRENTISSAGE\nNom Complet     : $SNIPPET_NAME\nFichier TXT     : $RECAP_FILE\nURL Source Loki : http://$SERVER_IP:3100\nStatut          : R\u00c9SOLU / OP\u00c9RATIONNEL\n======================================================================\n# 1. T\u00e9l\u00e9charger Loki et Promtail :\nwget https://github.com/grafana/loki/releases/download/v$LOKI_VER/loki-linux-amd64.zip\nwget https://github.com/grafana/loki/releases/download/v$LOKI_VER/promtail-linux-amd64.zip\n# 2. D\u00e9marrer et v\u00e9rifier les services :\nsystemctl enable --now loki promtail && systemctl status loki promtail\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Grafana-Loki-Promtail_Linux_Complet.sh",
+        "description": "Serveur de logs Grafana Loki (Port 3100) + Agent Promtail + Fiche .txt au nom complet",
+        "tags": [
+          "logs",
+          "loki",
+          "promtail",
+          "grafana",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-17T17:56:32.677582+00:00"
+      },
+      {
+        "id": "cmd-12",
+        "name": "Install-Bind9-DNS_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Bind9-DNS_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Bind9-DNS_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n\n. /etc/os-release\nSERVER_IP=$(hostname -I 2>/dev/null | awk '{print $1}')\nread -p \"Nom du domaine DNS local \u00e0 cr\u00e9er [lab.lan] : \" DNS_DOMAIN < /dev/tty\nDNS_DOMAIN=${DNS_DOMAIN:-lab.lan}\nread -p \"DNS Forwarder primaire [1.1.1.1] : \" DNS_FWD < /dev/tty\nDNS_FWD=${DNS_FWD:-1.1.1.1}\n\nif systemctl is-active --quiet systemd-resolved; then\n    systemctl stop systemd-resolved && systemctl disable systemd-resolved\n    rm -f /etc/resolv.conf && echo \"nameserver $DNS_FWD\" > /etc/resolv.conf\nfi\n\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y bind9 bind9utils dnsutils\n    ZONE_DIR=\"/etc/bind/zones\" && mkdir -p \"$ZONE_DIR\"\n    ZONE_FILE=\"$ZONE_DIR/db.$DNS_DOMAIN\"\n    cat << EOF > /etc/bind/named.conf.options\noptions {\n    directory \"/var/cache/bind\";\n    recursion yes;\n    allow-query { any; };\n    forwarders { $DNS_FWD; 9.9.9.9; };\n    dnssec-validation auto;\n    listen-on { any; };\n};\nEOF\n    cat << EOF > /etc/bind/named.conf.local\nzone \"$DNS_DOMAIN\" {\n    type master;\n    file \"$ZONE_FILE\";\n};\nEOF\n    SRV_NAME=\"named\"\n    PKG_CMD=\"apt install -y bind9 bind9utils dnsutils\"\nelse\n    dnf install -y bind bind-utils\n    ZONE_FILE=\"/var/named/db.$DNS_DOMAIN\"\n    SRV_NAME=\"named\"\n    PKG_CMD=\"dnf install -y bind bind-utils\"\nfi\n\nSERIAL_DATE=$(date +%Y%m%d01)\ncat << EOF > \"$ZONE_FILE\"\n\\$TTL 604800\n@   IN  SOA ns1.$DNS_DOMAIN. admin.$DNS_DOMAIN. (\n            $SERIAL_DATE ; Serial\n            604800       ; Refresh\n            86400        ; Retry\n            2419200      ; Expire\n            604800 )     ; Negative Cache TTL\n;\n@       IN  NS      ns1.$DNS_DOMAIN.\n@       IN  A       $SERVER_IP\nns1     IN  A       $SERVER_IP\nsrv     IN  A       $SERVER_IP\nEOF\n\nnamed-checkconf\nnamed-checkzone \"$DNS_DOMAIN\" \"$ZONE_FILE\"\nsystemctl enable --now \"$SRV_NAME\" && systemctl restart \"$SRV_NAME\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & APPRENTISSAGE\nNom Complet     : $SNIPPET_NAME\nFichier TXT     : $RECAP_FILE\nZone configur\u00e9e : $DNS_DOMAIN ($ZONE_FILE)\nStatut          : R\u00c9SOLU / OP\u00c9RATIONNEL\n======================================================================\n# 1. Installation des paquets Bind9 :\n$PKG_CMD\n# 2. V\u00e9rifier la syntaxe des fichiers de configuration et de zone :\nnamed-checkconf\nnamed-checkzone $DNS_DOMAIN $ZONE_FILE\n# 3. Red\u00e9marrer le serveur et tester la r\u00e9solution :\nsystemctl restart $SRV_NAME && dig @$SERVER_IP ns1.$DNS_DOMAIN +short\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Bind9-DNS_Linux_Complet.sh",
+        "description": "Serveur DNS Autoritatif Bind9 + Cr\u00e9ation de Zone Directe + Fiche .txt au nom complet",
+        "tags": [
+          "dns",
+          "bind9",
+          "reseau",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-17T17:57:51.663543+00:00"
+      },
+      {
+        "id": "cmd-13",
+        "name": "Install-NFS-Samba-Server_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-NFS-Samba-Server_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-NFS-Samba-Server_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n\n. /etc/os-release\nSERVER_IP=$(hostname -I 2>/dev/null | awk '{print $1}')\nread -p \"Chemin du dossier \u00e0 partager [/srv/partage] : \" SHARE_DIR < /dev/tty\nSHARE_DIR=${SHARE_DIR:-/srv/partage}\nread -p \"Nom de l'utilisateur Samba [smbuser] : \" SMB_USER < /dev/tty\nSMB_USER=${SMB_USER:-smbuser}\nread -p \"Mot de passe pour $SMB_USER [SambaPass2026!] : \" SMB_PASS < /dev/tty\nSMB_PASS=${SMB_PASS:-SambaPass2026!}\n\nmkdir -p \"$SHARE_DIR\" && chmod 2775 \"$SHARE_DIR\"\n\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y nfs-kernel-server samba\n    NFS_SRV=\"nfs-kernel-server\" && SMB_SRV=\"smbd\"\nelse\n    dnf install -y nfs-utils samba samba-common\n    NFS_SRV=\"nfs-server\" && SMB_SRV=\"smb\"\nfi\n\ngrep -q \"$SHARE_DIR\" /etc/exports 2>/dev/null || echo \"$SHARE_DIR *(rw,sync,no_subtree_check,no_root_squash)\" >> /etc/exports\nexportfs -ra\n\nid \"$SMB_USER\" >/dev/null 2>&1 || useradd -M -s /sbin/nologin \"$SMB_USER\"\n(echo \"$SMB_PASS\"; echo \"$SMB_PASS\") | smbpasswd -s -a \"$SMB_USER\"\nchown -R \"$SMB_USER\":\"$SMB_USER\" \"$SHARE_DIR\"\n\nSHARE_NAME=$(basename \"$SHARE_DIR\")\nif ! grep -q \"\\[$SHARE_NAME\\]\" /etc/samba/smb.conf; then\n    cat << EOF >> /etc/samba/smb.conf\n[$SHARE_NAME]\n   path = $SHARE_DIR\n   browseable = yes\n   read only = no\n   valid users = $SMB_USER\nEOF\nfi\n\nsystemctl enable --now \"$NFS_SRV\" \"$SMB_SRV\" && systemctl restart \"$NFS_SRV\" \"$SMB_SRV\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & APPRENTISSAGE\nNom Complet     : $SNIPPET_NAME\nFichier TXT     : $RECAP_FILE\nAcc\u00e8s NFS       : $SERVER_IP:$SHARE_DIR\nAcc\u00e8s Samba/SMB : \\\\\\\\$SERVER_IP\\\\$SHARE_NAME (User: $SMB_USER)\nStatut          : R\u00c9SOLU / OP\u00c9RATIONNEL\n======================================================================\n# 1. D\u00e9clarer et exporter un partage NFS :\necho \"$SHARE_DIR *(rw,sync,no_subtree_check,no_root_squash)\" >> /etc/exports\nexportfs -ra\n# 2. Cr\u00e9er un utilisateur Samba et v\u00e9rifier la syntaxe smb.conf :\nuseradd -M -s /sbin/nologin $SMB_USER && smbpasswd -a $SMB_USER\ntestparm -s\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-NFS-Samba-Server_Linux_Complet.sh",
+        "description": "Serveur de fichiers NFSv4 et Samba (CIFS) + Cr\u00e9ation de partage + Fiche .txt au nom complet",
+        "tags": [
+          "stockage",
+          "nfs",
+          "samba",
+          "smb",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-17T17:58:54.286144+00:00"
+      },
+      {
+        "id": "cmd-14",
+        "name": "Hardening-OpenSSH-KeyGen_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Hardening-OpenSSH-KeyGen_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Hardening-OpenSSH-KeyGen_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n\n. /etc/os-release\nSERVER_IP=$(hostname -I 2>/dev/null | awk '{print $1}')\nread -p \"Port SSH souhait\u00e9 [22] : \" SSH_PORT < /dev/tty\nSSH_PORT=${SSH_PORT:-22}\n\nmkdir -p /etc/ssh/sshd_config.d\ngrep -q \"Include /etc/ssh/sshd_config.d/\\*.conf\" /etc/ssh/sshd_config 2>/dev/null || echo \"Include /etc/ssh/sshd_config.d/*.conf\" >> /etc/ssh/sshd_config\n\ncat << EOF > /etc/ssh/sshd_config.d/99-hardening.conf\nPort $SSH_PORT\nProtocol 2\nPermitRootLogin prohibit-password\nMaxAuthTries 3\nPubkeyAuthentication yes\nPermitEmptyPasswords no\nX11Forwarding no\nEOF\n\nsshd -t\nsystemctl reload sshd 2>/dev/null || systemctl reload ssh 2>/dev/null\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE HARDENING & APPRENTISSAGE\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nFichier Durci : /etc/ssh/sshd_config.d/99-hardening.conf\nStatut        : R\u00c9SOLU / OP\u00c9RATIONNEL\n======================================================================\n# 1. Cr\u00e9er une cl\u00e9 Ed25519 durcie avec 100 rounds KDF :\nssh-keygen -t ed25519 -a 100 -f /root/cle_ed25519\n# 2. Tester la syntaxe SSH avant de recharger le service :\nsshd -t && systemctl reload ssh\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Hardening-OpenSSH-KeyGen_Linux_Complet.sh",
+        "description": "Durcissement OpenSSH + Cryptographie stricte + Fiche .txt au nom complet",
+        "tags": [
+          "ssh",
+          "openssh",
+          "securite",
+          "hardening"
+        ],
+        "folder_id": "f-linux-hardening",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-17T18:00:13.604299+00:00"
+      },
+      {
+        "id": "cmd-15",
+        "name": "Install-AdGuardHome-Pihole_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-AdGuardHome-Pihole_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-AdGuardHome-Pihole_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n\n. /etc/os-release\nSERVER_IP=$(hostname -I 2>/dev/null | awk '{print $1}')\nif systemctl is-active --quiet systemd-resolved; then\n    systemctl stop systemd-resolved && systemctl disable systemd-resolved\n    rm -f /etc/resolv.conf && echo \"nameserver 1.1.1.1\" > /etc/resolv.conf\nfi\n\ncurl -s -S -L https://raw.githubusercontent.com/AdGuardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & APPRENTISSAGE\nNom Complet : $SNIPPET_NAME\nFichier TXT : $RECAP_FILE\nURL Admin   : http://$SERVER_IP:3000\nStatut      : R\u00c9SOLU / OP\u00c9RATIONNEL\n======================================================================\n# 1. Lib\u00e9rer le port 53 occup\u00e9 par systemd-resolved :\nsystemctl stop systemd-resolved && systemctl disable systemd-resolved\n# 2. Installer AdGuard Home :\ncurl -s -S -L https://raw.githubusercontent.com/AdGuardTeam/AdGuardHome/master/scripts/install.sh | sh -s -- -v\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-AdGuardHome-Pihole_Linux_Complet.sh",
+        "description": "Serveur DNS bloqueur de publicit\u00e9s AdGuard Home + Fiche .txt au nom complet",
+        "tags": [
+          "dns",
+          "adguard",
+          "pihole",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-17T18:01:30.462511+00:00"
+      },
+      {
+        "id": "cmd-16",
+        "name": "Install-phpIPAM_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-phpIPAM_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-phpIPAM_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n\n. /etc/os-release\nSERVER_IP=$(hostname -I 2>/dev/null | awk '{print $1}')\nDB_NAME=\"phpipam\"\nDB_USER=\"phpipam\"\nDB_PASS=\"IpamPass2026!\"\n\napt-get update -qq\nDEBIAN_FRONTEND=noninteractive apt-get install -y apache2 mariadb-server git php php-cli php-mysql php-gd php-gmp php-ldap php-mbstring php-xml php-curl php-pear fping\na2enmod rewrite\nsystemctl enable --now mariadb apache2\n\nmysql -e \"CREATE DATABASE IF NOT EXISTS $DB_NAME CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci;\"\nmysql -e \"CREATE USER IF NOT EXISTS '$DB_USER'@'localhost' IDENTIFIED BY '$DB_PASS';\"\nmysql -e \"GRANT ALL PRIVILEGES ON $DB_NAME.* TO '$DB_USER'@'localhost'; FLUSH PRIVILEGES;\"\n\nrm -rf /var/www/html/phpipam\ngit clone --depth 1 -b 1.6 https://github.com/phpipam/phpipam.git /var/www/html/phpipam\ncd /var/www/html/phpipam && git submodule update --init --recursive\ncp config.dist.php config.php\nsed -i \"s/\\$db\\['pass'\\] = 'phpipamadmin';/\\$db['pass'] = '$DB_PASS';/\" config.php\nsed -i \"s/define('BASE', \\\"/\\\");/define('BASE', \\\"/phpipam/\\\");/\" config.php\nmysql \"$DB_NAME\" < /var/www/html/phpipam/db/SCHEMA.sql\nchown -R www-data:www-data /var/www/html/phpipam\nsystemctl restart apache2\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & APPRENTISSAGE\nNom Complet : $SNIPPET_NAME\nFichier TXT : $RECAP_FILE\nURL d'acc\u00e8s : http://$SERVER_IP/phpipam/ (Admin / ipamadmin)\nStatut      : R\u00c9SOLU / OP\u00c9RATIONNEL\n======================================================================\n# 1. Cloner phpIPAM et importer le sch\u00e9ma SQL :\ngit clone -b 1.6 https://github.com/phpipam/phpipam.git /var/www/html/phpipam\nmysql $DB_NAME < /var/www/html/phpipam/db/SCHEMA.sql\n# 2. Adapter config.php et red\u00e9marrer Apache :\ncp config.dist.php config.php && systemctl restart apache2\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-phpIPAM_Linux_Complet.sh",
+        "description": "Gestionnaire d'adresses IP (phpIPAM) et VLANs + Apache/MariaDB + Fiche .txt au nom complet",
+        "tags": [
+          "ipam",
+          "phpipam",
+          "vlan",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-17T18:02:32.400571+00:00"
+      },
+      {
+        "id": "cmd-17",
+        "name": "Install-FreeRADIUS_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-FreeRADIUS_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-FreeRADIUS_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n\n. /etc/os-release\nSERVER_IP=$(hostname -I 2>/dev/null | awk '{print $1}')\nNAS_NET=\"192.168.1.0/24\"\nRAD_SECRET=\"RadiusSecret2026!\"\nRAD_USER=\"techuser\"\nRAD_PASS=\"TechPass123!\"\n\napt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y freeradius freeradius-utils\nRAD_DIR=\"/etc/freeradius/3.0\"\n\nif ! grep -q \"client lab_network\" \"$RAD_DIR/clients.conf\"; then\n    cat << EOF >> \"$RAD_DIR/clients.conf\"\nclient lab_network {\n    ipaddr = $NAS_NET\n    secret = $RAD_SECRET\n}\nEOF\nfi\n\nUSERS_FILE=\"$RAD_DIR/mods-config/files/authorize\"\ngrep -q \"^$RAD_USER \" \"$USERS_FILE\" || sed -i \"1i $RAD_USER Cleartext-Password := \\\"$RAD_PASS\\\"\" \"$USERS_FILE\"\nsystemctl enable --now freeradius && systemctl restart freeradius\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & APPRENTISSAGE\nNom Complet : $SNIPPET_NAME\nFichier TXT : $RECAP_FILE\nStatut      : R\u00c9SOLU / OP\u00c9RATIONNEL (Ports UDP 1812/1813)\n======================================================================\n# 1. Lancer FreeRADIUS en mode debug pour voir les requ\u00eates en direct :\nsystemctl stop freeradius && freeradius -X\n# 2. Tester l'authentification d'un utilisateur localement :\nradtest $RAD_USER $RAD_PASS 127.0.0.1 0 testing123\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-FreeRADIUS_Linux_Complet.sh",
+        "description": "Serveur d'authentification FreeRADIUS (802.1X) + radtest + Fiche .txt au nom complet",
+        "tags": [
+          "radius",
+          "freeradius",
+          "802.1x",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-17T18:03:35.432495+00:00"
+      },
+      {
+        "id": "cmd-18",
+        "name": "Install-PowerDNS_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-PowerDNS_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-PowerDNS_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n\n. /etc/os-release\nSERVER_IP=$(hostname -I 2>/dev/null | awk '{print $1}')\nDNS_ZONE=\"infra.lan\"\nAPI_KEY=\"PdnsApiKey2026!\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & APPRENTISSAGE\nNom Complet : $SNIPPET_NAME\nFichier TXT : $RECAP_FILE\nWeb / API   : http://$SERVER_IP:8081 (Cl\u00e9 : $API_KEY)\n======================================================================\n# 1. Administrer les zones PowerDNS en CLI :\npdnsutil list-all-zones\npdnsutil create-zone $DNS_ZONE ns1.$DNS_ZONE\npdnsutil add-record $DNS_ZONE srv1 A 3600 $SERVER_IP\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-PowerDNS_Linux_Complet.sh",
+        "description": "Serveur DNS Autoritatif PowerDNS + API Port 8081 + Fiche .txt au nom complet",
+        "tags": [
+          "dns",
+          "powerdns",
+          "pdns",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-17T18:05:19.935623+00:00"
+      },
+      {
+        "id": "cmd-19",
+        "name": "Install-Nextcloud_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Nextcloud_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Nextcloud_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nSERVER_IP=$(hostname -I 2>/dev/null | awk '{print $1}')\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & APPRENTISSAGE\nNom Complet : $SNIPPET_NAME\nFichier TXT : $RECAP_FILE\nURL d'acc\u00e8s : http://$SERVER_IP/nextcloud/\n======================================================================\n# 1. Installer Nextcloud en ligne de commande via l'outil occ :\nsudo -u www-data php /var/www/html/nextcloud/occ maintenance:install --database=\"mysql\" --database-name=\"nextcloud\" --database-user=\"nextcloud\" --admin-user=\"admin\"\n# 2. Autoriser l'IP du serveur dans les domaines de confiance :\nsudo -u www-data php /var/www/html/nextcloud/occ config:system:set trusted_domains 1 --value=\"$SERVER_IP\"\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Nextcloud_Linux_Complet.sh",
+        "description": "Cloud priv\u00e9 Nextcloud (Apache + MariaDB + CLI occ) + Fiche .txt au nom complet",
+        "tags": [
+          "cloud",
+          "nextcloud",
+          "stockage",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-17T18:06:54.131514+00:00"
+      },
+      {
+        "id": "cmd-20",
+        "name": "Install-Zammad-Helpdesk_Docker_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Zammad-Helpdesk_Docker_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Zammad-Helpdesk_Docker_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nSERVER_IP=$(hostname -I 2>/dev/null | awk '{print $1}')\nZAMMAD_PORT=\"8085\"\n\nsysctl -w vm.max_map_count=262144 >/dev/null 2>&1 || true\nrm -rf /opt/zammad\ngit clone --depth 1 https://github.com/zammad/zammad-docker-compose.git /opt/zammad\ncd /opt/zammad\necho \"NGINX_EXPOSE_PORT=$ZAMMAD_PORT\" >> .env\ndocker compose up -d\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & APPRENTISSAGE\nNom Complet : $SNIPPET_NAME\nFichier TXT : $RECAP_FILE\nURL d'acc\u00e8s : http://$SERVER_IP:$ZAMMAD_PORT\n======================================================================\n# 1. Augmenter la m\u00e9moire virtuelle maximale pour Elasticsearch :\nsysctl -w vm.max_map_count=262144\n# 2. Cloner et d\u00e9marrer la stack Zammad Docker Compose :\ngit clone https://github.com/zammad/zammad-docker-compose.git /opt/zammad\ncd /opt/zammad && docker compose up -d\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Zammad-Helpdesk_Docker_Complet.sh",
+        "description": "Syst\u00e8me de ticketing Zammad Helpdesk (Docker Compose) + Fiche .txt au nom complet",
+        "tags": [
+          "helpdesk",
+          "zammad",
+          "docker",
+          "install"
+        ],
+        "folder_id": "f-docker-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-17T18:08:24.970504+00:00"
+      },
+      {
+        "id": "cmd-21",
+        "name": "Install-OpenLDAP-LAM_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-OpenLDAP-LAM_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-OpenLDAP-LAM_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nSERVER_IP=$(hostname -I 2>/dev/null | awk '{print $1}')\nBASE_DN=\"dc=lab,dc=lan\"\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & APPRENTISSAGE\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nInterface LAM : http://$SERVER_IP/lam/\n======================================================================\n# 1. Installer OpenLDAP et l'interface LDAP Account Manager :\napt install -y slapd ldap-utils ldap-account-manager apache2\n# 2. Interroger l'annuaire LDAP en ligne de commande :\nldapsearch -x -b \"$BASE_DN\" -H ldap://127.0.0.1\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-OpenLDAP-LAM_Linux_Complet.sh",
+        "description": "Annuaire OpenLDAP + Interface Web LAM + Fiche .txt au nom complet",
+        "tags": [
+          "ldap",
+          "openldap",
+          "lam",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-17T18:09:43.148017+00:00"
+      },
+      {
+        "id": "cmd-22",
+        "name": "Install-Centreon-Central_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Centreon-Central_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Centreon-Central_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nSERVER_IP=$(hostname -I 2>/dev/null | awk '{print $1}')\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & APPRENTISSAGE\nNom Complet   : $SNIPPET_NAME\nFichier TXT   : $RECAP_FILE\nURL Assistant : http://$SERVER_IP/centreon/\n======================================================================\n# 1. Lancer le script officiel d'installation Centreon 24-04 LTS :\ncurl -fsSL https://raw.githubusercontent.com/centreon/centreon-collect/develop/centreon/unattended.sh | bash -s -- install -t central -v 24-04\n# 2. Activer et v\u00e9rifier les services moteurs :\nsystemctl enable --now mariadb cbd centengine gorgoned\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Centreon-Central_Linux_Complet.sh",
+        "description": "Serveur de supervision Centreon Central LTS + Fiche .txt au nom complet",
+        "tags": [
+          "monitoring",
+          "centreon",
+          "supervision",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-17T18:11:08.969029+00:00"
+      },
+      {
+        "id": "cmd-23",
+        "name": "Install-Keycloak-Authentik-SSO_Docker_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Keycloak-Authentik-SSO_Docker_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Keycloak-Authentik-SSO_Docker_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nSERVER_IP=$(hostname -I 2>/dev/null | awk '{print $1}')\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & APPRENTISSAGE\nNom Complet : $SNIPPET_NAME\nFichier TXT : $RECAP_FILE\nURL SSO     : http://$SERVER_IP:8080\n======================================================================\n# 1. D\u00e9ployer la stack SSO PostgreSQL + Keycloak via Docker Compose :\ncd /opt/keycloak && docker compose up -d\n# 2. V\u00e9rifier les logs d'initialisation :\ndocker compose logs -f\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Keycloak-Authentik-SSO_Docker_Complet.sh",
+        "description": "Portail SSO Keycloak / Authentik (Docker Compose) + Fiche .txt au nom complet",
+        "tags": [
+          "sso",
+          "keycloak",
+          "authentik",
+          "docker",
+          "install"
+        ],
+        "folder_id": "f-docker-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-17T18:12:46.171832+00:00"
+      },
+      {
+        "id": "cmd-24",
+        "name": "Install-Matrix-Element_Docker_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-Matrix-Element_Docker_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Install-Matrix-Element_Docker_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nSERVER_IP=$(hostname -I 2>/dev/null | awk '{print $1}')\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'INSTALLATION & APPRENTISSAGE\nNom Complet : $SNIPPET_NAME\nFichier TXT : $RECAP_FILE\nClient Web  : http://$SERVER_IP:8088\n======================================================================\n# 1. G\u00e9n\u00e9rer la configuration Synapse initiale :\ndocker run -it --rm -v /opt/matrix/synapse-data:/data -e SYNAPSE_SERVER_NAME=$SERVER_IP -e SYNAPSE_REPORT_STATS=no matrixdotorg/synapse:latest generate\n# 2. Cr\u00e9er un utilisateur administrateur Matrix :\ndocker exec -it matrix-synapse register_new_matrix_user -c /data/homeserver.yaml http://localhost:8008\n======================================================================\nEOF\necho \" -> Fiche .TXT : $RECAP_FILE\"\nEOS\nbash /tmp/Install-Matrix-Element_Docker_Complet.sh",
+        "description": "Messagerie chiffr\u00e9e Matrix Synapse + Element Web (Docker) + Fiche .txt au nom complet",
+        "tags": [
+          "matrix",
+          "synapse",
+          "element",
+          "docker",
+          "install"
+        ],
+        "folder_id": "f-docker-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-17T18:13:48.079183+00:00"
+      },
+      {
+        "id": "cmd-25",
+        "name": "Install-GLPI-Agent_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Install-GLPI-Agent_Linux_Complet.sh\n#!/bin/bash\n\nSNIPPET_NAME=\"Install-GLPI-Agent_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n\necho \"==========================================================\"\necho \"   [01 - INSTALLATION] $SNIPPET_NAME\"\necho \"==========================================================\"\n\n. /etc/os-release\nSERVER_IP=$(hostname -I 2>/dev/null | awk '{print $1}')\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\nread -p \"URL compl\u00e8te du serveur GLPI (ex: http://192.168.1.50/glpi) : \" GLPI_URL < /dev/tty\nread -p \"Tag d'inventaire (ex: SERVEUR-LAB, DMZ) : \" GLPI_TAG < /dev/tty\nread -p \"Ignorer le certificat SSL auto-sign\u00e9 (no-ssl-check) ? (o/n) [o] : \" SSL_SKIP < /dev/tty\n\nNO_SSL=\"1\"\n[[ \"$SSL_SKIP\" == \"n\" || \"$SSL_SKIP\" == \"N\" ]] && NO_SSL=\"0\"\nAGENT_VER=\"1.11\"\n\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    apt-get update -qq\n    DEBIAN_FRONTEND=noninteractive apt-get install -y -qq curl wget perl dmidecode pciutils usbutils libnet-ip-perl libwww-perl\n    wget -qO /tmp/glpi-agent-installer.pl \"https://github.com/glpi-project/glpi-agent/releases/download/$AGENT_VER/glpi-agent-$AGENT_VER-linux-installer.pl\"\n    perl /tmp/glpi-agent-installer.pl --install --non-interactive --server=\"$GLPI_URL\" --tag=\"$GLPI_TAG\"\n    INSTALL_CMD=\"apt-get install -y perl dmidecode pciutils usbutils && perl glpi-agent-installer.pl --install --server='$GLPI_URL' --tag='$GLPI_TAG'\"\nelif [[ \"$ID_LIKE\" == *\"rhel\"* ]] || [[ \"$ID\" == \"rocky\" ]] || [[ \"$ID\" == \"almalinux\" ]]; then\n    dnf install -y -q epel-release curl wget perl dmidecode pciutils usbutils\n    wget -qO /tmp/glpi-agent-installer.pl \"https://github.com/glpi-project/glpi-agent/releases/download/$AGENT_VER/glpi-agent-$AGENT_VER-linux-installer.pl\"\n    perl /tmp/glpi-agent-installer.pl --install --non-interactive --server=\"$GLPI_URL\" --tag=\"$GLPI_TAG\"\n    INSTALL_CMD=\"dnf install -y epel-release perl dmidecode && perl glpi-agent-installer.pl --install --server='$GLPI_URL' --tag='$GLPI_TAG'\"\nfi\n\nmkdir -p /etc/glpi-agent/conf.d\ncat << EOF > /etc/glpi-agent/conf.d/00-custom.cfg\nserver = $GLPI_URL\ntag = $GLPI_TAG\nno-ssl-check = $NO_SSL\ndelaytime = 30\nhttpd-trust = 127.0.0.1/32, 192.168.0.0/16, 10.0.0.0/8\nlogger = syslog,Stderr\nEOF\n\nsystemctl enable --now glpi-agent\nsystemctl restart glpi-agent\n\nif glpi-agent --force; then\n    STATUT=\"R\u00c9SOLU / OP\u00c9RATIONNEL\"\n    BILAN=\"L'agent est install\u00e9, le d\u00e9mon est actif et l'inventaire est remont\u00e9 vers $GLPI_URL.\"\nelse\n    STATUT=\"NON R\u00c9SOLU (\u00c9CHEC DE REMONT\u00c9E)\"\n    BILAN=\"L'agent est install\u00e9 localement, mais la communication avec $GLPI_URL a \u00e9chou\u00e9.\n-> Piste d'investigation : V\u00e9rifier que le serveur GLPI est allum\u00e9, que l'URL est exacte et que le pare-feu en amont autorise le flux HTTP/HTTPS depuis $SERVER_IP.\"\nfi\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE D'APPRENTISSAGE & TRA\u00c7ABILIT\u00c9\nNom Complet     : $SNIPPET_NAME\nFichier TXT     : $RECAP_FILE\n======================================================================\nDate            : $DATE_EXEC\nSyst\u00e8me         : $PRETTY_NAME ($SERVER_IP)\nStatut Final    : $STATUT\nFichier Conf    : /etc/glpi-agent/conf.d/00-custom.cfg\n======================================================================\n\n--- 1. BILAN DE L'INTERVENTION ---\n$BILAN\n\n--- 2. MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# \u00c9tape 1 : T\u00e9l\u00e9charger l'installeur officiel Perl depuis GitHub\nwget https://github.com/glpi-project/glpi-agent/releases/download/$AGENT_VER/glpi-agent-$AGENT_VER-linux-installer.pl\n\n# \u00c9tape 2 : Installer les outils mat\u00e9riels et ex\u00e9cuter l'installeur\n$INSTALL_CMD\n\n# \u00c9tape 3 : Cr\u00e9er une configuration d\u00e9di\u00e9e et propre\nnano /etc/glpi-agent/conf.d/00-custom.cfg\n\n# \u00c9tape 4 : Activer et red\u00e9marrer le service en arri\u00e8re-plan\nsystemctl enable --now glpi-agent && systemctl restart glpi-agent\n\n# \u00c9tape 5 : Forcer l'envoi imm\u00e9diat de l'inventaire\nglpi-agent --force\n======================================================================\nEOF\n\necho \"==========================================================\"\necho \" STATUT          : $STATUT\"\necho \" NOM COMPLET TXT : $RECAP_FILE\"\necho \"==========================================================\"\nEOS\nbash /tmp/Install-GLPI-Agent_Linux_Complet.sh",
+        "description": "D\u00e9ploiement GLPI Agent + Liaison Serveur + Fiche .txt au nom exact",
+        "tags": [
+          "glpi",
+          "glpi-agent",
+          "inventaire",
+          "linux",
+          "install"
+        ],
+        "folder_id": "f-linux-install",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-17T18:15:53.800982+00:00"
+      },
+      {
+        "id": "cmd-26",
+        "name": "Diag-Reseau-Cascade_Linux_Avance",
+        "command": "cat << 'EOS' > /tmp/Diag-Reseau-Cascade_Linux_Avance.sh\n#!/bin/bash\n\nSNIPPET_NAME=\"Diag-Reseau-Cascade_Linux_Avance\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n\necho \"==========================================================\"\necho \"   [02 - DIAGNOSTIC & R\u00c9PARATION] $SNIPPET_NAME\"\necho \"==========================================================\"\n\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\nACTIONS_REALISEES=\"\"\nCOMMANDES_REMEDIATION=\"\"\n\nIFACE=$(ip -o link show | awk -F': ' '$2 != \"lo\" {print $2; exit}')\nSTATE=$(ip -o link show \"$IFACE\" | awk '{for(i=1;i<=NF;i++) if($i==\"state\") print $(i+1)}')\n\necho \"[Test 1/4] Carte r\u00e9seau principale ($IFACE) : \u00e9tat $STATE\"\nif [ \"$STATE\" == \"DOWN\" ]; then\n    echo \" -> ERREUR : La carte r\u00e9seau $IFACE est \u00e9teinte (DOWN).\"\n    read -p \" -> Voulez-vous l'allumer maintenant ? (o/n) : \" REP < /dev/tty\n    if [[ \"$REP\" == \"o\" || \"$REP\" == \"O\" ]]; then\n        ip link set \"$IFACE\" up\n        sleep 2\n        ACTIONS_REALISEES+=\"- Carte $IFACE d\u00e9tect\u00e9e DOWN -> Allum\u00e9e automatiquement.\\n\"\n        COMMANDES_REMEDIATION+=\"# Allumer la carte r\u00e9seau :\\nip link set $IFACE up\\n# -> Explication : Active \u00e9lectriquement/logiquement l'interface r\u00e9seau qui \u00e9tait d\u00e9sactiv\u00e9e.\\n\\n\"\n    fi\nelse\n    ACTIONS_REALISEES+=\"- Carte r\u00e9seau $IFACE : OK (UP)\\n\"\nfi\n\nGW=$(ip route | awk '/default/ {print $3; exit}')\nif [ -z \"$GW\" ]; then\n    echo \"[Test 2/4] ERREUR : Aucune passerelle par d\u00e9faut (Gateway) n'est configur\u00e9e !\"\n    read -p \" -> Entrez l'IP de votre passerelle/routeur (ex: 192.168.1.1) pour r\u00e9parer : \" NEW_GW < /dev/tty\n    if [ -n \"$NEW_GW\" ]; then\n        ip route add default via \"$NEW_GW\" dev \"$IFACE\" || true\n        GW=\"$NEW_GW\"\n        ACTIONS_REALISEES+=\"- Passerelle manquante -> Ajout de la route par d\u00e9faut via $NEW_GW.\\n\"\n        COMMANDES_REMEDIATION+=\"# Ajouter une passerelle par d\u00e9faut :\\nip route add default via $NEW_GW dev $IFACE\\n# -> Explication : Indique \u00e0 Linux par quel routeur ($NEW_GW) faire sortir les paquets destin\u00e9s \u00e0 d'autres r\u00e9seaux.\\n\\n\"\n    fi\nfi\n\nif [ -n \"$GW\" ] && ping -c 2 -W 2 \"$GW\" >/dev/null 2>&1; then\n    echo \"[Test 2/4] Passerelle ($GW) : JOIGNABLE (OK)\"\n    ACTIONS_REALISEES+=\"- Ping Passerelle ($GW) : OK\\n\"\n    GW_OK=1\nelse\n    echo \"[Test 2/4] ALERTE : La passerelle ($GW) ne r\u00e9pond pas au ping !\"\n    ACTIONS_REALISEES+=\"- Ping Passerelle ($GW) : \u00c9CHEC\\n\"\n    GW_OK=0\nfi\n\nif [ \"$GW_OK\" -eq 1 ]; then\n    if ping -c 2 -W 2 1.1.1.1 >/dev/null 2>&1; then\n        echo \"[Test 3/4] Sortie Internet IP (1.1.1.1) : OK\"\n        ACTIONS_REALISEES+=\"- Routage Internet IP (ping 1.1.1.1) : OK\\n\"\n        WAN_OK=1\n    else\n        echo \"[Test 3/4] ERREUR : La passerelle r\u00e9pond, mais impossible de sortir sur Internet (1.1.1.1).\"\n        ACTIONS_REALISEES+=\"- Routage Internet IP (ping 1.1.1.1) : \u00c9CHEC\\n\"\n        WAN_OK=0\n    fi\nelse\n    WAN_OK=0\nfi\n\nif [ \"$WAN_OK\" -eq 1 ]; then\n    if ping -c 2 -W 2 deb.debian.org >/dev/null 2>&1 || ping -c 2 -W 2 google.com >/dev/null 2>&1; then\n        echo \"[Test 4/4] R\u00e9solution DNS : OK\"\n        ACTIONS_REALISEES+=\"- R\u00e9solution de noms DNS : OK\\n\"\n        DNS_OK=1\n    else\n        echo \"[Test 4/4] ERREUR : Internet fonctionne en IP, mais le DNS est en panne !\"\n        read -p \" -> Voulez-vous injecter un serveur DNS de secours (ex: 1.1.1.1) pour r\u00e9parer ? (o/n) : \" FIX_DNS < /dev/tty\n        if [[ \"$FIX_DNS\" == \"o\" || \"$FIX_DNS\" == \"O\" ]]; then\n            echo \"nameserver 1.1.1.1\" >> /etc/resolv.conf\n            ACTIONS_REALISEES+=\"- Panne DNS d\u00e9tect\u00e9e -> Injection de 'nameserver 1.1.1.1' dans /etc/resolv.conf.\\n\"\n            COMMANDES_REMEDIATION+=\"# D\u00e9finir un serveur DNS manuellement :\\necho 'nameserver 1.1.1.1' >> /etc/resolv.conf\\n# -> Explication : Le fichier /etc/resolv.conf contient l'annuaire DNS utilis\u00e9 par Linux pour traduire un nom de domaine en adresse IP.\\n\\n\"\n            DNS_OK=1\n        else\n            DNS_OK=0\n        fi\n    fi\nfi\n\nif [ \"$GW_OK\" -eq 1 ] && [ \"$WAN_OK\" -eq 1 ] && [ \"$DNS_OK\" -eq 1 ]; then\n    if [ -z \"$COMMANDES_REMEDIATION\" ]; then\n        STATUT=\"SAIN (AUCUNE ANOMALIE LOCALE)\"\n        CONCLUSION=\"Tous les tests (Carte, Passerelle, Internet, DNS) ont r\u00e9ussi du premier coup.\"\n        COMMANDES_REMEDIATION=\"# Aucune commande de r\u00e9paration n'a \u00e9t\u00e9 n\u00e9cessaire sur cette machine.\\n# Pour v\u00e9rifier manuellement :\\nip a\\nip route\\nping -c 2 1.1.1.1\\nping -c 2 google.com\"\n    else\n        STATUT=\"R\u00c9SOLU (R\u00c9PAR\u00c9 PAR LE SCRIPT)\"\n        CONCLUSION=\"La panne provenait de la configuration locale de cette machine et a \u00e9t\u00e9 corrig\u00e9e.\"\n    fi\nelse\n    STATUT=\"NON R\u00c9SOLU (BLOCAGE EN AMONT IDENTIFI\u00c9)\"\n    if [ \"$GW_OK\" -eq 0 ]; then\n        CONCLUSION=\"Le probl\u00e8me n'a pas pu \u00eatre r\u00e9solu localement. La carte r\u00e9seau est allum\u00e9e mais la passerelle ($GW) est injoignable.\n-> Piste privil\u00e9gi\u00e9e : V\u00e9rifier le c\u00e2ble r\u00e9seau, le tag VLAN sur le switch/bridge Proxmox, ou le pare-feu pfSense/OPNsense.\"\n    elif [ \"$WAN_OK\" -eq 0 ]; then\n        CONCLUSION=\"Le probl\u00e8me ne vient pas de cet ordinateur : il communique bien avec son routeur ($GW), mais le routeur ne le laisse pas sortir sur Internet.\n-> Piste privil\u00e9gi\u00e9e : V\u00e9rifier les r\u00e8gles NAT (Outbound) ou les r\u00e8gles de filtrage WAN/LAN sur le routeur/pare-feu en amont.\"\n    else\n        CONCLUSION=\"La connectivit\u00e9 IP fonctionne mais la r\u00e9solution DNS reste bloqu\u00e9e (v\u00e9rifier si le port 53 UDP/TCP est filtr\u00e9 en amont).\"\n    fi\n    COMMANDES_REMEDIATION=\"# Commandes ex\u00e9cut\u00e9es pour isoler le probl\u00e8me :\\nip link show $IFACE          # -> V\u00e9rifie si le c\u00e2ble virtuel/physique est branch\u00e9 (UP).\\nip route show                # -> V\u00e9rifie si la route par d\u00e9faut (default via...) est pr\u00e9sente.\\nping -c 2 $GW        # -> Teste la liaison locale jusqu'au routeur.\\nping -c 2 1.1.1.1            # -> Teste la sortie Internet pure sans solliciter le DNS.\"\nfi\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE DIAGNOSTIC & APPRENTISSAGE\nNom Complet     : $SNIPPET_NAME\nFichier TXT     : $RECAP_FILE\n======================================================================\nDate            : $DATE_EXEC\nMachine         : $PRETTY_NAME (Interface : $IFACE)\nStatut Final    : $STATUT\n======================================================================\n\n--- 1. \u00c9TAPES V\u00c9RIFI\u00c9ES EN CASCADE ---\n$(echo -e \"$ACTIONS_REALISEES\")\n\n--- 2. VERDICT & PISTE TECHNIQUE ---\n$CONCLUSION\n\n--- 3. MANUEL D'APPRENTISSAGE (COMMANDES & EXPLICATIONS) ---\n$(echo -e \"$COMMANDES_REMEDIATION\")\n======================================================================\nEOF\n\necho \"==========================================================\"\necho \" VERDICT         : $STATUT\"\necho \" NOM COMPLET TXT : $RECAP_FILE\"\necho \"==========================================================\"\nEOS\nbash /tmp/Diag-Reseau-Cascade_Linux_Avance.sh",
+        "description": "Diagnostic r\u00e9seau en cascade + R\u00e9paration interactive + Fiche .txt au nom exact",
+        "tags": [
+          "diagnostique",
+          "reseau",
+          "passerelle",
+          "dns",
+          "reparation",
+          "linux"
+        ],
+        "folder_id": "f-linux-diag",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T08:04:27.943153+00:00"
+      },
+      {
+        "id": "cmd-29",
+        "name": "Diag-Conteneur-Crash_Docker_Complet",
+        "command": "cat << 'EOS' > /tmp/Diag-Conteneur-Crash_Docker_Complet.sh\n#!/bin/bash\n\nSNIPPET_NAME=\"Diag-Conteneur-Crash_Docker_Complet\"\n\necho \"==========================================================\"\necho \"   [02 - DIAGNOSTIC & R\u00c9PARATION] $SNIPPET_NAME\"\necho \"==========================================================\"\n\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"-> Liste des conteneurs actuellement arr\u00eat\u00e9s ou en erreur :\"\ndocker ps -a --filter \"status=exited\" --filter \"status=restarting\" --format \"table {{.Names}}\\t{{.Status}}\\t{{.Ports}}\"\n\nread -p \"Nom exact du conteneur \u00e0 diagnostiquer : \" CT_NAME < /dev/tty\nif [ -z \"$CT_NAME\" ]; then exit 1; fi\n\nRECAP_FILE=\"/root/${SNIPPET_NAME}_${CT_NAME}.txt\"\n\nSTATE=$(docker inspect -f '{{.State.Status}}' \"$CT_NAME\" 2>/dev/null)\nEXIT_CODE=$(docker inspect -f '{{.State.ExitCode}}' \"$CT_NAME\" 2>/dev/null)\nOOM_KILL=$(docker inspect -f '{{.State.OOMKilled}}' \"$CT_NAME\" 2>/dev/null)\nLAST_LOGS=$(docker logs --tail 15 \"$CT_NAME\" 2>&1)\n\necho \"-> \u00c9tat : $STATE | Code de sortie (ExitCode) : $EXIT_CODE | Manque de RAM (OOM) : $OOM_KILL\"\n\nif [ \"$OOM_KILL\" == \"true\" ] || [ \"$EXIT_CODE\" == \"137\" ]; then\n    PISTE=\"Le conteneur '$CT_NAME' a \u00e9t\u00e9 tu\u00e9 par le noyau Linux (Code 137 / OOMKilled) car la machine manque de m\u00e9moire vive (RAM).\"\n    STATUT=\"NON R\u00c9SOLU (LIMITE MAT\u00c9RIELLE D\u00c9TECT\u00c9E)\"\nelif echo \"$LAST_LOGS\" | grep -qi \"address already in use\"; then\n    PISTE=\"Conflit de port d\u00e9tect\u00e9 : un autre service sur la machine utilise d\u00e9j\u00e0 le port r\u00e9seau demand\u00e9 par '$CT_NAME'.\"\n    STATUT=\"PISTE IDENTIFI\u00c9E (CONFLIT DE PORT LOCAL)\"\nelif echo \"$LAST_LOGS\" | grep -qi \"permission denied\"; then\n    PISTE=\"Probl\u00e8me de droits (chown/chmod) sur le dossier mont\u00e9 en volume persistant sur l'h\u00f4te.\"\n    STATUT=\"PISTE IDENTIFI\u00c9E (DROITS SUR VOLUME)\"\nelse\n    read -p \"Voulez-vous tenter un red\u00e9marrage propre du conteneur maintenant ? (o/n) : \" TRY_RESTART < /dev/tty\n    if [[ \"$TRY_RESTART\" == \"o\" || \"$TRY_RESTART\" == \"O\" ]]; then\n        docker restart \"$CT_NAME\"\n        sleep 3\n        NEW_STATE=$(docker inspect -f '{{.State.Status}}' \"$CT_NAME\")\n        if [ \"$NEW_STATE\" == \"running\" ]; then\n            STATUT=\"R\u00c9SOLU (CONTENEUR RED\u00c9MARR\u00c9 ET STABLE)\"\n            PISTE=\"Le conteneur '$CT_NAME' a red\u00e9marr\u00e9 normalement et reste \u00e0 l'\u00e9tat 'running'.\"\n        else\n            STATUT=\"NON R\u00c9SOLU (CRASH PERSISTANT)\"\n            PISTE=\"Le conteneur '$CT_NAME' plante imm\u00e9diatement apr\u00e8s le d\u00e9marrage (ExitCode $EXIT_CODE). Consultez les 15 derni\u00e8res lignes de logs ci-dessous.\"\n        fi\n    else\n        STATUT=\"DIAGNOSTIC TERMIN\u00c9 (SANS ACTION)\"\n        PISTE=\"Analyse enregistr\u00e9e. Voir les logs ci-dessous.\"\n    fi\nfi\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE DIAGNOSTIC & APPRENTISSAGE\nNom Complet     : ${SNIPPET_NAME}_${CT_NAME}\nFichier TXT     : $RECAP_FILE\n======================================================================\nDate            : $DATE_EXEC\nConteneur       : $CT_NAME\nCode Sortie     : ExitCode $EXIT_CODE (OOMKilled : $OOM_KILL)\nStatut Final    : $STATUT\n======================================================================\n\n--- 1. DIAGNOSTIC & HYPOTH\u00c8SE TECHNIQUE ---\n$PISTE\n\n--- 2. EXTRAIT DES 15 DERNI\u00c8RES LIGNES DE LOGS ---\n$LAST_LOGS\n\n--- 3. MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# Commande 1 : Lister tous les conteneurs (m\u00eame ceux qui ont plant\u00e9)\ndocker ps -a\n\n# Commande 2 : Lire les derni\u00e8res erreurs du conteneur\ndocker logs --tail 20 $CT_NAME\n\n# Commande 3 : Inspecter la cause syst\u00e8me de l'arr\u00eat\ndocker inspect -f '{{.State.ExitCode}} - OOM:{{.State.OOMKilled}}' $CT_NAME\n\n# Commande 4 : V\u00e9rifier si un port est d\u00e9j\u00e0 pris sur le serveur h\u00f4te\nss -tulnp\n======================================================================\nEOF\n\necho \"==========================================================\"\necho \" STATUT          : $STATUT\"\necho \" NOM COMPLET TXT : $RECAP_FILE\"\necho \"==========================================================\"\nEOS\nbash /tmp/Diag-Conteneur-Crash_Docker_Complet.sh",
+        "description": "Analyse d'un conteneur en erreur + Fiche .txt portant le nom complet du diagnostic et du conteneur",
+        "tags": [
+          "docker",
+          "diag",
+          "crash",
+          "logs",
+          "conteneur"
+        ],
+        "folder_id": "f-docker-diag",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T08:14:02.264780+00:00"
+      },
+      {
+        "id": "cmd-31",
+        "name": "Hardening-Socle-Securite_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Hardening-Socle-Securite_Linux_Complet.sh\n#!/bin/bash\n\nSNIPPET_NAME=\"Hardening-Socle-Securite_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\n\necho \"==========================================================\"\necho \"   [03 - HARDENING] $SNIPPET_NAME\"\necho \"==========================================================\"\n\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\nSSH_PORT=$(ss -tlpn | grep sshd | awk '{print $4}' | awk -F':' '{print $NF}' | head -n1)\n[ -z \"$SSH_PORT\" ] && SSH_PORT=22\n\necho \"-> Port SSH actuel d\u00e9tect\u00e9 : $SSH_PORT\"\nread -p \"Voulez-vous interdire la connexion SSH directe en 'root' par mot de passe (prohibit-password) ? (o/n) [o] : \" LOCK_ROOT < /dev/tty\nread -p \"Voulez-vous installer et activer Fail2ban contre le brute-force SSH ? (o/n) [o] : \" INST_F2B < /dev/tty\nread -p \"Voulez-vous activer le pare-feu local en autorisant le port SSH ($SSH_PORT) ? (o/n) [o] : \" ACT_FW < /dev/tty\n\nACTIONS_REALISEES=\"\"\n\ncp /etc/ssh/sshd_config \"/etc/ssh/sshd_config.bak_$(date +%F)\"\nif [[ \"$LOCK_ROOT\" != \"n\" && \"$LOCK_ROOT\" != \"N\" ]]; then\n    sed -i 's/^#*PermitRootLogin.*/PermitRootLogin prohibit-password/' /etc/ssh/sshd_config\n    ACTIONS_REALISEES+=\"- SSH : PermitRootLogin pass\u00e9 en 'prohibit-password' (Cl\u00e9 SSH obligatoire pour root).\\n\"\nfi\nsed -i 's/^#*MaxAuthTries.*/MaxAuthTries 3/' /etc/ssh/sshd_config\nsystemctl reload sshd 2>/dev/null || systemctl reload ssh 2>/dev/null\nACTIONS_REALISEES+=\"- SSH : Limitation \u00e0 3 tentatives de mot de passe maximum (MaxAuthTries 3).\\n\"\n\nif [[ \"$INST_F2B\" != \"n\" && \"$INST_F2B\" != \"N\" ]]; then\n    if [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n        apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get install -y -qq fail2ban\n    else\n        dnf install -y -q epel-release && dnf install -y -q fail2ban\n    fi\n    cat << EOF > /etc/fail2ban/jail.d/sshd-local.conf\n[sshd]\nenabled = true\nport = $SSH_PORT\nmaxretry = 3\nbantime = 3600\nfindtime = 600\nEOF\n    systemctl enable --now fail2ban && systemctl restart fail2ban\n    ACTIONS_REALISEES+=\"- Fail2ban : Activ\u00e9 sur le port $SSH_PORT (Bannissement 1h apr\u00e8s 3 \u00e9checs en 10 min).\\n\"\nfi\n\nif [[ \"$ACT_FW\" != \"n\" && \"$ACT_FW\" != \"N\" ]]; then\n    if [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n        apt-get install -y -qq ufw\n        ufw default deny incoming\n        ufw default allow outgoing\n        ufw allow \"$SSH_PORT\"/tcp\n        ufw --force enable\n        FW_CMD=\"ufw default deny incoming && ufw allow ${SSH_PORT}/tcp && ufw enable\"\n        ACTIONS_REALISEES+=\"- Pare-feu (UFW) : Activ\u00e9. Tout le trafic entrant est bloqu\u00e9 sauf le port TCP/$SSH_PORT.\\n\"\n    else\n        systemctl enable --now firewalld\n        firewall-cmd --permanent --add-port=\"${SSH_PORT}/tcp\"\n        firewall-cmd --reload\n        FW_CMD=\"systemctl enable --now firewalld && firewall-cmd --permanent --add-port=${SSH_PORT}/tcp && firewall-cmd --reload\"\n        ACTIONS_REALISEES+=\"- Pare-feu (Firewalld) : Activ\u00e9 avec ouverture permanente du port TCP/$SSH_PORT.\\n\"\n    fi\nfi\n\nif systemctl is-active --quiet fail2ban; then\n    STATUT=\"R\u00c9SOLU / SYST\u00c8ME DURCI ET PROT\u00c9G\u00c9\"\nelse\n    STATUT=\"PARTIELLEMENT APPLIQU\u00c9 (V\u00c9RIFIER SERVICE FAIL2BAN)\"\nfi\n\ncat << EOF > \"$RECAP_FILE\"\n======================================================================\nFICHE DE HARDENING & APPRENTISSAGE\nNom Complet     : $SNIPPET_NAME\nFichier TXT     : $RECAP_FILE\n======================================================================\nDate            : $DATE_EXEC\nSyst\u00e8me         : $PRETTY_NAME\nPort SSH prot\u00e9g\u00e9: $SSH_PORT\nStatut Final    : $STATUT\n======================================================================\n\n--- 1. MESURES DE S\u00c9CURIT\u00c9 APPLIQU\u00c9ES ---\n$(echo -e \"$ACTIONS_REALISEES\")\n\n--- 2. MANUEL D'APPRENTISSAGE (COMMANDES EXPLIQU\u00c9ES LIGNE PAR LIGNE) ---\n# \u00c9tape 1 : Sauvegarder le fichier SSH avant toute modification\ncp /etc/ssh/sshd_config /etc/ssh/sshd_config.bak\n\n# \u00c9tape 2 : S\u00e9curiser l'acc\u00e8s root et recharger SSH sans couper la session actuelle\nnano /etc/ssh/sshd_config   # Mettre 'PermitRootLogin prohibit-password' et 'MaxAuthTries 3'\nsystemctl reload ssh\n\n# \u00c9tape 3 : Configurer une prison Fail2ban propre\nnano /etc/fail2ban/jail.d/sshd-local.conf\n\n# \u00c9tape 4 : Activer le pare-feu sans s'auto-bloquer\n$FW_CMD\n======================================================================\nEOF\n\necho \"==========================================================\"\necho \" STATUT          : $STATUT\"\necho \" NOM COMPLET TXT : $RECAP_FILE\"\necho \"==========================================================\"\nEOS\nbash /tmp/Hardening-Socle-Securite_Linux_Complet.sh",
+        "description": "S\u00e9curisation SSH + Activation Pare-feu (UFW/Firewalld) + Fail2ban + Fiche .txt au nom complet",
+        "tags": [
+          "hardening",

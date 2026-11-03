@@ -1,0 +1,289 @@
+        ],
+        "folder_id": "f-pve-quotidien",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "one_shot",
+        "created_at": "2026-10-22T00:00:00.000000+00:00"
+      },
+      {
+        "id": "cmd-330",
+        "name": "Quotidien-Routine-MiseAJour_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Quotidien-Routine-MiseAJour_Linux_Complet.sh\n#!/bin/bash\nset -e\n. /etc/os-release\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [ROUTINE] MISE \u00c0 JOUR & BILAN DE SANT\u00c9 LINUX\"\necho \"==========================================================\"\n\necho \"-> 1/3 : Recherche et installation des mises \u00e0 jour...\"\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    apt-get update -qq && DEBIAN_FRONTEND=noninteractive apt-get upgrade -y\nelif [[ \"$ID_LIKE\" == *\"rhel\"* ]] || [[ \"$ID\" == \"rocky\" ]] || [[ \"$ID\" == \"almalinux\" ]] || [[ \"$ID\" == \"fedora\" ]]; then\n    dnf upgrade -y\nelse\n    apk update -q && apk upgrade\nfi\n\necho \"\\n-> 2/3 : V\u00e9rification si un red\u00e9marrage est requis...\"\nif [ -f /var/run/reboot-required ]; then\n    echo \"[ALERTE] Un red\u00e9marrage est en attente suite aux mises \u00e0 jour.\"\nelse\n    echo \"[OK] Aucun red\u00e9marrage n\u00e9cessaire.\"\nfi\n\necho \"\\n-> 3/3 : Extraction des 10 derni\u00e8res erreurs critiques du syst\u00e8me...\"\njournalctl -p 3 -n 10 --no-pager 2>/dev/null || echo \"Aucune erreur critique trouv\u00e9e.\"\n\ncat << EOF > \"/root/Routine_Linux_\\$(date +%F).txt\"\nBilan de routine du $DATE_EXEC sur $(hostname).\nMises \u00e0 jour appliqu\u00e9es. Red\u00e9marrage v\u00e9rifi\u00e9.\nEOF\nEOS\nbash /tmp/Quotidien-Routine-MiseAJour_Linux_Complet.sh",
+        "description": "Routine Quotidienne Linux : Applique les mises \u00e0 jour (apt/dnf/apk), v\u00e9rifie si un reboot est requis, et affiche les 10 derni\u00e8res erreurs syst\u00e8me.",
+        "tags": [
+          "quotidien",
+          "update",
+          "routine",
+          "linux"
+        ],
+        "folder_id": "f-linux-quotidien",
+        "is_favorite": true,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T22:30:00.000000+00:00"
+      },
+      {
+        "id": "cmd-331",
+        "name": "Quotidien-Routine-MiseAJour_Windows_Complet",
+        "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"\nWrite-Host '==========================================================' -ForegroundColor Cyan\nWrite-Host '   [ROUTINE] MISE \u00c0 JOUR & BILAN DE SANT\u00c9 WINDOWS' -ForegroundColor Cyan\nWrite-Host '==========================================================' -ForegroundColor Cyan\n\nWrite-Host '-> 1/3 : Mise \u00e0 jour des logiciels via Winget...' -ForegroundColor Yellow\nwinget upgrade --all --silent --accept-package-agreements --accept-source-agreements\n\nWrite-Host '`n-> 2/3 : V\u00e9rification de l attente de red\u00e9marrage (Reboot Pending)...' -ForegroundColor Yellow\n\\$Reboot1 = Test-Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Component Based Servicing\\RebootPending'\n\\$Reboot2 = Test-Path 'HKLM:\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\WindowsUpdate\\Auto Update\\RebootRequired'\nif (\\$Reboot1 -or \\$Reboot2) { Write-Host '[ALERTE] Un red\u00e9marrage est requis sur cette machine !' -ForegroundColor Red } else { Write-Host '[OK] Aucun red\u00e9marrage en attente.' -ForegroundColor Green }\n\nWrite-Host '`n-> 3/3 : 10 derni\u00e8res erreurs syst\u00e8me (EventViewer)...' -ForegroundColor Yellow\nGet-WinEvent -LogName System -MaxEvents 10 -FilterXPath \\\"*[System[Level=2 or Level=3]]\\\" -ErrorAction SilentlyContinue | Select-Object TimeCreated, ProviderName, Message | Format-Table -AutoSize\n\nSet-Content -Path \\\"C:\\Users\\Public\\Routine_Windows_\\$(Get-Date -Format 'yyyyMMdd').txt\\\" -Value 'Mises \u00e0 jour Winget appliqu\u00e9es. V\u00e9rification OK.'\n\"",
+        "description": "Routine Quotidienne Windows : Applique les m\u00e0j de logiciels (Winget), v\u00e9rifie l'attente de red\u00e9marrage, et affiche les 10 derni\u00e8res erreurs de l'observateur d'\u00e9v\u00e9nements.",
+        "tags": [
+          "quotidien",
+          "winget",
+          "routine",
+          "windows"
+        ],
+        "folder_id": "f-win-quotidien",
+        "is_favorite": true,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T22:31:00.000000+00:00"
+      },
+      {
+        "id": "cmd-332",
+        "name": "Basique-Gestion-Processus-Simplifiee_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Basique-Processus_Linux_Complet.sh\n#!/bin/bash\n\necho \"==========================================================\"\necho \"   [06 - QUOTIDIEN] GESTION DES PROCESSUS LINUX\"\necho \"==========================================================\"\n\necho \"--- TOP 15 DES PROCESSUS LES PLUS GOURMANDS (CPU) ---\"\nps -eo pid,comm,%cpu,%mem --sort=-%cpu | head -n 16 2>/dev/null || ps aux | awk '{print $2, $11, $3, $4}' | head -n 16\n\necho \"\"\nread -p \"Voulez-vous tuer un processus ? Laissez vide pour annuler, ou tapez son nom (ex: nginx) ou son PID (ex: 1234) : \" PROC_INPUT < /dev/tty\n\nif [ -n \"$PROC_INPUT\" ]; then\n    if [[ \"$PROC_INPUT\" =~ ^[0-9]+$ ]]; then\n        kill -9 \"$PROC_INPUT\" 2>/dev/null && echo \"[+] Processus PID $PROC_INPUT forc\u00e9 \u00e0 l'arr\u00eat.\" || echo \"[-] Impossible d'arr\u00eater $PROC_INPUT (PID invalide ou droits manquants).\"\n    else\n        pkill -9 -f \"$PROC_INPUT\" 2>/dev/null && echo \"[+] Tous les processus '$PROC_INPUT' forc\u00e9s \u00e0 l'arr\u00eat.\" || echo \"[-] Aucun processus nomm\u00e9 '$PROC_INPUT' trouv\u00e9.\"\n    fi\nelse\n    echo \"Action annul\u00e9e.\"\nfi\nEOS\nbash /tmp/Basique-Processus_Linux_Complet.sh",
+        "description": "Basique : Liste claire et simplifi\u00e9e des processus (PID, Nom, CPU) avec option rapide pour tuer un programme par nom ou PID.",
+        "tags": [
+          "processus",
+          "kill",
+          "pkill",
+          "quotidien",
+          "linux"
+        ],
+        "folder_id": "f-linux-quotidien",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T22:32:00.000000+00:00"
+      },
+      {
+        "id": "cmd-333",
+        "name": "Basique-Gestion-Processus-Simplifiee_Windows_Complet",
+        "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"\nWrite-Host '==========================================================' -ForegroundColor Cyan\nWrite-Host '   [06 - QUOTIDIEN] GESTION DES PROCESSUS WINDOWS' -ForegroundColor Cyan\nWrite-Host '==========================================================' -ForegroundColor Cyan\n\nWrite-Host '--- TOP 15 DES PROCESSUS LES PLUS GOURMANDS (CPU) ---' -ForegroundColor Yellow\nGet-Process | Sort-Object CPU -Descending | Select-Object -First 15 Id, ProcessName, CPU, @{Name='RAM(MB)';Expression={[math]::Round(\\$_.WS/1MB,1)}} | Format-Table -AutoSize\n\n\\$ProcInput = Read-Host 'Laissez vide pour annuler, ou tapez un Nom (ex: chrome) ou un PID (ex: 1234) pour forcer l arr\u00eat'\n\nif (-not [string]::IsNullOrWhiteSpace(\\$ProcInput)) {\n    if (\\$ProcInput -match '^\\d+\\$') {\n        Stop-Process -Id \\$ProcInput -Force -ErrorAction SilentlyContinue\n        Write-Host \\\"[+] Processus PID \\$ProcInput forc\u00e9 \u00e0 l'arr\u00eat.\\\" -ForegroundColor Green\n    } else {\n        Stop-Process -Name \\$ProcInput -Force -ErrorAction SilentlyContinue\n        Write-Host \\\"[+] Processus nomm\u00e9 '\\$ProcInput' forc\u00e9 \u00e0 l'arr\u00eat.\\\" -ForegroundColor Green\n    }\n} else {\n    Write-Host 'Action annul\u00e9e.'\n}\n\"",
+        "description": "Basique : Liste simplifi\u00e9e des processus Windows (PID, Nom, CPU, RAM) avec assistant pour tuer un programme via PID ou Nom.",
+        "tags": [
+          "processus",
+          "kill",
+          "quotidien",
+          "windows"
+        ],
+        "folder_id": "f-win-quotidien",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T22:33:00.000000+00:00"
+      },
+      {
+        "id": "cmd-334",
+        "name": "Basique-Transfert-SCP_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Basique-Transfert-SCP_Linux_Complet.sh\n#!/bin/bash\n\necho \"==========================================================\"\necho \"   [06 - QUOTIDIEN] COPIE DE FICHIER S\u00c9CURIS\u00c9E (SCP)\"\necho \"==========================================================\"\n\necho \"Astuce : Entrez simplement un chemin local (/tmp/fichier.txt) ou un chemin distant (user@192.168.1.50:/tmp/).\"\nread -p \"Source (Fichier \u00e0 copier) : \" SRC_PATH < /dev/tty\nif [ -z \"$SRC_PATH\" ]; then exit 1; fi\n\nread -p \"Destination : \" DST_PATH < /dev/tty\nif [ -z \"$DST_PATH\" ]; then exit 1; fi\n\nread -p \"Port SSH si diff\u00e9rent de 22 (Laissez vide pour 22) : \" SSH_PORT < /dev/tty\nPORT_ARG=\"\"\nif [ -n \"$SSH_PORT\" ]; then PORT_ARG=\"-P $SSH_PORT\"; fi\n\necho \"-> Transfert en cours : scp $PORT_ARG $SRC_PATH vers $DST_PATH\"\nscp $PORT_ARG \"$SRC_PATH\" \"$DST_PATH\"\necho \"[+] Transfert termin\u00e9 !\"\nEOS\nbash /tmp/Basique-Transfert-SCP_Linux_Complet.sh",
+        "description": "Basique : Assistant de transfert de fichiers par SCP (Secure Copy) pour envoyer ou r\u00e9cup\u00e9rer un fichier entre serveurs.",
+        "tags": [
+          "scp",
+          "transfert",
+          "copie",
+          "quotidien",
+          "linux"
+        ],
+        "folder_id": "f-linux-quotidien",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T22:34:00.000000+00:00"
+      },
+      {
+        "id": "cmd-335",
+        "name": "Basique-Transfert-SCP_Windows_Complet",
+        "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"\nWrite-Host '==========================================================' -ForegroundColor Cyan\nWrite-Host '   [06 - QUOTIDIEN] COPIE DE FICHIER S\u00c9CURIS\u00c9E (SCP)' -ForegroundColor Cyan\nWrite-Host '==========================================================' -ForegroundColor Cyan\n\nWrite-Host 'Astuce : Entrez un chemin local (C:\\temp\\fichier.txt) ou distant (user@192.168.1.50:/tmp/).' -ForegroundColor Yellow\n\\$SrcPath = Read-Host 'Source (Fichier \u00e0 copier)'\nif ([string]::IsNullOrWhiteSpace(\\$SrcPath)) { exit }\n\n\\$DstPath = Read-Host 'Destination'\nif ([string]::IsNullOrWhiteSpace(\\$DstPath)) { exit }\n\nWrite-Host \\\"-> Transfert en cours : scp.exe \\$SrcPath vers \\$DstPath\\\" -ForegroundColor Cyan\nscp.exe \\$SrcPath \\$DstPath\nWrite-Host '[+] Transfert termin\u00e9 !' -ForegroundColor Green\n\"",
+        "description": "Basique : Assistant PowerShell exploitant scp.exe natif pour envoyer ou r\u00e9cup\u00e9rer un fichier depuis Windows.",
+        "tags": [
+          "scp",
+          "transfert",
+          "copie",
+          "quotidien",
+          "windows"
+        ],
+        "folder_id": "f-win-quotidien",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T22:35:00.000000+00:00"
+      },
+      {
+        "id": "cmd-336",
+        "name": "Basique-Heure-Date-NTP_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Basique-Heure-Date-NTP_Linux_Complet.sh\n#!/bin/bash\n\necho \"==========================================================\"\necho \"   [06 - QUOTIDIEN] DATE, HEURE ET SYNCHRO NTP\"\necho \"==========================================================\"\n\necho \"--- Heure et Fuseau Actuels ---\"\ntimedatectl 2>/dev/null || date\n\necho \"\"\nread -p \"Voulez-vous forcer la synchronisation NTP maintenant ? (o/n) [n] : \" SYNC_NTP < /dev/tty\n\nif [[ \"$SYNC_NTP\" == \"o\" || \"$SYNC_NTP\" == \"O\" ]]; then\n    if command -v chronyc >/dev/null 2>&1; then\n        chronyc makestep\n        echo \"[+] Synchronisation forc\u00e9e via Chrony (makestep).\"\n    elif systemctl is-active --quiet systemd-timesyncd 2>/dev/null; then\n        systemctl restart systemd-timesyncd\n        echo \"[+] Synchronisation forc\u00e9e via red\u00e9marrage de systemd-timesyncd.\"\n    else\n        echo \"[-] Aucun client NTP standard d\u00e9tect\u00e9 (chrony/timesyncd). Installez-en un pour la synchro automatique.\"\n    fi\n    date\nelse\n    echo \"Action annul\u00e9e.\"\nfi\nEOS\nbash /tmp/Basique-Heure-Date-NTP_Linux_Complet.sh",
+        "description": "Basique : Afficher la date et le fuseau horaire exact, avec possibilit\u00e9 de forcer la mise \u00e0 l'heure NTP.",
+        "tags": [
+          "heure",
+          "date",
+          "ntp",
+          "quotidien",
+          "linux"
+        ],
+        "folder_id": "f-linux-quotidien",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T22:36:00.000000+00:00"
+      },
+      {
+        "id": "cmd-337",
+        "name": "Basique-Heure-Date-NTP_Windows_Complet",
+        "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"\nWrite-Host '==========================================================' -ForegroundColor Cyan\nWrite-Host '   [06 - QUOTIDIEN] DATE, HEURE ET SYNCHRO NTP WINDOWS' -ForegroundColor Cyan\nWrite-Host '==========================================================' -ForegroundColor Cyan\n\nWrite-Host '--- Heure Actuelle ---' -ForegroundColor Yellow\nGet-Date\nWrite-Host '--- Fuseau Horaire ---' -ForegroundColor Yellow\nGet-TimeZone\n\n\\$Sync = Read-Host '`nVoulez-vous forcer la synchronisation NTP maintenant avec Windows Time ? (o/n) [n]'\nif (\\$Sync -eq 'o' -or \\$Sync -eq 'O') {\n    Write-Host 'Red\u00e9marrage du service de temps et synchronisation forc\u00e9e...' -ForegroundColor Cyan\n    Restart-Service w32time -ErrorAction SilentlyContinue\n    w32tm /resync /rediscover\n    Write-Host \\\"[+] Nouvelle heure : \\$(Get-Date)\\\" -ForegroundColor Green\n} else {\n    Write-Host 'Action annul\u00e9e.'\n}\n\"",
+        "description": "Basique : Afficher la date et le fuseau horaire Windows, avec possibilit\u00e9 de forcer la synchronisation NTP (w32tm).",
+        "tags": [
+          "heure",
+          "date",
+          "ntp",
+          "quotidien",
+          "windows"
+        ],
+        "folder_id": "f-win-quotidien",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T22:37:00.000000+00:00"
+      },
+      {
+        "id": "cmd-338",
+        "name": "Basique-Recherche-Texte-Fichier_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Basique-Recherche-Texte-Fichier_Linux_Complet.sh\n#!/bin/bash\n\necho \"==========================================================\"\necho \"   [06 - QUOTIDIEN] RECHERCHE DE TEXTE (GREP)\"\necho \"==========================================================\"\n\nread -p \"Mot ou phrase exacte \u00e0 rechercher : \" SEARCH_TEXT < /dev/tty\nif [ -z \"$SEARCH_TEXT\" ]; then exit 1; fi\n\nread -p \"Chemin du dossier ou du fichier cible (ex: /var/log ou /etc/nginx/nginx.conf) : \" SEARCH_PATH < /dev/tty\nif [ -z \"$SEARCH_PATH\" ]; then exit 1; fi\n\necho \"-> Lancement de la recherche r\u00e9cursive sans tenir compte de la casse (grep -rni)...\"\ngrep -rni \"$SEARCH_TEXT\" \"$SEARCH_PATH\" 2>/dev/null || echo \"[-] Aucune correspondance trouv\u00e9e ou permission refus\u00e9e.\"\nEOS\nbash /tmp/Basique-Recherche-Texte-Fichier_Linux_Complet.sh",
+        "description": "Basique : Assistant pour rechercher un mot pr\u00e9cis dans un fichier ou tous les fichiers d'un dossier (grep -rni).",
+        "tags": [
+          "recherche",
+          "grep",
+          "texte",
+          "quotidien",
+          "linux"
+        ],
+        "folder_id": "f-linux-quotidien",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T22:38:00.000000+00:00"
+      },
+      {
+        "id": "cmd-339",
+        "name": "Basique-Recherche-Texte-Fichier_Windows_Complet",
+        "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"\nWrite-Host '==========================================================' -ForegroundColor Cyan\nWrite-Host '   [06 - QUOTIDIEN] RECHERCHE DE TEXTE WINDOWS' -ForegroundColor Cyan\nWrite-Host '==========================================================' -ForegroundColor Cyan\n\n\\$SearchText = Read-Host 'Mot ou phrase exacte \u00e0 rechercher'\nif ([string]::IsNullOrWhiteSpace(\\$SearchText)) { exit }\n\n\\$SearchPath = Read-Host 'Chemin du dossier cible (ex: C:\\inetpub\\logs\\LogFiles)'\nif ([string]::IsNullOrWhiteSpace(\\$SearchPath)) { exit }\n\nWrite-Host \\\"-> Recherche en cours dans \\$SearchPath...\\\" -ForegroundColor Yellow\nGet-ChildItem -Path \\$SearchPath -File -Recurse -ErrorAction SilentlyContinue | Select-String -Pattern \\$SearchText -ErrorAction SilentlyContinue | Select-Object Path, LineNumber, Line | Format-Table -AutoSize\n\"",
+        "description": "Basique : Assistant PowerShell pour retrouver une cha\u00eene de texte sp\u00e9cifique dans un dossier (Select-String).",
+        "tags": [
+          "recherche",
+          "texte",
+          "quotidien",
+          "windows"
+        ],
+        "folder_id": "f-win-quotidien",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T22:39:00.000000+00:00"
+      },
+      {
+        "id": "cmd-340",
+        "name": "Basique-Archivage-Compresser-Dossier_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Basique-Archivage-Linux_Complet.sh\n#!/bin/bash\n\necho \"==========================================================\"\necho \"   [06 - QUOTIDIEN] COMPRESSION RAPIDE (TAR.GZ)\"\necho \"==========================================================\"\n\nread -p \"Dossier complet ou fichier \u00e0 compresser (ex: /var/www/html) : \" SRC_DIR < /dev/tty\nif [ ! -e \"$SRC_DIR\" ]; then echo \"Erreur : introuvable.\"; exit 1; fi\n\nread -p \"Nom de l'archive de destination (ex: /root/mon_site.tar.gz) : \" DST_ARC < /dev/tty\nif [ -z \"$DST_ARC\" ]; then exit 1; fi\n\necho \"-> Cr\u00e9ation de l'archive tar.gz...\"\ntar -czvf \"$DST_ARC\" \"$SRC_DIR\"\necho \"[+] Archive cr\u00e9\u00e9e avec succ\u00e8s : $(du -sh \"$DST_ARC\" | awk '{print $1}')\"\nEOS\nbash /tmp/Basique-Archivage-Linux_Complet.sh",
+        "description": "Basique : Assistant de compression pour archiver rapidement un dossier en format .tar.gz.",
+        "tags": [
+          "archive",
+          "tar",
+          "compression",
+          "quotidien",
+          "linux"
+        ],
+        "folder_id": "f-linux-quotidien",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T22:40:00.000000+00:00"
+      },
+      {
+        "id": "cmd-341",
+        "name": "Basique-Archivage-Compresser-Dossier_Windows_Complet",
+        "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"\nWrite-Host '==========================================================' -ForegroundColor Cyan\nWrite-Host '   [06 - QUOTIDIEN] COMPRESSION RAPIDE (ZIP)' -ForegroundColor Cyan\nWrite-Host '==========================================================' -ForegroundColor Cyan\n\n\\$SrcDir = Read-Host 'Dossier complet ou fichier \u00e0 compresser (ex: C:\\Logs)'\nif (-not (Test-Path \\$SrcDir)) { Write-Host 'Introuvable.' -ForegroundColor Red; exit }\n\n\\$DstArc = Read-Host 'Chemin de l archive ZIP (ex: C:\\Users\\Public\\Backup.zip)'\nif ([string]::IsNullOrWhiteSpace(\\$DstArc)) { exit }\n\nWrite-Host \\\"-> Compression en cours vers \\$DstArc...\\\" -ForegroundColor Yellow\nCompress-Archive -Path \\$SrcDir -DestinationPath \\$DstArc -Force\n\\$Size = (Get-Item \\$DstArc).Length / 1MB\nWrite-Host \\\"[+] Archive ZIP cr\u00e9\u00e9e avec succ\u00e8s ! Taille: \\$([math]::Round(\\$Size, 2)) MB\\\" -ForegroundColor Green\n\"",
+        "description": "Basique : Assistant de compression PowerShell pour archiver un dossier en format .zip.",
+        "tags": [
+          "archive",
+          "zip",
+          "compression",
+          "quotidien",
+          "windows"
+        ],
+        "folder_id": "f-win-quotidien",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T22:41:00.000000+00:00"
+      },
+      {
+        "id": "cmd-342",
+        "name": "Basique-Inventaire-Logiciels-Installes_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Basique-Inventaire-Logiciels_Linux_Complet.sh\n#!/bin/bash\n. /etc/os-release\necho \"==========================================================\"\necho \"   [06 - QUOTIDIEN] LISTE DES LOGICIELS INSTALL\u00c9S\"\necho \"==========================================================\"\n\nread -p \"Chercher un paquet sp\u00e9cifique ? (Laissez vide pour lister tout) : \" PKG_FILTER < /dev/tty\n\necho \"--- R\u00e9sultat de l'inventaire ---\"\nif [[ \"$ID_LIKE\" == *\"debian\"* ]] || [[ \"$ID\" == \"debian\" ]] || [[ \"$ID\" == \"ubuntu\" ]]; then\n    if [ -n \"$PKG_FILTER\" ]; then\n        dpkg -l | grep -i \"$PKG_FILTER\"\n    else\n        dpkg -l | head -n 30\n        echo \"(... Liste tronqu\u00e9e aux 30 premiers. Utilisez le filtre pour chercher.)\"\n    fi\nelif [[ \"$ID_LIKE\" == *\"rhel\"* ]] || [[ \"$ID\" == \"rocky\" ]] || [[ \"$ID\" == \"almalinux\" ]] || [[ \"$ID\" == \"fedora\" ]]; then\n    if [ -n \"$PKG_FILTER\" ]; then\n        rpm -qa | grep -i \"$PKG_FILTER\"\n    else\n        rpm -qa | head -n 30\n    fi\nelse\n    if [ -n \"$PKG_FILTER\" ]; then\n        apk info | grep -i \"$PKG_FILTER\"\n    else\n        apk info | head -n 30\n    fi\nfi\nEOS\nbash /tmp/Basique-Inventaire-Logiciels_Linux_Complet.sh",
+        "description": "Basique : Lister les paquets logiciels install\u00e9s (dpkg/rpm/apk) avec possibilit\u00e9 de filtrer la recherche.",
+        "tags": [
+          "logiciels",
+          "paquets",
+          "inventaire",
+          "quotidien",
+          "linux"
+        ],
+        "folder_id": "f-linux-quotidien",
+        "is_favorite": false,
+        "use_count": 1,
+        "last_used": "2026-10-22T20:30:46.295288+00:00",
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T22:42:00.000000+00:00"
+      },
+      {
+        "id": "cmd-343",
+        "name": "Basique-Inventaire-Logiciels-Installes_Windows_Complet",
+        "command": "powershell.exe -NoProfile -ExecutionPolicy Bypass -Command \"\nWrite-Host '==========================================================' -ForegroundColor Cyan\nWrite-Host '   [06 - QUOTIDIEN] LISTE DES LOGICIELS INSTALL\u00c9S' -ForegroundColor Cyan\nWrite-Host '==========================================================' -ForegroundColor Cyan\n\n\\$Filter = Read-Host 'Chercher un logiciel sp\u00e9cifique ? (Laissez vide pour lister tout)'\n\nif (-not [string]::IsNullOrWhiteSpace(\\$Filter)) {\n    winget list | Select-String -Pattern \\$Filter\n} else {\n    winget list\n}\n\"",
+        "description": "Basique : Utiliser Winget pour afficher la liste des logiciels install\u00e9s sur Windows avec filtre de recherche.",
+        "tags": [
+          "logiciels",
+          "winget",
+          "inventaire",
+          "quotidien",
+          "windows"
+        ],
+        "folder_id": "f-win-quotidien",
+        "is_favorite": false,
+        "use_count": 0,
+        "last_used": null,
+        "has_placeholders": false,
+        "execution_mode": "interactive_terminal",
+        "created_at": "2026-10-18T22:43:00.000000+00:00"
+      },
+      {
+        "id": "cmd-344",
+        "name": "Quotidien-Cafe-Matin-Bilan_Linux_Complet",
+        "command": "cat << 'EOS' > /tmp/Quotidien-Cafe-Matin_Linux_Complet.sh\n#!/bin/bash\nset -e\n\nSNIPPET_NAME=\"Quotidien-Cafe-Matin_Linux_Complet\"\nRECAP_FILE=\"/root/${SNIPPET_NAME}.txt\"\nDATE_EXEC=$(date \"+%Y-%m-%d %H:%M:%S\")\n\necho \"==========================================================\"\necho \"   [06 - QUOTIDIEN] RAPPORT DE SANT\u00c9 MATINAL\"\necho \"==========================================================\"\necho \"Date : $DATE_EXEC | Serveur : $(hostname)\\n\"\n\necho \"--- 1. MISES \u00c0 JOUR & RED\u00c9MARRAGE ---\"\nif command -v apt-get >/dev/null 2>&1; then\n    apt-get update -qq\n    UPDATES=$(apt list --upgradable 2>/dev/null | grep -v \"Listing\" | wc -l)\n    echo \"Paquets en attente de mise \u00e0 jour : $UPDATES\"\nelif command -v dnf >/dev/null 2>
