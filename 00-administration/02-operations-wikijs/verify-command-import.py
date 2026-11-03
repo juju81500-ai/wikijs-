@@ -93,8 +93,8 @@ def main() -> int:
         "file",
         nargs="?",
         type=Path,
-        default=Path(__file__).resolve().parents[1] / "04-referentiels-mapping" / "txt.txt",
-        help="fichier JSON à contrôler (défaut : 04-referentiels-mapping/txt.txt)",
+        default=Path(__file__).resolve().parents[1] / "04-referentiels-mapping" / "mapping" / "commandes-export.dump",
+        help="fichier JSON à contrôler (défaut : 04-referentiels-mapping/mapping/commandes-export.dump)",
     )
     parser.add_argument(
         "--next-id",

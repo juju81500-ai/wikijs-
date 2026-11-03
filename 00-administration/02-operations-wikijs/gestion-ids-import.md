@@ -1,6 +1,6 @@
 # Gestion des IDs d'import des commandes
 
-Ce guide concerne les données `command_blocks` de `txt.txt`. Il ne concerne pas les identifiants internes des pages Wiki.js.
+Ce guide concerne les données `command_blocks` de `mapping/commandes-export.dump`. Il ne concerne pas les identifiants internes des pages Wiki.js.
 
 ## Règles
 
