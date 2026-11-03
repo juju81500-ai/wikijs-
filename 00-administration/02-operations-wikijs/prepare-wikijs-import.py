@@ -80,16 +80,29 @@ def tags_from(text: str) -> tuple[str, ...]:
     return tuple(dict.fromkeys(slug(value) for value in values if re.search(r"[A-Za-z0-9]", value)))
 
 
+MAX_TITLE = 60
+
+
+def shorten_title(title: str) -> str:
+    title = re.sub(r"\s+", " ", title.replace("_", " ")).strip()
+    if re.fullmatch(r"[a-z0-9.]+(?:-[a-z0-9.]+)+", title):
+        title = title.replace("-", " ")
+    title = re.sub(r"(?i)^fiche(?: simple| logiciel| complete| complète)?(?: - | )(?:vm )?", "", title)
+    title = re.sub(r"(?i)\bvie systeme (?=\d)", "", title)
+    title = title[:1].upper() + title[1:]
+    if len(title) > MAX_TITLE:
+        title = title[:MAX_TITLE].rsplit(" ", 1)[0].rstrip(" ,;:-–—") + "…"
+    return title
+
+
 def title_from(path: Path, text: str) -> str:
     for line in text.splitlines()[:60]:
         match = HEADING.match(line.strip())
         if match:
             title = match.group(1).replace("📄", "").strip()
             title = re.sub(r"(?i)\.md$", "", title)
-            if re.match(r"(?i)^fiche(?:_|\s)", title):
-                title = title.replace("_", " ")
-            return re.sub(r"\s+", " ", title).strip() or path.stem
-    return re.sub(r"\s+", " ", path.stem.replace("_", " ")).strip()
+            return shorten_title(title) or path.stem
+    return shorten_title(path.stem)
 
 
 def description_from(text: str) -> str:
@@ -222,7 +235,36 @@ def source_pages() -> tuple[list[Page], list[str]]:
                     ).isoformat(timespec="seconds").replace("+00:00", "Z"),
                 )
             )
-    return pages, skipped
+    return disambiguate_titles(pages), skipped
+
+
+def disambiguate_titles(pages: list[Page]) -> list[Page]:
+    groups: dict[str, list[int]] = {}
+    for index, page in enumerate(pages):
+        groups.setdefault(page.title, []).append(index)
+
+    def clean(part: str) -> str:
+        text = re.sub(r"^\d+-", "", part).replace("-", " ")
+        return text if len(text) <= 24 else text[:24].rsplit(" ", 1)[0]
+
+    result = list(pages)
+    for title, indexes in groups.items():
+        if len(indexes) < 2:
+            continue
+        paths = [pages[i].route.split("/") for i in indexes]
+        common = 0
+        while all(len(p) > common + 1 for p in paths) and len({p[common] for p in paths}) == 1:
+            common += 1
+        for width in (1, 2):
+            labels = [" / ".join(clean(part) for part in p[common:][:width]) for p in paths]
+            if len(set(labels)) == len(labels):
+                break
+        else:
+            labels = [f"{n}" for n in range(1, len(indexes) + 1)]
+        for i, label in zip(indexes, labels):
+            suffix = f" ({label})"
+            result[i] = replace(pages[i], title=title[: max(MAX_TITLE - len(suffix), 10)].rstrip() + suffix)
+    return result
 
 
 def metadata(title: str, description: str, tags: tuple[str, ...], timestamp: str) -> str:
@@ -273,7 +315,7 @@ def generated_pages(pages: list[Page]) -> list[Page]:
             timestamp=timestamp,
         )
     )
-    return result
+    return disambiguate_titles(result)
 
 
 def localize_pages(pages: list[Page], locale: str) -> list[Page]:
