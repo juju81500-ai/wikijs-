@@ -3,7 +3,7 @@
 - **Objectif** : importer les fiches du pack dans Wiki.js sans les coller une par une
 - **Environnement** : Wiki.js 2.5.317 dans Docker Compose
 - **Methode** : stockage Git de Wiki.js, connexion SSH
-- **Corpus** : dossier `WikiJS-Import-v2`
+- **Corpus** : dossier `wikijs-import-v2`
 - **Tags** : `wikijs`, `docker`, `git`, `ssh`, `import`, `markdown`
 
 ## Choisir le bon transfert
@@ -21,14 +21,14 @@ python3 00-administration/02-operations-wikijs/prepare-wikijs-import.py --dry-ru
 python3 00-administration/02-operations-wikijs/prepare-wikijs-import.py --check
 ```
 
-Le dossier `WikiJS-Import-v2` contient les pages Markdown et leurs metadonnees Wiki.js. Le controle actuel porte sur 650 pages, dont les index de rubriques et la page d'accueil.
+Le dossier `wikijs-import-v2` contient les pages Markdown et leurs metadonnees Wiki.js. Le controle actuel porte sur 650 pages, dont les index de rubriques et la page d'accueil.
 
 ## 2. Creer le depot de contenu
 
 Creer un depot Git prive, vide et dedie au contenu du wiki. Depuis le terminal, a la racine du pack :
 
 ```bash
-cd WikiJS-Import-v2
+cd wikijs-import-v2
 git init
 git add .
 git commit -m "Import initial du pack Wiki.js"
@@ -37,7 +37,7 @@ git remote add origin git@github.com:ORGANISATION/DEPOT-WIKI.git
 git push -u origin main
 ```
 
-Remplacer l'URI d'exemple par l'URI SSH du depot chez le fournisseur choisi. Le depot doit contenir directement les dossiers `01-fiches-simples`, `02-fiches-completes`, etc.; ne pas y placer un second dossier `WikiJS-Import-v2`.
+Remplacer l'URI d'exemple par l'URI SSH du depot chez le fournisseur choisi. Le depot doit contenir directement les dossiers `01-fiches-simples`, `02-fiches-completes`, etc.; ne pas y placer un second dossier `wikijs-import-v2`.
 
 Le premier `git push` utilise l'identite SSH deja configuree sur ton poste. La cle de l'etape suivante est une cle distincte, dediee au conteneur Wiki.js; ne copie jamais la cle privee personnelle de ton poste dans le conteneur.
 

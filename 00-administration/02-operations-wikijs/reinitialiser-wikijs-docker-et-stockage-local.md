@@ -64,7 +64,7 @@ Dans l'interface d'administration de Wiki.js :
 4. Appliquer les changements et vérifier l'état du module.
 5. Créer ou importer les pages dans Wiki.js. Le stockage local conservera ensuite leur copie selon les réglages du module.
 
-Le module de stockage local n'est pas le mécanisme de création/import des pages. Pour créer les 650 pages en lot, utiliser le dépôt dédié avec **Storage > Git > Import Everything**. Pour le collage manuel, utiliser les fichiers sans front matter du dossier `WikiJS-Copier-Coller` et le manifeste CSV.
+Le module de stockage local n'est pas le mécanisme de création/import des pages. Pour créer les 650 pages en lot, utiliser le dépôt dédié avec **Storage > Git > Import Everything**. Pour le collage manuel, utiliser les fichiers sans front matter du dossier `wikijs-copier-coller` et le manifeste CSV.
 
 ## Restaurer la sauvegarde
 
@@ -82,4 +82,4 @@ sudo docker compose start wiki
 
 - Déploiement Docker : `02-fiches-completes/Docker/Installation-Deploiement/28-installation-wikijs-docker-postgresql-traefik.md`
 - Import par SSH : `00-administration/02-operations-wikijs/guide-import-wikijs-2-5-317-par-ssh-docker.md`
-- Import manuel : `WikiJS-Copier-Coller/IMPORT-MANIFEST.csv`
+- Import manuel : `wikijs-copier-coller/IMPORT-MANIFEST.csv`

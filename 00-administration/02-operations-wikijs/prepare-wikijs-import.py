@@ -423,7 +423,7 @@ def main() -> int:
         help="actualiser les pages generees dans un dossier de sortie existant",
     )
     args = parser.parse_args()
-    default_output = "export/WikiJS-Copier-Coller" if args.manual else "export/WikiJS-Import-v2"
+    default_output = "export/wikijs-copier-coller" if args.manual else "export/wikijs-import-v2"
     output = (args.output or ROOT / default_output).resolve()
 
     if args.check:

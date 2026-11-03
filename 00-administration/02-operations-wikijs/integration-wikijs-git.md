@@ -1,6 +1,6 @@
 # Preparer le pack pour Wiki.js
 
-Le dossier `WikiJS-Import-v2` est une copie de travail preparee pour l'import par le stockage Git de Wiki.js 2.x. Les fichiers sources restent inchanges.
+Le dossier `wikijs-import-v2` est une copie de travail preparee pour l'import par le stockage Git de Wiki.js 2.x. Les fichiers sources restent inchanges.
 
 ## Generer et controler l'arbre
 
@@ -36,7 +36,7 @@ python3 00-administration/02-operations-wikijs/prepare-wikijs-import.py --manual
 python3 00-administration/02-operations-wikijs/prepare-wikijs-import.py --manual --check
 ```
 
-Ouvrir le fichier `.md` correspondant dans `WikiJS-Copier-Coller`, creer la page avec le chemin du fichier relatif a ce dossier (sans `.md`), puis coller le contenu du fichier dans l'editeur Markdown. Les chemins imbriques creent les rubriques, par exemple `01-fiches-simples/cloud-saas/fiche-simple-jira-service-management-creer-portail-itsm`. Reporter le titre et les tags depuis `IMPORT-MANIFEST.csv` dans les champs de la page. Cette variante ne contient pas de bloc YAML `---`.
+Ouvrir le fichier `.md` correspondant dans `wikijs-copier-coller`, creer la page avec le chemin du fichier relatif a ce dossier (sans `.md`), puis coller le contenu du fichier dans l'editeur Markdown. Les chemins imbriques creent les rubriques, par exemple `01-fiches-simples/cloud-saas/fiche-simple-jira-service-management-creer-portail-itsm`. Reporter le titre et les tags depuis `IMPORT-MANIFEST.csv` dans les champs de la page. Cette variante ne contient pas de bloc YAML `---`.
 
 Apres une modification des sources, actualiser la sortie manuelle avec :
 
@@ -48,7 +48,7 @@ python3 00-administration/02-operations-wikijs/prepare-wikijs-import.py --manual
 ## Importer avec le stockage Git
 
 1. Utiliser un depot Git dedie au contenu Wiki.js; ne pas configurer le depot global du pack comme depot de stockage.
-2. Copier le contenu de `WikiJS-Import-v2` a la racine de ce depot et le pousser sur le serveur Git cible.
+2. Copier le contenu de `wikijs-import-v2` a la racine de ce depot et le pousser sur le serveur Git cible.
 3. Dans Wiki.js, configurer le module **Storage > Git** avec ce depot et verifier que son statut est sain.
 4. Apres sauvegarde du wiki et verification du depot, lancer **Import Everything** depuis les actions du module Git.
 5. Verifier l'accueil, les rubriques, quelques fiches avec accents et les tags dans Wiki.js avant d'activer la synchronisation habituelle.

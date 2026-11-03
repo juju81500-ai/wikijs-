@@ -54,3 +54,6 @@ __pycache__/
 .venv/
 venv/
 .pytest_cache/
+
+# Arbre Wiki.js généré
+export/
