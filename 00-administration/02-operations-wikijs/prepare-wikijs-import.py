@@ -271,6 +271,18 @@ def generated_pages(pages: list[Page]) -> list[Page]:
     return result
 
 
+def localize_pages(pages: list[Page], locale: str) -> list[Page]:
+    internal_link = re.compile(r"\]\((<?)/(?!" + re.escape(locale) + r"/)")
+    return [
+        replace(
+            page,
+            route=f"{locale}/{'home' if page.route == 'readme' else page.route}",
+            content=internal_link.sub(rf"](\1/{locale}/", page.content),
+        )
+        for page in pages
+    ]
+
+
 def validate_pages(pages: list[Page]) -> list[str]:
     errors: list[str] = []
     routes: dict[str, str] = {}
@@ -422,6 +434,10 @@ def main() -> int:
         action="store_true",
         help="actualiser les pages generees dans un dossier de sortie existant",
     )
+    parser.add_argument(
+        "--locale",
+        help="prefixer routes et liens par une langue Wiki.js (ex. fr) ; l'accueil devient <langue>/home",
+    )
     args = parser.parse_args()
     default_output = "export/wikijs-copier-coller" if args.manual else "export/wikijs-import-v2"
     output = (args.output or ROOT / default_output).resolve()
@@ -438,6 +454,8 @@ def main() -> int:
         source, skipped = source_pages()
         source, links_rewritten = rewrite_internal_links(source)
         pages = generated_pages(source)
+        if args.locale:
+            pages = localize_pages(pages, args.locale)
     except (OSError, ValueError) as error:
         print(f"ERREUR : {error}")
         return 1
