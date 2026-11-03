@@ -1,0 +1,19 @@
+# 📄 OpenLDAP
+
+- **Catégorie** : Systèmes, annuaires et services
+- **Plateforme** : Linux
+- **Produit (matrice)** : OpenLDAP
+- **Statut dans le pack** : Couvert
+- **Tags** : `logiciel`, `05-systemes-annuaires-et-services`, `couvert`
+
+## 📚 Couverture dans le pack
+
+Couvert — OpenLDAP 2.6 (slapd) sur Debian 13 et Ubuntu 24-04. Rocky Linux 9 non couvert : le serveur OpenLDAP n’y est pas fourni dans les dépôts de base (à vérifier). Guide non testé; réplication et haute disponibilité non couvertes.
+
+Fiches simples du guide : [cadrer le pilote OpenLDAP](../../debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-cadrer.md), [installer slapd et les utilitaires LDAP](../../debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-installer.md), [vérifier la configuration OLC](../../debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-verifier-olc.md), [créer les unités organisationnelles](../../debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-creer-ou.md), [configurer TLS](../../debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-configurer-tls.md), [sauvegarder OpenLDAP](../../debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-sauvegarder.md), [tester la restauration sur une VM isolée](../../debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-restaurer-test.md), [valider LDAP, TLS et les flux](../../debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-valider.md), [préparer le retour arrière](../../debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-retour-arriere.md)., [Ubuntu 24-04 — prérequis et limites](../../ubuntu/24-04/vie-du-logiciel/openldap/fiche-simple-vm-ubuntu-24-04-openldap-prerequis-limites.md), [Ubuntu 24-04 — installation](../../ubuntu/24-04/vie-du-logiciel/openldap/fiche-simple-vm-ubuntu-24-04-openldap-installer.md), [Ubuntu 24-04 — configuration](../../ubuntu/24-04/vie-du-logiciel/openldap/fiche-simple-vm-ubuntu-24-04-openldap-configurer.md), [Ubuntu 24-04 — sécurisation](../../ubuntu/24-04/vie-du-logiciel/openldap/fiche-simple-vm-ubuntu-24-04-openldap-securiser.md), [Ubuntu 24-04 — validation](../../ubuntu/24-04/vie-du-logiciel/openldap/fiche-simple-vm-ubuntu-24-04-openldap-valider.md), [Ubuntu 24-04 — sauvegarde/restauration](../../ubuntu/24-04/vie-du-logiciel/openldap/fiche-simple-vm-ubuntu-24-04-openldap-sauvegarder-restaurer.md), [Ubuntu 24-04 — mise à jour/retour arrière](../../ubuntu/24-04/vie-du-logiciel/openldap/fiche-simple-vm-ubuntu-24-04-openldap-mise-a-jour-retour-arriere.md)
+
+## 🧭 Utilisation
+
+Cette fiche est le point d'entrée du logiciel : elle indique si le pack contient une procédure et renvoie vers elle. Pour une procédure pas à pas, ouvrir le guide ou la fiche liée ci-dessus. Lorsque le statut est `Manquant`, aucune procédure dédiée n'existe encore dans le pack.
+
+Fiche de repère : [OpenLDAP](fiche-simple-openldap.md). Fiches simples des étapes : [cadrage](../../debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-cadrer.md), [installation](../../debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-installer.md), [configuration OLC](../../debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-verifier-olc.md), [structure OU](../../debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-creer-ou.md), [TLS](../../debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-configurer-tls.md), [sauvegarde](../../debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-sauvegarder.md), [restauration de test](../../debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-restaurer-test.md), [validation](../../debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-valider.md) et [retour arrière](../../debian/13/vie-du-logiciel/openldap/fiche-simple-vm-debian-13-openldap-retour-arriere.md).

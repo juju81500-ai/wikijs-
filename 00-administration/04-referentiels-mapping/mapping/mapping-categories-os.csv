@@ -1,0 +1,201 @@
+chemin_actuel;categorie_actuelle;categorie_proposee;regle;statut
+01-fiches-simples/Alpine/fiche-simple-lxc-alpine-3-19-ip-statique.md;Alpine;Alpine-Linux;regle dossier;propose
+01-fiches-simples/Alpine/fiche-simple-lxc-alpine-3-19-reseau-diagnostic-dns-routes.md;Alpine;Alpine-Linux;regle dossier;propose
+01-fiches-simples/Alpine/fiche-simple-lxc-alpine-3-19-securite-configuration-awall-fir.md;Alpine;Alpine-Linux;regle dossier;propose
+01-fiches-simples/Alpine/fiche-simple-lxc-alpine-3-19-securite-openssh-cle-et-openrc.md;Alpine;Alpine-Linux;regle dossier;propose
+01-fiches-simples/Alpine/fiche-simple-lxc-alpine-3-19-services-installation-et-configu.md;Alpine;Alpine-Linux;regle dossier;propose
+01-fiches-simples/Alpine/fiche-simple-lxc-alpine-3-19-systeme-creer-compte-admin-doas.md;Alpine;Alpine-Linux;regle dossier;propose
+01-fiches-simples/Alpine/fiche-simple-lxc-alpine-3-19-systeme-gestion-services-openrc.md;Alpine;Alpine-Linux;regle dossier;propose
+01-fiches-simples/Alpine/fiche-simple-lxc-alpine-3-19-systeme-mise-a-jour-paquets-apk.md;Alpine;Alpine-Linux;regle dossier;propose
+01-fiches-simples/Alpine/fiche-simple-lxc-alpine-controle-mise-production.md;Alpine;Alpine-Linux;regle dossier;propose
+01-fiches-simples/Alpine/fiche-simple-lxc-alpine-installation-creation-ct-proxmox.md;Alpine;Alpine-Linux;regle dossier;propose
+01-fiches-simples/Alpine/fiche-simple-lxc-alpine-migrer-3-19-version-maintenue.md;Alpine;Alpine-Linux;regle dossier;propose
+01-fiches-simples/Alpine/fiche-simple-vm-alpine-chrony-ntp-openrc.md;Alpine;Alpine-Linux;regle dossier;propose
+01-fiches-simples/Cloud-SaaS/fiche-simple-cloud-datadog-installer-agent-linux-pilote.md;Cloud-SaaS;Cloud-SaaS;identique;propose
+01-fiches-simples/Cloud-SaaS/fiche-simple-cloud-dynatrace-oneagent-installer-pilote-linux.md;Cloud-SaaS;Cloud-SaaS;identique;propose
+01-fiches-simples/Cloud-SaaS/fiche-simple-jira-service-management-creer-portail-itsm.md;Cloud-SaaS;Cloud-SaaS;identique;propose
+01-fiches-simples/Debian/fiche-simple-debian-13-hashicorp-vault-valider-politique.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-lxc-debian-12-installation-glpi-agent.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-lxc-debian-13-reseau-modifier-hostname-et-hosts.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-lxc-debian-13-systeme-mise-a-jour-dist-upgrade.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-13-preparer-migration-paquets.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-bacula-valider-restauration.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-cacti-verifier-poller.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-creer-utilisateur-standard-et-sudo.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-depannage-disque-plein-100-purge.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-disk-agrandir-partition-lvm.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-gestion-groupes-et-permissions-posi.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-ip-statique-exemple-canonique.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-installation-ansible.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-installation-os-premier-demarrage.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-reseau-diagnostique-netcat-ss-tcpdu.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-reverseproxy-installation-nginx-pro.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-sauvegarde-configuration-borgbackup.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-sauvegarde-rclone-s3.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-securite-certbot-ssl-nginx.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-securite-configuration-fail2ban-ssh.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-services-installation-glpi-serveur.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-splunk-verifier-service-ingestion.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-stockage-configuration-partage-samb.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-supervision-installation-zabbix-age.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-supervision-installation-zabbix-ser.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-systeme-installation-qemu-guest-age.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-verifier-scheduler-znuny.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-12-itop-cron-taches-arriere-plan.md;Debian;Debian-12;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-ajouter-cible-prometheus.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-automatisation-configuration-unatte.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-automatisation-creer-timer-systemd.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-bareos-valider-restauration.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-centreon-ajouter-hote-pilote.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-controle-mise-production.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-database-installation-mariadb-11.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-database-installation-postgresql-17.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-elastic-verifier-sante-tls.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-gns3-valider-lab-isole.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-git-valider-clone-commit.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-hautedispo-cluster-keepalived-vrrp.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-ip-statique-systemd-networkd.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-installation-docker-engine.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-installation-os-premier-demarrage.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-installer-agent-ocs-inventory.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-keepassxc-valider-coffre.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-netbox-valider-ipam.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-observium-ajouter-hote-snmpv3.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-python-valider-venv-pipx.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-qgis-valider-projet.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-reseau-configuration-vlan-8021q.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-securite-configuration-sudo-chroot.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-securite-diagnostic-apparmor.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-securite-nftables-firewall.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-securite-nftables-firewall-zerotrus.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-services-creer-service-systemd-durci.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-services-installation-chronyc-ntp.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-services-installation-dhcp-kea.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-services-installation-dns-bind9.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-services-installation-samba-ad-dc.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-stockage-configuration-nfs-server-v.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-stockage-configuration-target-iscsi.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-stockage-creer-raid1-mdadm.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-stockage-diagnostic-sante-disque-smart.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-stockage-installation-openmediavault-8.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-stockage-monter-disque-uuid-fstab.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-supervision-installation-rsyslog-tl.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-supervision-prometheus-node-exporte.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-suricata-valider-capteur-ids.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-systeme-creation-swapfile-lvm.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-vscode-valider-installation.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-web-installation-nginx-php8-4-fpm.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-wireshark-valider-capture-locale.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-zeek-valider-capteur.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-draw-io-valider-diagramme.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Debian/fiche-simple-vm-debian-13-phpipam-valider-ipam.md;Debian;Debian-13;version dans le nom;propose
+01-fiches-simples/Docker-LXC/fiche-simple-bitwarden-self-hosted-verifier-backup-restauration.md;Docker-LXC;Docker;regle dossier;propose
+01-fiches-simples/Docker-LXC/fiche-simple-docker-compose-durcir-service-nonroot.md;Docker-LXC;Docker;regle dossier;propose
+01-fiches-simples/Docker-LXC/fiche-simple-docker-compose-healthcheck-secrets-rotation-journaux.md;Docker-LXC;Docker;regle dossier;propose
+01-fiches-simples/Docker-LXC/fiche-simple-docker-conteneur-cloud-deploiement-nextcloud.md;Docker-LXC;Docker;regle dossier;propose
+01-fiches-simples/Docker-LXC/fiche-simple-docker-conteneur-gestion-deploiement-traefik-rev.md;Docker-LXC;Docker;regle dossier;propose
+01-fiches-simples/Docker-LXC/fiche-simple-docker-conteneur-vpn-deploiement-wireguard.md;Docker-LXC;Docker;regle dossier;propose
+01-fiches-simples/Docker-LXC/fiche-simple-docker-production-mise-a-jour-rollback-compose.md;Docker-LXC;Docker;regle dossier;propose
+01-fiches-simples/Docker-LXC/fiche-simple-docker-production-reconstruire-hote-restaurer-stacks.md;Docker-LXC;Docker;regle dossier;propose
+01-fiches-simples/Docker-LXC/fiche-simple-docker-reseau-diagnostic-reseaux-compose.md;Docker-LXC;Docker;regle dossier;propose
+01-fiches-simples/Docker-LXC/fiche-simple-docker-sauvegarder-restaurer-volume.md;Docker-LXC;Docker;regle dossier;propose
+01-fiches-simples/Docker-LXC/fiche-simple-docker-sauvegarder-stack-compose-base-donnees.md;Docker-LXC;Docker;regle dossier;propose
+01-fiches-simples/Docker-LXC/fiche-simple-docker-snipe-it-importer-actifs-csv.md;Docker-LXC;Docker;regle dossier;propose
+01-fiches-simples/Docker-LXC/fiche-simple-hote-docker-gestion-deploiement-portainer-ce.md;Docker-LXC;Docker;regle dossier;propose
+01-fiches-simples/Docker-LXC/fiche-simple-hote-docker-installation-engine-et-compose.md;Docker-LXC;Docker;regle dossier;propose
+01-fiches-simples/Docker-LXC/fiche-simple-hote-docker-maintenance-nettoyage-systeme-prune.md;Docker-LXC;Docker;regle dossier;propose
+01-fiches-simples/Docker-LXC/fiche-simple-hote-docker-securite-activer-mode-rootless.md;Docker-LXC;Docker;regle dossier;propose
+01-fiches-simples/Proxmox/fiche-simple-truenas-scale-25-10-verifier-pool-sauvegarde.md;Proxmox;Proxmox-VE;regle dossier;propose
+01-fiches-simples/Proxmox/fiche-simple-vmware-esxi-8-configurer-hote-pilote.md;Proxmox;Multi-OS;a valider : hyperviseur VMware, pas Proxmox;A valider
+01-fiches-simples/RedHat-Rocky/fiche-simple-vm-rocky-9-conteneurs-podman-rootless-quadlet.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-fiches-simples/RedHat-Rocky/fiche-simple-vm-rocky-9-controle-mise-production.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-fiches-simples/RedHat-Rocky/fiche-simple-vm-rocky-9-creer-utilisateur-standard-et-wheel.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-fiches-simples/RedHat-Rocky/fiche-simple-vm-rocky-9-installation-os-premier-demarrage.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-fiches-simples/RedHat-Rocky/fiche-simple-vm-rocky-9-reseau-ip-statique-networkmanager-nmcli.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-fiches-simples/RedHat-Rocky/fiche-simple-vm-rocky-9-securite-autoriser-port-web-selinux-firewalld.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-fiches-simples/RedHat-Rocky/fiche-simple-vm-rocky-9-securite-firewalld-et-selinux.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-fiches-simples/RedHat-Rocky/fiche-simple-vm-rocky-9-services-configurer-chrony-ntp.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-fiches-simples/RedHat-Rocky/fiche-simple-vm-rocky-9-services-gestion-paquets-dnf.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-fiches-simples/RedHat-Rocky/fiche-simple-vm-rocky-9-services-installation-et-configuratio.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-fiches-simples/RedHat-Rocky/fiche-simple-vm-rocky-9-stockage-configurer-quotas-projet-xfs.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-fiches-simples/RedHat-Rocky/fiche-simple-vm-rocky-9-stockage-etendre-lvm-xfs.md;RedHat-Rocky;Rocky-Linux-9;regle dossier;propose
+01-fiches-simples/Ubuntu/fiche-simple-vm-ubuntu-24-04-controle-mise-production.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24-04 ou 26-04);propose
+01-fiches-simples/Ubuntu/fiche-simple-vm-ubuntu-24-04-graylog-valider-input-syslog-pilote.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24-04 ou 26-04);propose
+01-fiches-simples/Ubuntu/fiche-simple-vm-ubuntu-24-04-installation-os-premier-demarrage.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24-04 ou 26-04);propose
+01-fiches-simples/Ubuntu/fiche-simple-vm-ubuntu-24-04-lts-reseau-netplan-ip-et-dns.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24-04 ou 26-04);propose
+01-fiches-simples/Ubuntu/fiche-simple-vm-ubuntu-24-04-packet-tracer-valider-simulation.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24-04 ou 26-04);propose
+01-fiches-simples/Ubuntu/fiche-simple-vm-ubuntu-24-04-reseau-config-vlan-netplan.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24-04 ou 26-04);propose
+01-fiches-simples/Ubuntu/fiche-simple-vm-ubuntu-24-04-reseau-configuration-netplan-ip.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24-04 ou 26-04);propose
+01-fiches-simples/Ubuntu/fiche-simple-vm-ubuntu-24-04-reseau-diagnostic-systemdresolved-dns-split.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24-04 ou 26-04);propose
+01-fiches-simples/Ubuntu/fiche-simple-vm-ubuntu-24-04-securite-configuration-ufw-firew.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24-04 ou 26-04);propose
+01-fiches-simples/Ubuntu/fiche-simple-vm-ubuntu-24-04-securite-creer-profil-apparmor.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24-04 ou 26-04);propose
+01-fiches-simples/Ubuntu/fiche-simple-vm-ubuntu-24-04-securite-diagnostic-apparmor.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24-04 ou 26-04);propose
+01-fiches-simples/Ubuntu/fiche-simple-vm-ubuntu-24-04-securite-installation-ssh-cle-et-ufw.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24-04 ou 26-04);propose
+01-fiches-simples/Ubuntu/fiche-simple-vm-ubuntu-24-04-systeme-gerer-netplan-cloudinit.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24-04 ou 26-04);propose
+01-fiches-simples/Ubuntu/fiche-simple-vm-ubuntu-24-04-systeme-mise-a-jour-apt-auto.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24-04 ou 26-04);propose
+01-fiches-simples/Ubuntu/fiche-simple-vm-ubuntu-26-04-configurer-snmpv3-readonly.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24-04 ou 26-04);propose
+01-fiches-simples/Ubuntu/fiche-simple-vm-ubuntu-26-04-installation-os-premier-demarrage.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24-04 ou 26-04);propose
+01-fiches-simples/Ubuntu/fiche-simple-vm-ubuntu-ceph-verifier-sante-cluster.md;Ubuntu;Ubuntu-Server;version Ubuntu dans le nom (24-04 ou 26-04);propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-10-systeme-activer-bureau-a-distance.md;Windows;Windows-Client;version cliente;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-11-administration-installer-openssh-cle.md;Windows;Windows-Client;version cliente;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-11-controle-mise-production.md;Windows;Windows-Client;version cliente;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-11-creer-compte-local-et-admin.md;Windows;Windows-Client;version cliente;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-11-installation-os-premier-demarrage.md;Windows;Windows-Client;version cliente;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-11-powershell-valider-shell-admin.md;Windows;Windows-Client;version cliente;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-11-putty-valider-ssh-hostkey.md;Windows;Windows-Client;version cliente;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-11-reseau-fixer-ip-et-dns-gui-et-pow.md;Windows;Windows-Client;version cliente;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-11-reseau-ip-statique-powershell.md;Windows;Windows-Client;version cliente;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-11-restaurer-fichiers-file-history-onedrive.md;Windows;Windows-Client;version cliente;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-11-sauvegarder-fichiers-file-history.md;Windows;Windows-Client;version cliente;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-11-securite-activer-bitlocker-tpm.md;Windows;Windows-Client;version cliente;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-11-systeme-joindre-domaine-active-dir.md;Windows;Windows-Client;version cliente;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-ad-configurer-windows-laps.md;Windows;Windows-Server-2022;a valider : Windows Server sans version;A valider
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-adds-deverrouiller-et-rei.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-adds-joindre-ou-sortir-do.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-configuration-zone-dns-di.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-controle-mise-production.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-creation-utilisateur-et-o.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-creer-utilisateur-local-e.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-dhcp-creer-etendue-et-res.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-dns-creer-enregistrement.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-depannage-reinitialiser-m.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-gpo-configuration-strateg.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-gpo-forcer-et-auditer-mis.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-gestion-groupes-locaux-et.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-hyper-v-creer-vm-pilote.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-ip-statique-powershell.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-installation-dhcp-et-eten.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-installation-iis-site-web.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-installation-os-premier-demarrage.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-prtg-ajouter-appareil-pilote.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-partage-smb-et-permission.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-promotion-controleur-de-d.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-rds-activer-bureau-a-dist.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-rds-configuration-bureau.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-reprise-foret-ad-ds-lab.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-reseau-fixer-ip-et-dns.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-reseau-fixer-ip-et-dns-g.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-reseau-regle-firewall-source-limitee.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-sauvegarder-restaurer-etat-systeme.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-stockage-creer-partage-sm.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-veeam-job-hyper-v-pilote.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2022-win-11-joindre-domaine.md;Windows;Windows-Server-2022;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2025-compatibilite-fonctionnalites-2022.md;Windows;Windows-Server-2025;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-2025-installation-os-premier-demarrage.md;Windows;Windows-Server-2025;version dans le nom;propose
+01-fiches-simples/Windows/fiche-simple-vm-windows-server-lansweeper-scan-pilote.md;Windows;Windows-Server-2022;a valider : Windows Server sans version;A valider
+01-fiches-simples/pfSense/fiche-simple-dmz-valider-flux-zone-lab.md;pfSense;pfSense;identique;propose
+01-fiches-simples/pfSense/fiche-simple-pfsense-ce-2-9-0-valider-flux-lab.md;pfSense;pfSense;identique;propose
+04-questions-reponses/fiche-qa-bash-lecture-et-analyse-script.md;;(deja en 02 ou hors mapping);inchange;propose
+04-questions-reponses/fiche-qa-depannage-disque-plein-purge-apt-journalctl.md;;(deja en 02 ou hors mapping);inchange;propose
+04-questions-reponses/fiche-qa-dockerfile-best-practices-security.md;;(deja en 02 ou hors mapping);inchange;propose
+04-questions-reponses/fiche-qa-ssh-ed25519-et-fail2ban-security.md;;(deja en 02 ou hors mapping);inchange;propose
+04-questions-reponses/fiche-qa-yaml-docker-compose-lecture-et-validation.md;;(deja en 02 ou hors mapping);inchange;propose
+04-questions-reponses/reparation-dns-linux-resolution-echec.md;;(deja en 02 ou hors mapping);inchange;propose
+04-questions-reponses/reparation-docker-conteneur-redemarrage-boucle.md;;(deja en 02 ou hors mapping);inchange;propose
+04-questions-reponses/reparation-nginx-php-fpm-502-bad-gateway.md;;(deja en 02 ou hors mapping);inchange;propose
+04-questions-reponses/reparation-ssh-acces-distant-impossible.md;;(deja en 02 ou hors mapping);inchange;propose
+04-questions-reponses/reparation-service-systemd-echec-demarrage.md;;(deja en 02 ou hors mapping);inchange;propose
+04-questions-reponses/reparation-windows-echec-joindre-domaine-ad.md;;(deja en 02 ou hors mapping);inchange;propose
+05-hardening-ais-cyber/fiche-simple-docker-hote-securite-daemon-hardening-trivy.md;;Docker;regle nom;propose
+05-hardening-ais-cyber/fiche-simple-vm-debian-13-securite-hardening-ssh-ed25519.md;;Debian-13;version dans le nom;propose
+05-hardening-ais-cyber/fiche-simple-vm-winsrv-2022-gpo-security-baseline-hardening.md;;Windows-Server-2022;version dans le nom;propose

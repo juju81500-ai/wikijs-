@@ -1,7 +1,7 @@
-action: Reorganisation du 00-Administration
-Mieux organiser le 00-Administration
+action: Reorganisation du 00-administration
+Mieux organiser le 00-administration
     - supprimer les fichiers obsolètes ou inutiles
-    - cree une structure de dossiers claire et logique dans le 00-Administration, en regroupant les fichiers par catégorie ou par projet
+    - cree une structure de dossiers claire et logique dans le 00-administration, en regroupant les fichiers par catégorie ou par projet
     - renommer les fichiers de manière cohérente pour faciliter leur identification et leur recherche
     - documenter la nouvelle organisation pour que tous les utilisateurs comprennent la structure et les conventions de nommage
     - mettre en place un processus de maintenance régulière pour s'assurer que la structure reste organisée et à jour
@@ -9,7 +9,7 @@ Mieux organiser le 00-Administration
     - mettre en place un suivi pour s'assurer que les utilisateurs respectent la nouvelle organisation et apporter des ajustements si nécessaire
 
 action: creation de fonction appele tout-en-un
-    - preparer un modèle de fiche tout-en-un décliné par OS/version, à ranger dans 01-Fiches-Simples/<OS>/<version>/Tout-en-un/<categorie>/
+    - preparer un modèle de fiche tout-en-un décliné par OS/version, à ranger dans 01-fiches-simples/<OS>/<version>/Tout-en-un/<categorie>/
     - créer une fiche distincte pour chaque OS et version ciblés ; si une même procédure concerne plusieurs OS, dupliquer la fiche dans chaque dossier OS puis adapter et vérifier les commandes pour cet OS
     - ne pas regrouper les procédures de plusieurs OS dans une fiche tout-en-un multi-OS ; les fiches par OS peuvent garder des liens vers leurs sources communes
     - preparer un modele de fonction tout-en-un qui pourra être utilisé pour automatiser les tâches récurrentes

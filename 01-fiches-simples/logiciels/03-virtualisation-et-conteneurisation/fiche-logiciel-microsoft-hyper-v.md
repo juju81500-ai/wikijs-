@@ -1,0 +1,17 @@
+# 📄 Microsoft Hyper-V
+
+- **Catégorie** : Virtualisation et conteneurisation
+- **Plateforme** : Windows Server
+- **Produit (matrice)** : Microsoft Hyper-V
+- **Statut dans le pack** : Couvert
+- **Tags** : `logiciel`, `03-virtualisation-et-conteneurisation`, `couvert`
+
+## 📚 Couverture dans le pack
+
+Couvert — [guide Hyper-V 2022](../../../02-fiches-completes/windows/server-2022/installation-deploiement/55-deploiement-hyper-v-windows-server-2022.md)
+
+## 🧭 Utilisation
+
+Cette fiche est le point d'entrée du logiciel : elle indique si le pack contient une procédure et renvoie vers elle. Pour une procédure pas à pas, ouvrir le guide ou la fiche liée ci-dessus. Lorsque le statut est `Manquant`, aucune procédure dédiée n'existe encore dans le pack.
+
+Fiches simples du guide : [préparer l'hôte](../../windows/server-2022/vie-du-logiciel/hyper-v/fiche-simple-vm-windows-server-2022-hyper-v-preparer-hote.md), [installer le rôle Hyper-V](../../windows/server-2022/vie-du-logiciel/hyper-v/fiche-simple-vm-windows-server-2022-hyper-v-installer-role.md), [créer le réseau virtuel](../../windows/server-2022/vie-du-logiciel/hyper-v/fiche-simple-vm-windows-server-2022-hyper-v-reseau-virtuel.md), [définir les chemins et créer une VM pilote](../../windows/server-2022/vie-du-logiciel/hyper-v/fiche-simple-vm-windows-server-2022-hyper-v-chemins-vm-pilote.md), [recetter et exploiter](../../windows/server-2022/vie-du-logiciel/hyper-v/fiche-simple-vm-windows-server-2022-hyper-v-recette-exploitation.md), [durcir et prévoir le retour arrière](../../windows/server-2022/vie-du-logiciel/hyper-v/fiche-simple-vm-windows-server-2022-hyper-v-durcissement-retour.md).
