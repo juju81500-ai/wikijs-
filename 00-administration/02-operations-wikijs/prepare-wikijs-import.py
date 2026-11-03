@@ -306,9 +306,10 @@ def link_glossary_terms(pages: list[Page]) -> tuple[list[Page], int]:
     pattern = re.compile(r"(?<![\w/.\-])(" + "|".join(map(re.escape, acronyms)) + r")(?![\w\-])")
     result, total = [], 0
     for page in pages:
-        if page.source.startswith("[") or page.source.endswith("glossaire.md") or page.source.startswith("06-documentation-ext/"):
+        if page.source.startswith("[") or page.source.startswith("06-documentation-ext/"):
             result.append(page)
             continue
+        is_glossary = page.source.endswith("glossaire.md")
         seen: set[str] = set(re.findall(r"\[\[Glossary:([^\]]+)\]\]", page.content))
         in_code = False
         lines = []
@@ -318,6 +319,14 @@ def link_glossary_terms(pages: list[Page]) -> tuple[list[Page], int]:
             if in_code or line.lstrip().startswith("#"):
                 lines.append(line)
                 continue
+            head, own = "", set()
+            if is_glossary:
+                entry = re.match(r"^(- \*\*([^*]+)\*\*[^:]*? : )(.+)$", line)
+                if not entry:
+                    lines.append(line)
+                    continue
+                head, line = entry.group(1), entry.group(3)
+                own = {name.strip() for name in entry.group(2).split(" / ")}
             parts, last = [], 0
             for protected in PROTECTED.finditer(line):
                 parts.append((line[last:protected.start()], True))
@@ -328,13 +337,13 @@ def link_glossary_terms(pages: list[Page]) -> tuple[list[Page], int]:
             def link(match: re.Match[str]) -> str:
                 nonlocal total
                 term = match.group(1)
-                if term in seen:
+                if term in seen or term in own:
                     return term
                 seen.add(term)
                 total += 1
                 return f"[[Glossary:{term}]]"
 
-            lines.append("".join(pattern.sub(link, text) if editable else text for text, editable in parts))
+            lines.append(head + "".join(pattern.sub(link, text) if editable else text for text, editable in parts))
         result.append(replace(page, content="\n".join(lines)))
     return result, total
 
