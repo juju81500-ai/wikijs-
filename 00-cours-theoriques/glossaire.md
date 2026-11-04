@@ -1,3 +1,13 @@
+---
+title: glossaire
+description: ''
+published: true
+date: '2026-11-04T10:11:17.296Z'
+tags: []
+editor: visual
+dateCreated: '2026-11-03T13:55:30.064Z'
+---
+
 # Glossaire TSSR et AIS
 
 - **Tags** : `glossaire`, `tssr`, `ais`, `definitions`, `reference`
@@ -6,15 +16,15 @@ Définitions des termes et sigles employés dans les fiches du pack et dans les 
 
 ## Sommaire
 
-1. Formation et démarche
-2. Réseaux et protocoles
-3. Systèmes et virtualisation
-4. Matériel et démarrage
-5. Stockage, sauvegarde et continuité
-6. Identités, annuaires et accès
-7. Sécurité et durcissement
-8. Supervision, ITSM et exploitation
-9. Déploiement, automatisation et services applicatifs
+ 1. Formation et démarche
+ 2. Réseaux et protocoles
+ 3. Systèmes et virtualisation
+ 4. Matériel et démarrage
+ 5. Stockage, sauvegarde et continuité
+ 6. Identités, annuaires et accès
+ 7. Sécurité et durcissement
+ 8. Supervision, ITSM et exploitation
+ 9. Déploiement, automatisation et services applicatifs
 10. Gouvernance et conformité
 
 ## 1. Formation et démarche
@@ -425,3 +435,4 @@ Définitions des termes et sigles employés dans les fiches du pack et dans les 
 - **HDS** (Hébergeur de Données de Santé) : certification obligatoire pour héberger des données de santé en France.
 - **NIS 2** : directive européenne qui renforce les obligations de cybersécurité des entités essentielles et importantes.
 - **Registre des traitements** : inventaire des traitements de données personnelles exigé par le RGPD.
+
